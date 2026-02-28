@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+title: Learning Log
+---
+
+<h1>Learning Log</h1>
+
+<p>Risorse scaricabili con licenza Creative Commons.</p>
+
+<div class="learning-grid">
+{% for resource in collections.learning %}
+<article class="resource-card">
+    <h3>{{ resource.data.title }}</h3>
+    <p>{{ resource.data.description }}</p>
+    {% if resource.data.download_url %}
+    <a href="{{ resource.data.download_url }}" class="btn-download" download>Download →</a>
+    {% endif %}
+    <span class="resource-license">{{ resource.data.license }}</span>
+</article>
+{% endfor %}
+</div>

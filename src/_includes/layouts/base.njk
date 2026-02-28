@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if title %}{{ title }} - {% endif %}Claudio Cammarano</title>
+    <meta name="description" content="{{ description or 'Marketing, Media & Content Industries' }}">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body class="{{ bodyClass }}">
+    {% include "components/header.njk" %}
+    
+    <div class="container">
+        <main>
+            {{ content | safe }}
+        </main>
+    </div>
+    
+    {% include "components/footer.njk" %}
+    
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+    
+    <script async src="//www.instagram.com/embed.js"></script>
+</body>
+</html>

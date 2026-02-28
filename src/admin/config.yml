@@ -1,0 +1,34 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "src/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "writings"
+    label: "Writings"
+    folder: "src/writings"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Titolo", name: "title", widget: "string"}
+      - {label: "Data", name: "date", widget: "datetime"}
+      - {label: "Descrizione", name: "description", widget: "text", required: false}
+      - {label: "Categoria", name: "category", widget: "string", required: false}
+      - {label: "Lingua", name: "lang", widget: "select", options: ["it", "en"], default: "it"}
+      - {label: "Tags", name: "tags", widget: "list", default: ["writings"]}
+      - {label: "Corpo", name: "body", widget: "markdown"}
+
+  - name: "curated"
+    label: "Curated"
+    folder: "src/curated"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Titolo", name: "title", widget: "string"}
+      - {label: "URL esterno", name: "external_url", widget: "string"}
+      - {label: "Fonte", name: "source", widget: "string"}
+      - {label: "Data", name: "date", widget: "datetime"}
+      - {label: "Commento", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list", default: ["curated"]}

@@ -1,0 +1,29 @@
+---
+layout: layouts/base.njk
+---
+
+<article class="article-full">
+    <div class="article-meta">
+        <span class="article-date">{{ date | formatDate }}</span>
+        {% if category %}
+        <span class="article-category">{{ category }}</span>
+        {% endif %}
+        {% if lang %}
+        <span class="article-lang">{{ lang }}</span>
+        {% endif %}
+    </div>
+    
+    <h1>{{ title }}</h1>
+    
+    {% if description %}
+    <p class="article-lead">{{ description }}</p>
+    {% endif %}
+    
+    <div class="article-content">
+        {{ content | safe }}
+    </div>
+    
+    <div class="article-footer">
+        <a href="/writings/" class="back-link">← Torna a Writings</a>
+    </div>
+</article>

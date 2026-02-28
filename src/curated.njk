@@ -1,0 +1,25 @@
+---
+layout: layouts/base.njk
+title: Curated
+---
+
+<div class="page-intro">
+    <h1>Curated</h1>
+    <p>Link esterni curati e selezionati su media, marketing e content industries.</p>
+</div>
+
+{% for item in collections.curated | reverse %}
+<article class="curated-item">
+    <div class="article-meta">
+        <span class="article-date">{{ item.data.date }}</span>
+        {% if item.data.source %}
+        <span class="curated-source">{{ item.data.source }}</span>
+        {% endif %}
+    </div>
+    <h2><a href="{{ item.data.external_url }}" target="_blank">{{ item.data.title }} ↗</a></h2>
+    {% if item.data.description %}
+    <p>{{ item.data.description }}</p>
+    {% endif %}
+    <a href="{{ item.data.external_url }}" target="_blank" class="read-more">Vai al link ↗</a>
+</article>
+{% endfor %}
