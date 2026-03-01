@@ -212,6 +212,10 @@ footer {
   border-top: 8px solid #000;
 }
 
+footer .container {
+  max-width: 1200px;
+}
+
 footer a {
   color: white;
   text-decoration: underline;
@@ -219,6 +223,34 @@ footer a {
 
 footer a:hover {
   color: var(--color-bg-alt);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.footer-social {
+  display: flex;
+  gap: var(--spacing-sm);
+  align-items: center;
+}
+
+.footer-social a {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 /* === ARTICLE CARDS === */
