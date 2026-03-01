@@ -1,4 +1,5 @@
 ---
+layout: layouts/article.njk
 title: "Dal concept al deploy: costruire un sito professionale con JAMstack"
 date: 2026-03-01
 category: ["AI", "Vibe Coding", "Claude"]
@@ -6,13 +7,15 @@ lang: "🇮🇹 Italiano"
 description: "La storia tecnica di come questo sito è nato: dall'architettura informativa al deploy, passando per design system e workflow editoriale."
 ---
 
+<img src="/images/claude-logo-and-app.webp" alt="Claude AI interface" style="width: 100%; max-width: 800px; margin-bottom: 48px;">
+
 <div class="info-box" style="font-style: italic; margin-bottom: 48px;">
 
-È domenica pomeriggio. Mia moglie Luisa dorme sul divano, ignorando che le gatte le stanno facendo compagnia all'altezza dei piedi; mia figlia Emilia fa i compiti. Da anni volevo costruirmi un sito personale. Medium, dove ho scritto, con fin troppa insistenza, per un paio d'anni è stato sempre un ripiego di lusso, ma in passato ho scomodato amici e sviluppatori per progetti più o meno ambiziosi - nel delirio di onnipotenza, ho sempre voluto avviare un progetto à la Stratechery di Ben Thompson - ma i preventivi, per quanto limati all'osso in amicizia, erano sempre troppo esosi o i processi da gestire troppo complessi, considerato il pochissimo tempo di cui dispongo. 
+È domenica pomeriggio. Mia moglie Luisa dorme sul divano, ignorando che le gatte le stanno facendo compagnia all'altezza dei piedi; mia figlia Emilia fa i compiti. Da anni volevo costruirmi un sito personale. Medium, dove ho scritto con fin troppa insistenza per un paio d'anni, è stato sempre un ripiego non troppo di lusso, ma in passato mi era capitato di scomodare amici e sviluppatori per progetti più o meno ambiziosi su un mio sito di scrittura. L'esperienza di scrittura di Medium è notevole, ma  - nel delirio di onnipotenza - ho sempre voluto avviare un progetto à la *Stratechery* di Ben Thompson - ma i preventivi, per quanto limati all'osso in amicizia, erano sempre troppo esosi. Oppure troppo onerosi i progetti da gestire come project manager di me stesso, considerato il pochissimo tempo di cui dispongo. 
 
-Poi è arrivato Claude. Mi sono iscritto per un mese con l'abbonamento Pro, e ho scoperto che l'AI di Anthropic parla forbito ed è il sogno proibito degli umanisti. In più, forte delle mie poverissime basi di Python e di alcuni elementarissimi linguaggi di markup, ho iniziato a fare vibe coding. Avevo già un vecchio brief, fatto bene. L'ho caricato e ho aggiunto poche altre specifiche, poi ho chiesto a Claude di fare il resto. A esagerare, in 40 minuti ho chiuso l'MVP. In due settimane, giusto perché sono parecchio impegnato, ho pubblicato il sito - facendo in 5 minuti operazioni semplici per molti altri, ma che a me sarebbero costate mezz'ore di tentativi a vuoto.
+Poi è arrivato Claude. Mi sono iscritto per un mese con l'abbonamento Pro, più che altro per esplorarne le potenzialità. Ho scoperto che l'AI di Anthropic parla forbito ed è il sogno proibito degli umanisti. In più, forte delle mie poverissime basi di Python e di alcuni elementarissimi linguaggi di markup, ho iniziato a fare vibe coding. Avevo già un vecchio brief, fatto bene. L'ho caricato e ho aggiunto poche altre specifiche, poi ho chiesto a Claude di fare il resto. A esagerare, in 40 minuti ho chiuso l'MVP. In due settimane, giusto perché sono parecchio impegnato, ho pubblicato il sito - facendo in 5 minuti operazioni semplici per molti altri, ma che a me sarebbero costate mezz'ore di tentativi a vuoto.
 
-Visto che la gratitudine non si nega nemmeno alle macchine (e no, le AI non hanno una coscienza), ho chiesto a Claude di scrivere il primo articolo: una sorta di racconto, dal suo punto di vista, di come è andato il progetto. Questo è il risultato. Sulla forma c'è molto da fare, ma la ricostruzione è corretta. Buona lettura.
+Visto che la gratitudine non si nega nemmeno alle macchine (e no, le AI non hanno una coscienza), ho chiesto a Claude anche di scrivere il primo articolo, che è quello che segue. Il suo è una sorta di sintesi dal suo punto di vista, e quindi poco emozionante, di come è andato il progetto. Questo è il risultato. Sulla forma c'è molto da fare, ma la ricostruzione è abbastanza corretta. A rileggerlo, sento la mancanza di calore e di ironia (che non è detto che io sappia esprimere meglio, beninteso): tuttavia, me lo faccimo andare bene, perché, chiaramente, questo sito è tanto suo quanto mio. Buona lettura.
 
 </div>
 

@@ -343,6 +343,74 @@ footer a:hover {
   color: var(--color-text);
 }
 
+/* === ARTICLE CONTENT === */
+article.article-content,
+.article-full {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--spacing-xl) 0;
+}
+
+article.article-content h1,
+.article-full h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: var(--spacing-lg);
+}
+
+article.article-content h2,
+.article-full h2 {
+  font-size: 36px;
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-md);
+}
+
+article.article-content h3,
+.article-full h3 {
+  font-size: 28px;
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+}
+
+article.article-content p,
+.article-full p {
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: var(--spacing-md);
+}
+
+article.article-content ul,
+article.article-content ol,
+.article-full ul,
+.article-full ol {
+  margin: var(--spacing-md) 0;
+  padding-left: var(--spacing-lg);
+}
+
+article.article-content li,
+.article-full li {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: var(--spacing-sm);
+}
+
+article.article-content strong,
+.article-full strong {
+  font-weight: 700;
+}
+
+article.article-content em,
+.article-full em {
+  font-style: italic;
+}
+
+article.article-content hr,
+.article-full hr {
+  border: none;
+  border-top: 2px solid var(--color-border);
+  margin: var(--spacing-xl) 0;
+}
+
 /* === SHORTCODE STYLES === */
 
 /* Kicker/Catenaccio */
