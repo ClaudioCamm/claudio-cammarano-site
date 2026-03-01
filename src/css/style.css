@@ -426,7 +426,7 @@ figcaption {
 }
 
 .about-frameworks {
-  list-style: disc;  /* ← CAMBIA da "none" a "disc" */
+  list-style: disc;
   padding: 0;
   margin: var(--spacing-lg) 0;
 }
@@ -438,8 +438,8 @@ figcaption {
   margin-left: 0;
   font-size: 17px;
   line-height: 1.7;
-  list-style-position: inside;  /* ← AGGIUNGI */
-  list-style-type: disc;         /* ← AGGIUNGI */
+  list-style-position: inside;
+  list-style-type: disc;
 }
 
 .about-cta {
@@ -488,16 +488,6 @@ figcaption {
 .about-video iframe {
   width: 100% !important;
   max-width: 100% !important;
-}
-
-@media (max-width: 968px) {
-  .about-content {
-    grid-template-columns: 1fr;
-  }
-  
-  .about-sidebar {
-    display: none;
-  }
 }
 
 /* Curated Items */
@@ -595,26 +585,55 @@ figcaption {
 
 /* Newsletter */
 .newsletter-content {
-  max-width: 600px;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
 }
 
-.newsletter-form {
-  margin-top: var(--spacing-lg);
-  padding: var(--spacing-lg);
-  background: var(--color-bg-alt);
-  border: 2px solid var(--color-border);
+.newsletter-content h1 {
+  margin-bottom: var(--spacing-lg);
+}
+
+.newsletter-intro {
+  margin-bottom: var(--spacing-xl);
+}
+
+.newsletter-intro p {
+  font-size: 20px;
+  line-height: 1.7;
+  margin-bottom: var(--spacing-sm);
+}
+
+.newsletter-placeholder {
+  background: white;
+  border: 3px solid var(--color-primary);
+  padding: var(--spacing-xl);
+  margin-top: var(--spacing-xl);
+  text-align: center;
+}
+
+.newsletter-placeholder h2 {
+  color: var(--color-primary);
+  font-size: 32px;
+  margin-bottom: var(--spacing-sm);
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.newsletter-placeholder p {
+  color: var(--color-text);
+  font-style: italic;
 }
 
 /* === IRENE MEDIA PAGE === */
 body.irene-page {
-  background: #800020;  /* ← Bordeaux pieno, non rosa */
+  background: #800020;
 }
 
 body.irene-page .header-banner {
   border-bottom-color: var(--color-irene);
 }
 
-/* Header resta bianca, solo box cognome cambia */
 body.irene-page header {
   background: white;
   border-bottom-color: #000;
@@ -625,7 +644,7 @@ body.irene-page .name-first {
 }
 
 body.irene-page .name-last {
-  background: var(--color-irene);  /* ← Box bordeaux */
+  background: var(--color-irene);
   color: white;
 }
 
@@ -649,7 +668,7 @@ body.irene-page .soon-badge {
 .irene-hero {
   text-align: center;
   padding: var(--spacing-xl) var(--spacing-md);
-  background: white;  /* ← Sfondo bianco per vedere i semicerchi */
+  background: white;
   border-bottom: 8px solid var(--color-irene);
   margin-bottom: var(--spacing-xl);
 }
@@ -673,7 +692,7 @@ body.irene-page .soon-badge {
 
 .irene-content {
   max-width: 900px;
-  margin: 0 auto;  /* ← Centra il contenuto */
+  margin: 0 auto;
   padding: 0 var(--spacing-lg);
 }
 
@@ -734,12 +753,107 @@ body.irene-page .soon-badge {
   border-color: white;
 }
 
+/* === RESPONSIVE === */
+@media (max-width: 968px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-sidebar {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
+  /* Irene Media mobile */
   .irene-pitch {
     font-size: 32px;
   }
   
   .irene-logo-img {
     max-width: 300px;
+  }
+  
+  /* Banner più basso su mobile */
+  .header-banner {
+    height: 120px;
+  }
+  
+  /* Header compatto */
+  header {
+    padding: var(--spacing-sm) 0;
+  }
+  
+  header .container {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    align-items: flex-start;
+  }
+  
+  /* Logo più piccolo */
+  .name-first,
+  .name-last {
+    font-size: 36px;
+  }
+  
+  /* Tagline più piccola */
+  .site-tagline {
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-top: 8px;
+  }
+  
+  /* Menu verticale compatto */
+  nav {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+  
+  nav a {
+    font-size: 13px;
+    padding: 4px 0;
+  }
+  
+  /* Contenuti */
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+  
+  /* Learning grid */
+  .learning-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Articoli */
+  .article-card h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Banner minimo */
+  .header-banner {
+    height: 80px;
+  }
+  
+  /* Logo ancora più piccolo */
+  .name-first,
+  .name-last {
+    font-size: 28px;
+  }
+  
+  .site-tagline {
+    font-size: 10px;
+  }
+  
+  /* Titoli */
+  .article-card h2 {
+    font-size: 24px;
   }
 }
