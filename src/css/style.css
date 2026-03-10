@@ -434,8 +434,9 @@ article.article-content hr,
   margin: var(--spacing-xl) 0;
 }
 
-.figure-wrapper img {
-  width: 100%;
+.figure-wrapper img,
+.article-hero img {
+  max-width: 100%;
   height: auto;
   display: block;
   border: 1px solid var(--color-border);
