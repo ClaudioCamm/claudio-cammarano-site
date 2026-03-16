@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if title %}{{ title }} - {% endif %}Claudio Cammarano</title>
     <meta name="description" content="{{ description or 'Marketing, Media & Content Industries' }}">
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ title or 'Claudio Cammarano' }}">
+    <meta property="og:description" content="{{ description or 'Marketing, Media & Content Industries' }}">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://claudiocammarano.com{{ page.url }}">
+    {% if og_image %}
+    <meta property="og:image" content="https://claudiocammarano.com{{ og_image }}">
+    {% else %}
+    <meta property="og:image" content="https://claudiocammarano.com/images/og-default.png">
+    {% endif %}
+    <meta property="og:site_name" content="Claudio Cammarano">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
