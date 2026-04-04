@@ -15,13 +15,13 @@ og_image: "/images/umberto-eco.jpg"
 
 Entro nell'aula, il professore chino su dei fogli stampati e annotati. Con lui tutti gli altri esaminatori: almeno una decina, molti dei quali conoscevo già.
 
-<mark>E ora ci spieghi perché mai ha deciso di fare questo master, e quindi lavorare in editoria, e non, diciamo, di spacciare droga.»</mark>
+<mark>«E ora ci spieghi perché mai ha deciso di fare questo master, e quindi lavorare in editoria, e non, diciamo, di spacciare droga.»</mark>
 
 Ci penso un secondo. «Mhm. Entrambe le cose non si possono fare?»
 
 Finalmente mi fissa, con l'aria perplessa di chi sta ruminando: «In effetti, a pensarci, sì: l'editoria è una professione in cui si viaggia molto, per cui le due cose si potrebbero conciliare molto bene.»
 
-Inizia così il mio colloquio con Umberto Eco per entrare nel Master in Editoria Cartacea e Multimediale di Bologna, nel settembre 2014. Mi avrebbero preso, condizionando il resto della mia vita professionale — e non solo.
+Inizia così il mio colloquio con Umberto Eco per entrare nel Master in Editoria Cartacea e Multimediale di Bologna, nel settembre 2004. Mi avrebbero preso, condizionando il resto della mia vita professionale — e non solo.
 
 Ma il mio inseguimento di Eco e di quello che rappresentava partiva da molto prima. Nel settembre del 1997, primo giorno del Corso di Laurea in Scienze della Comunicazione — sempre a Bologna, sempre con il professore — Eco ci disse una cosa che non ho mai dimenticato: <mark>«Voi siete qui per diventare come Alcibiade. Non per essere Platone.</mark> Alcibiade era allievo di Socrate, non era filosofo, ma guidava eserciti, era un grande comunicatore, un politico. Lo scopo della vostra presenza qui non è creare accademici, ma creare persone che abbiano gli strumenti per stare nel mondo e influenzarlo.»
 
