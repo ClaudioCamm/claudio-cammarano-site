@@ -22,8 +22,8 @@
   --color-border: #e0e0e0;
   --color-border-light: #eee;
 
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-serif: Georgia, "Times New Roman", serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
   --spacing-xs: 8px;
   --spacing-sm: 16px;
@@ -33,7 +33,7 @@
 }
 
 body {
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
   font-size: 18px;
   line-height: 1.7;
   color: var(--color-text);
@@ -42,6 +42,7 @@ body {
 
 /* === TYPOGRAPHY === */
 h1, h2, h3, h4 {
+  font-family: var(--font-serif);
   font-weight: 500;
   line-height: 1.2;
   margin-bottom: var(--spacing-sm);
@@ -49,13 +50,11 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 32px;
-  font-family: var(--font-serif);
   margin-bottom: var(--spacing-md);
 }
 
 h2 {
   font-size: 24px;
-  font-family: var(--font-serif);
   margin-top: var(--spacing-lg);
 }
 
@@ -90,7 +89,7 @@ main {
   padding: var(--spacing-lg) 0;
 }
 
-/* === HEADER === */
+/* === HEADER (sans-serif chrome) === */
 .site-header {
   position: relative;
 }
@@ -120,12 +119,13 @@ main {
 }
 
 .header-tagline {
+  font-family: var(--font-sans);
   font-size: 13px;
   color: #a0a09a;
   letter-spacing: 0.3px;
 }
 
-/* === NAVIGATION === */
+/* === NAVIGATION (sans-serif) === */
 .site-nav {
   border-bottom: 1px solid var(--color-border);
   background: var(--color-bg);
@@ -145,6 +145,7 @@ main {
 
 .site-nav a {
   display: block;
+  font-family: var(--font-sans);
   font-size: 13px;
   font-weight: 400;
   color: var(--color-text-light);
@@ -166,6 +167,7 @@ main {
 }
 
 .nav-badge {
+  font-family: var(--font-sans);
   font-size: 9px;
   background: #e6f1fb;
   color: var(--color-primary-medium);
@@ -181,7 +183,7 @@ main {
   color: #854F0B;
 }
 
-/* === FOOTER === */
+/* === FOOTER (sans-serif chrome) === */
 .site-footer {
   background: #1a1a1a;
   color: #a0a09a;
@@ -198,12 +200,14 @@ main {
 }
 
 .footer-name {
+  font-family: var(--font-sans);
   font-size: 13px;
   color: #ccc;
   margin-bottom: 2px;
 }
 
 .footer-roles {
+  font-family: var(--font-sans);
   font-size: 12px;
   color: #888;
   margin-bottom: 0;
@@ -216,6 +220,7 @@ main {
 }
 
 .footer-social a {
+  font-family: var(--font-sans);
   color: var(--color-primary-medium);
   font-size: 13px;
   text-decoration: none;
@@ -245,11 +250,13 @@ main {
 }
 
 .article-date {
+  font-family: var(--font-sans);
   font-size: 13px;
   color: var(--color-text-hint);
 }
 
 .article-tag {
+  font-family: var(--font-sans);
   font-size: 11px;
   background: var(--color-bg-alt);
   color: var(--color-text-light);
@@ -259,7 +266,6 @@ main {
 
 .article-card h2 {
   font-size: 20px;
-  font-family: var(--font-serif);
   font-weight: 500;
   margin: 0 0 4px;
   line-height: 1.35;
@@ -275,9 +281,9 @@ main {
 }
 
 .article-card > p {
-  font-size: 15px;
+  font-size: 16px;
   color: var(--color-text-light);
-  line-height: 1.5;
+  line-height: 1.6;
   margin-bottom: 0;
 }
 
@@ -288,6 +294,7 @@ main {
 }
 
 .curated-badge {
+  font-family: var(--font-sans);
   font-size: 11px;
   background: #e6f1fb;
   color: var(--color-primary-medium);
@@ -297,12 +304,14 @@ main {
 }
 
 .curated-source-label {
+  font-family: var(--font-sans);
   font-size: 12px;
   color: var(--color-text-hint);
 }
 
-/* Legacy curated styles (listing page) */
+/* Legacy styles for listing pages */
 .article-type {
+  font-family: var(--font-sans);
   background: #e6f1fb;
   color: var(--color-primary-medium);
   padding: 4px 12px;
@@ -312,14 +321,15 @@ main {
 }
 
 .curated-source {
+  font-family: var(--font-sans);
   display: inline-block;
   color: var(--color-text-hint);
   font-size: 12px;
   margin-left: 4px;
 }
 
-/* Legacy category style (listing pages) */
 .article-category {
+  font-family: var(--font-sans);
   font-size: 11px;
   background: var(--color-bg-alt);
   color: var(--color-text-light);
@@ -328,11 +338,13 @@ main {
 }
 
 .article-lang {
+  font-family: var(--font-sans);
   font-size: 11px;
   color: var(--color-text-hint);
 }
 
 .read-more {
+  font-family: var(--font-sans);
   color: var(--color-primary);
   font-size: 14px;
   text-decoration: none;
@@ -356,15 +368,13 @@ article.article-content,
 
 .article-full h1 {
   font-size: 32px;
-  font-family: var(--font-serif);
   font-weight: 500;
   line-height: 1.3;
   margin-bottom: var(--spacing-sm);
 }
 
 .article-description {
-  font-family: var(--font-serif);
-  font-size: 16px;
+  font-size: 17px;
   color: var(--color-text-light);
   line-height: 1.5;
   font-style: italic;
@@ -374,7 +384,6 @@ article.article-content,
 .article-full h2,
 article.article-content h2 {
   font-size: 24px;
-  font-family: var(--font-serif);
   margin-top: var(--spacing-xl);
   margin-bottom: var(--spacing-md);
 }
@@ -386,9 +395,8 @@ article.article-content h3 {
   margin-bottom: var(--spacing-sm);
 }
 
-/* Article body: serif, medium-blue strong, italic emphasis */
+/* Article body */
 .article-body {
-  font-family: var(--font-serif);
   font-size: 18px;
   line-height: 1.8;
 }
@@ -423,7 +431,6 @@ article.article-content h3 {
   text-align: center;
   margin: var(--spacing-lg) 0;
   color: var(--color-text-hint);
-  font-family: var(--font-sans);
   font-size: 14px;
   letter-spacing: 4px;
 }
@@ -438,7 +445,7 @@ article.article-content h3 {
   padding: 0;
 }
 
-/* Small-caps utility (use in HTML: <span class="sc">MBA</span>) */
+/* Small-caps utility */
 .sc {
   font-variant: small-caps;
   letter-spacing: 0.3px;
@@ -446,12 +453,12 @@ article.article-content h3 {
 
 /* === SHORTCODES === */
 .kicker {
+  font-family: var(--font-sans);
   font-size: 13px;
   text-transform: uppercase;
   color: var(--color-primary);
   letter-spacing: 2px;
   font-weight: 500;
-  font-family: var(--font-sans);
   margin-bottom: var(--spacing-xs);
 }
 
@@ -464,7 +471,6 @@ article.article-content h3 {
   margin: var(--spacing-lg) 0;
   font-style: italic;
   color: var(--color-text);
-  font-family: var(--font-serif);
 }
 
 /* === FIGURES & IMAGES === */
@@ -519,6 +525,7 @@ figcaption {
 }
 
 .diagram-title {
+  font-family: var(--font-sans);
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.08em;
@@ -526,7 +533,6 @@ figcaption {
   color: var(--color-text);
   margin-bottom: var(--spacing-sm);
   text-align: center;
-  font-family: var(--font-sans);
 }
 
 .diagram-block svg {
@@ -553,7 +559,6 @@ figcaption {
   padding: var(--spacing-md);
   font-size: 15px;
   line-height: 1.6;
-  font-family: var(--font-sans);
 }
 
 .pdf-cta strong {
@@ -562,6 +567,7 @@ figcaption {
 }
 
 .pdf-cta a {
+  font-family: var(--font-sans);
   display: inline-block;
   margin-top: var(--spacing-sm);
   background: var(--color-primary);
@@ -592,14 +598,6 @@ figcaption {
   margin-bottom: 0;
 }
 
-/* === GRIDS === */
-.writings-grid,
-.learning-grid,
-.curated-grid {
-  display: grid;
-  gap: var(--spacing-lg);
-}
-
 /* === ABOUT PAGE === */
 .about-content {
   margin-top: var(--spacing-md);
@@ -628,7 +626,7 @@ figcaption {
 }
 
 .about-roles {
-  font-size: 14px;
+  font-size: 15px;
   color: var(--color-text-light);
   margin: 0;
 }
@@ -653,7 +651,7 @@ figcaption {
 }
 
 .about-main p {
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.8;
   margin-bottom: var(--spacing-md);
 }
@@ -686,6 +684,7 @@ figcaption {
 }
 
 .btn-about {
+  font-family: var(--font-sans);
   display: inline-block;
   background: var(--color-primary);
   color: white;
@@ -741,7 +740,7 @@ figcaption {
 }
 
 .resource-card p {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.6;
   color: var(--color-text-light);
   flex-grow: 1;
@@ -749,6 +748,7 @@ figcaption {
 }
 
 .btn-download {
+  font-family: var(--font-sans);
   display: inline-block;
   background: var(--color-primary);
   color: white;
@@ -768,6 +768,7 @@ figcaption {
 }
 
 .resource-license {
+  font-family: var(--font-sans);
   display: block;
   font-size: 11px;
   color: var(--color-text-hint);
@@ -812,11 +813,7 @@ figcaption {
 
 /* === IRENE MEDIA PAGE === */
 body.irene-page {
-  background: #800020;
-}
-
-body.irene-page .header-top {
-  background: #1a1a1a;
+  background: var(--color-bg);
 }
 
 body.irene-page .site-nav a.active {
@@ -825,42 +822,34 @@ body.irene-page .site-nav a.active {
 }
 
 .irene-hero {
-  text-align: center;
+  background: var(--color-irene);
   padding: var(--spacing-xl) var(--spacing-md);
-  background: white;
-  border-bottom: 4px solid var(--color-irene);
-  margin-bottom: var(--spacing-lg);
+  margin: calc(-1 * var(--spacing-lg)) calc(-1 * var(--spacing-md)) var(--spacing-lg);
+  text-align: center;
 }
 
-.irene-logo-img {
-  max-width: 400px;
-  width: 100%;
-  height: auto;
-  margin: 0 auto var(--spacing-md);
-  display: block;
-}
-
-.irene-pitch {
+.irene-title {
   font-size: 28px;
-  font-weight: 500;
-  color: var(--color-irene);
+  font-weight: 700;
+  color: #fff;
   letter-spacing: 1px;
-  margin: 0;
-  font-family: var(--font-serif);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.irene-subtitle {
+  font-size: 15px;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 0;
 }
 
 .irene-content {
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 var(--spacing-md);
 }
 
 .irene-section {
-  background: white;
-  padding: var(--spacing-md);
-  margin-bottom: var(--spacing-md);
-  border-left: 3px solid var(--color-irene);
-  border-radius: 0 8px 8px 0;
+  margin-bottom: var(--spacing-lg);
 }
 
 .irene-section h2 {
@@ -879,7 +868,6 @@ body.irene-page .site-nav a.active {
   border-left: 3px solid var(--color-irene);
   margin-bottom: var(--spacing-xs);
   font-size: 16px;
-  font-weight: 500;
   background: #faf8f8;
 }
 
@@ -895,20 +883,20 @@ body.irene-page .site-nav a.active {
 }
 
 .btn-irene-contact {
+  font-family: var(--font-sans);
   display: inline-block;
-  background: white;
-  color: var(--color-irene);
+  background: var(--color-irene);
+  color: #fff;
   padding: var(--spacing-xs) var(--spacing-md);
   font-weight: 500;
   font-size: 15px;
-  border: 2px solid white;
   border-radius: 4px;
-  transition: all 0.2s;
+  text-decoration: none;
+  transition: background 0.2s;
 }
 
 .btn-irene-contact:hover {
-  background: var(--color-irene);
-  color: white;
+  background: #5a0016;
 }
 
 /* === EPISTEME ADVISORY PAGE === */
@@ -919,6 +907,7 @@ body.irene-page .site-nav a.active {
 }
 
 .episteme-label {
+  font-family: var(--font-sans);
   font-size: 13px;
   color: #e0c97a;
   letter-spacing: 1px;
@@ -928,7 +917,6 @@ body.irene-page .site-nav a.active {
 }
 
 .episteme-hero h1 {
-  font-family: var(--font-serif);
   font-size: 28px;
   font-weight: 500;
   color: #f5f5f0;
@@ -997,6 +985,7 @@ body.irene-page .site-nav a.active {
 }
 
 .episteme-price {
+  font-family: var(--font-sans);
   font-size: 13px;
   color: #0F6E56;
   font-weight: 500;
@@ -1042,6 +1031,7 @@ body.irene-page .site-nav a.active {
 }
 
 .btn-episteme {
+  font-family: var(--font-sans);
   display: inline-block;
   background: #111;
   color: #e0c97a;
@@ -1116,12 +1106,13 @@ body.irene-page .site-nav a.active {
     grid-template-columns: 1fr;
   }
 
-  .irene-pitch {
-    font-size: 22px;
+  .irene-hero {
+    margin: calc(-1 * var(--spacing-md)) calc(-1 * var(--spacing-sm)) var(--spacing-md);
+    padding: var(--spacing-lg) var(--spacing-sm);
   }
 
-  .irene-logo-img {
-    max-width: 250px;
+  .irene-title {
+    font-size: 22px;
   }
 
   .episteme-hero {
@@ -1131,5 +1122,9 @@ body.irene-page .site-nav a.active {
 
   .episteme-hero h1 {
     font-size: 22px;
+  }
+
+  .about-main p {
+    font-size: 16px;
   }
 }
