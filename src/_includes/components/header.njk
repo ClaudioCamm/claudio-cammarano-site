@@ -1,27 +1,22 @@
-<div class="header-banner">
-    <img src="/images/header-banner.jpg" alt="Design Thinking Process">
-</div>
-
-<header>
-    <div class="container">
-        <div class="site-branding">
-            <div class="site-title">
-                <span class="name-first">CLAUDIO</span>
-                <span class="name-last">CAMMARANO</span>
-            </div>
-            <p class="site-tagline">Marketing × Media × Content Industries</p>
+<header class="site-header">
+    <div class="header-top">
+        <div class="container header-top-inner">
+            <a href="/" class="header-name">Claudio Cammarano</a>
+            <span class="header-tagline">Libri, mercati, idee</span>
         </div>
-        
-        <nav>
-            <ul>
-                <li><a href="/">HOME</a></li>
-                <li><a href="/writings/">WRITINGS</a></li>
-                <li><a href="/curated/">CURATED</a></li>
-                <li><a href="/learning/">LEARNING LOG</a></li>
-                <li><a href="/irene-media/">IRENE MEDIA</a></li>
-                <li><a href="/about/">ABOUT</a></li>
-                <li><a href="/newsletter/">NEWSLETTER<span class="soon-badge">SOON</span></a></li>
-            </ul>
-        </nav>
     </div>
+    <nav class="site-nav">
+        <div class="container">
+            <ul>
+                <li><a href="/"{% if page.url == "/" %} class="active"{% endif %}>Home</a></li>
+                <li><a href="/writings/"{% if page.url == "/writings/" %} class="active"{% endif %}>Writings</a></li>
+                <li><a href="/curated/"{% if page.url == "/curated/" %} class="active"{% endif %}>Curated</a></li>
+                <li><a href="/learning/"{% if page.url == "/learning/" %} class="active"{% endif %}>Learning log</a></li>
+                <li><a href="/irene-media/"{% if page.url == "/irene-media/" %} class="active"{% endif %}>Irene Media</a></li>
+                <li><a href="/episteme-advisory/"{% if page.url == "/episteme-advisory/" %} class="active"{% endif %}>Episteme Advisory <span class="nav-badge nav-badge--new">new</span></a></li>
+                <li><a href="/about/"{% if page.url == "/about/" %} class="active"{% endif %}>About</a></li>
+                <li><a href="/newsletter/"{% if page.url == "/newsletter/" %} class="active"{% endif %}>Newsletter <span class="nav-badge">soon</span></a></li>
+            </ul>
+        </div>
+    </nav>
 </header>

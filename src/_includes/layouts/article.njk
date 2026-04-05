@@ -9,14 +9,11 @@ layout: layouts/base.njk
       {% if category %}
         {% if category.length %}
           {% for cat in category %}
-          <span class="article-category">{{ cat }}</span>
+          <span class="article-tag">{{ cat }}</span>
           {% endfor %}
         {% else %}
-        <span class="article-category">{{ category }}</span>
+        <span class="article-tag">{{ category }}</span>
         {% endif %}
-      {% endif %}
-      {% if lang %}
-      <span class="article-lang">{{ lang }}</span>
       {% endif %}
     </div>
     <h1>{{ title }}</h1>

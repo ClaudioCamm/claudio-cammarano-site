@@ -5,19 +5,16 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/admin");
   eleventyConfig.addPassthroughCopy("src/downloads");
   
-  // === SHORTCODES PER SCRITTURA ===
+  // === SHORTCODES ===
   
-  // Catenaccio/Kicker
   eleventyConfig.addShortcode("kicker", function(text) {
     return `<p class="kicker">${text}</p>`;
   });
   
-  // Citazione in evidenza
   eleventyConfig.addShortcode("pullquote", function(text) {
     return `<blockquote class="pullquote">${text}</blockquote>`;
   });
   
-  // Immagine con didascalia
   eleventyConfig.addShortcode("figure", function(src, caption) {
     return `
       <figure class="figure-wrapper">
@@ -27,15 +24,15 @@ module.exports = function(eleventyConfig) {
     `;
   });
   
-  // Box informativo
   eleventyConfig.addShortcode("infobox", function(content) {
     return `<div class="info-box">${content}</div>`;
   });
   
-  // Dati/Grafici
   eleventyConfig.addShortcode("dataviz", function(content) {
     return `<div class="data-viz">${content}</div>`;
   });
+  
+  // === COLLECTIONS ===
   
   eleventyConfig.addCollection("writings", function(collectionApi) {
     return collectionApi.getFilteredByGlob("src/writings/*.md")
@@ -50,6 +47,18 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addCollection("learning", function(collectionApi) {
     return collectionApi.getFilteredByGlob("src/learning/*.md");
   });
+  
+  // Mixed feed: writings + curated sorted by date descending
+  eleventyConfig.addCollection("allPosts", function(collectionApi) {
+    const writings = collectionApi.getFilteredByGlob("src/writings/*.md")
+      .map(item => { item.data._postType = "writing"; return item; });
+    const curated = collectionApi.getFilteredByGlob("src/curated/*.md")
+      .map(item => { item.data._postType = "curated"; return item; });
+    return [...writings, ...curated]
+      .sort((a, b) => b.date - a.date);
+  });
+  
+  // === FILTERS ===
   
   eleventyConfig.addFilter("formatDate", function(date) {
     return new Intl.DateTimeFormat('it-IT', { 
