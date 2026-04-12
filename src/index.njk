@@ -3,21 +3,7 @@ layout: layouts/base.njk
 title: Home
 ---
 
-{% for post in collections.allPosts %}
-  {% if post.data._postType == "curated" %}
-  <article class="article-card article-card--curated">
-    <div class="article-meta">
-      <span class="curated-badge">Curated</span>
-      {% if post.data.source %}
-      <span class="curated-source-label">· {{ post.data.source }}</span>
-      {% endif %}
-    </div>
-    <h2><a href="{{ post.data.external_url }}" target="_blank">{{ post.data.title }} ↗</a></h2>
-    {% if post.data.description %}
-    <p>{{ post.data.description }}</p>
-    {% endif %}
-  </article>
-  {% else %}
+{% for post in collections.writings %}
   <article class="article-card">
     <div class="article-meta">
       <span class="article-date">{{ post.date | formatDate }}</span>
@@ -36,5 +22,42 @@ title: Home
     <p>{{ post.data.description }}</p>
     {% endif %}
   </article>
-  {% endif %}
+{% endfor %}
+
+{% if abstract.posts and abstract.posts.length > 0 %}
+<div class="abstract-block">
+  <div class="abstract-block-header">
+    <span class="abstract-block-label">From The Abstract</span>
+    <p class="abstract-block-tagline">Reading the Content Economy from Europe</p>
+  </div>
+  {% for post in abstract.posts %}
+  <article class="abstract-block-post">
+    {% if post.date %}<span class="article-date">{{ post.date }}</span>{% endif %}
+    <h3 class="abstract-block-post-title">
+      <a href="{{ post.url }}" target="_blank" rel="noopener">{{ post.title }} ↗</a>
+    </h3>
+    {% if post.excerpt %}
+    <p class="abstract-block-post-excerpt">{{ post.excerpt }}</p>
+    {% endif %}
+  </article>
+  {% endfor %}
+  <p class="abstract-block-cta">
+    <a href="https://claudiocammarano.substack.com" target="_blank" rel="noopener">Read more on Substack →</a>
+  </p>
+</div>
+{% endif %}
+
+{% for post in collections.curated %}
+  <article class="article-card article-card--curated">
+    <div class="article-meta">
+      <span class="curated-badge">Curated</span>
+      {% if post.data.source %}
+      <span class="curated-source-label">· {{ post.data.source }}</span>
+      {% endif %}
+    </div>
+    <h2><a href="{{ post.data.external_url }}" target="_blank">{{ post.data.title }} ↗</a></h2>
+    {% if post.data.description %}
+    <p>{{ post.data.description }}</p>
+    {% endif %}
+  </article>
 {% endfor %}

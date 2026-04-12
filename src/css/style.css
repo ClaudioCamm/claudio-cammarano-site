@@ -811,6 +811,84 @@ figcaption {
   font-style: italic;
 }
 
+/* === FROM THE ABSTRACT — HOMEPAGE BLOCK === */
+.abstract-block {
+  background: var(--color-bg-alt);
+  border-left: 3px solid var(--color-primary);
+  border-radius: 0 6px 6px 0;
+  padding: var(--spacing-md) var(--spacing-md) var(--spacing-sm);
+  margin: var(--spacing-lg) 0;
+}
+
+.abstract-block-header {
+  margin-bottom: var(--spacing-md);
+}
+
+.abstract-block-label {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--color-primary);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.abstract-block-tagline {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--color-text-hint);
+  margin: 0;
+}
+
+.abstract-block-post {
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.abstract-block-post:last-of-type {
+  border-bottom: none;
+}
+
+.abstract-block-post-title {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 4px 0 0;
+  line-height: 1.35;
+}
+
+.abstract-block-post-title a {
+  color: var(--color-text);
+}
+
+.abstract-block-post-title a:hover {
+  color: var(--color-primary);
+}
+
+.abstract-block-post-excerpt {
+  font-size: 14px;
+  color: var(--color-text-light);
+  line-height: 1.6;
+  margin: 4px 0 0;
+}
+
+.abstract-block-cta {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  margin: var(--spacing-sm) 0 0;
+  text-align: right;
+}
+
+.abstract-block-cta a {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.abstract-block-cta a:hover {
+  color: var(--color-text);
+}
+
 /* === THE ABSTRACT PAGE === */
 .abstract-tagline {
   font-family: var(--font-sans);
