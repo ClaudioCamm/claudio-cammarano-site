@@ -95,7 +95,7 @@ main {
 }
 
 .header-top {
-  background: #1a1a1a;
+  background: var(--color-primary);
   padding: var(--spacing-md) 0;
 }
 
@@ -1040,7 +1040,7 @@ body.irene-page .site-nav a.active {
 
 /* === EPISTEME ADVISORY PAGE === */
 .episteme-hero {
-  background: #111;
+  background: #0F6E56;
   padding: var(--spacing-lg) var(--spacing-md);
   margin: calc(-1 * var(--spacing-lg)) calc(-1 * var(--spacing-md)) var(--spacing-lg);
 }
@@ -1065,7 +1065,7 @@ body.irene-page .site-nav a.active {
 
 .episteme-subtitle {
   font-size: 15px;
-  color: #999;
+  color: rgba(255, 255, 255, 0.72);
   line-height: 1.6;
   margin-bottom: 0;
 }
