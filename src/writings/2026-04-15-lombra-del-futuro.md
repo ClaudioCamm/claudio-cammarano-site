@@ -137,7 +137,9 @@ Arrivo alla complicazione che mi sta più a cuore — quella che, nella mia rico
 
 Formalmente, la funzione di aggiornamento andrebbe scritta con coefficienti diversi per le due direzioni:
 
-$$\delta_i(t+1) = \begin{cases} \delta_i(t) - \lambda_{\downarrow} \cdot \text{segnale di defezione} & \text{se rumore defezionista} \\ \delta_i(t) + \lambda_{\uparrow} \cdot \text{segnale di cooperazione} & \text{se rumore cooperativo} \end{cases}$$
+$$\delta_i(t+1) = \delta_i(t) - \lambda_{\downarrow} \cdot \text{segnale di defezione} \quad \text{se rumore defezionista}$$
+
+$$\delta_i(t+1) = \delta_i(t) + \lambda_{\uparrow} \cdot \text{segnale di cooperazione} \quad \text{se rumore cooperativo}$$
 
 con $\lambda_{\downarrow}$ molto maggiore di $\lambda_{\uparrow}$, tipicamente di un ordine di grandezza o più. La ragione è psicologica, cognitiva, ed è stata studiata con grande dettaglio dalla letteratura sull'avversione alle perdite di Kahneman e Tversky: perdere fiducia costa poco (una sola defezione osservata è sufficiente a fare precipitare la stima), riguadagnarla costa tantissimo (richiede anni di cooperazione costante per tornare allo *status quo ante*). È il meccanismo che rende la reputazione un bene economicamente asimmetrico, e che in finanza si conosce come la proprietà per cui "ci vogliono vent'anni per costruire una reputazione e cinque minuti per rovinarla" — un adagio attribuito a Warren Buffett che, al di là della paternità, cattura con precisione la forma matematica del fenomeno.
 
