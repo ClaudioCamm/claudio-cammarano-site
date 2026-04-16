@@ -1187,6 +1187,54 @@ body.irene-page .site-nav a.active {
   color: #e0c97a;
 }
 
+/* === TABLES IN ARTICLES === */
+.article-body table {
+  width: auto;
+  max-width: 100%;
+  margin: var(--spacing-lg) auto;
+  border-collapse: collapse;
+  font-size: 16px;
+  font-family: var(--font-sans);
+}
+
+.article-body table th,
+.article-body table td {
+  border: 1px solid var(--color-border);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  text-align: left;
+  vertical-align: top;
+}
+
+.article-body table th {
+  background: var(--color-bg-alt);
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.article-body table tr:nth-child(even) td {
+  background: #fafafa;
+}
+
+/* Numeri e payoff: allinea a destra se solo cifre */
+.article-body table td:not(:first-child) {
+  text-align: left;
+}
+
+/* Wrapper scrollabile su mobile */
+.article-body table {
+  display: table;
+}
+
+@media (max-width: 768px) {
+  .article-body table {
+    font-size: 14px;
+  }
+  .article-body table th,
+  .article-body table td {
+    padding: 6px 8px;
+  }
+}
+
 /* === RESPONSIVE === */
 @media (max-width: 768px) {
   .header-top-inner {
