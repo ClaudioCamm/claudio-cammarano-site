@@ -17,8 +17,8 @@ window.MathJax = {
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <figure class="article-hero">
-  <img src="/images/wargames-hero.jpg" alt="Una scena dal film WarGames di John Badham (1983). Metro-Goldwyn-Mayer Studios Inc. Metro-Goldwyn-Mayer Studios Inc." />
-  <figcaption>Una scena dal film <em>WarGames</em> di John Badham (1983).</figcaption>
+  <img src="/images/wargames-hero.jpg" alt="Una scena dal film WarGames di John Badham (1983)." />
+  <figcaption>Una scena dal film <em>WarGames</em> di John Badham (1983). Metro-Goldwyn-Mayer Studios Inc.</figcaption>
 </figure>
 
 Nel 1979 Robert Axelrod, che all'epoca insegnava scienze politiche all'Università del Michigan e aveva una formazione in matematica applicata, ebbe un'idea con qualcosa di leggermente folle. Mandò una lettera ai più importanti teorici dei giochi del mondo — economisti, matematici, psicologi, informatici — invitandoli a sottomettere una strategia per un torneo al dilemma del prigioniero iterato. Le regole erano semplici: ogni strategia avrebbe giocato duecento round contro tutte le altre, a rotazione, con i payoff classici del dilemma; alla fine si sarebbe sommato il totale e vinto chi avesse accumulato più punti. Axelrod voleva capire, empiricamente, quale tipo di comportamento emergesse come ottimale in una situazione in cui la tentazione di defezionare era sempre presente ma il futuro contava.
