@@ -221,13 +221,13 @@ main {
 
 .footer-social a {
   font-family: var(--font-sans);
-  color: var(--color-primary-medium);
+  color: var(--color-bg-alt);
   font-size: 13px;
   text-decoration: none;
 }
 
 .footer-social a:hover {
-  color: #85B7EB;
+  color: #ffffff;
 }
 
 /* === ARTICLE CARDS (HOMEPAGE) === */
