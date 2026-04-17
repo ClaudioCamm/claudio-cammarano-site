@@ -1,5 +1,5 @@
 // _data/abstract.js
-// Fetches the 3 most recent posts from The Abstract (Substack RSS).
+// Fetches the 6 most recent posts from The Abstract (Substack RSS).
 // Uses only Node.js built-in modules — no extra dependencies.
 // Returns { posts: [] } silently on any network or parse error
 // so the homepage conditional hides the block gracefully.
@@ -35,7 +35,7 @@ module.exports = async function () {
           const itemRegex = /<item>([\s\S]*?)<\/item>/g;
           let match;
 
-          while ((match = itemRegex.exec(data)) !== null && posts.length < 3) {
+          while ((match = itemRegex.exec(data)) !== null && posts.length < 6) {
             const item = match[1];
             const get = (tag) => {
               const m = item.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`));

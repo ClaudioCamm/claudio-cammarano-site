@@ -18,12 +18,15 @@ description: "The Abstract — Reading the Content Economy from Europe. A newsle
         <a href="https://claudiocammarano.substack.com" class="btn-about btn-about--outline">Subscribe to the newsletter →</a>
     </div>
 
+    {% if abstract.posts and abstract.posts.length > 0 %}
     <h2>Recent essays</h2>
     <ul class="abstract-essays">
-        <!-- Add new posts here, most recent first -->
+        {% for post in abstract.posts %}
         <li class="abstract-essay">
-            <a href="https://claudiocammarano.substack.com/p/the-abstract-eight-years-later">The Abstract, Eight Years Later</a>
-            <span class="abstract-essay-date">April 11, 2026</span>
+            <a href="{{ post.url }}" target="_blank" rel="noopener">{{ post.title }}</a>
+            {% if post.date %}<span class="abstract-essay-date">{{ post.date }}</span>{% endif %}
         </li>
+        {% endfor %}
     </ul>
+    {% endif %}
 </div>
