@@ -4,6 +4,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/admin");
   eleventyConfig.addPassthroughCopy("src/downloads");
+  eleventyConfig.addPassthroughCopy("src/robots.txt");
   
   // === SHORTCODES ===
   
@@ -61,11 +62,20 @@ module.exports = function(eleventyConfig) {
   // === FILTERS ===
   
   eleventyConfig.addFilter("formatDate", function(date) {
-    return new Intl.DateTimeFormat('it-IT', { 
-      year: 'numeric', 
-      month: 'long', 
-      day: 'numeric' 
+    return new Intl.DateTimeFormat('it-IT', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
     }).format(date);
+  });
+
+  eleventyConfig.addFilter("isoDate", function(date) {
+    return new Date(date).toISOString().split('T')[0];
+  });
+
+  eleventyConfig.addFilter("jsonEscape", function(str) {
+    if (!str) return '';
+    return JSON.stringify(String(str)).slice(1, -1);
   });
   
   return {

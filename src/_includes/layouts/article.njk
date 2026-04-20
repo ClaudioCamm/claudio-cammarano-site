@@ -1,6 +1,24 @@
 ---
 layout: layouts/base.njk
+og_type: article
 ---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ title | jsonEscape | safe }}",
+  "description": "{{ description | jsonEscape | safe }}",
+  "datePublished": "{{ date | isoDate }}",
+  "url": "https://claudiocammarano.com{{ page.url }}",
+  "image": "{% if og_image %}https://claudiocammarano.com{{ og_image }}{% else %}https://claudiocammarano.com/images/og-default.png{% endif %}",
+  "author": {
+    "@type": "Person",
+    "name": "Claudio Cammarano",
+    "url": "https://claudiocammarano.com/about/"
+  }
+}
+</script>
 
 <article class="article-full">
   <header class="article-header">

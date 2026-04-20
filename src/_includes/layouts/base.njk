@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if title %}{{ title }} - {% endif %}Claudio Cammarano</title>
     <meta name="description" content="{{ description or 'Libri, mercati, idee' }}">
+    <link rel="canonical" href="https://claudiocammarano.com{{ page.url }}">
+    <link rel="alternate" hreflang="{{ lang or 'it' }}" href="https://claudiocammarano.com{{ page.url }}">
+    <link rel="alternate" hreflang="x-default" href="https://claudiocammarano.com/">
     <!-- Open Graph -->
     <meta property="og:title" content="{{ title or 'Claudio Cammarano' }}">
     <meta property="og:description" content="{{ description or 'Libri, mercati, idee' }}">
-    <meta property="og:type" content="article">
+    <meta property="og:type" content="{{ og_type or 'website' }}">
     <meta property="og:url" content="https://claudiocammarano.com{{ page.url }}">
     {% if og_image %}
     <meta property="og:image" content="https://claudiocammarano.com{{ og_image }}">
