@@ -142,7 +142,7 @@ Non sostengo, e mi pare importante chiarirlo per evitare scivolate retoriche, ch
 
 Il modo più sintetico per visualizzare l'effetto sul payoff iterato è mostrare quanto rapidamente il guadagno di lungo periodo si erode al variare di $\rho$. La Tabella 2 riporta il payoff atteso scontato di un giocatore che, in un sistema cooperativo con $\delta$ = 0,9 (e quindi con alto incentivo alla cooperazione), sarebbe altrimenti destinato all'ottimo *R* = 3 per round, e che invece è costretto a giocare con la probabilità indicata la mossa vincolata *P* = 1. Il calcolo è banale,
 
-$E[\Pi]$ = (1 − ρ) · 30 + ρ · 10
+$$E[\Pi]$ = (1 − ρ) · 30 + ρ · 10$$
 
 ma il risultato è illuminante: bastano pochi punti percentuali di $\rho$ per spazzare via gran parte del vantaggio cooperativo costruito su orizzonte infinito.
 
