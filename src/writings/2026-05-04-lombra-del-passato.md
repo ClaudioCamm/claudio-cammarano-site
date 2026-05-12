@@ -69,7 +69,7 @@ Il modello di Putnam ha un corollario sgradevole: <strong>la negoziazione intern
 
 Per i nostri scopi conta il primo dei due usi, quello vincolante. La domanda è cosa succede al modello iterato quando ciascun giocatore può scegliere solo un sottoinsieme delle mosse teoricamente disponibili. Sia $A_i$ l'insieme di tutte le mosse logicamente possibili per il giocatore *i*, e $W_i$ il suo win-set domestico. Lo spazio delle azioni effettivamente eseguibili è
 
-$$A_i$ ∩ $W_i$ ⊆ $A_i$$
+$$A_i \cap W_i \subseteq A_i$$
 
 e può essere strettamente contenuto in $A_i$ — anche, e questo è il punto, quando $A_i$ contiene la mossa che il modello del primo pezzo prescriverebbe come ottimale.
 
@@ -95,7 +95,7 @@ Per chi conosce la letteratura, $\rho$ è una variante strutturale del *tremblin
 
 Il payoff atteso del giocatore *i* per round diventa quindi una combinazione lineare delle due possibili mosse,
 
-$$E[\pi_i]$ = (1 − $\rho_i$) · $\pi_{ott}$ + $\rho_i$ · $\pi_{vinc}$$
+$$E[\pi_i] = (1 - \rho_i) \cdot \pi_{ott} + \rho_i \cdot \pi_{vinc}$$
 
 e su orizzonte infinito, applicando la formula della somma scontata che già conosciamo dal primo pezzo,
 
@@ -142,7 +142,7 @@ Non sostengo, e mi pare importante chiarirlo per evitare scivolate retoriche, ch
 
 Il modo più sintetico per visualizzare l'effetto sul payoff iterato è mostrare quanto rapidamente il guadagno di lungo periodo si erode al variare di $\rho$. La Tabella 2 riporta il payoff atteso scontato di un giocatore che, in un sistema cooperativo con $\delta$ = 0,9 (e quindi con alto incentivo alla cooperazione), sarebbe altrimenti destinato all'ottimo *R* = 3 per round, e che invece è costretto a giocare con la probabilità indicata la mossa vincolata *P* = 1. Il calcolo è banale,
 
-$$E[\Pi]$ = (1 − ρ) · 30 + ρ · 10$$
+$E[\Pi]$ = (1 − ρ) · 30 + ρ · 10
 
 ma il risultato è illuminante: bastano pochi punti percentuali di $\rho$ per spazzare via gran parte del vantaggio cooperativo costruito su orizzonte infinito.
 
