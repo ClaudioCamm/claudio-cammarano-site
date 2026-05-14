@@ -100,6 +100,23 @@ module.exports = function(eleventyConfig) {
     // Preserve heading text as its own line before stripping HTML
     text = text.replace(/<\/h[1-6]>/gi, '\n');
     text = text.replace(/<[^>]*>/g, ' ');
+    // Convert LaTeX math to readable text (MathJax runs client-side, not available here)
+    const mathToText = (expr) => {
+      let t = expr;
+      // Common symbols
+      t = t.replace(/\\cdot/g, '·').replace(/\\times/g, '×');
+      t = t.replace(/\\leq/g, '≤').replace(/\\geq/g, '≥').replace(/\\neq/g, '≠');
+      t = t.replace(/\\cap/g, '∩').replace(/\\cup/g, '∪').replace(/\\subseteq/g, '⊆');
+      t = t.replace(/\\approx/g, '≈').replace(/\\infty/g, '∞');
+      // Any remaining \command → just the command name (e.g. \delta → delta, \pi → pi)
+      t = t.replace(/\\([a-zA-Z]+)/g, '$1');
+      // Clean up sub/superscript braces
+      t = t.replace(/[_^]\{([^}]+)\}/g, '_$1').replace(/[_^]([a-zA-Z0-9])/g, '_$1');
+      t = t.replace(/[{}]/g, '');
+      return t.trim();
+    };
+    text = text.replace(/\$\$([^$]+)\$\$/g, (_, m) => mathToText(m));
+    text = text.replace(/\$([^$\n]+)\$/g, (_, m) => mathToText(m));
     // Normalize spaces but keep newlines
     text = text.replace(/[ \t]+/g, ' ').replace(/\n[ \t]*/g, '\n').trim();
     text = text.replace(/\n{2,}/g, '\n');
