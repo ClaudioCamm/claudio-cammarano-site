@@ -1064,6 +1064,31 @@ figcaption {
   flex-wrap: wrap;
 }
 
+.abstract-essay-card {
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.abstract-essay-card:last-child {
+  border-bottom: none;
+}
+
+.abstract-essay-card-title {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.35;
+  margin: 4px 0 0;
+}
+
+.abstract-essay-card-title a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.abstract-essay-card-title a:hover {
+  color: var(--color-primary);
+}
+
 .abstract-essay a {
   font-size: 17px;
   color: var(--color-text);

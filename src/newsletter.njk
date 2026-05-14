@@ -20,13 +20,21 @@ description: "The Abstract — Reading the Content Economy from Europe. A newsle
 
     {% if abstract.posts and abstract.posts.length > 0 %}
     <h2>Recent essays</h2>
-    <ul class="abstract-essays">
-        {% for post in abstract.posts %}
-        <li class="abstract-essay">
-            <a href="{{ post.url }}" target="_blank" rel="noopener">{{ post.title }}</a>
-            {% if post.date %}<span class="abstract-essay-date">{{ post.date }}</span>{% endif %}
-        </li>
-        {% endfor %}
-    </ul>
+    {% for post in abstract.posts %}
+    <article class="abstract-essay-card">
+      <div class="article-meta">
+        {% if post.date %}<span class="article-date">{{ post.date }}</span>{% endif %}
+        <span class="article-tag">The Abstract</span>
+      </div>
+      <h3 class="abstract-essay-card-title">
+        <a href="{{ post.url }}" target="_blank" rel="noopener">{{ post.title }} ↗</a>
+      </h3>
+      {% if loop.index0 == 0 and post.excerpt %}
+      <p class="abstract-block-post-excerpt">{{ post.excerpt }}</p>
+      {% elif loop.index0 > 0 and post.subtitle %}
+      <p class="abstract-block-post-excerpt">{{ post.subtitle }}</p>
+      {% endif %}
+    </article>
+    {% endfor %}
     {% endif %}
 </div>

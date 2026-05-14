@@ -69,12 +69,17 @@ description: "Saggi originali su editoria, marketing, semiotica e cultura digita
   </div>
   {% for post in abstract.posts | limit(5) %}
   <article class="abstract-block-post">
-    {% if post.date %}<span class="article-date">{{ post.date }}</span>{% endif %}
+    <div class="article-meta">
+      {% if post.date %}<span class="article-date">{{ post.date }}</span>{% endif %}
+      <span class="article-tag">The Abstract</span>
+    </div>
     <h3 class="abstract-block-post-title">
       <a href="{{ post.url }}" target="_blank" rel="noopener">{{ post.title }} ↗</a>
     </h3>
     {% if loop.index0 == 0 and post.excerpt %}
     <p class="abstract-block-post-excerpt">{{ post.excerpt }}</p>
+    {% elif loop.index0 > 0 and post.subtitle %}
+    <p class="abstract-block-post-excerpt">{{ post.subtitle }}</p>
     {% endif %}
   </article>
   {% endfor %}

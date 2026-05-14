@@ -47,9 +47,10 @@ module.exports = async function () {
             const date    = formatDateEn(get('pubDate').trim());
             const rawDesc = extractText(get('description'));
             const excerpt = rawDesc.length > 200 ? rawDesc.slice(0, 197) + '…' : rawDesc;
+            const subtitle = rawDesc.length > 80 ? rawDesc.slice(0, 77) + '…' : rawDesc;
 
             if (title && url) {
-              posts.push({ title, url, date, excerpt });
+              posts.push({ title, url, date, excerpt, subtitle });
             }
           }
 
