@@ -28,6 +28,13 @@ description: "Saggi originali su editoria, marketing, semiotica e cultura digita
     {% if post.data.series %}<div class="article-series-card-label">{{ post.data.series }}</div>{% endif %}
     <div class="article-meta">
       <span class="article-date">{{ post.date | formatDate }}</span>
+      {% if post.data.category %}
+        {% if post.data.category.length %}
+          {% for cat in post.data.category %}<span class="article-tag">{{ cat }}</span>{% endfor %}
+        {% else %}
+          <span class="article-tag">{{ post.data.category }}</span>
+        {% endif %}
+      {% endif %}
       {% if post.templateContent %}<span class="reading-time">{{ post.templateContent | readingTime }}</span>{% endif %}
     </div>
     <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
@@ -39,6 +46,13 @@ description: "Saggi originali su editoria, marketing, semiotica e cultura digita
     {% if post.data.series %}<div class="article-series-card-label">{{ post.data.series }}</div>{% endif %}
     <div class="article-meta">
       <span class="article-date">{{ post.date | formatDate }}</span>
+      {% if post.data.category %}
+        {% if post.data.category.length %}
+          {% for cat in post.data.category %}<span class="article-tag">{{ cat }}</span>{% endfor %}
+        {% else %}
+          <span class="article-tag">{{ post.data.category }}</span>
+        {% endif %}
+      {% endif %}
       {% if post.templateContent %}<span class="reading-time">{{ post.templateContent | readingTime }}</span>{% endif %}
     </div>
     <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
@@ -59,7 +73,7 @@ description: "Saggi originali su editoria, marketing, semiotica e cultura digita
     <h3 class="abstract-block-post-title">
       <a href="{{ post.url }}" target="_blank" rel="noopener">{{ post.title }} ↗</a>
     </h3>
-    {% if post.excerpt %}
+    {% if loop.index0 == 0 and post.excerpt %}
     <p class="abstract-block-post-excerpt">{{ post.excerpt }}</p>
     {% endif %}
   </article>
@@ -76,6 +90,9 @@ description: "Saggi originali su editoria, marketing, semiotica e cultura digita
       <span class="curated-badge">Curated</span>
       {% if post.data.source %}
       <span class="curated-source-label">· {{ post.data.source }}</span>
+      {% endif %}
+      {% if post.data.tags %}
+        {% for tag in post.data.tags %}{% if tag != 'curated' %}<span class="article-tag">{{ tag }}</span>{% endif %}{% endfor %}
       {% endif %}
     </div>
     <h2><a href="{{ post.data.external_url }}" target="_blank">{{ post.data.title }} ↗</a></h2>

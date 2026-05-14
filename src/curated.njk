@@ -13,6 +13,9 @@ title: Curated
         {% if item.data.source %}
         <span class="curated-source-label">· {{ item.data.source }}</span>
         {% endif %}
+        {% if item.data.tags %}
+          {% for tag in item.data.tags %}{% if tag != 'curated' %}<span class="article-tag">{{ tag }}</span>{% endif %}{% endfor %}
+        {% endif %}
     </div>
     <h2><a href="{{ item.data.external_url }}" target="_blank">{{ item.data.title }} ↗</a></h2>
     {% if item.data.description %}
