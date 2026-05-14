@@ -6,22 +6,34 @@ title: Writings
 <h1>Writings</h1>
 
 {% for post in collections.writings %}
-<article class="article-card">
+  {% if loop.index0 == 0 %}
+  <article class="article-card article-card--featured">
+    {% if post.data.series %}<div class="article-series-card-label">{{ post.data.series }}</div>{% endif %}
     <div class="article-meta">
-        <span class="article-date">{{ post.date | formatDate }}</span>
-        {% if post.data.category %}
-          {% if post.data.category.length %}
-            {% for cat in post.data.category %}
-            <span class="article-tag">{{ cat }}</span>
-            {% endfor %}
-          {% else %}
+      <span class="article-date">{{ post.date | formatDate }}</span>
+      {% if post.data.category %}
+        {% if post.data.category.length %}
+          {% for cat in post.data.category %}<span class="article-tag">{{ cat }}</span>{% endfor %}
+        {% else %}
           <span class="article-tag">{{ post.data.category }}</span>
-          {% endif %}
         {% endif %}
+      {% endif %}
+      {% if post.templateContent %}<span class="reading-time">{{ post.templateContent | readingTime }}</span>{% endif %}
     </div>
     <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
-    {% if post.data.description %}
-    <p>{{ post.data.description }}</p>
-    {% endif %}
-</article>
+    {% if post.data.description %}<p class="featured-description">{{ post.data.description }}</p>{% endif %}
+  </article>
+  {% if collections.writings.length > 1 %}<div class="writings-secondary-grid">{% endif %}
+  {% else %}
+  <article class="article-card article-card--secondary">
+    {% if post.data.series %}<div class="article-series-card-label">{{ post.data.series }}</div>{% endif %}
+    <div class="article-meta">
+      <span class="article-date">{{ post.date | formatDate }}</span>
+      {% if post.templateContent %}<span class="reading-time">{{ post.templateContent | readingTime }}</span>{% endif %}
+    </div>
+    <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+    {% if post.data.description %}<p>{{ post.data.description }}</p>{% endif %}
+  </article>
+  {% if loop.last and collections.writings.length > 1 %}</div>{% endif %}
+  {% endif %}
 {% endfor %}

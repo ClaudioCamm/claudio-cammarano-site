@@ -77,7 +77,38 @@ module.exports = function(eleventyConfig) {
     if (!str) return '';
     return JSON.stringify(String(str)).slice(1, -1);
   });
-  
+
+  eleventyConfig.addFilter("readingTime", function(content) {
+    if (!content) return '';
+    const text = content.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+    const words = text.split(' ').filter(w => w.length > 0).length;
+    const minutes = Math.ceil(words / 200);
+    return minutes + ' min';
+  });
+
+  eleventyConfig.addFilter("limit", function(arr, count) {
+    if (!arr) return [];
+    return arr.slice(0, count);
+  });
+
+  eleventyConfig.addFilter("excerpt", function(content, maxLen) {
+    if (!content) return '';
+    maxLen = maxLen || 420;
+    let text = content.replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '');
+    text = text.replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '');
+    text = text.replace(/<figure[^>]*>[\s\S]*?<\/figure>/gi, '');
+    // Preserve heading text as its own line before stripping HTML
+    text = text.replace(/<\/h[1-6]>/gi, '\n');
+    text = text.replace(/<[^>]*>/g, ' ');
+    // Normalize spaces but keep newlines
+    text = text.replace(/[ \t]+/g, ' ').replace(/\n[ \t]*/g, '\n').trim();
+    text = text.replace(/\n{2,}/g, '\n');
+    if (text.length <= maxLen) return text;
+    const truncated = text.substring(0, maxLen);
+    const lastSpace = truncated.lastIndexOf(' ');
+    return truncated.substring(0, lastSpace > Math.floor(maxLen * 0.5) ? lastSpace : maxLen) + '…';
+  });
+
   return {
     dir: {
       input: "src",

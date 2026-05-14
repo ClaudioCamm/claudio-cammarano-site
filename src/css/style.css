@@ -22,7 +22,7 @@
   --color-border: #e0e0e0;
   --color-border-light: #eee;
 
-  --font-serif: Georgia, "Times New Roman", serif;
+  --font-serif: 'Source Serif 4', Georgia, "Times New Roman", serif;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
   --spacing-xs: 8px;
@@ -125,10 +125,10 @@ main {
   letter-spacing: 0.3px;
 }
 
-/* === NAVIGATION (sans-serif) === */
+/* === NAVIGATION (integrata nel header blu) === */
 .site-nav {
-  border-bottom: 1px solid var(--color-border);
-  background: var(--color-bg);
+  background: var(--color-primary);
+  border-bottom: 1px solid rgba(255,255,255,0.12);
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
@@ -146,10 +146,10 @@ main {
 .site-nav a {
   display: block;
   font-family: var(--font-sans);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 400;
-  color: var(--color-text-light);
-  padding: 10px 14px;
+  color: rgba(255,255,255,0.5);
+  padding: 9px 14px;
   white-space: nowrap;
   text-decoration: none;
   border-bottom: 2px solid transparent;
@@ -157,20 +157,20 @@ main {
 }
 
 .site-nav a:hover {
-  color: var(--color-text);
+  color: rgba(255,255,255,0.85);
 }
 
 .site-nav a.active {
-  color: var(--color-text);
+  color: #ffffff;
   font-weight: 500;
-  border-bottom-color: var(--color-text);
+  border-bottom-color: rgba(255,255,255,0.7);
 }
 
 .nav-badge {
   font-family: var(--font-sans);
   font-size: 9px;
-  background: #e6f1fb;
-  color: var(--color-primary-medium);
+  background: rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.7);
   padding: 1px 6px;
   border-radius: 3px;
   margin-left: 4px;
@@ -179,8 +179,8 @@ main {
 }
 
 .nav-badge--new {
-  background: #faeeda;
-  color: #854F0B;
+  background: rgba(239,159,39,0.3);
+  color: #fac775;
 }
 
 /* === FOOTER (sans-serif chrome) === */
@@ -281,7 +281,7 @@ main {
 }
 
 .article-card > p {
-  font-size: 16px;
+  font-size: 14px;
   color: var(--color-text-light);
   line-height: 1.6;
   margin-bottom: 0;
@@ -291,6 +291,15 @@ main {
 .article-card--curated {
   border-left: 3px solid #85B7EB;
   padding-left: var(--spacing-sm);
+}
+
+.article-card--curated h2 {
+  font-size: 17px;
+}
+
+.article-card--curated > p {
+  font-size: 14px;
+  line-height: 1.55;
 }
 
 .curated-badge {
@@ -387,6 +396,118 @@ article.article-content,
   color: var(--color-text-light);
   line-height: 1.5;
   font-style: italic;
+  margin-bottom: 0;
+}
+
+/* === SERIE LABEL (card e articolo) === */
+.article-series-card-label {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-primary-medium);
+  margin-bottom: 5px;
+}
+
+/* === READING TIME === */
+.reading-time {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  color: var(--color-text-hint);
+}
+.reading-time::before {
+  content: '· ';
+}
+
+/* === FEATURED ARTICLE (homepage + writings) === */
+.article-card--featured {
+  padding: var(--spacing-md) 0 var(--spacing-lg);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: var(--spacing-md);
+}
+
+.article-card--featured h2 {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 4px 0 10px;
+}
+
+.article-card--featured h2 a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.article-card--featured h2 a:hover {
+  color: var(--color-primary);
+}
+
+/* Higher specificity needed to beat .article-card > p (0,1,1) */
+.article-card--featured .featured-description {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  font-style: italic;
+  color: var(--color-primary);
+  line-height: 1.55;
+  margin-bottom: 12px;
+}
+
+/* Subtitle on secondary cards */
+.article-card--secondary .article-card-subtitle {
+  font-family: var(--font-serif);
+  font-size: 14px;
+  font-style: italic;
+  color: var(--color-primary);
+  line-height: 1.5;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+/* Prose preview excerpt */
+.article-excerpt {
+  font-size: 15px;
+  color: var(--color-text-light);
+  line-height: 1.65;
+  margin-bottom: 0;
+  white-space: pre-line;
+}
+
+.article-card--secondary .article-excerpt {
+  font-size: 14px;
+}
+
+/* === SECONDARY ARTICLES === */
+.writings-secondary-grid {
+  display: block;
+}
+
+.article-card--secondary {
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.article-card--secondary h2 {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.35;
+  margin: 3px 0 0;
+}
+
+.article-card--secondary h2 a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.article-card--secondary h2 a:hover {
+  color: var(--color-primary);
+}
+
+.article-card--secondary p {
+  font-size: 14px;
+  color: var(--color-text-light);
+  line-height: 1.5;
+  margin-top: 4px;
   margin-bottom: 0;
 }
 
@@ -1259,11 +1380,6 @@ body.irene-page .site-nav a.active {
     font-size: 12px;
   }
 
-  .site-nav a {
-    font-size: 12px;
-    padding: 8px 10px;
-  }
-
   .container {
     padding: 0 var(--spacing-sm);
   }
@@ -1322,5 +1438,18 @@ body.irene-page .site-nav a.active {
 
   .about-main p {
     font-size: 16px;
+  }
+
+  .writings-secondary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .article-card--featured h2 {
+    font-size: 22px;
+  }
+
+  .site-nav a {
+    font-size: 12px;
+    padding: 8px 10px;
   }
 }

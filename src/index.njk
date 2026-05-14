@@ -4,25 +4,47 @@ title: "Editoria, marketing, idee"
 description: "Saggi originali su editoria, marketing, semiotica e cultura digitale. Di Claudio Cammarano — marketing director, docente, co-fondatore di Irene Media."
 ---
 
-{% for post in collections.writings %}
-  <article class="article-card">
+{% for post in collections.writings | limit(10) %}
+  {% if loop.index0 == 0 %}
+  <article class="article-card article-card--featured">
+    {% if post.data.series %}<div class="article-series-card-label">{{ post.data.series }}</div>{% endif %}
     <div class="article-meta">
       <span class="article-date">{{ post.date | formatDate }}</span>
       {% if post.data.category %}
         {% if post.data.category.length %}
-          {% for cat in post.data.category %}
-          <span class="article-tag">{{ cat }}</span>
-          {% endfor %}
+          {% for cat in post.data.category %}<span class="article-tag">{{ cat }}</span>{% endfor %}
         {% else %}
-        <span class="article-tag">{{ post.data.category }}</span>
+          <span class="article-tag">{{ post.data.category }}</span>
         {% endif %}
       {% endif %}
+      {% if post.templateContent %}<span class="reading-time">{{ post.templateContent | readingTime }}</span>{% endif %}
     </div>
     <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
-    {% if post.data.description %}
-    <p>{{ post.data.description }}</p>
-    {% endif %}
+    {% if post.data.description %}<p class="featured-description">{{ post.data.description }}</p>{% endif %}
+    {% if post.templateContent %}<p class="article-excerpt">{{ post.templateContent | excerpt(750) }}</p>{% endif %}
   </article>
+  {% elif loop.index0 <= 2 %}
+  <article class="article-card article-card--secondary">
+    {% if post.data.series %}<div class="article-series-card-label">{{ post.data.series }}</div>{% endif %}
+    <div class="article-meta">
+      <span class="article-date">{{ post.date | formatDate }}</span>
+      {% if post.templateContent %}<span class="reading-time">{{ post.templateContent | readingTime }}</span>{% endif %}
+    </div>
+    <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+    {% if post.data.description %}<p class="article-card-subtitle">{{ post.data.description }}</p>{% endif %}
+    {% if post.templateContent %}<p class="article-excerpt">{{ post.templateContent | excerpt }}</p>{% endif %}
+  </article>
+  {% else %}
+  <article class="article-card article-card--secondary">
+    {% if post.data.series %}<div class="article-series-card-label">{{ post.data.series }}</div>{% endif %}
+    <div class="article-meta">
+      <span class="article-date">{{ post.date | formatDate }}</span>
+      {% if post.templateContent %}<span class="reading-time">{{ post.templateContent | readingTime }}</span>{% endif %}
+    </div>
+    <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+    {% if post.data.description %}<p class="article-card-subtitle">{{ post.data.description }}</p>{% endif %}
+  </article>
+  {% endif %}
 {% endfor %}
 
 {% if abstract.posts and abstract.posts.length > 0 %}
@@ -31,7 +53,7 @@ description: "Saggi originali su editoria, marketing, semiotica e cultura digita
     <span class="abstract-block-label">From The Abstract</span>
     <p class="abstract-block-tagline">Reading the Content Economy from Europe</p>
   </div>
-  {% for post in abstract.posts %}
+  {% for post in abstract.posts | limit(5) %}
   <article class="abstract-block-post">
     {% if post.date %}<span class="article-date">{{ post.date }}</span>{% endif %}
     <h3 class="abstract-block-post-title">
@@ -48,7 +70,7 @@ description: "Saggi originali su editoria, marketing, semiotica e cultura digita
 </div>
 {% endif %}
 
-{% for post in collections.curated %}
+{% for post in collections.curated | limit(3) %}
   <article class="article-card article-card--curated">
     <div class="article-meta">
       <span class="curated-badge">Curated</span>

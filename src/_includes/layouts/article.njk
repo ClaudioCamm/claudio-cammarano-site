@@ -33,6 +33,7 @@ og_type: article
         <span class="article-tag">{{ category }}</span>
         {% endif %}
       {% endif %}
+      {% if content %}<span class="reading-time">{{ content | readingTime }}</span>{% endif %}
     </div>
     {% if series %}<p class="article-series">{{ series }}</p>{% endif %}
     <h1>{{ title }}</h1>
