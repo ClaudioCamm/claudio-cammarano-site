@@ -1,6 +1,7 @@
 ---
 layout: layouts/article.njk
 title: "L'ombra del passato"
+series: "Teoria dei giochi e ordine internazionale, II"
 date: 2026-05-04
 category: ["Geopolitica", "Teoria dei giochi", "Regimi politici"]
 lang: "🇮🇹 Italiano"
@@ -25,7 +26,7 @@ window.MathJax = {
   <figcaption>Shepard Fairey con l'artista e curatrice Iryna Kanishcheva, a Gainesville, in Florida.</figcaption>
 </figure>
 
-Non molto tempo fa, da queste parti, sostenevo che lo stile negoziale di Trump fosse leggibile come il segnale locale — forse uno dei tanti - di un collasso strutturale del fattore di sconto della politica internazionale. Notavo anche che dentro quel collasso un attore terzo — chiamato C, ed era abbastanza chiaro di chi parlassi — stesse beneficiando di un vantaggio strutturale di prevedibilità che fosse indipendente da qualunque considerazione morale sul regime che lo governa.
+Non molto tempo fa, da queste parti, sostenevo che lo stile negoziale di Trump fosse leggibile come il segnale locale — forse uno dei tanti — di un collasso strutturale del fattore di sconto della politica internazionale. Notavo anche che dentro quel collasso un attore terzo — chiamato C, ed era abbastanza chiaro di chi parlassi — stesse beneficiando di un vantaggio strutturale di prevedibilità che fosse indipendente da qualunque considerazione morale sul regime che lo governa.
 
 Il modello era netto: A defeziona, C resta fermo, gli altri ricalibrano i propri $\delta$ (che è un po' la misura delle loro aspettative di ritorno per le interazioni *future*) e spostano peso strategico verso il giocatore più affidabile. Verso la fine accennavo *en passant* all'ipotesi che C non si limitasse a stare fermo, ma defezionasse silenziosamente verso A vendendo satelliti militari all'attore I, potenza regionale teocratica che controlla lo Stretto di Hormuz. Si trattava una congettura analitica?
 
@@ -142,7 +143,7 @@ Non sostengo, e mi pare importante chiarirlo per evitare scivolate retoriche, ch
 
 Il modo più sintetico per visualizzare l'effetto sul payoff iterato è mostrare quanto rapidamente il guadagno di lungo periodo si erode al variare di $\rho$. La Tabella 2 riporta il payoff atteso scontato di un giocatore che, in un sistema cooperativo con $\delta$ = 0,9 (e quindi con alto incentivo alla cooperazione), sarebbe altrimenti destinato all'ottimo *R* = 3 per round, e che invece è costretto a giocare con la probabilità indicata la mossa vincolata *P* = 1. Il calcolo è banale,
 
-$E[\Pi]$ = (1 − ρ) · 30 + ρ · 10
+$$E[\Pi] = (1 - \rho) \cdot 30 + \rho \cdot 10$$
 
 ma il risultato è illuminante: bastano pochi punti percentuali di $\rho$ per spazzare via gran parte del vantaggio cooperativo costruito su orizzonte infinito.
 
@@ -343,6 +344,10 @@ Atlantic Council. (2026, 25 marzo). The Axis of Evasion: Behind China's Oil Trad
 Axelrod, R. (1984). The Evolution of Cooperation. New York: Basic Books.
 
 Fearon, J. D. (1994). Domestic Political Audiences and the Escalation of International Disputes. American Political Science Review, 88(3), 577—592.
+
+Fukuyama, F. (1989). The End of History? *The National Interest*, 16, 3–18.
+
+Fukuyama, F. (1992). *The End of History and the Last Man*. New York: Free Press.
 
 Gabuev, A., & Vakulenko, S. (2026, gennaio). Russia's Diminished Standing as a Patron Power. Foreign Affairs.
 

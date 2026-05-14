@@ -366,6 +366,15 @@ article.article-content,
   margin-bottom: var(--spacing-lg);
 }
 
+.article-series {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-xs, 8px);
+}
+
 .article-full h1 {
   font-size: 32px;
   font-weight: 500;

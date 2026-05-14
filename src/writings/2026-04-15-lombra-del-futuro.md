@@ -1,6 +1,7 @@
 ---
 layout: layouts/article.njk
 title: "L'ombra del futuro"
+series: "Teoria dei giochi e ordine internazionale, I"
 date: 2026-04-15
 category: ["Geopolitica", "Teoria dei giochi", "Democrazia"]
 lang: "🇮🇹 Italiano"

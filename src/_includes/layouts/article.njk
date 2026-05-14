@@ -34,6 +34,7 @@ og_type: article
         {% endif %}
       {% endif %}
     </div>
+    {% if series %}<p class="article-series">{{ series }}</p>{% endif %}
     <h1>{{ title }}</h1>
     {% if description %}
     <p class="article-description">{{ description }}</p>
