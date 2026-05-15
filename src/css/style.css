@@ -2084,17 +2084,28 @@ body.irene-page .site-nav a.active {
   /* Hamburger visibile, nav collassata */
   .nav-toggle {
     display: flex;
+    margin-left: 0;
+    grid-area: toggle;
   }
 
   .header-top-inner {
-    flex-direction: row;
+    display: grid;
+    grid-template-areas: "name toggle" "tagline tagline";
+    grid-template-columns: 1fr auto;
     align-items: center;
-    flex-wrap: wrap;
     gap: 0;
   }
 
+  .header-name {
+    grid-area: name;
+  }
+
   .header-tagline {
-    display: none;
+    grid-area: tagline;
+    display: block;
+    font-size: 11px;
+    padding-bottom: 6px;
+    margin-left: 0;
   }
 
   /* Search si sposta dentro il menu hamburger */
