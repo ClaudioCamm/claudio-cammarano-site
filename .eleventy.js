@@ -183,6 +183,24 @@ module.exports = function(eleventyConfig) {
     return arr.slice(0, count);
   });
 
+  eleventyConfig.addFilter("getSeriesNav", function(collection, seriesBaseName, currentUrl) {
+    if (!seriesBaseName) return null;
+    var posts = collection.filter(function(p) {
+      var s = p.data.series;
+      if (!s) return false;
+      var base = s.replace(/,\s+[IVXLCDM]+$/i, '').trim();
+      return base === seriesBaseName;
+    }).sort(function(a, b) { return a.date - b.date; });
+    var index = posts.findIndex(function(p) { return p.url === currentUrl; });
+    if (index === -1 || posts.length < 2) return null;
+    return {
+      prev: index > 0 ? posts[index - 1] : null,
+      next: index < posts.length - 1 ? posts[index + 1] : null,
+      position: index + 1,
+      total: posts.length
+    };
+  });
+
   eleventyConfig.addFilter("seriesBaseName", function(str) {
     if (!str) return '';
     return str.replace(/,\s+[IVXLCDM]+$/i, '').trim();

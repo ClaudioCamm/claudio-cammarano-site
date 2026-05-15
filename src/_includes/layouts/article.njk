@@ -94,7 +94,7 @@ og_type: article
     </div>
   </header>
   
-  <div class="article-body">
+  <div class="article-body" data-pagefind-body>
     {{ content | safe }}
   </div>
 </article>
@@ -223,6 +223,39 @@ og_type: article
   });
 })();
 </script>
+
+{% if series %}
+  {% set seriesNav = collections.writings | getSeriesNav(series | seriesBaseName, page.url) %}
+  {% if seriesNav %}
+  <div class="series-nav">
+    <div class="series-nav-header">
+      <span class="series-nav-label">Serie</span>
+      <a href="/serie/{{ series | seriesBaseName | slugify }}/" class="series-nav-title">{{ series | seriesBaseName }}</a>
+      <span class="series-nav-count">{{ seriesNav.position }} di {{ seriesNav.total }}</span>
+    </div>
+    <div class="series-nav-items">
+      {% if seriesNav.prev %}
+      <a href="{{ seriesNav.prev.url }}" class="series-nav-item series-nav-item--prev">
+        <span class="series-nav-direction">← Precedente</span>
+        <span class="series-nav-item-title">{{ seriesNav.prev.data.title }}</span>
+      </a>
+      {% else %}<div></div>{% endif %}
+      {% if seriesNav.next %}
+      <a href="{{ seriesNav.next.url }}" class="series-nav-item series-nav-item--next">
+        <span class="series-nav-direction">Successivo →</span>
+        <span class="series-nav-item-title">{{ seriesNav.next.data.title }}</span>
+      </a>
+      {% endif %}
+    </div>
+  </div>
+  {% endif %}
+{% endif %}
+
+<div class="newsletter-cta">
+  <p class="newsletter-cta-label">The Abstract</p>
+  <p class="newsletter-cta-text">Analisi su content industries, AI e media vista da una prospettiva europea. Esce su Substack.</p>
+  <a href="https://claudiocammarano.substack.com" target="_blank" rel="noopener" class="newsletter-cta-btn">Leggi e iscriviti →</a>
+</div>
 
 {% set related = collections.writings | getRelatedPosts(page.url, category) %}
 {% if related.length %}

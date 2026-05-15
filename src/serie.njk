@@ -43,12 +43,15 @@ eleventyComputed:
     <p class="tag-page-label">Serie</p>
     <h1 class="tag-page-title">{{ serie }}</h1>
     <p class="tag-page-count">{{ seriePosts.length }} {% if seriePosts.length == 1 %}articolo{% else %}articoli{% endif %}</p>
+    {% if seriesDescriptions[serie] %}
+    <p class="tag-page-intro">{{ seriesDescriptions[serie] }}</p>
+    {% endif %}
   </header>
 
   <div class="tag-page-posts">
     {% for post in seriePosts %}
     <article class="article-card article-card--secondary">
-      <div class="article-series-card-label">{{ post.data.series }}</div>
+      <div class="article-series-card-label"><a href="/serie/{{ post.data.series | seriesBaseName | slugify }}/">{{ post.data.series }}</a></div>
       <div class="article-meta">
         <span class="article-date">{{ post.date | formatDate }}</span>
         {% if post.data.category %}

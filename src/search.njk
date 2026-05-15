@@ -1,0 +1,35 @@
+---
+layout: layouts/base.njk
+title: "Cerca"
+description: "Cerca tra tutti gli articoli di claudiocammarano.com"
+permalink: /search/
+eleventyExcludeFromCollections: true
+pagefind: false
+---
+
+<div class="search-page">
+  <header class="tag-page-header">
+    <p class="tag-page-label">Ricerca</p>
+    <h1 class="tag-page-title">Cerca</h1>
+  </header>
+  <div id="search"></div>
+</div>
+
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="/pagefind/pagefind-ui.js"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+    new PagefindUI({
+      element: '#search',
+      showImages: false,
+      translations: {
+        placeholder: 'Cerca negli articoli…',
+        zero_results: 'Nessun risultato per [SEARCH_TERM]',
+        many_results: '[COUNT] risultati per [SEARCH_TERM]',
+        one_result: '[COUNT] risultato per [SEARCH_TERM]',
+        load_more: 'Carica altri risultati',
+        searching: 'Ricerca in corso…'
+      }
+    });
+  });
+</script>

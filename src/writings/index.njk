@@ -8,7 +8,7 @@ title: Writings
 {% for post in collections.writings %}
   {% if loop.index0 == 0 %}
   <article class="article-card article-card--featured">
-    {% if post.data.series %}<div class="article-series-card-label">{{ post.data.series }}</div>{% endif %}
+    {% if post.data.series %}<div class="article-series-card-label"><a href="/serie/{{ post.data.series | seriesBaseName | slugify }}/">{{ post.data.series }}</a></div>{% endif %}
     <div class="article-meta">
       <span class="article-date">{{ post.date | formatDate }}</span>
       {% if post.data.category %}
@@ -26,7 +26,7 @@ title: Writings
   {% if collections.writings.length > 1 %}<div class="writings-secondary-grid">{% endif %}
   {% else %}
   <article class="article-card article-card--secondary">
-    {% if post.data.series %}<div class="article-series-card-label">{{ post.data.series }}</div>{% endif %}
+    {% if post.data.series %}<div class="article-series-card-label"><a href="/serie/{{ post.data.series | seriesBaseName | slugify }}/">{{ post.data.series }}</a></div>{% endif %}
     <div class="article-meta">
       <span class="article-date">{{ post.date | formatDate }}</span>
       {% if post.data.category %}

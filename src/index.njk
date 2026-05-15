@@ -42,7 +42,7 @@ description: "Saggi originali su editoria, marketing, semiotica e cultura digita
 {% for post in collections.writings | limit(10) %}
   {% if loop.index0 == 0 %}
   <article class="article-card article-card--featured">
-    {% if post.data.series %}<div class="article-series-card-label">{{ post.data.series }}</div>{% endif %}
+    {% if post.data.series %}<div class="article-series-card-label"><a href="/serie/{{ post.data.series | seriesBaseName | slugify }}/">{{ post.data.series }}</a></div>{% endif %}
     <div class="article-meta">
       <span class="article-date">{{ post.date | formatDate }}</span>
       {% if post.data.category %}
@@ -60,7 +60,7 @@ description: "Saggi originali su editoria, marketing, semiotica e cultura digita
   </article>
   {% elif loop.index0 <= 2 %}
   <article class="article-card article-card--secondary">
-    {% if post.data.series %}<div class="article-series-card-label">{{ post.data.series }}</div>{% endif %}
+    {% if post.data.series %}<div class="article-series-card-label"><a href="/serie/{{ post.data.series | seriesBaseName | slugify }}/">{{ post.data.series }}</a></div>{% endif %}
     <div class="article-meta">
       <span class="article-date">{{ post.date | formatDate }}</span>
       {% if post.data.category %}
@@ -78,7 +78,7 @@ description: "Saggi originali su editoria, marketing, semiotica e cultura digita
   </article>
   {% else %}
   <article class="article-card article-card--secondary">
-    {% if post.data.series %}<div class="article-series-card-label">{{ post.data.series }}</div>{% endif %}
+    {% if post.data.series %}<div class="article-series-card-label"><a href="/serie/{{ post.data.series | seriesBaseName | slugify }}/">{{ post.data.series }}</a></div>{% endif %}
     <div class="article-meta">
       <span class="article-date">{{ post.date | formatDate }}</span>
       {% if post.data.category %}
