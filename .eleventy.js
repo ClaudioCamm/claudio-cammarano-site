@@ -12,11 +12,19 @@ module.exports = function(eleventyConfig) {
 
   // === TRANSFORMS ===
 
-  // Add loading="lazy" and decoding="async" to all images that don't already have them.
+  // Add loading="lazy" and decoding="async" to all images.
+  // The first image in an article gets fetchpriority="high" and loading="eager" instead (LCP).
   eleventyConfig.addTransform("lazyimages", function(content, outputPath) {
     if (outputPath && outputPath.endsWith(".html")) {
+      var firstImg = true;
+      var isArticle = content.indexOf('class="article-full"') !== -1;
       return content.replace(/<img([^>]*)>/gi, function(match, attrs) {
+        // Skip images that already have loading= set
         if (attrs.indexOf('loading=') !== -1) return match;
+        if (isArticle && firstImg) {
+          firstImg = false;
+          return '<img' + attrs + ' loading="eager" decoding="async" fetchpriority="high">';
+        }
         return '<img' + attrs + ' loading="lazy" decoding="async">';
       });
     }
@@ -77,6 +85,19 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addCollection("learning", function(collectionApi) {
     return collectionApi.getFilteredByGlob("src/learning/*.md");
+  });
+
+  // All unique series (base names, stripped of episode number) from writings
+  eleventyConfig.addCollection("seriesList", function(collectionApi) {
+    var seriesSet = new Set();
+    collectionApi.getFilteredByGlob("src/writings/*.md").forEach(function(item) {
+      var s = item.data.series;
+      if (!s) return;
+      // Strip trailing ", I", ", II", ", III", etc.
+      var base = s.replace(/,\s+[IVXLCDM]+$/i, '').trim();
+      seriesSet.add(base);
+    });
+    return Array.from(seriesSet).sort();
   });
 
   // All unique category tags from writings
@@ -160,6 +181,21 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("limit", function(arr, count) {
     if (!arr) return [];
     return arr.slice(0, count);
+  });
+
+  eleventyConfig.addFilter("seriesBaseName", function(str) {
+    if (!str) return '';
+    return str.replace(/,\s+[IVXLCDM]+$/i, '').trim();
+  });
+
+  eleventyConfig.addFilter("filterBySeries", function(collection, baseName) {
+    if (!baseName) return [];
+    return collection.filter(function(p) {
+      var s = p.data.series;
+      if (!s) return false;
+      var base = s.replace(/,\s+[IVXLCDM]+$/i, '').trim();
+      return base === baseName;
+    }).sort(function(a, b) { return a.date - b.date; });
   });
 
   eleventyConfig.addFilter("slugify", function(str) {

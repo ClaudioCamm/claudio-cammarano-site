@@ -9,17 +9,50 @@ og_type: article
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "{{ title | jsonEscape | safe }}",
-  "description": "{{ description | jsonEscape | safe }}",
-  "datePublished": "{{ date | isoDate }}",
-  "url": "https://claudiocammarano.com{{ page.url }}",
-  "image": "{% if og_image %}https://claudiocammarano.com{{ og_image }}{% else %}https://claudiocammarano.com/images/og-default.png{% endif %}",
-  "author": {
-    "@type": "Person",
-    "name": "Claudio Cammarano",
-    "url": "https://claudiocammarano.com/about/"
-  }
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "{{ title | jsonEscape | safe }}",
+      "description": "{{ description | jsonEscape | safe }}",
+      "datePublished": "{{ date | isoDate }}",
+      "url": "https://claudiocammarano.com{{ page.url }}",
+      "image": "{% if og_image %}https://claudiocammarano.com{{ og_image }}{% else %}https://claudiocammarano.com/images/og-default.png{% endif %}",
+      "author": {
+        "@type": "Person",
+        "@id": "https://claudiocammarano.com/#person",
+        "name": "Claudio Cammarano",
+        "url": "https://claudiocammarano.com/about/"
+      },
+      "publisher": {
+        "@type": "Person",
+        "@id": "https://claudiocammarano.com/#person"
+      },
+      "isPartOf": { "@id": "https://claudiocammarano.com/#website" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://claudiocammarano.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Writings",
+          "item": "https://claudiocammarano.com/writings/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "{{ title | jsonEscape | safe }}",
+          "item": "https://claudiocammarano.com{{ page.url }}"
+        }
+      ]
+    }
+  ]
 }
 </script>
 
@@ -43,7 +76,7 @@ og_type: article
       {% endif %}
       {% if content %}<span class="reading-time">{{ content | readingTime }}</span>{% endif %}
     </div>
-    {% if series %}<p class="article-series">{{ series }}</p>{% endif %}
+    {% if series %}<p class="article-series"><a href="/serie/{{ series | seriesBaseName | slugify }}/">{{ series }}</a></p>{% endif %}
     <h1>{{ title }}</h1>
     {% if description %}
     <p class="article-description">{{ description }}</p>

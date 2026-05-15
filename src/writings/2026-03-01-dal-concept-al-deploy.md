@@ -5,6 +5,7 @@ date: 2026-03-01
 category: ["AI", "Vibe Coding", "Claude"]
 lang: "🇮🇹 Italiano"
 description: "La storia tecnica di come questo sito è nato: dall'architettura informativa al deploy, passando per design system e workflow editoriale."
+og_image: "/images/claude-logo-and-app.webp"
 ---
 
 <img src="/images/claude-logo-and-app.webp" alt="Claude AI interface" style="width: 100%; max-width: 800px; margin-bottom: 48px;">

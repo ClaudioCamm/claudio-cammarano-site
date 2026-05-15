@@ -4,6 +4,41 @@ title: "Editoria, marketing, idee"
 description: "Saggi originali su editoria, marketing, semiotica e cultura digitale. Di Claudio Cammarano — marketing director, docente, co-fondatore di Irene Media."
 ---
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://claudiocammarano.com/#website",
+      "url": "https://claudiocammarano.com",
+      "name": "Claudio Cammarano",
+      "description": "Saggi originali su editoria, marketing, semiotica e cultura digitale.",
+      "inLanguage": "it",
+      "author": { "@id": "https://claudiocammarano.com/#person" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://claudiocammarano.com/#person",
+      "name": "Claudio Cammarano",
+      "url": "https://claudiocammarano.com",
+      "image": "https://claudiocammarano.com/images/claudio-photo.jpg",
+      "jobTitle": "Marketing Director",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "De Agostini Libri"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/claudiocammarano/",
+        "https://claudiocammarano.substack.com",
+        "https://x.com/claudiocamm",
+        "https://medium.com/@ClaudioCamm"
+      ]
+    }
+  ]
+}
+</script>
+
 {% for post in collections.writings | limit(10) %}
   {% if loop.index0 == 0 %}
   <article class="article-card article-card--featured">

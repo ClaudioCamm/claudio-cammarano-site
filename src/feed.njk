@@ -11,13 +11,19 @@ eleventyExcludeFromCollections: true
     <description>Saggi originali su editoria, marketing, semiotica e cultura digitale.</description>
     <language>it</language>
     <atom:link href="https://claudiocammarano.com/feed.xml" rel="self" type="application/rss+xml"/>
-    {% for post in collections.writings %}
+    {% for post in collections.allPosts %}
     <item>
       <title>{{ post.data.title | jsonEscape }}</title>
+      {% if post.data.external_url %}
+      <link>{{ post.data.external_url }}</link>
+      <guid isPermaLink="false">https://claudiocammarano.com{{ post.url }}</guid>
+      {% else %}
       <link>https://claudiocammarano.com{{ post.url }}</link>
       <guid isPermaLink="true">https://claudiocammarano.com{{ post.url }}</guid>
+      {% endif %}
       <pubDate>{{ post.date | rssDate }}</pubDate>
       {% if post.data.description %}<description>{{ post.data.description | jsonEscape }}</description>{% endif %}
+      {% if post.data.source %}<source url="{{ post.data.external_url }}">{{ post.data.source }}</source>{% endif %}
     </item>
     {% endfor %}
   </channel>

@@ -24,6 +24,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <!-- Preload hero image (LCP) -->
+    {% if og_image %}
+    <link rel="preload" as="image" href="{{ og_image }}">
+    {% endif %}
+    <!-- DNS prefetch per risorse esterne -->
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8557D7N1Y3"></script>
     <script>

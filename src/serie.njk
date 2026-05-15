@@ -1,31 +1,31 @@
 ---
 pagination:
-  data: collections.tagList
+  data: collections.seriesList
   size: 1
-  alias: tag
-permalink: "/tag/{{ tag | slugify }}/"
+  alias: serie
+permalink: "/serie/{{ serie | slugify }}/"
 layout: layouts/base.njk
 eleventyComputed:
-  title: "{{ tag }}"
-  description: "Tutti gli articoli su {{ tag }}"
+  title: "{{ serie }}"
+  description: "Tutti gli articoli della serie {{ serie }}"
 ---
 
-{% set tagPosts = collections.writings | filterByTag(tag) %}
+{% set seriePosts = collections.writings | filterBySeries(serie) %}
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": "{{ tag | jsonEscape | safe }}",
-  "description": "Tutti gli articoli di Claudio Cammarano su {{ tag | jsonEscape | safe }}",
-  "url": "https://claudiocammarano.com/tag/{{ tag | slugify }}/",
+  "name": "{{ serie | jsonEscape | safe }}",
+  "description": "Serie di articoli di Claudio Cammarano: {{ serie | jsonEscape | safe }}",
+  "url": "https://claudiocammarano.com/serie/{{ serie | slugify }}/",
   "author": {
     "@type": "Person",
     "name": "Claudio Cammarano",
     "url": "https://claudiocammarano.com/about/"
   },
   "hasPart": [
-    {% for post in tagPosts %}
+    {% for post in seriePosts %}
     {
       "@type": "BlogPosting",
       "headline": "{{ post.data.title | jsonEscape | safe }}",
@@ -40,15 +40,15 @@ eleventyComputed:
 
 <div class="tag-page">
   <header class="tag-page-header">
-    <p class="tag-page-label">Argomento</p>
-    <h1 class="tag-page-title">{{ tag }}</h1>
-    <p class="tag-page-count">{{ tagPosts.length }} {% if tagPosts.length == 1 %}articolo{% else %}articoli{% endif %}</p>
+    <p class="tag-page-label">Serie</p>
+    <h1 class="tag-page-title">{{ serie }}</h1>
+    <p class="tag-page-count">{{ seriePosts.length }} {% if seriePosts.length == 1 %}articolo{% else %}articoli{% endif %}</p>
   </header>
 
   <div class="tag-page-posts">
-    {% for post in tagPosts %}
+    {% for post in seriePosts %}
     <article class="article-card article-card--secondary">
-      {% if post.data.series %}<div class="article-series-card-label">{{ post.data.series }}</div>{% endif %}
+      <div class="article-series-card-label">{{ post.data.series }}</div>
       <div class="article-meta">
         <span class="article-date">{{ post.date | formatDate }}</span>
         {% if post.data.category %}
