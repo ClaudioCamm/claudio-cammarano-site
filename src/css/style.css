@@ -128,7 +128,6 @@ main {
   font-size: 13px;
   color: #a0a09a;
   letter-spacing: 0.3px;
-  margin-left: auto;
 }
 
 /* === SEARCH ICON IN HEADER === */
@@ -136,7 +135,7 @@ main {
   display: flex;
   align-items: center;
   color: rgba(255,255,255,0.7);
-  margin-left: var(--spacing-sm);
+  margin-left: auto;
   margin-right: 0;
   padding: 4px;
   transition: color 0.15s;
