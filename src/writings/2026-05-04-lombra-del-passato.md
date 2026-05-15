@@ -26,7 +26,7 @@ window.MathJax = {
   <figcaption>Shepard Fairey con l'artista e curatrice Iryna Kanishcheva, a Gainesville, in Florida.</figcaption>
 </figure>
 
-Non molto tempo fa, da queste parti, sostenevo che lo stile negoziale di Trump fosse leggibile come il segnale locale — forse uno dei tanti — di un collasso strutturale del fattore di sconto della politica internazionale. Notavo anche che dentro quel collasso un attore terzo — chiamato C, ed era abbastanza chiaro di chi parlassi — stesse beneficiando di un vantaggio strutturale di prevedibilità che fosse indipendente da qualunque considerazione morale sul regime che lo governa.
+Non molto tempo fa, da queste parti, sostenevo che lo stile negoziale di Trump fosse leggibile come il segnale locale — forse uno dei tanti — di un collasso strutturale del fattore di sconto della politica internazionale. Notavo anche che dentro quel collasso un attore terzo chiamato C, ed era abbastanza chiaro di chi parlassi, stesse beneficiando di un vantaggio strutturale di prevedibilità che fosse indipendente da qualunque considerazione morale sul regime che lo governa.
 
 Il modello era netto: A defeziona, C resta fermo, gli altri ricalibrano i propri $\delta$ (che è un po' la misura delle loro aspettative di ritorno per le interazioni *future*) e spostano peso strategico verso il giocatore più affidabile. Verso la fine accennavo *en passant* all'ipotesi che C non si limitasse a stare fermo, ma defezionasse silenziosamente verso A vendendo satelliti militari all'attore I, potenza regionale teocratica che controlla lo Stretto di Hormuz. Si trattava una congettura analitica?
 

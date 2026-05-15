@@ -1,21 +1,40 @@
+const markdownIt = require("markdown-it");
+const md = markdownIt({ html: true, typographer: true });
+
 module.exports = function(eleventyConfig) {
-  
+  eleventyConfig.setLibrary("md", md);
+
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/admin");
   eleventyConfig.addPassthroughCopy("src/downloads");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
-  
+
+  // === TRANSFORMS ===
+
+  // Convert straight apostrophes to typographic apostrophes in final HTML output.
+  // Targets only apostrophes between word characters (e.g. l'uomo, dell'alba)
+  // leaving HTML attributes, URLs and code blocks untouched.
+  eleventyConfig.addTransform("smartapostrophe", function(content, outputPath) {
+    if (outputPath && outputPath.endsWith(".html")) {
+      var rsqm = "’"; // RIGHT SINGLE QUOTATION MARK
+      return content
+        .replace(/(\w)&#39;(\w)/g, "$1" + rsqm + "$2")
+        .replace(/(\w)'(\w)/g, "$1" + rsqm + "$2");
+    }
+    return content;
+  });
+
   // === SHORTCODES ===
-  
+
   eleventyConfig.addShortcode("kicker", function(text) {
     return `<p class="kicker">${text}</p>`;
   });
-  
+
   eleventyConfig.addShortcode("pullquote", function(text) {
     return `<blockquote class="pullquote">${text}</blockquote>`;
   });
-  
+
   eleventyConfig.addShortcode("figure", function(src, caption) {
     return `
       <figure class="figure-wrapper">
@@ -24,31 +43,31 @@ module.exports = function(eleventyConfig) {
       </figure>
     `;
   });
-  
+
   eleventyConfig.addShortcode("infobox", function(content) {
     return `<div class="info-box">${content}</div>`;
   });
-  
+
   eleventyConfig.addShortcode("dataviz", function(content) {
     return `<div class="data-viz">${content}</div>`;
   });
-  
+
   // === COLLECTIONS ===
-  
+
   eleventyConfig.addCollection("writings", function(collectionApi) {
     return collectionApi.getFilteredByGlob("src/writings/*.md")
       .sort((a, b) => b.date - a.date);
   });
-  
+
   eleventyConfig.addCollection("curated", function(collectionApi) {
     return collectionApi.getFilteredByGlob("src/curated/*.md")
       .sort((a, b) => b.date - a.date);
   });
-  
+
   eleventyConfig.addCollection("learning", function(collectionApi) {
     return collectionApi.getFilteredByGlob("src/learning/*.md");
   });
-  
+
   // Mixed feed: writings + curated sorted by date descending
   eleventyConfig.addCollection("allPosts", function(collectionApi) {
     const writings = collectionApi.getFilteredByGlob("src/writings/*.md")
@@ -58,9 +77,9 @@ module.exports = function(eleventyConfig) {
     return [...writings, ...curated]
       .sort((a, b) => b.date - a.date);
   });
-  
+
   // === FILTERS ===
-  
+
   eleventyConfig.addFilter("formatDate", function(date) {
     return new Intl.DateTimeFormat('it-IT', {
       year: 'numeric',
@@ -108,15 +127,15 @@ module.exports = function(eleventyConfig) {
       t = t.replace(/\\leq/g, '≤').replace(/\\geq/g, '≥').replace(/\\neq/g, '≠');
       t = t.replace(/\\cap/g, '∩').replace(/\\cup/g, '∪').replace(/\\subseteq/g, '⊆');
       t = t.replace(/\\approx/g, '≈').replace(/\\infty/g, '∞');
-      // Any remaining \command → just the command name (e.g. \delta → delta, \pi → pi)
+      // Any remaining \command -> just the command name (e.g. \delta -> delta, \pi -> pi)
       t = t.replace(/\\([a-zA-Z]+)/g, '$1');
       // Clean up sub/superscript braces
       t = t.replace(/[_^]\{([^}]+)\}/g, '_$1').replace(/[_^]([a-zA-Z0-9])/g, '_$1');
       t = t.replace(/[{}]/g, '');
       return t.trim();
     };
-    text = text.replace(/\$\$([^$]+)\$\$/g, (_, m) => mathToText(m));
-    text = text.replace(/\$([^$\n]+)\$/g, (_, m) => mathToText(m));
+    text = text.replace(/\$\$([^$]+)\$\$/g, function(_, m) { return mathToText(m); });
+    text = text.replace(/\$([^$\n]+)\$/g, function(_, m) { return mathToText(m); });
     // Normalize spaces but keep newlines
     text = text.replace(/[ \t]+/g, ' ').replace(/\n[ \t]*/g, '\n').trim();
     text = text.replace(/\n{2,}/g, '\n');
