@@ -136,7 +136,7 @@ main {
   align-items: center;
   color: rgba(255,255,255,0.7);
   margin-left: auto;
-  margin-right: var(--spacing-sm);
+  margin-right: 0;
   padding: 4px;
   transition: color 0.15s;
 }
@@ -173,6 +173,11 @@ main {
   font-family: var(--font-serif);
   font-size: 15px;
   color: var(--color-text-light);
+}
+
+/* === TAGLINE NEL MENU MOBILE === */
+.nav-tagline-item {
+  display: none;
 }
 
 /* === HAMBURGER BUTTON (visibile solo su mobile) === */
@@ -476,8 +481,9 @@ article.article-content,
 
 .article-series a {
   color: var(--color-primary);
-  text-decoration: none;
-  border-bottom: 1px solid currentColor;
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary);
+  text-underline-offset: 2px;
   transition: opacity 0.15s;
 }
 
@@ -513,8 +519,9 @@ article.article-content,
 
 .article-series-card-label a {
   color: inherit;
-  text-decoration: none;
-  border-bottom: 1px solid currentColor;
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-underline-offset: 2px;
   opacity: 0.8;
   transition: opacity 0.15s;
 }
@@ -2086,9 +2093,11 @@ body.irene-page .site-nav a.active {
   }
 
   .header-tagline {
-    flex: 1;
-    text-align: left;
-    margin-left: 8px;
+    display: none;
+  }
+
+  .header-search {
+    margin-right: 8px;
   }
 
   .site-nav {
@@ -2122,6 +2131,19 @@ body.irene-page .site-nav a.active {
 
   .site-nav a:hover {
     background: rgba(255,255,255,0.06);
+  }
+
+  .nav-tagline-item {
+    display: list-item;
+    list-style: none;
+    padding: 8px var(--spacing-sm) 10px;
+    font-family: var(--font-sans);
+    font-size: 12px;
+    color: rgba(255,255,255,0.35);
+    font-style: italic;
+    letter-spacing: 0.3px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 4px;
   }
 }
 
