@@ -101,7 +101,7 @@ main {
 
 .header-top {
   background: var(--color-primary);
-  padding: 12px 0;
+  padding: 8px 0;
 }
 
 .header-top-inner {
@@ -128,6 +128,7 @@ main {
   font-size: 13px;
   color: #a0a09a;
   letter-spacing: 0.3px;
+  margin-left: auto;
 }
 
 /* === SEARCH ICON IN HEADER === */
@@ -135,7 +136,7 @@ main {
   display: flex;
   align-items: center;
   color: rgba(255,255,255,0.7);
-  margin-left: auto;
+  margin-left: var(--spacing-sm);
   margin-right: 0;
   padding: 4px;
   transition: color 0.15s;
@@ -2082,6 +2083,10 @@ body.irene-page .site-nav a.active {
   }
 
   /* Hamburger visibile, nav collassata */
+  .header-top {
+    padding: 6px 0;
+  }
+
   .nav-toggle {
     display: flex;
     margin-left: 0;
