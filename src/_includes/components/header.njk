@@ -3,9 +3,14 @@
         <div class="container header-top-inner">
             <a href="/" class="header-name">Claudio Cammarano</a>
             <span class="header-tagline">Libri, mercati, idee</span>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Apri menu" aria-expanded="false" aria-controls="site-nav">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
         </div>
     </div>
-    <nav class="site-nav">
+    <nav class="site-nav" id="site-nav">
         <div class="container">
             <ul>
                 <li><a href="/"{% if page.url == "/" %} class="active"{% endif %}>Home</a></li>
@@ -20,3 +25,23 @@
         </div>
     </nav>
 </header>
+
+<script>
+(function() {
+  var toggle = document.getElementById('nav-toggle');
+  var nav = document.getElementById('site-nav');
+  if (!toggle || !nav) return;
+  toggle.addEventListener('click', function() {
+    var open = nav.classList.toggle('nav-open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggle.classList.toggle('is-open', open);
+  });
+  document.addEventListener('click', function(e) {
+    if (!toggle.contains(e.target) && !nav.contains(e.target)) {
+      nav.classList.remove('nav-open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.classList.remove('is-open');
+    }
+  });
+})();
+</script>

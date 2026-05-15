@@ -130,6 +130,39 @@ main {
   letter-spacing: 0.3px;
 }
 
+/* === HAMBURGER BUTTON (visibile solo su mobile) === */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  margin-left: auto;
+}
+
+.nav-toggle-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: rgba(255,255,255,0.85);
+  border-radius: 2px;
+  transition: transform 0.25s, opacity 0.25s;
+  transform-origin: center;
+}
+
+.nav-toggle.is-open .nav-toggle-bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav-toggle.is-open .nav-toggle-bar:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle.is-open .nav-toggle-bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
 /* === NAVIGATION (integrata nel header blu) === */
 .site-nav {
   background: var(--color-primary);
@@ -1827,9 +1860,55 @@ body.irene-page .site-nav a.active {
     font-size: 22px;
   }
 
+  /* Hamburger visibile, nav collassata */
+  .nav-toggle {
+    display: flex;
+  }
+
+  .header-top-inner {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .header-tagline {
+    flex: 1;
+    text-align: left;
+    margin-left: 8px;
+  }
+
+  .site-nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    border-bottom: none;
+  }
+
+  .site-nav.nav-open {
+    max-height: 500px;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+  }
+
+  .site-nav ul {
+    flex-direction: column;
+    gap: 0;
+    padding: 8px 0;
+  }
+
   .site-nav a {
-    font-size: 12px;
-    padding: 8px 10px;
+    font-size: 14px;
+    padding: 10px var(--spacing-sm);
+    border-bottom: none;
+  }
+
+  .site-nav a.active {
+    border-bottom: none;
+    background: rgba(255,255,255,0.08);
+  }
+
+  .site-nav a:hover {
+    background: rgba(255,255,255,0.06);
   }
 }
 
