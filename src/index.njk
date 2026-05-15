@@ -12,9 +12,9 @@ description: "Saggi originali su editoria, marketing, semiotica e cultura digita
       <span class="article-date">{{ post.date | formatDate }}</span>
       {% if post.data.category %}
         {% if post.data.category.length %}
-          {% for cat in post.data.category %}<span class="article-tag">{{ cat }}</span>{% endfor %}
+          {% for cat in post.data.category %}<a class="article-tag" href="/tag/{{ cat | slugify }}/">{{ cat }}</a>{% endfor %}
         {% else %}
-          <span class="article-tag">{{ post.data.category }}</span>
+          <a class="article-tag" href="/tag/{{ post.data.category | slugify }}/">{{ post.data.category }}</a>
         {% endif %}
       {% endif %}
       {% if post.templateContent %}<span class="reading-time">{{ post.templateContent | readingTime }}</span>{% endif %}
@@ -30,9 +30,9 @@ description: "Saggi originali su editoria, marketing, semiotica e cultura digita
       <span class="article-date">{{ post.date | formatDate }}</span>
       {% if post.data.category %}
         {% if post.data.category.length %}
-          {% for cat in post.data.category %}<span class="article-tag">{{ cat }}</span>{% endfor %}
+          {% for cat in post.data.category %}<a class="article-tag" href="/tag/{{ cat | slugify }}/">{{ cat }}</a>{% endfor %}
         {% else %}
-          <span class="article-tag">{{ post.data.category }}</span>
+          <a class="article-tag" href="/tag/{{ post.data.category | slugify }}/">{{ post.data.category }}</a>
         {% endif %}
       {% endif %}
       {% if post.templateContent %}<span class="reading-time">{{ post.templateContent | readingTime }}</span>{% endif %}
@@ -48,9 +48,9 @@ description: "Saggi originali su editoria, marketing, semiotica e cultura digita
       <span class="article-date">{{ post.date | formatDate }}</span>
       {% if post.data.category %}
         {% if post.data.category.length %}
-          {% for cat in post.data.category %}<span class="article-tag">{{ cat }}</span>{% endfor %}
+          {% for cat in post.data.category %}<a class="article-tag" href="/tag/{{ cat | slugify }}/">{{ cat }}</a>{% endfor %}
         {% else %}
-          <span class="article-tag">{{ post.data.category }}</span>
+          <a class="article-tag" href="/tag/{{ post.data.category | slugify }}/">{{ post.data.category }}</a>
         {% endif %}
       {% endif %}
       {% if post.templateContent %}<span class="reading-time">{{ post.templateContent | readingTime }}</span>{% endif %}
@@ -97,7 +97,7 @@ description: "Saggi originali su editoria, marketing, semiotica e cultura digita
       <span class="curated-source-label">· {{ post.data.source }}</span>
       {% endif %}
       {% if post.data.tags %}
-        {% for tag in post.data.tags %}{% if tag != 'curated' %}<span class="article-tag">{{ tag }}</span>{% endif %}{% endfor %}
+        {% for tag in post.data.tags %}{% if tag != 'curated' %}<a class="article-tag" href="/tag/{{ tag | slugify }}/">{{ tag }}</a>{% endif %}{% endfor %}
       {% endif %}
     </div>
     <h2><a href="{{ post.data.external_url }}" target="_blank">{{ post.data.title }} ↗</a></h2>

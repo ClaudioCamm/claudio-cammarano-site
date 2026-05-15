@@ -1,0 +1,29 @@
+---
+layout: layouts/base.njk
+title: "Pagina non trovata"
+description: "La pagina che cerchi non esiste o è stata spostata."
+permalink: /404.html
+eleventyExcludeFromCollections: true
+---
+
+<div class="error-page">
+  <p class="error-code">404</p>
+  <h1 class="error-title">Pagina non trovata</h1>
+  <p class="error-message">La pagina che cerchi non esiste o è stata spostata. Puoi tornare alla home o sfogliare i writings.</p>
+  <div class="error-actions">
+    <a href="/" class="error-btn error-btn--primary">Torna alla home</a>
+    <a href="/writings/" class="error-btn error-btn--secondary">Vai ai writings</a>
+  </div>
+
+  {% if collections.writings %}
+  <div class="error-recent">
+    <p class="error-recent-label">Ultimi articoli</p>
+    {% for post in collections.writings | limit(3) %}
+    <article class="error-recent-post">
+      <span class="article-date">{{ post.date | formatDate }}</span>
+      <a href="{{ post.url }}">{{ post.data.title }}</a>
+    </article>
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>

@@ -3,6 +3,9 @@ layout: layouts/base.njk
 og_type: article
 ---
 
+<div id="reading-progress"></div>
+<button id="back-to-top" aria-label="Torna su" title="Torna su">↑</button>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -20,6 +23,11 @@ og_type: article
 }
 </script>
 
+<div class="print-header" aria-hidden="true">
+  <span class="print-header-site">claudiocammarano.com</span>
+  <span class="print-header-url">{{ page.url }}</span>
+</div>
+
 <article class="article-full">
   <header class="article-header">
     <div class="article-meta">
@@ -27,10 +35,10 @@ og_type: article
       {% if category %}
         {% if category.length %}
           {% for cat in category %}
-          <span class="article-tag">{{ cat }}</span>
+          <a class="article-tag" href="/tag/{{ cat | slugify }}/">{{ cat }}</a>
           {% endfor %}
         {% else %}
-        <span class="article-tag">{{ category }}</span>
+        <a class="article-tag" href="/tag/{{ category | slugify }}/">{{ category }}</a>
         {% endif %}
       {% endif %}
       {% if content %}<span class="reading-time">{{ content | readingTime }}</span>{% endif %}
@@ -40,9 +48,189 @@ og_type: article
     {% if description %}
     <p class="article-description">{{ description }}</p>
     {% endif %}
+    <div class="share-bar">
+      <button class="share-btn" id="share-btn" aria-label="Condividi">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+        Condividi
+      </button>
+      <div class="share-menu" id="share-menu" hidden>
+        <button class="share-menu-item" id="share-copy">Copia link</button>
+        <a class="share-menu-item" id="share-linkedin" href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="share-menu-item" id="share-twitter" href="#" target="_blank" rel="noopener">Twitter / X</a>
+      </div>
+    </div>
   </header>
   
   <div class="article-body">
     {{ content | safe }}
   </div>
 </article>
+
+<div class="print-footer" aria-hidden="true">
+  <span>© {{ date | isoDate | truncate(4, false, '') }} Claudio Cammarano — claudiocammarano.com</span>
+  <span>Tutti i diritti riservati. Riproduzione consentita con citazione della fonte.</span>
+</div>
+
+<script>
+(function() {
+  // Table of contents
+  var articleBody = document.querySelector('.article-body');
+  if (articleBody) {
+    var headings = articleBody.querySelectorAll('h2, h3');
+    if (headings.length >= 3) {
+      headings.forEach(function(h, i) {
+        if (!h.id) {
+          var slug = h.textContent
+            .toLowerCase()
+            .replace(/[^\w\s-]/g, '')
+            .replace(/\s+/g, '-')
+            .replace(/-+/g, '-')
+            .trim();
+          h.id = slug || ('sezione-' + i);
+        }
+      });
+      var details = document.createElement('details');
+      details.className = 'toc';
+      var summary = document.createElement('summary');
+      summary.className = 'toc-summary';
+      summary.textContent = 'In questo articolo';
+      details.appendChild(summary);
+      var list = document.createElement('ol');
+      list.className = 'toc-list';
+      headings.forEach(function(h) {
+        var li = document.createElement('li');
+        li.className = 'toc-item toc-' + h.tagName.toLowerCase();
+        var a = document.createElement('a');
+        a.href = '#' + h.id;
+        a.textContent = h.textContent;
+        li.appendChild(a);
+        list.appendChild(li);
+      });
+      details.appendChild(list);
+      // Insert after first figure-wrapper (hero image), otherwise before first heading
+      var heroFigure = articleBody.querySelector('.figure-wrapper');
+      if (heroFigure) {
+        heroFigure.parentNode.insertBefore(details, heroFigure.nextSibling);
+      } else {
+        var firstHeading = articleBody.querySelector('h2, h3');
+        if (firstHeading) {
+          firstHeading.parentNode.insertBefore(details, firstHeading);
+        } else {
+          articleBody.insertBefore(details, articleBody.firstChild);
+        }
+      }
+    }
+  }
+})();
+</script>
+
+<script>
+(function() {
+  var bar = document.getElementById('reading-progress');
+  var body = document.querySelector('.article-body');
+  if (!bar || !body) return;
+  function update() {
+    var bodyTop = body.getBoundingClientRect().top + window.scrollY;
+    var bodyHeight = body.offsetHeight;
+    var scrolled = window.scrollY - bodyTop;
+    var pct = Math.min(Math.max(scrolled / bodyHeight * 100, 0), 100);
+    bar.style.width = pct + '%';
+  }
+  window.addEventListener('scroll', update, { passive: true });
+  update();
+})();
+
+(function() {
+  var shareBtn = document.getElementById('share-btn');
+  var shareMenu = document.getElementById('share-menu');
+  var shareCopy = document.getElementById('share-copy');
+  var shareLinkedIn = document.getElementById('share-linkedin');
+  var shareTwitter = document.getElementById('share-twitter');
+  if (!shareBtn) return;
+
+  var url = window.location.href;
+  var title = document.title;
+
+  if (shareLinkedIn) shareLinkedIn.href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(url);
+  if (shareTwitter) shareTwitter.href = 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(url) + '&text=' + encodeURIComponent(title);
+
+  shareBtn.addEventListener('click', function() {
+    if (navigator.share) {
+      navigator.share({ title: title, url: url }).catch(function() {});
+    } else {
+      var open = !shareMenu.hidden;
+      shareMenu.hidden = open;
+    }
+  });
+
+  if (shareCopy) {
+    shareCopy.addEventListener('click', function() {
+      navigator.clipboard.writeText(url).then(function() {
+        shareCopy.textContent = 'Copiato!';
+        setTimeout(function() { shareCopy.textContent = 'Copia link'; shareMenu.hidden = true; }, 1800);
+      });
+    });
+  }
+
+  document.addEventListener('click', function(e) {
+    if (!shareBtn.contains(e.target) && !shareMenu.contains(e.target)) {
+      shareMenu.hidden = true;
+    }
+  });
+})();
+
+(function() {
+  var btn = document.getElementById('back-to-top');
+  if (!btn) return;
+  window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+  btn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
+
+{% set related = collections.writings | getRelatedPosts(page.url, category) %}
+{% if related.length %}
+<section class="related-posts">
+  <h3 class="related-posts-title">Sullo stesso tema</h3>
+  {% for post in related %}
+  <article class="related-post">
+    <div class="article-meta">
+      <span class="article-date">{{ post.date | formatDate }}</span>
+      {% if post.data.category %}
+        {% if post.data.category.length %}
+          {% for cat in post.data.category %}<a class="article-tag" href="/tag/{{ cat | slugify }}/">{{ cat }}</a>{% endfor %}
+        {% else %}
+          <a class="article-tag" href="/tag/{{ post.data.category | slugify }}/">{{ post.data.category }}</a>
+        {% endif %}
+      {% endif %}
+    </div>
+    <h4 class="related-post-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h4>
+    {% if post.data.description %}<p class="related-post-description">{{ post.data.description }}</p>{% endif %}
+  </article>
+  {% endfor %}
+</section>
+{% endif %}
+
+{% set prevPost = collections.writings | getPrevPost(page.url) %}
+{% set nextPost = collections.writings | getNextPost(page.url) %}
+{% if prevPost or nextPost %}
+<nav class="article-nav">
+  {% if prevPost %}
+  <a href="{{ prevPost.url }}" class="article-nav-item article-nav-prev">
+    <span class="article-nav-label">&#8592; Precedente</span>
+    <span class="article-nav-title">{{ prevPost.data.title }}</span>
+  </a>
+  {% else %}
+  <span></span>
+  {% endif %}
+  {% if nextPost %}
+  <a href="{{ nextPost.url }}" class="article-nav-item article-nav-next">
+    <span class="article-nav-label">Successivo &#8594;</span>
+    <span class="article-nav-title">{{ nextPost.data.title }}</span>
+  </a>
+  {% endif %}
+</nav>
+{% endif %}

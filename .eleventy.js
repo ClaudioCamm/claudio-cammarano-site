@@ -12,6 +12,17 @@ module.exports = function(eleventyConfig) {
 
   // === TRANSFORMS ===
 
+  // Add loading="lazy" and decoding="async" to all images that don't already have them.
+  eleventyConfig.addTransform("lazyimages", function(content, outputPath) {
+    if (outputPath && outputPath.endsWith(".html")) {
+      return content.replace(/<img([^>]*)>/gi, function(match, attrs) {
+        if (attrs.indexOf('loading=') !== -1) return match;
+        return '<img' + attrs + ' loading="lazy" decoding="async">';
+      });
+    }
+    return content;
+  });
+
   // Convert straight apostrophes to typographic apostrophes in final HTML output.
   // Targets only apostrophes between word characters (e.g. l'uomo, dell'alba)
   // leaving HTML attributes, URLs and code blocks untouched.
@@ -68,6 +79,18 @@ module.exports = function(eleventyConfig) {
     return collectionApi.getFilteredByGlob("src/learning/*.md");
   });
 
+  // All unique category tags from writings
+  eleventyConfig.addCollection("tagList", function(collectionApi) {
+    var tagSet = new Set();
+    collectionApi.getFilteredByGlob("src/writings/*.md").forEach(function(item) {
+      var cats = item.data.category;
+      if (!cats) return;
+      var arr = Array.isArray(cats) ? cats : [cats];
+      arr.forEach(function(c) { tagSet.add(c); });
+    });
+    return Array.from(tagSet).sort();
+  });
+
   // Mixed feed: writings + curated sorted by date descending
   eleventyConfig.addCollection("allPosts", function(collectionApi) {
     const writings = collectionApi.getFilteredByGlob("src/writings/*.md")
@@ -92,6 +115,35 @@ module.exports = function(eleventyConfig) {
     return new Date(date).toISOString().split('T')[0];
   });
 
+  eleventyConfig.addFilter("rssDate", function(date) {
+    return new Date(date).toUTCString();
+  });
+
+  // Related posts: up to 3 writings sharing at least one category tag
+  eleventyConfig.addFilter("getRelatedPosts", function(collection, currentUrl, category) {
+    if (!category) return [];
+    var tags = Array.isArray(category) ? category : [category];
+    return collection
+      .filter(function(p) {
+        if (p.url === currentUrl) return false;
+        if (!p.data.category) return false;
+        var pTags = Array.isArray(p.data.category) ? p.data.category : [p.data.category];
+        return tags.some(function(t) { return pTags.indexOf(t) !== -1; });
+      })
+      .slice(0, 3);
+  });
+
+  // Prev/next navigation within writings collection (sorted newest first)
+  eleventyConfig.addFilter("getPrevPost", function(collection, currentUrl) {
+    const index = collection.findIndex(function(p) { return p.url === currentUrl; });
+    return index < collection.length - 1 ? collection[index + 1] : null;
+  });
+
+  eleventyConfig.addFilter("getNextPost", function(collection, currentUrl) {
+    const index = collection.findIndex(function(p) { return p.url === currentUrl; });
+    return index > 0 ? collection[index - 1] : null;
+  });
+
   eleventyConfig.addFilter("jsonEscape", function(str) {
     if (!str) return '';
     return JSON.stringify(String(str)).slice(1, -1);
@@ -108,6 +160,30 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("limit", function(arr, count) {
     if (!arr) return [];
     return arr.slice(0, count);
+  });
+
+  eleventyConfig.addFilter("slugify", function(str) {
+    if (!str) return '';
+    return str.toLowerCase()
+      .replace(/[àáâãäå]/g, 'a')
+      .replace(/[èéêë]/g, 'e')
+      .replace(/[ìíîï]/g, 'i')
+      .replace(/[òóôõö]/g, 'o')
+      .replace(/[ùúûü]/g, 'u')
+      .replace(/\s+/g, '-')
+      .replace(/[^a-z0-9-]/g, '')
+      .replace(/-+/g, '-')
+      .replace(/^-|-$/g, '');
+  });
+
+  eleventyConfig.addFilter("filterByTag", function(collection, tag) {
+    if (!tag) return [];
+    return collection.filter(function(p) {
+      var cats = p.data.category;
+      if (!cats) return false;
+      var arr = Array.isArray(cats) ? cats : [cats];
+      return arr.indexOf(tag) !== -1;
+    });
   });
 
   eleventyConfig.addFilter("excerpt", function(content, maxLen) {
