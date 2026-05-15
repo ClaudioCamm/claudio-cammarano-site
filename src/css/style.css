@@ -176,8 +176,9 @@ main {
 }
 
 /* === TAGLINE NEL MENU MOBILE === */
-.nav-tagline-item {
-  display: none;
+.site-nav .nav-tagline-item,
+li.nav-tagline-item {
+  display: none !important;
 }
 
 /* === HAMBURGER BUTTON (visibile solo su mobile) === */
@@ -2133,8 +2134,9 @@ body.irene-page .site-nav a.active {
     background: rgba(255,255,255,0.06);
   }
 
-  .nav-tagline-item {
-    display: list-item;
+  .site-nav .nav-tagline-item,
+  li.nav-tagline-item {
+    display: block !important;
     list-style: none;
     padding: 8px var(--spacing-sm) 10px;
     font-family: var(--font-sans);
