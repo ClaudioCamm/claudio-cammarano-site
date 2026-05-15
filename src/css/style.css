@@ -1779,11 +1779,6 @@ body.irene-page .site-nav a.active {
 
 /* === RESPONSIVE === */
 @media (max-width: 768px) {
-  .header-top-inner {
-    flex-direction: column;
-    gap: 4px;
-  }
-
   .header-name {
     font-size: 18px;
   }
