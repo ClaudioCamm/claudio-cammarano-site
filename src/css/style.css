@@ -175,10 +175,10 @@ main {
   color: var(--color-text-light);
 }
 
-/* === TAGLINE NEL MENU MOBILE === */
-.site-nav .nav-tagline-item,
-li.nav-tagline-item {
-  display: none !important;
+/* === TAGLINE E SEARCH NEL MENU MOBILE (nascosti su desktop via inline style) === */
+.nav-tagline-item,
+.nav-search-item {
+  display: none;
 }
 
 /* === HAMBURGER BUTTON (visibile solo su mobile) === */
@@ -2097,8 +2097,9 @@ body.irene-page .site-nav a.active {
     display: none;
   }
 
+  /* Search si sposta dentro il menu hamburger */
   .header-search {
-    margin-right: 8px;
+    display: none;
   }
 
   .site-nav {
@@ -2134,18 +2135,46 @@ body.irene-page .site-nav a.active {
     background: rgba(255,255,255,0.06);
   }
 
-  .site-nav .nav-tagline-item,
-  li.nav-tagline-item {
+  /* Tagline in cima al menu */
+  .nav-tagline-item {
     display: block !important;
     list-style: none;
-    padding: 8px var(--spacing-sm) 10px;
+    padding: 10px var(--spacing-sm) 10px;
     font-family: var(--font-sans);
-    font-size: 12px;
-    color: rgba(255,255,255,0.35);
+    font-size: 13px;
+    color: rgba(255,255,255,0.45);
     font-style: italic;
     letter-spacing: 0.3px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    margin-bottom: 4px;
+  }
+
+  /* Search in fondo al menu */
+  .nav-search-item {
+    display: block !important;
+    list-style: none;
     border-top: 1px solid rgba(255,255,255,0.1);
     margin-top: 4px;
+  }
+
+  .nav-search-item a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    padding: 10px var(--spacing-sm);
+    color: rgba(255,255,255,0.5);
+    border-bottom: none;
+  }
+
+  .nav-search-item a::before {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='rgba(255,255,255,0.5)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
