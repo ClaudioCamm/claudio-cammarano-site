@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le quattro ipostasi del dual use</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Source Serif 4', Georgia, serif; background: #f7f4ef; color: #1c1917; font-size: 13px; }
+
+.main-panels { display: flex; flex-wrap: wrap; }
+.pyramid-panel { flex: 0 0 min(100%, 490px); padding: 18px 14px 14px 24px; border-right: 1px solid #d9d4cb; }
+.axis-label { font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: #78716c; margin-bottom: 8px; }
+.pyramid-svg { width: 100%; max-width: 450px; display: block; cursor: pointer; }
+.pyramid-note { font-size: 10px; color: #78716c; font-style: italic; margin-top: 8px; line-height: 1.6; }
+
+.detail-panel { flex: 1 1 240px; padding: 18px 22px 14px; }
+.level-badge { padding: 12px 14px; margin-bottom: 14px; border-radius: 1px; }
+.level-badge .level-name { font-family: 'Cormorant Garamond', serif; font-size: 16px; font-weight: 600; margin-bottom: 2px; }
+.level-badge .level-sub { font-size: 11px; font-style: italic; opacity: 0.85; }
+.section-label { font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: #78716c; margin-bottom: 8px; }
+.example-item { font-size: 11.5px; color: #2c2825; padding: 4px 0; border-bottom: 1px solid #e4dfd6; line-height: 1.4; }
+.theory-text { font-size: 11.5px; line-height: 1.65; color: #3c3733; margin-bottom: 14px; }
+.refs-text { font-size: 10px; color: #a09a93; font-style: italic; border-top: 1px solid #e4dfd6; padding-top: 8px; }
+.back-btn { margin-top: 12px; background: none; border: 1px solid #a8a29e; padding: 5px 12px; font-size: 11px; cursor: pointer; color: #78716c; font-family: 'Source Serif 4', serif; letter-spacing: 0.04em; }
+.back-btn:hover { background: #eee9e0; }
+
+/* Quadrant grid shown in level-0 detail */
+.quadrant-mini { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; margin-bottom: 14px; }
+.q-cell { padding: 10px 9px 8px; border-radius: 1px; }
+.q-lbl { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600; line-height: 1; margin-bottom: 3px; }
+.q-desc { font-size: 9.5px; line-height: 1.3; opacity: 0.9; }
+.q-note { font-size: 9.5px; font-style: italic; margin-top: 2px; opacity: 0.85; }
+
+.intro-text { font-size: 11.5px; color: #57534e; line-height: 1.65; margin-bottom: 10px; }
+.hint-text { font-size: 10.5px; color: #78716c; font-style: italic; margin-top: 10px; }
+</style>
+</head>
+<body>
+
+<div class="main-panels">
+  <div class="pyramid-panel">
+    <div class="axis-label">Concretizzazione / Specificazione ↑</div>
+    <svg class="pyramid-svg" viewBox="0 0 500 395">
+      <defs>
+        <marker id="arrowDown" markerWidth="7" markerHeight="7" refX="3.5" refY="7" orient="auto">
+          <path d="M 0,0 L 3.5,7 L 7,0" fill="none" stroke="#a8a29e" stroke-width="1.5"/>
+        </marker>
+      </defs>
+      <line x1="492" y1="14" x2="492" y2="375" stroke="#a8a29e" stroke-width="1.5" marker-end="url(#arrowDown)"/>
+      <text x="492" y="10" text-anchor="middle" font-size="8" fill="#a8a29e" font-family="'Source Serif 4',serif">↑ specifico</text>
+
+      <polygon class="py-level" data-level="0" points="192,22 308,22 368,107 132,107" fill="#e8e3d8" stroke="#f7f4ef" stroke-width="2"/>
+      <text class="py-text" data-level="0" x="250" y="65" text-anchor="middle" fill="#2c2825" font-size="12.5" font-family="'Cormorant Garamond',serif" font-weight="600">Tecnologie specifiche</text>
+      <text class="py-text" data-level="0" x="250" y="80" text-anchor="middle" fill="#2c2825" font-size="10.5" font-family="'Source Serif 4',serif" font-style="italic" opacity="0.8">il quadrante funziona</text>
+
+      <polygon class="py-level" data-level="1" points="132,107 368,107 428,192 72,192" fill="#b5b0a5" stroke="#f7f4ef" stroke-width="2"/>
+      <text class="py-text" data-level="1" x="250" y="152" text-anchor="middle" fill="#1c1917" font-size="12.5" font-family="'Cormorant Garamond',serif" font-weight="600">Tecnologie settoriali</text>
+      <text class="py-text" data-level="1" x="250" y="167" text-anchor="middle" fill="#1c1917" font-size="10.5" font-family="'Source Serif 4',serif" font-style="italic" opacity="0.8">dual use come trasferimento</text>
+
+      <polygon class="py-level" data-level="2" points="72,192 428,192 480,278 20,278" fill="#4a4742" stroke="#f7f4ef" stroke-width="2"/>
+      <text class="py-text" data-level="2" x="250" y="238" text-anchor="middle" fill="#f0ece4" font-size="12.5" font-family="'Cormorant Garamond',serif" font-weight="600">Tecnologie a uso generale (GPT)</text>
+      <text class="py-text" data-level="2" x="250" y="253" text-anchor="middle" fill="#f0ece4" font-size="10.5" font-family="'Source Serif 4',serif" font-style="italic" opacity="0.82">dual use strutturale</text>
+
+      <polygon class="py-level" data-level="3" points="20,278 480,278 480,365 20,365" fill="#1c1917" stroke="#f7f4ef" stroke-width="2"/>
+      <text class="py-text" data-level="3" x="250" y="322" text-anchor="middle" fill="#f5f0e8" font-size="13.5" font-family="'Cormorant Garamond',serif" font-weight="600">Linguaggio / Comunicazione</text>
+      <text class="py-text" data-level="3" x="250" y="339" text-anchor="middle" fill="#f5f0e8" font-size="11" font-family="'Source Serif 4',serif" font-style="italic" opacity="0.82">fondamento ontologico · dual use non contingente</text>
+
+      <text x="250" y="382" text-anchor="middle" font-size="8.5" fill="#78716c" font-family="'Source Serif 4',serif" font-style="italic">↑ ipostasi successive emergono dal fondamento linguistico</text>
+    </svg>
+    <div class="pyramid-note">
+      ↓ Le tecnologie che maturano scendono verso il fondamento<br>
+      ↔ L'open science democratizza orizzontalmente, tagliando trasversalmente i livelli
+    </div>
+  </div>
+
+  <div class="detail-panel">
+    <div id="defaultView">
+      <p class="intro-text">Ogni livello rappresenta un grado diverso di pervasività. Man mano che una tecnologia diventa più pervasiva, scende verso la base della piramide — e la distinzione militare/civile diventa meno applicabile.</p>
+      <p class="hint-text">Seleziona un livello della piramide per il dettaglio teorico.</p>
+    </div>
+
+    <div id="detailView" style="display:none">
+      <div class="level-badge" id="levelBadge">
+        <div class="level-name" id="levelName"></div>
+        <div class="level-sub" id="levelSub"></div>
+      </div>
+
+      <!-- Quadrant shown only for level 0 -->
+      <div id="quadrantView" style="display:none">
+        <div class="section-label">Il quadrante (Molas-Gallart, 1997)</div>
+        <div class="quadrant-mini">
+          <div class="q-cell" style="background:#fca5a5">
+            <div class="q-lbl" style="color:#7f1d1d">MM</div>
+            <div class="q-desc" style="color:#7f1d1d">Orig. mil. · Dest. mil.</div>
+          </div>
+          <div class="q-cell" style="background:#fed7aa">
+            <div class="q-lbl" style="color:#9a3412">MC</div>
+            <div class="q-desc" style="color:#9a3412">Orig. mil. · Dest. civ.</div>
+            <div class="q-note" style="color:#9a3412">spin-off</div>
+          </div>
+          <div class="q-cell" style="background:#bfdbfe">
+            <div class="q-lbl" style="color:#1e3a5f">CM</div>
+            <div class="q-desc" style="color:#1e3a5f">Orig. civ. · Dest. mil.</div>
+            <div class="q-note" style="color:#1e3a5f">spin-in</div>
+          </div>
+          <div class="q-cell" style="background:#bbf7d0">
+            <div class="q-lbl" style="color:#14532d">CC</div>
+            <div class="q-desc" style="color:#14532d">Orig. civ. · Dest. civ.</div>
+            <div class="q-note" style="color:#14532d">quasi vuoto</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="examplesSection">
+        <div class="section-label">Esempi</div>
+        <div id="examplesList" style="margin-bottom:14px"></div>
+      </div>
+      <div class="section-label" style="margin-top:12px">Nota teorica</div>
+      <p class="theory-text" id="theoryText"></p>
+      <div class="refs-text" id="refsText"></div>
+      <button class="back-btn" onclick="clearSelection()">← torna alla vista generale</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const LEVELS = [
+  {
+    bg:"#e8e3d8", fg:"#2c2825",
+    name:"Tecnologie specifiche", sub:"prima ipostasi · il quadrante funziona",
+    showQuadrant: true,
+    examples:[],
+    theory:"Prima ipostasi: la cristallizzazione più concreta e derivata. Il modello di Molas-Gallart è qui applicabile: spin-off (MC), spin-in (CM), dual use per simultaneità. Origine e destinazione sono identificabili. Il quadrante CC è strutturalmente quasi vuoto per tecnologie significative: qualsiasi tecnologia con effetti fisici, che generi informazione o abiliti coordinazione è militarizzabile.",
+    refs:"Molas-Gallart (1997) · Collingridge (1980) · Winner (1980)"
+  },
+  {
+    bg:"#b5b0a5", fg:"#1c1917",
+    name:"Tecnologie settoriali", sub:"seconda ipostasi · dual use come trasferimento",
+    showQuadrant: false,
+    examples:["Aviazione commerciale → trasporto militare e bombardamento","Droni civili → targeting e sorveglianza di frontiera","Social media → influence warfare, IRA russa","Crittografia — battaglia civile/militare permanente"],
+    theory:"Seconda ipostasi: tecnologie sufficientemente pervasive da attraversare i confini tra domini. Il quadrante tiene parzialmente ma la migrazione temporale lo destabilizza. Il dilemma di Collingridge si applica con precisione: la finestra di classificazione utile si chiude prima che la regolazione sia possibile.",
+    refs:"Molas-Gallart (1997) · Collingridge (1980) · Bresnahan & Trajtenberg (1995)"
+  },
+  {
+    bg:"#4a4742", fg:"#f0ece4",
+    name:"Tecnologie a uso generale (GPT)", sub:"terza ipostasi · dual use strutturale",
+    showQuadrant: false,
+    examples:["Internet — tutti i quadranti simultaneamente","Intelligenza artificiale — patriotic tech (Bego 2026)","CRISPR/Cas9 in biologia open source","Energia nucleare — fissione come ur-GPT del XX secolo"],
+    theory:"Terza ipostasi: la pervasività rende inapplicabile la distinzione origine/destinazione. 'Patriotic tech' (Bego 2026): le aziende abitano strutturalmente entrambi i domini. Capitalismo politico (Aresu 2020): la sicurezza nazionale assorbe tutti gli strumenti economici — 'la difesa è molto più importante della ricchezza' (Adam Smith).",
+    refs:"Aresu (2020) · Bego (2026) · Winner (1980) · Bresnahan & Trajtenberg (1995)"
+  },
+  {
+    bg:"#1c1917", fg:"#f5f0e8",
+    name:"Linguaggio / Comunicazione", sub:"fondamento ontologico · dual use non contingente",
+    showQuadrant: false,
+    examples:["Scrittura — ordini militari e letteratura: stessa tecnologia","Telegrafo — tagliato in guerra, spiato in pace (NSA, Tempora)","Cavi ottici sottomarini — infrastruttura civile e militare","AI conversazionale — estensione materiale del linguaggio"],
+    theory:"Fondamento da cui tutte le ipostasi emergono. Il linguaggio non 'diventa' militare: è la condizione di possibilità di tutte le tecnologie a tutti i livelli. Innis (1950): ogni grande infrastruttura comunicativa è simultaneamente strumento di potere militare, commerciale e imperiale. Turner (2006): la narrazione controculturale di Internet ha coperto le origini DARPA.",
+    refs:"Innis (1950) · Virilio (1977) · Turner (2006)"
+  }
+];
+
+let current = null;
+
+function selectLevel(idx) {
+  current = idx;
+  const L = LEVELS[idx];
+  document.querySelectorAll('.py-level').forEach(el => el.style.opacity = parseInt(el.dataset.level)===idx?'1':'0.42');
+  document.querySelectorAll('.py-text').forEach(el => el.style.opacity = parseInt(el.dataset.level)===idx?'1':'0.35');
+  document.getElementById('defaultView').style.display='none';
+  document.getElementById('detailView').style.display='block';
+  const b = document.getElementById('levelBadge');
+  b.style.background=L.bg; b.style.color=L.fg;
+  document.getElementById('levelName').textContent=L.name;
+  document.getElementById('levelSub').textContent=L.sub;
+
+  // Level 0: show quadrant grid, hide examples list
+  const qv = document.getElementById('quadrantView');
+  const es = document.getElementById('examplesSection');
+  if (L.showQuadrant) {
+    qv.style.display='block';
+    es.style.display='none';
+  } else {
+    qv.style.display='none';
+    es.style.display='block';
+    document.getElementById('examplesList').innerHTML=L.examples.map(e=>`<div class="example-item">${e}</div>`).join('');
+  }
+
+  document.getElementById('theoryText').textContent=L.theory;
+  document.getElementById('refsText').textContent='Riferimenti: '+L.refs;
+}
+
+function clearSelection() {
+  current=null;
+  document.querySelectorAll('.py-level,.py-text').forEach(el=>el.style.opacity='1');
+  document.getElementById('defaultView').style.display='block';
+  document.getElementById('detailView').style.display='none';
+}
+
+document.querySelectorAll('.py-level,.py-text').forEach(el => {
+  el.style.cursor='pointer';
+  el.addEventListener('click',()=>{
+    const idx=parseInt(el.dataset.level);
+    if(current===idx) clearSelection(); else selectLevel(idx);
+  });
+});
+</script>
+</body>
+</html>

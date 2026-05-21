@@ -140,17 +140,13 @@ og_type: article
         list.appendChild(li);
       });
       details.appendChild(list);
-      // Insert after first figure-wrapper (hero image), otherwise before first heading
-      var heroFigure = articleBody.querySelector('.figure-wrapper');
-      if (heroFigure) {
-        heroFigure.parentNode.insertBefore(details, heroFigure.nextSibling);
+      // Insert before the second h2 (end of first section); fallback to before first h2
+      var allH2 = articleBody.querySelectorAll('h2');
+      var insertionPoint = allH2.length >= 2 ? allH2[1] : (allH2.length >= 1 ? allH2[0] : null);
+      if (insertionPoint) {
+        insertionPoint.parentNode.insertBefore(details, insertionPoint);
       } else {
-        var firstHeading = articleBody.querySelector('h2, h3');
-        if (firstHeading) {
-          firstHeading.parentNode.insertBefore(details, firstHeading);
-        } else {
-          articleBody.insertBefore(details, articleBody.firstChild);
-        }
+        articleBody.insertBefore(details, articleBody.firstChild);
       }
     }
   }
