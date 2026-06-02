@@ -2645,7 +2645,112 @@ body.irene-page .site-nav a.active {
     border-color: #2e2e2a;
   }
 
-  /* Irene e Episteme: lascia i colori brand invariati */
+  /* Bio tile — mantieni blu brand, non viola */
+  .about-bio-tile {
+    background: #1C0E80;
+  }
+
+  .about-bio-tile-text {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  /* Loghi — in dark mode multiply non funziona, usa normal */
+  .profilo-logo-item img {
+    mix-blend-mode: normal;
+  }
+
+  .profilo-logo-item--dark,
+  .profilo-logo-item--light {
+    background: #fff;
+    border-color: #333;
+  }
+
+  /* About credentials e sezioni */
+  .about-teaching,
+  .about-publication,
+  .about-companies {
+    border-color: #2e2e2a;
+  }
+
+  .about-logo-item {
+    border-color: #2e2e2a;
+    background: #fff;
+  }
+
+  .about-logo-caption {
+    color: #666;
+  }
+
+  .about-book-card {
+    border-color: #2e2e2a;
+    background: #1e1e1a;
+  }
+
+  .about-book-title { color: #e8e4dc; }
+  .about-book-subtitle,
+  .about-book-publisher,
+  .about-book-series { color: #9a9690; }
+  .about-book-cta { color: #8B7EF8; }
+
+  /* Irene Media */
+  .irene-services li {
+    background: #1e1e1a;
+    color: #e8e4dc;
+  }
+
+  .irene-section h2 {
+    color: #c0566a;
+  }
+
+  .irene-content p {
+    color: #9a9690;
+  }
+
+  /* Episteme Advisory */
+  .episteme-content h2 {
+    color: #e8e4dc;
+  }
+
+  .episteme-content p {
+    color: #9a9690;
+  }
+
+  .episteme-service {
+    background: #1e1e1a;
+    border-left-color: #0F6E56;
+  }
+
+  .episteme-service h3,
+  .episteme-service p {
+    color: #e8e4dc;
+  }
+
+  .episteme-collaborators {
+    background: #1e1e1a;
+  }
+
+  .episteme-collaborators h3,
+  .episteme-collaborators p {
+    color: #9a9690;
+  }
+
+  .episteme-alert {
+    background: #2a1f0a;
+    border-color: #3a2a0a;
+  }
+
+  .episteme-alert p {
+    color: #c8a060;
+  }
+
+  /* Profilo page */
+  .profilo-org { color: #e8e4dc; }
+  .profilo-period { color: #5a5856; }
+  .profilo-role-title { color: #9a9690; }
+  .profilo-role p { color: #9a9690; }
+  .profilo-section h2 { color: #8B7EF8; border-bottom-color: #2e2e2a; }
+  .profilo-header { border-bottom-color: #2e2e2a; }
+  .profilo-role { border-bottom-color: #2e2e2a; }
 }
 
 /* === ERROR PAGE === */
