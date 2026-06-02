@@ -883,20 +883,59 @@ figcaption {
   object-fit: cover;
 }
 
-.about-bio-card {
-  border-left: 3px solid var(--color-accent);
-  padding: var(--spacing-sm) var(--spacing-md);
-  margin-bottom: var(--spacing-md);
-  background: var(--color-bg-alt, #f7f4ef);
-  font-size: 15px;
-  color: var(--color-text-light);
-  line-height: 1.65;
+/* Bio tile — tassello blu, full-bleed */
+.about-bio-tile {
+  background: var(--color-primary);
+  margin: 0 calc(-1 * var(--spacing-md)) var(--spacing-lg);
+  padding: var(--spacing-md);
+}
+
+.about-bio-tile-text {
+  font-size: 16px;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.88);
+  margin: 0;
+}
+
+.about-bio-tile-text em {
+  color: #fff;
+  font-style: italic;
 }
 
 .about-roles {
   font-size: 15px;
   color: var(--color-text-light);
   margin: 0;
+}
+
+.about-lecturer {
+  font-family: var(--font-serif);
+  font-size: 14px;
+  color: var(--color-text-hint);
+  margin: 4px 0 0;
+  font-style: italic;
+}
+
+/* Loghi formazione — dimensione grande + nome sotto */
+.about-logo-item--edu {
+  flex-direction: column;
+  gap: 12px;
+  padding: var(--spacing-md);
+  min-height: 140px;
+  justify-content: center;
+}
+
+.about-logo-item--edu img {
+  max-height: 80px;
+  mix-blend-mode: multiply;
+}
+
+.about-logo-item--edu .about-logo-caption {
+  font-family: var(--font-serif);
+  font-size: 13px;
+  color: var(--color-text-light);
+  text-align: center;
+  font-style: italic;
 }
 
 .about-main h1 {
@@ -945,6 +984,162 @@ figcaption {
   margin-bottom: var(--spacing-sm);
   padding-left: var(--spacing-sm);
   border-left: 2px solid var(--color-border);
+}
+
+/* Sezione docenze */
+.about-teaching {
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--color-border);
+}
+
+.about-credentials-title {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-md);
+  font-weight: 600;
+}
+
+/* Griglia loghi */
+.about-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-sm);
+}
+
+.about-logo-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: var(--spacing-sm);
+  border: 1px solid var(--color-border);
+  text-decoration: none;
+  transition: border-color 0.15s;
+}
+
+.about-logo-item:hover {
+  border-color: var(--color-primary);
+}
+
+.about-logo-img {
+  height: 44px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Logo con sfondo scuro — padding + border-radius per contenimento */
+.about-logo-img--dark {
+  border-radius: 4px;
+  background: #111;
+  padding: 6px 10px;
+  height: 52px;
+}
+
+.about-logo-caption {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  color: var(--color-text-light);
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* Sezione pubblicazioni */
+.about-publication {
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--color-border);
+}
+
+/* Book card con copertina */
+.about-book-card {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: flex-start;
+  text-decoration: none;
+  color: inherit;
+  padding: var(--spacing-sm);
+  border: 1px solid var(--color-border);
+  transition: border-color 0.15s;
+  max-width: 480px;
+}
+
+.about-book-card:hover {
+  border-color: var(--color-primary);
+}
+
+.about-book-cover {
+  flex-shrink: 0;
+  width: 90px;
+}
+
+.about-book-cover img {
+  width: 100%;
+  display: block;
+  box-shadow: 2px 4px 12px rgba(0,0,0,0.15);
+}
+
+.about-book-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+}
+
+.about-book-series {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-light);
+}
+
+.about-book-title {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--color-text);
+  line-height: 1.3;
+}
+
+.about-book-subtitle {
+  font-size: 14px;
+  color: var(--color-text-light);
+  font-style: italic;
+}
+
+.about-book-publisher {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  color: var(--color-text-light);
+  margin-top: 4px;
+}
+
+.about-book-cta {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  color: var(--color-primary);
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .about-logos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-book-card {
+    max-width: 100%;
+  }
+
+  .about-book-cover {
+    width: 70px;
+  }
 }
 
 .about-cta {
@@ -1455,6 +1650,174 @@ body.irene-page .site-nav a.active {
 .episteme-collaborators strong {
   color: #0F6E56;
   font-weight: 500;
+}
+
+/* === LOGHI AZIENDE (about + profilo) === */
+.about-companies {
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--color-border);
+}
+
+.about-logos--companies {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.profilo-logos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--spacing-sm);
+}
+
+.profilo-logos--edu,
+.about-logos--edu {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 360px;
+}
+
+.about-teaching--edu {
+  margin-top: var(--spacing-md);
+}
+
+.profilo-logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid var(--color-border);
+  min-height: 60px;
+}
+
+.profilo-logo-item--dark {
+  background: #fff;
+  border-color: var(--color-border);
+}
+
+.profilo-logo-item--light {
+  background: #fff;
+}
+
+.profilo-logo-item img {
+  max-height: 36px;
+  max-width: 100%;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  mix-blend-mode: multiply;
+}
+
+@media (max-width: 768px) {
+  .about-logos--companies,
+  .profilo-logos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .about-logos--companies,
+  .profilo-logos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* === PROFILO PAGE (hidden, GEO-optimized) === */
+.profilo-page {
+  max-width: 680px;
+}
+
+.profilo-header {
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.profilo-header h1 {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.profilo-headline {
+  font-size: 15px;
+  color: var(--color-text-light);
+  margin: 0 0 4px;
+}
+
+.profilo-location {
+  font-size: 13px;
+  color: var(--color-text-hint);
+  font-family: var(--font-sans);
+  margin: 0;
+}
+
+.profilo-section {
+  margin-bottom: var(--spacing-lg);
+}
+
+.profilo-section h2 {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-top: 0;
+  margin-bottom: var(--spacing-md);
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.profilo-role {
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.profilo-role:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.profilo-role-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--spacing-sm);
+  margin-bottom: 2px;
+  flex-wrap: wrap;
+}
+
+.profilo-org {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--color-text);
+}
+
+.profilo-period {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  color: var(--color-text-hint);
+  white-space: nowrap;
+}
+
+.profilo-role-title {
+  font-size: 14px;
+  color: var(--color-text-light);
+  font-style: italic;
+  margin-bottom: 6px;
+}
+
+.profilo-role p:not(.profilo-role-title) {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-text);
+  margin-bottom: 0;
+}
+
+.profilo-section > p {
+  font-size: 16px;
+  line-height: 1.7;
 }
 
 .episteme-cta {
