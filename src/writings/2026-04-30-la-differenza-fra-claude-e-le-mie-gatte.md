@@ -6,6 +6,7 @@ category: ["AI", "Filosofia", "Epistemologia"]
 lang: "🇮🇹 Italiano"
 description: "Cinque definizioni dell'AI, la disputa sugli universali, le metafore-strumento e uno Spinoza implicito. Cosa siamo quando proviamo a definire l'intelligenza artificiale."
 og_image: "/images/mary-gatta-hero.jpg"
+english_version: "https://claudiocammarano.substack.com/p/what-we-are-when-we-try-to-define"
 ---
 
 <figure class="article-hero">

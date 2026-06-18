@@ -7,6 +7,7 @@ category: ["Geopolitica", "Teoria dei giochi", "Democrazia"]
 lang: "🇮🇹 Italiano"
 description: "Il fattore di sconto della politica americana, le opportunità per l'attore C (chi sarà?) e l'aritmetica dei sistemi che reggono. Una rilettura del torneo di Axelrod e del Tit-for-Tat per capire il presente."
 og_image: "/images/wargames-hero.jpg"
+english_version: "https://claudiocammarano.substack.com/p/when-winning-is-losing-trumps-negotiation"
 ---
 
 <script>

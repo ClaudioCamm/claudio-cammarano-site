@@ -7,6 +7,7 @@ category: ["Geopolitica", "Teoria dei giochi", "Regimi politici"]
 lang: "🇮🇹 Italiano"
 description: "Win-set domestici, regimi politici, e l'aritmetica dei tappi quando il garante si ritira. Continuazione (e correzione) de L'ombra del futuro."
 og_image: "/images/shepard-fairey-hero.jpg"
+english_version: "https://claudiocammarano.substack.com/p/endless-games-domestic-constraints"
 ---
 
 <script>

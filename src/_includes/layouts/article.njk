@@ -37,19 +37,25 @@ og_type: article
           "position": 1,
           "name": "Home",
           "item": "https://claudiocammarano.com/"
-        },
+        }{% set _ldCluster = category | clusterOf %}{% if _ldCluster %},
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Writings",
-          "item": "https://claudiocammarano.com/writings/"
+          "name": "{{ _ldCluster | jsonEscape | safe }}",
+          "item": "https://claudiocammarano.com/temi/#{{ _ldCluster | slugify }}"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "{{ title | jsonEscape | safe }}",
           "item": "https://claudiocammarano.com{{ page.url }}"
-        }
+        }{% else %},
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "{{ title | jsonEscape | safe }}",
+          "item": "https://claudiocammarano.com{{ page.url }}"
+        }{% endif %}
       ]
     }
   ]
@@ -63,6 +69,20 @@ og_type: article
 
 <article class="article-full">
   <header class="article-header">
+    {% set _cluster = category | clusterOf %}
+    <nav class="breadcrumb" aria-label="Navigazione">
+      <a href="/">Home</a>
+      {% if _cluster %}
+      <span class="breadcrumb-sep" aria-hidden="true">·</span>
+      <a href="/temi/#{{ _cluster | slugify }}">{{ _cluster }}</a>
+      {% endif %}
+      {% if series %}
+      <span class="breadcrumb-sep" aria-hidden="true">·</span>
+      <a href="/serie/{{ series | seriesBaseName | slugify }}/">{{ series | seriesBaseName }}</a>
+      {% endif %}
+      <span class="breadcrumb-sep" aria-hidden="true">·</span>
+      <span class="breadcrumb-current">{{ title }}</span>
+    </nav>
     <div class="article-meta">
       <span class="article-date">{{ date | formatDate }}</span>
       {% if category %}
@@ -80,6 +100,11 @@ og_type: article
     <h1>{{ title }}</h1>
     {% if description %}
     <p class="article-description">{{ description }}</p>
+    {% endif %}
+    {% if english_version %}
+    <div class="article-lang-link">
+      <a href="{{ english_version }}" target="_blank" rel="noopener">🇬🇧 Read in English →</a>
+    </div>
     {% endif %}
     <div class="share-bar">
       <button class="share-btn" id="share-btn" aria-label="Condividi">

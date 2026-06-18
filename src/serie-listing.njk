@@ -1,0 +1,54 @@
+---
+layout: layouts/base.njk
+title: "Serie"
+description: "Le serie di articoli di Claudio Cammarano: saggi in più parti collegati da un filo tematico."
+permalink: "/serie/"
+---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Serie",
+  "description": "Le serie di articoli di Claudio Cammarano",
+  "url": "https://claudiocammarano.com/serie/",
+  "author": {
+    "@type": "Person",
+    "name": "Claudio Cammarano",
+    "url": "https://claudiocammarano.com/about/"
+  }
+}
+</script>
+
+<div class="serie-listing-page">
+  <header class="temi-page-header">
+    <p class="tag-page-label">Narrativa lunga</p>
+    <h1 class="temi-page-title">Serie</h1>
+    <p class="temi-page-intro">Saggi in più parti collegati da un filo tematico. Ogni serie è leggibile in sequenza o per singolo pezzo.</p>
+  </header>
+
+  {% for serieName in collections.seriesList %}
+    {% set seriePosts = collections.writings | filterBySeries(serieName) %}
+    {% set serieDesc = seriesDescriptions[serieName] %}
+    <article class="serie-listing-item">
+      <div class="serie-listing-meta">
+        <span class="serie-listing-count">{{ seriePosts.length }} {% if seriePosts.length == 1 %}articolo{% else %}articoli{% endif %}</span>
+        {% if seriePosts[0].data.serie_totale_prevista %}
+        <span class="serie-listing-total">di {{ seriePosts[0].data.serie_totale_prevista }} previsti</span>
+        {% endif %}
+      </div>
+      <h2 class="serie-listing-title"><a href="/serie/{{ serieName | slugify }}/">{{ serieName }}</a></h2>
+      {% if serieDesc %}
+      <p class="serie-listing-desc">{{ serieDesc }}</p>
+      {% endif %}
+      <ol class="serie-listing-posts">
+        {% for post in seriePosts %}
+        <li class="serie-listing-post">
+          <a href="{{ post.url }}">{{ post.data.title }}</a>
+          <span class="serie-listing-post-date">{{ post.date | formatDate }}</span>
+        </li>
+        {% endfor %}
+      </ol>
+    </article>
+  {% endfor %}
+</div>

@@ -40,6 +40,10 @@ eleventyComputed:
 
 <div class="tag-page">
   <header class="tag-page-header">
+    {% set tagCluster = tag | clusterOf %}
+    {% if tagCluster %}
+    <p class="tag-page-cluster"><a href="/temi/#{{ tagCluster | slugify }}">{{ tagCluster }}</a></p>
+    {% endif %}
     <p class="tag-page-label">Argomento</p>
     <h1 class="tag-page-title">{{ tag }}</h1>
     <p class="tag-page-count">{{ tagPosts.length }} {% if tagPosts.length == 1 %}articolo{% else %}articoli{% endif %}</p>

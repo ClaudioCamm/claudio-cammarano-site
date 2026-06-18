@@ -1,5 +1,6 @@
 const markdownIt = require("markdown-it");
 const md = markdownIt({ html: true, typographer: true });
+const clustersData = require("./src/_data/clusters.js");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setLibrary("md", md);
@@ -229,6 +230,31 @@ module.exports = function(eleventyConfig) {
       .replace(/[^a-z0-9-]/g, '')
       .replace(/-+/g, '-')
       .replace(/^-|-$/g, '');
+  });
+
+  // Groups conceptsIndex array by type, sorted by article count desc then alpha
+  eleventyConfig.addFilter("filterByType", function(arr, type) {
+    if (!arr) return [];
+    return arr
+      .filter(function(c) { return c.type === type; })
+      .sort(function(a, b) {
+        if (b.articles.length !== a.articles.length) return b.articles.length - a.articles.length;
+        return a.name.localeCompare(b.name, 'it');
+      });
+  });
+
+  // Returns the cluster name for the first matching tag, or null if unmapped
+  eleventyConfig.addFilter("clusterOf", function(tags) {
+    if (!tags) return null;
+    var arr = Array.isArray(tags) ? tags : [tags];
+    for (var clusterName in clustersData) {
+      for (var i = 0; i < arr.length; i++) {
+        if (clustersData[clusterName].indexOf(arr[i]) !== -1) {
+          return clusterName;
+        }
+      }
+    }
+    return null;
   });
 
   eleventyConfig.addFilter("filterByTag", function(collection, tag) {
