@@ -20,12 +20,12 @@ permalink: "/indice/"
 }
 </script>
 
-{% set personas    = conceptsIndex | filterByType("persona") %}
-{% set teorie      = conceptsIndex | filterByType("teoria") %}
-{% set paesi       = conceptsIndex | filterByType("paese") %}
-{% set luoghi      = conceptsIndex | filterByType("luogo") %}
-{% set istituzioni = conceptsIndex | filterByType("istituzione") %}
-{% set testi       = conceptsIndex | filterByType("testo") %}
+{% set personas    = collections.mergedConceptsIndex | filterByType("persona") %}
+{% set teorie      = collections.mergedConceptsIndex | filterByType("teoria") %}
+{% set paesi       = collections.mergedConceptsIndex | filterByType("paese") %}
+{% set luoghi      = collections.mergedConceptsIndex | filterByType("luogo") %}
+{% set istituzioni = collections.mergedConceptsIndex | filterByType("istituzione") %}
+{% set testi       = collections.mergedConceptsIndex | filterByType("testo") %}
 
 <div class="indice-page">
 
@@ -55,7 +55,7 @@ permalink: "/indice/"
         </dt>
         <dd class="indice-articles">
           {% for art in concept.articles %}
-          <a href="{{ art.url }}" class="indice-article-link">{{ art.title }}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
+          <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
           {% endfor %}
         </dd>
       </div>
@@ -75,7 +75,7 @@ permalink: "/indice/"
         </dt>
         <dd class="indice-articles">
           {% for art in concept.articles %}
-          <a href="{{ art.url }}" class="indice-article-link">{{ art.title }}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
+          <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
           {% endfor %}
         </dd>
       </div>
@@ -96,7 +96,7 @@ permalink: "/indice/"
         </dt>
         <dd class="indice-articles">
           {% for art in concept.articles %}
-          <a href="{{ art.url }}" class="indice-article-link">{{ art.title }}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
+          <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
           {% endfor %}
         </dd>
       </div>
@@ -116,7 +116,7 @@ permalink: "/indice/"
         </dt>
         <dd class="indice-articles">
           {% for art in concept.articles %}
-          <a href="{{ art.url }}" class="indice-article-link">{{ art.title }}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
+          <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
           {% endfor %}
         </dd>
       </div>
@@ -136,7 +136,7 @@ permalink: "/indice/"
         </dt>
         <dd class="indice-articles">
           {% for art in concept.articles %}
-          <a href="{{ art.url }}" class="indice-article-link">{{ art.title }}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
+          <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
           {% endfor %}
         </dd>
       </div>
@@ -156,7 +156,7 @@ permalink: "/indice/"
         </dt>
         <dd class="indice-articles">
           {% for art in concept.articles %}
-          <a href="{{ art.url }}" class="indice-article-link">{{ art.title }}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
+          <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
           {% endfor %}
         </dd>
       </div>

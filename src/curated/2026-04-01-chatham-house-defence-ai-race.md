@@ -5,4 +5,5 @@ source: "Chatham House"
 date: 2026-04-01
 description: "Come la corsa agli investimenti in tecnologie dual-use e difesa sta ridisegnando la geopolitica dell'AI: chi finanzia cosa, con quali implicazioni per la competizione globale tra Stati Uniti, Europa e Cina."
 tags: [curated, AI, Geopolitica, Difesa]
+concepts: ["dual use", "Stati Uniti", "Cina", "Europa"]
 ---

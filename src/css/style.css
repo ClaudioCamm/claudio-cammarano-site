@@ -3483,6 +3483,33 @@ a.temi-tag-pill:hover .temi-tag-count {
   }
 }
 
+/* Curated badge — small superscript-style indicator */
+.indice-curated-badge {
+  display: inline-block;
+  margin-left: 3px;
+  padding: 0 4px;
+  border-radius: 3px;
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-hint);
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  vertical-align: super;
+  line-height: 1.4;
+  text-transform: lowercase;
+}
+
+.indice-article-link--curated {
+  color: var(--color-text-light);
+}
+
+.indice-article-link--curated:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
   .indice-item--multi {
@@ -3496,5 +3523,10 @@ a.temi-tag-pill:hover .temi-tag-count {
   .indice-article-link:hover {
     color: #aac6e8;
     border-color: #aac6e8;
+  }
+
+  .indice-curated-badge {
+    border-color: var(--color-border);
+    color: var(--color-text-hint);
   }
 }

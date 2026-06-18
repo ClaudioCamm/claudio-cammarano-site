@@ -5,4 +5,5 @@ source: "The New York Times"
 date: 2026-04-07
 description: "Da segnalare non tanto per il merito politico quanto come caso di studio: quanto poco razionali e poco lineari possano essere le decisioni umane quando entrano in gioco impulso, timing personale, pressioni contingenti. Un promemoria utile per chiunque modelli scenari geopolitici assumendo attori razionali."
 tags: [curated, geopolitica, decision-making]
+concepts: ["Trump, Donald", "Iran"]
 ---

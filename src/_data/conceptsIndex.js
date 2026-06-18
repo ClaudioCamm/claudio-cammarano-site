@@ -20,7 +20,7 @@ module.exports = [
   // ─── PERSONE ──────────────────────────────────────────────────────────────
 
   {
-    name: "René Descartes",
+    name: "Descartes, René",
     type: "persona",
     articles: [
       { title: "La differenza fra Claude e le mie gatte", url: "/writings/2026-04-30-la-differenza-fra-claude-e-le-mie-gatte/" },
@@ -28,7 +28,7 @@ module.exports = [
     ]
   },
   {
-    name: "Michel Foucault",
+    name: "Foucault, Michel",
     type: "persona",
     articles: [
       { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-02-19-dieci-anni-senza-umberto-eco/" },
@@ -36,7 +36,7 @@ module.exports = [
     ]
   },
   {
-    name: "Jacques Derrida",
+    name: "Derrida, Jacques",
     type: "persona",
     articles: [
       { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-02-19-dieci-anni-senza-umberto-eco/" },
@@ -52,7 +52,7 @@ module.exports = [
     ]
   },
   {
-    name: "Daniel Kahneman",
+    name: "Kahneman, Daniel",
     type: "persona",
     articles: [
       { title: "L'ombra del futuro", url: "/writings/2026-04-15-lombra-del-futuro/" },
@@ -60,70 +60,70 @@ module.exports = [
     ]
   },
   {
-    name: "Nassim Nicholas Taleb",
+    name: "Taleb, Nassim Nicholas",
     type: "persona",
     articles: [
       { title: "Il rumore a Beirut", url: "/writings/2026-04-09-il-rumore-a-beirut/" }
     ]
   },
   {
-    name: "Robert Axelrod",
+    name: "Axelrod, Robert",
     type: "persona",
     articles: [
       { title: "L'ombra del futuro", url: "/writings/2026-04-15-lombra-del-futuro/" }
     ]
   },
   {
-    name: "Robert Putnam",
+    name: "Putnam, Robert",
     type: "persona",
     articles: [
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" }
     ]
   },
   {
-    name: "Jean-François Lyotard",
+    name: "Lyotard, Jean-François",
     type: "persona",
     articles: [
       { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" }
     ]
   },
   {
-    name: "Jürgen Habermas",
+    name: "Habermas, Jürgen",
     type: "persona",
     articles: [
       { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" }
     ]
   },
   {
-    name: "Maurizio Ferraris",
+    name: "Ferraris, Maurizio",
     type: "persona",
     articles: [
       { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" }
     ]
   },
   {
-    name: "Umberto Eco",
+    name: "Eco, Umberto",
     type: "persona",
     articles: [
       { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-02-19-dieci-anni-senza-umberto-eco/" }
     ]
   },
   {
-    name: "Pierre Wack",
+    name: "Wack, Pierre",
     type: "persona",
     articles: [
       { title: "Quando Dario Amodei ha detto no al Pentagono", url: "/writings/2026-03-09-quando-dario-amodei-ha-detto-no-al-pentagono/" }
     ]
   },
   {
-    name: "Dario Amodei",
+    name: "Amodei, Dario",
     type: "persona",
     articles: [
       { title: "Quando Dario Amodei ha detto no al Pentagono", url: "/writings/2026-03-09-quando-dario-amodei-ha-detto-no-al-pentagono/" }
     ]
   },
   {
-    name: "Valery Gerasimov",
+    name: "Gerasimov, Valery",
     type: "persona",
     articles: [
       { title: "Il rumore a Beirut", url: "/writings/2026-04-09-il-rumore-a-beirut/" },
@@ -131,7 +131,7 @@ module.exports = [
     ]
   },
   {
-    name: "Daron Acemoglu",
+    name: "Acemoglu, Daron",
     type: "persona",
     articles: [
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" }
@@ -146,49 +146,49 @@ module.exports = [
     ]
   },
   {
-    name: "Baruch Spinoza",
+    name: "Spinoza, Baruch",
     type: "persona",
     articles: [
       { title: "La differenza fra Claude e le mie gatte", url: "/writings/2026-04-30-la-differenza-fra-claude-e-le-mie-gatte/" }
     ]
   },
   {
-    name: "Andy Clark",
+    name: "Clark, Andy",
     type: "persona",
     articles: [
       { title: "La differenza fra Claude e le mie gatte", url: "/writings/2026-04-30-la-differenza-fra-claude-e-le-mie-gatte/" }
     ]
   },
   {
-    name: "Francisco Varela",
+    name: "Varela, Francisco",
     type: "persona",
     articles: [
       { title: "La differenza fra Claude e le mie gatte", url: "/writings/2026-04-30-la-differenza-fra-claude-e-le-mie-gatte/" }
     ]
   },
   {
-    name: "Luciano Floridi",
+    name: "Floridi, Luciano",
     type: "persona",
     articles: [
       { title: "La macchina e la lotta", url: "/writings/2026-06-01-la-macchina-e-la-lotta/" }
     ]
   },
   {
-    name: "Fernand Braudel",
+    name: "Braudel, Fernand",
     type: "persona",
     articles: [
       { title: "Cartolina dal paese più bello del mondo", url: "/writings/2026-04-24-cartolina-dal-paese-piu-bello-del-mondo/" }
     ]
   },
   {
-    name: "Giambattista Vico",
+    name: "Vico, Giambattista",
     type: "persona",
     articles: [
       { title: "Salveremo le humanities", url: "/writings/2026-03-15-salveremo-le-humanities/" }
     ]
   },
   {
-    name: "Karl Friston",
+    name: "Friston, Karl",
     type: "persona",
     articles: [
       { title: "La differenza fra Claude e le mie gatte", url: "/writings/2026-04-30-la-differenza-fra-claude-e-le-mie-gatte/" }
@@ -588,7 +588,7 @@ module.exports = [
   // ─── LEADER POLITICI ──────────────────────────────────────────────────────
 
   {
-    name: "Donald Trump",
+    name: "Trump, Donald",
     type: "persona",
     articles: [
       { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-02-19-dieci-anni-senza-umberto-eco/" },
@@ -600,7 +600,7 @@ module.exports = [
     ]
   },
   {
-    name: "Vladimir Putin",
+    name: "Putin, Vladimir",
     type: "persona",
     articles: [
       { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-02-19-dieci-anni-senza-umberto-eco/" },
@@ -610,46 +610,61 @@ module.exports = [
     ]
   },
   {
-    name: "Volodymyr Zelensky",
+    name: "Zelensky, Volodymyr",
     type: "persona",
     articles: [
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" }
     ]
   },
   {
-    name: "Viktor Orbán",
+    name: "Orbán, Viktor",
     type: "persona",
     articles: [
       { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-02-19-dieci-anni-senza-umberto-eco/" }
     ]
   },
   {
-    name: "Benjamin Netanyahu",
+    name: "Netanyahu, Benjamin",
     type: "persona",
     articles: [
       { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" }
     ]
   },
   {
-    name: "Xi Jinping",
+    name: "Xi, Jinping",
     type: "persona",
     articles: [
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" }
     ]
   },
   {
-    name: "Alexander Karp",
+    name: "Karp, Alexander",
     type: "persona",
     articles: [
       { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" }
     ]
   },
   {
-    name: "Pete Hegseth",
+    name: "Hegseth, Pete",
     type: "persona",
     articles: [
       { title: "Quando Dario Amodei ha detto no al Pentagono", url: "/writings/2026-03-09-quando-dario-amodei-ha-detto-no-al-pentagono/" }
     ]
+  },
+  {
+    name: "Thompson, Ben",
+    type: "persona",
+    articles: []
+  },
+  {
+    name: "Arendt, Hannah",
+    type: "persona",
+    articles: []
+  },
+  {
+    name: "Thiel, Peter",
+    type: "persona",
+    articles: []
   }
 
 ];

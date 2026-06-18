@@ -1,6 +1,7 @@
 const markdownIt = require("markdown-it");
 const md = markdownIt({ html: true, typographer: true });
 const clustersData = require("./src/_data/clusters.js");
+const conceptsIndexData = require("./src/_data/conceptsIndex.js");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setLibrary("md", md);
@@ -122,6 +123,50 @@ module.exports = function(eleventyConfig) {
       .map(item => { item.data._postType = "curated"; return item; });
     return [...writings, ...curated]
       .sort((a, b) => b.date - a.date);
+  });
+
+  // === COLLECTIONS (continued) ===
+
+  // Merged concepts index: static conceptsIndex.js + curated items that declare
+  // concepts[] in their frontmatter. Curated articles are added to matching
+  // concept entries; unknown concept names are silently skipped.
+  eleventyConfig.addCollection("mergedConceptsIndex", function(collectionApi) {
+    // Deep-clone to avoid mutating the require() cache across builds
+    var index = conceptsIndexData.map(function(c) {
+      return {
+        name: c.name,
+        type: c.type,
+        articles: c.articles.slice(),
+        note: c.note || null
+      };
+    });
+
+    // Fast lookup by concept name
+    var byName = {};
+    index.forEach(function(c) { byName[c.name] = c; });
+
+    // Walk curated collection
+    var curated = collectionApi.getFilteredByGlob("src/curated/*.md");
+    curated.forEach(function(item) {
+      var concepts = item.data.concepts;
+      if (!Array.isArray(concepts) || concepts.length === 0) return;
+
+      concepts.forEach(function(conceptName) {
+        var concept = byName[conceptName];
+        if (!concept) return; // not in taxonomy — add it to conceptsIndex.js first
+
+        var already = concept.articles.some(function(a) { return a.url === item.url; });
+        if (!already) {
+          concept.articles.push({
+            title: item.data.title,
+            url: item.url,
+            _source: "curated"
+          });
+        }
+      });
+    });
+
+    return index;
   });
 
   // === FILTERS ===

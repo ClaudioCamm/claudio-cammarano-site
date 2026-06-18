@@ -5,4 +5,5 @@ source: "Jill Lepore / The New York Times"
 date: 2025-10-27
 description: "Jill Lepore sulla narrazione fondativa americana e sulla necessità di riscriverla per il secolo che viene. Un saggio che è anche una lezione di metodo su cosa significhi raccontare una nazione senza cedere né al mito né al cinismo."
 tags: [curated, storia, stati-uniti]
+concepts: ["Stati Uniti"]
 ---
