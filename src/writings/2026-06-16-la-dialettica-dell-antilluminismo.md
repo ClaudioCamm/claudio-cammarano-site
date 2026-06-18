@@ -6,6 +6,7 @@ category: ["Filosofia", "Politica", "Epistemologia"]
 lang: "🇮🇹 Italiano"
 description: "Verità, potere e la crisi dell’autorità universale. Da Cartesio a Trump, dal poststrutturalismo al tribalismo reazionario: perché il veleno era nell’antidoto."
 og_image: "/images/trump-vance-zelensky-hero.avif"
+english_version: "https://claudiocammarano.substack.com/p/the-dialectic-of-counter-enlightenment"
 ---
 
 <figure class="article-hero">
