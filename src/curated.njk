@@ -21,5 +21,12 @@ title: Curated
     {% if item.data.description %}
     <p>{{ item.data.description }}</p>
     {% endif %}
+    {% if item.data.concepts and item.data.concepts.length %}
+    <div class="concetto-chips curated-concepts">
+      {% for cname in item.data.concepts %}
+      <a href="/concetti/{{ cname | slugify }}/" class="concetto-chip">{{ cname }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
 </article>
 {% endfor %}

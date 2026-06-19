@@ -266,6 +266,11 @@ module.exports = [
     ]
   },
   {
+    name: "allineamento AI",
+    type: "teoria",
+    articles: []
+  },
+  {
     name: "dual use",
     type: "teoria",
     articles: [

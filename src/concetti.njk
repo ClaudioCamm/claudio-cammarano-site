@@ -1,0 +1,257 @@
+---
+pagination:
+  data: collections.mergedConceptsIndex
+  size: 1
+  alias: concept
+permalink: "/concetti/{{ concept.name | slugify }}/"
+layout: layouts/base.njk
+eleventyComputed:
+  title: "{{ concept.name }}"
+  description: "Articoli collegati a {{ concept.name }} — indice concettuale di claudiocammarano.com"
+---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "{{ concept.name | jsonEscape | safe }}",
+  "description": "Articoli collegati a {{ concept.name | jsonEscape | safe }}",
+  "url": "https://claudiocammarano.com{{ page.url }}",
+  "author": {
+    "@type": "Person",
+    "name": "Claudio Cammarano",
+    "url": "https://claudiocammarano.com/about/"
+  }
+}
+</script>
+
+<div class="concetto-page">
+
+  {# ── Header ── #}
+  <header class="tag-page-header">
+    <nav class="breadcrumb" aria-label="Navigazione">
+      <a href="/">Home</a>
+      <span class="breadcrumb-sep" aria-hidden="true">·</span>
+      <a href="/indice/">Indice</a>
+      <span class="breadcrumb-sep" aria-hidden="true">·</span>
+      <span class="breadcrumb-current">{{ concept.name }}</span>
+    </nav>
+    {% if concept.type %}
+    <p class="concetto-type-badge">{{ concept.type }}</p>
+    {% endif %}
+    <h1 class="tag-page-title">{{ concept.name }}</h1>
+    <p class="tag-page-count">
+      {% if concept.articles.length == 0 %}Nessun articolo ancora
+      {% elif concept.articles.length == 1 %}1 articolo
+      {% else %}{{ concept.articles.length }} articoli{% endif %}
+    </p>
+    {% if concept.note %}
+    <p class="tag-page-intro">{{ concept.note }}</p>
+    {% endif %}
+  </header>
+
+  {# ── Concetti vicini (chip row) ── #}
+  {% set related = concept.name | relatedConcepts(collections.mergedConceptsIndex) %}
+  {% if related.length %}
+  <section class="concetto-related" aria-label="Concetti collegati">
+    <p class="concetto-related-label">Concetti vicini</p>
+    <div class="concetto-chips">
+      {% for r in related %}
+      <a href="/concetti/{{ r.name | slugify }}/" class="concetto-chip" title="{{ r.sharedCount }} {% if r.sharedCount == 1 %}articolo in comune{% else %}articoli in comune{% endif %}">{{ r.name }}</a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {# ── Grafo D3 (desktop ≥900px, solo se ci sono articoli) ── #}
+  {% if concept.articles.length > 0 %}
+  <div class="concetto-graph-wrap" id="concept-graph-wrap" aria-hidden="true">
+    <svg id="concept-graph-svg"></svg>
+  </div>
+
+  {# JSON data per il grafo — serializzato in modo sicuro #}
+  <script id="concept-graph-data" type="application/json">
+  {
+    "name": "{{ concept.name | jsonEscape | safe }}",
+    "type": "{{ concept.type | jsonEscape | safe }}",
+    "articles": [{% for a in concept.articles %}{"title":"{{ a.title | jsonEscape | safe }}","url":"{{ a.url }}"}{% if not loop.last %},{% endif %}{% endfor %}]
+  }
+  </script>
+  {% endif %}
+
+  {# ── Lista articoli ── #}
+  {% if concept.articles.length > 0 %}
+  <div class="concetto-articles">
+    {% for a in concept.articles %}
+    <article class="concetto-article-item">
+      <h2 class="concetto-article-title">
+        <a href="{{ a.url }}">{{ a.title }}</a>
+      </h2>
+      <p class="concetto-article-meta">
+        {% if a.url.startsWith('/writings/') %}Saggio
+        {% elif a.url.startsWith('/curated/') %}Curato
+        {% elif a.url.startsWith('/learning/') %}Apprendimento
+        {% else %}Articolo{% endif %}
+      </p>
+    </article>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+</div>
+
+{# ── D3 force-directed graph — caricato solo su desktop ── #}
+<div class="concetto-graph-tooltip" id="concept-tooltip" aria-hidden="true"></div>
+
+<script>
+(function () {
+  var wrap = document.getElementById('concept-graph-wrap');
+  if (!wrap || window.innerWidth < 900) return;
+
+  var dataEl = document.getElementById('concept-graph-data');
+  if (!dataEl) return;
+  var data;
+  try { data = JSON.parse(dataEl.textContent); } catch (e) { return; }
+  if (!data.articles || !data.articles.length) return;
+
+  // Load D3 lazily — solo su desktop
+  var s = document.createElement('script');
+  s.src = 'https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js';
+  s.onload = function () { buildGraph(data); };
+  document.head.appendChild(s);
+
+  function buildGraph(data) {
+    var svgEl = document.getElementById('concept-graph-svg');
+    var width = wrap.offsetWidth || 700;
+    var height = parseInt(getComputedStyle(svgEl).height) || 360;
+
+    // Colours from CSS variables
+    var cs = getComputedStyle(document.documentElement);
+    var colorPrimary = cs.getPropertyValue('--color-primary').trim() || '#1C0E80';
+    var colorMed = cs.getPropertyValue('--color-primary-medium').trim() || '#185FA5';
+    var colorBorder = cs.getPropertyValue('--color-border').trim() || '#e0e0e0';
+    var colorText = cs.getPropertyValue('--color-text').trim() || '#1a1a1a';
+    var colorBg = cs.getPropertyValue('--color-bg').trim() || '#ffffff';
+
+    // Section colour map
+    function nodeColor(d) {
+      if (d.id === '__concept__') return colorPrimary;
+      if (d.section === 'curated') return colorMed;
+      if (d.section === 'learning') return '#0F6E56';
+      return colorPrimary;
+    }
+
+    // Build nodes & links
+    var nodes = [{ id: '__concept__', label: data.name, type: 'concept', r: 22 }];
+    var links = [];
+    data.articles.forEach(function (a) {
+      var section = a.url.indexOf('/writings/') === 0 ? 'writings'
+                  : a.url.indexOf('/curated/') === 0 ? 'curated'
+                  : 'learning';
+      nodes.push({ id: a.url, label: a.title, url: a.url, type: 'article', section: section, r: 8 });
+      links.push({ source: '__concept__', target: a.url });
+    });
+
+    var svg = d3.select(svgEl)
+      .attr('viewBox', [0, 0, width, height]);
+
+    // Subtle grid pattern background
+    var defs = svg.append('defs');
+    defs.append('pattern')
+      .attr('id', 'cgrid')
+      .attr('width', 24).attr('height', 24)
+      .attr('patternUnits', 'userSpaceOnUse')
+      .append('path')
+        .attr('d', 'M 24 0 L 0 0 0 24')
+        .attr('fill', 'none')
+        .attr('stroke', colorBorder)
+        .attr('stroke-width', 0.4);
+
+    svg.append('rect').attr('width', width).attr('height', height).attr('fill', 'url(#cgrid)');
+
+    // Force simulation
+    var sim = d3.forceSimulation(nodes)
+      .force('link', d3.forceLink(links).id(function (d) { return d.id; }).distance(130))
+      .force('charge', d3.forceManyBody().strength(-260))
+      .force('center', d3.forceCenter(width / 2, height / 2))
+      .force('collide', d3.forceCollide().radius(function (d) { return d.r + 18; }));
+
+    // Edges
+    var edge = svg.append('g').selectAll('line').data(links).join('line')
+      .attr('stroke', colorBorder)
+      .attr('stroke-width', 1.2);
+
+    // Nodes
+    var node = svg.append('g').selectAll('g').data(nodes).join('g')
+      .attr('cursor', function (d) { return d.type === 'article' ? 'pointer' : 'default'; });
+
+    node.append('circle')
+      .attr('r', function (d) { return d.r; })
+      .attr('fill', function (d) { return nodeColor(d); })
+      .attr('fill-opacity', function (d) { return d.type === 'concept' ? 1 : 0.72; })
+      .attr('stroke', colorBg)
+      .attr('stroke-width', 1.5);
+
+    // Centre node label (truncated)
+    node.filter(function (d) { return d.type === 'concept'; })
+      .append('text')
+      .attr('text-anchor', 'middle')
+      .attr('dominant-baseline', 'middle')
+      .attr('font-family', 'var(--font-sans), sans-serif')
+      .attr('font-size', '10px')
+      .attr('fill', '#ffffff')
+      .text(function (d) {
+        return d.label.length > 18 ? d.label.slice(0, 16) + '…' : d.label;
+      });
+
+    // Tooltip
+    var tooltip = document.getElementById('concept-tooltip');
+
+    node.filter(function (d) { return d.type === 'article'; })
+      .on('mouseover', function (event, d) {
+        tooltip.textContent = d.label;
+        tooltip.style.display = 'block';
+      })
+      .on('mousemove', function (event) {
+        tooltip.style.left = (event.clientX + 14) + 'px';
+        tooltip.style.top  = (event.clientY - 32) + 'px';
+      })
+      .on('mouseout', function () {
+        tooltip.style.display = 'none';
+      })
+      .on('click', function (event, d) {
+        window.location.href = d.url;
+      });
+
+    // Drag
+    node.call(
+      d3.drag()
+        .on('start', function (event, d) {
+          if (!event.active) sim.alphaTarget(0.3).restart();
+          d.fx = d.x; d.fy = d.y;
+        })
+        .on('drag', function (event, d) { d.fx = event.x; d.fy = event.y; })
+        .on('end', function (event, d) {
+          if (!event.active) sim.alphaTarget(0);
+          d.fx = null; d.fy = null;
+        })
+    );
+
+    // Tick — clamp to bounds
+    sim.on('tick', function () {
+      nodes.forEach(function (d) {
+        d.x = Math.max(d.r + 4, Math.min(width  - d.r - 4, d.x));
+        d.y = Math.max(d.r + 4, Math.min(height - d.r - 4, d.y));
+      });
+      edge
+        .attr('x1', function (d) { return d.source.x; })
+        .attr('y1', function (d) { return d.source.y; })
+        .attr('x2', function (d) { return d.target.x; })
+        .attr('y2', function (d) { return d.target.y; });
+      node.attr('transform', function (d) {
+        return 'translate(' + d.x + ',' + d.y + ')';
+      });
+    });
+  }
+}());
+</script>

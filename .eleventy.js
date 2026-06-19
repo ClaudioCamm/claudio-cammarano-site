@@ -277,6 +277,35 @@ module.exports = function(eleventyConfig) {
       .replace(/^-|-$/g, '');
   });
 
+  // Concepts for a post: given a page URL, returns all concepts that cite it
+  eleventyConfig.addFilter("conceptsForPost", function(url, allConcepts) {
+    if (!url || !allConcepts) return [];
+    return allConcepts.filter(function(c) {
+      return c.articles.some(function(a) { return a.url === url; });
+    });
+  });
+
+  // Related concepts: concepts that share at least one article with the given concept name
+  eleventyConfig.addFilter("relatedConcepts", function(conceptName, allConcepts) {
+    if (!allConcepts || !conceptName) return [];
+    var current = null;
+    for (var i = 0; i < allConcepts.length; i++) {
+      if (allConcepts[i].name === conceptName) { current = allConcepts[i]; break; }
+    }
+    if (!current || !current.articles.length) return [];
+    var currentUrls = {};
+    current.articles.forEach(function(a) { currentUrls[a.url] = true; });
+    var related = [];
+    allConcepts.forEach(function(c) {
+      if (c.name === conceptName) return;
+      var shared = c.articles.filter(function(a) { return currentUrls[a.url]; }).length;
+      if (shared > 0) related.push({ name: c.name, type: c.type, sharedCount: shared });
+    });
+    return related
+      .sort(function(a, b) { return b.sharedCount - a.sharedCount; })
+      .slice(0, 14);
+  });
+
   // Groups conceptsIndex array by type, sorted by article count desc then alpha
   eleventyConfig.addFilter("filterByType", function(arr, type) {
     if (!arr) return [];

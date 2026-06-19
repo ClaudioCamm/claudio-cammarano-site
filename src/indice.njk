@@ -51,7 +51,7 @@ permalink: "/indice/"
         {% for concept in personas %}
         <div class="indice-item{% if concept.articles.length > 1 %} indice-item--multi{% endif %}">
           <dt class="indice-term">
-            {{ concept.name }}
+            <a href="/concetti/{{ concept.name | slugify }}/" class="indice-term-link">{{ concept.name }}</a>
             {% if concept.articles.length > 1 %}<span class="indice-count" aria-label="{{ concept.articles.length }} articoli">{{ concept.articles.length }}</span>{% endif %}
           </dt>
           <dd class="indice-articles">
@@ -73,7 +73,7 @@ permalink: "/indice/"
         {% for concept in teorie %}
         <div class="indice-item{% if concept.articles.length > 1 %} indice-item--multi{% endif %}">
           <dt class="indice-term">
-            {{ concept.name }}
+            <a href="/concetti/{{ concept.name | slugify }}/" class="indice-term-link">{{ concept.name }}</a>
             {% if concept.articles.length > 1 %}<span class="indice-count" aria-label="{{ concept.articles.length }} articoli">{{ concept.articles.length }}</span>{% endif %}
           </dt>
           <dd class="indice-articles">
@@ -118,7 +118,7 @@ permalink: "/indice/"
         {% for concept in luoghi %}
         <div class="indice-item{% if concept.articles.length > 1 %} indice-item--multi{% endif %}">
           <dt class="indice-term">
-            {{ concept.name }}
+            <a href="/concetti/{{ concept.name | slugify }}/" class="indice-term-link">{{ concept.name }}</a>
             {% if concept.articles.length > 1 %}<span class="indice-count" aria-label="{{ concept.articles.length }} articoli">{{ concept.articles.length }}</span>{% endif %}
           </dt>
           <dd class="indice-articles">
@@ -140,7 +140,7 @@ permalink: "/indice/"
         {% for concept in istituzioni %}
         <div class="indice-item{% if concept.articles.length > 1 %} indice-item--multi{% endif %}">
           <dt class="indice-term">
-            {{ concept.name }}
+            <a href="/concetti/{{ concept.name | slugify }}/" class="indice-term-link">{{ concept.name }}</a>
             {% if concept.articles.length > 1 %}<span class="indice-count" aria-label="{{ concept.articles.length }} articoli">{{ concept.articles.length }}</span>{% endif %}
           </dt>
           <dd class="indice-articles">

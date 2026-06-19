@@ -5,4 +5,5 @@ source: "The New York Times"
 date: 2026-03-20
 description: "Sul fenomeno degli agenti AI che consumano quantità crescenti di token per operazioni apparentemente semplici. Dietro l'aneddoto, una questione strutturale sul modello economico degli agenti e sulla sostenibilità del paradigma attuale."
 tags: [curated, ai, agenti]
+concepts: ["LLM come attante zero"]
 ---

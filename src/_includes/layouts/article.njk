@@ -272,6 +272,18 @@ og_type: article
   {% endif %}
 {% endif %}
 
+{% set postConcepts = page.url | conceptsForPost(collections.mergedConceptsIndex) %}
+{% if postConcepts.length %}
+<div class="article-concepts">
+  <p class="article-concepts-label">Concetti</p>
+  <div class="concetto-chips">
+    {% for c in postConcepts %}
+    <a href="/concetti/{{ c.name | slugify }}/" class="concetto-chip">{{ c.name }}</a>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
 <div class="newsletter-cta">
   <p class="newsletter-cta-label">The Abstract</p>
   <p class="newsletter-cta-text">Analisi su content industries, AI e media vista da una prospettiva europea. Esce su Substack.</p>
