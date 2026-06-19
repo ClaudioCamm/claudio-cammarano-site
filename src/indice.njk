@@ -45,123 +45,148 @@ permalink: "/indice/"
 
   {# ── PERSONE ── #}
   <section class="indice-section" id="persone">
-    <h2 class="indice-section-title">Persone</h2>
-    <dl class="indice-list">
-      {% for concept in personas %}
-      <div class="indice-item{% if concept.articles.length > 1 %} indice-item--multi{% endif %}">
-        <dt class="indice-term">
-          {{ concept.name }}
-          {% if concept.articles.length > 1 %}<span class="indice-count" aria-label="{{ concept.articles.length }} articoli">{{ concept.articles.length }}</span>{% endif %}
-        </dt>
-        <dd class="indice-articles">
-          {% for art in concept.articles %}
-          <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
-          {% endfor %}
-        </dd>
-      </div>
-      {% endfor %}
-    </dl>
+    <details class="indice-details">
+      <summary class="indice-section-title">Persone <span class="indice-chevron" aria-hidden="true">›</span></summary>
+      <dl class="indice-list">
+        {% for concept in personas %}
+        <div class="indice-item{% if concept.articles.length > 1 %} indice-item--multi{% endif %}">
+          <dt class="indice-term">
+            {{ concept.name }}
+            {% if concept.articles.length > 1 %}<span class="indice-count" aria-label="{{ concept.articles.length }} articoli">{{ concept.articles.length }}</span>{% endif %}
+          </dt>
+          <dd class="indice-articles">
+            {% for art in concept.articles %}
+            <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
+            {% endfor %}
+          </dd>
+        </div>
+        {% endfor %}
+      </dl>
+    </details>
   </section>
 
   {# ── TEORIE ── #}
   <section class="indice-section" id="teorie">
-    <h2 class="indice-section-title">Teorie e concetti</h2>
-    <dl class="indice-list">
-      {% for concept in teorie %}
-      <div class="indice-item{% if concept.articles.length > 1 %} indice-item--multi{% endif %}">
-        <dt class="indice-term">
-          {{ concept.name }}
-          {% if concept.articles.length > 1 %}<span class="indice-count" aria-label="{{ concept.articles.length }} articoli">{{ concept.articles.length }}</span>{% endif %}
-        </dt>
-        <dd class="indice-articles">
-          {% for art in concept.articles %}
-          <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
-          {% endfor %}
-        </dd>
-      </div>
-      {% endfor %}
-    </dl>
+    <details class="indice-details">
+      <summary class="indice-section-title">Teorie e concetti <span class="indice-chevron" aria-hidden="true">›</span></summary>
+      <dl class="indice-list">
+        {% for concept in teorie %}
+        <div class="indice-item{% if concept.articles.length > 1 %} indice-item--multi{% endif %}">
+          <dt class="indice-term">
+            {{ concept.name }}
+            {% if concept.articles.length > 1 %}<span class="indice-count" aria-label="{{ concept.articles.length }} articoli">{{ concept.articles.length }}</span>{% endif %}
+          </dt>
+          <dd class="indice-articles">
+            {% for art in concept.articles %}
+            <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
+            {% endfor %}
+          </dd>
+        </div>
+        {% endfor %}
+      </dl>
+    </details>
   </section>
 
   {# ── PAESI ── #}
   <section class="indice-section" id="paesi">
-    <h2 class="indice-section-title">Paesi</h2>
-    <dl class="indice-list">
-      {% for concept in paesi %}
-      <div class="indice-item{% if concept.articles.length > 1 %} indice-item--multi{% endif %}">
-        <dt class="indice-term">
-          {{ concept.name }}
-          {% if concept.articles.length > 1 %}<span class="indice-count" aria-label="{{ concept.articles.length }} articoli">{{ concept.articles.length }}</span>{% endif %}
-          {% if concept.note %}<span class="indice-note">{{ concept.note }}</span>{% endif %}
-        </dt>
-        <dd class="indice-articles">
-          {% for art in concept.articles %}
-          <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
-          {% endfor %}
-        </dd>
-      </div>
-      {% endfor %}
-    </dl>
+    <details class="indice-details">
+      <summary class="indice-section-title">Paesi <span class="indice-chevron" aria-hidden="true">›</span></summary>
+      <dl class="indice-list">
+        {% for concept in paesi %}
+        <div class="indice-item{% if concept.articles.length > 1 %} indice-item--multi{% endif %}">
+          <dt class="indice-term">
+            {{ concept.name }}
+            {% if concept.articles.length > 1 %}<span class="indice-count" aria-label="{{ concept.articles.length }} articoli">{{ concept.articles.length }}</span>{% endif %}
+            {% if concept.note %}<span class="indice-note">{{ concept.note }}</span>{% endif %}
+          </dt>
+          <dd class="indice-articles">
+            {% for art in concept.articles %}
+            <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
+            {% endfor %}
+          </dd>
+        </div>
+        {% endfor %}
+      </dl>
+    </details>
   </section>
 
   {# ── LUOGHI ── #}
   <section class="indice-section" id="luoghi">
-    <h2 class="indice-section-title">Luoghi</h2>
-    <dl class="indice-list">
-      {% for concept in luoghi %}
-      <div class="indice-item{% if concept.articles.length > 1 %} indice-item--multi{% endif %}">
-        <dt class="indice-term">
-          {{ concept.name }}
-          {% if concept.articles.length > 1 %}<span class="indice-count" aria-label="{{ concept.articles.length }} articoli">{{ concept.articles.length }}</span>{% endif %}
-        </dt>
-        <dd class="indice-articles">
-          {% for art in concept.articles %}
-          <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
-          {% endfor %}
-        </dd>
-      </div>
-      {% endfor %}
-    </dl>
+    <details class="indice-details">
+      <summary class="indice-section-title">Luoghi <span class="indice-chevron" aria-hidden="true">›</span></summary>
+      <dl class="indice-list">
+        {% for concept in luoghi %}
+        <div class="indice-item{% if concept.articles.length > 1 %} indice-item--multi{% endif %}">
+          <dt class="indice-term">
+            {{ concept.name }}
+            {% if concept.articles.length > 1 %}<span class="indice-count" aria-label="{{ concept.articles.length }} articoli">{{ concept.articles.length }}</span>{% endif %}
+          </dt>
+          <dd class="indice-articles">
+            {% for art in concept.articles %}
+            <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
+            {% endfor %}
+          </dd>
+        </div>
+        {% endfor %}
+      </dl>
+    </details>
   </section>
 
   {# ── ISTITUZIONI ── #}
   <section class="indice-section" id="istituzioni">
-    <h2 class="indice-section-title">Istituzioni</h2>
-    <dl class="indice-list">
-      {% for concept in istituzioni %}
-      <div class="indice-item{% if concept.articles.length > 1 %} indice-item--multi{% endif %}">
-        <dt class="indice-term">
-          {{ concept.name }}
-          {% if concept.articles.length > 1 %}<span class="indice-count" aria-label="{{ concept.articles.length }} articoli">{{ concept.articles.length }}</span>{% endif %}
-        </dt>
-        <dd class="indice-articles">
-          {% for art in concept.articles %}
-          <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
-          {% endfor %}
-        </dd>
-      </div>
-      {% endfor %}
-    </dl>
+    <details class="indice-details">
+      <summary class="indice-section-title">Istituzioni <span class="indice-chevron" aria-hidden="true">›</span></summary>
+      <dl class="indice-list">
+        {% for concept in istituzioni %}
+        <div class="indice-item{% if concept.articles.length > 1 %} indice-item--multi{% endif %}">
+          <dt class="indice-term">
+            {{ concept.name }}
+            {% if concept.articles.length > 1 %}<span class="indice-count" aria-label="{{ concept.articles.length }} articoli">{{ concept.articles.length }}</span>{% endif %}
+          </dt>
+          <dd class="indice-articles">
+            {% for art in concept.articles %}
+            <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
+            {% endfor %}
+          </dd>
+        </div>
+        {% endfor %}
+      </dl>
+    </details>
   </section>
 
   {# ── TESTI ── #}
   <section class="indice-section" id="testi">
-    <h2 class="indice-section-title">Testi</h2>
-    <dl class="indice-list">
-      {% for concept in testi %}
-      <div class="indice-item{% if concept.articles.length > 1 %} indice-item--multi{% endif %}">
-        <dt class="indice-term indice-term--testo">
-          {{ concept.name }}
-          {% if concept.articles.length > 1 %}<span class="indice-count" aria-label="{{ concept.articles.length }} articoli">{{ concept.articles.length }}</span>{% endif %}
-        </dt>
-        <dd class="indice-articles">
-          {% for art in concept.articles %}
-          <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
-          {% endfor %}
-        </dd>
-      </div>
-      {% endfor %}
-    </dl>
+    <details class="indice-details">
+      <summary class="indice-section-title">Testi <span class="indice-chevron" aria-hidden="true">›</span></summary>
+      <dl class="indice-list">
+        {% for concept in testi %}
+        <div class="indice-item{% if concept.articles.length > 1 %} indice-item--multi{% endif %}">
+          <dt class="indice-term indice-term--testo">
+            {{ concept.name }}
+            {% if concept.articles.length > 1 %}<span class="indice-count" aria-label="{{ concept.articles.length }} articoli">{{ concept.articles.length }}</span>{% endif %}
+          </dt>
+          <dd class="indice-articles">
+            {% for art in concept.articles %}
+            <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
+            {% endfor %}
+          </dd>
+        </div>
+        {% endfor %}
+      </dl>
+    </details>
   </section>
 
 </div>
+
+<script>
+  (function() {
+    function syncAccordion() {
+      var isDesktop = window.matchMedia('(min-width: 601px)').matches;
+      document.querySelectorAll('.indice-details').forEach(function(d) {
+        d.open = isDesktop;
+      });
+    }
+    syncAccordion();
+    window.matchMedia('(min-width: 601px)').addEventListener('change', syncAccordion);
+  })();
+</script>

@@ -665,6 +665,16 @@ module.exports = [
     name: "Thiel, Peter",
     type: "persona",
     articles: []
+  },
+  {
+    name: "van Middelaar, Luuk",
+    type: "persona",
+    articles: []
+  },
+  {
+    name: "Kojève, Alexandre",
+    type: "persona",
+    articles: []
   }
 
 ];

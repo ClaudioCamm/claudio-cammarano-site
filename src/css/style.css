@@ -3530,3 +3530,58 @@ a.temi-tag-pill:hover .temi-tag-count {
     color: var(--color-text-hint);
   }
 }
+
+/* ── Indice accordion (details/summary) ─────────────────────────── */
+
+/* Summary = section title on mobile: looks clickable */
+.indice-details > summary.indice-section-title {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 0;
+  user-select: none;
+}
+
+.indice-details > summary.indice-section-title::marker,
+.indice-details > summary.indice-section-title::-webkit-details-marker {
+  display: none;
+}
+
+/* Chevron rotates when open */
+.indice-chevron {
+  font-size: 1.1rem;
+  line-height: 1;
+  color: var(--color-text-hint);
+  transition: transform 0.18s ease;
+  display: inline-block;
+  transform: rotate(0deg);
+}
+
+.indice-details[open] > summary.indice-section-title .indice-chevron {
+  transform: rotate(90deg);
+}
+
+/* On desktop (≥ 601px): force open, hide chevron, restore h2-like summary */
+@media (min-width: 601px) {
+  .indice-details > summary.indice-section-title {
+    cursor: default;
+    pointer-events: none;
+    border-bottom: none;
+    padding: 0;
+    justify-content: flex-start;
+  }
+
+  .indice-chevron {
+    display: none;
+  }
+
+  /* Force the dl visible even without [open] */
+  .indice-details > .indice-list {
+    display: flex !important;
+  }
+}

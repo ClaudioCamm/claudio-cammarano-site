@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy && npx pagefind --site _site",
+    "build": "eleventy && (npx pagefind --site _site || true)",
     "index": "npx pagefind --site _site",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
