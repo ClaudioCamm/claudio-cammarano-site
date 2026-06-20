@@ -218,6 +218,11 @@ module.exports = function(eleventyConfig) {
     return JSON.stringify(String(str)).slice(1, -1);
   });
 
+  // Full JSON serialization (used for the /graph-data.json output and inline data blocks)
+  eleventyConfig.addFilter("toJSON", function(obj) {
+    return JSON.stringify(obj);
+  });
+
   eleventyConfig.addFilter("readingTime", function(content) {
     if (!content) return '';
     const text = content.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();

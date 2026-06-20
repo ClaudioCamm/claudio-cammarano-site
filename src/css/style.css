@@ -23,6 +23,12 @@
   --color-border: #e0e0e0;
   --color-border-light: #eee;
 
+  /* Colori cluster — solo per il grafo dei concetti (finestra + mappa) */
+  --graph-cluster-epi: #1C0E80;
+  --graph-cluster-geo: #185FA5;
+  --graph-cluster-edi: #0F6E56;
+  --graph-cluster-ita: #8B5E1F;
+
   --font-serif: 'Source Serif 4', Georgia, "Times New Roman", serif;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
@@ -3670,9 +3676,10 @@ a.temi-tag-pill:hover .temi-tag-count {
   color: var(--color-primary);
 }
 
-/* D3 graph container — hidden on mobile, visible on desktop */
+/* Finestra sul grafo globale — nascosta su mobile, visibile da desktop */
 .concetto-graph-wrap {
   display: none;
+  position: relative;
   width: 100%;
   margin: var(--spacing-lg) 0 var(--spacing-md);
   border-top: 1px solid var(--color-border);
@@ -3680,10 +3687,10 @@ a.temi-tag-pill:hover .temi-tag-count {
   background: var(--color-bg-alt);
 }
 
-.concetto-graph-wrap svg {
+.concetto-graph-wrap svg#concept-graph-svg {
   display: block;
   width: 100%;
-  height: 360px;
+  height: 380px;
 }
 
 @media (min-width: 900px) {
@@ -3692,20 +3699,36 @@ a.temi-tag-pill:hover .temi-tag-count {
   }
 }
 
-/* Tooltip for D3 graph */
-.concetto-graph-tooltip {
-  position: fixed;
+/* Minimappa: posizione della finestra dentro la mappa completa */
+.concetto-graph-minimap {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  width: 130px;
+  height: 96px;
   background: var(--color-bg);
   border: 1px solid var(--color-border);
-  padding: 5px 10px;
+  padding: 4px;
+}
+
+.concetto-graph-minimap svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.concetto-graph-fullmap-link {
+  position: absolute;
+  top: 12px;
+  right: 14px;
   font-family: var(--font-sans);
-  font-size: 12px;
-  color: var(--color-text);
-  pointer-events: none;
-  max-width: 220px;
-  z-index: 900;
-  display: none;
-  line-height: 1.4;
+  font-size: 11px;
+  color: var(--color-text-hint);
+  text-decoration: none;
+}
+
+.concetto-graph-fullmap-link:hover {
+  color: var(--color-primary);
 }
 
 /* Article list on concetto page */
@@ -3776,4 +3799,107 @@ a.temi-tag-pill:hover .temi-tag-count {
 
 .indice-term-link:hover {
   color: var(--color-primary);
+}
+
+/* === PAGINA MAPPA (/mappa/) === */
+.mappa-page {
+  max-width: 1000px;
+}
+
+.mappa-controls {
+  display: none;
+  align-items: center;
+  gap: 10px;
+  margin: var(--spacing-md) 0;
+}
+
+.mappa-search {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  padding: 7px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background: var(--color-bg);
+  color: var(--color-text);
+  width: 220px;
+}
+
+.mappa-search:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.mappa-reset-btn {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  padding: 7px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background: var(--color-bg);
+  color: var(--color-text-light);
+  cursor: pointer;
+}
+
+.mappa-reset-btn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.mappa-legend {
+  display: none;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: var(--spacing-sm);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  color: var(--color-text-light);
+}
+
+.mappa-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.mappa-legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.mappa-canvas-wrap {
+  display: none;
+  width: 100%;
+  height: 640px;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-alt);
+}
+
+.mappa-canvas-wrap svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.mappa-mobile-note {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--color-text-light);
+  padding: var(--spacing-md) 0;
+  border-top: 1px solid var(--color-border);
+}
+
+@media (min-width: 900px) {
+  .mappa-controls,
+  .mappa-legend,
+  .mappa-canvas-wrap {
+    display: flex;
+  }
+  .mappa-canvas-wrap {
+    display: block;
+  }
+  .mappa-mobile-note {
+    display: none;
+  }
 }

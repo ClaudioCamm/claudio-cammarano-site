@@ -66,20 +66,15 @@ eleventyComputed:
   </section>
   {% endif %}
 
-  {# ── Grafo D3 (desktop ≥900px, solo se ci sono articoli) ── #}
+  {# ── Finestra sul grafo globale (desktop ≥900px, solo se ci sono articoli) ── #}
   {% if concept.articles.length > 0 %}
-  <div class="concetto-graph-wrap" id="concept-graph-wrap" aria-hidden="true">
+  <div class="concetto-graph-wrap" id="concept-graph-wrap" data-slug="{{ concept.name | slugify }}" aria-hidden="true">
     <svg id="concept-graph-svg"></svg>
+    <div class="concetto-graph-minimap" id="concept-minimap" aria-hidden="true">
+      <svg id="concept-minimap-svg"></svg>
+    </div>
+    <a href="/mappa/?focus={{ concept.name | slugify }}" class="concetto-graph-fullmap-link">Vedi mappa completa →</a>
   </div>
-
-  {# JSON data per il grafo — serializzato in modo sicuro #}
-  <script id="concept-graph-data" type="application/json">
-  {
-    "name": "{{ concept.name | jsonEscape | safe }}",
-    "type": "{{ concept.type | jsonEscape | safe }}",
-    "articles": [{% for a in concept.articles %}{"title":"{{ a.title | jsonEscape | safe }}","url":"{{ a.url }}"}{% if not loop.last %},{% endif %}{% endfor %}]
-  }
-  </script>
   {% endif %}
 
   {# ── Lista articoli ── #}
@@ -103,158 +98,151 @@ eleventyComputed:
 
 </div>
 
-{# ── D3 force-directed graph — caricato solo su desktop ── #}
-<div class="concetto-graph-tooltip" id="concept-tooltip" aria-hidden="true"></div>
-
+{# ── Finestra sul grafo globale — vanilla JS, nessuna libreria esterna, solo desktop ── #}
 <script>
 (function () {
   var wrap = document.getElementById('concept-graph-wrap');
   if (!wrap || window.innerWidth < 900) return;
 
-  var dataEl = document.getElementById('concept-graph-data');
-  if (!dataEl) return;
-  var data;
-  try { data = JSON.parse(dataEl.textContent); } catch (e) { return; }
-  if (!data.articles || !data.articles.length) return;
+  var focusSlug = wrap.getAttribute('data-slug');
+  if (!focusSlug) return;
 
-  // Load D3 lazily — solo su desktop
-  var s = document.createElement('script');
-  s.src = 'https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js';
-  s.onload = function () { buildGraph(data); };
-  document.head.appendChild(s);
+  var NS = 'http://www.w3.org/2000/svg';
+  function el(tag, attrs) {
+    var e = document.createElementNS(NS, tag);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    return e;
+  }
 
-  function buildGraph(data) {
+  fetch('/graph-data.json')
+    .then(function (r) { return r.json(); })
+    .then(function (graph) { buildWindow(graph); })
+    .catch(function () {});
+
+  function clusterColors(cs) {
+    return {
+      'Epistemologia & AI':       cs.getPropertyValue('--graph-cluster-epi').trim()  || '#1C0E80',
+      'Geopolitica & potere':     cs.getPropertyValue('--graph-cluster-geo').trim()  || '#185FA5',
+      'Editoria & comunicazione': cs.getPropertyValue('--graph-cluster-edi').trim()  || '#0F6E56',
+      'Italia & istituzioni':     cs.getPropertyValue('--graph-cluster-ita').trim()  || '#8B5E1F'
+    };
+  }
+
+  function buildWindow(graph) {
+    var nodes = graph.nodes, edges = graph.edges;
+    var byIndex = {};
+    nodes.forEach(function (n) { byIndex[n.i] = n; });
+    var focus = nodes.filter(function (n) { return n.slug === focusSlug; })[0];
+    if (!focus) return;
+
+    var neighborEdges = edges.filter(function (e) { return e.source === focus.i || e.target === focus.i; });
+    neighborEdges.sort(function (a, b) { return b.weight - a.weight; });
+    var neighbors = neighborEdges.slice(0, 8).map(function (e) {
+      return byIndex[e.source === focus.i ? e.target : e.source];
+    }).filter(Boolean);
+    var neighborIdx = {};
+    neighbors.forEach(function (n) { neighborIdx[n.i] = true; });
+
+    var pts = [focus].concat(neighbors);
+    var minX = Math.min.apply(null, pts.map(function (p) { return p.x; }));
+    var maxX = Math.max.apply(null, pts.map(function (p) { return p.x; }));
+    var minY = Math.min.apply(null, pts.map(function (p) { return p.y; }));
+    var maxY = Math.max.apply(null, pts.map(function (p) { return p.y; }));
+
+    minX -= 70; maxX += 70; minY -= 50; maxY += 60;
+
+    var w = maxX - minX, h = maxY - minY;
+    var minW = 420, minH = 280;
+    if (w < minW) { var dx = (minW - w) / 2; minX -= dx; maxX += dx; w = minW; }
+    if (h < minH) { var dy = (minH - h) / 2; minY -= dy; maxY += dy; h = minH; }
+
     var svgEl = document.getElementById('concept-graph-svg');
-    var width = wrap.offsetWidth || 700;
-    var height = parseInt(getComputedStyle(svgEl).height) || 360;
+    svgEl.setAttribute('viewBox', minX + ' ' + minY + ' ' + w + ' ' + h);
+    svgEl.innerHTML = '';
 
-    // Colours from CSS variables
     var cs = getComputedStyle(document.documentElement);
     var colorPrimary = cs.getPropertyValue('--color-primary').trim() || '#1C0E80';
-    var colorMed = cs.getPropertyValue('--color-primary-medium').trim() || '#185FA5';
     var colorBorder = cs.getPropertyValue('--color-border').trim() || '#e0e0e0';
-    var colorText = cs.getPropertyValue('--color-text').trim() || '#1a1a1a';
-    var colorBg = cs.getPropertyValue('--color-bg').trim() || '#ffffff';
+    var colorHint = cs.getPropertyValue('--color-text-hint').trim() || '#999';
+    var colorBg = cs.getPropertyValue('--color-bg').trim() || '#fff';
+    var clusters = clusterColors(cs);
+    function colorOf(n) { return clusters[n.cluster] || colorHint; }
 
-    // Section colour map
-    function nodeColor(d) {
-      if (d.id === '__concept__') return colorPrimary;
-      if (d.section === 'curated') return colorMed;
-      if (d.section === 'learning') return '#0F6E56';
-      return colorPrimary;
-    }
-
-    // Build nodes & links
-    var nodes = [{ id: '__concept__', label: data.name, type: 'concept', r: 22 }];
-    var links = [];
-    data.articles.forEach(function (a) {
-      var section = a.url.indexOf('/writings/') === 0 ? 'writings'
-                  : a.url.indexOf('/curated/') === 0 ? 'curated'
-                  : 'learning';
-      nodes.push({ id: a.url, label: a.title, url: a.url, type: 'article', section: section, r: 8 });
-      links.push({ source: '__concept__', target: a.url });
+    // Nodi di contesto: appartengono al riquadro per posizione, ma non sono vicini diretti
+    var visible = nodes.filter(function (n) {
+      return n.x >= minX && n.x <= maxX && n.y >= minY && n.y <= maxY &&
+             n.i !== focus.i && !neighborIdx[n.i];
     });
 
-    var svg = d3.select(svgEl)
-      .attr('viewBox', [0, 0, width, height]);
+    var shownIdx = {};
+    shownIdx[focus.i] = true;
+    neighbors.forEach(function (n) { shownIdx[n.i] = true; });
+    visible.forEach(function (n) { shownIdx[n.i] = true; });
+    var shownEdges = edges.filter(function (e) { return shownIdx[e.source] && shownIdx[e.target]; });
 
-    // Subtle grid pattern background
-    var defs = svg.append('defs');
-    defs.append('pattern')
-      .attr('id', 'cgrid')
-      .attr('width', 24).attr('height', 24)
-      .attr('patternUnits', 'userSpaceOnUse')
-      .append('path')
-        .attr('d', 'M 24 0 L 0 0 0 24')
-        .attr('fill', 'none')
-        .attr('stroke', colorBorder)
-        .attr('stroke-width', 0.4);
-
-    svg.append('rect').attr('width', width).attr('height', height).attr('fill', 'url(#cgrid)');
-
-    // Force simulation
-    var sim = d3.forceSimulation(nodes)
-      .force('link', d3.forceLink(links).id(function (d) { return d.id; }).distance(130))
-      .force('charge', d3.forceManyBody().strength(-260))
-      .force('center', d3.forceCenter(width / 2, height / 2))
-      .force('collide', d3.forceCollide().radius(function (d) { return d.r + 18; }));
-
-    // Edges
-    var edge = svg.append('g').selectAll('line').data(links).join('line')
-      .attr('stroke', colorBorder)
-      .attr('stroke-width', 1.2);
-
-    // Nodes
-    var node = svg.append('g').selectAll('g').data(nodes).join('g')
-      .attr('cursor', function (d) { return d.type === 'article' ? 'pointer' : 'default'; });
-
-    node.append('circle')
-      .attr('r', function (d) { return d.r; })
-      .attr('fill', function (d) { return nodeColor(d); })
-      .attr('fill-opacity', function (d) { return d.type === 'concept' ? 1 : 0.72; })
-      .attr('stroke', colorBg)
-      .attr('stroke-width', 1.5);
-
-    // Centre node label (truncated)
-    node.filter(function (d) { return d.type === 'concept'; })
-      .append('text')
-      .attr('text-anchor', 'middle')
-      .attr('dominant-baseline', 'middle')
-      .attr('font-family', 'var(--font-sans), sans-serif')
-      .attr('font-size', '10px')
-      .attr('fill', '#ffffff')
-      .text(function (d) {
-        return d.label.length > 18 ? d.label.slice(0, 16) + '…' : d.label;
-      });
-
-    // Tooltip
-    var tooltip = document.getElementById('concept-tooltip');
-
-    node.filter(function (d) { return d.type === 'article'; })
-      .on('mouseover', function (event, d) {
-        tooltip.textContent = d.label;
-        tooltip.style.display = 'block';
-      })
-      .on('mousemove', function (event) {
-        tooltip.style.left = (event.clientX + 14) + 'px';
-        tooltip.style.top  = (event.clientY - 32) + 'px';
-      })
-      .on('mouseout', function () {
-        tooltip.style.display = 'none';
-      })
-      .on('click', function (event, d) {
-        window.location.href = d.url;
-      });
-
-    // Drag
-    node.call(
-      d3.drag()
-        .on('start', function (event, d) {
-          if (!event.active) sim.alphaTarget(0.3).restart();
-          d.fx = d.x; d.fy = d.y;
-        })
-        .on('drag', function (event, d) { d.fx = event.x; d.fy = event.y; })
-        .on('end', function (event, d) {
-          if (!event.active) sim.alphaTarget(0);
-          d.fx = null; d.fy = null;
-        })
-    );
-
-    // Tick — clamp to bounds
-    sim.on('tick', function () {
-      nodes.forEach(function (d) {
-        d.x = Math.max(d.r + 4, Math.min(width  - d.r - 4, d.x));
-        d.y = Math.max(d.r + 4, Math.min(height - d.r - 4, d.y));
-      });
-      edge
-        .attr('x1', function (d) { return d.source.x; })
-        .attr('y1', function (d) { return d.source.y; })
-        .attr('x2', function (d) { return d.target.x; })
-        .attr('y2', function (d) { return d.target.y; });
-      node.attr('transform', function (d) {
-        return 'translate(' + d.x + ',' + d.y + ')';
-      });
+    var gEdges = el('g', {});
+    shownEdges.forEach(function (e) {
+      var s = byIndex[e.source], t = byIndex[e.target];
+      var isFocusEdge = (e.source === focus.i || e.target === focus.i);
+      gEdges.appendChild(el('line', {
+        x1: s.x, y1: s.y, x2: t.x, y2: t.y,
+        stroke: colorBorder,
+        'stroke-width': isFocusEdge ? '1.2' : '0.6',
+        opacity: isFocusEdge ? '0.7' : '0.35'
+      }));
     });
+    svgEl.appendChild(gEdges);
+
+    var gContext = el('g', { opacity: '0.4' });
+    visible.forEach(function (n) {
+      gContext.appendChild(el('circle', { cx: n.x, cy: n.y, r: '4', fill: colorHint, stroke: colorBg, 'stroke-width': '1' }));
+    });
+    svgEl.appendChild(gContext);
+
+    neighbors.forEach(function (n) {
+      var g = el('g', { cursor: 'pointer' });
+      g.appendChild(el('circle', { cx: n.x, cy: n.y, r: '9', fill: colorOf(n), stroke: colorBg, 'stroke-width': '1.5' }));
+      var label = el('text', {
+        x: n.x, y: n.y + 21, 'text-anchor': 'middle',
+        'font-family': 'var(--font-sans)', 'font-size': '11px', fill: colorHint
+      });
+      label.textContent = n.name;
+      g.appendChild(label);
+      g.addEventListener('click', function () { window.location.href = '/concetti/' + n.slug + '/'; });
+      svgEl.appendChild(g);
+    });
+
+    var gFocus = el('g', {});
+    gFocus.appendChild(el('circle', { cx: focus.x, cy: focus.y, r: '26', fill: colorPrimary, stroke: colorBg, 'stroke-width': '2' }));
+    var words = focus.name.split(', ');
+    var ty = words.length > 1 ? focus.y - 6 : focus.y;
+    words.slice(0, 2).forEach(function (word, i) {
+      gFocus.appendChild(el('text', {
+        x: focus.x, y: ty + i * 15, 'text-anchor': 'middle', 'dominant-baseline': 'middle',
+        'font-family': 'var(--font-sans)', 'font-size': '11px', 'font-weight': '500', fill: '#fff'
+      })).textContent = word;
+    });
+    svgEl.appendChild(gFocus);
+
+    buildMinimap(graph, focus, minX, minY, w, h, clusters, colorHint, colorPrimary);
+  }
+
+  function buildMinimap(graph, focus, vx, vy, vw, vh, clusters, colorHint, colorPrimary) {
+    var mmSvg = document.getElementById('concept-minimap-svg');
+    if (!mmSvg) return;
+    mmSvg.setAttribute('viewBox', '0 0 ' + graph.width + ' ' + graph.height);
+    mmSvg.innerHTML = '';
+    graph.nodes.forEach(function (n) {
+      mmSvg.appendChild(el('circle', {
+        cx: n.x, cy: n.y, r: n.i === focus.i ? '7' : '3',
+        fill: n.i === focus.i ? colorPrimary : (clusters[n.cluster] || colorHint),
+        opacity: n.i === focus.i ? '1' : '0.7'
+      }));
+    });
+    mmSvg.appendChild(el('rect', {
+      x: vx, y: vy, width: vw, height: vh,
+      fill: 'none', stroke: colorPrimary, 'stroke-width': '6', 'stroke-dasharray': '14 10', opacity: '0.85'
+    }));
   }
 }());
 </script>

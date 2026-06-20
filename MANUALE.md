@@ -166,6 +166,20 @@ window.MathJax = {
 
 Poi nel testo: `$formula inline$` oppure `$$formula display$$`.
 
+### Collegare i concetti — passaggio manuale, non automatico
+
+A differenza dei curated, per i **writings** il collegamento ai concetti non passa dal frontmatter del file: vive in `src/_data/conceptsIndex.js`. **Salvare il file `.md` non basta.**
+
+- Se l'articolo cita un concetto già in tassonomia → aggiungi `{ title: "Titolo articolo", url: "/writings/slug-articolo/" }` all'array `articles` della voce corrispondente in `conceptsIndex.js` (sezione 4 per il formato).
+- Se introduce un concetto nuovo → crea una nuova voce.
+
+**La skill `pubblica-articolo` non fa questo passaggio.** Genera solo il file markdown del writing; non tocca `conceptsIndex.js`. Va fatto a mano, articolo per articolo.
+
+Checklist completa per pubblicare un writing:
+1. Salva il file in `src/writings/`
+2. Apri `src/_data/conceptsIndex.js` e aggiorna le voci dei concetti citati (vedi sopra)
+3. `git push` (o `npm run build` in locale) — non esiste un comando separato di "aggiornamento semantico": indici, pagine `/concetti/`, chip e grafo si rigenerano da soli al build, una volta che i dati sono corretti
+
 ---
 
 ## 2. Pubblicare un curated
@@ -264,10 +278,12 @@ Il sistema ha tre livelli collegati:
                         sezione "Concetti" in fondo con chip linkati
 ```
 
-I chip appaiono **automaticamente**: non richiedono intervento per ogni articolo.
+I chip appaiono **automaticamente al build**, una volta che i dati sono corretti — non richiedono un comando di aggiornamento separato.
 
-- **Writings**: i concetti vengono da `conceptsIndex.js` (campo `articles`)
-- **Curated**: i concetti vengono dal campo `concepts:` nel frontmatter
+- **Writings**: i concetti vengono da `conceptsIndex.js` (campo `articles`) — va aggiornato a mano, vedi sezione 1
+- **Curated**: i concetti vengono dal campo `concepts:` nel frontmatter — niente da toccare altrove
+
+**Non esiste un comando per "aggiornare l'indice semantico".** È lo stesso identico `git push` (o `npm run build`) con cui pubblichi il sito. Se i dati a monte (frontmatter o `conceptsIndex.js`) sono corretti, il build successivo rigenera tutto: niente da "richiamare" a parte.
 
 ---
 
