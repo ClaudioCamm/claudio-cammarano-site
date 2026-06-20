@@ -31,7 +31,7 @@ Non molto tempo fa, da queste parti, sostenevo che lo stile negoziale di Trump f
 
 Il modello era netto: A defeziona, C resta fermo, gli altri ricalibrano i propri $\delta$ (che è un po' la misura delle loro aspettative di ritorno per le interazioni *future*) e spostano peso strategico verso il giocatore più affidabile. Verso la fine accennavo *en passant* all'ipotesi che C non si limitasse a stare fermo, ma defezionasse silenziosamente verso A vendendo satelliti militari all'attore I, potenza regionale teocratica che controlla lo Stretto di Hormuz. Si trattava una congettura analitica?
 
-Non in senso proprio. Il 15 aprile, il [*Financial Times*](https://www.ft.com/content/1fddd2cd-1294-4e9c-a17d-5ea06b399355?syn-25a6b1a6=1) ha pubblicato un'inchiesta sul satellite TEE-01B (Earth Eye 1), acquistato dall'IRGC iraniano nel 2024 per 36,6 milioni di dollari e usato durante la guerra di marzo per il targeting delle basi americane nel Golfo. Avevo intravisto la notizia. Il punto vero però è un altro: il quadro reale è più vasto e più difficile e non si può leggere ricorrendo esclusivamente al modello del primo pezzo. Ci aiutano a capirlo, fra mille altri, due interventi recenti che potrei usare come elementi empirici che mettono in crisi il mio vecchio modello teorico: il pezzo di Andrew Sharp su *SharpText* del primo maggio, [*Beijing Is Not Playing the Long Game*](https://sharptext.net/2026/beijing-is-not-playing-the-long-game/); e la puntata di *Altri Orienti* di Simone Pieranni, [*Il nuovo ordine energetico*](https://www.youtube.com/watch?v=6aNwKjtjyak), uscita a fine marzo.
+Non in senso proprio. Il 15 aprile, il [*Financial Times*](https://www.ft.com/content/1fddd2cd-1294-4e9c-a17d-5ea06b399355?syn-25a6b1a6=1) ha pubblicato un'inchiesta sul satellite TEE-01B (Earth Eye 1), acquistato dall'IRGC iraniano nel 2024 per 36,6 milioni di dollari e usato durante la guerra di marzo per il targeting delle basi americane nel Golfo. Avevo intravisto la notizia. Il punto vero però è un altro: il quadro reale è più vasto e più difficile e non si può leggere ricorrendo esclusivamente al modello del primo pezzo. Ci aiutano a capirlo, fra mille altri, due interventi recenti che potrei usare come elementi empirici che mettono in crisi il mio vecchio modello teorico: il pezzo di Andrew Sharp su *SharpText* del primo maggio, *Beijing Is Not Playing the Long Game*; e la puntata di *Altri Orienti* di Simone Pieranni, *Il nuovo ordine energetico*, uscita a fine marzo.
 
 L'obiezione potenziale, posta in termini essenziali, potrebbe essere posta in questo modo: anche un attore con $\delta$ alto come C non sempre è in grado di occupare lo spazio strategico che il modello gli concederebbe *strutturalmente*, perché è incatenato a <strong>vincoli di politica interna che lo costringono a strategie reattive subottimali</strong>. Sharp lo sostiene a proposito della Cina nel mediterraneo iraniano: Pechino non condanna la guerra in Iran non perché stia abilmente aspettando l'autosabotaggio occidentale; lo fa perché non può senza alienarsi simultaneamente sauditi, emiratini ed europei. Pieranni articola la questione dando qualche dettaglio operativo: dopo l'operazione *Epic Fury* del 28 febbraio e la chiusura selettiva di Hormuz, la Cina ha dovuto giocare contemporaneamente su tre tavoli incompatibili: da compratore unico del petrolio iraniano, e da partner strategico dei monarchi del Golfo, che erano anche interlocutori commerciale necessario a Trump prima delle midterm. È chiaro che una tale configurazione riduce i suoi gradi di libertà in maniera drastica. Eppure, nonostante tutto questo, il ribaltamento storico è arrivato, e Washington finisce per andare da Pechino non a dettare condizioni, ma a chiedere aiuto. Perché, e questo è appunto è materia del pezzo precedente, gli USA si stanno eseguendo una strategia pesantemente subottimale.
 
@@ -336,44 +336,42 @@ Resta da capire se siamo già in questa fase o se siamo ancora in tempo per evit
 
 ---
 
-## Bibliografia essenziale
+## Bibliografia
 
-Acemoglu, D., & Robinson, J. A. (2012). Why Nations Fail: The Origins of Power, Prosperity, and Poverty. New York: Crown.
+ACEMOGLU, Daron e James A. Robinson, [*Why Nations Fail: The Origins of Power, Prosperity, and Poverty*](https://openlibrary.org/works/OL16568759W/Why_Nations_Fail), New York, Crown, 2012.
 
-Atlantic Council. (2026, 25 marzo). The Axis of Evasion: Behind China's Oil Trade with Iran and Russia. Donovan, K., & Ezratty, E.
+AXELROD, Robert, [*The Evolution of Cooperation*](https://openlibrary.org/books/OL3186143M/The_evolution_of_cooperation), New York, Basic Books, 1984.
 
-Axelrod, R. (1984). The Evolution of Cooperation. New York: Basic Books.
+DONOVAN, Kimberly e Emily Ezratty, ["From Drones to Rocket Fuel, China and Russia Are Helping Iran Through Supply Chains"](https://www.atlanticcouncil.org/dispatches/from-drones-to-rocket-fuel-china-and-russia-are-helping-iran-through-supply-chains/), Atlantic Council, 25 marzo 2026.
 
-Fearon, J. D. (1994). Domestic Political Audiences and the Escalation of International Disputes. American Political Science Review, 88(3), 577—592.
+FEARON, James D., ["Domestic Political Audiences and the Escalation of International Disputes"](https://www.jstor.org/stable/2944796), American Political Science Review, vol. 88, n. 3, 1994, pp. 577-592.
 
-Fukuyama, F. (1989). The End of History? *The National Interest*, 16, 3–18.
+FUKUYAMA, Francis, "The End of History?", *The National Interest*, n. 16, 1989, pp. 3-18.
 
-Fukuyama, F. (1992). *The End of History and the Last Man*. New York: Free Press.
+FUKUYAMA, Francis, [*The End of History and the Last Man*](https://openlibrary.org/books/OL1550012M/The_end_of_history_and_the_last_man), New York, Free Press, 1992.
 
-Gabuev, A., & Vakulenko, S. (2026, gennaio). Russia's Diminished Standing as a Patron Power. Foreign Affairs.
+GABUEV, Alexander e Sergey Vakulenko, ["Russia Is the World's Worst Patron: From Syria to Venezuela, Putin Has Overpromised and Underdelivered"](https://www.foreignaffairs.com/venezuela/russia-worlds-worst-patron), Foreign Affairs, 15 gennaio 2026.
 
-Hirschman, A. O. (1970). Exit, Voice, and Loyalty: Responses to Decline in Firms, Organizations, and States. Cambridge, MA: Harvard University Press.
+HIRSCHMAN, Albert O., [*Exit, Voice, and Loyalty: Responses to Decline in Firms, Organizations, and States*](https://openlibrary.org/books/OL4574053M/Exit_voice_and_loyalty), Cambridge (MA), Harvard University Press, 1970.
 
-Kasparov, G. (2026, 6 marzo). Iran: The Russia-Ukraine Angle. The Next Move.
+KASPAROV, Garry, ["Iran: The Russia-Ukraine Angle"](https://www.thenextmove.org/p/iran-the-russia-ukraine-angle), The Next Move, 6 marzo 2026.
 
-Kasparov, G., & Epshtein, U. (2026, 4 maggio). Putin Is in Trouble. The Next Move.
+KASPAROV, Garry e Uriel Epshtein, ["Putin Is in Trouble"](https://www.thenextmove.org/p/putin-is-in-trouble), The Next Move, 4 maggio 2026.
 
-Marten, K. (2026, gennaio). Russia's Eroded Status in the Middle East. Foreign Affairs Online.
+NORTH, Douglass C., John Joseph Wallis e Barry R. Weingast, [*Violence and Social Orders: A Conceptual Framework for Interpreting Recorded Human History*](https://openlibrary.org/books/OL34440993M/Violence_and_Social_Orders), Cambridge, Cambridge University Press, 2009.
 
-North, D. C., Wallis, J. J., & Weingast, B. R. (2009). Violence and Social Orders. Cambridge: Cambridge University Press.
+PIERANNI, Simone, ["Il nuovo ordine energetico"](https://www.youtube.com/watch?v=6aNwKjtjyak), *Altri Orienti*, Chora Media, marzo 2026.
 
-Pieranni, S. (2026, marzo). Il nuovo ordine energetico. Altri Orienti, Chora Media.
+PUTNAM, Robert D., ["Diplomacy and Domestic Politics: The Logic of Two-Level Games"](https://doi.org/10.1017/S0020818300027697), International Organization, vol. 42, n. 3, 1988, pp. 427-460.
 
-Putnam, R. D. (1988). Diplomacy and Domestic Politics: The Logic of Two-Level Games. International Organization, 42(3), 427—460.
+ROSE, Gideon, "Neoclassical Realism and Theories of Foreign Policy", World Politics, vol. 51, n. 1, 1998, pp. 144-172.
 
-Rose, G. (1998). Neoclassical Realism and Theories of Foreign Policy. World Politics, 51(1), 144—172.
+SCHELLING, Thomas C., [*The Strategy of Conflict*](https://openlibrary.org/books/OL15104291M/The_strategy_of_conflict.), Cambridge (MA), Harvard University Press, 1960.
 
-Schelling, T. C. (1960). The Strategy of Conflict. Cambridge, MA: Harvard University Press.
+SCHWELLER, Randall L., ["Unanswered Threats: A Neoclassical Realist Theory of Underbalancing"](https://doi.org/10.1162/0162288042879913), International Security, vol. 29, n. 2, 2004, pp. 159-201.
 
-Schweller, R. L. (2004). Unanswered Threats: A Neoclassical Realist Theory of Underbalancing. International Security, 29(2), 159—201.
+SELTEN, Reinhard, ["Reexamination of the Perfectness Concept for Equilibrium Points in Extensive Games"](https://doi.org/10.1007/BF01766400), International Journal of Game Theory, vol. 4, n. 1, 1975, pp. 25-55.
 
-Selten, R. (1975). Reexamination of the Perfectness Concept for Equilibrium Points in Extensive Games. International Journal of Game Theory, 4(1), 25—55.
+SHARP, Andrew, ["Beijing Is Not Playing the Long Game"](https://sharptext.net/2026/beijing-is-not-playing-the-long-game/), SharpText, 1 maggio 2026.
 
-Sharp, A. (2026, 1 maggio). Beijing Is Not Playing the Long Game. SharpText.
-
-U.S.-China Economic and Security Review Commission. (2026, marzo). China-Iran Fact Sheet: A Short Primer on the Relationship.
+U.S.-CHINA ECONOMIC AND SECURITY REVIEW COMMISSION, ["China-Iran Fact Sheet: A Short Primer on the Relationship"](https://www.uscc.gov/research/china-iran-fact-sheet-short-primer-relationship), marzo 2026.

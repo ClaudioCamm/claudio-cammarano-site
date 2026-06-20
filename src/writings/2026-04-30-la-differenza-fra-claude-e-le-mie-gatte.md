@@ -116,36 +116,34 @@ LLM è zero senza di me, *perché* non ha corpo. È la povertà della sua *res e
 
 ---
 
-### Bibliografia minima
+## Bibliografia
 
-Bastide, F. (1990), "The iconography of scientific texts: principles of analysis", in *Representation in Scientific Practice*, MIT Press.
+BASTIDE, Françoise, "The Iconography of Scientific Texts: Principles of Analysis", in LYNCH, Michael e WOOLGAR, Steve (a cura di), *Representation in Scientific Practice*, Cambridge (MA), MIT Press, 1990, pp. 187-229.
 
-Blumenberg, H. (1960), *Paradigmen zu einer Metaphorologie*, Bonn (tr. it. *Paradigmi per una metaforologia*, il Mulino).
+BLUMENBERG, Hans, "Paradigmen zu einer Metaphorologie", *Archiv für Begriffsgeschichte*, vol. 6, Bonn, 1960 (ed. autonoma Frankfurt am Main, Suhrkamp, 1998; trad. it. *Paradigmi per una metaforologia*, Milano, Raffaello Cortina, 2009).
 
-Clark, A., Chalmers, D. (1998), "The Extended Mind", *Analysis* 58.
+CLARK, Andy, "Whatever Next? Predictive Brains, Situated Agents, and the Future of Cognitive Science", *Behavioral and Brain Sciences*, vol. 36, n. 3, 2013, pp. 181-204 ([DOI](https://doi.org/10.1017/S0140525X12000477)).
 
-Clark, A. (2013), "Whatever next? Predictive brains, situated agents, and the future of cognitive science", *Behavioral and Brain Sciences* 36.
+CLARK, Andy e David Chalmers, ["The Extended Mind"](https://doi.org/10.1093/analys/58.1.7), *Analysis*, vol. 58, n. 1, 1998, pp. 7-19.
 
-Friston, K. (2010), "The free-energy principle: a unified brain theory?", *Nature Reviews Neuroscience* 11.
+DE LIBERA, Alain, *La Querelle des universaux: De Platon à la fin du Moyen Âge*, Parigi, Seuil, 1996 (trad. it. *Il problema degli universali. Da Platone alla fine del Medioevo*, Firenze, La Nuova Italia, 1999).
 
-Hayles, N.K. (1999), *How We Became Posthuman*, University of Chicago Press.
+FRISTON, Karl, ["The Free-Energy Principle: A Unified Brain Theory?"](https://doi.org/10.1038/nrn2787), *Nature Reviews Neuroscience*, vol. 11, 2010, pp. 127-138.
 
-Merleau-Ponty, M. (1945), *Phénoménologie de la perception*, Gallimard (tr. it. *Fenomenologia della percezione*, Bompiani).
+HAYLES, N. Katherine, [*How We Became Posthuman: Virtual Bodies in Cybernetics, Literature, and Informatics*](https://openlibrary.org/books/OL374645M/How_we_became_posthuman), Chicago, University of Chicago Press, 1999.
 
-Nisbett, R., Wilson, T. (1977), "Telling more than we can know: Verbal reports on mental processes", *Psychological Review* 84.
+MERLEAU-PONTY, Maurice, [*Phénoménologie de la perception*](https://openlibrary.org/works/OL2142403W/Ph%C3%A9nom%C3%A9nologie_de_la_perception), Parigi, Gallimard, 1945 (trad. it. *Fenomenologia della percezione*, Milano, Bompiani, 1965).
 
-Paolucci, C. (2024), *Nati Cyborg*, La Nave di Teseo.
+NISBETT, Richard e Timothy Wilson, ["Telling More than We Can Know: Verbal Reports on Mental Processes"](https://doi.org/10.1037/0033-295X.84.3.231), *Psychological Review*, vol. 84, n. 3, 1977, pp. 231-259.
 
-Parfit, D. (1984), *Reasons and Persons*, Oxford University Press.
+PAOLUCCI, Claudio, *Nati cyborg. Cosa l'intelligenza artificiale generativa ci dice dell'essere umano*, Roma, Luca Sossella Editore, 2025.
 
-Schwitzgebel, E. (2008), "The Unreliability of Naive Introspection", *Philosophical Review* 117.
+PARFIT, Derek, [*Reasons and Persons*](https://openlibrary.org/works/OL3153831W/Reasons_and_persons), Oxford, Oxford University Press, 1984.
 
-Stiegler, B. (1994), *La technique et le temps*, Galilée (tr. it. *La tecnica e il tempo*, Meltemi).
+SCHWITZGEBEL, Eric, ["The Unreliability of Naive Introspection"](https://doi.org/10.1215/00318108-2007-037), *The Philosophical Review*, vol. 117, n. 2, 2008, pp. 245-273.
 
-Varela, F., Thompson, E., Rosch, E. (1991), *The Embodied Mind*, MIT Press.
+SPADE, Paul Vincent (a cura di), [*Five Texts on the Mediaeval Problem of Universals: Porphyry, Boethius, Abelard, Duns Scotus, Ockham*](https://archive.org/details/five-texts-on-the-mediaeval-problem-of-universals-porphyry-boethius-abelard-duns-scotus-ockham), Indianapolis, Hackett, 1994.
 
-### Per la disputa sugli universali
+STIEGLER, Bernard, [*La technique et le temps*](https://openlibrary.org/books/OL1198146M/La_technique_et_le_temps), Parigi, Galilée, 1994 (trad. it. *La tecnica e il tempo*, Roma, Meltemi, 2008).
 
-De Libera, A. (1996), *La querelle des universaux. De Platon à la fin du Moyen Âge*, Seuil (tr. it. *Il problema degli universali. Da Platone alla fine del Medioevo*, La Nuova Italia).
-
-Spade, P.V. (a cura di) (1994), *Five Texts on the Mediaeval Problem of Universals*, Hackett — antologia con Porfirio, Boezio, Abelardo, Duns Scoto, Ockham.
+VARELA, Francisco, Evan Thompson e Eleanor Rosch, [*The Embodied Mind: Cognitive Science and Human Experience*](https://openlibrary.org/books/OL26933223M/The_embodied_mind), Cambridge (MA), MIT Press, 1991.

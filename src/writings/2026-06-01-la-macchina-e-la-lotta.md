@@ -127,34 +127,24 @@ Non sono domande retoriche. Hanno risposte diverse a seconda di cosa si vuole ot
 
 ---
 
-<strong>Fonti e riferimenti</strong>
+## Bibliografia
 
-<strong>Dichiarazioni e interventi citati</strong>
+CARRADA, Luisa, intervista nella rubrica *What's Next*, in ["Raffaele Gaito, il podcast"](https://podcasts.apple.com/it/podcast/raffaele-gaito-il-podcast/id1451098002), conduttore Raffaele Gaito, 2026.
 
-TOKARCZUK, Olga, intervento all'evento Impact, Varsavia, maggio 2026 (trascrizione e traduzione italiana da *mycompanypolska.pl*).
+FLORIDI, Luciano, ["Nell'era dell'intelligenza artificiale si salverà chi nutrirà il suo «capitale semantico»"](https://www.vita.it/storie-e-persone/nellera-dellintelligenza-artificiale-si-salvera-chi-nutrira-il-suo-capitale-semantico/), *Vita*, 2025.
 
-TOKARCZUK, Olga, «Risposta alla controversia sull'uso dell'AI», *Literary Hub*, maggio 2026. https://lithub.com/olga-tokarczuk-has-responded-to-the-controversy-over-her-reputed-use-of-ai/
+FUGGETTA, Alfonso, ["Come scrivo con Claude"](https://www.abassavoce.it/p/come-scrivo-con-claude), *A bassa voce* (Substack), 7 maggio 2026.
 
-GROFF, Lauren, intervento su Threads, maggio 2026 (citato in LIPPERINI, v. sotto).
+GADAMER, Hans-Georg, [*Wahrheit und Methode*](https://openlibrary.org/books/OL219723M/Wahrheit_und_Methode), Tubinga, Mohr, 1960 (trad. it. *Verità e metodo*, Milano, Bompiani, 1983).
 
-<strong>Fonti giornalistiche e newsletter</strong>
+GODIN, Seth, [*Purple Cow: Transform Your Business by Being Remarkable*](https://openlibrary.org/books/OL8858131M/Purple_Cow), New York, Portfolio, 2003.
 
-LIPPERINI, Loredana, «Tokarczuk, l'AI e una polemica sbagliata», *Lipperatura*, 20 maggio 2026. https://www.lipperatura.it/tokarczuck-lai-e-una-polemica-sbagliata/
+GROFF, Lauren, intervento su Threads, maggio 2026 (citato in LIPPERINI, infra).
 
-FUGGETTA, Alfonso, «Come scrivo con Claude», *A bassa voce* (Substack), 7 maggio 2026. https://www.abassavoce.it/p/come-scrivo-con-claude
+LIPPERINI, Loredana, ["Tokarczuk, l'AI e una polemica sbagliata"](https://www.lipperatura.it/tokarczuck-lai-e-una-polemica-sbagliata/), *Lipperatura*, 20 maggio 2026.
 
-<strong>Interviste e contributi audio-video</strong>
+TOKARCZUK, Olga, intervento all'evento Impact, Poznań, maggio 2026 (cfr. ["Polish Nobel literature laureate Tokarczuk sparks controversy after admitting using AI"](https://notesfrompoland.com/2026/05/21/polish-nobel-literature-laureate-tokarczuk-sparks-controversy-after-admitting-using-ai/), Notes from Poland, 21 maggio 2026).
 
-CARRADA, Luisa, intervista in *What's Next* (podcast, conduttore Raffaele Gaito), 2026. Trascrizione integrale disponibile. Temi: AI e scrittura professionale, le tre fasi del processo di scrittura, entusiasmo vigile, il rischio della pigrizia cognitiva.
+TOKARCZUK, Olga, ["Olga Tokarczuk Has Responded to the Controversy Over Her Reputed Use of AI"](https://lithub.com/olga-tokarczuk-has-responded-to-the-controversy-over-her-reputed-use-of-ai/), *Literary Hub*, maggio 2026.
 
-<strong>Riferimenti teorici</strong>
-
-FLORIDI, Luciano, «Il capitale semantico e l'AI generativa», intervista a *Vita*, 2025 (citato da Carrada e da FUGGETTA).
-
-ZINSSER, William, *On Writing Well: The Classic Guide to Writing Nonfiction*, Harper & Row, New York 1976 (e successive edizioni). Citato da Fuggetta: «La scrittura confusa è quasi sempre il sintomo di un pensiero confuso».
-
-GADAMER, Hans-Georg, *Wahrheit und Methode*, Mohr, Tübingen 1960 (tr. it. *Verità e metodo*, Bompiani, Milano 1983). Riferimento implicito alla questione dell'opera come atto interpretativo non separabile dal suo contesto di produzione.
-
-<strong>Contesto di riferimento</strong>
-
-GODIN, Seth, distinzione tra testi «prevedibili» e testi «sorprendenti» (citato da Carrada nell'intervista). Originariamente in *Purple Cow*, Portfolio, New York 2003, e nei blog post successivi.
+ZINSSER, William, [*On Writing Well: The Classic Guide to Writing Nonfiction*](https://openlibrary.org/books/OL3949958M/On_writing_well), New York, Harper & Row, 1976.

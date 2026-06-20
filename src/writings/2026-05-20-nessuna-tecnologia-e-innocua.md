@@ -16,7 +16,7 @@ english_version: "https://claudiocammarano.substack.com/p/everything-is-dual-use
 
 ## I. Apertura: da Bergamo nel XV secolo alla guerra permanente contemporanea
 
-In un piccolo borgo della Val Brembana, a una ventina di chilometri dalla città di Bergamo, dove vivo, c'è un piccolo museo non abbastanza noto, che racconta la storia della comunicazione moderna in uno di quegli aspetti che i curricoli scolastici tendono sistematicamente a trascurare. Si chiama [Museo dei Tasso e della Storia Postale](https://www.museodeitasso.com/it) e si trova a Cornello del Tasso. Il cognome non è casuale: da qui proveniva la famiglia de Tassis, che nel tardo Quattrocento ricevette dall'imperatore Massimiliano I d'Asburgo un incarico destinato a cambiare la struttura del potere europeo. L'incarico era semplice nella forma: costruire e gestire un sistema di staffette postali che collegasse Innsbruck a Bruxelles — le due estremità dell'impero asburgico — con una frequenza e una velocità mai viste prima. Ruggero de Tassis, il primo della famiglia a sistematizzare il servizio intorno al 1490, non stava aprendo un'azienda di recapito lettere. Stava costruendo l'infrastruttura nervosa di un impero.
+In un piccolo borgo della Val Brembana, a una ventina di chilometri dalla città di Bergamo, dove vivo, c'è un piccolo museo non abbastanza noto, che racconta la storia della comunicazione moderna in uno di quegli aspetti che i curricoli scolastici tendono sistematicamente a trascurare. Si chiama Museo dei Tasso e della Storia Postale e si trova a Cornello del Tasso. Il cognome non è casuale: da qui proveniva la famiglia de Tassis, che nel tardo Quattrocento ricevette dall'imperatore Massimiliano I d'Asburgo un incarico destinato a cambiare la struttura del potere europeo. L'incarico era semplice nella forma: costruire e gestire un sistema di staffette postali che collegasse Innsbruck a Bruxelles — le due estremità dell'impero asburgico — con una frequenza e una velocità mai viste prima. Ruggero de Tassis, il primo della famiglia a sistematizzare il servizio intorno al 1490, non stava aprendo un'azienda di recapito lettere. Stava costruendo l'infrastruttura nervosa di un impero.
 
 Il sistema era talmente semplice da sembrare oggi ovvio, se non addirittura dispersivo: cavalli e cavalieri alle stazioni di posta a intervalli regolari, con l'obbligo di consegnare la borsa al successivo nel giro di poche ore. Il risultato tuttavia era sorprendente: una lettera da Innsbruck a Bruxelles, che in precedenza richiedeva settimane per arrivare, cominciò a raggiungere la sua destinazione in cinque o sei giorni. I commercianti se ne avvantaggiarono e i banchieri fiorentini, già maestri nella trasmissione rapida di informazioni finanziarie, compresero immediatamente il valore del servizio. Ma Massimiliano I non aveva incaricato i Tassis per agevolare il commercio di lane fiamminghe: aveva bisogno di coordinare i movimenti delle sue truppe lungo la dorsale imperiale, di ricevere e inviare dispacci diplomatici prima che li intercettasse qualcun altro, di sapere cosa stava succedendo alle frontiere orientali prima che la notizia arrivasse deformata. <strong>La posta era, sin dalla sua nascita, un sistema militare e civile simultaneamente</strong>: non perché fosse stata deviata dal suo uso pacifico originario, ma perché l'uso originario era orientato a entrambe le finalità.
 
@@ -167,38 +167,38 @@ La mia risposta personale è la seguente, e forse la approfondirò in altre occa
 
 La domanda finale non è allora se l'AI di Alexander Karp sia dual use. La risposta, ce lo siamo detti, è ovvia. La domanda è se esiste ancora uno spazio culturale comune che sia abbastanza integro da fa cadere la domanda presso interlocutori che condividano il nostro sistema di riferimento e siano in grado letteralmente di capirla. E, soprattutto, se esista ancora lo spazio per un'infrastruttura globale simile a quella che Massimiliano I aveva fortemente voluto per il suo impero. Ma che sia a vantaggio non solo dell'imperatore e dell'Impero di turno, ma di tutti.
 
-## Riferimenti bibliografici
+## Bibliografia
 
 *Questo articolo sviluppa le conseguenze dei due pezzi sulla teoria dei giochi pubblicati su questo sito e su [The Abstract](https://claudiocammarano.substack.com).*
 
-Aresu, Alessandro, *Le potenze del capitalismo politico. Stati Uniti e Cina*, La Nave di Teseo, Milano, 2020.
+ARESU, Alessandro, *Le potenze del capitalismo politico. Stati Uniti e Cina*, Milano, La Nave di Teseo, 2020.
 
-Bego, Katja, "How a surge in defence and dual-use technology investment could reconfigure the global AI race", Chatham House Research Paper, International Security Programme, Londra, aprile 2026.
+BEGO, Katja, "How a Surge in Defence and Dual-Use Technology Investment Could Reconfigure the Global AI Race", Chatham House Research Paper, International Security Programme, Londra, aprile 2026.
 
-Bego, Katja, *Deep Connections: The Hidden Battles to Control Subsea Cables*, Polity Press, Cambridge, settembre 2026 (di prossima pubblicazione).
+BEGO, Katja, *Deep Connections: The Hidden Battles to Control Subsea Cables*, Cambridge, Polity Press, settembre 2026 (di prossima pubblicazione).
 
-Bresnahan, Timothy F. e Trajtenberg, Manuel, "General Purpose Technologies: 'Engines of Growth'?", *Journal of Econometrics*, vol. 65, n. 1, 1995, pp. 83—108.
+BRESNAHAN, Timothy F. e Manuel Trajtenberg, ["General Purpose Technologies: 'Engines of Growth'?"](https://doi.org/10.1016/0304-4076(94)01598-T), *Journal of Econometrics*, vol. 65, n. 1, 1995, pp. 83-108.
 
-Collingridge, David, *The Social Control of Technology*, Frances Pinter, Londra, 1980.
+COLLINGRIDGE, David, [*The Social Control of Technology*](https://openlibrary.org/books/OL4107182M/The_social_control_of_technology), Londra, Frances Pinter, 1980.
 
-Innis, Harold A., *Empire and Communications*, Oxford University Press, Oxford, 1950 (ed. it. *Impero e comunicazioni*, Meltemi, Roma, 2001).
+INNIS, Harold A., [*Empire and Communications*](https://openlibrary.org/works/OL762823W/Empire_and_communications), Oxford, Oxford University Press, 1950 (trad. it. *Impero e comunicazioni*, Roma, Meltemi, 2001).
 
-Lefebvre, Vladimir A., *The Structure of Awareness: Toward a Symbolic Language of Human Reflexion*, Sage Publications, Beverly Hills, 1977.
+LEFEBVRE, Vladimir A., *The Structure of Awareness: Toward a Symbolic Language of Human Reflexion*, Beverly Hills, Sage Publications, 1977.
 
-Molas-Gallart, Jordi, "Which Way to Go? Defence Technology and the Diversity of 'Dual-Use' Technology Transfer", *Research Policy*, vol. 26, n. 3, 1997, pp. 367—385.
+MOLAS-GALLART, Jordi, ["Which Way to Go? Defence Technology and the Diversity of 'Dual-Use' Technology Transfer"](https://www.sciencedirect.com/science/article/pii/S0048733397000231), *Research Policy*, vol. 26, n. 3, 1997, pp. 367-385.
 
-Museo dei Tasso e della Storia Postale, Cornello dei Tasso (BG), [museodeitasso.com](https://www.museodeitasso.com).
+MUSEO DEI TASSO E DELLA STORIA POSTALE, [Cornello dei Tasso (BG)](https://www.museodeitasso.com/it).
 
-Reppy, Judith, "Dual Use Technology: Concepts, Issues, Prospects", Cornell University Peace Studies Program, Occasional Paper n. 17, Ithaca, 1999.
+REPPY, Judith, "Dual Use Technology: Concepts, Issues, Prospects", Cornell University Peace Studies Program, Occasional Paper n. 17, Ithaca, 1999.
 
-Segal, Adam, *The Hacked World Order: How Nations Fight, Trade, Maneuver, and Manipulate in the Digital Age*, PublicAffairs, New York, 2016.
+SEGAL, Adam, [*The Hacked World Order: How Nations Fight, Trade, Maneuver, and Manipulate in the Digital Age*](https://archive.org/details/hackedworldorder0000sega), New York, PublicAffairs, 2016.
 
-Starosielski, Nicole, *The Undersea Network*, Duke University Press, Durham (NC), 2015.
+STAROSIELSKI, Nicole, [*The Undersea Network*](https://www.dukeupress.edu/the-undersea-network), Durham (NC), Duke University Press, 2015.
 
-Turner, Fred, *From Counterculture to Cyberculture: Stewart Brand, the Whole Earth Network, and the Rise of Digital Utopianism*, University of Chicago Press, Chicago, 2006.
+TURNER, Fred, [*From Counterculture to Cyberculture: Stewart Brand, the Whole Earth Network, and the Rise of Digital Utopianism*](https://openlibrary.org/books/OL3417830M/From_counterculture_to_cyberculture), Chicago, University of Chicago Press, 2006.
 
-Virilio, Paul, *Vitesse et Politique*, Galilée, Parigi, 1977 (trad. it. *Velocità e Politica*, Multhipla Edizioni, Milano, 1981).
+VIRILIO, Paul, [*Vitesse et Politique*](https://openlibrary.org/books/OL2087170M/Speed_and_politics), Parigi, Galilée, 1977 (trad. it. *Velocità e Politica*, Milano, Multhipla Edizioni, 1981).
 
-Virilio, Paul, *Guerre et Cinéma. Logistique de la perception*, Cahiers du Cinéma / L'Étoile, Parigi, 1984.
+VIRILIO, Paul, *Guerre et Cinéma. Logistique de la perception*, Parigi, Cahiers du Cinéma/L'Étoile, 1984.
 
-Winner, Langdon, "Do Artifacts Have Politics?", *Daedalus*, vol. 109, n. 1, 1980, pp. 121—136.
+WINNER, Langdon, "Do Artifacts Have Politics?", *Daedalus*, vol. 109, n. 1, 1980, pp. 121-136.

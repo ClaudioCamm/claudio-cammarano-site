@@ -45,6 +45,9 @@ eleventyComputed:
       {% elif concept.articles.length == 1 %}1 articolo
       {% else %}{{ concept.articles.length }} articoli{% endif %}
     </p>
+    {% if concept.type == "testo" and concept.citation %}
+    <p class="concetto-citation">{{ concept.citation | safe }}</p>
+    {% endif %}
     {% if concept.note %}
     <p class="tag-page-intro">{{ concept.note }}</p>
     {% endif %}

@@ -274,6 +274,14 @@ Una comunità di pratica non confessionale significa esattamente questo: un cent
 
 In un momento in cui il gap vichiano si comprime fino a rendere quasi simultanei il fare e il capire, e in cui l'AI potrebbe — condizionale necessario — offrire strumenti di de-specializzazione che la rivoluzione industriale aveva reso impossibili, questa domanda non è accademica. È la domanda su come si trasmette qualcosa che vale la pena trasmettere, senza sapere in anticipo cosa sarà.
 
+---
+
+## Bibliografia
+
+DANS, Paul e Steven Groves (a cura di), [*Mandate for Leadership: The Conservative Promise*](https://archive.org/details/project-2025-mandate-for-leadership-heritage-foundation), Washington, The Heritage Foundation, 2023.
+
+VICO, Giambattista, [*Principj di una scienza nuova intorno alla natura delle nazioni*](https://openlibrary.org/works/OL582463W/Principi_di_una_scienza_nuova), Napoli, Felice Mosca, 1725.
+
 <div class="pdf-cta">
   <strong>Verso una Regola del XXI secolo</strong><br>
   Ho raccolto le letture consigliate e le mappe concettuali di questa conversazione in un documento scaricabile: un percorso di lettura integrato sulla crisi delle humanities, dalla rivoluzione industriale all'AI generativa, con quattro diagrammi orientativi e una bibliografia annotata in cinque strati.

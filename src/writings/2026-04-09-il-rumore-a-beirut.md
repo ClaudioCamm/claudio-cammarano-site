@@ -86,3 +86,17 @@ Allora la lezione che il Libano ci offre è più severa di quella che pensavo pr
 Il Libano ha vissuto in piccolo, cinquant'anni fa, quello che noi rischiamo di vivere in grande nel decennio che ci aspetta. Lì il rumore arrivava sotto forma di milizie armate finanziate dall'estero, di profughi non gestibili, di invasioni periodiche, di assassinii politici eccellenti. Da noi arriva sotto forma di <mark>campagne di disinformazione algoritmica, di interferenze elettorali, di leader politici che hanno fatto della confusione sistematica il proprio metodo di governo, di un avvelenamento dello spazio pubblico</mark> che cresce di anno in anno e che le istituzioni democratiche, costruite per processare conflitti in buona fede, non sanno ancora come neutralizzare senza diventare illiberali a loro volta. È esattamente la trappola che la dottrina Gerasimov aveva calcolato: o la democrazia tollera il rumore e si dissolve nella confusione, o lo sopprime e si nega come democrazia. Ma, per quanto il bivio sia stretto, si tratta di una falsa dicotomia. La terza via esiste: ma richiede un lavoro di tessitura costante e accurato. E non conosce proiettile magico.
 
 Forse è questa la vera lezione mediterranea — quella che la nostalgia levantina di Taleb non vede, e che il mio appello iniziale alla democrazia distributiva, da solo, non basta a fronteggiare. <mark>Non basta avere architetture intelligenti: bisogna anche avere la forza, la lucidità e gli alleati per difenderle dal rumore di chi vuole spegnerle</mark>. Il Libano questa forza non l'aveva, ed era troppo solo, troppo piccolo, troppo prezioso e troppo male collocato geograficamente perché qualcuno, nel sistema internazionale, avesse davvero interesse a difenderlo. Noi europei potremmo averla. E quando arriverà il momento — perché arriverà — non sarà la diversità cognitiva degli accademici a salvarci, né l'antifragilità dei filosofi del rischio. Sarà, se saremo fortunati, il fatto di esserci coordinati per tempo, abbastanza da non trovarci soli sulla riva sbagliata del Mediterraneo a pagare un grave costo politico che non avevamo previsto.
+
+---
+
+## Bibliografia
+
+TALEB, Nassim Nicholas, [*Antifragile: Things That Gain from Disorder*](https://archive.org/details/antifragilething0000tale), New York, Random House, 2012.
+
+TALEB, Nassim Nicholas, [*The Black Swan: The Impact of the Highly Improbable*](https://openlibrary.org/books/OL11348737M/The_Black_Swan), New York, Random House, 2007 (trad. it. *Il Cigno Nero: Come l'improbabile governa la nostra vita*, Milano, Il Saggiatore, 2009).
+
+TALEB, Nassim Nicholas, [*Skin in the Game: Hidden Asymmetries in Daily Life*](https://openlibrary.org/books/OL32207987M/Skin_in_the_Game), New York, Random House, 2018.
+
+TETLOCK, Philip E. e Dan Gardner, [*Superforecasting: The Art and Science of Prediction*](https://openlibrary.org/books/OL35515023M/Superforecasting), New York, Crown, 2015.
+
+THOMPSON, Abigail, ["Does Diversity Trump Ability? An Example of the Misuse of Mathematics"](https://www.ams.org/notices/201409/rnoti-p1024.pdf), Notices of the American Mathematical Society, vol. 61, n. 9, 2014, pp. 1024-1030.

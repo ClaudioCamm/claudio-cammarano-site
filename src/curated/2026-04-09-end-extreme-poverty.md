@@ -5,5 +5,5 @@ source: "The Economist"
 date: 2026-04-09
 description: "Sull'efficacia dei trasferimenti monetari diretti come strumento di riduzione della povertà estrema. Un dossier che mette in discussione decenni di architetture assistenziali più sofisticate e più costose."
 tags: [curated, economia, sviluppo]
-concepts: []
+concepts: ["trasferimenti monetari diretti", "aiuto allo sviluppo", "economia", "macroeconomia"]
 ---

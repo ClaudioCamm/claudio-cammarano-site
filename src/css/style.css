@@ -3432,6 +3432,20 @@ a.temi-tag-pill:hover .temi-tag-count {
   width: 100%;
 }
 
+/* Eco/Bompiani citation (for testo entries) */
+.indice-citation {
+  font-family: var(--font-serif);
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-text-light);
+  width: 100%;
+}
+
+.indice-citation a {
+  color: var(--color-text-light);
+}
+
 /* Articles column */
 .indice-articles {
   font-family: var(--font-serif);
@@ -3589,6 +3603,19 @@ a.temi-tag-pill:hover .temi-tag-count {
 /* === CONCETTO PAGE === */
 .concetto-page {
   max-width: 800px;
+}
+
+.concetto-citation {
+  margin-top: var(--spacing-md);
+  font-family: var(--font-serif);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--color-text-light);
+  max-width: 640px;
+}
+
+.concetto-citation a {
+  color: var(--color-text-light);
 }
 
 .concetto-type-badge {

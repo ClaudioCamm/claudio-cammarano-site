@@ -86,30 +86,30 @@ Adorno e Horkheimer sostenevano che l’illuminismo portasse in sé i germi del 
 
 Il veleno non era nell'illuminismo: era nell'antidoto — non nel senso che il poststrutturalismo abbia causato il nichilismo reazionario, ma nel senso che ha reso disponibile, senza volerlo, un vocabolario in cui qualsiasi critica può essere disarmata come esercizio di potere. Il programma che resta — quello peirceano, quello dell'universalismo consapevole, quello dell'educazione all'eros della ricerca — è più difficile e meno elegante di entrambi: non ha la certezza del dogmatismo né il brivido della decostruzione. Ha solo la fatica e il piacere di chi sa che non arriverà mai alla fine, e va avanti lo stesso. La scommessa è che questo basti: che chi pratica ancora il dubbio come mestiere riesca a tenerlo vivo nello spazio pubblico abbastanza a lungo da renderlo di nuovo desiderabile.
 
-## Riferimenti bibliografici
+## Bibliografia
 
-Adorno, T.W., Horkheimer, M. (1947). Dialektik der Aufklärung. Amsterdam: Querido.
+ADORNO, Theodor W. e Max Horkheimer, [*Dialektik der Aufklärung*](https://openlibrary.org/books/OL5516420M/Dialektik_der_Aufkla%CC%88rung.), Amsterdam, Querido, 1947 (trad. it. *Dialettica dell'Illuminismo*, Torino, Einaudi, 1966).
 
-Afary, J., Anderson, K.B. (2005). Foucault and the Iranian Revolution: Gender and the Seductions of Islamism. Chicago: University of Chicago Press.
+AFARY, Janet e Kevin B. Anderson, [*Foucault and the Iranian Revolution: Gender and the Seductions of Islamism*](https://press.uchicago.edu/ucp/books/book/chicago/F/bo3534884.html), Chicago, University of Chicago Press, 2005.
 
-Descartes, R. (1637). Discours de la méthode. Leyde: Jan Maire.
+DESCARTES, René, [*Discours de la méthode*](https://openlibrary.org/books/OL18269385M/Discours_de_la_m%C3%A9thode), Leida, Jan Maire, 1637 (trad. it. *Discorso sul metodo*, Milano, Bompiani, 2002).
 
-Ferraris, M. (1997). Estetica razionale. Milano: Raffaello Cortina.
+FERRARIS, Maurizio, [*Estetica razionale*](https://www.raffaellocortina.it/scheda-libro/maurizio-ferraris/estetica-razionale-9788860303899-1259.html), Milano, Raffaello Cortina, 1997.
 
-Ferraris, M. (2009). Documentalità. Perché è necessario lasciar tracce. Roma-Bari: Laterza.
+FERRARIS, Maurizio, *Documentalità. Perché è necessario lasciar tracce*, Roma-Bari, Laterza, 2009.
 
-Ferraris, M. (2012). Manifesto del nuovo realismo. Roma-Bari: Laterza.
+FERRARIS, Maurizio, *Manifesto del nuovo realismo*, Roma-Bari, Laterza, 2012.
 
-Foucault, M. (1975). Surveiller et punir. Paris: Gallimard.
+FOUCAULT, Michel, [*Surveiller et punir*](https://openlibrary.org/books/OL21204821M/Surveiller_et_punir), Parigi, Gallimard, 1975 (trad. it. *Sorvegliare e punire*, Torino, Einaudi, 1976).
 
-Foucault, M. (2023). Dossier Iran, a cura di S. Lohi, prefazione di E. Stimilli. Vicenza: Neri Pozza.
+FOUCAULT, Michel, [*Dossier Iran*](https://michel-foucault.com/2023/09/11/michel-foucault-dossier-iran-traduzione-di-sajjad-lohi-2023/), a cura di Sajjad Lohi, prefazione di Elettra Stimilli, Vicenza, Neri Pozza, 2023.
 
-Habermas, J. (1981). Theorie des kommunikativen Handelns. Frankfurt am Main: Suhrkamp.
+HABERMAS, Jürgen, [*Theorie des kommunikativen Handelns*](https://openlibrary.org/books/OL3871088M/Theorie_des_kommunikativen_Handelns), Francoforte sul Meno, Suhrkamp, 1981 (trad. it. *Teoria dell'agire comunicativo*, Bologna, Il Mulino, 1986).
 
-Kahneman, D. (2011). Thinking, Fast and Slow. New York: Farrar, Straus and Giroux.
+KAHNEMAN, Daniel, [*Thinking, Fast and Slow*](https://openlibrary.org/books/OL28227306M/Thinking_Fast_and_Slow), New York, Farrar, Straus and Giroux, 2011 (trad. it. *Pensieri lenti e veloci*, Milano, Mondadori, 2012).
 
-Lyotard, J.-F. (1979). La condition postmoderne: rapport sur le savoir. Paris: Les Éditions de Minuit.
+LYOTARD, Jean-François, [*La condition postmoderne: rapport sur le savoir*](https://openlibrary.org/books/OL4462200M/La_condition_postmoderne), Parigi, Les Éditions de Minuit, 1979 (trad. it. *La condizione postmoderna*, Milano, Feltrinelli, 1981).
 
-Peirce, C.S. (1878). «How to Make Our Ideas Clear». Popular Science Monthly, 12, pp. 286-302.
+PEIRCE, Charles S., ["How to Make Our Ideas Clear"](https://www.peirce.org/writings/p119.html), Popular Science Monthly, vol. 12, 1878, pp. 286-302.
 
-Stanley, J. (2018). How Fascism Works: The Politics and Myth. New York: Random House.
+STANLEY, Jason, [*How Fascism Works: The Politics of Us and Them*](https://openlibrary.org/books/OL29882693M/How_Fascism_Works), New York, Random House, 2018.

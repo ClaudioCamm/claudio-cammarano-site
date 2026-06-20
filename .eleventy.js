@@ -137,7 +137,8 @@ module.exports = function(eleventyConfig) {
         name: c.name,
         type: c.type,
         articles: c.articles.slice(),
-        note: c.note || null
+        note: c.note || null,
+        citation: c.citation || null
       };
     });
 

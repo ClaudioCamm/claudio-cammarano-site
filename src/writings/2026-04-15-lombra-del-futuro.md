@@ -179,14 +179,14 @@ La cosa curiosa di tutto questo è che Anatol Rapoport, quando sottomise *Tit-fo
 
 ---
 
-## Bibliografia essenziale
+## Bibliografia
 
-Axelrod, R. (1984). *The Evolution of Cooperation*. New York: Basic Books.
+AXELROD, Robert, [*The Evolution of Cooperation*](https://openlibrary.org/books/OL3186143M/The_evolution_of_cooperation), New York, Basic Books, 1984.
 
-Keohane, R. O. (1984). *After Hegemony: Cooperation and Discord in the World Political Economy*. Princeton: Princeton University Press.
+KEOHANE, Robert O., [*After Hegemony: Cooperation and Discord in the World Political Economy*](https://openlibrary.org/books/OL2867306M/After_hegemony), Princeton, Princeton University Press, 1984.
 
-Ostrom, E. (1990). *Governing the Commons: The Evolution of Institutions for Collective Action*. Cambridge: Cambridge University Press.
+OSTROM, Elinor, [*Governing the Commons: The Evolution of Institutions for Collective Action*](https://openlibrary.org/books/OL26374453M/Governing_the_Commons_The_Evolution_of_Institutions_for_Collective_Action), Cambridge, Cambridge University Press, 1990.
 
-Rapoport, A., & Chammah, A. M. (1965). *Prisoner's Dilemma: A Study in Conflict and Cooperation*. Ann Arbor: University of Michigan Press.
+RAPOPORT, Anatol e Albert M. Chammah, [*Prisoner's Dilemma: A Study in Conflict and Cooperation*](https://openlibrary.org/works/OL11702053W/Prisoner's_dilemma), Ann Arbor, University of Michigan Press, 1965.
 
-Schelling, T. C. (1966). *Arms and Influence*. New Haven: Yale University Press.
+SCHELLING, Thomas C., [*Arms and Influence*](https://openlibrary.org/books/OL5985894M/Arms_and_influence), New Haven, Yale University Press, 1966.

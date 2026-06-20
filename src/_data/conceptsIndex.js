@@ -457,6 +457,7 @@ module.exports = [
     name: "The Evolution of Cooperation",
     type: "testo",
     note: "Libro di Robert Axelrod (1984). Riporta i risultati del torneo computazionale del dilemma del prigioniero e dimostra che la cooperazione può emergere tra attori egoisti in contesti iterati. Punto di partenza teorico della serie «Ombre» del sito: il lavoro che ha dato base scientifica all'idea che la cooperazione sia razionale.",
+    citation: "AXELROD, Robert, <a href=\"https://openlibrary.org/books/OL3186143M/The_evolution_of_cooperation\"><em>The Evolution of Cooperation</em></a>, New York, Basic Books, 1984.",
     articles: [
       { title: "L'ombra del futuro", url: "/writings/2026-04-15-lombra-del-futuro/" }
     ]
@@ -465,6 +466,7 @@ module.exports = [
     name: "Antifragile",
     type: "testo",
     note: "Libro di Nassim Taleb (2012), terzo volume della pentalogia Incerto. Formalizza la distinzione tra sistemi fragili, robusti e antifragili attraverso la disuguaglianza di Jensen. Nel sito è citato sia per il nucleo matematico (risposta convessa vs. concava ai disturbi) sia per le implicazioni politiche: il modello cinese come esempio di fragilità mascherata da efficienza.",
+    citation: "TALEB, Nassim Nicholas, <a href=\"https://archive.org/details/antifragilething0000tale\"><em>Antifragile: Things That Gain from Disorder</em></a>, New York, Random House, 2012.",
     articles: [
       { title: "Il rumore a Beirut", url: "/writings/2026-04-09-il-rumore-a-beirut/" }
     ]
@@ -473,6 +475,7 @@ module.exports = [
     name: "La condition postmoderne",
     type: "testo",
     note: "Rapporto di Jean-François Lyotard (1979) sulla «condizione del sapere» nelle società avanzate. Conia la formula «incredulità verso le metanarrazioni». Nel sito è usato per mostrare come la diagnosi postmoderna sia stata rovesciata in strumento di potere dai populismi contemporanei — uso che Lyotard non aveva prescritto.",
+    citation: "LYOTARD, Jean-François, <a href=\"https://openlibrary.org/books/OL4462200M/La_condition_postmoderne\"><em>La condition postmoderne: rapport sur le savoir</em></a>, Parigi, Les Éditions de Minuit, 1979 (trad. it. <em>La condizione postmoderna</em>, Milano, Feltrinelli, 1981).",
     articles: [
       { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" }
     ]
@@ -481,6 +484,7 @@ module.exports = [
     name: "Dialektik der Aufklärung",
     type: "testo",
     note: "Opera di Adorno e Horkheimer (1947). La tesi: l'illuminismo porta in sé i germi del proprio rovesciamento — la ragione strumentale, separata da fondamenti normativi, diventa dominio. Nel sito il capovolgimento è letto diversamente: non è l'illuminismo che si è rovesciato su se stesso, è la sua critica che si è rovesciata.",
+    citation: "ADORNO, Theodor W. e Max Horkheimer, <a href=\"https://openlibrary.org/books/OL5516420M/Dialektik_der_Aufkla%CC%88rung.\"><em>Dialektik der Aufklärung</em></a>, Amsterdam, Querido, 1947 (trad. it. <em>Dialettica dell'Illuminismo</em>, Torino, Einaudi, 1966).",
     articles: [
       { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" }
     ]
@@ -489,6 +493,7 @@ module.exports = [
     name: "Why Nations Fail",
     type: "testo",
     note: "Libro di Daron Acemoglu e James Robinson (2012). Argomenta che prosperità e fallimento degli stati dipendono dalla qualità delle loro istituzioni — inclusive o estrattive. Nel sito è il quadro teorico per leggere le traiettorie degli stati analizzati nella serie «Ombre».",
+    citation: "ACEMOGLU, Daron e James A. Robinson, <a href=\"https://openlibrary.org/works/OL16568759W/Why_Nations_Fail\"><em>Why Nations Fail: The Origins of Power, Prosperity, and Poverty</em></a>, New York, Crown Business, 2012.",
     articles: [
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" }
     ]
@@ -497,6 +502,7 @@ module.exports = [
     name: "The Embodied Mind",
     type: "testo",
     note: "Libro di Francisco Varela, Evan Thompson ed Eleanor Rosch (1991). Propone la cognizione come radicata nel corpo e nell'esperienza vissuta, contro il cognitivismo classico. Nel sito è il testo che «cambia statuto» davanti a un LLM: da posizione tra altre diventa criterio di distinzione tra mente biologica e macchina.",
+    citation: "VARELA, Francisco J., Evan Thompson e Eleanor Rosch, <a href=\"https://openlibrary.org/books/OL26933223M/The_embodied_mind\"><em>The Embodied Mind: Cognitive Science and Human Experience</em></a>, Cambridge (MA), MIT Press, 1991.",
     articles: [
       { title: "La differenza fra Claude e le mie gatte", url: "/writings/2026-04-30-la-differenza-fra-claude-e-le-mie-gatte/" }
     ]
@@ -505,6 +511,7 @@ module.exports = [
     name: "Discours de la méthode",
     type: "testo",
     note: "Opera di René Descartes (1637). Propone il metodo del dubbio sistematico come fondamento della conoscenza certa, e la «morale provvisoria» come strategia conservatrice durante la demolizione delle vecchie certezze. Nel sito è usato come analogia del programma illuminista: ricostruire le fondamenta richiede un alloggio provvisorio.",
+    citation: "DESCARTES, René, <a href=\"https://openlibrary.org/books/OL18269385M/Discours_de_la_m%C3%A9thode\"><em>Discours de la méthode</em></a>, Leida, Jan Maire, 1637 (trad. it. <em>Discorso sul metodo</em>, Milano, Bompiani, 2002).",
     articles: [
       { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" }
     ]

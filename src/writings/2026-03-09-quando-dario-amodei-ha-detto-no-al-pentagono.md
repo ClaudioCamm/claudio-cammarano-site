@@ -56,3 +56,19 @@ E la risposta, in questo caso specifico, è sì — ma per una ragione che non r
 Il che mi porta alla domanda aperta: alla luce di tutto questo, le scienze del management sono finite? O è esattamente adesso, quando un modello può fare il lavoro di scaffolding metodologico che prima richiedeva un consulente costoso, che potrebbero finalmente diventare scienze sociali vere — con campioni grandi, repliche, e la possibilità di testare le assunzioni invece di venderle? Io credo che darsi alla ricerca in molti campi, oggi, possa essere sia entusiasmante, sia terrificante. E comunque sempre meglio farsi un hobby potenzialmente monetizzabile e non erodibile dalla vostra AI preferita. Taijiquan, massoterapia... C'è molta scelta.
 
 I report sono disponibili nella sezione Learning Log di questo sito.
+
+---
+
+## Bibliografia
+
+AUTOR, David H., Frank Levy e Richard J. Murnane, ["The Skill Content of Recent Technological Change: An Empirical Exploration"](https://doi.org/10.1162/003355303322552801), The Quarterly Journal of Economics, vol. 118, n. 4, 2003, pp. 1279-1333.
+
+CORNELIUS, Peter, Alexander Van de Putte e Mattia Romani, ["Three Decades of Scenario Planning in Shell"](https://journals.sagepub.com/doi/10.2307/41166329), California Management Review, vol. 48, n. 1, 2005, pp. 92-109.
+
+SHARP, Andrew, ["The End of the World As We Know It"](https://sharptext.net/2026/the-end-of-the-world-as-we-know-it/), SharpText, 6 marzo 2026.
+
+THOMPSON, Ben, ["An Interview with Gregory Allen About Anthropic and the U.S. Government"](https://stratechery.com/2026/an-interview-with-gregory-allen-about-anthropic-and-the-u-s-government/), Stratechery, 5 marzo 2026.
+
+WACK, Pierre, ["Scenarios: Uncharted Waters Ahead"](https://hbr.org/1985/09/scenarios-uncharted-waters-ahead), Harvard Business Review, vol. 63, n. 5, 1985, pp. 72-89.
+
+WACK, Pierre, "Scenarios: Shooting the Rapids", Harvard Business Review, vol. 63, n. 6, 1985, pp. 139-150.

@@ -97,3 +97,11 @@ Essere la destinazione turistica più desiderata al mondo è il riflesso esatto 
 Il Mediterraneo settentrionale aspetta ancora un paese capace di abitarlo. La Sicilia normanna, con la sua sintesi straordinaria di culture diverse, aspetta ancora di diventare altro che un mosaico da fotografare. La genealogia intellettuale che va da Salvemini a Gramsci a Rossi-Doria — un pensiero del Sud come chiave interpretativa dell'Italia intera, non come problema da risolvere con i fondi europei — aspetta ancora un erede che non sia un nostalgico.
 
 *Nel frattempo, la cartolina è già pronta. Ed è bellissima.*
+
+---
+
+## Bibliografia
+
+HOBSBAWM, Eric e Terence Ranger (a cura di), [*The Invention of Tradition*](https://openlibrary.org/works/OL16806869W/The_Invention_of_tradition), Cambridge, Cambridge University Press, 1983.
+
+MASELLI, Francesco, *L'Italia ha paura del mare. Reportage e saggi dai confini della Penisola*, Milano, NR Edizioni, 2023.
