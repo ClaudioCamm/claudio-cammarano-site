@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Il quadrante del dual use</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Source Serif 4', Georgia, serif;
+  background: #f7f4ef;
+  color: #1c1917;
+  padding: 22px 28px 18px;
+}
+.eyebrow {
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #78716c;
+  margin-bottom: 18px;
+}
+.layout {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.y-axis {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  font-size: 8.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #a09a93;
+  white-space: nowrap;
+  padding-top: 8px;
+  flex-shrink: 0;
+}
+.grid-col { flex: 1; }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+.x-labels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+.x-label {
+  font-size: 8.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #a09a93;
+  text-align: center;
+}
+.cell { padding: 16px 14px 12px; border-radius: 2px; }
+.q-label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 7px;
+}
+.q-desc { font-size: 11px; line-height: 1.45; }
+.q-note { font-size: 10px; font-style: italic; margin-top: 4px; opacity: 0.85; }
+.footer-note {
+  font-size: 10px;
+  color: #a09a93;
+  font-style: italic;
+  margin-top: 14px;
+  border-top: 1px solid #d9d4cb;
+  padding-top: 10px;
+}
+</style>
+</head>
+<body>
+<div class="eyebrow">Il quadrante di Molas-Gallart (1997) · Origine → Destinazione</div>
+<div class="layout">
+  <div class="y-axis">Origine militare ↑ · Origine civile ↓</div>
+  <div class="grid-col">
+    <div class="grid">
+      <div class="cell" style="background:#fca5a5">
+        <div class="q-label" style="color:#7f1d1d">MM</div>
+        <div class="q-desc" style="color:#7f1d1d">Origine militare<br>Destinazione militare</div>
+      </div>
+      <div class="cell" style="background:#fed7aa">
+        <div class="q-label" style="color:#9a3412">MC</div>
+        <div class="q-desc" style="color:#9a3412">Origine militare<br>Destinazione civile</div>
+        <div class="q-note" style="color:#9a3412">spin-off · GPS, forno a microonde, ARPANET</div>
+      </div>
+      <div class="cell" style="background:#bfdbfe">
+        <div class="q-label" style="color:#1e3a5f">CM</div>
+        <div class="q-desc" style="color:#1e3a5f">Origine civile<br>Destinazione militare</div>
+        <div class="q-note" style="color:#1e3a5f">spin-in · dinamite, ferrovia, radio</div>
+      </div>
+      <div class="cell" style="background:#bbf7d0">
+        <div class="q-label" style="color:#14532d">CC</div>
+        <div class="q-desc" style="color:#14532d">Origine civile<br>Destinazione civile</div>
+        <div class="q-note" style="color:#14532d">quasi vuoto</div>
+      </div>
+    </div>
+    <div class="x-labels">
+      <div class="x-label">→ dest. militare</div>
+      <div class="x-label">→ dest. civile</div>
+    </div>
+  </div>
+</div>
+<div class="footer-note">CC è strutturalmente quasi vuoto: qualsiasi tecnologia con effetti fisici significativi è militarizzabile. Il dual use in senso stretto è la simultaneità, non il trasferimento unidirezionale.</div>
+</body>
+</html>

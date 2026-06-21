@@ -140,7 +140,8 @@ module.exports = function(eleventyConfig) {
 
   // Merged concepts index: static conceptsIndex.js + curated items that declare
   // concepts[] in their frontmatter. Curated articles are added to matching
-  // concept entries; unknown concept names are silently skipped.
+  // concept entries; unknown concept names are reported (see warning below)
+  // and skipped — they need to be added to conceptsIndex.js first.
   eleventyConfig.addCollection("mergedConceptsIndex", function(collectionApi) {
     // Deep-clone to avoid mutating the require() cache across builds
     var index = conceptsIndexData.map(function(c) {
@@ -158,6 +159,7 @@ module.exports = function(eleventyConfig) {
     index.forEach(function(c) { byName[c.name] = c; });
 
     // Walk curated collection
+    var missing = []; // { file, conceptName } — reported after the loop
     var curated = collectionApi.getFilteredByGlob("src/curated/*.md");
     curated.forEach(function(item) {
       var concepts = item.data.concepts;
@@ -165,7 +167,10 @@ module.exports = function(eleventyConfig) {
 
       concepts.forEach(function(conceptName) {
         var concept = byName[conceptName];
-        if (!concept) return; // not in taxonomy — add it to conceptsIndex.js first
+        if (!concept) {
+          missing.push({ file: item.inputPath, name: conceptName });
+          return; // not in taxonomy — add it to conceptsIndex.js first
+        }
 
         var already = concept.articles.some(function(a) { return a.url === item.url; });
         if (!already) {
@@ -177,6 +182,14 @@ module.exports = function(eleventyConfig) {
         }
       });
     });
+
+    if (missing.length > 0) {
+      console.warn("\n⚠️  CONCETTI NON REGISTRATI (ignorati nell'indice/grafo) — aggiungili a src/_data/conceptsIndex.js:");
+      missing.forEach(function(m) {
+        console.warn("   " + m.file + " -> \"" + m.name + "\"");
+      });
+      console.warn("");
+    }
 
     return index;
   });

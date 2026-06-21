@@ -230,6 +230,36 @@ module.exports = [
     note: "Regista e animatore giapponese (1941), cofondatore dello Studio Ghibli. Nel sito è citato come riferimento implicito del dibattito sulla crisi degli animatori giapponesi: il modello artigianale e il mentoring che hanno formato la sua generazione sono esattamente ciò che l'industria ha smantellato dopo il 1973.",
     articles: []
   },
+  {
+    name: "Lea Ypi",
+    type: "persona",
+    note: "Filosofa e scrittrice albanese, docente alla LSE. Nel sito è citata due volte: come una delle quattro filosofe che secondo Gloria Origgi hanno rifondato la filosofia politica da Parigi — ripensando il marxismo come teoria dell'emancipazione contro un liberalismo che confonde libertà formale e libertà reale — e come una delle voci che hanno suggerito il pezzo di Jonathan White sulla colonizzazione tecnologica del pensiero sul futuro.",
+    articles: []
+  },
+  {
+    name: "Chiara Cordelli",
+    type: "persona",
+    note: "Filosofa politica, docente a Chicago. Nel sito è citata per la sua analisi dell'esternalizzazione progressiva dello Stato a soggetti privati — dalle carceri al controllo delle frontiere in «Privatocrazia» — e, in «Ruled by None», per la tesi che il flusso di capitale di venture capital orienti oggi l'idea di futuro più di qualunque pianificazione pubblica.",
+    articles: []
+  },
+  {
+    name: "Hélène Landemore",
+    type: "persona",
+    note: "Politologa, docente a Yale. Nel sito è citata per la sua proposta di assemblee cittadine selezionate per sorteggio come alternativa a una rappresentanza corrotta da media e interessi privati — metodo su cui ha lavorato concretamente alla costituzione islandese e alle Conventions Citoyennes francesi sul clima.",
+    articles: []
+  },
+  {
+    name: "Miranda Fricker",
+    type: "persona",
+    note: "Filosofa, docente alla NYU. Nel sito è citata per il suo lavoro sull'ingiustizia epistemica: chi viene ascoltato e chi no, e come questa asimmetria sia essa stessa una forma di potere che la filosofia politica tradizionale ha per lo più ignorato.",
+    articles: []
+  },
+  {
+    name: "Gloria Origgi",
+    type: "persona",
+    note: "Filosofa, ricercatrice CNRS a Parigi. Nel sito è l'autrice del pezzo che presenta quattro filosofe — Ypi, Cordelli, Landemore, Fricker — come prova che la filosofia politica, dopo decenni di egemonia maschile fatta più di sfoggio retorico che di proposte concrete, è tornata a essere una disciplina seria e politicamente rilevante.",
+    articles: []
+  },
 
   // ─── TEORIE ───────────────────────────────────────────────────────────────
 

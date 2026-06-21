@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="🇮🇹 Italiano">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dal concept al deploy: costruire un sito professionale con JAMstack - Claudio Cammarano</title>
+    <meta name="description" content="La storia tecnica di come questo sito è nato: dall’architettura informativa al deploy, passando per design system e workflow editoriale.">
+    <link rel="canonical" href="https://claudiocammarano.com/writings/2026-03-01-dal-concept-al-deploy/">
+    <link rel="alternate" hreflang="🇮🇹 Italiano" href="https://claudiocammarano.com/writings/2026-03-01-dal-concept-al-deploy/">
+    <link rel="alternate" hreflang="x-default" href="https://claudiocammarano.com/">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Dal concept al deploy: costruire un sito professionale con JAMstack">
+    <meta property="og:description" content="La storia tecnica di come questo sito è nato: dall’architettura informativa al deploy, passando per design system e workflow editoriale.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://claudiocammarano.com/writings/2026-03-01-dal-concept-al-deploy/">
+    
+    <meta property="og:image" content="https://claudiocammarano.com/images/claude-logo-and-app.webp">
+    
+    <meta property="og:site_name" content="Claudio Cammarano">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@claudiocamm">
+    <meta name="twitter:site" content="@claudiocamm">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <!-- Preload hero image (LCP) -->
+    
+    <link rel="preload" as="image" href="/images/claude-logo-and-app.webp">
+    
+    <!-- DNS prefetch per risorse esterne -->
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8557D7N1Y3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8557D7N1Y3');
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&display=swap" rel="stylesheet">
+    <link rel="alternate" type="application/rss+xml" title="Claudio Cammarano" href="/feed.xml">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body class="">
+    <header class="site-header">
+    <div class="header-top">
+        <div class="container header-top-inner">
+            <a href="/" class="header-name">Claudio Cammarano</a>
+            <span class="header-tagline">Libri, mercati, idee</span>
+            <a href="/search/" class="header-search" aria-label="Cerca" title="Cerca">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Apri menu" aria-expanded="false" aria-controls="site-nav">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+        </div>
+    </div>
+    <nav class="site-nav" id="site-nav">
+        <div class="container">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/writings/">Writings</a></li>
+                <li><a href="/curated/">Curated</a></li>
+                <li><a href="/learning/">Learning log</a></li>
+                <li><a href="/irene-media/">Irene Media</a></li>
+                <li><a href="/episteme-advisory/">Episteme Advisory <span class="nav-badge nav-badge--new">new</span></a></li>
+                <li><a href="/indice/">Indice</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/newsletter/">The Abstract</a></li>
+                <li class="nav-search-item" style="display:none"><a href="/search/">Cerca</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<script>
+(function() {
+  var toggle = document.getElementById('nav-toggle');
+  var nav = document.getElementById('site-nav');
+  if (!toggle || !nav) return;
+  toggle.addEventListener('click', function() {
+    var open = nav.classList.toggle('nav-open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggle.classList.toggle('is-open', open);
+  });
+  document.addEventListener('click', function(e) {
+    if (!toggle.contains(e.target) && !nav.contains(e.target)) {
+      nav.classList.remove('nav-open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.classList.remove('is-open');
+    }
+  });
+})();
+</script>
+
+    
+    <div class="container">
+        <main>
+            
+<div id="reading-progress"></div>
+<button id="back-to-top" aria-label="Torna su" title="Torna su">↑</button>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Dal concept al deploy: costruire un sito professionale con JAMstack",
+      "description": "La storia tecnica di come questo sito è nato: dall’architettura informativa al deploy, passando per design system e workflow editoriale.",
+      "datePublished": "2026-03-01",
+      "url": "https://claudiocammarano.com/writings/2026-03-01-dal-concept-al-deploy/",
+      "image": "https://claudiocammarano.com/images/claude-logo-and-app.webp",
+      "author": {
+        "@type": "Person",
+        "@id": "https://claudiocammarano.com/#person",
+        "name": "Claudio Cammarano",
+        "url": "https://claudiocammarano.com/about/"
+      },
+      "publisher": {
+        "@type": "Person",
+        "@id": "https://claudiocammarano.com/#person"
+      },
+      "isPartOf": { "@id": "https://claudiocammarano.com/#website" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://claudiocammarano.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Epistemologia & AI",
+          "item": "https://claudiocammarano.com/temi/#epistemologia-ai"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Dal concept al deploy: costruire un sito professionale con JAMstack",
+          "item": "https://claudiocammarano.com/writings/2026-03-01-dal-concept-al-deploy/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<div class="print-header" aria-hidden="true">
+  <span class="print-header-site">claudiocammarano.com</span>
+  <span class="print-header-url">/writings/2026-03-01-dal-concept-al-deploy/</span>
+</div>
+
+<article class="article-full">
+  <header class="article-header">
+    
+    <nav class="breadcrumb" aria-label="Navigazione">
+      <a href="/">Home</a>
+      
+      <span class="breadcrumb-sep" aria-hidden="true">·</span>
+      <a href="/temi/#epistemologia-ai">Epistemologia &amp; AI</a>
+      
+      
+      <span class="breadcrumb-sep" aria-hidden="true">·</span>
+      <span class="breadcrumb-current">Dal concept al deploy: costruire un sito professionale con JAMstack</span>
+    </nav>
+    <div class="article-meta">
+      <span class="article-date">1 marzo 2026</span>
+      
+        
+          
+          <a class="article-tag" href="/tag/ai/">AI</a>
+          
+          <a class="article-tag" href="/tag/vibe-coding/">Vibe Coding</a>
+          
+          <a class="article-tag" href="/tag/claude/">Claude</a>
+          
+        
+      
+      <span class="reading-time">4 min</span>
+    </div>
+    
+    <h1>Dal concept al deploy: costruire un sito professionale con JAMstack</h1>
+    
+    <p class="article-description">La storia tecnica di come questo sito è nato: dall’architettura informativa al deploy, passando per design system e workflow editoriale.</p>
+    
+    
+    <div class="share-bar">
+      <button class="share-btn" id="share-btn" aria-label="Condividi">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+        Condividi
+      </button>
+      <div class="share-menu" id="share-menu" hidden>
+        <button class="share-menu-item" id="share-copy">Copia link</button>
+        <a class="share-menu-item" id="share-linkedin" href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="share-menu-item" id="share-twitter" href="#" target="_blank" rel="noopener">Twitter / X</a>
+      </div>
+    </div>
+  </header>
+  
+  <div class="article-body" data-pagefind-body>
+    <img src="/images/claude-logo-and-app.webp" alt="Claude AI interface" style="width: 100%; max-width: 800px; margin-bottom: 48px;" loading="eager" decoding="async" fetchpriority="high">
+<div class="info-box" style="font-style: italic; margin-bottom: 48px;">
+<p>È domenica pomeriggio. Mia moglie Luisa dorme sul divano, ignorando che le gatte le stanno facendo compagnia all’altezza dei piedi; mia figlia Emilia fa i compiti. Da anni volevo costruirmi un sito personale. Medium, dove ho scritto con fin troppa insistenza per un paio d’anni, è stato sempre un ripiego non troppo di lusso, ma in passato mi era capitato di scomodare amici e sviluppatori per progetti più o meno ambiziosi su un mio sito di scrittura. L’esperienza di scrittura di Medium è notevole, ma  - nel delirio di onnipotenza - ho sempre voluto avviare un progetto à la <em>Stratechery</em> di Ben Thompson - ma i preventivi, per quanto limati all’osso in amicizia, erano sempre troppo esosi. Oppure troppo onerosi i progetti da gestire come project manager di me stesso, considerato il pochissimo tempo di cui dispongo.</p>
+<p>Poi è arrivato Claude. Mi sono iscritto per un mese con l’abbonamento Pro, più che altro per esplorarne le potenzialità. Ho scoperto che l’AI di Anthropic parla forbito ed è il sogno proibito degli umanisti. In più, forte delle mie poverissime basi di Python e di alcuni elementarissimi linguaggi di markup, ho iniziato a fare vibe coding. Avevo già un vecchio brief, fatto bene. L’ho caricato e ho aggiunto poche altre specifiche, poi ho chiesto a Claude di fare il resto. A esagerare, in 40 minuti ho chiuso l’MVP. In due settimane, giusto perché sono parecchio impegnato, ho pubblicato il sito - facendo in 5 minuti operazioni semplici per molti altri, ma che a me sarebbero costate mezz’ore di tentativi a vuoto.</p>
+<p>Visto che la gratitudine non si nega nemmeno alle macchine (e no, le AI non hanno una coscienza), ho chiesto a Claude anche di scrivere il primo articolo, che è quello che segue. Il suo è una sorta di sintesi dal suo punto di vista, e quindi poco emozionante, di come è andato il progetto. Questo è il risultato. Sulla forma c’è molto da fare, ma la ricostruzione è abbastanza corretta. A rileggerlo, sento la mancanza di calore e di ironia (che non è detto che io sappia esprimere meglio, beninteso): tuttavia, me lo faccimo andare bene, perché, chiaramente, questo sito è tanto suo quanto mio. Buona lettura.</p>
+</div>
+<hr>
+<h2>Il contesto</h2>
+<p>Avevo bisogno di consolidare la mia presenza online frammentata tra Medium, LinkedIn e Twitter. L’obiettivo: un hub centrale che riflettesse il mio approccio interdisciplinare al marketing e all’editoria, con totale controllo sui contenuti e zero costi ricorrenti.</p>
+<h2>Lo stack tecnico</h2>
+<p><strong>Eleventy (11ty)</strong> come static site generator. Perché? Performance eccellenti, semplicità concettuale, e la possibilità di scrivere in Markdown puro senza compromessi sulla flessibilità del templating.</p>
+<p><strong>Netlify</strong> per hosting e continuous deployment. Ogni push su GitHub trigghera un rebuild automatico. SSL incluso, zero configurazione.</p>
+<p><strong>Decap CMS</strong> (ex Netlify CMS) come editor visuale. Git-based: i contenuti vivono come file Markdown nel repository, non in un database proprietario.</p>
+<h2>Il design system: Bold Editorial</h2>
+<p>L’estetica doveva bilanciare impatto visivo e leggibilità professionale. Ho chiamato l’approccio “Bold Editorial”:</p>
+<ul>
+<li><strong>Tipografia aggressiva</strong> per titoli (56px, font-weight 900)</li>
+<li><strong>Box colorati</strong> per creare gerarchie visuali immediate</li>
+<li><strong>Border-left pesanti</strong> (4-6px) per delimitare sezioni</li>
+<li><strong>Spazio bianco generoso</strong> per dare respiro al contenuto</li>
+</ul>
+<p>Palette minimalista: blu primario (#1C0E80), bordeaux per Irene Media (#800020), nero puro per testo e bordi.</p>
+<h2>Architettura dei contenuti</h2>
+<p>Tre sezioni principali, ciascuna con logica e formato diversi:</p>
+<p><strong>Writings</strong>: Articoli originali in Markdown. Metadata YAML per categoria, lingua, data. Sistema di tagging flessibile.</p>
+<p><strong>Curated</strong>: Link esterni con commento critico. La fonte viene evidenziata visivamente con un badge riquadrato — riconoscimento esplicito della provenienza.</p>
+<p><strong>Learning Log</strong>: Risorse scaricabili con licenza Creative Commons. Layout a card, no paywall, no tracking. L’analisi dei download sarà server-side via Netlify Analytics.</p>
+<h2>Il workflow editoriale</h2>
+<p><strong>Locale</strong>: Ulysses con external folder puntata a <code>src/writings/</code>. Scrivo in Markdown nativo, salvo, e Eleventy rigenera automaticamente.</p>
+<p><strong>Remoto (futuro)</strong>: Decap CMS accessibile via <code>/admin/</code>. Interface tipo Medium, ma i file restano git-versioned. Ogni edit è un commit.</p>
+<p><strong>Mobile</strong>: iPad + Working Copy app per quick fixes e pubblicazioni in movimento.</p>
+<h2>I trade-off</h2>
+<p><strong>Non ho un backend</strong>. Niente form processing complesso, niente user authentication avanzata, niente real-time features. Ma non mi servono.</p>
+<p><strong>Il rebuild richiede ~60 secondi</strong>. Accettabile per un blog, improponibile per e-commerce con inventory live.</p>
+<p><strong>SEO</strong>: tutto statico significa meta tag perfetti e performance elevatissime. Google ama gli static site.</p>
+<h2>Costi finali</h2>
+<ul>
+<li>Hosting Netlify: €0</li>
+<li>GitHub: €0</li>
+<li>Decap CMS: €0</li>
+<li>Dominio claudiocammarano.com: ~€12/anno</li>
+</ul>
+<p><strong>Totale mensile: €1.</strong></p>
+<h2>Cosa ho imparato</h2>
+<p>Le migliori architetture sono quelle che scompaiono. Non penso più alla piattaforma: scrivo Markdown, faccio push, il sito si aggiorna. Fine.</p>
+<p>Il JAMstack non è hype: è una scelta architettonica solida per chi produce contenuti e vuole controllo totale senza overhead operativo.</p>
+<p>E soprattutto: <strong>owning your platform matters</strong>. Medium può cambiare algoritmo domani. Il mio repository Git no.</p>
+
+  </div>
+</article>
+
+<div class="print-footer" aria-hidden="true">
+  <span>© 2026 Claudio Cammarano — claudiocammarano.com</span>
+  <span>Tutti i diritti riservati. Riproduzione consentita con citazione della fonte.</span>
+</div>
+
+<script>
+(function() {
+  // Table of contents
+  var articleBody = document.querySelector('.article-body');
+  if (articleBody) {
+    var headings = articleBody.querySelectorAll('h2, h3');
+    if (headings.length >= 3) {
+      headings.forEach(function(h, i) {
+        if (!h.id) {
+          var slug = h.textContent
+            .toLowerCase()
+            .replace(/[^\w\s-]/g, '')
+            .replace(/\s+/g, '-')
+            .replace(/-+/g, '-')
+            .trim();
+          h.id = slug || ('sezione-' + i);
+        }
+      });
+      var details = document.createElement('details');
+      details.className = 'toc';
+      var summary = document.createElement('summary');
+      summary.className = 'toc-summary';
+      summary.textContent = 'In questo articolo';
+      details.appendChild(summary);
+      var list = document.createElement('ol');
+      list.className = 'toc-list';
+      headings.forEach(function(h) {
+        var li = document.createElement('li');
+        li.className = 'toc-item toc-' + h.tagName.toLowerCase();
+        var a = document.createElement('a');
+        a.href = '#' + h.id;
+        a.textContent = h.textContent;
+        li.appendChild(a);
+        list.appendChild(li);
+      });
+      details.appendChild(list);
+      // Insert before the second h2 (end of first section); fallback to before first h2
+      var allH2 = articleBody.querySelectorAll('h2');
+      var insertionPoint = allH2.length >= 2 ? allH2[1] : (allH2.length >= 1 ? allH2[0] : null);
+      if (insertionPoint) {
+        insertionPoint.parentNode.insertBefore(details, insertionPoint);
+      } else {
+        articleBody.insertBefore(details, articleBody.firstChild);
+      }
+    }
+  }
+})();
+</script>
+
+<script>
+(function() {
+  var bar = document.getElementById('reading-progress');
+  var body = document.querySelector('.article-body');
+  if (!bar || !body) return;
+  function update() {
+    var bodyTop = body.getBoundingClientRect().top + window.scrollY;
+    var bodyHeight = body.offsetHeight;
+    var scrolled = window.scrollY - bodyTop;
+    var pct = Math.min(Math.max(scrolled / bodyHeight * 100, 0), 100);
+    bar.style.width = pct + '%';
+  }
+  window.addEventListener('scroll', update, { passive: true });
+  update();
+})();
+
+(function() {
+  var shareBtn = document.getElementById('share-btn');
+  var shareMenu = document.getElementById('share-menu');
+  var shareCopy = document.getElementById('share-copy');
+  var shareLinkedIn = document.getElementById('share-linkedin');
+  var shareTwitter = document.getElementById('share-twitter');
+  if (!shareBtn) return;
+
+  var url = window.location.href;
+  var title = document.title;
+
+  if (shareLinkedIn) shareLinkedIn.href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(url);
+  if (shareTwitter) shareTwitter.href = 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(url) + '&text=' + encodeURIComponent(title);
+
+  shareBtn.addEventListener('click', function() {
+    if (navigator.share) {
+      navigator.share({ title: title, url: url }).catch(function() {});
+    } else {
+      var open = !shareMenu.hidden;
+      shareMenu.hidden = open;
+    }
+  });
+
+  if (shareCopy) {
+    shareCopy.addEventListener('click', function() {
+      navigator.clipboard.writeText(url).then(function() {
+        shareCopy.textContent = 'Copiato!';
+        setTimeout(function() { shareCopy.textContent = 'Copia link'; shareMenu.hidden = true; }, 1800);
+      });
+    });
+  }
+
+  document.addEventListener('click', function(e) {
+    if (!shareBtn.contains(e.target) && !shareMenu.contains(e.target)) {
+      shareMenu.hidden = true;
+    }
+  });
+})();
+
+(function() {
+  var btn = document.getElementById('back-to-top');
+  if (!btn) return;
+  window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+  btn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
+
+
+
+
+
+
+<div class="newsletter-cta">
+  <p class="newsletter-cta-label">The Abstract</p>
+  <p class="newsletter-cta-text">Analisi su content industries, AI e media vista da una prospettiva europea. Esce su Substack.</p>
+  <a href="https://claudiocammarano.substack.com" target="_blank" rel="noopener" class="newsletter-cta-btn">Leggi e iscriviti →</a>
+</div>
+
+
+
+<section class="related-posts">
+  <h3 class="related-posts-title">Sullo stesso tema</h3>
+  
+  <article class="related-post">
+    <div class="article-meta">
+      <span class="article-date">1 giugno 2026</span>
+      
+        
+          <a class="article-tag" href="/tag/ai/">AI</a><a class="article-tag" href="/tag/scrittura/">Scrittura</a><a class="article-tag" href="/tag/formazione/">Formazione</a>
+        
+      
+    </div>
+    <h4 class="related-post-title"><a href="/writings/2026-06-01-la-macchina-e-la-lotta/">La macchina e la lotta</a></h4>
+    <p class="related-post-description">Tokarczuk, Groff, e la domanda che nessuno sta facendo. Tre modi di scrivere con l’AI, il valore di quello che non si delega, e perché la lotta con la materia conta più del risultato.</p>
+  </article>
+  
+  <article class="related-post">
+    <div class="article-meta">
+      <span class="article-date">30 aprile 2026</span>
+      
+        
+          <a class="article-tag" href="/tag/ai/">AI</a><a class="article-tag" href="/tag/filosofia/">Filosofia</a><a class="article-tag" href="/tag/epistemologia/">Epistemologia</a>
+        
+      
+    </div>
+    <h4 class="related-post-title"><a href="/writings/2026-04-30-la-differenza-fra-claude-e-le-mie-gatte/">La differenza fra Claude e le mie gatte</a></h4>
+    <p class="related-post-description">Cinque definizioni dell’AI, la disputa sugli universali, le metafore-strumento e uno Spinoza implicito. Cosa siamo quando proviamo a definire l’intelligenza artificiale.</p>
+  </article>
+  
+  <article class="related-post">
+    <div class="article-meta">
+      <span class="article-date">15 marzo 2026</span>
+      
+        
+          <a class="article-tag" href="/tag/humanities/">Humanities</a><a class="article-tag" href="/tag/istituzioni/">Istituzioni</a><a class="article-tag" href="/tag/ai/">AI</a>
+        
+      
+    </div>
+    <h4 class="related-post-title"><a href="/writings/2026-03-15-salveremo-le-humanities/">Salveremo le humanities con le pratiche, non con le idee</a></h4>
+    <p class="related-post-description">Leggendo il manifesto Hinternet: la diagnosi è lucida, ma la soluzione ha un limite strutturale una cui possibile soluzione esiste almeno dal VI secolo.</p>
+  </article>
+  
+</section>
+
+
+
+
+
+<nav class="article-nav">
+  
+  <span></span>
+  
+  
+  <a href="/writings/2026-03-09-quando-dario-amodei-ha-detto-no-al-pentagono/" class="article-nav-item article-nav-next">
+    <span class="article-nav-label">Successivo &#8594;</span>
+    <span class="article-nav-title">Quando Dario Amodei ha detto no al Pentagono — e io ho chiamato Claude</span>
+  </a>
+  
+</nav>
+
+
+        </main>
+    </div>
+    
+    <footer class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-info">
+        <p class="footer-name">Claudio Cammarano · Marketing × Media × Content Industries</p>
+        <p class="footer-roles">De Agostini Libri · Docente · Irene Media · Episteme Advisory</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/claudiocammarano/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://medium.com/@ClaudioCamm" target="_blank" rel="noopener">Medium</a>
+        <a href="https://claudiocammarano.substack.com" target="_blank" rel="noopener">The Abstract</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+    
+    <script async src="//www.instagram.com/embed.js"></script>
+</body>
+</html>
