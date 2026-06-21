@@ -30,6 +30,9 @@ permalink: "/temi/"
   {% for clusterName, clusterTags in clusters %}
   <section class="temi-cluster" id="{{ clusterName | slugify }}">
     <h2 class="temi-cluster-name">{{ clusterName }}</h2>
+    {% if temiDescriptions[clusterName] %}
+    <p class="temi-cluster-intro">{{ temiDescriptions[clusterName] }}</p>
+    {% endif %}
     <div class="temi-cluster-tags">
       {% for tag in clusterTags %}
         {% set tagPosts = collections.writings | filterByTag(tag) %}

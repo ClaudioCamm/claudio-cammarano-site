@@ -3172,6 +3172,15 @@ body.irene-page .site-nav a.active {
   margin-bottom: var(--spacing-sm);
 }
 
+.temi-cluster-intro {
+  font-family: var(--font-serif);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-sm);
+  max-width: 640px;
+}
+
 .temi-cluster-tags {
   display: flex;
   flex-wrap: wrap;
@@ -3364,6 +3373,30 @@ a.temi-tag-pill:hover .temi-tag-count {
   text-transform: uppercase;
   color: var(--color-text-hint);
   margin-bottom: var(--spacing-md);
+}
+
+.indice-section-note {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--color-text-hint);
+  margin-bottom: var(--spacing-md);
+}
+
+.indice-section-note a {
+  color: var(--color-primary-medium);
+}
+
+.indice-subgroup-title {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--color-text-light);
+  margin: var(--spacing-md) 0 var(--spacing-xs);
+}
+
+.indice-list--subgroup {
+  margin-bottom: var(--spacing-sm);
 }
 
 /* List */
