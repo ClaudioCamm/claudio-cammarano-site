@@ -32,7 +32,7 @@ permalink: "/indice/"
   <header class="temi-page-header">
     <p class="tag-page-label">Indice analitico</p>
     <h1 class="temi-page-title">Indice</h1>
-    <p class="temi-page-intro">Il sito si naviga su tre livelli, dal più ampio al più specifico: <strong>Temi</strong> (4 cluster), <strong>Argomenti</strong> (i tag sopra ogni articolo, 20) e <strong>Concetti</strong> (persone, teorie, paesi, luoghi, istituzioni e testi citati, sotto). Questo indice li raccoglie tutti, così è chiaro su quale livello ci si trova in ogni momento.</p>
+    <p class="temi-page-intro">Il sito si naviga su tre livelli, dal più ampio al più specifico: <strong>Temi</strong>, <strong>Argomenti</strong> (i tag sopra ogni articolo) e <strong>Concetti</strong> (persone, teorie, paesi, luoghi, istituzioni e testi citati, sotto). Questo indice li raccoglie tutti, così è chiaro su quale livello ci si trova in ogni momento.</p>
     <nav class="indice-jump-nav" aria-label="Salta a sezione">
       <a href="#temi">Temi</a>
       <a href="#argomenti">Argomenti</a>
@@ -47,43 +47,29 @@ permalink: "/indice/"
 
   {# ── TEMI ── #}
   <section class="indice-section" id="temi">
-    <details class="indice-details">
-      <summary class="indice-section-title">Temi <span class="indice-chevron" aria-hidden="true">›</span></summary>
-      <p class="indice-section-note">Il livello più ampio: 4 cluster che raggruppano gli argomenti per affinità. <a href="/temi/">Vedi la pagina Temi →</a></p>
-      <dl class="indice-list">
-        {% for clusterName, clusterTags in clusters %}
-        <div class="indice-item">
-          <dt class="indice-term">
-            <a href="/temi/#{{ clusterName | slugify }}" class="indice-term-link">{{ clusterName }}</a>
-          </dt>
-          <dd class="indice-articles">{% if temiDescriptions[clusterName] %}{{ temiDescriptions[clusterName] }}{% endif %}</dd>
-        </div>
-        {% endfor %}
-      </dl>
-    </details>
+    <h2 class="indice-section-title indice-section-title--flat">Temi</h2>
+    <div class="indice-pill-list">
+      {% for clusterName, clusterTags in clusters %}
+      <a href="/temi/#{{ clusterName | slugify }}" class="temi-tag-pill">{{ clusterName }}</a>
+      {% endfor %}
+    </div>
   </section>
 
   {# ── ARGOMENTI ── #}
   <section class="indice-section" id="argomenti">
-    <details class="indice-details">
-      <summary class="indice-section-title">Argomenti <span class="indice-chevron" aria-hidden="true">›</span></summary>
-      <p class="indice-section-note">Il livello intermedio: i tag sopra ogni articolo, più specifici dei temi e più ampi dei concetti. Raggruppati per tema di appartenenza.</p>
+    <h2 class="indice-section-title indice-section-title--flat">Argomenti</h2>
+    <div class="indice-pill-list">
       {% for clusterName, clusterTags in clusters %}
-      <p class="indice-subgroup-title">{{ clusterName }}</p>
-      <dl class="indice-list indice-list--subgroup">
         {% for tag in clusterTags %}
         {% set tagPosts = collections.writings | filterByTag(tag) %}
-        <div class="indice-item{% if tagPosts.length > 1 %} indice-item--multi{% endif %}">
-          <dt class="indice-term">
-            <a href="/tag/{{ tag | slugify }}/" class="indice-term-link">{{ tag }}</a>
-            {% if tagPosts.length %}<span class="indice-count" aria-label="{{ tagPosts.length }} articoli">{{ tagPosts.length }}</span>{% endif %}
-          </dt>
-          <dd class="indice-articles">{% if tagDescriptions[tag] %}{{ tagDescriptions[tag] }}{% endif %}</dd>
-        </div>
+        {% if tagPosts.length %}
+        <a href="/tag/{{ tag | slugify }}/" class="temi-tag-pill">{{ tag }}<span class="temi-tag-count">{{ tagPosts.length }}</span></a>
+        {% else %}
+        <span class="temi-tag-pill temi-tag-pill--empty">{{ tag }}</span>
+        {% endif %}
         {% endfor %}
-      </dl>
       {% endfor %}
-    </details>
+    </div>
   </section>
 
   {# ── PERSONE ── #}
@@ -206,7 +192,6 @@ permalink: "/indice/"
           <dt class="indice-term indice-term--testo">
             <a href="/concetti/{{ concept.name | slugify }}/" class="indice-term-link">{{ concept.name }}</a>
             {% if concept.articles.length > 1 %}<span class="indice-count" aria-label="{{ concept.articles.length }} articoli">{{ concept.articles.length }}</span>{% endif %}
-            {% if concept.citation %}<span class="indice-citation">{{ concept.citation | safe }}</span>{% endif %}
           </dt>
           <dd class="indice-articles">
             {% for art in concept.articles %}
