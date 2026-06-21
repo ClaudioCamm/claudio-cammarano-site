@@ -10,7 +10,7 @@ eleventyComputed:
   description: "Tutti gli articoli su {{ tag }}"
 ---
 
-{% set tagPosts = collections.writings | filterByTag(tag) %}
+{% set tagPosts = collections.allPosts | filterByTag(tag) %}
 
 <script type="application/ld+json">
 {
@@ -54,22 +54,37 @@ eleventyComputed:
 
   <div class="tag-page-posts">
     {% for post in tagPosts %}
-    <article class="article-card article-card--secondary">
-      {% if post.data.series %}<div class="article-series-card-label"><a href="/serie/{{ post.data.series | seriesBaseName | slugify }}/">{{ post.data.series }}</a></div>{% endif %}
-      <div class="article-meta">
-        <span class="article-date">{{ post.date | formatDate }}</span>
-        {% if post.data.category %}
-          {% if post.data.category.length %}
-            {% for cat in post.data.category %}<a class="article-tag" href="/tag/{{ cat | slugify }}/">{{ cat }}</a>{% endfor %}
-          {% else %}
-            <a class="article-tag" href="/tag/{{ post.data.category | slugify }}/">{{ post.data.category }}</a>
+      {% if post.data._postType == "curated" %}
+      <article class="article-card article-card--curated">
+        <div class="article-meta">
+          <span class="article-date">{{ post.date | formatDate }}</span>
+          <span class="curated-badge">Curated</span>
+          {% if post.data.source %}<span class="curated-source-label">· {{ post.data.source }}</span>{% endif %}
+          {% if post.data.tags %}
+            {% for t in post.data.tags %}{% if t != 'curated' %}{% set canonical = curatedTagAliases[t | lower] %}{% if canonical %}<a class="article-tag" href="/tag/{{ canonical | slugify }}/">{{ canonical }}</a>{% endif %}{% endif %}{% endfor %}
           {% endif %}
-        {% endif %}
-        {% if post.templateContent %}<span class="reading-time">{{ post.templateContent | readingTime }}</span>{% endif %}
-      </div>
-      <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
-      {% if post.data.description %}<p class="article-card-subtitle">{{ post.data.description }}</p>{% endif %}
-    </article>
+        </div>
+        <h2><a href="{{ post.data.external_url }}" target="_blank" rel="noopener">{{ post.data.title }} ↗</a></h2>
+        {% if post.data.description %}<p class="article-card-subtitle">{{ post.data.description }}</p>{% endif %}
+      </article>
+      {% else %}
+      <article class="article-card article-card--secondary">
+        {% if post.data.series %}<div class="article-series-card-label"><a href="/serie/{{ post.data.series | seriesBaseName | slugify }}/">{{ post.data.series }}</a></div>{% endif %}
+        <div class="article-meta">
+          <span class="article-date">{{ post.date | formatDate }}</span>
+          {% if post.data.category %}
+            {% if post.data.category.length %}
+              {% for cat in post.data.category %}<a class="article-tag" href="/tag/{{ cat | slugify }}/">{{ cat }}</a>{% endfor %}
+            {% else %}
+              <a class="article-tag" href="/tag/{{ post.data.category | slugify }}/">{{ post.data.category }}</a>
+            {% endif %}
+          {% endif %}
+          {% if post.templateContent %}<span class="reading-time">{{ post.templateContent | readingTime }}</span>{% endif %}
+        </div>
+        <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+        {% if post.data.description %}<p class="article-card-subtitle">{{ post.data.description }}</p>{% endif %}
+      </article>
+      {% endif %}
     {% endfor %}
   </div>
 </div>

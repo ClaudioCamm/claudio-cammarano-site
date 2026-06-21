@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curve rischio-diffusione per tipo di tecnologia</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Source Serif 4', Georgia, serif;
+  background: #f7f4ef;
+  color: #1c1917;
+  padding: 20px 24px 18px;
+}
+.eyebrow {
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #78716c;
+  margin-bottom: 16px;
+}
+.layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+}
+.curves-svg-wrap { flex: 0 0 min(100%, 420px); }
+.curves-svg { width: 100%; display: block; }
+.curve-legend { flex: 1 1 180px; }
+.curve-item {
+  padding: 7px 10px;
+  margin-bottom: 6px;
+  transition: background 0.15s;
+  cursor: default;
+}
+.curve-name {
+  font-size: 11.5px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.curve-desc { font-size: 10.5px; color: #57534e; line-height: 1.5; }
+.footer-note {
+  font-size: 10px;
+  color: #a09a93;
+  font-style: italic;
+  margin-top: 14px;
+  border-top: 1px solid #d9d4cb;
+  padding-top: 10px;
+}
+</style>
+</head>
+<body>
+<div class="eyebrow">Curva rischio–diffusione per tipo di tecnologia · metafora virale</div>
+<div class="layout">
+  <div class="curves-svg-wrap">
+    <svg class="curves-svg" viewBox="0 0 415 200">
+      <!-- Axes -->
+      <line x1="28" y1="10" x2="28" y2="168" stroke="#c4bdb0" stroke-width="1"/>
+      <line x1="28" y1="168" x2="400" y2="168" stroke="#c4bdb0" stroke-width="1"/>
+      <!-- Grid lines -->
+      <line x1="118" y1="10" x2="118" y2="168" stroke="#e4dfd6" stroke-width="1" stroke-dasharray="3,3"/>
+      <line x1="218" y1="10" x2="218" y2="168" stroke="#e4dfd6" stroke-width="1" stroke-dasharray="3,3"/>
+      <line x1="318" y1="10" x2="318" y2="168" stroke="#e4dfd6" stroke-width="1" stroke-dasharray="3,3"/>
+      <!-- X-axis labels -->
+      <text x="28" y="182" text-anchor="middle" font-size="8.5" fill="#a09a93" font-family="'Source Serif 4',serif">Monopolio</text>
+      <text x="118" y="182" text-anchor="middle" font-size="8.5" fill="#a09a93" font-family="'Source Serif 4',serif">Duopolio</text>
+      <text x="253" y="182" text-anchor="middle" font-size="8.5" fill="#a09a93" font-family="'Source Serif 4',serif">Diffusione ampia</text>
+      <text x="395" y="182" text-anchor="middle" font-size="8.5" fill="#a09a93" font-family="'Source Serif 4',serif">Distribuita</text>
+      <!-- Y-axis label -->
+      <text x="10" y="95" text-anchor="middle" font-size="8.5" fill="#a09a93" font-family="'Source Serif 4',serif" transform="rotate(-90, 10, 95)">Rischio</text>
+      <!-- Curves -->
+      <path id="c-nucleare" d="M 28,24 C 62,16 96,102 162,112 C 232,122 280,54 378,57" fill="none" stroke="#9b2335" stroke-width="2" stroke-linecap="round"/>
+      <text x="381" y="53" font-size="8.5" fill="#9b2335" font-family="'Source Serif 4',serif">Nucleare</text>
+      <path id="c-internet" d="M 28,142 C 78,128 130,40 208,37 C 286,34 338,97 378,115" fill="none" stroke="#1e4d8c" stroke-width="2" stroke-linecap="round"/>
+      <text x="381" y="111" font-size="8.5" fill="#1e4d8c" font-family="'Source Serif 4',serif">Internet</text>
+      <path id="c-crispr" d="M 28,158 C 88,153 168,123 248,93 C 318,58 358,27 378,20" fill="none" stroke="#1a5c3a" stroke-width="2" stroke-linecap="round"/>
+      <text x="381" y="18" font-size="8.5" fill="#1a5c3a" font-family="'Source Serif 4',serif">CRISPR</text>
+      <path id="c-linguaggio" d="M 28,163 C 128,162 248,161 338,161 C 362,161 378,161 378,161" fill="none" stroke="#4a1a6b" stroke-width="2" stroke-linecap="round"/>
+      <text x="381" y="159" font-size="8.5" fill="#4a1a6b" font-family="'Source Serif 4',serif">Linguaggio</text>
+    </svg>
+  </div>
+  <div class="curve-legend">
+    <div class="curve-item" id="leg-nucleare" style="border-left:3px solid #9b2335">
+      <div class="curve-name" style="color:#9b2335">Nucleare</div>
+      <div class="curve-desc">Alto al monopolio (1945–49), stabile nella deterrenza MAD, risale con la proliferazione ad attori non deterribili.</div>
+    </div>
+    <div class="curve-item" id="leg-internet" style="border-left:3px solid #1e4d8c">
+      <div class="curve-name" style="color:#1e4d8c">Internet</div>
+      <div class="curve-desc">Basso in origine, picco nell’oligopolio (sorveglianza, weaponized dependency), si diluisce con la pervasività.</div>
+    </div>
+    <div class="curve-item" id="leg-crispr" style="border-left:3px solid #1a5c3a">
+      <div class="curve-name" style="color:#1a5c3a">CRISPR / biologia open source</div>
+      <div class="curve-desc">Crescita monotonica. Nessuna deterrenza per attori non-statali. Obsolescenza tecnologica come unica via d’uscita.</div>
+    </div>
+    <div class="curve-item" id="leg-linguaggio" style="border-left:3px solid #4a1a6b">
+      <div class="curve-name" style="color:#4a1a6b">Linguaggio</div>
+      <div class="curve-desc">Sempre distribuito, nessuna fase monopolare. Il rischio è strutturale e invariante rispetto alla diffusione.</div>
+    </div>
+  </div>
+</div>
+<div class="footer-note">La relazione tra diffusione e rischio non è monotonica: dipende dalla struttura della tecnologia, dalla razionalità degli attori, e dalla disponibilità di meccanismi di deterrenza.</div>
+
+<script>
+const cIds = ['nucleare','internet','crispr','linguaggio'];
+cIds.forEach(id => {
+  const path = document.getElementById('c-' + id);
+  const leg = document.getElementById('leg-' + id);
+  function on() {
+    cIds.forEach(oid => {
+      const p = document.getElementById('c-' + oid);
+      const l = document.getElementById('leg-' + oid);
+      if (oid === id) { p.style.strokeWidth = '3'; p.style.opacity = '1'; l.style.background = '#ede8e0'; }
+      else { p.style.opacity = '0.18'; l.style.background = 'transparent'; }
+    });
+  }
+  function off() {
+    cIds.forEach(oid => {
+      document.getElementById('c-' + oid).style.strokeWidth = '2';
+      document.getElementById('c-' + oid).style.opacity = '1';
+      document.getElementById('leg-' + oid).style.background = 'transparent';
+    });
+  }
+  [path, leg].forEach(el => { el.addEventListener('mouseenter', on); el.addEventListener('mouseleave', off); });
+});
+</script>
+</body>
+</html>

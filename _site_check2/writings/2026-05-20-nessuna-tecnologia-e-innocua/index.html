@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="🇮🇹 Italiano">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nessuna tecnologia è innocua, e neanche questo sito lo è - Claudio Cammarano</title>
+    <meta name="description" content="Perché la comunicazione non è mai stata innocente, molto prima che l’espressione dual use diventasse una moda. Dai Thurn und Taxis a Karp, da ARPANET ai cavi sottomarini.">
+    <link rel="canonical" href="https://claudiocammarano.com/writings/2026-05-20-nessuna-tecnologia-e-innocua/">
+    <link rel="alternate" hreflang="🇮🇹 Italiano" href="https://claudiocammarano.com/writings/2026-05-20-nessuna-tecnologia-e-innocua/">
+    <link rel="alternate" hreflang="x-default" href="https://claudiocammarano.com/">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Nessuna tecnologia è innocua, e neanche questo sito lo è">
+    <meta property="og:description" content="Perché la comunicazione non è mai stata innocente, molto prima che l’espressione dual use diventasse una moda. Dai Thurn und Taxis a Karp, da ARPANET ai cavi sottomarini.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://claudiocammarano.com/writings/2026-05-20-nessuna-tecnologia-e-innocua/">
+    
+    <meta property="og:image" content="https://claudiocammarano.com/images/blue-marble-hero.webp">
+    
+    <meta property="og:site_name" content="Claudio Cammarano">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@claudiocamm">
+    <meta name="twitter:site" content="@claudiocamm">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <!-- Preload hero image (LCP) -->
+    
+    <link rel="preload" as="image" href="/images/blue-marble-hero.webp">
+    
+    <!-- DNS prefetch per risorse esterne -->
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8557D7N1Y3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8557D7N1Y3');
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&display=swap" rel="stylesheet">
+    <link rel="alternate" type="application/rss+xml" title="Claudio Cammarano" href="/feed.xml">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body class="">
+    <header class="site-header">
+    <div class="header-top">
+        <div class="container header-top-inner">
+            <a href="/" class="header-name">Claudio Cammarano</a>
+            <span class="header-tagline">Libri, mercati, idee</span>
+            <a href="/search/" class="header-search" aria-label="Cerca" title="Cerca">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Apri menu" aria-expanded="false" aria-controls="site-nav">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+        </div>
+    </div>
+    <nav class="site-nav" id="site-nav">
+        <div class="container">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/writings/">Writings</a></li>
+                <li><a href="/curated/">Curated</a></li>
+                <li><a href="/learning/">Learning log</a></li>
+                <li><a href="/irene-media/">Irene Media</a></li>
+                <li><a href="/episteme-advisory/">Episteme Advisory <span class="nav-badge nav-badge--new">new</span></a></li>
+                <li><a href="/indice/">Indice</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/newsletter/">The Abstract</a></li>
+                <li class="nav-search-item" style="display:none"><a href="/search/">Cerca</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<script>
+(function() {
+  var toggle = document.getElementById('nav-toggle');
+  var nav = document.getElementById('site-nav');
+  if (!toggle || !nav) return;
+  toggle.addEventListener('click', function() {
+    var open = nav.classList.toggle('nav-open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggle.classList.toggle('is-open', open);
+  });
+  document.addEventListener('click', function(e) {
+    if (!toggle.contains(e.target) && !nav.contains(e.target)) {
+      nav.classList.remove('nav-open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.classList.remove('is-open');
+    }
+  });
+})();
+</script>
+
+    
+    <div class="container">
+        <main>
+            
+<div id="reading-progress"></div>
+<button id="back-to-top" aria-label="Torna su" title="Torna su">↑</button>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Nessuna tecnologia è innocua, e neanche questo sito lo è",
+      "description": "Perché la comunicazione non è mai stata innocente, molto prima che l’espressione dual use diventasse una moda. Dai Thurn und Taxis a Karp, da ARPANET ai cavi sottomarini.",
+      "datePublished": "2026-05-20",
+      "url": "https://claudiocammarano.com/writings/2026-05-20-nessuna-tecnologia-e-innocua/",
+      "image": "https://claudiocammarano.com/images/blue-marble-hero.webp",
+      "author": {
+        "@type": "Person",
+        "@id": "https://claudiocammarano.com/#person",
+        "name": "Claudio Cammarano",
+        "url": "https://claudiocammarano.com/about/"
+      },
+      "publisher": {
+        "@type": "Person",
+        "@id": "https://claudiocammarano.com/#person"
+      },
+      "isPartOf": { "@id": "https://claudiocammarano.com/#website" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://claudiocammarano.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Geopolitica & potere",
+          "item": "https://claudiocammarano.com/temi/#geopolitica-potere"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Nessuna tecnologia è innocua, e neanche questo sito lo è",
+          "item": "https://claudiocammarano.com/writings/2026-05-20-nessuna-tecnologia-e-innocua/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<div class="print-header" aria-hidden="true">
+  <span class="print-header-site">claudiocammarano.com</span>
+  <span class="print-header-url">/writings/2026-05-20-nessuna-tecnologia-e-innocua/</span>
+</div>
+
+<article class="article-full">
+  <header class="article-header">
+    
+    <nav class="breadcrumb" aria-label="Navigazione">
+      <a href="/">Home</a>
+      
+      <span class="breadcrumb-sep" aria-hidden="true">·</span>
+      <a href="/temi/#geopolitica-potere">Geopolitica &amp; potere</a>
+      
+      
+      <span class="breadcrumb-sep" aria-hidden="true">·</span>
+      <span class="breadcrumb-current">Nessuna tecnologia è innocua, e neanche questo sito lo è</span>
+    </nav>
+    <div class="article-meta">
+      <span class="article-date">20 maggio 2026</span>
+      
+        
+          
+          <a class="article-tag" href="/tag/comunicazione/">Comunicazione</a>
+          
+          <a class="article-tag" href="/tag/geopolitica/">Geopolitica</a>
+          
+          <a class="article-tag" href="/tag/dual-use/">Dual Use</a>
+          
+        
+      
+      <span class="reading-time">35 min</span>
+    </div>
+    
+    <h1>Nessuna tecnologia è innocua, e neanche questo sito lo è</h1>
+    
+    <p class="article-description">Perché la comunicazione non è mai stata innocente, molto prima che l’espressione dual use diventasse una moda. Dai Thurn und Taxis a Karp, da ARPANET ai cavi sottomarini.</p>
+    
+    
+    <div class="article-lang-link">
+      <a href="https://claudiocammarano.substack.com/p/everything-is-dual-use-this-substack" target="_blank" rel="noopener">🇬🇧 Read in English →</a>
+    </div>
+    
+    <div class="share-bar">
+      <button class="share-btn" id="share-btn" aria-label="Condividi">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+        Condividi
+      </button>
+      <div class="share-menu" id="share-menu" hidden>
+        <button class="share-menu-item" id="share-copy">Copia link</button>
+        <a class="share-menu-item" id="share-linkedin" href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="share-menu-item" id="share-twitter" href="#" target="_blank" rel="noopener">Twitter / X</a>
+      </div>
+    </div>
+  </header>
+  
+  <div class="article-body" data-pagefind-body>
+    <figure class="article-hero">
+  <img src="/images/blue-marble-hero.webp" alt="Blue Marble, fotografia della Terra dall’Apollo 17" / loading="eager" decoding="async" fetchpriority="high">
+  <figcaption>La rappresentazione forse più iconica della fratellanza umana, il Blue Marble, è figlia di una tecnologia bellica. Forse è anche un segno di speranza. O no?</figcaption>
+</figure>
+<h2>I. Apertura: da Bergamo nel XV secolo alla guerra permanente contemporanea</h2>
+<p>In un piccolo borgo della Val Brembana, a una ventina di chilometri dalla città di Bergamo, dove vivo, c’è un piccolo museo non abbastanza noto, che racconta la storia della comunicazione moderna in uno di quegli aspetti che i curricoli scolastici tendono sistematicamente a trascurare. Si chiama Museo dei Tasso e della Storia Postale e si trova a Cornello del Tasso. Il cognome non è casuale: da qui proveniva la famiglia de Tassis, che nel tardo Quattrocento ricevette dall’imperatore Massimiliano I d’Asburgo un incarico destinato a cambiare la struttura del potere europeo. L’incarico era semplice nella forma: costruire e gestire un sistema di staffette postali che collegasse Innsbruck a Bruxelles — le due estremità dell’impero asburgico — con una frequenza e una velocità mai viste prima. Ruggero de Tassis, il primo della famiglia a sistematizzare il servizio intorno al 1490, non stava aprendo un’azienda di recapito lettere. Stava costruendo l’infrastruttura nervosa di un impero.</p>
+<p>Il sistema era talmente semplice da sembrare oggi ovvio, se non addirittura dispersivo: cavalli e cavalieri alle stazioni di posta a intervalli regolari, con l’obbligo di consegnare la borsa al successivo nel giro di poche ore. Il risultato tuttavia era sorprendente: una lettera da Innsbruck a Bruxelles, che in precedenza richiedeva settimane per arrivare, cominciò a raggiungere la sua destinazione in cinque o sei giorni. I commercianti se ne avvantaggiarono e i banchieri fiorentini, già maestri nella trasmissione rapida di informazioni finanziarie, compresero immediatamente il valore del servizio. Ma Massimiliano I non aveva incaricato i Tassis per agevolare il commercio di lane fiamminghe: aveva bisogno di coordinare i movimenti delle sue truppe lungo la dorsale imperiale, di ricevere e inviare dispacci diplomatici prima che li intercettasse qualcun altro, di sapere cosa stava succedendo alle frontiere orientali prima che la notizia arrivasse deformata. <strong>La posta era, sin dalla sua nascita, un sistema militare e civile simultaneamente</strong>: non perché fosse stata deviata dal suo uso pacifico originario, ma perché l’uso originario era orientato a entrambe le finalità.</p>
+<p>La famiglia de Tassis prosperò in modo impressionante: si può anzi dire che fra Cinque e Seicento — divenuti nel frattempo i Thurn und Taxis, aggiungendo al cognome italianizzato la parola tedesca per “torre” — estesero il monopolio postale a quasi tutta l’Europa centro-occidentale: Spagna, Sacro Romano Impero, Paesi Bassi. Divennero Principi dell’Impero e forse la dinastia borghese più influente della modernità europea, comparabile soltanto a quella dei Fugger. Costruirono palazzi in tutta Europa e accumularono una fortuna che aveva il suo fondamento non nel commercio di beni ma nel controllo delle comunicazioni: e quindi, inevitabilmente, nell’accesso e nella cura dell’informazione altrui. Fino all’inevitabile invadenza, come del resto ci si potrebbe aspettare: è stato per esempio ampiamente documentato che le lettere dei privati venissero a volte aperte e lette prima di essere riconsegnate. E questo, per citare un’espressione di moda in questi tempi, non era un <em>bug</em>, ma una <em>feature</em> del servizio.</p>
+<p>Se esiste una parentela con Torquato Tasso — il nevrotico autore della <em>Gerusalemme Liberata</em>, in realtà nato a Sorrento nel 1544, ma di una famiglia dalle radici bergamasche — la tradizione locale lo afferma con una certa vivacità, e il museo di Cornello la coltiva con comprensibile orgoglio campanilistico. Gli storici sono più cauti: il cognome Tasso era diffuso in tutta la bergamasca, e la genealogia che connette il poeta alla famiglia dei <em>postmasters</em> imperiali non è stabilita con certezza documentaria. Vale la pena menzionarlo — con la dovuta riserva — perché aggiunge al quadro una nota di ironia: uno dei più grandi poeti italiani del Rinascimento (io preferisco l’ironia dell’Ariosto: la mia patria d’adozione mi perdoni, ma son gusti) che celebra la guerra santa potrebbe essere parente dei costruttori della prima rete di comunicazione militare europea. Insomma, persino la poesia epica potrebbe essere <em>dual use</em>.</p>
+<p>Quel che è certo è che quando Napoleone soppresse i monopoli postali asburgici all’inizio dell’Ottocento, i Thurn und Taxis persero la loro fonte principale di reddito, ma non la loro fortuna: per accumulare avevano avuto tre secoli. E rimane, a Cornello, il museo. E rimane la domanda che quel museo non si pone esplicitamente: la posta era un servizio civile che poteva essere usato a scopi militari, o era un sistema militare che accettava anche la posta privata? Come vedremo, è la domanda stessa a essere mal posta.</p>
+<p>Ma ora un salto di cinque secoli. Alexander Karp, l’altrettanto intemperante CEO di Palantir, pubblica nel 2026 quello che la stampa americana chiama un manifesto. Dice, tra le altre cose, che “Silicon Valley ha un debito morale con il paese che ne ha reso possibile l’ascesa” e che “l’élite ingegneristica ha un obbligo affermativo di partecipare alla difesa della nazione.” L’argomento sottostante è semplice: <strong>tutta la tecnologia è, in ultima analisi, <em>dual use</em>, ossia utilizzabile sia per scopi civili che militari</strong>. Poiché non esiste una distinzione di principio che regga, chi si rifiuta di lavorare per il complesso militare-industriale non è semplicemente neutrale: al contrario, sceglie implicitamente di non difendere i propri valori. La tesi di questo articolo è una e semplice: Karp ha ragione sulla premessa. Ma le conclusioni sono un’altra storia.</p>
+<p>La posizione di Karp esprime quindi un punto condivisibile e, insieme, risulta profondamente manipolatoria. Questo articolo parte da dove si erano fermati i due pezzi sulla teoria dei giochi pubblicati su questo sito e, in inglese, <a href="https://claudiocammarano.substack.com/p/endless-games-domestic-constraints">sul mio substack <em>The Abstract</em></a> per considerare in profondità l’ambiguità della posizione di Karp. Per farlo, occorre presupporre quanto ci siamo detti su Axelrod, Rapoport e su Trump — che ci forniscono il contesto per i nostri ragionamenti — per arrivare, poi, ad alcune considerazioni sulla natura essenziale della comunicazione. Il collegamento con gli altri due articoli, come vedremo, non è lontano o metaforico: l’internet aperto era letteralmente un gioco cooperativo iterato, e la sua crisi è letteralmente il risultato di una defection svelata. Ma per arrivarci bisogna costruire qualche strumento analitico. Andiamo come sempre per gradi.</p>
+<h2>II. Dual use: l’espressione e la sua vaghezza produttiva</h2>
+<p><strong>“Dual-use is a somewhat ill-defined term.”</strong> Lo scrive Katja Bego nell’aprile 2026, nelle prime pagine di un research paper di Chatham House sulla corsa globale all’intelligenza artificiale. Fatta questa constatazione, Bego ci costruisce sopra quaranta pagine di analisi geopolitica. In tutti i casi si tratta di una confessione metodologica piuttosto rara, per un istituto di quella reputazione: il principale think tank britannico di politica internazionale ammette che il termine cardine del suo argomento è mal definito, e poi procede comunque. Il che ci dice forse qualcosa sull’utilità retorica del termine e ancora di più sulla sua povertà analitica.</p>
+<p>Il termine <em>dual use</em> nasce nel dibattito nucleare degli anni Cinquanta con connotazioni positive: descriveva i benefici civili della ricerca militare, le tecnologie che l’investimento bellico della Guerra Fredda aveva donato al mondo civile. In un’epoca storica in cui l’ansia politica era costante, la Guerra Fredda, il GPS, ARPANET, il forno a microonde sono tutti nati come spillover felici di un sistema che spendeva miliardi per prepararsi alla guerra e produceva, come effetto collaterale, innovazione civile. Dalla fine degli anni Settanta in poi il segno si inverte: <em>dual use</em> diventa il rischio che tecnologie civili legittime abilitino proliferazione militare proibita. Lo stesso termine muove il senso in direzione precisamente opposta: e lo fa in un momento in cui, non a caso, si credeva più volentieri alla Speranza e all’utopia. Apparentemente, il dibattito pubblico non ha avuto occasione di chiedersi se questa inversione semantica richiedesse anche una revisione del quadro analitico.</p>
+<p>Il risultato di questa dimenticanza è una categoria che segnala allerta senza contenuto discriminante. Indica che qualcosa merita attenzione senza dire di che tipo, con quali strumenti, in quale direzione. Produce regolamenti europei con esenzioni militari incorporate, audizioni al Congresso in cui nessuno sa esattamente di cosa stia parlando, e — soprattutto — la possibilità per chi ha già scelto da che parte stare di usare la vaghezza del termine come autostrada retorica. Senza questa vaghezza, il manifesto Karp non esisterebbe: o per lo meno sarebbe stato scritto in maniera diversa.</p>
+<p>Per capire cosa non funziona nel termine, conviene partire dall’unico modello analitico che ha tentato di dargli struttura. Jordi Molas-Gallart, in un articolo su <em>Research Policy</em> del 1997 (ossia, a pensarci bene, molto tardi rispetto alla comparsa del termine), propone di classificarlo attraverso un quadrante a due assi: origine della tecnologia (militare o civile) in ascissa, destinazione finale d’uso (militare o civile) in ordinata. Ne esce una prevedibilissima matrice in quattro caselle:</p>
+<div class="diagram-block">
+<div class="diagram-title">Il quadrante del dual use</div>
+<iframe src="/visualizations/dual-use-quadrant.html" style="width:100%; height:280px; border:none;" loading="lazy"></iframe>
+<p class="diagram-caption">Il quadrante di Molas-Gallart (1997): origine e destinazione militare/civile. CC è strutturalmente quasi vuoto per tecnologie significative.</p>
+</div>
+<p>“<em>One of the problems with the common use of the term 'dual-use technology' is the lack of consensus on the meaning of the term 'technology'</em>”, scrive Molas-Gallart, per poi proporre una definizione del termine davvero molto ampia (e apprezzabile). Tutto il paper nasce principalmente per questo: per circoscrivere una serie di definizioni condivise. Per i nostri scopi, più che ripercorrere l’argomentazione del paper, è appunto più interessante cercare una nostra via, che peraltro in questa fase non ci impone per fortuna di farla troppo difficile:</p>
+<ul>
+<li><strong>MM</strong>: sono le tecnologie nate in contesto militare, usate militarmente.</li>
+<li><strong>MC</strong>: origine militare, applicazione civile, ossia quello che la letteratura chiama <em>spin-off.</em></li>
+<li><strong>CM</strong>: origine civile, adozione militare, che sarebbe lo <em>spin-in</em>.</li>
+<li><strong>CC</strong>: origine civile, destinazione civile.</li>
+</ul>
+<p>Un dettaglio importante, però, è che il dual use in senso stretto, per Molas-Gallart, non è il trasferimento unidirezionale MC o CM: è la <strong>simultaneità</strong>, la tecnologia che abita entrambi i domini nello stesso momento senza una priorità temporale identificabile. Sembrerebbe quindi che siamo già arrivati a un punto limite: eppure il modello funziona bene per le tecnologie più specifiche.</p>
+<p>Permette di classificare oggetti come il GPS (spin-off, MC: nasce come sistema di navigazione del Dipartimento della Difesa americano e diventa infrastruttura civile globale), la dinamite (spin-in, CM: Nobel la inventa per le miniere nel 1867, l’esercito la adotta immediatamente). Il caso-limite che meglio stress-testa il modello è però quello di Fritz Haber: il quale sintetizza l’ammoniaca per fertilizzanti agricoli nel 1909 — un’innovazione che, si stima, ha permesso di sfamare un miliardo di persone che altrimenti non sarebbero sopravvissute — e la stessa scoperta produce esplosivi per la Prima Guerra Mondiale. Haber stesso guida poi lo sviluppo del gas cloro come arma chimica a Ypres. Un unico ricercatore, un’unica scoperta chimica, varie applicazioni, tutti i quadranti del modello simultaneamente.</p>
+<p>Fin qui tutto bene. Il problema emerge quando si tenta di popolare la casella CC. Qual è infatti una tecnologia significativa che nasce in contesto civile e rimane esclusivamente civile? I candidati più resistenti sono la sauna finlandese (ma non scozzese: la sauna scozzese, tecnicamente, non esiste, e non a caso) o la bicicletta. Eppure sono esistite le unità cicliste nella Prima Guerra Mondiale — e ci sono stati anche gli eroici GAP della Resistenza Italiana, a dirla tutta. Dalla matematica ricreativa nasce la crittografia, e dalla crittografia Enigma. Le pratiche terapeutiche psicologiche sono state adottate dall’esercito americano per l’addestramento dei combattenti dagli anni Settanta in poi, per ragioni facilmente intuibili (la matrice della psicologia comportamentale è peraltro la filosofia etica di matrice ellenistica: un po’ come dire che Plutarco è dual use). Persino la stampa a caratteri mobili ha facilitato la diffusione di manuali militari e la propaganda di guerra. Valentino Bompiani ha persino ideato il formato oblungo dei suoi tascabili appositamente per i soldati della Grande Guerra, di modo che potessero essere sfilati dagli zaini come fucili. Certamente non è un caso di tecnologia militare dual use, ma mi sembra comunque pertinente ricordarlo.</p>
+<p>La casistica non è quindi qui per stupire, ma per rendere visibile un pattern. <strong>CC è strutturalmente quasi vuoto per tecnologie che siano davvero significative</strong>. Qualsiasi tecnologia con effetti fisici sul mondo, capace di generare o organizzare informazione, o di abilitare coordinazione tra esseri umani, ha per costruzione applicabilità militare. Ecco quindi la prima crepa di un modello apparentemente semplice e ordinato.</p>
+<h2>III. La casistica storica: dal cibo in scatola al CRISPR</h2>
+<p>Prima di capire perché CC è vuoto, vale la pena attraversare rapidamente la casistica storica per rendersi conto di quanto sistematicamente il quadrante venga attraversato in lungo e in largo. L’addomesticamento del cavallo nelle steppe eurasiatiche intorno al 3500 a.C. è un’innovazione agricola che produce la cavalleria da guerra. La ferrovia, infrastruttura industriale civile per eccellenza, diventa il sistema nervoso logistico di tutte le guerre dell’Ottocento e del Novecento: nessun piano di mobilitazione militare europeo dall’era napoleonica in poi è concepibile senza di essa. La radio, inventata da Marconi per comunicazioni commerciali (per quanto Marconi fu pessimo, nello sfruttare commercialmente la sua invenzione), viene militarizzata nella Prima Guerra Mondiale prima ancora che la maggior parte delle famiglie borghesi europee possiedano un apparecchio. Il cibo in scatola viene brevettato da Nicolas Appert nel 1810 su commissione napoleonica, e fonda l’industria alimentare conserviera moderna.</p>
+<p>Sul versante opposto, il forno a microonde è un effetto collaterale del magnetron radar: Percy Spencer scopre per caso nel 1945 che le microonde sciolgono il cioccolato in tasca. La fotografia digitale ad alta risoluzione deriva dai sensori CCD sviluppati per i satelliti spia della serie KH-11. L’EpiPen usata da medici e paramedici discende dall’auto-iniettore militare progettato come antidoto agli agenti tossici del gas nervino. I vaccini a mRNA — quelli che hanno posto fine alla fase acuta del COVID-19 — derivano da ricerche finanziate da DARPA per sviluppare contromisure rapide contro attacchi di bioterrorismo legati alla SARS e ad altri Coronavirus.</p>
+<p>Ancora, perché qui c’è da sbizzarrirsi. I droni civili vengono usati per il targeting militare in Ucraina. I social media, nati come piattaforme di connessione, diventano il vettore principale delle operazioni dell’Internet Research Agency russa e di Cambridge Analytica (i cui scopi non sono forse militari in senso stretto, lo concedo). La crittografia commerciale è da decenni oggetto di una battaglia permanente tra uso civile e controllo statale — il Clipper chip della NSA negli anni Novanta, le audizioni post-Snowden, i dibattiti sull’end-to-end encryption sono tutti capitoli della stessa storia.</p>
+<p>Cosa ne deriva? <strong>Che il dual use non è il caso particolare che devia dalla regola: è la struttura normale dello sviluppo tecnologico.</strong> Ne consegue che la domanda corretta da porsi non è: “Questa tecnologia è dual use?”, ma: “In quale fase del suo ciclo di vita si trova rispetto ai due domini?”. Eppure anche questa riformulazione è ancora insufficiente. Fino a qui abbiamo usato il quadrante di Molas-Gallart come se fosse l’unico livello del modello: tuttavia, si tratta di un errore prospettico. Il quadrante funziona, ma soltanto per tecnologie sufficientemente specifiche da avere un’origine identificabile e una destinazione prevalente, facile da isolare. Man mano che la pervasività di una tecnologia aumenta, la distinzione fra contesto di origine e contesto di destinazione diventa meno applicabile, fino a collassare completamente.</p>
+<p>Detto in altri termini, se il modello fosse un’architettura multidimensionale, il quadrante cha abbiamo visto non sarebbe il pavimento, ma il soffitto: il livello più derivato, più concreto, più lontano dalla struttura: la stessa struttura che, se bene osservata, è proprio ciò che può aiutarci a capire meglio. Sotto di esso esistono infatti altri tre livelli più fondativi. E il colpevole dell’incompletezza del modello ha un nome preciso: è il fenomeno osservato da David Collingridge, che nel 1980 aveva identificato una struttura paradossale nel governo della tecnologia. <strong>Una tecnologia è controllabile quando non la capiamo ancora abbastanza da sapere cosa farne.</strong> Quando la comprendiamo, è già così radicata nel tessuto sociale ed economico che il controllo è praticabile solo in forma di esenzione parziale. Si classifica la tecnologia quando è ancora specifica, e quando diventa pervasiva la classificazione è già obsoleta. Il dilemma di Collingridge spiega strutturalmente perché il termine <em>dual use</em> funziona sempre troppo tardi — fino a risultare quasi inutile.</p>
+<div class="diagram-block">
+<div class="diagram-title">Le quattro ipostasi del dual use</div>
+<iframe src="/visualizations/dual-use-pyramid.html" style="width:100%; height:500px; border:none;" loading="lazy"></iframe>
+<p class="diagram-caption">La piramide non esprime una gerarchia per importanza: al contrario, si tratta di una gerarchia di fondazione. E tutti i livelli superiori emergono dal fondamento linguistico.</p>
+</div>
+<p>Abbiamo quindi detto che la struttura che emerge è quella di una piramide. Il livello più concreto — le tecnologie specifiche, il quadrante ispirato a Molas-Gallart — occupa l’apice: è la cristallizzazione più derivata, il punto più lontano dal fondamento. Scendendo verso la base, si trovano tre livelli progressivamente più fondativi. Ho deciso usare il termine “ipostasi” per questi livelli, anche se suona trombonesco. In parte, perché non mi veniva in mente nulla di meglio. Ma soprattutto perché l’accezione è in ogni caso neoplatonica: i livelli non denotano oggetti diversi, ma gradi di emanazione diversi provenienti dalla stessa struttura originaria.</p>
+<p>Ecco allora i livelli:</p>
+<ul>
+<li>
+<p><strong>Apice — Tecnologie specifiche.</strong> Il quadrante funziona qui, con i suoi limiti già descritti. CC è quasi vuoto ma la categoria ha valore operativo: spin-off, spin-in e dual use per simultaneità sono analiticamente distinguibili. È il livello dove Stuxnet (forse il primo caso di cyber-arma della storia, dal lontano 2010) e la dinamite si possono ancora classificare.</p>
+</li>
+<li>
+<p><strong>Secondo livello — Tecnologie settoriali.</strong> Ferrovie, aviazione, droni, social media: abbastanza pervasive da attraversare sistematicamente i confini del quadrante, ancora analizzabili per traiettoria temporale: nasce in un modo, diventa altro. Il quadrante qui regge parzialmente, ma la migrazione è rapida e spesso imprevedibile.</p>
+</li>
+<li>
+<p><strong>Terzo livello — Tecnologie a uso generale (GPT).</strong> La definizione è di Bresnahan e Trajtenberg (1995): sono tecnologie che migliorano nel tempo, si applicano pervasivamente a tutti i settori, e generano innovazioni complementari su scala sistemica. È il caso di Internet, dell’intelligenza artificiale, di CRISPR, dell’energia nucleare. Per le GPT la distinzione origine/destinazione è strutturalmente inapplicabile: una tecnologia che permea tutti i settori simultaneamente abita entrambi i domini per costruzione. Sono quello che Katja Bego chiama <em>patriotic tech</em>, le aziende tech strutturalmente integrate nel dominio militare e in quello civile, senza trasferimento: la forma organizzativa della GPT nel momento in cui la geopolitica la prende sul serio. Alessandro Aresu lo aveva spiegato bene nel suo <em>Le potenze del capitalismo politico</em> (2020): la sicurezza nazionale assorbe tutti gli strumenti economici. Al di là della vulgata neoliberale (ed è uno dei punti chiave della lettura di Aresu), Adam Smith aveva detto la stessa cosa con più eleganza secoli prima: “La difesa è molto più importante della ricchezza”.</p>
+</li>
+<li>
+<p><strong>Base fondativa — Linguaggio e Comunicazione.</strong> Non è un quarto tipo di tecnologia: è la condizione di possibilità di tutte le tecnologie a tutti i livelli. Il linguaggio non “diventa” dual use — la dualità militare/civile non gli è accidentale, ma costitutiva. Harold Innis (1950) aveva mostrato che ogni grande infrastruttura comunicativa nella storia è simultaneamente strumento di potere militare, commerciale e culturale, senza residuo. Paul Virilio (1977) aveva radicalizzato la tesi: le tecnologie della velocità comunicativa sono strutturalmente tecnologie della guerra, perché militarizzare la velocità di trasmissione è militarizzare la percezione, e militarizzare la percezione è militarizzare la cultura. Quando nel 1914 la fregata britannica CS <em>Alert</em> tagliava i cavi tedeschi sottomarini, non considerava quei cavi un mezzo di comunicazione neutrale: stava distruggendo un’infrastruttura di potere che la Germania aveva costruito proprio per quella funzione. E abitano qui anche i Thurn und Taxis, naturalmente.</p>
+</li>
+</ul>
+<p>La piramide non è quindi una gerarchia di importanza: è una gerarchia di fondazione. I livelli superiori emergono dal fondamento linguistico.</p>
+<h2>IV. La curva del rischio: perché la diffusione non lo diluisce sempre</h2>
+<p>Una delle assunzioni implicite nel dibattito sul dual use è che la diffusione di una tecnologia riduca il rischio. Più attori la usano, meno un singolo può weaponizzarla in modo monopolistico. Ne deriva una corsa costante alla tecnologia più innovativa, che ricorda molto da vicino la MAD (<em>Mutual Assured Destruction</em>) della poco compianta Guerra Fredda. L’assunzione alla base di questa corsa folle è parzialmente fondata, ma non generalizzabile: e le sue eccezioni sono i casi più rilevanti.</p>
+<p>Per provare a capirci qualcosa, ho provato ad applicare alla diffusione della tecnologia il modello della diffusione dei virus. Per una volta non mi servo della matematica, ma la metafora virale è comunque utile, con la dovuta cautela. <strong>La relazione tra diffusione e rischio non è infatti monotonica: dipende dalla struttura della tecnologia, dalla razionalità degli attori, e dalla disponibilità di meccanismi di deterrenza</strong>. Ma facciamo di nuovo degli esempi:</p>
+<ul>
+<li>
+<p>Il <strong>nucleare</strong> segue una curva a U modificata: altissimo rischio nella fase di monopolio americano (1945-1949), riduzione relativa nella deterrenza bipolare del MAD — dove la minaccia reciproca produce una stabilità paradossale — e risalita pericolosa con la proliferazione a favore di stati canaglia o non allineati. La coda destra della distribuzione include attori per cui la logica del MAD non funziona meccanicamente.</p>
+</li>
+<li>
+<p><strong>Internet</strong> segue una curva diversa: basso rischio nella fase accademica, picco nella fase oligopolistica — sorveglianza di massa, <em>weaponized dependency</em>, Tempora, PRISM — poi progressiva diluizione con la pervasività. Il problema è che la fase oligopolistica è quella in cui ci troviamo tuttora per alcune dimensioni critiche.</p>
+</li>
+<li>
+<p>Il <strong>CRISPR come biologia open source</strong> ha la curva più inquietante: è monotonicamente crescente con la diffusione. Non esiste meccanismo di deterrenza per attori non-statali con competenze di laboratorio e qualche centinaio di euro di reagenti. Il protocollo pubblicato su <em>Nature</em> è già un’arma potenziale — la trasparenza epistemica che è un valore fondante della scienza diventa moltiplicatore del rischio. Le competizioni iGEM, in cui squadre universitarie e liceali costruiscono organismi geneticamente modificati, sono insieme il simbolo della democratizzazione della biologia e un problema di governance strutturalmente irrisolvibile con gli strumenti tradizionali.</p>
+</li>
+<li>
+<p>Il <strong>linguaggio</strong> ha una curva piatta vicino allo zero — non perché sia innocuo, ma perché non ha mai avuto una fase in cui era in monopolio o oligopolio. Il rischio del linguaggio è strutturale e invariante rispetto alla diffusione. È sempre già distribuito, sempre già dual use. Questa è la sua specificità ontologica rispetto a tutte le altre tecnologie della piramide. Ma, se si minacciano le sue condizioni di esistenza (per esempio, la capacità di distinguere il vero dal falso), è tutto quello che si trova sopra di esso a essere in pericolo.</p>
+</li>
+</ul>
+<div class="diagram-block">
+<div class="diagram-title">Curve rischio-diffusione per tipo di tecnologia</div>
+<iframe src="/visualizations/dual-use-curves.html" style="width:100%; height:360px; border:none;" loading="lazy"></iframe>
+<p class="diagram-caption">La relazione tra diffusione e rischio non è monotonica: dipende dalla struttura della tecnologia e dalla disponibilità di meccanismi di deterrenza.</p>
+</div>
+<p>Eppure, la conoscenza non rendeva liberi? Fred Turner (2006) ha documentato come la narrativa controculturale di Internet — Stewart Brand, la <em>Whole Earth Catalog</em>, la Silicon Valley come <em>hippie capitalism</em> — sia stata costruita deliberatamente sopra un’infrastruttura finanziata dal Dipartimento della Difesa americano. ARPANET nasce come sistema di comunicazione militare resistente al primo colpo nucleare sovietico. Il risultato della narrazione controculturale è stata una dissociazione sistematica: l’origine militare viene coperta dalla narrazione della rete come spazio libero, orizzontale, emancipatore. <strong>Questa dissociazione non è innocua: è il meccanismo che ha reso possibile trattare la comunicazione digitale come disciplina civile per definizione, lasciando le autostrade libere al capitalismo della sorveglianza e alla geopolitica delle comunicazioni.</strong></p>
+<p>I cavi ottici sottomarini trasportano circa il 95% del traffico internet globale. Sono infrastruttura commerciale privata, finanziata da consorzi di aziende tech. Sono anche, simultaneamente, l’oggetto dell’operazione Tempora del GCHQ britannico — intercettazione sistematica del traffico alle landing stations di Bude e Seeb — e un obiettivo strategico russo: la Marina russa mappa i cavi nel Nord Atlantico con sottomarini specializzati, e non lo fa per curiosità geografica. Nicole Starosielski (<em>The Undersea Network</em>, 2015) ha mostrato che <strong>le rotte dei cavi ricalcano le rotte commerciali imperiali britanniche del XIX secolo: la topologia fisica di Internet è una topologia coloniale</strong>. Ogni pacchetto di dati che parte da Lagos e arriva a Londra ha attraversato una giurisdizione in cui GCHQ può intercettarlo legalmente.</p>
+<p>I satelliti replicano la medesima struttura sul piano orbitale. Sputnik (1957) è un progetto militare sovietico e la prima dimostrazione che un vettore può raggiungere qualsiasi punto del globo. I satelliti spia della serie KH-11 producono immagini ad alta risoluzione che, declassificate, daranno origine alla fotografia digitale civile. Il GPS nasce militare, diventa navigazione civile universale, e torna ad essere arma quando la Russia sviluppa sistemi di <em>jamming</em> e <em>spoofing</em>. Starlink è infrastruttura di comunicazione commerciale di SpaceX, è il sistema che ha permesso all’esercito ucraino di mantenere le comunicazioni dopo il 2022, ed è il sistema che la Casa Bianca di Trump ha minacciato di disattivare nel febbraio 2025 per costringere Kiev a firmare un accordo sui minerali. <strong>Un’infrastruttura civile, con un <em>kill switch</em> in mano a un privato</strong> (peraltro non il più mentalmente stabile che si possa desiderare) e che incide sull’esito di una guerra in Europa.</p>
+<p>Il CRISPR/Cas9 introduce nel framework una rottura che merita attenzione specifica. Con le tecnologie precedenti era teoricamente possibile separare il tool dalla sua applicazione militare. Con il CRISPR la separazione è strutturalmente impossibile: il protocollo di editing genetico pubblicato nel 2012 da Doudna e Charpentier è già, in sé, la tecnologia. Non c’è un componente hardware da controllare: <strong>la conoscenza è pubblica nel momento in cui viene formulata</strong>, replicabile con attrezzature standard, accessibile a chiunque abbia una formazione scientifica di base. Forse, come nel coding amatoriale, per ottenere risultati non serve nemmeno una comprensione profonda della materia. Il suo complemento perfetto è il caso mRNA. I vaccini COVID di Moderna e BioNTech derivano da ricerche finanziate da DARPA per sviluppare contromisure rapide contro attacchi di bioterrorismo: Fritz Haber per la biologia molecolare, ma con segno etico almeno provvisoriamente rovesciato.</p>
+<p>La dimensione alimentare aggiunge un terzo asse che il quadrante militare/civile non cattura. I gene drive — tecnologie CRISPR che modificano popolazioni di insetti per sopprimere specie parassitarie — sono simultaneamente sanità pubblica, sicurezza agricola e potenziale arma agroalimentare: la stessa tecnologia che sopprime la zanzara <em>Anopheles gambiae</em> potrebbe essere progettata per sopprimere gli impollinatori di cui dipende l’agricoltura di un avversario. <strong>L’alimentare non è né militare né civile: è anteriore a entrambi nella gerarchia della sopravvivenza</strong>. E sappiamo fin troppo bene, anche solo guardando Gaza negli ultimi tempi, come in caso di guerre e aggressioni affamare il nemico sia un obiettivo fin troppo perseguito.</p>
+<p>Colpo basso finale, il <em>Blue Marble</em>, la prima fotografia della Terra dallo spazio scattata dall’Apollo 17 nel 1972, è diventata l’icona del movimento ambientalista globale. Ma tendiamo a dimenticare che è stata scattata con una tecnologia spaziale militare, in un contesto di corsa tecnologia al riarmo. La più potente immagine civile del XX secolo è un prodotto del programma spaziale militare americano.</p>
+<p>L’open science come valore — la trasparenza dei protocolli, la pubblicazione aperta dei risultati — è in tensione strutturale con questa dimensione del dual use. Non perché la scienza aperta sia sbagliata: è un valore fondante della produzione di conoscenza. <strong>Ma la stessa apertura che rende la scienza affidabile rende le sue applicazioni più pericolose accessibili ad attori che la scienza non controlla.</strong> Non c’è soluzione facile a questa tensione, e chi dice di averla mente.</p>
+<h2>V. La piramide come tassonomia delle minacce offensive</h2>
+<p>Ma la piramide non è soltanto uno strumento descrittivo. Fornisce anche una potenziale tassonomia delle minacce offensive, perché <strong>il livello della minaccia determina cosa si distrugge</strong>: la funzionalità fisica della tecnologia, quella sistemica, oppure qualcosa di categorialmente diverso ma altrettanto pericoloso, come la capacità di produrre realtà condivisa. Torniamo quindi alla tassonomia che abbiamo proposto poco fa:</p>
+<ul>
+<li>
+<p><strong>All’apice — Tecnologie specifiche: si distrugge il funzionamento.</strong> Stuxnet (2010): il primo cyberattacco documentato che distrugge hardware industriale fisico, i centrifugatori iraniani di Natanz. I test ASAT cinetici — quello russo del 2021 sul satellite Cosmos 1408 produce 1.500 frammenti orbitali tuttora monitorati. Sabotaggio di impianti di arricchimento, attacchi a sistemi d’arma specifici. Sono minacce chirurgiche, identificabili, attribuibili. La risposta è tecnicamente analoga all’attacco.</p>
+</li>
+<li>
+<p><strong>Al secondo livello — Tecnologie settoriali: si distrugge l’infrastruttura.</strong> NotPetya (2017): lanciato contro l’Ucraina, si diffonde globalmente e causa danni stimati in dieci miliardi di dollari a Maersk, FedEx, Merck — aziende che non erano il bersaglio. Il sabotaggio dei gasdotti Nord Stream nel 2022. Il GPS <em>spoofing</em> nel Mediterraneo orientale che disturba la navigazione commerciale. Gli attacchi alle ferrovie bielorusse per rallentare il trasporto di truppe russe. Questi attacchi colpiscono sistemi complessi che attraversano i domini civile e militare, con effetti a cascata difficilmente controllabili da chi li lancia.</p>
+</li>
+<li>
+<p><strong>Al terzo livello — GPT: si distrugge la piattaforma.</strong> L’operazione Volt Typhoon (2023-2024), attribuita alla Cina: consiste nel pre-posizionamento silenzioso nelle infrastrutture critiche americane — rete elettrica, acquedotti, porti — non per uso immediato ma come deterrenza latente in caso di crisi su Taiwan. Non distrugge nulla adesso: degrada la fiducia sistemica nell’infrastruttura pervasiva, che è una forma di distruzione più insidiosa. L’avvelenamento dei modelli AI (<em>data poisoning</em>, <em>adversarial attacks</em>): si corrompe la GPT cognitiva senza toccare l’hardware. La distruzione della supply chain dei semiconduttori come leva geopolitica.</p>
+</li>
+<li>
+<p><strong>Alla base fondativa — Linguaggio e Comunicazione: si distrugge il significato.</strong> Questa è la categoria qualitativamente diversa da tutte le altre. Gli attacchi qui non danneggiano la funzionalità fisica né quella sistemica della comunicazione: <strong>degradano la sua capacità di produrre realtà condivisa.</strong> Il bersaglio non è il canale: è il messaggio, o più precisamente la relazione tra messaggio e realtà, con effetti diretti sulla produzione di conoscenza, sulla formulazione delle policy e sulla ricerca scientifica.</p>
+</li>
+</ul>
+<p>Il concetto russo di <em>controllo riflessivo</em> — sviluppato da Vladimir Lefebvre negli anni Sessanta e poi militarizzato — descrive la capacità di indurre un avversario a prendere “volontariamente” decisioni che favoriscono il proprio obiettivo, fornendogli informazioni selettive che lo portano a quella conclusione. Non si attacca il canale: si manipola il contenuto semantico che vi transita. È un’operazione sulla funzione referenziale del linguaggio. Ciò che viene comunemente chiamata “dottrina Gerasimov” — dal nome del generale russo Valery Gerasimov, che nel 2013 pubblica sulla rivista militare <em>Voenno-Promyshlennyi Kurier</em> un articolo ampiamente citato sull’evoluzione della guerra moderna — contiene già in sé la dimostrazione di questo meccanismo, e lo stesso vale per il nome con cui è stato ribattezzato in Occidente.</p>
+<p>L’articolo di Gerasimov non descriveva una dottrina offensiva russa: descriveva quello che la Russia aveva osservato fare all’Occidente nelle rivoluzioni colorate e nella Primavera Araba: ovvero l’uso di strumenti non militari per ottenere obiettivi strategici. Ora il nome della dottrina è il più grande spauracchio dell’occidente ostile a Putin: il testo più citato in Occidente per descrivere l’aggressione informativa russa è un testo in cui un russo descrive l’aggressione informativa occidentale. È già, in sé, un’operazione al livello del linguaggio — chissà quanto pianificata deliberatamente — una proiezione così efficace che il suo bersaglio la usa come arma contro chi l’ha lanciata.</p>
+<p>Il <em>firehose of falsehood</em> — la tecnica di inondare l’ambiente informativo di narrazioni contraddittorie fino a produrre abulia epistemica nel pubblico avversario — non distrugge la comunicazione: la rende inutilizzabile come strumento di produzione di senso condiviso. I deepfake non distruggono il video: rendono il video inutilizzabile come evidenza. L’AI generativa applicata alla disinformazione a scala industriale porta questa logica alla sua conclusione: quando il costo di produzione di contenuto falso credibile si azzera, l’intero <em>commons</em> informativo diventa un campo di battaglia permanente senza fronte identificabile.</p>
+<p>Il caso russo contemporaneo è la dimostrazione in vitro di questa logica. Mentre scrivo, Vladimir Putin interviene alle celebrazioni del 9 maggio con toni di insolita moderazione — parla di volontà di negoziare, di stanchezza della guerra, di apertura diplomatica — nelle stesse ore in cui l’esercito russo scarica su Kyiv il bombardamento più pesante degli ultimi tre anni, perdendo nel frattempo terreno lungo la linea del fronte. La presenza russa negli spazi culturali europei, il registro conciliante dei comunicati ufficiali, le aperture ai mediatori neutrali: non sono falsità nel senso convenzionale del termine. <strong>Sono rumore strutturale, la generazione deliberata di segnali ambigui che costringono l’avversario e tutti gli attori nello scenario a processarli tutti, anche sapendo che la maggior parte è inaffidabile</strong>: perché il costo di ignorare quello vero è asimmetrico. Kyiv deve soppesare l’offerta di negoziato mentre contrattacca: questo è il costo cognitivo dell’attacco al layer semantico. La comunicazione come arma non uccide, forse: ma esaurisce la capacità di distinguere.</p>
+<p>(Il riferimento al <a href="https://claudiocammarano.com/writings/2026-04-09-il-rumore-a-beirut/">mio articolo sul rumore a Beirut</a> è istantaneo: l’architettura del caos come strumento deliberato di degradazione dell’intelligenza collettiva. La differenza è che lì il rumore era uno stato di fatto; qui è una scelta tattica consapevole, replicabile, scalabile con l’AI.)</p>
+<p>Ma torniamo a Karp. Karp ha quindi ragione sulla premessa che tutto è dual use, che non esiste distinzione di principio tra AI civile e militare. Il problema è che Karp usa questa verità per rimuovere ogni vincolo analitico e normativo. Se tutto è dual use — sostiene — non c’è posizione neutrale, e chi non si schiera con la difesa occidentale si schiera implicitamente con i suoi avversari. L’argomento è fin qui logicamente valido, ma è anche politicamente devastante, perché salta l’unico passaggio che conta davvero: <strong>il fatto che il dual use sia strutturale non significa che tutte le sue configurazioni siano equivalenti, né che l’assenza di distinzione produca l’assenza di responsabilità</strong>. Al contrario, se tutto è dual use, la responsabilità analitica si moltiplica, non si annulla. Con una complicazione che abbiamo esplorato all’inizio: la cattiva postura epistemica del termine produce il dilemma di Collingridge applicato alla governance: la finestra di classificazione utile si chiude prima che la regolazione sia possibile.</p>
+<p>Vale la pena essere espliciti su cosa Karp tralascia, perché l’omissione è il cuore del problema. Se il dual use è strutturale — e lo è — allora la conseguenza logica non è l’abolizione dei vincoli normativi, ma la loro moltiplicazione e il loro raffinamento. <strong>Una tecnologia che abita simultaneamente il dominio civile e quello militare richiede meccanismi di governance più sofisticati, non il suo contrario</strong>. Karp prende una premessa corretta — non esiste neutralità — e ne ricava una conclusione che è esattamente l’opposto di quella che la premessa implicherebbe: l’idea per cui, poiché tutto è dual use, nulla va regolato. È come dire che siccome tutti i cibi possono essere velenosi a dosi sufficienti, la tossicologia non serve. La premessa è vera; la conclusione è un <em>non sequitur</em> al servizio di un interesse commerciale preciso.</p>
+<p>Facciamo un esempio concreto, purtroppo in negativo. L’AI Act europeo non copre le applicazioni militari e di sicurezza nazionale. Bego (2026) segnala che questa distinzione “sta diventando sempre più porosa” — un’ammissione che la categoria regolativa è già superata dalla realtà che dovrebbe governare. Che il regolamento dia fastidio all’attuale amministrazione americana è forse un segnale indiretto della sua rilevanza; che non includa la difesa è tuttavia un limite grave che ne svuota la portata.</p>
+<p>Il contesto geopolitico del 2025-2026 ha modificato la valenza della vaghezza in modo significativo. Nello scenario globalmente aperto dei due decenni post-Guerra Fredda, la vaghezza produceva impunità per opacità: le aziende tech potevano accettare contratti militari mantenendo la narrativa di neutralità civile. La dissociazione tra infrastruttura militare e brand culturale civile funzionava ancora. <strong>Nello scenario <em>splintered</em> di oggi — stack sovrani, <em>sovereign clouds</em>, <em>weaponized interdependencies</em> — quella stessa vaghezza produce impunità attraverso un sentimento indefinibile di inevitabilità.</strong> Il mondo è frammentato, ogni stato costruisce la propria infrastruttura tecnologica come asset strategico, e il dual use diviene un principio che non si nega più: si dichiara e si usa come giustificazione per l’integrazione totale. In questo contesto, anche sostenere che la comunicazione sia una disciplina civile separata suona patetico molto più che neutrale. Le autostrade libere lasciate a Karp esistevano anche nello scenario precedente, con retoriche opposte. Lo splintering non ha creato il problema del dual use: lo ha portato in superficie e rimosso il velo. Ma l’assenza del velo non implica che valga tutto, nemmeno oggi.</p>
+<p>Abbiamo iniziato con i Tasso, e chiudiamo ora tornando ai loro più vicini eredi contemporanei: i cavi ottici. Come ci siamo detti, Starosielski (2015) ha documentato che le rotte dei cavi ottici ricalcano con precisione le rotte commerciali imperiali britanniche del XIX secolo<strong>.</strong> Katja Bego ha un libro in uscita nel settembre 2026, <em>Deep Connections: The Hidden Battles to Control Subsea Cables</em>, che documenta la dimensione contemporanea di questo fenomeno: la Russia che mappa i cavi nel Nord Atlantico con sottomarini specializzati, la Cina che costruisce rotte alternative nel Pacifico attraverso HMN Technologies, gli Stati Uniti che cercano di bloccare la posa di cavi cinesi nelle isole del Pacifico. <strong>I cavi sottomarini sono diventati, dopo vent’anni di trattamento come infrastruttura commerciale ordinaria, un teatro esplicito della competizione geopolitica</strong>. I fondali oceanici sono ormai affollatissimi.</p>
+<p>Il collegamento con la teoria dei giochi sta tutto qui. L’internet aperto degli anni Novanta era un gioco cooperativo iterato: tutti gli attori beneficiavano dell’infrastruttura condivisa, il costo della defection unilaterale era alto, la cooperazione si auto-sosteneva. <strong>Dall’inizio del XXI secolo, gli Stati Uniti e il Regno Unito hanno iniziato a defezionare silenziosamente attraverso la sorveglianza di massa</strong> — PRISM, Tempora, l’intercettazione dei cavi alle landing stations. La defection era invisibile fino al 2013, quando Snowden l’ha resa pubblica. Axelrod aveva dimostrato negli anni Ottanta che la strategia <em>Tit-for-Tat</em> — coopera finché l’altro coopera, punisci la defection immediatamente — produce la cooperazione stabile nei giochi iterati, ma richiede che la defection sia visibile. Quando lo è diventata, lo ha fatto in un modo per cui il win-set delle potenze coinvolte fosse molto al di sotto dell’ottimo. La logica ha quindi prodotto il suo esito previsto: collasso della fiducia, corsa agli stack sovrani, splinternet come <em>Nash equilibrium</em> del gioco rivelato. La Cina costruiva il Great Firewall dal 1998: aveva anticipato la defection altrui, o aveva ragioni proprie, o probabilmente entrambe le cose. Il risultato è in ogni caso identico. Alcuni di noi ricordano con nostalgia gli anni Novanta (di certo, non i cittadini della ex Jugoslavia: tutto è molto relativo), ma è stato il periodo storico in cui si sono preparate silenziosamente le defection del decennio successivo.</p>
+<p>L’effetto culturale è il punto per cui la geopolitica dei cavi smette di essere una questione tecnica. Il <em>commons</em> epistemico — lo spazio di conoscenza condivisa che l’internet aperto, imperfettamente e asimmetricamente, aveva prodotto — si sta frammentando in <em>commons</em> separati, con grammatiche diverse, sistemi di verifica incompatibili, archivi della memoria collettiva divergenti. Non produce semplicemente internet diversi: produce culture diverse, nel senso più letterale del termine. E quando le culture divergono abbastanza, il linguaggio che dovrebbe permettere la comunicazione tra di esse — il livello base della piramide, il fondamento ontologico di tutto — comincia a funzionare diversamente nelle sue diverse istanze. Le parole restano le stesse; i referenti cambiano; la comunicazione continua ma il significato condiviso si erode.</p>
+<p>La mia risposta personale è la seguente, e forse la approfondirò in altre occasioni, qui o sul mio Substack. Bisogna tornare a un Illuminismo non ingenuo: cercare valori (non solo etici, ma anche semantici) che abbiano aspirazioni universali — nell’interesse di tutte le parti, perché si possa tornare a cooperare. <strong>In questo contesto, trattare la comunicazione come disciplina innocua e non rilevante non è una posizione neutrale, ma una scelta politica che ha un nome e dei beneficiari identificabili.</strong></p>
+<p>La domanda finale non è allora se l’AI di Alexander Karp sia dual use. La risposta, ce lo siamo detti, è ovvia. La domanda è se esiste ancora uno spazio culturale comune che sia abbastanza integro da fa cadere la domanda presso interlocutori che condividano il nostro sistema di riferimento e siano in grado letteralmente di capirla. E, soprattutto, se esista ancora lo spazio per un’infrastruttura globale simile a quella che Massimiliano I aveva fortemente voluto per il suo impero. Ma che sia a vantaggio non solo dell’imperatore e dell’Impero di turno, ma di tutti.</p>
+<h2>Bibliografia</h2>
+<p><em>Questo articolo sviluppa le conseguenze dei due pezzi sulla teoria dei giochi pubblicati su questo sito e su <a href="https://claudiocammarano.substack.com">The Abstract</a>.</em></p>
+<p>ARESU, Alessandro, <em>Le potenze del capitalismo politico. Stati Uniti e Cina</em>, Milano, La Nave di Teseo, 2020.</p>
+<p>BEGO, Katja, “How a Surge in Defence and Dual-Use Technology Investment Could Reconfigure the Global AI Race”, Chatham House Research Paper, International Security Programme, Londra, aprile 2026.</p>
+<p>BEGO, Katja, <em>Deep Connections: The Hidden Battles to Control Subsea Cables</em>, Cambridge, Polity Press, settembre 2026 (di prossima pubblicazione).</p>
+<p>BRESNAHAN, Timothy F. e Manuel Trajtenberg, <a href="https://doi.org/10.1016/0304-4076(94)01598-T">“General Purpose Technologies: ‘Engines of Growth’?”</a>, <em>Journal of Econometrics</em>, vol. 65, n. 1, 1995, pp. 83-108.</p>
+<p>COLLINGRIDGE, David, <a href="https://openlibrary.org/books/OL4107182M/The_social_control_of_technology"><em>The Social Control of Technology</em></a>, Londra, Frances Pinter, 1980.</p>
+<p>INNIS, Harold A., <a href="https://openlibrary.org/works/OL762823W/Empire_and_communications"><em>Empire and Communications</em></a>, Oxford, Oxford University Press, 1950 (trad. it. <em>Impero e comunicazioni</em>, Roma, Meltemi, 2001).</p>
+<p>LEFEBVRE, Vladimir A., <em>The Structure of Awareness: Toward a Symbolic Language of Human Reflexion</em>, Beverly Hills, Sage Publications, 1977.</p>
+<p>MOLAS-GALLART, Jordi, <a href="https://www.sciencedirect.com/science/article/pii/S0048733397000231">“Which Way to Go? Defence Technology and the Diversity of ‘Dual-Use’ Technology Transfer”</a>, <em>Research Policy</em>, vol. 26, n. 3, 1997, pp. 367-385.</p>
+<p>MUSEO DEI TASSO E DELLA STORIA POSTALE, <a href="https://www.museodeitasso.com/it">Cornello dei Tasso (BG)</a>.</p>
+<p>REPPY, Judith, “Dual Use Technology: Concepts, Issues, Prospects”, Cornell University Peace Studies Program, Occasional Paper n. 17, Ithaca, 1999.</p>
+<p>SEGAL, Adam, <a href="https://archive.org/details/hackedworldorder0000sega"><em>The Hacked World Order: How Nations Fight, Trade, Maneuver, and Manipulate in the Digital Age</em></a>, New York, PublicAffairs, 2016.</p>
+<p>STAROSIELSKI, Nicole, <a href="https://www.dukeupress.edu/the-undersea-network"><em>The Undersea Network</em></a>, Durham (NC), Duke University Press, 2015.</p>
+<p>TURNER, Fred, <a href="https://openlibrary.org/books/OL3417830M/From_counterculture_to_cyberculture"><em>From Counterculture to Cyberculture: Stewart Brand, the Whole Earth Network, and the Rise of Digital Utopianism</em></a>, Chicago, University of Chicago Press, 2006.</p>
+<p>VIRILIO, Paul, <a href="https://openlibrary.org/books/OL2087170M/Speed_and_politics"><em>Vitesse et Politique</em></a>, Parigi, Galilée, 1977 (trad. it. <em>Velocità e Politica</em>, Milano, Multhipla Edizioni, 1981).</p>
+<p>VIRILIO, Paul, <em>Guerre et Cinéma. Logistique de la perception</em>, Parigi, Cahiers du Cinéma/L’Étoile, 1984.</p>
+<p>WINNER, Langdon, “Do Artifacts Have Politics?”, <em>Daedalus</em>, vol. 109, n. 1, 1980, pp. 121-136.</p>
+
+  </div>
+</article>
+
+<div class="print-footer" aria-hidden="true">
+  <span>© 2026 Claudio Cammarano — claudiocammarano.com</span>
+  <span>Tutti i diritti riservati. Riproduzione consentita con citazione della fonte.</span>
+</div>
+
+<script>
+(function() {
+  // Table of contents
+  var articleBody = document.querySelector('.article-body');
+  if (articleBody) {
+    var headings = articleBody.querySelectorAll('h2, h3');
+    if (headings.length >= 3) {
+      headings.forEach(function(h, i) {
+        if (!h.id) {
+          var slug = h.textContent
+            .toLowerCase()
+            .replace(/[^\w\s-]/g, '')
+            .replace(/\s+/g, '-')
+            .replace(/-+/g, '-')
+            .trim();
+          h.id = slug || ('sezione-' + i);
+        }
+      });
+      var details = document.createElement('details');
+      details.className = 'toc';
+      var summary = document.createElement('summary');
+      summary.className = 'toc-summary';
+      summary.textContent = 'In questo articolo';
+      details.appendChild(summary);
+      var list = document.createElement('ol');
+      list.className = 'toc-list';
+      headings.forEach(function(h) {
+        var li = document.createElement('li');
+        li.className = 'toc-item toc-' + h.tagName.toLowerCase();
+        var a = document.createElement('a');
+        a.href = '#' + h.id;
+        a.textContent = h.textContent;
+        li.appendChild(a);
+        list.appendChild(li);
+      });
+      details.appendChild(list);
+      // Insert before the second h2 (end of first section); fallback to before first h2
+      var allH2 = articleBody.querySelectorAll('h2');
+      var insertionPoint = allH2.length >= 2 ? allH2[1] : (allH2.length >= 1 ? allH2[0] : null);
+      if (insertionPoint) {
+        insertionPoint.parentNode.insertBefore(details, insertionPoint);
+      } else {
+        articleBody.insertBefore(details, articleBody.firstChild);
+      }
+    }
+  }
+})();
+</script>
+
+<script>
+(function() {
+  var bar = document.getElementById('reading-progress');
+  var body = document.querySelector('.article-body');
+  if (!bar || !body) return;
+  function update() {
+    var bodyTop = body.getBoundingClientRect().top + window.scrollY;
+    var bodyHeight = body.offsetHeight;
+    var scrolled = window.scrollY - bodyTop;
+    var pct = Math.min(Math.max(scrolled / bodyHeight * 100, 0), 100);
+    bar.style.width = pct + '%';
+  }
+  window.addEventListener('scroll', update, { passive: true });
+  update();
+})();
+
+(function() {
+  var shareBtn = document.getElementById('share-btn');
+  var shareMenu = document.getElementById('share-menu');
+  var shareCopy = document.getElementById('share-copy');
+  var shareLinkedIn = document.getElementById('share-linkedin');
+  var shareTwitter = document.getElementById('share-twitter');
+  if (!shareBtn) return;
+
+  var url = window.location.href;
+  var title = document.title;
+
+  if (shareLinkedIn) shareLinkedIn.href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(url);
+  if (shareTwitter) shareTwitter.href = 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(url) + '&text=' + encodeURIComponent(title);
+
+  shareBtn.addEventListener('click', function() {
+    if (navigator.share) {
+      navigator.share({ title: title, url: url }).catch(function() {});
+    } else {
+      var open = !shareMenu.hidden;
+      shareMenu.hidden = open;
+    }
+  });
+
+  if (shareCopy) {
+    shareCopy.addEventListener('click', function() {
+      navigator.clipboard.writeText(url).then(function() {
+        shareCopy.textContent = 'Copiato!';
+        setTimeout(function() { shareCopy.textContent = 'Copia link'; shareMenu.hidden = true; }, 1800);
+      });
+    });
+  }
+
+  document.addEventListener('click', function(e) {
+    if (!shareBtn.contains(e.target) && !shareMenu.contains(e.target)) {
+      shareMenu.hidden = true;
+    }
+  });
+})();
+
+(function() {
+  var btn = document.getElementById('back-to-top');
+  if (!btn) return;
+  window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+  btn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
+
+
+
+
+
+<div class="article-concepts">
+  <p class="article-concepts-label">Concetti</p>
+  <div class="concetto-chips">
+    
+    <a href="/concetti/gerasimov-valery/" class="concetto-chip">Gerasimov, Valery</a>
+    
+    <a href="/concetti/dottrina-gerasimov/" class="concetto-chip">dottrina Gerasimov</a>
+    
+    <a href="/concetti/controllo-riflessivo/" class="concetto-chip">controllo riflessivo</a>
+    
+    <a href="/concetti/dual-use/" class="concetto-chip">dual use</a>
+    
+    <a href="/concetti/dilemma-di-collingridge/" class="concetto-chip">dilemma di Collingridge</a>
+    
+    <a href="/concetti/general-purpose-technologies/" class="concetto-chip">general purpose technologies</a>
+    
+    <a href="/concetti/anthropic/" class="concetto-chip">Anthropic</a>
+    
+    <a href="/concetti/palantir/" class="concetto-chip">Palantir</a>
+    
+    <a href="/concetti/darpa/" class="concetto-chip">DARPA</a>
+    
+    <a href="/concetti/bergamo-val-brembana/" class="concetto-chip">Bergamo / Val Brembana</a>
+    
+    <a href="/concetti/russia/" class="concetto-chip">Russia</a>
+    
+    <a href="/concetti/ucraina/" class="concetto-chip">Ucraina</a>
+    
+    <a href="/concetti/stati-uniti/" class="concetto-chip">Stati Uniti</a>
+    
+    <a href="/concetti/cina/" class="concetto-chip">Cina</a>
+    
+    <a href="/concetti/trump-donald/" class="concetto-chip">Trump, Donald</a>
+    
+    <a href="/concetti/putin-vladimir/" class="concetto-chip">Putin, Vladimir</a>
+    
+    <a href="/concetti/karp-alexander/" class="concetto-chip">Karp, Alexander</a>
+    
+  </div>
+</div>
+
+
+<div class="newsletter-cta">
+  <p class="newsletter-cta-label">The Abstract</p>
+  <p class="newsletter-cta-text">Analisi su content industries, AI e media vista da una prospettiva europea. Esce su Substack.</p>
+  <a href="https://claudiocammarano.substack.com" target="_blank" rel="noopener" class="newsletter-cta-btn">Leggi e iscriviti →</a>
+</div>
+
+
+
+<section class="related-posts">
+  <h3 class="related-posts-title">Sullo stesso tema</h3>
+  
+  <article class="related-post">
+    <div class="article-meta">
+      <span class="article-date">4 maggio 2026</span>
+      
+        
+          <a class="article-tag" href="/tag/geopolitica/">Geopolitica</a><a class="article-tag" href="/tag/teoria-dei-giochi/">Teoria dei giochi</a><a class="article-tag" href="/tag/regimi-politici/">Regimi politici</a>
+        
+      
+    </div>
+    <h4 class="related-post-title"><a href="/writings/2026-05-04-lombra-del-passato/">L’ombra del passato</a></h4>
+    <p class="related-post-description">Win-set domestici, regimi politici, e l’aritmetica dei tappi quando il garante si ritira. Continuazione (e correzione) de L’ombra del futuro.</p>
+  </article>
+  
+  <article class="related-post">
+    <div class="article-meta">
+      <span class="article-date">24 aprile 2026</span>
+      
+        
+          <a class="article-tag" href="/tag/italia/">Italia</a><a class="article-tag" href="/tag/mediterraneo/">Mediterraneo</a><a class="article-tag" href="/tag/geopolitica/">Geopolitica</a>
+        
+      
+    </div>
+    <h4 class="related-post-title"><a href="/writings/2026-04-24-cartolina-dal-paese-piu-bello-del-mondo/">Cartolina dal paese più bello del mondo</a></h4>
+    <p class="related-post-description">Due modelli di intellettuale, il costrutto geografico Nord/Sud come alibi, la paura del mare e il fallimento strategico italiano. Una cartolina non decorativa.</p>
+  </article>
+  
+  <article class="related-post">
+    <div class="article-meta">
+      <span class="article-date">15 aprile 2026</span>
+      
+        
+          <a class="article-tag" href="/tag/geopolitica/">Geopolitica</a><a class="article-tag" href="/tag/teoria-dei-giochi/">Teoria dei giochi</a><a class="article-tag" href="/tag/democrazia/">Democrazia</a>
+        
+      
+    </div>
+    <h4 class="related-post-title"><a href="/writings/2026-04-15-lombra-del-futuro/">L’ombra del futuro</a></h4>
+    <p class="related-post-description">Il fattore di sconto della politica americana, le opportunità per l’attore C (chi sarà?) e l’aritmetica dei sistemi che reggono. Una rilettura del torneo di Axelrod e del Tit-for-Tat per capire il presente.</p>
+  </article>
+  
+</section>
+
+
+
+
+
+<nav class="article-nav">
+  
+  <a href="/writings/2026-05-04-lombra-del-passato/" class="article-nav-item article-nav-prev">
+    <span class="article-nav-label">&#8592; Precedente</span>
+    <span class="article-nav-title">L’ombra del passato</span>
+  </a>
+  
+  
+  <a href="/writings/2026-06-01-la-macchina-e-la-lotta/" class="article-nav-item article-nav-next">
+    <span class="article-nav-label">Successivo &#8594;</span>
+    <span class="article-nav-title">La macchina e la lotta</span>
+  </a>
+  
+</nav>
+
+
+        </main>
+    </div>
+    
+    <footer class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-info">
+        <p class="footer-name">Claudio Cammarano · Marketing × Media × Content Industries</p>
+        <p class="footer-roles">De Agostini Libri · Docente · Irene Media · Episteme Advisory</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/claudiocammarano/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://medium.com/@ClaudioCamm" target="_blank" rel="noopener">Medium</a>
+        <a href="https://claudiocammarano.substack.com" target="_blank" rel="noopener">The Abstract</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+    
+    <script async src="//www.instagram.com/embed.js"></script>
+</body>
+</html>

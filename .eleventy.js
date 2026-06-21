@@ -2,6 +2,7 @@ const markdownIt = require("markdown-it");
 const md = markdownIt({ html: true, typographer: true });
 const clustersData = require("./src/_data/clusters.js");
 const conceptsIndexData = require("./src/_data/conceptsIndex.js");
+const curatedTagAliases = require("./src/_data/curatedTagAliases.js");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setLibrary("md", md);
@@ -103,7 +104,8 @@ module.exports = function(eleventyConfig) {
     return Array.from(seriesSet).sort();
   });
 
-  // All unique category tags from writings
+  // All unique Argomenti: category tags from writings + curated tags mapped
+  // through curatedTagAliases.js onto their canonical Argomento name.
   eleventyConfig.addCollection("tagList", function(collectionApi) {
     var tagSet = new Set();
     collectionApi.getFilteredByGlob("src/writings/*.md").forEach(function(item) {
@@ -111,6 +113,15 @@ module.exports = function(eleventyConfig) {
       if (!cats) return;
       var arr = Array.isArray(cats) ? cats : [cats];
       arr.forEach(function(c) { tagSet.add(c); });
+    });
+    collectionApi.getFilteredByGlob("src/curated/*.md").forEach(function(item) {
+      var tags = item.data.tags;
+      if (!tags) return;
+      var arr = Array.isArray(tags) ? tags : [tags];
+      arr.forEach(function(t) {
+        var canonical = curatedTagAliases[String(t).toLowerCase()];
+        if (canonical) tagSet.add(canonical);
+      });
     });
     return Array.from(tagSet).sort();
   });
@@ -337,13 +348,26 @@ module.exports = function(eleventyConfig) {
     return null;
   });
 
+  // Matches an Argomento against both writings (data.category, exact match)
+  // and curated items (data.tags, mapped through curatedTagAliases.js).
+  // Pass collections.allPosts to get both types; collections.writings still
+  // works as before (curated branch is simply a no-op for those items).
   eleventyConfig.addFilter("filterByTag", function(collection, tag) {
     if (!tag) return [];
     return collection.filter(function(p) {
       var cats = p.data.category;
-      if (!cats) return false;
-      var arr = Array.isArray(cats) ? cats : [cats];
-      return arr.indexOf(tag) !== -1;
+      if (cats) {
+        var arr = Array.isArray(cats) ? cats : [cats];
+        if (arr.indexOf(tag) !== -1) return true;
+      }
+      var ctags = p.data.tags;
+      if (ctags) {
+        var carr = Array.isArray(ctags) ? ctags : [ctags];
+        for (var i = 0; i < carr.length; i++) {
+          if (curatedTagAliases[String(carr[i]).toLowerCase()] === tag) return true;
+        }
+      }
+      return false;
     });
   });
 

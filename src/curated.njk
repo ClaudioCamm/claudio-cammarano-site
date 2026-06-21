@@ -14,7 +14,7 @@ title: Curated
         <span class="curated-source-label">· {{ item.data.source }}</span>
         {% endif %}
         {% if item.data.tags %}
-          {% for tag in item.data.tags %}{% if tag != 'curated' %}<span class="article-tag">{{ tag }}</span>{% endif %}{% endfor %}
+          {% for tag in item.data.tags %}{% if tag != 'curated' %}{% set canonical = curatedTagAliases[tag | lower] %}{% if canonical %}<a class="article-tag" href="/tag/{{ canonical | slugify }}/">{{ canonical }}</a>{% endif %}{% endif %}{% endfor %}
         {% endif %}
     </div>
     <h2><a href="{{ item.data.external_url }}" target="_blank">{{ item.data.title }} ↗</a></h2>

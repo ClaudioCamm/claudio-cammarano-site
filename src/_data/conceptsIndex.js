@@ -224,6 +224,12 @@ module.exports = [
     note: "Saggista, insegnante e attivista femminista italiana (1941). Fondatrice con Elvio Fachinelli della rivista «L'erba voglio» negli anni Settanta, poi di «Lapis»; autrice di testi come L'infamia originaria, pietre miliari della teoria femminista italiana. Nel sito è il caso che mette a fuoco la tensione tra impatto culturale indiscutibile e assenza di un modello di business che ne garantisca il sostentamento.",
     articles: []
   },
+  {
+    name: "Miyazaki Hayao",
+    type: "persona",
+    note: "Regista e animatore giapponese (1941), cofondatore dello Studio Ghibli. Nel sito è citato come riferimento implicito del dibattito sulla crisi degli animatori giapponesi: il modello artigianale e il mentoring che hanno formato la sua generazione sono esattamente ciò che l'industria ha smantellato dopo il 1973.",
+    articles: []
+  },
 
   // ─── TEORIE ───────────────────────────────────────────────────────────────
 
@@ -504,6 +510,24 @@ module.exports = [
     note: "Nel sito è collegata alla sovrapposizione crescente tra i piani dell'informazione e della difesa: la nomina di un generale britannico, ex comandante della 77 Brigade, come defence editor dell'Economist è il caso che rende visibile quanto i contenuti che ne escono sembrino sempre meno innocui — un tema che dialoga con la dottrina Gerasimov e il controllo riflessivo già trattati altrove sul sito.",
     articles: []
   },
+  {
+    name: "industria dell'animazione",
+    type: "teoria",
+    note: "Nel sito è il caso degli animatori giapponesi: un mercato quasi triplicato in un decennio (fino a 19 miliardi di dollari) che resta cronicamente incapace di formare e remunerare chi produce materialmente il valore — solo uno su cinque riceve oggi formazione sul campo, contro sette su dieci una generazione fa. Un caso da manuale per chi si occupa di editoria e publishing più in generale.",
+    articles: []
+  },
+  {
+    name: "economia",
+    type: "teoria",
+    note: "Filo tematico ricorrente nei curated del sito, in due varianti distinte: come dibattito sugli strumenti di riduzione della povertà estrema (i trasferimenti monetari diretti contro l'architettura assistenziale tradizionale) e come lente con cui leggere la sostenibilità di filiere produttive — dalla cultura all'animazione — che crescono senza remunerare chi ci lavora.",
+    articles: []
+  },
+  {
+    name: "macroeconomia",
+    type: "teoria",
+    note: "Nel sito è il quadro teorico evocato dal dibattito sui trasferimenti monetari diretti: l'evidenza che la semplicità batta la sofisticazione nella riduzione della povertà estrema costringe a riconsiderare assunzioni macroeconomiche più ampie sull'efficacia delle architetture assistenziali tradizionali.",
+    articles: []
+  },
 
   // ─── TESTI ────────────────────────────────────────────────────────────────
 
@@ -620,6 +644,12 @@ module.exports = [
     name: "77 Brigade",
     type: "istituzione",
     note: "Unità dell'esercito britannico per le «attività informative», istituita nel 2015. Nel sito è citata per il suo ruolo nel monitoraggio del dibattito online dei cittadini britannici durante la pandemia (secondo una richiesta FOI del 2024) e per la sovrapposizione, nel caso Turner/Economist, tra comando militare di un'unità di information warfare e ruolo editoriale.",
+    articles: []
+  },
+  {
+    name: "Studio Ghibli",
+    type: "istituzione",
+    note: "Studio d'animazione giapponese fondato nel 1985 da Hayao Miyazaki e Isao Takahata. Nel sito è il riferimento implicito di qualità artigianale nel dibattito sulla crisi degli animatori giapponesi: il modello di formazione sul campo che lo studio ha incarnato è esattamente ciò che l'industria, nel suo insieme, ha smantellato dopo il 1973.",
     articles: []
   },
 
@@ -757,6 +787,12 @@ module.exports = [
     name: "Regno Unito",
     type: "paese",
     note: "Nel sito è il contesto della 77 Brigade e della sovrapposizione fra information warfare militare e giornalismo di difesa, resa visibile dalla nomina di un suo ex comandante a defence editor dell'Economist.",
+    articles: []
+  },
+  {
+    name: "Giappone",
+    type: "paese",
+    note: "Nel sito è il caso della crisi degli animatori: un mercato dell'anime quasi triplicato in un decennio fino a 19 miliardi di dollari, sostenuto da una manodopera cronicamente sottopagata e mal formata dopo lo smantellamento del sistema di apprendistato seguito al fallimento di Mushi Production nel 1973.",
     articles: []
   },
 

@@ -61,7 +61,7 @@ permalink: "/indice/"
     <div class="indice-pill-list">
       {% for clusterName, clusterTags in clusters %}
         {% for tag in clusterTags %}
-        {% set tagPosts = collections.writings | filterByTag(tag) %}
+        {% set tagPosts = collections.allPosts | filterByTag(tag) %}
         {% if tagPosts.length %}
         <a href="/tag/{{ tag | slugify }}/" class="temi-tag-pill">{{ tag }}<span class="temi-tag-count">{{ tagPosts.length }}</span></a>
         {% else %}
