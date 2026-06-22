@@ -156,5 +156,12 @@ description: "Saggi originali su editoria, marketing, semiotica e cultura digita
     {% if post.data.description %}
     <p>{{ post.data.description }}</p>
     {% endif %}
+    {% if post.data.concepts and post.data.concepts.length %}
+    <div class="concetto-chips curated-concepts">
+      {% for cname in post.data.concepts %}
+      <a href="/concetti/{{ cname | slugify }}/" class="concetto-chip">{{ cname }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
   </article>
 {% endfor %}

@@ -24,9 +24,10 @@ permalink: "/temi/"
   <header class="temi-page-header">
     <p class="tag-page-label">Navigazione tematica</p>
     <h1 class="temi-page-title">Temi</h1>
-    <p class="temi-page-intro">Gli articoli sono organizzati in quattro aree di interesse. Ogni tag appartiene a un cluster; ogni cluster raccoglie prospettive diverse sullo stesso territorio concettuale.</p>
+    <p class="temi-page-intro">Gli articoli sono organizzati in aree di interesse. Ogni tag appartiene a un cluster; ogni cluster raccoglie prospettive diverse sullo stesso territorio concettuale.</p>
   </header>
 
+  {% set maxCount = clusters | maxTagCount(collections.allPosts) %}
   {% for clusterName, clusterTags in clusters %}
   <section class="temi-cluster" id="{{ clusterName | slugify }}">
     <h2 class="temi-cluster-name">{{ clusterName }}</h2>
@@ -37,8 +38,9 @@ permalink: "/temi/"
       {% for tag in clusterTags %}
         {% set tagPosts = collections.allPosts | filterByTag(tag) %}
         {% if tagPosts.length %}
-        <a href="/tag/{{ tag | slugify }}/" class="temi-tag-pill">
-          {{ tag }}<span class="temi-tag-count">{{ tagPosts.length }}</span>
+        <a href="/tag/{{ tag | slugify }}/" class="temi-tag-pill temi-tag-pill--weighted">
+          <span class="temi-tag-pill-row">{{ tag }}<span class="temi-tag-count">{{ tagPosts.length }}</span></span>
+          <span class="temi-tag-weight-bar" style="width: {{ (tagPosts.length / maxCount * 100) | round }}%;"></span>
         </a>
         {% else %}
         <span class="temi-tag-pill temi-tag-pill--empty">{{ tag }}</span>

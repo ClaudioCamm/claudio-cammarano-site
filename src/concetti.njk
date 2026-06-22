@@ -124,7 +124,8 @@ eleventyComputed:
       'Epistemologia & AI':       cs.getPropertyValue('--graph-cluster-epi').trim()  || '#1C0E80',
       'Geopolitica & potere':     cs.getPropertyValue('--graph-cluster-geo').trim()  || '#185FA5',
       'Editoria & comunicazione': cs.getPropertyValue('--graph-cluster-edi').trim()  || '#0F6E56',
-      'Italia & istituzioni':     cs.getPropertyValue('--graph-cluster-ita').trim()  || '#8B5E1F'
+      'Italia & istituzioni':     cs.getPropertyValue('--graph-cluster-ita').trim()  || '#8B5E1F',
+      'Economia & lavoro':        cs.getPropertyValue('--graph-cluster-eco').trim()  || '#A13D3D'
     };
   }
 
@@ -199,15 +200,24 @@ eleventyComputed:
     });
     svgEl.appendChild(gContext);
 
-    neighbors.forEach(function (n) {
+    // I primi 3 vicini (i più forti, neighbors è già ordinato per peso) hanno
+    // etichetta scritta sempre visibile; gli altri solo un tooltip al mouse-over.
+    var VISIBLE_LABELS = 3;
+    neighbors.forEach(function (n, idx) {
       var g = el('g', { cursor: 'pointer' });
       g.appendChild(el('circle', { cx: n.x, cy: n.y, r: '9', fill: colorOf(n), stroke: colorBg, 'stroke-width': '1.5' }));
-      var label = el('text', {
-        x: n.x, y: n.y + 21, 'text-anchor': 'middle',
-        'font-family': 'var(--font-sans)', 'font-size': '11px', fill: colorHint
-      });
-      label.textContent = n.name;
-      g.appendChild(label);
+      if (idx < VISIBLE_LABELS) {
+        var label = el('text', {
+          x: n.x, y: n.y + 21, 'text-anchor': 'middle',
+          'font-family': 'var(--font-serif)', 'font-size': '11px', fill: colorHint
+        });
+        label.textContent = n.name;
+        g.appendChild(label);
+      } else {
+        var title = el('title', {});
+        title.textContent = n.name;
+        g.appendChild(title);
+      }
       g.addEventListener('click', function () { window.location.href = '/concetti/' + n.slug + '/'; });
       svgEl.appendChild(g);
     });
@@ -219,7 +229,7 @@ eleventyComputed:
     words.slice(0, 2).forEach(function (word, i) {
       gFocus.appendChild(el('text', {
         x: focus.x, y: ty + i * 15, 'text-anchor': 'middle', 'dominant-baseline': 'middle',
-        'font-family': 'var(--font-sans)', 'font-size': '11px', 'font-weight': '500', fill: '#fff'
+        'font-family': 'var(--font-serif)', 'font-size': '11px', 'font-weight': '500', fill: '#fff'
       })).textContent = word;
     });
     svgEl.appendChild(gFocus);

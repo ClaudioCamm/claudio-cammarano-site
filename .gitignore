@@ -1,6 +1,8 @@
 node_modules/
 _site/
+_site_check*/
 .DS_Store
 
 # Local Netlify folder
 .netlify
+deploy-*.zip

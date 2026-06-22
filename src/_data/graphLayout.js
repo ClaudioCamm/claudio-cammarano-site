@@ -151,7 +151,10 @@ function buildLayout() {
       cluster: c.primaryCluster,
       clusters: c.clusters,
       crossCluster: c.crossCluster,
-      count: c.articles.length
+      count: c.articles.length,
+      // true se almeno un writing (non solo curated) cita questo concetto —
+      // usato in /mappa/ per decidere quali etichette mostrare di default
+      fromWriting: c.articles.some(function (a) { return a.url.indexOf("/writings/") === 0; })
     };
   });
 

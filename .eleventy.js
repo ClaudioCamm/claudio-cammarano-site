@@ -361,27 +361,103 @@ module.exports = function(eleventyConfig) {
     return null;
   });
 
+  // Shared match logic: does this post belong to Argomento `tag`?
+  // Writings match via data.category (exact); curated items match via
+  // data.tags mapped through curatedTagAliases.js onto a canonical name.
+  function matchesTag(post, tag) {
+    var cats = post.data.category;
+    if (cats) {
+      var arr = Array.isArray(cats) ? cats : [cats];
+      if (arr.indexOf(tag) !== -1) return true;
+    }
+    var ctags = post.data.tags;
+    if (ctags) {
+      var carr = Array.isArray(ctags) ? ctags : [ctags];
+      for (var i = 0; i < carr.length; i++) {
+        if (curatedTagAliases[String(carr[i]).toLowerCase()] === tag) return true;
+      }
+    }
+    return false;
+  }
+
+  // Returns every canonical Argomento name a post belongs to (writings'
+  // category values as-is, curated tags translated through the aliases map).
+  function argomentiOf(post) {
+    var names = [];
+    var cats = post.data.category;
+    if (cats) {
+      var arr = Array.isArray(cats) ? cats : [cats];
+      arr.forEach(function(c) { names.push(c); });
+    }
+    var ctags = post.data.tags;
+    if (ctags) {
+      var carr = Array.isArray(ctags) ? ctags : [ctags];
+      carr.forEach(function(t) {
+        var canonical = curatedTagAliases[String(t).toLowerCase()];
+        if (canonical) names.push(canonical);
+      });
+    }
+    return names;
+  }
+
   // Matches an Argomento against both writings (data.category, exact match)
   // and curated items (data.tags, mapped through curatedTagAliases.js).
   // Pass collections.allPosts to get both types; collections.writings still
   // works as before (curated branch is simply a no-op for those items).
   eleventyConfig.addFilter("filterByTag", function(collection, tag) {
     if (!tag) return [];
-    return collection.filter(function(p) {
-      var cats = p.data.category;
-      if (cats) {
-        var arr = Array.isArray(cats) ? cats : [cats];
-        if (arr.indexOf(tag) !== -1) return true;
-      }
-      var ctags = p.data.tags;
-      if (ctags) {
-        var carr = Array.isArray(ctags) ? ctags : [ctags];
-        for (var i = 0; i < carr.length; i++) {
-          if (curatedTagAliases[String(carr[i]).toLowerCase()] === tag) return true;
-        }
-      }
-      return false;
+    return collection.filter(function(p) { return matchesTag(p, tag); });
+  });
+
+  // Highest article count among all Argomenti (writings + curated combined),
+  // used to scale the proportional weight bar under each pill on /temi/ e /indice/.
+  eleventyConfig.addFilter("maxTagCount", function(clusters, allPosts) {
+    if (!clusters || !allPosts) return 0;
+    var max = 0;
+    Object.keys(clusters).forEach(function(clusterName) {
+      clusters[clusterName].forEach(function(tag) {
+        var count = allPosts.filter(function(p) { return matchesTag(p, tag); }).length;
+        if (count > max) max = count;
+      });
     });
+    return max;
+  });
+
+  // Argomenti vicini: per il tag dato, gli altri Argomenti più frequentemente
+  // presenti negli stessi articoli (co-occorrenza), in ordine decrescente.
+  eleventyConfig.addFilter("relatedArgomenti", function(tag, allPosts) {
+    if (!tag || !allPosts) return [];
+    var counts = {};
+    allPosts.forEach(function(p) {
+      if (!matchesTag(p, tag)) return;
+      argomentiOf(p).forEach(function(name) {
+        if (name === tag) return;
+        counts[name] = (counts[name] || 0) + 1;
+      });
+    });
+    return Object.keys(counts)
+      .map(function(name) { return { name: name, count: counts[name] }; })
+      .sort(function(a, b) { return b.count - a.count || a.name.localeCompare(b.name, "it"); })
+      .slice(0, 5);
+  });
+
+  // Sparkline temporale: posizione (0-100) di ogni articolo lungo l'arco di
+  // tempo coperto dal tag, più le etichette del periodo iniziale e finale.
+  eleventyConfig.addFilter("dateSparkline", function(posts) {
+    if (!posts || !posts.length) return { points: [], minLabel: "", maxLabel: "", single: true };
+    var fmt = function(ts) {
+      return new Date(ts).toLocaleDateString("it-IT", { month: "short", year: "numeric" });
+    };
+    var times = posts.map(function(p) { return p.date.getTime(); });
+    var minT = Math.min.apply(null, times), maxT = Math.max.apply(null, times);
+    var single = minT === maxT;
+    var range = maxT - minT || 1;
+    var points = posts.map(function(p) {
+      var t = p.date.getTime();
+      var x = single ? 50 : ((t - minT) / range) * 92 + 4;
+      return { x: Math.round(x * 10) / 10, title: p.data.title, dateLabel: fmt(t) };
+    });
+    return { points: points, minLabel: fmt(minT), maxLabel: fmt(maxT), single: single };
   });
 
   eleventyConfig.addFilter("excerpt", function(content, maxLen) {

@@ -52,6 +52,36 @@ eleventyComputed:
     {% endif %}
   </header>
 
+  {% set spark = tagPosts | dateSparkline %}
+  {% if spark.points.length %}
+  <div class="tag-sparkline" aria-label="Distribuzione temporale degli articoli">
+    <svg viewBox="0 0 100 16" preserveAspectRatio="none" class="tag-sparkline-svg" aria-hidden="true">
+      <line x1="2" y1="10" x2="98" y2="10" class="tag-sparkline-axis"></line>
+      {% for pt in spark.points %}
+      <circle cx="{{ pt.x }}" cy="10" r="2.4" class="tag-sparkline-dot">
+        <title>{{ pt.title }} — {{ pt.dateLabel }}</title>
+      </circle>
+      {% endfor %}
+    </svg>
+    <div class="tag-sparkline-labels">
+      <span>{{ spark.minLabel }}</span>
+      {% if not spark.single %}<span>{{ spark.maxLabel }}</span>{% endif %}
+    </div>
+  </div>
+  {% endif %}
+
+  {% set related = tag | relatedArgomenti(collections.allPosts) %}
+  {% if related.length %}
+  <section class="tag-related" aria-label="Argomenti collegati">
+    <p class="tag-related-label">Argomenti vicini</p>
+    <div class="tag-related-pills">
+      {% for r in related %}
+      <a href="/tag/{{ r.name | slugify }}/" class="temi-tag-pill" title="{{ r.count }} {% if r.count == 1 %}articolo in comune{% else %}articoli in comune{% endif %}">{{ r.name }}<span class="temi-tag-count">{{ r.count }}</span></a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
   <div class="tag-page-posts">
     {% for post in tagPosts %}
       {% if post.data._postType == "curated" %}
@@ -66,6 +96,13 @@ eleventyComputed:
         </div>
         <h2><a href="{{ post.data.external_url }}" target="_blank" rel="noopener">{{ post.data.title }} ↗</a></h2>
         {% if post.data.description %}<p class="article-card-subtitle">{{ post.data.description }}</p>{% endif %}
+        {% if post.data.concepts and post.data.concepts.length %}
+        <div class="concetto-chips curated-concepts">
+          {% for cname in post.data.concepts %}
+          <a href="/concetti/{{ cname | slugify }}/" class="concetto-chip">{{ cname }}</a>
+          {% endfor %}
+        </div>
+        {% endif %}
       </article>
       {% else %}
       <article class="article-card article-card--secondary">

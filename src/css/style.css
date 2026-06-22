@@ -28,6 +28,7 @@
   --graph-cluster-geo: #185FA5;
   --graph-cluster-edi: #0F6E56;
   --graph-cluster-ita: #8B5E1F;
+  --graph-cluster-eco: #A13D3D;
 
   --font-serif: 'Source Serif 4', Georgia, "Times New Roman", serif;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -3224,6 +3225,90 @@ a.temi-tag-pill:hover {
 a.temi-tag-pill:hover .temi-tag-count {
   color: var(--color-primary);
   background: rgba(255,255,255,0.9);
+}
+
+/* Pill con barra del peso (numero di articoli) sotto il contenuto — /temi/, /indice/ */
+.temi-tag-pill--weighted {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 5px;
+  padding: 6px 12px 8px;
+}
+
+.temi-tag-pill-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.temi-tag-weight-bar {
+  display: block;
+  height: 3px;
+  min-width: 4px;
+  border-radius: 2px;
+  background: var(--color-primary-medium);
+  opacity: 0.55;
+  transition: opacity 0.15s, background 0.15s;
+}
+
+a.temi-tag-pill:hover .temi-tag-weight-bar {
+  background: #fff;
+  opacity: 0.9;
+}
+
+/* Argomenti vicini — /tag/slug/ */
+.tag-related {
+  padding: var(--spacing-md) 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: var(--spacing-lg);
+}
+
+.tag-related-label {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-hint);
+  margin-bottom: 10px;
+}
+
+.tag-related-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Sparkline temporale — /tag/slug/ */
+.tag-sparkline {
+  margin: var(--spacing-md) 0 var(--spacing-lg);
+  max-width: 420px;
+}
+
+.tag-sparkline-svg {
+  width: 100%;
+  height: 16px;
+  display: block;
+}
+
+.tag-sparkline-axis {
+  stroke: var(--color-border);
+  stroke-width: 1;
+}
+
+.tag-sparkline-dot {
+  fill: var(--color-primary-medium);
+  opacity: 0.8;
+}
+
+.tag-sparkline-labels {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  color: var(--color-text-hint);
+  margin-top: 4px;
 }
 
 /* === SERIE LISTING PAGE (/serie/) === */

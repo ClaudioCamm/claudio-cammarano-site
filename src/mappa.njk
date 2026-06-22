@@ -44,6 +44,7 @@ permalink: "/mappa/"
     <span class="mappa-legend-item"><span class="mappa-legend-dot" style="background: var(--graph-cluster-geo);"></span>Geopolitica &amp; potere</span>
     <span class="mappa-legend-item"><span class="mappa-legend-dot" style="background: var(--graph-cluster-edi);"></span>Editoria &amp; comunicazione</span>
     <span class="mappa-legend-item"><span class="mappa-legend-dot" style="background: var(--graph-cluster-ita);"></span>Italia &amp; istituzioni</span>
+    <span class="mappa-legend-item"><span class="mappa-legend-dot" style="background: var(--graph-cluster-eco);"></span>Economia &amp; lavoro</span>
   </div>
 
   <div class="mappa-canvas-wrap" id="mappa-canvas-wrap">
@@ -95,11 +96,14 @@ permalink: "/mappa/"
       'Epistemologia & AI':       cs.getPropertyValue('--graph-cluster-epi').trim() || '#1C0E80',
       'Geopolitica & potere':     cs.getPropertyValue('--graph-cluster-geo').trim() || '#185FA5',
       'Editoria & comunicazione': cs.getPropertyValue('--graph-cluster-edi').trim() || '#0F6E56',
-      'Italia & istituzioni':     cs.getPropertyValue('--graph-cluster-ita').trim() || '#8B5E1F'
+      'Italia & istituzioni':     cs.getPropertyValue('--graph-cluster-ita').trim() || '#8B5E1F',
+      'Economia & lavoro':        cs.getPropertyValue('--graph-cluster-eco').trim() || '#A13D3D'
     };
     function colorOf(n) { return clusters[n.cluster] || colorHint; }
     function radiusOf(n) { return 4 + Math.min(n.count, 10) * 0.9 + (n.crossCluster ? 2 : 0); }
-    function importantLabel(n) { return n.crossCluster || n.count >= 4; }
+    // Etichetta visibile di default solo per i concetti citati da almeno un
+    // writing; per i concetti solo-curated resta il tooltip al passaggio del mouse.
+    function importantLabel(n) { return n.fromWriting; }
 
     var fullView = { x: 0, y: 0, w: graph.width, h: graph.height };
     var view = Object.assign({}, fullView);
@@ -141,7 +145,7 @@ permalink: "/mappa/"
       if (importantLabel(n)) {
         var label = el('text', {
           x: n.x, y: n.y + radiusOf(n) + 12, 'text-anchor': 'middle',
-          'font-family': 'var(--font-sans)', 'font-size': '10px', fill: colorHint
+          'font-family': 'var(--font-serif)', 'font-size': '10px', fill: colorHint
         });
         label.textContent = n.name;
         g.appendChild(label);
