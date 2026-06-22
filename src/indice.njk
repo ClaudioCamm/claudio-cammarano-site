@@ -57,23 +57,25 @@ permalink: "/indice/"
 
   {# ── ARGOMENTI ── #}
   <section class="indice-section" id="argomenti">
-    <h2 class="indice-section-title indice-section-title--flat">Argomenti</h2>
-    {% set maxCount = clusters | maxTagCount(collections.allPosts) %}
-    <div class="indice-pill-list">
-      {% for clusterName, clusterTags in clusters %}
-        {% for tag in clusterTags %}
-        {% set tagPosts = collections.allPosts | filterByTag(tag) %}
-        {% if tagPosts.length %}
-        <a href="/tag/{{ tag | slugify }}/" class="temi-tag-pill temi-tag-pill--weighted">
-          <span class="temi-tag-pill-row">{{ tag }}<span class="temi-tag-count">{{ tagPosts.length }}</span></span>
-          <span class="temi-tag-weight-bar" style="width: {{ (tagPosts.length / maxCount * 100) | round }}%;"></span>
-        </a>
-        {% else %}
-        <span class="temi-tag-pill temi-tag-pill--empty">{{ tag }}</span>
-        {% endif %}
+    <details class="indice-details">
+      <summary class="indice-section-title">Argomenti <span class="indice-chevron" aria-hidden="true">›</span></summary>
+      {% set maxCount = clusters | maxTagCount(collections.allPosts) %}
+      <div class="indice-pill-list">
+        {% for clusterName, clusterTags in clusters %}
+          {% for tag in clusterTags | sortAlpha %}
+          {% set tagPosts = collections.allPosts | filterByTag(tag) %}
+          {% if tagPosts.length %}
+          <a href="/tag/{{ tag | slugify }}/" class="temi-tag-pill temi-tag-pill--weighted">
+            <span class="temi-tag-pill-row">{{ tag }}<span class="temi-tag-count">{{ tagPosts.length }}</span></span>
+            <span class="temi-tag-weight-bar" style="width: {{ (tagPosts.length / maxCount * 100) | round }}%;"></span>
+          </a>
+          {% else %}
+          <span class="temi-tag-pill temi-tag-pill--empty">{{ tag }}</span>
+          {% endif %}
+          {% endfor %}
         {% endfor %}
-      {% endfor %}
-    </div>
+      </div>
+    </details>
   </section>
 
   {# ── PERSONE ── #}

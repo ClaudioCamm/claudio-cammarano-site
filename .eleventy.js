@@ -293,6 +293,15 @@ module.exports = function(eleventyConfig) {
     }).sort(function(a, b) { return a.date - b.date; });
   });
 
+  // Ordina alfabeticamente (localeCompare "it", case-insensitive) un array di
+  // stringhe — usato per gli Argomenti dentro ogni cluster su /temi/ e /indice/.
+  eleventyConfig.addFilter("sortAlpha", function(arr) {
+    if (!arr) return [];
+    return arr.slice().sort(function(a, b) {
+      return String(a).localeCompare(String(b), "it", { sensitivity: "base" });
+    });
+  });
+
   eleventyConfig.addFilter("slugify", function(str) {
     if (!str) return '';
     return str.toLowerCase()
