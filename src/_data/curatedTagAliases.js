@@ -45,6 +45,7 @@ module.exports = {
   "imprenditoria": "Imprenditoria",
   "leadership": "Imprenditoria",
   "creative-industries": "Imprenditoria",
+  "pubblicità": "Pubblicità",
 
   // Nuovi Argomenti — Epistemologia & AI
   "ricerca": "Ricerca",
@@ -68,5 +69,8 @@ module.exports = {
   // Nuovi Argomenti — Economia & lavoro
   "economia": "Economia",
   "sviluppo": "Economia",
-  "lavoro": "Lavoro"
+  "lavoro": "Lavoro",
+  "ecommerce": "E-commerce",
+  "retail": "E-commerce",
+  "startup": "Startup"
 };

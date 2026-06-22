@@ -11,7 +11,7 @@ Sito statico Eleventy (v3). Sorgenti in `src/`, output compilato in `_site/`. De
 | Generatore | Eleventy 3 + Nunjucks |
 | Stile | CSS custom (`src/css/style.css`) |
 | Deploy | Netlify (auto da git push) |
-| Grafo concetti | D3.js v7 (caricato lazy solo desktop) |
+| Grafo concetti | Layout a forze custom in JS puro (nessuna dipendenza esterna, build-time + client-side vanilla) |
 | Font | Source Serif 4 (Google Fonts) |
 | Ricerca | Pagefind (`npm run index`) |
 
@@ -25,10 +25,13 @@ src/
   curated/         # Link esterni con commento (.md)
   learning/        # Note di apprendimento (.md)
   _data/
-    clusters.js    # Tassonomia cluster → tag
-    conceptsIndex.js  # Tassonomia concetti (fonte di verità)
-    tagDescriptions.json
+    clusters.js          # Temi → Argomenti (tassonomia a 5 cluster)
+    conceptsIndex.js      # Tassonomia Concetti (fonte di verità)
+    curatedTagAliases.js  # Tag liberi dei curated → Argomento canonico
+    tagDescriptions.json  # Descrizioni degli Argomenti (facoltative)
+    temiDescriptions.json # Descrizioni dei Temi/cluster (facoltative)
     seriesDescriptions.json
+    graphLayout.js         # Calcola il layout del grafo concetti — generato, non a mano
   _includes/
     layouts/
       base.njk     # Layout base (header, footer)
@@ -37,6 +40,8 @@ src/
   css/
     style.css      # Unico file CSS
   images/          # Immagini articoli
+  graph-data.njk   # Endpoint statico /graph-data.json letto dal grafo (generato)
+  mappa.njk        # Pagina /mappa/ — grafo completo concetti
   *.njk            # Pagine indice (temi, indice, curated, serie…)
 ```
 
@@ -59,6 +64,8 @@ git commit -m "descrizione"
 git push
 # Netlify fa il resto in automatico
 ```
+
+**Importante:** lanciare sempre `npm run build` (o `npm start`) prima di un push importante e leggere l'output in console. Da poco il build segnala in chiaro eventuali concetti citati ma non registrati (vedi sezione 4) — un controllo che prima non esisteva.
 
 ---
 
@@ -90,17 +97,19 @@ english_version: "https://substack.com/…" # URL versione inglese
 serie_totale_prevista: 3                   # solo se la serie ha lunghezza pianificata
 ```
 
-### Tag `category` validi
+### Tag `category` — i valori "storici" dei writings
 
-I valori devono essere scritti esattamente così (maiuscola inclusa):
+Questi sono i valori usati finora dai saggi (maiuscola compresa). L'elenco completo degli Argomenti del sito — molto più ampio, alimentato anche dai curated — è in `src/_data/clusters.js` (sezione 6).
 
-**Epistemologia & AI:** `AI` · `Epistemologia` · `Filosofia` · `Scrittura`
+**Epistemologia & AI:** `AI` · `Epistemologia` · `Filosofia` · `Scrittura` · `Vibe Coding` · `Claude`
 
 **Geopolitica & potere:** `Democrazia` · `Geopolitica` · `Medio Oriente` · `Mediterraneo` · `Regimi politici` · `Scenario Planning` · `Teoria dei giochi`
 
 **Editoria & comunicazione:** `Comunicazione` · `Dual Use` · `Formazione` · `Scienze della Comunicazione`
 
 **Italia & istituzioni:** `Bologna` · `Humanities` · `Istituzioni` · `Italia` · `Politica`
+
+Un saggio può in linea di principio usare anche uno qualsiasi degli Argomenti nati dai curated (es. `Strategia`, `Media`, `Economia`) — basta scriverlo esattamente come compare in `clusters.js`.
 
 ### Struttura corpo
 
@@ -178,7 +187,8 @@ A differenza dei curated, per i **writings** il collegamento ai concetti non pas
 Checklist completa per pubblicare un writing:
 1. Salva il file in `src/writings/`
 2. Apri `src/_data/conceptsIndex.js` e aggiorna le voci dei concetti citati (vedi sopra)
-3. `git push` (o `npm run build` in locale) — non esiste un comando separato di "aggiornamento semantico": indici, pagine `/concetti/`, chip e grafo si rigenerano da soli al build, una volta che i dati sono corretti
+3. `npm run build` in locale — leggi l'output: se un concetto non è registrato, ora il build te lo segnala (sezione 4)
+4. `git push` — non esiste un comando separato di "aggiornamento semantico": indici, pagine `/concetti/`, chip e grafo si rigenerano da soli al build, una volta che i dati sono corretti
 
 ---
 
@@ -202,9 +212,24 @@ concepts: ["Anthropic", "allineamento AI"]
 ---
 ```
 
-`tags`: sempre inizia con `curated`, poi 1-3 tag tematici in minuscolo.
+`tags`: sempre inizia con `curated`, poi 1-3 tag tematici in minuscolo libero.
 
-`concepts`: lista di nomi dalla tassonomia concetti (sezione 4). Usa `[]` se nessuno si applica. **I nomi sono case-sensitive.**
+`concepts`: lista di nomi dalla tassonomia concetti (sezione 4). Usa `[]` se nessuno si applica. **I nomi sono case-sensitive** e devono coincidere esattamente con un `name` in `conceptsIndex.js` — altrimenti vengono scartati (vedi sezione 4 per il controllo automatico).
+
+### I `tags` dei curated ora contano come Argomenti — ma solo se sono "riconosciuti"
+
+I tag liberi che scrivi in `tags:` (oltre a `curated`) vengono **tradotti** in un Argomento vero — visibile in `/indice/`, `/temi/` e con una pagina `/tag/...` propria — tramite la mappa in **`src/_data/curatedTagAliases.js`**. Funziona così:
+
+- Se il tag che scrivi (case-insensitive) è già una chiave in `curatedTagAliases.js` → l'articolo conta per l'Argomento corrispondente. Esempio: scrivi `ai` minuscolo, l'articolo compare sotto l'Argomento `AI`.
+- Se il tag **non** è in quella mappa → resta puramente decorativo: non genera nessuna pagina, non compare in nessun indice. Non è un errore, ma è facile non accorgersene.
+
+**Quando introduci un tema nuovo nei curated, controlla `curatedTagAliases.js`.** Se il tag non c'è:
+1. Decidi il nome canonico dell'Argomento (Title Case, in italiano per coerenza con gli altri — es. `Sorveglianza`, non `surveillance`).
+2. Aggiungi la riga `"tuo-tag-minuscolo": "Nome Canonico"` in `curatedTagAliases.js`.
+3. Aggiungi `"Nome Canonico"` all'array del cluster giusto in `src/_data/clusters.js` (sezione 6) — altrimenti l'Argomento esiste ma non ha un Tema e non appare in `/temi/`.
+4. Facoltativo: aggiungi una descrizione in `tagDescriptions.json`.
+
+Se invece il tema è in realtà un'**entità** (una persona, un paese, un'istituzione) e non un argomento trasversale, probabilmente appartiene ai Concetti (sezione 4), non agli Argomenti — è il caso tipico dei nomi di paese: vanno nel campo `concepts:`, non in `tags:`.
 
 ### Body
 Opzionale. Si usa solo per commenti molto estesi. Di solito il frontmatter basta.
@@ -228,7 +253,7 @@ Opzionale. Si usa solo per commenti molto estesi. Di solito il frontmatter basta
 
 ## 4. Tassonomia concetti (`_data/conceptsIndex.js`)
 
-Questo file è la **fonte di verità** per l'indice analitico e le pagine `/concetti/slug/`.
+Questo file è la **fonte di verità** per l'indice analitico, le pagine `/concetti/slug/` e il grafo. È il livello più specifico dei tre (Temi → Argomenti → **Concetti**): persone, teorie, testi, istituzioni, luoghi e paesi citati con peso argomentativo.
 
 ### Struttura di una voce
 ```js
@@ -250,57 +275,98 @@ Questo file è la **fonte di verità** per l'indice analitico e le pagine `/conc
 4. Per i **curated**: lasciare `articles: []` e aggiungere il nome nel campo `concepts:` del file curated — il sistema li unisce automaticamente a build time
 5. Fare il build: la pagina `/concetti/nome-slug/` appare automaticamente
 
-### Tipi validi
+### Tipi validi — attenzione a `paese` vs `luogo`
 
 | Tipo | Esempi |
 |---|---|
 | `persona` | Axelrod, Robert · Trump, Donald · Arendt, Hannah |
 | `teoria` | scenario planning · dual use · allineamento AI |
 | `testo` | The Evolution of Cooperation · Antifragile |
-| `istituzione` | Anthropic · Palantir · DARPA |
+| `istituzione` | Anthropic · Palantir · DARPA · Studio Ghibli |
 | `luogo` | Bologna · Libano / Beirut · Taiwan / TSMC |
-| `paese` | Europa · Stati Uniti · Cina · Russia |
+| `paese` | Europa · Stati Uniti · Cina · Russia · Giappone |
+
+**Ogni nome di stato/nazione è `paese`, non `luogo`** — anche quando nel linguaggio comune lo chiameremmo "un luogo" (es. Giappone, Germania, Iran). `luogo` è riservato a città, regioni, snodi geografici specifici che non sono uno stato (Bologna, Beirut, Taiwan come territorio conteso). I due tipi finiscono in sezioni diverse dell'indice analitico ("Paesi" e "Luoghi"): se un nome non si trova dove lo cerchi, controlla prima l'altra sezione.
+
+### Il controllo automatico — niente più concetti persi in silenzio
+
+Per anni il sistema ha scartato **senza nessun avviso** qualsiasi nome in `concepts:` di un curated che non corrispondesse a una voce già presente in `conceptsIndex.js`. Risultato: articoli pubblicati con concetti che restavano invisibili nell'indice e nel grafo, senza che nessuno se ne accorgesse — a volte per mesi.
+
+**Ora il build segnala il problema in console.** Ogni volta che esegui `npm run build` o `npm start`, se un curated cita un concetto non registrato compare un blocco come questo:
+
+```
+⚠️  CONCETTI NON REGISTRATI (ignorati nell'indice/grafo) — aggiungili a src/_data/conceptsIndex.js:
+   ./src/curated/2026-06-21-esempio.md -> "Nome Concetto"
+```
+
+Se lo vedi: apri `conceptsIndex.js`, aggiungi la voce mancante (sezione precedente), rifai il build. L'avviso scompare quando tutto è registrato. **Su Netlify lo stesso messaggio compare nei log di deploy** (Deploy → log) — quindi anche pubblicando solo via `git push`, senza build locale, il problema resta visibile.
 
 ---
 
 ## 5. Come funziona la navigazione semantica
 
-Il sistema ha tre livelli collegati:
+Il sito ha tre livelli di navigazione, dal più ampio al più specifico:
 
 ```
-/indice/              → tutti i concetti per tipo, con conteggio articoli
-                        ogni nome è cliccabile
-        ↓
-/concetti/slug/       → pagina del singolo concetto
-                        grafo D3 (desktop) + chip "concetti vicini" + lista articoli
-        ↓
-/writings/slug/       → articolo
-                        sezione "Concetti" in fondo con chip linkati
+TEMI (5 cluster)              /temi/
+   ↓ ogni tema raggruppa più Argomenti
+ARGOMENTI (~49 tag)            /tag/slug/
+   ↓ ogni Argomento elenca gli articoli (writings + curated) che lo usano
+CONCETTI (persone, teorie...)  /concetti/slug/
+   ↓ entità citate con peso argomentativo dentro gli articoli
 ```
 
-I chip appaiono **automaticamente al build**, una volta che i dati sono corretti — non richiedono un comando di aggiornamento separato.
+Più l'**indice analitico** (`/indice/`), che mostra tutti e tre i livelli insieme in un'unica pagina — pensato apposta perché un visitatore capisca subito su quale livello si trova.
 
-- **Writings**: i concetti vengono da `conceptsIndex.js` (campo `articles`) — va aggiornato a mano, vedi sezione 1
-- **Curated**: i concetti vengono dal campo `concepts:` nel frontmatter — niente da toccare altrove
+### Temi (`/temi/`) e Argomenti (`/tag/slug/`)
 
-**Non esiste un comando per "aggiornare l'indice semantico".** È lo stesso identico `git push` (o `npm run build`) con cui pubblichi il sito. Se i dati a monte (frontmatter o `conceptsIndex.js`) sono corretti, il build successivo rigenera tutto: niente da "richiamare" a parte.
+- I **Temi** sono i cluster definiti in `clusters.js` (sezione 6): 5 raggruppamenti larghi.
+- Gli **Argomenti** sono i singoli tag — quelli storici dei writings (`category:`) e quelli più recenti emersi dai curated (`tags:`, tradotti via `curatedTagAliases.js`, sezione 2).
+- Ogni Argomento ha una pagina `/tag/slug/` che mostra **sia** i writings che lo usano in `category:` **sia** i curated il cui tag si traduce in quell'Argomento — stessa pagina, card diverse per tipo.
+- Le descrizioni (opzionali) vivono in `tagDescriptions.json` (per gli Argomenti) e `temiDescriptions.json` (per i Temi).
+
+### Concetti (`/concetti/slug/`)
+
+Ogni concetto ha una pagina propria con: i "concetti vicini" (chip cliccabili — concetti che condividono almeno un articolo), la lista degli articoli collegati, e una **finestra sul grafo globale** — una porzione ritagliata del grafo completo, centrata sul concetto, con una minimappa che mostra dove si trova rispetto all'insieme. Link "Vedi mappa completa →" per aprire `/mappa/` centrata sullo stesso nodo.
+
+Il grafo è **uno solo**, calcolato una volta a build time da `graphLayout.js` (layout a forze custom, nessuna libreria esterna) e esposto come JSON statico su `/graph-data.json`. Ogni pagina concetto e la pagina `/mappa/` lo leggono e ne mostrano porzioni diverse — non sono grafi separati.
+
+**Il grafo è scope-limitato a Concetti e articoli.** Temi e Argomenti non ci entrano: è una scelta deliberata, per non sovraccaricare una visualizzazione già densa.
+
+**Visibile solo da schermi ≥ 900px.** Su mobile, sia le pagine concetto sia `/mappa/` mostrano la sola lista testuale — nessuna modifica al mobile rispetto a prima dell'introduzione del grafo a finestra.
+
+### Il flusso dei dati, in breve
+
+- **Writings**: Argomento ← `category:` nel frontmatter. Concetto ← voce manuale in `conceptsIndex.js` (sezione 1).
+- **Curated**: Argomento ← `tags:` nel frontmatter, tradotto via `curatedTagAliases.js` (sezione 2). Concetto ← `concepts:` nel frontmatter, deve corrispondere a una voce già in `conceptsIndex.js` (sezione 4).
+
+**Non esiste un comando per "aggiornare l'indice semantico".** È lo stesso identico `git push` (o `npm run build`) con cui pubblichi il sito. Se i dati a monte sono corretti, il build successivo rigenera tutto: indici, pagine concetto, grafo, Temi, Argomenti — niente da "richiamare" a parte.
 
 ---
 
-## 6. Cluster tematici (`_data/clusters.js`)
+## 6. Temi e Argomenti (`_data/clusters.js`)
 
-Usati per il breadcrumb (`Home · Cluster · Articolo`) e la pagina `/temi/`.
+`clusters.js` è la tassonomia dei **Temi**: un oggetto che mappa ogni nome di Tema a un array di Argomenti.
 
 ```js
 module.exports = {
-  "Epistemologia & AI":        ["Filosofia", "Epistemologia", "AI", "Scrittura"],
-  "Geopolitica & potere":      ["Geopolitica", "Teoria dei giochi", ...],
-  "Editoria & comunicazione":  ["Comunicazione", "Dual Use", ...],
-  "Italia & istituzioni":      ["Italia", "Bologna", "Humanities", ...]
+  "Epistemologia & AI":        ["Filosofia", "Epistemologia", "AI", "Scrittura", "Vibe Coding", "Claude", ...],
+  "Geopolitica & potere":      ["Geopolitica", "Teoria dei giochi", "Difesa", "Europa", ...],
+  "Editoria & comunicazione":  ["Comunicazione", "Dual Use", "Media", "Editoria", ...],
+  "Italia & istituzioni":      ["Italia", "Bologna", "Humanities", "Femminismo", ...],
+  "Economia & lavoro":         ["Economia", "Lavoro"]
 };
 ```
 
-Per aggiungere un tag a un cluster: inserirlo nell'array del cluster corrispondente. Il breadcrumb e la pagina `/temi/` si aggiornano al prossimo build.
+Cinque Temi in tutto (il quinto, "Economia & lavoro", è nato dai curated: nessuno dei 4 Temi originari aveva una casa naturale per quei contenuti).
+
+**Per aggiungere un Argomento a un Tema:** inserirlo nell'array del Tema corrispondente. `/temi/`, `/indice/` e il breadcrumb si aggiornano al prossimo build.
+
+**Per i writings:** basta scrivere il nome esatto in `category:` (sezione 1).
+
+**Per i curated:** il tag in `tags:` deve prima essere tradotto in `curatedTagAliases.js` (sezione 2) — è un passaggio in più, perché i tag dei curated sono scritti liberi e minuscoli, non nel formato canonico.
+
+Le descrizioni dei Temi vivono in `temiDescriptions.json`, quelle degli Argomenti in `tagDescriptions.json` — entrambe facoltative, entrambe scritte in prima persona e ancorate ai contenuti reali del sito, non enciclopediche.
 
 ---
 
@@ -311,25 +377,37 @@ Per aggiungere un tag a un cluster: inserirlo nell'array del cluster corrisponde
 | `.eleventy.js` | Filtri e collections: un errore blocca il build |
 | `src/_includes/layouts/article.njk` | Template di tutti i saggi |
 | `src/_includes/layouts/base.njk` | Template base di tutto il sito |
-| `src/css/style.css` | Unico file CSS, ~3700 righe |
+| `src/css/style.css` | Unico file CSS, ~3800 righe |
 | `src/_data/conceptsIndex.js` | Fonte di verità per indice e concetti |
+| `src/_data/clusters.js` | Tassonomia Temi/Argomenti — usata da `/temi/`, `/indice/`, breadcrumb e dal layout del grafo |
+| `src/_data/curatedTagAliases.js` | Traduce i tag liberi dei curated in Argomenti — un nome cambiato qui "spegne" silenziosamente quell'Argomento per i curated già pubblicati |
+| `src/_data/graphLayout.js` | Calcola le posizioni del grafo. Non richiede modifiche manuali: si rigenera da solo leggendo `conceptsIndex.js` e `clusters.js` |
 
 ---
 
 ## 8. Troubleshooting rapido
 
+**Un concetto/articolo che ho appena pubblicato non appare da nessuna parte**
+→ **Prima cosa da controllare**: lancia `npm run build` e leggi la console. Se il concetto è citato in un `concepts:` di un curated ma non registrato, ora compare un avviso `⚠️ CONCETTI NON REGISTRATI` con il nome del file e del concetto mancante (sezione 4). Risolve la maggior parte dei casi.
+
+**Cerco un Concetto-paese e non lo trovo in "Luoghi"**
+→ I nomi di stato sono `paese`, non `luogo`: controlla nella sezione "Paesi" dell'indice (sezione 4).
+
 **Build fallisce con errore Nunjucks**
 → Controllare la sintassi del file `.njk` modificato. Errore più comune: tag `{% %}` non chiusi.
 
-**Pagina concetto non appare**
-→ Verificare che il nome in `concepts:` del curated corrisponda **esattamente** (maiuscole comprese) a un `name` in `conceptsIndex.js`.
+**Pagina concetto non appare pur risultando registrata**
+→ Verificare che il nome in `concepts:` del curated corrisponda **esattamente** (maiuscole comprese) a un `name` in `conceptsIndex.js`. Se non corrisponde, ricomparirà nell'avviso di build (sezione 4).
 
 **Chip concetti non appaiono in un articolo**
 → Per i writings: verificare che l'URL dell'articolo sia presente nell'array `articles` della voce in `conceptsIndex.js`.
 → Per i curated: verificare che il campo `concepts:` sia presente e non vuoto.
 
-**Netlify build fallisce**
-→ Guardare il log su `app.netlify.com` → Deploy → log del deploy fallito. Di solito è un errore di sintassi in un file `.md` o `.njk`.
+**Un tag di un curated non genera nessuna pagina `/tag/...`**
+→ Non è in `curatedTagAliases.js` (sezione 2): è decorativo, non un Argomento. Aggiungilo alla mappa se merita di diventarlo.
 
-**Grafo D3 non compare**
-→ Il grafo è visibile solo su schermo ≥ 900px. Su mobile è sostituito dalla lista articoli.
+**Netlify build fallisce**
+→ Guardare il log su `app.netlify.com` → Deploy → log del deploy fallito. Di solito è un errore di sintassi in un file `.md` o `.njk`, oppure (da oggi) un avviso di concetti non registrati che però non blocca il deploy — è solo un promemoria, non un errore.
+
+**Grafo non compare**
+→ Il grafo (pagine concetto e `/mappa/`) è visibile solo su schermo ≥ 900px. Su mobile è sostituito dalla lista articoli, invariata.
