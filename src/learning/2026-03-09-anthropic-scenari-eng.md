@@ -5,7 +5,7 @@ download_url: "/downloads/Anthropic-Scenari-Mar2026-v5-Eng.pdf"
 license: "CC BY-NC-SA 4.0"
 date: 2026-03-09
 tags: [learning, AI, geopolitics, scenario planning]
-lang: "🇬🇧 English"
+lang: "en"
 ---
 
 Scenario planning report on the Anthropic-Pentagon crisis (February–March 2026), produced using Shell's methodology in the tradition of Pierre Wack. Eight narratives — four main scenarios and four variants activated by a Taiwan-TSMC shock — organized along two axes: AI sector-wide revenue sustainability and the transatlantic geopolitical context.

@@ -3,7 +3,7 @@ layout: layouts/article.njk
 title: "Dieci anni senza Umberto Eco"
 date: 2026-04-04
 category: ["Bologna", "Scienze della Comunicazione"]
-lang: "🇮🇹 Italiano"
+lang: "it"
 description: "Un ricordo personale di Umberto Eco a dieci anni dalla morte: dal colloquio al Master in Editoria a quello che ancora oggi resta."
 og_image: "/images/umberto-eco.jpg"
 ---

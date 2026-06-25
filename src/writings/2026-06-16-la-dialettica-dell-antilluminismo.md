@@ -1,9 +1,10 @@
 ---
 layout: layouts/article.njk
 title: "La dialettica dell’antilluminismo"
+series: "La condizione epistemica, II"
 date: 2026-06-16
 category: ["Filosofia", "Politica", "Epistemologia"]
-lang: "🇮🇹 Italiano"
+lang: "it"
 description: "Verità, potere e la crisi dell’autorità universale. Da Cartesio a Trump, dal poststrutturalismo al tribalismo reazionario: perché il veleno era nell’antidoto."
 og_image: "/images/trump-vance-zelensky-hero.avif"
 english_version: "https://claudiocammarano.substack.com/p/the-dialectic-of-counter-enlightenment"

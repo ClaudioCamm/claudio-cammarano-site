@@ -3,7 +3,7 @@ layout: layouts/article.njk
 title: "Salveremo le humanities con le pratiche, non con le idee"
 date: 2026-03-15
 category: ["Humanities", "Istituzioni", "AI"]
-lang: "🇮🇹 Italiano"
+lang: "it"
 og_image: "/images/humanities-hero.webp"
 description: "Leggendo il manifesto Hinternet: la diagnosi è lucida, ma la soluzione ha un limite strutturale una cui possibile soluzione esiste almeno dal VI secolo."
 ---

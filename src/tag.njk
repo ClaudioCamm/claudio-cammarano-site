@@ -7,7 +7,7 @@ permalink: "/tag/{{ tag | slugify }}/"
 layout: layouts/base.njk
 eleventyComputed:
   title: "{{ tag }}"
-  description: "Tutti gli articoli su {{ tag }}"
+  description: "{% if tagDescriptions[tag] %}{{ tagDescriptions[tag] | truncate(155) }}{% else %}Tutti gli articoli su {{ tag }}{% endif %}"
 ---
 
 {% set tagPosts = collections.allPosts | filterByTag(tag) %}
@@ -17,7 +17,7 @@ eleventyComputed:
   "@context": "https://schema.org",
   "@type": "CollectionPage",
   "name": "{{ tag | jsonEscape | safe }}",
-  "description": "Tutti gli articoli di Claudio Cammarano su {{ tag | jsonEscape | safe }}",
+  "description": "{% if tagDescriptions[tag] %}{{ tagDescriptions[tag] | truncate(200) | jsonEscape | safe }}{% else %}Tutti gli articoli di Claudio Cammarano su {{ tag | jsonEscape | safe }}{% endif %}",
   "url": "https://claudiocammarano.com/tag/{{ tag | slugify }}/",
   "author": {
     "@type": "Person",
@@ -84,6 +84,26 @@ eleventyComputed:
 
   <div class="tag-page-posts">
     {% for post in tagPosts %}
+      {% if post.data._postType != "curated" %}
+      <article class="article-card article-card--secondary">
+        {% if post.data.series %}<div class="article-series-card-label"><a href="/serie/{{ post.data.series | seriesBaseName | slugify }}/">{{ post.data.series }}</a></div>{% endif %}
+        <div class="article-meta">
+          <span class="article-date">{{ post.date | formatDate }}</span>
+          {% if post.data.category %}
+            {% if post.data.category.length %}
+              {% for cat in post.data.category %}<a class="article-tag" href="/tag/{{ cat | slugify }}/">{{ cat }}</a>{% endfor %}
+            {% else %}
+              <a class="article-tag" href="/tag/{{ post.data.category | slugify }}/">{{ post.data.category }}</a>
+            {% endif %}
+          {% endif %}
+          {% if post.templateContent %}<span class="reading-time">{{ post.templateContent | readingTime }}</span>{% endif %}
+        </div>
+        <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+        {% if post.data.description %}<p class="article-card-subtitle">{{ post.data.description }}</p>{% endif %}
+      </article>
+      {% endif %}
+    {% endfor %}
+    {% for post in tagPosts %}
       {% if post.data._postType == "curated" %}
       <article class="article-card article-card--curated">
         <div class="article-meta">
@@ -104,24 +124,11 @@ eleventyComputed:
         </div>
         {% endif %}
       </article>
-      {% else %}
-      <article class="article-card article-card--secondary">
-        {% if post.data.series %}<div class="article-series-card-label"><a href="/serie/{{ post.data.series | seriesBaseName | slugify }}/">{{ post.data.series }}</a></div>{% endif %}
-        <div class="article-meta">
-          <span class="article-date">{{ post.date | formatDate }}</span>
-          {% if post.data.category %}
-            {% if post.data.category.length %}
-              {% for cat in post.data.category %}<a class="article-tag" href="/tag/{{ cat | slugify }}/">{{ cat }}</a>{% endfor %}
-            {% else %}
-              <a class="article-tag" href="/tag/{{ post.data.category | slugify }}/">{{ post.data.category }}</a>
-            {% endif %}
-          {% endif %}
-          {% if post.templateContent %}<span class="reading-time">{{ post.templateContent | readingTime }}</span>{% endif %}
-        </div>
-        <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
-        {% if post.data.description %}<p class="article-card-subtitle">{{ post.data.description }}</p>{% endif %}
-      </article>
       {% endif %}
     {% endfor %}
+  </div>
+
+  <div class="temi-footer-nav">
+    <p>Esplora concetti, persone e testi citati in questi articoli → <a href="/indice/">Indice analitico</a>.</p>
   </div>
 </div>

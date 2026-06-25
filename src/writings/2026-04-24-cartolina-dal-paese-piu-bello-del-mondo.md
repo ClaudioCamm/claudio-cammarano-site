@@ -3,7 +3,7 @@ layout: layouts/article.njk
 title: "Cartolina dal paese più bello del mondo"
 date: 2026-04-24
 category: ["Italia", "Mediterraneo", "Geopolitica"]
-lang: "🇮🇹 Italiano"
+lang: "it"
 description: "Due modelli di intellettuale, il costrutto geografico Nord/Sud come alibi, la paura del mare e il fallimento strategico italiano. Una cartolina non decorativa."
 og_image: "/images/mediterranean-map-hero.avif"
 english_version: "https://claudiocammarano.substack.com/p/same-score-different-song"

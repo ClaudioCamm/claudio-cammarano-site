@@ -1,9 +1,10 @@
 ---
 layout: layouts/article.njk
 title: "La differenza fra Claude e le mie gatte"
+series: "La condizione epistemica, I"
 date: 2026-04-30
 category: ["AI", "Filosofia", "Epistemologia"]
-lang: "🇮🇹 Italiano"
+lang: "it"
 description: "Cinque definizioni dell'AI, la disputa sugli universali, le metafore-strumento e uno Spinoza implicito. Cosa siamo quando proviamo a definire l'intelligenza artificiale."
 og_image: "/images/mary-gatta-hero.jpg"
 english_version: "https://claudiocammarano.substack.com/p/what-we-are-when-we-try-to-define"

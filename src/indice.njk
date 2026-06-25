@@ -35,6 +35,7 @@ permalink: "/indice/"
     <p class="temi-page-intro">Il sito si naviga su tre livelli, dal più ampio al più specifico: <strong>Temi</strong>, <strong>Argomenti</strong> (i tag sopra ogni articolo) e <strong>Concetti</strong> (persone, teorie, paesi, luoghi, istituzioni e testi citati, sotto). Questo indice li raccoglie tutti, così è chiaro su quale livello ci si trova in ogni momento.</p>
     <nav class="indice-jump-nav" aria-label="Salta a sezione">
       <a href="#temi">Temi</a>
+      <a href="#serie">Serie</a>
       <a href="#argomenti">Argomenti</a>
       <a href="#persone">Persone</a>
       <a href="#teorie">Teorie</a>
@@ -51,6 +52,16 @@ permalink: "/indice/"
     <div class="indice-pill-list">
       {% for clusterName, clusterTags in clusters %}
       <a href="/temi/#{{ clusterName | slugify }}" class="temi-tag-pill">{{ clusterName }}</a>
+      {% endfor %}
+    </div>
+  </section>
+
+  {# ── SERIE ── #}
+  <section class="indice-section" id="serie">
+    <h2 class="indice-section-title indice-section-title--flat">Serie</h2>
+    <div class="indice-pill-list">
+      {% for serieName in collections.seriesList %}
+      <a href="/serie/{{ serieName | slugify }}/" class="temi-tag-pill">{{ serieName }}</a>
       {% endfor %}
     </div>
   </section>

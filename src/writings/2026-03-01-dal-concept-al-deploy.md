@@ -3,7 +3,7 @@ layout: layouts/article.njk
 title: "Dal concept al deploy: costruire un sito professionale con JAMstack"
 date: 2026-03-01
 category: ["AI", "Vibe Coding", "Claude"]
-lang: "🇮🇹 Italiano"
+lang: "it"
 description: "La storia tecnica di come questo sito è nato: dall'architettura informativa al deploy, passando per design system e workflow editoriale."
 og_image: "/images/claude-logo-and-app.webp"
 ---

@@ -3,7 +3,7 @@ layout: layouts/article.njk
 title: "Il rumore a Beirut. Taleb, l'architettura del caos e le democrazie sotto assedio"
 date: 2026-04-09
 category: ["Geopolitica", "Medio Oriente", "Democrazia"]
-lang: "🇮🇹 Italiano"
+lang: "it"
 description: "Rileggendo Taleb, e guardando al Libano, alla luce della dottrina Gerasimov: antifragilità, skin in the game, architettura del caos e il destino delle democrazie liberali."
 og_image: "/images/beirut-hero.webp"
 ---

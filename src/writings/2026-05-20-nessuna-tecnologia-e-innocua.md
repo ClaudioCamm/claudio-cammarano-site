@@ -3,7 +3,7 @@ layout: layouts/article.njk
 title: "Nessuna tecnologia è innocua, e neanche questo sito lo è"
 date: 2026-05-20
 category: ["Comunicazione", "Geopolitica", "Dual Use"]
-lang: "🇮🇹 Italiano"
+lang: "it"
 description: "Perché la comunicazione non è mai stata innocente, molto prima che l’espressione dual use diventasse una moda. Dai Thurn und Taxis a Karp, da ARPANET ai cavi sottomarini."
 og_image: "/images/blue-marble-hero.webp"
 english_version: "https://claudiocammarano.substack.com/p/everything-is-dual-use-this-substack"

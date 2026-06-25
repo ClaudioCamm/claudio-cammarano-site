@@ -32,7 +32,21 @@ eleventyComputed:
     <nav class="breadcrumb" aria-label="Navigazione">
       <a href="/">Home</a>
       <span class="breadcrumb-sep" aria-hidden="true">·</span>
-      <a href="/indice/">Indice</a>
+      {% if concept.type == "persona" %}
+        <a href="/indice/#persone">Persone</a>
+      {% elif concept.type == "teoria" %}
+        <a href="/indice/#teorie">Teorie</a>
+      {% elif concept.type == "testo" %}
+        <a href="/indice/#testi">Testi</a>
+      {% elif concept.type == "istituzione" %}
+        <a href="/indice/#istituzioni">Istituzioni</a>
+      {% elif concept.type == "luogo" %}
+        <a href="/indice/#luoghi">Luoghi</a>
+      {% elif concept.type == "paese" %}
+        <a href="/indice/#paesi">Paesi</a>
+      {% else %}
+        <a href="/indice/">Indice</a>
+      {% endif %}
       <span class="breadcrumb-sep" aria-hidden="true">·</span>
       <span class="breadcrumb-current">{{ concept.name }}</span>
     </nav>

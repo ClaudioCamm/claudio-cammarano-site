@@ -3,7 +3,7 @@ layout: layouts/article.njk
 title: "La macchina e la lotta"
 date: 2026-06-01
 category: ["AI", "Scrittura", "Formazione"]
-lang: "🇮🇹 Italiano"
+lang: "it"
 description: "Tokarczuk, Groff, e la domanda che nessuno sta facendo. Tre modi di scrivere con l'AI, il valore di quello che non si delega, e perché la lotta con la materia conta più del risultato."
 og_image: "/images/auriga-delfi-hero.jpg"
 ---

@@ -3,7 +3,7 @@ layout: layouts/article.njk
 title: "Quando Dario Amodei ha detto no al Pentagono — e io ho chiamato Claude"
 date: 2026-03-09
 category: ["AI", "Geopolitica", "Scenario Planning"]
-lang: "🇮🇹 Italiano"
+lang: "it"
 og_image: "/images/anthropic-pentagono.avif"
 description: "La crisi Anthropic-Pentagono, la metodologia degli scenari di Shell, e una riflessione sull'uso dei modelli linguistici come strumenti di pensiero."
 ---
