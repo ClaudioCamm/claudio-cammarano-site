@@ -294,10 +294,26 @@ module.exports = function(eleventyConfig) {
   });
 
   // Ordina alfabeticamente (localeCompare "it", case-insensitive) un array di
-  // stringhe — usato per gli Argomenti dentro ogni cluster su /temi/ e /indice/.
+  // stringhe — usato per gli Argomenti dentro ogni cluster su /temi/
+  // (ordinamento per-cluster: ogni sezione con header h2 ricomincia da A).
   eleventyConfig.addFilter("sortAlpha", function(arr) {
     if (!arr) return [];
     return arr.slice().sort(function(a, b) {
+      return String(a).localeCompare(String(b), "it", { sensitivity: "base" });
+    });
+  });
+
+  // Restituisce tutti gli Argomenti di tutti i cluster come lista piatta
+  // ordinata alfabeticamente in modo globale — usato su /indice/ dove la
+  // lista è flat senza separatori di cluster, per cui il sort deve essere
+  // globale e non per-cluster (che darebbe salti A→A→A non evidenti).
+  eleventyConfig.addFilter("allTagsSorted", function(clusters) {
+    if (!clusters) return [];
+    var all = [];
+    Object.keys(clusters).forEach(function(clusterName) {
+      clusters[clusterName].forEach(function(tag) { all.push(tag); });
+    });
+    return all.sort(function(a, b) {
       return String(a).localeCompare(String(b), "it", { sensitivity: "base" });
     });
   });

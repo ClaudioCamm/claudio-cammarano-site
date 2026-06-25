@@ -59,10 +59,12 @@ permalink: "/indice/"
   <section class="indice-section" id="argomenti">
     <details class="indice-details">
       <summary class="indice-section-title">Argomenti <span class="indice-chevron" aria-hidden="true">›</span></summary>
+      {# Lista piatta ordinata globalmente — regola: sortAlpha per-cluster su
+         /temi/ (dove i cluster sono visibili con header h2); allTagsSorted
+         globale qui su /indice/ dove la lista è flat senza separatori. #}
       {% set maxCount = clusters | maxTagCount(collections.allPosts) %}
       <div class="indice-pill-list">
-        {% for clusterName, clusterTags in clusters %}
-          {% for tag in clusterTags | sortAlpha %}
+        {% for tag in clusters | allTagsSorted %}
           {% set tagPosts = collections.allPosts | filterByTag(tag) %}
           {% if tagPosts.length %}
           <a href="/tag/{{ tag | slugify }}/" class="temi-tag-pill temi-tag-pill--weighted">
@@ -72,7 +74,6 @@ permalink: "/indice/"
           {% else %}
           <span class="temi-tag-pill temi-tag-pill--empty">{{ tag }}</span>
           {% endif %}
-          {% endfor %}
         {% endfor %}
       </div>
     </details>
