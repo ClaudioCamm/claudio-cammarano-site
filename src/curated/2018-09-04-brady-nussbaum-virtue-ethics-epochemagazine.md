@@ -1,0 +1,9 @@
+---
+title: "A Problem-Based Reading of Nussbaum's Virtue Ethics"
+external_url: https://epochemagazine.org/16/a-problem-based-reading-of-nussbaums-virtue-ethics/
+source: "John C. Brady / Epoché Magazine"
+date: 2018-09-04
+description: "John C. Brady legge il saggio di Nussbaum «Non-Relative Virtues: An Aristotelian Approach» (1988) come qualcosa di più radicale di quanto il dibattito sull'etica della virtù abbia saputo riconoscere: non un'alternativa all'etica principalista (utilitarismo e kantismo), ma una diversa ontologia etica. La tesi centrale: le virtù non precedono i problemi ma ne sono derivate. Non esiste «la generosità» in astratto — esiste una classe di situazioni problematiche legate alla distribuzione dei beni, e «generosità» è il nome che diamo alla condotta eccellente di fronte a quella classe. I problemi sono ontologicamente primari; le virtù sono soluzioni virtuali. Ne segue una critica frontale al trolley problem: virtue ethics non risponde male a quel tipo di domanda, la rigetta come categoria, perché i moral test cases sono falsi problemi costruiti per elicitare intuizioni principaliste. La distinzione tra virtù «thin» (placeholder per problemi umani universali) e «thick» (contenuto culturalmente determinato) consente di essere universalisti sui problemi e flessibili sulle soluzioni senza cedere al relativismo. La nota finale, con implicazioni deleuziane esplicite, è la più speculativa: i problemi persistono attraverso le loro soluzioni apparenti — come le grinze di una tovaglia mal stirata. Tutto questo introduce, quasi di passaggio, una questione di ontologia della virtù — probabilmente non il tema centrale di cui ci occuperemo, ma pertinente a molte cose che ci interessano, dall'ontologia sociale al problema della classificazione dei fenomeni."
+tags: [curated, filosofia, etica, ontologia]
+concepts: ["Martha Nussbaum", "Aristotele", "Gilles Deleuze", "etica della virtù"]
+---
