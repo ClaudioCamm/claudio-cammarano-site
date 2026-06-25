@@ -612,6 +612,66 @@ module.exports = [
     note: "Nel sito è il meccanismo al centro del caso Bending Spoons: un pool di 51 milioni di azioni distribuite ai dipendenti, e il regime fiscale agevolato britannico (EMI) che spiega parte del vantaggio di Londra su Roma e Milano nel generare startup di seconda generazione dagli ex-dipendenti di aziende quotate.",
     articles: []
   },
+  {
+    name: "metodo scientifico",
+    type: "teoria",
+    note: "Il processo con cui acquisiamo informazione e strutturiamo la conoscenza. Nel sito è l'oggetto della carrellata di Kevin Kelly (2006/2026): non un insieme fisso di protocolli ma una struttura vivente che si modifica con gli strumenti disponibili — e che l'AI potrebbe cambiare nei prossimi 80 anni più di quanto non abbia fatto nei precedenti 80.",
+    articles: []
+  },
+  {
+    name: "ghostwriting",
+    type: "teoria",
+    note: "La pratica di scrivere testi firmati da altri. Nel sito è il termine chiave del pezzo di Dondi: il ghostwriting ha sempre reso invisibile il lavoro di supporto alle figure di potere senza che questo fosse considerato imbroglio. L'AI ne è una versione più economica e accessibile — e l'indignazione che suscita rivela che il privilegio viene contestato solo quando smette di essere esclusivo.",
+    articles: []
+  },
+  {
+    name: "privilegio",
+    type: "teoria",
+    note: "Nel sito è il nodo del ragionamento di Dondi: chi ha potere ha sempre avuto accesso a supporto — ghostwriter, editor, speechwriter, assistenti di ricerca — senza che questo fosse considerato imbroglio o segno di incompetenza. I privilegi non si confessano: si usano. L'AI rende visibile questa asimmetria rendendola accessibile a chi ne era storicamente escluso.",
+    articles: []
+  },
+  {
+    name: "lavoro invisibile",
+    type: "teoria",
+    note: "Il lavoro non riconosciuto, non retribuito o non attribuito che sorregge la produzione culturale e intellettuale visibile. Nel sito è il filo che connette il caso Dondi (ghostwriting come privilegio del potere) e il caso Melandri (chi ha prodotto conoscenza senza ricevere una rendita adeguata dall'industria che ne ha beneficiato).",
+    articles: []
+  },
+  {
+    name: "femminicidio",
+    type: "teoria",
+    note: "L'omicidio di donne motivato da odio misogino o da dinamiche di controllo maschile. Nel sito è la categoria statistica al centro del pezzo di Columbro: costruita socialmente come tutte le categorie — GDP, disoccupazione, ondate di calore — ma necessaria per misurare un pattern asimmetrico che i dati Istat documentano con chiarezza (53% delle donne ucciso da partner o ex, contro il 4,7% degli uomini).",
+    articles: []
+  },
+  {
+    name: "costruttivismo",
+    type: "teoria",
+    note: "La postura epistemologica secondo cui le categorie con cui descriviamo la realtà sono costruzioni sociali, storiche e culturali, non rispecchiamenti di entità naturali preesistenti. Nel sito è la posizione corretta e ben argomentata di Columbro sulle statistiche — e insieme il punto di vulnerabilità che il negazionismo sfrutta quando la distinzione tra costruzione della categoria e negazione del fenomeno non viene esplicitata.",
+    articles: []
+  },
+  {
+    name: "ontologia sociale",
+    type: "teoria",
+    note: "Lo studio di come esistono le entità sociali — istituzioni, categorie, ruoli, fatti istituzionali. Nel sito compare in due contesti: come distinzione mancante nel costruttivismo di Columbro (il problema non è che il femminicidio «non esista», ma come classificarlo correttamente) e come sfondo nella lettura di Nussbaum (un'ontologia delle virtù fondata sui problemi come entità primarie).",
+    articles: []
+  },
+  {
+    name: "etica della virtù",
+    type: "teoria",
+    note: "La tradizione etica che si concentra sul carattere del soggetto morale piuttosto che su principi universali o calcolo delle conseguenze. Nel sito è riletta attraverso Brady su Nussbaum come una diversa ontologia etica: non un'alternativa all'utilitarismo che aggiunge «virtù» all'ontologia, ma una proposta in cui i problemi — le sfere dell'attività umana dove la scelta è inevitabile — sono primari, e le virtù ne sono le soluzioni virtuali.",
+    articles: []
+  },
+  {
+    name: "liberalismo",
+    type: "teoria",
+    note: "La tradizione filosofico-politica fondata sulla libertà individuale, i diritti, lo stato di diritto e i limiti al potere arbitrario. Nel sito è il valore identitario con cui The Economist costruisce la propria autorità editoriale — una strategia di marketing valoriale distinta dal «marketing della verità» di WaPo e NYT, più resistente alle crisi di credibilità legate all'assetto proprietario.",
+    articles: []
+  },
+  {
+    name: "marketing valoriale",
+    type: "teoria",
+    note: "La strategia comunicativa di costruire l'identità di un brand attorno a un sistema di valori, non solo a una promessa funzionale o fattuale. Nel sito è il modo in cui The Economist ha risposto alla crisi di fiducia nei media: non difendere la verità come valore giornalistico (come WaPo e NYT nel 2016), ma difendere il liberalismo come sistema di valori su scala globale — con molta agiografia, ma con più resistenza strutturale.",
+    articles: []
+  },
 
   // ─── TESTI ────────────────────────────────────────────────────────────────
 
@@ -782,6 +842,26 @@ module.exports = [
     name: "Revolut",
     type: "istituzione",
     note: "Fintech britannica. Nel sito è uno dei casi citati per l'effetto di seconda generazione londinese, insieme a Braze, Wise e Monzo — 168 startup da 27 unicorni, il 69% rimaste a Londra, favorite anche dal regime fiscale agevolato EMI sulle stock option.",
+    articles: []
+  },
+  {
+    name: "Washington Post",
+    type: "istituzione",
+    note: "Quotidiano americano. Nel sito è il caso della credibilità erosa: dopo il 2016 aveva costruito un «marketing della verità» («Democracy Dies in Darkness») come risposta al primo insediamento di Trump — una postura oggi meno credibile per ragioni legate all'assetto proprietario (Jeff Bezos) e alle relative ingerenze editoriali.",
+    articles: []
+  },
+  {
+    name: "New York Times",
+    type: "istituzione",
+    note: "Quotidiano americano. Nel sito è citato insieme al Washington Post come testata che ha imbastito un «marketing della verità» al primo insediamento di Trump nel 2016 — una strategia di posizionamento diversa da quella valoriale adottata dall'Economist, e più vulnerabile alle crisi di credibilità legate alle scelte proprietarie.",
+    articles: []
+  },
+
+  {
+    name: "The Technium",
+    type: "testo",
+    note: "Blog di Kevin Kelly (kk.org/thetechnium), attivo dal 2003. Il titolo è anche il nome del concetto centrale di Kelly: la tecnosfera come sistema vivente con proprie tendenze evolutive. Nel sito è la fonte del saggio del 2006 sulle speculazioni sul metodo scientifico, ripubblicato nel 2026 con un'introduzione aggiornata.",
+    citation: "KELLY, Kevin, <a href=\"https://kk.org/thetechnium\"><em>The Technium</em></a>, blog personale, 2003–.",
     articles: []
   },
 
@@ -1031,6 +1111,42 @@ module.exports = [
     type: "persona",
     note: "Filosofo russo-francese (1902–1968). Le sue letture di Hegel agli anni Trenta hanno formato un'intera generazione di intellettuali europei (Aron, Bataille, Merleau-Ponty). Teorico della «fine della storia» ante litteram e dell'impero post-storico — il Lateinisches Reich come possibile risposta europea alla fine dei conflitti ideologici.",
     articles: []
-  }
+  },
+  {
+    name: "Kevin Kelly",
+    type: "persona",
+    note: "Futurista e saggista americano (1952), co-fondatore di Wired, autore di Out of Control (1994), What Technology Wants (2010), The Inevitable (2016). Nel sito è citato per un saggio del 2006 sulle possibili evoluzioni del metodo scientifico — quattordici speculazioni che vent'anni dopo leggono come una descrizione del presente, soprattutto alla luce dell'AI.",
+    articles: []
+  },
+  {
+    name: "Martha Nussbaum",
+    type: "persona",
+    note: "Filosofa americana (1947), docente a Chicago. Neo-aristoteliana, autrice di The Fragility of Goodness (1986), Upheavals of Thought (2001), Creating Capabilities (2011). Nel sito è la fonte di una lettura dell'etica della virtù come ontologia etica radicale: le virtù non sono proprietà positive determinate, ma soluzioni virtuali a problemi che esistono per primi.",
+    articles: []
+  },
+  {
+    name: "Aristotele",
+    type: "persona",
+    note: "Filosofo greco (384–322 a.C.), allievo di Platone, fondatore del Liceo. Nel sito è il fondamento teorico dell'etica della virtù riletta da Nussbaum: non un catalogo di caratteristiche positive, ma una logica in cui i problemi — le sfere dell'attività umana dove la scelta è inevitabile e rischiosa — sono primari, e le virtù ne sono la risposta eccellente.",
+    articles: []
+  },
+  {
+    name: "Deleuze, Gilles",
+    type: "persona",
+    note: "Filosofo francese (1925–1995). Nel sito è evocato per le implicazioni deleuziane della lettura di Nussbaum da parte di Brady: i problemi come entità virtuale-reali che precedono le soluzioni — il virtuale non è meno reale dell'attuale, è semplicemente la modalità di esistenza di ciò che è irrisolto. Una lettura che dialoga con l'ontologia del problema come primum dell'etica.",
+    articles: []
+  },
+  {
+    name: "Ilaria Maria Dondi",
+    type: "persona",
+    note: "Giornalista e autrice della newsletter «Anomalia. Umani in tempi artificiali». Nel sito è la voce che demistifica l'indignazione per l'uso dell'AI nel lavoro creativo: il supporto invisibile (ghostwriter, editor, speechwriter) è sempre stato accessibile al potere senza essere considerato imbroglio — l'AI ne è una versione più economica e accessibile a chi storicamente ne era escluso.",
+    articles: []
+  },
+  {
+    name: "Donata Columbro",
+    type: "persona",
+    note: "Data journalist e autrice di «Perché contare i femminicidi è un atto politico» (2026) e della newsletter «Ti spiego il dato». Nel sito è la voce che dimostra il carattere costruito di tutte le categorie statistiche — dal femminicidio alla disoccupazione — e che distingue questa postura costruttivista legittima dall'uso negazionista della stessa tesi.",
+    articles: []
+  },
 
 ];
