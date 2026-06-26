@@ -1,6 +1,7 @@
 ---
 layout: layouts/base.njk
 title: Curated
+description: "Link curati su media, marketing e content industries — selezione personale di Claudio Cammarano."
 ---
 
 <h1>Curated</h1>
@@ -17,7 +18,7 @@ title: Curated
           {% for tag in item.data.tags %}{% if tag != 'curated' %}{% set canonical = curatedTagAliases[tag | lower] %}{% if canonical %}<a class="article-tag" href="/tag/{{ canonical | slugify }}/">{{ canonical }}</a>{% endif %}{% endif %}{% endfor %}
         {% endif %}
     </div>
-    <h2><a href="{{ item.data.external_url }}" target="_blank">{{ item.data.title }} ↗</a></h2>
+    <h2><a href="{{ item.data.external_url }}" target="_blank" rel="noopener noreferrer">{{ item.data.title }} ↗</a></h2>
     {% if item.data.description %}
     <p>{{ item.data.description }}</p>
     {% endif %}

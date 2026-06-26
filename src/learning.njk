@@ -1,6 +1,7 @@
 ---
 layout: layouts/base.njk
 title: Learning Log
+description: "Risorse scaricabili con licenza Creative Commons: slide, report e materiali didattici di Claudio Cammarano su editoria, AI e content industries."
 ---
 
 <h1>Learning log</h1>
@@ -9,7 +10,7 @@ title: Learning Log
 <div class="learning-grid">
 {% for resource in collections.learning %}
 <article class="resource-card">
-    <h3>{{ resource.data.title }}</h3>
+    <h2>{{ resource.data.title }}</h2>
     <p>{{ resource.data.description }}</p>
     {% if resource.data.download_url %}
     <a href="{{ resource.data.download_url }}" class="btn-download" download>Download →</a>

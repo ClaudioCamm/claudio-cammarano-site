@@ -5,6 +5,8 @@ eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  {# ── Pagine statiche principali ── #}
   <url>
     <loc>https://claudiocammarano.com/</loc>
     <changefreq>weekly</changefreq>
@@ -14,6 +16,31 @@ eleventyExcludeFromCollections: true
     <loc>https://claudiocammarano.com/writings/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://claudiocammarano.com/curated/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://claudiocammarano.com/learning/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://claudiocammarano.com/indice/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://claudiocammarano.com/temi/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://claudiocammarano.com/mappa/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://claudiocammarano.com/about/</loc>
@@ -35,6 +62,8 @@ eleventyExcludeFromCollections: true
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  {# ── Writings ── #}
   {% for post in collections.writings %}
   <url>
     <loc>https://claudiocammarano.com{{ post.url }}</loc>
@@ -43,6 +72,37 @@ eleventyExcludeFromCollections: true
     <priority>0.7</priority>
   </url>
   {% endfor %}
+
+  {# ── Curated (singole pagine) ── #}
+  {% for item in collections.curated %}
+  <url>
+    <loc>https://claudiocammarano.com{{ item.url }}</loc>
+    <lastmod>{{ item.date | isoDate }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  {% endfor %}
+
+  {# ── Learning (singole pagine) ── #}
+  {% for item in collections.learning %}
+  <url>
+    <loc>https://claudiocammarano.com{{ item.url }}</loc>
+    <lastmod>{{ item.date | isoDate }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  {% endfor %}
+
+  {# ── Concetti (131 pagine generate da mergedConceptsIndex) ── #}
+  {% for concept in collections.mergedConceptsIndex %}
+  <url>
+    <loc>https://claudiocammarano.com/concetti/{{ concept.name | slugify }}/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  {% endfor %}
+
+  {# ── Serie ── #}
   {% for serie in collections.seriesList %}
   <url>
     <loc>https://claudiocammarano.com/serie/{{ serie | slugify }}/</loc>
@@ -50,6 +110,8 @@ eleventyExcludeFromCollections: true
     <priority>0.6</priority>
   </url>
   {% endfor %}
+
+  {# ── Tag / Argomenti ── #}
   {% for tag in collections.tagList %}
   <url>
     <loc>https://claudiocammarano.com/tag/{{ tag | slugify }}/</loc>
@@ -57,4 +119,5 @@ eleventyExcludeFromCollections: true
     <priority>0.5</priority>
   </url>
   {% endfor %}
+
 </urlset>

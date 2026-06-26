@@ -6,8 +6,8 @@ pagination:
 permalink: "/concetti/{{ concept.name | slugify }}/"
 layout: layouts/base.njk
 eleventyComputed:
-  title: "{{ concept.name }}"
-  description: "Articoli collegati a {{ concept.name }} — indice concettuale di claudiocammarano.com"
+  title: "{{ concept.name }}{% if concept.type %} ({{ concept.type }}){% endif %}"
+  description: "{% if concept.note %}{{ concept.note | truncate(155) }}{% else %}Articoli collegati a {{ concept.name }} — indice concettuale di claudiocammarano.com{% endif %}"
 ---
 
 <script type="application/ld+json">
