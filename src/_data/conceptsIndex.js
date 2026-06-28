@@ -271,7 +271,7 @@ module.exports = [
     type: "persona",
     note: "Fondatore dell'agenzia Droga5, ex CEO di Accenture Song. Nel sito è citato per la sua tesi provocatoria: l'AI sta per spazzare via il mercato della creatività mediocre, non quella di qualità — un argomento che distingue nettamente fra lavoro «formulaico e medio» (automatizzabile) e originalità di gusto, contesto e strategia (non automatizzabile, secondo lui).",
     articles: [
-      { title: "David Droga on AI and the end of 'mediocre' human-made ads", url: "/curated/2026-06-21-droga-ai-mediocre-ads/" }
+      { title: "David Droga on AI and the end of 'mediocre' human-made ads", url: "/curated/2026-06-21-droga-ai-mediocre-ads/", _source: "curated" }
     ]
   },
 
@@ -284,7 +284,7 @@ module.exports = [
     articles: [
       { title: "L'ombra del futuro", url: "/writings/2026-04-15-lombra-del-futuro/" },
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
-      { title: "Fareed Zakaria on the Moral Cost of Trump's War", url: "/curated/2026-04-10-zakaria-trump-iran-war-nyt/" }
+      { title: "Fareed Zakaria on the Moral Cost of Trump's War", url: "/curated/2026-04-10-zakaria-trump-iran-war-nyt/", _source: "curated" }
     ]
   },
   {
@@ -360,9 +360,9 @@ module.exports = [
     type: "teoria",
     note: "Il problema di assicurare che i sistemi di intelligenza artificiale perseguano obiettivi coerenti con i valori umani, anche man mano che diventano più capaci. Nel sito è il quadro implicito che motiva le scelte di Anthropic: rifiutare contratti militari dipende dall'importanza di mantenere il controllo sullo sviluppo dell'AI a lungo termine.",
     articles: [
-      { title: "Why Are Palantir and OpenAI Scared of Alex Bores?", url: "/curated/2026-04-21-bores-palantir-openai-regulation-nyt/" },
-      { title: "Magnifica Humanitas: le nuove terre rare del potere", url: "/curated/2026-06-17-boccia-artieri-magnifica-humanitas-substack/" },
-      { title: "Our Military Is Built for the Wrong Century", url: "/curated/2026-05-28-brose-anduril-military-drones-nyt/" }
+      { title: "Why Are Palantir and OpenAI Scared of Alex Bores?", url: "/curated/2026-04-21-bores-palantir-openai-regulation-nyt/", _source: "curated" },
+      { title: "Magnifica Humanitas: le nuove terre rare del potere", url: "/curated/2026-06-17-boccia-artieri-magnifica-humanitas-substack/", _source: "curated" },
+      { title: "Our Military Is Built for the Wrong Century", url: "/curated/2026-05-28-brose-anduril-military-drones-nyt/", _source: "curated" }
     ]
   },
   {
@@ -371,7 +371,7 @@ module.exports = [
     note: "La proprietà di tecnologie e conoscenze di essere utilizzabili sia per scopi civili che militari. Nel sito è presentato come struttura normale dello sviluppo tecnologico, non come caso speciale: con le general purpose technologies, la distinzione origine/destinazione è inapplicabile per costruzione. Il termine funziona sempre troppo tardi, fino a risultare quasi inutile.",
     articles: [
       { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
-      { title: "Our Military Is Built for the Wrong Century", url: "/curated/2026-05-28-brose-anduril-military-drones-nyt/" }
+      { title: "Our Military Is Built for the Wrong Century", url: "/curated/2026-05-28-brose-anduril-military-drones-nyt/", _source: "curated" }
     ]
   },
   {
@@ -388,7 +388,7 @@ module.exports = [
     note: "Tecnologie (Bresnahan & Trajtenberg, 1995) che migliorano nel tempo, si applicano pervasivamente a tutti i settori e generano innovazioni complementari su scala sistemica: stampa, vapore, elettricità, Internet, AI. Nel sito è la categoria che rende inapplicabile la distinzione civile/militare: una GPT abita entrambi i domini per costruzione.",
     articles: [
       { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
-      { title: "China's Not the Problem. We Are.", url: "/curated/2026-05-14-chan-china-ai-nyt/" }
+      { title: "China's Not the Problem. We Are.", url: "/curated/2026-05-14-chan-china-ai-nyt/", _source: "curated" }
     ]
   },
   {
@@ -438,7 +438,7 @@ module.exports = [
     note: "Metodo strategico sviluppato in Shell negli anni Settanta (Pierre Wack): invece di prevedere il futuro, si costruiscono scenari alternativi plausibili per rompere i modelli mentali del management. Nel sito è il quadro con cui Amodei ha valutato le conseguenze a lungo termine dell'AI militarizzata prima di rifiutare il contratto con il Pentagono.",
     articles: [
       { title: "Quando Dario Amodei ha detto no al Pentagono", url: "/writings/2026-03-09-quando-dario-amodei-ha-detto-no-al-pentagono/" },
-      { title: "Europe Needs to Come Together. This Man Has Some Ideas.", url: "/curated/2026-06-09-nyt-europe-defense-van-middelaar/" }
+      { title: "Europe Needs to Come Together. This Man Has Some Ideas.", url: "/curated/2026-06-09-nyt-europe-defense-van-middelaar/", _source: "curated" }
     ]
   },
   {
@@ -455,7 +455,7 @@ module.exports = [
     note: "Espressione di Paul Ricœur per descrivere l'approccio di Marx, Nietzsche e Freud: smascherare le ideologie dietro il testo. Nel sito è citata come il metodo dell'ala accademica progressista che ha ridotto la tradizione umanistica a documento dell'oppressione, fornendo involontariamente copertura a chi voleva trasformare l'università in business school.",
     articles: [
       { title: "Salveremo le humanities", url: "/writings/2026-03-15-salveremo-le-humanities/" },
-      { title: "Why Are Humanists So Bad at Defending the Humanities?", url: "/curated/2026-06-15-pinillos-humanists-humanities-chronicle/" }
+      { title: "Why Are Humanists So Bad at Defending the Humanities?", url: "/curated/2026-06-15-pinillos-humanists-humanities-chronicle/", _source: "curated" }
     ]
   },
   {
@@ -514,7 +514,7 @@ module.exports = [
     articles: [
       { title: "L'ombra del futuro", url: "/writings/2026-04-15-lombra-del-futuro/" },
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
-      { title: "Fareed Zakaria on the Moral Cost of Trump's War", url: "/curated/2026-04-10-zakaria-trump-iran-war-nyt/" }
+      { title: "Fareed Zakaria on the Moral Cost of Trump's War", url: "/curated/2026-04-10-zakaria-trump-iran-war-nyt/", _source: "curated" }
     ]
   },
   {
@@ -522,9 +522,9 @@ module.exports = [
     type: "teoria",
     note: "Strumento di riduzione della povertà estrema che consiste nel dare liquidità diretta ai beneficiari invece di erogare servizi tramite intermediari. Nel sito è citato come dato che mette in discussione decenni di architetture assistenziali più sofisticate e più costose, a parità o superiorità di efficacia.",
     articles: [
-      { title: "From weeks of work to days: How I rebuilt two data journalism projects with AI", url: "/curated/2026-06-26-ottaviani-data-journalism-ai-reuters/" },
-      { title: "A Defense of a Liberal Arts Education in the Age of A.I.", url: "/curated/2026-05-21-frey-liberal-arts-ai-nyt/" },
-      { title: "Why Are Humanists So Bad at Defending the Humanities?", url: "/curated/2026-06-15-pinillos-humanists-humanities-chronicle/" }
+      { title: "From weeks of work to days: How I rebuilt two data journalism projects with AI", url: "/curated/2026-06-26-ottaviani-data-journalism-ai-reuters/", _source: "curated" },
+      { title: "A Defense of a Liberal Arts Education in the Age of A.I.", url: "/curated/2026-05-21-frey-liberal-arts-ai-nyt/", _source: "curated" },
+      { title: "Why Are Humanists So Bad at Defending the Humanities?", url: "/curated/2026-06-15-pinillos-humanists-humanities-chronicle/", _source: "curated" }
     ]
   },
   {
@@ -622,7 +622,7 @@ module.exports = [
     type: "teoria",
     note: "Nel sito è il settore su cui David Droga distingue lavoro creativo «formulaico e medio» (che l'AI sostituirà) da originalità di gusto e strategia (che no) — mentre OpenAI punta a metà dei ricavi pubblicitari di Meta in tre anni e i riassunti AI erodono il traffico su cui si basa l'intero ecosistema.",
     articles: [
-      { title: "David Droga on AI and the end of 'mediocre' human-made ads", url: "/curated/2026-06-21-droga-ai-mediocre-ads/" }
+      { title: "David Droga on AI and the end of 'mediocre' human-made ads", url: "/curated/2026-06-21-droga-ai-mediocre-ads/", _source: "curated" }
     ]
   },
   {
@@ -636,8 +636,8 @@ module.exports = [
     type: "teoria",
     note: "Il concetto greco di formazione integrale della persona — non istruzione tecnica ma coltivazione del carattere, del giudizio e della capacità di partecipare alla vita civica. Nel sito è il termine che gli umanisti invocano per difendere le proprie discipline, e che Pinillos identifica come parte del problema: un argomento circolare che funziona solo su chi è già convinto del valore della formazione umanistica.",
     articles: [
-      { title: "A Defense of a Liberal Arts Education in the Age of A.I.", url: "/curated/2026-05-21-frey-liberal-arts-ai-nyt/" },
-      { title: "Why Are Humanists So Bad at Defending the Humanities?", url: "/curated/2026-06-15-pinillos-humanists-humanities-chronicle/" }
+      { title: "A Defense of a Liberal Arts Education in the Age of A.I.", url: "/curated/2026-05-21-frey-liberal-arts-ai-nyt/", _source: "curated" },
+      { title: "Why Are Humanists So Bad at Defending the Humanities?", url: "/curated/2026-06-15-pinillos-humanists-humanities-chronicle/", _source: "curated" }
     ]
   },
   {
@@ -645,8 +645,8 @@ module.exports = [
     type: "istituzione",
     note: "Nel sito compare in due contesti distinti: come istituzione che ha abdicato alla formazione umanistica — riducendola a critica dell'oppressione o convertendola in business school — e come luogo in cui quella formazione, fatta bene, produce ancora la competenza cognitiva più preziosa del presente: leggere, scrivere, argomentare con precisione.",
     articles: [
-      { title: "A Defense of a Liberal Arts Education in the Age of A.I.", url: "/curated/2026-05-21-frey-liberal-arts-ai-nyt/" },
-      { title: "Why Are Humanists So Bad at Defending the Humanities?", url: "/curated/2026-06-15-pinillos-humanists-humanities-chronicle/" }
+      { title: "A Defense of a Liberal Arts Education in the Age of A.I.", url: "/curated/2026-05-21-frey-liberal-arts-ai-nyt/", _source: "curated" },
+      { title: "Why Are Humanists So Bad at Defending the Humanities?", url: "/curated/2026-06-15-pinillos-humanists-humanities-chronicle/", _source: "curated" }
     ]
   },
   {
@@ -690,8 +690,8 @@ module.exports = [
     type: "teoria",
     note: "Lo studio di come esistono le entità sociali — istituzioni, categorie, ruoli, fatti istituzionali. Nel sito compare in due contesti: come distinzione mancante nel costruttivismo di Columbro (il problema non è che il femminicidio «non esista», ma come classificarlo correttamente) e come sfondo nella lettura di Nussbaum (un'ontologia delle virtù fondata sui problemi come entità primarie).",
     articles: [
-      { title: "Magnifica Humanitas: le nuove terre rare del potere", url: "/curated/2026-06-17-boccia-artieri-magnifica-humanitas-substack/" },
-      { title: "What Worries Me Most About 'Abundance'", url: "/curated/2026-04-28-klein-abundance-nyt/" }
+      { title: "Magnifica Humanitas: le nuove terre rare del potere", url: "/curated/2026-06-17-boccia-artieri-magnifica-humanitas-substack/", _source: "curated" },
+      { title: "What Worries Me Most About 'Abundance'", url: "/curated/2026-04-28-klein-abundance-nyt/", _source: "curated" }
     ]
   },
   {
@@ -717,7 +717,7 @@ module.exports = [
     type: "teoria",
     note: "Il giornalismo che usa dati, visualizzazioni e codice come strumenti narrativi e di indagine. Nel sito è il caso in cui la commoditizzazione del layer meccanico (costruire mappe, dashboard, indici) rende più visibile — non meno — il valore del giudizio di dominio: sapere quale domanda vale la pena fare, riconoscere quando l'output è plausibile ma sbagliato, scomporre il problema in modi utili. Jacopo Ottaviani è il caso studio principale.",
     articles: [
-      { title: "From weeks of work to days: How I rebuilt two data journalism projects with AI", url: "/curated/2026-06-26-ottaviani-data-journalism-ai-reuters/" }
+      { title: "From weeks of work to days: How I rebuilt two data journalism projects with AI", url: "/curated/2026-06-26-ottaviani-data-journalism-ai-reuters/", _source: "curated" }
     ]
   },
   {
@@ -725,7 +725,7 @@ module.exports = [
     type: "teoria",
     note: "Conflitto in cui gli attori dispongono di capacità radicalmente diverse e il più debole compensa con tattiche non convenzionali — intelligence umana, sabotaggio, reti clandestine. Nel sito è il quadro operativo della resistenza ucraina nei territori occupati: la kill chain alimentata da agenti civili (*vidma*) sostituisce le forze regolari dove queste non possono operare. Dialoga con la dottrina Gerasimov e il controllo riflessivo già presenti nel sito, ma dalla prospettiva opposta: non dell'aggressore ibrido, ma di chi subisce l'occupazione e risponde con gli strumenti del più debole.",
     articles: [
-      { title: "The Warrior-Witches of Ukraine's Resistance", url: "/curated/2026-06-21-harbaugh-warrior-witches-ukraine-atlantic/" }
+      { title: "The Warrior-Witches of Ukraine's Resistance", url: "/curated/2026-06-21-harbaugh-warrior-witches-ukraine-atlantic/", _source: "curated" }
     ]
   },
   {
@@ -733,7 +733,7 @@ module.exports = [
     type: "teoria",
     note: "L'idea che i dati — specialmente quelli prodotti collettivamente da comunità, territori e archivi culturali — debbano essere governati come beni comuni anziché come risorse estrattive di soggetti privati. Nel sito emerge dalla lettura di *Magnifica Humanitas* da parte di Boccia Artieri: la privacy individuale non basta, serve una risposta collettiva che includa infrastrutture pubbliche, dataset aperti e verificabili, forme cooperative di produzione tecnologica. Dialoga con il tema del capitale semantico e con la critica all'economia dell'estrazione.",
     articles: [
-      { title: "Magnifica Humanitas: le nuove terre rare del potere", url: "/curated/2026-06-17-boccia-artieri-magnifica-humanitas-substack/" }
+      { title: "Magnifica Humanitas: le nuove terre rare del potere", url: "/curated/2026-06-17-boccia-artieri-magnifica-humanitas-substack/", _source: "curated" }
     ]
   },
   {
@@ -741,7 +741,7 @@ module.exports = [
     type: "teoria",
     note: "Modalità di sviluppo software in cui si descrive ciò che si vuole in linguaggio naturale e si lascia che un LLM scriva il codice. Nel sito è presentato nella versione strutturata di Ottaviani: non un prompt unico ma una decomposizione in compiti discreti e testabili (divide et impera), ognuno con un solo scopo, buildabile e verificabile indipendentemente. La struttura modulare riflette le fasi del pipeline del data journalism e riduce i bug.",
     articles: [
-      { title: "From weeks of work to days: How I rebuilt two data journalism projects with AI", url: "/curated/2026-06-26-ottaviani-data-journalism-ai-reuters/" }
+      { title: "From weeks of work to days: How I rebuilt two data journalism projects with AI", url: "/curated/2026-06-26-ottaviani-data-journalism-ai-reuters/", _source: "curated" }
     ]
   },
   {
@@ -749,7 +749,7 @@ module.exports = [
     type: "teoria",
     note: "Sistemi d'arma che identificano e ingaggiano bersagli senza intervento umano diretto. Nel sito è il punto terminale del ragionamento di Brose: la normativa del Pentagono non proibisce esplicitamente l'automazione della kill chain, e in conflitti protratti ci si avvicina a sistemi che «vanno finché trovano qualcosa da colpire». Dialoga con il problema del rubber stamp — un umano tecnicamente nel loop che in pratica non può mai dire no — e con la distinzione tra uso difensivo (bar più basso) e offensivo (bar più alto, ma non proibito).",
     articles: [
-      { title: "Our Military Is Built for the Wrong Century", url: "/curated/2026-05-28-brose-anduril-military-drones-nyt/" }
+      { title: "Our Military Is Built for the Wrong Century", url: "/curated/2026-05-28-brose-anduril-military-drones-nyt/", _source: "curated" }
     ]
   },
 
@@ -835,7 +835,7 @@ module.exports = [
     type: "istituzione",
     note: "Azienda della difesa fondata nel 2017 da Palmer Luckey. Nel sito è il caso del modello alternativo al contractor tradizionale: VC-funded, rischio imprenditoriale proprio, software (Lattice, sistema di controllo autonomo delle macchine sul campo) e hardware (Collaborative Combat Aircraft, sistema anti-drone Pulsar). Incarna la scelta opposta ad Anthropic: partecipare attivamente allo sviluppo di sistemi d'arma autonomi, ritenendo che non farlo significhi lasciare il campo a chi lo farà peggio.",
     articles: [
-      { title: "Our Military Is Built for the Wrong Century", url: "/curated/2026-05-28-brose-anduril-military-drones-nyt/" }
+      { title: "Our Military Is Built for the Wrong Century", url: "/curated/2026-05-28-brose-anduril-military-drones-nyt/", _source: "curated" }
     ]
   },
   {
@@ -844,7 +844,7 @@ module.exports = [
     note: "Azienda di data analytics fondata nel 2003 da Peter Thiel e Alexander Karp. Nel sito è la controparte di Anthropic: Karp ha pubblicato un manifesto in favore dell'impegno militare di Silicon Valley, Palantir lavora attivamente con il Dipartimento della Difesa americano. Caso studio della scelta opposta a quella di Amodei.",
     articles: [
       { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
-      { title: "Why Are Palantir and OpenAI Scared of Alex Bores?", url: "/curated/2026-04-21-bores-palantir-openai-regulation-nyt/" }
+      { title: "Why Are Palantir and OpenAI Scared of Alex Bores?", url: "/curated/2026-04-21-bores-palantir-openai-regulation-nyt/", _source: "curated" }
     ]
   },
   {
@@ -902,7 +902,7 @@ module.exports = [
     type: "istituzione",
     note: "Il festival internazionale della creatività pubblicitaria. Nel sito è il palcoscenico in cui OpenAI si presenta come protagonista a sorpresa puntando a metà dei ricavi pubblicitari di Meta, e in cui — l'anno precedente — un Grand Prix è stato ritirato dopo la scoperta che il case study era stato manipolato con l'AI.",
     articles: [
-      { title: "David Droga on AI and the end of 'mediocre' human-made ads", url: "/curated/2026-06-21-droga-ai-mediocre-ads/" }
+      { title: "David Droga on AI and the end of 'mediocre' human-made ads", url: "/curated/2026-06-21-droga-ai-mediocre-ads/", _source: "curated" }
     ]
   },
   {
@@ -910,8 +910,8 @@ module.exports = [
     type: "istituzione",
     note: "Nel sito compare nel caso Droga come l'azienda che punta a metà dei ricavi pubblicitari attuali di Meta in tre anni — piattaforma ad self-serve, test pubblicitari in Giappone, Ad Tools generativi — segno che il fronte AI vs. mercato pubblicitario tradizionale si sta aprendo prima e più aggressivamente di quanto raccontato altrove sul sito a proposito di Anthropic o Palantir.",
     articles: [
-      { title: "Why Are Palantir and OpenAI Scared of Alex Bores?", url: "/curated/2026-04-21-bores-palantir-openai-regulation-nyt/" },
-      { title: "David Droga on AI and the end of 'mediocre' human-made ads", url: "/curated/2026-06-21-droga-ai-mediocre-ads/" }
+      { title: "Why Are Palantir and OpenAI Scared of Alex Bores?", url: "/curated/2026-04-21-bores-palantir-openai-regulation-nyt/", _source: "curated" },
+      { title: "David Droga on AI and the end of 'mediocre' human-made ads", url: "/curated/2026-06-21-droga-ai-mediocre-ads/", _source: "curated" }
     ]
   },
   {
@@ -999,7 +999,7 @@ module.exports = [
     articles: [
       { title: "Quando Dario Amodei ha detto no al Pentagono", url: "/writings/2026-03-09-quando-dario-amodei-ha-detto-no-al-pentagono/" },
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
-      { title: "China's Not the Problem. We Are.", url: "/curated/2026-05-14-chan-china-ai-nyt/" }
+      { title: "China's Not the Problem. We Are.", url: "/curated/2026-05-14-chan-china-ai-nyt/", _source: "curated" }
     ]
   },
   {
@@ -1029,9 +1029,9 @@ module.exports = [
       { title: "Il rumore a Beirut", url: "/writings/2026-04-09-il-rumore-a-beirut/" },
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
       { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
-      { title: "The Warrior-Witches of Ukraine's Resistance", url: "/curated/2026-06-21-harbaugh-warrior-witches-ukraine-atlantic/" },
-      { title: "Europe Needs to Come Together. This Man Has Some Ideas.", url: "/curated/2026-06-09-nyt-europe-defense-van-middelaar/" },
-      { title: "How a former model from Kyiv blew up Russia's $20bn gas pipeline", url: "/curated/2026-06-15-times-nord-stream-diver/" }
+      { title: "The Warrior-Witches of Ukraine's Resistance", url: "/curated/2026-06-21-harbaugh-warrior-witches-ukraine-atlantic/", _source: "curated" },
+      { title: "Europe Needs to Come Together. This Man Has Some Ideas.", url: "/curated/2026-06-09-nyt-europe-defense-van-middelaar/", _source: "curated" },
+      { title: "How a former model from Kyiv blew up Russia's $20bn gas pipeline", url: "/curated/2026-06-15-times-nord-stream-diver/", _source: "curated" }
     ]
   },
   {
@@ -1042,10 +1042,10 @@ module.exports = [
       { title: "Il rumore a Beirut", url: "/writings/2026-04-09-il-rumore-a-beirut/" },
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
       { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
-      { title: "The Warrior-Witches of Ukraine's Resistance", url: "/curated/2026-06-21-harbaugh-warrior-witches-ukraine-atlantic/" },
-      { title: "Our Military Is Built for the Wrong Century", url: "/curated/2026-05-28-brose-anduril-military-drones-nyt/" },
-      { title: "Europe Needs to Come Together. This Man Has Some Ideas.", url: "/curated/2026-06-09-nyt-europe-defense-van-middelaar/" },
-      { title: "How a former model from Kyiv blew up Russia's $20bn gas pipeline", url: "/curated/2026-06-15-times-nord-stream-diver/" }
+      { title: "The Warrior-Witches of Ukraine's Resistance", url: "/curated/2026-06-21-harbaugh-warrior-witches-ukraine-atlantic/", _source: "curated" },
+      { title: "Our Military Is Built for the Wrong Century", url: "/curated/2026-05-28-brose-anduril-military-drones-nyt/", _source: "curated" },
+      { title: "Europe Needs to Come Together. This Man Has Some Ideas.", url: "/curated/2026-06-09-nyt-europe-defense-van-middelaar/", _source: "curated" },
+      { title: "How a former model from Kyiv blew up Russia's $20bn gas pipeline", url: "/curated/2026-06-15-times-nord-stream-diver/", _source: "curated" }
     ]
   },
   {
@@ -1057,11 +1057,11 @@ module.exports = [
       { title: "L'ombra del futuro", url: "/writings/2026-04-15-lombra-del-futuro/" },
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
       { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
-      { title: "Why Are Palantir and OpenAI Scared of Alex Bores?", url: "/curated/2026-04-21-bores-palantir-openai-regulation-nyt/" },
-      { title: "China's Not the Problem. We Are.", url: "/curated/2026-05-14-chan-china-ai-nyt/" },
-      { title: "Fareed Zakaria on the Moral Cost of Trump's War", url: "/curated/2026-04-10-zakaria-trump-iran-war-nyt/" },
-      { title: "What Worries Me Most About 'Abundance'", url: "/curated/2026-04-28-klein-abundance-nyt/" },
-      { title: "Europe Needs to Come Together. This Man Has Some Ideas.", url: "/curated/2026-06-09-nyt-europe-defense-van-middelaar/" }
+      { title: "Why Are Palantir and OpenAI Scared of Alex Bores?", url: "/curated/2026-04-21-bores-palantir-openai-regulation-nyt/", _source: "curated" },
+      { title: "China's Not the Problem. We Are.", url: "/curated/2026-05-14-chan-china-ai-nyt/", _source: "curated" },
+      { title: "Fareed Zakaria on the Moral Cost of Trump's War", url: "/curated/2026-04-10-zakaria-trump-iran-war-nyt/", _source: "curated" },
+      { title: "What Worries Me Most About 'Abundance'", url: "/curated/2026-04-28-klein-abundance-nyt/", _source: "curated" },
+      { title: "Europe Needs to Come Together. This Man Has Some Ideas.", url: "/curated/2026-06-09-nyt-europe-defense-van-middelaar/", _source: "curated" }
     ]
   },
   {
@@ -1071,7 +1071,7 @@ module.exports = [
     articles: [
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
       { title: "Cartolina dal paese più bello del mondo", url: "/writings/2026-04-24-cartolina-dal-paese-piu-bello-del-mondo/" },
-      { title: "Europe Needs to Come Together. This Man Has Some Ideas.", url: "/curated/2026-06-09-nyt-europe-defense-van-middelaar/" }
+      { title: "Europe Needs to Come Together. This Man Has Some Ideas.", url: "/curated/2026-06-09-nyt-europe-defense-van-middelaar/", _source: "curated" }
     ]
   },
   {
@@ -1083,7 +1083,7 @@ module.exports = [
       { title: "Cartolina dal paese più bello del mondo", url: "/writings/2026-04-24-cartolina-dal-paese-piu-bello-del-mondo/" },
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
       { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" },
-      { title: "Europe Needs to Come Together. This Man Has Some Ideas.", url: "/curated/2026-06-09-nyt-europe-defense-van-middelaar/" }
+      { title: "Europe Needs to Come Together. This Man Has Some Ideas.", url: "/curated/2026-06-09-nyt-europe-defense-van-middelaar/", _source: "curated" }
     ]
   },
   {
@@ -1094,7 +1094,7 @@ module.exports = [
       { title: "Il rumore a Beirut", url: "/writings/2026-04-09-il-rumore-a-beirut/" },
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
       { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
-      { title: "China's Not the Problem. We Are.", url: "/curated/2026-05-14-chan-china-ai-nyt/" }
+      { title: "China's Not the Problem. We Are.", url: "/curated/2026-05-14-chan-china-ai-nyt/", _source: "curated" }
     ]
   },
   {
@@ -1104,8 +1104,8 @@ module.exports = [
     articles: [
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
       { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" },
-      { title: "Fareed Zakaria on the Moral Cost of Trump's War", url: "/curated/2026-04-10-zakaria-trump-iran-war-nyt/" },
-      { title: "Our Military Is Built for the Wrong Century", url: "/curated/2026-05-28-brose-anduril-military-drones-nyt/" }
+      { title: "Fareed Zakaria on the Moral Cost of Trump's War", url: "/curated/2026-04-10-zakaria-trump-iran-war-nyt/", _source: "curated" },
+      { title: "Our Military Is Built for the Wrong Century", url: "/curated/2026-05-28-brose-anduril-military-drones-nyt/", _source: "curated" }
     ]
   },
   {
@@ -1224,7 +1224,7 @@ module.exports = [
     type: "persona",
     note: "Storico e filosofo politico olandese (1973). Consigliere di Herman Van Rompuy al Consiglio Europeo, autore de Il passaggio all'Europa (2009) e Alarums and Excursions (2019). Teorico dell'improvvisazione istituzionale come metodo di governance europea in tempi di crisi.",
     articles: [
-      { title: "Europe Needs to Come Together. This Man Has Some Ideas.", url: "/curated/2026-06-09-nyt-europe-defense-van-middelaar/" }
+      { title: "Europe Needs to Come Together. This Man Has Some Ideas.", url: "/curated/2026-06-09-nyt-europe-defense-van-middelaar/", _source: "curated" }
     ]
   },
   {
@@ -1232,7 +1232,7 @@ module.exports = [
     type: "persona",
     note: "Filosofo russo-francese (1902–1968). Le sue letture di Hegel agli anni Trenta hanno formato un'intera generazione di intellettuali europei (Aron, Bataille, Merleau-Ponty). Teorico della «fine della storia» ante litteram e dell'impero post-storico — il Lateinisches Reich come possibile risposta europea alla fine dei conflitti ideologici.",
     articles: [
-      { title: "Europe Needs to Come Together. This Man Has Some Ideas.", url: "/curated/2026-06-09-nyt-europe-defense-van-middelaar/" }
+      { title: "Europe Needs to Come Together. This Man Has Some Ideas.", url: "/curated/2026-06-09-nyt-europe-defense-van-middelaar/", _source: "curated" }
     ]
   },
   {
@@ -1276,7 +1276,7 @@ module.exports = [
     type: "persona",
     note: "Membro dell'Assemblea di New York (2022), ex data scientist a Palantir (2014–2019). Ha co-scritto il RAISE Act, una delle prime leggi di regolamentazione dell'AI approvata da uno stato americano. Nel sito è il caso che mostra la governance dell'AI come terreno di conflitto politico reale: ha lasciato Palantir quando i dirigenti si rifiutarono di inserire guardrail nel contratto con ICE per impedire l'uso del software nelle deportazioni, ed è poi diventato bersaglio di un super PAC finanziato da co-fondatori di OpenAI e Palantir per il suo lavoro legislativo sull'AI.",
     articles: [
-      { title: "Why Are Palantir and OpenAI Scared of Alex Bores?", url: "/curated/2026-04-21-bores-palantir-openai-regulation-nyt/" }
+      { title: "Why Are Palantir and OpenAI Scared of Alex Bores?", url: "/curated/2026-04-21-bores-palantir-openai-regulation-nyt/", _source: "curated" }
     ]
   },
   {
@@ -1284,7 +1284,7 @@ module.exports = [
     type: "persona",
     note: "Foreign policy fellow al Brookings Institution, esperto di Cina e tecnologia. Nel sito è citato per l'analisi della competizione AI sino-americana: la cornice della «gara» è fuorviante perché i due paesi corrono gare diverse — gli USA verso l'AGI, la Cina verso efficienza, diffusione e applicazioni fisiche. La tesi del pezzo è nel titolo: il principale ostacolo americano nella competizione con la Cina è interno agli Stati Uniti.",
     articles: [
-      { title: "China's Not the Problem. We Are.", url: "/curated/2026-05-14-chan-china-ai-nyt/" }
+      { title: "China's Not the Problem. We Are.", url: "/curated/2026-05-14-chan-china-ai-nyt/", _source: "curated" }
     ]
   },
   {
@@ -1292,7 +1292,7 @@ module.exports = [
     type: "persona",
     note: "Professoressa di filosofia, ha costruito e poi visto smantellare un programma di liberal arts all'Università di Tulsa. Nel sito è la voce che difende la liberal education con un argomento intrinseco — la *paideia* e il *Bildung* come coltivazione delle capacità superiori dell'essere umano come fine in sé — in contrappunto al Pinillos già in archivio, che ne difende il valore strumentale. Porta in dote l'Aristotele sulla *scholé*: il fine dell'educazione è il leisure, lo spazio in cui si coltiva il meglio di sé.",
     articles: [
-      { title: "A Defense of a Liberal Arts Education in the Age of A.I.", url: "/curated/2026-05-21-frey-liberal-arts-ai-nyt/" }
+      { title: "A Defense of a Liberal Arts Education in the Age of A.I.", url: "/curated/2026-05-21-frey-liberal-arts-ai-nyt/", _source: "curated" }
     ]
   },
   {
@@ -1300,7 +1300,7 @@ module.exports = [
     type: "persona",
     note: "Giornalista e commentatore politico indiano-americano (1964), conduttore di «Fareed Zakaria GPS» su CNN e columnist del Washington Post. Autore di *The Post-American World* (2008) e *Age of Revolutions* (2024). Nel sito è citato per l'analisi della guerra iraniana come caso empirico del predatory hegemon: un sistema cooperativo globale costruito su beni pubblici e shadow of the future distrutto da un attore con fattore di sconto δ vicino a zero.",
     articles: [
-      { title: "Fareed Zakaria on the Moral Cost of Trump's War", url: "/curated/2026-04-10-zakaria-trump-iran-war-nyt/" }
+      { title: "Fareed Zakaria on the Moral Cost of Trump's War", url: "/curated/2026-04-10-zakaria-trump-iran-war-nyt/", _source: "curated" }
     ]
   },
   {
@@ -1308,7 +1308,7 @@ module.exports = [
     type: "persona",
     note: "Giornalista e commentatore americano (1983), cofondatore di Vox, editorialista del NYT e conduttore dell'Ezra Klein Show. Nel sito è citato per il libro *Abundance* (2025, con Derek Thompson) e per il podcast che ne fa un bilancio a un anno dall'uscita: un caso in cui una certa idea della realtà — la scarsità come prodotto di scelte istituzionali, non di destino — ha cominciato a produrre effetti sul comportamento politico americano.",
     articles: [
-      { title: "What Worries Me Most About 'Abundance'", url: "/curated/2026-04-28-klein-abundance-nyt/" }
+      { title: "What Worries Me Most About 'Abundance'", url: "/curated/2026-04-28-klein-abundance-nyt/", _source: "curated" }
     ]
   },
   {
@@ -1316,7 +1316,7 @@ module.exports = [
     type: "persona",
     note: "Giornalista americano, contributing writer all'Atlantic. Coautore con Ezra Klein di *Abundance* (2025), il libro che ha rilanciato il dibattito sul supply-side progressivism negli Stati Uniti: costruire più case, più energia, ridurre i veto point istituzionali. Nel sito è citato insieme a Klein per l'angolo epistemologico del libro, non per il merito delle politiche di housing.",
     articles: [
-      { title: "What Worries Me Most About 'Abundance'", url: "/curated/2026-04-28-klein-abundance-nyt/" }
+      { title: "What Worries Me Most About 'Abundance'", url: "/curated/2026-04-28-klein-abundance-nyt/", _source: "curated" }
     ]
   },
   {
@@ -1324,7 +1324,7 @@ module.exports = [
     type: "persona",
     note: "Giornalista e informatico italiano, senior strategist a Code for Africa e fellow del Reuters Institute. Premio per il data journalism, lavora all'incrocio tra codice, dati e storytelling su temi sociali urgenti. Nel sito è il caso che mostra il capitale semantico in azione: ha ricostruito in due giorni *Patrie Galere* (mappa delle morti nelle carceri italiane) che nel 2012 gli aveva richiesto tre settimane, usando il vibe coding strutturato — divide et impera applicato all'AI.",
     articles: [
-      { title: "From weeks of work to days: How I rebuilt two data journalism projects with AI", url: "/curated/2026-06-26-ottaviani-data-journalism-ai-reuters/" }
+      { title: "From weeks of work to days: How I rebuilt two data journalism projects with AI", url: "/curated/2026-06-26-ottaviani-data-journalism-ai-reuters/", _source: "curated" }
     ]
   },
   {
@@ -1332,7 +1332,7 @@ module.exports = [
     type: "persona",
     note: "Ex pilota della Marina americana, presidente di Valor Media Network. Autore del reportage sulle *vidma* — la rete di intelligence femminile della resistenza ucraina nei territori occupati. Nel sito è la fonte del pezzo che aggiunge dimensione operativa alla serie sulle ombre: honeytraps, comunicazione clandestina, kill chain alimentata da agenti civili.",
     articles: [
-      { title: "The Warrior-Witches of Ukraine's Resistance", url: "/curated/2026-06-21-harbaugh-warrior-witches-ukraine-atlantic/" }
+      { title: "The Warrior-Witches of Ukraine's Resistance", url: "/curated/2026-06-21-harbaugh-warrior-witches-ukraine-atlantic/", _source: "curated" }
     ]
   },
   {
@@ -1340,7 +1340,7 @@ module.exports = [
     type: "persona",
     note: "Sociologo dei media italiano, professore ordinario, studioso di piattaforme digitali, comunicazione e cultura della rete. Autore di numerosi lavori sull'identità digitale, i social network e le trasformazioni del giornalismo nell'era algoritmica. Nel sito è citato per la lettura critica dell'enciclica *Magnifica Humanitas*: usa il documento come leva per spostare il discorso sull'AI dal piano morale al piano politico-strutturale, introducendo l'immagine dei dati come «nuove terre rare del potere» e la necessità di una grammatica politica — non solo un appello etico — per governare l'intelligenza artificiale.",
     articles: [
-      { title: "Magnifica Humanitas: le nuove terre rare del potere", url: "/curated/2026-06-17-boccia-artieri-magnifica-humanitas-substack/" }
+      { title: "Magnifica Humanitas: le nuove terre rare del potere", url: "/curated/2026-06-17-boccia-artieri-magnifica-humanitas-substack/", _source: "curated" }
     ]
   },
   {
@@ -1348,7 +1348,7 @@ module.exports = [
     type: "persona",
     note: "Presidente e chief strategy officer di Anduril. Ex capo del personale della Commissione per le Forze Armate del Senato americano, poi direttore delle politiche al Pentagono. Autore di The Kill Chain (2020). Nel sito è la voce opposta ad Amodei sul rapporto tra aziende tecnologiche e apparato militare: o ci si fida del governo democraticamente eletto per decidere come usare la tecnologia, o si esce dal business. Ha definito il rifiuto di Anthropic di lavorare con il Pentagono «where Anthropic went wrong».",
     articles: [
-      { title: "Our Military Is Built for the Wrong Century", url: "/curated/2026-05-28-brose-anduril-military-drones-nyt/" }
+      { title: "Our Military Is Built for the Wrong Century", url: "/curated/2026-05-28-brose-anduril-military-drones-nyt/", _source: "curated" }
     ]
   },
 
