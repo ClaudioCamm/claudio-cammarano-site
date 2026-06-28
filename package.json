@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve",
+    "prebuild": "node scripts/sync-concepts.js",
     "build": "eleventy && (npx pagefind --site _site || true)",
     "index": "npx pagefind --site _site",
     "test": "echo \"Error: no test specified\" && exit 1"

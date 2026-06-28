@@ -133,7 +133,8 @@ module.exports = [
     type: "persona",
     note: "CEO e cofondatore di Anthropic (1983). Nel sito è la figura centrale dell'articolo sul rifiuto di un contratto con il Pentagono: ha usato lo scenario planning per valutare i rischi a lungo termine dell'AI militarizzata, scegliendo di dire no a Pete Hegseth. Incarna la tensione tra sviluppo AI e responsabilità strategica.",
     articles: [
-      { title: "Quando Dario Amodei ha detto no al Pentagono", url: "/writings/2026-03-09-quando-dario-amodei-ha-detto-no-al-pentagono/" }
+      { title: "Quando Dario Amodei ha detto no al Pentagono", url: "/writings/2026-03-09-quando-dario-amodei-ha-detto-no-al-pentagono/" },
+      { title: "When AI builds itself", url: "/curated/2026-06-19-anthropic-recursive-self-improvement/", _source: "curated" }
     ]
   },
   {
@@ -222,49 +223,66 @@ module.exports = [
     name: "Lea Melandri",
     type: "persona",
     note: "Saggista, insegnante e attivista femminista italiana (1941). Fondatrice con Elvio Fachinelli della rivista «L'erba voglio» negli anni Settanta, poi di «Lapis»; autrice di testi come L'infamia originaria, pietre miliari della teoria femminista italiana. Nel sito, in un pezzo di Annalisa Camilli su «Internazionale», è il caso che mette a fuoco la tensione tra impatto culturale indiscutibile e assenza di un modello di business che ne garantisca il sostentamento. Cosa imputabile naturalmente non a Melandri stessa, quanto a un vero e proprio fallimento del mercato.",
-    articles: []
+    articles: [
+      { title: "La legge Bacchelli per Lea Melandri", url: "/curated/2026-06-06-internazionale-lea-melandri-bacchelli/", _source: "curated" }
+    ]
   },
   {
     name: "Miyazaki Hayao",
     type: "persona",
     note: "Regista e animatore giapponese (1941), cofondatore dello Studio Ghibli. Nel sito è citato come riferimento implicito del dibattito sulla crisi degli animatori giapponesi: il modello artigianale e il mentoring che hanno formato la sua generazione sono esattamente ciò che l'industria ha smantellato dopo il 1973.",
-    articles: []
+    articles: [
+      { title: "The strange disappearance of Japan's animators", url: "/curated/2026-06-19-economist-1843-japan-animators/", _source: "curated" }
+    ]
   },
   {
     name: "Lea Ypi",
     type: "persona",
     note: "Filosofa e scrittrice albanese, docente alla LSE. Nel sito è citata due volte: come una delle quattro filosofe che secondo Gloria Origgi hanno rifondato la filosofia politica da Parigi — ripensando il marxismo come teoria dell'emancipazione contro un liberalismo che confonde libertà formale e libertà reale — e come una delle voci che hanno suggerito il pezzo di Jonathan White sulla colonizzazione tecnologica del pensiero sul futuro.",
-    articles: []
+    articles: [
+      { title: "The End of the Future", url: "/curated/2026-06-15-fp-end-of-the-future/", _source: "curated" },
+      { title: "Non più un affare da uomini. Ora il pensiero che guida è donna", url: "/curated/2026-06-21-origgi-filosofia-donne-parigi/", _source: "curated" }
+    ]
   },
   {
     name: "Chiara Cordelli",
     type: "persona",
     note: "Filosofa politica, docente a Chicago. Nel sito è citata per la sua analisi dell'esternalizzazione progressiva dello Stato a soggetti privati — dalle carceri al controllo delle frontiere in «Privatocrazia» — e, in «Ruled by None», per la tesi che il flusso di capitale di venture capital orienti oggi l'idea di futuro più di qualunque pianificazione pubblica.",
-    articles: []
+    articles: [
+      { title: "Non più un affare da uomini. Ora il pensiero che guida è donna", url: "/curated/2026-06-21-origgi-filosofia-donne-parigi/", _source: "curated" }
+    ]
   },
   {
     name: "Hélène Landemore",
     type: "persona",
     note: "Politologa, docente a Yale. Nel sito è citata per la sua proposta di assemblee cittadine selezionate per sorteggio come alternativa a una rappresentanza corrotta da media e interessi privati — metodo su cui ha lavorato concretamente alla costituzione islandese e alle Conventions Citoyennes francesi sul clima.",
-    articles: []
+    articles: [
+      { title: "Non più un affare da uomini. Ora il pensiero che guida è donna", url: "/curated/2026-06-21-origgi-filosofia-donne-parigi/", _source: "curated" }
+    ]
   },
   {
     name: "Miranda Fricker",
     type: "persona",
     note: "Filosofa, docente alla NYU. Nel sito è citata per il suo lavoro sull'ingiustizia epistemica: chi viene ascoltato e chi no, e come questa asimmetria sia essa stessa una forma di potere che la filosofia politica tradizionale ha per lo più ignorato.",
-    articles: []
+    articles: [
+      { title: "Non più un affare da uomini. Ora il pensiero che guida è donna", url: "/curated/2026-06-21-origgi-filosofia-donne-parigi/", _source: "curated" }
+    ]
   },
   {
     name: "Gloria Origgi",
     type: "persona",
     note: "Filosofa, ricercatrice CNRS a Parigi. Nel sito è l'autrice del pezzo che presenta quattro filosofe — Ypi, Cordelli, Landemore, Fricker — come prova che la filosofia politica, dopo decenni di egemonia maschile fatta più di sfoggio retorico che di proposte concrete, è tornata a essere una disciplina seria e politicamente rilevante.",
-    articles: []
+    articles: [
+      { title: "Non più un affare da uomini. Ora il pensiero che guida è donna", url: "/curated/2026-06-21-origgi-filosofia-donne-parigi/", _source: "curated" }
+    ]
   },
   {
     name: "Gianluca Diegoli",
     type: "persona",
     note: "Consulente di marketing ed e-commerce, autore della newsletter, blogger della prima ora, grande sperimentatore, figura pubblica, autore di libri rilevanti che vanno al di là del marketing. Nel sito è citato per la sua distinzione fra tre «IA» del commercio digitale — discovery lato consumatore, infrastruttura di back-office, agentica — sistematicamente confuse nel dibattito pubblico nonostante abbiano urgenza, maturità e grado di hype completamente diversi.",
-    articles: []
+    articles: [
+      { title: "Le tre IA del Netcomm Forum", url: "/curated/2026-05-21-diegoli-tre-ia-netcomm-forum/", _source: "curated" }
+    ]
   },
   {
     name: "David Droga",
@@ -362,7 +380,10 @@ module.exports = [
     articles: [
       { title: "Why Are Palantir and OpenAI Scared of Alex Bores?", url: "/curated/2026-04-21-bores-palantir-openai-regulation-nyt/", _source: "curated" },
       { title: "Magnifica Humanitas: le nuove terre rare del potere", url: "/curated/2026-06-17-boccia-artieri-magnifica-humanitas-substack/", _source: "curated" },
-      { title: "Our Military Is Built for the Wrong Century", url: "/curated/2026-05-28-brose-anduril-military-drones-nyt/", _source: "curated" }
+      { title: "Our Military Is Built for the Wrong Century", url: "/curated/2026-05-28-brose-anduril-military-drones-nyt/", _source: "curated" },
+      { title: "Natural Language Autoencoders Produce Unsupervised Explanations of LLM Activations", url: "/curated/2026-05-07-anthropic-nla-activations/", _source: "curated" },
+      { title: "Il Golem e l'AI", url: "/curated/2026-06-08-giannella-golem-ai/", _source: "curated" },
+      { title: "When AI builds itself", url: "/curated/2026-06-19-anthropic-recursive-self-improvement/", _source: "curated" }
     ]
   },
   {
@@ -371,7 +392,10 @@ module.exports = [
     note: "La proprietà di tecnologie e conoscenze di essere utilizzabili sia per scopi civili che militari. Nel sito è presentato come struttura normale dello sviluppo tecnologico, non come caso speciale: con le general purpose technologies, la distinzione origine/destinazione è inapplicabile per costruzione. Il termine funziona sempre troppo tardi, fino a risultare quasi inutile.",
     articles: [
       { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
-      { title: "Our Military Is Built for the Wrong Century", url: "/curated/2026-05-28-brose-anduril-military-drones-nyt/", _source: "curated" }
+      { title: "Our Military Is Built for the Wrong Century", url: "/curated/2026-05-28-brose-anduril-military-drones-nyt/", _source: "curated" },
+      { title: "Meta Glasses, ICE e il futuro della sorveglianza indossabile", url: "/curated/2026-03-01-meta-glasses-privacy/", _source: "curated" },
+      { title: "How surge in defence and dual-use technology investment could reconfigure global AI race", url: "/curated/2026-04-01-chatham-house-defence-ai-race/", _source: "curated" },
+      { title: "Making Claude a chemist", url: "/curated/2026-06-05-anthropic-claude-chemist/", _source: "curated" }
     ]
   },
   {
@@ -388,7 +412,9 @@ module.exports = [
     note: "Tecnologie (Bresnahan & Trajtenberg, 1995) che migliorano nel tempo, si applicano pervasivamente a tutti i settori e generano innovazioni complementari su scala sistemica: stampa, vapore, elettricità, Internet, AI. Nel sito è la categoria che rende inapplicabile la distinzione civile/militare: una GPT abita entrambi i domini per costruzione.",
     articles: [
       { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
-      { title: "China's Not the Problem. We Are.", url: "/curated/2026-05-14-chan-china-ai-nyt/", _source: "curated" }
+      { title: "China's Not the Problem. We Are.", url: "/curated/2026-05-14-chan-china-ai-nyt/", _source: "curated" },
+      { title: "2025 AI and Semiconductor Outlook", url: "/curated/2025-01-01-fabricated-knowledge-ai-semiconductor-outlook/", _source: "curated" },
+      { title: "The death of strategy (and what comes next)", url: "/curated/2026-05-20-smith-death-of-strategy/", _source: "curated" }
     ]
   },
   {
@@ -421,7 +447,13 @@ module.exports = [
     note: "Concetto elaborato nel sito a partire dall'Actor-Network Theory: un LLM non ha esistenza pre-attanziale neanche residuale. Quando non è usato vale zero; quando è usato prende la forma dell'utente. Diverso da qualsiasi altro artefatto tecnico, che mantiene almeno un'ontologia residuale: è un attante che esiste solo nell'atto.",
     articles: [
       { title: "La differenza fra Claude e le mie gatte", url: "/writings/2026-04-30-la-differenza-fra-claude-e-le-mie-gatte/" },
-      { title: "La macchina e la lotta", url: "/writings/2026-06-01-la-macchina-e-la-lotta/" }
+      { title: "La macchina e la lotta", url: "/writings/2026-06-01-la-macchina-e-la-lotta/" },
+      { title: "Google AI Overviews e il problema dell'accuratezza", url: "/curated/2026-04-09-google-ai-overviews-accuracy/", _source: "curated" },
+      { title: "The Illusion of Understanding", url: "/curated/2026-04-09-illusion-of-understanding/", _source: "curated" },
+      { title: "Tokenmaxxing: come gli agenti AI bruciano token", url: "/curated/2026-04-09-tokenmaxxing-ai-agents/", _source: "curated" },
+      { title: "Ho fatto un esperimento: l'AI sa raccontare femminicidi e violenza di genere meglio dei giornalisti", url: "/curated/2026-05-05-dondi-ai-femminicidi-giornalismo/", _source: "curated" },
+      { title: "Natural Language Autoencoders Produce Unsupervised Explanations of LLM Activations", url: "/curated/2026-05-07-anthropic-nla-activations/", _source: "curated" },
+      { title: "Humans vs. Bots — Who Does the Em Dash Better?", url: "/curated/2026-06-10-nyt-em-dash-ai/", _source: "curated" }
     ]
   },
   {
@@ -429,7 +461,10 @@ module.exports = [
     type: "teoria",
     note: "Concetto usato nel sito attraverso Floridi: l'insieme di tutto ciò che si è letto, vissuto, capito, sbagliato e corretto. Senza capitale semantico, uno strumento come un LLM non è utilizzabile intelligentemente — non si ha il metro per giudicare ciò che la macchina produce. L'esperienza non è una zavorra ma la condizione di possibilità dell'uso intelligente.",
     articles: [
-      { title: "La macchina e la lotta", url: "/writings/2026-06-01-la-macchina-e-la-lotta/" }
+      { title: "La macchina e la lotta", url: "/writings/2026-06-01-la-macchina-e-la-lotta/" },
+      { title: "A Defense of a Liberal Arts Education in the Age of A.I.", url: "/curated/2026-05-21-frey-liberal-arts-ai-nyt/", _source: "curated" },
+      { title: "Why Are Humanists So Bad at Defending the Humanities?", url: "/curated/2026-06-15-pinillos-humanists-humanities-chronicle/", _source: "curated" },
+      { title: "From weeks of work to days: How I rebuilt two data journalism projects with AI", url: "/curated/2026-06-26-ottaviani-data-journalism-ai-reuters/", _source: "curated" }
     ]
   },
   {
@@ -438,7 +473,8 @@ module.exports = [
     note: "Metodo strategico sviluppato in Shell negli anni Settanta (Pierre Wack): invece di prevedere il futuro, si costruiscono scenari alternativi plausibili per rompere i modelli mentali del management. Nel sito è il quadro con cui Amodei ha valutato le conseguenze a lungo termine dell'AI militarizzata prima di rifiutare il contratto con il Pentagono.",
     articles: [
       { title: "Quando Dario Amodei ha detto no al Pentagono", url: "/writings/2026-03-09-quando-dario-amodei-ha-detto-no-al-pentagono/" },
-      { title: "Europe Needs to Come Together. This Man Has Some Ideas.", url: "/curated/2026-06-09-nyt-europe-defense-van-middelaar/", _source: "curated" }
+      { title: "Europe Needs to Come Together. This Man Has Some Ideas.", url: "/curated/2026-06-09-nyt-europe-defense-van-middelaar/", _source: "curated" },
+      { title: "The death of strategy (and what comes next)", url: "/curated/2026-05-20-smith-death-of-strategy/", _source: "curated" }
     ]
   },
   {
@@ -479,7 +515,8 @@ module.exports = [
     type: "teoria",
     note: "Concetto di Habermas: ogni volta che argomentiamo presupponiamo già norme condivise — la struttura pragmatica dell'argomentazione richiede che la migliore argomentazione possa prevalere sulla forza. Nel sito è l'universale minimo che il relativismo non può abolire senza autocontraddirsi: argomentare contro l'argomentazione è già argomentare.",
     articles: [
-      { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" }
+      { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" },
+      { title: "La colonizzazione del giudizio", url: "/curated/2026-06-12-corriere-colonizzazione-giudizio/", _source: "curated" }
     ]
   },
   {
@@ -524,98 +561,133 @@ module.exports = [
     articles: [
       { title: "From weeks of work to days: How I rebuilt two data journalism projects with AI", url: "/curated/2026-06-26-ottaviani-data-journalism-ai-reuters/", _source: "curated" },
       { title: "A Defense of a Liberal Arts Education in the Age of A.I.", url: "/curated/2026-05-21-frey-liberal-arts-ai-nyt/", _source: "curated" },
-      { title: "Why Are Humanists So Bad at Defending the Humanities?", url: "/curated/2026-06-15-pinillos-humanists-humanities-chronicle/", _source: "curated" }
+      { title: "Why Are Humanists So Bad at Defending the Humanities?", url: "/curated/2026-06-15-pinillos-humanists-humanities-chronicle/", _source: "curated" },
+      { title: "One neat trick to end extreme poverty", url: "/curated/2026-04-09-end-extreme-poverty/", _source: "curated" }
     ]
   },
   {
     name: "aiuto allo sviluppo",
     type: "teoria",
     note: "Il complesso di politiche, programmi e architetture istituzionali con cui paesi e organizzazioni internazionali trasferiscono risorse ai paesi a basso reddito. Nel sito è il bersaglio implicito del dibattito sui trasferimenti monetari diretti: l'evidenza che la semplicità batta la sofisticazione costringe a riconsiderare l'intero impianto tradizionale.",
-    articles: []
+    articles: [
+      { title: "One neat trick to end extreme poverty", url: "/curated/2026-04-09-end-extreme-poverty/", _source: "curated" }
+    ]
   },
   {
     name: "successione aziendale",
     type: "teoria",
     note: "Il processo di trasmissione della leadership e della proprietà di un'impresa da una generazione o gestione alla successiva. Nel sito è il tema di un caso studio sulle aziende creative di piccole dimensioni: la trasmissione della leadership in questi contesti non assomiglia né a quella delle imprese familiari tradizionali né a quella delle corporation.",
-    articles: []
+    articles: [
+      { title: "Podcast: la successione nelle aziende creative", url: "/curated/2026-04-09-podcast-successione-aziende-creative/", _source: "curated" }
+    ]
   },
   {
     name: "piccola impresa",
     type: "teoria",
     note: "Nel sito è il contesto dimensionale in cui si gioca il problema della successione aziendale nelle industrie creative: scale ridotte, dipendenza dalla figura fondatrice, assenza delle strutture di governance che attutiscono il passaggio generazionale nelle organizzazioni più grandi.",
-    articles: []
+    articles: [
+      { title: "Podcast: la successione nelle aziende creative", url: "/curated/2026-04-09-podcast-successione-aziende-creative/", _source: "curated" }
+    ]
   },
   {
     name: "editoria",
     type: "teoria",
     note: "Filo tematico ricorrente nei curated del sito: la sostenibilità economica della produzione culturale e informativa, dalla digitalizzazione di archivi storici dietro paywall, alla precarietà di chi produce conoscenza senza un modello di business solido, alla sovrapposizione crescente tra informazione e difesa nella nomina di figure militari a ruoli editoriali.",
-    articles: []
+    articles: [
+      { title: "Podcast: la successione nelle aziende creative", url: "/curated/2026-04-09-podcast-successione-aziende-creative/", _source: "curated" },
+      { title: "NSDAP-Archiv: Finden Sie heraus, was Ihre Familie unter Hitler getan hat", url: "/curated/2026-05-07-spiegel-nsdap-archiv/", _source: "curated" },
+      { title: "La legge Bacchelli per Lea Melandri", url: "/curated/2026-06-06-internazionale-lea-melandri-bacchelli/", _source: "curated" },
+      { title: "The strange disappearance of Japan's animators", url: "/curated/2026-06-19-economist-1843-japan-animators/", _source: "curated" },
+      { title: "Alex Turner appointed as Defence Editor of The Economist", url: "/curated/2026-06-19-economist-defence-editor-turner/", _source: "curated" }
+    ]
   },
   {
     name: "memoria storica",
     type: "teoria",
     note: "Nel sito è il terreno di scontro politico attivato dalla digitalizzazione delle schede di iscrizione al NSDAP da parte di Der Spiegel: la domanda aperta è se la sensibilizzazione di massa su un passato totalitario non avrebbe più valore se resa universale invece che dietro paywall, soprattutto mentre forze come l'AfD ne contestano la rilevanza.",
-    articles: []
+    articles: [
+      { title: "NSDAP-Archiv: Finden Sie heraus, was Ihre Familie unter Hitler getan hat", url: "/curated/2026-05-07-spiegel-nsdap-archiv/", _source: "curated" }
+    ]
   },
   {
     name: "legge Bacchelli",
     type: "teoria",
     note: "Legge italiana dell'8 agosto 1985, n. 440, che consente al Presidente del Consiglio di concedere un vitalizio a cittadini illustri in stato di necessità, con merito comprovato in campo scientifico, culturale, sportivo o sociale. Nel sito è il caso Lea Melandri: un punto dolente per chi sostiene che la produzione di conoscenza debba reggersi su un modello di business solido, non sulla sola buona volontà o sul sussidio pubblico ad hoc.",
-    articles: []
+    articles: [
+      { title: "La legge Bacchelli per Lea Melandri", url: "/curated/2026-06-06-internazionale-lea-melandri-bacchelli/", _source: "curated" }
+    ]
   },
   {
     name: "propaganda",
     type: "teoria",
     note: "Nel sito è collegata alla sovrapposizione crescente tra i piani dell'informazione e della difesa: la nomina di un generale britannico, ex comandante della 77 Brigade, come defence editor dell'Economist è il caso che rende visibile quanto i contenuti che ne escono sembrino sempre meno innocui — un tema che dialoga con la dottrina Gerasimov e il controllo riflessivo già trattati altrove sul sito.",
-    articles: []
+    articles: [
+      { title: "Alex Turner appointed as Defence Editor of The Economist", url: "/curated/2026-06-19-economist-defence-editor-turner/", _source: "curated" }
+    ]
   },
   {
     name: "industria dell'animazione",
     type: "teoria",
     note: "Nel sito è il caso degli animatori giapponesi: un mercato quasi triplicato in un decennio (fino a 19 miliardi di dollari) che resta cronicamente incapace di formare e remunerare chi produce materialmente il valore — solo uno su cinque riceve oggi formazione sul campo, contro sette su dieci una generazione fa. Un caso da manuale per chi si occupa di editoria e publishing più in generale.",
-    articles: []
+    articles: [
+      { title: "The strange disappearance of Japan's animators", url: "/curated/2026-06-19-economist-1843-japan-animators/", _source: "curated" }
+    ]
   },
   {
     name: "economia",
     type: "teoria",
     note: "Filo tematico ricorrente nei curated del sito, in due varianti distinte: come dibattito sugli strumenti di riduzione della povertà estrema (i trasferimenti monetari diretti contro l'architettura assistenziale tradizionale) e come lente con cui leggere la sostenibilità di filiere produttive — dalla cultura all'animazione — che crescono senza remunerare chi ci lavora.",
-    articles: []
+    articles: [
+      { title: "One neat trick to end extreme poverty", url: "/curated/2026-04-09-end-extreme-poverty/", _source: "curated" }
+    ]
   },
   {
     name: "macroeconomia",
     type: "teoria",
     note: "Nel sito è il quadro teorico evocato dal dibattito sui trasferimenti monetari diretti: l'evidenza che la semplicità batta la sofisticazione nella riduzione della povertà estrema costringe a riconsiderare assunzioni macroeconomiche più ampie sull'efficacia delle architetture assistenziali tradizionali.",
-    articles: []
+    articles: [
+      { title: "One neat trick to end extreme poverty", url: "/curated/2026-04-09-end-extreme-poverty/", _source: "curated" }
+    ]
   },
   {
     name: "GS1 Web Vocabulary",
     type: "teoria",
     note: "Standard che estende Schema.org con termini specifici per il largo consumo — categoria merceologica, allergeni, dettagli logistici — per dare «voce» ai codici a barre sul web. Nel sito è il caso esemplare di infrastruttura semantica mancante: un barcode tradizionale è muto per i motori di ricerca, generativi compresi.",
-    articles: []
+    articles: [
+      { title: "GS1 Web Vocabulary: il dizionario universale che dà voce ai prodotti nel web 3.0", url: "/curated/2026-02-05-giulieri-gs1-web-vocabulary/", _source: "curated" }
+    ]
   },
   {
     name: "Schema.org",
     type: "teoria",
     note: "Vocabolario condiviso da Google, Microsoft e altri motori di ricerca per marcare semanticamente i contenuti web. Nel sito è la base su cui si costruisce il GS1 Web Vocabulary, e più in generale il riferimento per qualsiasi discussione su come rendere i contenuti leggibili dalle macchine, motori AI compresi.",
-    articles: []
+    articles: [
+      { title: "GS1 Web Vocabulary: il dizionario universale che dà voce ai prodotti nel web 3.0", url: "/curated/2026-02-05-giulieri-gs1-web-vocabulary/", _source: "curated" }
+    ]
   },
   {
     name: "web semantico",
     type: "teoria",
     note: "L'idea — di cui il GS1 Web Vocabulary è un'implementazione concreta — che i contenuti del web debbano essere strutturati in modo leggibile dalle macchine, non solo dagli umani. Nel sito è il prerequisito infrastrutturale, spesso assente nei cataloghi italiani, perché i prodotti siano «letti» e citati dai motori di ricerca generativi.",
-    articles: []
+    articles: [
+      { title: "GS1 Web Vocabulary: il dizionario universale che dà voce ai prodotti nel web 3.0", url: "/curated/2026-02-05-giulieri-gs1-web-vocabulary/", _source: "curated" }
+    ]
   },
   {
     name: "e-commerce",
     type: "teoria",
     note: "Nel sito è il settore attraversato da due pezzi complementari: la domanda se i prodotti italiani siano leggibili dai motori di ricerca generativi (infrastruttura semantica), e la distinzione fra le tre «IA» del commercio digitale che il settore confonde sistematicamente — discovery, infrastruttura, agentica.",
-    articles: []
+    articles: [
+      { title: "Le tre IA del Netcomm Forum", url: "/curated/2026-05-21-diegoli-tre-ia-netcomm-forum/", _source: "curated" }
+    ]
   },
   {
     name: "GEO",
     type: "teoria",
     note: "Generative Engine Optimization: l'equivalente della SEO per i motori di ricerca generativi. Nel sito è il problema pratico di chi si lamenta di non comparire nelle risposte AI senza sapere che, spesso, il blocco bot di Cloudflare attivo di default restituisce 403 proprio ai crawler che vorrebbe accogliere.",
-    articles: []
+    articles: [
+      { title: "Le tre IA del Netcomm Forum", url: "/curated/2026-05-21-diegoli-tre-ia-netcomm-forum/", _source: "curated" }
+    ]
   },
   {
     name: "pubblicità",
@@ -629,7 +701,9 @@ module.exports = [
     name: "stock option",
     type: "teoria",
     note: "Nel sito è il meccanismo al centro del caso Bending Spoons: un pool di 51 milioni di azioni distribuite ai dipendenti, e il regime fiscale agevolato britannico (EMI) che spiega parte del vantaggio di Londra su Roma e Milano nel generare startup di seconda generazione dagli ex-dipendenti di aziende quotate.",
-    articles: []
+    articles: [
+      { title: "Cosa sblocca l'IPO di Bending Spoons?", url: "/curated/2026-06-21-camera-bending-spoons-ipo/", _source: "curated" }
+    ]
   },
   {
     name: "paideia",
@@ -653,37 +727,49 @@ module.exports = [
     name: "metodo scientifico",
     type: "teoria",
     note: "Il processo con cui acquisiamo informazione e strutturiamo la conoscenza. Nel sito è l'oggetto della carrellata di Kevin Kelly (2006/2026): non un insieme fisso di protocolli ma una struttura vivente che si modifica con gli strumenti disponibili — e che l'AI potrebbe cambiare nei prossimi 80 anni più di quanto non abbia fatto nei precedenti 80.",
-    articles: []
+    articles: [
+      { title: "Speculations on the Future of the Scientific Method", url: "/curated/2026-05-04-kevin-kelly-future-scientific-method/", _source: "curated" }
+    ]
   },
   {
     name: "ghostwriting",
     type: "teoria",
     note: "La pratica di scrivere testi firmati da altri. Nel sito è il termine chiave del pezzo di Dondi: il ghostwriting ha sempre reso invisibile il lavoro di supporto alle figure di potere senza che questo fosse considerato imbroglio. L'AI ne è una versione più economica e accessibile — e l'indignazione che suscita rivela che il privilegio viene contestato solo quando smette di essere esclusivo.",
-    articles: []
+    articles: [
+      { title: "Se uso l'AI sono meno professionista?", url: "/curated/2026-06-21-dondi-ai-professionalita-ghostwriting/", _source: "curated" }
+    ]
   },
   {
     name: "privilegio",
     type: "teoria",
     note: "Nel sito è il nodo del ragionamento di Dondi: chi ha potere ha sempre avuto accesso a supporto — ghostwriter, editor, speechwriter, assistenti di ricerca — senza che questo fosse considerato imbroglio o segno di incompetenza. I privilegi non si confessano: si usano. L'AI rende visibile questa asimmetria rendendola accessibile a chi ne era storicamente escluso.",
-    articles: []
+    articles: [
+      { title: "Se uso l'AI sono meno professionista?", url: "/curated/2026-06-21-dondi-ai-professionalita-ghostwriting/", _source: "curated" }
+    ]
   },
   {
     name: "lavoro invisibile",
     type: "teoria",
     note: "Il lavoro non riconosciuto, non retribuito o non attribuito che sorregge la produzione culturale e intellettuale visibile. Nel sito è il filo che connette il caso Dondi (ghostwriting come privilegio del potere) e il caso Melandri (chi ha prodotto conoscenza senza ricevere una rendita adeguata dall'industria che ne ha beneficiato).",
-    articles: []
+    articles: [
+      { title: "Se uso l'AI sono meno professionista?", url: "/curated/2026-06-21-dondi-ai-professionalita-ghostwriting/", _source: "curated" }
+    ]
   },
   {
     name: "femminicidio",
     type: "teoria",
     note: "L'omicidio di donne motivato da odio misogino o da dinamiche di controllo maschile. Nel sito è la categoria statistica al centro del pezzo di Columbro: costruita socialmente come tutte le categorie — GDP, disoccupazione, ondate di calore — ma necessaria per misurare un pattern asimmetrico che i dati Istat documentano con chiarezza (53% delle donne ucciso da partner o ex, contro il 4,7% degli uomini).",
-    articles: []
+    articles: [
+      { title: "Il femminicidio non esiste", url: "/curated/2026-05-06-columbro-femminicidio-non-esiste/", _source: "curated" }
+    ]
   },
   {
     name: "costruttivismo",
     type: "teoria",
     note: "La postura epistemologica secondo cui le categorie con cui descriviamo la realtà sono costruzioni sociali, storiche e culturali, non rispecchiamenti di entità naturali preesistenti. Nel sito è la posizione corretta e ben argomentata di Columbro sulle statistiche — e insieme il punto di vulnerabilità che il negazionismo sfrutta quando la distinzione tra costruzione della categoria e negazione del fenomeno non viene esplicitata.",
-    articles: []
+    articles: [
+      { title: "Il femminicidio non esiste", url: "/curated/2026-05-06-columbro-femminicidio-non-esiste/", _source: "curated" }
+    ]
   },
   {
     name: "ontologia sociale",
@@ -691,26 +777,33 @@ module.exports = [
     note: "Lo studio di come esistono le entità sociali — istituzioni, categorie, ruoli, fatti istituzionali. Nel sito compare in due contesti: come distinzione mancante nel costruttivismo di Columbro (il problema non è che il femminicidio «non esista», ma come classificarlo correttamente) e come sfondo nella lettura di Nussbaum (un'ontologia delle virtù fondata sui problemi come entità primarie).",
     articles: [
       { title: "Magnifica Humanitas: le nuove terre rare del potere", url: "/curated/2026-06-17-boccia-artieri-magnifica-humanitas-substack/", _source: "curated" },
-      { title: "What Worries Me Most About 'Abundance'", url: "/curated/2026-04-28-klein-abundance-nyt/", _source: "curated" }
+      { title: "What Worries Me Most About 'Abundance'", url: "/curated/2026-04-28-klein-abundance-nyt/", _source: "curated" },
+      { title: "Il femminicidio non esiste", url: "/curated/2026-05-06-columbro-femminicidio-non-esiste/", _source: "curated" }
     ]
   },
   {
     name: "etica della virtù",
     type: "teoria",
     note: "La tradizione etica che si concentra sul carattere del soggetto morale piuttosto che su principi universali o calcolo delle conseguenze. Nel sito è riletta attraverso Brady su Nussbaum come una diversa ontologia etica: non un'alternativa all'utilitarismo che aggiunge «virtù» all'ontologia, ma una proposta in cui i problemi — le sfere dell'attività umana dove la scelta è inevitabile — sono primari, e le virtù ne sono le soluzioni virtuali.",
-    articles: []
+    articles: [
+      { title: "A Problem-Based Reading of Nussbaum's Virtue Ethics", url: "/curated/2018-09-04-brady-nussbaum-virtue-ethics-epochemagazine/", _source: "curated" }
+    ]
   },
   {
     name: "liberalismo",
     type: "teoria",
     note: "La tradizione filosofico-politica fondata sulla libertà individuale, i diritti, lo stato di diritto e i limiti al potere arbitrario. Nel sito è il valore identitario con cui The Economist costruisce la propria autorità editoriale — una strategia di marketing valoriale distinta dal «marketing della verità» di WaPo e NYT, più resistente alle crisi di credibilità legate all'assetto proprietario.",
-    articles: []
+    articles: [
+      { title: "The history of liberalism: a timeline", url: "/curated/2026-06-25-economist-liberalism-timeline/", _source: "curated" }
+    ]
   },
   {
     name: "marketing valoriale",
     type: "teoria",
     note: "La strategia comunicativa di costruire l'identità di un brand attorno a un sistema di valori, non solo a una promessa funzionale o fattuale. Nel sito è il modo in cui The Economist ha risposto alla crisi di fiducia nei media: non difendere la verità come valore giornalistico (come WaPo e NYT nel 2016), ma difendere il liberalismo come sistema di valori su scala globale — con molta agiografia, ma con più resistenza strutturale.",
-    articles: []
+    articles: [
+      { title: "The history of liberalism: a timeline", url: "/curated/2026-06-25-economist-liberalism-timeline/", _source: "curated" }
+    ]
   },
   {
     name: "data journalism",
@@ -827,7 +920,13 @@ module.exports = [
     note: "Azienda AI americana fondata nel 2021 da Dario Amodei e altri ex OpenAI. Nel sito è la protagonista dell'articolo sul rifiuto del contratto col Pentagono: rappresenta il modello dell'azienda AI che prende sul serio l'allineamento e le conseguenze strategiche a lungo termine. Nel dibattito sul dual use sceglie esplicitamente di non partecipare ai contratti militari diretti.",
     articles: [
       { title: "Quando Dario Amodei ha detto no al Pentagono", url: "/writings/2026-03-09-quando-dario-amodei-ha-detto-no-al-pentagono/" },
-      { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" }
+      { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
+      { title: "Mythos, Muse, and the Opportunity Cost of Compute", url: "/curated/2026-04-13-stratechery-opportunity-cost-compute/", _source: "curated" },
+      { title: "Natural Language Autoencoders Produce Unsupervised Explanations of LLM Activations", url: "/curated/2026-05-07-anthropic-nla-activations/", _source: "curated" },
+      { title: "Making Claude a chemist", url: "/curated/2026-06-05-anthropic-claude-chemist/", _source: "curated" },
+      { title: "Il Golem e l'AI", url: "/curated/2026-06-08-giannella-golem-ai/", _source: "curated" },
+      { title: "To Land a Job in AI, Try Reading Kant", url: "/curated/2026-06-12-wired-philosophers-ai-jobs/", _source: "curated" },
+      { title: "When AI builds itself", url: "/curated/2026-06-19-anthropic-recursive-self-improvement/", _source: "curated" }
     ]
   },
   {
@@ -844,7 +943,8 @@ module.exports = [
     note: "Azienda di data analytics fondata nel 2003 da Peter Thiel e Alexander Karp. Nel sito è la controparte di Anthropic: Karp ha pubblicato un manifesto in favore dell'impegno militare di Silicon Valley, Palantir lavora attivamente con il Dipartimento della Difesa americano. Caso studio della scelta opposta a quella di Amodei.",
     articles: [
       { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
-      { title: "Why Are Palantir and OpenAI Scared of Alex Bores?", url: "/curated/2026-04-21-bores-palantir-openai-regulation-nyt/", _source: "curated" }
+      { title: "Why Are Palantir and OpenAI Scared of Alex Bores?", url: "/curated/2026-04-21-bores-palantir-openai-regulation-nyt/", _source: "curated" },
+      { title: "The End of the Future", url: "/curated/2026-06-15-fp-end-of-the-future/", _source: "curated" }
     ]
   },
   {
@@ -859,43 +959,58 @@ module.exports = [
     name: "NSDAP",
     type: "istituzione",
     note: "Partito nazionalsocialista tedesco (1920–1945). Nel sito è il riferimento storico della digitalizzazione, da parte di Der Spiegel con l'ausilio dell'AI, di milioni di schede di iscrizione rilasciate dagli Archivi Nazionali americani nel 2026: uno strumento che rende chiunque in grado di costruirsi un dossier su cosa ha fatto la propria famiglia sotto Hitler.",
-    articles: []
+    articles: [
+      { title: "NSDAP-Archiv: Finden Sie heraus, was Ihre Familie unter Hitler getan hat", url: "/curated/2026-05-07-spiegel-nsdap-archiv/", _source: "curated" }
+    ]
   },
   {
     name: "AfD",
     type: "istituzione",
     note: "Alternative für Deutschland, partito di estrema destra tedesco. Nel sito è citato come attore della contestazione politica della memoria storica: un dirigente del partito, Björn Höcke, si è scagliato contro la digitalizzazione degli archivi NSDAP — mentre il partito stesso continua a guadagnare terreno in diverse regioni tedesche.",
-    articles: []
+    articles: [
+      { title: "NSDAP-Archiv: Finden Sie heraus, was Ihre Familie unter Hitler getan hat", url: "/curated/2026-05-07-spiegel-nsdap-archiv/", _source: "curated" }
+    ]
   },
   {
     name: "The Economist",
     type: "istituzione",
     note: "Settimanale britannico. Nel sito è il caso della nomina del generale Alex Turner — ex comandante della 77 Brigade, ancora in servizio attivo al momento della nomina — a defence editor: un caso che rende visibile la sovrapposizione crescente tra i piani dell'informazione e della difesa.",
-    articles: []
+    articles: [
+      { title: "Alex Turner appointed as Defence Editor of The Economist", url: "/curated/2026-06-19-economist-defence-editor-turner/", _source: "curated" },
+      { title: "The history of liberalism: a timeline", url: "/curated/2026-06-25-economist-liberalism-timeline/", _source: "curated" }
+    ]
   },
   {
     name: "77 Brigade",
     type: "istituzione",
     note: "Unità dell'esercito britannico per le «attività informative», istituita nel 2015. Nel sito è citata per il suo ruolo nel monitoraggio del dibattito online dei cittadini britannici durante la pandemia (secondo una richiesta FOI del 2024) e per la sovrapposizione, nel caso Turner/Economist, tra comando militare di un'unità di information warfare e ruolo editoriale.",
-    articles: []
+    articles: [
+      { title: "Alex Turner appointed as Defence Editor of The Economist", url: "/curated/2026-06-19-economist-defence-editor-turner/", _source: "curated" }
+    ]
   },
   {
     name: "Studio Ghibli",
     type: "istituzione",
     note: "Studio d'animazione giapponese fondato nel 1985 da Hayao Miyazaki e Isao Takahata. Nel sito è il riferimento implicito di qualità artigianale nel dibattito sulla crisi degli animatori giapponesi: il modello di formazione sul campo che lo studio ha incarnato è esattamente ciò che l'industria, nel suo insieme, ha smantellato dopo il 1973.",
-    articles: []
+    articles: [
+      { title: "The strange disappearance of Japan's animators", url: "/curated/2026-06-19-economist-1843-japan-animators/", _source: "curated" }
+    ]
   },
   {
     name: "GS1",
     type: "istituzione",
     note: "Organizzazione globale di standard per l'identificazione di prodotti (codici a barre) e la tracciabilità della filiera. Nel sito è la fonte del GS1 Web Vocabulary e il punto di vista — tramite la newsletter Tendenze di GS1 Italy — da cui arrivano più pezzi curated sull'infrastruttura semantica del commercio digitale.",
-    articles: []
+    articles: [
+      { title: "GS1 Web Vocabulary: il dizionario universale che dà voce ai prodotti nel web 3.0", url: "/curated/2026-02-05-giulieri-gs1-web-vocabulary/", _source: "curated" }
+    ]
   },
   {
     name: "Netcomm Forum",
     type: "istituzione",
     note: "Il principale evento italiano dedicato all'e-commerce. Nel sito è il contesto da cui Gianluca Diegoli osserva, dal vivo, la confusione sistematica fra le tre «IA» del commercio digitale e il ritardo italiano nell'adozione dell'AI di infrastruttura rispetto al Nord Europa.",
-    articles: []
+    articles: [
+      { title: "Le tre IA del Netcomm Forum", url: "/curated/2026-05-21-diegoli-tre-ia-netcomm-forum/", _source: "curated" }
+    ]
   },
   {
     name: "Cannes Lions",
@@ -918,37 +1033,49 @@ module.exports = [
     name: "Bending Spoons",
     type: "istituzione",
     note: "Azienda tech italiana, quotata al Nasdaq a giugno 2026 con una valutazione di 20 miliardi di dollari. Nel sito è il caso studio di cosa potrebbe sbloccare per l'ecosistema startup italiano: non l'azienda in sé, ma il pool di 51 milioni di azioni distribuite ai dipendenti, potenziale innesco di una generazione di startup di seconda mano sul modello di Berlino e Londra.",
-    articles: []
+    articles: [
+      { title: "Cosa sblocca l'IPO di Bending Spoons?", url: "/curated/2026-06-21-camera-bending-spoons-ipo/", _source: "curated" }
+    ]
   },
   {
     name: "Zalando",
     type: "istituzione",
     note: "E-commerce di moda tedesco, quotato. Nel sito è uno dei casi di riferimento — insieme a Rocket Internet — per misurare l'effetto «ex-dipendenti che fondano startup» a Berlino: 138 nuove startup da 24 unicorni tedeschi, l'81% rimaste nella stessa città.",
-    articles: []
+    articles: [
+      { title: "Cosa sblocca l'IPO di Bending Spoons?", url: "/curated/2026-06-21-camera-bending-spoons-ipo/", _source: "curated" }
+    ]
   },
   {
     name: "Rocket Internet",
     type: "istituzione",
     note: "Startup studio e incubatore tedesco. Nel sito è citato insieme a Zalando come motore dell'effetto di seconda generazione berlinese — l'evidenza usata per valutare se Bending Spoons potrà fare lo stesso per l'Italia.",
-    articles: []
+    articles: [
+      { title: "Cosa sblocca l'IPO di Bending Spoons?", url: "/curated/2026-06-21-camera-bending-spoons-ipo/", _source: "curated" }
+    ]
   },
   {
     name: "Revolut",
     type: "istituzione",
     note: "Fintech britannica. Nel sito è uno dei casi citati per l'effetto di seconda generazione londinese, insieme a Braze, Wise e Monzo — 168 startup da 27 unicorni, il 69% rimaste a Londra, favorite anche dal regime fiscale agevolato EMI sulle stock option.",
-    articles: []
+    articles: [
+      { title: "Cosa sblocca l'IPO di Bending Spoons?", url: "/curated/2026-06-21-camera-bending-spoons-ipo/", _source: "curated" }
+    ]
   },
   {
     name: "Washington Post",
     type: "istituzione",
     note: "Quotidiano americano. Nel sito è il caso della credibilità erosa: dopo il 2016 aveva costruito un «marketing della verità» («Democracy Dies in Darkness») come risposta al primo insediamento di Trump — una postura oggi meno credibile per ragioni legate all'assetto proprietario (Jeff Bezos) e alle relative ingerenze editoriali.",
-    articles: []
+    articles: [
+      { title: "The history of liberalism: a timeline", url: "/curated/2026-06-25-economist-liberalism-timeline/", _source: "curated" }
+    ]
   },
   {
     name: "New York Times",
     type: "istituzione",
     note: "Quotidiano americano. Nel sito è citato insieme al Washington Post come testata che ha imbastito un «marketing della verità» al primo insediamento di Trump nel 2016 — una strategia di posizionamento diversa da quella valoriale adottata dall'Economist, e più vulnerabile alle crisi di credibilità legate alle scelte proprietarie.",
-    articles: []
+    articles: [
+      { title: "The history of liberalism: a timeline", url: "/curated/2026-06-25-economist-liberalism-timeline/", _source: "curated" }
+    ]
   },
 
   {
@@ -956,14 +1083,18 @@ module.exports = [
     type: "testo",
     note: "Enciclica di Papa Leone XIV (15 maggio 2026), firmata nel 135° anniversario della *Rerum Novarum*. Affronta l'intelligenza artificiale come questione sociale, non solo tecnica o morale: colloca l'AI nel solco della dottrina sociale della Chiesa (lavoro, potere, giustizia, dignità, vita comune). Il passaggio più citato nel sito è l'immagine dei dati come «nuove terre rare del potere» — il colonialismo contemporaneo che si appropria di vite rese computabili, profili sanitari, mappe genetiche, dati demografici. Boccia Artieri la usa come punto di partenza per chiedere non appelli morali ma una grammatica politica dell'AI.",
     citation: "LEONE XIV, <a href=\"https://www.vatican.va/content/leo-xiv/it/encyclicals/documents/20260515-magnifica-humanitas.html\"><em>Magnifica Humanitas</em></a>, Città del Vaticano, Libreria Editrice Vaticana, 15 maggio 2026.",
-    articles: []
+    articles: [
+      { title: "Magnifica Humanitas: le nuove terre rare del potere", url: "/curated/2026-06-17-boccia-artieri-magnifica-humanitas-substack/", _source: "curated" }
+    ]
   },
   {
     name: "The Technium",
     type: "testo",
     note: "Blog di Kevin Kelly (kk.org/thetechnium), attivo dal 2003. Il titolo è anche il nome del concetto centrale di Kelly: la tecnosfera come sistema vivente con proprie tendenze evolutive. Nel sito è la fonte del saggio del 2006 sulle speculazioni sul metodo scientifico, ripubblicato nel 2026 con un'introduzione aggiornata.",
     citation: "KELLY, Kevin, <a href=\"https://kk.org/thetechnium\"><em>The Technium</em></a>, blog personale, 2003–.",
-    articles: []
+    articles: [
+      { title: "Speculations on the Future of the Scientific Method", url: "/curated/2026-05-04-kevin-kelly-future-scientific-method/", _source: "curated" }
+    ]
   },
 
   // ─── LUOGHI ───────────────────────────────────────────────────────────────
@@ -1061,7 +1192,10 @@ module.exports = [
       { title: "China's Not the Problem. We Are.", url: "/curated/2026-05-14-chan-china-ai-nyt/", _source: "curated" },
       { title: "Fareed Zakaria on the Moral Cost of Trump's War", url: "/curated/2026-04-10-zakaria-trump-iran-war-nyt/", _source: "curated" },
       { title: "What Worries Me Most About 'Abundance'", url: "/curated/2026-04-28-klein-abundance-nyt/", _source: "curated" },
-      { title: "Europe Needs to Come Together. This Man Has Some Ideas.", url: "/curated/2026-06-09-nyt-europe-defense-van-middelaar/", _source: "curated" }
+      { title: "Europe Needs to Come Together. This Man Has Some Ideas.", url: "/curated/2026-06-09-nyt-europe-defense-van-middelaar/", _source: "curated" },
+      { title: "How surge in defence and dual-use technology investment could reconfigure global AI race", url: "/curated/2026-04-01-chatham-house-defence-ai-race/", _source: "curated" },
+      { title: "America's Next Story", url: "/curated/2026-04-09-lepore-americas-next-story/", _source: "curated" },
+      { title: "The End of the Future", url: "/curated/2026-06-15-fp-end-of-the-future/", _source: "curated" }
     ]
   },
   {
@@ -1071,7 +1205,8 @@ module.exports = [
     articles: [
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
       { title: "Cartolina dal paese più bello del mondo", url: "/writings/2026-04-24-cartolina-dal-paese-piu-bello-del-mondo/" },
-      { title: "Europe Needs to Come Together. This Man Has Some Ideas.", url: "/curated/2026-06-09-nyt-europe-defense-van-middelaar/", _source: "curated" }
+      { title: "Europe Needs to Come Together. This Man Has Some Ideas.", url: "/curated/2026-06-09-nyt-europe-defense-van-middelaar/", _source: "curated" },
+      { title: "Why a big country like Italy acts as if it were small", url: "/curated/2026-04-09-italy-acts-as-if-small/", _source: "curated" }
     ]
   },
   {
@@ -1083,7 +1218,12 @@ module.exports = [
       { title: "Cartolina dal paese più bello del mondo", url: "/writings/2026-04-24-cartolina-dal-paese-piu-bello-del-mondo/" },
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
       { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" },
-      { title: "Europe Needs to Come Together. This Man Has Some Ideas.", url: "/curated/2026-06-09-nyt-europe-defense-van-middelaar/", _source: "curated" }
+      { title: "Europe Needs to Come Together. This Man Has Some Ideas.", url: "/curated/2026-06-09-nyt-europe-defense-van-middelaar/", _source: "curated" },
+      { title: "How surge in defence and dual-use technology investment could reconfigure global AI race", url: "/curated/2026-04-01-chatham-house-defence-ai-race/", _source: "curated" },
+      { title: "Why a big country like Italy acts as if it were small", url: "/curated/2026-04-09-italy-acts-as-if-small/", _source: "curated" },
+      { title: "Il gioco sporco degli autocrati", url: "/curated/2026-04-09-sabatini-gioco-sporco-autocrati/", _source: "curated" },
+      { title: "Orbán ha perso, e non è l'unica buona notizia", url: "/curated/2026-04-09-sabatini-orban-ha-perso/", _source: "curated" },
+      { title: "Forget the World Cup. Culture is becoming more fragmented", url: "/curated/2026-06-11-economist-deglobalisation-culture/", _source: "curated" }
     ]
   },
   {
@@ -1094,7 +1234,9 @@ module.exports = [
       { title: "Il rumore a Beirut", url: "/writings/2026-04-09-il-rumore-a-beirut/" },
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
       { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
-      { title: "China's Not the Problem. We Are.", url: "/curated/2026-05-14-chan-china-ai-nyt/", _source: "curated" }
+      { title: "China's Not the Problem. We Are.", url: "/curated/2026-05-14-chan-china-ai-nyt/", _source: "curated" },
+      { title: "How surge in defence and dual-use technology investment could reconfigure global AI race", url: "/curated/2026-04-01-chatham-house-defence-ai-race/", _source: "curated" },
+      { title: "La rivoluzione silenziosa della rete elettrica cinese", url: "/curated/2026-04-13-nyt-china-energy-battery-grid/", _source: "curated" }
     ]
   },
   {
@@ -1105,26 +1247,33 @@ module.exports = [
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
       { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" },
       { title: "Fareed Zakaria on the Moral Cost of Trump's War", url: "/curated/2026-04-10-zakaria-trump-iran-war-nyt/", _source: "curated" },
-      { title: "Our Military Is Built for the Wrong Century", url: "/curated/2026-05-28-brose-anduril-military-drones-nyt/", _source: "curated" }
+      { title: "Our Military Is Built for the Wrong Century", url: "/curated/2026-05-28-brose-anduril-military-drones-nyt/", _source: "curated" },
+      { title: "Dentro le decisioni di Trump sull'Iran", url: "/curated/2026-04-09-trump-iran-war/", _source: "curated" }
     ]
   },
   {
     name: "Germania",
     type: "paese",
     note: "Nel sito è il contesto della digitalizzazione degli archivi NSDAP da parte di Der Spiegel e dell'avanzata dell'AfD in diverse regioni: il caso in cui la cultura della memoria storica diventa esplicitamente terreno di scontro politico contemporaneo.",
-    articles: []
+    articles: [
+      { title: "NSDAP-Archiv: Finden Sie heraus, was Ihre Familie unter Hitler getan hat", url: "/curated/2026-05-07-spiegel-nsdap-archiv/", _source: "curated" }
+    ]
   },
   {
     name: "Regno Unito",
     type: "paese",
     note: "Nel sito è il contesto della 77 Brigade e della sovrapposizione fra information warfare militare e giornalismo di difesa, resa visibile dalla nomina di un suo ex comandante a defence editor dell'Economist.",
-    articles: []
+    articles: [
+      { title: "Alex Turner appointed as Defence Editor of The Economist", url: "/curated/2026-06-19-economist-defence-editor-turner/", _source: "curated" }
+    ]
   },
   {
     name: "Giappone",
     type: "paese",
     note: "Nel sito è il caso della crisi degli animatori: un mercato dell'anime quasi triplicato in un decennio fino a 19 miliardi di dollari, sostenuto da una manodopera cronicamente sottopagata e mal formata dopo lo smantellamento del sistema di apprendistato seguito al fallimento di Mushi Production nel 1973.",
-    articles: []
+    articles: [
+      { title: "The strange disappearance of Japan's animators", url: "/curated/2026-06-19-economist-1843-japan-animators/", _source: "curated" }
+    ]
   },
 
   // ─── LEADER POLITICI ──────────────────────────────────────────────────────
@@ -1139,7 +1288,9 @@ module.exports = [
       { title: "L'ombra del futuro", url: "/writings/2026-04-15-lombra-del-futuro/" },
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
       { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
-      { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" }
+      { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" },
+      { title: "Il gioco sporco degli autocrati", url: "/curated/2026-04-09-sabatini-gioco-sporco-autocrati/", _source: "curated" },
+      { title: "Dentro le decisioni di Trump sull'Iran", url: "/curated/2026-04-09-trump-iran-war/", _source: "curated" }
     ]
   },
   {
@@ -1166,7 +1317,9 @@ module.exports = [
     type: "persona",
     note: "Primo ministro ungherese (1963). Nel sito è citato come utilizzatore deteriore della lezione post-strutturalista: la realtà come narrazione manipolabile, senza resistenza ontologica. Rappresenta il modello dell'autocrate illiberale europeo che ha imparato male da Foucault e Derrida.",
     articles: [
-      { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-02-19-dieci-anni-senza-umberto-eco/" }
+      { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-02-19-dieci-anni-senza-umberto-eco/" },
+      { title: "Il gioco sporco degli autocrati", url: "/curated/2026-04-09-sabatini-gioco-sporco-autocrati/", _source: "curated" },
+      { title: "Orbán ha perso, e non è l'unica buona notizia", url: "/curated/2026-04-09-sabatini-orban-ha-perso/", _source: "curated" }
     ]
   },
   {
@@ -1190,7 +1343,9 @@ module.exports = [
     type: "persona",
     note: "CEO di Palantir (1967). Nel sito è citato per il suo «manifesto» del 2026: l'élite ingegneristica di Silicon Valley ha un debito morale con il paese che ne ha reso possibile l'ascesa e un obbligo affermativo di partecipare alla difesa della nazione. Il sito condivide la premessa ma non le conclusioni.",
     articles: [
-      { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" }
+      { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
+      { title: "La colonizzazione del giudizio", url: "/curated/2026-06-12-corriere-colonizzazione-giudizio/", _source: "curated" },
+      { title: "The End of the Future", url: "/curated/2026-06-15-fp-end-of-the-future/", _source: "curated" }
     ]
   },
   {
@@ -1205,19 +1360,26 @@ module.exports = [
     name: "Thompson, Ben",
     type: "persona",
     note: "Analista tecnologico americano (1984), autore di Stratechery, tra le voci più influenti sui modelli di business digitali e sull'industria tecnologica. Teorico dell'aggregazione come struttura dominante del capitalismo digitale: le piattaforme che controllano la relazione con l'utente finale catturano il valore dell'intera filiera.",
-    articles: []
+    articles: [
+      { title: "Mythos, Muse, and the Opportunity Cost of Compute", url: "/curated/2026-04-13-stratechery-opportunity-cost-compute/", _source: "curated" }
+    ]
   },
   {
     name: "Arendt, Hannah",
     type: "persona",
     note: "Filosofa politica tedesco-americana (1906–1975). Autrice de Le origini del totalitarismo (1951) e La banalità del male (1963). Teorica della sfera pubblica, della natalità come categoria politica e della distinzione tra lavoro, opera e azione come fondamento dell'analisi della vita attiva.",
-    articles: []
+    articles: [
+      { title: "La colonizzazione del giudizio", url: "/curated/2026-06-12-corriere-colonizzazione-giudizio/", _source: "curated" }
+    ]
   },
   {
     name: "Thiel, Peter",
     type: "persona",
     note: "Investitore e imprenditore tedesco-americano (1967). Cofondatore di PayPal e Palantir, finanziatore di Facebook e Trump. Teorico del monopolio come obiettivo strategico (Zero to One, 2014): i mercati competitivi distruggono i margini, il monopolio crea valore — e il «segreto» è la verità che nessuno dice ad alta voce.",
-    articles: []
+    articles: [
+      { title: "La colonizzazione del giudizio", url: "/curated/2026-06-12-corriere-colonizzazione-giudizio/", _source: "curated" },
+      { title: "The End of the Future", url: "/curated/2026-06-15-fp-end-of-the-future/", _source: "curated" }
+    ]
   },
   {
     name: "van Middelaar, Luuk",
@@ -1239,37 +1401,49 @@ module.exports = [
     name: "Kevin Kelly",
     type: "persona",
     note: "Futurista e saggista americano (1952), co-fondatore di Wired, autore di Out of Control (1994), What Technology Wants (2010), The Inevitable (2016). Nel sito è citato per un saggio del 2006 sulle possibili evoluzioni del metodo scientifico — quattordici speculazioni che vent'anni dopo leggono come una descrizione del presente, soprattutto alla luce dell'AI.",
-    articles: []
+    articles: [
+      { title: "Speculations on the Future of the Scientific Method", url: "/curated/2026-05-04-kevin-kelly-future-scientific-method/", _source: "curated" }
+    ]
   },
   {
     name: "Martha Nussbaum",
     type: "persona",
     note: "Filosofa americana (1947), docente a Chicago. Neo-aristoteliana, autrice di The Fragility of Goodness (1986), Upheavals of Thought (2001), Creating Capabilities (2011). Il suo approccio sulle capacità dovrebbe essere centrale nella teorizzazione del lavoro culturale, ma apparentemente così non è. Nel sito è il pretesto per una lettura dell'etica della virtù come ontologia etica radicale: le virtù non sono proprietà positive determinate, ma soluzioni virtuali a problemi che esistono per primi.",
-    articles: []
+    articles: [
+      { title: "A Problem-Based Reading of Nussbaum's Virtue Ethics", url: "/curated/2018-09-04-brady-nussbaum-virtue-ethics-epochemagazine/", _source: "curated" }
+    ]
   },
   {
     name: "Aristotele",
     type: "persona",
     note: "Filosofo greco (384–322 a.C.), allievo di Platone, fondatore del Liceo. Nel sito è il fondamento teorico dell'etica della virtù riletta da Nussbaum: non un catalogo di caratteristiche positive, ma una logica in cui i problemi — le sfere dell'attività umana dove la scelta è inevitabile e rischiosa — sono primari, e le virtù ne sono la risposta eccellente.",
-    articles: []
+    articles: [
+      { title: "A Problem-Based Reading of Nussbaum's Virtue Ethics", url: "/curated/2018-09-04-brady-nussbaum-virtue-ethics-epochemagazine/", _source: "curated" }
+    ]
   },
   {
     name: "Deleuze, Gilles",
     type: "persona",
     note: "Filosofo francese (1925–1995). Nel sito è evocato per le implicazioni deleuziane della lettura di Nussbaum da parte di Brady: i problemi come entità virtuale-reali che precedono le soluzioni — il virtuale non è meno reale dell'attuale, è semplicemente la modalità di esistenza di ciò che è irrisolto. Una lettura che dialoga con l'ontologia del problema come primum dell'etica.",
-    articles: []
+    articles: [
+      { title: "A Problem-Based Reading of Nussbaum's Virtue Ethics", url: "/curated/2018-09-04-brady-nussbaum-virtue-ethics-epochemagazine/", _source: "curated" }
+    ]
   },
   {
     name: "Ilaria Maria Dondi",
     type: "persona",
     note: "Giornalista e autrice della newsletter «Anomalia. Umani in tempi artificiali». Nel sito è la voce che demistifica l'indignazione per l'uso dell'AI nel lavoro creativo: il supporto invisibile (ghostwriter, editor, speechwriter) è sempre stato accessibile al potere senza essere considerato imbroglio — l'AI ne è una versione più economica e accessibile a chi storicamente ne era escluso.",
-    articles: []
+    articles: [
+      { title: "Se uso l'AI sono meno professionista?", url: "/curated/2026-06-21-dondi-ai-professionalita-ghostwriting/", _source: "curated" }
+    ]
   },
   {
     name: "Donata Columbro",
     type: "persona",
     note: "Data journalist e autrice di «Perché contare i femminicidi è un atto politico» (2026) e della newsletter «Ti spiego il dato». Nel sito è la voce che dimostra il carattere costruito di tutte le categorie statistiche — dal femminicidio alla disoccupazione — e che distingue questa postura costruttivista legittima dall'uso negazionista della stessa tesi.",
-    articles: []
+    articles: [
+      { title: "Il femminicidio non esiste", url: "/curated/2026-05-06-columbro-femminicidio-non-esiste/", _source: "curated" }
+    ]
   },
   {
     name: "Alex Bores",
