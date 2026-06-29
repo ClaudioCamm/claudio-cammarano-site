@@ -220,7 +220,7 @@ module.exports = [
     ]
   },
   {
-    name: "Lea Melandri",
+    name: "Melandri, Lea",
     type: "persona",
     note: "Saggista, insegnante e attivista femminista italiana (1941). Fondatrice con Elvio Fachinelli della rivista «L'erba voglio» negli anni Settanta, poi di «Lapis»; autrice di testi come L'infamia originaria, pietre miliari della teoria femminista italiana. Nel sito, in un pezzo di Annalisa Camilli su «Internazionale», è il caso che mette a fuoco la tensione tra impatto culturale indiscutibile e assenza di un modello di business che ne garantisca il sostentamento. Cosa imputabile naturalmente non a Melandri stessa, quanto a un vero e proprio fallimento del mercato.",
     articles: [
@@ -228,7 +228,7 @@ module.exports = [
     ]
   },
   {
-    name: "Miyazaki Hayao",
+    name: "Miyazaki, Hayao",
     type: "persona",
     note: "Regista e animatore giapponese (1941), cofondatore dello Studio Ghibli. Nel sito è citato come riferimento implicito del dibattito sulla crisi degli animatori giapponesi: il modello artigianale e il mentoring che hanno formato la sua generazione sono esattamente ciò che l'industria ha smantellato dopo il 1973.",
     articles: [
@@ -236,7 +236,7 @@ module.exports = [
     ]
   },
   {
-    name: "Lea Ypi",
+    name: "Ypi, Lea",
     type: "persona",
     note: "Filosofa e scrittrice albanese, docente alla LSE. Nel sito è citata due volte: come una delle quattro filosofe che secondo Gloria Origgi hanno rifondato la filosofia politica da Parigi — ripensando il marxismo come teoria dell'emancipazione contro un liberalismo che confonde libertà formale e libertà reale — e come una delle voci che hanno suggerito il pezzo di Jonathan White sulla colonizzazione tecnologica del pensiero sul futuro.",
     articles: [
@@ -245,7 +245,7 @@ module.exports = [
     ]
   },
   {
-    name: "Chiara Cordelli",
+    name: "Cordelli, Chiara",
     type: "persona",
     note: "Filosofa politica, docente a Chicago. Nel sito è citata per la sua analisi dell'esternalizzazione progressiva dello Stato a soggetti privati — dalle carceri al controllo delle frontiere in «Privatocrazia» — e, in «Ruled by None», per la tesi che il flusso di capitale di venture capital orienti oggi l'idea di futuro più di qualunque pianificazione pubblica.",
     articles: [
@@ -253,7 +253,7 @@ module.exports = [
     ]
   },
   {
-    name: "Hélène Landemore",
+    name: "Landemore, Hélène",
     type: "persona",
     note: "Politologa, docente a Yale. Nel sito è citata per la sua proposta di assemblee cittadine selezionate per sorteggio come alternativa a una rappresentanza corrotta da media e interessi privati — metodo su cui ha lavorato concretamente alla costituzione islandese e alle Conventions Citoyennes francesi sul clima.",
     articles: [
@@ -261,7 +261,7 @@ module.exports = [
     ]
   },
   {
-    name: "Miranda Fricker",
+    name: "Fricker, Miranda",
     type: "persona",
     note: "Filosofa, docente alla NYU. Nel sito è citata per il suo lavoro sull'ingiustizia epistemica: chi viene ascoltato e chi no, e come questa asimmetria sia essa stessa una forma di potere che la filosofia politica tradizionale ha per lo più ignorato.",
     articles: [
@@ -269,7 +269,7 @@ module.exports = [
     ]
   },
   {
-    name: "Gloria Origgi",
+    name: "Origgi, Gloria",
     type: "persona",
     note: "Filosofa, ricercatrice CNRS a Parigi. Nel sito è l'autrice del pezzo che presenta quattro filosofe — Ypi, Cordelli, Landemore, Fricker — come prova che la filosofia politica, dopo decenni di egemonia maschile fatta più di sfoggio retorico che di proposte concrete, è tornata a essere una disciplina seria e politicamente rilevante.",
     articles: [
@@ -277,7 +277,7 @@ module.exports = [
     ]
   },
   {
-    name: "Gianluca Diegoli",
+    name: "Diegoli, Gianluca",
     type: "persona",
     note: "Consulente di marketing ed e-commerce, autore della newsletter, blogger della prima ora, grande sperimentatore, figura pubblica, autore di libri rilevanti che vanno al di là del marketing. Nel sito è citato per la sua distinzione fra tre «IA» del commercio digitale — discovery lato consumatore, infrastruttura di back-office, agentica — sistematicamente confuse nel dibattito pubblico nonostante abbiano urgenza, maturità e grado di hype completamente diversi.",
     articles: [
@@ -285,7 +285,7 @@ module.exports = [
     ]
   },
   {
-    name: "David Droga",
+    name: "Droga, David",
     type: "persona",
     note: "Fondatore dell'agenzia Droga5, ex CEO di Accenture Song. Nel sito è citato per la sua tesi provocatoria: l'AI sta per spazzare via il mercato della creatività mediocre, non quella di qualità — un argomento che distingue nettamente fra lavoro «formulaico e medio» (automatizzabile) e originalità di gusto, contesto e strategia (non automatizzabile, secondo lui).",
     articles: [
@@ -1410,7 +1410,7 @@ module.exports = [
     ]
   },
   {
-    name: "Kevin Kelly",
+    name: "Kelly, Kevin",
     type: "persona",
     note: "Futurista e saggista americano (1952), co-fondatore di Wired, autore di Out of Control (1994), What Technology Wants (2010), The Inevitable (2016). Nel sito è citato per un saggio del 2006 sulle possibili evoluzioni del metodo scientifico — quattordici speculazioni che vent'anni dopo leggono come una descrizione del presente, soprattutto alla luce dell'AI.",
     articles: [
@@ -1418,7 +1418,7 @@ module.exports = [
     ]
   },
   {
-    name: "Martha Nussbaum",
+    name: "Nussbaum, Martha",
     type: "persona",
     note: "Filosofa americana (1947), docente a Chicago. Neo-aristoteliana, autrice di The Fragility of Goodness (1986), Upheavals of Thought (2001), Creating Capabilities (2011). Il suo approccio sulle capacità dovrebbe essere centrale nella teorizzazione del lavoro culturale, ma apparentemente così non è. Nel sito è il pretesto per una lettura dell'etica della virtù come ontologia etica radicale: le virtù non sono proprietà positive determinate, ma soluzioni virtuali a problemi che esistono per primi.",
     articles: [
@@ -1442,7 +1442,7 @@ module.exports = [
     ]
   },
   {
-    name: "Ilaria Maria Dondi",
+    name: "Dondi, Ilaria Maria",
     type: "persona",
     note: "Giornalista e autrice della newsletter «Anomalia. Umani in tempi artificiali». Nel sito è la voce che demistifica l'indignazione per l'uso dell'AI nel lavoro creativo: il supporto invisibile (ghostwriter, editor, speechwriter) è sempre stato accessibile al potere senza essere considerato imbroglio — l'AI ne è una versione più economica e accessibile a chi storicamente ne era escluso.",
     articles: [
@@ -1450,7 +1450,7 @@ module.exports = [
     ]
   },
   {
-    name: "Donata Columbro",
+    name: "Columbro, Donata",
     type: "persona",
     note: "Data journalist e autrice di «Perché contare i femminicidi è un atto politico» (2026) e della newsletter «Ti spiego il dato». Nel sito è la voce che dimostra il carattere costruito di tutte le categorie statistiche — dal femminicidio alla disoccupazione — e che distingue questa postura costruttivista legittima dall'uso negazionista della stessa tesi.",
     articles: [
@@ -1458,7 +1458,7 @@ module.exports = [
     ]
   },
   {
-    name: "Alex Bores",
+    name: "Bores, Alex",
     type: "persona",
     note: "Membro dell'Assemblea di New York (2022), ex data scientist a Palantir (2014–2019). Ha co-scritto il RAISE Act, una delle prime leggi di regolamentazione dell'AI approvata da uno stato americano. Nel sito è il caso che mostra la governance dell'AI come terreno di conflitto politico reale: ha lasciato Palantir quando i dirigenti si rifiutarono di inserire guardrail nel contratto con ICE per impedire l'uso del software nelle deportazioni, ed è poi diventato bersaglio di un super PAC finanziato da co-fondatori di OpenAI e Palantir per il suo lavoro legislativo sull'AI.",
     articles: [
@@ -1466,7 +1466,7 @@ module.exports = [
     ]
   },
   {
-    name: "Kyle Chan",
+    name: "Chan, Kyle",
     type: "persona",
     note: "Foreign policy fellow al Brookings Institution, esperto di Cina e tecnologia. Nel sito è citato per l'analisi della competizione AI sino-americana: la cornice della «gara» è fuorviante perché i due paesi corrono gare diverse — gli USA verso l'AGI, la Cina verso efficienza, diffusione e applicazioni fisiche. La tesi del pezzo è nel titolo: il principale ostacolo americano nella competizione con la Cina è interno agli Stati Uniti.",
     articles: [
@@ -1474,7 +1474,7 @@ module.exports = [
     ]
   },
   {
-    name: "Jennifer Frey",
+    name: "Frey, Jennifer",
     type: "persona",
     note: "Professoressa di filosofia, ha costruito e poi visto smantellare un programma di liberal arts all'Università di Tulsa. Nel sito è la voce che difende la liberal education con un argomento intrinseco — la *paideia* e il *Bildung* come coltivazione delle capacità superiori dell'essere umano come fine in sé — in contrappunto al Pinillos già in archivio, che ne difende il valore strumentale. Porta in dote l'Aristotele sulla *scholé*: il fine dell'educazione è il leisure, lo spazio in cui si coltiva il meglio di sé.",
     articles: [
@@ -1482,7 +1482,7 @@ module.exports = [
     ]
   },
   {
-    name: "Fareed Zakaria",
+    name: "Zakaria, Fareed",
     type: "persona",
     note: "Giornalista e commentatore politico indiano-americano (1964), conduttore di «Fareed Zakaria GPS» su CNN e columnist del Washington Post. Autore di *The Post-American World* (2008) e *Age of Revolutions* (2024). Nel sito è citato per l'analisi della guerra iraniana come caso empirico del predatory hegemon: un sistema cooperativo globale costruito su beni pubblici e shadow of the future distrutto da un attore con fattore di sconto δ vicino a zero.",
     articles: [
@@ -1490,7 +1490,7 @@ module.exports = [
     ]
   },
   {
-    name: "Ezra Klein",
+    name: "Klein, Ezra",
     type: "persona",
     note: "Giornalista e commentatore americano (1983), cofondatore di Vox, editorialista del NYT e conduttore dell'Ezra Klein Show. Nel sito è citato per il libro *Abundance* (2025, con Derek Thompson) e per il podcast che ne fa un bilancio a un anno dall'uscita: un caso in cui una certa idea della realtà — la scarsità come prodotto di scelte istituzionali, non di destino — ha cominciato a produrre effetti sul comportamento politico americano.",
     articles: [
@@ -1498,7 +1498,7 @@ module.exports = [
     ]
   },
   {
-    name: "Derek Thompson",
+    name: "Thompson, Derek",
     type: "persona",
     note: "Giornalista americano, contributing writer all'Atlantic. Coautore con Ezra Klein di *Abundance* (2025), il libro che ha rilanciato il dibattito sul supply-side progressivism negli Stati Uniti: costruire più case, più energia, ridurre i veto point istituzionali. Nel sito è citato insieme a Klein per l'angolo epistemologico del libro, non per il merito delle politiche di housing.",
     articles: [
@@ -1506,7 +1506,7 @@ module.exports = [
     ]
   },
   {
-    name: "Jacopo Ottaviani",
+    name: "Ottaviani, Jacopo",
     type: "persona",
     note: "Giornalista e informatico italiano, senior strategist a Code for Africa e fellow del Reuters Institute. Premio per il data journalism, lavora all'incrocio tra codice, dati e storytelling su temi sociali urgenti. Nel sito è il caso che mostra il capitale semantico in azione: ha ricostruito in due giorni *Patrie Galere* (mappa delle morti nelle carceri italiane) che nel 2012 gli aveva richiesto tre settimane, usando il vibe coding strutturato — divide et impera applicato all'AI.",
     articles: [
@@ -1514,7 +1514,7 @@ module.exports = [
     ]
   },
   {
-    name: "Ken Harbaugh",
+    name: "Harbaugh, Ken",
     type: "persona",
     note: "Ex pilota della Marina americana, presidente di Valor Media Network. Autore del reportage sulle *vidma* — la rete di intelligence femminile della resistenza ucraina nei territori occupati. Nel sito è la fonte del pezzo che aggiunge dimensione operativa alla serie sulle ombre: honeytraps, comunicazione clandestina, kill chain alimentata da agenti civili.",
     articles: [
@@ -1522,13 +1522,13 @@ module.exports = [
     ]
   },
   {
-    name: "Yuk Hui",
+    name: "Hui, Yuk",
     type: "persona",
     note: "Filosofo cinese-hongkonghese (1985), docente alla City University of Hong Kong. Teorico della cosmotecnica: ogni civiltà produce una tecnica radicata nella propria cosmologia, contro l'idea che la tecnologia moderna sia universale e neutra. Autore di *Recursivity and Contingency* (2019) e *Art and Cosmotechnics* (2021). Nel sito è la fonte del concetto che ridefinisce la competizione AI sino-americana come scontro tra cosmologie, non solo tra modelli.",
     articles: []
   },
   {
-    name: "Simone Pieranni",
+    name: "Pieranni, Simone",
     type: "persona",
     note: "Giornalista e autore italiano, tra i principali esperti di Cina in Italia. Autore di *Red Mirror* (2021) e della newsletter/podcast *Il Partito* e *Altri Orienti*. Nel sito compare in due contesti: in *L'ombra del passato* come fonte cruciale sul nuovo ordine energetico post-Hormuz — la sua analisi del ruolo cinese come broker fra Teheran e Washington («la stabilità di Hormuz è diventata due facce della stessa medaglia geopolitica») alimenta l'estensione del modello teorico sulla Cina a ρ alto; e nel curated su AI e lavoro come curatore della mappa narrativa cinese sull'automazione e il patto sociale.",
     articles: [
@@ -1536,7 +1536,7 @@ module.exports = [
     ]
   },
   {
-    name: "Giovanni Boccia Artieri",
+    name: "Boccia Artieri, Giovanni",
     type: "persona",
     note: "Sociologo dei media italiano, professore ordinario, studioso di piattaforme digitali, comunicazione e cultura della rete. Autore di numerosi lavori sull'identità digitale, i social network e le trasformazioni del giornalismo nell'era algoritmica. Nel sito è citato per la lettura critica dell'enciclica *Magnifica Humanitas*: usa il documento come leva per spostare il discorso sull'AI dal piano morale al piano politico-strutturale, introducendo l'immagine dei dati come «nuove terre rare del potere» e la necessità di una grammatica politica — non solo un appello etico — per governare l'intelligenza artificiale.",
     articles: [
@@ -1544,7 +1544,7 @@ module.exports = [
     ]
   },
   {
-    name: "Christian Brose",
+    name: "Brose, Christian",
     type: "persona",
     note: "Presidente e chief strategy officer di Anduril. Ex capo del personale della Commissione per le Forze Armate del Senato americano, poi direttore delle politiche al Pentagono. Autore di The Kill Chain (2020). Nel sito è la voce opposta ad Amodei sul rapporto tra aziende tecnologiche e apparato militare: o ci si fida del governo democraticamente eletto per decidere come usare la tecnologia, o si esce dal business. Ha definito il rifiuto di Anthropic di lavorare con il Pentagono «where Anthropic went wrong».",
     articles: [
