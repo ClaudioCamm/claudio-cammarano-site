@@ -814,6 +814,12 @@ module.exports = [
     ]
   },
   {
+    name: "cosmotecnica",
+    type: "teoria",
+    note: "Termine del filosofo Yuk Hui: ogni civiltà ha la propria tecnica radicata nella propria cosmologia — la tecnologia non è universale ma espressione di un modo di stare nel mondo. La cosmotecnica occidentale è fondata sul dominio sulla natura (Cartesio, Bacone); quella cinese sulle grandi tradizioni filosofiche (taoismo, confucianesimo, buddismo) che hanno sempre concepito la macchina come un elemento non necessariamente alieno, e sulla continuità della tradizione statale. Nel sito è il quadro che ridefinisce la «gara» sino-americana sull'AI: non chi costruisce modelli più potenti, ma chi costruisce modelli con quale cosmologia sottostante.",
+    articles: []
+  },
+  {
     name: "patto sociale",
     type: "teoria",
     note: "L'accordo implicito tra Stato e cittadini che definisce i termini della legittimità politica: obbedienza e ordine in cambio di protezione, benessere e opportunità. Nel sito è il quadro con cui leggere la Cina di fronte all'automazione: il lavoro non è solo questione economica ma fondamento del patto tra il Partito e la popolazione — 12,7 milioni di neolaureati espulsi dal mercato dal lavoro degli agenti AI non è solo un dato occupazionale, è una pressione sulla tenuta del consenso.",
@@ -1514,6 +1520,12 @@ module.exports = [
     articles: [
       { title: "The Warrior-Witches of Ukraine's Resistance", url: "/curated/2026-06-21-harbaugh-warrior-witches-ukraine-atlantic/", _source: "curated" }
     ]
+  },
+  {
+    name: "Yuk Hui",
+    type: "persona",
+    note: "Filosofo cinese-hongkonghese (1985), docente alla City University of Hong Kong. Teorico della cosmotecnica: ogni civiltà produce una tecnica radicata nella propria cosmologia, contro l'idea che la tecnologia moderna sia universale e neutra. Autore di *Recursivity and Contingency* (2019) e *Art and Cosmotechnics* (2021). Nel sito è la fonte del concetto che ridefinisce la competizione AI sino-americana come scontro tra cosmologie, non solo tra modelli.",
+    articles: []
   },
   {
     name: "Simone Pieranni",
