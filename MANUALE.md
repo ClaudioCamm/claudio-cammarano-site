@@ -24,6 +24,7 @@ src/
   writings/        # Saggi originali (.md)
   curated/         # Link esterni con commento (.md)
   learning/        # Note di apprendimento (.md)
+  lab/             # Note di ricerca in progress, IT/EN (.md) — output su /episteme-advisory/lab/, vedi sezione 3
   _data/
     clusters.js          # Temi → Argomenti (tassonomia a 5 cluster)
     conceptsIndex.js      # Tassonomia Concetti (fonte di verità)
@@ -34,8 +35,9 @@ src/
     graphLayout.js         # Calcola il layout del grafo concetti — generato, non a mano
   _includes/
     layouts/
-      base.njk     # Layout base (header, footer)
-      article.njk  # Layout saggi
+      base.njk       # Layout base (header, footer)
+      article.njk    # Layout saggi
+      lab-note.njk   # Layout note /lab/ — versione leggera di article.njk
     components/    # Header, footer ecc.
   css/
     style.css      # Unico file CSS
@@ -65,7 +67,7 @@ git push
 # Netlify fa il resto in automatico
 ```
 
-**Importante:** lanciare sempre `npm run build` (o `npm start`) prima di un push importante e leggere l'output in console. Da poco il build segnala in chiaro eventuali concetti citati ma non registrati (vedi sezione 4) — un controllo che prima non esisteva.
+**Importante:** lanciare sempre `npm run build` (o `npm start`) prima di un push importante e leggere l'output in console. Da poco il build segnala in chiaro eventuali concetti citati ma non registrati (vedi sezione 5) — un controllo che prima non esisteva.
 
 ---
 
@@ -99,7 +101,7 @@ serie_totale_prevista: 3                   # solo se la serie ha lunghezza piani
 
 ### Tag `category` — i valori "storici" dei writings
 
-Questi sono i valori usati finora dai saggi (maiuscola compresa). L'elenco completo degli Argomenti del sito — molto più ampio, alimentato anche dai curated — è in `src/_data/clusters.js` (sezione 6).
+Questi sono i valori usati finora dai saggi (maiuscola compresa). L'elenco completo degli Argomenti del sito — molto più ampio, alimentato anche dai curated — è in `src/_data/clusters.js` (sezione 7).
 
 **Epistemologia & AI:** `AI` · `Epistemologia` · `Filosofia` · `Scrittura` · `Vibe Coding` · `Claude`
 
@@ -179,7 +181,7 @@ Poi nel testo: `$formula inline$` oppure `$$formula display$$`.
 
 A differenza dei curated, per i **writings** il collegamento ai concetti non passa dal frontmatter del file: vive in `src/_data/conceptsIndex.js`. **Salvare il file `.md` non basta.**
 
-- Se l'articolo cita un concetto già in tassonomia → aggiungi `{ title: "Titolo articolo", url: "/writings/slug-articolo/" }` all'array `articles` della voce corrispondente in `conceptsIndex.js` (sezione 4 per il formato).
+- Se l'articolo cita un concetto già in tassonomia → aggiungi `{ title: "Titolo articolo", url: "/writings/slug-articolo/" }` all'array `articles` della voce corrispondente in `conceptsIndex.js` (sezione 5 per il formato).
 - Se introduce un concetto nuovo → crea una nuova voce.
 
 **La skill `pubblica-articolo` non fa questo passaggio.** Genera solo il file markdown del writing; non tocca `conceptsIndex.js`. Va fatto a mano, articolo per articolo.
@@ -187,7 +189,7 @@ A differenza dei curated, per i **writings** il collegamento ai concetti non pas
 Checklist completa per pubblicare un writing:
 1. Salva il file in `src/writings/`
 2. Apri `src/_data/conceptsIndex.js` e aggiorna le voci dei concetti citati (vedi sopra)
-3. `npm run build` in locale — leggi l'output: se un concetto non è registrato, ora il build te lo segnala (sezione 4)
+3. `npm run build` in locale — leggi l'output: se un concetto non è registrato, ora il build te lo segnala (sezione 5)
 4. `git push` — non esiste un comando separato di "aggiornamento semantico": indici, pagine `/concetti/`, chip e grafo si rigenerano da soli al build, una volta che i dati sono corretti
 
 ---
@@ -214,7 +216,7 @@ concepts: ["Anthropic", "allineamento AI"]
 
 `tags`: sempre inizia con `curated`, poi 1-3 tag tematici in minuscolo libero.
 
-`concepts`: lista di nomi dalla tassonomia concetti (sezione 4). Usa `[]` se nessuno si applica. **I nomi sono case-sensitive** e devono coincidere esattamente con un `name` in `conceptsIndex.js` — altrimenti vengono scartati (vedi sezione 4 per il controllo automatico).
+`concepts`: lista di nomi dalla tassonomia concetti (sezione 5). Usa `[]` se nessuno si applica. **I nomi sono case-sensitive** e devono coincidere esattamente con un `name` in `conceptsIndex.js` — altrimenti vengono scartati (vedi sezione 5 per il controllo automatico).
 
 ### I `tags` dei curated ora contano come Argomenti — ma solo se sono "riconosciuti"
 
@@ -226,17 +228,73 @@ I tag liberi che scrivi in `tags:` (oltre a `curated`) vengono **tradotti** in u
 **Quando introduci un tema nuovo nei curated, controlla `curatedTagAliases.js`.** Se il tag non c'è:
 1. Decidi il nome canonico dell'Argomento (Title Case, in italiano per coerenza con gli altri — es. `Sorveglianza`, non `surveillance`).
 2. Aggiungi la riga `"tuo-tag-minuscolo": "Nome Canonico"` in `curatedTagAliases.js`.
-3. Aggiungi `"Nome Canonico"` all'array del cluster giusto in `src/_data/clusters.js` (sezione 6) — altrimenti l'Argomento esiste ma non ha un Tema e non appare in `/temi/`.
+3. Aggiungi `"Nome Canonico"` all'array del cluster giusto in `src/_data/clusters.js` (sezione 7) — altrimenti l'Argomento esiste ma non ha un Tema e non appare in `/temi/`.
 4. Facoltativo: aggiungi una descrizione in `tagDescriptions.json`.
 
-Se invece il tema è in realtà un'**entità** (una persona, un paese, un'istituzione) e non un argomento trasversale, probabilmente appartiene ai Concetti (sezione 4), non agli Argomenti — è il caso tipico dei nomi di paese: vanno nel campo `concepts:`, non in `tags:`.
+Se invece il tema è in realtà un'**entità** (una persona, un paese, un'istituzione) e non un argomento trasversale, probabilmente appartiene ai Concetti (sezione 5), non agli Argomenti — è il caso tipico dei nomi di paese: vanno nel campo `concepts:`, non in `tags:`.
 
 ### Body
 Opzionale. Si usa solo per commenti molto estesi. Di solito il frontmatter basta.
 
 ---
 
-## 3. Aggiungere una serie
+## 3. Pubblicare una nota del Lab
+
+### Solo in inglese, per scelta
+Il pubblico della sezione (revisori, potenziali endorser arXiv, target journal) legge solo in inglese, ed è la lingua in cui si cerca il cluster semantico su cui punta il GEO del progetto (*ontological taxonomy*, *inter-annotator agreement* ecc.). Il layout `lab-note.njk` imposta `lang: en` di default — non va specificato nel frontmatter delle singole note, né serve gestire coppie di file o link incrociati.
+
+### URL — non è `/lab/`
+La sezione vive sotto `/episteme-advisory/lab/`, non come sezione di primo livello (per non affollare la nav principale). L'URL è impostata via `permalink`, non dalla posizione dei file:
+- `src/lab.njk` ha `permalink: "/episteme-advisory/lab/"` in frontmatter
+- `src/lab/lab.11tydata.js` è un directory data file che assegna a ogni nota `permalink: "/episteme-advisory/lab/<nome-file-senza-estensione>/"`, data compresa nello slug (Eleventy la toglierebbe di default da `fileSlug`/`filePathStem` — per questo serve lo script invece di un semplice `.json`)
+
+I file sorgente restano comunque in `src/lab/` — solo l'URL di output cambia. Non serve toccare `src/episteme-advisory.njk` per la struttura; su quella pagina c'è solo un blocco `.episteme-reading` che rimanda al Lab.
+
+**Niente retrodatazioni.** Ogni nota va datata il giorno reale in cui viene pubblicata — non si simula una cronologia pregressa. Se serve raccontare il lavoro già fatto prima di aprire il log, si scrive una nota "stato dell'arte"/"project overview" datata oggi (vedi il primo esempio in `src/lab/`), non una serie di note con date fittizie nel passato.
+
+### File
+Posizione: `src/lab/YYYY-MM-DD-slug.md`.
+
+### Frontmatter
+```yaml
+---
+layout: layouts/lab-note.njk
+title: "Note title"
+date: 2026-07-03
+---
+```
+
+### Campi opzionali
+```yaml
+project: "Post-cognition"     # a quale filone di ricerca appartiene — usalo solo se ce n'è più di uno
+stage: "Writing & submission" # a che punto del processo si trova QUESTA nota — vedi tassonomia sotto
+discipline: ["Epistemology", "Statistics"]        # a quali campi del sapere attinge — non visibile, solo JSON-LD
+method: ["Quantitative analysis"]                 # con che tipo di evidenza/tecnica lavora — non visibile, solo JSON-LD
+description: "1-2 sentences"  # solo se serve per meta/OG, non obbligatoria
+```
+
+**Niente campo `tags`.** Le note del Lab non hanno etichette libere in testa: con un solo filone di ricerca alla volta sarebbero quasi sempre identiche da una nota all'altra, e non essendo linkate a `/tag/slug/` non aggiungerebbero navigazione reale — solo rumore.
+
+### Tassonomia del Lab — separata da quella del sito
+Tre assi indipendenti, pensati apposta per non mescolarsi con `clusters.js`/`conceptsIndex.js`/Indice (che si riempirebbero di "Epistemologia" ripetuta su ogni nota). Nessuna registrazione centrale, nessun controllo automatico — sono liste aperte, aggiungi un valore quando serve:
+
+- **`discipline`** (lista) — campo/i del sapere. Partenza: *Epistemology, Philosophy of language, Computational linguistics / NLP, Statistics, Cognitive science, AI governance & regulation*.
+- **`stage`** (valore singolo) — fase del processo in cui si trova la nota. Partenza: *Framework design, Taxonomy development, Corpus construction, Empirical validation, Data analysis, Writing & submission, Dissemination*.
+- **`method`** (lista) — tipo di evidenza/tecnica. Partenza: *Qualitative coding, Quantitative analysis, Statistical modeling, Model evaluation / benchmarking, Literature review, Annotation / inter-annotator agreement*.
+
+Solo `stage` è visibile (badge in testata, nella card dell'indice, nella striscia home). `discipline` e `method` restano metadati strutturati nel JSON-LD (`about`/`keywords`) — segnale per la ricerca semantica/GEO senza aggiungere pillole in pagina.
+
+### Cosa NON fa questo layout (di proposito)
+Niente abstract obbligatorio, niente serie, niente immagine hero, niente TOC, niente share bar, niente post correlati, niente tag liberi. `project`/`stage` sono etichette visive che non toccano `clusters.js` né `conceptsIndex.js`. Le date si formattano con il filtro `formatDateEN` (inglese), non `formatDate` (italiano, usato dal resto del sito). Il corpo della nota (`.article-full--lab .article-body`) è a 16px invece dei 18px dei writings — restano note di cantiere, non saggi.
+
+### Visibilità — niente voce in nav
+Il Lab non ha una voce propria nel menu di primo livello (troppo affollato) e non ha nessun'altra presenza fissa in navigazione. È raggiungibile in due punti:
+- un riquadro blu cliccabile (`.episteme-lab-cta`) sotto il paragrafo "Il laboratorio" in `src/episteme-advisory.njk`
+- una striscia blu in home (`.lab-banner` in `src/index.njk`), subito sotto il primo saggio in evidenza, che mostra **solo l'ultima nota pubblicata** (`collections.lab[0]`) — si aggiorna da sola, non richiede manutenzione quando esce una nota nuova
+
+---
+
+## 4. Aggiungere una serie
 
 1. I saggi di una serie usano il campo `series: "Nome serie, I"` (con numero romano).
 2. Aggiungere la descrizione della serie in `src/_data/seriesDescriptions.json`:
@@ -251,7 +309,7 @@ Opzionale. Si usa solo per commenti molto estesi. Di solito il frontmatter basta
 
 ---
 
-## 4. Tassonomia concetti (`_data/conceptsIndex.js`)
+## 5. Tassonomia concetti (`_data/conceptsIndex.js`)
 
 Questo file è la **fonte di verità** per l'indice analitico, le pagine `/concetti/slug/` e il grafo. È il livello più specifico dei tre (Temi → Argomenti → **Concetti**): persone, teorie, testi, istituzioni, luoghi e paesi citati con peso argomentativo.
 
@@ -303,7 +361,7 @@ Se lo vedi: apri `conceptsIndex.js`, aggiungi la voce mancante (sezione preceden
 
 ---
 
-## 5. Come funziona la navigazione semantica
+## 6. Come funziona la navigazione semantica
 
 Il sito ha tre livelli di navigazione, dal più ampio al più specifico:
 
@@ -320,7 +378,7 @@ Più l'**indice analitico** (`/indice/`), che mostra tutti e tre i livelli insie
 
 ### Temi (`/temi/`) e Argomenti (`/tag/slug/`)
 
-- I **Temi** sono i cluster definiti in `clusters.js` (sezione 6): 5 raggruppamenti larghi.
+- I **Temi** sono i cluster definiti in `clusters.js` (sezione 7): 5 raggruppamenti larghi.
 - Gli **Argomenti** sono i singoli tag — quelli storici dei writings (`category:`) e quelli più recenti emersi dai curated (`tags:`, tradotti via `curatedTagAliases.js`, sezione 2).
 - Ogni Argomento ha una pagina `/tag/slug/` che mostra **sia** i writings che lo usano in `category:` **sia** i curated il cui tag si traduce in quell'Argomento — stessa pagina, card diverse per tipo.
 - Le descrizioni (opzionali) vivono in `tagDescriptions.json` (per gli Argomenti) e `temiDescriptions.json` (per i Temi).
@@ -338,13 +396,13 @@ Il grafo è **uno solo**, calcolato una volta a build time da `graphLayout.js` (
 ### Il flusso dei dati, in breve
 
 - **Writings**: Argomento ← `category:` nel frontmatter. Concetto ← voce manuale in `conceptsIndex.js` (sezione 1).
-- **Curated**: Argomento ← `tags:` nel frontmatter, tradotto via `curatedTagAliases.js` (sezione 2). Concetto ← `concepts:` nel frontmatter, deve corrispondere a una voce già in `conceptsIndex.js` (sezione 4).
+- **Curated**: Argomento ← `tags:` nel frontmatter, tradotto via `curatedTagAliases.js` (sezione 2). Concetto ← `concepts:` nel frontmatter, deve corrispondere a una voce già in `conceptsIndex.js` (sezione 5).
 
 **Non esiste un comando per "aggiornare l'indice semantico".** È lo stesso identico `git push` (o `npm run build`) con cui pubblichi il sito. Se i dati a monte sono corretti, il build successivo rigenera tutto: indici, pagine concetto, grafo, Temi, Argomenti — niente da "richiamare" a parte.
 
 ---
 
-## 6. Temi e Argomenti (`_data/clusters.js`)
+## 7. Temi e Argomenti (`_data/clusters.js`)
 
 `clusters.js` è la tassonomia dei **Temi**: un oggetto che mappa ogni nome di Tema a un array di Argomenti.
 
@@ -370,7 +428,7 @@ Le descrizioni dei Temi vivono in `temiDescriptions.json`, quelle degli Argoment
 
 ---
 
-## 7. Cosa NON toccare senza capire
+## 8. Cosa NON toccare senza capire
 
 | File | Perché è delicato |
 |---|---|
@@ -385,19 +443,19 @@ Le descrizioni dei Temi vivono in `temiDescriptions.json`, quelle degli Argoment
 
 ---
 
-## 8. Troubleshooting rapido
+## 9. Troubleshooting rapido
 
 **Un concetto/articolo che ho appena pubblicato non appare da nessuna parte**
-→ **Prima cosa da controllare**: lancia `npm run build` e leggi la console. Se il concetto è citato in un `concepts:` di un curated ma non registrato, ora compare un avviso `⚠️ CONCETTI NON REGISTRATI` con il nome del file e del concetto mancante (sezione 4). Risolve la maggior parte dei casi.
+→ **Prima cosa da controllare**: lancia `npm run build` e leggi la console. Se il concetto è citato in un `concepts:` di un curated ma non registrato, ora compare un avviso `⚠️ CONCETTI NON REGISTRATI` con il nome del file e del concetto mancante (sezione 5). Risolve la maggior parte dei casi.
 
 **Cerco un Concetto-paese e non lo trovo in "Luoghi"**
-→ I nomi di stato sono `paese`, non `luogo`: controlla nella sezione "Paesi" dell'indice (sezione 4).
+→ I nomi di stato sono `paese`, non `luogo`: controlla nella sezione "Paesi" dell'indice (sezione 5).
 
 **Build fallisce con errore Nunjucks**
 → Controllare la sintassi del file `.njk` modificato. Errore più comune: tag `{% %}` non chiusi.
 
 **Pagina concetto non appare pur risultando registrata**
-→ Verificare che il nome in `concepts:` del curated corrisponda **esattamente** (maiuscole comprese) a un `name` in `conceptsIndex.js`. Se non corrisponde, ricomparirà nell'avviso di build (sezione 4).
+→ Verificare che il nome in `concepts:` del curated corrisponda **esattamente** (maiuscole comprese) a un `name` in `conceptsIndex.js`. Se non corrisponde, ricomparirà nell'avviso di build (sezione 5).
 
 **Chip concetti non appaiono in un articolo**
 → Per i writings: verificare che l'URL dell'articolo sia presente nell'array `articles` della voce in `conceptsIndex.js`.

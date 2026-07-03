@@ -1,0 +1,22 @@
+---
+layout: layouts/base.njk
+title: Lab
+description: "Dated, in-progress research notes on epistemology, AI validation and ontological taxonomy — the open work behind the published essays."
+permalink: "/episteme-advisory/lab/"
+lang: en
+---
+
+<h1>Lab</h1>
+<p>Dated, in-progress research notes. Not finished essays — the open work behind the research on post-cognition and the validation of language model outputs.</p>
+
+{% for note in collections.lab %}
+<article class="article-card">
+    <div class="article-meta">
+        <span class="article-date">{{ note.data.date | formatDateEN }}</span>
+        {% if note.data.project %}<span class="article-tag">{{ note.data.project }}</span>{% endif %}
+        {% if note.data.stage %}<span class="article-tag">{{ note.data.stage }}</span>{% endif %}
+    </div>
+    <h2><a href="{{ note.url }}">{{ note.data.title }}</a></h2>
+    {% if note.data.description %}<p>{{ note.data.description }}</p>{% endif %}
+</article>
+{% endfor %}

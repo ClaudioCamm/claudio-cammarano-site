@@ -1,0 +1,54 @@
+---
+layout: layouts/base.njk
+og_type: article
+lang: en
+---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ title | jsonEscape | safe }}",
+  "description": "{{ description | jsonEscape | safe }}",
+  "datePublished": "{{ date | isoDate }}",
+  "inLanguage": "en",
+  "url": "https://claudiocammarano.com{{ page.url }}",
+  "author": {
+    "@type": "Person",
+    "@id": "https://claudiocammarano.com/#person",
+    "name": "Claudio Cammarano",
+    "url": "https://claudiocammarano.com/about/"
+  },
+  "isPartOf": { "@id": "https://claudiocammarano.com/#website" }{% if discipline or method %},
+  "about": [{% if discipline %}{% for d in discipline %}{"@type":"Thing","name":"{{ d | jsonEscape | safe }}"}{% if not loop.last %},{% endif %}{% endfor %}{% endif %}],
+  "keywords": "{% if method %}{{ method | join(', ') | jsonEscape | safe }}{% endif %}"{% endif %}
+}
+</script>
+
+<article class="article-full article-full--lab">
+  <header class="article-header">
+    <nav class="breadcrumb" aria-label="Navigazione">
+      <a href="/">Home</a>
+      <span class="breadcrumb-sep" aria-hidden="true">·</span>
+      <a href="/episteme-advisory/lab/">Lab</a>
+      <span class="breadcrumb-sep" aria-hidden="true">·</span>
+      <span class="breadcrumb-current">{{ title }}</span>
+    </nav>
+    <div class="article-meta">
+      <span class="article-date">{{ date | formatDateEN }}</span>
+      {% if project %}<span class="article-tag">{{ project }}</span>{% endif %}
+      {% if stage %}<span class="article-tag">{{ stage }}</span>{% endif %}
+      {% if content %}<span class="reading-time">{{ content | readingTime }}</span>{% endif %}
+    </div>
+    <h1>{{ title }}</h1>
+    {% if description %}
+    <p class="article-description">{{ description }}</p>
+    {% endif %}
+  </header>
+
+  <div class="article-body">
+    {{ content | safe }}
+  </div>
+</article>
+
+<p style="margin-top: var(--spacing-lg); font-family: var(--font-sans); font-size: 14px;"><a href="/episteme-advisory/lab/">&larr; All Lab notes</a></p>

@@ -75,6 +75,17 @@ description: "Saggi originali su editoria, marketing, semiotica e cultura digita
     {% if post.data.description %}<p class="featured-description">{{ post.data.description }}</p>{% endif %}
     {% if post.templateContent %}<p class="article-excerpt">{{ post.templateContent | excerpt(750) }}</p>{% endif %}
   </article>
+  {% if collections.lab.length %}
+  <a href="{{ collections.lab[0].url }}" class="lab-banner">
+    <span class="lab-banner-label">Lab</span>
+    <span class="lab-banner-title">{{ collections.lab[0].data.title }}</span>
+    <span class="lab-banner-meta">
+      {% if collections.lab[0].data.stage %}<span>{{ collections.lab[0].data.stage }}</span>{% endif %}
+      <span>{{ collections.lab[0].data.date | formatDateEN }}</span>
+      <span aria-hidden="true">→</span>
+    </span>
+  </a>
+  {% endif %}
   {% elif loop.index0 <= 2 %}
   <article class="article-card article-card--secondary">
     {% if post.data.series %}<div class="article-series-card-label"><a href="/serie/{{ post.data.series | seriesBaseName | slugify }}/">{{ post.data.series }}</a></div>{% endif %}

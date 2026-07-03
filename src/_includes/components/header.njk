@@ -21,7 +21,7 @@
                 <li><a href="/curated/"{% if page.url == "/curated/" %} class="active"{% endif %}>Curated</a></li>
                 <li><a href="/learning/"{% if page.url == "/learning/" %} class="active"{% endif %}>Learning log</a></li>
                 <li><a href="/irene-media/"{% if page.url == "/irene-media/" %} class="active"{% endif %}>Irene Media</a></li>
-                <li><a href="/episteme-advisory/"{% if page.url == "/episteme-advisory/" %} class="active"{% endif %}>Episteme Advisory <span class="nav-badge nav-badge--new">new</span></a></li>
+                <li><a href="/episteme-advisory/"{% if page.url == "/episteme-advisory/" or page.url.indexOf('/episteme-advisory/lab/') == 0 %} class="active"{% endif %}>Episteme Advisory</a></li>
                 <li><a href="/indice/"{% if page.url == "/indice/" %} class="active"{% endif %}>Indice</a></li>
                 <li><a href="/about/"{% if page.url == "/about/" %} class="active"{% endif %}>About</a></li>
                 <li><a href="/newsletter/"{% if page.url == "/newsletter/" %} class="active"{% endif %}>The Abstract</a></li>
