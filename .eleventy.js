@@ -87,6 +87,13 @@ module.exports = function(eleventyConfig) {
       .sort((a, b) => b.date - a.date);
   });
 
+  // Note di ricerca /lab/ — collezione separata da writings e curated,
+  // volutamente fuori dalla tassonomia Argomenti/Concetti (vedi MANUALE.md §9)
+  eleventyConfig.addCollection("lab", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/lab/*.md")
+      .sort((a, b) => b.date - a.date);
+  });
+
   eleventyConfig.addCollection("learning", function(collectionApi) {
     return collectionApi.getFilteredByGlob("src/learning/*.md");
   });
@@ -150,7 +157,8 @@ module.exports = function(eleventyConfig) {
         type: c.type,
         articles: c.articles.slice(),
         note: c.note || null,
-        citation: c.citation || null
+        citation: c.citation || null,
+        lab: c.lab || false
       };
     });
 
@@ -198,6 +206,15 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addFilter("formatDate", function(date) {
     return new Intl.DateTimeFormat('it-IT', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    }).format(date);
+  });
+
+  // Usato solo dalla sezione /episteme-advisory/lab/, che è in sola lingua inglese
+  eleventyConfig.addFilter("formatDateEN", function(date) {
+    return new Intl.DateTimeFormat('en-US', {
       year: 'numeric',
       month: 'long',
       day: 'numeric'

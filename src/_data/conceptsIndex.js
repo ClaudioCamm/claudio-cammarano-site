@@ -192,7 +192,8 @@ module.exports = [
     type: "persona",
     note: "Filosofo dell'informazione italiano (1964), fondatore dell'etica dell'informazione. Nel sito è citato per la formula: «l'AI aiuta chi le cose le sa già fare». Senza capitale semantico — tutto ciò che si è letto, vissuto, capito, sbagliato e corretto — non si sa cosa si sta guardando quando lo strumento ti alza dal suolo.",
     articles: [
-      { title: "La macchina e la lotta", url: "/writings/2026-06-01-la-macchina-e-la-lotta/" }
+      { title: "La macchina e la lotta", url: "/writings/2026-06-01-la-macchina-e-la-lotta/" },
+      { title: "Why Big AI Labs Are Hiring So Many Philosophers", url: "/curated/2026-06-24-economist-ai-labs-philosophers/", _source: "curated" }
     ]
   },
   {
@@ -281,7 +282,16 @@ module.exports = [
     type: "persona",
     note: "Consulente di marketing ed e-commerce, autore della newsletter, blogger della prima ora, grande sperimentatore, figura pubblica, autore di libri rilevanti che vanno al di là del marketing. Nel sito è citato per la sua distinzione fra tre «IA» del commercio digitale — discovery lato consumatore, infrastruttura di back-office, agentica — sistematicamente confuse nel dibattito pubblico nonostante abbiano urgenza, maturità e grado di hype completamente diversi.",
     articles: [
-      { title: "Le tre IA del Netcomm Forum", url: "/curated/2026-05-21-diegoli-tre-ia-netcomm-forum/", _source: "curated" }
+      { title: "Le tre IA del Netcomm Forum", url: "/curated/2026-05-21-diegoli-tre-ia-netcomm-forum/", _source: "curated" },
+      { title: "I podcast lunghi nell'era della mezza attenzione", url: "/curated/2026-06-29-diegoli-podcast-lunghi-mezza-attenzione-linkideeperlatv/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Hayles, Katherine",
+    type: "persona",
+    note: "Critica letteraria e teorica dei media americana (1943), docente a Duke. Nel sito è citata per la distinzione tra *iperattenzione* e *attenzione profonda* come due modalità cognitive: l'iperattenzione — la mente che passa rapidamente da stimolo a stimolo, multiprocesso e alta tolleranza alla noia — è un adattamento all'ambiente digitale contemporaneo, non un deficit. È il contesto culturale che rende il podcast lungo un antidoto strutturale, non un capriccio di formato.",
+    articles: [
+      { title: "I podcast lunghi nell'era della mezza attenzione", url: "/curated/2026-06-29-diegoli-podcast-lunghi-mezza-attenzione-linkideeperlatv/", _source: "curated" }
     ]
   },
   {
@@ -290,6 +300,16 @@ module.exports = [
     note: "Fondatore dell'agenzia Droga5, ex CEO di Accenture Song. Nel sito è citato per la sua tesi provocatoria: l'AI sta per spazzare via il mercato della creatività mediocre, non quella di qualità — un argomento che distingue nettamente fra lavoro «formulaico e medio» (automatizzabile) e originalità di gusto, contesto e strategia (non automatizzabile, secondo lui).",
     articles: [
       { title: "David Droga on AI and the end of 'mediocre' human-made ads", url: "/curated/2026-06-21-droga-ai-mediocre-ads/", _source: "curated" }
+    ]
+  },
+
+  {
+    name: "Austin, John L.",
+    type: "persona",
+    lab: true,
+    note: "John Langshaw Austin (Lancaster, 1911 – Oxford, 1960), filosofo del linguaggio ordinario, professore a Oxford. In <em>How to Do Things with Words</em> (1962, postumo) ha articolato la distinzione tra atti linguistici locutori, illocutori e perlocutori, ridisegnando la filosofia del linguaggio del Novecento. Riferimento fondativo del Pre-Step 0 del progetto <em>Validating AI</em>.",
+    articles: [
+      { title: "Validating AI — note di ricerca", url: "/episteme-advisory/lab/", _source: "lab" }
     ]
   },
 
@@ -383,7 +403,8 @@ module.exports = [
       { title: "Our Military Is Built for the Wrong Century", url: "/curated/2026-05-28-brose-anduril-military-drones-nyt/", _source: "curated" },
       { title: "Natural Language Autoencoders Produce Unsupervised Explanations of LLM Activations", url: "/curated/2026-05-07-anthropic-nla-activations/", _source: "curated" },
       { title: "Il Golem e l'AI", url: "/curated/2026-06-08-giannella-golem-ai/", _source: "curated" },
-      { title: "When AI builds itself", url: "/curated/2026-06-19-anthropic-recursive-self-improvement/", _source: "curated" }
+      { title: "When AI builds itself", url: "/curated/2026-06-19-anthropic-recursive-self-improvement/", _source: "curated" },
+      { title: "Why Big AI Labs Are Hiring So Many Philosophers", url: "/curated/2026-06-24-economist-ai-labs-philosophers/", _source: "curated" }
     ]
   },
   {
@@ -414,7 +435,8 @@ module.exports = [
       { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
       { title: "China's Not the Problem. We Are.", url: "/curated/2026-05-14-chan-china-ai-nyt/", _source: "curated" },
       { title: "2025 AI and Semiconductor Outlook", url: "/curated/2025-01-01-fabricated-knowledge-ai-semiconductor-outlook/", _source: "curated" },
-      { title: "The death of strategy (and what comes next)", url: "/curated/2026-05-20-smith-death-of-strategy/", _source: "curated" }
+      { title: "The death of strategy (and what comes next)", url: "/curated/2026-05-20-smith-death-of-strategy/", _source: "curated" },
+      { title: "IA, bulloni e umanesimo", url: "/curated/2026-06-28-pieranni-ia-bulloni-umanesimo-ilpartito/", _source: "curated" }
     ]
   },
   {
@@ -464,7 +486,8 @@ module.exports = [
       { title: "La macchina e la lotta", url: "/writings/2026-06-01-la-macchina-e-la-lotta/" },
       { title: "A Defense of a Liberal Arts Education in the Age of A.I.", url: "/curated/2026-05-21-frey-liberal-arts-ai-nyt/", _source: "curated" },
       { title: "Why Are Humanists So Bad at Defending the Humanities?", url: "/curated/2026-06-15-pinillos-humanists-humanities-chronicle/", _source: "curated" },
-      { title: "From weeks of work to days: How I rebuilt two data journalism projects with AI", url: "/curated/2026-06-26-ottaviani-data-journalism-ai-reuters/", _source: "curated" }
+      { title: "From weeks of work to days: How I rebuilt two data journalism projects with AI", url: "/curated/2026-06-26-ottaviani-data-journalism-ai-reuters/", _source: "curated" },
+      { title: "Claude Code for writers", url: "/curated/2026-01-15-newton-claude-code-writers-platformer/", _source: "curated" }
     ]
   },
   {
@@ -533,7 +556,8 @@ module.exports = [
     note: "Controversia filosofica medievale (XI–XIV sec.) su se i concetti generali abbiano esistenza reale (realismo), siano solo nomi (nominalismo) o esistano nella mente (concettualismo). Nel sito è usata per discutere lo statuto ontologico dei contenuti dei LLM: per il platonico stanno in un altrove separato; per il nominalista non stanno affatto.",
     articles: [
       { title: "La differenza fra Claude e le mie gatte", url: "/writings/2026-04-30-la-differenza-fra-claude-e-le-mie-gatte/" },
-      { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" }
+      { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" },
+      { title: "Claude Code for writers", url: "/curated/2026-01-15-newton-claude-code-writers-platformer/", _source: "curated" }
     ]
   },
   {
@@ -814,22 +838,36 @@ module.exports = [
     ]
   },
   {
+    name: "two-pizza team",
+    type: "teoria",
+    note: "Principio organizzativo di Amazon (attribuito a Jeff Bezos): nessun team dovrebbe essere così grande da non poter essere sfamato con due pizze. Non è una regola sul cibo ma sull'ownership: team piccoli dove ogni membro conosce il lavoro degli altri, può prendere decisioni reversibili senza chiedere permesso e possiede il problema end-to-end. Nel sito è il sistema immunitario contro l'entropia organizzativa — la tendenza dei team che crescono a sviluppare dipendenze, layer di approvazione e rallentamenti che erodono la velocità che aveva reso il team efficace.",
+    articles: [
+      { title: "A Return to Two-Pizza Culture", url: "/curated/2026-06-30-vogels-two-pizza-culture-allthingsdistributed/", _source: "curated" }
+    ]
+  },
+  {
     name: "moral deskilling",
     type: "teoria",
     note: "Il rischio che la delega crescente di scelte etiche alle macchine eroda la capacità umana di fare ragionamento morale autonomo. Se i sistemi AI decidono sempre più spesso cosa è giusto fare — in contesti medici, legali, militari, quotidiani — gli esseri umani potrebbero perdere l'abitudine, e poi la competenza, di farlo da soli. Nel sito è il contrappeso al ottimismo sulla filosofia nelle AI labs: non basta mettere principi dentro i modelli se chi li usa smette di esercitare il proprio giudizio.",
-    articles: []
+    articles: [
+      { title: "Why Big AI Labs Are Hiring So Many Philosophers", url: "/curated/2026-06-24-economist-ai-labs-philosophers/", _source: "curated" }
+    ]
   },
   {
     name: "cosmotecnica",
     type: "teoria",
     note: "Termine del filosofo Yuk Hui: ogni civiltà ha la propria tecnica radicata nella propria cosmologia — la tecnologia non è universale ma espressione di un modo di stare nel mondo. La cosmotecnica occidentale è fondata sul dominio sulla natura (Cartesio, Bacone); quella cinese sulle grandi tradizioni filosofiche (taoismo, confucianesimo, buddismo) che hanno sempre concepito la macchina come un elemento non necessariamente alieno, e sulla continuità della tradizione statale. Nel sito è il quadro che ridefinisce la «gara» sino-americana sull'AI: non chi costruisce modelli più potenti, ma chi costruisce modelli con quale cosmologia sottostante.",
-    articles: []
+    articles: [
+      { title: "Cosa intende la Cina per «intelligenza artificiale»", url: "/curated/2026-06-25-pieranni-cina-intelligenza-artificiale-altriorienti/", _source: "curated" }
+    ]
   },
   {
     name: "patto sociale",
     type: "teoria",
     note: "L'accordo implicito tra Stato e cittadini che definisce i termini della legittimità politica: obbedienza e ordine in cambio di protezione, benessere e opportunità. Nel sito è il quadro con cui leggere la Cina di fronte all'automazione: il lavoro non è solo questione economica ma fondamento del patto tra il Partito e la popolazione — 12,7 milioni di neolaureati espulsi dal mercato dal lavoro degli agenti AI non è solo un dato occupazionale, è una pressione sulla tenuta del consenso.",
-    articles: []
+    articles: [
+      { title: "IA, bulloni e umanesimo", url: "/curated/2026-06-28-pieranni-ia-bulloni-umanesimo-ilpartito/", _source: "curated" }
+    ]
   },
   {
     name: "guerra asimmetrica",
@@ -852,7 +890,25 @@ module.exports = [
     type: "teoria",
     note: "Modalità di sviluppo software in cui si descrive ciò che si vuole in linguaggio naturale e si lascia che un LLM scriva il codice. Nel sito è presentato nella versione strutturata di Ottaviani: non un prompt unico ma una decomposizione in compiti discreti e testabili (divide et impera), ognuno con un solo scopo, buildabile e verificabile indipendentemente. La struttura modulare riflette le fasi del pipeline del data journalism e riduce i bug.",
     articles: [
-      { title: "From weeks of work to days: How I rebuilt two data journalism projects with AI", url: "/curated/2026-06-26-ottaviani-data-journalism-ai-reuters/", _source: "curated" }
+      { title: "From weeks of work to days: How I rebuilt two data journalism projects with AI", url: "/curated/2026-06-26-ottaviani-data-journalism-ai-reuters/", _source: "curated" },
+      { title: "A Return to Two-Pizza Culture", url: "/curated/2026-06-30-vogels-two-pizza-culture-allthingsdistributed/", _source: "curated" },
+      { title: "Claude Code for writers", url: "/curated/2026-01-15-newton-claude-code-writers-platformer/", _source: "curated" }
+    ]
+  },
+  {
+    name: "mezza attenzione",
+    type: "teoria",
+    note: "Espressione usata da Gianluca Diegoli per descrivere una modalità di fruizione dei media in cui l'utente è impegnato in un'attività principale (stirare, cucinare, fare le faccende) mentre segue un contenuto audio o video in sottofondo. Non distrazione, ma ascolto stratificato: la televisione pomeridiana l'ha strutturato per decenni, YouTube e i podcast video lunghi la replicano oggi per un pubblico più giovane e istruito. Dialoga con il concetto di iperattenzione di Hayles: i due poli non si escludono, convivono nella stessa persona a seconda del contesto.",
+    articles: [
+      { title: "I podcast lunghi nell'era della mezza attenzione", url: "/curated/2026-06-29-diegoli-podcast-lunghi-mezza-attenzione-linkideeperlatv/", _source: "curated" }
+    ]
+  },
+  {
+    name: "iperattenzione",
+    type: "teoria",
+    note: "Concetto di Katherine Hayles: modalità cognitiva caratterizzata da rapido switching tra focus diversi, alta tolleranza alla noia, preferenza per input multipli simultanei. È un adattamento all'ambiente digitale, non un deficit — e la forma dominante dell'attenzione nelle generazioni cresciute con Internet. Nel sito è il contesto che spiega il successo del podcast lungo: il formato fiume non va contro l'iperattenzione ma le offre un'uscita strutturata, uno spazio in cui il carico cognitivo è basso e controllabile.",
+    articles: [
+      { title: "I podcast lunghi nell'era della mezza attenzione", url: "/curated/2026-06-29-diegoli-podcast-lunghi-mezza-attenzione-linkideeperlatv/", _source: "curated" }
     ]
   },
   {
@@ -861,6 +917,43 @@ module.exports = [
     note: "Sistemi d'arma che identificano e ingaggiano bersagli senza intervento umano diretto. Nel sito è il punto terminale del ragionamento di Brose: la normativa del Pentagono non proibisce esplicitamente l'automazione della kill chain, e in conflitti protratti ci si avvicina a sistemi che «vanno finché trovano qualcosa da colpire». Dialoga con il problema del rubber stamp — un umano tecnicamente nel loop che in pratica non può mai dire no — e con la distinzione tra uso difensivo (bar più basso) e offensivo (bar più alto, ma non proibito).",
     articles: [
       { title: "Our Military Is Built for the Wrong Century", url: "/curated/2026-05-28-brose-anduril-military-drones-nyt/", _source: "curated" }
+    ]
+  },
+
+  {
+    name: "post-cognition",
+    type: "teoria",
+    lab: true,
+    note: "Intervento esterno strutturato sugli output dei modelli linguistici per ricostruire gli impegni ontologici impliciti che il modello stesso non è in grado di rendere espliciti. Il termine, coniato nell'ambito del progetto <em>Validating AI</em>, designa un'operazione epistemica che precede la valutazione della verità: prima di chiedersi se una claim è vera o falsa, occorre stabilire di che tipo di claim si tratti.",
+    articles: [
+      { title: "Validating AI — note di ricerca", url: "/episteme-advisory/lab/", _source: "lab" }
+    ]
+  },
+  {
+    name: "epistemia",
+    type: "teoria",
+    lab: true,
+    note: "Condizione dei modelli linguistici di generare output privi di metacognizione: il modello non può valutare lo statuto epistemico delle proprie affermazioni. Il termine è mutuato da Loru et al. (PNAS 2025) e Quattrociocchi et al. (2025). L'assenza di epistemia è la premessa che motiva il progetto <em>post-cognition</em>.",
+    articles: [
+      { title: "Validating AI — note di ricerca", url: "/episteme-advisory/lab/", _source: "lab" }
+    ]
+  },
+  {
+    name: "tassonomia D1–D7",
+    type: "teoria",
+    lab: true,
+    note: "Framework classificatorio a sette dimensioni sviluppato nell'ambito del progetto <em>Validating AI</em> per tipizzare le claim degli output LLM. La dimensione D1 classifica il contenuto in undici categorie (storica, statistico-probabilistica, metafisica, causale, normativa e altre). La tassonomia si applica dopo il Pre-Step 0 basato sulla teoria degli atti linguistici.",
+    articles: [
+      { title: "Validating AI — note di ricerca", url: "/episteme-advisory/lab/", _source: "lab" }
+    ]
+  },
+  {
+    name: "atti illocutori",
+    type: "teoria",
+    lab: true,
+    note: "Categoria della teoria degli atti linguistici (Austin 1962) che designa ciò che si fa nel dire qualcosa — affermare, promettere, ordinare, dichiarare. Nel progetto <em>Validating AI</em>, la classificazione illocutoria costituisce il Pre-Step 0: verificare che un enunciato sia un'asserzione è condizione necessaria prima di applicare la tassonomia D1–D7.",
+    articles: [
+      { title: "Validating AI — note di ricerca", url: "/episteme-advisory/lab/", _source: "lab" }
     ]
   },
 
@@ -930,6 +1023,17 @@ module.exports = [
     ]
   },
 
+  {
+    name: "Le Fake News e il Marketing del Vero",
+    type: "testo",
+    lab: true,
+    note: "Articolo di Claudio Cammarano pubblicato su Medium (The Abstract, 2018). Precursore intellettuale del progetto <em>Validating AI</em>: la domanda su come si produce e si commercializza la verità prefigura l'indagine successiva su come i modelli linguistici generino output epistemicamente non fondati.",
+    citation: "CAMMARANO, Claudio, <a href=\"https://medium.com/the-abstract/le-fake-news-e-il-marketing-del-vero-56c74f11ce4b\"><em>Le Fake News e il Marketing del Vero</em></a>, <em>The Abstract</em>, Medium, 2018.",
+    articles: [
+      { title: "Validating AI — note di ricerca", url: "/episteme-advisory/lab/", _source: "lab" }
+    ]
+  },
+
   // ─── ISTITUZIONI ──────────────────────────────────────────────────────────
 
   {
@@ -944,7 +1048,9 @@ module.exports = [
       { title: "Making Claude a chemist", url: "/curated/2026-06-05-anthropic-claude-chemist/", _source: "curated" },
       { title: "Il Golem e l'AI", url: "/curated/2026-06-08-giannella-golem-ai/", _source: "curated" },
       { title: "To Land a Job in AI, Try Reading Kant", url: "/curated/2026-06-12-wired-philosophers-ai-jobs/", _source: "curated" },
-      { title: "When AI builds itself", url: "/curated/2026-06-19-anthropic-recursive-self-improvement/", _source: "curated" }
+      { title: "When AI builds itself", url: "/curated/2026-06-19-anthropic-recursive-self-improvement/", _source: "curated" },
+      { title: "Why Big AI Labs Are Hiring So Many Philosophers", url: "/curated/2026-06-24-economist-ai-labs-philosophers/", _source: "curated" },
+      { title: "Claude Code for writers", url: "/curated/2026-01-15-newton-claude-code-writers-platformer/", _source: "curated" }
     ]
   },
   {
@@ -1115,6 +1221,25 @@ module.exports = [
     ]
   },
 
+  {
+    name: "Stratechery",
+    type: "testo",
+    note: "Newsletter e blog di analisi tecnologica di Ben Thompson (stratechery.com), attivo dal 2013. Ha introdotto e sviluppato l'Aggregation Theory — la tesi che le piattaforme che controllano il rapporto con l'utente finale catturano il valore dell'intera filiera. Nel sito è citata per la sua analisi del 2026 sul costo-opportunità del compute come fine dell'era aggregazionista.",
+    citation: "THOMPSON, Ben, <a href=\"https://stratechery.com\"><em>Stratechery</em></a>, newsletter, 2013–.",
+    articles: [
+      { title: "Mythos, Muse, and the Opportunity Cost of Compute", url: "/curated/2026-04-13-stratechery-opportunity-cost-compute/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Platformer",
+    type: "testo",
+    note: "Newsletter di giornalismo tecnologico fondata nel 2021 da Casey Newton e Zoe Schiffer (platformer.news). Copre l'industria tech con un focus su governance, moderazione dei contenuti, cultura interna delle grandi aziende e impatto sociale delle piattaforme. Tra le poche testate ad aver costruito un modello economico autonomo sul giornalismo tech specializzato.",
+    citation: "NEWTON, Casey; SCHIFFER, Zoe, <a href=\"https://platformer.news\"><em>Platformer</em></a>, newsletter, 2021–.",
+    articles: [
+      { title: "Claude Code for writers", url: "/curated/2026-01-15-newton-claude-code-writers-platformer/", _source: "curated" }
+    ]
+  },
+
   // ─── LUOGHI ───────────────────────────────────────────────────────────────
 
   {
@@ -1254,7 +1379,9 @@ module.exports = [
       { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
       { title: "China's Not the Problem. We Are.", url: "/curated/2026-05-14-chan-china-ai-nyt/", _source: "curated" },
       { title: "How surge in defence and dual-use technology investment could reconfigure global AI race", url: "/curated/2026-04-01-chatham-house-defence-ai-race/", _source: "curated" },
-      { title: "La rivoluzione silenziosa della rete elettrica cinese", url: "/curated/2026-04-13-nyt-china-energy-battery-grid/", _source: "curated" }
+      { title: "La rivoluzione silenziosa della rete elettrica cinese", url: "/curated/2026-04-13-nyt-china-energy-battery-grid/", _source: "curated" },
+      { title: "Cosa intende la Cina per «intelligenza artificiale»", url: "/curated/2026-06-25-pieranni-cina-intelligenza-artificiale-altriorienti/", _source: "curated" },
+      { title: "IA, bulloni e umanesimo", url: "/curated/2026-06-28-pieranni-ia-bulloni-umanesimo-ilpartito/", _source: "curated" }
     ]
   },
   {
@@ -1528,23 +1655,37 @@ module.exports = [
     ]
   },
   {
+    name: "Vogels, Werner",
+    type: "persona",
+    note: "CTO di Amazon (2005 in corso), ingegnere e informatico olandese. Autore del blog *All Things Distributed*, dove scrive di architettura distribuita, cultura organizzativa e innovazione. Nel sito è citato per la riflessione sul ritorno alla «two-pizza culture» e sulla revisione del metodo «working backwards» nell'era dei coding agent: quando costruire un prototipo costa una sera, l'ordine logico del processo creativo si inverte.",
+    articles: [
+      { title: "A Return to Two-Pizza Culture", url: "/curated/2026-06-30-vogels-two-pizza-culture-allthingsdistributed/", _source: "curated" }
+    ]
+  },
+  {
     name: "Askell, Amanda",
     type: "persona",
     note: "Filosofa di Anthropic, responsabile della costituzione etica dei modelli Claude. Ha guidato la redazione dell'ultima iterazione del documento di 78 pagine soprannominato internamente «soul doc», che integra principi kantiani, la Dichiarazione Universale dei Diritti Umani e i termini di servizio di Apple. Nel sito è la figura che incarna la svolta: la filosofia come infrastruttura tecnica interna alle AI labs, non consulenza esterna.",
-    articles: []
+    articles: [
+      { title: "Why Big AI Labs Are Hiring So Many Philosophers", url: "/curated/2026-06-24-economist-ai-labs-philosophers/", _source: "curated" }
+    ]
   },
   {
     name: "Hui, Yuk",
     type: "persona",
     note: "Filosofo cinese-hongkonghese (1985), docente alla City University of Hong Kong. Teorico della cosmotecnica: ogni civiltà produce una tecnica radicata nella propria cosmologia, contro l'idea che la tecnologia moderna sia universale e neutra. Autore di *Recursivity and Contingency* (2019) e *Art and Cosmotechnics* (2021). Nel sito è la fonte del concetto che ridefinisce la competizione AI sino-americana come scontro tra cosmologie, non solo tra modelli.",
-    articles: []
+    articles: [
+      { title: "Cosa intende la Cina per «intelligenza artificiale»", url: "/curated/2026-06-25-pieranni-cina-intelligenza-artificiale-altriorienti/", _source: "curated" }
+    ]
   },
   {
     name: "Pieranni, Simone",
     type: "persona",
     note: "Giornalista e autore italiano, tra i principali esperti di Cina in Italia. Autore di *Red Mirror* (2021) e della newsletter/podcast *Il Partito* e *Altri Orienti*. Nel sito compare in due contesti: in *L'ombra del passato* come fonte cruciale sul nuovo ordine energetico post-Hormuz — la sua analisi del ruolo cinese come broker fra Teheran e Washington («la stabilità di Hormuz è diventata due facce della stessa medaglia geopolitica») alimenta l'estensione del modello teorico sulla Cina a ρ alto; e nel curated su AI e lavoro come curatore della mappa narrativa cinese sull'automazione e il patto sociale.",
     articles: [
-      { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" }
+      { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
+      { title: "Cosa intende la Cina per «intelligenza artificiale»", url: "/curated/2026-06-25-pieranni-cina-intelligenza-artificiale-altriorienti/", _source: "curated" },
+      { title: "IA, bulloni e umanesimo", url: "/curated/2026-06-28-pieranni-ia-bulloni-umanesimo-ilpartito/", _source: "curated" }
     ]
   },
   {
@@ -1561,6 +1702,14 @@ module.exports = [
     note: "Presidente e chief strategy officer di Anduril. Ex capo del personale della Commissione per le Forze Armate del Senato americano, poi direttore delle politiche al Pentagono. Autore di The Kill Chain (2020). Nel sito è la voce opposta ad Amodei sul rapporto tra aziende tecnologiche e apparato militare: o ci si fida del governo democraticamente eletto per decidere come usare la tecnologia, o si esce dal business. Ha definito il rifiuto di Anthropic di lavorare con il Pentagono «where Anthropic went wrong».",
     articles: [
       { title: "Our Military Is Built for the Wrong Century", url: "/curated/2026-05-28-brose-anduril-military-drones-nyt/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Casey Newton",
+    type: "persona",
+    note: "Giornalista tecnologico americano, co-fondatore con Zoe Schiffer di Platformer (2021). In precedenza ha scritto di tech per The Verge. Nel sito è l'autore di riferimento per il giornalismo sulle piattaforme e sulla governance tech: cultura interna delle grandi aziende, moderazione dei contenuti, rapporto tra piattaforme e democrazia.",
+    articles: [
+      { title: "Claude Code for writers", url: "/curated/2026-01-15-newton-claude-code-writers-platformer/", _source: "curated" }
     ]
   },
 
