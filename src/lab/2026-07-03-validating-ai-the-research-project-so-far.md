@@ -23,7 +23,7 @@ The horizontal corpus contains 31 claims demonstrating taxonomic coverage. The v
 
 ## Current state of the paper (v4)
 
-Eight sections drafted (Introduction through Conclusion), a 64-entry bibliography, and six appendices (taxonomy, Coding Manual, system prompts, pre-registration, horizontal corpus, dimensional redundancy matrix, OSF materials). EXP-1 (multi-model control, §6.6) and EXP-2 (uplift experiment, §6.7) remain to be executed, along with the OSF deposit (Appendix G).
+Eight sections drafted (Introduction through Conclusion), a 56-entry bibliography, and six appendices (taxonomy, Coding Manual, system prompts, pre-registration, horizontal corpus, dimensional redundancy matrix, OSF materials). EXP-1 (multi-model control, §6.6) and EXP-2 (uplift experiment, §6.7) remain to be executed, along with the OSF deposit (Appendix G).
 
 ## Submission target
 

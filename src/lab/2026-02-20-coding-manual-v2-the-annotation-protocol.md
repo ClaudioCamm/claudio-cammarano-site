@@ -7,6 +7,11 @@ stage: "Protocol development"
 discipline: ["Epistemology", "Computational linguistics / NLP"]
 method: ["Annotation / inter-annotator agreement", "Protocol design"]
 description: "Fifteen variables (V1–V15) operationalize the taxonomy into a reproducible annotation protocol."
+documents:
+  - file: "Coding_Manual_v2_0.pdf"
+    id: "coding-manual"
+    label: "Coding Manual v2.0 — Protocollo di Annotazione"
+    version: "2.0"
 ---
 
 Taxonomy without operationalization is philosophy. The Coding Manual translates the framework into a reproducible annotation protocol — the document that tells a human annotator exactly what to extract from an LLM-generated validation, variable by variable.
@@ -23,4 +28,4 @@ NA_ILLOCUTORIO is the only verdict that permits a null value for most other vari
 
 The manual also specifies when to pause and escalate: if the first ten replications of any claim show less than 30% verdict agreement, the protocol is suspended and the principal investigator is consulted before continuing.
 
-Document: `Coding_Manual_v2_0.docx` — February 2026
+Document: {% labdoc "Coding_Manual_v2_0.pdf" %} — February 2026

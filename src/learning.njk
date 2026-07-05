@@ -19,3 +19,21 @@ description: "Risorse scaricabili con licenza Creative Commons: slide, report e 
 </article>
 {% endfor %}
 </div>
+
+{% if collections.labDocumentsCurrent.length %}
+<h2 style="margin-top: var(--spacing-lg);">Dal Lab</h2>
+<p>Documenti di lavoro citati nelle note del <a href="/episteme-advisory/lab/">Lab</a> — bozze, protocolli, corpora e script, non risorse finite. Solo la versione corrente di ogni documento; le versioni precedenti restano comunque scaricabili dai link nelle note che le citano. Stessa licenza del resto del Learning Log.</p>
+
+<div class="learning-grid">
+{% for doc in collections.labDocumentsCurrent %}
+<article class="resource-card resource-card--lab">
+    <span class="resource-lab-badge">Dal Lab</span>
+    <h2>{{ doc.label }}</h2>
+    <p class="resource-version">{% if doc.version %}{{ doc.version }} — {% endif %}{{ doc.date | formatDateEN }}</p>
+    <a href="{{ doc.sourceUrl }}" class="resource-source-link">← {{ doc.sourceTitle }}</a>
+    <a href="{{ doc.downloadUrl }}" class="btn-download btn-download--lab" download>Download →</a>
+    <span class="resource-license">CC BY-NC-SA 4.0</span>
+</article>
+{% endfor %}
+</div>
+{% endif %}

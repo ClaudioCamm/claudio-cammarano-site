@@ -7,6 +7,11 @@ stage: "Empirical validation"
 discipline: ["Computational linguistics / NLP", "Statistics"]
 method: ["Quantitative analysis", "Statistical modeling"]
 description: "180 API runs across six claims reveal a 74-point gap between lexical and semantic agreement."
+documents:
+  - file: "batch_validazione.py"
+    label: "Script — Batch Validazione (Anthropic API)"
+  - file: "analisi_varianza.py"
+    label: "Script — Analisi della Varianza"
 ---
 
 The quantitative core of the project is a two-level replication design: six claims, thirty API runs each, identical prompt, automated via Python batch script.
@@ -22,4 +27,4 @@ Mean pairwise Jaccard similarity: J̄ = 0.340. Composite index: IC = 0.605.
 
 The gap is the finding. Surface-level variance — which looks like inconsistency — masks high semantic convergence. An LLM that produces thirty different textual responses to the same prompt is not thirty times unreliable; it may be converging on the same epistemic conclusion through thirty different linguistic paths. Distinguishing these two phenomena requires a framework. That is what this project provides.
 
-Infrastructure: `batch_validazione.py`, `analisi_varianza.py`, Anthropic API, `caffeinate -i` wrapper for long background runs.
+Infrastructure: {% labdoc "batch_validazione.py" %}, {% labdoc "analisi_varianza.py" %}, Anthropic API, `caffeinate -i` wrapper for long background runs.

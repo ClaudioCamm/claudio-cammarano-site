@@ -75,6 +75,18 @@ module.exports = function(eleventyConfig) {
     return `<div class="data-viz">${content}</div>`;
   });
 
+  // Link inline, dentro il corpo di una nota del Lab, a un documento
+  // registrato nel campo `documents:` del frontmatter (di qualsiasi nota,
+  // non solo di quella corrente) — vedi collezione "labDocuments" sotto
+  // e MANUALE.md §3. Se il file non è registrato, torna al vecchio
+  // stile a testo semplice invece di rompere la build.
+  eleventyConfig.addShortcode("labdoc", function(filename, label) {
+    var docs = (this.ctx && this.ctx.collections && this.ctx.collections.labDocuments) || [];
+    var doc = docs.find(function(d) { return d.file === filename; });
+    if (!doc) return "`" + filename + "`";
+    return '<a href="' + doc.downloadUrl + '" class="lab-doc-link">' + (label || filename) + '</a>';
+  });
+
   // === COLLECTIONS ===
 
   eleventyConfig.addCollection("writings", function(collectionApi) {
@@ -96,6 +108,60 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addCollection("learning", function(collectionApi) {
     return collectionApi.getFilteredByGlob("src/learning/*.md");
+  });
+
+  // Documenti citati nelle note del Lab, dichiarati nel campo `documents:`
+  // del frontmatter della nota che li introduce (vedi MANUALE.md §3).
+  // Alimenta sia lo shortcode {% labdoc %} (link inline nel testo) sia le
+  // card verdi "Dal Lab" nel Learning Log — un solo posto da aggiornare
+  // per nota, nessun file separato da creare per ogni documento.
+  function buildLabDocuments(collectionApi) {
+    var notes = collectionApi.getFilteredByGlob("src/lab/*.md");
+    var docs = [];
+    notes.forEach(function(note) {
+      var list = note.data.documents;
+      if (!list) return;
+      list.forEach(function(d) {
+        docs.push({
+          file: d.file,
+          id: d.id || null,
+          label: d.label || d.file,
+          version: d.version || null,
+          date: note.date,
+          sourceUrl: note.url,
+          sourceTitle: note.data.title,
+          downloadUrl: "/downloads/" + d.file
+        });
+      });
+    });
+    return docs.sort(function(a, b) { return b.date - a.date; });
+  }
+
+  eleventyConfig.addCollection("labDocuments", function(collectionApi) {
+    return buildLabDocuments(collectionApi);
+  });
+
+  // Vista "corrente" del Learning Log: solo l'ultima versione per ogni
+  // `id` dichiarato (vedi MANUALE.md §3). Le versioni superate restano
+  // scaricabili dai link {% labdoc %} dentro le vecchie note — spariscono
+  // solo dalla griglia "Dal Lab", non dal sito. I documenti senza `id`
+  // (il caso normale, un solo oggetto) restano tutti visibili.
+  eleventyConfig.addCollection("labDocumentsCurrent", function(collectionApi) {
+    var all = buildLabDocuments(collectionApi);
+    var latestById = {};
+    var result = [];
+    all.forEach(function(doc) {
+      if (!doc.id) {
+        result.push(doc);
+        return;
+      }
+      var current = latestById[doc.id];
+      if (!current || doc.date > current.date) {
+        latestById[doc.id] = doc;
+      }
+    });
+    result = result.concat(Object.values(latestById));
+    return result.sort(function(a, b) { return b.date - a.date; });
   });
 
   // All unique series (base names, stripped of episode number) from writings

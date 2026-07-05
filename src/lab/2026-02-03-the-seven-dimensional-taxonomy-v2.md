@@ -7,6 +7,10 @@ stage: "Taxonomy development"
 discipline: ["Epistemology", "Philosophy of language"]
 method: ["Conceptual analysis", "Taxonomy design"]
 description: "The seven-dimensional taxonomy (D1–D7) takes shape; eleven categories under D1, version 2.2."
+documents:
+  - file: "tassonomia_completa_v2_2.pdf"
+    label: "Tassonomia Completa v2.2 — Framework Ontologico a 7 Dimensioni"
+    version: "2.2"
 ---
 
 The first formal artifact of the project is the ontological taxonomy: a seven-dimensional framework for classifying AI-generated claims before any truth evaluation takes place.
@@ -17,4 +21,4 @@ The governing principle, which became the paper's title, is this: ontology prece
 
 Version 2.0 established the core structure. Two refinements followed in the same month.
 
-Current version: 2.2 — February 2026. Document: `tassonomia_completa_v2_2.docx`
+Current version: 2.2 — February 2026. Document: {% labdoc "tassonomia_completa_v2_2.pdf" %}

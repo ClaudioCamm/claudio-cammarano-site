@@ -51,4 +51,25 @@ lang: en
   </div>
 </article>
 
+{% set prevPost = collections.lab | getPrevPost(page.url) %}
+{% set nextPost = collections.lab | getNextPost(page.url) %}
+{% if prevPost or nextPost %}
+<nav class="article-nav" data-pagefind-ignore>
+  {% if prevPost %}
+  <a href="{{ prevPost.url }}" class="article-nav-item article-nav-prev">
+    <span class="article-nav-label">&#8592; Previous</span>
+    <span class="article-nav-title">{{ prevPost.data.title }}</span>
+  </a>
+  {% else %}
+  <span></span>
+  {% endif %}
+  {% if nextPost %}
+  <a href="{{ nextPost.url }}" class="article-nav-item article-nav-next">
+    <span class="article-nav-label">Next &#8594;</span>
+    <span class="article-nav-title">{{ nextPost.data.title }}</span>
+  </a>
+  {% endif %}
+</nav>
+{% endif %}
+
 <p style="margin-top: var(--spacing-lg); font-family: var(--font-sans); font-size: 14px;"><a href="/episteme-advisory/lab/">&larr; All Lab notes</a></p>

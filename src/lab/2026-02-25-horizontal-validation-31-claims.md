@@ -7,6 +7,10 @@ stage: "Empirical validation"
 discipline: ["Epistemology", "Computational linguistics / NLP"]
 method: ["Annotation / inter-annotator agreement", "Qualitative coding"]
 description: "31 claims spanning eleven D1 categories demonstrate taxonomic coverage without category collapse."
+documents:
+  - file: "archivio_31_validazioni_v4.pdf"
+    label: "Archivio 31 Validazioni — v4"
+    version: "v4"
 ---
 
 Before running the quantitative experiment, the taxonomy needed to demonstrate that it could handle the full range of claim types — not just the three selected for replication. The horizontal validation corpus does exactly this.
@@ -17,4 +21,4 @@ The corpus is not a sample — it is a proof of coverage. Its function is to dem
 
 Each validation follows the locked format: PRE-STEP 0 → PROSPETTO (six rows: Ontologia / Logica / Decidibilità / Esito / Pre-Step 0 / Sintesi rapida) → [EMPATIA] → [LOGICA] → [INFORMAZIONE] → [EPISTEMIC RESPONSIBILITY CHECK] → [SINTESI ESTESA] → FONTI.
 
-Document: `archivio_31_validazioni_v4.docx` — February 2026. 31 claims, 11 D1 categories.
+Document: {% labdoc "archivio_31_validazioni_v4.pdf" %} — February 2026. 31 claims, 11 D1 categories.

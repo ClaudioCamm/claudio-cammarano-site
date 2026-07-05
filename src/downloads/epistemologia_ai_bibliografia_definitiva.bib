@@ -1,0 +1,607 @@
+% BIBLIOGRAFIA DEFINITIVA - Epistemologia della Conoscenza AI-Generata
+% "Validating Claude with Claude" — Framework Ontologico v2.2
+% Claudio Cammarano — Febbraio 2026
+% 56 fonti con capitoli rilevanti e note di lettura
+% Aggiornamento v3: +3 fonti su Peirce e abduzione
+%   (peirce1931collected, peirce1903harvard, fann1970peirce)
+%   Riferimento: sez. 3.1 fondamenti filosofici — abduzione come metodo generativo del framework
+% Aggiornamento v2: +3 fonti su LLM e linguistica computazionale/pragmatica
+%   (chang2024language, yu2024assessing, ziems2024llms)
+%   Riferimento: nota sezione 7 paper su LLM come acceleratori della ricerca linguistica
+% Aggiornamento v1: aggiunta austin1962speech (riferimento teorico Pre-Step 0, v2.2)
+
+% ============================================
+% EPISTEMOLOGIA FONDAMENTALE
+% ============================================
+
+@book{austin1962speech,
+  author = {Austin, John L.},
+  title = {How to Do Things with Words},
+  publisher = {Oxford University Press},
+  year = {1962},
+  address = {Oxford},
+  editor = {Urmson, J.O. and Sbisà, Marina},
+  note = {Cap. 1--4: distinzione locutorio/illocutorio/perlocutorio. Cap. 5--7: performativi vs. constativi. Riferimento teorico fondante per il Pre-Step 0 (v2.2): la forma dichiarativa non implica automaticamente funzione assertiva. Rilevante per la distinzione tra enunciati-asserzione e atti linguistici direttivi, performativi, espressivi. Chiave per il codice NA\_ILLOCUTORIO nel Coding Manual v2.0.}
+}
+
+@book{bonjour2003epistemic,
+  author = {BonJour, Laurence and Sosa, Ernest},
+  title = {Epistemic Justification: Internalism vs. Externalism, Foundations vs. Virtues},
+  publisher = {Blackwell},
+  year = {2003},
+  address = {Oxford},
+  note = {Cap. 1-3 (BonJour: teoria coerentista); Cap. 4-6 (Sosa: fondazionalismo e virtue epistemology)}
+}
+
+@book{goldman1999knowledge,
+  author = {Goldman, Alvin I.},
+  title = {Knowledge in a Social World},
+  publisher = {Oxford University Press},
+  year = {1999},
+  address = {Oxford},
+  note = {Cap. 4: Testimony; Cap. 5: Experts and Expertise}
+}
+
+@book{kvanvig2003value,
+  author = {Kvanvig, Jonathan L.},
+  title = {The Value of Knowledge and the Pursuit of Understanding},
+  publisher = {Cambridge University Press},
+  year = {2003},
+  address = {Cambridge},
+  note = {Cap. 8: Understanding and Knowledge}
+}
+
+@incollection{zagzebski2001recovering,
+  author = {Zagzebski, Linda},
+  title = {Recovering Understanding},
+  booktitle = {Knowledge, Truth, and Duty},
+  editor = {Steup, Matthias},
+  publisher = {Oxford University Press},
+  year = {2001},
+  pages = {235--252},
+  address = {Oxford},
+  note = {Saggio completo}
+}
+
+@book{coady1992testimony,
+  author = {Coady, C.A.J.},
+  title = {Testimony: A Philosophical Study},
+  publisher = {Oxford University Press},
+  year = {1992},
+  address = {Oxford},
+  note = {Cap. 1: The Concept of Testimony; Cap. 2: Testimony and Belief}
+}
+
+@incollection{ichikawa2018knowledge,
+  author = {Ichikawa, Jonathan Jenkins and Steup, Matthias},
+  title = {The Analysis of Knowledge},
+  booktitle = {The Stanford Encyclopedia of Philosophy},
+  editor = {Zalta, Edward N.},
+  year = {2018},
+  publisher = {Metaphysics Research Lab, Stanford University},
+  howpublished = {\url{https://plato.stanford.edu/entries/knowledge-analysis/}},
+  note = {Sezioni 1-3: definizione, casi Gettier, post-Gettier}
+}
+
+@incollection{glanzberg2018truth,
+  author = {Glanzberg, Michael},
+  title = {Truth},
+  booktitle = {The Stanford Encyclopedia of Philosophy},
+  editor = {Zalta, Edward N.},
+  year = {2018},
+  publisher = {Metaphysics Research Lab, Stanford University},
+  howpublished = {\url{https://plato.stanford.edu/entries/truth/}},
+  note = {Sezioni 1-2: teorie corrispondenza; Sez. 3: teorie coerentiste; Sez. 5: teorie pragmatiste}
+}
+
+@incollection{steup2020epistemology,
+  author = {Steup, Matthias and Neta, Ram},
+  title = {Epistemology},
+  booktitle = {The Stanford Encyclopedia of Philosophy},
+  editor = {Zalta, Edward N.},
+  year = {2020},
+  publisher = {Metaphysics Research Lab, Stanford University},
+  howpublished = {\url{https://plato.stanford.edu/entries/epistemology/}},
+  note = {Sezioni 1-5: overview generale}
+}
+
+% ============================================
+% PEIRCE: ABDUZIONE E SEMIOTICA
+% (Aggiunta v3 — Febbraio 2026)
+% Contesto: fondamento filosofico del metodo generativo del framework.
+% L'abduzione (retroduction) spiega come le categorie della tassonomia
+% emergono dall'analisi dei casi limite, non sono dedotte a priori.
+% La semiotica peirciana (icone/indice/simbolo) anticipa strutturalmente
+% la precedenza di D1 sulle dimensioni attributive D2-D7.
+% Citare in sez. 3.1 (fondamenti filosofici) come anello mancante tra
+% Popper/Lakatos (test delle ipotesi) e la generazione delle ipotesi stesse.
+% ============================================
+
+@book{peirce1931collected,
+  author = {Peirce, Charles Sanders},
+  title = {Collected Papers of Charles Sanders Peirce},
+  publisher = {Harvard University Press},
+  year = {1931--1958},
+  address = {Cambridge, MA},
+  editor = {Hartshorne, Charles and Weiss, Paul and Burks, Arthur W.},
+  volume = {1--8},
+  note = {Lettura selettiva. Vol. 2, §2.619--2.644: teoria dei segni (icone, indice, simbolo) --- fondamento semiotico della precedenza categoriale D1. Vol. 5, §5.171--5.212: abduzione come terza forma di inferenza, distinta da deduzione e induzione --- il momento creativo del metodo scientifico. Vol. 5, §5.180: "The surprising fact C is observed; but if A were true, C would be a matter of course; hence, there is reason to suspect that A is true" --- struttura canonica dell'abduzione. Essenziale per la sez. 3.1 come fondamento del metodo generativo del framework.}
+}
+
+@book{peirce1903harvard,
+  author = {Peirce, Charles Sanders},
+  title = {Harvard Lectures on Pragmatism},
+  publisher = {Harvard University},
+  year = {1903},
+  address = {Cambridge, MA},
+  note = {Ripubblicato in Collected Papers vol. 5, §5.14--5.212. Lezioni VII e VIII: Abduzione come "the only logical operation which introduces any new idea" --- distinzione fondamentale tra retroduction (generazione ipotesi) e deduzione/induzione (test). Rilevante per distinguere la fase generativa del framework (claim di frontiera come sonde abduttive) dalla fase di test (le 90 validazioni, il κ di Fleiss). La struttura lakatosiana del progetto --- nucleo duro stabile + cintura protettiva in espansione --- è coerente con il ciclo peirciano abduzione → deduzione → induzione.}
+}
+
+@book{fann1970peirce,
+  author = {Fann, Kuang Tih},
+  title = {Peirce's Theory of Abduction},
+  publisher = {Martinus Nijhoff},
+  year = {1970},
+  address = {The Hague},
+  note = {Monografia dedicata all'abduzione peirciana. Cap. 2: distinzione abduzione/induzione nella fase matura di Peirce (post-1900). Cap. 4: abduzione e scoperta scientifica --- il problema della generazione vs. giustificazione delle ipotesi. Testo secondario consigliato per contestualizzare Peirce nella letteratura filosofica contemporanea senza dover leggere tutti i Collected Papers. Utile per rispondere a potenziali obiezioni di un reviewer sulla vaghezza del concetto di abduzione.}
+}
+
+% ============================================
+% FILOSOFIA DELLA SCIENZA
+% ============================================
+
+@book{popper1959logic,
+  author = {Popper, Karl R.},
+  title = {The Logic of Scientific Discovery},
+  publisher = {Hutchinson},
+  year = {1959},
+  address = {London},
+  note = {Cap. 1-2: Survey of fundamental problems + theory of method; Cap. 4: Falsifiability; Cap. 10: Corroboration}
+}
+
+@book{popper1963conjectures,
+  author = {Popper, Karl R.},
+  title = {Conjectures and Refutations: The Growth of Scientific Knowledge},
+  publisher = {Routledge},
+  year = {1963},
+  address = {London},
+  note = {Cap. 1: Science: Conjectures and Refutations; Cap. 10: Truth, Rationality, and the Growth of Scientific Knowledge}
+}
+
+@book{lakatos1978methodology,
+  author = {Lakatos, Imre},
+  title = {The Methodology of Scientific Research Programmes},
+  publisher = {Cambridge University Press},
+  year = {1978},
+  address = {Cambridge},
+  editor = {Worrall, John and Currie, Gregory},
+  note = {Falsification and the Methodology of SRP (pp. 8-101): Sez. I-III; History of Science and Its Rational Reconstructions (pp. 102-138)}
+}
+
+@book{kuhn1970structure,
+  author = {Kuhn, Thomas S.},
+  title = {The Structure of Scientific Revolutions},
+  publisher = {University of Chicago Press},
+  year = {1970},
+  edition = {2nd},
+  address = {Chicago},
+  note = {COMPLETO (~200 pp); Postscript-1969 essenziale}
+}
+
+@book{feyerabend1975against,
+  author = {Feyerabend, Paul K.},
+  title = {Against Method},
+  publisher = {New Left Books},
+  year = {1975},
+  address = {London},
+  note = {Intro: Science in a Free Society; Cap. 1-3: fondamenti anarchismo epistemologico}
+}
+
+@book{hacking1983representing,
+  author = {Hacking, Ian},
+  title = {Representing and Intervening: Introductory Topics in the Philosophy of Natural Science},
+  publisher = {Cambridge University Press},
+  year = {1983},
+  address = {Cambridge},
+  note = {Parte II - Intervening: Cap. 16: Experimentation and Scientific Realism; Cap. 17: If You Can Spray Them, They're Real}
+}
+
+@book{cartwright1983laws,
+  author = {Cartwright, Nancy},
+  title = {How the Laws of Physics Lie},
+  publisher = {Oxford University Press},
+  year = {1983},
+  address = {Oxford},
+  note = {Cap. 1: Introduction; Cap. 2: How the Laws of Physics Lie; Cap. 3: Do the Laws of Physics State the Facts?}
+}
+
+% ============================================
+% TASSONOMIA CONOSCENZA PER TIPO
+% ============================================
+
+@incollection{quine1969epistemology,
+  author = {Quine, Willard Van Orman},
+  title = {Epistemology Naturalized},
+  booktitle = {Ontological Relativity and Other Essays},
+  publisher = {Columbia University Press},
+  year = {1969},
+  pages = {69--90},
+  address = {New York},
+  note = {Saggio completo}
+}
+
+@book{vanfraassen1980scientific,
+  author = {van Fraassen, Bas C.},
+  title = {The Scientific Image},
+  publisher = {Oxford University Press},
+  year = {1980},
+  address = {Oxford},
+  note = {Intro: Introduction; Cap. 2: Arguments Concerning Scientific Realism}
+}
+
+@book{shapiro2000thinking,
+  author = {Shapiro, Stewart},
+  title = {Thinking About Mathematics: The Philosophy of Mathematics},
+  publisher = {Oxford University Press},
+  year = {2000},
+  address = {Oxford},
+  note = {Intro: What is Mathematics?; Cap. 1: Mathematics and its Philosophy; Cap. 2: Arithmetic}
+}
+
+@book{gibbard2003thinking,
+  author = {Gibbard, Allan},
+  title = {Thinking How to Live},
+  publisher = {Harvard University Press},
+  year = {2003},
+  address = {Cambridge, MA},
+  note = {Cap. 1: The Thing to Do; Cap. 2: Normative Concepts; Cap. 3: Thinking How to Live}
+}
+
+@article{foot1972morality,
+  author = {Foot, Philippa},
+  title = {Morality as a System of Hypothetical Imperatives},
+  journal = {The Philosophical Review},
+  volume = {81},
+  number = {3},
+  pages = {305--316},
+  year = {1972},
+  note = {Articolo completo}
+}
+
+@book{woodward2003making,
+  author = {Woodward, James},
+  title = {Making Things Happen: A Theory of Causal Explanation},
+  publisher = {Oxford University Press},
+  year = {2003},
+  address = {Oxford},
+  note = {Cap. 1: Introduction; Cap. 2: Causation and Manipulation}
+}
+
+@book{pearl2009causality,
+  author = {Pearl, Judea},
+  title = {Causality: Models, Reasoning, and Inference},
+  publisher = {Cambridge University Press},
+  year = {2009},
+  edition = {2nd},
+  address = {Cambridge},
+  note = {Intro: Introduction to Probabilities, Graphs, and Causal Models; Cap. 1: Probabilistic and Causal Models}
+}
+
+@book{reichenbach1949probability,
+  author = {Reichenbach, Hans},
+  title = {The Theory of Probability: An Inquiry into the Logical and Mathematical Foundations of the Calculus of Probability},
+  publisher = {University of California Press},
+  year = {1949},
+  address = {Berkeley},
+  note = {Sezioni su inferenza induttiva (capitoli variano per edizione)}
+}
+
+@book{hacking1965logic,
+  author = {Hacking, Ian},
+  title = {Logic of Statistical Inference},
+  publisher = {Cambridge University Press},
+  year = {1965},
+  address = {Cambridge},
+  note = {Cap. 1: Support; Cap. 2: Probability; Cap. 3: Classical Statistics}
+}
+
+@book{kitcher1993advancement,
+  author = {Kitcher, Philip},
+  title = {The Advancement of Science: Science without Legend, Objectivity without Illusions},
+  publisher = {Oxford University Press},
+  year = {1993},
+  address = {Oxford},
+  note = {Cap. 8: The Division of Cognitive Labor; Cap. 9: The Organization of Cognitive Labor}
+}
+
+% ============================================
+% AI: LETTERATURA TECNICA
+% ============================================
+
+@inproceedings{bender2021dangers,
+  author = {Bender, Emily M. and Gebru, Timnit and McMillan-Major, Angelina and Shmitchell, Shmargaret},
+  title = {On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?},
+  booktitle = {Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency},
+  series = {FAccT '21},
+  year = {2021},
+  pages = {610--623},
+  publisher = {ACM},
+  note = {Paper completo (~10 pp); Sezioni chiave: 3 (Unfathomable training data), 4 (On 'coherent' language)}
+}
+
+@article{bommasani2021opportunities,
+  author = {Bommasani, Rishi and others},
+  title = {On the Opportunities and Risks of Foundation Models},
+  journal = {arXiv preprint arXiv:2108.07258},
+  year = {2021},
+  note = {Report lungo (214 pp) - Lettura selettiva: Sez. 2: Capabilities (pp. 20-60); Sez. 4.5: Truth, misinformation (pp. 110-118); Sez. 4.6: Reasoning and search (pp. 118-125); Sez. 5: Society (pp. 126-165, focus epistemologia pp. 140-150)}
+}
+
+@article{openai2023gpt4,
+  author = {{OpenAI}},
+  title = {GPT-4 Technical Report},
+  journal = {arXiv preprint arXiv:2303.08774},
+  year = {2023},
+  note = {Sezioni rilevanti: Introduction; Capabilities (pp. 3-10); Limitations (pp. 10-12); Conclusion}
+}
+
+@article{bai2022constitutional,
+  author = {Bai, Yuntao and others},
+  title = {Constitutional AI: Harmlessness from AI Feedback},
+  journal = {arXiv preprint arXiv:2212.08073},
+  year = {2022},
+  publisher = {Anthropic},
+  note = {Paper completo (~15 pp); Focus: Sezioni 2-3 (metodologia), 5 (risultati)}
+}
+
+@book{marcus2019rebooting,
+  author = {Marcus, Gary and Davis, Ernest},
+  title = {Rebooting AI: Building Artificial Intelligence We Can Trust},
+  publisher = {Pantheon Books},
+  year = {2019},
+  address = {New York},
+  note = {Cap. 3: Deep Learning, and Deeper Concerns; Cap. 4: If Computers Are So Smart, How Come They Can't Read?; Cap. 5: Where's Rosie?}
+}
+
+% ============================================
+% AI: LETTERATURA FILOSOFICA
+% ============================================
+
+@book{vallor2016technology,
+  author = {Vallor, Shannon},
+  title = {Technology and the Virtues: A Philosophical Guide to a Future Worth Wanting},
+  publisher = {Oxford University Press},
+  year = {2016},
+  address = {Oxford},
+  note = {Cap. 6: Technomoral Wisdom and the Cultivation of Virtue; Cap. 7: Cultivating the Virtues of the Information Age}
+}
+
+@incollection{floridi2015semantic,
+  author = {Floridi, Luciano},
+  title = {Semantic Conceptions of Information},
+  booktitle = {The Stanford Encyclopedia of Philosophy},
+  editor = {Zalta, Edward N.},
+  year = {2015},
+  publisher = {Metaphysics Research Lab, Stanford University},
+  howpublished = {\url{https://plato.stanford.edu/entries/information-semantic/}},
+  note = {Voce completa; Sezioni chiave: 1-3 (dato/informazione/conoscenza)}
+}
+
+@book{floridi2011philosophy,
+  author = {Floridi, Luciano},
+  title = {The Philosophy of Information},
+  publisher = {Oxford University Press},
+  year = {2011},
+  address = {Oxford},
+  note = {Cap. 3: What is Information?; Cap. 4: Semantic Information}
+}
+
+@inproceedings{andreas2022language,
+  author = {Andreas, Jacob},
+  title = {Language Models as Agent Models},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume = {35},
+  year = {2022},
+  pages = {22966--22979},
+  note = {Paper completo (~20 pp)}
+}
+
+@inproceedings{bender2020climbing,
+  author = {Bender, Emily M. and Koller, Alexander},
+  title = {Climbing towards NLU: On Meaning, Form, and Understanding in the Age of Data},
+  booktitle = {Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics},
+  year = {2020},
+  pages = {5185--5198},
+  publisher = {ACL},
+  note = {Paper completo (~12 pp); Sezioni chiave: 3 (The octopus test), 4 (Meaning and communicative intent)}
+}
+
+@article{piantadosi2022meaning,
+  author = {Piantadosi, Steven T. and Hill, Felix},
+  title = {Meaning without reference in large language models},
+  journal = {arXiv preprint arXiv:2208.02957},
+  year = {2022},
+  note = {Paper completo (~15 pp)}
+}
+
+@article{mitchell2023debate,
+  author = {Mitchell, Melanie and Krakauer, David C.},
+  title = {The Debate Over Understanding in AI's Large Language Models},
+  journal = {Proceedings of the National Academy of Sciences},
+  volume = {120},
+  number = {13},
+  pages = {e2215907120},
+  year = {2023},
+  note = {Paper completo (~8 pp); Overview sintetica del dibattito}
+}
+
+% ============================================
+% METODOLOGIA E VALIDAZIONE
+% ============================================
+
+@book{williamson2007philosophy,
+  author = {Williamson, Timothy},
+  title = {The Philosophy of Philosophy},
+  publisher = {Blackwell},
+  year = {2007},
+  address = {Oxford},
+  note = {Cap. 1: Philosophy and Philosophical Knowledge; Cap. 2: Evidential Probabilities in Philosophy}
+}
+
+@article{srivastava2023beyond,
+  author = {Srivastava, Aarohi and others},
+  title = {Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models},
+  journal = {Transactions on Machine Learning Research},
+  year = {2023},
+  note = {Paper completo (~50 pp); Focus: Introduction + Methodology sections}
+}
+
+@article{liang2022holistic,
+  author = {Liang, Percy and others},
+  title = {Holistic Evaluation of Language Models},
+  journal = {arXiv preprint arXiv:2211.09110},
+  year = {2022},
+  note = {Paper completo (~72 pp); Sezioni rilevanti: 1-3 (framework), 6 (discussion)}
+}
+
+% ============================================
+% FINE BIBLIOGRAFIA
+% ============================================
+
+@inproceedings{vaswani2017attention,
+  author = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N. and Kaiser, {\L}ukasz and Polosukhin, Illia},
+  title = {Attention Is All You Need},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume = {30},
+  year = {2017},
+  publisher = {Curran Associates},
+  note = {Paper completo (11 pp.); Lettura consigliata: Introduction + Sezione 3 (Model Architecture) + Conclusions. Il paper fondativo dell'architettura transformer su cui girano tutti i LLM moderni incluso Claude. Rilevante per descrivere lo strumento di validazione nel paper.},
+  url = {https://arxiv.org/abs/1706.03762}
+}
+
+% ============================================
+% ============================================
+% LLM E LINGUISTICA COMPUTAZIONALE/PRAGMATICA
+% (Aggiunta v2 — Febbraio 2026)
+% Contesto: letteratura su LLM come strumenti per accelerare
+% la ricerca linguistica, in particolare annotazione pragmatica.
+% Rilevante per nota lavoro futuro (sez. 7) e discussione (sez. 6.4).
+% ============================================
+
+@article{chang2024language,
+  author = {Chang, Tyler A. and Bergen, Benjamin K.},
+  title = {Language Model Behavior: A Comprehensive Survey},
+  journal = {Computational Linguistics},
+  volume = {50},
+  number = {1},
+  year = {2024},
+  url = {https://arxiv.org/abs/2303.11504},
+  note = {Survey su oltre 250 studi sul comportamento degli LLM prima del fine-tuning. Documenta capacità in sintassi, semantica, pragmatica, world knowledge e ragionamento, con sensibilità agli input specifici. Rilevante per inquadrare il progetto nella letteratura su LLM come strumenti di ricerca linguistica. Mostra che la pragmatica rimane il dominio più fragile, il che motiva la necessità di framework ontologici come il nostro.}
+}
+
+@article{yu2024assessing,
+  author = {Yu, Danni and Li, Luyang and Su, Hang and Fuoli, Matteo},
+  title = {Assessing the potential of {LLM}-assisted annotation for corpus-based pragmatics and discourse analysis: The case of apology},
+  journal = {International Journal of Corpus Linguistics},
+  volume = {29},
+  number = {4},
+  pages = {534--561},
+  year = {2024},
+  doi = {10.1075/ijcl.23087.yu},
+  note = {Confronto GPT-3.5, GPT-4 e annotatore umano su annotazione di componenti delle scuse in inglese. GPT-4 raggiunge accuratezza prossima all'umano; GPT-3.5 significativamente inferiore. Struttura analitica analoga al presente progetto: LLM come co-annotatore su fenomeni pragmatici complessi, con validazione umana. Direttamente citabile in sez. 4 (metodologia) e sez. 7 (lavoro futuro: estensione a corpora annotati). Prima fonte specifica su LLM e annotazione pragmatica in corpus linguistics.}
+}
+
+@article{ziems2024llms,
+  author = {Ziems, Caleb and Held, William and Shaikh, Omar and Chen, Jiaao and Zhang, Zhehao and Yang, Diyi},
+  title = {Can Large Language Models Transform Computational Social Science?},
+  journal = {Computational Linguistics},
+  volume = {50},
+  number = {1},
+  pages = {237--291},
+  year = {2024},
+  doi = {10.1162/coli_a_00502},
+  note = {Valutazione zero-shot di 13 LLM su 25 benchmark di computational social science. Risultato chiave: su task di classificazione tassonomica gli LLM non superano i modelli fine-tuned, ma su task di codifica a forma libera producono spiegazioni che spesso eccedono la qualità dei crowdworker. Tensione rilevante per il nostro design: la classificazione D1 è esattamente il tipo di task in cui gli LLM sono più fragili; la sintesi estesa è il tipo di task in cui eccellono. Citare in sez. 4.5 (limiti metodologici) e sez. 6.4 (implicazioni).}
+}
+
+% LETTURE PARALLELE
+% (da tenere aperte durante la scrittura, non letture sequenziali)
+% ============================================
+
+% --- Metodo della scrittura filosofica/accademica ---
+
+@book{strunk1999elements,
+  author = {Strunk, William and White, E.B.},
+  title = {The Elements of Style},
+  publisher = {Longman},
+  year = {1999},
+  edition = {4th},
+  address = {New York},
+  note = {LETTURA PARALLELA — Scrittura. Per la prosa inglese del paper: concisione, chiarezza, struttura della frase. Consultare durante la revisione.}
+}
+
+@book{becker1986writing,
+  author = {Becker, Howard S.},
+  title = {Writing for Social Scientists: How to Start and Finish Your Thesis, Book, or Article},
+  publisher = {University of Chicago Press},
+  year = {1986},
+  address = {Chicago},
+  note = {LETTURA PARALLELA — Scrittura. Come si struttura un argomento accademico, il blocco dello scrittore, la logica dell'argomentazione. Più utile di qualsiasi manuale di stile.}
+}
+
+@book{eco1977tesi,
+  author = {Eco, Umberto},
+  title = {Come si fa una tesi di laurea},
+  publisher = {Bompiani},
+  year = {1977},
+  address = {Milano},
+  note = {LETTURA PARALLELA — Scrittura. Rileggere la sezione sulle schede bibliografiche e sulla costruzione dell'indice. Diversa utilità in fase di scrittura rispetto alla fase di studio.}
+}
+
+% --- Angolo obliquo: lo stesso problema da altrove ---
+
+@book{borges1944ficciones,
+  author = {Borges, Jorge Luis},
+  title = {Ficciones},
+  publisher = {Sur},
+  year = {1944},
+  address = {Buenos Aires},
+  note = {LETTURA PARALLELA — Angolo obliquo. La biblioteca di Babele e Pierre Menard: il testo come oggetto epistemicamente autonomo rispetto all'intenzione dell'autore. La domanda "chi ha prodotto questo testo e cosa significa?" è esattamente quella del progetto.}
+}
+
+@book{calvino1979senotte,
+  author = {Calvino, Italo},
+  title = {Se una notte d'inverno un viaggiatore},
+  publisher = {Einaudi},
+  year = {1979},
+  address = {Torino},
+  note = {LETTURA PARALLELA — Angolo obliquo. Il testo come oggetto autonomo, la moltiplicazione delle fonti, l'autore come funzione: rilevante per la domanda sull'autorialità dell'AI-generated content.}
+}
+
+@book{wittgenstein1953investigations,
+  author = {Wittgenstein, Ludwig},
+  title = {Philosophical Investigations},
+  publisher = {Blackwell},
+  year = {1953},
+  address = {Oxford},
+  note = {LETTURA PARALLELA — Angolo obliquo. Non lettura integrale: consultare per aforismi. §201 (seguire una regola) per D1.9; §43 (significato come uso) per il dibattito Bender/Piantadosi sul significato nei LLM.}
+}
+
+% --- Crisi della verità nel discorso pubblico ---
+
+@article{arendt1967truth,
+  author = {Arendt, Hannah},
+  title = {Truth and Politics},
+  journal = {The New Yorker},
+  year = {1967},
+  note = {LETTURA PARALLELA — Contesto. Saggio (non libro): la verità fattuale come strutturalmente vulnerabile nel discorso politico. Precorre di cinquant'anni il dibattito sulle fake news. Ripubblicato in Between Past and Future (Viking, 1968).},
+  url = {https://idanlandau.com/files/arendt-truth-and-politics.pdf}
+}
+
+@book{frankfurt2005bullshit,
+  author = {Frankfurt, Harry G.},
+  title = {On Bullshit},
+  publisher = {Princeton University Press},
+  year = {2005},
+  address = {Princeton},
+  note = {LETTURA PARALLELA — Contesto. 67 pp., si legge in un pomeriggio. La distinzione menzogna/bullshit è una distinzione ontologica del tipo D1: il bugiardo sa la verità e la nega, il bullshitter è indifferente alla verità. Direttamente rilevante per certi pattern di output AI.}
+}

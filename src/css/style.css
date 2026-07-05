@@ -1327,6 +1327,66 @@ figcaption {
   margin-top: var(--spacing-xs);
 }
 
+/* === LEARNING LOG — documenti del Lab (vedi MANUALE.md §3) ===
+   Stessa struttura .resource-card, ma verde Episteme Advisory (#0F6E56)
+   invece del blu standard --color-primary, per distinguere a colpo
+   d'occhio i materiali di lavoro grezzi dalle risorse finite. */
+.resource-card--lab {
+  border-color: #0F6E56;
+}
+
+.resource-lab-badge {
+  display: inline-block;
+  align-self: flex-start;
+  background: #0F6E56;
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: 3px;
+  margin-bottom: 2px;
+}
+
+.resource-version {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  color: var(--color-text-light);
+}
+
+.resource-source-link {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: #0F6E56;
+  text-decoration: none;
+}
+
+.resource-source-link:hover {
+  text-decoration: underline;
+}
+
+.btn-download--lab {
+  background: #0F6E56;
+}
+
+.btn-download--lab:hover {
+  background: #0b5342;
+}
+
+/* Link inline ai documenti del Lab dentro il corpo delle note (shortcode {% labdoc %}) */
+.lab-doc-link {
+  color: #0F6E56;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: rgba(15, 110, 86, 0.4);
+}
+
+.lab-doc-link:hover {
+  text-decoration-color: #0F6E56;
+}
+
 /* === NEWSLETTER === */
 .newsletter-content {
   max-width: 600px;

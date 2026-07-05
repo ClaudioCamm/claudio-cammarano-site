@@ -7,6 +7,11 @@ stage: "Taxonomy development"
 discipline: ["Epistemology", "Philosophy of causation"]
 method: ["Conceptual analysis", "Case analysis"]
 description: "A real-world causal claim exposes the asymmetry of causal validation, formalized as a three-outcome procedure for D4.3."
+documents:
+  - file: "Coding_Manual_Addendum_D4_3.pdf"
+    id: "coding-manual"
+    label: "Coding Manual — Addendum D4.3 (Causal-Mechanism)"
+    version: "Addendum a v1.0"
 ---
 
 The most important theoretical insight of the project did not come from a library. It came from a conversation at Alpe di Siusi with a German tourist.
@@ -25,4 +30,4 @@ The result was a three-outcome procedure for all D4.3 (Causal-Mechanism) claims:
 
 This distinction was formalized as an Addendum to Coding Manual v1.0 (February 2026) and later integrated into Coding Manual v2.0 and Taxonomy v2.1.
 
-Documents: `Coding_Manual_Addendum_D4_3.docx`, `tassonomia_completa_v2_2.docx` (v2.1 notes)
+Documents: {% labdoc "Coding_Manual_Addendum_D4_3.pdf" %}, {% labdoc "tassonomia_completa_v2_2.pdf" %} (v2.1 notes)

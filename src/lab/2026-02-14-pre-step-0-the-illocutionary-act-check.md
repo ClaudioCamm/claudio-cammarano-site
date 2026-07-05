@@ -25,4 +25,4 @@ Declarative form with ambiguous force → treat as assertion. The framework does
 
 Pre-Step 0 was integrated into Taxonomy v2.2 and Coding Manual v2.0.
 
-Documents: `tassonomia_completa_v2_2.docx` (v2.2 notes), `Coding_Manual_v2_0.docx` (Section 5.2)
+Documents: {% labdoc "tassonomia_completa_v2_2.pdf" %} (v2.2 notes), {% labdoc "Coding_Manual_v2_0.pdf" %} (Section 5.2)

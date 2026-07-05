@@ -42,6 +42,7 @@ src/
   css/
     style.css      # Unico file CSS
   images/          # Immagini articoli
+  downloads/       # File scaricabili del Learning Log (risorse + documenti del Lab, vedi sezione 3)
   graph-data.njk   # Endpoint statico /graph-data.json letto dal grafo (generato)
   mappa.njk        # Pagina /mappa/ — grafo completo concetti
   *.njk            # Pagine indice (temi, indice, curated, serie…)
@@ -187,6 +188,7 @@ A differenza dei curated, per i **writings** il collegamento ai concetti non pas
 **La skill `pubblica-articolo` non fa questo passaggio.** Genera solo il file markdown del writing; non tocca `conceptsIndex.js`. Va fatto a mano, articolo per articolo.
 
 Checklist completa per pubblicare un writing:
+
 1. Salva il file in `src/writings/`
 2. Apri `src/_data/conceptsIndex.js` e aggiorna le voci dei concetti citati (vedi sopra)
 3. `npm run build` in locale — leggi l'output: se un concetto non è registrato, ora il build te lo segnala (sezione 5)
@@ -226,6 +228,7 @@ I tag liberi che scrivi in `tags:` (oltre a `curated`) vengono **tradotti** in u
 - Se il tag **non** è in quella mappa → resta puramente decorativo: non genera nessuna pagina, non compare in nessun indice. Non è un errore, ma è facile non accorgersene.
 
 **Quando introduci un tema nuovo nei curated, controlla `curatedTagAliases.js`.** Se il tag non c'è:
+
 1. Decidi il nome canonico dell'Argomento (Title Case, in italiano per coerenza con gli altri — es. `Sorveglianza`, non `surveillance`).
 2. Aggiungi la riga `"tuo-tag-minuscolo": "Nome Canonico"` in `curatedTagAliases.js`.
 3. Aggiungi `"Nome Canonico"` all'array del cluster giusto in `src/_data/clusters.js` (sezione 7) — altrimenti l'Argomento esiste ma non ha un Tema e non appare in `/temi/`.
@@ -289,8 +292,47 @@ Niente abstract obbligatorio, niente serie, niente immagine hero, niente TOC, ni
 
 ### Visibilità — niente voce in nav
 Il Lab non ha una voce propria nel menu di primo livello (troppo affollato) e non ha nessun'altra presenza fissa in navigazione. È raggiungibile in due punti:
+
 - un riquadro blu cliccabile (`.episteme-lab-cta`) sotto il paragrafo "Il laboratorio" in `src/episteme-advisory.njk`
 - una striscia blu in home (`.lab-banner` in `src/index.njk`), subito sotto il primo saggio in evidenza, che mostra **solo l'ultima nota pubblicata** (`collections.lab[0]`) — si aggiorna da sola, non richiede manutenzione quando esce una nota nuova
+
+### Documenti citati — link automatico e Learning Log
+
+Le note del Lab citano spesso un documento di lavoro (tassonomia, coding manual, corpus, script, bibliografia). Questi documenti sono anche scaricabili dal Learning Log (`/learning/`), in una sezione verde separata "Dal Lab" — colore Episteme Advisory (`#0F6E56`), diverso apposta dal blu delle risorse standard del Learning Log, per segnalare che sono materiali di lavoro grezzi, non risorse finite.
+
+**Il meccanismo è tutto nel frontmatter — non si tocca `learning.njk` né si crea alcun file in `src/learning/`.**
+
+**1. Il file fisico va in `src/downloads/`** (stessa cartella piatta delle risorse esistenti, copiata in automatico da `addPassthroughCopy` in `.eleventy.js`). Formato preferito: **PDF**, anche per documenti nati come testo — evita ambiguità di formato ed è leggibile ovunque senza Word. Script (`.py`) e dati strutturati (`.bib`, `.json`) restano nel loro formato nativo. Se un file contiene path assoluti della propria macchina (es. `/Users/nome/Documents/...`), toglierli prima di caricarlo — sono superflui per chi scarica e rivelano struttura di cartelle privata.
+
+**2. Nel frontmatter della nota che introduce il documento**, aggiungere un blocco `documents:`:
+
+```yaml
+documents:
+  - file: "nome_file.pdf"
+    label: "Titolo leggibile del documento"
+    version: "2.0"          # facoltativo — numero versione, o testo libero ("v4", "Addendum a v1.0")
+    id: "id-stabile"        # facoltativo — solo se questo documento SOSTITUISCE una versione precedente già registrata altrove (vedi sotto)
+```
+
+Questo blocco va **solo sulla nota che introduce il documento** (di norma quella dedicata, non le note successive che lo ricitano di sfuggita). Genera in automatico: il link nel testo (via shortcode, punto 3), la card verde nel Learning Log con data (quella della nota), versione e link "← Torna alla nota".
+
+**3. Nel corpo della nota — di QUALSIASI nota, non solo quella che introduce il documento** — sostituire la menzione del file con lo shortcode:
+
+```
+Document: {% labdoc "nome_file.pdf" %}
+```
+
+Lo shortcode cerca il filename in tutti i `documents:` dichiarati nel Lab e genera il link di download. Se il file non è ancora registrato in nessun frontmatter, torna al vecchio stile testuale (\`nome_file.pdf\`) invece di rompere la build — un promemoria visivo che manca il passo 2.
+
+**4. Versioni che sostituiscono un documento precedente.** Se una nota pubblica una nuova versione di un documento già registrato (es. una Addendum viene poi assorbita in un Coding Manual v2.0), dare ai due blocchi `documents:` lo **stesso `id`**. Il Learning Log mostra automaticamente solo la versione più recente per ogni `id` (per data della nota); quella precedente sparisce dalla griglia "Dal Lab" ma resta scaricabile dal suo URL e dal link `{% labdoc %}` nella nota vecchia — nulla si cancella, cambia solo cosa compare in vetrina. Senza `id`, ogni documento ha la propria card indipendente (il caso normale).
+
+**Licenza:** tutte le card "Dal Lab" mostrano CC BY-NC-SA 4.0, la stessa del resto del Learning Log — non è un campo per documento, è fissa nel template.
+
+**Tre ricette pratiche:**
+
+- *Nuova nota che cita un documento mai visto prima* → aggiungere `documents:` con i suoi dati, mettere il file in `src/downloads/`, usare `{% labdoc %}` nel testo.
+- *Nuova nota che ricita un documento già registrato* → nessun `documents:` da aggiungere, solo `{% labdoc "nome_file.pdf" %}` nel testo (il link si risolve da solo).
+- *Nuova nota che pubblica una versione aggiornata di un documento esistente* → `documents:` con lo stesso `id` del documento precedente; il file vecchio non si tocca né si cancella.
 
 ---
 
