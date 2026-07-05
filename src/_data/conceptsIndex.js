@@ -287,6 +287,14 @@ module.exports = [
     ]
   },
   {
+    name: "Brooks, David",
+    type: "persona",
+    note: "Giornalista e saggista americano (1961), columnist del New York Times e staff writer del The Atlantic. Nel sito è citato per la tesi che nell'era dell'AI la discriminante non sia l'intelligenza ma il *need for cognition* — l'attitudine psicologica allo sforzo mentale. La sua tassonomia in tre gruppi (Productive Passengers, Reluctant Optimizers, Mental Marathoners) è uno strumento utile per leggere come le persone si rapporteranno all'AI nel lungo periodo.",
+    articles: [
+      { title: "The People Who Will Thrive in the AI Age", url: "/curated/2026-06-28-brooks-people-thrive-ai-age-atlantic/", _source: "curated" }
+    ]
+  },
+  {
     name: "Hayles, Katherine",
     type: "persona",
     note: "Critica letteraria e teorica dei media americana (1943), docente a Duke. Nel sito è citata per la distinzione tra *iperattenzione* e *attenzione profonda* come due modalità cognitive: l'iperattenzione — la mente che passa rapidamente da stimolo a stimolo, multiprocesso e alta tolleranza alla noia — è un adattamento all'ambiente digitale contemporaneo, non un deficit. È il contesto culturale che rende il podcast lungo un antidoto strutturale, non un capriccio di formato.",
@@ -487,7 +495,8 @@ module.exports = [
       { title: "A Defense of a Liberal Arts Education in the Age of A.I.", url: "/curated/2026-05-21-frey-liberal-arts-ai-nyt/", _source: "curated" },
       { title: "Why Are Humanists So Bad at Defending the Humanities?", url: "/curated/2026-06-15-pinillos-humanists-humanities-chronicle/", _source: "curated" },
       { title: "From weeks of work to days: How I rebuilt two data journalism projects with AI", url: "/curated/2026-06-26-ottaviani-data-journalism-ai-reuters/", _source: "curated" },
-      { title: "Claude Code for writers", url: "/curated/2026-01-15-newton-claude-code-writers-platformer/", _source: "curated" }
+      { title: "Claude Code for writers", url: "/curated/2026-01-15-newton-claude-code-writers-platformer/", _source: "curated" },
+      { title: "The People Who Will Thrive in the AI Age", url: "/curated/2026-06-28-brooks-people-thrive-ai-age-atlantic/", _source: "curated" }
     ]
   },
   {
@@ -893,6 +902,22 @@ module.exports = [
       { title: "From weeks of work to days: How I rebuilt two data journalism projects with AI", url: "/curated/2026-06-26-ottaviani-data-journalism-ai-reuters/", _source: "curated" },
       { title: "A Return to Two-Pizza Culture", url: "/curated/2026-06-30-vogels-two-pizza-culture-allthingsdistributed/", _source: "curated" },
       { title: "Claude Code for writers", url: "/curated/2026-01-15-newton-claude-code-writers-platformer/", _source: "curated" }
+    ]
+  },
+  {
+    name: "need for cognition",
+    type: "teoria",
+    note: "Costrutto psicologico (Cacioppo e Petty, 1982): la tendenza individuale a impegnarsi e trarre soddisfazione dal pensiero elaborativo. Le persone con alta NFC cercano attivamente la difficoltà cognitiva, la trovano piacevole e la usano per formarsi giudizi propri; quelle con bassa NFC la evitano sistematicamente. Nel sito è il metro con cui Brooks legge la polarizzazione cognitiva nell'era dell'AI: la NFC correla con l'intelligenza ma non coincide — ci sono persone molto intelligenti con bassa NFC e viceversa.",
+    articles: [
+      { title: "The People Who Will Thrive in the AI Age", url: "/curated/2026-06-28-brooks-people-thrive-ai-age-atlantic/", _source: "curated" }
+    ]
+  },
+  {
+    name: "polarizzazione cognitiva",
+    type: "teoria",
+    note: "Scenario descritto da David Brooks nell'era dell'AI: chi ha alta NFC userà l'AI per pensare di più e diventare più produttivo; chi ha bassa o media NFC la userà per pensare di meno, perdendo progressivamente capacità critica e autonomia di giudizio. Brooks sostiene che questa polarizzazione potrebbe essere più grave di quella economica o politica, dividendo la società in qualcosa che comincia ad assomigliare a due specie diverse. Dialoga con il moral deskilling già presente nel sito.",
+    articles: [
+      { title: "The People Who Will Thrive in the AI Age", url: "/curated/2026-06-28-brooks-people-thrive-ai-age-atlantic/", _source: "curated" }
     ]
   },
   {
