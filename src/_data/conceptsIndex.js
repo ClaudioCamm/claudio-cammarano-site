@@ -77,7 +77,8 @@ module.exports = [
     type: "persona",
     note: "Politologo americano (1943). Nel sito è il protagonista del torneo computazionale del dilemma del prigioniero: ha dimostrato che Tit-for-Tat vince in ambienti iterati. Il suo The Evolution of Cooperation (1984) è il punto di partenza teorico della serie «Ombre»: il lavoro che ha dato base scientifica all'idea che la cooperazione sia razionale.",
     articles: [
-      { title: "L'ombra del futuro", url: "/writings/2026-04-15-lombra-del-futuro/" }
+      { title: "L'ombra del futuro", url: "/writings/2026-04-15-lombra-del-futuro/" },
+      { title: "L'infrastruttura del sapere", url: "/writings/2026-07-07-linfrastruttura-del-sapere/" }
     ]
   },
   {
@@ -320,6 +321,14 @@ module.exports = [
       { title: "Validating AI — note di ricerca", url: "/episteme-advisory/lab/", _source: "lab" }
     ]
   },
+  {
+    name: "Frayn, Michael",
+    type: "persona",
+    note: "Storico e drammaturgo inglese (1933). Nel sito è citato per *Copenhagen* (1998), la sua ricostruzione teatrale dell'incontro del 1941 tra Niels Bohr e Werner Heisenberg: un caso studio di come due scienziati dentro sistemi di potere in conflitto perdano una lingua comune. L'impossibilità di stabilire cosa i due si dissero davvero è, nel testo, la cifra della fine della scienza come conversazione neutrale.",
+    articles: [
+      { title: "L'infrastruttura del sapere", url: "/writings/2026-07-07-linfrastruttura-del-sapere/" }
+    ]
+  },
 
   // ─── TEORIE ───────────────────────────────────────────────────────────────
 
@@ -330,6 +339,7 @@ module.exports = [
     articles: [
       { title: "L'ombra del futuro", url: "/writings/2026-04-15-lombra-del-futuro/" },
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
+      { title: "L'infrastruttura del sapere", url: "/writings/2026-07-07-linfrastruttura-del-sapere/" },
       { title: "Fareed Zakaria on the Moral Cost of Trump's War", url: "/curated/2026-04-10-zakaria-trump-iran-war-nyt/", _source: "curated" }
     ]
   },
@@ -348,7 +358,8 @@ module.exports = [
     note: "Versione ripetuta del classico gioco in cui due attori ottengono risultati migliori cooperando, ma ognuno ha incentivo individuale a disertare. Quando il gioco è iterato e i giocatori si riconoscono, la cooperazione è un equilibrio stabile — ma richiede che il futuro pesi abbastanza. Nel sito è il modello teorico delle relazioni internazionali.",
     articles: [
       { title: "L'ombra del futuro", url: "/writings/2026-04-15-lombra-del-futuro/" },
-      { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" }
+      { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
+      { title: "L'infrastruttura del sapere", url: "/writings/2026-07-07-linfrastruttura-del-sapere/" }
     ]
   },
   {
@@ -421,6 +432,7 @@ module.exports = [
     note: "La proprietà di tecnologie e conoscenze di essere utilizzabili sia per scopi civili che militari. Nel sito è presentato come struttura normale dello sviluppo tecnologico, non come caso speciale: con le general purpose technologies, la distinzione origine/destinazione è inapplicabile per costruzione. Il termine funziona sempre troppo tardi, fino a risultare quasi inutile.",
     articles: [
       { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
+      { title: "L'infrastruttura del sapere", url: "/writings/2026-07-07-linfrastruttura-del-sapere/" },
       { title: "Our Military Is Built for the Wrong Century", url: "/curated/2026-05-28-brose-anduril-military-drones-nyt/", _source: "curated" },
       { title: "Meta Glasses, ICE e il futuro della sorveglianza indossabile", url: "/curated/2026-03-01-meta-glasses-privacy/", _source: "curated" },
       { title: "How surge in defence and dual-use technology investment could reconfigure global AI race", url: "/curated/2026-04-01-chatham-house-defence-ai-race/", _source: "curated" },
@@ -981,6 +993,22 @@ module.exports = [
       { title: "Validating AI — note di ricerca", url: "/episteme-advisory/lab/", _source: "lab" }
     ]
   },
+  {
+    name: "delega epistemica",
+    type: "teoria",
+    note: "La discontinuità specifica introdotta dall'AI rispetto all'automazione precedente: non si delega un'operazione, si delega una valutazione — la selezione dei candidati, il merito creditizio, la diagnosi, il ranking delle informazioni. Nel sito è il concetto che spiega perché un'organizzazione che usa AI senza validazione esplicita si trovi a usare output come se fossero conoscenza, senza poter rispondere alle domande che la conoscenza richiede.",
+    articles: [
+      { title: "L'infrastruttura del sapere", url: "/writings/2026-07-07-linfrastruttura-del-sapere/" }
+    ]
+  },
+  {
+    name: "sovranità cognitiva",
+    type: "teoria",
+    note: "La dipendenza da tecnologie cognitive estere come rischio epistemico, non solo operativo: chi controlla l'infrastruttura controlla le condizioni di produzione della conoscenza. Nel sito è l'igiene cognitiva sovrana — sapere cosa sa il proprio sistema, come lo sa, e in quali condizioni potrebbe smettere di saperlo — messa in luce dal caso Fable 5, in cui un executive order americano ha spento un'infrastruttura scientifica in quarantotto ore.",
+    articles: [
+      { title: "L'infrastruttura del sapere", url: "/writings/2026-07-07-linfrastruttura-del-sapere/" }
+    ]
+  },
 
   // ─── TESTI ────────────────────────────────────────────────────────────────
 
@@ -990,7 +1018,17 @@ module.exports = [
     note: "Libro di Robert Axelrod (1984). Riporta i risultati del torneo computazionale del dilemma del prigioniero e dimostra che la cooperazione può emergere tra attori egoisti in contesti iterati. Punto di partenza teorico della serie «Ombre» del sito: il lavoro che ha dato base scientifica all'idea che la cooperazione sia razionale.",
     citation: "AXELROD, Robert, <a href=\"https://openlibrary.org/books/OL3186143M/The_evolution_of_cooperation\"><em>The Evolution of Cooperation</em></a>, New York, Basic Books, 1984.",
     articles: [
-      { title: "L'ombra del futuro", url: "/writings/2026-04-15-lombra-del-futuro/" }
+      { title: "L'ombra del futuro", url: "/writings/2026-04-15-lombra-del-futuro/" },
+      { title: "L'infrastruttura del sapere", url: "/writings/2026-07-07-linfrastruttura-del-sapere/" }
+    ]
+  },
+  {
+    name: "Copenhagen",
+    type: "testo",
+    note: "Dramma teatrale di Michael Frayn (1998) che ricostruisce l'incontro del 1941 tra Niels Bohr e Werner Heisenberg a Copenhagen. Frayn non riesce a stabilire cosa i due si dissero davvero — non per mancanza di documenti, ma perché due scienziati dentro sistemi di potere in conflitto non hanno più una lingua comune. Nel sito apre la riflessione su come il sapere smetta di essere neutrale quando la tecnologia diventa risorsa strategica.",
+    citation: "FRAYN, Michael, <em>Copenhagen</em>, Londra, Methuen Drama, 1998.",
+    articles: [
+      { title: "L'infrastruttura del sapere", url: "/writings/2026-07-07-linfrastruttura-del-sapere/" }
     ]
   },
   {
@@ -1068,6 +1106,7 @@ module.exports = [
     articles: [
       { title: "Quando Dario Amodei ha detto no al Pentagono", url: "/writings/2026-03-09-quando-dario-amodei-ha-detto-no-al-pentagono/" },
       { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
+      { title: "L'infrastruttura del sapere", url: "/writings/2026-07-07-linfrastruttura-del-sapere/" },
       { title: "Mythos, Muse, and the Opportunity Cost of Compute", url: "/curated/2026-04-13-stratechery-opportunity-cost-compute/", _source: "curated" },
       { title: "Natural Language Autoencoders Produce Unsupervised Explanations of LLM Activations", url: "/curated/2026-05-07-anthropic-nla-activations/", _source: "curated" },
       { title: "Making Claude a chemist", url: "/curated/2026-06-05-anthropic-claude-chemist/", _source: "curated" },
@@ -1356,6 +1395,7 @@ module.exports = [
       { title: "L'ombra del futuro", url: "/writings/2026-04-15-lombra-del-futuro/" },
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
       { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
+      { title: "L'infrastruttura del sapere", url: "/writings/2026-07-07-linfrastruttura-del-sapere/" },
       { title: "Why Are Palantir and OpenAI Scared of Alex Bores?", url: "/curated/2026-04-21-bores-palantir-openai-regulation-nyt/", _source: "curated" },
       { title: "China's Not the Problem. We Are.", url: "/curated/2026-05-14-chan-china-ai-nyt/", _source: "curated" },
       { title: "Fareed Zakaria on the Moral Cost of Trump's War", url: "/curated/2026-04-10-zakaria-trump-iran-war-nyt/", _source: "curated" },
@@ -1373,6 +1413,7 @@ module.exports = [
     articles: [
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
       { title: "Cartolina dal paese più bello del mondo", url: "/writings/2026-04-24-cartolina-dal-paese-piu-bello-del-mondo/" },
+      { title: "L'infrastruttura del sapere", url: "/writings/2026-07-07-linfrastruttura-del-sapere/" },
       { title: "Europe Needs to Come Together. This Man Has Some Ideas.", url: "/curated/2026-06-09-nyt-europe-defense-van-middelaar/", _source: "curated" },
       { title: "Why a big country like Italy acts as if it were small", url: "/curated/2026-04-09-italy-acts-as-if-small/", _source: "curated" }
     ]

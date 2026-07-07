@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 title: "Libri, mercati, idee"
-description: "Saggi originali su editoria, marketing, semiotica e cultura digitale. Di Claudio Cammarano — marketing director, docente, co-fondatore di Irene Media."
+description: "Saggi originali su editoria, AI, semiotica e geopolitica dei contenuti, curation ragionata e un progetto di ricerca sulla validazione dei modelli linguistici. Il sito di Claudio Cammarano."
 ---
 
 <script type="application/ld+json">
@@ -55,6 +55,31 @@ description: "Saggi originali su editoria, marketing, semiotica e cultura digita
   ]
 }
 </script>
+
+<section class="start-here" aria-label="Da dove cominciare">
+  <div class="start-here-col">
+    <p class="start-here-question">Sei qui per conoscermi?</p>
+    <p class="start-here-note">Percorso, docenze, ricerca: i fatti essenziali in una pagina.</p>
+    <a class="start-here-link" href="/about/">Vai all'About &#8594;</a>
+    <p class="start-here-lab"><a href="/episteme-advisory/lab/"><span class="start-here-lab-badge">Lab</span> Validare la AI: il progetto di ricerca, in corso &#8594;</a></p>
+  </div>
+  <div class="start-here-col">
+    <p class="start-here-question">Sei qui per leggere?</p>
+    <ul class="start-here-list">
+      {% set startHere = [
+        ["/writings/2026-03-01-dal-concept-al-deploy/", "La storia tecnica di questo sito, dall'architettura informativa al deploy."],
+        ["/writings/2026-02-19-dieci-anni-senza-umberto-eco/", "Un ricordo personale, dal colloquio per il Master in Editoria a ciò che resta."],
+        ["/writings/2026-06-01-la-macchina-e-la-lotta/", "Scrivere con l'AI: tre modi di farlo, e il valore di ciò che non si delega."]
+      ] %}
+      {% for item in startHere %}{% for post in collections.writings %}{% if post.url == item[0] %}
+      <li class="start-here-item">
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
+        <span class="start-here-context">{{ item[1] }} · {{ post.templateContent | readingTime }}</span>
+      </li>
+      {% endif %}{% endfor %}{% endfor %}
+    </ul>
+  </div>
+</section>
 
 {% for post in collections.writings | limit(10) %}
   {% if loop.index0 == 0 %}

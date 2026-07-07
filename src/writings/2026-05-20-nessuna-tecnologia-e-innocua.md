@@ -6,6 +6,7 @@ category: ["Comunicazione", "Geopolitica", "Dual Use"]
 lang: "it"
 description: "Perché la comunicazione non è mai stata innocente, molto prima che l’espressione dual use diventasse una moda. Dai Thurn und Taxis a Karp, da ARPANET ai cavi sottomarini."
 og_image: "/images/blue-marble-hero.webp"
+og_card: "/images/og/og-nessuna-tecnologia-e-innocua.png"
 english_version: "https://claudiocammarano.substack.com/p/everything-is-dual-use-this-substack"
 ---
 

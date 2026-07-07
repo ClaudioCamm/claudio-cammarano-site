@@ -22,6 +22,7 @@ title: Writings
     </div>
     <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
     {% if post.data.description %}<p class="featured-description">{{ post.data.description }}</p>{% endif %}
+    {% if post.templateContent %}<p class="article-excerpt">{{ post.templateContent | excerpt(750) }}</p>{% endif %}
   </article>
   {% if collections.writings.length > 1 %}<div class="writings-secondary-grid">{% endif %}
   {% else %}
@@ -40,6 +41,7 @@ title: Writings
     </div>
     <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
     {% if post.data.description %}<p>{{ post.data.description }}</p>{% endif %}
+    {% if loop.index0 <= 4 and post.templateContent %}<p class="article-excerpt">{{ post.templateContent | excerpt }}</p>{% endif %}
   </article>
   {% if loop.last and collections.writings.length > 1 %}</div>{% endif %}
   {% endif %}

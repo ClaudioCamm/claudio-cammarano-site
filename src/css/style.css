@@ -443,6 +443,98 @@ main {
   border-bottom: none;
 }
 
+/* Accento blu nell'About, uniforme ai lead in strong */
+.about-accent {
+  color: var(--color-primary-medium);
+}
+
+/* === START HERE (homepage) === */
+.start-here {
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+  gap: var(--spacing-md);
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.start-here-question {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0 0 6px;
+}
+
+.start-here-note {
+  font-size: 0.88rem;
+  color: var(--color-text-light);
+  margin: 0 0 10px;
+}
+
+.start-here-link {
+  font-size: 0.9rem;
+}
+
+.start-here-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.start-here-item {
+  margin-bottom: 12px;
+}
+
+.start-here-item:last-child {
+  margin-bottom: 0;
+}
+
+.start-here-item a {
+  font-family: var(--font-serif);
+  font-weight: 500;
+}
+
+.start-here-context {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  margin-top: 2px;
+}
+
+.start-here-lab {
+  margin: 14px 0 0;
+  font-size: 0.9rem;
+}
+
+.start-here-lab a {
+  color: #0F6E56;
+}
+
+.start-here-lab-badge {
+  display: inline-block;
+  margin-right: 5px;
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: #0F6E56;
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+@media (max-width: 700px) {
+  .start-here {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+}
+
 .article-meta {
   display: flex;
   gap: 6px;
@@ -2402,6 +2494,20 @@ body.irene-page .site-nav a.active {
     align-items: flex-start;
     gap: var(--spacing-xs);
   }
+}
+
+/* === SUBSTACK EMBED === */
+.substack-embed {
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background: #fff;
+  width: 100%;
+  max-width: 480px;
+  display: block;
+}
+
+.substack-embed--page {
+  margin: var(--spacing-sm) 0 var(--spacing-md);
 }
 
 /* === RELATED POSTS === */

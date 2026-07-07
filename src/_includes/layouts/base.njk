@@ -13,7 +13,9 @@
     <meta property="og:description" content="{{ description or 'Libri, mercati, idee' }}">
     <meta property="og:type" content="{{ og_type or 'website' }}">
     <meta property="og:url" content="https://claudiocammarano.com{{ page.url }}">
-    {% if og_image %}
+    {% if og_card %}
+    <meta property="og:image" content="https://claudiocammarano.com{{ og_card }}">
+    {% elif og_image %}
     <meta property="og:image" content="https://claudiocammarano.com{{ og_image }}">
     {% else %}
     <meta property="og:image" content="https://claudiocammarano.com/images/og-default.png">

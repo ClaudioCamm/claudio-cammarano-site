@@ -6,6 +6,7 @@ category: ["AI", "Scrittura", "Formazione"]
 lang: "it"
 description: "Tokarczuk, Groff, e la domanda che nessuno sta facendo. Tre modi di scrivere con l'AI, il valore di quello che non si delega, e perché la lotta con la materia conta più del risultato."
 og_image: "/images/auriga-delfi-hero.jpg"
+og_card: "/images/og/og-la-macchina-e-la-lotta.png"
 ---
 
 <figure class="article-hero">
