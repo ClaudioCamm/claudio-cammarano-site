@@ -278,6 +278,20 @@ description: "1-2 sentences"  # solo se serve per meta/OG, non obbligatoria
 
 **Niente campo `tags`.** Le note del Lab non hanno etichette libere in testa: con un solo filone di ricerca alla volta sarebbero quasi sempre identiche da una nota all'altra, e non essendo linkate a `/tag/slug/` non aggiungerebbero navigazione reale — solo rumore.
 
+### Collegamento ai concetti del sito — tagging manuale e selettivo
+
+Le note del Lab **non vengono processate da `sync-concepts.js`** (che legge solo `curated/` e `learning/`). Questa è una scelta deliberata: ogni nota del lab condivide un nucleo di concetti (epistemia, post-cognition, AI) che se aggiunti automaticamente inflazionerebbero quelle pagine concetto senza aggiungere segnale utile.
+
+Il tagging del lab è manuale e selettivo: si aggiunge un articolo a un concetto in `conceptsIndex.js` solo quando la nota arricchisce concretamente quella voce — non per default. Esempio: una nota specificamente dedicata al ruolo degli atti illocutori nel Pre-Step 0 vale come link nella pagina "Austin, John L." e "atti illocutori"; una nota operativa sullo stato del corpus non arricchisce nessun concetto.
+
+**Formato da usare** per un articolo lab in `conceptsIndex.js`:
+```js
+{ title: "Titolo della nota", url: "/episteme-advisory/lab/slug-nota/", _source: "lab" }
+```
+Nell'indice gli articoli con `_source: "lab"` appaiono con il badge `LAB` in verde Episteme (`#0F6E56`).
+
+I concetti fondativi del progetto (post-cognition, epistemia, tassonomia D1–D7, atti illocutori) puntano alla landing `/episteme-advisory/lab/` come punto di accesso generale — non alle singole note.
+
 ### Tassonomia del Lab — separata da quella del sito
 Tre assi indipendenti, pensati apposta per non mescolarsi con `clusters.js`/`conceptsIndex.js`/Indice (che si riempirebbero di "Epistemologia" ripetuta su ogni nota). Nessuna registrazione centrale, nessun controllo automatico — sono liste aperte, aggiungi un valore quando serve:
 
@@ -372,8 +386,9 @@ Questo file è la **fonte di verità** per l'indice analitico, le pagine `/conce
 1. Aprire `src/_data/conceptsIndex.js`
 2. Aggiungere la voce nell'array, rispettando il formato sopra
 3. Per i **writings**: inserire subito gli articoli che lo citano nell'array `articles`
-4. Per i **curated**: lasciare `articles: []` e aggiungere il nome nel campo `concepts:` del file curated — il sistema li unisce automaticamente a build time
-5. Fare il build: la pagina `/concetti/nome-slug/` appare automaticamente
+4. Per i **curated** e **learning**: lasciare `articles: []` e aggiungere il nome nel campo `concepts:` del file — il sistema li unisce automaticamente a build time tramite `sync-concepts.js` (prebuild) e `mergedConceptsIndex` (build)
+5. Per le **note del lab**: tagging manuale selettivo — vedi sezione 3
+6. Fare il build: la pagina `/concetti/nome-slug/` appare automaticamente
 
 ### Tipi validi — attenzione a `paese` vs `luogo`
 
@@ -392,11 +407,12 @@ Questo file è la **fonte di verità** per l'indice analitico, le pagine `/conce
 
 Per anni il sistema ha scartato **senza nessun avviso** qualsiasi nome in `concepts:` di un curated che non corrispondesse a una voce già presente in `conceptsIndex.js`. Risultato: articoli pubblicati con concetti che restavano invisibili nell'indice e nel grafo, senza che nessuno se ne accorgesse — a volte per mesi.
 
-**Ora il build segnala il problema in console.** Ogni volta che esegui `npm run build` o `npm start`, se un curated cita un concetto non registrato compare un blocco come questo:
+**Ora il build segnala il problema in console.** Ogni volta che esegui `npm run build` o `npm start`, se un curated o un learning cita un concetto non registrato compare un blocco come questo:
 
 ```
 ⚠️  CONCETTI NON REGISTRATI (ignorati nell'indice/grafo) — aggiungili a src/_data/conceptsIndex.js:
    ./src/curated/2026-06-21-esempio.md -> "Nome Concetto"
+   ./src/learning/2026-03-13-jaynes-guida-lettura.md -> "Jaynes, Edwin T."
 ```
 
 Se lo vedi: apri `conceptsIndex.js`, aggiungi la voce mancante (sezione precedente), rifai il build. L'avviso scompare quando tutto è registrato. **Su Netlify lo stesso messaggio compare nei log di deploy** (Deploy → log) — quindi anche pubblicando solo via `git push`, senza build locale, il problema resta visibile.
@@ -438,7 +454,9 @@ Il grafo è **uno solo**, calcolato una volta a build time da `graphLayout.js` (
 ### Il flusso dei dati, in breve
 
 - **Writings**: Argomento ← `category:` nel frontmatter. Concetto ← voce manuale in `conceptsIndex.js` (sezione 1).
-- **Curated**: Argomento ← `tags:` nel frontmatter, tradotto via `curatedTagAliases.js` (sezione 2). Concetto ← `concepts:` nel frontmatter, deve corrispondere a una voce già in `conceptsIndex.js` (sezione 5).
+- **Curated**: Argomento ← `tags:` nel frontmatter, tradotto via `curatedTagAliases.js` (sezione 2). Concetto ← `concepts:` nel frontmatter, automaticamente sincronizzato via `sync-concepts.js` (sezione 5).
+- **Learning**: Concetto ← `concepts:` nel frontmatter, automaticamente sincronizzato via `sync-concepts.js` (sezione 5). Nell'indice gli articoli learning appaiono con il badge `lr` in ambra.
+- **Lab**: Concetto ← tagging **manuale e selettivo** direttamente in `conceptsIndex.js` (vedi sezione 3). `sync-concepts.js` non legge `src/lab/` — ogni nota del lab viene collegata solo ai concetti che arricchisce concretamente, non per default.
 
 **Non esiste un comando per "aggiornare l'indice semantico".** È lo stesso identico `git push` (o `npm run build`) con cui pubblichi il sito. Se i dati a monte sono corretti, il build successivo rigenera tutto: indici, pagine concetto, grafo, Temi, Argomenti — niente da "richiamare" a parte.
 

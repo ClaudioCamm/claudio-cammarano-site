@@ -232,30 +232,35 @@ module.exports = function(eleventyConfig) {
     var byName = {};
     index.forEach(function(c) { byName[c.name] = c; });
 
-    // Walk curated collection
+    // Walk curated + learning collections
     var missing = []; // { file, conceptName } — reported after the loop
-    var curated = collectionApi.getFilteredByGlob("src/curated/*.md");
-    curated.forEach(function(item) {
-      var concepts = item.data.concepts;
-      if (!Array.isArray(concepts) || concepts.length === 0) return;
 
-      concepts.forEach(function(conceptName) {
-        var concept = byName[conceptName];
-        if (!concept) {
-          missing.push({ file: item.inputPath, name: conceptName });
-          return; // not in taxonomy — add it to conceptsIndex.js first
-        }
+    function walkCollection(items, source) {
+      items.forEach(function(item) {
+        var concepts = item.data.concepts;
+        if (!Array.isArray(concepts) || concepts.length === 0) return;
 
-        var already = concept.articles.some(function(a) { return a.url === item.url; });
-        if (!already) {
-          concept.articles.push({
-            title: item.data.title,
-            url: item.url,
-            _source: "curated"
-          });
-        }
+        concepts.forEach(function(conceptName) {
+          var concept = byName[conceptName];
+          if (!concept) {
+            missing.push({ file: item.inputPath, name: conceptName });
+            return; // not in taxonomy — add it to conceptsIndex.js first
+          }
+
+          var already = concept.articles.some(function(a) { return a.url === item.url; });
+          if (!already) {
+            concept.articles.push({
+              title: item.data.title,
+              url: item.url,
+              _source: source
+            });
+          }
+        });
       });
-    });
+    }
+
+    walkCollection(collectionApi.getFilteredByGlob("src/curated/*.md"), "curated");
+    walkCollection(collectionApi.getFilteredByGlob("src/learning/*.md"), "learning");
 
     if (missing.length > 0) {
       console.warn("\n⚠️  CONCETTI NON REGISTRATI (ignorati nell'indice/grafo) — aggiungili a src/_data/conceptsIndex.js:");

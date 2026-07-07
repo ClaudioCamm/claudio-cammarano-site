@@ -103,7 +103,7 @@ permalink: "/indice/"
           </dt>
           <dd class="indice-articles">
             {% for art in concept.articles %}
-            <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% elif art._source == 'lab' %} indice-article-link--lab{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% elif art._source == 'lab' %}<span class="indice-lab-badge" aria-label="lab">lab</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
+            <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% elif art._source == 'lab' %} indice-article-link--lab{% elif art._source == 'learning' %} indice-article-link--learning{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% elif art._source == 'lab' %}<span class="indice-lab-badge" aria-label="lab">lab</span>{% elif art._source == 'learning' %}<span class="indice-learning-badge" aria-label="learning">lr</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
             {% endfor %}
           </dd>
         </div>
@@ -125,7 +125,7 @@ permalink: "/indice/"
           </dt>
           <dd class="indice-articles">
             {% for art in concept.articles %}
-            <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% elif art._source == 'lab' %} indice-article-link--lab{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% elif art._source == 'lab' %}<span class="indice-lab-badge" aria-label="lab">lab</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
+            <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% elif art._source == 'lab' %} indice-article-link--lab{% elif art._source == 'learning' %} indice-article-link--learning{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% elif art._source == 'lab' %}<span class="indice-lab-badge" aria-label="lab">lab</span>{% elif art._source == 'learning' %}<span class="indice-learning-badge" aria-label="learning">lr</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
             {% endfor %}
           </dd>
         </div>
@@ -147,7 +147,7 @@ permalink: "/indice/"
           </dt>
           <dd class="indice-articles">
             {% for art in concept.articles %}
-            <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% elif art._source == 'lab' %} indice-article-link--lab{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% elif art._source == 'lab' %}<span class="indice-lab-badge" aria-label="lab">lab</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
+            <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% elif art._source == 'lab' %} indice-article-link--lab{% elif art._source == 'learning' %} indice-article-link--learning{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% elif art._source == 'lab' %}<span class="indice-lab-badge" aria-label="lab">lab</span>{% elif art._source == 'learning' %}<span class="indice-learning-badge" aria-label="learning">lr</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
             {% endfor %}
           </dd>
         </div>
@@ -169,7 +169,7 @@ permalink: "/indice/"
           </dt>
           <dd class="indice-articles">
             {% for art in concept.articles %}
-            <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% elif art._source == 'lab' %} indice-article-link--lab{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% elif art._source == 'lab' %}<span class="indice-lab-badge" aria-label="lab">lab</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
+            <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% elif art._source == 'lab' %} indice-article-link--lab{% elif art._source == 'learning' %} indice-article-link--learning{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% elif art._source == 'lab' %}<span class="indice-lab-badge" aria-label="lab">lab</span>{% elif art._source == 'learning' %}<span class="indice-learning-badge" aria-label="learning">lr</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
             {% endfor %}
           </dd>
         </div>
@@ -191,7 +191,7 @@ permalink: "/indice/"
           </dt>
           <dd class="indice-articles">
             {% for art in concept.articles %}
-            <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% elif art._source == 'lab' %} indice-article-link--lab{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% elif art._source == 'lab' %}<span class="indice-lab-badge" aria-label="lab">lab</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
+            <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% elif art._source == 'lab' %} indice-article-link--lab{% elif art._source == 'learning' %} indice-article-link--learning{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% elif art._source == 'lab' %}<span class="indice-lab-badge" aria-label="lab">lab</span>{% elif art._source == 'learning' %}<span class="indice-learning-badge" aria-label="learning">lr</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
             {% endfor %}
           </dd>
         </div>
@@ -213,7 +213,7 @@ permalink: "/indice/"
           </dt>
           <dd class="indice-articles">
             {% for art in concept.articles %}
-            <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% elif art._source == 'lab' %} indice-article-link--lab{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% elif art._source == 'lab' %}<span class="indice-lab-badge" aria-label="lab">lab</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
+            <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% elif art._source == 'lab' %} indice-article-link--lab{% elif art._source == 'learning' %} indice-article-link--learning{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% elif art._source == 'lab' %}<span class="indice-lab-badge" aria-label="lab">lab</span>{% elif art._source == 'learning' %}<span class="indice-learning-badge" aria-label="learning">lr</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
             {% endfor %}
           </dd>
         </div>

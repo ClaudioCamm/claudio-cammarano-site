@@ -2,13 +2,18 @@
 /**
  * sync-concepts.js
  *
- * Pre-build script: confronta i `concepts` dei post curated con conceptsIndex.js.
+ * Pre-build script: confronta i `concepts` dei post curated e learning
+ * con conceptsIndex.js.
  *
  * Livello 1 (automatico): se un concetto esiste in conceptsIndex.js ma manca
- *   l'articolo curated nel suo array `articles`, lo aggiunge.
+ *   l'articolo nel suo array `articles`, lo aggiunge.
  *
- * Livello 2 (avviso): se un concetto nei curated non esiste affatto in
+ * Livello 2 (avviso): se un concetto non esiste affatto in
  *   conceptsIndex.js, stampa un avviso da gestire manualmente.
+ *
+ * Sorgenti lette: src/curated/ (_source: "curated")
+ *                 src/learning/ (_source: "learning")
+ * NON lette: src/lab/ — tagging lab è manuale e selettivo (vedi MANUALE.md §3)
  *
  * Uso: node scripts/sync-concepts.js
  * Integrato in package.json come "prebuild".
@@ -19,9 +24,10 @@ const path = require('path');
 
 const ROOT          = path.join(__dirname, '..');
 const CURATED_DIR   = path.join(ROOT, 'src', 'curated');
+const LEARNING_DIR  = path.join(ROOT, 'src', 'learning');
 const CONCEPTS_FILE = path.join(ROOT, 'src', '_data', 'conceptsIndex.js');
 
-// ─── 1. Leggi e parsa i file curated ────────────────────────────────────────
+// ─── 1. Leggi e parsa i file sorgente ───────────────────────────────────────
 
 function parseFrontmatter(raw) {
   const match = raw.match(/^---\n([\s\S]*?)\n---/);
@@ -50,7 +56,6 @@ function parseConcepts(raw) {
   const cLine = block.match(/concepts:\s*(\[[\s\S]*?\])/);
   if (!cLine) return [];
   try {
-    // Sicuro: solo stringhe dentro array
     const arr = cLine[1].match(/"([^"]+)"/g);
     return arr ? arr.map(s => s.replace(/"/g, '')) : [];
   } catch {
@@ -58,17 +63,25 @@ function parseConcepts(raw) {
   }
 }
 
-const curatedFiles = fs.readdirSync(CURATED_DIR)
-  .filter(f => f.endsWith('.md'))
-  .map(filename => {
-    const raw      = fs.readFileSync(path.join(CURATED_DIR, filename), 'utf8');
-    const fm       = parseFrontmatter(raw);
-    const concepts = parseConcepts(raw);
-    const slug     = filename.replace(/\.md$/, '');
-    const url      = `/curated/${slug}/`;
-    return { filename, title: fm.title || slug, url, concepts };
-  })
-  .filter(f => f.concepts.length > 0);
+function readDir(dir, urlPrefix, source) {
+  if (!fs.existsSync(dir)) return [];
+  return fs.readdirSync(dir)
+    .filter(f => f.endsWith('.md'))
+    .map(filename => {
+      const raw      = fs.readFileSync(path.join(dir, filename), 'utf8');
+      const fm       = parseFrontmatter(raw);
+      const concepts = parseConcepts(raw);
+      const slug     = filename.replace(/\.md$/, '');
+      const url      = `${urlPrefix}${slug}/`;
+      return { filename, title: fm.title || slug, url, concepts, source };
+    })
+    .filter(f => f.concepts.length > 0);
+}
+
+const allFiles = [
+  ...readDir(CURATED_DIR,  '/curated/',  'curated'),
+  ...readDir(LEARNING_DIR, '/learning/', 'learning'),
+];
 
 // ─── 2. Leggi conceptsIndex.js ──────────────────────────────────────────────
 
@@ -84,7 +97,7 @@ const byName = new Map(conceptsIndex.map(c => [c.name, c]));
 const toAdd   = []; // { conceptName, article }  — livello 1
 const missing = []; // { conceptName, filename }  — livello 2
 
-for (const post of curatedFiles) {
+for (const post of allFiles) {
   for (const concept of post.concepts) {
     const entry = byName.get(concept);
     if (!entry) {
@@ -96,7 +109,7 @@ for (const post of curatedFiles) {
     if (!alreadyIn) {
       toAdd.push({
         conceptName: concept,
-        article: { title: post.title, url: post.url, _source: 'curated' }
+        article: { title: post.title, url: post.url, _source: post.source }
       });
     }
   }
