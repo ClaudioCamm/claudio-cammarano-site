@@ -51,10 +51,11 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body class="{{ bodyClass }}">
+    <a class="skip-link" href="#main-content">Salta al contenuto</a>
     {% include "components/header.njk" %}
-    
+
     <div class="container">
-        <main data-pagefind-body>
+        <main data-pagefind-body id="main-content">
             {{ content | safe }}
         </main>
     </div>
@@ -74,5 +75,20 @@
     </script>
     
     <script async src="//www.instagram.com/embed.js"></script>
+
+    <script>
+      // Avvisa gli utenti di screen reader quando un link apre una nuova scheda
+      (function() {
+        var isEnglish = (document.documentElement.lang || '').indexOf('en') === 0;
+        var label = isEnglish ? ' (opens in a new tab)' : ' (si apre in una nuova scheda)';
+        document.querySelectorAll('a[target="_blank"]').forEach(function(a) {
+          if (a.querySelector('.sr-only-newtab')) return;
+          var span = document.createElement('span');
+          span.className = 'sr-only sr-only-newtab';
+          span.textContent = label;
+          a.appendChild(span);
+        });
+      })();
+    </script>
 </body>
 </html>
