@@ -1,0 +1,61 @@
+diff --git a/src/about.njk b/src/about.njk
+index 8831373..9cfae4b 100644
+--- a/src/about.njk
++++ b/src/about.njk
+@@ -138,12 +138,12 @@ description: "Marketing director in De Agostini Libri, docente e co-fondatore di
+         <div class="about-companies">
+           <p class="about-credentials-title">Esperienze selezionate</p>
+           <div class="about-logos about-logos--companies">
+-            <a class="profilo-logo-item profilo-logo-item--light" href="https://www.deagostini.it" target="_blank" rel="noopener" aria-label="De Agostini Libri"><img src="/images/logo-deagostini.jpg" alt="De Agostini Libri"></a>
+-            <a class="profilo-logo-item profilo-logo-item--dark" href="https://www.rizzolilibri.it" target="_blank" rel="noopener" aria-label="Rizzoli Libri"><img src="/images/logo-rizzoli.png" alt="Rizzoli Libri — Mondadori Group"></a>
+-            <a class="profilo-logo-item profilo-logo-item--dark" href="https://www.mondadori.it" target="_blank" rel="noopener" aria-label="Mondadori Group"><img src="/images/logo-mondadori.png" alt="Mondadori Group"></a>
+-            <a class="profilo-logo-item profilo-logo-item--dark" href="https://www.yr.com" target="_blank" rel="noopener" aria-label="Young & Rubicam — WPP Group"><img src="/images/logo-yr.png" alt="Young & Rubicam — WPP Group"></a>
+-            <a class="profilo-logo-item profilo-logo-item--dark" href="https://www.gedispa.it" target="_blank" rel="noopener" aria-label="GEDI Gruppo Editoriale"><img src="/images/logo-gedi.png" alt="GEDI Gruppo Editoriale"></a>
+-            <a class="profilo-logo-item profilo-logo-item--light" href="https://www.quotidiano.net" target="_blank" rel="noopener" aria-label="QN — Il Resto del Carlino"><img src="/images/logo-qn-carlino.gif" alt="QN — Il Resto del Carlino"></a>
++            <a class="profilo-logo-item profilo-logo-item--light" href="https://www.deagostini.it" target="_blank" rel="noopener" aria-label="De Agostini Libri"><img src="/images/logo-deagostini.webp" alt="De Agostini Libri"></a>
++            <a class="profilo-logo-item profilo-logo-item--dark" href="https://www.rizzolilibri.it" target="_blank" rel="noopener" aria-label="Rizzoli Libri"><img src="/images/logo-rizzoli.webp" alt="Rizzoli Libri — Mondadori Group"></a>
++            <a class="profilo-logo-item profilo-logo-item--dark" href="https://www.mondadori.it" target="_blank" rel="noopener" aria-label="Mondadori Group"><img src="/images/logo-mondadori.webp" alt="Mondadori Group"></a>
++            <a class="profilo-logo-item profilo-logo-item--dark" href="https://www.yr.com" target="_blank" rel="noopener" aria-label="Young & Rubicam — WPP Group"><img src="/images/logo-yr.webp" alt="Young & Rubicam — WPP Group"></a>
++            <a class="profilo-logo-item profilo-logo-item--dark" href="https://www.gedispa.it" target="_blank" rel="noopener" aria-label="GEDI Gruppo Editoriale"><img src="/images/logo-gedi.webp" alt="GEDI Gruppo Editoriale"></a>
++            <a class="profilo-logo-item profilo-logo-item--light" href="https://www.quotidiano.net" target="_blank" rel="noopener" aria-label="QN — Il Resto del Carlino"><img src="/images/logo-qn-carlino.webp" alt="QN — Il Resto del Carlino"></a>
+           </div>
+         </div>
+ 
+@@ -165,11 +165,11 @@ description: "Marketing director in De Agostini Libri, docente e co-fondatore di
+           <h2 class="about-credentials-title">Formazione</h2>
+           <div class="about-logos about-logos--edu">
+             <a class="profilo-logo-item profilo-logo-item--dark about-logo-item--edu" href="https://www.unibo.it" target="_blank" rel="noopener" aria-label="Università di Bologna — Alma Mater Studiorum">
+-              <img src="/images/logo-bologna.png" alt="Università di Bologna — Alma Mater Studiorum">
++              <img src="/images/logo-bologna.webp" alt="Università di Bologna — Alma Mater Studiorum">
+               <span class="about-logo-caption">Università di Bologna</span>
+             </a>
+             <a class="profilo-logo-item profilo-logo-item--dark about-logo-item--edu" href="https://www.hult.edu" target="_blank" rel="noopener" aria-label="Hult International Business School">
+-              <img src="/images/logo-hult.png" alt="Hult International Business School">
++              <img src="/images/logo-hult.webp" alt="Hult International Business School">
+               <span class="about-logo-caption">Hult International Business School</span>
+             </a>
+           </div>
+@@ -179,19 +179,19 @@ description: "Marketing director in De Agostini Libri, docente e co-fondatore di
+           <h2 class="about-credentials-title">Docenze</h2>
+           <div class="about-logos">
+             <a class="about-logo-item" href="https://www.scuolaholden.it" target="_blank" rel="noopener" aria-label="Scuola Holden">
+-              <img src="/images/logo-holden.png" alt="Scuola Holden" class="about-logo-img">
++              <img src="/images/logo-holden.webp" alt="Scuola Holden" class="about-logo-img">
+               <span class="about-logo-caption">Il mercato del libro: piccolo corso di autodifesa economica per aspiranti professionisti creativi.</span>
+             </a>
+             <a class="about-logo-item" href="https://www.unicatt.it" target="_blank" rel="noopener" aria-label="Università Cattolica del Sacro Cuore">
+-              <img src="/images/logo-cattolica.png" alt="Università Cattolica del Sacro Cuore" class="about-logo-img">
++              <img src="/images/logo-cattolica.webp" alt="Università Cattolica del Sacro Cuore" class="about-logo-img">
+               <span class="about-logo-caption">Il marketing editoriale per il prodotto ragazzi. Analisi, strategie, operazioni.</span>
+             </a>
+             <a class="about-logo-item" href="https://mastercose.unipr.it" target="_blank" rel="noopener" aria-label="Master CoSe — Università di Parma">
+-              <img src="/images/logo-cose-parma.png" alt="Master Co.Se — Università di Parma" class="about-logo-img about-logo-img--dark">
++              <img src="/images/logo-cose-parma.webp" alt="Master Co.Se — Università di Parma" class="about-logo-img about-logo-img--dark">
+               <span class="about-logo-caption">Editori classici e nuove forme editoriali. I modelli di business dell'editore da Aldo Manuzio fino all'era dell'AI.</span>
+             </a>
+             <a class="about-logo-item" href="https://www.unibg.it" target="_blank" rel="noopener" aria-label="Università degli Studi di Bergamo">
+-              <img src="/images/unibergamo.jpg" alt="Università degli Studi di Bergamo" class="about-logo-img">
++              <img src="/images/logo-bergamo.webp" alt="Università degli Studi di Bergamo" class="about-logo-img">
+               <span class="about-logo-caption">L'editoria e il digitale. Il publishing, il marketing editoriale dai fondamentali, con un pizzico di Kung Fu.</span>
+             </a>
+           </div>

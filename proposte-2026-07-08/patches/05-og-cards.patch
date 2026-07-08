@@ -1,0 +1,75 @@
+diff --git a/src/_includes/layouts/base.njk b/src/_includes/layouts/base.njk
+index a4c5541..d1d5ef9 100644
+--- a/src/_includes/layouts/base.njk
++++ b/src/_includes/layouts/base.njk
+@@ -13,7 +13,9 @@
+     <meta property="og:description" content="{{ description or 'Libri, mercati, idee' }}">
+     <meta property="og:type" content="{{ og_type or 'website' }}">
+     <meta property="og:url" content="https://claudiocammarano.com{{ page.url }}">
+-    {% if og_image %}
++    {% if og_card %}
++    <meta property="og:image" content="https://claudiocammarano.com{{ og_card }}">
++    {% elif og_image %}
+     <meta property="og:image" content="https://claudiocammarano.com{{ og_image }}">
+     {% else %}
+     <meta property="og:image" content="https://claudiocammarano.com/images/og-default.png">
+diff --git a/src/writings/2026-04-15-lombra-del-futuro.md b/src/writings/2026-04-15-lombra-del-futuro.md
+index 5ec6f2d..34312bf 100644
+--- a/src/writings/2026-04-15-lombra-del-futuro.md
++++ b/src/writings/2026-04-15-lombra-del-futuro.md
+@@ -7,6 +7,7 @@ category: ["Geopolitica", "Teoria dei giochi", "Democrazia"]
+ lang: "it"
+ description: "Il fattore di sconto della politica americana, le opportunità per l'attore C (chi sarà?) e l'aritmetica dei sistemi che reggono. Una rilettura del torneo di Axelrod e del Tit-for-Tat per capire il presente."
+ og_image: "/images/wargames-hero.jpg"
++og_card: "/images/og/og-lombra-del-futuro.png"
+ english_version: "https://claudiocammarano.substack.com/p/when-winning-is-losing-trumps-negotiation"
+ ---
+ 
+diff --git a/src/writings/2026-05-04-lombra-del-passato.md b/src/writings/2026-05-04-lombra-del-passato.md
+index 9c1c06c..2012fd7 100644
+--- a/src/writings/2026-05-04-lombra-del-passato.md
++++ b/src/writings/2026-05-04-lombra-del-passato.md
+@@ -7,6 +7,7 @@ category: ["Geopolitica", "Teoria dei giochi", "Regimi politici"]
+ lang: "it"
+ description: "Win-set domestici, regimi politici, e l'aritmetica dei tappi quando il garante si ritira. Continuazione (e correzione) de L'ombra del futuro."
+ og_image: "/images/shepard-fairey-hero.jpg"
++og_card: "/images/og/og-lombra-del-passato.png"
+ english_version: "https://claudiocammarano.substack.com/p/endless-games-domestic-constraints"
+ ---
+ 
+diff --git a/src/writings/2026-05-20-nessuna-tecnologia-e-innocua.md b/src/writings/2026-05-20-nessuna-tecnologia-e-innocua.md
+index bd2e983..19e28a7 100644
+--- a/src/writings/2026-05-20-nessuna-tecnologia-e-innocua.md
++++ b/src/writings/2026-05-20-nessuna-tecnologia-e-innocua.md
+@@ -6,6 +6,7 @@ category: ["Comunicazione", "Geopolitica", "Dual Use"]
+ lang: "it"
+ description: "Perché la comunicazione non è mai stata innocente, molto prima che l’espressione dual use diventasse una moda. Dai Thurn und Taxis a Karp, da ARPANET ai cavi sottomarini."
+ og_image: "/images/blue-marble-hero.webp"
++og_card: "/images/og/og-nessuna-tecnologia-e-innocua.png"
+ english_version: "https://claudiocammarano.substack.com/p/everything-is-dual-use-this-substack"
+ ---
+ 
+diff --git a/src/writings/2026-06-01-la-macchina-e-la-lotta.md b/src/writings/2026-06-01-la-macchina-e-la-lotta.md
+index 37a4bbd..3672f38 100644
+--- a/src/writings/2026-06-01-la-macchina-e-la-lotta.md
++++ b/src/writings/2026-06-01-la-macchina-e-la-lotta.md
+@@ -6,6 +6,7 @@ category: ["AI", "Scrittura", "Formazione"]
+ lang: "it"
+ description: "Tokarczuk, Groff, e la domanda che nessuno sta facendo. Tre modi di scrivere con l'AI, il valore di quello che non si delega, e perché la lotta con la materia conta più del risultato."
+ og_image: "/images/auriga-delfi-hero.jpg"
++og_card: "/images/og/og-la-macchina-e-la-lotta.png"
+ ---
+ 
+ <figure class="article-hero">
+diff --git a/src/writings/2026-07-07-linfrastruttura-del-sapere.md b/src/writings/2026-07-07-linfrastruttura-del-sapere.md
+index f7b3984..e7d7490 100644
+--- a/src/writings/2026-07-07-linfrastruttura-del-sapere.md
++++ b/src/writings/2026-07-07-linfrastruttura-del-sapere.md
+@@ -8,6 +8,7 @@ lang: "🇮🇹 Italiano"
+ tags: [writings]
+ series: "La condizione epistemica, III"
+ og_image: /images/nbla_301555_1_lyavre.webp
++og_card: "/images/og/og-linfrastruttura-del-sapere.png"
+ ---
+ 
+ <figure class="article-hero">

@@ -1,0 +1,73 @@
+diff --git a/src/_includes/components/footer.njk b/src/_includes/components/footer.njk
+index 7ee924d..0e26c1a 100644
+--- a/src/_includes/components/footer.njk
++++ b/src/_includes/components/footer.njk
+@@ -5,6 +5,10 @@
+         <p class="footer-name">Claudio Cammarano · Marketing × Media × Content Industries</p>
+         <p class="footer-roles">De Agostini Libri · Docente · Irene Media · Episteme Advisory</p>
+       </div>
++      <div class="footer-newsletter">
++        <p class="footer-newsletter-label">The Abstract — newsletter</p>
++        <iframe class="substack-embed substack-embed--footer" src="https://claudiocammarano.substack.com/embed" title="Iscriviti a The Abstract" width="380" height="320" loading="lazy" frameborder="0" scrolling="no"></iframe>
++      </div>
+       <div class="footer-social">
+         <a href="/episteme-advisory/lab/">Lab</a>
+         <a href="https://www.linkedin.com/in/claudiocammarano/" target="_blank" rel="noopener">LinkedIn</a>
+diff --git a/src/_includes/layouts/article.njk b/src/_includes/layouts/article.njk
+index 22db19f..4daf130 100644
+--- a/src/_includes/layouts/article.njk
++++ b/src/_includes/layouts/article.njk
+@@ -286,9 +286,11 @@ og_type: article
+ {% endif %}
+ 
+ <div class="newsletter-cta" data-pagefind-ignore>
+-  <p class="newsletter-cta-label">The Abstract</p>
+-  <p class="newsletter-cta-text">Analisi su content industries, AI e media vista da una prospettiva europea. Esce su Substack.</p>
+-  <a href="https://claudiocammarano.substack.com" target="_blank" rel="noopener" class="newsletter-cta-btn">Leggi e iscriviti →</a>
++  <div class="newsletter-cta-copy">
++    <p class="newsletter-cta-label">The Abstract</p>
++    <p class="newsletter-cta-text">Analisi su content industries, AI e media vista da una prospettiva europea. Esce su Substack. <a href="https://claudiocammarano.substack.com" target="_blank" rel="noopener">Archivio →</a></p>
++  </div>
++  <iframe class="substack-embed" src="https://claudiocammarano.substack.com/embed" title="Iscriviti a The Abstract" width="480" height="320" loading="lazy" frameborder="0" scrolling="no"></iframe>
+ </div>
+ 
+ {% set related = collections.writings | getRelatedPosts(page.url, category) %}
+diff --git a/src/css/style.css b/src/css/style.css
+index efc0a2e..73227f3 100644
+--- a/src/css/style.css
++++ b/src/css/style.css
+@@ -2404,6 +2404,34 @@ body.irene-page .site-nav a.active {
+   }
+ }
+ 
++/* === SUBSTACK EMBED === */
++.substack-embed {
++  border: 1px solid var(--color-border);
++  border-radius: 4px;
++  background: #fff;
++  width: 100%;
++  max-width: 480px;
++  display: block;
++}
++
++.newsletter-cta-copy {
++  flex: 1 1 260px;
++}
++
++.newsletter-cta .substack-embed {
++  flex: 0 1 480px;
++}
++
++.footer-newsletter-label {
++  font-size: 0.85rem;
++  color: var(--color-text-light);
++  margin: 0 0 8px;
++}
++
++.footer-newsletter .substack-embed--footer {
++  max-width: 380px;
++}
++
+ /* === RELATED POSTS === */
+ .related-posts {
+   margin-top: var(--spacing-xl);

@@ -1,0 +1,109 @@
+diff --git a/src/css/style.css b/src/css/style.css
+index efc0a2e..caefd36 100644
+--- a/src/css/style.css
++++ b/src/css/style.css
+@@ -443,6 +443,69 @@ main {
+   border-bottom: none;
+ }
+ 
++/* === START HERE (homepage) === */
++.start-here {
++  display: grid;
++  grid-template-columns: 1fr 1.7fr;
++  gap: var(--spacing-md);
++  background: var(--color-bg-alt);
++  border: 1px solid var(--color-border);
++  border-radius: 4px;
++  padding: var(--spacing-md);
++  margin-bottom: var(--spacing-lg);
++}
++
++.start-here-question {
++  font-family: var(--font-serif);
++  font-size: 1.05rem;
++  font-weight: 600;
++  color: var(--color-text);
++  margin: 0 0 6px;
++}
++
++.start-here-note {
++  font-size: 0.88rem;
++  color: var(--color-text-light);
++  margin: 0 0 10px;
++}
++
++.start-here-link {
++  font-size: 0.9rem;
++}
++
++.start-here-list {
++  list-style: none;
++  margin: 0;
++  padding: 0;
++}
++
++.start-here-item {
++  margin-bottom: 12px;
++}
++
++.start-here-item:last-child {
++  margin-bottom: 0;
++}
++
++.start-here-item a {
++  font-family: var(--font-serif);
++  font-weight: 500;
++}
++
++.start-here-context {
++  display: block;
++  font-size: 0.85rem;
++  color: var(--color-text-light);
++  margin-top: 2px;
++}
++
++@media (max-width: 700px) {
++  .start-here {
++    grid-template-columns: 1fr;
++    gap: var(--spacing-sm);
++  }
++}
++
+ .article-meta {
+   display: flex;
+   gap: 6px;
+diff --git a/src/index.njk b/src/index.njk
+index 5e409fd..b293bd5 100644
+--- a/src/index.njk
++++ b/src/index.njk
+@@ -56,6 +56,30 @@ description: "Saggi originali su editoria, marketing, semiotica e cultura digita
+ }
+ </script>
+ 
++<section class="start-here" aria-label="Da dove cominciare">
++  <div class="start-here-col">
++    <p class="start-here-question">Sei qui per conoscermi?</p>
++    <p class="start-here-note">Percorso, docenze, ricerca: i fatti essenziali in una pagina.</p>
++    <a class="start-here-link" href="/about/">Vai all'About &#8594;</a>
++  </div>
++  <div class="start-here-col">
++    <p class="start-here-question">Sei qui per leggere?</p>
++    <ul class="start-here-list">
++      {% set startHere = [
++        ["/writings/2026-07-07-linfrastruttura-del-sapere/", "AI Act e validazione dei modelli linguistici: dove è arrivato il progetto di ricerca."],
++        ["/writings/2026-06-01-la-macchina-e-la-lotta/", "Scrivere con l'AI: tre modi di farlo, e il valore di ciò che non si delega."],
++        ["/writings/2026-04-15-lombra-del-futuro/", "Il torneo di Axelrod e la teoria dei giochi applicata all'ordine internazionale."]
++      ] %}
++      {% for item in startHere %}{% for post in collections.writings %}{% if post.url == item[0] %}
++      <li class="start-here-item">
++        <a href="{{ post.url }}">{{ post.data.title }}</a>
++        <span class="start-here-context">{{ item[1] }} · {{ post.templateContent | readingTime }}</span>
++      </li>
++      {% endif %}{% endfor %}{% endfor %}
++    </ul>
++  </div>
++</section>
++
+ {% for post in collections.writings | limit(10) %}
+   {% if loop.index0 == 0 %}
+   <article class="article-card article-card--featured">

@@ -1,0 +1,13 @@
+diff --git a/src/about.njk b/src/about.njk
+index 8831373..311f5f2 100644
+--- a/src/about.njk
++++ b/src/about.njk
+@@ -14,7 +14,7 @@ description: "Marketing director in De Agostini Libri, docente e co-fondatore di
+       "name": "Claudio Cammarano",
+       "url": "https://claudiocammarano.com",
+       "image": "https://claudiocammarano.com/images/claudio-photo.jpg",
+-      "description": "Marketing executive with over 15 years in the Italian publishing and digital media industry. Currently Marketing Director at De Agostini Libri and co-founder of Irene Media. Experienced in editorial strategy, brand positioning, content marketing, and AI in media. Academic background in semiotics and philosophy of language; MBA from Hult International Business School. University lecturer at Scuola Holden, Università Cattolica di Milano, Master Co.Se (Università di Parma), and Università degli Studi di Bergamo. Author of 'Il mercato del libro' (Solferino / Scuola Holden). Profile suited for CMO roles in publishing houses, digital media companies, and culturally-positioned foundations.",
++      "description": "Marketing executive with over 15 years in the Italian publishing and digital media industry. Currently Marketing Director at De Agostini Libri and co-founder of Irene Media. Experienced in editorial strategy, brand positioning, content marketing, and AI in media. Academic background in semiotics and philosophy of language; MBA from Hult International Business School. University lecturer at Scuola Holden, Università Cattolica di Milano, Master Co.Se (Università di Parma), and Università degli Studi di Bergamo. Author of 'Il mercato del libro' (Solferino / Scuola Holden).",
+       "jobTitle": "Marketing Director",
+       "hasOccupation": {
+         "@type": "Occupation",

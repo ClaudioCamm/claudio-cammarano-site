@@ -643,7 +643,8 @@ module.exports = [
       { title: "NSDAP-Archiv: Finden Sie heraus, was Ihre Familie unter Hitler getan hat", url: "/curated/2026-05-07-spiegel-nsdap-archiv/", _source: "curated" },
       { title: "La legge Bacchelli per Lea Melandri", url: "/curated/2026-06-06-internazionale-lea-melandri-bacchelli/", _source: "curated" },
       { title: "The strange disappearance of Japan's animators", url: "/curated/2026-06-19-economist-1843-japan-animators/", _source: "curated" },
-      { title: "Alex Turner appointed as Defence Editor of The Economist", url: "/curated/2026-06-19-economist-defence-editor-turner/", _source: "curated" }
+      { title: "Alex Turner appointed as Defence Editor of The Economist", url: "/curated/2026-06-19-economist-defence-editor-turner/", _source: "curated" },
+      { title: "Com'è cambiata l'informazione in Italia negli ultimi 6 anni", url: "/curated/2026-06-19-mauro-informazione-italia-digital-news-report/", _source: "curated" }
     ]
   },
   {
@@ -946,6 +947,22 @@ module.exports = [
     note: "Concetto di Katherine Hayles: modalità cognitiva caratterizzata da rapido switching tra focus diversi, alta tolleranza alla noia, preferenza per input multipli simultanei. È un adattamento all'ambiente digitale, non un deficit — e la forma dominante dell'attenzione nelle generazioni cresciute con Internet. Nel sito è il contesto che spiega il successo del podcast lungo: il formato fiume non va contro l'iperattenzione ma le offre un'uscita strutturata, uno spazio in cui il carico cognitivo è basso e controllabile.",
     articles: [
       { title: "I podcast lunghi nell'era della mezza attenzione", url: "/curated/2026-06-29-diegoli-podcast-lunghi-mezza-attenzione-linkideeperlatv/", _source: "curated" }
+    ]
+  },
+  {
+    name: "news avoidance",
+    type: "teoria",
+    note: "Comportamento documentato dal Reuters Institute: la scelta attiva — o semi-conscia — di evitare le notizie, spesso o a volte. Non è indifferenza ma una risposta all'ansia, alla sfiducia e alla sensazione che informarsi non cambi nulla. Nel sito è misurata per l'Italia nel 2026 al 36% — dato che va letto insieme al calo della fiducia sistemica: i due fenomeni si alimentano a vicenda. Dialoga con il concetto di iperattenzione di Hayles: l'evitamento delle notizie può essere sia una forma di autodifesa cognitiva sia un effetto collaterale della frammentazione dell'attenzione.",
+    articles: [
+      { title: "Com'è cambiata l'informazione in Italia negli ultimi 6 anni", url: "/curated/2026-06-19-mauro-informazione-italia-digital-news-report/", _source: "curated" }
+    ]
+  },
+  {
+    name: "sfiducia sistemica",
+    type: "teoria",
+    note: "Distinzione introdotta esplicitamente dal Digital News Report 2026 per l'Italia: fino al 2025 la bassa fiducia nei media era attribuita alla partisanship dei singoli brand — testate percepite come troppo schierate. Dal 2026 il rapporto descrive un ambiente mediatico «altamente polarizzato» in cui la sfiducia non riguarda più questo o quel giornale ma il sistema dell'informazione nel suo complesso. La differenza non è solo di grado: la sfiducia brand-specifica è reversibile (basta cambiare testata o direttore); quella sistemica non lo è, perché non ha un oggetto su cui intervenire. Nel sito è il dato di sfondo che rende strutturali tutti gli altri indicatori in calo.",
+    articles: [
+      { title: "Com'è cambiata l'informazione in Italia negli ultimi 6 anni", url: "/curated/2026-06-19-mauro-informazione-italia-digital-news-report/", _source: "curated" }
     ]
   },
   {
@@ -1292,6 +1309,15 @@ module.exports = [
     citation: "THOMPSON, Ben, <a href=\"https://stratechery.com\"><em>Stratechery</em></a>, newsletter, 2013–.",
     articles: [
       { title: "Mythos, Muse, and the Opportunity Cost of Compute", url: "/curated/2026-04-13-stratechery-opportunity-cost-compute/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Digital News Report",
+    type: "testo",
+    note: "Ricerca annuale del Reuters Institute for the Study of Journalism (Università di Oxford): la più ampia indagine comparativa al mondo sui comportamenti dei lettori di notizie, condotta in oltre 40 paesi. La sezione italiana è curata da Alessio Cornia (Dublin City University). Nel sito è la fonte primaria dell'analisi longitudinale di Andrea Nelson Mauro sull'informazione in Italia 2021–2026.",
+    citation: "REUTERS INSTITUTE FOR THE STUDY OF JOURNALISM, <a href=\"https://reutersinstitute.politics.ox.ac.uk/digital-news-report/\"><em>Digital News Report</em></a>, Oxford, Università di Oxford, 2012–.",
+    articles: [
+      { title: "Com'è cambiata l'informazione in Italia negli ultimi 6 anni", url: "/curated/2026-06-19-mauro-informazione-italia-digital-news-report/", _source: "curated" }
     ]
   },
   {

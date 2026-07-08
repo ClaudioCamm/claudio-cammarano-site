@@ -1,0 +1,26 @@
+diff --git a/src/about.njk b/src/about.njk
+index 8831373..43498c8 100644
+--- a/src/about.njk
++++ b/src/about.njk
+@@ -1,7 +1,7 @@
+ ---
+ layout: layouts/base.njk
+ title: About
+-description: "Marketing director in De Agostini Libri, docente e co-fondatore di Irene Media. Studi in semiotica, MBA Hult Business School, oltre 15 anni nell'industria editoriale."
++description: "Chi è Claudio Cammarano: dirige il marketing di De Agostini Libri, insegna in quattro università, ha scritto Il mercato del libro (Solferino). Percorso, docenze e ricerca."
+ ---
+ 
+ <script type="application/ld+json">
+diff --git a/src/index.njk b/src/index.njk
+index 5e409fd..254bd19 100644
+--- a/src/index.njk
++++ b/src/index.njk
+@@ -1,7 +1,7 @@
+ ---
+ layout: layouts/base.njk
+ title: "Libri, mercati, idee"
+-description: "Saggi originali su editoria, marketing, semiotica e cultura digitale. Di Claudio Cammarano — marketing director, docente, co-fondatore di Irene Media."
++description: "Saggi originali su editoria, AI, semiotica e geopolitica dei contenuti, curation ragionata e un progetto di ricerca sulla validazione dei modelli linguistici. Il sito di Claudio Cammarano."
+ ---
+ 
+ <script type="application/ld+json">
