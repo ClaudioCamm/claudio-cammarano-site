@@ -52,7 +52,6 @@
     <link rel="alternate" type="application/rss+xml" title="Claudio Cammarano" href="/feed.xml">
     <link rel="alternate" type="application/rss+xml" title="Claudio Cammarano — Lab" href="/episteme-advisory/lab/feed.xml">
     <link rel="stylesheet" href="/css/style.css">
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body class="{{ bodyClass }}">
     <a class="skip-link" href="#main-content">Salta al contenuto</a>
@@ -66,20 +65,6 @@
     
     {% include "components/footer.njk" %}
     
-    <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
-          }
-        });
-      }
-    </script>
-    
-    <script async src="//www.instagram.com/embed.js"></script>
-
     <script>
       // Avvisa gli utenti di screen reader quando un link apre una nuova scheda
       (function() {
