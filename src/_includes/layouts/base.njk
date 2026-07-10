@@ -7,7 +7,9 @@
     <meta name="description" content="{{ description or 'Libri, mercati, idee' }}">
     <link rel="canonical" href="https://claudiocammarano.com{{ page.url }}">
     <link rel="alternate" hreflang="{{ lang or 'it' }}" href="https://claudiocammarano.com{{ page.url }}">
-    <link rel="alternate" hreflang="x-default" href="https://claudiocammarano.com/">
+    {% if translation %}<link rel="alternate" hreflang="{{ translation.lang }}" href="https://claudiocammarano.com{{ translation.url }}">
+    <link rel="alternate" hreflang="x-default" href="https://claudiocammarano.com{% if (lang or 'it') == 'it' %}{{ page.url }}{% else %}{{ translation.url }}{% endif %}">
+    {% else %}<link rel="alternate" hreflang="x-default" href="https://claudiocammarano.com/">{% endif %}
     <!-- Open Graph -->
     <meta property="og:title" content="{{ title or 'Claudio Cammarano' }}">
     <meta property="og:description" content="{{ description or 'Libri, mercati, idee' }}">
@@ -90,6 +92,30 @@
           span.textContent = label;
           a.appendChild(span);
         });
+      })();
+    </script>
+
+    <script>
+      // Eventi GA4 per il funnel misurabile: newsletter (Substack), contatto
+      // (mailto), LinkedIn, download. Da marcare come key event in GA4 Admin.
+      (function() {
+        document.addEventListener('click', function(e) {
+          if (typeof gtag !== 'function' || !e.target.closest) return;
+          var a = e.target.closest('a[href]');
+          if (!a) return;
+          var href = a.getAttribute('href') || '';
+          var abs = a.href || href;
+          var params = { link_url: abs, page_path: location.pathname };
+          if (href.indexOf('mailto:') === 0) {
+            gtag('event', 'contact_click', params);
+          } else if (abs.indexOf('substack.com') !== -1) {
+            gtag('event', 'substack_click', params);
+          } else if (abs.indexOf('linkedin.com') !== -1 && abs.indexOf('share-offsite') === -1 && abs.indexOf('/sharing/') === -1) {
+            gtag('event', 'linkedin_click', params);
+          } else if (abs.indexOf('/downloads/') !== -1) {
+            gtag('event', 'download_click', params);
+          }
+        }, true);
       })();
     </script>
 </body>

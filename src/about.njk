@@ -2,128 +2,12 @@
 layout: layouts/base.njk
 title: About
 description: "Chi è Claudio Cammarano: dirige il marketing di De Agostini Libri, insegna in quattro università, ha scritto Il mercato del libro (Solferino). Percorso, docenze e ricerca."
+translation:
+  lang: en
+  url: /en/about/
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Person",
-      "@id": "https://claudiocammarano.com/#person",
-      "name": "Claudio Cammarano",
-      "url": "https://claudiocammarano.com",
-      "image": "https://claudiocammarano.com/images/claudio-photo.jpg",
-      "description": "Claudio Cammarano leads marketing at De Agostini Libri and is co-founder of Irene Media. With twenty years of experience in Italy's leading publishing groups, he has led editorial marketing, brand positioning and digital transformation strategies. He took part in some of the turning points of Italian publishing, from the joint book-and-newspaper sales of Repubblica to the Fifty Shades phenomenon and the acquisition of Rizzoli by Mondadori. University lecturer at Scuola Holden, Università Cattolica di Milano, Master Co.Se (Università di Parma), and Università degli Studi di Bergamo. Author of 'Il mercato del libro' (Solferino / Scuola Holden). Academic background in semiotics and philosophy of language; MBA from Hult International Business School.",
-      "jobTitle": "Marketing Director",
-      "hasOccupation": {
-        "@type": "Occupation",
-        "name": "Marketing Director",
-        "occupationalCategory": "Marketing Executive",
-        "occupationLocation": {
-          "@type": "Country",
-          "name": "Italy"
-        }
-      },
-      "worksFor": {
-        "@type": "Organization",
-        "name": "De Agostini Libri",
-        "url": "https://www.deagostini.it"
-      },
-      "affiliation": [
-        {
-          "@type": "Organization",
-          "name": "Scuola Holden",
-          "url": "https://www.scuolaholden.it"
-        },
-        {
-          "@type": "Organization",
-          "name": "Università Cattolica del Sacro Cuore",
-          "url": "https://www.unicatt.it"
-        },
-        {
-          "@type": "Organization",
-          "name": "Master Co.Se — Università di Parma"
-        },
-        {
-          "@type": "Organization",
-          "name": "Università degli Studi di Bergamo",
-          "url": "https://www.unibg.it"
-        },
-        {
-          "@type": "Organization",
-          "name": "Irene Media"
-        },
-        {
-          "@type": "Organization",
-          "name": "Episteme Advisory",
-          "url": "https://claudiocammarano.com/episteme-advisory/"
-        }
-      ],
-      "alumniOf": [
-        {
-          "@type": "Organization",
-          "name": "Università di Bologna",
-          "url": "https://www.unibo.it"
-        },
-        {
-          "@type": "Organization",
-          "name": "Hult International Business School"
-        }
-      ],
-      "knowsAbout": [
-        "Editorial marketing",
-        "Publishing industry strategy",
-        "Digital media",
-        "Content marketing",
-        "Brand strategy",
-        "AI in media",
-        "Semiotics",
-        "Cultural organizations marketing",
-        "Italian publishing market",
-        "Creator economy",
-        "Marketing management",
-        "Media transformation",
-        "Generative AI validation",
-        "Content industries",
-        "Book market",
-        "Publishing economics"
-      ],
-      "knowsLanguage": ["it", "en"],
-      "sameAs": [
-        "https://www.linkedin.com/in/claudiocammarano/",
-        "https://www.wikidata.org/wiki/Q140264282",
-        "https://claudiocammarano.substack.com",
-        "https://x.com/claudiocamm",
-        "https://medium.com/@ClaudioCamm"
-      ]
-    },
-    {
-      "@type": "Book",
-      "name": "Il mercato del libro",
-      "alternateName": "Il mercato del libro — L'altro lato del mestiere",
-      "url": "https://store.corriere.it/il-mercato-del-libro-gzt2130020.html",
-      "author": {
-        "@id": "https://claudiocammarano.com/#person"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Solferino",
-        "url": "https://www.solferinolibri.it"
-      },
-      "inLanguage": "it",
-      "isPartOf": {
-        "@type": "BookSeries",
-        "name": "Lezioni di Scrittura",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Scuola Holden"
-        }
-      }
-    }
-  ]
-}
-</script>
+{% include "components/person-jsonld.njk" %}
 
 <div class="about-content">
     <div class="about-main">
@@ -136,6 +20,10 @@ description: "Chi è Claudio Cammarano: dirige il marketing di De Agostini Libri
                 <h1>About</h1>
                 <p class="about-roles"><span class="sc">Marketing Director</span> · <span class="sc">Lecturer</span> · <span class="sc">Irene Media</span> · <span class="sc">Episteme Advisory</span></p>
             </div>
+        </div>
+
+        <div class="article-lang-link">
+            <a href="/en/about/">🇬🇧 Read this page in English →</a>
         </div>
 
         <div class="about-bio-tile" aria-label="Profilo professionale">
@@ -222,6 +110,7 @@ description: "Chi è Claudio Cammarano: dirige il marketing di De Agostini Libri
 
         <div class="about-cta">
             <a href="mailto:claudio@claudiocammarano.com" class="btn-about btn-about--outline">Scrivimi →</a>
+            <a href="https://www.linkedin.com/in/claudiocammarano/" class="btn-about btn-about--outline" target="_blank" rel="noopener">LinkedIn →</a>
             <a href="/episteme-advisory/" class="btn-about">Scopri Episteme Advisory →</a>
         </div>
 

@@ -41,3 +41,50 @@
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+# ------------------------------------------------------------------
+# Redirect 301 — vecchi permalink Medium (dominio custom dell'epoca)
+# che oggi finiscono sul 404. I post vivono su medium.com/@ClaudioCamm
+# ("The Abstract Archives 2018–2025"); Medium risolve via ID finale.
+# ------------------------------------------------------------------
+
+[[redirects]]
+  from = "/the-death-of-a-samurai-671aecffb829"
+  to = "https://medium.com/@ClaudioCamm/the-death-of-a-samurai-671aecffb829"
+  status = 301
+
+[[redirects]]
+  from = "/la-fine-della-leadership-e-la-morte-del-samurai-30609bf72608"
+  to = "https://medium.com/@ClaudioCamm/la-fine-della-leadership-e-la-morte-del-samurai-30609bf72608"
+  status = 301
+
+[[redirects]]
+  from = "/apprendimento-e-performance-perch%C3%A9-la-vita-non-%C3%A8-come-dungeons-dragons-c986fdc00fcb"
+  to = "https://medium.com/@ClaudioCamm/apprendimento-e-performance-perch%C3%A9-la-vita-non-%C3%A8-come-dungeons-dragons-c986fdc00fcb"
+  status = 301
+
+[[redirects]]
+  from = "/costi-e-opportunit%C3%A0-della-democrazia-3ffac104381"
+  to = "https://medium.com/@ClaudioCamm/costi-e-opportunit%C3%A0-della-democrazia-3ffac104381"
+  status = 301
+
+[[redirects]]
+  from = "/la-grande-onda-del-design-thinking-17998823337f"
+  to = "https://medium.com/@ClaudioCamm/la-grande-onda-del-design-thinking-17998823337f"
+  status = 301
+
+[[redirects]]
+  from = "/lasana-del-lettore-3d90b900da39"
+  to = "https://medium.com/@ClaudioCamm/lasana-del-lettore-3d90b900da39"
+  status = 301
+
+[[redirects]]
+  from = "/un-modo-diverso-di-pensare-alla-diversit%C3%A0-a61c76f5ae7c"
+  to = "https://medium.com/@ClaudioCamm/un-modo-diverso-di-pensare-alla-diversit%C3%A0-a61c76f5ae7c"
+  status = 301
+
+# /all: vecchia rotta archivio Medium — atterraggi residui verso i saggi
+[[redirects]]
+  from = "/all"
+  to = "/writings/"
+  status = 301

@@ -1,0 +1,88 @@
+---
+layout: layouts/base.njk
+---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ title | jsonEscape | safe }}",
+  "description": "{{ description | jsonEscape | safe }}",
+  "datePublished": "{{ date | isoDate }}",
+  "inLanguage": "it",
+  "url": "https://claudiocammarano.com{{ page.url }}",
+  "citation": {
+    "@type": "CreativeWork",
+    "name": "{{ title | jsonEscape | safe }}",
+    "url": "{{ external_url }}"{% if source %},
+    "publisher": { "@type": "Organization", "name": "{{ source | jsonEscape | safe }}" }{% endif %}
+  },
+  "author": {
+    "@type": "Person",
+    "@id": "https://claudiocammarano.com/#person",
+    "name": "Claudio Cammarano",
+    "url": "https://claudiocammarano.com/about/"
+  },
+  "isPartOf": { "@id": "https://claudiocammarano.com/#website" }
+}
+</script>
+
+<article class="article-full article-full--curated">
+  <header class="article-header">
+    <nav class="breadcrumb" aria-label="Navigazione">
+      <a href="/">Home</a>
+      <span class="breadcrumb-sep" aria-hidden="true">·</span>
+      <a href="/curated/">Curated</a>
+      <span class="breadcrumb-sep" aria-hidden="true">·</span>
+      <span class="breadcrumb-current">{{ title }}</span>
+    </nav>
+    <div class="article-meta">
+      <span class="article-date">{{ date | formatDate }}</span>
+      {% if source %}<span class="curated-source-label">· {{ source }}</span>{% endif %}
+      {% if tags %}{% for tag in tags %}{% if tag != 'curated' %}{% set canonical = curatedTagAliases[tag | lower] %}{% if canonical %}<a class="article-tag" href="/tag/{{ canonical | slugify }}/">{{ canonical }}</a>{% endif %}{% endif %}{% endfor %}{% endif %}
+    </div>
+    <h1>{{ title }}</h1>
+  </header>
+
+  <div class="article-body">
+    {% if description %}
+    <p>{{ description }}</p>
+    {% endif %}
+    {{ content | safe }}
+    <p><a href="{{ external_url }}" target="_blank" rel="noopener noreferrer"><strong>Leggi l'originale{% if source %} su {{ source }}{% endif %} ↗</strong></a></p>
+  </div>
+</article>
+
+{% if concepts and concepts.length %}
+<div class="article-concepts">
+  <p class="article-concepts-label">Concetti</p>
+  <div class="concetto-chips">
+    {% for cname in concepts %}
+    <a href="/concetti/{{ cname | slugify }}/" class="concetto-chip">{{ cname }}</a>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+{% set prevPost = collections.curated | getPrevPost(page.url) %}
+{% set nextPost = collections.curated | getNextPost(page.url) %}
+{% if prevPost or nextPost %}
+<nav class="article-nav" data-pagefind-ignore>
+  {% if prevPost %}
+  <a href="{{ prevPost.url }}" class="article-nav-item article-nav-prev">
+    <span class="article-nav-label">&#8592; Precedente</span>
+    <span class="article-nav-title">{{ prevPost.data.title }}</span>
+  </a>
+  {% else %}
+  <span></span>
+  {% endif %}
+  {% if nextPost %}
+  <a href="{{ nextPost.url }}" class="article-nav-item article-nav-next">
+    <span class="article-nav-label">Successivo &#8594;</span>
+    <span class="article-nav-title">{{ nextPost.data.title }}</span>
+  </a>
+  {% endif %}
+</nav>
+{% endif %}
+
+<p style="margin-top: var(--spacing-lg); font-family: var(--font-sans); font-size: 14px;"><a href="/curated/">&larr; Tutti i curated</a></p>
