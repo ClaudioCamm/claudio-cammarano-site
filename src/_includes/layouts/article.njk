@@ -165,9 +165,20 @@ og_type: article
         list.appendChild(li);
       });
       details.appendChild(list);
-      // Insert before the second h2 (end of first section); fallback to before first h2
+      // If there are paragraphs before the first h2 (intro-style articles), insert before
+      // the first h2; otherwise insert before the second h2 (section-style articles).
       var allH2 = articleBody.querySelectorAll('h2');
-      var insertionPoint = allH2.length >= 2 ? allH2[1] : (allH2.length >= 1 ? allH2[0] : null);
+      var insertionPoint = null;
+      if (allH2.length >= 1) {
+        var firstH2 = allH2[0];
+        var hasPreamble = false;
+        var node = articleBody.firstChild;
+        while (node && node !== firstH2) {
+          if (node.nodeType === 1 && node.tagName === 'P') { hasPreamble = true; break; }
+          node = node.nextSibling;
+        }
+        insertionPoint = hasPreamble ? firstH2 : (allH2.length >= 2 ? allH2[1] : firstH2);
+      }
       if (insertionPoint) {
         insertionPoint.parentNode.insertBefore(details, insertionPoint);
       } else {

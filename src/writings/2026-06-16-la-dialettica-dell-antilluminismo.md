@@ -15,9 +15,7 @@ english_version: "https://claudiocammarano.substack.com/p/the-dialectic-of-count
   <figcaption>Trump, Vance e Zelensky alla Casa Bianca, febbraio 2025. La carta fondamentale per vincere — o per lo meno giocare — è sempre che una verità ci sia, e valga per i giusti e per gli ingiusti.</figcaption>
 </figure>
 
-*Verità, potere e la crisi dell’autorità universale*
-
-## I. L'esplosivo del fondatore
+## I. L’esplosivo del fondatore
 
 René Descartes comincia a scrivere il *Discorso sul metodo* a Leida intorno al 1637, mosso da un senso di frustrazione che si porta dietro da anni. La filosofia che ha studiato al collegio dei gesuiti gli sembra sterile, lontana dal mondo, incapace di produrre certezze su cui costruire. <strong>Il suo proposito è molto ambizioso: le basi della conoscenza condivisa sono fragili e vanno rifondate.</strong> Nell'inverno nel 1619, un'inverno particolarmente freddo (era il secolo della cossiddetta "piccola glaciazione", molto cara ai climatologi contemporanei), fissando la stufa di casa, aveva avuto un'illuminazione che cambierà in modo irreversibile il mondo delle idee, e che ora attende di essere messa su carta, in apertura a tre studi scientifici a cui pure sta lavorando. 
 

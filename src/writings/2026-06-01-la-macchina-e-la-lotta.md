@@ -14,8 +14,6 @@ og_card: "/images/og/og-la-macchina-e-la-lotta.png"
   <figcaption>L'auriga di Delfi (dettaglio del viso) ci guiderà in questa piccola riflessione sulla scrittura. Non sappiamo di che colore fossero i suoi cavalli.</figcaption>
 </figure>
 
-*AI, scrittura e il valore di quello che non si delega*
-
 ## I. Una questione equina
 
 Viviamo in tempi in cui arrabbiarsi è molto facile, mentre capire è difficile. Da un certo punto di vista, è forse proprio questo a rendere il nostro presente così interessante, nonostante tutti i suoi evidenti limiti. Ma d'altra parte è pure vero che la curiosità di voler vedere come va a finire la storia può essere una forma di appagamento modesta, quando il finale atteso non è uno splendore. A conti fatti, guardare sul tablet *Game of Thrones* può essere preferibile a viverlo in diretta: specialmente quando la sceneggiatura prevede che finiate impalati in piazza davanti a una folla urlante che vi sputa addosso.
