@@ -423,7 +423,8 @@ module.exports = [
       { title: "Natural Language Autoencoders Produce Unsupervised Explanations of LLM Activations", url: "/curated/2026-05-07-anthropic-nla-activations/", _source: "curated" },
       { title: "Il Golem e l'AI", url: "/curated/2026-06-08-giannella-golem-ai/", _source: "curated" },
       { title: "When AI builds itself", url: "/curated/2026-06-19-anthropic-recursive-self-improvement/", _source: "curated" },
-      { title: "Why Big AI Labs Are Hiring So Many Philosophers", url: "/curated/2026-06-24-economist-ai-labs-philosophers/", _source: "curated" }
+      { title: "Why Big AI Labs Are Hiring So Many Philosophers", url: "/curated/2026-06-24-economist-ai-labs-philosophers/", _source: "curated" },
+      { title: "Deep Dive into LLMs like ChatGPT", url: "/curated/2026-07-12-karpathy-deep-dive-llm-youtube/", _source: "curated" }
     ]
   },
   {
@@ -1583,6 +1584,14 @@ module.exports = [
       { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
       { title: "La colonizzazione del giudizio", url: "/curated/2026-06-12-corriere-colonizzazione-giudizio/", _source: "curated" },
       { title: "The End of the Future", url: "/curated/2026-06-15-fp-end-of-the-future/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Karpathy, Andrej",
+    type: "persona",
+    note: "Ricercatore e ingegnere AI (1986). Founding member di OpenAI (2015), poi Sr. Director of AI di Tesla (2017–2022), ora fondatore di Eureka Labs. Nel sito è citato per il suo «Deep Dive into LLMs» (2025): la risorsa divulgativa più completa disponibile sull'intera catena di addestramento dei modelli linguistici, dalla *jagged intelligence* ai token come unità di pensiero.",
+    articles: [
+      { title: "Deep Dive into LLMs like ChatGPT", url: "/curated/2026-07-12-karpathy-deep-dive-llm-youtube/", _source: "curated" }
     ]
   },
   {
