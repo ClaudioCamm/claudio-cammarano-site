@@ -12,15 +12,16 @@ description: "Link curati su media, marketing e content industries — selezione
     <div class="article-meta">
         <span class="article-date">{{ item.data.date | formatDate }}</span>
         {% if item.data.source %}
-        <span class="curated-source-label">· {{ item.data.source }}</span>
+        <span class="curated-source-label">· <a href="{{ item.data.external_url }}" target="_blank" rel="noopener noreferrer">{{ item.data.source }} ↗</a></span>
         {% endif %}
         {% if item.data.tags %}
           {% for tag in item.data.tags %}{% if tag != 'curated' %}{% set canonical = curatedTagAliases[tag | lower] %}{% if canonical %}<a class="article-tag" href="/tag/{{ canonical | slugify }}/">{{ canonical }}</a>{% endif %}{% endif %}{% endfor %}
         {% endif %}
     </div>
-    <h2><a href="{{ item.data.external_url }}" target="_blank" rel="noopener noreferrer">{{ item.data.title }} ↗</a></h2>
+    <h2><a href="{{ item.url }}">{{ item.data.title }}</a></h2>
     {% if item.data.description %}
-    <p>{{ item.data.description }}</p>
+    <p class="curated-preview">{{ item.data.description }}</p>
+    <p class="curated-continua"><a href="{{ item.url }}">Continua a leggere →</a></p>
     {% endif %}
     {% if item.data.concepts and item.data.concepts.length %}
     <div class="concetto-chips curated-concepts">

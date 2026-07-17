@@ -604,6 +604,46 @@ a.article-tag:hover {
   color: var(--color-text-hint);
 }
 
+.curated-source-label a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.curated-source-label a:hover {
+  color: var(--color-primary-medium);
+  text-decoration: underline;
+}
+
+/* Anteprima della chiosa: 5 righe, poi rimando alla pagina del curated */
+.curated-preview {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.curated-continua {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.curated-continua a {
+  color: var(--color-primary-medium);
+  text-decoration: none;
+}
+
+.curated-continua a:hover {
+  text-decoration: underline;
+}
+
+/* Link all'originale nella pagina del singolo curated */
+.curated-original-link {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  margin-top: var(--spacing-xs, 8px);
+}
+
 /* Legacy styles for listing pages */
 .article-type {
   font-family: var(--font-sans);
