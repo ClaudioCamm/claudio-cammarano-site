@@ -8,7 +8,7 @@
 {% for sName, sDesc in seriesDescriptions %}{% set sfSerieNames = (sfSerieNames.push(sName), sfSerieNames) %}{% endfor %}
 <section class="sistema-figurato" aria-label="Sommario ragionato">
   <header class="sf-header">
-    <p class="sf-eyebrow">Sommario ragionato</p>
+    <h2 class="sf-title">Sommario ragionato</h2>
     <p class="sf-counts">{{ clusters | length }} temi · {{ sfTotArgomenti }} argomenti · {{ collections.mergedConceptsIndex.length }} concetti · {{ sfSerieNames.length }} serie</p>
   </header>
   <div class="sf-spine" aria-hidden="true"></div>

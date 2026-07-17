@@ -460,6 +460,16 @@ Il grafo è **uno solo**, calcolato una volta a build time da `graphLayout.js` (
 
 **Non esiste un comando per "aggiornare l'indice semantico".** È lo stesso identico `git push` (o `npm run build`) con cui pubblichi il sito. Se i dati a monte sono corretti, il build successivo rigenera tutto: indici, pagine concetto, grafo, Temi, Argomenti — niente da "richiamare" a parte.
 
+### Il Sommario ragionato (home)
+
+Pannello tipografico in home, sotto il box "Start here": l'albero della tassonomia sul modello del *Système figuré* dell'Encyclopédie (da cui il nome interno dei file, `sistema-figurato`). Mostra i 5 Temi come rami, con una selezione di Argomenti, concetti-campione in corsivo, le serie e i rimandi a `/mappa/` e `/indice/`.
+
+- **Template**: `src/_includes/components/sistema-figurato.njk`, incluso da `index.njk`.
+- **Si aggiorna da solo a ogni build**: contatori (temi/argomenti/concetti/serie), elenco argomenti per ramo, serie. Legge `clusters.js`, la collection `mergedConceptsIndex` e `seriesDescriptions.json`.
+- **Unico dato curato a mano**: i concetti-campione (*specimen*) in `src/_data/sistemaFigurato.js` — le chiavi devono combaciare alla lettera con quelle di `clusters.js`. Lì si regola anche `maxArgomenti` (quanti argomenti per ramo prima dell'ellissi) e il `colorKey` che aggancia il pallino di ogni ramo ai colori del grafo (`--graph-cluster-*`).
+- **CSS**: sezione "Sistema figurato" in fondo a `style.css` (classi `sf-*`).
+- I link degli specimen puntano a `/concetti/slug/`: se rimuovi un concetto da `conceptsIndex.js`, controlla che non sia citato come specimen.
+
 ---
 
 ## 7. Temi e Argomenti (`_data/clusters.js`)
@@ -500,6 +510,7 @@ Le descrizioni dei Temi vivono in `temiDescriptions.json`, quelle degli Argoment
 | `src/_data/clusters.js` | Tassonomia Temi/Argomenti — usata da `/temi/`, `/indice/`, breadcrumb e dal layout del grafo |
 | `src/_data/curatedTagAliases.js` | Traduce i tag liberi dei curated in Argomenti — un nome cambiato qui "spegne" silenziosamente quell'Argomento per i curated già pubblicati |
 | `src/_data/graphLayout.js` | Calcola le posizioni del grafo. Non richiede modifiche manuali: si rigenera da solo leggendo `conceptsIndex.js` e `clusters.js` |
+| `src/_data/sistemaFigurato.js` | Specimen del Sommario ragionato in home — le chiavi devono combaciare con `clusters.js`, i nomi con `conceptsIndex.js` |
 
 ---
 
@@ -529,3 +540,37 @@ Le descrizioni dei Temi vivono in `temiDescriptions.json`, quelle degli Argoment
 
 **Grafo non compare**
 → Il grafo (pagine concetto e `/mappa/`) è visibile solo su schermo ≥ 900px. Su mobile è sostituito dalla lista articoli, invariata.
+
+---
+
+## 10. Linea editoriale e criteri di rifiuto
+
+Il sito funziona come una casa editrice con un solo autore: catalogo (writings), collane (serie), selezione con nota del curatore (curated), apparato critico (concetti, indice), R&D (Lab). E come ogni casa editrice, si definisce con i suoi no. Questa sezione è lo statuto: si consulta prima di pubblicare, non dopo.
+
+### La linea
+
+Interdisciplinare per necessità, non per moda: il punto in cui editoria, epistemologia, AI e mercati si incontrano. La postura è quella dell'**attraversatore di campi**, mai del consumatore di un campo. Nessun territorio è escluso a priori (la geopolitica e l'economia sono legittime quanto l'editoria), ma ogni pezzo deve passare dal punto di attraversamento: un framework, una competenza o un'esperienza che appartengono all'autore.
+
+### I tre criteri di rifiuto
+
+**1. No ai pezzi da consumatore.** Il test, per ogni curated: *questa chiosa poteva scriverla solo io?* Se la nota su un articolo dell'Economist è quella che scriverebbe qualunque lettore intelligente dell'Economist, non si pubblica — non perché il tema sia sbagliato, ma perché lì non passa l'autore. La firma sta nell'incrocio dei campi (l'Ucraina letta con Axelrod, l'AI letta con la semiotica), non nel tema.
+
+**2. I concetti a occorrenza singola sono cambiali.** Coniare un concetto alla prima occorrenza è legittimo solo come *apertura di linea* consapevole (es. riserva cognitiva, ecologia dei media): la seconda occorrenza è pianificata. È invece un no l'*etichetta retrospettiva*: taggare come concetto una citazione di passaggio senza intenzione di tornarci — il nodo nasce morto, vicolo cieco per il lettore e contenuto thin per i crawler. Manutenzione periodica: le cambiali si onorano (secondo pezzo) o si potano (declassamento a tag o rimozione). Un catalogo è gonfio non per quanti concetti conia, ma per quante cambiali lascia scadere.
+
+**3. No ai temi dove l'esposizione costa più dell'autorità che rende.** Cronaca politica interna e controversie correnti: un dirigente in carica paga quel conto senza incassarlo. Il tema caldo si tocca *col framework* (chi dissente deve dissentire dal modello, non dall'autore), mai col commento diretto da pundit. Corollario italiano: **non-adversarialità in patria** — niente posizioni contro autori di libri o firme del mercato editoriale italiano; si curano pezzi e argomenti, non persone. L'attrito intellettuale coi nomi si fa in inglese, a distanza di sicurezza professionale.
+
+### Antagonisti retorici (fonti integrative)
+
+Il catalogo attuale pende verso l'ecosistema NYT/Atlantic/Economist: liberal-democratico, europeista, pro-humanities. Non è un difetto da nascondere ma un'asimmetria da compensare: ogni tanto va curato l'avversario migliore — voci autorevoli con framework, che costringono a una chiosa che solo l'autore può scrivere (anche fosse "ecco dove sbaglia, e perché il modello regge lo stesso"). Chi pubblica anche chi lo smentisce non è classificabile.
+
+| Asse | Fonti | Perché |
+|---|---|---|
+| Geopolitica | John Mearsheimer; Niall Ferguson | Realismo offensivo e revisionismo storico: dissenso con modello, compatibile col criterio 1 |
+| AI | Gary Marcus; Marc Andreessen | I due lati della frizione: critica sistematica del paradigma LLM; accelerazionismo argomentato |
+| Ecologia dei media | L.M. Sacasas (*The Convivial Society*); Jonathan Haidt (*After Babel*) | La tradizione Illich-Ellul-Postman da premesse non progressiste; media ecology empirica |
+| Femminismo | Mary Harrington; Louise Perry | Critica femminista conservatrice della rivoluzione sessuale — il contrappunto al cluster Melandri |
+| Economia | Tyler Cowen (*Marginal Revolution*); Byrne Hobart (*The Diff*) | Libertarismo imprevedibile; finanza tech contrarian |
+| Lingua | John McWhorter | Linguistica eterodossa, incrocia l'asse semiotico |
+| Italia | Il Foglio, **solo versante liberale** | Garantismo, cultura di mercato, europeismo non sentimentale. L'anima cattolico-reazionaria (à la Meotti) è fuori linea. Selezione pezzo per pezzo, mai per testata |
+
+Regola d'ingaggio: mai per quota, solo quando il singolo pezzo supera il criterio 1. In italiano niente firme antagoniste (criterio 3, corollario).
