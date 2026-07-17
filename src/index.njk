@@ -81,6 +81,8 @@ description: "Saggi originali su editoria, AI, semiotica e geopolitica dei conte
   </div>
 </section>
 
+{% include "components/sistema-figurato.njk" %}
+
 {% for post in collections.writings | limit(10) %}
   {% if loop.index0 == 0 %}
   <article class="article-card article-card--featured">

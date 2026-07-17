@@ -1,0 +1,49 @@
+{# Sistema figurato delle conoscenze — albero tipografico della tassonomia,
+   sul modello del Système figuré dell'Encyclopédie. Si rigenera a ogni build
+   da clusters.js, mergedConceptsIndex e seriesDescriptions; l'unico dato
+   curato a mano sono i concetti-specimen in _data/sistemaFigurato.js. #}
+{% set sfTotArgomenti = 0 %}
+{% for cName, cTags in clusters %}{% set sfTotArgomenti = sfTotArgomenti + cTags.length %}{% endfor %}
+{% set sfSerieNames = [] %}
+{% for sName, sDesc in seriesDescriptions %}{% set sfSerieNames = (sfSerieNames.push(sName), sfSerieNames) %}{% endfor %}
+<section class="sistema-figurato" aria-label="Sommario ragionato">
+  <header class="sf-header">
+    <p class="sf-eyebrow">Sommario ragionato</p>
+    <p class="sf-counts">{{ clusters | length }} temi · {{ sfTotArgomenti }} argomenti · {{ collections.mergedConceptsIndex.length }} concetti · {{ sfSerieNames.length }} serie</p>
+  </header>
+  <div class="sf-spine" aria-hidden="true"></div>
+  <div class="sf-rami">
+    {% for cName, cTags in clusters %}
+    {% set ramo = sistemaFigurato.rami[cName] %}
+    <div class="sf-ramo">
+      <div class="sf-ramo-head">
+        <h3 class="sf-ramo-title"{% if ramo %} style="--sf-tick: var(--graph-cluster-{{ ramo.colorKey }})"{% endif %}><a href="/temi/#{{ cName | slugify }}">{{ cName }}</a></h3>
+        <p class="sf-ramo-count">{{ cTags.length }} argomenti</p>
+      </div>
+      <div class="sf-ramo-body">
+        <p class="sf-argomenti">
+          {%- for tag in cTags.slice(0, sistemaFigurato.maxArgomenti) -%}
+          <a href="/tag/{{ tag | slugify }}/">{{ tag }}</a>{% if not loop.last %} · {% endif %}
+          {%- endfor -%}
+          {%- if cTags.length > sistemaFigurato.maxArgomenti %} <span class="sf-ellipsis">…</span>{% endif -%}
+        </p>
+        {% if ramo and ramo.specimen.length %}
+        <p class="sf-specimen">
+          {%- for cname in ramo.specimen -%}
+          <a href="/concetti/{{ cname | slugify }}/">{{ cname }}</a>{% if not loop.last %} · {% endif %}
+          {%- endfor -%}
+        </p>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <footer class="sf-footer">
+    <p class="sf-serie">Le serie:
+      {%- for sName in sfSerieNames %}
+      <a href="/serie/{{ sName | seriesBaseName | slugify }}/">{{ sName }}</a>{% if not loop.last %} ·{% endif %}
+      {%- endfor %}
+    </p>
+    <p class="sf-links"><a href="/mappa/">Esplora la mappa →</a><span aria-hidden="true"> · </span><a href="/indice/">Indice →</a></p>
+  </footer>
+</section>
