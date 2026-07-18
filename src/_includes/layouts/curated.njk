@@ -9,7 +9,9 @@ layout: layouts/base.njk
   "headline": "{{ title | jsonEscape | safe }}",
   "description": "{{ description | jsonEscape | safe }}",
   "datePublished": "{{ date | isoDate }}",
-  "inLanguage": "it",
+  "inLanguage": "it",{% if criterio and criteri[criterio] %}
+  "keywords": "{{ criteri[criterio].label | jsonEscape | safe }}",{% if perche %}
+  "abstract": "{{ perche | jsonEscape | safe }}",{% endif %}{% endif %}
   "url": "https://claudiocammarano.com{{ page.url }}",
   "citation": {
     "@type": "CreativeWork",
@@ -42,6 +44,10 @@ layout: layouts/base.njk
       {% if tags %}{% for tag in tags %}{% if tag != 'curated' %}{% set canonical = curatedTagAliases[tag | lower] %}{% if canonical %}<a class="article-tag" href="/tag/{{ canonical | slugify }}/">{{ canonical }}</a>{% endif %}{% endif %}{% endfor %}{% endif %}
     </div>
     <h1>{{ title }}</h1>
+    {% set criterioSlug = criterio %}{% set criterioPerche = perche %}{% include "components/criterio-badge.njk" %}
+    {% if rinvio %}{% set rinvioPost = collections.all | findByUrl(rinvio) %}
+    <p class="curated-rinvio">In dialogo con → <a href="{{ rinvio }}">{% if rinvioPost %}{{ rinvioPost.data.title }}{% else %}{{ rinvio }}{% endif %}</a></p>
+    {% endif %}
     <p class="curated-original-link"><a href="{{ external_url }}" target="_blank" rel="noopener noreferrer"><strong>Leggi l'originale{% if source %} su {{ source }}{% endif %} ↗</strong></a></p>
   </header>
 

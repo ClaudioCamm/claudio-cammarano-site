@@ -51,6 +51,22 @@ description: "Saggi originali su editoria, AI, semiotica e geopolitica dei conte
         "https://x.com/claudiocamm",
         "https://medium.com/@ClaudioCamm"
       ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://claudiocammarano.com/irene-media/#organization",
+      "name": "Irene Media",
+      "url": "https://claudiocammarano.com/irene-media/",
+      "description": "Corporate ghostwriting per professionisti e aziende.",
+      "founder": { "@id": "https://claudiocammarano.com/#person" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://claudiocammarano.com/episteme-advisory/#organization",
+      "name": "Episteme Advisory",
+      "url": "https://claudiocammarano.com/episteme-advisory/",
+      "description": "Validazione epistemica per l'AI. Infrastruttura di post-cognizione per organizzazioni che devono fidarsi dei propri output AI.",
+      "founder": { "@id": "https://claudiocammarano.com/#person" }
     }
   ]
 }
@@ -80,6 +96,11 @@ description: "Saggi originali su editoria, AI, semiotica e geopolitica dei conte
     </ul>
   </div>
 </section>
+
+<div class="lab-banner venture-banner">
+  <span class="lab-banner-label">Progetti</span>
+  <span class="lab-banner-title venture-banner-title"><a href="/irene-media/">Irene Media</a> — corporate ghostwriting&ensp;·&ensp;<a href="/episteme-advisory/">Episteme Advisory</a> — validazione epistemica degli output AI</span>
+</div>
 
 {% include "components/sistema-figurato.njk" %}
 
@@ -179,6 +200,8 @@ description: "Saggi originali su editoria, AI, semiotica e geopolitica dei conte
 </div>
 {% endif %}
 
+<p class="curated-framing">Letture da altre testate, schedate per l'uso: il badge dice che cosa ho trovato in ogni pezzo, la riga sotto perché è qui.</p>
+
 {% for post in collections.curated | limit(5) %}
   <article class="article-card article-card--curated">
     <div class="article-meta">
@@ -191,6 +214,7 @@ description: "Saggi originali su editoria, AI, semiotica e geopolitica dei conte
       {% endif %}
     </div>
     <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+    {% set criterioSlug = post.data.criterio %}{% set criterioPerche = post.data.perche %}{% include "components/criterio-badge.njk" %}
     {% if post.data.description %}
     <p class="curated-preview">{{ post.data.description }}</p>
     <p class="curated-continua"><a href="{{ post.url }}">Continua a leggere →</a></p>

@@ -210,6 +210,8 @@ title: "Titolo originale dell'articolo esterno"
 external_url: "https://url-completo.com/articolo"
 source: "Nome Autore / Nome Pubblicazione"
 date: 2026-06-19
+criterio: lettura-di-mercato
+perche: "Una frase: la ragione d'archivio condensata, mostrata sotto il badge."
 description: "2-4 frasi in prima persona. Non riassunto neutro: commento di merito con punto di vista. Spiega perché vale la pena leggere e come si incastra con i temi del sito."
 tags: [curated, ai, geopolitica]
 concepts: ["Anthropic", "allineamento AI"]
@@ -217,6 +219,31 @@ concepts: ["Anthropic", "allineamento AI"]
 ```
 
 `tags`: sempre inizia con `curated`, poi 1-3 tag tematici in minuscolo libero.
+
+### Il criterio di selezione: `criterio`, `perche`, `rinvio`
+
+Dal luglio 2026 ogni curated dichiara **perché entra in archivio**, con un badge sopra la description (homepage, indice `/curated/` e pagina singola) e una riga di framing rivolta al lettore (che spiega come usare i badge, non la politica editoriale interna).
+
+**I tre campi sono opzionali con fallback totale**: un curated senza di essi rende esattamente come prima, nessun build si rompe. Uno slug scritto male non genera errori: il badge semplicemente non appare (il template valida contro `src/_data/criteri.json`, che è la fonte di verità per slug ed etichette visibili).
+
+- `criterio` — **uno solo** (mai doppie assegnazioni), dalla lista chiusa:
+
+  | Slug | Significato |
+  |---|---|
+  | `lettura-di-mercato` | mappa la struttura economica di un settore |
+  | `riferimento-tecnico` | risorsa fondativa del tema |
+  | `metodo-di-lavoro` | cosa cambia nel processo o nell'organizzazione del lavoro |
+  | `strumento-concettuale` | tesi o categoria da portare su altri terreni |
+  | `dato-che-corregge` | evidenza (numero, trend o caso) che smentisce un consenso |
+  | `elementi-di-scenario` | aggiorna il quadro su un fronte che il sito segue — segnale, caso, storia esemplare. **Ultima scelta, mai prima scelta** |
+
+- `perche` — una sola frase tra virgolette doppie (senza doppie virgolette interne), mostrata sotto il badge. Non è un secondo riassunto: è la ragione d'archivio condensata, quasi sempre già presente nella `description` ("entra nel sito perché…").
+
+- `rinvio` — opzionale, path interno del pezzo con cui questo curated dialoga (es. `/curated/2026-06-26-ottaviani-data-journalism-ai-reuters/`). Reso come "In dialogo con →" nella pagina singola, con titolo risolto automaticamente. Si usa solo se il dialogo è esplicito nel commento.
+
+**Regole editoriali:** nessuna casella "altro" — se nessun criterio si applica, il pezzo probabilmente non deve entrare (la lista è anche filtro in ingresso). Criterio e glossa finiscono nel JSON-LD della pagina singola (`keywords` e `abstract`), quindi sono estraibili dai motori generativi.
+
+**Se la lista dei criteri cambia**, aggiornare due posti: `src/_data/criteri.json` (governa la resa) e la skill `pubblica-articolo` (governa la generazione). La legenda dei criteri sull'indice `/curated/` (elemento `<details>` sotto la riga di framing) si genera automaticamente da `criteri.json`: non va toccata a mano.
 
 `concepts`: lista di nomi dalla tassonomia concetti (sezione 5). Usa `[]` se nessuno si applica. **I nomi sono case-sensitive** e devono coincidere esattamente con un `name` in `conceptsIndex.js` — altrimenti vengono scartati (vedi sezione 5 per il controllo automatico).
 

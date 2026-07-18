@@ -5,7 +5,19 @@ description: "Link curati su media, marketing e content industries — selezione
 ---
 
 <h1>Curated</h1>
-<p>Link esterni curati e selezionati su media, marketing e content industries.</p>
+<p>Link esterni curati e selezionati su media, marketing e content industries. Ogni pezzo è schedato per l'uso che se ne può fare: il badge indica il tipo di valore — una lettura di mercato, un dato che corregge un consenso, uno strumento concettuale — e la frase accanto lo dice in breve.</p>
+
+<details class="curated-legenda">
+  <summary>Cosa significano i badge</summary>
+  <dl>
+    {% for slug, c in criteri %}
+    <div class="curated-legenda-item">
+      <dt><span class="criterio-badge">{{ c.label }}</span></dt>
+      <dd>{{ c.descrizione }}</dd>
+    </div>
+    {% endfor %}
+  </dl>
+</details>
 
 {% for item in collections.curated %}
 <article class="article-card article-card--curated">
@@ -19,6 +31,7 @@ description: "Link curati su media, marketing e content industries — selezione
         {% endif %}
     </div>
     <h2><a href="{{ item.url }}">{{ item.data.title }}</a></h2>
+    {% set criterioSlug = item.data.criterio %}{% set criterioPerche = item.data.perche %}{% include "components/criterio-badge.njk" %}
     {% if item.data.description %}
     <p class="curated-preview">{{ item.data.description }}</p>
     <p class="curated-continua"><a href="{{ item.url }}">Continua a leggere →</a></p>

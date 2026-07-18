@@ -325,6 +325,13 @@ module.exports = function(eleventyConfig) {
     return index > 0 ? collection[index - 1] : null;
   });
 
+  // Find a post by URL (used by the curated `rinvio:` field).
+  // Returns null if not found — the template falls back to the raw path.
+  eleventyConfig.addFilter("findByUrl", function(collection, url) {
+    if (!url) return null;
+    return collection.find(function(p) { return p.url === url; }) || null;
+  });
+
   eleventyConfig.addFilter("jsonEscape", function(str) {
     if (!str) return '';
     return JSON.stringify(String(str)).slice(1, -1);

@@ -1,0 +1,26 @@
+{
+  "lettura-di-mercato": {
+    "label": "Lettura di mercato",
+    "descrizione": "Mappa la struttura economica di un settore."
+  },
+  "riferimento-tecnico": {
+    "label": "Riferimento tecnico",
+    "descrizione": "Risorsa fondativa del tema."
+  },
+  "metodo-di-lavoro": {
+    "label": "Metodo di lavoro",
+    "descrizione": "Cosa cambia nel processo o nell'organizzazione del lavoro."
+  },
+  "strumento-concettuale": {
+    "label": "Strumento concettuale",
+    "descrizione": "Tesi o categoria da portare su altri terreni."
+  },
+  "dato-che-corregge": {
+    "label": "Dato che corregge",
+    "descrizione": "Evidenza — numero, trend o caso — che smentisce un consenso."
+  },
+  "elementi-di-scenario": {
+    "label": "Elementi di scenario",
+    "descrizione": "Aggiorna il quadro su un fronte che il sito segue."
+  }
+}

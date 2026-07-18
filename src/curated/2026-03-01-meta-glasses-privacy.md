@@ -3,6 +3,8 @@ title: "Meta Glasses, ICE e il futuro della sorveglianza indossabile"
 external_url: https://www.theverge.com/policy/886348/meta-glasses-ice-doxxing-privacy
 source: The Verge
 date: 2026-03-01
+criterio: elementi-di-scenario
+perche: "Quando il wearable incontra il riconoscimento facciale, la distinzione tra spazio pubblico e privacy collassa."
 description: "Gli occhiali smart di Meta nelle mani dell'ICE sollevano domande urgenti su privacy, sorveglianza di massa e capacità di opt-out in uno scenario di riconoscimento facciale sempre-attivo."
 tags: [curated, privacy, wearables, surveillance]
 concepts: ["dual use"]

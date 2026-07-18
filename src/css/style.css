@@ -614,6 +614,116 @@ a.article-tag:hover {
   text-decoration: underline;
 }
 
+/* Criterio di selezione: badge + glossa (campi opzionali, fallback totale) */
+.curated-criterio {
+  margin: 2px 0 8px;
+  font-family: var(--font-sans);
+  line-height: 1.5;
+}
+
+.criterio-badge {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-primary-medium);
+  border: 1px solid currentColor;
+  padding: 1px 8px;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.criterio-perche {
+  font-size: 13px;
+  color: var(--color-text-light);
+  font-style: italic;
+}
+
+/* Riga di framing sopra la sezione Curated (homepage e indice) */
+.curated-framing {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--color-text-light);
+  border-left: 2px solid var(--color-border);
+  padding-left: 12px;
+  margin: 24px 0 16px;
+}
+
+/* Rinvio "In dialogo con" nella pagina singola */
+.curated-rinvio {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--color-text-light);
+  margin-top: 2px;
+}
+
+.curated-rinvio a {
+  color: var(--color-primary-medium);
+}
+
+/* Legenda dei criteri sull'indice /curated/ */
+.curated-legenda {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--color-text-light);
+  margin: 0 0 28px;
+}
+
+.curated-legenda summary {
+  cursor: pointer;
+  color: var(--color-primary-medium);
+  font-weight: 500;
+}
+
+.curated-legenda dl {
+  margin: 12px 0 0;
+}
+
+.curated-legenda-item {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.curated-legenda-item dt {
+  flex-shrink: 0;
+}
+
+.curated-legenda-item dd {
+  margin: 0;
+}
+
+.curated-legenda-nota {
+  margin-top: 12px;
+  font-style: italic;
+}
+
+/* Banda unica progetti in homepage: stile lab-banner, blu di interfaccia */
+.venture-banner {
+  background: var(--color-primary-medium);
+}
+
+.venture-banner:hover {
+  background: #1E6FBE;
+}
+
+.venture-banner-title {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+}
+
+.venture-banner-title a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.venture-banner-title a:hover {
+  text-decoration: underline;
+}
+
 /* Anteprima della chiosa: 5 righe, poi rimando alla pagina del curated */
 .curated-preview {
   display: -webkit-box;
