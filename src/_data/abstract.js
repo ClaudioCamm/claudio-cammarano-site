@@ -9,7 +9,17 @@ const https = require('https');
 function extractText(str) {
   const cdata = str.match(/<!\[CDATA\[([\s\S]*?)\]\]>/);
   const raw = cdata ? cdata[1] : str;
-  return raw.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").trim();
+  return raw
+    .replace(/<[^>]+>/g, '')
+    // Entità numeriche decimali (&#8212;) ed esadecimali (&#x2014;)
+    .replace(/&#x([0-9a-fA-F]+);/g, (_, hex) => String.fromCodePoint(parseInt(hex, 16)))
+    .replace(/&#(\d+);/g, (_, dec) => String.fromCodePoint(parseInt(dec, 10)))
+    // Entità nominali più comuni nei feed (&amp; per ultima)
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&lt;/g, '<').replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"').replace(/&#39;/g, "'")
+    .replace(/&amp;/g, '&')
+    .trim();
 }
 
 function formatDateEn(dateStr) {

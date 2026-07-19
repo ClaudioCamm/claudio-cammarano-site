@@ -160,7 +160,8 @@ bodyClass: home
           <span class="article-date">{{ post.date | formatDate }}</span>
           {% if post.data.category %}
             {% if post.data.category.length %}
-              {% for cat in post.data.category %}<a class="article-tag" href="/tag/{{ cat | slugify }}/">{{ cat }}</a>{% endfor %}
+              {# In home massimo 2 tag; tutti sulla pagina Writings #}
+              {% for cat in post.data.category %}{% if loop.index0 < 2 %}<a class="article-tag" href="/tag/{{ cat | slugify }}/">{{ cat }}</a>{% endif %}{% endfor %}
             {% else %}
               <a class="article-tag" href="/tag/{{ post.data.category | slugify }}/">{{ post.data.category }}</a>
             {% endif %}
