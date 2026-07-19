@@ -314,6 +314,52 @@ module.exports = function(eleventyConfig) {
       .slice(0, 3);
   });
 
+  // Curated pertinenti per un writing, selezione automatica a build time.
+  // Punteggio: +3 per concetto condiviso (via mergedConceptsIndex), +1 per
+  // argomento condiviso (tag del curated canonicalizzato via curatedTagAliases
+  // contro le category del writing). Soglia minima 2: meglio due pertinenti
+  // veri che tre con un riempitivo. Quanti: 3 sotto i 20 min di lettura,
+  // 4 fino a 40, 5 oltre (stesse 200 wpm del filtro readingTime).
+  eleventyConfig.addFilter("relatedCurated", function(curatedCollection, currentUrl, category, allConcepts, content) {
+    if (!curatedCollection || !currentUrl) return [];
+
+    var myConcepts = {};
+    (allConcepts || []).forEach(function(c) {
+      if (c.articles.some(function(a) { return a.url === currentUrl; })) {
+        myConcepts[c.name] = true;
+      }
+    });
+
+    var myTags = {};
+    var cats = Array.isArray(category) ? category : (category ? [category] : []);
+    cats.forEach(function(t) { myTags[String(t).toLowerCase()] = true; });
+
+    var scored = [];
+    curatedCollection.forEach(function(p) {
+      var score = 0;
+      (p.data.concepts || []).forEach(function(cn) {
+        if (myConcepts[cn]) score += 3;
+      });
+      (p.data.tags || []).forEach(function(t) {
+        if (t === 'curated') return;
+        var canonical = curatedTagAliases[String(t).toLowerCase()];
+        if (canonical && myTags[canonical.toLowerCase()]) score += 1;
+      });
+      if (score >= 2) scored.push({ post: p, score: score });
+    });
+
+    scored.sort(function(a, b) {
+      return b.score - a.score || (b.post.date - a.post.date);
+    });
+
+    var text = (content || '').replace(/<[^>]*>/g, ' ');
+    var words = text.split(/\s+/).filter(function(w) { return w.length > 0; }).length;
+    var minutes = words / 200;
+    var howMany = minutes < 20 ? 3 : (minutes <= 40 ? 4 : 5);
+
+    return scored.slice(0, howMany).map(function(s) { return s.post; });
+  });
+
   // Prev/next navigation within writings collection (sorted newest first)
   eleventyConfig.addFilter("getPrevPost", function(collection, currentUrl) {
     const index = collection.findIndex(function(p) { return p.url === currentUrl; });

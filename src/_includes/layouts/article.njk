@@ -296,6 +296,25 @@ og_type: article
 </div>
 {% endif %}
 
+{% set pertinentCurated = collections.curated | relatedCurated(page.url, category, collections.mergedConceptsIndex, content) %}
+{% if pertinentCurated.length %}
+<aside class="curated-rail" data-pagefind-ignore aria-label="Letture pertinenti dai curated">
+  <p class="curated-rail-label">Letture pertinenti</p>
+  {% for post in pertinentCurated %}
+  <article class="article-card article-card--curated article-card--curated-compact">
+    <div class="article-meta">
+      <span class="curated-badge">Curated</span>
+      {% if post.data.source %}
+      <span class="curated-source-label">· <a href="{{ post.data.external_url }}" target="_blank" rel="noopener noreferrer">{{ post.data.source }} ↗</a></span>
+      {% endif %}
+    </div>
+    <h3 class="curated-compact-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+    {% set criterioSlug = post.data.criterio %}{% set criterioPerche = post.data.perche %}{% include "components/criterio-badge.njk" %}
+  </article>
+  {% endfor %}
+</aside>
+{% endif %}
+
 <div class="newsletter-cta" data-pagefind-ignore>
   <p class="newsletter-cta-label">The Abstract</p>
   <p class="newsletter-cta-text">Analisi su content industries, AI e media vista da una prospettiva europea. Esce su Substack.</p>

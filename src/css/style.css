@@ -4947,3 +4947,57 @@ a.home-path:hover {
     margin-top: var(--spacing-md);
   }
 }
+
+/* === CURATED PERTINENTI (pagine articolo) ===
+   Selezione automatica a build time (filtro relatedCurated).
+   Mobile e schermi stretti: blocco dopo i concetti. Desktop ampio:
+   colonna destra sticky, via :has() — senza supporto :has() la pagina
+   resta a colonna singola con il blocco in coda: fallback pulito. */
+.curated-rail {
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--spacing-sm);
+  margin: var(--spacing-lg) 0;
+}
+
+.curated-rail-label {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-text-light);
+  margin: 0 0 var(--spacing-sm);
+}
+
+@media (min-width: 1200px) {
+  body:has(.curated-rail) .container {
+    max-width: 1160px;
+  }
+
+  main:has(.curated-rail) {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    column-gap: var(--spacing-lg);
+  }
+
+  main:has(.curated-rail) > * {
+    grid-column: 1;
+  }
+
+  main:has(.curated-rail) > .curated-rail {
+    grid-column: 2;
+    grid-row: 1 / span 40;
+    align-self: start;
+    position: sticky;
+    top: 24px;
+    border-top: none;
+    padding-top: 0;
+    margin: 0;
+  }
+}
+
+@media print {
+  .curated-rail {
+    display: none;
+  }
+}
