@@ -4674,3 +4674,276 @@ a.temi-tag-pill:hover .temi-tag-weight-bar {
     margin-left: 8px;
   }
 }
+
+/* ===================================
+   HOME v2 — Luglio 2026
+   Hero con posizionamento e tre percorsi; griglia a due colonne su
+   desktop (sidebar: The Abstract + Curated compatti); ordine sezioni
+   adattivo. Header, footer, menu e Sommario ragionato invariati.
+   =================================== */
+
+/* Container allargato solo in homepage (bodyClass: home) */
+.home .container {
+  max-width: 1100px;
+}
+
+/* --- Hero --- */
+.home-hero {
+  margin-bottom: var(--spacing-lg);
+}
+
+.home-kicker {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-primary-medium);
+  margin: 0 0 10px;
+}
+
+.home-title {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 0 0 12px;
+}
+
+.home-positioning {
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--color-text-light);
+  margin: 0 0 var(--spacing-md);
+}
+
+.home-positioning strong {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.home-paths {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.home-path {
+  position: relative;
+  display: block;
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: 13px 44px 13px 16px;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: border-color 0.15s;
+}
+
+a.home-path:hover {
+  border-color: var(--color-primary-medium);
+}
+
+.home-path-label {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.home-path-sub {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--color-text-light);
+  margin-top: 2px;
+}
+
+.home-path-sub a {
+  color: var(--color-primary-medium);
+}
+
+.home-path-arrow {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-primary-medium);
+  font-size: 18px;
+}
+
+@media (min-width: 901px) {
+  .home-hero {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: var(--spacing-lg);
+    align-items: center;
+    padding: var(--spacing-md) 0;
+  }
+
+  .home-positioning {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .home-title {
+    display: none; /* la tagline è già nell'header */
+  }
+}
+
+/* --- Griglia: desktop a due colonne, mobile colonna unica riordinata --- */
+.home-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+/* Ordine mobile: In evidenza prima del Sommario */
+.home-area--featured { order: 1; }
+.home-area--sommario { order: 2; }
+.home-area--writings { order: 3; }
+.home-area--side { order: 4; }
+
+@media (min-width: 901px) {
+  .home-grid {
+    grid-template-columns: minmax(0, 1fr) 340px;
+    column-gap: var(--spacing-lg);
+    grid-template-areas:
+      "sommario sommario"
+      "featured side"
+      "writings side";
+    align-items: start;
+  }
+
+  .home-area--sommario { grid-area: sommario; }
+  .home-area--featured { grid-area: featured; }
+  .home-area--writings { grid-area: writings; }
+  .home-area--side { grid-area: side; }
+}
+
+/* --- In evidenza: anteprima a 5 righe, solo desktop --- */
+.home-area--featured .article-excerpt {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.featured-continua {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  margin: 8px 0 0;
+}
+
+@media (max-width: 900px) {
+  .home-area--featured .article-excerpt,
+  .home-area--featured .featured-continua {
+    display: none;
+  }
+}
+
+/* --- Testatine di sezione --- */
+.home-sec-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 6px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.home-sec-title {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+.home-sec-link {
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+}
+
+/* --- Writings compatti: griglia 2 colonne su desktop --- */
+.article-card--compact {
+  margin-bottom: 0;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.article-card-compact-title {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.35;
+  margin: 0 0 2px;
+}
+
+.article-card-compact-title a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.article-card-compact-title a:hover {
+  color: var(--color-primary);
+}
+
+.article-card--compact .article-card-subtitle {
+  margin: 2px 0 4px;
+}
+
+.article-card--compact .article-meta {
+  margin-bottom: 0;
+}
+
+@media (min-width: 901px) {
+  .writings-compact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--spacing-lg);
+  }
+}
+
+/* --- Sidebar: Curated compatti --- */
+.article-card--curated-compact {
+  margin-bottom: var(--spacing-sm);
+  padding-bottom: var(--spacing-sm);
+}
+
+.curated-compact-title {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.35;
+  margin: 0 0 4px;
+}
+
+.curated-compact-title a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.curated-compact-title a:hover {
+  color: var(--color-primary);
+}
+
+.article-card--curated-compact .curated-criterio {
+  margin: 2px 0 0;
+}
+
+.curated-all {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  margin: 4px 0 0;
+}
+
+@media (min-width: 901px) {
+  .home-area--side .abstract-block {
+    margin-top: 0;
+  }
+
+  .home-area--side .curated-framing {
+    margin-top: var(--spacing-md);
+  }
+}
