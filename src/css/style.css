@@ -4993,6 +4993,13 @@ a.home-path:hover {
     border-top: none;
     padding-top: 0;
     margin: 0;
+    /* Se le card superano l'altezza della finestra, il rail scorre
+       per conto suo: l'ultimo curated è sempre raggiungibile */
+    max-height: calc(100vh - 48px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding-right: 6px;
+    scrollbar-width: thin;
   }
 
   /* Nel rail stretto: tipografia più leggera, cards più ariose */
