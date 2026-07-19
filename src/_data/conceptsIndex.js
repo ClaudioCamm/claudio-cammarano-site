@@ -457,7 +457,8 @@ module.exports = [
       { title: "China's Not the Problem. We Are.", url: "/curated/2026-05-14-chan-china-ai-nyt/", _source: "curated" },
       { title: "2025 AI and Semiconductor Outlook", url: "/curated/2025-01-01-fabricated-knowledge-ai-semiconductor-outlook/", _source: "curated" },
       { title: "The death of strategy (and what comes next)", url: "/curated/2026-05-20-smith-death-of-strategy/", _source: "curated" },
-      { title: "IA, bulloni e umanesimo", url: "/curated/2026-06-28-pieranni-ia-bulloni-umanesimo-ilpartito/", _source: "curated" }
+      { title: "IA, bulloni e umanesimo", url: "/curated/2026-06-28-pieranni-ia-bulloni-umanesimo-ilpartito/", _source: "curated" },
+      { title: "The State of the AI Economy", url: "/curated/2026-06-25-azhar-state-ai-economy-exponentialview/", _source: "curated" }
     ]
   },
   {
@@ -1876,6 +1877,14 @@ module.exports = [
     note: "Teorico dei media americano (New York, 1931–2003), fondatore del Department of Communication Arts and Sciences alla NYU e del Media Ecology Program (1968). Autore di Amusing Ourselves to Death (1985) e Technopoly (1992). Nel sito è il fondatore del quadro concettuale che Tarchetti usa per leggere il digitale: i media non sono contenitori neutri ma ambienti che determinano quali contenuti possono esistere e in che forma. L'errore degli editori — e il punto del pezzo — è trattare il digitale come canale di distribuzione mentre esso è un ambiente con proprietà formali proprie.",
     articles: [
       { title: "Non usiamo i media, ci cresciamo dentro", url: "/curated/2026-07-13-tarchetti-media-ecology-non-ho-capito/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Azhar, Azeem",
+    type: "persona",
+    note: "Imprenditore, saggista e analista tecnologico britannico-pakistano (1971). Fondatore di Exponential View, newsletter e podcast di riferimento sull'AI e sulle tecnologie esponenziali. Ex dirigente in BBC, Microsoft e Jawbone. Autore di Exponential (2021). Nel sito è citato per The State of the AI Economy (2026): il primo modello bottom-up e de-duplicato della domanda nell'economia AI, costruito a partire dalle disclosure degli hyperscaler e da fonti proprietarie con una metodologia auditabile.",
+    articles: [
+      { title: "The State of the AI Economy", url: "/curated/2026-06-25-azhar-state-ai-economy-exponentialview/", _source: "curated" }
     ]
   },
 
