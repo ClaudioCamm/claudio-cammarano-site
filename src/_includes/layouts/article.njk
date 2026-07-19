@@ -6,6 +6,16 @@ og_type: article
 <div id="reading-progress"></div>
 <button id="back-to-top" aria-label="Torna su" title="Torna su">↑</button>
 
+<script>
+// Applica subito la preferenza sul rail dei curated per evitare
+// il salto di layout al caricamento (la classe vive su <html>)
+try {
+  if (localStorage.getItem('curatedRailClosed') === '1') {
+    document.documentElement.classList.add('rail-closed');
+  }
+} catch (e) {}
+</script>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -299,7 +309,10 @@ og_type: article
 {% set pertinentCurated = collections.curated | relatedCurated(page.url, category, collections.mergedConceptsIndex, content) %}
 {% if pertinentCurated.length %}
 <aside class="curated-rail" data-pagefind-ignore aria-label="Letture pertinenti dai curated">
-  <p class="curated-rail-label">Letture pertinenti</p>
+  <div class="curated-rail-head">
+    <p class="curated-rail-label">Letture pertinenti</p>
+    <button class="curated-rail-close" id="curated-rail-close" aria-label="Chiudi la colonna delle letture pertinenti" title="Più aria">×</button>
+  </div>
   {% for post in pertinentCurated %}
   <article class="article-card article-card--curated article-card--curated-compact">
     <div class="article-meta">
@@ -313,6 +326,20 @@ og_type: article
   </article>
   {% endfor %}
 </aside>
+<button class="curated-rail-reopen" id="curated-rail-reopen" data-pagefind-ignore aria-label="Riapri le letture pertinenti">Letture pertinenti</button>
+<script>
+(function() {
+  var closeBtn = document.getElementById('curated-rail-close');
+  var reopenBtn = document.getElementById('curated-rail-reopen');
+  if (!closeBtn || !reopenBtn) return;
+  function setClosed(closed) {
+    document.documentElement.classList.toggle('rail-closed', closed);
+    try { localStorage.setItem('curatedRailClosed', closed ? '1' : '0'); } catch (e) {}
+  }
+  closeBtn.addEventListener('click', function() { setClosed(true); });
+  reopenBtn.addEventListener('click', function() { setClosed(false); });
+})();
+</script>
 {% endif %}
 
 <div class="newsletter-cta" data-pagefind-ignore>
