@@ -7,17 +7,7 @@ description: "Link curati su media, marketing e content industries — selezione
 <h1>Curated</h1>
 <p>Link esterni curati e selezionati su media, marketing e content industries. Ogni pezzo è schedato per l'uso che se ne può fare: il badge indica il tipo di valore — una lettura di mercato, un dato che corregge un consenso, uno strumento concettuale — e la frase accanto lo dice in breve.</p>
 
-<details class="curated-legenda">
-  <summary>Cosa significano i badge</summary>
-  <dl>
-    {% for slug, c in criteri %}
-    <div class="curated-legenda-item">
-      <dt><span class="criterio-badge">{{ c.label }}</span></dt>
-      <dd>{{ c.descrizione }}</dd>
-    </div>
-    {% endfor %}
-  </dl>
-</details>
+<p class="colophon-link">I badge dichiarano il criterio con cui ogni pezzo è entrato: <a href="/colophon/">la spiegazione completa è nel Colophon →</a></p>
 
 {% for item in collections.curated %}
 <article class="article-card article-card--curated">

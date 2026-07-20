@@ -1,26 +1,32 @@
 {
   "lettura-di-mercato": {
     "label": "Lettura di mercato",
-    "descrizione": "Mappa la struttura economica di un settore."
+    "descrizione": "Mappa la struttura economica di un settore.",
+    "estesa": "Il pezzo fa capire come funziona economicamente un settore: chi paga, chi guadagna, dove si sposta il valore. Entra quando aggiorna la comprensione della struttura di un mercato — editoriale o no."
   },
   "riferimento-tecnico": {
     "label": "Riferimento tecnico",
-    "descrizione": "Risorsa fondativa del tema."
+    "descrizione": "Risorsa fondativa del tema.",
+    "estesa": "La risorsa che bisogna aver letto — o visto — per trattare il tema con cognizione di causa: il testo su cui gli altri, spesso senza dirlo, si appoggiano. Quando il sito affronta l'argomento, costruisce a partire da qui."
   },
   "metodo-di-lavoro": {
     "label": "Metodo di lavoro",
-    "descrizione": "Cosa cambia nel processo o nell'organizzazione del lavoro."
+    "descrizione": "Cosa cambia nel processo o nell'organizzazione del lavoro.",
+    "estesa": "Il pezzo descrive un cambiamento nel modo di lavorare — processi editoriali, organizzazione dei team, strumenti — che vale la pena portare nella pratica, mia o delle organizzazioni di cui scrivo."
   },
   "strumento-concettuale": {
     "label": "Strumento concettuale",
-    "descrizione": "Tesi o categoria da portare su altri terreni."
+    "descrizione": "Tesi o categoria da portare su altri terreni.",
+    "estesa": "Il pezzo fornisce una tesi o una categoria che funziona anche fuori dal contesto in cui è nata: un attrezzo da portare su altri terreni. Si segnala l'utensile, non l'argomento."
   },
   "dato-che-corregge": {
     "label": "Dato che corregge",
-    "descrizione": "Evidenza — numero, trend o caso — che smentisce un consenso."
+    "descrizione": "Evidenza — numero, trend o caso — che smentisce un consenso.",
+    "estesa": "Un numero, un trend o un caso documentato che smentisce un'idea diffusa — a volte una che avevo anch'io. Entra proprio perché costringe a correggere."
   },
   "elementi-di-scenario": {
     "label": "Elementi di scenario",
-    "descrizione": "Aggiorna il quadro su un fronte che il sito segue."
+    "descrizione": "Aggiorna il quadro su un fronte che il sito segue.",
+    "estesa": "Il pezzo aggiorna il quadro su uno dei fronti che il sito segue nel tempo — AI, editoria, geopolitica dei contenuti — e tiene la mappa al passo."
   }
 }

@@ -5100,3 +5100,88 @@ a.home-path:hover {
     display: none;
   }
 }
+
+/* === COLOPHON === */
+.colophon-standfirst {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  font-style: italic;
+  color: var(--color-primary);
+  line-height: 1.55;
+  margin-bottom: var(--spacing-lg);
+}
+
+.colophon-criteri {
+  margin: var(--spacing-md) 0;
+}
+
+.colophon-criterio {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.colophon-criterio dt {
+  flex-shrink: 0;
+}
+
+.colophon-criterio dd {
+  margin: 0;
+  font-size: 15.5px;
+  color: var(--color-text-light);
+  line-height: 1.55;
+}
+
+.colophon-regola {
+  background: var(--color-bg-alt);
+  border-left: 3px solid var(--color-primary-medium);
+  border-radius: 0 4px 4px 0;
+  padding: 14px 18px;
+  margin: var(--spacing-md) 0;
+}
+
+.colophon-regola p {
+  font-size: 15px;
+  color: var(--color-text-light);
+  margin-bottom: 8px;
+}
+
+.colophon-regola p:last-child {
+  margin-bottom: 0;
+}
+
+.colophon-regola code {
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: 13.5px;
+  color: var(--color-text);
+}
+
+.colophon-tecnico {
+  border-top: 1px solid var(--color-border);
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-sm);
+}
+
+.colophon-tecnico p {
+  font-family: var(--font-sans);
+  font-size: 13.5px;
+  color: var(--color-text-light);
+  line-height: 1.8;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 640px) {
+  .colophon-criterio {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+/* Rimando al colophon (About e /curated/) */
+.colophon-link {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--color-text-light);
+  margin: 0 0 28px;
+}

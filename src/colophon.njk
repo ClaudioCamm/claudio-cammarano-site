@@ -1,0 +1,53 @@
+---
+layout: layouts/base.njk
+title: Colophon
+description: "Come funziona claudiocammarano.com: la tassonomia del Sommario ragionato, i criteri dei Curated, la regola delle pertinenze, le lingue, l'uso dell'AI e le licenze."
+---
+
+<div class="colophon-content">
+  <nav class="breadcrumb" aria-label="Navigazione">
+    <a href="/">Home</a>
+    <span class="breadcrumb-sep" aria-hidden="true">·</span>
+    <span class="breadcrumb-current">Colophon</span>
+  </nav>
+
+  <h1>Colophon</h1>
+  <p class="colophon-standfirst">Come funziona questo sito: la tassonomia, i criteri, le regole che governano ciò che entra e ciò che resta fuori.</p>
+
+  <p>Questo sito è costruito come una biblioteca personale aperta al pubblico, non come un flusso. Le cose che pubblico — saggi, segnalazioni, note di ricerca — entrano in un sistema di classificazione che esisteva prima di loro e che è fatto per durare più di loro. Questa pagina dichiara le regole del sistema.</p>
+
+  <h2>Il Sommario ragionato</h2>
+  <p>La tassonomia ha quattro livelli: cinque <strong>temi</strong>, che sono i rami principali; gli <strong>argomenti</strong>, che i saggi dichiarano come categorie; i <strong>concetti</strong> — persone, teorie, opere, istituzioni — assegnati a mano a ogni pezzo; e le <strong>serie</strong>, che ordinano i saggi in percorsi sequenziali. Il <a href="/#main-content">Sommario</a> in home page è la vista d'insieme di questo albero, e il nome non è casuale: il modello è il <em>Système figuré des connaissances humaines</em> con cui d'Alembert aprì l'Encyclopédie — la convinzione, illuminista e mai passata di moda, che ordinare il sapere sia già un modo di produrlo.</p>
+  <p>Nessuna classificazione è automatica. I concetti li assegno io, pezzo per pezzo; l'albero si rigenera a ogni pubblicazione, ma la materia che lo alimenta è curata a mano.</p>
+
+  <h2>I criteri dei Curated</h2>
+  <p>Le segnalazioni di letture altrui non sono un elenco di link: sono schede. Ogni scheda porta un badge che dichiara <em>che funzione ha quel testo</em> nel sistema del sito, e una riga che spiega perché è entrato. I criteri possibili sono sei:</p>
+  <dl class="colophon-criteri">
+    {% for slug, c in criteri %}
+    <div class="colophon-criterio">
+      <dt><span class="criterio-badge">{{ c.label }}</span></dt>
+      <dd>{{ c.estesa or c.descrizione }}</dd>
+    </div>
+    {% endfor %}
+  </dl>
+  <p>Se un pezzo non soddisfa nessuno di questi criteri, non entra — per quanto sia ben scritto. È il contrario di un feed: la selezione dichiara la propria regola e ne risponde.</p>
+
+  <h2>Le pertinenze</h2>
+  <p>Accanto a ogni saggio compaiono letture pertinenti scelte tra i Curated. La selezione è automatica ma non opaca: è una regola dichiarabile, e quindi la dichiaro.</p>
+  <div class="colophon-regola">
+    <p><strong>Regola di pertinenza.</strong></p>
+    <p>Ogni curated riceve <code>+3</code> per ciascun concetto condiviso con il saggio e <code>+1</code> per ciascun argomento condiviso. Sotto la soglia di <code>2</code> non compare nulla: meglio due rimandi veri che tre con un riempitivo. Il numero di rimandi cresce con la lunghezza del saggio. Non c'è apprendimento automatico, non c'è profilazione del lettore: la stessa pagina mostra le stesse pertinenze a chiunque.</p>
+  </div>
+
+  <h2>Le lingue</h2>
+  <p>I saggi sono in italiano. <a href="/newsletter/">The Abstract</a>, su Substack, legge la content economy in inglese per un pubblico internazionale. Il <a href="/episteme-advisory/lab/">Lab</a> — le note del progetto di ricerca sulla validazione epistemica degli output AI — è solo in inglese, per scelta: è materiale di lavoro rivolto a una comunità che lavora in quella lingua.</p>
+
+  <h2>La scrittura e l'AI</h2>
+  <p>Per realizzare questo sito uso strumenti di AI, senza i quali sarebbe impensabile anche solo provarci. Quanto all'uso degli LLM nella scrittura, ne ho scritto per esteso in <a href="/writings/2026-06-01-la-macchina-e-la-lotta/"><em>La macchina e la lotta</em></a>. Il mio approccio aspira a essere antidogmatico: uso tutto quello che posso per fare brainstorming, affinare bibliografie, costruire scalette. La stesura finale però è mia. In tutti i casi, niente di ciò che viene pubblicato in questo sito esula dalla mia responsabilità.</p>
+
+  <div class="colophon-tecnico">
+    <p>Sito statico generato con Eleventy, pubblicato su Netlify. Carattere: Source Serif 4.</p>
+    <p>Niente cookie di profilazione, niente paywall, niente algoritmi di raccomandazione. Statistiche: Google Analytics 4 in forma aggregata.</p>
+    <p>I contenuti sono © ma la riproduzione è consentita con citazione della fonte. I materiali scaricabili nel <a href="/learning/">Learning Log</a> sono rilasciati con licenza <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.it" target="_blank" rel="noopener">Creative Commons BY-NC-SA 4.0</a>.</p>
+  </div>
+</div>
