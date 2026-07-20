@@ -723,6 +723,14 @@ module.exports = [
     ]
   },
   {
+    name: "commoditizzazione",
+    type: "teoria",
+    note: "La dinamica per cui un bene o servizio che era differenziato diventa fungibile e il vantaggio competitivo si sposta sul costo marginale di produzione. Nel sito è la lente con cui Thompson legge la competizione sui modelli AI: il token non è la merce giusta, lo è l'intelligenza (output corretto per unità di costo). Chi ha il costo marginale più basso vince; chi non riesce a coprire i costi fissi esce. La strategia cinese di pubblicare i pesi è letta come 'commoditize your complements': aprire l'AI riduce il vantaggio americano nel software e accelera il vantaggio cinese nel mondo fisico.",
+    articles: [
+      { title: "Who's Afraid of Chinese Models?", url: "/curated/2026-07-20-stratechery-chinese-models/", _source: "curated" }
+    ]
+  },
+  {
     name: "GS1 Web Vocabulary",
     type: "teoria",
     note: "Standard che estende Schema.org con termini specifici per il largo consumo — categoria merceologica, allergeni, dettagli logistici — per dare «voce» ai codici a barre sul web. Nel sito è il caso esemplare di infrastruttura semantica mancante: un barcode tradizionale è muto per i motori di ricerca, generativi compresi.",
@@ -1524,7 +1532,8 @@ module.exports = [
       { title: "How surge in defence and dual-use technology investment could reconfigure global AI race", url: "/curated/2026-04-01-chatham-house-defence-ai-race/", _source: "curated" },
       { title: "La rivoluzione silenziosa della rete elettrica cinese", url: "/curated/2026-04-13-nyt-china-energy-battery-grid/", _source: "curated" },
       { title: "Cosa intende la Cina per «intelligenza artificiale»", url: "/curated/2026-06-25-pieranni-cina-intelligenza-artificiale-altriorienti/", _source: "curated" },
-      { title: "IA, bulloni e umanesimo", url: "/curated/2026-06-28-pieranni-ia-bulloni-umanesimo-ilpartito/", _source: "curated" }
+      { title: "IA, bulloni e umanesimo", url: "/curated/2026-06-28-pieranni-ia-bulloni-umanesimo-ilpartito/", _source: "curated" },
+      { title: "Who's Afraid of Chinese Models?", url: "/curated/2026-07-20-stratechery-chinese-models/", _source: "curated" }
     ]
   },
   {
@@ -1623,7 +1632,8 @@ module.exports = [
     type: "persona",
     note: "Presidente cinese (1953). Nel sito è analizzato come caso di accentramento del potere (dal 2012) che ha compresso il win-set domestico: abolizione del limite ai mandati, campagna anticorruzione strumentale, irrigidimento ideologico del Partito. Fattore di sconto δ probabilmente alto, ma il ρ relazionale che lui stesso ha costruito è altissimo.",
     articles: [
-      { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" }
+      { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
+      { title: "Who's Afraid of Chinese Models?", url: "/curated/2026-07-20-stratechery-chinese-models/", _source: "curated" }
     ]
   },
   {
@@ -1657,7 +1667,8 @@ module.exports = [
     type: "persona",
     note: "Analista tecnologico americano (1984), autore di Stratechery, tra le voci più influenti sui modelli di business digitali e sull'industria tecnologica. Teorico dell'aggregazione come struttura dominante del capitalismo digitale: le piattaforme che controllano la relazione con l'utente finale catturano il valore dell'intera filiera.",
     articles: [
-      { title: "Mythos, Muse, and the Opportunity Cost of Compute", url: "/curated/2026-04-13-stratechery-opportunity-cost-compute/", _source: "curated" }
+      { title: "Mythos, Muse, and the Opportunity Cost of Compute", url: "/curated/2026-04-13-stratechery-opportunity-cost-compute/", _source: "curated" },
+      { title: "Who's Afraid of Chinese Models?", url: "/curated/2026-07-20-stratechery-chinese-models/", _source: "curated" }
     ]
   },
   {
