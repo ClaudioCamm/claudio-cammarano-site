@@ -88,3 +88,11 @@
   from = "/all"
   to = "/writings/"
   status = 301
+
+# /archive/*: archivio mensile del vecchio Medium (es. /archive/2018/10) —
+# rilevato nei landing GA4 come 404. Il mensile non è mappabile 1:1,
+# si atterra sul profilo.
+[[redirects]]
+  from = "/archive/*"
+  to = "https://medium.com/@ClaudioCamm"
+  status = 301
