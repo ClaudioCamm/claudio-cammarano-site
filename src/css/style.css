@@ -4821,12 +4821,20 @@ a.home-path:hover {
   .home-area--side { grid-area: side; }
 }
 
-/* --- In evidenza: anteprima a 5 righe, solo desktop --- */
+/* --- In evidenza: anteprima modulata sulla larghezza ---
+   Mobile: nascosta. Desktop stretto (901-1199px): 6 righe.
+   Desktop ampio (>=1200px): 9 righe, dove c'è aria da riempire. */
 .home-area--featured .article-excerpt {
   display: -webkit-box;
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+@media (min-width: 1200px) {
+  .home-area--featured .article-excerpt {
+    -webkit-line-clamp: 9;
+  }
 }
 
 .featured-continua {

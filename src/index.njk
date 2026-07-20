@@ -126,7 +126,8 @@ bodyClass: home
       <h2><a href="{{ featured.url }}">{{ featured.data.title }}</a></h2>
       {% if featured.data.description %}<p class="featured-description">{{ featured.data.description }}</p>{% endif %}
       {% if featured.templateContent %}
-      <p class="article-excerpt">{{ featured.templateContent | excerpt(750) }}</p>
+      {# 1100 caratteri: abbastanza per le 9 righe del clamp su schermi ampi #}
+      <p class="article-excerpt">{{ featured.templateContent | excerpt(1100) }}</p>
       <p class="featured-continua"><a href="{{ featured.url }}">Continua a leggere &#8594;</a></p>
       {% endif %}
     </article>
