@@ -11,6 +11,7 @@ documents:
   - file: "04_struttura_paper_v2.pdf"
     label: "Struttura del Paper — Draft Planning Document (v3)"
     version: "v3"
+    id: "paper-draft"
   - file: "epistemologia_ai_bibliografia_definitiva.bib"
     label: "Bibliografia Definitiva — Epistemologia della Conoscenza AI-Generata"
     version: "56 fonti"

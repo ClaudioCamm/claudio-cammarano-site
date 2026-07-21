@@ -11,6 +11,7 @@ documents:
   - file: "11_2026_academic_v4.pdf"
     label: "Validating AI — Academic paper (draft)"
     version: "v4"
+    id: "paper-draft"
 ---
 
 ## Origins and theoretical framework
