@@ -28,3 +28,11 @@ Eight sections drafted (Introduction through Conclusion), a 56-entry bibliograph
 ## Submission target
 
 arXiv (cs.AI / cs.CL) as an immediate preprint; Synthese and Episteme as journal targets at 6–12 months. arXiv endorsement is currently being sought.
+
+## Attachments
+
+The current working draft (v4), split into three PDFs:
+
+- <a href="/downloads/11_2026_academic_v4.pdf">Academic paper (v4) — PDF →</a>
+- <a href="/downloads/12_2026_backmatter_v4.pdf">Back matter (v4) — PDF →</a>
+- <a href="/downloads/13_2026_toc_status_v4.pdf">Table of contents & status (v4) — PDF →</a>
