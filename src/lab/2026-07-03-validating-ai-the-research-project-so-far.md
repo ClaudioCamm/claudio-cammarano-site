@@ -7,6 +7,10 @@ stage: "Writing & submission"
 discipline: ["Epistemology", "Philosophy of language", "Computational linguistics / NLP", "Statistics"]
 method: ["Quantitative analysis", "Statistical modeling", "Annotation / inter-annotator agreement"]
 description: "Where the project stands as of July 2026 — the starting point for this log."
+documents:
+  - file: "11_2026_academic_v4.pdf"
+    label: "Validating AI — Academic paper (draft)"
+    version: "v4"
 ---
 
 ## Origins and theoretical framework
@@ -33,6 +37,6 @@ arXiv (cs.AI / cs.CL) as an immediate preprint; Synthese and Episteme as journal
 
 The current working draft (v4), split into three PDFs:
 
-- <a href="/downloads/11_2026_academic_v4.pdf">Academic paper (v4) — PDF →</a>
+- Academic paper (v4): {% labdoc "11_2026_academic_v4.pdf" %}
 - <a href="/downloads/12_2026_backmatter_v4.pdf">Back matter (v4) — PDF →</a>
 - <a href="/downloads/13_2026_toc_status_v4.pdf">Table of contents & status (v4) — PDF →</a>
