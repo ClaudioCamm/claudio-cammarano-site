@@ -3,7 +3,8 @@ layout: layouts/article.njk
 title: "Dal concept al deploy: costruire un sito professionale con JAMstack"
 date: 2026-03-01
 category: ["AI", "Vibe Coding", "Claude"]
-lang: "it"
+lang: "🇮🇹 Italiano"
+tags: [writings]
 description: "La storia tecnica di come questo sito è nato: dall'architettura informativa al deploy, passando per design system e workflow editoriale."
 og_image: "/images/claude-logo-and-app.webp"
 ---
@@ -16,7 +17,7 @@ og_image: "/images/claude-logo-and-app.webp"
 
 Poi è arrivato Claude. Mi sono iscritto per un mese con l'abbonamento Pro, più che altro per esplorarne le potenzialità. Ho scoperto che l'AI di Anthropic parla forbito ed è il sogno proibito degli umanisti. In più, forte delle mie poverissime basi di Python e di alcuni elementarissimi linguaggi di markup, ho iniziato a fare vibe coding. Avevo già un vecchio brief, fatto bene. L'ho caricato e ho aggiunto poche altre specifiche, poi ho chiesto a Claude di fare il resto. A esagerare, in 40 minuti ho chiuso l'MVP. In due settimane, giusto perché sono parecchio impegnato, ho pubblicato il sito - facendo in 5 minuti operazioni semplici per molti altri, ma che a me sarebbero costate mezz'ore di tentativi a vuoto.
 
-Visto che la gratitudine non si nega nemmeno alle macchine (e no, le AI non hanno una coscienza), ho chiesto a Claude anche di scrivere il primo articolo, che è quello che segue. Il suo è una sorta di sintesi dal suo punto di vista, e quindi poco emozionante, di come è andato il progetto. Questo è il risultato. Sulla forma c'è molto da fare, ma la ricostruzione è abbastanza corretta. A rileggerlo, sento la mancanza di calore e di ironia (che non è detto che io sappia esprimere meglio, beninteso): tuttavia, me lo faccimo andare bene, perché, chiaramente, questo sito è tanto suo quanto mio. Buona lettura.
+Visto che la gratitudine non si nega nemmeno alle macchine (e no, le AI non hanno una coscienza), ho chiesto a Claude anche di scrivere il primo articolo, che è quello che segue. Il suo è una sorta di sintesi dal suo punto di vista, e quindi poco emozionante, di come è andato il progetto. Questo è il risultato. Sulla forma c'è molto da fare, ma la ricostruzione è abbastanza corretta. A rileggerlo, sento la mancanza di calore e di ironia (che non è detto che io sappia esprimere meglio, beninteso): tuttavia, me lo faccio andare bene, perché, chiaramente, questo sito è tanto suo quanto mio. Buona lettura.
 
 </div>
 

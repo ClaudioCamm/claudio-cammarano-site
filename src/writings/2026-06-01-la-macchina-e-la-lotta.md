@@ -3,7 +3,8 @@ layout: layouts/article.njk
 title: "La macchina e la lotta"
 date: 2026-06-01
 category: ["AI", "Scrittura", "Formazione"]
-lang: "it"
+lang: "🇮🇹 Italiano"
+tags: [writings]
 description: "Tokarczuk, Groff, e la domanda che nessuno sta facendo. Tre modi di scrivere con l'AI, il valore di quello che non si delega, e perché la lotta con la materia conta più del risultato."
 og_image: "/images/auriga-delfi-hero.jpg"
 og_card: "/images/og/og-la-macchina-e-la-lotta.png"
@@ -28,7 +29,7 @@ Nell'immagine platonica, il cavallo nero rappresenta l'apparato pulsionale, l'ap
 
 L'idea che non esistano azioni "orizzontali", o per lo meno che non siano rilevanti, ha probabilmente caricato il pensiero morale successivo a Platone di un certo moralismo, ed è forse in questo stesso spirito che nel maggio 2026 la scrittrice statunitense Lauren Groff ha scritto su Threads che stava bruciando di rabbia ("come il sole") nei confronti del premio Nobel alla letteratura Olga Tokarczuk, che in condizioni normali meriterebbe nient'altro che ammirazione e rispetto. Groff ha passato trent'anni a lottare con la propria arte, ha detto. Ha detto anche che l'arte vive solo nella lotta: se non sei più interessata a confrontarti con la materia informe, a impastarla con il tuo sangue (l'immagine non è sua, è per capirci), non stai creando arte. Per questo, prosegue, tutto il suo rispetto per la Nobel Tokarczuk è scomparso all'istante.
 
-Ma che cosa ha combinato Tokarczuk? Ecco l'antefatto. Tokarczuk, intervistata all'evento "Impact" a Varsavia, aveva dichiarato di usare un modello linguistico avanzato per espandere i propri orizzonti creativi — «Tesoro, come potremmo sviluppare questa idea al meglio?» — aggiungendo, con un'amarezza che sarebbe bastata da sola come argomento, che quella era probabilmente la sua ultima stagione di romanzi lunghi. Motivo: il mercato non li sostiene più economicamente, non esiste più un pubblico. La Nobel, quindi, aveva fatto il gioco di calcolare il proprio salario orario e lo aveva paragonato a quello di un minatore.
+Ma che cosa ha combinato Tokarczuk? Ecco l'antefatto. Tokarczuk, intervistata all'evento "Impact" a Poznań, aveva dichiarato di usare un modello linguistico avanzato per espandere i propri orizzonti creativi — «Tesoro, come potremmo sviluppare questa idea al meglio?» — aggiungendo, con un'amarezza che sarebbe bastata da sola come argomento, che quella era probabilmente la sua ultima stagione di romanzi lunghi. Motivo: il mercato non li sostiene più economicamente, non esiste più un pubblico. La Nobel, quindi, aveva fatto il gioco di calcolare il proprio salario orario e lo aveva paragonato a quello di un minatore.
 
 Ora, a fronte della confessione della Nobel non è che Groff esprima un sentimento isolato. Nelle università americane, gli studenti si stanno coalizzando per fischiare chiunque, nei vari *closing* o *commencement speech*, sostenga che l'AI serva a qualcosa. Mentre scrivo, alcuni lavoratori creativi si stanno organizzando su Telegram (o altrove) contro editori, artisti, disegnatori che iniziano a introdurre l'AI *come prodotto*. Ma questa è una posizione comprensibile: sono categorie naturalmente esposte all'AI, e soprattutto sono esposte ai compromessi sulla qualità caratteristici di una certa industria culturale — rispetto ai quali la comparsa dell'AI è diventata un'occasione e soprattutto una tentazione formidabile. Ma la posizione di Groff è diversa: è *di principio*.
 

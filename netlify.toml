@@ -83,6 +83,13 @@
   to = "https://medium.com/@ClaudioCamm/un-modo-diverso-di-pensare-alla-diversit%C3%A0-a61c76f5ae7c"
   status = 301
 
+# Articolo su Eco: filename allineato alla data reale di pubblicazione
+# (4 aprile 2026). Il vecchio permalink resta valido via 301.
+[[redirects]]
+  from = "/writings/2026-02-19-dieci-anni-senza-umberto-eco/*"
+  to = "/writings/2026-04-04-dieci-anni-senza-umberto-eco/"
+  status = 301
+
 # /all: vecchia rotta archivio Medium — atterraggi residui verso i saggi
 [[redirects]]
   from = "/all"

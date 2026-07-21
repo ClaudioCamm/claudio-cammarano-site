@@ -33,7 +33,7 @@ module.exports = [
     type: "persona",
     note: "Filosofo francese (1926–1984). Nel sito appare come autore il cui post-strutturalismo è stato «appreso in modo deteriore» da Orbán, Trump e Putin: la tesi che tutto sia effetto di discorso viene usata dai populisti per negare la resistenza della realtà agli schemi mentali. Il sito ricorda anche il suo entusiasmo per la rivoluzione iraniana del 1978 — caso esemplare dei rischi dell'antiilluminismo.",
     articles: [
-      { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-02-19-dieci-anni-senza-umberto-eco/" },
+      { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-04-04-dieci-anni-senza-umberto-eco/" },
       { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" }
     ]
   },
@@ -42,7 +42,7 @@ module.exports = [
     type: "persona",
     note: "Filosofo algerino-francese (1930–2004), fondatore della decostruzione. Nel sito è citato insieme a Foucault come fonte del post-strutturalismo deviato: la decostruzione come strumento critico si rovescia in cinismo politico quando viene adottata da chi vuole dissolvere ogni fondamento normativo. Teorico della differenza e della traccia.",
     articles: [
-      { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-02-19-dieci-anni-senza-umberto-eco/" },
+      { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-04-04-dieci-anni-senza-umberto-eco/" },
       { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" }
     ]
   },
@@ -118,7 +118,7 @@ module.exports = [
     type: "persona",
     note: "Semiologo, scrittore e intellettuale pubblico italiano (1932–2016). Nel sito è figura centrale: mente combinatoria capace di fondare istituzioni (DAMS, Comunicazione, Master in Editoria), «terapista wittgensteiniano del discorso pubblico». La sua lezione: la realtà resiste ai nostri schemi mentali, non è tutto soltanto un effetto di discorso.",
     articles: [
-      { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-02-19-dieci-anni-senza-umberto-eco/" }
+      { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-04-04-dieci-anni-senza-umberto-eco/" }
     ]
   },
   {
@@ -160,7 +160,7 @@ module.exports = [
     type: "persona",
     note: "Filosofo ateniese (427–347 a.C.). Nel sito compare in due contesti: nell'insegnamento di Eco come contrasto alla figura di Alcibiade (la formazione non produce filosofi ma persone capaci di stare nel mondo); e nel Fedro come autore dell'immagine dello slancio verticale dello spirito, usata per discutere la natura del desiderio nell'intelligenza artificiale.",
     articles: [
-      { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-02-19-dieci-anni-senza-umberto-eco/" },
+      { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-04-04-dieci-anni-senza-umberto-eco/" },
       { title: "La macchina e la lotta", url: "/writings/2026-06-01-la-macchina-e-la-lotta/" }
     ]
   },
@@ -1430,7 +1430,7 @@ module.exports = [
     type: "luogo",
     note: "Nel sito è lo sfondo dell'articolo su Umberto Eco: il DAMS, le istituzioni culturali fondate da Eco, l'università come luogo di formazione non di accademici ma di persone capaci di stare nel mondo e influenzarlo — «lo scopo non è creare Platone, ma Alcibiade». Bologna come laboratorio intellettuale del secondo Novecento italiano.",
     articles: [
-      { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-02-19-dieci-anni-senza-umberto-eco/" }
+      { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-04-04-dieci-anni-senza-umberto-eco/" }
     ]
   },
   {
@@ -1580,7 +1580,7 @@ module.exports = [
     type: "persona",
     note: "Politico americano, presidente degli Stati Uniti (2025 in corso). Nel sito è la figura politica più citata (sei articoli): appare come utilizzatore deteriore del post-strutturalismo (nega la realtà dei fatti), caso studio di basso fattore di sconto δ nella teoria dei giochi, pivot del caos democratico globale post-2016.",
     articles: [
-      { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-02-19-dieci-anni-senza-umberto-eco/" },
+      { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-04-04-dieci-anni-senza-umberto-eco/" },
       { title: "Quando Dario Amodei ha detto no al Pentagono", url: "/writings/2026-03-09-quando-dario-amodei-ha-detto-no-al-pentagono/" },
       { title: "L'ombra del futuro", url: "/writings/2026-04-15-lombra-del-futuro/" },
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
@@ -1595,7 +1595,7 @@ module.exports = [
     type: "persona",
     note: "Presidente russo (1952). Nel sito compare in quattro articoli: come utilizzatore deteriore della lezione post-strutturalista; come ideatore della guerra ibrida e delle misure attive; come attore della crisi ucraina; come caso di win-set domestico progressivamente compresso e irreversibile dopo l'accentramento del potere.",
     articles: [
-      { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-02-19-dieci-anni-senza-umberto-eco/" },
+      { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-04-04-dieci-anni-senza-umberto-eco/" },
       { title: "Il rumore a Beirut", url: "/writings/2026-04-09-il-rumore-a-beirut/" },
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
       { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" }
@@ -1614,7 +1614,7 @@ module.exports = [
     type: "persona",
     note: "Primo ministro ungherese (1963). Nel sito è citato come utilizzatore deteriore della lezione post-strutturalista: la realtà come narrazione manipolabile, senza resistenza ontologica. Rappresenta il modello dell'autocrate illiberale europeo che ha imparato male da Foucault e Derrida.",
     articles: [
-      { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-02-19-dieci-anni-senza-umberto-eco/" },
+      { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-04-04-dieci-anni-senza-umberto-eco/" },
       { title: "Il gioco sporco degli autocrati", url: "/curated/2026-04-09-sabatini-gioco-sporco-autocrati/", _source: "curated" },
       { title: "Orbán ha perso, e non è l'unica buona notizia", url: "/curated/2026-04-09-sabatini-orban-ha-perso/", _source: "curated" }
     ]

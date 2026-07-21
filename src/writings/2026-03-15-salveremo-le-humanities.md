@@ -3,7 +3,8 @@ layout: layouts/article.njk
 title: "Salveremo le humanities con le pratiche, non con le idee"
 date: 2026-03-15
 category: ["Humanities", "Istituzioni", "AI"]
-lang: "it"
+lang: "🇮🇹 Italiano"
+tags: [writings]
 og_image: "/images/humanities-hero.webp"
 description: "Leggendo il manifesto Hinternet: la diagnosi è lucida, ma la soluzione ha un limite strutturale una cui possibile soluzione esiste almeno dal VI secolo."
 ---
@@ -15,7 +16,7 @@ description: "Leggendo il manifesto Hinternet: la diagnosi è lucida, ma la solu
 
 C'è un documento circolato a marzo 2026 che merita attenzione: [*A Third Way for the Humanities*](https://open.substack.com/pub/hinternet/p/a-third-way-for-the-humanities), pubblicato dall'Hinternet Editorial Board. È un manifesto, nel senso proprio del termine — una dichiarazione pubblica di posizione in un momento che si percepisce come rottura. Vale la pena leggerlo, perché la diagnosi è lucida e la frustrazione è autentica. Vale la pena anche andare oltre, perché la soluzione proposta ha un limite strutturale che il manifesto non vede.
 
-**La diagnosi**
+## La diagnosi
 
 Il manifesto identifica due posizioni dominanti nel dibattito attuale sulle humanities, e le condanna entrambe.
 
@@ -23,7 +24,7 @@ La prima è quella dei *myth-busters*: l'ala accademica progressista che ha fatt
 
 La seconda è quella dei *myth-makers*: il fronte conservatore-populista che pretende di difendere la civiltà occidentale senza averla mai studiata. Gente con statue greche come foto profilo che non ha mai letto Winckelmann, che non sa perché una statua greca sia bella, e che non è in grado di spiegare perché la propria pretesa superiorità culturale dovrebbe discendere per via ereditaria da antenati che in epoca classica erano, nella maggior parte dei casi, barbari forestali.
 
-Contro entrambe, il manifesto propone una terza via: le humanities come pratica di autocoltivazione democratica, come meraviglia — il θαυμάζειν aristotelico — davanti ai monumenti dell'ingegno umano in tutte le sue forme. Non smontare il mito né rafforzarlo: ammirarli, nella loro varietà e profondità. E costruire, fuori dall'università che non riesce più a riformarsi, istituzioni parallele dove questo sia possibile.
+Contro entrambe, il manifesto propone una terza via: le humanities come pratica di autocoltivazione democratica, come meraviglia — il θαυμάζειν aristotelico — davanti ai monumenti dell'ingegno umano in tutte le sue forme. Non smontare il mito né rafforzarlo: ammirarlo, nella sua varietà e profondità. E costruire, fuori dall'università che non riesce più a riformarsi, istituzioni parallele dove questo sia possibile.
 
 È una proposta seria, formulata con onestà intellettuale e una buona dose di coraggio.
 
@@ -71,7 +72,7 @@ Contro entrambe, il manifesto propone una terza via: le humanities come pratica 
   <div class="diagram-caption">Gli assi non sono neutrali: riflettono già una scelta analitica. La posizione benedettina sta fuori dal campo perché non risponde alla stessa domanda degli altri.</div>
 </div>
 
-**Il problema più profondo: la rivoluzione industriale, non il neoliberalismo**
+## Il problema più profondo: la rivoluzione industriale, non il neoliberalismo
 
 Prima di arrivare al limite della proposta, vale la pena correggere la periodizzazione implicita nel manifesto — e in quasi tutta la letteratura sulla crisi delle humanities. Il bersaglio polemico è quasi sempre il neoliberalismo: la finanziarizzazione dell'università, le metriche di produttività, la logica del capitale umano. Tutto reale, tutto documentabile. Ma non è lì che la frattura si istituzionalizza in modo irreversibile.
 
@@ -180,7 +181,7 @@ Il neoliberalismo non ha causato questa frattura: l'ha accelerata e resa economi
   <div class="diagram-caption">Freccia tratteggiata = pressione esterna · Nodi colorati = risposta intellettuale prevalente nel periodo</div>
 </div>
 
-**Vico e il gap che si comprime**
+## Vico e il gap che si comprime
 
 Qui entra Giambattista Vico, che nel 1725 formulò un principio epistemologico rimasto largamente sottovalutato: *verum ipsum factum* — conosciamo veramente solo ciò che abbiamo fatto. Le scienze naturali studiano un mondo che non abbiamo prodotto, e quindi la nostra conoscenza è sempre approssimazione dall'esterno. La storia, le lingue, le istituzioni umane le conosciamo dall'interno, perché le abbiamo costruite noi.
 
@@ -192,7 +193,7 @@ L'AI generativa è il caso più acuto: otteniamo sistemi che producono risultati
 
 In questo contesto, l'AI apre una possibilità che vale la pena nominare senza cadere nel determinismo tecnologico: potrebbe abbassare il costo marginale dell'accesso a campi contigui abbastanza da rendere praticabile una forma di de-specializzazione. Non un ritorno all'uomo universale rinascimentale — quel mito era già un mito allora — ma la possibilità di comunità di pratica in cui competenze diverse si integrano senza che nessuno debba fingere di padroneggiare tutto. La condizione, però, è che ci sia *volontà politica* di costruire quelle comunità. La tecnologia non produce da sola l'istituzione. Produce al massimo le condizioni in cui l'istituzione diventa possibile.
 
-**Il limite della proposta**
+## Il limite della proposta
 
 Ed è qui che il manifesto Hinternet, pur nella sua onestà, si ferma un passo prima del necessario.
 
@@ -252,13 +253,13 @@ Il risultato è una macchina istituzionale di straordinaria efficacia: un centro
   <div class="diagram-caption">La distinzione strutturale centrale di questo argomento: un centro pratico robusto con periferia dottrinale aperta produce innovazione come sottoprodotto. L'inversione produce conformità.</div>
 </div>
 
-Questa è la distinzione che il manifesto Hinternet, e tutta la letteratura sulla crisi delle humanities, non riesce a formulare: la differenza tra costruire un'istituzione che sa cosa *pensa* e costruire un'istituzione che sa come *vive insieme*. Il primo tipo riproduce ciò che già credeva. <mark>Il secondo produce innovazione come sottoprodotto non pianificato.</mark>
+Questa è la distinzione che il manifesto Hinternet, e tutta la letteratura sulla crisi delle humanities, non riesce a formulare: la differenza tra costruire un'istituzione che sa cosa *pensa* e costruire un'istituzione che sa come *vive insieme*. Il primo tipo riproduce ciò che già credeva. <strong>Il secondo produce innovazione come sottoprodotto non pianificato.</strong>
 
 La Regola benedettina è anche, non casualmente, un documento che pensa su scala secolare. Non era ottimizzata per sopravvivere ai prossimi cinque anni: era costruita come se il tempo fosse una risorsa abbondante. Il che è esattamente l'opposto della logica dei quattro quarter fiscali con cui oggi si misurano le istituzioni culturali — e, paradossalmente, è probabilmente la ragione per cui ha funzionato più a lungo di qualsiasi università moderna.
 
-**Un monito oscuro — e perché conta**
+## Un monito oscuro — e perché conta
 
-C'è però un esempio contemporaneo che vale la pena nominare, non come modello ma come avvertimento: <mark>Project 2025</mark>.
+C'è però un esempio contemporaneo che vale la pena nominare, non come modello ma come avvertimento: <strong>Project 2025</strong>.
 
 Strutturalmente, Project 2025 ha fatto qualcosa che la sinistra culturale non ha fatto: ha capito che il cambiamento richiede occupazione istituzionale paziente, non coltivazione individuale. È un documento noioso e tecnico sulla riorganizzazione della burocrazia federale americana. È anche, probabilmente, il testo politico più efficace degli ultimi vent'anni negli Stati Uniti — costruito in anni, con investimenti pazienti in istituzioni, pensato per durare oltre un singolo ciclo elettorale.
 
@@ -266,9 +267,9 @@ Non sto dicendo che sia la stessa cosa di ciò che propongo. Non lo è — per r
 
 La differenza strutturale è però decisiva: Project 2025 è completamente dipendente dal controllo di un singolo nodo — la presidenza americana. Il sistema benedettino era una rete di nodi autonomi: potevi distruggerne uno senza compromettere la rete. La resilienza non viene dalla potenza centralizzata ma dalla distribuzione. È una lezione di ingegneria istituzionale che vale in qualsiasi direzione politica.
 
-**La domanda che rimane**
+## La domanda che rimane
 
-Non sto proponendo di passare al lato oscuro, né di fondare monasteri laici. Sto proponendo di prendere sul serio una domanda che il dibattito attuale sistematicamente evita: <mark>qual è la *pratica comune*</mark> — concreta, quotidiana, vincolante ma non confessionale, capace di variare nel tempo senza dissolversi — intorno a cui una nuova comunità della conoscenza potrebbe organizzarsi?
+Non sto proponendo di passare al lato oscuro, né di fondare monasteri laici. Sto proponendo di prendere sul serio una domanda che il dibattito attuale sistematicamente evita: <strong>qual è la *pratica comune*</strong> — concreta, quotidiana, vincolante ma non confessionale, capace di variare nel tempo senza dissolversi — intorno a cui una nuova comunità della conoscenza potrebbe organizzarsi?
 
 Una comunità di pratica non confessionale significa esattamente questo: un centro abbastanza solido da produrre coerenza istituzionale, abbastanza aperto da permettere eterodossia produttiva. Né la setta che propaga i propri valori, né il club di lettori senza obbligazioni reciproche. Qualcosa che Benedetto aveva capito nel VI secolo, che i minatori dello Yorkshire che leggevano Shakespeare insieme avevano capito nel XIX, e che il dibattito contemporaneo sulle humanities sembra aver dimenticato.
 

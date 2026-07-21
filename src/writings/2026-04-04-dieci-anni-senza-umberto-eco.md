@@ -3,7 +3,8 @@ layout: layouts/article.njk
 title: "Dieci anni senza Umberto Eco"
 date: 2026-04-04
 category: ["Bologna", "Scienze della Comunicazione"]
-lang: "it"
+lang: "🇮🇹 Italiano"
+tags: [writings]
 description: "Un ricordo personale di Umberto Eco a dieci anni dalla morte: dal colloquio al Master in Editoria a quello che ancora oggi resta."
 og_image: "/images/umberto-eco.jpg"
 ---
@@ -33,6 +34,6 @@ Oltre a essere personalmente simpatico e un disinvolto bevitore di whisky, Eco a
 
 Con onestà e con affetto, credo che il suo limite fosse simmetrico al suo dono. <strong>L'energia andava nella creazione; meno nel mantenimento di ciò che aveva creato.</strong> Le istituzioni che ha fondato hanno brillato intensamente, ma spesso per cicli brevi — perché la manutenzione dell'eccellenza richiede una pazienza diversa dall'invenzione, e un'organizzazione matura che possa sostenerla.
 
-Alla morte di Eco, dieci anni fa, mi sono chiesto come moltissimi altri che cosa mi restasse di lui. Il mio Eco, quello che ho portato con me per anni, non è stato il semiologo o il romanziere. È stato l'intellettuale che nelle interviste correggeva la domanda prima di rispondere — un terapista wittgensteiniano del discorso pubblico. Ma in questo presente l'esempio di Eco deve portarci oltre. In un'epoca in cui ad aver appreso in modo deteriore la lezione del post strutturalismo, di Foucault e di Derrida sono stati gli Orban, i Trump e i Putin, <strong>la viva lezione del maestro sta nella convinzione che la realtà resiste ai nostri schemi mentali, che non è tutto soltanto un effetto di discorso</strong>. Che la conoscenza non è un dogma da custodire, ma un programma aperto, cosciente dei propri limiti, forse negoziabile — ma che proprio in quei limiti, nel tentativo ostinato di spostarli, c'è sia la gioia della ricerca, sia il discrimine che separa il vero dal falso.
+Alla morte di Eco, dieci anni fa, mi sono chiesto come moltissimi altri che cosa mi restasse di lui. Il mio Eco, quello che ho portato con me per anni, non è stato il semiologo o il romanziere. È stato l'intellettuale che nelle interviste correggeva la domanda prima di rispondere — un terapista wittgensteiniano del discorso pubblico. Ma in questo presente l'esempio di Eco deve portarci oltre. In un'epoca in cui ad aver appreso in modo deteriore la lezione del poststrutturalismo, di Foucault e di Derrida sono stati gli Orban, i Trump e i Putin, <strong>la viva lezione del maestro sta nella convinzione che la realtà resiste ai nostri schemi mentali, che non è tutto soltanto un effetto di discorso</strong>. Che la conoscenza non è un dogma da custodire, ma un programma aperto, cosciente dei propri limiti, forse negoziabile — ma che proprio in quei limiti, nel tentativo ostinato di spostarli, c'è sia la gioia della ricerca, sia il discrimine che separa il vero dal falso.
 
 Grazie, professore. Sei ancora Guglielmo da Baskerville. E noi ancora, con gratitudine e forse altrettanto indegnamente, tanti piccoli Adso da Melk.
