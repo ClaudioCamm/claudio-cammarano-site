@@ -12,6 +12,8 @@ documents:
     label: "Script — Batch Validazione (Anthropic API)"
   - file: "analisi_varianza.py"
     label: "Script — Analisi della Varianza"
+    version: "v1"
+    id: "variance-script"
 ---
 
 The quantitative core of the project is a two-level replication design: six claims, thirty API runs each, identical prompt, automated via Python batch script.

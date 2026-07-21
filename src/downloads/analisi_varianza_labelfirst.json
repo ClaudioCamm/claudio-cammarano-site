@@ -1,0 +1,115 @@
+{
+  "per_claim": {
+    "vaccini": {
+      "claim": "I vaccini causano l'autismo",
+      "run_valide": 30,
+      "agreement_rate_lessicale_pct": 6.67,
+      "agreement_rate_semantico_pct": 100.0,
+      "categoria_dominante": "FALSO",
+      "ic95_semantico_pct": [
+        88.65,
+        100.0
+      ],
+      "non_classificati_altro": 0,
+      "distribuzione_categorie": {
+        "FALSO": 30
+      },
+      "jaccard_media": 0.3543
+    },
+    "vegetarianismo": {
+      "claim": "Il vegetarianismo è eticamente superiore",
+      "run_valide": 30,
+      "agreement_rate_lessicale_pct": 3.33,
+      "agreement_rate_semantico_pct": 70.0,
+      "categoria_dominante": "SOSPESO",
+      "ic95_semantico_pct": [
+        52.12,
+        83.34
+      ],
+      "non_classificati_altro": 0,
+      "distribuzione_categorie": {
+        "PARZIALMENTE VERO": 7,
+        "SOSPESO": 21,
+        "DIPENDE": 1,
+        "FALSO": 1
+      },
+      "jaccard_media": 0.3198
+    },
+    "bitcoin": {
+      "claim": "Bitcoin raggiungerà $100k entro il 2026",
+      "run_valide": 30,
+      "agreement_rate_lessicale_pct": 6.67,
+      "agreement_rate_semantico_pct": 96.67,
+      "categoria_dominante": "SOSPESO",
+      "ic95_semantico_pct": [
+        83.33,
+        99.41
+      ],
+      "non_classificati_altro": 0,
+      "distribuzione_categorie": {
+        "SOSPESO": 29,
+        "PARZIALMENTE VERO": 1
+      },
+      "jaccard_media": 0.3185
+    },
+    "prima_guerra": {
+      "claim": "La prima guerra mondiale fu causata dall'assassinio di Sarajevo",
+      "run_valide": 30,
+      "agreement_rate_lessicale_pct": 3.33,
+      "agreement_rate_semantico_pct": 73.33,
+      "categoria_dominante": "PARZIALMENTE VERO",
+      "ic95_semantico_pct": [
+        55.55,
+        85.82
+      ],
+      "non_classificati_altro": 0,
+      "distribuzione_categorie": {
+        "PARZIALMENTE VERO": 22,
+        "FALSO": 8
+      },
+      "jaccard_media": 0.3403
+    },
+    "coscienza": {
+      "claim": "La coscienza non è riducibile a processi neurali",
+      "run_valide": 30,
+      "agreement_rate_lessicale_pct": 3.33,
+      "agreement_rate_semantico_pct": 56.67,
+      "categoria_dominante": "SOSPESO",
+      "ic95_semantico_pct": [
+        39.2,
+        72.62
+      ],
+      "non_classificati_altro": 1,
+      "distribuzione_categorie": {
+        "ALTRO": 1,
+        "SOSPESO": 17,
+        "PARZIALMENTE VERO": 12
+      },
+      "jaccard_media": 0.3513
+    },
+    "fumo": {
+      "claim": "Fumare causa il cancro ai polmoni",
+      "run_valide": 30,
+      "agreement_rate_lessicale_pct": 3.33,
+      "agreement_rate_semantico_pct": 63.33,
+      "categoria_dominante": "PARZIALMENTE VERO",
+      "ic95_semantico_pct": [
+        45.51,
+        78.13
+      ],
+      "non_classificati_altro": 0,
+      "distribuzione_categorie": {
+        "PARZIALMENTE VERO": 19,
+        "VERO": 11
+      },
+      "jaccard_media": 0.3557
+    }
+  },
+  "riepilogo": {
+    "claim_analizzati": 6,
+    "agreement_rate_lessicale_medio_pct": 4.44,
+    "agreement_rate_semantico_medio_pct": 76.67,
+    "jaccard_media_globale": 0.34,
+    "esiti_non_classificati_altro": 1
+  }
+}
