@@ -26,6 +26,10 @@ documents:
   - file: "campione_cieco_18.md"
     label: "Blind spot-validation packet — 18 outputs, labels stripped"
     version: "July 2026"
+  - file: "08_epistemologia_ai_bibliografia_v5.bib"
+    label: "Bibliografia — Epistemologia della Conoscenza AI-Generata"
+    version: "83 fonti"
+    id: "bibliography"
 ---
 
 The whole project rests on one claim: ontology precedes epistemology. You cannot judge a statement before deciding what kind of statement it is. This week that claim turned around and pointed at the project's own measurement instrument, and I want to record what it found there, because the finding is the argument.
@@ -56,4 +60,4 @@ Which returns me to the inversion I postponed. Before you can extract a verdict 
 
 So here is the state of the facts, without a moral attached. The gap holds. The extraction rule is now declared and deposited beside the original, so both readings regenerate from the raw file. Two of the six proportions remain pending a blind coder who has not seen my answers. And the operating lesson, which I expect to keep relearning: in measuring a judgment, "how much do I agree with myself" must always be turned into "how much do I agree with someone who has not seen my answer."
 
-Documents: {% labdoc "11_2026_academic_v5.pdf" %}, {% labdoc "12_2026_backmatter_v5.pdf" %}, {% labdoc "analisi_varianza_v2.py" %}, {% labdoc "analisi_varianza_labelfirst.json" %}, and the blind packet {% labdoc "campione_cieco_18.md" %} — July 2026.
+Documents: {% labdoc "11_2026_academic_v5.pdf" %}, {% labdoc "12_2026_backmatter_v5.pdf" %}, {% labdoc "analisi_varianza_v2.py" %}, {% labdoc "analisi_varianza_labelfirst.json" %}, the blind packet {% labdoc "campione_cieco_18.md" %}, and the updated bibliography {% labdoc "08_epistemologia_ai_bibliografia_v5.bib" %} — July 2026.

@@ -15,6 +15,7 @@ documents:
   - file: "epistemologia_ai_bibliografia_definitiva.bib"
     label: "Bibliografia Definitiva — Epistemologia della Conoscenza AI-Generata"
     version: "56 fonti"
+    id: "bibliography"
 ---
 
 With the empirical core complete, the paper's theoretical architecture was finalized. The structure runs eight sections: Introduction → Related Work → Theoretical Framework → Research Design → Results → Discussion → Conclusion → References (56 entries, six appendices).
