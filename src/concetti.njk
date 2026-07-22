@@ -7,7 +7,7 @@ permalink: "/concetti/{{ concept.name | slugify }}/"
 layout: layouts/base.njk
 eleventyComputed:
   title: "{{ concept.name }}{% if concept.type %} ({{ concept.type }}){% endif %}"
-  description: "{% if concept.note %}{{ concept.note | truncate(155) }}{% else %}Articoli collegati a {{ concept.name }} — indice concettuale di claudiocammarano.com{% endif %}"
+  description: "{% if concept.note %}{{ concept.note | stripMd | truncate(155) }}{% else %}Articoli collegati a {{ concept.name }} — indice concettuale di claudiocammarano.com{% endif %}"
 ---
 
 <script type="application/ld+json">
@@ -63,7 +63,7 @@ eleventyComputed:
     <p class="concetto-citation">{{ concept.citation | safe }}</p>
     {% endif %}
     {% if concept.note %}
-    <p class="tag-page-intro">{{ concept.note }}</p>
+    <p class="tag-page-intro">{{ concept.note | mdInline | safe }}</p>
     {% endif %}
   </header>
 

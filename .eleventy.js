@@ -383,6 +383,23 @@ module.exports = function(eleventyConfig) {
     return JSON.stringify(String(str)).slice(1, -1);
   });
 
+  // Renderizza il markdown inline (corsivo *...*, apici, ecc.) contenuto nei
+  // campi testuali di conceptsIndex.js, che altrimenti stamperebbero gli
+  // asterischi letterali. Da usare con | safe. Vedi concetti.njk.
+  eleventyConfig.addFilter("mdInline", function(str) {
+    if (!str) return '';
+    return md.renderInline(String(str));
+  });
+
+  // Rimuove i marcatori markdown di enfasi (*...*, _..._) restituendo testo
+  // pulito: per meta tag, title e altri contesti che non renderizzano HTML.
+  eleventyConfig.addFilter("stripMd", function(str) {
+    if (!str) return '';
+    return String(str)
+      .replace(/\*([^*]+)\*/g, "$1")
+      .replace(/_([^_]+)_/g, "$1");
+  });
+
   // Full JSON serialization (used for the /graph-data.json output and inline data blocks)
   eleventyConfig.addFilter("toJSON", function(obj) {
     return JSON.stringify(obj);
