@@ -31,7 +31,7 @@ eleventyComputed:
       "headline": "{{ post.data.title | jsonEscape | safe }}",
       "url": "https://claudiocammarano.com{{ post.url }}",
       "datePublished": "{{ post.date | isoDate }}"{% if post.data.description %},
-      "description": "{{ post.data.description | jsonEscape | safe }}"{% endif %}
+      "description": "{{ post.data.description | stripMd | jsonEscape | safe }}"{% endif %}
     }{% if not loop.last %},{% endif %}
     {% endfor %}
   ]
@@ -99,7 +99,7 @@ eleventyComputed:
           {% if post.templateContent %}<span class="reading-time">{{ post.templateContent | readingTime }}</span>{% endif %}
         </div>
         <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
-        {% if post.data.description %}<p class="article-card-subtitle">{{ post.data.description }}</p>{% endif %}
+        {% if post.data.description %}<p class="article-card-subtitle">{{ post.data.description | mdInline | safe }}</p>{% endif %}
       </article>
       {% endif %}
     {% endfor %}
@@ -115,7 +115,7 @@ eleventyComputed:
           {% endif %}
         </div>
         <h2><a href="{{ post.data.external_url }}" target="_blank" rel="noopener">{{ post.data.title }} ↗</a></h2>
-        {% if post.data.description %}<p class="article-card-subtitle">{{ post.data.description }}</p>{% endif %}
+        {% if post.data.description %}<p class="article-card-subtitle">{{ post.data.description | mdInline | safe }}</p>{% endif %}
         {% if post.data.concepts and post.data.concepts.length %}
         <div class="concetto-chips curated-concepts">
           {% for cname in post.data.concepts %}

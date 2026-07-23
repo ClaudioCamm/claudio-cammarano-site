@@ -22,7 +22,7 @@ eleventyExcludeFromCollections: true
       <guid isPermaLink="true">https://claudiocammarano.com{{ post.url }}</guid>
       {% endif %}
       <pubDate>{{ post.date | rssDate }}</pubDate>
-      {% if post.data.description %}<description>{{ post.data.description | jsonEscape }}</description>{% endif %}
+      {% if post.data.description %}<description>{{ post.data.description | stripMd | jsonEscape }}</description>{% endif %}
       {% if post.data.source %}<source url="{{ post.data.external_url }}">{{ post.data.source }}</source>{% endif %}
     </item>
     {% endfor %}

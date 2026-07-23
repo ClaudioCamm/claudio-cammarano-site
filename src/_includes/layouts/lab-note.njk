@@ -9,7 +9,7 @@ lang: en
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "{{ title | jsonEscape | safe }}",
-  "description": "{{ description | jsonEscape | safe }}",
+  "description": "{{ description | stripMd | jsonEscape | safe }}",
   "datePublished": "{{ date | isoDate }}",
   "inLanguage": "en",
   "url": "https://claudiocammarano.com{{ page.url }}",

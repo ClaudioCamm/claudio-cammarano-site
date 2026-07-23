@@ -5,7 +5,7 @@
   non renderizza nulla — la scheda resta identica a prima.
 #}
 {% if criterioSlug and criteri[criterioSlug] %}
-<p class="curated-criterio"><span class="criterio-badge">{{ criteri[criterioSlug].label }}</span>{% if criterioPerche %} <span class="criterio-perche">{{ criterioPerche }}</span>{% endif %}</p>
+<p class="curated-criterio"><span class="criterio-badge">{{ criteri[criterioSlug].label }}</span>{% if criterioPerche %} <span class="criterio-perche">{{ criterioPerche | mdInline | safe }}</span>{% endif %}</p>
 {% endif %}
 {% set criterioSlug = null %}
 {% set criterioPerche = null %}

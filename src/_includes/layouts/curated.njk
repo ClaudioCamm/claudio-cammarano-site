@@ -7,11 +7,11 @@ layout: layouts/base.njk
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "{{ title | jsonEscape | safe }}",
-  "description": "{{ description | jsonEscape | safe }}",
+  "description": "{{ description | stripMd | jsonEscape | safe }}",
   "datePublished": "{{ date | isoDate }}",
   "inLanguage": "it",{% if criterio and criteri[criterio] %}
   "keywords": "{{ criteri[criterio].label | jsonEscape | safe }}",{% if perche %}
-  "abstract": "{{ perche | jsonEscape | safe }}",{% endif %}{% endif %}
+  "abstract": "{{ perche | stripMd | jsonEscape | safe }}",{% endif %}{% endif %}
   "url": "https://claudiocammarano.com{{ page.url }}",
   "citation": {
     "@type": "CreativeWork",
@@ -53,7 +53,7 @@ layout: layouts/base.njk
 
   <div class="article-body">
     {% if description %}
-    <p>{{ description }}</p>
+    <p>{{ description | mdInline | safe }}</p>
     {% endif %}
     {{ content | safe }}
   </div>

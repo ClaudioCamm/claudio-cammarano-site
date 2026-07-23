@@ -17,7 +17,7 @@ eleventyExcludeFromCollections: true
       <link>https://claudiocammarano.com{{ note.url }}</link>
       <guid isPermaLink="true">https://claudiocammarano.com{{ note.url }}</guid>
       <pubDate>{{ note.date | rssDate }}</pubDate>
-      {% if note.data.description %}<description>{{ note.data.description | jsonEscape }}</description>{% endif %}
+      {% if note.data.description %}<description>{{ note.data.description | stripMd | jsonEscape }}</description>{% endif %}
     </item>
     {% endfor %}
   </channel>

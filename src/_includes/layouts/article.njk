@@ -23,7 +23,7 @@ try {
     {
       "@type": "BlogPosting",
       "headline": "{{ title | jsonEscape | safe }}",
-      "description": "{{ description | jsonEscape | safe }}",
+      "description": "{{ description | stripMd | jsonEscape | safe }}",
       "datePublished": "{{ date | isoDate }}",
       "url": "https://claudiocammarano.com{{ page.url }}",
       "image": "{% if og_image %}https://claudiocammarano.com{{ og_image }}{% else %}https://claudiocammarano.com/images/og-default.png{% endif %}",
@@ -109,7 +109,7 @@ try {
     {% if series %}<p class="article-series"><a href="/serie/{{ series | seriesBaseName | slugify }}/">{{ series }}</a></p>{% endif %}
     <h1>{{ title }}</h1>
     {% if description %}
-    <p class="article-description">{{ description }}</p>
+    <p class="article-description">{{ description | mdInline | safe }}</p>
     {% endif %}
     {% if english_version %}
     <div class="article-lang-link">
@@ -365,7 +365,7 @@ try {
       {% endif %}
     </div>
     <h4 class="related-post-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h4>
-    {% if post.data.description %}<p class="related-post-description">{{ post.data.description }}</p>{% endif %}
+    {% if post.data.description %}<p class="related-post-description">{{ post.data.description | mdInline | safe }}</p>{% endif %}
   </article>
   {% endfor %}
 </section>
