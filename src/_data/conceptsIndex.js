@@ -671,7 +671,8 @@ module.exports = [
       { title: "The strange disappearance of Japan's animators", url: "/curated/2026-06-19-economist-1843-japan-animators/", _source: "curated" },
       { title: "Alex Turner appointed as Defence Editor of The Economist", url: "/curated/2026-06-19-economist-defence-editor-turner/", _source: "curated" },
       { title: "Com'è cambiata l'informazione in Italia negli ultimi 6 anni", url: "/curated/2026-06-19-mauro-informazione-italia-digital-news-report/", _source: "curated" },
-      { title: "Europe's public broadcasters go from prime time to hard-to-find", url: "/curated/2026-07-09-economist-psb-europe-hard-to-find/", _source: "curated" }
+      { title: "Europe's public broadcasters go from prime time to hard-to-find", url: "/curated/2026-07-09-economist-psb-europe-hard-to-find/", _source: "curated" },
+      { title: "Per contare devi farti amare (l'attenzione non basta più)", url: "/curated/2025-11-10-tarchetti-love-brand-editoria-nonhocapito/", _source: "curated" }
     ]
   },
   {
@@ -883,7 +884,8 @@ module.exports = [
     type: "teoria",
     note: "La strategia comunicativa di costruire l'identità di un brand attorno a un sistema di valori, non solo a una promessa funzionale o fattuale. Nel sito è il modo in cui The Economist ha risposto alla crisi di fiducia nei media: non difendere la verità come valore giornalistico (come WaPo e NYT nel 2016), ma difendere il liberalismo come sistema di valori su scala globale — con molta agiografia, ma con più resistenza strutturale.",
     articles: [
-      { title: "The history of liberalism: a timeline", url: "/curated/2026-06-25-economist-liberalism-timeline/", _source: "curated" }
+      { title: "The history of liberalism: a timeline", url: "/curated/2026-06-25-economist-liberalism-timeline/", _source: "curated" },
+      { title: "Per contare devi farti amare (l'attenzione non basta più)", url: "/curated/2025-11-10-tarchetti-love-brand-editoria-nonhocapito/", _source: "curated" }
     ]
   },
   {
@@ -1001,7 +1003,8 @@ module.exports = [
     note: "Distinzione introdotta esplicitamente dal Digital News Report 2026 per l'Italia: fino al 2025 la bassa fiducia nei media era attribuita alla partisanship dei singoli brand — testate percepite come troppo schierate. Dal 2026 il rapporto descrive un ambiente mediatico «altamente polarizzato» in cui la sfiducia non riguarda più questo o quel giornale ma il sistema dell'informazione nel suo complesso. La differenza non è solo di grado: la sfiducia brand-specifica è reversibile (basta cambiare testata o direttore); quella sistemica non lo è, perché non ha un oggetto su cui intervenire. Nel sito è il dato di sfondo che rende strutturali tutti gli altri indicatori in calo.",
     articles: [
       { title: "Com'è cambiata l'informazione in Italia negli ultimi 6 anni", url: "/curated/2026-06-19-mauro-informazione-italia-digital-news-report/", _source: "curated" },
-      { title: "Europe's public broadcasters go from prime time to hard-to-find", url: "/curated/2026-07-09-economist-psb-europe-hard-to-find/", _source: "curated" }
+      { title: "Europe's public broadcasters go from prime time to hard-to-find", url: "/curated/2026-07-09-economist-psb-europe-hard-to-find/", _source: "curated" },
+      { title: "Per contare devi farti amare (l'attenzione non basta più)", url: "/curated/2025-11-10-tarchetti-love-brand-editoria-nonhocapito/", _source: "curated" }
     ]
   },
   {
