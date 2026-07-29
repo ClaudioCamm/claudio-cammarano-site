@@ -1546,7 +1546,8 @@ module.exports = [
       { title: "La rivoluzione silenziosa della rete elettrica cinese", url: "/curated/2026-04-13-nyt-china-energy-battery-grid/", _source: "curated" },
       { title: "Cosa intende la Cina per «intelligenza artificiale»", url: "/curated/2026-06-25-pieranni-cina-intelligenza-artificiale-altriorienti/", _source: "curated" },
       { title: "IA, bulloni e umanesimo", url: "/curated/2026-06-28-pieranni-ia-bulloni-umanesimo-ilpartito/", _source: "curated" },
-      { title: "Who's Afraid of Chinese Models?", url: "/curated/2026-07-20-stratechery-chinese-models/", _source: "curated" }
+      { title: "Who's Afraid of Chinese Models?", url: "/curated/2026-07-20-stratechery-chinese-models/", _source: "curated" },
+      { title: "Chartbook 462: China shocked – beyond 1.0 and 2.0 to the 'Big One'", url: "/curated/2026-07-29-tooze-china-shock-chartbook/", _source: "curated" }
     ]
   },
   {
@@ -1681,7 +1682,24 @@ module.exports = [
     note: "Analista tecnologico americano (1984), autore di Stratechery, tra le voci più influenti sui modelli di business digitali e sull'industria tecnologica. Teorico dell'aggregazione come struttura dominante del capitalismo digitale: le piattaforme che controllano la relazione con l'utente finale catturano il valore dell'intera filiera.",
     articles: [
       { title: "Mythos, Muse, and the Opportunity Cost of Compute", url: "/curated/2026-04-13-stratechery-opportunity-cost-compute/", _source: "curated" },
-      { title: "Who's Afraid of Chinese Models?", url: "/curated/2026-07-20-stratechery-chinese-models/", _source: "curated" }
+      { title: "Who's Afraid of Chinese Models?", url: "/curated/2026-07-20-stratechery-chinese-models/", _source: "curated" },
+      { title: "Chartbook 462: China shocked – beyond 1.0 and 2.0 to the 'Big One'", url: "/curated/2026-07-29-tooze-china-shock-chartbook/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Tooze, Adam",
+    type: "persona",
+    note: "Storico economico britannico (1967), docente a Columbia. Autore di Crashed (2018) e The Wages of Destruction (2006). Fondatore di Chartbook, newsletter in cui coniuga storia economica, dati e congiuntura. Nel sito è citato per la decostruzione della sequenza «China shock 1.0 / 2.0»: il secondo non è una replica del primo ma uno shock di politica industriale consapevole — la Cina ha imparato dalla prima ondata e ora esporta tecnologia, non lavoro a basso costo.",
+    articles: [
+      { title: "Chartbook 462: China shocked – beyond 1.0 and 2.0 to the 'Big One'", url: "/curated/2026-07-29-tooze-china-shock-chartbook/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Polanyi, Karl",
+    type: "persona",
+    note: "Economista e antropologo ungherese (1886–1964), autore de La grande trasformazione (1944). Ha teorizzato il «doppio movimento»: ogni ondata di globalizzazione mercantile produce un contromovimento di resistenza sociale. Nel sito è il framework con cui Tooze legge il China Shock 1.0 — Trump e Brexit come backlash polanyiano differito all'integrazione dei mercati del lavoro asiatici — e il contrasto che rende il China Shock 2.0 «post-polanyiano»: non uno shock di globalizzazione ma di politica industriale.",
+    articles: [
+      { title: "Chartbook 462: China shocked – beyond 1.0 and 2.0 to the 'Big One'", url: "/curated/2026-07-29-tooze-china-shock-chartbook/", _source: "curated" }
     ]
   },
   {
