@@ -243,7 +243,8 @@ module.exports = [
     note: "Filosofa e scrittrice albanese, docente alla LSE. Nel sito è citata due volte: come una delle quattro filosofe che secondo Gloria Origgi hanno rifondato la filosofia politica da Parigi — ripensando il marxismo come teoria dell'emancipazione contro un liberalismo che confonde libertà formale e libertà reale — e come una delle voci che hanno suggerito il pezzo di Jonathan White sulla colonizzazione tecnologica del pensiero sul futuro.",
     articles: [
       { title: "The End of the Future", url: "/curated/2026-06-15-fp-end-of-the-future/", _source: "curated" },
-      { title: "Non più un affare da uomini. Ora il pensiero che guida è donna", url: "/curated/2026-06-21-origgi-filosofia-donne-parigi/", _source: "curated" }
+      { title: "Non più un affare da uomini. Ora il pensiero che guida è donna", url: "/curated/2026-06-21-origgi-filosofia-donne-parigi/", _source: "curated" },
+      { title: "The Meaning of Commitment", url: "/curated/2026-07-29-ypi-meaning-of-commitment-tribune/", _source: "curated" }
     ]
   },
   {
@@ -569,7 +570,8 @@ module.exports = [
     type: "teoria",
     note: "Definizione lyotardiana della condizione postmoderna (1979): la perdita di legittimità dei grandi sistemi di giustificazione (Ragione, Storia, Progresso). Nel sito è presentata come diagnosi, non come prescrizione — Lyotard descriveva un fatto, non lo celebrava. Il problema è nei suoi epigoni, che ne hanno fatto uno strumento di relativismo attivo.",
     articles: [
-      { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" }
+      { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" },
+      { title: "The Meaning of Commitment", url: "/curated/2026-07-29-ypi-meaning-of-commitment-tribune/", _source: "curated" }
     ]
   },
   {
@@ -577,7 +579,16 @@ module.exports = [
     type: "teoria",
     note: "Concetto del nuovo realismo di Ferraris: la realtà resiste agli schemi concettuali che le applichiamo. Non possiamo interpretarla arbitrariamente perché essa oppone resistenza. Nel sito è il limite esterno del processo interpretativo: senza questo vincolo non rimane libertà di interpretare, ma solo il potere di imporre la propria narrazione.",
     articles: [
-      { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" }
+      { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" },
+      { title: "The Meaning of Commitment", url: "/curated/2026-07-29-ypi-meaning-of-commitment-tribune/", _source: "curated" }
+    ]
+  },
+  {
+    name: "educazione estetica",
+    type: "teoria",
+    note: "Concetto di Friedrich Schiller (Lettere sull'educazione estetica dell'uomo, 1795): l'arte come processo collettivo di ricerca della verità, capace di orientare l'essere umano da una vita puramente sensibile verso una moralità più coltivata — non come precettistica rigida ma come capacità di abitare prospettive diverse e costruire relazioni con altri. Nel sito è il framework con cui Ypi legge la letteratura impegnata: la scrittura come mezzo per rompere il rapporto con le predazioni del presente e immaginare alternative.",
+    articles: [
+      { title: "The Meaning of Commitment", url: "/curated/2026-07-29-ypi-meaning-of-commitment-tribune/", _source: "curated" }
     ]
   },
   {
