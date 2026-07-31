@@ -401,7 +401,9 @@ module.exports = [
     note: "Denominazione (impropria) della dottrina russa della guerra ibrida: sistematizzazione delle «misure attive» sovietiche — disinformazione, amplificazione dei conflitti interni, finanziamento simultaneo di fazioni opposte. Nel sito è il modello per leggere gli attacchi alle democrazie: o la democrazia tollera il rumore e si dissolve, o lo sopprime e si nega come tale.",
     articles: [
       { title: "Il rumore a Beirut", url: "/writings/2026-04-09-il-rumore-a-beirut/" },
-      { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" }
+      { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
+      { title: "Unmasking the anonymous hosts of 'Russians With Attitude,' a pro-war podcast popular with US far right", url: "/curated/2026-04-06-hourani-russians-with-attitude-kyivindependent/", _source: "curated" },
+      { title: "Maga influencer Laura Loomer reverses course on Ukraine after Kyiv visit", url: "/curated/2026-07-24-harding-loomer-zelensky-kyiv-guardian/", _source: "curated" }
     ]
   },
   {
@@ -410,7 +412,9 @@ module.exports = [
     note: "Concetto sviluppato da Vladimir Lefebvre negli anni Sessanta e militarizzato dalla dottrina russa: la capacità di indurre un avversario a prendere «volontariamente» decisioni favorevoli ai propri obiettivi, fornendogli informazioni selettive. Nel sito è la forma cognitiva della guerra ibrida: non si attacca il canale, si manipola il contenuto semantico.",
     articles: [
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
-      { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" }
+      { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
+      { title: "Unmasking the anonymous hosts of 'Russians With Attitude,' a pro-war podcast popular with US far right", url: "/curated/2026-04-06-hourani-russians-with-attitude-kyivindependent/", _source: "curated" },
+      { title: "Maga influencer Laura Loomer reverses course on Ukraine after Kyiv visit", url: "/curated/2026-07-24-harding-loomer-zelensky-kyiv-guardian/", _source: "curated" }
     ]
   },
   {
@@ -716,7 +720,8 @@ module.exports = [
     type: "teoria",
     note: "Nel sito è collegata alla sovrapposizione crescente tra i piani dell'informazione e della difesa: la nomina di un generale britannico, ex comandante della 77 Brigade, come defence editor dell'Economist è il caso che rende visibile quanto i contenuti che ne escono sembrino sempre meno innocui — un tema che dialoga con la dottrina Gerasimov e il controllo riflessivo già trattati altrove sul sito.",
     articles: [
-      { title: "Alex Turner appointed as Defence Editor of The Economist", url: "/curated/2026-06-19-economist-defence-editor-turner/", _source: "curated" }
+      { title: "Alex Turner appointed as Defence Editor of The Economist", url: "/curated/2026-06-19-economist-defence-editor-turner/", _source: "curated" },
+      { title: "Unmasking the anonymous hosts of 'Russians With Attitude,' a pro-war podcast popular with US far right", url: "/curated/2026-04-06-hourani-russians-with-attitude-kyivindependent/", _source: "curated" }
     ]
   },
   {
@@ -1024,7 +1029,8 @@ module.exports = [
     articles: [
       { title: "Com'è cambiata l'informazione in Italia negli ultimi 6 anni", url: "/curated/2026-06-19-mauro-informazione-italia-digital-news-report/", _source: "curated" },
       { title: "Europe's public broadcasters go from prime time to hard-to-find", url: "/curated/2026-07-09-economist-psb-europe-hard-to-find/", _source: "curated" },
-      { title: "Per contare devi farti amare (l'attenzione non basta più)", url: "/curated/2025-11-10-tarchetti-love-brand-editoria-nonhocapito/", _source: "curated" }
+      { title: "Per contare devi farti amare (l'attenzione non basta più)", url: "/curated/2025-11-10-tarchetti-love-brand-editoria-nonhocapito/", _source: "curated" },
+      { title: "Unmasking the anonymous hosts of 'Russians With Attitude,' a pro-war podcast popular with US far right", url: "/curated/2026-04-06-hourani-russians-with-attitude-kyivindependent/", _source: "curated" }
     ]
   },
   {
@@ -1638,9 +1644,10 @@ module.exports = [
   {
     name: "Zelensky, Volodymyr",
     type: "persona",
-    note: "Presidente ucraino (1978). Nel sito è studiato come caso di trasformazione radicale del profilo strategico: outsider comunicativo con basso fattore δ pre-2022, ha cambiato completamente struttura strategica dopo l'invasione russa. Caso limite nella teoria dei two-level games: win-set domestico compresso, win-set internazionale massimizzato.",
+    note: "Presidente ucraino (1978). Nel sito è studiato come caso di trasformazione radicale del profilo strategico: outsider comunicativo con basso fattore δ pre-2022, ha cambiato completamente struttura strategica dopo l'invasione russa. Caso limite nella teoria dei two-level games: win-set domestico compresso, win-set internazionale massimizzato. Anche protagonista di una strategia di comunicazione che usa deliberatamente gli influencer MAGA come vettori per raggiungere pubblici inaccessibili ai media tradizionali.",
     articles: [
-      { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" }
+      { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
+      { title: "Maga influencer Laura Loomer reverses course on Ukraine after Kyiv visit", url: "/curated/2026-07-24-harding-loomer-zelensky-kyiv-guardian/", _source: "curated" }
     ]
   },
   {
@@ -1725,7 +1732,7 @@ module.exports = [
   {
     name: "Lepore, Jill",
     type: "persona",
-    note: "Storica e scrittrice americana (1966), staff writer del New Yorker e professoressa a Harvard. Tra le voci più acute nella critica storica alla Silicon Valley e alla mitologia del progresso tecnologico. Nel sito è citata per la lettura dell'enciclica *Magnifica Humanitas* di Leo XIV: il Papa come primo a nominare il «paradigma tecnocratico» con l'autorità spirituale di un quinto della popolazione mondiale, in una genealogia critica che risale ad Arendt e Mumford.",
+    note: "Storica e scrittrice americana (1966), staff writer del New Yorker e professoressa a Harvard. Autrice di *These Truths: A History of the United States* (2018), storia degli Stati Uniti costruita attorno all'idea che le verità fondanti — uguaglianza, diritti, sovranità popolare — non siano astrazioni ma oggetti concreti con effetti concreti nella vita delle persone: un'impostazione storiografica in piena sintonia con il filo teorico del sito. Tra le voci più acute nella critica storica alla Silicon Valley e alla mitologia del progresso tecnologico. Nel sito è citata per la lettura dell'enciclica *Magnifica Humanitas* di Leo XIV: il Papa come prima autorità spirituale a nominare il «paradigma tecnocratico», in una genealogia critica che risale ad Arendt e Mumford.",
     articles: [
       { title: "What the Pope Said About A.I.", url: "/curated/2026-05-27-lepore-pope-leo-ai-newyorker/", _source: "curated" }
     ]
