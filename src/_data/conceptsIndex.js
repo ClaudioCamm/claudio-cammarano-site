@@ -535,7 +535,8 @@ module.exports = [
       { title: "Tokenmaxxing: come gli agenti AI bruciano token", url: "/curated/2026-04-09-tokenmaxxing-ai-agents/", _source: "curated" },
       { title: "Ho fatto un esperimento: l'AI sa raccontare femminicidi e violenza di genere meglio dei giornalisti", url: "/curated/2026-05-05-dondi-ai-femminicidi-giornalismo/", _source: "curated" },
       { title: "Natural Language Autoencoders Produce Unsupervised Explanations of LLM Activations", url: "/curated/2026-05-07-anthropic-nla-activations/", _source: "curated" },
-      { title: "Humans vs. Bots — Who Does the Em Dash Better?", url: "/curated/2026-06-10-nyt-em-dash-ai/", _source: "curated" }
+      { title: "Humans vs. Bots — Who Does the Em Dash Better?", url: "/curated/2026-06-10-nyt-em-dash-ai/", _source: "curated" },
+      { title: "How to spot AI writing", url: "/curated/2026-07-30-economist-ai-writing-detection/", _source: "curated" }
     ]
   },
   {
@@ -548,7 +549,8 @@ module.exports = [
       { title: "Why Are Humanists So Bad at Defending the Humanities?", url: "/curated/2026-06-15-pinillos-humanists-humanities-chronicle/", _source: "curated" },
       { title: "From weeks of work to days: How I rebuilt two data journalism projects with AI", url: "/curated/2026-06-26-ottaviani-data-journalism-ai-reuters/", _source: "curated" },
       { title: "Claude Code for writers", url: "/curated/2026-01-15-newton-claude-code-writers-platformer/", _source: "curated" },
-      { title: "The People Who Will Thrive in the AI Age", url: "/curated/2026-06-28-brooks-people-thrive-ai-age-atlantic/", _source: "curated" }
+      { title: "The People Who Will Thrive in the AI Age", url: "/curated/2026-06-28-brooks-people-thrive-ai-age-atlantic/", _source: "curated" },
+      { title: "How to spot AI writing", url: "/curated/2026-07-30-economist-ai-writing-detection/", _source: "curated" }
     ]
   },
   {
