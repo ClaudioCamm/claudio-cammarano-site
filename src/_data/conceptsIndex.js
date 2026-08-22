@@ -341,7 +341,11 @@ module.exports = [
       { title: "L'ombra del futuro", url: "/writings/2026-04-15-lombra-del-futuro/" },
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
       { title: "L'infrastruttura del sapere", url: "/writings/2026-07-07-linfrastruttura-del-sapere/" },
-      { title: "Fareed Zakaria on the Moral Cost of Trump's War", url: "/curated/2026-04-10-zakaria-trump-iran-war-nyt/", _source: "curated" }
+      { title: "Fareed Zakaria on the Moral Cost of Trump's War", url: "/curated/2026-04-10-zakaria-trump-iran-war-nyt/", _source: "curated" },
+      { title: "The Future, Made in China", url: "/curated/2026-08-03-osnos-future-made-china-newyorker/", _source: "curated" },
+      { title: "Why people over the age of 55 are the new problem generation", url: "/curated/2025-01-02-economist-boomers-problem-generation/", _source: "curated" },
+      { title: "Thucydides the perspicacious", url: "/curated/2026-08-03-polansky-schillinger-thucydides-aeon/", _source: "curated" },
+      { title: "Taking Taiwan's democracy hostage", url: "/curated/2026-08-11-economist-taiwan-democracy-hostage/", _source: "curated" }
     ]
   },
   {
@@ -360,7 +364,8 @@ module.exports = [
     articles: [
       { title: "L'ombra del futuro", url: "/writings/2026-04-15-lombra-del-futuro/" },
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
-      { title: "L'infrastruttura del sapere", url: "/writings/2026-07-07-linfrastruttura-del-sapere/" }
+      { title: "L'infrastruttura del sapere", url: "/writings/2026-07-07-linfrastruttura-del-sapere/" },
+      { title: "The 'Manosphere' Isn't a Movement. It's a Multibillion-Dollar Grievance Industry", url: "/curated/2026-08-07-klee-manosphere-grift-economy-wired/", _source: "curated" }
     ]
   },
   {
@@ -376,7 +381,9 @@ module.exports = [
     type: "teoria",
     note: "Modello di Putnam (1988): ogni negoziazione internazionale è in realtà due giochi simultanei — uno sul tavolo estero, uno domestico. Il leader deve chiudere un accordo ratificabile dalla propria constituency. Nel sito è applicato ai casi Trump/Zelensky/Xi per mostrare come la struttura interna vincola la politica estera.",
     articles: [
-      { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" }
+      { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
+      { title: "Giorgia Meloni Cuts the Hard Right a Path to Power", url: "/curated/2026-08-21-cohen-meloni-nyt/", _source: "curated" },
+      { title: "Taking Taiwan's democracy hostage", url: "/curated/2026-08-11-economist-taiwan-democracy-hostage/", _source: "curated" }
     ]
   },
   {
@@ -403,7 +410,9 @@ module.exports = [
       { title: "Il rumore a Beirut", url: "/writings/2026-04-09-il-rumore-a-beirut/" },
       { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
       { title: "Unmasking the anonymous hosts of 'Russians With Attitude,' a pro-war podcast popular with US far right", url: "/curated/2026-04-06-hourani-russians-with-attitude-kyivindependent/", _source: "curated" },
-      { title: "Maga influencer Laura Loomer reverses course on Ukraine after Kyiv visit", url: "/curated/2026-07-24-harding-loomer-zelensky-kyiv-guardian/", _source: "curated" }
+      { title: "Maga influencer Laura Loomer reverses course on Ukraine after Kyiv visit", url: "/curated/2026-07-24-harding-loomer-zelensky-kyiv-guardian/", _source: "curated" },
+      { title: "The 'Manosphere' Isn't a Movement. It's a Multibillion-Dollar Grievance Industry", url: "/curated/2026-08-07-klee-manosphere-grift-economy-wired/", _source: "curated" },
+      { title: "Taking Taiwan's democracy hostage", url: "/curated/2026-08-11-economist-taiwan-democracy-hostage/", _source: "curated" }
     ]
   },
   {
@@ -414,7 +423,8 @@ module.exports = [
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
       { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
       { title: "Unmasking the anonymous hosts of 'Russians With Attitude,' a pro-war podcast popular with US far right", url: "/curated/2026-04-06-hourani-russians-with-attitude-kyivindependent/", _source: "curated" },
-      { title: "Maga influencer Laura Loomer reverses course on Ukraine after Kyiv visit", url: "/curated/2026-07-24-harding-loomer-zelensky-kyiv-guardian/", _source: "curated" }
+      { title: "Maga influencer Laura Loomer reverses course on Ukraine after Kyiv visit", url: "/curated/2026-07-24-harding-loomer-zelensky-kyiv-guardian/", _source: "curated" },
+      { title: "The 'Manosphere' Isn't a Movement. It's a Multibillion-Dollar Grievance Industry", url: "/curated/2026-08-07-klee-manosphere-grift-economy-wired/", _source: "curated" }
     ]
   },
   {
@@ -438,7 +448,11 @@ module.exports = [
     type: "teoria",
     note: "Termine introdotto da Papa Francesco in *Laudato Si'* (2015) e ripreso da Leo XIV in *Magnifica Humanitas* (2026): la tendenza a lasciare che logica di efficienza, controllo e profitto orientino da soli le decisioni personali, sociali ed economiche, svuotando ogni considerazione etica o antropologica. Nel sito è il bersaglio principale dell'enciclica sull'AI: non la tecnologia in sé ma il sistema di valori che la sviluppa e la governa.",
     articles: [
-      { title: "What the Pope Said About A.I.", url: "/curated/2026-05-27-lepore-pope-leo-ai-newyorker/", _source: "curated" }
+      { title: "What the Pope Said About A.I.", url: "/curated/2026-05-27-lepore-pope-leo-ai-newyorker/", _source: "curated" },
+      { title: "The Future, Made in China", url: "/curated/2026-08-03-osnos-future-made-china-newyorker/", _source: "curated" },
+      { title: "The Voice of Google", url: "/curated/2026-07-18-stapleton-voice-of-google-newyorker/", _source: "curated" },
+      { title: "AI isn't the Manhattan Project — it's Jurassic Park", url: "/curated/2026-08-11-graff-jurassic-park-ai-doomsdayscenario/", _source: "curated" },
+      { title: "An AI for Africa would be built on Hunhu/Ubuntu ethics", url: "/curated/2026-08-04-mangena-hunhu-ubuntu-ai-aeon/", _source: "curated" }
     ]
   },
   {
@@ -459,7 +473,9 @@ module.exports = [
     type: "teoria",
     note: "Paradosso sulla governance tecnologica: una tecnologia è controllabile quando non la capiamo ancora abbastanza da sapere cosa farne; quando la comprendiamo è già così radicata che il controllo è praticabile solo in forma di esenzione parziale. Nel sito spiega strutturalmente perché la classificazione dual use è sempre obsoleta quando diventa applicabile.",
     articles: [
-      { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" }
+      { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
+      { title: "What If We Can Never Trust A.I.?", url: "/curated/2026-08-01-rothman-trust-ai-newyorker/", _source: "curated" },
+      { title: "AI isn't the Manhattan Project — it's Jurassic Park", url: "/curated/2026-08-11-graff-jurassic-park-ai-doomsdayscenario/", _source: "curated" }
     ]
   },
   {
@@ -472,7 +488,9 @@ module.exports = [
       { title: "2025 AI and Semiconductor Outlook", url: "/curated/2025-01-01-fabricated-knowledge-ai-semiconductor-outlook/", _source: "curated" },
       { title: "The death of strategy (and what comes next)", url: "/curated/2026-05-20-smith-death-of-strategy/", _source: "curated" },
       { title: "IA, bulloni e umanesimo", url: "/curated/2026-06-28-pieranni-ia-bulloni-umanesimo-ilpartito/", _source: "curated" },
-      { title: "The State of the AI Economy", url: "/curated/2026-06-25-azhar-state-ai-economy-exponentialview/", _source: "curated" }
+      { title: "The State of the AI Economy", url: "/curated/2026-06-25-azhar-state-ai-economy-exponentialview/", _source: "curated" },
+      { title: "The Future, Made in China", url: "/curated/2026-08-03-osnos-future-made-china-newyorker/", _source: "curated" },
+      { title: "What Are Companies Getting for All That A.I. Spending?", url: "/curated/2026-08-03-depillis-tokenomics-nyt/", _source: "curated" }
     ]
   },
   {
@@ -488,7 +506,8 @@ module.exports = [
     type: "teoria",
     note: "Acronimo (Western, Educated, Industrialized, Rich, Democratic) coniato dagli psicologi Henrich, Heine e Norenzayan (2010) per descrivere il campione implicito della ricerca scientifica e del design tecnologico. La stragrande maggioranza degli studi psicologici, cognitivi e medici — e degli strumenti digitali — è progettata per e testata su popolazioni WEIRD, che rappresentano meno del 15% dell'umanità. Nel sito è il concetto che mette in questione il presupposto implicito dell'infrastruttura cognitiva: chi è l'utente che immaginiamo?",
     articles: [
-      { title: "How dementia is being defeated", url: "/curated/2026-07-09-economist-dementia-defeated/", _source: "curated" }
+      { title: "How dementia is being defeated", url: "/curated/2026-07-09-economist-dementia-defeated/", _source: "curated" },
+      { title: "An AI for Africa would be built on Hunhu/Ubuntu ethics", url: "/curated/2026-08-04-mangena-hunhu-ubuntu-ai-aeon/", _source: "curated" }
     ]
   },
   {
@@ -504,7 +523,8 @@ module.exports = [
     type: "teoria",
     note: "Tesi filosofica di Clark e Chalmers (1998): la mente non finisce dove finisce il cranio. Gli strumenti cognitivi usati regolarmente fanno parte funzionalmente della mente del soggetto. Nel sito è usata per inquadrare il rapporto con i LLM: la domanda non è se il LLM «pensa», ma come modifica la struttura cognitiva di chi lo usa.",
     articles: [
-      { title: "La differenza fra Claude e le mie gatte", url: "/writings/2026-04-30-la-differenza-fra-claude-e-le-mie-gatte/" }
+      { title: "La differenza fra Claude e le mie gatte", url: "/writings/2026-04-30-la-differenza-fra-claude-e-le-mie-gatte/" },
+      { title: "The mind does not exist", url: "/curated/2021-08-30-gough-no-mind-aeon/", _source: "curated" }
     ]
   },
   {
@@ -512,7 +532,21 @@ module.exports = [
     type: "teoria",
     note: "Paradigma cognitivo e filosofico secondo cui la cognizione è radicata nella struttura corporea del soggetto e nella sua interazione con l'ambiente, contro il cognitivismo classico (mente come software su hardware). Nel sito è il criterio per distinguere la mente biologica dal LLM: senza corpo non si dà cogito nel senso pieno.",
     articles: [
-      { title: "La differenza fra Claude e le mie gatte", url: "/writings/2026-04-30-la-differenza-fra-claude-e-le-mie-gatte/" }
+      { title: "La differenza fra Claude e le mie gatte", url: "/writings/2026-04-30-la-differenza-fra-claude-e-le-mie-gatte/" },
+      { title: "The mind does not exist", url: "/curated/2021-08-30-gough-no-mind-aeon/", _source: "curated" }
+    ]
+  },
+  {
+    name: "scrittura",
+    type: "teoria",
+    note: "La scrittura come atto cognitivo, non solo comunicativo, è uno dei fili tematici più sottili e costanti del sito. Il dibattito sull'AI vi entra da angolazioni diverse: come rivelatore — il tratto stilistico è segnale di origine, e l'em dash è il caso emblematico; come strumento — chi usa Claude Code non smette di scrivere, cambia il rapporto con la struttura del testo; come rischio — Stephens sostiene che delegare la scrittura all'AI significhi delegare l'articolazione del pensiero. Il fondamento teorico comune è il capitale semantico: la pratica della scrittura ordinaria è la stessa riserva cognitiva che si attiva nella scrittura che conta.",
+    articles: [
+      { title: "Claude Code for writers", url: "/curated/2026-01-15-newton-claude-code-writers-platformer/", _source: "curated" },
+      { title: "Humans vs. Bots — Who Does the Em Dash Better?", url: "/curated/2026-06-10-nyt-em-dash-ai/", _source: "curated" },
+      { title: "How to spot AI writing", url: "/curated/2026-07-30-economist-ai-writing-detection/", _source: "curated" },
+      { title: "I'm Begging You: Never Write With A.I.", url: "/curated/2026-08-04-stephens-never-write-ai-nyt/", _source: "curated" },
+      { title: "If You're Over 40, You're Ready to Use A.I.", url: "/curated/2026-07-27-millman-kabbalah-ai-nyt/", _source: "curated" },
+      { title: "AI Has Plunged the Book Publishing Industry Into Utter Chaos", url: "/curated/2026-08-17-silman-ai-publishing-chaos-wsj/", _source: "curated" }
     ]
   },
   {
@@ -526,7 +560,7 @@ module.exports = [
   {
     name: "LLM come attante zero",
     type: "teoria",
-    note: "Concetto elaborato nel sito a partire dall'Actor-Network Theory: un LLM non ha esistenza pre-attanziale neanche residuale. Quando non è usato vale zero; quando è usato prende la forma dell'utente. Diverso da qualsiasi altro artefatto tecnico, che mantiene almeno un'ontologia residuale: è un attante che esiste solo nell'atto.",
+    note: "Concetto elaborato nel sito a partire dall'Actor-Network Theory: un LLM non ha esistenza pre-attanziale neanche residuale. Quando non è usato vale zero; quando è usato prende la forma dell'utente. Diverso da qualsiasi altro artefatto tecnico, che mantiene almeno un'ontologia residuale: è un attante che esiste solo nell'atto. Il concetto va però qualificato per dominio: «attante zero» vale pienamente nei contesti in cui le variabili rilevanti includono conoscenza tacita, embodied o contestuale che resiste alla formalizzazione — una gara di sci, una trattativa, un giudizio estetico situato. Si indebolisce nei domini in cui lo spazio del problema è interamente formalizzabile, per quanto vastissimo: Go, matematica formale, codice. In questi domini l'AI può accumulare peso come agente autonomo — non per semplicità del dominio, ma per formalizzabilità completa del feedback. Il caso limite è la dimostrazione matematica: sembra richiedere creatività (un salto euristico), ma la validità è verificabile meccanicamente — il che la rende un dominio in cui l'AI può operare con crescente indipendenza dall'utente.",
     articles: [
       { title: "La differenza fra Claude e le mie gatte", url: "/writings/2026-04-30-la-differenza-fra-claude-e-le-mie-gatte/" },
       { title: "La macchina e la lotta", url: "/writings/2026-06-01-la-macchina-e-la-lotta/" },
@@ -536,7 +570,12 @@ module.exports = [
       { title: "Ho fatto un esperimento: l'AI sa raccontare femminicidi e violenza di genere meglio dei giornalisti", url: "/curated/2026-05-05-dondi-ai-femminicidi-giornalismo/", _source: "curated" },
       { title: "Natural Language Autoencoders Produce Unsupervised Explanations of LLM Activations", url: "/curated/2026-05-07-anthropic-nla-activations/", _source: "curated" },
       { title: "Humans vs. Bots — Who Does the Em Dash Better?", url: "/curated/2026-06-10-nyt-em-dash-ai/", _source: "curated" },
-      { title: "How to spot AI writing", url: "/curated/2026-07-30-economist-ai-writing-detection/", _source: "curated" }
+      { title: "How to spot AI writing", url: "/curated/2026-07-30-economist-ai-writing-detection/", _source: "curated" },
+      { title: "What Are Companies Getting for All That A.I. Spending?", url: "/curated/2026-08-03-depillis-tokenomics-nyt/", _source: "curated" },
+      { title: "What If We Can Never Trust A.I.?", url: "/curated/2026-08-01-rothman-trust-ai-newyorker/", _source: "curated" },
+      { title: "The mind does not exist", url: "/curated/2021-08-30-gough-no-mind-aeon/", _source: "curated" },
+      { title: "A linkless internet", url: "/curated/2024-12-06-jennings-linkless-internet-aeon/", _source: "curated" },
+      { title: "Learning more about Claude's mathematical capabilities", url: "/curated/2026-08-10-anthropic-riemann-zeta-claude/", _source: "curated" }
     ]
   },
   {
@@ -550,7 +589,11 @@ module.exports = [
       { title: "From weeks of work to days: How I rebuilt two data journalism projects with AI", url: "/curated/2026-06-26-ottaviani-data-journalism-ai-reuters/", _source: "curated" },
       { title: "Claude Code for writers", url: "/curated/2026-01-15-newton-claude-code-writers-platformer/", _source: "curated" },
       { title: "The People Who Will Thrive in the AI Age", url: "/curated/2026-06-28-brooks-people-thrive-ai-age-atlantic/", _source: "curated" },
-      { title: "How to spot AI writing", url: "/curated/2026-07-30-economist-ai-writing-detection/", _source: "curated" }
+      { title: "How to spot AI writing", url: "/curated/2026-07-30-economist-ai-writing-detection/", _source: "curated" },
+      { title: "What Are Companies Getting for All That A.I. Spending?", url: "/curated/2026-08-03-depillis-tokenomics-nyt/", _source: "curated" },
+      { title: "A linkless internet", url: "/curated/2024-12-06-jennings-linkless-internet-aeon/", _source: "curated" },
+      { title: "I'm Begging You: Never Write With A.I.", url: "/curated/2026-08-04-stephens-never-write-ai-nyt/", _source: "curated" },
+      { title: "If You're Over 40, You're Ready to Use A.I.", url: "/curated/2026-07-27-millman-kabbalah-ai-nyt/", _source: "curated" }
     ]
   },
   {
@@ -756,6 +799,19 @@ module.exports = [
     note: "La dinamica per cui un bene o servizio che era differenziato diventa fungibile e il vantaggio competitivo si sposta sul costo marginale di produzione. Nel sito è la lente con cui Thompson legge la competizione sui modelli AI: il token non è la merce giusta, lo è l'intelligenza (output corretto per unità di costo). Chi ha il costo marginale più basso vince; chi non riesce a coprire i costi fissi esce. La strategia cinese di pubblicare i pesi è letta come 'commoditize your complements': aprire l'AI riduce il vantaggio americano nel software e accelera il vantaggio cinese nel mondo fisico.",
     articles: [
       { title: "Who's Afraid of Chinese Models?", url: "/curated/2026-07-20-stratechery-chinese-models/", _source: "curated" }
+    ]
+  },
+  {
+    name: "marketing",
+    type: "teoria",
+    note: "Disciplina con vocazione scientifica il cui livello di scientificità dipende dalla capacità di costruire modelli misurabili — capacità non sempre realizzabile data la complessità dei comportamenti umani. Kotler ne ha fissato i fondamentali: il marketing non è comunicazione né vendita, è la gestione sistematica dello scambio di valore tra un'organizzazione e il suo mercato. Il punto di partenza è sempre il bisogno — non quello che il produttore vuole soddisfare, ma quello che esiste nel mercato — e l'obiettivo è creare, comunicare e distribuire valore in modo che lo scambio sia mutuamente vantaggioso e verificabile. Nella visione kotleriana, dominante almeno fino ai primi due decenni del XXI secolo, il marketing era il software culturale dell'economia di mercato e della globalizzazione: era insomma il sistema di valori, pratiche e narrazioni che rinforzava il funzionamento dei mercati su scala planetaria, costruendo fiducia, codificando preferenze, orientando la domanda. I manuali del tempo — Kotler per primo e meglio degli altri — enfatizzavano questo ruolo quasi civilizzatore, fino a quasi costruire una prospettiva ideologica specifica, orientata al macro, che rischiava di confondere i piani (il fine del marketing è la «creazione di valore» tout court: non può e non deve farsi carico di dinamiche macro a esse superiori). Come la medicina e l'architettura — discipline teoricamente ricche e praticamente pregnanti — il marketing ha una struttura tripartita. Al livello «politico» c'è il lavoro sul concetto: chi siamo, quale valore creiamo nel mondo, cosa vogliamo essere — l'arte di trasformare idee in azioni, sede della definizione degli obiettivi e del posizionamento. Al livello «strategico» il marketing connette mezzi e fini: segmentazione, targeting, architettura dei canali, marketing mix — sede del marketing strategico autentico, non delle chiacchiere tattiche da social media. Al livello «operativo», infine, si esegue: campagne, contenuti, misurazione. Senza questo nulla accade; ma senza i due livelli superiori si producono smanettoni, avventurieri e figure improvvisate. La moralità del marketing — e qui la struttura dell'argomento richiama quella con cui la teologia occidentale ha pensato la guerra giusta — è determinata principalmente dal fine cercato: la modalità di esecuzione ha la sua rilevanza morale autonoma, ma secondaria rispetto all'obiettivo. La sfida aperta è capire come cambia la disciplina — o almeno la sua auto-narrazione — in un contesto di apparente de-globalizzazione: se il marketing era il software culturale di un ordine economico mondiale integrato, cosa diventa quando quell'ordine si frammenta?",
+    articles: [
+      { title: "Per contare devi farti amare (l'attenzione non basta più)", url: "/curated/2025-11-10-tarchetti-love-brand-editoria-nonhocapito/", _source: "curated" },
+      { title: "Le tre IA del Netcomm Forum", url: "/curated/2026-05-21-diegoli-tre-ia-netcomm-forum/", _source: "curated" },
+      { title: "David Droga on AI and the end of 'mediocre' human-made ads", url: "/curated/2026-06-21-droga-ai-mediocre-ads/", _source: "curated" },
+      { title: "GS1 Web Vocabulary: il dizionario universale che dà voce ai prodotti nel web 3.0", url: "/curated/2026-02-05-giulieri-gs1-web-vocabulary/", _source: "curated" },
+      { title: "The 'Manosphere' Isn't a Movement. It's a Multibillion-Dollar Grievance Industry", url: "/curated/2026-08-07-klee-manosphere-grift-economy-wired/", _source: "curated" },
+      { title: "The Voice of Google", url: "/curated/2026-07-18-stapleton-voice-of-google-newyorker/", _source: "curated" }
     ]
   },
   {
@@ -1124,6 +1180,50 @@ module.exports = [
     note: "Forma narrativa in cui il lettore-giocatore partecipa attivamente alla costruzione della storia attraverso scelte, enigmi o movimenti nello spazio. Nel sito è il concetto-ombrello che copre l'evoluzione dall'avventura grafica classica (punta e clicca, anni '80-'90) alle forme contemporanee: story-driven games (Telltale, Quantic Dream), walking simulator (*Dear Esther*, *Phoenix Springs*), serie animate interattive (*Dispatch*). Il punto teorico rilevante è che la narrazione interattiva ha progressivamente separato le due componenti originarie dell'adventure game — gli enigmi e la storia — privilegiando la seconda.",
     articles: [
       { title: "Una lunga avventura: storia degli adventure game", url: "/curated/2026-06-11-machera-adventure-game-linkideeperlatv/", _source: "curated" }
+    ]
+  },
+
+  {
+    name: "industrie creative",
+    type: "teoria",
+    note: "Termine dell'economia della cultura che indica i settori in cui la produzione artistica e culturale si combina con logiche di sfruttamento commerciale: editoria, cinema, televisione, videogiochi, musica, merchandise. Nel sito funziona come lente strutturale — non per classificare contenuti ma per osservare le trasformazioni dell'industria che li produce e distribuisce: come le piattaforme (BookTok, algoritmi di raccomandazione) hanno ridisegnato la scoperta e invertito il potere negoziale tra autori indie e editori tradizionali; come i fandom si sono trasformati da audience passive in ecosistemi economici con merch, retreat ed eventi; come la logica dell'IP spinge ogni successo editoriale o videoludico verso l'adattamento cinematografico, spesso con risultati deludenti; come i capitali sovrani (Arabia Saudita) e il private equity entrano come acquirenti di infrastrutture culturali. Il filo comune non è il contenuto delle opere ma la struttura economica e distributiva che le produce, le fa circolare e le monetizza.",
+    articles: [
+      { title: "The Steamy, Magical and Now Very Lucrative Romantasy Business", url: "/curated/2026-08-12-miller-muller-romantasy-bloomberg/", _source: "curated" },
+      { title: "The dark underbelly of \"Paw Patrol\"", url: "/curated/2026-08-07-economist-paw-patrol-dark-underbelly/", _source: "curated" },
+      { title: "L'Arabia Saudita si sta comprando l'industria dei videogiochi. Ecco come", url: "/curated/2026-08-12-lupetti-arabia-saudita-videogiochi-artribune/", _source: "curated" },
+      { title: "Si stava meglio quando c'erano i video musicali", url: "/curated/2026-06-10-peroni-video-musicali-crisi-rivistastudio/", _source: "curated" },
+      { title: "AI Has Plunged the Book Publishing Industry Into Utter Chaos", url: "/curated/2026-08-17-silman-ai-publishing-chaos-wsj/", _source: "curated" }
+    ]
+  },
+
+  {
+    name: "Hunhu/Ubuntu",
+    type: "teoria",
+    note: "Tradizione morale dominante dell'Africa subsahariana, espressa nel proverbio Nguni/Shona *Umuntu ngumuntu ngabantu*: una persona è una persona attraverso le altre persone. Conosciuta come *Hunhu* nelle comunità Shona di Zimbabwe e Zambia, come *Ubuntu* nelle lingue Nguni del Sudafrica. La formulazione classica è di John S. Mbiti: «I am because we are; since we are, therefore I am». In questo framework la personhood non è qualcosa con cui si nasce ma un divenire relazionale — si acquisisce attraverso il gruppo, il dialogo, l'esperienza e la spiritualità. Il *dare* (corte comunitaria) è il luogo dell'agency collettiva: non un vincolo alla libertà individuale ma la sua massima espressione. Nel sito entra come strumento critico dell'AI: l'architettura dei sistemi AI — motori di raccomandazione, algoritmi di personalizzazione, framework etici di governance — presuppone un modello di persona come unità atomica sovrana (Kant, Mill, Locke) che collide con Hunhu/Ubuntu su punti precisi: nessun *dare* nelle decisioni algoritmiche sul credito, la privacy come diritto individuale vs. informazione che appartiene al clan, le ambizioni illimitate dell'AI vs. la concezione dell'uomo come steward di un ordine cosmologico.",
+    articles: [
+      { title: "An AI for Africa would be built on Hunhu/Ubuntu ethics", url: "/curated/2026-08-04-mangena-hunhu-ubuntu-ai-aeon/", _source: "curated" }
+    ]
+  },
+
+  {
+    name: "metamodernismo",
+    type: "teoria",
+    note: "Sensibilità culturale e framework teorico elaborato da Timotheus Vermeulen e Robin van den Akker nel saggio «Notes on Metamodernism» (2010, Journal of Aesthetics & Culture), poi sviluppato da Greg Dember e altri. Emerge dalla fine degli anni Novanta come reazione al doppio esaurimento del modernismo (riduzionismo scientifico) e del postmodernismo (svuotamento del senso attraverso ironica distanza). La motivazione centrale, nella formulazione di Dember, è proteggere l'esperienza vissuta (felt experience) — la soggettività interiore, l'earnestness, la vulnerabilità — senza rigettare la consapevolezza ironica acquisita dal postmodernismo. Nel sito è un'antenna utile per leggere una certa qualità della cultura contemporanea: la capacità di essere sinceri e ironici insieme, di oscillare tra modernista convinzione e postmoderna relativizzazione senza rimanere paralizzati in nessuna delle due posizioni.",
+    articles: [
+      { title: "After Postmodernism: Eleven Metamodern Methods in the Arts", url: "/curated/2018-04-17-dember-metamodern-methods-medium/", _source: "curated" }
+    ]
+  },
+
+  // ─── LUOGHI ───────────────────────────────────────────────────────────────
+
+  {
+    name: "Taiwan",
+    type: "luogo",
+    note: "Isola di 23 milioni di abitanti, democrazia multipartitica dal 1996, produttore di oltre il 90% dei chip avanzati globali. Nel sito è un nodo geopolitico complesso: la sua democrazia non è solo un sistema politico ma un deterrente strutturale — un'annessione non militare richiederebbe repressione visibile al mondo (processi farsa, giuramenti di fedeltà, rieducazione di massa) che alzerebbe il costo politico globale per Pechino. Il caso Taiwan è anche un laboratorio del meccanismo di destabilizzazione dall'interno: legami economici delle aziende KMT-friendly con la Cina creano veti strutturali sulla spesa per la difesa, mentre la campagna di social media continentali deride la democrazia come caotica. Lo stesso schema — avversario sistemico che sfrutta i conflitti di interesse interni a una democrazia — è generalizzabile a Georgia, Ungheria, Serbia e ad altri contesti europei.",
+    articles: [
+      { title: "Taking Taiwan's democracy hostage", url: "/curated/2026-08-11-economist-taiwan-democracy-hostage/", _source: "curated" },
+      { title: "China's Not the Problem. We Are.", url: "/curated/2026-05-14-chan-china-ai-nyt/", _source: "curated" },
+      { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" }
     ]
   },
 
@@ -1575,7 +1675,8 @@ module.exports = [
       { title: "Cosa intende la Cina per «intelligenza artificiale»", url: "/curated/2026-06-25-pieranni-cina-intelligenza-artificiale-altriorienti/", _source: "curated" },
       { title: "IA, bulloni e umanesimo", url: "/curated/2026-06-28-pieranni-ia-bulloni-umanesimo-ilpartito/", _source: "curated" },
       { title: "Who's Afraid of Chinese Models?", url: "/curated/2026-07-20-stratechery-chinese-models/", _source: "curated" },
-      { title: "Chartbook 462: China shocked – beyond 1.0 and 2.0 to the 'Big One'", url: "/curated/2026-07-29-tooze-china-shock-chartbook/", _source: "curated" }
+      { title: "Chartbook 462: China shocked – beyond 1.0 and 2.0 to the 'Big One'", url: "/curated/2026-07-29-tooze-china-shock-chartbook/", _source: "curated" },
+      { title: "The Future, Made in China", url: "/curated/2026-08-03-osnos-future-made-china-newyorker/", _source: "curated" }
     ]
   },
   {
@@ -1965,6 +2066,30 @@ module.exports = [
     note: "Imprenditore, saggista e analista tecnologico britannico-pakistano (1971). Fondatore di Exponential View, newsletter e podcast di riferimento sull'AI e sulle tecnologie esponenziali. Ex dirigente in BBC, Microsoft e Jawbone. Autore di Exponential (2021). Nel sito è citato per The State of the AI Economy (2026): il primo modello bottom-up e de-duplicato della domanda nell'economia AI, costruito a partire dalle disclosure degli hyperscaler e da fonti proprietarie con una metodologia auditabile.",
     articles: [
       { title: "The State of the AI Economy", url: "/curated/2026-06-25-azhar-state-ai-economy-exponentialview/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Meloni, Giorgia",
+    type: "persona",
+    note: "Politica italiana (1977), presidente del Consiglio dal ottobre 2022, co-fondatrice di Fratelli d'Italia (2012). Nel sito è studiata come caso di governance hard right in sistema fiscalmente vincolato: la distanza tra campagna identitaria e governo tecnocratico non è una scelta politica ma un effetto strutturale dei vincoli di bilancio italiani (debito ~140% PIL, obblighi PNRR, spread sensibili). Il modello «Melonizzazione» — normalizzazione dei partiti post-fascisti attraverso il pragmatismo di governo — funziona dove i margini di azione economica sono compressi al punto che la politica identitaria resta l'unico terreno praticabile.",
+    articles: [
+      { title: "Giorgia Meloni Cuts the Hard Right a Path to Power", url: "/curated/2026-08-21-cohen-meloni-nyt/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Nelson, Ted",
+    type: "persona",
+    note: "Informatico e teorico dei media americano (1937). Coniò il termine «hypertext» nel 1965, ispirandosi al «memex» di Vannevar Bush: l'iper- stava per «estensione e generalità» come in matematica per gli spazi multidimensionali — una forma capace di rappresentare la struttura reticolare del pensiero. Ideò Xanadu, un browser in cui ogni citazione avrebbe dovuto linkare al documento originale, permettendo di leggere testo citante e citato affiancati — una storia universale del pensiero tracciabile frase per frase. Il progetto non fu mai realizzato. Nel sito è la figura che articola cosa si perde quando le AI summary sostituiscono i link: l'architettura cognitiva del web come sistema di trail di associazione espliciti e attribuiti.",
+    articles: [
+      { title: "A linkless internet", url: "/curated/2024-12-06-jennings-linkless-internet-aeon/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Tucidide",
+    type: "persona",
+    note: "Storico ateniese (460 ca.–400 ca. a.C.), autore de «La guerra del Peloponneso». Nel sito è il punto di partenza di un canone di lettura per chi lavora con la complessità organizzativa e geopolitica: Tucidide dà il framework strutturale (l'autoinganno come motore della storia, la debolezza della giustizia tra potenze diseguali, la differenza tra cause profonde e pretesti); Senofonte — cronologicamente successivo — è il manager-pratico (l'Anabasi come caso di project management sotto crisi, ritiro attraverso territorio ostile senza mappa); Erodoto — cronologicamente il più antico — apre la prospettiva etnografica e longue-durée, proto-Braudel ante litteram. Il paradosso è che l'ordine logico di lettura (Tucidide → Senofonte → Erodoto: framework, applicazione, prospettiva) è l'inverso dell'ordine cronologico (Erodoto → Tucidide → Senofonte).",
+    articles: [
+      { title: "Thucydides the perspicacious", url: "/curated/2026-08-03-polansky-schillinger-thucydides-aeon/", _source: "curated" }
     ]
   },
 
