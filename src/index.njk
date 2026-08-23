@@ -73,13 +73,20 @@ bodyClass: home
 }
 </script>
 
-{# === HERO: posizionamento + tre percorsi === #}
+{# ===================================================================
+   HOME v3 — impianto a fasce.
+   Ogni sezione e' una fascia orizzontale a piena larghezza che si
+   chiude da sola: niente piu' due colonne parallele di altezza
+   diversa, quindi niente code disallineate.
+   Ordine: apertura, in evidenza, Lab, Writings, Curated, The
+   Abstract, Sommario ragionato (mappa del sito, quindi in coda).
+   =================================================================== #}
+
+{# === 1 · APERTURA: posizionamento + tre percorsi === #}
 <section class="home-hero" aria-label="Da dove cominciare">
-  <div class="home-hero-intro">
-    <p class="home-kicker">Marketing × Media × Content Industries</p>
-    <h1 class="home-title">Libri, mercati, idee</h1>
-    <p class="home-positioning"><strong>Marketing editoriale, docenza, ricerca sull'AI.</strong> Fondatore di Irene Media ed Episteme Advisory. Scrivo di editoria, epistemologia e geopolitica dei contenuti.</p>
-  </div>
+  <p class="home-kicker">Marketing × Media × Content Industries</p>
+  <h1 class="home-title">Libri, mercati, idee</h1>
+  <p class="home-positioning"><strong>Marketing editoriale, docenza, ricerca sull'AI.</strong> Fondatore di Irene Media ed Episteme Advisory. Scrivo di editoria, epistemologia e geopolitica dei contenuti.</p>
   <div class="home-paths">
     <a class="home-path" href="/about/">
       <span class="home-path-label">Sei qui per conoscermi?</span>
@@ -98,22 +105,16 @@ bodyClass: home
   </div>
 </section>
 
-<div class="home-grid">
-
-  {# === SOMMARIO RAGIONATO (struttura invariata; su desktop subito dopo l'hero,
-       su mobile dopo l'articolo in evidenza — ordine gestito via CSS) === #}
-  <div class="home-area home-area--sommario">
-    {% include "components/sistema-figurato.njk" %}
-  </div>
-
-  {# === IN EVIDENZA: titolo + standfirst + anteprima 5 righe (solo desktop) === #}
-  <div class="home-area home-area--featured">
-    {% set featured = collections.writings[0] %}
-    {% if featured %}
-    <article class="article-card article-card--featured">
+{# === 2 · IN EVIDENZA: rail con i metadati + titolo, standfirst, anteprima === #}
+{% set featured = collections.writings[0] %}
+{% if featured %}
+<section class="home-band home-band--featured" aria-label="In evidenza">
+  <div class="home-featured">
+    <div class="home-featured-rail">
       {% if featured.data.series %}<div class="article-series-card-label"><a href="/serie/{{ featured.data.series | seriesBaseName | slugify }}/">{{ featured.data.series }}</a></div>{% endif %}
       <div class="article-meta">
         <span class="article-date">{{ featured.date | formatDate }}</span>
+        {% if featured.templateContent %}<span class="reading-time">{{ featured.templateContent | readingTime }}</span>{% endif %}
         {% if featured.data.category %}
           {% if featured.data.category.length %}
             {% for cat in featured.data.category %}<a class="article-tag" href="/tag/{{ cat | slugify }}/">{{ cat }}</a>{% endfor %}
@@ -121,106 +122,143 @@ bodyClass: home
             <a class="article-tag" href="/tag/{{ featured.data.category | slugify }}/">{{ featured.data.category }}</a>
           {% endif %}
         {% endif %}
-        {% if featured.templateContent %}<span class="reading-time">{{ featured.templateContent | readingTime }}</span>{% endif %}
       </div>
+    </div>
+    <article class="article-card article-card--featured">
       <h2><a href="{{ featured.url }}">{{ featured.data.title }}</a></h2>
       {% if featured.data.description %}<p class="featured-description">{{ featured.data.description | mdInline | safe }}</p>{% endif %}
       {% if featured.templateContent %}
-      {# 1100 caratteri: abbastanza per le 9 righe del clamp su schermi ampi #}
-      <p class="article-excerpt">{{ featured.templateContent | excerpt(1100) }}</p>
+      <p class="article-excerpt">{{ featured.templateContent | excerpt(700) }}</p>
       <p class="featured-continua"><a href="{{ featured.url }}">Continua a leggere &#8594;</a></p>
       {% endif %}
     </article>
-    {% if collections.lab.length %}
-    <a href="{{ collections.lab[0].url }}" class="lab-banner">
-      <span class="lab-banner-label">Lab</span>
-      <span class="lab-banner-title">{{ collections.lab[0].data.title }}</span>
-      <span class="lab-banner-meta">
-        {% if collections.lab[0].data.stage %}<span>{{ collections.lab[0].data.stage }}</span>{% endif %}
-        <span>{{ collections.lab[0].data.date | formatDateEN }}</span>
-        <span aria-hidden="true">→</span>
-      </span>
-    </a>
-    {% endif %}
-    {% endif %}
   </div>
+</section>
+{% endif %}
 
-  {# === WRITINGS: lista compatta, una riga di descrizione === #}
-  <div class="home-area home-area--writings">
-    <div class="home-sec-head">
-      <h2 class="home-sec-title">Writings</h2>
-      <a class="home-sec-link" href="/writings/">Tutti &#8594;</a>
+{# === 3 · LAB: anteprima estesa della nota piu' recente + le successive === #}
+{% if collections.lab.length %}
+{% set labFeature = collections.lab[0] %}
+<section class="home-band home-band--lab" aria-label="Lab">
+  <div class="home-lab-head">
+    <div>
+      <span class="home-lab-label">Lab · Episteme Advisory</span>
+      <p class="home-lab-intro">Dated, in-progress research notes. Not finished essays — the open work behind the research on post-cognition and the validation of language model outputs.</p>
     </div>
-    <div class="writings-compact">
-      {% for post in collections.writings | limit(7) %}{% if loop.index0 > 0 %}
-      <article class="article-card article-card--compact">
-        {% if post.data.series %}<div class="article-series-card-label"><a href="/serie/{{ post.data.series | seriesBaseName | slugify }}/">{{ post.data.series }}</a></div>{% endif %}
-        <h3 class="article-card-compact-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
-        {% if post.data.description %}<p class="article-card-subtitle">{{ post.data.description | mdInline | safe }}</p>{% endif %}
-        <div class="article-meta">
-          <span class="article-date">{{ post.date | formatDate }}</span>
-          {% if post.data.category %}
-            {% if post.data.category.length %}
-              {# In home massimo 2 tag; tutti sulla pagina Writings #}
-              {% for cat in post.data.category %}{% if loop.index0 < 2 %}<a class="article-tag" href="/tag/{{ cat | slugify }}/">{{ cat }}</a>{% endif %}{% endfor %}
-            {% else %}
-              <a class="article-tag" href="/tag/{{ post.data.category | slugify }}/">{{ post.data.category }}</a>
-            {% endif %}
-          {% endif %}
-          {% if post.templateContent %}<span class="reading-time">{{ post.templateContent | readingTime }}</span>{% endif %}
-        </div>
-      </article>
+    <p class="home-lab-all"><a href="/episteme-advisory/lab/">Tutte le note &#8594;</a></p>
+  </div>
+  <div class="home-lab">
+    <article class="home-lab-feature">
+      <div class="article-meta">
+        <span class="article-date">{{ labFeature.data.date | formatDateEN }}</span>
+        {% if labFeature.data.project %}<span class="article-tag">{{ labFeature.data.project }}</span>{% endif %}
+        {% if labFeature.data.stage %}<span class="home-lab-stage">{{ labFeature.data.stage }}</span>{% endif %}
+      </div>
+      <h3><a href="{{ labFeature.url }}">{{ labFeature.data.title }}</a></h3>
+      {% if labFeature.data.description %}<p class="home-lab-abstract">{{ labFeature.data.description }}</p>{% endif %}
+      <p><a class="home-lab-go" href="{{ labFeature.url }}">Leggi la nota &#8594;</a></p>
+    </article>
+    {% if collections.lab.length > 1 %}
+    <div class="home-lab-more">
+      <p class="home-lab-more-title">Note recenti</p>
+      {% for nota in collections.lab | limit(4) %}{% if loop.index0 > 0 %}
+      <a class="home-lab-item" href="{{ nota.url }}">
+        <span class="home-lab-item-meta">{{ nota.data.date | formatDateEN }}{% if nota.data.stage %} · {{ nota.data.stage }}{% endif %}</span>
+        <span class="home-lab-item-title">{{ nota.data.title }}</span>
+      </a>
       {% endif %}{% endfor %}
     </div>
+    {% endif %}
   </div>
+</section>
+{% endif %}
 
-  {# === SIDEBAR: The Abstract (3 anteprime come ora) + Curated compatti === #}
-  <div class="home-area home-area--side">
-
-    {% if abstract.posts and abstract.posts.length > 0 %}
-    <div class="abstract-block">
-      <div class="abstract-block-header">
-        <span class="abstract-block-label">From The Abstract</span>
-        <p class="abstract-block-tagline">Reading the Content Economy from Europe</p>
+{# === 4 · WRITINGS: griglia, estratti troncati, meta allineate in fondo === #}
+<section class="home-band home-band--writings" aria-label="Writings">
+  <div class="home-sec-head">
+    <h2 class="home-sec-title">Writings</h2>
+    <a class="home-sec-link" href="/writings/">Tutti &#8594;</a>
+  </div>
+  <div class="writings-compact">
+    {% for post in collections.writings | limit(7) %}{% if loop.index0 > 0 %}
+    <article class="article-card article-card--compact">
+      {% if post.data.series %}<div class="article-series-card-label"><a href="/serie/{{ post.data.series | seriesBaseName | slugify }}/">{{ post.data.series }}</a></div>{% endif %}
+      <h3 class="article-card-compact-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+      {% if post.data.description %}<p class="article-card-subtitle">{{ post.data.description | mdInline | safe }}</p>{% endif %}
+      <div class="article-meta">
+        <span class="article-date">{{ post.date | formatDate }}</span>
+        {% if post.data.category %}
+          {% if post.data.category.length %}
+            {# In home massimo 2 tag; tutti sulla pagina Writings #}
+            {% for cat in post.data.category %}{% if loop.index0 < 2 %}<a class="article-tag" href="/tag/{{ cat | slugify }}/">{{ cat }}</a>{% endif %}{% endfor %}
+          {% else %}
+            <a class="article-tag" href="/tag/{{ post.data.category | slugify }}/">{{ post.data.category }}</a>
+          {% endif %}
+        {% endif %}
+        {% if post.templateContent %}<span class="reading-time">{{ post.templateContent | readingTime }}</span>{% endif %}
       </div>
+    </article>
+    {% endif %}{% endfor %}
+  </div>
+</section>
+
+{# === 5 · CURATED: fascia a piena larghezza, le glosse hanno respiro === #}
+<section class="home-band home-band--tinted home-band--curated" aria-label="Curated">
+  <div class="home-sec-head">
+    <h2 class="home-sec-title">Curated</h2>
+    <a class="home-sec-link" href="/curated/">Tutti &#8594;</a>
+  </div>
+  <p class="curated-framing">Letture da altre testate, schedate per l'uso: il badge dice che cosa ho trovato in ogni pezzo, la riga sotto perché è qui.</p>
+  <div class="home-curated">
+    {% for post in collections.curated | limit(3) %}
+    <article class="article-card article-card--curated article-card--curated-compact">
+      <div class="article-meta">
+        <span class="curated-badge">Curated</span>
+        {% if post.data.source %}
+        <span class="curated-source-label">· <a href="{{ post.data.external_url }}" target="_blank" rel="noopener noreferrer">{{ post.data.source }} ↗</a></span>
+        {% endif %}
+      </div>
+      <h3 class="curated-compact-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+      {% set criterioSlug = post.data.criterio %}{% set criterioPerche = post.data.perche %}{% include "components/criterio-badge.njk" %}
+    </article>
+    {% endfor %}
+  </div>
+  <p class="curated-all"><a href="/curated/">Tutte le segnalazioni &#8594;</a></p>
+</section>
+
+{# === 6 · THE ABSTRACT: fascia orizzontale a tre voci === #}
+{% if abstract.posts and abstract.posts.length > 0 %}
+<section class="home-band home-band--abstract" aria-label="From The Abstract">
+  <div class="abstract-block">
+    <div class="home-abstract-head">
+      <span class="abstract-block-label">From The Abstract</span>
+      <p class="abstract-block-tagline">Reading the Content Economy from Europe</p>
+    </div>
+    <div class="home-abstract-posts">
       {% for post in abstract.posts | limit(3) %}
       <article class="abstract-block-post">
         <div class="article-meta">
           {% if post.date %}<span class="article-date">{{ post.date }}</span>{% endif %}
-          <span class="article-tag">The Abstract</span>
         </div>
         <h3 class="abstract-block-post-title">
           <a href="{{ post.url }}" target="_blank" rel="noopener">{{ post.title }} ↗</a>
         </h3>
-        {% if loop.index0 == 0 and post.excerpt %}
+        {% if post.excerpt %}
         <p class="abstract-block-post-excerpt">{{ post.excerpt }}</p>
-        {% elif loop.index0 > 0 and post.subtitle %}
+        {% elif post.subtitle %}
         <p class="abstract-block-post-excerpt">{{ post.subtitle }}</p>
         {% endif %}
       </article>
       {% endfor %}
-      <p class="abstract-block-cta">
-        <a href="https://claudiocammarano.substack.com" target="_blank" rel="noopener">Read more on Substack →</a>
-      </p>
     </div>
-    {% endif %}
-
-    <p class="curated-framing">Letture da altre testate, schedate per l'uso: il badge dice che cosa ho trovato in ogni pezzo, la riga sotto perché è qui.</p>
-
-    {% for post in collections.curated | limit(3) %}
-      <article class="article-card article-card--curated article-card--curated-compact">
-        <div class="article-meta">
-          <span class="curated-badge">Curated</span>
-          {% if post.data.source %}
-          <span class="curated-source-label">· <a href="{{ post.data.external_url }}" target="_blank" rel="noopener noreferrer">{{ post.data.source }} ↗</a></span>
-          {% endif %}
-        </div>
-        <h3 class="curated-compact-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
-        {% set criterioSlug = post.data.criterio %}{% set criterioPerche = post.data.perche %}{% include "components/criterio-badge.njk" %}
-      </article>
-    {% endfor %}
-    <p class="curated-all"><a href="/curated/">Tutte le segnalazioni &#8594;</a></p>
-
+    <p class="abstract-block-cta">
+      <a href="https://claudiocammarano.substack.com" target="_blank" rel="noopener">Read more on Substack →</a>
+    </p>
   </div>
+</section>
+{% endif %}
 
-</div>
+{# === 7 · SOMMARIO RAGIONATO: mappa del sito, in coda === #}
+<section class="home-band home-band--tinted home-band--sommario" aria-label="Sommario ragionato">
+  {% include "components/sistema-figurato.njk" %}
+</section>
