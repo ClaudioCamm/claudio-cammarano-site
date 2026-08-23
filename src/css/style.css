@@ -4690,8 +4690,11 @@ a.temi-tag-pill:hover .temi-tag-weight-bar {
    Header, footer, menu e Sommario ragionato invariati.
    =================================== */
 
-/* Container allargato solo in homepage (bodyClass: home) */
-.home .container {
+/* Container allargato solo per il CONTENUTO della home.
+   Il selettore figlio diretto lascia fuori il .container dentro
+   .site-header: testata e menu restano a 800px come su tutte le
+   altre pagine, quindi non si spostano passando da una all'altra. */
+body.home > .container {
   max-width: 1200px;
 }
 
@@ -5318,7 +5321,7 @@ a.home-path:hover {
 }
 
 @media (min-width: 1200px) {
-  body:has(.curated-rail) .container {
+  body:has(.curated-rail) > .container {
     max-width: 1120px;
   }
 
@@ -5396,7 +5399,7 @@ a.home-path:hover {
   }
 
   /* Stato chiuso: si torna alla colonna singola ariosa */
-  html.rail-closed body:has(.curated-rail) .container {
+  html.rail-closed body:has(.curated-rail) > .container {
     max-width: 800px;
   }
 
