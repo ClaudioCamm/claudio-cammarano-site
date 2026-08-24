@@ -1,3 +1,6 @@
+{# Definizione canonica dell'entita' Person (@id .../#person).
+   Unica fonte di verita': ogni altra pagina deve limitarsi a referenziare
+   l'@id, mai ridefinire description / jobTitle / sameAs. #}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -9,7 +12,7 @@
       "url": "https://claudiocammarano.com",
       "image": "https://claudiocammarano.com/images/claudio-photo.jpg",
       "description": "Claudio Cammarano leads marketing at De Agostini Libri and is co-founder of Irene Media. With twenty years of experience in Italy's leading publishing groups, he has led editorial marketing, brand positioning and digital transformation strategies. He took part in some of the turning points of Italian publishing, from the joint book-and-newspaper sales of Repubblica to the Fifty Shades phenomenon and the acquisition of Rizzoli by Mondadori. University lecturer at Scuola Holden, Università Cattolica di Milano, Master Co.Se (Università di Parma), and Università degli Studi di Bergamo. Author of 'Il mercato del libro' (Solferino / Scuola Holden). Academic background in semiotics and philosophy of language; MBA from Hult International Business School.",
-      "jobTitle": "Marketing Director",
+      "jobTitle": ["Marketing Director", "Marketing, Communications & Digital Director"],
       "hasOccupation": {
         "@type": "Occupation",
         "name": "Marketing Director",
@@ -37,7 +40,8 @@
         },
         {
           "@type": "Organization",
-          "name": "Master Co.Se — Università di Parma"
+          "name": "Università di Parma — Master Co.Se",
+          "url": "https://www.unipr.it"
         },
         {
           "@type": "Organization",

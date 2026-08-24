@@ -65,7 +65,7 @@ layout: layouts/base.njk
   <p class="article-concepts-label">Concetti</p>
   <div class="concetto-chips">
     {% for cname in concepts %}
-    <a href="/concetti/{{ cname | slugify }}/" class="concetto-chip">{{ cname }}</a>
+    <a href="/concetti/{{ cname | slugify }}/" class="concetto-chip">{{ cname | displayName }}</a>
     {% endfor %}
   </div>
 </div>

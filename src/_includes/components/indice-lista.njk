@@ -1,0 +1,47 @@
+{# Lista di concetti dell'indice analitico.
+   Variabili attese nel contesto chiamante:
+     items      — array gia' ordinato alfabeticamente (filtro filterByType)
+     sectionId  — id della <section> che la contiene, per gli ancoraggi
+     termClass  — classe extra opzionale sul <dt> (es. "indice-term--testo")
+
+   Sopra le 40 voci la lista viene spezzata per lettera iniziale e preceduta
+   da una barra di salto: con novanta voci l'ordine alfabetico da solo non
+   basta, serve poter saltare alla lettera. Sotto quella soglia i separatori
+   sarebbero piu' rumore che aiuto — con venti voci e quindici lettere si
+   creerebbero gruppi da una riga — e la lista resta piatta.
+   Ogni gruppo di lettera e' una <dl> a se': un heading dentro una <dl> non
+   sarebbe HTML valido. #}
+
+{% set letters = items | initials %}
+{% set useLetters = items.length >= 40 %}
+
+{% if useLetters %}
+<nav class="indice-letter-bar" aria-label="Salta alla lettera">
+  {% for l in letters %}
+  <a href="#{{ sectionId }}-{{ l | letterAnchor }}">{{ l }}</a>
+  {% endfor %}
+</nav>
+{% endif %}
+
+{% if not useLetters %}<dl class="indice-list">{% endif %}
+{% for concept in items %}
+  {% set letter = concept.name | firstLetter %}
+  {% if useLetters and (loop.index0 == 0 or letter != (items[loop.index0 - 1].name | firstLetter)) %}
+    {% if loop.index0 > 0 %}</dl>{% endif %}
+    <h3 class="indice-letter" id="{{ sectionId }}-{{ letter | letterAnchor }}">{{ letter }}</h3>
+    <dl class="indice-list">
+  {% endif %}
+  <div class="indice-item{% if concept.articles.length > 1 %} indice-item--multi{% endif %}">
+    <dt class="indice-term{% if termClass %} {{ termClass }}{% endif %}">
+      <a href="/concetti/{{ concept.name | slugify }}/" class="indice-term-link{% if concept.lab %} indice-term-link--lab{% endif %}">{{ concept.name }}</a>{% if concept.lab %}<span class="indice-lab-badge" aria-label="Episteme Lab">lab</span>{% endif %}
+      {% if concept.articles.length > 1 %}<span class="indice-count" aria-label="{{ concept.articles.length }} articoli">{{ concept.articles.length }}</span>{% endif %}
+    </dt>
+    <dd class="indice-articles">
+      {% for art in concept.articles %}
+      <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% elif art._source == 'lab' %} indice-article-link--lab{% elif art._source == 'learning' %} indice-article-link--learning{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% elif art._source == 'lab' %}<span class="indice-lab-badge" aria-label="lab">lab</span>{% elif art._source == 'learning' %}<span class="indice-learning-badge" aria-label="learning">lr</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
+      {% endfor %}
+    </dd>
+  </div>
+  {% if useLetters and loop.last %}</dl>{% endif %}
+{% endfor %}
+{% if not useLetters %}</dl>{% endif %}

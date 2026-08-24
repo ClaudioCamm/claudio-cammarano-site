@@ -455,6 +455,22 @@ module.exports = function(eleventyConfig) {
 
   // Rimuove i marcatori markdown di enfasi (*...*, _..._) restituendo testo
   // pulito: per meta tag, title e altri contesti che non renderizzano HTML.
+  // Nome in forma naturale per title, H1 e breadcrumb delle pagine-entita':
+  // "Fricker, Miranda" -> "Miranda Fricker". L'indice alfabetico continua a
+  // usare concept.name (forma invertita) per l'ordinamento. Si applica solo
+  // alle entita' di tipo "persona" e solo con una singola virgola.
+  eleventyConfig.addFilter("displayName", function(str, type) {
+    if (!str) return '';
+    const s = String(str).trim();
+    if (type && type !== 'persona') return s;
+    const parts = s.split(',');
+    if (parts.length !== 2) return s;
+    const last = parts[0].trim();
+    const first = parts[1].trim();
+    if (!last || !first || first.length > 40) return s;
+    return first + ' ' + last;
+  });
+
   eleventyConfig.addFilter("stripMd", function(str) {
     if (!str) return '';
     return String(str)
@@ -581,14 +597,53 @@ module.exports = function(eleventyConfig) {
       .slice(0, 14);
   });
 
-  // Groups conceptsIndex array by type, sorted by article count desc then alpha
+  // Lettera iniziale normalizzata per i separatori dell'indice analitico:
+  // accenti rimossi (Averroe' sta sotto A, Ypi sotto Y), maiuscola, e "#" per
+  // tutto cio' che non e' una lettera latina (es. "77 Brigade").
+  eleventyConfig.addFilter("firstLetter", function(str) {
+    if (!str) return '#';
+    var ch = String(str).trim().normalize('NFD').replace(/[\u0300-\u036f]/g, '').charAt(0).toUpperCase();
+    return /[A-Z]/.test(ch) ? ch : '#';
+  });
+
+  // Ancora HTML valida per una lettera ("#" non puo' stare in un id).
+  eleventyConfig.addFilter("letterAnchor", function(letter) {
+    return letter === '#' ? 'num' : String(letter).toLowerCase();
+  });
+
+  // Lettere iniziali presenti in una lista gia' ordinata, senza duplicati e
+  // nell'ordine della lista stessa.
+  eleventyConfig.addFilter("initials", function(arr) {
+    if (!arr) return [];
+    var out = [], seen = {};
+    arr.forEach(function(c) {
+      var name = (c && c.name) ? c.name : c;
+      if (!name) return;
+      var ch = String(name).trim().normalize('NFD').replace(/[\u0300-\u036f]/g, '').charAt(0).toUpperCase();
+      if (!/[A-Z]/.test(ch)) ch = '#';
+      if (!seen[ch]) { seen[ch] = true; out.push(ch); }
+    });
+    return out;
+  });
+
+  // Raggruppa conceptsIndex per tipo. Ordine ALFABETICO, con il numero di
+  // menzioni solo come spareggio fra omonimi.
+  // Prima era il contrario (menzioni desc, poi alfabetico): con poche decine
+  // di voci quell'ordine funzionava come classifica di rilevanza, ma sopra le
+  // duecento voci un elenco ordinato per frequenza non e' piu' consultabile —
+  // per trovare un termine bisogna scorrerlo tutto. La rilevanza resta
+  // leggibile dal badge del conteggio e dal peso visivo della riga, che sono
+  // segnali non posizionali: l'ordine torna a servire la ricerca.
+  // sensitivity "base" perche' l'indice mescola nomi propri maiuscoli e
+  // termini comuni minuscoli, che devono ordinarsi per lettera e non per case.
   eleventyConfig.addFilter("filterByType", function(arr, type) {
     if (!arr) return [];
     return arr
       .filter(function(c) { return c.type === type; })
       .sort(function(a, b) {
-        if (b.articles.length !== a.articles.length) return b.articles.length - a.articles.length;
-        return a.name.localeCompare(b.name, 'it');
+        var byName = String(a.name).localeCompare(String(b.name), "it", { sensitivity: "base", numeric: true });
+        if (byName !== 0) return byName;
+        return b.articles.length - a.articles.length;
       });
   });
 

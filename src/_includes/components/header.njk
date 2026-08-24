@@ -1,7 +1,7 @@
 <header class="site-header">
     <div class="header-top">
         <div class="container header-top-inner">
-            <a href="/" class="header-name">Claudio Cammarano</a>
+            <a href="/" class="header-name" rel="home" aria-label="Claudio Cammarano — home"{% if page.url == "/" %} aria-current="page"{% endif %}>Claudio Cammarano</a>
             <span class="header-tagline">Libri, mercati, idee</span>
             <a href="/search/" class="header-search" aria-label="Cerca" title="Cerca">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
@@ -13,18 +13,26 @@
             </button>
         </div>
     </div>
+    {# Nav a sei voci. Projects e' una pagina hub (/projects/) che raccoglie
+       Irene Media, Episteme Advisory e Lab: nessun dropdown, quindi nessun
+       problema di hover su touch e una pagina in piu' che consolida
+       l'autorita' sulle tre entita'. Learning log e Colophon stanno nel
+       footer. The Abstract e' la CTA discreta a destra, e punta alla pagina
+       interna /newsletter/, mai a substack.com. #}
     <nav class="site-nav" id="site-nav">
         <div class="container">
             <ul>
-                <li><a href="/"{% if page.url == "/" %} class="active"{% endif %}>Home</a></li>
-                <li><a href="/writings/"{% if page.url == "/writings/" %} class="active"{% endif %}>Writings</a></li>
-                <li><a href="/curated/"{% if page.url == "/curated/" %} class="active"{% endif %}>Curated</a></li>
-                <li><a href="/learning/"{% if page.url == "/learning/" %} class="active"{% endif %}>Learning log</a></li>
-                <li><a href="/irene-media/"{% if page.url == "/irene-media/" %} class="active"{% endif %}>Irene Media</a></li>
-                <li><a href="/episteme-advisory/"{% if page.url == "/episteme-advisory/" or page.url.indexOf('/episteme-advisory/lab/') == 0 %} class="active"{% endif %}>Episteme Advisory</a></li>
-                <li><a href="/indice/"{% if page.url == "/indice/" %} class="active"{% endif %}>Indice</a></li>
+                <li><a href="/writings/"{% if page.url == "/writings/" or page.url.indexOf('/writings/') == 0 %} class="active"{% endif %}>Writings</a></li>
+                <li><a href="/curated/"{% if page.url.indexOf('/curated/') == 0 %} class="active"{% endif %}>Curated</a></li>
+                <li><a href="/projects/"{% if page.url.indexOf('/projects/') == 0 or page.url.indexOf('/irene-media/') == 0 or page.url.indexOf('/episteme-advisory/') == 0 %} class="active"{% endif %}>Projects</a></li>
                 <li><a href="/about/"{% if page.url == "/about/" %} class="active"{% endif %}>About</a></li>
-                <li><a href="/newsletter/"{% if page.url == "/newsletter/" %} class="active"{% endif %}>The Abstract</a></li>
+                <li><a href="/indice/"{% if page.url == "/indice/" %} class="active"{% endif %}>Indice</a></li>
+                <li class="nav-abstract-item">
+                    <a class="nav-abstract-pill" href="/newsletter/" data-newsletter-cta data-position="nav"{% if page.url == "/newsletter/" %} aria-current="page"{% endif %}>
+                        <svg class="nav-abstract-glyph" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+                        <span>The Abstract</span>
+                    </a>
+                </li>
                 <li class="nav-search-item" style="display:none"><a href="/search/">Cerca</a></li>
             </ul>
         </div>

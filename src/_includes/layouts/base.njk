@@ -38,13 +38,37 @@
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8557D7N1Y3"></script>
+    <!--
+      Consent Mode v2. I default sono "denied" e vengono impostati PRIMA che
+      gtag.js venga caricato: finche' l'utente non sceglie, GA4 non scrive
+      cookie e raccoglie solo ping senza identificatori (ping che restano
+      esclusi dalle metriche di utente). La scelta e' persistita in
+      localStorage e riapplicata al caricamento successivo.
+    -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+      (function() {
+        var stored = null;
+        try { stored = localStorage.getItem('cc-consent'); } catch (e) {}
+        var granted = stored === 'granted';
+        gtag('consent', 'default', {
+          ad_storage: 'denied',
+          ad_user_data: 'denied',
+          ad_personalization: 'denied',
+          analytics_storage: granted ? 'granted' : 'denied',
+          functionality_storage: 'granted',
+          security_storage: 'granted',
+          wait_for_update: 500
+        });
+        window.ccConsentState = stored;
+      })();
+    </script>
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8557D7N1Y3"></script>
+    <script>
       gtag('js', new Date());
-      gtag('config', 'G-8557D7N1Y3');
+      gtag('config', 'G-8557D7N1Y3', { anonymize_ip: true });
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,9 +86,41 @@
             {{ content | safe }}
         </main>
     </div>
-    
+
     {% include "components/footer.njk" %}
-    
+
+    <div class="consent-bar" id="consent-bar" role="dialog" aria-live="polite" aria-label="Preferenze di misurazione" hidden>
+      <div class="container consent-bar-inner">
+        <p class="consent-bar-text">Questo sito usa Google Analytics per contare le letture. Senza consenso non viene scritto alcun cookie di misurazione. <a href="/colophon/">Dettagli nel colophon</a>.</p>
+        <div class="consent-bar-actions">
+          <button type="button" class="consent-btn consent-btn--ghost" data-consent="denied">Solo essenziali</button>
+          <button type="button" class="consent-btn consent-btn--solid" data-consent="granted">Accetto</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Banner di consenso: compare solo se non c'e' gia' una scelta salvata.
+      (function() {
+        var bar = document.getElementById('consent-bar');
+        if (!bar) return;
+        if (window.ccConsentState === 'granted' || window.ccConsentState === 'denied') return;
+        bar.hidden = false;
+        bar.addEventListener('click', function(e) {
+          var btn = e.target.closest('[data-consent]');
+          if (!btn) return;
+          var choice = btn.getAttribute('data-consent');
+          try { localStorage.setItem('cc-consent', choice); } catch (err) {}
+          window.ccConsentState = choice;
+          if (typeof gtag === 'function') {
+            gtag('consent', 'update', { analytics_storage: choice === 'granted' ? 'granted' : 'denied' });
+          }
+          bar.hidden = true;
+          document.dispatchEvent(new CustomEvent('cc:consent', { detail: choice }));
+        });
+      })();
+    </script>
+
     <script>
       // Avvisa gli utenti di screen reader quando un link apre una nuova scheda
       (function() {
@@ -81,8 +137,16 @@
     </script>
 
     <script>
-      // Eventi GA4 per il funnel misurabile: newsletter (Substack), contatto
-      // (mailto), LinkedIn, download. Da marcare come key event in GA4 Admin.
+      // Eventi GA4 per il funnel misurabile: intento newsletter (link interni
+      // marcati data-newsletter-cta, con la posizione che li distingue),
+      // newsletter (Substack), contatto (mailto), LinkedIn, download.
+      // Da marcare come key event in GA4 Admin.
+      //
+      // Nota: il completamento dell'iscrizione avviene dentro l'embed Substack,
+      // che e' un iframe cross-origin. form_start / form_submit non sono
+      // osservabili da qui e non lo saranno mai: la metrica azionabile e'
+      // newsletter_intent, il completamento si legge dal conteggio iscritti
+      // su Substack.
       (function() {
         document.addEventListener('click', function(e) {
           if (typeof gtag !== 'function' || !e.target.closest) return;
@@ -91,6 +155,11 @@
           var href = a.getAttribute('href') || '';
           var abs = a.href || href;
           var params = { link_url: abs, page_path: location.pathname };
+          if (a.hasAttribute('data-newsletter-cta')) {
+            params.link_position = a.getAttribute('data-position') || 'unknown';
+            gtag('event', 'newsletter_intent', params);
+            return;
+          }
           if (href.indexOf('mailto:') === 0) {
             gtag('event', 'contact_click', params);
           } else if (abs.indexOf('substack.com') !== -1) {

@@ -34,7 +34,7 @@ description: "Link curati su media, marketing e content industries — selezione
     {% if item.data.concepts and item.data.concepts.length %}
     <div class="concetto-chips curated-concepts">
       {% for cname in item.data.concepts %}
-      <a href="/concetti/{{ cname | slugify }}/" class="concetto-chip">{{ cname }}</a>
+      <a href="/concetti/{{ cname | slugify }}/" class="concetto-chip">{{ cname | displayName }}</a>
       {% endfor %}
     </div>
     {% endif %}

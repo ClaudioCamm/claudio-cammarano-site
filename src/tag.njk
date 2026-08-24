@@ -7,7 +7,7 @@ permalink: "/tag/{{ tag | slugify }}/"
 layout: layouts/base.njk
 eleventyComputed:
   title: "{{ tag }}"
-  description: "{% if tagDescriptions[tag] %}{{ tagDescriptions[tag] | truncate(155) }}{% else %}Tutti gli articoli su {{ tag }}{% endif %}"
+  description: "{% if tagDescriptions[tag] %}{{ tagDescriptions[tag] | truncate(155) | safe }}{% else %}Tutti gli articoli su {{ tag }}{% endif %}"
 ---
 
 {% set tagPosts = collections.allPosts | filterByTag(tag) %}
@@ -21,8 +21,9 @@ eleventyComputed:
   "url": "https://claudiocammarano.com/tag/{{ tag | slugify }}/",
   "author": {
     "@type": "Person",
+    "@id": "https://claudiocammarano.com/#person",
     "name": "Claudio Cammarano",
-    "url": "https://claudiocammarano.com/about/"
+    "url": "https://claudiocammarano.com"
   },
   "hasPart": [
     {% for post in tagPosts %}
@@ -119,7 +120,7 @@ eleventyComputed:
         {% if post.data.concepts and post.data.concepts.length %}
         <div class="concetto-chips curated-concepts">
           {% for cname in post.data.concepts %}
-          <a href="/concetti/{{ cname | slugify }}/" class="concetto-chip">{{ cname }}</a>
+          <a href="/concetti/{{ cname | slugify }}/" class="concetto-chip">{{ cname | displayName }}</a>
           {% endfor %}
         </div>
         {% endif %}

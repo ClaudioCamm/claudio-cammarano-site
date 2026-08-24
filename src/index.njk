@@ -19,41 +19,6 @@ bodyClass: home
       "author": { "@id": "https://claudiocammarano.com/#person" }
     },
     {
-      "@type": "Person",
-      "@id": "https://claudiocammarano.com/#person",
-      "name": "Claudio Cammarano",
-      "url": "https://claudiocammarano.com",
-      "image": "https://claudiocammarano.com/images/claudio-photo.jpg",
-      "description": "Marketing executive with twenty years of experience in Italy's leading publishing groups. Currently Marketing Director at De Agostini Libri and co-founder of Irene Media.",
-      "jobTitle": "Marketing Director",
-      "hasOccupation": {
-        "@type": "Occupation",
-        "name": "Marketing Director",
-        "occupationalCategory": "Marketing Executive"
-      },
-      "worksFor": {
-        "@type": "Organization",
-        "name": "De Agostini Libri"
-      },
-      "knowsAbout": [
-        "Editorial marketing",
-        "Publishing industry strategy",
-        "Digital media",
-        "Content marketing",
-        "Brand strategy",
-        "AI in media",
-        "Italian publishing market",
-        "Cultural organizations marketing",
-        "Content industries"
-      ],
-      "sameAs": [
-        "https://www.linkedin.com/in/claudiocammarano/",
-        "https://claudiocammarano.substack.com",
-        "https://x.com/claudiocamm",
-        "https://medium.com/@ClaudioCamm"
-      ]
-    },
-    {
       "@type": "Organization",
       "@id": "https://claudiocammarano.com/irene-media/#organization",
       "name": "Irene Media",
@@ -72,6 +37,9 @@ bodyClass: home
   ]
 }
 </script>
+
+{# Definizione canonica della Person: un solo nodo #person in tutto il sito #}
+{% include "components/person-jsonld.njk" %}
 
 {# ===================================================================
    HOME v3 — impianto a fasce.
@@ -103,6 +71,9 @@ bodyClass: home
       <span class="home-path-sub"><a href="/irene-media/">Irene Media</a> · <a href="/episteme-advisory/">Episteme Advisory</a> · <a href="/episteme-advisory/lab/">Lab</a></span>
     </div>
   </div>
+  {# Cattura sopra la piega: una riga, subordinata alle tre porte, non un form.
+     Il form vero sta su /newsletter/. Nessun verbo imperativo. #}
+  <p class="home-abstract-hint"><a href="/newsletter/" data-newsletter-cta data-position="home_hero">The Abstract &#8212; la newsletter in inglese, un saggio al mese sull'economia dei contenuti &#8594;</a></p>
 </section>
 
 {# === 2 · IN EVIDENZA: rail con i metadati + titolo, standfirst, anteprima === #}

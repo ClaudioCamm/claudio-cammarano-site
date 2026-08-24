@@ -6,21 +6,22 @@ pagination:
 permalink: "/concetti/{{ concept.name | slugify }}/"
 layout: layouts/base.njk
 eleventyComputed:
-  title: "{{ concept.name }}{% if concept.type %} ({{ concept.type }}){% endif %}"
-  description: "{% if concept.note %}{{ concept.note | stripMd | truncate(155) }}{% else %}Articoli collegati a {{ concept.name }} — indice concettuale di claudiocammarano.com{% endif %}"
+  title: "{{ concept.name | displayName(concept.type) | safe }}"
+  description: "{% if concept.note %}{{ concept.note | stripMd | truncate(155) | safe }}{% else %}Articoli collegati a {{ concept.name | displayName(concept.type) | safe }} — indice concettuale di claudiocammarano.com{% endif %}"
 ---
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": "{{ concept.name | jsonEscape | safe }}",
-  "description": "Articoli collegati a {{ concept.name | jsonEscape | safe }}",
+  "name": "{{ concept.name | displayName(concept.type) | jsonEscape | safe }}",
+  "description": "Articoli collegati a {{ concept.name | displayName(concept.type) | jsonEscape | safe }}",
   "url": "https://claudiocammarano.com{{ page.url }}",
   "author": {
     "@type": "Person",
+    "@id": "https://claudiocammarano.com/#person",
     "name": "Claudio Cammarano",
-    "url": "https://claudiocammarano.com/about/"
+    "url": "https://claudiocammarano.com"
   }
 }
 </script>
@@ -48,12 +49,12 @@ eleventyComputed:
         <a href="/indice/">Indice</a>
       {% endif %}
       <span class="breadcrumb-sep" aria-hidden="true">·</span>
-      <span class="breadcrumb-current">{{ concept.name }}</span>
+      <span class="breadcrumb-current">{{ concept.name | displayName(concept.type) }}</span>
     </nav>
     {% if concept.type %}
     <p class="concetto-type-badge">{{ concept.type }}</p>
     {% endif %}
-    <h1 class="tag-page-title">{{ concept.name }}</h1>
+    <h1 class="tag-page-title">{{ concept.name | displayName(concept.type) }}</h1>
     <p class="tag-page-count">
       {% if concept.articles.length == 0 %}Nessun articolo ancora
       {% elif concept.articles.length == 1 %}1 articolo
@@ -74,7 +75,7 @@ eleventyComputed:
     <p class="concetto-related-label">Concetti vicini</p>
     <div class="concetto-chips">
       {% for r in related %}
-      <a href="/concetti/{{ r.name | slugify }}/" class="concetto-chip" title="{{ r.sharedCount }} {% if r.sharedCount == 1 %}articolo in comune{% else %}articoli in comune{% endif %}">{{ r.name }}</a>
+      <a href="/concetti/{{ r.name | slugify }}/" class="concetto-chip" title="{{ r.sharedCount }} {% if r.sharedCount == 1 %}articolo in comune{% else %}articoli in comune{% endif %}">{{ r.name | displayName }}</a>
       {% endfor %}
     </div>
   </section>

@@ -9,6 +9,21 @@ description: "The Abstract — Reading the Content Economy from Europe. A newsle
     <h1>The Abstract</h1>
     <p class="abstract-tagline">Reading the Content Economy from Europe</p>
 
+    {# Il form sta in cima: questa pagina e' l'atterraggio della pill in nav e
+       del blocco nel footer, quindi chi arriva trova subito l'iscrizione e
+       poi l'elenco delle uscite.
+       L'embed Substack e' un iframe di terza parte con i suoi cookie: viene
+       montato solo dopo il consenso. Il link diretto sotto funziona sempre,
+       consenso o no, e resta la via di fuga se l'embed non carica. #}
+    <div class="newsletter-signup">
+        <div class="substack-embed-slot" data-substack-src="https://claudiocammarano.substack.com/embed" data-consent-notice="The subscription form is hosted by Substack and sets its own cookies. It loads once you accept measurement and third-party embeds — or you can subscribe directly on Substack.">
+            <p class="substack-embed-fallback">The subscription form is hosted by Substack and sets its own cookies. Use the direct link below, or accept embeds to load it here.</p>
+        </div>
+        <p class="newsletter-direct">
+            <a href="https://claudiocammarano.substack.com/subscribe" target="_blank" rel="noopener">Subscribe on Substack ↗</a>
+        </p>
+    </div>
+
     <p>The Abstract is the English-language counterpart of this site. It is a newsletter about what happens to publishing, media, and cultural production in the age of generative AI and fragmenting platforms — written from a European perspective, for readers who share the questions but not the language.</p>
 
     <p>It began here in 2017 as an Italian blog and was relaunched in 2026 as a long-form newsletter on Substack. New essays appear once or twice a month. The Italian work — on education, publishing, semiotics, and the Italian intellectual tradition — continues on this site; The Abstract is where the same questions travel in English.</p>
@@ -16,8 +31,6 @@ description: "The Abstract — Reading the Content Economy from Europe. A newsle
     <div class="abstract-ctas">
         <a href="https://claudiocammarano.substack.com/p/the-abstract-eight-years-later" class="btn-about">Read the latest issue →</a>
     </div>
-
-    <iframe class="substack-embed substack-embed--page" src="https://claudiocammarano.substack.com/embed" title="Subscribe to The Abstract" width="480" height="320" loading="lazy" frameborder="0" scrolling="no"></iframe>
 
     {% if abstract.posts and abstract.posts.length > 0 %}
     <h2>Recent essays</h2>
@@ -39,3 +52,28 @@ description: "The Abstract — Reading the Content Economy from Europe. A newsle
     {% endfor %}
     {% endif %}
 </div>
+
+<script>
+(function() {
+  var slot = document.querySelector('.substack-embed-slot');
+  if (!slot) return;
+  function mount() {
+    if (slot.querySelector('iframe')) return;
+    var f = document.createElement('iframe');
+    f.className = 'substack-embed substack-embed--page';
+    f.src = slot.getAttribute('data-substack-src');
+    f.title = 'Subscribe to The Abstract';
+    f.width = '480';
+    f.height = '320';
+    f.loading = 'lazy';
+    f.frameBorder = '0';
+    f.scrolling = 'no';
+    slot.innerHTML = '';
+    slot.appendChild(f);
+  }
+  if (window.ccConsentState === 'granted') mount();
+  document.addEventListener('cc:consent', function(e) {
+    if (e.detail === 'granted') mount();
+  });
+})();
+</script>

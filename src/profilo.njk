@@ -5,73 +5,23 @@ description: "Profilo professionale completo di Claudio Cammarano: marketing dir
 eleventyExcludeFromCollections: true
 ---
 
+{# La Person canonica arriva da components/person-jsonld.njk. Qui restano
+   solo le proprieta' aggiuntive di questa pagina (dati anagrafici), che si
+   fondono sullo stesso @id senza entrare in conflitto. #}
+{% include "components/person-jsonld.njk" %}
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Person",
-      "@id": "https://claudiocammarano.com/#person",
-      "name": "Claudio Cammarano",
-      "url": "https://claudiocammarano.com",
-      "image": "https://claudiocammarano.com/images/claudio-photo.jpg",
-      "birthDate": "1978-11-08",
-      "birthPlace": { "@type": "Place", "name": "Italy" },
-      "nationality": "Italian",
-      "description": "Claudio Cammarano is an Italian marketing executive and publishing industry specialist with twenty years of experience in editorial marketing, digital transformation, and content strategy. Currently Marketing, Communications & Digital Director at De Agostini Libri (Milan), managing a €50M business. Former Marketing Manager at Rizzoli Libri (Mondadori Group), managing a €100–120M business. Co-founder of Irene Media. University lecturer at Scuola Holden, Università Cattolica del Sacro Cuore, Università di Parma, and Università degli Studi di Bergamo. Author of 'Il mercato del libro' (Solferino / Scuola Holden). Global Executive MBA from Hult International Business School (London, 2014). Background in semiotics and philosophy of language (University of Bologna).",
-      "jobTitle": "Marketing, Communications & Digital Director",
-      "hasOccupation": {
-        "@type": "Occupation",
-        "name": "Marketing Director",
-        "occupationalCategory": "Marketing Executive",
-        "occupationLocation": { "@type": "Country", "name": "Italy" }
-      },
-      "worksFor": {
-        "@type": "Organization",
-        "name": "De Agostini Libri",
-        "url": "https://www.deagostini.it"
-      },
-      "affiliation": [
-        { "@type": "Organization", "name": "Scuola Holden", "url": "https://www.scuolaholden.it" },
-        { "@type": "Organization", "name": "Università Cattolica del Sacro Cuore", "url": "https://www.unicatt.it" },
-        { "@type": "Organization", "name": "Università di Parma", "url": "https://www.unipr.it" },
-        { "@type": "Organization", "name": "Università degli Studi di Bergamo", "url": "https://www.unibg.it" },
-        { "@type": "Organization", "name": "Irene Media" },
-        { "@type": "Organization", "name": "Episteme Advisory", "url": "https://claudiocammarano.com/episteme-advisory/" }
-      ],
-      "alumniOf": [
-        { "@type": "Organization", "name": "Hult International Business School", "url": "https://www.hult.edu" },
-        { "@type": "Organization", "name": "Università di Bologna", "url": "https://www.unibo.it" }
-      ],
-      "knowsAbout": [
-        "Editorial marketing", "Publishing industry strategy", "Digital media",
-        "Content marketing", "Brand strategy", "AI in media", "Semiotics",
-        "Cultural organizations marketing", "Italian publishing market",
-        "Creator economy", "Marketing management", "Media transformation",
-        "Rights and licensing", "eBook strategy", "Branded content"
-      ],
-      "knowsLanguage": [
-        { "@type": "Language", "name": "Italian" },
-        { "@type": "Language", "name": "English" },
-        { "@type": "Language", "name": "French" }
-      ],
-      "sameAs": [
-        "https://www.linkedin.com/in/claudiocammarano/",
-        "https://claudiocammarano.substack.com",
-        "https://x.com/claudiocamm",
-        "https://medium.com/@ClaudioCamm"
-      ]
-    },
-    {
-      "@type": "Book",
-      "name": "Il mercato del libro",
-      "alternateName": "Il mercato del libro — L'altro lato del mestiere",
-      "url": "https://store.corriere.it/il-mercato-del-libro-gzt2130020.html",
-      "author": { "@id": "https://claudiocammarano.com/#person" },
-      "publisher": { "@type": "Organization", "name": "Solferino" },
-      "inLanguage": "it",
-      "isPartOf": { "@type": "BookSeries", "name": "Lezioni di Scrittura", "publisher": { "@type": "Organization", "name": "Scuola Holden" } }
-    }
+  "@type": "Person",
+  "@id": "https://claudiocammarano.com/#person",
+  "birthDate": "1978-11-08",
+  "birthPlace": { "@type": "Place", "name": "Italy" },
+  "nationality": "Italian",
+  "knowsLanguage": [
+    { "@type": "Language", "name": "Italian" },
+    { "@type": "Language", "name": "English" },
+    { "@type": "Language", "name": "French" }
   ]
 }
 </script>

@@ -30,7 +30,7 @@
         {% if ramo and ramo.specimen.length %}
         <p class="sf-specimen">
           {%- for cname in ramo.specimen -%}
-          <a href="/concetti/{{ cname | slugify }}/">{{ cname }}</a>{% if not loop.last %} · {% endif %}
+          <a href="/concetti/{{ cname | slugify }}/">{{ cname | displayName }}</a>{% if not loop.last %} · {% endif %}
           {%- endfor -%}
         </p>
         {% endif %}

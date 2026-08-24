@@ -301,7 +301,7 @@ try {
   <p class="article-concepts-label">Concetti</p>
   <div class="concetto-chips">
     {% for c in postConcepts %}
-    <a href="/concetti/{{ c.name | slugify }}/" class="concetto-chip">{{ c.name }}</a>
+    <a href="/concetti/{{ c.name | slugify }}/" class="concetto-chip">{{ c.name | displayName }}</a>
     {% endfor %}
   </div>
 </div>

@@ -1,11 +1,26 @@
 <footer class="site-footer">
   <div class="container">
+
+    {# Cattura The Abstract. Non un embed Substack: un invito con link
+       tracciato verso /newsletter/, dove sta il form vero. Cosi' l'evento e'
+       misurabile (niente iframe cross-origin), niente terze parti su tutte
+       le pagine, e la riga dichiara in italiano che la newsletter e' in
+       inglese. Nessun verbo imperativo: vincolo pull-mode. #}
+    <div class="footer-newsletter">
+      <div class="footer-newsletter-text">
+        <p class="footer-newsletter-title">The Abstract</p>
+        <p class="footer-newsletter-line">La controparte in inglese di questo sito: un saggio al mese su editoria, media e produzione culturale nell'età dei modelli generativi, letti dall'Europa.</p>
+      </div>
+      <a class="footer-newsletter-link" href="/newsletter/" data-newsletter-cta data-position="footer">Le uscite e l'iscrizione &#8594;</a>
+    </div>
+
     <div class="footer-content">
       <div class="footer-info">
         <p class="footer-name">Claudio Cammarano · Marketing × Media × Content Industries</p>
         <p class="footer-roles">Marketing editoriale · Docente · Irene Media · Episteme Advisory</p>
       </div>
       <div class="footer-social">
+        <a href="/learning/">Learning log</a>
         <a href="/colophon/">Colophon</a>
         <a href="/episteme-advisory/lab/">Lab</a>
         <a href="https://www.linkedin.com/in/claudiocammarano/" target="_blank" rel="noopener">LinkedIn</a>

@@ -14,8 +14,9 @@ permalink: "/indice/"
   "url": "https://claudiocammarano.com/indice/",
   "author": {
     "@type": "Person",
+    "@id": "https://claudiocammarano.com/#person",
     "name": "Claudio Cammarano",
-    "url": "https://claudiocammarano.com/about/"
+    "url": "https://claudiocammarano.com"
   }
 }
 </script>
@@ -94,21 +95,8 @@ permalink: "/indice/"
   <section class="indice-section" id="persone">
     <details class="indice-details">
       <summary class="indice-section-title">Persone <span class="indice-chevron" aria-hidden="true">›</span></summary>
-      <dl class="indice-list">
-        {% for concept in personas %}
-        <div class="indice-item{% if concept.articles.length > 1 %} indice-item--multi{% endif %}">
-          <dt class="indice-term">
-            <a href="/concetti/{{ concept.name | slugify }}/" class="indice-term-link{% if concept.lab %} indice-term-link--lab{% endif %}">{{ concept.name }}</a>{% if concept.lab %}<span class="indice-lab-badge" aria-label="Episteme Lab">lab</span>{% endif %}
-            {% if concept.articles.length > 1 %}<span class="indice-count" aria-label="{{ concept.articles.length }} articoli">{{ concept.articles.length }}</span>{% endif %}
-          </dt>
-          <dd class="indice-articles">
-            {% for art in concept.articles %}
-            <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% elif art._source == 'lab' %} indice-article-link--lab{% elif art._source == 'learning' %} indice-article-link--learning{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% elif art._source == 'lab' %}<span class="indice-lab-badge" aria-label="lab">lab</span>{% elif art._source == 'learning' %}<span class="indice-learning-badge" aria-label="learning">lr</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
-            {% endfor %}
-          </dd>
-        </div>
-        {% endfor %}
-      </dl>
+      {% set items = personas %}{% set sectionId = "persone" %}{% set termClass = "" %}
+      {% include "components/indice-lista.njk" %}
     </details>
   </section>
 
@@ -116,21 +104,8 @@ permalink: "/indice/"
   <section class="indice-section" id="teorie">
     <details class="indice-details">
       <summary class="indice-section-title">Teorie e concetti <span class="indice-chevron" aria-hidden="true">›</span></summary>
-      <dl class="indice-list">
-        {% for concept in teorie %}
-        <div class="indice-item{% if concept.articles.length > 1 %} indice-item--multi{% endif %}">
-          <dt class="indice-term">
-            <a href="/concetti/{{ concept.name | slugify }}/" class="indice-term-link{% if concept.lab %} indice-term-link--lab{% endif %}">{{ concept.name }}</a>{% if concept.lab %}<span class="indice-lab-badge" aria-label="Episteme Lab">lab</span>{% endif %}
-            {% if concept.articles.length > 1 %}<span class="indice-count" aria-label="{{ concept.articles.length }} articoli">{{ concept.articles.length }}</span>{% endif %}
-          </dt>
-          <dd class="indice-articles">
-            {% for art in concept.articles %}
-            <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% elif art._source == 'lab' %} indice-article-link--lab{% elif art._source == 'learning' %} indice-article-link--learning{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% elif art._source == 'lab' %}<span class="indice-lab-badge" aria-label="lab">lab</span>{% elif art._source == 'learning' %}<span class="indice-learning-badge" aria-label="learning">lr</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
-            {% endfor %}
-          </dd>
-        </div>
-        {% endfor %}
-      </dl>
+      {% set items = teorie %}{% set sectionId = "teorie" %}{% set termClass = "" %}
+      {% include "components/indice-lista.njk" %}
     </details>
   </section>
 
@@ -138,21 +113,8 @@ permalink: "/indice/"
   <section class="indice-section" id="paesi">
     <details class="indice-details">
       <summary class="indice-section-title">Paesi <span class="indice-chevron" aria-hidden="true">›</span></summary>
-      <dl class="indice-list">
-        {% for concept in paesi %}
-        <div class="indice-item{% if concept.articles.length > 1 %} indice-item--multi{% endif %}">
-          <dt class="indice-term">
-            <a href="/concetti/{{ concept.name | slugify }}/" class="indice-term-link{% if concept.lab %} indice-term-link--lab{% endif %}">{{ concept.name }}</a>{% if concept.lab %}<span class="indice-lab-badge" aria-label="Episteme Lab">lab</span>{% endif %}
-            {% if concept.articles.length > 1 %}<span class="indice-count" aria-label="{{ concept.articles.length }} articoli">{{ concept.articles.length }}</span>{% endif %}
-          </dt>
-          <dd class="indice-articles">
-            {% for art in concept.articles %}
-            <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% elif art._source == 'lab' %} indice-article-link--lab{% elif art._source == 'learning' %} indice-article-link--learning{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% elif art._source == 'lab' %}<span class="indice-lab-badge" aria-label="lab">lab</span>{% elif art._source == 'learning' %}<span class="indice-learning-badge" aria-label="learning">lr</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
-            {% endfor %}
-          </dd>
-        </div>
-        {% endfor %}
-      </dl>
+      {% set items = paesi %}{% set sectionId = "paesi" %}{% set termClass = "" %}
+      {% include "components/indice-lista.njk" %}
     </details>
   </section>
 
@@ -160,21 +122,8 @@ permalink: "/indice/"
   <section class="indice-section" id="luoghi">
     <details class="indice-details">
       <summary class="indice-section-title">Luoghi <span class="indice-chevron" aria-hidden="true">›</span></summary>
-      <dl class="indice-list">
-        {% for concept in luoghi %}
-        <div class="indice-item{% if concept.articles.length > 1 %} indice-item--multi{% endif %}">
-          <dt class="indice-term">
-            <a href="/concetti/{{ concept.name | slugify }}/" class="indice-term-link{% if concept.lab %} indice-term-link--lab{% endif %}">{{ concept.name }}</a>{% if concept.lab %}<span class="indice-lab-badge" aria-label="Episteme Lab">lab</span>{% endif %}
-            {% if concept.articles.length > 1 %}<span class="indice-count" aria-label="{{ concept.articles.length }} articoli">{{ concept.articles.length }}</span>{% endif %}
-          </dt>
-          <dd class="indice-articles">
-            {% for art in concept.articles %}
-            <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% elif art._source == 'lab' %} indice-article-link--lab{% elif art._source == 'learning' %} indice-article-link--learning{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% elif art._source == 'lab' %}<span class="indice-lab-badge" aria-label="lab">lab</span>{% elif art._source == 'learning' %}<span class="indice-learning-badge" aria-label="learning">lr</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
-            {% endfor %}
-          </dd>
-        </div>
-        {% endfor %}
-      </dl>
+      {% set items = luoghi %}{% set sectionId = "luoghi" %}{% set termClass = "" %}
+      {% include "components/indice-lista.njk" %}
     </details>
   </section>
 
@@ -182,21 +131,8 @@ permalink: "/indice/"
   <section class="indice-section" id="istituzioni">
     <details class="indice-details">
       <summary class="indice-section-title">Istituzioni <span class="indice-chevron" aria-hidden="true">›</span></summary>
-      <dl class="indice-list">
-        {% for concept in istituzioni %}
-        <div class="indice-item{% if concept.articles.length > 1 %} indice-item--multi{% endif %}">
-          <dt class="indice-term">
-            <a href="/concetti/{{ concept.name | slugify }}/" class="indice-term-link{% if concept.lab %} indice-term-link--lab{% endif %}">{{ concept.name }}</a>{% if concept.lab %}<span class="indice-lab-badge" aria-label="Episteme Lab">lab</span>{% endif %}
-            {% if concept.articles.length > 1 %}<span class="indice-count" aria-label="{{ concept.articles.length }} articoli">{{ concept.articles.length }}</span>{% endif %}
-          </dt>
-          <dd class="indice-articles">
-            {% for art in concept.articles %}
-            <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% elif art._source == 'lab' %} indice-article-link--lab{% elif art._source == 'learning' %} indice-article-link--learning{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% elif art._source == 'lab' %}<span class="indice-lab-badge" aria-label="lab">lab</span>{% elif art._source == 'learning' %}<span class="indice-learning-badge" aria-label="learning">lr</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
-            {% endfor %}
-          </dd>
-        </div>
-        {% endfor %}
-      </dl>
+      {% set items = istituzioni %}{% set sectionId = "istituzioni" %}{% set termClass = "" %}
+      {% include "components/indice-lista.njk" %}
     </details>
   </section>
 
@@ -204,21 +140,8 @@ permalink: "/indice/"
   <section class="indice-section" id="testi">
     <details class="indice-details">
       <summary class="indice-section-title">Testi <span class="indice-chevron" aria-hidden="true">›</span></summary>
-      <dl class="indice-list">
-        {% for concept in testi %}
-        <div class="indice-item{% if concept.articles.length > 1 %} indice-item--multi{% endif %}">
-          <dt class="indice-term indice-term--testo">
-            <a href="/concetti/{{ concept.name | slugify }}/" class="indice-term-link{% if concept.lab %} indice-term-link--lab{% endif %}">{{ concept.name }}</a>{% if concept.lab %}<span class="indice-lab-badge" aria-label="Episteme Lab">lab</span>{% endif %}
-            {% if concept.articles.length > 1 %}<span class="indice-count" aria-label="{{ concept.articles.length }} articoli">{{ concept.articles.length }}</span>{% endif %}
-          </dt>
-          <dd class="indice-articles">
-            {% for art in concept.articles %}
-            <a href="{{ art.url }}" class="indice-article-link{% if art._source == 'curated' %} indice-article-link--curated{% elif art._source == 'lab' %} indice-article-link--lab{% elif art._source == 'learning' %} indice-article-link--learning{% endif %}">{{ art.title }}{% if art._source == 'curated' %}<span class="indice-curated-badge" aria-label="curated">c</span>{% elif art._source == 'lab' %}<span class="indice-lab-badge" aria-label="lab">lab</span>{% elif art._source == 'learning' %}<span class="indice-learning-badge" aria-label="learning">lr</span>{% endif %}</a>{% if not loop.last %}<span class="indice-sep" aria-hidden="true">·</span>{% endif %}
-            {% endfor %}
-          </dd>
-        </div>
-        {% endfor %}
-      </dl>
+      {% set items = testi %}{% set sectionId = "testi" %}{% set termClass = "indice-term--testo" %}
+      {% include "components/indice-lista.njk" %}
     </details>
   </section>
 

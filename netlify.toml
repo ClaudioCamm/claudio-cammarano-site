@@ -103,3 +103,13 @@
   from = "/archive/*"
   to = "https://medium.com/@ClaudioCamm"
   status = 301
+
+[[redirects]]
+  from = "/disintegrare-facebook-f025fb4461f"
+  to = "https://medium.com/@ClaudioCamm/disintegrare-facebook-f025fb4461f"
+  status = 301
+
+[[redirects]]
+  from = "/dopo-la-globalizzazione-*"
+  to = "/writings/"
+  status = 301

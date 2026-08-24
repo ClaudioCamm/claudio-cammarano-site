@@ -1,0 +1,66 @@
+---
+layout: layouts/base.njk
+title: Projects
+description: "I tre progetti attivi di Claudio Cammarano: Irene Media (corporate ghostwriting), Episteme Advisory (validazione epistemica per l'AI) e il Lab, le note di ricerca aperte che stanno dietro il paper."
+permalink: "/projects/"
+---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Projects — Claudio Cammarano",
+  "description": "Irene Media, Episteme Advisory e il Lab: i progetti attivi di Claudio Cammarano.",
+  "url": "https://claudiocammarano.com/projects/",
+  "about": [
+    { "@id": "https://claudiocammarano.com/irene-media/#organization" },
+    { "@id": "https://claudiocammarano.com/episteme-advisory/#organization" }
+  ],
+  "author": { "@id": "https://claudiocammarano.com/#person" }
+}
+</script>
+
+<section class="projects-hero">
+  <h1 class="projects-title">Projects</h1>
+  <p class="projects-standfirst">Due progetti indipendenti e un quaderno di lavoro aperto. Il primo è di mestiere: scrivere per chi non ha tempo di scrivere. Il secondo è di ricerca: capire a quali condizioni ci si può fidare di un output generato da un modello. Il terzo è il cantiere del secondo, tenuto in pubblico.</p>
+</section>
+
+<div class="projects-grid">
+
+  <article class="project-card project-card--irene">
+    <p class="project-kicker">Content · Brand journalism</p>
+    <h2 class="project-name"><a href="/irene-media/">Irene Media</a></h2>
+    <p class="project-line">Corporate ghostwriting per professionisti e aziende.</p>
+    <p class="project-body">Articoli e thought leadership, contenuti LinkedIn, discorsi e presentazioni, report e white paper. Per executive, imprenditori e professionisti che vogliono comunicare le proprie idee con voce riconoscibile.</p>
+    <p class="project-go"><a href="/irene-media/">La pagina di Irene Media &#8594;</a></p>
+  </article>
+
+  <article class="project-card project-card--episteme">
+    <p class="project-kicker">Ricerca · AI validation</p>
+    <h2 class="project-name"><a href="/episteme-advisory/">Episteme Advisory</a></h2>
+    <p class="project-line">Validazione epistemica per l'AI: infrastruttura di post-cognizione per organizzazioni che devono fidarsi dei propri output generativi.</p>
+    <p class="project-body">Audit epistemico, design del ciclo di validazione, documentazione dei processi per la compliance all'AI Act. Alla base c'è una tassonomia ontologica in sette dimensioni e un lavoro sperimentale sul divario fra accordo lessicale e accordo semantico.</p>
+    <p class="project-go"><a href="/episteme-advisory/">La pagina di Episteme Advisory &#8594;</a></p>
+
+    {# Il Lab non e' un pari-grado: e' la parte in corso di Episteme, e sta
+       dentro la sua card, rientrato. #}
+    <div class="project-sub">
+      <p class="project-sub-kicker">Note di ricerca · in corso</p>
+      <h3 class="project-sub-name"><a href="/episteme-advisory/lab/">Lab</a></h3>
+      <p class="project-sub-body">Note datate e non finite, nel formato dei research notebook pubblici: il lavoro aperto dietro il paper, comprese le cose che non hanno funzionato.</p>
+      {% if collections.lab.length %}
+      <ul class="project-sub-list">
+        {% for nota in collections.lab | limit(3) %}
+        <li><span class="project-sub-date">{{ nota.data.date | formatDateEN }}</span> <a href="{{ nota.url }}">{{ nota.data.title }}</a></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+      <p class="project-go project-go--sub"><a href="/episteme-advisory/lab/">Tutte le note &#8594;</a></p>
+    </div>
+  </article>
+
+</div>
+
+<section class="projects-foot">
+  <p>Il resto del sito: i <a href="/writings/">saggi</a>, le <a href="/curated/">letture schedate</a> e l'<a href="/indice/">indice dei concetti</a> che li tiene insieme.</p>
+</section>
