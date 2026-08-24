@@ -436,6 +436,14 @@ main {
   color: #ffffff;
 }
 
+/* Il footer ha sempre fondo scuro. In dark mode --color-bg-alt diventa #1e1e1a,
+   cioè quasi il colore del fondo (#0e0e0c): i link sparivano. */
+@media (prefers-color-scheme: dark) {
+  .footer-social a {
+    color: #cbc7bd;
+  }
+}
+
 /* === ARTICLE CARDS (HOMEPAGE) === */
 .article-card {
   margin-bottom: var(--spacing-md);
@@ -1113,6 +1121,113 @@ figcaption {
   margin-top: var(--spacing-sm);
   padding-left: var(--spacing-sm);
   border-left: 2px solid var(--color-border);
+}
+
+/* === FORMULE (MathJax) === */
+.math-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  margin: var(--spacing-md) 0;
+  padding-bottom: 2px;
+}
+
+.math-display mjx-container[display="true"] {
+  margin: 0;
+}
+
+/* === NOTAZIONE INTERVENTO AI === */
+/* Vedi src/_data/aiNotation.js e /colophon/#notazione.
+   Discreto per costruzione: non compete con il testo e non è un badge. */
+.ai-notation {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #d8d5ea;
+  font-variant: small-caps;
+  letter-spacing: .06em;
+  font-size: .9rem;
+}
+
+.ai-notation a {
+  color: var(--color-primary);
+  text-decoration: none;
+  border-bottom: 1px solid #d8d5ea;
+}
+
+.ai-notation a:hover {
+  border-bottom-color: var(--color-primary);
+}
+
+.ai-notation-retro,
+.ai-notation-method {
+  margin-top: .4rem;
+  font-size: .9rem;
+  color: var(--color-text-light);
+  font-style: italic;
+}
+
+.ai-notation-declaration {
+  margin: var(--spacing-md) 0 var(--spacing-lg);
+  padding: var(--spacing-md);
+  background: var(--color-bg-alt);
+  border-left: 3px solid var(--color-primary);
+  border-radius: 0 6px 6px 0;
+}
+
+.ai-notation-declaration p {
+  margin: 0;
+}
+
+.ai-notation-declaration-link {
+  margin-top: var(--spacing-sm) !important;
+  font-size: .9rem;
+}
+
+.colophon-notazione {
+  margin: var(--spacing-md) 0;
+}
+
+.colophon-notazione-voce {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: baseline;
+  margin-bottom: var(--spacing-sm);
+}
+
+.colophon-notazione-voce dt {
+  flex: 0 0 3.5rem;
+}
+
+.colophon-notazione-voce dd {
+  margin: 0;
+}
+
+.colophon-notazione-asse {
+  margin-bottom: var(--spacing-sm);
+}
+
+@media (max-width: 600px) {
+  .colophon-notazione-voce {
+    display: block;
+  }
+  .colophon-notazione-voce dd {
+    margin-top: .2rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .ai-notation {
+    border-top-color: var(--color-border);
+  }
+  .ai-notation a {
+    border-bottom-color: var(--color-border);
+  }
+  .ai-notation a:hover {
+    border-bottom-color: var(--color-primary);
+  }
+  .ai-notation-declaration {
+    border-left-color: var(--color-primary);
+  }
 }
 
 /* === DIAGRAM BLOCKS === */

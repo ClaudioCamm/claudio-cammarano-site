@@ -2,6 +2,8 @@
 layout: layouts/lab-note.njk
 title: "The Monaco Case — Causal asymmetry and the limits of validation"
 date: 2026-02-10
+ai_prose: WR
+ai_scope: [FM]
 project: "Post-cognition"
 stage: "Taxonomy development"
 discipline: ["Epistemology", "Philosophy of causation"]

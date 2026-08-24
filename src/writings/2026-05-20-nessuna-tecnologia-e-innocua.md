@@ -2,6 +2,8 @@
 layout: layouts/article.njk
 title: "Nessuna tecnologia è innocua, e neanche questo sito lo è"
 date: 2026-05-20
+ai_prose: DL
+ai_scope: [TR]
 category: ["Comunicazione", "Geopolitica", "Dual Use"]
 lang: "🇮🇹 Italiano"
 tags: [writings]

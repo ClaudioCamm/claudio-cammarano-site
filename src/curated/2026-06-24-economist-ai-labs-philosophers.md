@@ -3,6 +3,7 @@ title: "Why Big AI Labs Are Hiring So Many Philosophers"
 external_url: https://www.economist.com/science-and-technology/2026/06/24/why-big-ai-labs-are-hiring-so-many-philosophers
 source: "The Economist"
 date: 2026-06-24
+ai_prose: WR
 criterio: strumento-concettuale
 perche: "Deontologia contro consequenzialismo dentro le labs — e il rischio del moral deskilling."
 rinvio: /curated/2026-06-17-boccia-artieri-magnifica-humanitas-substack/

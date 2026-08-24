@@ -2,6 +2,8 @@
 layout: layouts/lab-note.njk
 title: "Coding Manual v2.1 — The framework audits itself"
 date: 2026-07-10
+ai_prose: WR
+ai_scope: [FM]
 project: "Post-cognition"
 stage: "Protocol development"
 discipline: ["Epistemology", "Computational linguistics / NLP", "Statistics"]

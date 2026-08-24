@@ -3,6 +3,7 @@ title: "The Warrior-Witches of Ukraine's Resistance"
 external_url: https://www.theatlantic.com/international/2026/06/underground-intelligence-network-russia-ukraine/687578/
 source: "Ken Harbaugh / The Atlantic"
 date: 2026-06-21
+ai_prose: WR
 criterio: elementi-di-scenario
 perche: "La resistenza come pratica del long game: l'intelligence come forma di sopravvivenza civile."
 rinvio: /curated/2026-04-10-zakaria-trump-iran-war-nyt/

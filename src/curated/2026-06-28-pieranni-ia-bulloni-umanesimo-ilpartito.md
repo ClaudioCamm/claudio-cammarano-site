@@ -3,6 +3,7 @@ title: "IA, bulloni e umanesimo"
 external_url: https://ilpartito.substack.com/p/ia-bulloni-e-umanesimo
 source: "Simone Pieranni / Il Partito"
 date: 2026-06-28
+ai_prose: WR
 criterio: elementi-di-scenario
 perche: "La pressione sociale dell'automazione su scala di massa: in Cina parlare di lavoro significa parlare di patto sociale."
 rinvio: /curated/2026-05-14-chan-china-ai-nyt/

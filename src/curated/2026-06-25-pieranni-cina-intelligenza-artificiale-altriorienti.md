@@ -3,6 +3,7 @@ title: "Cosa intende la Cina per «intelligenza artificiale»"
 external_url: https://open.spotify.com/episode/1r6Bjga7o14MhXIKoyLOZx
 source: "Simone Pieranni / Altri Orienti"
 date: 2026-06-25
+ai_prose: WR
 criterio: strumento-concettuale
 perche: "La cosmotecnica: non chi costruisce modelli più potenti, ma con quale idea di cosa sia la tecnologia."
 rinvio: /curated/2026-05-14-chan-china-ai-nyt/

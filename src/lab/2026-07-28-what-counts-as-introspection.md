@@ -2,6 +2,8 @@
 layout: layouts/lab-note.njk
 title: "What Counts as Introspection"
 date: 2026-07-28
+ai_prose: WR
+ai_scope: [FM]
 project: "Post-cognition"
 stage: "Writing & submission"
 discipline: ["Epistemology", "Philosophy of mind", "Cognitive science", "Computational linguistics / NLP"]

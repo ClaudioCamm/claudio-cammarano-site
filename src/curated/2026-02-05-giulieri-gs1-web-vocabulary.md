@@ -3,6 +3,7 @@ title: "GS1 Web Vocabulary: il dizionario universale che dà voce ai prodotti ne
 external_url: https://tendenzeonline.info/articoli/2026/02/05/gs1-web-vocabulary-il-dizionario-universale-che-da-voce-ai-prodotti-nel-web-30/
 source: "Vanessa Giulieri / Tendenze (GS1 Italy)"
 date: 2026-02-05
+ai_prose: WR
 criterio: lettura-di-mercato
 perche: "L'infrastruttura dati come prerequisito perché i prodotti siano letti e citati dai motori generativi."
 rinvio: /curated/2026-05-21-diegoli-tre-ia-netcomm-forum/

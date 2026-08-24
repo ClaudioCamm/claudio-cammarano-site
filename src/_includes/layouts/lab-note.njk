@@ -48,6 +48,7 @@ lang: en
 
   <div class="article-body">
     {{ content | safe }}
+    {% set aiLangKey = "en" %}{% set aiMethodNote = true %}{% include "components/ai-notation.njk" %}
   </div>
 </article>
 

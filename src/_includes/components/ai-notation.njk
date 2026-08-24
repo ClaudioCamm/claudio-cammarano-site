@@ -1,0 +1,27 @@
+{#
+  Notazione dell'intervento AI — vedi src/_data/aiNotation.js e /colophon/#notazione.
+
+  Variabili attese nel contesto:
+    ai_prose   (obbligatorio nel frontmatter dei pezzi dalla data di attivazione)
+    ai_scope   (facoltativo, lista)
+    aiLangKey  ("it" | "en"), impostata dal layout; default "it"
+    aiMethodNote (booleano) — se true stampa la nota di metodo (sezione Lab)
+
+  Se `ai_prose` manca il partial non stampa nulla: l'assenza del codice è
+  intercettata dalla validazione di build, non nascosta qui.
+#}
+{% if ai_prose and aiNotation.prose[ai_prose] %}
+{% set k = aiLangKey | default("it") %}
+{% set codes = [ai_prose] %}
+{% set labels = [aiNotation.prose[ai_prose].label[k]] %}
+{% if ai_scope %}{% for s in ai_scope %}{% if aiNotation.scope[s] %}{% set _ = codes.push(s) %}{% set _ = labels.push(aiNotation.scope[s].label[k]) %}{% endif %}{% endfor %}{% endif %}
+<p class="ai-notation">
+  <a href="/colophon/#notazione" title="{{ labels | join(' · ') }}">{{ codes | join('·') }}</a>
+</p>
+{% if (date | isoDate) < aiNotation.activeFrom %}
+<p class="ai-notation-retro">{{ aiNotation.retro.note[k] }}</p>
+{% endif %}
+{% if aiMethodNote %}
+<p class="ai-notation-method">{{ aiNotation.labMethodNote[k] }}</p>
+{% endif %}
+{% endif %}

@@ -89,6 +89,68 @@ module.exports = function(eleventyConfig) {
 
   // === COLLECTIONS ===
 
+  // Validazione della notazione dell'intervento AI (vedi src/_data/aiNotation.js).
+  // Ogni pezzo in writings/, curated/ e lab/ deve dichiarare `ai_prose`, senza
+  // eccezioni di data: l'archivio anteriore al 23 agosto 2026 è stato
+  // certificato retroattivamente, e i pezzi che lo dichiarano lo segnalano in
+  // pagina. Un codice fuori enum è sempre un errore.
+  eleventyConfig.addCollection("aiNotationAudit", function(collectionApi) {
+    var notation = require("./src/_data/aiNotation.js");
+    var activeFrom = new Date(notation.activeFrom + "T00:00:00Z");
+    var PROSE = notation.proseOrder;
+    var SCOPE = notation.scopeOrder;
+    var errors = [];
+    var checked = 0;
+    var retro = 0;
+
+    ["writings", "curated", "lab"].forEach(function(dir) {
+      collectionApi.getFilteredByGlob("src/" + dir + "/*.md").forEach(function(item) {
+        var where = dir + "/" + (item.inputPath || "").split("/").pop();
+        var prose = item.data.ai_prose;
+        var scope = item.data.ai_scope;
+
+        if (prose !== undefined && PROSE.indexOf(prose) === -1) {
+          var hint = (prose === 0 || prose === "0")
+            ? ' — YAML legge 00 come numero: scrivilo fra virgolette, ai_prose: "00"'
+            : "";
+          errors.push(where + ': ai_prose "' + prose + '" fuori enum (ammessi: ' + PROSE.join(", ") + ")" + hint);
+        }
+        if (scope !== undefined) {
+          if (!Array.isArray(scope)) {
+            errors.push(where + ": ai_scope deve essere una lista, non " + typeof scope);
+          } else {
+            scope.forEach(function(v) {
+              if (SCOPE.indexOf(v) === -1) {
+                errors.push(where + ': ai_scope "' + v + '" fuori enum (ammessi: ' + SCOPE.join(", ") + ")");
+              }
+            });
+          }
+        }
+        checked++;
+        if (prose === undefined) {
+          errors.push(where + ": manca ai_prose (obbligatorio, archivio compreso)");
+        } else if (item.date < activeFrom) {
+          retro++;
+        }
+      });
+    });
+
+    if (errors.length) {
+      throw new Error(
+        "\n[notazione AI] " + errors.length + " problema/i di dichiarazione:\n  - " +
+        errors.join("\n  - ") +
+        "\n\nUn pezzo privo di codice è un errore di pubblicazione, non un default:\n" +
+        "l'assenza della sigla sarebbe ambigua fra «nessun intervento» e «dimenticato».\n" +
+        "Vedi /colophon/#notazione.\n"
+      );
+    }
+
+    console.log("[notazione AI] " + checked + " pezzi verificati, di cui " + retro +
+      " certificati retroattivamente il " + notation.activeFrom + " — nessun problema.");
+    return [];
+  });
+
+
   eleventyConfig.addCollection("writings", function(collectionApi) {
     return collectionApi.getFilteredByGlob("src/writings/*.md")
       .sort((a, b) => b.date - a.date);

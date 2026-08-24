@@ -2,6 +2,8 @@
 layout: layouts/lab-note.njk
 title: "What Counts as a Verdict"
 date: 2026-07-21
+ai_prose: WR
+ai_scope: [FM]
 project: "Post-cognition"
 stage: "Writing & submission"
 discipline: ["Epistemology", "Philosophy of language", "Computational linguistics / NLP", "Statistics"]

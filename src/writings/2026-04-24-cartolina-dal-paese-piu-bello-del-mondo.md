@@ -2,6 +2,8 @@
 layout: layouts/article.njk
 title: "Cartolina dal paese più bello del mondo"
 date: 2026-04-24
+ai_prose: DL
+ai_scope: [TR]
 category: ["Italia", "Mediterraneo", "Geopolitica"]
 lang: "🇮🇹 Italiano"
 tags: [writings]

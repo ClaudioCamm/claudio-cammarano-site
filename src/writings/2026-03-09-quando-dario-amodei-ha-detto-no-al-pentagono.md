@@ -2,6 +2,7 @@
 layout: layouts/article.njk
 title: "Quando Dario Amodei ha detto no al Pentagono — e io ho chiamato Claude"
 date: 2026-03-09
+ai_prose: DL
 category: ["AI", "Geopolitica", "Scenario Planning"]
 lang: "🇮🇹 Italiano"
 tags: [writings]

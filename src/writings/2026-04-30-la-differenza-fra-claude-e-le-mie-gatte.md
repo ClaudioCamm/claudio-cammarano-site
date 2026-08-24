@@ -3,6 +3,8 @@ layout: layouts/article.njk
 title: "La differenza fra Claude e le mie gatte"
 series: "La condizione epistemica, I"
 date: 2026-04-30
+ai_prose: DL
+ai_scope: [TR]
 category: ["AI", "Filosofia", "Epistemologia"]
 lang: "🇮🇹 Italiano"
 tags: [writings]

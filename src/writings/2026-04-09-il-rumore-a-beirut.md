@@ -2,6 +2,7 @@
 layout: layouts/article.njk
 title: "Il rumore a Beirut. Taleb, l'architettura del caos e le democrazie sotto assedio"
 date: 2026-04-09
+ai_prose: DL
 category: ["Geopolitica", "Medio Oriente", "Democrazia"]
 lang: "🇮🇹 Italiano"
 tags: [writings]

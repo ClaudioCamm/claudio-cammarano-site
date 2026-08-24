@@ -3,6 +3,8 @@ layout: layouts/article.njk
 title: "La dialettica dell’antilluminismo"
 series: "La condizione epistemica, II"
 date: 2026-06-16
+ai_prose: DL
+ai_scope: [TR]
 category: ["Filosofia", "Politica", "Epistemologia"]
 lang: "🇮🇹 Italiano"
 tags: [writings]

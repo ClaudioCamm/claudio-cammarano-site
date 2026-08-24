@@ -2,6 +2,7 @@
 layout: layouts/article.njk
 title: "L'infrastruttura del sapere. AI Act, sistemi ad alto rischio e autonomia cognitiva"
 date: 2026-07-07
+ai_prose: DL
 description: "La proroga europea sui sistemi AI ad alto rischio non riduce l'urgenza della validazione. Il caso Fable 5 ha dimostrato in quarantotto ore cosa succede quando un'organizzazione non sa da chi dipende per fare ciò che sa."
 category: ["AI", "Epistemologia", "Geopolitica", "Teoria dei giochi"]
 lang: "🇮🇹 Italiano"

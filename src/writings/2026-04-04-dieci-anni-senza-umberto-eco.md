@@ -2,6 +2,7 @@
 layout: layouts/article.njk
 title: "Dieci anni senza Umberto Eco"
 date: 2026-04-04
+ai_prose: "00"
 category: ["Bologna", "Scienze della Comunicazione"]
 lang: "🇮🇹 Italiano"
 tags: [writings]

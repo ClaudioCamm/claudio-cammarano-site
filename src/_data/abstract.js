@@ -64,6 +64,10 @@ module.exports = async function () {
             }
           }
 
+          if (!posts.length) {
+            console.warn("[The Abstract] Feed raggiunto ma nessun post estratto: " +
+              "il blocco in home e in /newsletter/ non verra' renderizzato.");
+          }
           resolve({ posts });
         } catch (_) {
           resolve(fallback);
@@ -71,7 +75,20 @@ module.exports = async function () {
       });
     });
 
-    req.on('error', () => resolve(fallback));
-    req.setTimeout(6000, () => { req.destroy(); resolve(fallback); });
+    // Il degrado e' volutamente silenzioso lato pagina (il blocco sparisce senza
+    // rompere il layout), ma non lato build: senza un avviso in console un build
+    // eseguito offline sembra una perdita di contenuto invece che un fetch fallito.
+    req.on('error', (e) => {
+      console.warn("[The Abstract] Feed Substack irraggiungibile (" + (e.code || e.message) +
+        "): il blocco in home e in /newsletter/ non verra' renderizzato. " +
+        "Se stai buildando offline e' atteso: rilancia il build online.");
+      resolve(fallback);
+    });
+    req.setTimeout(6000, () => {
+      req.destroy();
+      console.warn("[The Abstract] Timeout sul feed Substack (6s): " +
+        "il blocco in home e in /newsletter/ non verra' renderizzato.");
+      resolve(fallback);
+    });
   });
 };

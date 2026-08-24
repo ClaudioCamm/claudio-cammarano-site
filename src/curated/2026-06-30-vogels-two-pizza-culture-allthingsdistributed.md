@@ -3,6 +3,7 @@ title: "A Return to Two-Pizza Culture"
 external_url: https://www.allthingsdistributed.com/2026/06/return-to-two-pizza-culture.html
 source: "Werner Vogels / All Things Distributed"
 date: 2026-06-30
+ai_prose: WR
 criterio: metodo-di-lavoro
 perche: "Prima il prototipo, poi la press release: cosa cambia quando il tempo tra idea e prototipo collassa."
 rinvio: /curated/2026-06-26-ottaviani-data-journalism-ai-reuters/

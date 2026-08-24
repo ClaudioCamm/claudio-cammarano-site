@@ -3,6 +3,7 @@ title: "A Defense of a Liberal Arts Education in the Age of A.I."
 external_url: https://www.nytimes.com/2026/05/21/opinion/ai-liberal-arts-education.html
 source: "Ross Douthat / The New York Times"
 date: 2026-05-21
+ai_prose: WR
 criterio: strumento-concettuale
 perche: "La gerarchia dei beni come affermazione ontologica: senza un 'superiore', parlare di istruzione superiore non ha senso."
 rinvio: /curated/2026-06-15-pinillos-humanists-humanities-chronicle/

@@ -2,6 +2,8 @@
 layout: layouts/lab-note.njk
 title: "Pre-Step 0 — Before classification, verify the speech act"
 date: 2026-02-14
+ai_prose: WR
+ai_scope: [FM]
 project: "Post-cognition"
 stage: "Taxonomy development"
 discipline: ["Epistemology", "Philosophy of language"]

@@ -2,6 +2,8 @@
 layout: layouts/lab-note.njk
 title: "Building the Taxonomy — Seven dimensions, eleven categories"
 date: 2026-02-03
+ai_prose: WR
+ai_scope: [FM]
 project: "Post-cognition"
 stage: "Taxonomy development"
 discipline: ["Epistemology", "Philosophy of language"]

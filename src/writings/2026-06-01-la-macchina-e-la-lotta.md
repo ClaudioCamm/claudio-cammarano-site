@@ -2,6 +2,7 @@
 layout: layouts/article.njk
 title: "La macchina e la lotta"
 date: 2026-06-01
+ai_prose: DL
 category: ["AI", "Scrittura", "Formazione"]
 lang: "🇮🇹 Italiano"
 tags: [writings]

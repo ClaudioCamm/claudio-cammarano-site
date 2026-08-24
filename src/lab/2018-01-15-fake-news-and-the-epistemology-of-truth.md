@@ -2,6 +2,8 @@
 layout: layouts/lab-note.njk
 title: "Fake News and the Epistemology of Truth — The origin story"
 date: 2018-01-15
+ai_prose: WR
+ai_scope: [FM]
 project: "Post-cognition"
 stage: "Origins"
 discipline: ["Epistemology", "Media studies", "Philosophy of language"]

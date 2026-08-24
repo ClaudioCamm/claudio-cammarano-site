@@ -6,3 +6,6 @@ _site_check*/
 # Local Netlify folder
 .netlify
 deploy-*.zip
+
+# Claude Code local settings
+.claude/

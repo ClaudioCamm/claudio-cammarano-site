@@ -3,6 +3,7 @@ title: "The End of the Future"
 external_url: https://foreignpolicy.com/2026/06/15/future-politics-theory-big-tech-artificial-intelligence-silicon-valley-nihilism/
 source: "Jonathan White / Foreign Policy"
 date: 2026-06-15
+ai_prose: WR
 criterio: strumento-concettuale
 perche: "La fine del futuro nella politica coincide con la sua colonizzazione da parte della Silicon Valley."
 rinvio: /curated/2026-06-12-corriere-colonizzazione-giudizio/

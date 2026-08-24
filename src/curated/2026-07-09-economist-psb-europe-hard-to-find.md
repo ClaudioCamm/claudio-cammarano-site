@@ -3,6 +3,7 @@ title: "Europe's public broadcasters go from prime time to hard-to-find"
 external_url: https://www.economist.com/europe/2026/07/09/europes-public-broadcasters-go-from-prime-time-to-hard-to-find
 source: "The Economist"
 date: 2026-07-09
+ai_prose: WR
 criterio: lettura-di-mercato
 perche: "La struttura economica dei broadcaster pubblici: un'infrastruttura di resilienza democratica in erosione."
 rinvio: /curated/2026-06-19-mauro-informazione-italia-digital-news-report/

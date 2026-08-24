@@ -3,6 +3,8 @@ layout: layouts/article.njk
 title: "L'ombra del passato"
 series: "Teoria dei giochi e ordine internazionale, II"
 date: 2026-05-04
+ai_prose: DL
+ai_scope: [FM, TR]
 category: ["Geopolitica", "Teoria dei giochi", "Regimi politici"]
 lang: "🇮🇹 Italiano"
 tags: [writings]

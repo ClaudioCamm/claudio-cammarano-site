@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 title: Colophon
-description: "Come funziona claudiocammarano.com: la tassonomia del Sommario ragionato, i criteri dei Curated, la regola delle pertinenze, le lingue, l'uso dell'AI e le licenze."
+description: "Come funziona claudiocammarano.com: la tassonomia del Sommario ragionato, i criteri dei Curated, la regola delle pertinenze, le lingue, la notazione dell'intervento AI e le licenze."
 ---
 
 <div class="colophon-content">
@@ -43,7 +43,42 @@ description: "Come funziona claudiocammarano.com: la tassonomia del Sommario rag
   <p>I saggi sono in italiano. <a href="/newsletter/">The Abstract</a>, su Substack, legge la content economy in inglese per un pubblico internazionale. Il <a href="/episteme-advisory/lab/">Lab</a> — le note del progetto di ricerca sulla validazione epistemica degli output AI — è solo in inglese, per scelta: è materiale di lavoro rivolto a una comunità che lavora in quella lingua.</p>
 
   <h2>La scrittura e l'AI</h2>
-  <p>Per realizzare questo sito uso strumenti di AI, senza i quali sarebbe impensabile anche solo provarci. Quanto all'uso degli LLM nella scrittura, ne ho scritto per esteso in <a href="/writings/2026-06-01-la-macchina-e-la-lotta/"><em>La macchina e la lotta</em></a>. Il mio approccio aspira a essere antidogmatico: uso tutto quello che posso per fare brainstorming, affinare bibliografie, costruire scalette. La stesura finale però è mia. In tutti i casi, niente di ciò che viene pubblicato in questo sito esula dalla mia responsabilità.</p>
+  <p>Per realizzare questo sito uso strumenti di AI, senza i quali sarebbe impensabile anche solo provarci. Quanto all'uso degli LLM nella scrittura, ne ho scritto per esteso in <a href="/writings/2026-06-01-la-macchina-e-la-lotta/"><em>La macchina e la lotta</em></a>. Il mio approccio aspira a essere antidogmatico: uso tutto quello che posso per fare brainstorming, affinare bibliografie, costruire scalette. La stesura finale però è mia. In tutti i casi, niente di ciò che viene pubblicato in questo sito esula dalla mia responsabilità. Dal 23 agosto 2026 questo impegno generico è diventato una dichiarazione puntuale: ogni pezzo porta in coda il proprio codice, secondo <a href="#notazione">la notazione descritta qui sotto</a>.</p>
+
+  <h2 id="notazione">La notazione dell’intervento AI</h2>
+  <p>Ogni testo pubblicato riporta in coda un codice che dichiara in che misura un modello linguistico è intervenuto nella sua produzione. La notazione misura quanta della superficie pubblicata è passata dal modello, non il peso intellettuale del contributo: un codice più avanzato non indica un testo meno mio, indica un testo la cui prosa è passata più a lungo per una macchina. La responsabilità editoriale, la verifica delle fonti e la decisione finale su ogni riga restano interamente mie.</p>
+
+  <p class="colophon-notazione-asse"><em>Primo asse — su quanta prosa.</em> Sempre presente, un solo valore.</p>
+  <dl class="colophon-notazione">
+    {% for c in aiNotation.proseOrder %}
+    <div class="colophon-notazione-voce">
+      <dt><code>{{ c }}</code></dt>
+      <dd><em>{{ aiNotation.prose[c].label.it }}.</em> {{ aiNotation.prose[c].desc.it }}</dd>
+    </div>
+    {% endfor %}
+  </dl>
+  <p>I valori sono cumulativi in senso permissivo: il codice indica il livello massimo raggiunto e implica che i precedenti possano essere stati usati, non che lo siano stati.</p>
+
+  <p class="colophon-notazione-asse"><em>Secondo asse — su quali apparati.</em> Facoltativo, cumulabile.</p>
+  <dl class="colophon-notazione">
+    {% for c in aiNotation.scopeOrder %}
+    <div class="colophon-notazione-voce">
+      <dt><code>{{ c }}</code></dt>
+      <dd><em>{{ aiNotation.scope[c].label.it }}.</em> {{ aiNotation.scope[c].desc.it }}</dd>
+    </div>
+    {% endfor %}
+  </dl>
+  <p>I due assi sono indipendenti perché descrivono cose diverse: il primo riguarda la prosa, il secondo porzioni delimitate e verificabili del testo. Un saggio scritto interamente di mio pugno le cui formule sono state costruite in dialogo è <code>00·FM</code>, e rendere visibile quella distinzione è precisamente il motivo per cui la notazione esiste.</p>
+
+  <p><em>Rapporto con il watermarking.</em> Dall’agosto 2026 i modelli linguistici dei principali fornitori incorporano nel testo generato un watermark statistico, in conformità al Codice di condotta europeo sulla trasparenza dei contenuti generati da AI. Quel watermark risponde a una sola domanda — se un modello sia stato probabilmente coinvolto — e non distingue la scrittura dall’editing. Non rileva il dialogo preliminare, perché nessuna parola del modello entra nel testo; rileva poco o nulla l’editing leggero; non si applica dove l’output è obbligato, come nelle formule. Tre dei codici qui sopra dichiarano quindi ciò che nessuna infrastruttura di rilevamento può ricostruire. La notazione non sostituisce il watermark e non ne dipende: dichiara ciò che il watermark non può vedere.</p>
+
+  <p><em>Una conseguenza da segnalare.</em> Le traduzioni generate da un modello portano watermark pieno, perché ogni parola è scelta dal modello. Un testo siglato <code>ED·TR</code> — mio nell’originale, adattato in inglese con assistenza — risulterà quindi a un controllo esterno come integralmente generato. Il codice <code>TR</code> esiste per rendere leggibile questa asimmetria.</p>
+
+  <p><em>Ambito, e una parola sulla retrodatazione.</em> La notazione è stata introdotta il 23 agosto 2026 e si applica a tutto ciò che è pubblicato su questo sito, archivio compreso. I pezzi anteriori a quella data portano quindi un codice attribuito a posteriori, e ogni pezzo lo dichiara sotto il proprio codice: è una ricostruzione, non una registrazione in presa diretta, e la differenza conta abbastanza da essere scritta. Le due alternative erano peggiori. Ricostruire l’archivio in silenzio avrebbe prodotto una dichiarazione che nessuno può verificare e che si presenta come se fosse stata presa sul momento — il tipo di affermazione che questo sito esiste per non fare. Lasciarlo senza codice avrebbe prodotto un’ambiguità più grossa ancora, perché l’assenza della sigla non distingue fra «nessun intervento» e «non dichiarato». Certificare tutto e datare la certificazione è la sola via che non chiede fiducia su un punto verificabile.</p>
+
+  <p><em>I metadati: concetti, criteri, descrizioni.</em> La notazione riguarda i testi. I metadati che li circondano — i concetti assegnati a ogni pezzo, il criterio e la riga di motivazione di ogni curated, le descrizioni — seguono un metodo costante, che dichiaro qui una volta invece di ripeterlo pezzo per pezzo: la proposta è assistita da un modello a partire dal testo già scritto, la validazione è mia e avviene una voce alla volta, e nulla entra nell’indice senza che io l’abbia letta e confermata. Non portano un codice proprio per la ragione che il saggio sulla notazione argomenta al §6: un codice il cui valore non varia mai non trasporta informazione, e occuperebbe spazio senza dire niente. La difesa regge finché il metodo resta questo. Se un giorno l’assegnazione dei concetti diventasse automatica, questa riga andrebbe riscritta — ed è esattamente per questo che sta qui.</p>
+
+  <p>Il ragionamento esteso che ha portato a questa notazione, con la matrice delle combinazioni possibili, è in <a href="{{ aiNotation.essayUrl }}"><em>{{ aiNotation.essayTitle }}</em></a>.</p>
 
   <div class="colophon-tecnico">
     <p>Sito statico generato con Eleventy, pubblicato su Netlify. Carattere: Source Serif 4.</p>

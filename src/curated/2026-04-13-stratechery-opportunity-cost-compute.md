@@ -3,6 +3,7 @@ title: "Mythos, Muse, and the Opportunity Cost of Compute"
 external_url: https://stratechery.com/2026/mythos-muse-and-the-opportunity-cost-of-compute/
 source: "Ben Thompson / Stratechery"
 date: 2026-04-13
+ai_prose: WR
 criterio: lettura-di-mercato
 perche: "Il costo-opportunità del compute come vincolo: la cornice per leggere le mosse dei frontier labs."
 rinvio: /curated/2025-01-01-fabricated-knowledge-ai-semiconductor-outlook/

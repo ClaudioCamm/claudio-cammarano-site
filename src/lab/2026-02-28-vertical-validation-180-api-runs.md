@@ -2,6 +2,8 @@
 layout: layouts/lab-note.njk
 title: "Vertical Validation — 180 API runs and the 74-point gap"
 date: 2026-02-28
+ai_prose: WR
+ai_scope: [FM]
 project: "Post-cognition"
 stage: "Empirical validation"
 discipline: ["Computational linguistics / NLP", "Statistics"]

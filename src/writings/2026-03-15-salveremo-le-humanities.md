@@ -2,6 +2,7 @@
 layout: layouts/article.njk
 title: "Salveremo le humanities con le pratiche, non con le idee"
 date: 2026-03-15
+ai_prose: DL
 category: ["Humanities", "Istituzioni", "AI"]
 lang: "🇮🇹 Italiano"
 tags: [writings]

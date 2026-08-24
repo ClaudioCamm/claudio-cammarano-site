@@ -2,6 +2,8 @@
 layout: layouts/lab-note.njk
 title: "Coding Manual v2.0 — The annotation protocol for reproducibility"
 date: 2026-02-20
+ai_prose: WR
+ai_scope: [FM]
 project: "Post-cognition"
 stage: "Protocol development"
 discipline: ["Epistemology", "Computational linguistics / NLP"]

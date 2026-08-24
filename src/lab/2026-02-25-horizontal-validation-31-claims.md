@@ -2,6 +2,8 @@
 layout: layouts/lab-note.njk
 title: "Horizontal Validation — 31 claims across the full taxonomy"
 date: 2026-02-25
+ai_prose: WR
+ai_scope: [FM]
 project: "Post-cognition"
 stage: "Empirical validation"
 discipline: ["Epistemology", "Computational linguistics / NLP"]

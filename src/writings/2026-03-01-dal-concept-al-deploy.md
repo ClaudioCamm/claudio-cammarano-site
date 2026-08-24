@@ -2,6 +2,7 @@
 layout: layouts/article.njk
 title: "Dal concept al deploy: costruire un sito professionale con JAMstack"
 date: 2026-03-01
+ai_prose: DL
 category: ["AI", "Vibe Coding", "Claude"]
 lang: "🇮🇹 Italiano"
 tags: [writings]

@@ -9,6 +9,11 @@ description: "Link curati su media, marketing e content industries — selezione
 
 <p class="colophon-link">I badge dichiarano il criterio con cui ogni pezzo è entrato: <a href="/colophon/">la spiegazione completa è nel Colophon →</a></p>
 
+<div class="ai-notation-declaration">
+  <p>{{ aiNotation.curatedDeclaration.it | safe }}</p>
+  <p class="ai-notation-declaration-link"><a href="/colophon/#notazione">La notazione completa è nel Colophon →</a></p>
+</div>
+
 {% for item in collections.curated %}
 <article class="article-card article-card--curated">
     <div class="article-meta">

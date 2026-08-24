@@ -2,6 +2,8 @@
 layout: layouts/lab-note.njk
 title: "Paper Structure — Eight sections, Peirce, and building on Quattrociocchi"
 date: 2026-03-10
+ai_prose: WR
+ai_scope: [FM]
 project: "Post-cognition"
 stage: "Drafting"
 discipline: ["Epistemology", "Philosophy of language"]

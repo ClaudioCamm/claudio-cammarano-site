@@ -331,6 +331,31 @@ module.exports = [
     ]
   },
 
+  {
+    name: "Shannon, Claude E.",
+    type: "persona",
+    note: "Matematico e ingegnere statunitense (1916–2001), fondatore della teoria dell’informazione. Nel sito è il fondamento formale della teoria del valore dei testi: l’entropia di uno stato come misura di indifferenza fra alternative, la ridondanza come nome esatto di ciò che il linguaggio comune chiama informazione, e la coincidenza di forma con l’entropia di Gibbs — notata da von Neumann, sfruttata da Brillouin — che autorizza a usare il lessico termodinamico parlando di scrittura.",
+    articles: [
+      { title: "La formula dell’autenticità", url: "/writings/2026-08-23-la-formula-dellautenticita/" }
+    ]
+  },
+  {
+    name: "Ashby, W. Ross",
+    type: "persona",
+    note: "Psichiatra e cibernetico britannico (1903–1972), autore di <em>An Introduction to Cybernetics</em> (1956). Nel sito è il riferimento della legge della varietà richiesta, usata su due fronti: selezionare è l’operazione che rende un corpus adeguato a un problema, e un campo in cui i prior degli autori convergono diventa internamente muto pur continuando a pubblicare.",
+    articles: [
+      { title: "La formula dell’autenticità", url: "/writings/2026-08-23-la-formula-dellautenticita/" }
+    ]
+  },
+  {
+    name: "Landauer, Rolf",
+    type: "persona",
+    note: "Fisico di IBM (1927–1999). Il suo principio — cancellare un bit ha un costo fisico minimo non nullo — è nel sito l’ancoraggio termodinamico dell’argomento sull’AI generativa: il costo di un testo è sempre stato nella cancellazione delle alternative, cioè nella selezione, mai nella produzione della stringa. Chi conclude che scrivere sia diventato gratuito ha misurato il termine sbagliato.",
+    articles: [
+      { title: "La formula dell’autenticità", url: "/writings/2026-08-23-la-formula-dellautenticita/" }
+    ]
+  },
+
   // ─── TEORIE ───────────────────────────────────────────────────────────────
 
   {
@@ -524,7 +549,8 @@ module.exports = [
     note: "Tesi filosofica di Clark e Chalmers (1998): la mente non finisce dove finisce il cranio. Gli strumenti cognitivi usati regolarmente fanno parte funzionalmente della mente del soggetto. Nel sito è usata per inquadrare il rapporto con i LLM: la domanda non è se il LLM «pensa», ma come modifica la struttura cognitiva di chi lo usa.",
     articles: [
       { title: "La differenza fra Claude e le mie gatte", url: "/writings/2026-04-30-la-differenza-fra-claude-e-le-mie-gatte/" },
-      { title: "The mind does not exist", url: "/curated/2021-08-30-gough-no-mind-aeon/", _source: "curated" }
+      { title: "The mind does not exist", url: "/curated/2021-08-30-gough-no-mind-aeon/", _source: "curated" },
+      { title: "A linkless internet", url: "/curated/2024-12-06-jennings-linkless-internet-aeon/", _source: "curated" }
     ]
   },
   {
@@ -541,6 +567,7 @@ module.exports = [
     type: "teoria",
     note: "La scrittura come atto cognitivo, non solo comunicativo, è uno dei fili tematici più sottili e costanti del sito. Il dibattito sull'AI vi entra da angolazioni diverse: come rivelatore — il tratto stilistico è segnale di origine, e l'em dash è il caso emblematico; come strumento — chi usa Claude Code non smette di scrivere, cambia il rapporto con la struttura del testo; come rischio — Stephens sostiene che delegare la scrittura all'AI significhi delegare l'articolazione del pensiero. Il fondamento teorico comune è il capitale semantico: la pratica della scrittura ordinaria è la stessa riserva cognitiva che si attiva nella scrittura che conta.",
     articles: [
+      { title: "La formula dell’autenticità", url: "/writings/2026-08-23-la-formula-dellautenticita/" },
       { title: "Claude Code for writers", url: "/curated/2026-01-15-newton-claude-code-writers-platformer/", _source: "curated" },
       { title: "Humans vs. Bots — Who Does the Em Dash Better?", url: "/curated/2026-06-10-nyt-em-dash-ai/", _source: "curated" },
       { title: "How to spot AI writing", url: "/curated/2026-07-30-economist-ai-writing-detection/", _source: "curated" },
@@ -562,6 +589,7 @@ module.exports = [
     type: "teoria",
     note: "Concetto elaborato nel sito a partire dall'Actor-Network Theory: un LLM non ha esistenza pre-attanziale neanche residuale. Quando non è usato vale zero; quando è usato prende la forma dell'utente. Diverso da qualsiasi altro artefatto tecnico, che mantiene almeno un'ontologia residuale: è un attante che esiste solo nell'atto. Il concetto va però qualificato per dominio: «attante zero» vale pienamente nei contesti in cui le variabili rilevanti includono conoscenza tacita, embodied o contestuale che resiste alla formalizzazione — una gara di sci, una trattativa, un giudizio estetico situato. Si indebolisce nei domini in cui lo spazio del problema è interamente formalizzabile, per quanto vastissimo: Go, matematica formale, codice. In questi domini l'AI può accumulare peso come agente autonomo — non per semplicità del dominio, ma per formalizzabilità completa del feedback. Il caso limite è la dimostrazione matematica: sembra richiedere creatività (un salto euristico), ma la validità è verificabile meccanicamente — il che la rende un dominio in cui l'AI può operare con crescente indipendenza dall'utente.",
     articles: [
+      { title: "La formula dell’autenticità", url: "/writings/2026-08-23-la-formula-dellautenticita/" },
       { title: "La differenza fra Claude e le mie gatte", url: "/writings/2026-04-30-la-differenza-fra-claude-e-le-mie-gatte/" },
       { title: "La macchina e la lotta", url: "/writings/2026-06-01-la-macchina-e-la-lotta/" },
       { title: "Google AI Overviews e il problema dell'accuratezza", url: "/curated/2026-04-09-google-ai-overviews-accuracy/", _source: "curated" },
@@ -734,6 +762,7 @@ module.exports = [
     type: "teoria",
     note: "Filo tematico ricorrente nei curated del sito: la sostenibilità economica della produzione culturale e informativa, dalla digitalizzazione di archivi storici dietro paywall, alla precarietà di chi produce conoscenza senza un modello di business solido, alla sovrapposizione crescente tra informazione e difesa nella nomina di figure militari a ruoli editoriali.",
     articles: [
+      { title: "La formula dell’autenticità", url: "/writings/2026-08-23-la-formula-dellautenticita/" },
       { title: "Podcast: la successione nelle aziende creative", url: "/curated/2026-04-09-podcast-successione-aziende-creative/", _source: "curated" },
       { title: "NSDAP-Archiv: Finden Sie heraus, was Ihre Familie unter Hitler getan hat", url: "/curated/2026-05-07-spiegel-nsdap-archiv/", _source: "curated" },
       { title: "La legge Bacchelli per Lea Melandri", url: "/curated/2026-06-06-internazionale-lea-melandri-bacchelli/", _source: "curated" },
@@ -1141,6 +1170,7 @@ module.exports = [
     type: "teoria",
     note: "La discontinuità specifica introdotta dall'AI rispetto all'automazione precedente: non si delega un'operazione, si delega una valutazione — la selezione dei candidati, il merito creditizio, la diagnosi, il ranking delle informazioni. Nel sito è il concetto che spiega perché un'organizzazione che usa AI senza validazione esplicita si trovi a usare output come se fossero conoscenza, senza poter rispondere alle domande che la conoscenza richiede.",
     articles: [
+      { title: "La formula dell’autenticità", url: "/writings/2026-08-23-la-formula-dellautenticita/" },
       { title: "L'infrastruttura del sapere", url: "/writings/2026-07-07-linfrastruttura-del-sapere/" }
     ]
   },
@@ -1188,6 +1218,7 @@ module.exports = [
     type: "teoria",
     note: "Termine dell'economia della cultura che indica i settori in cui la produzione artistica e culturale si combina con logiche di sfruttamento commerciale: editoria, cinema, televisione, videogiochi, musica, merchandise. Nel sito funziona come lente strutturale — non per classificare contenuti ma per osservare le trasformazioni dell'industria che li produce e distribuisce: come le piattaforme (BookTok, algoritmi di raccomandazione) hanno ridisegnato la scoperta e invertito il potere negoziale tra autori indie e editori tradizionali; come i fandom si sono trasformati da audience passive in ecosistemi economici con merch, retreat ed eventi; come la logica dell'IP spinge ogni successo editoriale o videoludico verso l'adattamento cinematografico, spesso con risultati deludenti; come i capitali sovrani (Arabia Saudita) e il private equity entrano come acquirenti di infrastrutture culturali. Il filo comune non è il contenuto delle opere ma la struttura economica e distributiva che le produce, le fa circolare e le monetizza.",
     articles: [
+      { title: "La formula dell’autenticità", url: "/writings/2026-08-23-la-formula-dellautenticita/" },
       { title: "The Steamy, Magical and Now Very Lucrative Romantasy Business", url: "/curated/2026-08-12-miller-muller-romantasy-bloomberg/", _source: "curated" },
       { title: "The dark underbelly of \"Paw Patrol\"", url: "/curated/2026-08-07-economist-paw-patrol-dark-underbelly/", _source: "curated" },
       { title: "L'Arabia Saudita si sta comprando l'industria dei videogiochi. Ecco come", url: "/curated/2026-08-12-lupetti-arabia-saudita-videogiochi-artribune/", _source: "curated" },
@@ -1214,6 +1245,39 @@ module.exports = [
     ]
   },
 
+  {
+    name: "neghentropia",
+    type: "teoria",
+    note: "Informazione come distanza dallo stato di equiprobabilità, nella linea Schrödinger–Brillouin–Wiener. Nel sito è il criterio con cui si misura l’effetto di un testo su chi legge: non quanto è lungo, elegante o documentato, ma quanta indifferenza fra alternative riduce — un testo privo di effetti sulle attese è l’operatore identità. Da sola però non basta: un saggio scritto benissimo attorno a una tesi falsa è neghentropico in senso stretto e distruttivo in senso epistemico, e va corretta con il guadagno epistemico.",
+    articles: [
+      { title: "La formula dell’autenticità", url: "/writings/2026-08-23-la-formula-dellautenticita/" }
+    ]
+  },
+  {
+    name: "legge della varietà richiesta",
+    type: "teoria",
+    note: "Legge di Ashby: la varietà del regolatore deve eguagliare quella del sistema regolato — solo varietà distrugge varietà. Nel sito ha due usi complementari. Dal lato del singolo testo, spiega perché la selezione (scelta della domanda, del taglio, di ciò che resta fuori) sia l’operazione che rende un corpus adeguato a un problema. Dal lato del sistema, spiega perché la contrazione della varianza fra i prior degli autori attivi in un campo sia il solo effetto dell’AI generativa che meriti davvero allarme.",
+    articles: [
+      { title: "La formula dell’autenticità", url: "/writings/2026-08-23-la-formula-dellautenticita/" }
+    ]
+  },
+  {
+    name: "principio di Landauer",
+    type: "teoria",
+    note: "La cancellazione di un bit costa almeno kT ln 2; per Bennett la computazione può essere resa logicamente reversibile, e il passaggio irriducibilmente dissipativo è appunto la cancellazione, cioè la selezione fra stati. Nel sito è il ponte fisico dell’argomento sulla scrittura: scrivere è selezionare, e ogni testo esiste in quanto scarto di tutti i testi che non sono stati scritti. Gli strumenti generativi abbassano di ordini di grandezza il costo della produzione e lasciano intatto quello della selezione.",
+    articles: [
+      { title: "La formula dell’autenticità", url: "/writings/2026-08-23-la-formula-dellautenticita/" }
+    ]
+  },
+  {
+    name: "guadagno epistemico",
+    type: "teoria",
+    note: "Misura di quanto un testo accorcia la distanza fra le attese di un ricevente e il mondo. Si distingue dalla sola riduzione di entropia, che premierebbe il testo peggiore immaginabile — quello che organizza benissimo le attese attorno a una tesi falsa — e ammette un caso nullo che il dibattito non considera mai: il lettore si sposta lateralmente, sostituisce un errore con un altro ugualmente distante, e ha la sensazione di aver imparato qualcosa. È definito sempre su un ricevente, mai in astratto: lo stesso identico testo vale molto per un pubblico e zero per un altro senza che una virgola sia cambiata.",
+    articles: [
+      { title: "La formula dell’autenticità", url: "/writings/2026-08-23-la-formula-dellautenticita/" }
+    ]
+  },
+
   // ─── LUOGHI ───────────────────────────────────────────────────────────────
 
   {
@@ -1229,6 +1293,15 @@ module.exports = [
 
   // ─── TESTI ────────────────────────────────────────────────────────────────
 
+  {
+    name: "A Mathematical Theory of Communication",
+    type: "testo",
+    note: "Articolo di Claude E. Shannon (1948), atto di nascita della teoria dell’informazione. Nel sito fornisce il formalismo con cui si misura l’effetto di un testo su chi legge, e insieme disinnesca un equivoco ricorrente: nel formalismo shannoniano convivono due oggetti omonimi — l’entropia di una sorgente, che misura quanta informazione essa può emettere, e l’entropia di uno stato, che misura quanto quello stato sia indifferenziato. Ciò che il linguaggio comune chiama informazione ha in Shannon un nome esatto: è la ridondanza.",
+    citation: "SHANNON, Claude E., <a href=\"https://doi.org/10.1002/j.1538-7305.1948.tb01338.x\">\u201cA Mathematical Theory of Communication\u201d</a>, <em>The Bell System Technical Journal</em>, vol. 27, 1948, pp. 379-423 e 623-656.",
+    articles: [
+      { title: "La formula dell’autenticità", url: "/writings/2026-08-23-la-formula-dellautenticita/" }
+    ]
+  },
   {
     name: "The Evolution of Cooperation",
     type: "testo",
