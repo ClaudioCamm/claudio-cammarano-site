@@ -13,6 +13,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/downloads");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
   eleventyConfig.addPassthroughCopy("src/visualizations");
+  eleventyConfig.addPassthroughCopy("src/js");
 
   // === TRANSFORMS ===
 

@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 title: "Mappa dei concetti"
-description: "Mappa completa dei concetti del sito, raggruppati per cluster tematico: persone, teorie, testi, istituzioni, luoghi e paesi e le relazioni che li collegano."
+description: "Mappa completa dei concetti del sito: 232 fra persone, teorie, testi, istituzioni, luoghi e paesi, e le relazioni che li collegano, disegnate con hierarchical edge bundling."
 permalink: "/mappa/"
 ---
 
@@ -12,12 +12,8 @@ permalink: "/mappa/"
   "name": "Mappa dei concetti",
   "description": "Mappa completa dei concetti del sito e delle relazioni che li collegano.",
   "url": "https://claudiocammarano.com/mappa/",
-  "author": {
-    "@type": "Person",
-    "@id": "https://claudiocammarano.com/#person",
-    "name": "Claudio Cammarano",
-    "url": "https://claudiocammarano.com"
-  }
+  "isPartOf": { "@id": "https://claudiocammarano.com/#website" },
+  "author": { "@id": "https://claudiocammarano.com/#person" }
 }
 </script>
 
@@ -32,187 +28,50 @@ permalink: "/mappa/"
       <span class="breadcrumb-current">Mappa</span>
     </nav>
     <h1 class="tag-page-title">Mappa dei concetti</h1>
-    <p class="tag-page-intro">Tutti i concetti del sito in un'unica vista, raggruppati per cluster tematico. I nodi più grandi sono citati da più articoli; i nodi che collegano cluster diversi sono i ponti semantici del sito. Click su un nodo per aprire la sua pagina.</p>
+    <p class="tag-page-intro">Tutti i concetti del sito su un anello, raggruppati per famiglia. Le relazioni non sono segmenti dritti: risalgono al centro della propria famiglia, attraversano e ridiscendono, così i legami interni restano periferici e quelli che attraversano il sito si raccolgono in fasci. L'unità di lettura è il fascio, non il singolo arco. Passa sopra un concetto per isolarlo, clicca per aprirne la pagina.</p>
   </header>
 
-  <div class="mappa-controls">
-    <input type="text" id="mappa-search" class="mappa-search" placeholder="Cerca un concetto…" autocomplete="off">
-    <button type="button" id="mappa-reset" class="mappa-reset-btn">Vista completa</button>
-  </div>
+  <div class="heb" id="heb-ring">
+    <div class="heb-controls">
+      <div class="heb-ctl">
+        <span class="heb-ctl-label" id="heb-lbl-mode">Raggruppamento</span>
+        <div class="heb-seg" role="group" aria-labelledby="heb-lbl-mode">
+          <button type="button" data-heb-mode="type" aria-pressed="true">Per tipo</button>
+          <button type="button" data-heb-mode="cluster" aria-pressed="false">Per tema</button>
+        </div>
+      </div>
+      <div class="heb-ctl">
+        <span class="heb-ctl-label" id="heb-lbl-sig">Densità</span>
+        <button type="button" class="heb-toggle" data-heb-sig aria-pressed="true" aria-labelledby="heb-lbl-sig">Solo legami forti</button>
+      </div>
+      <div class="heb-ctl">
+        <span class="heb-ctl-label" id="heb-lbl-q">Trova un concetto</span>
+        <input type="search" class="heb-search" data-heb-search placeholder="Fricker, Friston…" aria-labelledby="heb-lbl-q">
+      </div>
+    </div>
 
-  <div class="mappa-legend">
-    <span class="mappa-legend-item"><span class="mappa-legend-dot" style="background: var(--graph-cluster-epi);"></span>Epistemologia &amp; AI</span>
-    <span class="mappa-legend-item"><span class="mappa-legend-dot" style="background: var(--graph-cluster-geo);"></span>Geopolitica &amp; potere</span>
-    <span class="mappa-legend-item"><span class="mappa-legend-dot" style="background: var(--graph-cluster-edi);"></span>Editoria &amp; comunicazione</span>
-    <span class="mappa-legend-item"><span class="mappa-legend-dot" style="background: var(--graph-cluster-ita);"></span>Italia &amp; istituzioni</span>
-    <span class="mappa-legend-item"><span class="mappa-legend-dot" style="background: var(--graph-cluster-eco);"></span>Economia &amp; lavoro</span>
-  </div>
+    <div class="heb-legend" data-heb-legend></div>
 
-  <div class="mappa-canvas-wrap" id="mappa-canvas-wrap">
-    <svg id="mappa-svg"></svg>
-  </div>
+    <div class="heb-figure">
+      <div class="heb-box" data-heb-box>
+        <canvas></canvas>
+        <svg viewBox="0 0 1120 1120" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Mappa radiale dei concetti del sito, con i legami raggruppati in fasci per famiglia"></svg>
+      </div>
+      <div class="heb-tip" data-heb-tip role="status"></div>
+    </div>
 
-  <p class="mappa-mobile-note">La mappa interattiva è disponibile da schermi più grandi (desktop o tablet in orizzontale). Su mobile consulta l'<a href="/indice/">indice analitico</a>, che elenca gli stessi concetti in forma di lista.</p>
+    <p class="heb-stats" data-heb-stats></p>
+    <p class="heb-note">
+      «Solo legami forti» tiene il backbone statistico della rete — i legami che superano il caso rispetto alla forza di ciascun concetto — più il legame più forte di ogni nodo, così nessun concetto resta senza porta. «Tutti i legami» mostra anche le coppie comparse insieme una volta sola: sono il 90% del totale e servono a vedere quanto rumore c'è sotto.
+    </p>
+    <p class="heb-note heb-note--mobile">Da schermo stretto le etichette sono nascoste — non ci starebbero. Tocca l'anello e trascina il dito per scorrere i concetti, oppure usa l'<a href="/indice/">indice analitico</a>, che elenca gli stessi termini in forma di lista.</p>
+  </div>
 
 </div>
 
+<script src="/js/heb.js" defer></script>
 <script>
-(function () {
-  var wrap = document.getElementById('mappa-canvas-wrap');
-  if (!wrap || window.innerWidth < 900) return;
-
-  var svgEl = document.getElementById('mappa-svg');
-  var searchEl = document.getElementById('mappa-search');
-  var resetBtn = document.getElementById('mappa-reset');
-  var NS = 'http://www.w3.org/2000/svg';
-
-  function el(tag, attrs) {
-    var e = document.createElementNS(NS, tag);
-    for (var k in attrs) e.setAttribute(k, attrs[k]);
-    return e;
-  }
-
-  var focusParam = null;
-  try {
-    var params = new URLSearchParams(window.location.search);
-    focusParam = params.get('focus');
-  } catch (e) {}
-
-  fetch('/graph-data.json')
-    .then(function (r) { return r.json(); })
-    .then(function (graph) { init(graph); })
-    .catch(function () {});
-
-  function init(graph) {
-    var nodes = graph.nodes, edges = graph.edges;
-    var byIndex = {};
-    nodes.forEach(function (n) { byIndex[n.i] = n; });
-
-    var cs = getComputedStyle(document.documentElement);
-    var colorPrimary = cs.getPropertyValue('--color-primary').trim() || '#1C0E80';
-    var colorBorder = cs.getPropertyValue('--color-border').trim() || '#e0e0e0';
-    var colorHint = cs.getPropertyValue('--color-text-hint').trim() || '#999';
-    var colorBg = cs.getPropertyValue('--color-bg').trim() || '#fff';
-    var clusters = {
-      'Epistemologia & AI':       cs.getPropertyValue('--graph-cluster-epi').trim() || '#1C0E80',
-      'Geopolitica & potere':     cs.getPropertyValue('--graph-cluster-geo').trim() || '#185FA5',
-      'Editoria & comunicazione': cs.getPropertyValue('--graph-cluster-edi').trim() || '#0F6E56',
-      'Italia & istituzioni':     cs.getPropertyValue('--graph-cluster-ita').trim() || '#8B5E1F',
-      'Economia & lavoro':        cs.getPropertyValue('--graph-cluster-eco').trim() || '#A13D3D'
-    };
-    function colorOf(n) { return clusters[n.cluster] || colorHint; }
-    function radiusOf(n) { return 4 + Math.min(n.count, 10) * 0.9 + (n.crossCluster ? 2 : 0); }
-    // Etichetta visibile di default solo per i concetti citati da almeno un
-    // writing; per i concetti solo-curated resta il tooltip al passaggio del mouse.
-    function importantLabel(n) { return n.fromWriting; }
-
-    var fullView = { x: 0, y: 0, w: graph.width, h: graph.height };
-    var view = Object.assign({}, fullView);
-
-    if (focusParam) {
-      var f = nodes.filter(function (n) { return n.slug === focusParam; })[0];
-      if (f) {
-        var halfW = 260, halfH = 200;
-        view = { x: f.x - halfW, y: f.y - halfH, w: halfW * 2, h: halfH * 2 };
-      }
-    }
-
-    var gEdges = el('g', {});
-    var gNodes = el('g', {});
-    svgEl.appendChild(gEdges);
-    svgEl.appendChild(gNodes);
-
-    var edgeEls = edges.map(function (e) {
-      var s = byIndex[e.source], t = byIndex[e.target];
-      var line = el('line', {
-        x1: s.x, y1: s.y, x2: t.x, y2: t.y,
-        stroke: colorBorder, 'stroke-width': Math.min(e.weight, 4) > 1 ? '0.9' : '0.5',
-        opacity: '0.3'
-      });
-      gEdges.appendChild(line);
-      return { e: e, line: line };
-    });
-
-    var nodeEls = nodes.map(function (n) {
-      var g = el('g', { cursor: 'pointer', 'data-name': n.name.toLowerCase() });
-      var circle = el('circle', {
-        cx: n.x, cy: n.y, r: radiusOf(n),
-        fill: colorOf(n), stroke: colorBg, 'stroke-width': n.crossCluster ? '2' : '1'
-      });
-      var title = el('title', {});
-      title.textContent = n.name;
-      g.appendChild(circle);
-      g.appendChild(title);
-      if (importantLabel(n)) {
-        var label = el('text', {
-          x: n.x, y: n.y + radiusOf(n) + 12, 'text-anchor': 'middle',
-          'font-family': 'var(--font-serif)', 'font-size': '10px', fill: colorHint
-        });
-        label.textContent = n.name;
-        g.appendChild(label);
-      }
-      g.addEventListener('click', function () { window.location.href = '/concetti/' + n.slug + '/'; });
-      gNodes.appendChild(g);
-      return { n: n, g: g, circle: circle };
-    });
-
-    function render() {
-      svgEl.setAttribute('viewBox', view.x + ' ' + view.y + ' ' + view.w + ' ' + view.h);
-    }
-    render();
-
-    // Pan
-    var dragging = false, dragStart = null, viewStart = null;
-    svgEl.addEventListener('mousedown', function (ev) {
-      dragging = true;
-      dragStart = { x: ev.clientX, y: ev.clientY };
-      viewStart = Object.assign({}, view);
-      svgEl.style.cursor = 'grabbing';
-    });
-    window.addEventListener('mousemove', function (ev) {
-      if (!dragging) return;
-      var rect = svgEl.getBoundingClientRect();
-      var scale = view.w / rect.width;
-      view.x = viewStart.x - (ev.clientX - dragStart.x) * scale;
-      view.y = viewStart.y - (ev.clientY - dragStart.y) * scale;
-      render();
-    });
-    window.addEventListener('mouseup', function () { dragging = false; svgEl.style.cursor = 'grab'; });
-    svgEl.style.cursor = 'grab';
-
-    // Zoom (wheel)
-    svgEl.addEventListener('wheel', function (ev) {
-      ev.preventDefault();
-      var rect = svgEl.getBoundingClientRect();
-      var mx = view.x + ((ev.clientX - rect.left) / rect.width) * view.w;
-      var my = view.y + ((ev.clientY - rect.top) / rect.height) * view.h;
-      var factor = ev.deltaY > 0 ? 1.12 : 0.89;
-      var newW = Math.max(160, Math.min(graph.width * 1.4, view.w * factor));
-      var newH = newW * (view.h / view.w);
-      view.x = mx - (mx - view.x) * (newW / view.w);
-      view.y = my - (my - view.y) * (newH / view.h);
-      view.w = newW; view.h = newH;
-      render();
-    }, { passive: false });
-
-    resetBtn.addEventListener('click', function () {
-      view = Object.assign({}, fullView);
-      render();
-      searchEl.value = '';
-      applySearch('');
-    });
-
-    function applySearch(q) {
-      q = q.toLowerCase().trim();
-      nodeEls.forEach(function (item) {
-        var match = !q || item.n.name.toLowerCase().indexOf(q) !== -1;
-        item.g.style.opacity = match ? '1' : '0.12';
-      });
-      edgeEls.forEach(function (item) {
-        item.line.style.opacity = q ? '0.08' : '0.3';
-      });
-    }
-    searchEl.addEventListener('input', function () { applySearch(searchEl.value); });
-  }
-}());
+  window.addEventListener('DOMContentLoaded', function () {
+    if (window.HEB) window.HEB.mount('#heb-ring', 'ring');
+  });
 </script>

@@ -6216,3 +6216,155 @@ a.home-path:hover {
     display: none !important;
   }
 }
+
+/* ===================================================================
+   HEB — hierarchical edge bundling (mappa dei concetti e schede)
+   Palette categoriale validata: banda di luminosità, soglia di croma,
+   separazione per daltonismo (deutan/protan/tritan) e contrasto sul fondo.
+   Non riusa --graph-cluster-*: quei cinque colori avevano due coppie
+   indistinguibili anche in visione piena (ΔE 10 fra #A13D3D e #8B5E1F).
+   Il verde Episteme/Lab (--color-lab) resta suo e non compare qui.
+   =================================================================== */
+
+:root {
+  --heb-1: #3B4FD8;
+  --heb-2: #C2410C;
+  --heb-3: #0E8A6E;
+  --heb-4: #BE123C;
+  --heb-5: #7C3AED;
+  --heb-6: #A16207;
+  --heb-none: #9a9a92;
+  --heb-edge: #55554f;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --heb-1: #5a77ff;
+    --heb-2: #db5527;
+    --heb-3: #289b7e;
+    --heb-4: #e63f59;
+    --heb-5: #905eff;
+    --heb-6: #b77525;
+    --heb-none: #6e6e67;
+    --heb-edge: #b3b2ab;
+  }
+}
+
+.heb.is-loading .heb-box { opacity: 0; }
+
+/* --- controlli --- */
+.heb-controls {
+  display: flex; flex-wrap: wrap; gap: 16px 22px; align-items: flex-end;
+  padding: 0 0 14px; margin: var(--spacing-md) 0 0;
+  border-bottom: 1px solid var(--color-border);
+}
+.heb-ctl-label {
+  display: block; font-family: var(--font-sans);
+  font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--color-text-hint); margin-bottom: 6px;
+}
+.heb-seg { display: inline-flex; border: 1px solid var(--color-border); border-radius: 6px; overflow: hidden; }
+.heb-seg button {
+  font-family: var(--font-sans); font-size: 13px; padding: 7px 13px; min-height: 40px;
+  background: transparent; color: var(--color-text-light); border: 0; cursor: pointer;
+  border-right: 1px solid var(--color-border);
+}
+.heb-seg button:last-child { border-right: 0; }
+.heb-seg button[aria-pressed="true"] { background: var(--color-primary); color: #fff; }
+.heb-toggle {
+  font-family: var(--font-sans); font-size: 13px; padding: 7px 14px; min-height: 40px;
+  background: transparent; color: var(--color-text); cursor: pointer;
+  border: 1px solid var(--color-border); border-radius: 6px;
+}
+.heb-toggle[aria-pressed="true"] { border-color: var(--color-primary); color: var(--color-primary); font-weight: 500; }
+.heb-search {
+  font-family: var(--font-sans); font-size: 13px; padding: 8px 10px; min-height: 40px; width: 200px;
+  background: var(--color-bg); color: var(--color-text);
+  border: 1px solid var(--color-border); border-radius: 6px;
+}
+
+/* --- legenda --- */
+.heb-legend { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 14px 0 6px; }
+.heb-legend-item {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-family: var(--font-sans); font-size: 12.5px; color: var(--color-text-light);
+  background: none; border: 0; padding: 4px 0; cursor: pointer;
+}
+.heb-legend-item[aria-pressed="false"] { opacity: .38; }
+.heb-swatch { width: 11px; height: 11px; border-radius: 3px; flex: 0 0 auto; }
+.heb-legend-n { color: var(--color-text-hint); font-variant-numeric: tabular-nums; }
+
+/* --- figura --- */
+.heb-figure { position: relative; margin-top: 6px; }
+.heb-box { position: relative; width: 100%; aspect-ratio: 1 / 1; touch-action: pan-y; }
+.heb-box canvas, .heb-box svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.heb-box svg text {
+  font-family: var(--font-sans); font-size: 9.2px;
+  fill: var(--color-text-light); cursor: pointer;
+}
+.heb-box svg text.on { fill: var(--color-text); font-weight: 600; }
+.heb-box svg text.off { fill: var(--color-text-hint); opacity: .3; }
+
+.heb-tip {
+  position: absolute; pointer-events: none; z-index: 4;
+  background: var(--color-bg); border: 1px solid var(--color-border); border-radius: 6px;
+  padding: 8px 11px; max-width: 230px;
+  font-family: var(--font-sans); font-size: 12.5px; line-height: 1.5; color: var(--color-text);
+  box-shadow: 0 4px 18px rgba(0,0,0,.14);
+  opacity: 0; transition: opacity .12s;
+}
+.heb-tip.is-on { opacity: 1; }
+.heb-tip b { display: block; font-size: 13.5px; margin-bottom: 2px; }
+.heb-tip span { display: block; color: var(--color-text-hint); }
+.heb-tip .heb-tip-go { color: var(--color-primary); margin-top: 3px; }
+
+.heb-stats {
+  font-family: var(--font-sans); font-size: 12.5px; color: var(--color-text-hint);
+  font-variant-numeric: tabular-nums; margin: 10px 0 0;
+}
+.heb-note {
+  font-family: var(--font-sans); font-size: 13px; line-height: 1.65;
+  color: var(--color-text-light); margin: 10px 0 0; max-width: 74ch;
+}
+.heb-note--mobile { display: none; }
+
+@media (max-width: 760px) {
+  .heb-box svg text { display: none; }
+  .heb-note--mobile { display: block; }
+  .heb-search { width: 100%; }
+  .heb-ctl { flex: 1 1 100%; }
+}
+
+/* --- scheda sulla pagina-concetto --- */
+.concetto-heb {
+  margin: var(--spacing-lg) 0;
+  padding: var(--spacing-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-alt);
+}
+.concetto-heb-head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  gap: 12px; flex-wrap: wrap; margin-bottom: 4px;
+}
+.concetto-heb-title {
+  font-family: var(--font-sans); font-size: 10.5px; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--color-text-hint);
+}
+.concetto-heb-link { font-family: var(--font-sans); font-size: 12.5px; }
+.concetto-heb .heb-box { max-width: 460px; margin: 8px auto 0; }
+.concetto-heb .heb-box svg text {
+  display: block; font-size: 10.5px; fill: var(--color-text-light);
+}
+.concetto-heb .heb-box svg text.is-focus {
+  fill: var(--color-text); font-weight: 700; font-size: 12px;
+}
+.concetto-heb .heb-box svg text[data-go] { cursor: pointer; }
+.concetto-heb .heb-box svg text[data-go]:hover { fill: var(--color-primary); }
+.concetto-heb-note {
+  font-family: var(--font-sans); font-size: 13px; line-height: 1.6;
+  color: var(--color-text-light); margin: 12px 0 0; text-align: center;
+}
+
+@media print {
+  .heb-controls, .heb-legend, .heb-tip, .concetto-heb { display: none !important; }
+}
