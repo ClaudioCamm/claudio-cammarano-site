@@ -48,6 +48,12 @@
     return first + ' ' + last;
   }
 
+  // Confronto insensibile ad accenti e maiuscole: "averroe" deve trovare
+  // "Averroè", "fricker" deve trovare "Miranda Fricker".
+  function norm(s) {
+    return String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  }
+
   function esc(s) {
     return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
   }
@@ -96,7 +102,10 @@
     var E = data.edges.map(function (e) { return [e.source, e.target, e.weight]; });
     var deg = new Array(N.length).fill(0);
     E.forEach(function (e) { deg[e[0]]++; deg[e[1]]++; });
-    return { N: N, E: E, deg: deg, sig: backbone(N, E, 0.15) };
+    // Si cerca sia sulla forma naturale ("Miranda Fricker") sia su quella
+    // invertita ("Fricker, Miranda"): l'utente puo' battere l'una o l'altra.
+    var hay = N.map(function (n) { return norm(n.n) + '\u0000' + norm(n.sort); });
+    return { N: N, E: E, deg: deg, sig: backbone(N, E, 0.15), hay: hay };
   }
 
   var CX = 560, CY = 560, R = 388, RG = 0.60 * R, BETA = 0.86, VB = 1120;
@@ -216,7 +225,12 @@
     var cv = root.querySelector('canvas'), ctx = cv.getContext('2d');
     var ov = root.querySelector('svg');
     var tip = root.querySelector('[data-heb-tip]');
-    var mode = 'type', onlySig = true, hover = -1, query = '';
+    // hover = puntatore (transitorio); sel = scelta dalla ricerca (persistente).
+    // Il disegno guarda act(): la selezione resta accesa quando il dito lascia
+    // lo schermo, che e' l'unico modo perche' la ricerca serva a qualcosa su
+    // mobile, dove non esiste un puntatore che stazioni.
+    var mode = 'type', onlySig = true, hover = -1, sel = -1;
+    function act() { return hover >= 0 ? hover : sel; }
     var hidden = {}, L = null;
 
     function edges() {
@@ -228,15 +242,15 @@
 
     function drawEdges() {
       ctx.clearRect(0, 0, VB, VB);
-      var list = edges(), dim = hover >= 0;
+      var list = edges(), a = act(), dim = a >= 0;
       ctx.lineCap = 'round';
       for (var pass = 0; pass < 2; pass++) {
         for (var m = 0; m < list.length; m++) {
-          var e = list[m], on = !dim || e[0] === hover || e[1] === hover;
+          var e = list[m], on = !dim || e[0] === a || e[1] === a;
           if ((pass === 0) === on) continue;
           var pts = bspline(controlPoints(L, e[0], e[1]), 14);
           if (on && dim) {
-            var other = e[0] === hover ? e[1] : e[0];
+            var other = e[0] === a ? e[1] : e[0];
             ctx.strokeStyle = L.groups[L.pos[other].g].color;
             ctx.globalAlpha = 0.95; ctx.lineWidth = 1.5 + (e[2] - 1) * 0.7;
           } else if (dim) {
@@ -253,22 +267,52 @@
     }
 
     function drawNodes() {
-      var list = edges(), nbr = {};
-      if (hover >= 0) list.forEach(function (e) {
-        if (e[0] === hover) nbr[e[1]] = 1; if (e[1] === hover) nbr[e[0]] = 1;
+      var list = edges(), a = act(), nbr = {};
+      if (a >= 0) list.forEach(function (e) {
+        if (e[0] === a) nbr[e[1]] = 1; if (e[1] === a) nbr[e[0]] = 1;
       });
-      var q = query.trim().toLowerCase(), s = groupArcs(L, CX, CY, R + 4, hidden);
+      var s = groupArcs(L, CX, CY, R + 4, hidden);
       M.N.forEach(function (n, i) {
         if (hidden[L.keyOf(i)]) return;
         var p = L.pos[i], g = L.groups[p.g];
-        var match = q && n.n.toLowerCase().indexOf(q) >= 0;
-        var cls = hover >= 0 ? ((i === hover || nbr[i]) ? 'on' : 'off') : (q ? (match ? 'on' : 'off') : '');
-        var rad = 2.6 + Math.min(2.4, (n.k - 1) * 0.5) + ((i === hover || match) ? 1.6 : 0);
+        var cls = a >= 0 ? ((i === a || nbr[i]) ? 'on' : 'off') : '';
+        var rad = 2.6 + Math.min(2.4, (n.k - 1) * 0.5) + (i === a ? 1.8 : 0);
         s += '<circle cx="' + p.x.toFixed(1) + '" cy="' + p.y.toFixed(1) + '" r="' + rad.toFixed(1) +
              '" fill="' + g.color + '" opacity="' + (cls === 'off' ? 0.25 : 1) + '"/>';
         s += radialLabel(n.n, p.ang, CX, CY, R + 12, cls, ' data-i="' + i + '"');
       });
+      if (sel >= 0 && !hidden[L.keyOf(sel)]) s += marker(sel);
       ov.innerHTML = s;
+      var chip = ov.querySelector('[data-go]');
+      if (chip) chip.addEventListener('click', function (ev) {
+        ev.stopPropagation();
+        global.location.href = '/concetti/' + M.N[sel].s + '/';
+      });
+    }
+
+    // Pennarello sulla selezione: tacca radiale + targhetta col nome, disegnata
+    // orizzontale e in scala di viewBox, quindi leggibile anche dove le
+    // etichette dell'anello sono nascoste (sotto i 760px). Senza questo la
+    // ricerca su telefono non mostrerebbe nulla.
+    function marker(i) {
+      var p = L.pos[i], n = M.N[i], g = L.groups[p.g];
+      var co = Math.cos(p.ang), si = Math.sin(p.ang);
+      var x1 = CX + (R + 7) * co, y1 = CY + (R + 7) * si;
+      var x2 = CX + (R + 30) * co, y2 = CY + (R + 30) * si;
+      var right = co >= 0, fs = 17, w = n.n.length * fs * 0.52 + 22, h = 27;
+      var bx = right ? x2 + 4 : x2 - 4 - w;
+      bx = Math.max(6, Math.min(VB - w - 6, bx));
+      var by = Math.max(6, Math.min(VB - h - 6, y2 - h / 2));
+      return '<g class="heb-marker" data-go="1">' +
+        '<line x1="' + x1.toFixed(1) + '" y1="' + y1.toFixed(1) + '" x2="' + x2.toFixed(1) +
+        '" y2="' + y2.toFixed(1) + '" stroke="' + g.color + '" stroke-width="2.4"/>' +
+        '<circle cx="' + p.x.toFixed(1) + '" cy="' + p.y.toFixed(1) + '" r="7" fill="none" stroke="' +
+        g.color + '" stroke-width="2.4"/>' +
+        '<rect x="' + bx.toFixed(1) + '" y="' + by.toFixed(1) + '" width="' + w.toFixed(1) +
+        '" height="' + h + '" rx="5" fill="' + g.color + '"/>' +
+        '<text x="' + (bx + w / 2).toFixed(1) + '" y="' + (by + h / 2).toFixed(1) +
+        '" text-anchor="middle" dominant-baseline="central" font-size="' + fs +
+        '" fill="#fff" font-weight="600">' + esc(n.n) + '</text></g>';
     }
 
     function pick(ev) {
@@ -324,6 +368,7 @@
 
     function render() {
       L = buildLayout(M, mode);
+      if (sel >= 0 && hidden[L.keyOf(sel)]) sel = -1;
       legend(); stats(); fitCanvas(cv, box, VB); drawEdges(); drawNodes();
     }
 
@@ -343,8 +388,121 @@
       sigBtn.textContent = onlySig ? 'Solo legami forti' : 'Tutti i legami';
       hover = -1; render();
     });
-    var q = root.querySelector('[data-heb-search]');
-    if (q) q.addEventListener('input', function () { query = q.value; drawNodes(); });
+    /* ---------------- ricerca: combobox con lista di risultati -------------
+     * Evidenziare l'etichetta sull'anello non basta: a 9px su 232 voci il
+     * lettore deve comunque cercarla a occhio, e sotto i 760px le etichette
+     * non sono nemmeno disegnate. Qui la ricerca restituisce una lista di
+     * nomi — testo vero, navigabile da tastiera e toccabile col dito — e la
+     * scelta accende il concetto sull'anello con una targhetta leggibile.
+     * -------------------------------------------------------------------- */
+    var qEl = root.querySelector('[data-heb-search]');
+    var resEl = root.querySelector('[data-heb-results]');
+    var clearEl = root.querySelector('[data-heb-clear]');
+    var results = [], cursor = -1;
+
+    function rank(query) {
+      var q = norm(query);
+      if (q.length < 2) return [];
+      var out = [];
+      for (var i = 0; i < M.N.length; i++) {
+        if (hidden[L.keyOf(i)]) continue;
+        var h = M.hay[i], at = h.indexOf(q);
+        if (at < 0) continue;
+        // prefisso del nome > inizio di parola > qualunque posizione
+        var score = at === 0 ? 0 : (/[\s\u0000,]/.test(h.charAt(at - 1)) ? 1 : 2);
+        out.push({ i: i, score: score, at: at });
+      }
+      out.sort(function (a, b) {
+        return a.score - b.score || a.at - b.at ||
+               M.N[a.i].sort.localeCompare(M.N[b.i].sort, 'it', { sensitivity: 'base' });
+      });
+      return out.slice(0, 8).map(function (o) { return o.i; });
+    }
+
+    function paintResults() {
+      if (!resEl) return;
+      if (!results.length) {
+        var typed = qEl.value.trim().length >= 2;
+        resEl.innerHTML = typed ? '<li class="heb-result heb-result--empty">Nessun concetto con questo nome</li>' : '';
+        resEl.hidden = !typed;
+        qEl.setAttribute('aria-expanded', String(typed));
+        return;
+      }
+      resEl.innerHTML = results.map(function (i, k) {
+        var n = M.N[i];
+        return '<li class="heb-result" id="heb-r' + k + '" role="option" aria-selected="' +
+          (k === cursor) + '" data-i="' + i + '"><span class="heb-result-dot" style="background:' +
+          L.groups[L.pos[i].g].color + '"></span><span class="heb-result-name">' + esc(n.n) +
+          '</span><span class="heb-result-meta">' + esc(L.groups[L.pos[i].g].label) + ' · ' +
+          M.deg[i] + ' legami</span></li>';
+      }).join('');
+      resEl.hidden = false;
+      qEl.setAttribute('aria-expanded', 'true');
+      qEl.setAttribute('aria-activedescendant', cursor >= 0 ? 'heb-r' + cursor : '');
+      resEl.querySelectorAll('.heb-result[data-i]').forEach(function (li) {
+        li.addEventListener('mousedown', function (ev) {
+          ev.preventDefault(); choose(+li.getAttribute('data-i'));
+        });
+      });
+    }
+
+    function closeResults() {
+      results = []; cursor = -1;
+      if (resEl) { resEl.hidden = true; resEl.innerHTML = ''; }
+      qEl.setAttribute('aria-expanded', 'false');
+      qEl.removeAttribute('aria-activedescendant');
+    }
+
+    function choose(i) {
+      sel = i; hover = -1;
+      qEl.value = M.N[i].n;
+      if (clearEl) clearEl.hidden = false;
+      closeResults();
+      drawEdges(); drawNodes();
+      var live = root.querySelector('[data-heb-live]');
+      if (live) live.textContent = M.N[i].n + ', ' + L.groups[L.pos[i].g].label + ', ' +
+        M.deg[i] + ' legami. Selezionato sulla mappa.';
+      // Su schermo stretto i controlli stanno sopra il disegno: senza questo
+      // il lettore sceglie un concetto e non vede succedere niente, perche' la
+      // targhetta e' sotto la piega.
+      if (global.innerWidth < 760) {
+        try { box.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+        catch (err) { box.scrollIntoView(); }
+      }
+    }
+
+    function clearSel() {
+      sel = -1; qEl.value = '';
+      if (clearEl) clearEl.hidden = true;
+      closeResults(); drawEdges(); drawNodes(); qEl.focus();
+    }
+
+    if (qEl) {
+      qEl.addEventListener('input', function () {
+        results = rank(qEl.value); cursor = results.length ? 0 : -1;
+        if (clearEl) clearEl.hidden = !qEl.value;
+        paintResults();
+      });
+      qEl.addEventListener('keydown', function (ev) {
+        if (ev.key === 'Escape') { clearSel(); return; }
+        if (!results.length) {
+          if (ev.key === 'Enter' && sel >= 0) {
+            ev.preventDefault(); global.location.href = '/concetti/' + M.N[sel].s + '/';
+          }
+          return;
+        }
+        if (ev.key === 'ArrowDown' || ev.key === 'ArrowUp') {
+          ev.preventDefault();
+          cursor = (cursor + (ev.key === 'ArrowDown' ? 1 : results.length - 1)) % results.length;
+          paintResults();
+        } else if (ev.key === 'Enter') {
+          ev.preventDefault();
+          if (cursor >= 0) choose(results[cursor]);
+        }
+      });
+      qEl.addEventListener('blur', function () { setTimeout(closeResults, 120); });
+    }
+    if (clearEl) clearEl.addEventListener('click', clearSel);
 
     var dragging = false;
     box.addEventListener('pointerdown', function (ev) { dragging = true; setHover(pick(ev)); });
@@ -376,7 +534,7 @@
     try { fp = new URLSearchParams(global.location.search).get('focus'); } catch (err) {}
     if (fp) {
       for (var f = 0; f < M.N.length; f++) {
-        if (M.N[f].s === fp) { setHover(f); break; }
+        if (M.N[f].s === fp) { choose(f); break; }
       }
     }
   }

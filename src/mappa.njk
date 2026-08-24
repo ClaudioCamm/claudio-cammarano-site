@@ -44,12 +44,21 @@ permalink: "/mappa/"
         <span class="heb-ctl-label" id="heb-lbl-sig">Densità</span>
         <button type="button" class="heb-toggle" data-heb-sig aria-pressed="true" aria-labelledby="heb-lbl-sig">Solo legami forti</button>
       </div>
-      <div class="heb-ctl">
+      <div class="heb-ctl heb-ctl--find">
         <span class="heb-ctl-label" id="heb-lbl-q">Trova un concetto</span>
-        <input type="search" class="heb-search" data-heb-search placeholder="Fricker, Friston…" aria-labelledby="heb-lbl-q">
+        <div class="heb-combo">
+          <input type="text" class="heb-search" data-heb-search
+                 placeholder="Fricker, Averroè, entropia…"
+                 role="combobox" aria-expanded="false" aria-controls="heb-results"
+                 aria-autocomplete="list" autocomplete="off" spellcheck="false"
+                 aria-labelledby="heb-lbl-q">
+          <button type="button" class="heb-clear" data-heb-clear hidden aria-label="Cancella la ricerca">&#215;</button>
+          <ul class="heb-results" id="heb-results" role="listbox" data-heb-results hidden></ul>
+        </div>
       </div>
     </div>
 
+    <p class="sr-only" data-heb-live role="status" aria-live="polite"></p>
     <div class="heb-legend" data-heb-legend></div>
 
     <div class="heb-figure">

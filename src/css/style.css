@@ -6277,11 +6277,49 @@ a.home-path:hover {
   border: 1px solid var(--color-border); border-radius: 6px;
 }
 .heb-toggle[aria-pressed="true"] { border-color: var(--color-primary); color: var(--color-primary); font-weight: 500; }
+.heb-ctl--find { position: relative; }
+.heb-combo { position: relative; }
 .heb-search {
-  font-family: var(--font-sans); font-size: 13px; padding: 8px 10px; min-height: 40px; width: 200px;
+  font-family: var(--font-sans); font-size: 16px; padding: 8px 30px 8px 10px;
+  min-height: 40px; width: 240px;
   background: var(--color-bg); color: var(--color-text);
   border: 1px solid var(--color-border); border-radius: 6px;
 }
+.heb-search:focus { outline: 2px solid var(--color-primary); outline-offset: 1px; }
+.heb-clear {
+  position: absolute; top: 50%; right: 4px; transform: translateY(-50%);
+  width: 28px; height: 28px; line-height: 1; font-size: 17px;
+  background: none; border: 0; border-radius: 4px; cursor: pointer;
+  color: var(--color-text-hint);
+}
+.heb-clear:hover { color: var(--color-text); background: var(--color-bg-alt); }
+
+/* Lista dei risultati: e' testo vero, quindi funziona anche dove le etichette
+   dell'anello sono nascoste. E' il vero motore della ricerca; l'evidenziazione
+   sul disegno e' solo la conferma. */
+.heb-results {
+  position: absolute; z-index: 20; top: calc(100% + 4px); left: 0;
+  width: 100%; min-width: 240px; max-height: 300px; overflow-y: auto;
+  margin: 0; padding: 4px; list-style: none;
+  background: var(--color-bg); border: 1px solid var(--color-border); border-radius: 6px;
+  box-shadow: 0 8px 26px rgba(0,0,0,.16);
+}
+.heb-results[hidden] { display: none; }
+.heb-result {
+  display: flex; align-items: center; gap: 8px;
+  padding: 9px 10px; min-height: 44px; border-radius: 4px; cursor: pointer;
+  font-family: var(--font-sans); font-size: 14px; color: var(--color-text);
+}
+.heb-result[aria-selected="true"] { background: var(--color-bg-alt); }
+.heb-result:hover { background: var(--color-bg-alt); }
+.heb-result--empty { color: var(--color-text-hint); cursor: default; min-height: 0; }
+.heb-result--empty:hover { background: none; }
+.heb-result-dot { width: 9px; height: 9px; border-radius: 50%; flex: 0 0 auto; }
+.heb-result-name { flex: 1 1 auto; }
+.heb-result-meta { font-size: 11.5px; color: var(--color-text-hint); flex: 0 0 auto; }
+
+.heb-marker { cursor: pointer; }
+.heb-marker text { font-family: var(--font-sans); }
 
 /* --- legenda --- */
 .heb-legend { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 14px 0 6px; }
@@ -6332,6 +6370,7 @@ a.home-path:hover {
   .heb-box svg text { display: none; }
   .heb-note--mobile { display: block; }
   .heb-search { width: 100%; }
+  .heb-results { min-width: 0; }
   .heb-ctl { flex: 1 1 100%; }
 }
 
