@@ -162,6 +162,43 @@ module.exports = function(eleventyConfig) {
       .sort((a, b) => b.date - a.date);
   });
 
+  // Validazione di build: il criterio di ogni curated deve appartenere alla
+  // lista chiusa di src/_data/criteri.json — che e' la sola fonte, la stessa
+  // che alimenta il badge in pagina e la legenda del colophon. Un criterio
+  // fuori lista annullerebbe il filtro in ingresso: se la lista non vincola,
+  // non e' un criterio, e' un'etichetta.
+  eleventyConfig.addCollection("validazioneCriteri", function(collectionApi) {
+    const criteri = require("./src/_data/criteri.json");
+    const ammessi = Object.keys(criteri);
+    const errors = [];
+    let checked = 0;
+
+    collectionApi.getFilteredByGlob("src/curated/*.md").forEach(function(item) {
+      const where = String(item.inputPath).replace(/^\.\//, "");
+      const c = item.data.criterio;
+      checked++;
+      if (c === undefined || c === null || String(c).trim() === "") {
+        errors.push(where + ": manca il campo criterio");
+      } else if (ammessi.indexOf(String(c).trim()) === -1) {
+        errors.push(where + ': criterio "' + c + '" fuori lista');
+      }
+    });
+
+    if (errors.length) {
+      throw new Error(
+        "\n[criteri curated] " + errors.length + " scheda/e non conforme/i:\n  - " +
+        errors.join("\n  - ") +
+        "\n\nCriteri ammessi: " + ammessi.join(", ") +
+        "\nLa lista sta in src/_data/criteri.json: per ammetterne uno nuovo si\n" +
+        "aggiunge la voce li', non si scrive uno slug libero nel frontmatter.\n" +
+        "Vedi /colophon/#criteri.\n"
+      );
+    }
+
+    console.log("[criteri curated] " + checked + " schede verificate — nessun criterio fuori lista.");
+    return [];
+  });
+
   // Note di ricerca /lab/ — collezione separata da writings e curated,
   // volutamente fuori dalla tassonomia Argomenti/Concetti (vedi MANUALE.md §9)
   eleventyConfig.addCollection("lab", function(collectionApi) {
@@ -348,7 +385,7 @@ module.exports = function(eleventyConfig) {
     }).format(date);
   });
 
-  // Usato solo dalla sezione /episteme-advisory/lab/, che è in sola lingua inglese
+  // Usato solo dalla sezione /lab/, che è in sola lingua inglese
   eleventyConfig.addFilter("formatDateEN", function(date) {
     return new Intl.DateTimeFormat('en-US', {
       year: 'numeric',
