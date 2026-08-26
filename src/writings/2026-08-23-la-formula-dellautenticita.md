@@ -2,6 +2,8 @@
 layout: layouts/article.njk
 title: "La formula dell’autenticità"
 date: 2026-08-23
+series: "L’equazione del valore, I"
+serie_totale_prevista: 2
 ai_prose: DL
 ai_scope: [FM]
 description: "Perché in tempi di LLM l’autenticità di un testo non è la grandezza che stiamo cercando. Tentativo di trovare l’equazione del valore di un testo, per rispondere alle domande che contano davvero."

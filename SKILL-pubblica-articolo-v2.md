@@ -103,7 +103,15 @@ window.MathJax = {
 ```
 
 **Tabelle con didascalia:**
-Scrivi la tabella Markdown standard, poi aggiungi sotto `*Tabella: descrizione.*` in corsivo.
+Scrivi la tabella Markdown standard, poi aggiungi sotto la didascalia con la classe del sito:
+
+```html
+<p class="caption">Tabella 1. Descrizione della tabella.</p>
+```
+
+Numerazione col punto (`Tabella 1.`), non coi due punti. **Non** usare `*Tabella: descrizione.*` in corsivo: il markdown lo rende come un normale paragrafo, a 18px e a giustezza piena, e si confonde col corpo del testo. La classe `.caption` è la stessa di `figcaption` e `.diagram-caption` — 13px, grigia, corsivo, filetto a sinistra — così tutte le didascalie del sito sono un sistema solo.
+
+**Attenzione alle righe vuote nell'HTML grezzo:** markdown-it chiude un blocco HTML alla prima riga vuota. Dentro un `<div>`, una `<figure>`, una `<table>` o un `<svg>` scritti a mano non lasciare mai righe vuote, altrimenti tutto ciò che segue esce dal blocco e viene impaginato come testo corrente.
 
 ### 1c. Bibliografia
 

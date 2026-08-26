@@ -5830,14 +5830,7 @@ a.home-path:hover {
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--spacing-lg);
-}
-
-@media (min-width: 901px) {
-  .projects-grid {
-    grid-template-columns: 1fr 1fr;
-    align-items: start;
-  }
+  gap: var(--spacing-xl);
 }
 
 .project-card {
@@ -5851,6 +5844,10 @@ a.home-path:hover {
 
 .project-card--episteme {
   border-left-color: var(--color-primary);
+}
+
+.project-card--notazione {
+  border-left-color: var(--color-primary-medium);
 }
 
 .project-kicker {
@@ -5882,10 +5879,15 @@ a.home-path:hover {
   color: var(--color-primary);
 }
 
+.project-card--notazione .project-name a:hover {
+  color: var(--color-primary-medium);
+}
+
 .project-line {
   font-family: var(--font-serif);
   font-size: 18px;
   line-height: 1.6;
+  max-width: 58ch;
   margin: 0 0 var(--spacing-sm);
 }
 
@@ -5893,6 +5895,7 @@ a.home-path:hover {
   font-size: 15px;
   line-height: 1.7;
   color: var(--color-text-light);
+  max-width: 66ch;
   margin: 0 0 var(--spacing-sm);
 }
 
@@ -5910,6 +5913,10 @@ a.home-path:hover {
 
 .project-card--irene .project-go a {
   color: var(--color-irene);
+}
+
+.project-card--notazione .project-go a {
+  color: var(--color-primary-medium);
 }
 
 .project-go a:hover {
@@ -5950,6 +5957,7 @@ a.home-path:hover {
 }
 
 .project-sub-body {
+  max-width: 64ch;
   font-size: 14px;
   line-height: 1.65;
   color: var(--color-text-light);

@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Il banco di misura — La forza della scrittura</title>
+<meta name="description" content="Strumento interattivo per l'equazione del valore di un testo: spostamento, struttura, guadagno epistemico, il piano dei regimi e la dinamica di popolazione.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<script>
+try{ if (window.self !== window.top) document.documentElement.className += " embedded"; }
+catch(e){ document.documentElement.className += " embedded"; }
+</script>
+<style>
+:root{
+  color-scheme: light dark;
+  --bg:#ffffff; --bg-alt:#f5f5f0; --text:#1a1a1a; --text-light:#666; --text-hint:#8a8a84;
+  --border:#e0e0e0; --border-light:#eee;
+  --primary:#1C0E80; --blue:#185FA5; --green:#0F6E56; --red:#A13D3D; --ochre:#8B5E1F;
+  --pos-tint:rgba(24,95,165,.075); --neg-tint:rgba(161,61,61,.075); --conf-tint:rgba(139,94,31,.09);
+  --track:rgba(26,26,26,.12);
+  --serif:'Source Serif 4',Georgia,'Times New Roman',serif;
+  --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#141412; --bg-alt:#1e1e1a; --text:#e8e4dc; --text-light:#9a9690; --text-hint:#858580;
+    --border:#2e2e2a; --border-light:#242420;
+    --primary:#8B7EF8; --blue:#6BAED6; --green:#57B79E; --red:#D98C8C; --ochre:#C9A24A;
+    --pos-tint:rgba(107,174,214,.10); --neg-tint:rgba(217,140,140,.10); --conf-tint:rgba(201,162,74,.12);
+    --track:rgba(232,228,220,.15);
+  }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg)}
+body{
+  font-family:var(--serif); color:var(--text);
+  font-size:16px; line-height:1.6;
+  -webkit-text-size-adjust:100%;
+  padding:0 0 4px;
+}
+.wrap{max-width:940px;margin:0 auto;padding:20px 18px 24px}
+
+/* ---------- ritorno al sito (nascosto quando è incorporato) ---------- */
+.backnav{
+  display:flex; gap:18px; flex-wrap:wrap; align-items:baseline;
+  font-family:var(--sans); font-size:12.5px;
+  margin-bottom:18px; padding-bottom:12px; border-bottom:1px solid var(--border);
+}
+.backnav a{color:var(--text-light);text-decoration:none;border-bottom:1px solid transparent;padding:2px 0}
+.backnav a:hover{color:var(--primary);border-bottom-color:currentColor}
+.backnav a.home{color:var(--primary);font-weight:500}
+.backnav a:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
+html.embedded .backnav{display:none}
+
+/* ---------- testata ---------- */
+.eyebrow{
+  font-family:var(--sans); font-size:11px; font-weight:500;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--text-hint);
+  margin-bottom:6px;
+}
+h1{font-size:23px;font-weight:500;line-height:1.25;letter-spacing:-.01em;margin-bottom:8px}
+.standfirst{font-size:15px;color:var(--text-light);max-width:62ch;line-height:1.55}
+.standfirst code{font-family:var(--sans);font-size:13.5px;color:var(--text)}
+
+/* ---------- tab ---------- */
+.tabs{
+  display:flex; gap:2px; margin:20px 0 0;
+  border-bottom:1px solid var(--border); flex-wrap:wrap;
+}
+.tab{
+  font-family:var(--sans); font-size:12.5px; font-weight:500;
+  letter-spacing:.02em; background:none; border:none;
+  border-bottom:2px solid transparent; margin-bottom:-1px;
+  color:var(--text-light); padding:9px 13px; cursor:pointer;
+  border-radius:3px 3px 0 0; min-height:40px;
+}
+.tab:hover{color:var(--text);background:var(--bg-alt)}
+.tab[aria-selected=true]{color:var(--primary);border-bottom-color:var(--primary);font-weight:600}
+.tab:focus-visible{outline:2px solid var(--primary);outline-offset:-2px}
+.tab .n{color:var(--text-hint);font-weight:400;margin-right:6px}
+.tab[aria-selected=true] .n{color:var(--primary)}
+
+.panel{padding-top:20px}
+.panel[hidden]{display:none}
+.panel-note{font-size:14.5px;color:var(--text-light);max-width:68ch;margin-bottom:18px;line-height:1.55}
+.panel-note b{color:var(--text);font-weight:600}
+
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}
+@media(max-width:760px){.cols{grid-template-columns:1fr;gap:26px}}
+
+.legend-h{
+  font-family:var(--sans); font-size:10.5px; font-weight:600;
+  letter-spacing:.13em; text-transform:uppercase; color:var(--text-hint);
+  padding-bottom:5px; margin-bottom:12px; border-bottom:1px solid var(--border);
+}
+.legend-h + .legend-h{margin-top:26px}
+details.editor > summary{
+  font-family:var(--sans); font-size:10.5px; font-weight:600;
+  letter-spacing:.13em; text-transform:uppercase; color:var(--text-hint);
+  padding:0 0 5px; margin-bottom:12px; border-bottom:1px solid var(--border);
+  cursor:pointer; list-style:none; min-height:26px;
+}
+details.editor > summary::-webkit-details-marker{display:none}
+details.editor > summary::after{content:" \25B8"; color:var(--primary)}
+details.editor[open] > summary::after{content:" \25BE"}
+details.editor > summary:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
+@media(min-width:761px){
+  details.editor > summary{pointer-events:none}
+  details.editor > summary::after,
+  details.editor[open] > summary::after{content:""}
+}
+@media(max-width:760px){
+  #pA .cols{display:flex;flex-direction:column}
+  #pA .cols > div:first-child{order:2}
+  #pA .cols > div:last-child{order:1}
+}
+
+/* ---------- preset ---------- */
+.presets{margin-bottom:20px}
+.preset-row{display:flex;flex-wrap:wrap;gap:5px;align-items:center;margin-bottom:7px}
+.preset-cap{
+  font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--text-hint);margin-right:4px;
+}
+button.p{
+  font-family:var(--sans); font-size:12.5px; background:var(--bg);
+  border:1px solid var(--border); color:var(--text);
+  padding:6px 10px; border-radius:3px; cursor:pointer; line-height:1.3;
+  min-height:34px;
+}
+button.p:hover{border-color:var(--primary);color:var(--primary)}
+button.p[aria-pressed=true]{background:var(--primary);border-color:var(--primary);color:#fff}
+button.p:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
+button.p .var{opacity:.7;font-size:11px}
+.variant-note{
+  font-family:var(--sans);font-size:11.5px;color:var(--text-light);
+  margin-top:2px;min-height:17px;
+}
+.variant-note b{color:var(--text);font-weight:600}
+
+/* ---------- scenari ---------- */
+.qtitle{font-size:14.5px;font-style:italic;color:var(--text-light);margin-bottom:14px;line-height:1.4}
+.scen{margin-bottom:15px;padding-bottom:13px;border-bottom:1px solid var(--border-light)}
+.scen:last-child{border-bottom:none}
+.scen-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:6px}
+.scen-name{font-size:14.5px;line-height:1.3}
+.scen-num{font-family:var(--sans);font-size:11px;color:var(--text-hint);white-space:nowrap;letter-spacing:.02em}
+.bars{display:flex;flex-direction:column;gap:2px;margin-bottom:7px}
+.bar{height:7px;background:var(--track);position:relative;border-radius:1px;overflow:hidden}
+.bar i{position:absolute;inset:0 auto 0 0;transition:width .12s ease}
+.bar.b1 i{background:var(--text-hint)}
+.bar.b2 i{background:var(--blue)}
+.bar.b3 i{background:var(--green)}
+.srow{display:grid;grid-template-columns:46px 1fr;align-items:center;gap:8px;margin-bottom:1px}
+.srow span{font-family:var(--sans);font-size:9.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text-hint)}
+.keys{display:flex;gap:14px;margin-bottom:14px;font-family:var(--sans);font-size:11px;letter-spacing:.03em;color:var(--text-light)}
+.keys b{display:inline-block;width:14px;height:6px;margin-right:5px;vertical-align:middle;border-radius:1px}
+
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:28px;background:transparent;margin:0;display:block;cursor:pointer}
+input[type=range]::-webkit-slider-runnable-track{height:2px;background:var(--track);border-radius:2px}
+input[type=range]::-moz-range-track{height:2px;background:var(--track);border-radius:2px}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;height:16px;margin-top:-7px;background:var(--blue);border:2px solid var(--bg);border-radius:50%;box-shadow:0 0 0 1px var(--blue)}
+input[type=range]::-moz-range-thumb{width:16px;height:16px;background:var(--blue);border:2px solid var(--bg);border-radius:50%;box-shadow:0 0 0 1px var(--blue)}
+input[type=range].k1::-webkit-slider-thumb{background:var(--text-hint);box-shadow:0 0 0 1px var(--text-hint)}
+input[type=range].k1::-moz-range-thumb{background:var(--text-hint);box-shadow:0 0 0 1px var(--text-hint)}
+input[type=range].k3::-webkit-slider-thumb{background:var(--green);box-shadow:0 0 0 1px var(--green)}
+input[type=range].k3::-moz-range-thumb{background:var(--green);box-shadow:0 0 0 1px var(--green)}
+input[type=range]:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
+
+/* ---------- quadranti di lettura ---------- */
+.readout{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);border-radius:3px;overflow:hidden;margin-bottom:16px}
+@media(max-width:420px){.readout{grid-template-columns:1fr 1fr}}
+.cell{background:var(--bg);padding:10px 11px}
+.cell.hl{background:var(--bg-alt)}
+.cell .k{font-family:var(--sans);font-size:10.5px;font-weight:600;letter-spacing:.04em;color:var(--text-hint);margin-bottom:4px}
+.cell .v{font-family:var(--sans);font-size:21px;font-weight:500;line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.cell .u{font-family:var(--sans);font-size:10px;font-weight:400;color:var(--text-hint);margin-left:3px}
+.cell .d{font-size:11.5px;color:var(--text-light);margin-top:5px;line-height:1.3}
+.pos{color:var(--blue)} .neg{color:var(--red)} .nul{color:var(--text-hint)}
+
+/* ---------- verdetto ---------- */
+.verdict{border:1px solid var(--text);border-left-width:3px;border-radius:0 3px 3px 0;padding:12px 14px;margin-bottom:14px}
+.verdict .t{font-size:16.5px;font-weight:600;margin-bottom:3px;letter-spacing:-.01em}
+.verdict .s{font-size:13.5px;color:var(--text-light);line-height:1.45}
+.ident{font-family:var(--sans);font-size:11.5px;color:var(--text-light);line-height:1.9;padding-top:11px;margin-top:12px;border-top:1px solid var(--border-light);font-variant-numeric:tabular-nums}
+.ident b{color:var(--text);font-weight:600}
+
+canvas{display:block;width:100%;border:1px solid var(--border);border-radius:3px;background:var(--bg)}
+.axcap{font-family:var(--sans);font-size:10.5px;letter-spacing:.06em;color:var(--text-hint);margin-top:6px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+
+/* ---------- pannello B ---------- */
+.ctrl{display:grid;grid-template-columns:1fr 118px 46px;align-items:center;gap:9px;margin-bottom:6px}
+@media(max-width:420px){.ctrl{grid-template-columns:1fr 84px 42px;gap:7px}}
+.ctrl .nm{font-size:13.5px;line-height:1.25}
+.ctrl .nm small{display:block;font-family:var(--sans);font-size:10.5px;color:var(--text-hint);letter-spacing:.01em;margin-top:1px}
+.ctrl output{font-family:var(--sans);font-size:12px;text-align:right;color:var(--blue);font-variant-numeric:tabular-nums;font-weight:500}
+.eqn{
+  font-family:var(--sans);font-size:12.5px;line-height:1.9;padding:11px 12px;
+  background:var(--bg-alt);border:1px solid var(--border);border-radius:3px;
+  margin-bottom:16px;overflow-x:auto;white-space:nowrap;font-variant-numeric:tabular-nums;
+}
+.wf{display:grid;grid-template-columns:1fr 1fr 58px;align-items:center;gap:9px;margin-bottom:7px;font-size:13px}
+@media(max-width:420px){.wf{grid-template-columns:1fr 1fr 52px;gap:7px}}
+.wf .t small{display:block;font-family:var(--sans);font-size:10.5px;color:var(--text-hint)}
+.trk{height:14px;background:var(--track);position:relative;border-radius:2px}
+.trk i{position:absolute;top:0;bottom:0;transition:width .12s ease,left .12s ease;border-radius:1px}
+.trk .zero{position:absolute;top:-2px;bottom:-2px;width:1px;background:var(--text-hint);opacity:.6}
+.wf .n{font-family:var(--sans);font-size:12px;text-align:right;font-variant-numeric:tabular-nums;font-weight:500}
+.total{border-top:1px solid var(--text);padding-top:10px;margin-top:10px;display:flex;justify-content:space-between;align-items:baseline}
+.total .k{font-family:var(--sans);font-size:10.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--text-hint)}
+.total .v{font-family:var(--sans);font-size:27px;font-weight:500;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.switch{display:flex;align-items:center;gap:11px;margin:16px 0 0;padding:11px 12px;border:1px dashed var(--red);border-radius:3px;background:var(--neg-tint)}
+.switch .tx{font-size:13px;line-height:1.35}
+.switch .tx small{display:block;color:var(--text-light);font-size:11.5px;margin-top:2px}
+.switch button[aria-pressed=true]{background:var(--red);border-color:var(--red);color:#fff}
+.caveat{
+  font-family:var(--sans);font-size:11.5px;line-height:1.6;color:var(--text-light);
+  border-left:2px solid var(--ochre);padding:3px 0 3px 11px;margin-top:22px;max-width:66ch;
+}
+.caveat b{color:var(--text);font-weight:600}
+
+/* ---------- pannello C ---------- */
+.acts{display:flex;gap:6px;margin:16px 0 14px;flex-wrap:wrap}
+footer{
+  margin-top:28px;padding-top:14px;border-top:1px solid var(--border);
+  font-family:var(--sans);font-size:11px;letter-spacing:.05em;color:var(--text-hint);
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+}
+footer a{color:var(--text-light)}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<nav class="backnav" aria-label="Torna al sito">
+  <a class="home" href="/" target="_top">&#8592; claudiocammarano.com</a>
+  <a href="/projects/" target="_top">Projects</a>
+  <a href="/writings/2026-08-26-la-forza-della-scrittura/" target="_top">Il saggio che lo spiega</a>
+</nav>
+
+<header>
+  <p class="eyebrow">Banco di misura · claudiocammarano.com</p>
+  <h1>L'equazione del valore di un testo</h1>
+  <p class="standfirst">Strumento di lettura per <a href="/writings/2026-08-26-la-forza-della-scrittura/" target="_top">«La forza della scrittura»</a>. Il primo pannello calcola grandezze reali in bit e le colloca sul piano dei regimi. Il secondo e il terzo esplorano forme: i numeri sono adimensionali e le funzioni sono scelte qui, non nel saggio.</p>
+</header>
+
+<nav class="tabs" role="tablist" aria-label="Pannelli">
+  <button class="tab" role="tab" id="t1" aria-controls="pA" aria-selected="true"><span class="n">1</span>Spostamento e guadagno</button>
+  <button class="tab" role="tab" id="t2" aria-controls="pB" aria-selected="false"><span class="n">2</span>L'equazione</button>
+  <button class="tab" role="tab" id="t3" aria-controls="pC" aria-selected="false"><span class="n">3</span>La varianza fra i prior</button>
+</nav>
+
+<!-- ============ PANNELLO A ============ -->
+<section class="panel" id="pA" role="tabpanel" aria-labelledby="t1">
+  <p class="panel-note"><b>Matematica esatta, unità in bit.</b> Sposta le tre distribuzioni — le attese prima della lettura, le attese dopo, e il mondo — e tutto il resto è calcolato: divergenza di Kullback-Leibler, entropia di Shannon, entropia incrociata. I due numeri puri α e r decidono il regime; lo spostamento D resta fuori dal giudizio come pura intensità.</p>
+
+  <div class="presets">
+    <div class="preset-row">
+      <span class="preset-cap">L'esempio</span>
+      <button class="p" data-c="operatore">L'operatore</button>
+      <button class="p" data-c="piatto">Il lettore piatto</button>
+      <button class="p" data-c="siddharta">Siddharta</button>
+    </div>
+    <div class="preset-row">
+      <span class="preset-cap">I sei romanzi</span>
+      <button class="p" data-c="guerraepace">Guerra e pace</button>
+      <button class="p" data-c="karamazov">I fratelli Karamazov</button>
+      <button class="p" data-c="rosa">Il nome della rosa <span class="var">↺</span></button>
+      <button class="p" data-c="resurrezione">Resurrezione <span class="var">↺</span></button>
+      <button class="p" data-c="finnegans">Finnegans Wake <span class="var">↺</span></button>
+      <button class="p" data-c="fourthwing">Fourth Wing</button>
+    </div>
+    <p class="variant-note" id="vnote"></p>
+  </div>
+
+  <div class="cols">
+    <div>
+      <details class="editor" id="edt" open>
+      <summary>Le tre distribuzioni</summary>
+      <p class="qtitle" id="qtitle"></p>
+      <div class="keys">
+        <span><b style="background:var(--text-hint)"></b>prima <i>p</i></span>
+        <span><b style="background:var(--blue)"></b>dopo <i>p′</i></span>
+        <span><b style="background:var(--green)"></b>mondo <i>q</i></span>
+      </div>
+      <div id="scen"></div>
+      </details>
+    </div>
+
+    <div>
+      <p class="legend-h">Lettura</p>
+      <div class="readout">
+        <div class="cell"><div class="k">Spostamento <i>D</i></div><div class="v" id="vD">—</div><div class="d">quanto le attese si sono mosse</div></div>
+        <div class="cell"><div class="k">Struttura <i>ΔH</i></div><div class="v" id="vH">—</div><div class="d">quanta indifferenza si è consumata</div></div>
+        <div class="cell"><div class="k">Rigidità <i>ρ</i></div><div class="v" id="vR">—</div><div class="d">quanto il prior era mal tarato</div></div>
+        <div class="cell"><div class="k">Spinta <i>⟨Δ,u⟩</i></div><div class="v" id="vI">—</div><div class="d">quanto ha spinto verso il mondo</div></div>
+        <div class="cell hl"><div class="k"><i>α = ⟨Δ,u⟩ / D</i></div><div class="v" id="vA">—</div><div class="d">&gt; 1 avvicina · &lt; 1 allontana</div></div>
+        <div class="cell hl"><div class="k"><i>r = ρ / D</i></div><div class="v" id="vRr">—</div><div class="d">&lt; 1 organizza · &lt; 0 conferma</div></div>
+      </div>
+
+      <div class="verdict" id="verdict">
+        <p class="t" id="vTit">Muovi un cursore</p>
+        <p class="s" id="vSub">Il regime si legge da α e r insieme; D dice soltanto quanto forte.</p>
+      </div>
+
+      <p class="legend-h">Il piano dei regimi</p>
+      <canvas id="plane" height="380" aria-label="Piano dei regimi: alfa in ascissa, r in ordinata"></canvas>
+      <div class="axcap"><span>α = spinta utile / costo</span><span>r = rigidità / spostamento</span></div>
+      <div class="ident" id="ident"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PANNELLO B ============ -->
+<section class="panel" id="pB" role="tabpanel" aria-labelledby="t2" hidden>
+  <p class="panel-note"><b>Adimensionale, forme scelte qui.</b> I tre termini di contenuto restano all'autore. Lo stack Σ entra solo dove il saggio lo colloca: dentro η, che satura a uno, e dentro ε, che la verifica ν azzera. I codici della griglia muovono Σ e nient'altro — è il modo più rapido per vedere che una posizione nella matrice dichiarativa non è una posizione nel valore. Il cursore <i>ricevente</i> attua la prima riparazione di §8: η sta dentro l'integrale, e dipende anche da chi legge.</p>
+
+  <div class="cols">
+    <div>
+      <p class="legend-h">Contenuto — resta all'autore</p>
+      <div id="cA"></div>
+      <p class="legend-h">Strumento, ricevente e verifica</p>
+      <div id="cB"></div>
+      <p class="legend-h">Coefficienti postulati</p>
+      <div id="cC"></div>
+    </div>
+    <div>
+      <p class="legend-h">Posizione dichiarata nella griglia</p>
+      <div class="preset-row" id="codP"></div>
+      <div class="preset-row" id="codA" style="margin-bottom:16px"></div>
+
+      <div class="eqn" id="eqn"></div>
+
+      <p class="legend-h">Contributi</p>
+      <div id="wfall"></div>
+      <div class="total"><span class="k">Valore V</span><span class="v" id="vV">—</span></div>
+
+      <div class="switch">
+        <button class="p" id="deleg" aria-pressed="false">Delega</button>
+        <div class="tx">Delega la selezione allo strumento
+          <small>Azzera G<sub>sel</sub>. È il termine additivo più grande, ed è l'unico che nessuna dichiarazione registra.</small>
+        </div>
+      </div>
+      <p class="caveat"><b>Dichiarazione.</b> η = 1 − e<sup>−a(F+Σ)·ψ(R)</sup> e ε = ε₀(1+βΣ)e<sup>−γν</sup> non compaiono nel saggio. Sono state scelte per far girare il modello: saturante la prima, azzerabile per verifica la seconda. Cambiare quelle forme cambia i numeri, non i segni.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PANNELLO C ============ -->
+<section class="panel" id="pC" role="tabpanel" aria-labelledby="t3" hidden>
+  <p class="panel-note"><b>Ottanta autori, trecentoventi pubblicazioni a testa.</b> A ogni passo ciascuno pubblica mescolando il proprio prior con la media del corpus, in proporzione Σ, e legge quel che gli altri hanno pubblicato. L'osservazione nuova entra solo dalla quota non modale. La curva è la varianza fra i prior nel tempo, e la linea tratteggiata è il punto fisso Var* = (1 − Σ)·ω² / λ: il campo non collassa, si assesta.</p>
+
+  <div class="cols">
+    <div>
+      <p class="legend-h">Regime</p>
+      <div id="cE"></div>
+      <div class="acts">
+        <button class="p" id="run">Avvia</button>
+        <button class="p" id="rst">Azzera</button>
+      </div>
+      <div class="readout" style="grid-template-columns:1fr 1fr 1fr">
+        <div class="cell"><div class="k">Var iniziale</div><div class="v" id="v0">—</div></div>
+        <div class="cell"><div class="k">Var corrente</div><div class="v" id="vNow">—</div></div>
+        <div class="cell hl"><div class="k">Punto fisso Var*</div><div class="v" id="vFix">—</div></div>
+      </div>
+      <p class="caveat" style="border-left-color:var(--green)"><b>La leva.</b> Un autore singolo non può abbassare Σ, che è una proprietà del campo. Può alzare ω, cioè immettere osservazione, oppure abbassare λ, cioè leggere meno il proprio campo. Dimezza la permeabilità e guarda dove va la linea tratteggiata.</p>
+    </div>
+    <div>
+      <p class="legend-h">Var[𝒫] nel tempo</p>
+      <canvas id="cv" height="290" aria-label="Varianza fra i prior nel tempo"></canvas>
+      <div class="axcap"><span>t = 0</span><span id="tNow">t = 0</span><span>t = 320</span></div>
+      <p class="legend-h" style="margin-top:22px">Posizione degli ottanta autori</p>
+      <canvas id="cvs" height="86" aria-label="Dispersione dei prior degli autori"></canvas>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>Banco di misura · <a href="/writings/2026-08-26-la-forza-della-scrittura/" target="_top">La forza della scrittura</a></span>
+  <span><a href="/" target="_top">Home</a> · <a href="/projects/" target="_top">Projects</a> · Nessun dato esce da questa pagina</span>
+</footer>
+</div>
+
+<script>
+"use strict";
+var L2=Math.LN2, EPS=1e-12;
+function log2(x){return Math.log(x)/L2}
+function norm(a){var s=0,i;for(i=0;i<a.length;i++)s+=a[i];return s>0?a.map(function(v){return Math.max(v/s,EPS)}):a.map(function(){return 1/a.length})}
+function H(p){var s=0;p.forEach(function(x){if(x>EPS)s-=x*log2(x)});return s}
+function KL(a,b){var s=0;a.forEach(function(x,i){if(x>EPS)s+=x*log2(x/Math.max(b[i],EPS))});return s}
+function CE(a,b){var s=0;a.forEach(function(x,i){if(x>EPS)s-=x*log2(Math.max(b[i],EPS))});return s}
+function f2(x){return(Math.abs(x)<0.005?"0,00":x.toFixed(2)).replace(".",",")}
+function sg(x){return x>0.02?"pos":(x<-0.02?"neg":"nul")}
+function css(n){return getComputedStyle(document.documentElement).getPropertyValue(n).trim()}
+
+/* ===================== PANNELLO A ===================== */
+var CASI={
+ operatore:{lab:"L'operatore del settore",q:"Che cosa sta succedendo al mercato del libro?",
+   s:["il mercato cresce","il mercato resta stabile","il mercato cala","il mercato si riassetta: cala il trade, cresce l'ascolto"],
+   p:[5,85,5,5],d:[10,10,10,70],w:[10,15,10,65]},
+ piatto:{lab:"Il lettore piatto",q:"Che cosa sta succedendo al mercato del libro?",
+   s:["il mercato cresce","il mercato resta stabile","il mercato cala","il mercato si riassetta: cala il trade, cresce l'ascolto"],
+   p:[25,25,25,25],d:[10,10,10,70],w:[10,15,10,65]},
+ siddharta:{lab:"Siddharta — costruito sulla separatrice",q:"Che cosa sta succedendo al mercato del libro?",
+   s:["il mercato cresce","il mercato resta stabile","il mercato cala","il mercato si riassetta: cala il trade, cresce l'ascolto"],
+   p:[5,85,5,5],d:[5,19,71,5],w:[10,15,10,65]},
+ guerraepace:{lab:"Guerra e pace, contro un lettore del 1869",q:"Che cosa decide l'esito di una guerra?",
+   s:["il genio del comandante","il caso e la contingenza","la logistica e i numeri","la somma delle volontà individuali"],
+   p:[60,10,20,10],d:[5,17,10,68],w:[8,25,17,50]},
+ karamazov:{lab:"I fratelli Karamazov",q:"Da dove viene il male?",
+   s:["dalla colpa individuale","dall'assenza di Dio","dalla struttura sociale","è irriducibile: tutte e tre insieme"],
+   p:[70,10,10,10],d:[22,22,18,38],w:[20,20,20,40]},
+ fourthwing:{lab:"Fourth Wing",q:"Come andrà a finire questa storia?",
+   s:["i due protagonisti finiscono insieme","uno dei due muore","la ribellione fallisce","finale aperto, nessuna delle tre"],
+   p:[55,15,15,15],d:[85,5,5,5],w:[45,15,20,20]}
+};
+var VAR={
+ rosa:[
+  {lab:"Il nome della rosa — <b>lettore comune</b>",q:"Com'era il Medioevo?",
+   s:["età buia e ignorante","età di fede compatta","età di conflitto intellettuale e di ragione","età di innovazione tecnica ed economica"],
+   p:[55,25,10,10],d:[6,12,62,20],w:[8,17,55,20]},
+  {lab:"Il nome della rosa — <b>medievista</b>",q:"Com'era il Medioevo?",
+   s:["età buia e ignorante","età di fede compatta","età di conflitto intellettuale e di ragione","età di innovazione tecnica ed economica"],
+   p:[10,20,40,30],d:[10,21,40,29],w:[10,20,40,30]}],
+ resurrezione:[
+  {lab:"Resurrezione — <b>arbitro Tolstoj</b>",q:"Le istituzioni russe rendono giustizia?",
+   s:["sì, nel complesso","sbagliano per incompetenza","sono strutturalmente ingiuste","sono strumenti di classe"],
+   p:[45,35,15,5],d:[5,10,30,55],w:[5,15,42,38]},
+  {lab:"Resurrezione — <b>arbitro il Sinodo</b>",q:"Le istituzioni russe rendono giustizia?",
+   s:["sì, nel complesso","sbagliano per incompetenza","sono strutturalmente ingiuste","sono strumenti di classe"],
+   p:[45,35,15,5],d:[5,10,30,55],w:[60,30,7,3]}],
+ finnegans:[
+  {lab:"Finnegans Wake — <b>lettore ordinario</b>",q:"Che cosa può fare la lingua di un romanzo?",
+   s:["raccontare una storia","rappresentare una coscienza","farsi materia sonora e opaca","tutte e tre insieme, senza gerarchia"],
+   p:[40,30,20,10],d:[40,30,20,10],w:[12,20,30,38]},
+  {lab:"Finnegans Wake — <b>lettore specialista</b>",q:"Che cosa può fare la lingua di un romanzo?",
+   s:["raccontare una storia","rappresentare una coscienza","farsi materia sonora e opaca","tutte e tre insieme, senza gerarchia"],
+   p:[40,30,20,10],d:[15,20,30,35],w:[12,20,30,38]}]
+};
+var vIdx={rosa:0,resurrezione:0,finnegans:0};
+var cur="operatore", A=null;
+
+function loadCase(key){
+  var c = VAR[key] ? VAR[key][vIdx[key]] : CASI[key];
+  A={p:c.p.slice(),d:c.d.slice(),w:c.w.slice(),s:c.s.slice(),q:c.q,lab:c.lab};
+  cur=key; buildScen(); renderA();
+  document.getElementById("vnote").innerHTML=c.lab;
+  document.querySelectorAll("[data-c]").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.c===key)});
+}
+function buildScen(){
+  document.getElementById("qtitle").textContent="«"+A.q+"»";
+  document.getElementById("scen").innerHTML=A.s.map(function(t,i){
+    return '<div class="scen"><div class="scen-head"><span class="scen-name">'+t+'</span><span class="scen-num" id="n'+i+'"></span></div>'+
+      '<div class="bars"><div class="bar b1"><i id="f1'+i+'"></i></div><div class="bar b2"><i id="f2'+i+'"></i></div><div class="bar b3"><i id="f3'+i+'"></i></div></div>'+
+      '<div class="srow"><span>prima</span><input type="range" class="k1" min="0" max="100" data-k="p" data-i="'+i+'" aria-label="attese prima, scenario '+(i+1)+'"></div>'+
+      '<div class="srow"><span>dopo</span><input type="range" min="0" max="100" data-k="d" data-i="'+i+'" aria-label="attese dopo, scenario '+(i+1)+'"></div>'+
+      '<div class="srow"><span>mondo</span><input type="range" class="k3" min="0" max="100" data-k="w" data-i="'+i+'" aria-label="mondo, scenario '+(i+1)+'"></div></div>';
+  }).join("");
+}
+document.getElementById("scen").addEventListener("input",function(e){
+  var t=e.target; if(t.type!=="range")return;
+  A[t.dataset.k][+t.dataset.i]=+t.value;
+  document.querySelectorAll("[data-c]").forEach(function(b){b.setAttribute("aria-pressed",false)});
+  document.getElementById("vnote").innerHTML="<b>configurazione manuale</b>";
+  renderA();
+});
+document.querySelectorAll("[data-c]").forEach(function(b){
+  b.addEventListener("click",function(){
+    var k=b.dataset.c;
+    if(VAR[k] && cur===k) vIdx[k]=(vIdx[k]+1)%VAR[k].length;
+    loadCase(k);
+  });
+});
+
+function measure(P,D,W){
+  var p=norm(P),d=norm(D),w=norm(W);
+  var Dv=KL(d,p), rho=CE(d,p)-H(p), dH=H(p)-H(d);
+  var u=w.map(function(x,i){return log2(x/p[i])});
+  var dl=d.map(function(x,i){return x-p[i]});
+  var ip=dl.reduce(function(s,x,i){return s+x*u[i]},0);
+  var G=KL(p,w)-KL(d,w);
+  return {p:p,d:d,w:w,D:Dv,rho:rho,dH:dH,ip:ip,G:G,
+          a:Dv>0.02?ip/Dv:NaN, r:Dv>0.02?rho/Dv:NaN,
+          Hp:H(p),Hd:H(d),Hw:H(w)};
+}
+function verdict(m){
+  if(!(m.D>0.02)) return {t:"Regime non definito",s:"Lo spostamento è nullo: il testo è l'operatore identità e i due rapporti non esistono. È il buco nell'origine del piano — abitato, e non riparato.",c:"nul"};
+  var a=m.a,r=m.r;
+  if(Math.abs(a-1)<0.02) return {t:"Sulla separatrice — α = 1",s:"Il guadagno è nullo: un errore sostituito con un altro errore ugualmente distante. Non è una zona, è una retta di misura nulla: si trova solo costruendola.",c:"nul"};
+  if(r<0) return {t:"Conferma",s:a>1?"Concentra il lettore su ciò che già riteneva probabile, e nella direzione giusta: il manuale ben fatto. La banda quasi vuota per la narrativa.":"Concentra il lettore su ciò che già credeva, e nella direzione sbagliata. Consola.",c:a>1?"pos":"neg"};
+  if(a>1&&r<1) return {t:"Valore",s:"Organizza il lettore e lo avvicina al mondo. È il caso che il dibattito sull'autenticità non discute mai.",c:"pos"};
+  if(a<1&&r<1) return {t:"Struttura falsa",s:"Organizza il lettore, e lo organizza lontano dal mondo. Tanto più efficace quanto migliore è la prosa: è la regione che conta di più nel dibattito da cui tutto è partito.",c:"neg"};
+  if(a<1&&r>1) return {t:"Provocazione",s:"Disorienta e allontana. Il modello prevede che sia la regione più popolata della produzione complessiva, e nessuno dei sei romanzi ci cade.",c:"neg"};
+  return {t:"Apertura",s:"Disorienta e avvicina: lascia il lettore con più alternative aperte di prima, perché il mondo ne ha più di quante lui ne credesse. Il quadrante che il saggio precedente classificava come fallimento.",c:"pos"};
+}
+function renderA(){
+  var m=measure(A.p,A.d,A.w);
+  document.querySelectorAll("#scen input[type=range]").forEach(function(x){x.value=A[x.dataset.k][+x.dataset.i]});
+  var mx=Math.max.apply(null,m.p.concat(m.d,m.w).concat([0.001]));
+  for(var i=0;i<4;i++){
+    document.getElementById("f1"+i).style.width=(m.p[i]/mx*100)+"%";
+    document.getElementById("f2"+i).style.width=(m.d[i]/mx*100)+"%";
+    document.getElementById("f3"+i).style.width=(m.w[i]/mx*100)+"%";
+    document.getElementById("n"+i).textContent=Math.round(m.p[i]*100)+" → "+Math.round(m.d[i]*100)+" · "+Math.round(m.w[i]*100);
+  }
+  function set(id,v,u,nan){
+    var e=document.getElementById(id);
+    if(nan&&isNaN(v)){e.className="v nul";e.textContent="—";return}
+    e.className="v "+sg(v); e.innerHTML=f2(v)+(u?'<span class="u">'+u+'</span>':"");
+  }
+  set("vD",m.D,"bit"); set("vH",m.dH,"bit"); set("vR",m.rho,"bit"); set("vI",m.ip,"bit");
+  var ea=document.getElementById("vA"), er=document.getElementById("vRr");
+  if(isNaN(m.a)){ea.className="v nul";ea.textContent="—";er.className="v nul";er.textContent="—";}
+  else{ea.className="v "+(m.a>1?"pos":"neg");ea.textContent=f2(m.a);
+       er.className="v "+(m.r<0?"nul":(m.r<1?"pos":"neg"));er.textContent=f2(m.r);}
+  var v=verdict(m);
+  document.getElementById("vTit").textContent=v.t;
+  document.getElementById("vSub").textContent=v.s;
+  var vd=document.getElementById("verdict");
+  vd.style.borderLeftColor = v.c==="pos"?css("--blue"):(v.c==="neg"?css("--red"):css("--text-hint"));
+  document.getElementById("ident").innerHTML=
+    "<b>ΔH = D − ρ</b> &nbsp; "+f2(m.dH)+" = "+f2(m.D)+" − ("+f2(m.rho)+")<br>"+
+    "<b>G = ⟨Δ,u⟩ − D</b> &nbsp; "+f2(m.G)+" = "+f2(m.ip)+" − "+f2(m.D)+"<br>"+
+    "H(p) "+f2(m.Hp)+" &nbsp;·&nbsp; H(p′) "+f2(m.Hd)+" &nbsp;·&nbsp; H(q) "+f2(m.Hw)+" &nbsp;·&nbsp; H max "+f2(2);
+  drawPlane(m);
+}
+
+/* --- piano dei regimi --- */
+var GHOST=[];
+(function(){
+  var keys=Object.keys(CASI),k;
+  for(k=0;k<keys.length;k++){var c=CASI[keys[k]];GHOST.push({n:c.lab,m:measure(c.p,c.d,c.w)})}
+  Object.keys(VAR).forEach(function(g){VAR[g].forEach(function(c){GHOST.push({n:c.lab,m:measure(c.p,c.d,c.w)})})});
+})();
+function drawPlane(m){
+  var cv=document.getElementById("plane"), W=cv.clientWidth||520, Hh=380;
+  var dpr=window.devicePixelRatio||1;
+  cv.width=W*dpr; cv.height=Hh*dpr;
+  var x=cv.getContext("2d"); x.setTransform(dpr,0,0,dpr,0,0); x.clearRect(0,0,W,Hh);
+  var A0=-1.2,A1=3.2,R0=-2.2,R1=3.2;
+  var L=44,Rr=14,T=14,B=30, pw=W-L-Rr, ph=Hh-T-B;
+  var px=function(a){return L+(a-A0)/(A1-A0)*pw};
+  var py=function(r){return T+(R1-r)/(R1-R0)*ph};
+  var x1=px(1), y1=py(1), y0=py(0);
+  // sfondi
+  x.fillStyle=css("--pos-tint"); x.fillRect(x1,T,L+pw-x1,y0-T);
+  x.fillStyle=css("--neg-tint"); x.fillRect(L,T,x1-L,y0-T);
+  x.fillStyle=css("--conf-tint"); x.fillRect(L,y0,pw,T+ph-y0);
+  // cornice
+  x.strokeStyle=css("--border"); x.lineWidth=1; x.strokeRect(L+.5,T+.5,pw-1,ph-1);
+  // rette critiche
+  x.strokeStyle=css("--text"); x.globalAlpha=.55; x.lineWidth=1.2;
+  x.beginPath();x.moveTo(x1,T);x.lineTo(x1,T+ph);x.stroke();
+  x.beginPath();x.moveTo(L,y1);x.lineTo(L+pw,y1);x.stroke();
+  x.globalAlpha=1;
+  x.strokeStyle=css("--ochre"); x.setLineDash([4,4]); x.lineWidth=1.2;
+  x.beginPath();x.moveTo(L,y0);x.lineTo(L+pw,y0);x.stroke(); x.setLineDash([]);
+  // etichette assi
+  var sans=css("--sans")||"sans-serif";
+  x.font="10px "+sans; x.fillStyle=css("--text-hint");
+  x.textAlign="center"; x.fillText("α = 1",x1,T-3);
+  x.textAlign="right"; x.fillText("r = 1",L-6,y1+3);
+  x.fillStyle=css("--ochre"); x.fillText("r = 0",L-6,y0+3);
+  // nomi quadranti
+  x.font="600 11px "+sans; x.textAlign="center";
+  x.fillStyle=css("--blue"); x.fillText("APERTURA",(x1+L+pw)/2,T+22);
+  x.fillText("VALORE",(x1+L+pw)/2,(y1+y0)/2-4);
+  x.fillStyle=css("--red"); x.fillText("PROVOCAZIONE",(L+x1)/2,T+22);
+  x.fillText("STRUTTURA FALSA",(L+x1)/2,(y1+y0)/2-4);
+  x.fillStyle=css("--ochre"); x.fillText("CONFERMA",L+pw/2,(y0+T+ph)/2+4);
+  x.font="italic 9.5px "+sans; x.fillStyle=css("--text-hint");
+  x.fillText("disorienta e avvicina",(x1+L+pw)/2,T+35);
+  x.fillText("organizza e avvicina",(x1+L+pw)/2,(y1+y0)/2+9);
+  x.fillText("disorienta e allontana",(L+x1)/2,T+35);
+  x.fillText("organizza e allontana",(L+x1)/2,(y1+y0)/2+9);
+  // fantasmi
+  GHOST.forEach(function(g){
+    if(!(g.m.D>0.02))return;
+    var a=Math.min(Math.max(g.m.a,A0+.06),A1-.06), r=Math.min(Math.max(g.m.r,R0+.06),R1-.06);
+    x.beginPath();x.arc(px(a),py(r),3,0,7);
+    x.strokeStyle=css("--text-hint");x.globalAlpha=.55;x.lineWidth=1;x.stroke();x.globalAlpha=1;
+  });
+  // punto corrente
+  if(m.D>0.02){
+    var a=Math.min(Math.max(m.a,A0+.06),A1-.06), r=Math.min(Math.max(m.r,R0+.06),R1-.06);
+    var cx=px(a), cy=py(r);
+    x.beginPath();x.arc(cx,cy,10,0,7);x.fillStyle=css("--primary");x.globalAlpha=.16;x.fill();x.globalAlpha=1;
+    x.beginPath();x.arc(cx,cy,5,0,7);x.fillStyle=css("--primary");x.fill();
+    x.strokeStyle=css("--bg");x.lineWidth=1.5;x.stroke();
+    x.font="600 10.5px "+sans; x.fillStyle=css("--text");
+    x.textAlign = cx>L+pw*0.7 ? "right":"left";
+    x.fillText("α "+f2(m.a)+" · r "+f2(m.r), cx+(cx>L+pw*0.7?-13:13), cy+4);
+  }else{
+    x.font="600 12px "+sans; x.fillStyle=css("--text-hint"); x.textAlign="center";
+    x.fillText("D ≈ 0 — il punto non esiste sul piano", L+pw/2, T+ph/2+40);
+  }
+  // assi
+  x.font="10px "+sans; x.fillStyle=css("--text-hint"); x.textAlign="center";
+  [0,1,2,3].forEach(function(v){x.fillText(String(v),px(v),T+ph+14)});
+  x.textAlign="right";
+  [-2,-1,0,1,2,3].forEach(function(v){if(v!==0&&v!==1)x.fillText(String(v),L-6,py(v)+3)});
+}
+
+/* ===================== PANNELLO B ===================== */
+var B={oss:.45,sel:.70,ric:.35,F:.60,S:.30,R:.60,nu:.55,e0:.30,Lam:2.2,kap:.60,dVar:.35};
+var SETS=[
+ ["cA",[["oss","Osservazione","G_oss · varietà dall'esterno",0,1,.01],
+        ["sel","Selezione","G_sel · domanda, taglio, scarto",0,1,.01],
+        ["ric","Ricombinazione","G_ric · trasporto fra domini",0,1,.01]]],
+ ["cB",[["F","Competenza formale","F · qualità della forma",0,1,.01],
+        ["S","Stack strumenti","Σ · superficie passata dal modello",0,1,.01],
+        ["R","Ricevente","R · attrezzatura di chi legge",0,1,.01],
+        ["nu","Verifica","ν · intensità del fact-checking",0,1,.01],
+        ["e0","Errore di base","ε₀ · tasso senza verifica",0,1,.01]]],
+ ["cC",[["Lam","Propagazione","Λ · costo di ripulire il campo",1,4,.1],
+        ["kap","Peso ecologico","κ · prezzo dell'appiattimento",0,2,.05],
+        ["dVar","Contrazione","ΔVar · quota di varianza sottratta",0,1,.01]]]
+];
+SETS.forEach(function(pair){
+  document.getElementById(pair[0]).innerHTML=pair[1].map(function(r){
+    return '<div class="ctrl"><span class="nm">'+r[1]+'<small>'+r[2]+'</small></span>'+
+      '<input type="range" min="'+r[3]+'" max="'+r[4]+'" step="'+r[5]+'" value="'+B[r[0]]+'" data-b="'+r[0]+'" aria-label="'+r[1]+'">'+
+      '<output id="o-'+r[0]+'"></output></div>';
+  }).join("");
+});
+document.querySelectorAll("[data-b]").forEach(function(i){
+  i.addEventListener("input",function(e){B[e.target.dataset.b]=+e.target.value;renderB()});
+});
+var PROSA=[["00",0],["DL",.10],["ED",.45],["WR",.80]], APP=[["—",0],["FM",.15],["TR",.30],["FM·TR",.45]];
+var cP=1,cAp=1;
+document.getElementById("codP").innerHTML='<span class="preset-cap">Prosa</span>'+PROSA.map(function(c,i){return '<button class="p" data-p="'+i+'">'+c[0]+'</button>'}).join("");
+document.getElementById("codA").innerHTML='<span class="preset-cap">Apparati</span>'+APP.map(function(c,i){return '<button class="p" data-a="'+i+'">'+c[0]+'</button>'}).join("");
+function syncS(){B.S=Math.min(1,PROSA[cP][1]+APP[cAp][1]);document.querySelector('[data-b="S"]').value=B.S;renderB()}
+document.querySelectorAll("[data-p]").forEach(function(b){b.addEventListener("click",function(){cP=+b.dataset.p;syncS()})});
+document.querySelectorAll("[data-a]").forEach(function(b){b.addEventListener("click",function(){cAp=+b.dataset.a;syncS()})});
+var deleg=false;
+document.getElementById("deleg").addEventListener("click",function(e){
+  deleg=!deleg; e.currentTarget.setAttribute("aria-pressed",deleg); renderB();
+});
+function renderB(){
+  Object.keys(B).forEach(function(k){var o=document.getElementById("o-"+k);if(o)o.textContent=B[k].toFixed(2).replace(".",",")});
+  document.querySelectorAll("[data-p]").forEach(function(b,i){b.setAttribute("aria-pressed",i===cP)});
+  document.querySelectorAll("[data-a]").forEach(function(b,i){b.setAttribute("aria-pressed",i===cAp)});
+  var a=2.4,beta=1.1,gamma=3.0;
+  var psi=0.35+0.65*B.R;                       // η dentro l'integrale: dipende dal ricevente
+  var eta=1-Math.exp(-a*(B.F+B.S)*psi);
+  var sel=deleg?0:B.sel, cont=B.oss+sel+B.ric, deliv=eta*cont;
+  var eps=B.e0*(1+beta*B.S)*Math.exp(-gamma*B.nu);
+  var dan=B.Lam*eps, eco=B.kap*B.dVar, V=deliv-dan-eco;
+  document.getElementById("eqn").innerHTML=
+    'V = <span style="color:var(--blue)">'+eta.toFixed(2)+'</span>·('+B.oss.toFixed(2)+' + <span style="color:'+(deleg?"var(--red)":"inherit")+'">'+sel.toFixed(2)+'</span> + '+B.ric.toFixed(2)+
+    ') − '+B.Lam.toFixed(1)+'·<span style="color:var(--red)">'+eps.toFixed(3)+'</span> − '+B.kap.toFixed(2)+'·'+B.dVar.toFixed(2);
+  var voci=[["Contenuto consegnato","η · ΣG",deliv,"var(--blue)"],
+            ["Errore non corretto","− Λε",-dan,"var(--red)"],
+            ["Appiattimento del campo","− κΔVar",-eco,"var(--ochre)"]];
+  var sc=Math.max(1.2,Math.max.apply(null,voci.map(function(v){return Math.abs(v[2])*1.25})));
+  document.getElementById("wfall").innerHTML=voci.map(function(v){
+    var w=Math.abs(v[2])/sc*50, l=v[2]>=0?50:50-w;
+    return '<div class="wf"><span class="t">'+v[0]+'<small>'+v[1]+'</small></span>'+
+      '<span class="trk"><span class="zero" style="left:50%"></span><i style="left:'+l+'%;width:'+w+'%;background:'+v[3]+'"></i></span>'+
+      '<span class="n" style="color:'+(v[2]<0?"var(--red)":"var(--blue)")+'">'+(v[2]>=0?"+":"")+v[2].toFixed(2).replace(".",",")+'</span></div>';
+  }).join("");
+  var e=document.getElementById("vV");
+  e.textContent=(V>=0?"+":"")+V.toFixed(2).replace(".",",");
+  e.style.color=V>=0?"var(--blue)":"var(--red)";
+}
+
+/* ===================== PANNELLO C ===================== */
+var C={S:.35,om:.11,lam:.09};
+document.getElementById("cE").innerHTML=[
+ ["S","Campionamento modale","Σ · quota presa dalla media del corpus",0,1,.01],
+ ["om","Osservazione nuova","ω · varietà immessa dall'esterno",0,.3,.005],
+ ["lam","Permeabilità","λ · quanto gli autori si aggiornano leggendosi",.005,.4,.005]
+].map(function(r){
+  return '<div class="ctrl"><span class="nm">'+r[1]+'<small>'+r[2]+'</small></span>'+
+    '<input type="range" min="'+r[3]+'" max="'+r[4]+'" step="'+r[5]+'" value="'+C[r[0]]+'" data-e="'+r[0]+'" aria-label="'+r[1]+'">'+
+    '<output id="oe-'+r[0]+'"></output></div>';
+}).join("");
+document.querySelectorAll("[data-e]").forEach(function(i){
+  i.addEventListener("input",function(e){C[e.target.dataset.e]=+e.target.value;outC();reset()});
+});
+function fixp(){return (1-C.S)*C.om*C.om/C.lam}
+function outC(){
+  Object.keys(C).forEach(function(k){document.getElementById("oe-"+k).textContent=C[k].toFixed(3).replace(".",",")});
+  var f=document.getElementById("vFix"); f.className="v pos"; f.textContent=fixp().toFixed(3).replace(".",",");
+}
+var N=80,TMAX=320,xs=[],mm=0,ser=[],tt=0,timer=null,var0=1;
+var cv=document.getElementById("cv"),cx=cv.getContext("2d");
+var cs=document.getElementById("cvs"),sx=cs.getContext("2d");
+function gauss(){var u=0,v=0;while(!u)u=Math.random();while(!v)v=Math.random();return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v)}
+function vari(a){var m=a.reduce(function(s,y){return s+y},0)/a.length;return a.reduce(function(s,y){return s+(y-m)*(y-m)},0)/a.length}
+function reset(){
+  if(timer){cancelAnimationFrame(timer);timer=null}
+  document.getElementById("run").textContent="Avvia";
+  xs=[];for(var i=0;i<N;i++)xs.push(gauss());
+  mm=0;tt=0;var0=vari(xs);ser=[var0];
+  document.getElementById("v0").textContent=var0.toFixed(2).replace(".",",");
+  drawC();
+}
+function step(){
+  var pub=xs.map(function(x){return (1-C.S)*(x+C.om*gauss())+C.S*mm});
+  var mp=pub.reduce(function(s,y){return s+y},0)/N;
+  mm=0.88*mm+0.12*mp;
+  xs=xs.map(function(x){var rd=0,k;for(k=0;k<5;k++)rd+=pub[(Math.random()*N)|0];return (1-C.lam)*x+C.lam*(rd/5)});
+  ser.push(vari(xs));tt++;
+}
+function drawC(){
+  var dpr=window.devicePixelRatio||1,W=cv.clientWidth||480,Hh=290,sans=css("--sans")||"sans-serif";
+  cv.width=W*dpr;cv.height=Hh*dpr;cx.setTransform(dpr,0,0,dpr,0,0);cx.clearRect(0,0,W,Hh);
+  var top=Math.max(var0*1.5,fixp()*1.6,.4),pad=12,L=34;
+  cx.strokeStyle=css("--border");cx.lineWidth=1;cx.font="10px "+sans;
+  for(var i=0;i<=4;i++){
+    var y=pad+(Hh-2*pad)*i/4;
+    cx.beginPath();cx.moveTo(L,y);cx.lineTo(W,y);cx.stroke();
+    cx.fillStyle=css("--text-hint");cx.textAlign="right";
+    cx.fillText((top*(1-i/4)).toFixed(2).replace(".",","),L-5,y+3);
+  }
+  var yf=pad+(Hh-2*pad)*(1-Math.min(fixp(),top)/top);
+  cx.setLineDash([5,4]);cx.strokeStyle=css("--ochre");cx.lineWidth=1.4;
+  cx.beginPath();cx.moveTo(L,yf);cx.lineTo(W,yf);cx.stroke();cx.setLineDash([]);
+  cx.fillStyle=css("--ochre");cx.textAlign="left";cx.font="600 10px "+sans;
+  cx.fillText("Var* = "+fixp().toFixed(3).replace(".",","),L+6,yf-5);
+  cx.beginPath();cx.lineWidth=2;cx.strokeStyle=css("--green");
+  ser.forEach(function(v,i){
+    var X=L+i/TMAX*(W-L),Y=pad+(Hh-2*pad)*(1-Math.min(v,top)/top);
+    i?cx.lineTo(X,Y):cx.moveTo(X,Y);
+  });
+  cx.stroke();
+  var last=ser[ser.length-1];
+  var e=document.getElementById("vNow");e.className="v "+(last<var0*.6?"neg":"pos");
+  e.textContent=last.toFixed(2).replace(".",",");
+  document.getElementById("tNow").textContent="t = "+tt;
+  var Ws=cs.clientWidth||480,Hs=86;
+  cs.width=Ws*dpr;cs.height=Hs*dpr;sx.setTransform(dpr,0,0,dpr,0,0);sx.clearRect(0,0,Ws,Hs);
+  sx.strokeStyle=css("--border");sx.beginPath();sx.moveTo(0,Hs/2);sx.lineTo(Ws,Hs/2);sx.stroke();
+  sx.fillStyle=css("--green");sx.globalAlpha=.5;
+  xs.forEach(function(x,i){
+    var X=Ws/2+x*(Ws/8), Y=Hs/2+((i*37)%40-20);
+    sx.beginPath();sx.arc(Math.max(3,Math.min(Ws-3,X)),Y,2.6,0,7);sx.fill();
+  });
+  sx.globalAlpha=1;
+}
+function loop(){
+  for(var k=0;k<2&&tt<TMAX;k++)step();
+  drawC();
+  if(tt<TMAX)timer=requestAnimationFrame(loop);
+  else{timer=null;document.getElementById("run").textContent="Riavvia"}
+}
+document.getElementById("run").addEventListener("click",function(){
+  if(timer){cancelAnimationFrame(timer);timer=null;document.getElementById("run").textContent="Riprendi";return}
+  if(tt>=TMAX)reset();
+  document.getElementById("run").textContent="Ferma";loop();
+});
+document.getElementById("rst").addEventListener("click",reset);
+
+/* ===================== TAB + ALTEZZA ===================== */
+var tabs=[].slice.call(document.querySelectorAll(".tab"));
+tabs.forEach(function(t,i){
+  t.addEventListener("click",function(){show(i)});
+  t.addEventListener("keydown",function(e){
+    var d=e.key==="ArrowRight"?1:(e.key==="ArrowLeft"?-1:0);
+    if(d){e.preventDefault();var j=(i+d+tabs.length)%tabs.length;show(j);tabs[j].focus()}
+  });
+});
+function show(i){
+  tabs.forEach(function(t,j){
+    t.setAttribute("aria-selected",j===i);
+    document.getElementById(t.getAttribute("aria-controls")).hidden = j!==i;
+  });
+  if(i===0)drawPlane(measure(A.p,A.d,A.w));
+  if(i===2)drawC();
+  post();
+}
+var lastH=0;
+function post(){
+  var h=Math.ceil(document.documentElement.getBoundingClientRect().height)+2;
+  if(Math.abs(h-lastH)<2)return; lastH=h;
+  try{parent.postMessage({type:"bdm-height",height:h},"*")}catch(e){}
+}
+if(window.ResizeObserver)new ResizeObserver(post).observe(document.documentElement);
+window.addEventListener("resize",function(){
+  drawPlane(measure(A.p,A.d,A.w)); drawC(); post();
+});
+if(window.matchMedia){
+  var mq=window.matchMedia("(prefers-color-scheme: dark)");
+  var onScheme=function(){drawPlane(measure(A.p,A.d,A.w));drawC()};
+  mq.addEventListener?mq.addEventListener("change",onScheme):mq.addListener(onScheme);
+}
+
+/* editor: aperto da desktop, chiuso da telefono */
+(function(){
+  var edt=document.getElementById("edt");
+  if(!window.matchMedia){edt.open=true;return}
+  var mq=window.matchMedia("(min-width: 761px)");
+  var apply=function(){edt.open=mq.matches;post()};
+  apply();
+  mq.addEventListener?mq.addEventListener("change",apply):mq.addListener(apply);
+  edt.addEventListener("toggle",post);
+})();
+
+/* avvio */
+loadCase("operatore"); renderB(); outC(); reset(); post();
+document.fonts&&document.fonts.ready.then(function(){drawPlane(measure(A.p,A.d,A.w));drawC();post()});
+</script>
+</body>
+</html>

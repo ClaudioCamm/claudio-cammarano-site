@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 title: Projects
-description: "I tre progetti attivi di Claudio Cammarano: Irene Media (corporate ghostwriting), Episteme Advisory (validazione epistemica per l'AI) e il Lab, le note di ricerca aperte che stanno dietro il paper."
+description: "I progetti attivi di Claudio Cammarano: Irene Media (corporate ghostwriting), Episteme Advisory (validazione epistemica per l'AI), il Lab con le note di ricerca aperte, e il banco di misura — lo strumento che accompagna la certificazione dell'intervento AI su questo sito."
 permalink: "/projects/"
 ---
 
@@ -10,11 +10,21 @@ permalink: "/projects/"
   "@context": "https://schema.org",
   "@type": "CollectionPage",
   "name": "Projects — Claudio Cammarano",
-  "description": "Irene Media, Episteme Advisory e il Lab: i progetti attivi di Claudio Cammarano.",
+  "description": "Irene Media, Episteme Advisory, il Lab e il banco di misura: i progetti attivi di Claudio Cammarano.",
   "url": "https://claudiocammarano.com/projects/",
   "about": [
     { "@id": "https://claudiocammarano.com/irene-media/#organization" },
     { "@id": "https://claudiocammarano.com/episteme-advisory/#organization" }
+  ],
+  "hasPart": [
+    {
+      "@type": "WebApplication",
+      "name": "Il banco di misura",
+      "url": "https://claudiocammarano.com/visualizations/banco-di-misura/",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Web",
+      "browserRequirements": "Richiede JavaScript"
+    }
   ],
   "author": { "@id": "https://claudiocammarano.com/#person" }
 }
@@ -22,7 +32,7 @@ permalink: "/projects/"
 
 <section class="projects-hero">
   <h1 class="projects-title">Projects</h1>
-  <p class="projects-standfirst">Due progetti indipendenti e un quaderno di lavoro aperto. Il primo è di mestiere: scrivere per chi non ha tempo di scrivere. Il secondo è di ricerca: capire a quali condizioni ci si può fidare di un output generato da un modello. Il terzo è il cantiere del secondo, tenuto in pubblico.</p>
+  <p class="projects-standfirst">Due progetti indipendenti, un quaderno di lavoro aperto e uno strumento. Il primo è di mestiere: scrivere per chi non ha tempo di scrivere. Il secondo è di ricerca: capire a quali condizioni ci si può fidare di un output generato da un modello. Il terzo è il cantiere del secondo, tenuto in pubblico. Il quarto è questo sito applicato a se stesso: certificare quanto di ogni pezzo sia passato da un modello, e costruire gli strumenti per dire se questo ne cambi il valore, è a sua volta un progetto — e il solo che sia obbligato a rispondere delle proprie tesi ogni volta che pubblica.</p>
 </section>
 
 <div class="projects-grid">
@@ -57,6 +67,14 @@ permalink: "/projects/"
       {% endif %}
       <p class="project-go project-go--sub"><a href="/episteme-advisory/lab/">Tutte le note &#8594;</a></p>
     </div>
+  </article>
+  <article class="project-card project-card--notazione">
+    <p class="project-kicker">Editoria · Notazione e misura</p>
+    <h2 class="project-name"><a href="/visualizations/banco-di-misura/">Il banco di misura</a></h2>
+    <p class="project-line">Uno strumento interattivo per misurare che cosa fa un testo a chi lo legge: quanto ne sposta le attese, in che direzione, e che cosa succede alla varietà del campo quando molti scrivono nello stesso modo.</p>
+    <p class="project-body">È la parte costruita della notazione che questo sito applica a ogni pezzo, archivio compreso. Dichiarare quanta superficie di un testo sia passata da un modello è la parte facile; dire se questo ne cambi il valore richiede un'equazione, e un modo per non doverla prendere sulla fiducia. I cursori servono a quello: sono lì perché chiunque possa falsificarla.</p>
+    <p class="project-body">I due saggi che la costruiscono sono <a href="/writings/2026-08-23-la-formula-dellautenticita/">La formula dell'autenticità</a> e <a href="/writings/2026-08-26-la-forza-della-scrittura/">La forza della scrittura e la sua direzione</a>. La <a href="/colophon/#notazione">legenda dei codici</a> sta nel colophon, sotto ogni pezzo del sito.</p>
+    <p class="project-go"><a href="/visualizations/banco-di-misura/">Apri il banco di misura &#8594;</a></p>
   </article>
 
 </div>

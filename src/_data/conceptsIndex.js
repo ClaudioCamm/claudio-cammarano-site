@@ -118,7 +118,48 @@ module.exports = [
     type: "persona",
     note: "Semiologo, scrittore e intellettuale pubblico italiano (1932–2016). Nel sito è figura centrale: mente combinatoria capace di fondare istituzioni (DAMS, Comunicazione, Master in Editoria), «terapista wittgensteiniano del discorso pubblico». La sua lezione: la realtà resiste ai nostri schemi mentali, non è tutto soltanto un effetto di discorso.",
     articles: [
-      { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-04-04-dieci-anni-senza-umberto-eco/" }
+      { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-04-04-dieci-anni-senza-umberto-eco/" },
+      { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" }
+    ]
+  },
+  {
+    name: "Yarros, Rebecca",
+    type: "persona",
+    note: "Scrittrice statunitense (1981). Nel sito «Fourth Wing» è il caso della banda della conferma: consegna al lettore le attese di genere con cui è entrato, e ciò che fa davvero non sta sul piano dei regimi. Contrae la varianza fra i produttori e insieme allarga la popolazione dei riceventi, due effetti di segno opposto tenuti sotto un solo coefficiente.",
+    articles: [
+      { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" }
+    ]
+  },
+  {
+    name: "Hesse, Hermann",
+    type: "persona",
+    note: "Scrittore tedesco (1877–1962). Nel sito dà il nome alla «sindrome di Siddharta», il caso in cui un testo sposta molto il lettore senza avvicinarlo al mondo. Il nome tradisce in parte il romanzo, dove i movimenti laterali sono le tappe necessarie di un percorso che converge: la discrepanza isola la distinzione fra guadagno per testo e guadagno per traiettoria.",
+    articles: [
+      { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" }
+    ]
+  },
+  {
+    name: "Joyce, James",
+    type: "persona",
+    note: "Scrittore irlandese (1882–1941). Nel sito «Finnegans Wake» è il caso che dimostra un errore formale nell'equazione del valore: l'efficienza con cui un testo arriva a destinazione non è una proprietà del testo, ma dipende dal ricevente. Lo stesso libro sta nella singolarità dell'origine per il lettore ordinario e in alto a destra per lo specialista.",
+    articles: [
+      { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" }
+    ]
+  },
+  {
+    name: "Dostoevskij, Fëdor",
+    type: "persona",
+    note: "Scrittore russo (1821–1881). Nel sito è l'emblema del regime dell'apertura: la struttura polifonica dei «Fratelli Karamazov» lascia il lettore con più voci in gioco di quante ne avesse entrando, e questo ha valore perché il mondo contiene un conflitto morale irriducibile. Il caso che obbliga a togliere alla struttura lo statuto di co-requisito del valore.",
+    articles: [
+      { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" }
+    ]
+  },
+  {
+    name: "Tolstoj, Lev",
+    type: "persona",
+    note: "Scrittore russo (1828–1910). Nel sito compare come caso di osservazione genuina: «Guerra e pace» è costruito su archivi, reduci interrogati e ricognizioni sui campi di battaglia, e i suoi capitoli saggistici sono la traccia visibile di un autore che sposta il proprio prior mentre scrive. «Resurrezione» è invece il caso in cui il giudizio su un testo dipende interamente da chi fornisce la distribuzione di riferimento.",
+    articles: [
+      { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" }
     ]
   },
   {
@@ -336,7 +377,8 @@ module.exports = [
     type: "persona",
     note: "Matematico e ingegnere statunitense (1916–2001), fondatore della teoria dell’informazione. Nel sito è il fondamento formale della teoria del valore dei testi: l’entropia di uno stato come misura di indifferenza fra alternative, la ridondanza come nome esatto di ciò che il linguaggio comune chiama informazione, e la coincidenza di forma con l’entropia di Gibbs — notata da von Neumann, sfruttata da Brillouin — che autorizza a usare il lessico termodinamico parlando di scrittura.",
     articles: [
-      { title: "La formula dell’autenticità", url: "/writings/2026-08-23-la-formula-dellautenticita/" }
+      { title: "La formula dell’autenticità", url: "/writings/2026-08-23-la-formula-dellautenticita/" },
+      { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" }
     ]
   },
   {
@@ -573,7 +615,8 @@ module.exports = [
       { title: "How to spot AI writing", url: "/curated/2026-07-30-economist-ai-writing-detection/", _source: "curated" },
       { title: "I'm Begging You: Never Write With A.I.", url: "/curated/2026-08-04-stephens-never-write-ai-nyt/", _source: "curated" },
       { title: "If You're Over 40, You're Ready to Use A.I.", url: "/curated/2026-07-27-millman-kabbalah-ai-nyt/", _source: "curated" },
-      { title: "AI Has Plunged the Book Publishing Industry Into Utter Chaos", url: "/curated/2026-08-17-silman-ai-publishing-chaos-wsj/", _source: "curated" }
+      { title: "AI Has Plunged the Book Publishing Industry Into Utter Chaos", url: "/curated/2026-08-17-silman-ai-publishing-chaos-wsj/", _source: "curated" },
+      { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" }
     ]
   },
   {
@@ -603,7 +646,8 @@ module.exports = [
       { title: "What If We Can Never Trust A.I.?", url: "/curated/2026-08-01-rothman-trust-ai-newyorker/", _source: "curated" },
       { title: "The mind does not exist", url: "/curated/2021-08-30-gough-no-mind-aeon/", _source: "curated" },
       { title: "A linkless internet", url: "/curated/2024-12-06-jennings-linkless-internet-aeon/", _source: "curated" },
-      { title: "Learning more about Claude's mathematical capabilities", url: "/curated/2026-08-10-anthropic-riemann-zeta-claude/", _source: "curated" }
+      { title: "Learning more about Claude's mathematical capabilities", url: "/curated/2026-08-10-anthropic-riemann-zeta-claude/", _source: "curated" },
+      { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" }
     ]
   },
   {
@@ -770,7 +814,8 @@ module.exports = [
       { title: "Alex Turner appointed as Defence Editor of The Economist", url: "/curated/2026-06-19-economist-defence-editor-turner/", _source: "curated" },
       { title: "Com'è cambiata l'informazione in Italia negli ultimi 6 anni", url: "/curated/2026-06-19-mauro-informazione-italia-digital-news-report/", _source: "curated" },
       { title: "Europe's public broadcasters go from prime time to hard-to-find", url: "/curated/2026-07-09-economist-psb-europe-hard-to-find/", _source: "curated" },
-      { title: "Per contare devi farti amare (l'attenzione non basta più)", url: "/curated/2025-11-10-tarchetti-love-brand-editoria-nonhocapito/", _source: "curated" }
+      { title: "Per contare devi farti amare (l'attenzione non basta più)", url: "/curated/2025-11-10-tarchetti-love-brand-editoria-nonhocapito/", _source: "curated" },
+      { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" }
     ]
   },
   {
@@ -1171,7 +1216,8 @@ module.exports = [
     note: "La discontinuità specifica introdotta dall'AI rispetto all'automazione precedente: non si delega un'operazione, si delega una valutazione — la selezione dei candidati, il merito creditizio, la diagnosi, il ranking delle informazioni. Nel sito è il concetto che spiega perché un'organizzazione che usa AI senza validazione esplicita si trovi a usare output come se fossero conoscenza, senza poter rispondere alle domande che la conoscenza richiede.",
     articles: [
       { title: "La formula dell’autenticità", url: "/writings/2026-08-23-la-formula-dellautenticita/" },
-      { title: "L'infrastruttura del sapere", url: "/writings/2026-07-07-linfrastruttura-del-sapere/" }
+      { title: "L'infrastruttura del sapere", url: "/writings/2026-07-07-linfrastruttura-del-sapere/" },
+      { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" }
     ]
   },
   {
@@ -1250,7 +1296,8 @@ module.exports = [
     type: "teoria",
     note: "Informazione come distanza dallo stato di equiprobabilità, nella linea Schrödinger–Brillouin–Wiener. Nel sito è il criterio con cui si misura l’effetto di un testo su chi legge: non quanto è lungo, elegante o documentato, ma quanta indifferenza fra alternative riduce — un testo privo di effetti sulle attese è l’operatore identità. Da sola però non basta: un saggio scritto benissimo attorno a una tesi falsa è neghentropico in senso stretto e distruttivo in senso epistemico, e va corretta con il guadagno epistemico.",
     articles: [
-      { title: "La formula dell’autenticità", url: "/writings/2026-08-23-la-formula-dellautenticita/" }
+      { title: "La formula dell’autenticità", url: "/writings/2026-08-23-la-formula-dellautenticita/" },
+      { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" }
     ]
   },
   {
@@ -1274,7 +1321,24 @@ module.exports = [
     type: "teoria",
     note: "Misura di quanto un testo accorcia la distanza fra le attese di un ricevente e il mondo. Si distingue dalla sola riduzione di entropia, che premierebbe il testo peggiore immaginabile — quello che organizza benissimo le attese attorno a una tesi falsa — e ammette un caso nullo che il dibattito non considera mai: il lettore si sposta lateralmente, sostituisce un errore con un altro ugualmente distante, e ha la sensazione di aver imparato qualcosa. È definito sempre su un ricevente, mai in astratto: lo stesso identico testo vale molto per un pubblico e zero per un altro senza che una virgola sia cambiata.",
     articles: [
-      { title: "La formula dell’autenticità", url: "/writings/2026-08-23-la-formula-dellautenticita/" }
+      { title: "La formula dell’autenticità", url: "/writings/2026-08-23-la-formula-dellautenticita/" },
+      { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" }
+    ]
+  },
+  {
+    name: "piano dei regimi",
+    type: "teoria",
+    note: "Il piano su cui si legge il regime di un testo rispetto a un lettore: la spinta utile diviso il costo dello spostamento in ascissa, la rigidità diviso lo spostamento in ordinata. Due rette critiche dividono valore, struttura falsa, provocazione e apertura; sotto lo zero corre la banda della conferma. L'intensità dello spostamento resta fuori dal giudizio.",
+    articles: [
+      { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" }
+    ]
+  },
+  {
+    name: "divergenza di Kullback-Leibler",
+    type: "teoria",
+    note: "Misura, in bit, quanto costa usare un modello per prevedere un mondo che si comporta in un altro modo. Nel sito è l'unica operazione da cui discendono spostamento e guadagno epistemico. La sua asimmetria — sbagliarsi per eccesso di certezza costa più che sbagliarsi per prudenza — è ciò che permette di rilevare la sovraconfidenza di un testo ben riuscito.",
+    articles: [
+      { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" }
     ]
   },
 

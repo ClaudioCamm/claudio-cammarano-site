@@ -128,7 +128,7 @@ Le quattro combinazioni descrivono altrettanti tipi ideali di giocatore, che pro
 | **δ alto (vede il futuro)**  | **Giocatore ideale** — *Vede il futuro e ha le mani libere. Cooperazione iterata stabile.* (idealtipo, raro empiricamente) | **Alleato ambiguo** — *Vorrebbe cooperare ma il sedimento domestico glielo impedisce. Segnali sporchi di rumore.* (la Cina di Sharp e Pieranni) |
 | **δ basso (non vede il futuro)** | **Defezionatore lucido** — *Non vede il futuro, ma libero di non vederlo. Almeno leggibile.* (USA 2026, modello base) | **Predatore residuale** — *Non vede il futuro e non sa nemmeno fare ciò che vorrebbe. Specializzato in defezione opportunistica.* (Russia) |
 
-*Tabella 1. Tipi ideali di giocatore sul piano δ × ρ. Le associazioni con attori reali sono indicative e descrivono tendenze, non collocazioni puntuali.*
+<p class="caption">Tabella 1. Tipi ideali di giocatore sul piano δ × ρ. Le associazioni con attori reali sono indicative e descrivono tendenze, non collocazioni puntuali.</p>
 
 Chiaramente, almeno nel contesto delle relazioni internazionali, un paese che si trova nel quadrante in alto a sinistra esiste solo nel mondo dei sogni — o in certi manuali di teoria. Diverso il caso degli altri tre: da un lato abbiamo attori che vogliono cooperare, ma non possono (la Cina, in un'interpretazione forse troppo benevola, secondo la lettura di Sharp e Pieranni); dall'altro i defezionatori: quelli che lo fanno avendo un win-set che li asseconda (gli USA, ma sempre meno) o che lo impedisce (la Russia, in una lettura particolarmente paranoide, e alla fine quasi assolutoria, del comportamento del Cremlino).
 
@@ -162,7 +162,7 @@ ma il risultato è illuminante: bastano pochi punti percentuali di $\rho$ per sp
 | 0,7   | 30%             | 16,0                 | −46,7%               |
 | 0,9   | 10%             | 12,0                 | −60,0%               |
 
-*Tabella 2. Erosione del payoff cooperativo iterato per valori crescenti di ρ (δ = 0,9; ottimo R = 3; vincolato P = 1; orizzonte infinito). Un ρ = 0,3, valore plausibile per una grande autocrazia in stress strutturale, brucia già un quinto del vantaggio cooperativo.*
+<p class="caption">Tabella 2. Erosione del payoff cooperativo iterato per valori crescenti di ρ (δ = 0,9; ottimo R = 3; vincolato P = 1; orizzonte infinito). Un ρ = 0,3, valore plausibile per una grande autocrazia in stress strutturale, brucia già un quinto del vantaggio cooperativo.</p>
 
 Vale la pena fissare l'ordine di grandezza: con $\rho$ = 0,3 — valore plausibile per una grande autocrazia in stress strutturale (immaginiamo che la Cina di oggi stia in quell'intorno) — il giocatore lascia sul tavolo un quinto del proprio vantaggio cooperativo iterato anche se $\delta$ resta perfettamente alto. Con $\rho$ = 0,5 — livello vicino alla Russia di oggi — il giocatore lascia sul tavolo un terzo. Sono numeri compatibili con l'osservazione empirica e tutto sommato modesti rispetto a ciò che la retorica corrente attribuisce a quei regimi.
 
@@ -254,7 +254,7 @@ La Tabella 3 sintetizza qualitativamente la $\sigma$ dei principali attori sulle
 | **Unione Europea**       | BASSA                  | BASSA                     | MEDIA                         | ALTA                     | BASSA ↑                       | MEDIA ↑             |
 | **Ucraina**              | —                      | —                         | —                             | BASSA                    | MEDIA ↑                       | ALTA ↑↑             |
 
-*Tabella 3. Tappabilità qualitativa σ per attore × funzione. Le frecce indicano direzione del trend. "Difett." = tappo difettoso (capacità nominale alta, qualità effettiva ridotta). Nessun attore ha oggi σ alto su tutte le funzioni: l'era della copertura egemonica è finita.*
+<p class="caption">Tabella 3. Tappabilità qualitativa σ per attore × funzione. Le frecce indicano direzione del trend. "Difett." = tappo difettoso (capacità nominale alta, qualità effettiva ridotta). Nessun attore ha oggi σ alto su tutte le funzioni: l'era della copertura egemonica è finita.</p>
 
 Naturalmente — e sono ben consapevole che sia un limite — le attribuzioni nascono da mie valutazioni soggettive, derivate dalla lettura di articoli e paper a tempo perso, senza pretesa di aver raggiunto la verità assoluta. Sto scrivendo un long-form; non mi sto candidando per il Nobel all'economia.
 
