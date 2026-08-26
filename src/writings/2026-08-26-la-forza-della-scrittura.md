@@ -560,20 +560,20 @@ Nel saggio precedente scrivevo che una teoria che non si lascia falsificare non 
 
 ---
 
-## Bibliografia essenziale
+## Bibliografia
 
-Cover, T. M., & Thomas, J. A. (2006). *Elements of Information Theory*, 2ª ed. Hoboken: Wiley-Interscience.
+AMARI, Shun-ichi, [*Information Geometry and Its Applications*](https://openlibrary.org/books/OL28159480M/Information_Geometry_and_Its_Applications), Tokyo, Springer, 2016.
 
-Amari, S. (2016). *Information Geometry and Its Applications*. Tokyo: Springer.
+COVER, Thomas M., e Joy A. Thomas, [*Elements of Information Theory*](https://openlibrary.org/books/OL24250281M/Elements_of_Information_Theory), 2ª ed., Hoboken, Wiley-Interscience, 2006.
 
-Kullback, S., & Leibler, R. A. (1951). “On Information and Sufficiency.” *The Annals of Mathematical Statistics*, 22(1), pp. 79–86.
+ECO, Umberto, [*Lector in fabula. La cooperazione interpretativa nei testi narrativi*](https://openlibrary.org/works/OL8996442W/Lector_In_Fabula), Milano, Bompiani, 1979.
 
-Shannon, C. E. (1948). “A Mathematical Theory of Communication.” *The Bell System Technical Journal*, 27, pp. 379–423, 623–656.
+HESSE, Hermann, [*Siddhartha*](https://openlibrary.org/books/OL6666707M/Siddhartha), Berlino, S. Fischer, 1922 (trad. it. *Siddharta*, Milano, Adelphi, 1975).
 
-Eco, U. (1979). *Lector in fabula. La cooperazione interpretativa nei testi narrativi*. Milano: Bompiani.
+KAHNEMAN, Daniel, [*Thinking, Fast and Slow*](https://openlibrary.org/books/OL28227306M/Thinking_Fast_and_Slow), New York, Farrar, Straus and Giroux, 2011 (trad. it. *Pensieri lenti e veloci*, Milano, Mondadori, 2012).
 
-Hesse, H. (1922). *Siddhartha*. Berlino: S. Fischer (trad. it. *Siddharta*, Milano, Adelphi, 1975).
+KULLBACK, Solomon, e Richard A. Leibler, ["On Information and Sufficiency"](https://doi.org/10.1214/aoms/1177729694), *The Annals of Mathematical Statistics*, vol. 22, n. 1, 1951, pp. 79-86.
 
-Kahneman, D. (2011). *Thinking, Fast and Slow*. New York: Farrar, Straus and Giroux.
+POPPER, Karl R., [*The Logic of Scientific Discovery*](https://openlibrary.org/books/OL23778452M/The_logic_of_scientific_discovery), Londra, Hutchinson, 1959 (ed. or. *Logik der Forschung*, Vienna, Springer, 1934; trad. it. *Logica della scoperta scientifica*, Torino, Einaudi, 1970).
 
-Popper, K. R. (1959). *The Logic of Scientific Discovery*. Londra: Hutchinson.
+SHANNON, Claude E., ["A Mathematical Theory of Communication"](https://doi.org/10.1002/j.1538-7305.1948.tb01338.x), *The Bell System Technical Journal*, vol. 27, 1948, pp. 379-423 e 623-656.
