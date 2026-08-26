@@ -1,5 +1,5 @@
 ---
-permalink: /episteme-advisory/lab/feed.xml
+permalink: /lab/feed.xml
 layout: false
 eleventyExcludeFromCollections: true
 ---
@@ -7,10 +7,10 @@ eleventyExcludeFromCollections: true
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Claudio Cammarano — Lab</title>
-    <link>https://claudiocammarano.com/episteme-advisory/lab/</link>
+    <link>https://claudiocammarano.com/lab/</link>
     <description>Dated, in-progress research notes on epistemology, AI validation and ontological taxonomy — the open work behind the published essays.</description>
     <language>en</language>
-    <atom:link href="https://claudiocammarano.com/episteme-advisory/lab/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://claudiocammarano.com/lab/feed.xml" rel="self" type="application/rss+xml"/>
     {% for note in collections.lab %}
     <item>
       <title>{{ note.data.title | jsonEscape }}</title>

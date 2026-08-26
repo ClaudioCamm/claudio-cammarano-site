@@ -98,6 +98,21 @@ eleventyExcludeFromCollections: true
   </url>
   {% endfor %}
 
+  {# ── Lab (indice + note dated) ── #}
+  <url>
+    <loc>https://claudiocammarano.com/lab/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  {% for note in collections.lab %}
+  <url>
+    <loc>https://claudiocammarano.com{{ note.url }}</loc>
+    <lastmod>{{ note.date | isoDate }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  {% endfor %}
+
   {# ── Learning (singole pagine) ── #}
   {% for item in collections.learning %}
   <url>

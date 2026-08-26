@@ -360,7 +360,7 @@ module.exports = [
     lab: true,
     note: "John Langshaw Austin (Lancaster, 1911 – Oxford, 1960), filosofo del linguaggio ordinario, professore a Oxford. In <em>How to Do Things with Words</em> (1962, postumo) ha articolato la distinzione tra atti linguistici locutori, illocutori e perlocutori, ridisegnando la filosofia del linguaggio del Novecento. Riferimento fondativo del Pre-Step 0 del progetto <em>Validating AI</em>.",
     articles: [
-      { title: "Validating AI — note di ricerca", url: "/episteme-advisory/lab/", _source: "lab" }
+      { title: "Validating AI — note di ricerca", url: "/lab/", _source: "lab" }
     ]
   },
   {
@@ -1180,7 +1180,7 @@ module.exports = [
     lab: true,
     note: "Intervento esterno strutturato sugli output dei modelli linguistici per ricostruire gli impegni ontologici impliciti che il modello stesso non è in grado di rendere espliciti. Il termine, coniato nell'ambito del progetto <em>Validating AI</em>, designa un'operazione epistemica che precede la valutazione della verità: prima di chiedersi se una claim è vera o falsa, occorre stabilire di che tipo di claim si tratti.",
     articles: [
-      { title: "Validating AI — note di ricerca", url: "/episteme-advisory/lab/", _source: "lab" }
+      { title: "Validating AI — note di ricerca", url: "/lab/", _source: "lab" }
     ]
   },
   {
@@ -1189,7 +1189,7 @@ module.exports = [
     lab: true,
     note: "Condizione dei modelli linguistici di generare output privi di metacognizione: il modello non può valutare lo statuto epistemico delle proprie affermazioni. Il termine è mutuato da Loru et al. (PNAS 2025) e Quattrociocchi et al. (2025). L'assenza di epistemia è la premessa che motiva il progetto <em>post-cognition</em>.",
     articles: [
-      { title: "Validating AI — note di ricerca", url: "/episteme-advisory/lab/", _source: "lab" }
+      { title: "Validating AI — note di ricerca", url: "/lab/", _source: "lab" }
     ]
   },
   {
@@ -1198,7 +1198,7 @@ module.exports = [
     lab: true,
     note: "Framework classificatorio a sette dimensioni sviluppato nell'ambito del progetto <em>Validating AI</em> per tipizzare le claim degli output LLM. La dimensione D1 classifica il contenuto in undici categorie (storica, statistico-probabilistica, metafisica, causale, normativa e altre). La tassonomia si applica dopo il Pre-Step 0 basato sulla teoria degli atti linguistici.",
     articles: [
-      { title: "Validating AI — note di ricerca", url: "/episteme-advisory/lab/", _source: "lab" }
+      { title: "Validating AI — note di ricerca", url: "/lab/", _source: "lab" }
     ]
   },
   {
@@ -1207,7 +1207,7 @@ module.exports = [
     lab: true,
     note: "Categoria della teoria degli atti linguistici (Austin 1962) che designa ciò che si fa nel dire qualcosa — affermare, promettere, ordinare, dichiarare. Nel progetto <em>Validating AI</em>, la classificazione illocutoria costituisce il Pre-Step 0: verificare che un enunciato sia un'asserzione è condizione necessaria prima di applicare la tassonomia D1–D7.",
     articles: [
-      { title: "Validating AI — note di ricerca", url: "/episteme-advisory/lab/", _source: "lab" }
+      { title: "Validating AI — note di ricerca", url: "/lab/", _source: "lab" }
     ]
   },
   {
@@ -1447,7 +1447,7 @@ module.exports = [
     note: "Articolo di Claudio Cammarano pubblicato su Medium (The Abstract, 2018). Precursore intellettuale del progetto <em>Validating AI</em>: la domanda su come si produce e si commercializza la verità prefigura l'indagine successiva su come i modelli linguistici generino output epistemicamente non fondati.",
     citation: "CAMMARANO, Claudio, <a href=\"https://medium.com/the-abstract/le-fake-news-e-il-marketing-del-vero-56c74f11ce4b\"><em>Le Fake News e il Marketing del Vero</em></a>, <em>The Abstract</em>, Medium, 2018.",
     articles: [
-      { title: "Validating AI — note di ricerca", url: "/episteme-advisory/lab/", _source: "lab" }
+      { title: "Validating AI — note di ricerca", url: "/lab/", _source: "lab" }
     ]
   },
 

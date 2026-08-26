@@ -6,7 +6,7 @@ module.exports = {
       var stem = data.page.inputPath
         .replace(/^\.\/src\/lab\//, "")
         .replace(/\.(md|njk)$/, "");
-      return "/episteme-advisory/lab/" + stem + "/";
+      return "/lab/" + stem + "/";
     }
   }
 };

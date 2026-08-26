@@ -48,6 +48,36 @@
 # ("The Abstract Archives 2018–2025"); Medium risolve via ID finale.
 # ------------------------------------------------------------------
 
+# ------------------------------------------------------------------
+# Lab: la sezione di ricerca esce da /episteme-advisory/ e va in root.
+# Il feed ha una regola propria, prima dello splat, perché i lettori RSS
+# risolvono l'URL esatto e non seguirebbero un catch-all sbagliato.
+# ------------------------------------------------------------------
+
+[[redirects]]
+  from = "/episteme-advisory/lab/feed.xml"
+  to = "/lab/feed.xml"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/episteme-advisory/lab"
+  to = "/lab/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/episteme-advisory/lab/"
+  to = "/lab/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/episteme-advisory/lab/*"
+  to = "/lab/:splat"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/the-death-of-a-samurai-671aecffb829"
   to = "https://medium.com/@ClaudioCamm/the-death-of-a-samurai-671aecffb829"
