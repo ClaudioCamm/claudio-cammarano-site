@@ -1,4 +1,5 @@
 ---
+layout: layouts/learning-doc.njk
 title: "Letteratura per ragazzi — Piano di studi"
 description: "Piano di studi in quattro fasi sulla letteratura per ragazzi, con bibliografia ragionata. Materiale AI-generated, da verificare con occhio umano esperto della materia."
 download_url: "/downloads/Letteratura-Ragazzi-Piano-Studi.pdf"

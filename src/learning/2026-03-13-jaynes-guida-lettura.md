@@ -1,4 +1,5 @@
 ---
+layout: layouts/learning-doc.njk
 title: "Jaynes — Guida alla lettura (Probability Theory: The Logic of Science)"
 description: "Guida di lettura con figure per Probability Theory: The Logic of Science di E.T. Jaynes. Materiale AI-generated, da verificare con occhio umano esperto della materia."
 download_url: "/downloads/Jaynes-Guida-Lettura-v4.pdf"

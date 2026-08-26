@@ -1,0 +1,67 @@
+---
+layout: layouts/base.njk
+og_type: article
+---
+
+{# Scheda di una risorsa del Learning Log. Il PDF resta il contenuto vero:
+   questa pagina esiste perché la spiegazione — che cosa c'è dentro, come
+   è stato prodotto, che cosa vale — abbia un posto suo, indicizzabile e
+   linkabile, invece di stare solo nel frontmatter della card. #}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LearningResource",
+  "name": "{{ title | jsonEscape | safe }}",
+  "description": "{{ description | stripMd | jsonEscape | safe }}",
+  "datePublished": "{{ date | isoDate }}",
+  "inLanguage": "{{ lang or 'it' }}",
+  "url": "https://claudiocammarano.com{{ page.url }}",
+  "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "learningResourceType": "Dispensa",
+  "author": {
+    "@type": "Person",
+    "@id": "https://claudiocammarano.com/#person",
+    "name": "Claudio Cammarano",
+    "url": "https://claudiocammarano.com/about/"
+  },
+  "isPartOf": { "@id": "https://claudiocammarano.com/#website" }{% if download_url %},
+  "associatedMedia": {
+    "@type": "MediaObject",
+    "contentUrl": "https://claudiocammarano.com{{ download_url }}",
+    "encodingFormat": "application/pdf"
+  }{% endif %}
+}
+</script>
+
+<article class="article-full article-full--learning">
+  <header class="article-header">
+    <nav class="breadcrumb" aria-label="Navigazione">
+      <a href="/">Home</a>
+      <span class="breadcrumb-sep" aria-hidden="true">·</span>
+      <a href="/learning/">Learning log</a>
+      <span class="breadcrumb-sep" aria-hidden="true">·</span>
+      <span class="breadcrumb-current">{{ title }}</span>
+    </nav>
+    <div class="article-meta">
+      <span class="article-date">{% if (lang or 'it') == 'en' %}{{ date | formatDateEN }}{% else %}{{ date | formatDate }}{% endif %}</span>
+      {% if license %}<span class="article-tag">{{ license }}</span>{% endif %}
+    </div>
+    <h1>{{ title }}</h1>
+    {% if description %}
+    <p class="article-description">{{ description }}</p>
+    {% endif %}
+    {% if download_url %}
+    <p class="learning-doc-download"><a href="{{ download_url }}" class="btn-download" download>Scarica il documento &#8594;</a></p>
+    {% endif %}
+  </header>
+
+  <div class="article-body">
+    {{ content | safe }}
+    {% include "components/ai-notation.njk" %}
+  </div>
+</article>
+
+<nav class="learning-doc-back" data-pagefind-ignore>
+  <a href="/learning/">&#8592; Tutte le risorse del Learning log</a>
+</nav>

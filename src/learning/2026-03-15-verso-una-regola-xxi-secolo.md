@@ -1,4 +1,5 @@
 ---
+layout: layouts/learning-doc.njk
 title: "Verso una Regola del XXI secolo — Percorso di lettura"
 description: "Cronologia, confronto strutturale, mappa di lettura e bibliografia annotata in cinque strati sulla crisi delle humanities. Dal monachesimo benedettino all'AI generativa."
 download_url: "/downloads/verso-una-regola-xxi-secolo.pdf"

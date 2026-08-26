@@ -5,17 +5,18 @@ description: "Risorse scaricabili con licenza Creative Commons: slide, report e 
 ---
 
 <h1>Learning log</h1>
-<p>Risorse scaricabili con licenza Creative Commons.</p>
+<p class="learning-standfirst">Materiali dei corsi, per gli studenti. E il repo dei documenti prodotti nel Lab. Due modi di imparare la stessa cosa. Risorse scaricabili con licenza Creative Commons.</p>
 
 <div class="learning-grid">
 {% for resource in collections.learning %}
 <article class="resource-card">
-    <h2>{{ resource.data.title }}</h2>
+    <h2><a href="{{ resource.url }}">{{ resource.data.title }}</a></h2>
     <p>{{ resource.data.description }}</p>
+    {% if resource.templateContent | trim %}<a class="resource-more" href="{{ resource.url }}">Che cos'è &#8594;</a>{% endif %}
     {% if resource.data.download_url %}
     <a href="{{ resource.data.download_url }}" class="btn-download" download>Download →</a>
     {% endif %}
-    <span class="resource-license">{{ resource.data.license }}</span>
+    <span class="resource-license">{{ resource.data.license }}{% if resource.data.ai_prose and aiNotation.prose[resource.data.ai_prose] %} <span aria-hidden="true">·</span> <a class="resource-ai-code" href="/colophon/#notazione" title="Notazione dell'intervento AI — {{ aiNotation.prose[resource.data.ai_prose].label.it }}">{{ resource.data.ai_prose }}{% if resource.data.ai_scope %}{% for s in resource.data.ai_scope %}{% if aiNotation.scope[s] %}&#183;{{ s }}{% endif %}{% endfor %}{% endif %}</a>{% endif %}</span>
 </article>
 {% endfor %}
 </div>

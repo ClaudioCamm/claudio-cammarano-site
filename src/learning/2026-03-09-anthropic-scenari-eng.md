@@ -1,4 +1,5 @@
 ---
+layout: layouts/learning-doc.njk
 title: "Anthropic After the Pentagon — Four Scenarios (EN)"
 description: "Four scenarios for Anthropic's future after the Pentagon crisis, built using Shell's scenario planning methodology. Eight plausible narratives across two axes: sector-wide revenue sustainability and geopolitical context."
 download_url: "/downloads/Anthropic-Scenari-Mar2026-v5-Eng.pdf"

@@ -170,7 +170,9 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addCollection("learning", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("src/learning/*.md");
+    // Dal piu' recente: e' un log, non un archivio cronologico.
+    return collectionApi.getFilteredByGlob("src/learning/*.md")
+      .sort((a, b) => b.date - a.date);
   });
 
   // Documenti citati nelle note del Lab, dichiarati nel campo `documents:`

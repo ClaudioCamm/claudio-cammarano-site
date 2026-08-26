@@ -1,4 +1,5 @@
 ---
+layout: layouts/learning-doc.njk
 title: "Cassirer — Guida alla lettura (Philosophie der symbolischen Formen)"
 description: "Guida di lettura per la Philosophie der symbolischen Formen di Ernst Cassirer. Materiale AI-generated, da verificare con occhio umano esperto della materia."
 download_url: "/downloads/Cassirer-Guida-Lettura-Mar2026.pdf"

@@ -1,4 +1,5 @@
 ---
+layout: layouts/learning-doc.njk
 title: "Dario Amodei e altri — Riferimenti di ricerca chiave"
 description: "Paper e riferimenti chiave di ricercatori e intellettuali, organizzati per figura. Materiale AI-generated, da verificare con occhio umano esperto della materia."
 download_url: "/downloads/Amodei-Riferimenti-Ricerca-Feb2026.pdf"

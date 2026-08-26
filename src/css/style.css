@@ -1707,6 +1707,60 @@ figcaption {
   margin-top: var(--spacing-xs);
 }
 
+/* Codice della notazione AI in scheda: stesso trattamento del piede degli
+   articoli (maiuscoletto, link al colophon), in corpo da metadato. */
+.resource-ai-code {
+  font-variant: small-caps;
+  letter-spacing: .06em;
+  color: var(--color-primary);
+  text-decoration: none;
+  border-bottom: 1px solid #d8d5ea;
+}
+
+.resource-ai-code:hover {
+  border-bottom-color: var(--color-primary);
+}
+
+/* Rimando alla scheda: la spiegazione sta li', il PDF resta il contenuto. */
+.resource-more {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--color-primary-medium);
+  text-decoration: none;
+  margin-bottom: var(--spacing-xs);
+}
+
+.resource-more:hover {
+  text-decoration: underline;
+}
+
+.resource-card h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.resource-card h2 a:hover {
+  color: var(--color-primary);
+}
+
+/* Scheda della risorsa: bottone di download nel cappello, ritorno in coda */
+.learning-doc-download {
+  margin-top: var(--spacing-md);
+}
+
+.learning-doc-back {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-sm);
+  border-top: 1px solid var(--color-border);
+}
+
+.learning-doc-back a {
+  color: var(--color-primary-medium);
+  text-decoration: none;
+}
+
 /* === LEARNING LOG — documenti del Lab (vedi MANUALE.md §3) ===
    Stessa struttura .resource-card, ma verde Episteme Advisory (#0F6E56)
    invece del blu standard --color-primary, per distinguere a colpo
@@ -4873,18 +4927,25 @@ body.home > .container {
 }
 
 .home-title {
-  font-size: 40px;
+  font-size: 34px;
   font-weight: 500;
-  line-height: 1.1;
+  line-height: 1.15;
   margin: 0 0 12px;
-  max-width: 18ch;
+  max-width: 34ch;
+}
+
+/* Il claim va a capo dove finisce la frase, non dove capita:
+   una riga per proposizione, a ogni larghezza. */
+.home-title-line {
+  display: block;
+  text-wrap: balance;
 }
 
 .home-positioning {
   font-size: 17px;
   line-height: 1.6;
   color: var(--color-text-light);
-  margin: 0 0 var(--spacing-md);
+  margin: 0 0 var(--spacing-sm);
   max-width: 66ch;
 }
 
@@ -4948,11 +5009,26 @@ a.home-path:hover {
 
 @media (min-width: 901px) {
   .home-hero {
-    padding: var(--spacing-lg) 0 var(--spacing-xl);
+    padding: var(--spacing-sm) 0 var(--spacing-xl);
   }
 
+  /* Il claim scala con la finestra e si ferma prima di sfondare la gabbia:
+     a 1200px la seconda riga sfiora il bordo destro, che e' il punto. */
   .home-title {
-    font-size: 52px;
+    font-size: clamp(44px, 5.6vw, 72px);
+  }
+
+  .home-positioning {
+    font-size: clamp(18px, 1.9vw, 25px);
+    max-width: 56ch;
+  }
+
+  .home-credentials {
+    font-size: 16px;
+  }
+
+  .home-hero-why {
+    font-size: 15px;
   }
 
   .home-paths {
@@ -4966,10 +5042,103 @@ a.home-path:hover {
   }
 }
 
-@media (max-width: 900px) {
-  .home-title {
-    display: none; /* la tagline e' gia' nell'header */
-  }
+
+
+/* Hero: rimando alla tesi */
+.home-hero-why {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  margin: 0 0 var(--spacing-sm);
+}
+
+.home-hero-why a {
+  color: var(--color-primary-medium);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.home-hero-why a:hover {
+  border-bottom-color: var(--color-primary-medium);
+}
+
+/* Hero: riga credenziali sotto un filetto */
+/* Il filetto attraversa tutta la fascia: e' lui a tenere insieme la
+   larghezza della home, mentre il testo resta in misura di lettura. */
+.home-hero-foot {
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--spacing-sm);
+}
+
+.home-credentials {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-text-light);
+  max-width: 68ch;
+  margin: 0 0 var(--spacing-md);
+}
+
+.home-credentials cite {
+  font-style: italic;
+}
+
+/* Hero: CTA primaria + porta secondaria */
+.home-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin: 0 0 var(--spacing-md);
+}
+
+.home-cta-secondary {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--color-primary-medium);
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.home-cta-secondary:hover {
+  border-bottom-color: var(--color-primary-medium);
+}
+
+/* Hero: riga di servizio, corpo minore */
+.home-service {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+.home-service a {
+  color: var(--color-text-light);
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.home-service a:hover {
+  color: var(--color-text);
+  border-bottom-color: var(--color-text);
+}
+
+/* I due marchi nei colori del loro manuale: bordeaux Irene, verde Episteme */
+.home-service-irene {
+  color: var(--color-irene);
+}
+
+.home-service-episteme {
+  color: var(--color-lab);
+}
+
+.home-service-irene:hover {
+  color: var(--color-irene);
+  border-bottom-color: var(--color-irene);
+}
+
+.home-service-episteme:hover {
+  color: var(--color-lab);
+  border-bottom-color: var(--color-lab);
 }
 
 /* --- Fascia: in evidenza --- */
@@ -6414,4 +6583,110 @@ a.home-path:hover {
 
 @media print {
   .heb-controls, .heb-legend, .heb-tip, .concetto-heb { display: none !important; }
+}
+
+/* ===================================================================
+   DA QUI — guida alla lettura
+   =================================================================== */
+
+.da-qui-page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding-bottom: var(--spacing-xl);
+}
+
+.da-qui-section {
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--color-border);
+}
+
+.da-qui-section-title {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-text-light);
+  margin: 0 0 var(--spacing-md);
+}
+
+.da-qui-porta {
+  margin-bottom: var(--spacing-md);
+}
+
+.da-qui-porta-kicker {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--color-primary-medium);
+  margin: 0 0 4px;
+}
+
+.da-qui-porta-title {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.25;
+  margin: 0 0 6px;
+}
+
+.da-qui-porta-body {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+.da-qui-porta-body a,
+.da-qui-tempo a {
+  color: var(--color-primary-medium);
+}
+
+.da-qui-mappa {
+  margin: 0;
+}
+
+.da-qui-voce {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2px;
+  padding: var(--spacing-xs) 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.da-qui-voce dt {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.da-qui-voce dd {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-text-light);
+}
+
+.da-qui-tempo {
+  font-size: 16px;
+  line-height: 1.65;
+  margin: 0 0 var(--spacing-xs);
+}
+
+.da-qui-cta {
+  margin-top: var(--spacing-md);
+}
+
+@media (min-width: 901px) {
+  .da-qui-voce {
+    grid-template-columns: 190px minmax(0, 1fr);
+    column-gap: var(--spacing-md);
+    gap: 0;
+  }
+}
+
+.learning-standfirst {
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--color-text-light);
+  max-width: 66ch;
 }

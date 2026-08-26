@@ -1,4 +1,5 @@
 ---
+layout: layouts/learning-doc.njk
 title: "Anthropic dopo il Pentagono — Quattro scenari (IT)"
 description: "Quattro scenari per il futuro di Anthropic dopo la crisi con il Pentagono, costruiti con la metodologia Shell di Pierre Wack. Otto narrazioni plausibili su due assi: sostenibilità dei ricavi di settore e contesto geopolitico."
 download_url: "/downloads/Anthropic-Scenari-Mar2026-v5.pdf"
