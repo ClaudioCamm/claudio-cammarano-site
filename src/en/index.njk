@@ -1,0 +1,191 @@
+---
+layout: layouts/base.njk
+title: "Ideas are real things. Somebody has to check them."
+description: "A research programme on the post-cognitive validation of language model outputs, built from inside the content industry. Working paper, open research log, and an interactive simulator."
+permalink: /en/
+lang: en
+bodyClass: home
+og_card: /images/og/og-en-home.png
+translation:
+  lang: it
+  url: /
+---
+
+{# ===================================================================
+   HOME INGLESE — cinque fasce, ordine vincolante (brief, lotto 2).
+   Gerarchia diversa da quella italiana: qui il lettore non esplora un
+   archivio, decide in un minuto se l'autore e' un interlocutore.
+   1 hero · 2 il paper · 3 Lab · 4 The Abstract · 5 chi e' l'autore.
+   Nessuna porta commerciale: Episteme Advisory compare una volta
+   sola, in coda, come contesto istituzionale della ricerca.
+   =================================================================== #}
+
+{% include "components/person-jsonld.njk" %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://claudiocammarano.com/en/#website-en",
+      "url": "https://claudiocammarano.com/en/",
+      "name": "Claudio Cammarano — Research",
+      "description": "A research programme on the post-cognitive validation of language model outputs.",
+      "inLanguage": "en",
+      "author": { "@id": "https://claudiocammarano.com/#person" }
+    },
+    {
+      "@type": "ResearchProject",
+      "@id": "https://claudiocammarano.com/en/#programme",
+      "name": "Post-cognition: validating the outputs of language models",
+      "url": "https://claudiocammarano.com/en/",
+      "description": "Language models generate outputs without metacognition. The programme develops post-cognition: a structured external procedure that reconstructs the ontological commitments implicit in a model's output before any truth evaluation is attempted.",
+      "inLanguage": "en",
+      "founder": { "@id": "https://claudiocammarano.com/#person" },
+      "member": { "@id": "https://claudiocammarano.com/#person" }
+    }
+  ]
+}
+</script>
+
+{# === 1 · HERO. Copy approvato dal committente, da usare alla lettera.
+       Il primo verso e' la traduzione letterale del claim italiano:
+       e' il ponte mnemonico fra le due home e non va parallelizzato.
+       Due sole call to action. === #}
+<section class="home-hero" aria-label="Opening">
+  <h1 class="home-title"><span class="home-title-line">Ideas are real things.</span> <span class="home-title-line">Somebody has to check them.</span></h1>
+  <p class="home-positioning">How do you check what a machine claims, after it has claimed it? A research programme on the post-cognitive validation of language model outputs, built from inside the content industry — where the outputs are already shipping.</p>
+
+  <div class="home-hero-foot">
+    <div class="home-cta-row">
+      <a class="btn-about home-cta-primary" href="#the-paper">Read the abstract</a>
+      <a class="home-cta-secondary" href="/en/visualizations/measuring-bench/">Or: the other project, in ten minutes &#8594;</a>
+    </div>
+  </div>
+</section>
+
+{# === 2 · IL PAPER. La fascia per cui la pagina esiste: stato
+       dichiarato, tre affermazioni falsificabili, ultimo aggiornamento. === #}
+<section class="home-band en-paper" id="the-paper" aria-label="The paper">
+  <div class="home-sec-head">
+    <h2 class="home-sec-title">The paper</h2>
+    <a class="home-sec-link" href="/lab/">Research log &#8594;</a>
+  </div>
+
+  <p class="en-paper-status">
+    <span class="en-paper-stage">Draft v6 · writing &amp; submission</span>
+    {% if collections.lab.length %}<span class="en-paper-updated">Last change to the programme: {{ collections.lab[0].data.date | formatDateEN }}</span>{% endif %}
+  </p>
+
+  <h3 class="en-paper-title">Post-cognitive validation of language model outputs</h3>
+  <p class="en-paper-abstract">Language models produce assertions without metacognition. The programme builds <em>post-cognition</em>: an external, auditable procedure that first fixes what kind of claim is on the table — historical, statistical, causal, normative, metaphysical — and only then asks whether it is true. Ontology precedes epistemology. The apparatus is a seven-dimensional taxonomy with a coding manual, tested on a horizontal corpus of 31 claims and a vertical run of 180 model replications.</p>
+
+  <p class="en-paper-claims-head">Three claims that can be shown to be wrong</p>
+  <ol class="en-paper-claims">
+    <li>
+      <p class="en-claim">Disagreement between model runs is lexical, not epistemic. Across 180 runs, lexical agreement was 4.44% and semantic agreement 78.33% — a 74-point gap.</p>
+      <p class="en-claim-falsifier">Wrong if the two rates converge on a larger and more varied corpus, or if the semantic rate collapses under a stricter annotation protocol.</p>
+    </li>
+    <li>
+      <p class="en-claim">Classifying the type of a claim before evaluating it changes the verdict, and improves agreement between coders.</p>
+      <p class="en-claim-falsifier">Wrong if coders who skip the classification step reach the same verdicts, at the same agreement, as coders who apply it.</p>
+    </li>
+    <li>
+      <p class="en-claim">A model can report on its own internal states and still not classify the epistemic type of its own claims. That is why the check has to come from outside.</p>
+      <p class="en-claim-falsifier">Wrong if a model, with no external scaffolding, assigns claim types to its own outputs at the agreement level of trained human coders.</p>
+    </li>
+  </ol>
+
+  <p class="en-paper-links">
+    <a href="/downloads/11_2026_academic_v6.pdf">Working paper, v6 — PDF &#8594;</a>
+    <a href="/downloads/12_2026_backmatter_v6.pdf">Back matter — PDF &#8594;</a>
+    <a href="/downloads/Coding_Manual_v2_1.pdf">Coding manual, v2.1 — PDF &#8594;</a>
+  </p>
+</section>
+
+{# === 3 · LAB come changelog del programma. Trattamento autonomo:
+       la fascia non e' contenuta in un blocco Episteme. Ultime tre note
+       con anteprima reale. === #}
+{% if collections.lab.length %}
+{% set labFeature = collections.lab[0] %}
+<section class="home-band home-band--lab" aria-label="Lab">
+  <div class="home-lab-head">
+    <div>
+      <span class="home-lab-label">Lab · Independent research</span>
+      <p class="home-lab-intro">The changelog of the programme. Dated, in-progress notes — including the ones where the framework had to be corrected.</p>
+    </div>
+    <p class="home-lab-all"><a href="/lab/">All notes &#8594;</a></p>
+  </div>
+  <div class="home-lab">
+    <article class="home-lab-feature">
+      <div class="article-meta">
+        <span class="article-date">{{ labFeature.data.date | formatDateEN }}</span>
+        {% if labFeature.data.project %}<span class="article-tag">{{ labFeature.data.project }}</span>{% endif %}
+        {% if labFeature.data.stage %}<span class="home-lab-stage">{{ labFeature.data.stage }}</span>{% endif %}
+      </div>
+      <h3><a href="{{ labFeature.url }}">{{ labFeature.data.title }}</a></h3>
+      {% if labFeature.data.description %}<p class="home-lab-abstract">{{ labFeature.data.description }}</p>{% endif %}
+      <p><a class="home-lab-go" href="{{ labFeature.url }}">Read the note &#8594;</a></p>
+    </article>
+    {% if collections.lab.length > 1 %}
+    <div class="home-lab-more">
+      <p class="home-lab-more-title">Recent notes</p>
+      {% for nota in collections.lab | limit(3) %}{% if loop.index0 > 0 %}
+      <a class="home-lab-item" href="{{ nota.url }}">
+        <span class="home-lab-item-meta">{{ nota.data.date | formatDateEN }}{% if nota.data.stage %} · {{ nota.data.stage }}{% endif %}</span>
+        <span class="home-lab-item-title">{{ nota.data.title }}</span>
+        {% if nota.data.description %}<span class="home-lab-item-abstract">{{ nota.data.description | excerpt(190) }}</span>{% endif %}
+      </a>
+      {% endif %}{% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</section>
+{% endif %}
+
+{# === 4 · THE ABSTRACT: seconda voce editoriale, ultime uscite e
+       iscrizione. Il feed e' gia' in inglese. === #}
+<section class="home-band home-band--abstract" id="the-abstract" aria-label="The Abstract">
+  <div class="abstract-block">
+    <div class="home-abstract-head">
+      <span class="abstract-block-label">The Abstract</span>
+      <p class="abstract-block-tagline">Reading the Content Economy from Europe — one essay a month</p>
+    </div>
+    {% if abstract.posts and abstract.posts.length > 0 %}
+    <div class="home-abstract-posts">
+      {% for post in abstract.posts | limit(3) %}
+      <article class="abstract-block-post">
+        <div class="article-meta">
+          {% if post.date %}<span class="article-date">{{ post.date }}</span>{% endif %}
+        </div>
+        <h3 class="abstract-block-post-title">
+          <a href="{{ post.url }}" target="_blank" rel="noopener">{{ post.title }} &#8599;</a>
+        </h3>
+        {% if post.excerpt %}
+        <p class="abstract-block-post-excerpt">{{ post.excerpt }}</p>
+        {% elif post.subtitle %}
+        <p class="abstract-block-post-excerpt">{{ post.subtitle }}</p>
+        {% endif %}
+      </article>
+      {% endfor %}
+    </div>
+    {% endif %}
+    <p class="abstract-block-cta">
+      <a href="https://claudiocammarano.substack.com" target="_blank" rel="noopener" data-newsletter-cta data-position="home_en_abstract">Subscribe on Substack &#8594;</a>
+    </p>
+  </div>
+</section>
+
+{# === 5 · CHI E' L'AUTORE. Tre righe. Su questa superficie la
+       credenziale editoriale italiana e' contesto, non argomento.
+       Unica menzione di Episteme Advisory, in coda. === #}
+<section class="home-band en-author" aria-label="The author">
+  <div class="home-sec-head">
+    <h2 class="home-sec-title">Who is doing this</h2>
+    <a class="home-sec-link" href="/en/about/">About &#8594;</a>
+  </div>
+  <p class="en-author-bio">Claudio Cammarano leads marketing at De Agostini Libri and teaches at three Italian universities. Twenty years in publishing — Mondadori, Rizzoli, RCS, GEDI — and an academic background in semiotics and philosophy of language. He wrote <cite>Il mercato del libro</cite> (Solferino).</p>
+  <p class="en-author-note">The point of the day job is not the credential. It is that the outputs this programme is about are already being shipped, at scale, in the industry he works in.</p>
+  <p class="en-author-episteme">The research runs under <a href="/episteme-advisory/" lang="it" hreflang="it">Episteme Advisory</a> <span class="en-lang-flag">(page in Italian)</span>.</p>
+</section>

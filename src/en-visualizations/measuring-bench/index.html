@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Il banco di misura — La forza della scrittura</title>
-<meta name="description" content="Strumento interattivo per l'equazione del valore di un testo: spostamento, struttura, guadagno epistemico, il piano dei regimi e la dinamica di popolazione.">
-<link rel="canonical" href="https://claudiocammarano.com/visualizations/banco-di-misura/">
-<link rel="alternate" hreflang="it" href="https://claudiocammarano.com/visualizations/banco-di-misura/">
+<title>The measuring bench — what a text does to a reader</title>
+<meta name="description" content="An interactive instrument: move three distributions and read, in bits, what a text does to a reader. Two ratios place it on the plane of regimes. Nothing leaves the page.">
+<link rel="canonical" href="https://claudiocammarano.com/en/visualizations/measuring-bench/">
 <link rel="alternate" hreflang="en" href="https://claudiocammarano.com/en/visualizations/measuring-bench/">
+<link rel="alternate" hreflang="it" href="https://claudiocammarano.com/visualizations/banco-di-misura/">
 <link rel="alternate" hreflang="x-default" href="https://claudiocammarano.com/visualizations/banco-di-misura/">
 <!-- Open Graph / Twitter. La pagina non passa dal layout base: i meta stanno qui. -->
-<meta property="og:title" content="Il banco di misura — che cosa fa un testo al lettore">
-<meta property="og:description" content="Sposta tre distribuzioni e leggi in bit che cosa fa un testo. Due numeri, α e r, lo collocano sul piano dei regimi. Nessun dato lascia la pagina.">
-<meta property="og:url" content="https://claudiocammarano.com/visualizations/banco-di-misura/">
+<meta property="og:title" content="The measuring bench — what a text does to a reader">
+<meta property="og:description" content="Move three distributions and read, in bits, what a text does to a reader. Two numbers, α and r, place it on the plane of regimes. Nothing leaves the page.">
+<meta property="og:url" content="https://claudiocammarano.com/en/visualizations/measuring-bench/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Claudio Cammarano">
-<meta property="og:locale" content="it_IT">
-<meta property="og:locale:alternate" content="en_GB">
-<meta property="og:image" content="https://claudiocammarano.com/images/og/og-banco-di-misura.png">
+<meta property="og:locale" content="en_GB">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:image" content="https://claudiocammarano.com/images/og/og-en-banco-di-misura.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Il piano dei regimi: in ascissa α, in ordinata r, con i quattro quadranti Apertura, Valore, Provocazione, Struttura falsa e la banda della Conferma.">
+<meta property="og:image:alt" content="The plane of regimes: α on the x axis, r on the y axis, with the four quadrants Opening, Value, Provocation, False structure, and the band of Confirmation.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@claudiocamm">
 <meta name="twitter:creator" content="@claudiocamm">
@@ -80,6 +80,7 @@ html.embedded .backnav{display:none}
   margin-bottom:6px;
 }
 h1{font-size:23px;font-weight:500;line-height:1.25;letter-spacing:-.01em;margin-bottom:8px}
+.standfirst--aside{color:var(--text-hint);font-size:14.5px;border-top:1px solid var(--border);padding-top:12px;margin-top:14px}
 .standfirst{font-size:15px;color:var(--text-light);max-width:62ch;line-height:1.55}
 .standfirst code{font-family:var(--sans);font-size:13.5px;color:var(--text)}
 
@@ -254,42 +255,45 @@ footer a{color:var(--text-light)}
 <body>
 <div class="wrap">
 
-<nav class="backnav" aria-label="Torna al sito">
-  <a class="home" href="/" target="_top">&#8592; claudiocammarano.com</a>
-  <a href="/projects/" target="_top">Projects</a>
-  <a href="/writings/2026-08-26-la-forza-della-scrittura/" target="_top">Il saggio che lo spiega</a>
-  <a href="/en/visualizations/measuring-bench/" target="_top" hreflang="en" lang="en" style="margin-left:auto">EN</a>
+<nav class="backnav" aria-label="Back to the site">
+  <a class="home" href="/en/" target="_top">&#8592; claudiocammarano.com</a>
+  <a href="/en/start-here/" target="_top">Start here</a>
+  <a href="/writings/2026-08-26-la-forza-della-scrittura/" target="_top" lang="it" hreflang="it">The essay it comes from (IT)</a>
+  <a href="/visualizations/banco-di-misura/" target="_top" hreflang="it" lang="it" style="margin-left:auto">IT</a>
 </nav>
 
 <header>
-  <p class="eyebrow">Banco di misura · claudiocammarano.com</p>
-  <h1>L'equazione del valore di un testo</h1>
-  <p class="standfirst">Strumento di lettura per <a href="/writings/2026-08-26-la-forza-della-scrittura/" target="_top">«La forza della scrittura»</a>. Il primo pannello calcola grandezze reali in bit e le colloca sul piano dei regimi. Il secondo e il terzo esplorano forme: i numeri sono adimensionali e le funzioni sono scelte qui, non nel saggio.</p>
+  <p class="eyebrow">The measuring bench · claudiocammarano.com</p>
+  <h1>What a text does to a reader, in bits</h1>
+  <p class="standfirst"><b>What it measures.</b> One thing: the distance between what you expected before reading and what you expect after — and whether that move took you towards the world or away from it. Two pure ratios, α and r, decide which of five regimes a text is in. The displacement <i>D</i> stays out of the verdict: it says how hard, not how good.</p>
+  <p class="standfirst"><b>Why it was built.</b> The occasion was the argument about writing with language models — whether a text made with them still counts as the author's. The instrument answers structurally rather than morally. Which tools passed over a text, any tools, enter the equation as a coefficient and never as a load-bearing term; what carries the value is what the author put in, which is observation, selection and recombination. Panel 2 shows it directly: move the disclosure codes across the whole grid and watch how little the value moves.</p>
+  <p class="standfirst"><b>Move the sliders.</b> Panel 1 computes real quantities in bits from three distributions you set yourself, and places the result on the plane. Panels 2 and 3 explore forms: those numbers are dimensionless and the functions were chosen here, not derived.</p>
+  <p class="standfirst standfirst--aside">This is one of two projects on this site, and the smaller one. The other — <a href="/en/" target="_top">validating what a language model claims</a> — has a different object and a different method. They share a premise, not an apparatus.</p>
 </header>
 
-<nav class="tabs" role="tablist" aria-label="Pannelli">
-  <button class="tab" role="tab" id="t1" aria-controls="pA" aria-selected="true"><span class="n">1</span>Spostamento e guadagno</button>
-  <button class="tab" role="tab" id="t2" aria-controls="pB" aria-selected="false"><span class="n">2</span>L'equazione</button>
-  <button class="tab" role="tab" id="t3" aria-controls="pC" aria-selected="false"><span class="n">3</span>La varianza fra i prior</button>
+<nav class="tabs" role="tablist" aria-label="Panels">
+  <button class="tab" role="tab" id="t1" aria-controls="pA" aria-selected="true"><span class="n">1</span>Displacement and gain</button>
+  <button class="tab" role="tab" id="t2" aria-controls="pB" aria-selected="false"><span class="n">2</span>The equation</button>
+  <button class="tab" role="tab" id="t3" aria-controls="pC" aria-selected="false"><span class="n">3</span>Variance across priors</button>
 </nav>
 
 <!-- ============ PANNELLO A ============ -->
 <section class="panel" id="pA" role="tabpanel" aria-labelledby="t1">
-  <p class="panel-note"><b>Matematica esatta, unità in bit.</b> Sposta le tre distribuzioni — le attese prima della lettura, le attese dopo, e il mondo — e tutto il resto è calcolato: divergenza di Kullback-Leibler, entropia di Shannon, entropia incrociata. I due numeri puri α e r decidono il regime; lo spostamento D resta fuori dal giudizio come pura intensità.</p>
+  <p class="panel-note"><b>Exact mathematics, units in bits.</b> Move the three distributions — what the reader expected before, what they expect after, and the world — and everything else is computed: Kullback-Leibler divergence, Shannon entropy, cross entropy. The two pure numbers α and r decide the regime; the displacement D stays out of the verdict as pure intensity.</p>
 
   <div class="presets">
     <div class="preset-row">
-      <span class="preset-cap">L'esempio</span>
-      <button class="p" data-c="operatore">L'operatore</button>
-      <button class="p" data-c="piatto">Il lettore piatto</button>
-      <button class="p" data-c="siddharta">Siddharta</button>
+      <span class="preset-cap">The worked example</span>
+      <button class="p" data-c="operatore">The industry analyst</button>
+      <button class="p" data-c="piatto">The flat reader</button>
+      <button class="p" data-c="siddharta">Siddhartha</button>
     </div>
     <div class="preset-row">
-      <span class="preset-cap">I sei romanzi</span>
-      <button class="p" data-c="guerraepace">Guerra e pace</button>
-      <button class="p" data-c="karamazov">I fratelli Karamazov</button>
-      <button class="p" data-c="rosa">Il nome della rosa <span class="var">↺</span></button>
-      <button class="p" data-c="resurrezione">Resurrezione <span class="var">↺</span></button>
+      <span class="preset-cap">Six novels</span>
+      <button class="p" data-c="guerraepace">War and Peace</button>
+      <button class="p" data-c="karamazov">The Brothers Karamazov</button>
+      <button class="p" data-c="rosa">The Name of the Rose <span class="var">↺</span></button>
+      <button class="p" data-c="resurrezione">Resurrection <span class="var">↺</span></button>
       <button class="p" data-c="finnegans">Finnegans Wake <span class="var">↺</span></button>
       <button class="p" data-c="fourthwing">Fourth Wing</button>
     </div>
@@ -299,36 +303,36 @@ footer a{color:var(--text-light)}
   <div class="cols">
     <div>
       <details class="editor" id="edt" open>
-      <summary>Le tre distribuzioni</summary>
+      <summary>The three distributions</summary>
       <p class="qtitle" id="qtitle"></p>
       <div class="keys">
-        <span><b style="background:var(--text-hint)"></b>prima <i>p</i></span>
-        <span><b style="background:var(--blue)"></b>dopo <i>p′</i></span>
-        <span><b style="background:var(--green)"></b>mondo <i>q</i></span>
+        <span><b style="background:var(--text-hint)"></b>before <i>p</i></span>
+        <span><b style="background:var(--blue)"></b>after <i>p′</i></span>
+        <span><b style="background:var(--green)"></b>world <i>q</i></span>
       </div>
       <div id="scen"></div>
       </details>
     </div>
 
     <div>
-      <p class="legend-h">Lettura</p>
+      <p class="legend-h">Readout</p>
       <div class="readout">
-        <div class="cell"><div class="k">Spostamento <i>D</i></div><div class="v" id="vD">—</div><div class="d">quanto le attese si sono mosse</div></div>
-        <div class="cell"><div class="k">Struttura <i>ΔH</i></div><div class="v" id="vH">—</div><div class="d">quanta indifferenza si è consumata</div></div>
-        <div class="cell"><div class="k">Rigidità <i>ρ</i></div><div class="v" id="vR">—</div><div class="d">quanto il prior era mal tarato</div></div>
-        <div class="cell"><div class="k">Spinta <i>⟨Δ,u⟩</i></div><div class="v" id="vI">—</div><div class="d">quanto ha spinto verso il mondo</div></div>
-        <div class="cell hl"><div class="k"><i>α = ⟨Δ,u⟩ / D</i></div><div class="v" id="vA">—</div><div class="d">&gt; 1 avvicina · &lt; 1 allontana</div></div>
-        <div class="cell hl"><div class="k"><i>r = ρ / D</i></div><div class="v" id="vRr">—</div><div class="d">&lt; 1 organizza · &lt; 0 conferma</div></div>
+        <div class="cell"><div class="k">Displacement <i>D</i></div><div class="v" id="vD">—</div><div class="d">how far expectations moved</div></div>
+        <div class="cell"><div class="k">Structure <i>ΔH</i></div><div class="v" id="vH">—</div><div class="d">how much indifference was spent</div></div>
+        <div class="cell"><div class="k">Rigidity <i>ρ</i></div><div class="v" id="vR">—</div><div class="d">how badly calibrated the prior was</div></div>
+        <div class="cell"><div class="k">Push <i>⟨Δ,u⟩</i></div><div class="v" id="vI">—</div><div class="d">how much it pushed towards the world</div></div>
+        <div class="cell hl"><div class="k"><i>α = ⟨Δ,u⟩ / D</i></div><div class="v" id="vA">—</div><div class="d">&gt; 1 moves closer · &lt; 1 moves away</div></div>
+        <div class="cell hl"><div class="k"><i>r = ρ / D</i></div><div class="v" id="vRr">—</div><div class="d">&lt; 1 organises · &lt; 0 confirms</div></div>
       </div>
 
       <div class="verdict" id="verdict">
-        <p class="t" id="vTit">Muovi un cursore</p>
-        <p class="s" id="vSub">Il regime si legge da α e r insieme; D dice soltanto quanto forte.</p>
+        <p class="t" id="vTit">Move a slider</p>
+        <p class="s" id="vSub">The regime is read from α and r together; D only says how hard.</p>
       </div>
 
-      <p class="legend-h">Il piano dei regimi</p>
-      <canvas id="plane" height="380" aria-label="Piano dei regimi: alfa in ascissa, r in ordinata"></canvas>
-      <div class="axcap"><span>α = spinta utile / costo</span><span>r = rigidità / spostamento</span></div>
+      <p class="legend-h">The plane of regimes</p>
+      <canvas id="plane" height="380" aria-label="Plane of regimes: alpha on the x axis, r on the y axis"></canvas>
+      <div class="axcap"><span>α = useful push / cost</span><span>r = rigidity / displacement</span></div>
       <div class="ident" id="ident"></div>
     </div>
   </div>
@@ -336,71 +340,71 @@ footer a{color:var(--text-light)}
 
 <!-- ============ PANNELLO B ============ -->
 <section class="panel" id="pB" role="tabpanel" aria-labelledby="t2" hidden>
-  <p class="panel-note"><b>Adimensionale, forme scelte qui.</b> I tre termini di contenuto restano all'autore. Lo stack Σ entra solo dove il saggio lo colloca: dentro η, che satura a uno, e dentro ε, che la verifica ν azzera. I codici della griglia muovono Σ e nient'altro — è il modo più rapido per vedere che una posizione nella matrice dichiarativa non è una posizione nel valore. Il cursore <i>ricevente</i> attua la prima riparazione di §8: η sta dentro l'integrale, e dipende anche da chi legge.</p>
+  <p class="panel-note"><b>Dimensionless; the forms were chosen here.</b> The three content terms stay with the author. The tool stack Σ enters only where the argument puts it: inside η, which saturates at one, and inside ε, which verification ν drives to zero. The disclosure codes move Σ and nothing else — the quickest way to see that a position in a disclosure matrix is not a position in value. The <i>receiver</i> slider does what §8 requires: η sits inside the integral, and depends on who is reading.</p>
 
   <div class="cols">
     <div>
-      <p class="legend-h">Contenuto — resta all'autore</p>
+      <p class="legend-h">Content — stays with the author</p>
       <div id="cA"></div>
-      <p class="legend-h">Strumento, ricevente e verifica</p>
+      <p class="legend-h">Tool, receiver and verification</p>
       <div id="cB"></div>
-      <p class="legend-h">Coefficienti postulati</p>
+      <p class="legend-h">Postulated coefficients</p>
       <div id="cC"></div>
     </div>
     <div>
-      <p class="legend-h">Posizione dichiarata nella griglia</p>
+      <p class="legend-h">Declared position in the disclosure grid</p>
       <div class="preset-row" id="codP"></div>
       <div class="preset-row" id="codA" style="margin-bottom:16px"></div>
 
       <div class="eqn" id="eqn"></div>
 
-      <p class="legend-h">Contributi</p>
+      <p class="legend-h">Contributions</p>
       <div id="wfall"></div>
-      <div class="total"><span class="k">Valore V</span><span class="v" id="vV">—</span></div>
+      <div class="total"><span class="k">Value V</span><span class="v" id="vV">—</span></div>
 
       <div class="switch">
-        <button class="p" id="deleg" aria-pressed="false">Delega</button>
-        <div class="tx">Delega la selezione allo strumento
-          <small>Azzera G<sub>sel</sub>. È il termine additivo più grande, ed è l'unico che nessuna dichiarazione registra.</small>
+        <button class="p" id="deleg" aria-pressed="false">Delegate</button>
+        <div class="tx">Delegate selection to the tool
+          <small>Sets G<sub>sel</sub> to zero. It is the largest additive term, and the only one no disclosure statement records.</small>
         </div>
       </div>
-      <p class="caveat"><b>Dichiarazione.</b> η = 1 − e<sup>−a(F+Σ)·ψ(R)</sup> e ε = ε₀(1+βΣ)e<sup>−γν</sup> non compaiono nel saggio. Sono state scelte per far girare il modello: saturante la prima, azzerabile per verifica la seconda. Cambiare quelle forme cambia i numeri, non i segni.</p>
+      <p class="caveat"><b>Disclosure.</b> η = 1 − e<sup>−a(F+Σ)·ψ(R)</sup> and ε = ε₀(1+βΣ)e<sup>−γν</sup> are not in the argument. They were chosen to make the model run: the first saturating, the second collapsible by verification. Changing those forms changes the numbers, not the signs.</p>
     </div>
   </div>
 </section>
 
 <!-- ============ PANNELLO C ============ -->
 <section class="panel" id="pC" role="tabpanel" aria-labelledby="t3" hidden>
-  <p class="panel-note"><b>Ottanta autori, trecentoventi pubblicazioni a testa.</b> A ogni passo ciascuno pubblica mescolando il proprio prior con la media del corpus, in proporzione Σ, e legge quel che gli altri hanno pubblicato. L'osservazione nuova entra solo dalla quota non modale. La curva è la varianza fra i prior nel tempo, e la linea tratteggiata è il punto fisso Var* = (1 − Σ)·ω² / λ: il campo non collassa, si assesta.</p>
+  <p class="panel-note"><b>Eighty authors, three hundred and twenty publications each.</b> At every step each one publishes by mixing their own prior with the corpus mean, in proportion Σ, and reads what the others published. New observation enters only through the non-modal share. The curve is the variance across priors over time; the dashed line is the fixed point Var* = (1 − Σ)·ω² / λ. The field does not collapse, it settles.</p>
 
   <div class="cols">
     <div>
       <p class="legend-h">Regime</p>
       <div id="cE"></div>
       <div class="acts">
-        <button class="p" id="run">Avvia</button>
-        <button class="p" id="rst">Azzera</button>
+        <button class="p" id="run">Run</button>
+        <button class="p" id="rst">Reset</button>
       </div>
       <div class="readout" style="grid-template-columns:1fr 1fr 1fr">
-        <div class="cell"><div class="k">Var iniziale</div><div class="v" id="v0">—</div></div>
-        <div class="cell"><div class="k">Var corrente</div><div class="v" id="vNow">—</div></div>
-        <div class="cell hl"><div class="k">Punto fisso Var*</div><div class="v" id="vFix">—</div></div>
+        <div class="cell"><div class="k">Var at start</div><div class="v" id="v0">—</div></div>
+        <div class="cell"><div class="k">Var now</div><div class="v" id="vNow">—</div></div>
+        <div class="cell hl"><div class="k">Fixed point Var*</div><div class="v" id="vFix">—</div></div>
       </div>
-      <p class="caveat" style="border-left-color:var(--green)"><b>La leva.</b> Un autore singolo non può abbassare Σ, che è una proprietà del campo. Può alzare ω, cioè immettere osservazione, oppure abbassare λ, cioè leggere meno il proprio campo. Dimezza la permeabilità e guarda dove va la linea tratteggiata.</p>
+      <p class="caveat" style="border-left-color:var(--green)"><b>The lever.</b> A single author cannot lower Σ: it is a property of the field. They can raise ω — put new observation in — or lower λ, that is, read their own field less. Halve permeability and watch where the dashed line goes.</p>
     </div>
     <div>
-      <p class="legend-h">Var[𝒫] nel tempo</p>
-      <canvas id="cv" height="290" aria-label="Varianza fra i prior nel tempo"></canvas>
+      <p class="legend-h">Var[𝒫] over time</p>
+      <canvas id="cv" height="290" aria-label="Variance across priors over time"></canvas>
       <div class="axcap"><span>t = 0</span><span id="tNow">t = 0</span><span>t = 320</span></div>
-      <p class="legend-h" style="margin-top:22px">Posizione degli ottanta autori</p>
-      <canvas id="cvs" height="86" aria-label="Dispersione dei prior degli autori"></canvas>
+      <p class="legend-h" style="margin-top:22px">Where the eighty authors sit</p>
+      <canvas id="cvs" height="86" aria-label="Dispersion of the authors' priors"></canvas>
     </div>
   </div>
 </section>
 
 <footer>
-  <span>Banco di misura · <a href="/writings/2026-08-26-la-forza-della-scrittura/" target="_top">La forza della scrittura</a></span>
-  <span><a href="/" target="_top">Home</a> · <a href="/projects/" target="_top">Projects</a> · Nessun dato esce da questa pagina</span>
+  <span>The measuring bench · <a href="/writings/2026-08-26-la-forza-della-scrittura/" target="_top" lang="it" hreflang="it">The essay it comes from (in Italian)</a></span>
+  <span><a href="/en/" target="_top">Home</a> · <a href="/en/start-here/" target="_top">Start here</a> · No data leaves this page</span>
 </footer>
 </div>
 
@@ -412,52 +416,52 @@ function norm(a){var s=0,i;for(i=0;i<a.length;i++)s+=a[i];return s>0?a.map(funct
 function H(p){var s=0;p.forEach(function(x){if(x>EPS)s-=x*log2(x)});return s}
 function KL(a,b){var s=0;a.forEach(function(x,i){if(x>EPS)s+=x*log2(x/Math.max(b[i],EPS))});return s}
 function CE(a,b){var s=0;a.forEach(function(x,i){if(x>EPS)s-=x*log2(Math.max(b[i],EPS))});return s}
-function f2(x){return(Math.abs(x)<0.005?"0,00":x.toFixed(2)).replace(".",",")}
+function f2(x){return(Math.abs(x)<0.005?"0.00":x.toFixed(2))}
 function sg(x){return x>0.02?"pos":(x<-0.02?"neg":"nul")}
 function css(n){return getComputedStyle(document.documentElement).getPropertyValue(n).trim()}
 
 /* ===================== PANNELLO A ===================== */
 var CASI={
- operatore:{lab:"L'operatore del settore",q:"Che cosa sta succedendo al mercato del libro?",
-   s:["il mercato cresce","il mercato resta stabile","il mercato cala","il mercato si riassetta: cala il trade, cresce l'ascolto"],
+ operatore:{lab:"The industry analyst",q:"What is happening to the book market?",
+   s:["the market is growing","the market is flat","the market is shrinking","the market is reshaping: trade down, listening up"],
    p:[5,85,5,5],d:[10,10,10,70],w:[10,15,10,65]},
- piatto:{lab:"Il lettore piatto",q:"Che cosa sta succedendo al mercato del libro?",
-   s:["il mercato cresce","il mercato resta stabile","il mercato cala","il mercato si riassetta: cala il trade, cresce l'ascolto"],
+ piatto:{lab:"The flat reader",q:"What is happening to the book market?",
+   s:["the market is growing","the market is flat","the market is shrinking","the market is reshaping: trade down, listening up"],
    p:[25,25,25,25],d:[10,10,10,70],w:[10,15,10,65]},
- siddharta:{lab:"Siddharta — costruito sulla separatrice",q:"Che cosa sta succedendo al mercato del libro?",
-   s:["il mercato cresce","il mercato resta stabile","il mercato cala","il mercato si riassetta: cala il trade, cresce l'ascolto"],
+ siddharta:{lab:"Siddhartha — built on the separatrix",q:"What is happening to the book market?",
+   s:["the market is growing","the market is flat","the market is shrinking","the market is reshaping: trade down, listening up"],
    p:[5,85,5,5],d:[5,19,71,5],w:[10,15,10,65]},
- guerraepace:{lab:"Guerra e pace, contro un lettore del 1869",q:"Che cosa decide l'esito di una guerra?",
-   s:["il genio del comandante","il caso e la contingenza","la logistica e i numeri","la somma delle volontà individuali"],
+ guerraepace:{lab:"War and Peace, against a reader of 1869",q:"What decides the outcome of a war?",
+   s:["the genius of the commander","chance and contingency","logistics and numbers","the sum of individual wills"],
    p:[60,10,20,10],d:[5,17,10,68],w:[8,25,17,50]},
- karamazov:{lab:"I fratelli Karamazov",q:"Da dove viene il male?",
-   s:["dalla colpa individuale","dall'assenza di Dio","dalla struttura sociale","è irriducibile: tutte e tre insieme"],
+ karamazov:{lab:"The Brothers Karamazov",q:"Where does evil come from?",
+   s:["from individual guilt","from the absence of God","from social structure","it is irreducible: all three at once"],
    p:[70,10,10,10],d:[22,22,18,38],w:[20,20,20,40]},
- fourthwing:{lab:"Fourth Wing",q:"Come andrà a finire questa storia?",
-   s:["i due protagonisti finiscono insieme","uno dei due muore","la ribellione fallisce","finale aperto, nessuna delle tre"],
+ fourthwing:{lab:"Fourth Wing",q:"How will this story end?",
+   s:["the two leads end up together","one of them dies","the rebellion fails","open ending, none of the three"],
    p:[55,15,15,15],d:[85,5,5,5],w:[45,15,20,20]}
 };
 var VAR={
  rosa:[
-  {lab:"Il nome della rosa — <b>lettore comune</b>",q:"Com'era il Medioevo?",
-   s:["età buia e ignorante","età di fede compatta","età di conflitto intellettuale e di ragione","età di innovazione tecnica ed economica"],
+  {lab:"The Name of the Rose — <b>general reader</b>",q:"What were the Middle Ages like?",
+   s:["a dark and ignorant age","an age of settled faith","an age of intellectual conflict and reason","an age of technical and economic innovation"],
    p:[55,25,10,10],d:[6,12,62,20],w:[8,17,55,20]},
-  {lab:"Il nome della rosa — <b>medievista</b>",q:"Com'era il Medioevo?",
-   s:["età buia e ignorante","età di fede compatta","età di conflitto intellettuale e di ragione","età di innovazione tecnica ed economica"],
+  {lab:"The Name of the Rose — <b>medievalist</b>",q:"What were the Middle Ages like?",
+   s:["a dark and ignorant age","an age of settled faith","an age of intellectual conflict and reason","an age of technical and economic innovation"],
    p:[10,20,40,30],d:[10,21,40,29],w:[10,20,40,30]}],
  resurrezione:[
-  {lab:"Resurrezione — <b>arbitro Tolstoj</b>",q:"Le istituzioni russe rendono giustizia?",
-   s:["sì, nel complesso","sbagliano per incompetenza","sono strutturalmente ingiuste","sono strumenti di classe"],
+  {lab:"Resurrection — <b>Tolstoy as arbiter</b>",q:"Do Russian institutions deliver justice?",
+   s:["yes, on the whole","they err out of incompetence","they are structurally unjust","they are instruments of class"],
    p:[45,35,15,5],d:[5,10,30,55],w:[5,15,42,38]},
-  {lab:"Resurrezione — <b>arbitro il Sinodo</b>",q:"Le istituzioni russe rendono giustizia?",
-   s:["sì, nel complesso","sbagliano per incompetenza","sono strutturalmente ingiuste","sono strumenti di classe"],
+  {lab:"Resurrection — <b>the Synod as arbiter</b>",q:"Do Russian institutions deliver justice?",
+   s:["yes, on the whole","they err out of incompetence","they are structurally unjust","they are instruments of class"],
    p:[45,35,15,5],d:[5,10,30,55],w:[60,30,7,3]}],
  finnegans:[
-  {lab:"Finnegans Wake — <b>lettore ordinario</b>",q:"Che cosa può fare la lingua di un romanzo?",
-   s:["raccontare una storia","rappresentare una coscienza","farsi materia sonora e opaca","tutte e tre insieme, senza gerarchia"],
+  {lab:"Finnegans Wake — <b>ordinary reader</b>",q:"What can the language of a novel do?",
+   s:["tell a story","render a consciousness","become opaque sonic matter","all three at once, with no hierarchy"],
    p:[40,30,20,10],d:[40,30,20,10],w:[12,20,30,38]},
-  {lab:"Finnegans Wake — <b>lettore specialista</b>",q:"Che cosa può fare la lingua di un romanzo?",
-   s:["raccontare una storia","rappresentare una coscienza","farsi materia sonora e opaca","tutte e tre insieme, senza gerarchia"],
+  {lab:"Finnegans Wake — <b>specialist reader</b>",q:"What can the language of a novel do?",
+   s:["tell a story","render a consciousness","become opaque sonic matter","all three at once, with no hierarchy"],
    p:[40,30,20,10],d:[15,20,30,35],w:[12,20,30,38]}]
 };
 var vIdx={rosa:0,resurrezione:0,finnegans:0};
@@ -471,20 +475,20 @@ function loadCase(key){
   document.querySelectorAll("[data-c]").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.c===key)});
 }
 function buildScen(){
-  document.getElementById("qtitle").textContent="«"+A.q+"»";
+  document.getElementById("qtitle").textContent="“"+A.q+"”";
   document.getElementById("scen").innerHTML=A.s.map(function(t,i){
     return '<div class="scen"><div class="scen-head"><span class="scen-name">'+t+'</span><span class="scen-num" id="n'+i+'"></span></div>'+
       '<div class="bars"><div class="bar b1"><i id="f1'+i+'"></i></div><div class="bar b2"><i id="f2'+i+'"></i></div><div class="bar b3"><i id="f3'+i+'"></i></div></div>'+
-      '<div class="srow"><span>prima</span><input type="range" class="k1" min="0" max="100" data-k="p" data-i="'+i+'" aria-label="attese prima, scenario '+(i+1)+'"></div>'+
-      '<div class="srow"><span>dopo</span><input type="range" min="0" max="100" data-k="d" data-i="'+i+'" aria-label="attese dopo, scenario '+(i+1)+'"></div>'+
-      '<div class="srow"><span>mondo</span><input type="range" class="k3" min="0" max="100" data-k="w" data-i="'+i+'" aria-label="mondo, scenario '+(i+1)+'"></div></div>';
+      '<div class="srow"><span>before</span><input type="range" class="k1" min="0" max="100" data-k="p" data-i="'+i+'" aria-label="expectations before, option '+(i+1)+'"></div>'+
+      '<div class="srow"><span>after</span><input type="range" min="0" max="100" data-k="d" data-i="'+i+'" aria-label="expectations after, option '+(i+1)+'"></div>'+
+      '<div class="srow"><span>world</span><input type="range" class="k3" min="0" max="100" data-k="w" data-i="'+i+'" aria-label="world, option '+(i+1)+'"></div></div>';
   }).join("");
 }
 document.getElementById("scen").addEventListener("input",function(e){
   var t=e.target; if(t.type!=="range")return;
   A[t.dataset.k][+t.dataset.i]=+t.value;
   document.querySelectorAll("[data-c]").forEach(function(b){b.setAttribute("aria-pressed",false)});
-  document.getElementById("vnote").innerHTML="<b>configurazione manuale</b>";
+  document.getElementById("vnote").innerHTML="<b>manual configuration</b>";
   renderA();
 });
 document.querySelectorAll("[data-c]").forEach(function(b){
@@ -507,14 +511,14 @@ function measure(P,D,W){
           Hp:H(p),Hd:H(d),Hw:H(w)};
 }
 function verdict(m){
-  if(!(m.D>0.02)) return {t:"Regime non definito",s:"Lo spostamento è nullo: il testo è l'operatore identità e i due rapporti non esistono. È il buco nell'origine del piano — abitato, e non riparato.",c:"nul"};
+  if(!(m.D>0.02)) return {t:"Regime undefined",s:"The displacement is zero: the text is the identity operator and the two ratios do not exist. It is the hole at the origin of the plane — inhabited, and not patched.",c:"nul"};
   var a=m.a,r=m.r;
-  if(Math.abs(a-1)<0.02) return {t:"Sulla separatrice — α = 1",s:"Il guadagno è nullo: un errore sostituito con un altro errore ugualmente distante. Non è una zona, è una retta di misura nulla: si trova solo costruendola.",c:"nul"};
-  if(r<0) return {t:"Conferma",s:a>1?"Concentra il lettore su ciò che già riteneva probabile, e nella direzione giusta: il manuale ben fatto. La banda quasi vuota per la narrativa.":"Concentra il lettore su ciò che già credeva, e nella direzione sbagliata. Consola.",c:a>1?"pos":"neg"};
-  if(a>1&&r<1) return {t:"Valore",s:"Organizza il lettore e lo avvicina al mondo. È il caso che il dibattito sull'autenticità non discute mai.",c:"pos"};
-  if(a<1&&r<1) return {t:"Struttura falsa",s:"Organizza il lettore, e lo organizza lontano dal mondo. Tanto più efficace quanto migliore è la prosa: è la regione che conta di più nel dibattito da cui tutto è partito.",c:"neg"};
-  if(a<1&&r>1) return {t:"Provocazione",s:"Disorienta e allontana. Il modello prevede che sia la regione più popolata della produzione complessiva, e nessuno dei sei romanzi ci cade.",c:"neg"};
-  return {t:"Apertura",s:"Disorienta e avvicina: lascia il lettore con più alternative aperte di prima, perché il mondo ne ha più di quante lui ne credesse. Il quadrante che il saggio precedente classificava come fallimento.",c:"pos"};
+  if(Math.abs(a-1)<0.02) return {t:"On the separatrix — α = 1",s:"The gain is zero: one error swapped for another error equally far from the world. Not a region but a line of measure zero: you only land on it by building it.",c:"nul"};
+  if(r<0) return {t:"Confirmation",s:a>1?"Concentrates the reader on what they already thought likely, and in the right direction: the well-made manual. The band that is nearly empty for fiction.":"Concentrates the reader on what they already believed, and in the wrong direction. It consoles.",c:a>1?"pos":"neg"};
+  if(a>1&&r<1) return {t:"Value",s:"Organises the reader and moves them closer to the world. The case the authenticity debate never discusses.",c:"pos"};
+  if(a<1&&r<1) return {t:"False structure",s:"Organises the reader, and organises them away from the world. The better the prose, the more effective it is: the region that matters most in the debate this started from.",c:"neg"};
+  if(a<1&&r>1) return {t:"Provocation",s:"Disorients and moves away. The model predicts this is the most populated region of total output, and none of the six novels falls in it.",c:"neg"};
+  return {t:"Opening",s:"Disorients and moves closer: it leaves the reader with more open alternatives than before, because the world has more of them than they believed. The quadrant the earlier argument classified as failure.",c:"pos"};
 }
 function renderA(){
   var m=measure(A.p,A.d,A.w);
@@ -586,16 +590,16 @@ function drawPlane(m){
   x.fillStyle=css("--ochre"); x.fillText("r = 0",L-6,y0+3);
   // nomi quadranti
   x.font="600 11px "+sans; x.textAlign="center";
-  x.fillStyle=css("--blue"); x.fillText("APERTURA",(x1+L+pw)/2,T+22);
-  x.fillText("VALORE",(x1+L+pw)/2,(y1+y0)/2-4);
-  x.fillStyle=css("--red"); x.fillText("PROVOCAZIONE",(L+x1)/2,T+22);
-  x.fillText("STRUTTURA FALSA",(L+x1)/2,(y1+y0)/2-4);
-  x.fillStyle=css("--ochre"); x.fillText("CONFERMA",L+pw/2,(y0+T+ph)/2+4);
+  x.fillStyle=css("--blue"); x.fillText("OPENING",(x1+L+pw)/2,T+22);
+  x.fillText("VALUE",(x1+L+pw)/2,(y1+y0)/2-4);
+  x.fillStyle=css("--red"); x.fillText("PROVOCATION",(L+x1)/2,T+22);
+  x.fillText("FALSE STRUCTURE",(L+x1)/2,(y1+y0)/2-4);
+  x.fillStyle=css("--ochre"); x.fillText("CONFIRMATION",L+pw/2,(y0+T+ph)/2+4);
   x.font="italic 9.5px "+sans; x.fillStyle=css("--text-hint");
-  x.fillText("disorienta e avvicina",(x1+L+pw)/2,T+35);
-  x.fillText("organizza e avvicina",(x1+L+pw)/2,(y1+y0)/2+9);
-  x.fillText("disorienta e allontana",(L+x1)/2,T+35);
-  x.fillText("organizza e allontana",(L+x1)/2,(y1+y0)/2+9);
+  x.fillText("disorients and moves closer",(x1+L+pw)/2,T+35);
+  x.fillText("organises and moves closer",(x1+L+pw)/2,(y1+y0)/2+9);
+  x.fillText("disorients and moves away",(L+x1)/2,T+35);
+  x.fillText("organises and moves away",(L+x1)/2,(y1+y0)/2+9);
   // fantasmi
   GHOST.forEach(function(g){
     if(!(g.m.D>0.02))return;
@@ -615,7 +619,7 @@ function drawPlane(m){
     x.fillText("α "+f2(m.a)+" · r "+f2(m.r), cx+(cx>L+pw*0.7?-13:13), cy+4);
   }else{
     x.font="600 12px "+sans; x.fillStyle=css("--text-hint"); x.textAlign="center";
-    x.fillText("D ≈ 0 — il punto non esiste sul piano", L+pw/2, T+ph/2+40);
+    x.fillText("D ≈ 0 — the point does not exist on the plane", L+pw/2, T+ph/2+40);
   }
   // assi
   x.font="10px "+sans; x.fillStyle=css("--text-hint"); x.textAlign="center";
@@ -627,17 +631,17 @@ function drawPlane(m){
 /* ===================== PANNELLO B ===================== */
 var B={oss:.45,sel:.70,ric:.35,F:.60,S:.30,R:.60,nu:.55,e0:.30,Lam:2.2,kap:.60,dVar:.35};
 var SETS=[
- ["cA",[["oss","Osservazione","G_oss · varietà dall'esterno",0,1,.01],
-        ["sel","Selezione","G_sel · domanda, taglio, scarto",0,1,.01],
-        ["ric","Ricombinazione","G_ric · trasporto fra domini",0,1,.01]]],
- ["cB",[["F","Competenza formale","F · qualità della forma",0,1,.01],
-        ["S","Stack strumenti","Σ · superficie passata dal modello",0,1,.01],
-        ["R","Ricevente","R · attrezzatura di chi legge",0,1,.01],
-        ["nu","Verifica","ν · intensità del fact-checking",0,1,.01],
-        ["e0","Errore di base","ε₀ · tasso senza verifica",0,1,.01]]],
- ["cC",[["Lam","Propagazione","Λ · costo di ripulire il campo",1,4,.1],
-        ["kap","Peso ecologico","κ · prezzo dell'appiattimento",0,2,.05],
-        ["dVar","Contrazione","ΔVar · quota di varianza sottratta",0,1,.01]]]
+ ["cA",[["oss","Observation","G_obs · variety from outside",0,1,.01],
+        ["sel","Selection","G_sel · question, cut, discard",0,1,.01],
+        ["ric","Recombination","G_rec · transport across domains",0,1,.01]]],
+ ["cB",[["F","Formal skill","F · quality of the form",0,1,.01],
+        ["S","Tool stack","Σ · surface passed through the model",0,1,.01],
+        ["R","Receiver","R · what the reader brings",0,1,.01],
+        ["nu","Verification","ν · intensity of fact-checking",0,1,.01],
+        ["e0","Base error","ε₀ · rate with no verification",0,1,.01]]],
+ ["cC",[["Lam","Propagation","Λ · cost of cleaning the field",1,4,.1],
+        ["kap","Ecological weight","κ · price of flattening",0,2,.05],
+        ["dVar","Contraction","ΔVar · share of variance removed",0,1,.01]]]
 ];
 SETS.forEach(function(pair){
   document.getElementById(pair[0]).innerHTML=pair[1].map(function(r){
@@ -651,8 +655,8 @@ document.querySelectorAll("[data-b]").forEach(function(i){
 });
 var PROSA=[["00",0],["DL",.10],["ED",.45],["WR",.80]], APP=[["—",0],["FM",.15],["TR",.30],["FM·TR",.45]];
 var cP=1,cAp=1;
-document.getElementById("codP").innerHTML='<span class="preset-cap">Prosa</span>'+PROSA.map(function(c,i){return '<button class="p" data-p="'+i+'">'+c[0]+'</button>'}).join("");
-document.getElementById("codA").innerHTML='<span class="preset-cap">Apparati</span>'+APP.map(function(c,i){return '<button class="p" data-a="'+i+'">'+c[0]+'</button>'}).join("");
+document.getElementById("codP").innerHTML='<span class="preset-cap">Prose</span>'+PROSA.map(function(c,i){return '<button class="p" data-p="'+i+'">'+c[0]+'</button>'}).join("");
+document.getElementById("codA").innerHTML='<span class="preset-cap">Apparatus</span>'+APP.map(function(c,i){return '<button class="p" data-a="'+i+'">'+c[0]+'</button>'}).join("");
 function syncS(){B.S=Math.min(1,PROSA[cP][1]+APP[cAp][1]);document.querySelector('[data-b="S"]').value=B.S;renderB()}
 document.querySelectorAll("[data-p]").forEach(function(b){b.addEventListener("click",function(){cP=+b.dataset.p;syncS()})});
 document.querySelectorAll("[data-a]").forEach(function(b){b.addEventListener("click",function(){cAp=+b.dataset.a;syncS()})});
@@ -661,7 +665,7 @@ document.getElementById("deleg").addEventListener("click",function(e){
   deleg=!deleg; e.currentTarget.setAttribute("aria-pressed",deleg); renderB();
 });
 function renderB(){
-  Object.keys(B).forEach(function(k){var o=document.getElementById("o-"+k);if(o)o.textContent=B[k].toFixed(2).replace(".",",")});
+  Object.keys(B).forEach(function(k){var o=document.getElementById("o-"+k);if(o)o.textContent=B[k].toFixed(2)});
   document.querySelectorAll("[data-p]").forEach(function(b,i){b.setAttribute("aria-pressed",i===cP)});
   document.querySelectorAll("[data-a]").forEach(function(b,i){b.setAttribute("aria-pressed",i===cAp)});
   var a=2.4,beta=1.1,gamma=3.0;
@@ -673,27 +677,27 @@ function renderB(){
   document.getElementById("eqn").innerHTML=
     'V = <span style="color:var(--blue)">'+eta.toFixed(2)+'</span>·('+B.oss.toFixed(2)+' + <span style="color:'+(deleg?"var(--red)":"inherit")+'">'+sel.toFixed(2)+'</span> + '+B.ric.toFixed(2)+
     ') − '+B.Lam.toFixed(1)+'·<span style="color:var(--red)">'+eps.toFixed(3)+'</span> − '+B.kap.toFixed(2)+'·'+B.dVar.toFixed(2);
-  var voci=[["Contenuto consegnato","η · ΣG",deliv,"var(--blue)"],
-            ["Errore non corretto","− Λε",-dan,"var(--red)"],
-            ["Appiattimento del campo","− κΔVar",-eco,"var(--ochre)"]];
+  var voci=[["Content delivered","η · ΣG",deliv,"var(--blue)"],
+            ["Error left uncorrected","− Λε",-dan,"var(--red)"],
+            ["Flattening of the field","− κΔVar",-eco,"var(--ochre)"]];
   var sc=Math.max(1.2,Math.max.apply(null,voci.map(function(v){return Math.abs(v[2])*1.25})));
   document.getElementById("wfall").innerHTML=voci.map(function(v){
     var w=Math.abs(v[2])/sc*50, l=v[2]>=0?50:50-w;
     return '<div class="wf"><span class="t">'+v[0]+'<small>'+v[1]+'</small></span>'+
       '<span class="trk"><span class="zero" style="left:50%"></span><i style="left:'+l+'%;width:'+w+'%;background:'+v[3]+'"></i></span>'+
-      '<span class="n" style="color:'+(v[2]<0?"var(--red)":"var(--blue)")+'">'+(v[2]>=0?"+":"")+v[2].toFixed(2).replace(".",",")+'</span></div>';
+      '<span class="n" style="color:'+(v[2]<0?"var(--red)":"var(--blue)")+'">'+(v[2]>=0?"+":"")+v[2].toFixed(2)+'</span></div>';
   }).join("");
   var e=document.getElementById("vV");
-  e.textContent=(V>=0?"+":"")+V.toFixed(2).replace(".",",");
+  e.textContent=(V>=0?"+":"")+V.toFixed(2);
   e.style.color=V>=0?"var(--blue)":"var(--red)";
 }
 
 /* ===================== PANNELLO C ===================== */
 var C={S:.35,om:.11,lam:.09};
 document.getElementById("cE").innerHTML=[
- ["S","Campionamento modale","Σ · quota presa dalla media del corpus",0,1,.01],
- ["om","Osservazione nuova","ω · varietà immessa dall'esterno",0,.3,.005],
- ["lam","Permeabilità","λ · quanto gli autori si aggiornano leggendosi",.005,.4,.005]
+ ["S","Modal sampling","Σ · share taken from the corpus mean",0,1,.01],
+ ["om","New observation","ω · variety put in from outside",0,.3,.005],
+ ["lam","Permeability","λ · how much authors update by reading each other",.005,.4,.005]
 ].map(function(r){
   return '<div class="ctrl"><span class="nm">'+r[1]+'<small>'+r[2]+'</small></span>'+
     '<input type="range" min="'+r[3]+'" max="'+r[4]+'" step="'+r[5]+'" value="'+C[r[0]]+'" data-e="'+r[0]+'" aria-label="'+r[1]+'">'+
@@ -704,8 +708,8 @@ document.querySelectorAll("[data-e]").forEach(function(i){
 });
 function fixp(){return (1-C.S)*C.om*C.om/C.lam}
 function outC(){
-  Object.keys(C).forEach(function(k){document.getElementById("oe-"+k).textContent=C[k].toFixed(3).replace(".",",")});
-  var f=document.getElementById("vFix"); f.className="v pos"; f.textContent=fixp().toFixed(3).replace(".",",");
+  Object.keys(C).forEach(function(k){document.getElementById("oe-"+k).textContent=C[k].toFixed(3)});
+  var f=document.getElementById("vFix"); f.className="v pos"; f.textContent=fixp().toFixed(3);
 }
 var N=80,TMAX=320,xs=[],mm=0,ser=[],tt=0,timer=null,var0=1;
 var cv=document.getElementById("cv"),cx=cv.getContext("2d");
@@ -714,10 +718,10 @@ function gauss(){var u=0,v=0;while(!u)u=Math.random();while(!v)v=Math.random();r
 function vari(a){var m=a.reduce(function(s,y){return s+y},0)/a.length;return a.reduce(function(s,y){return s+(y-m)*(y-m)},0)/a.length}
 function reset(){
   if(timer){cancelAnimationFrame(timer);timer=null}
-  document.getElementById("run").textContent="Avvia";
+  document.getElementById("run").textContent="Run";
   xs=[];for(var i=0;i<N;i++)xs.push(gauss());
   mm=0;tt=0;var0=vari(xs);ser=[var0];
-  document.getElementById("v0").textContent=var0.toFixed(2).replace(".",",");
+  document.getElementById("v0").textContent=var0.toFixed(2);
   drawC();
 }
 function step(){
@@ -736,13 +740,13 @@ function drawC(){
     var y=pad+(Hh-2*pad)*i/4;
     cx.beginPath();cx.moveTo(L,y);cx.lineTo(W,y);cx.stroke();
     cx.fillStyle=css("--text-hint");cx.textAlign="right";
-    cx.fillText((top*(1-i/4)).toFixed(2).replace(".",","),L-5,y+3);
+    cx.fillText((top*(1-i/4)).toFixed(2),L-5,y+3);
   }
   var yf=pad+(Hh-2*pad)*(1-Math.min(fixp(),top)/top);
   cx.setLineDash([5,4]);cx.strokeStyle=css("--ochre");cx.lineWidth=1.4;
   cx.beginPath();cx.moveTo(L,yf);cx.lineTo(W,yf);cx.stroke();cx.setLineDash([]);
   cx.fillStyle=css("--ochre");cx.textAlign="left";cx.font="600 10px "+sans;
-  cx.fillText("Var* = "+fixp().toFixed(3).replace(".",","),L+6,yf-5);
+  cx.fillText("Var* = "+fixp().toFixed(3),L+6,yf-5);
   cx.beginPath();cx.lineWidth=2;cx.strokeStyle=css("--green");
   ser.forEach(function(v,i){
     var X=L+i/TMAX*(W-L),Y=pad+(Hh-2*pad)*(1-Math.min(v,top)/top);
@@ -751,7 +755,7 @@ function drawC(){
   cx.stroke();
   var last=ser[ser.length-1];
   var e=document.getElementById("vNow");e.className="v "+(last<var0*.6?"neg":"pos");
-  e.textContent=last.toFixed(2).replace(".",",");
+  e.textContent=last.toFixed(2);
   document.getElementById("tNow").textContent="t = "+tt;
   var Ws=cs.clientWidth||480,Hs=86;
   cs.width=Ws*dpr;cs.height=Hs*dpr;sx.setTransform(dpr,0,0,dpr,0,0);sx.clearRect(0,0,Ws,Hs);

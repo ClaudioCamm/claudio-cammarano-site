@@ -174,6 +174,37 @@ main {
   letter-spacing: 0.3px;
 }
 
+/* === SWITCH DI LINGUA IN TESTATA ===
+   Un solo sito in due lingue: il blu della testata non cambia, lo
+   switch e' un elemento di servizio, non un secondo marchio. Sta a
+   destra, prima della lente, e punta alla pagina equivalente quando
+   esiste. Nessun redirect automatico: e' l'unico modo di cambiare
+   lingua. */
+.header-lang {
+  margin-left: auto;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  line-height: 1;
+  color: rgba(255,255,255,0.72);
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.28);
+  border-radius: 3px;
+  padding: 4px 7px;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.header-lang:hover,
+.header-lang:focus-visible {
+  color: #fff;
+  border-color: rgba(255,255,255,0.7);
+}
+
+.header-lang + .header-search {
+  margin-left: var(--spacing-sm);
+}
+
 /* === SEARCH ICON IN HEADER === */
 .header-search {
   display: flex;
@@ -3279,10 +3310,21 @@ body.irene-page .site-nav a.active {
 
   .header-top-inner {
     display: grid;
-    grid-template-areas: "name toggle" "tagline tagline";
+    grid-template-areas: "name toggle" "tagline lang";
     grid-template-columns: 1fr auto;
     align-items: center;
     gap: 0;
+  }
+
+  /* Lo switch sta nella riga della tagline, allineato a destra sotto
+     l'hamburger: la fascia blu resta alta due righe, come prima. */
+  .header-lang {
+    grid-area: lang;
+    justify-self: end;
+    margin-left: 0;
+    font-size: 10px;
+    padding: 3px 6px;
+    margin-bottom: 6px;
   }
 
   .header-name {
@@ -6956,4 +6998,277 @@ a.home-path:hover {
   line-height: 1.6;
   color: var(--color-text-light);
   max-width: 66ch;
+}
+
+/* ==================================================================
+   SUPERFICIE INGLESE — /en/
+   Riusa i token e le fasce della home italiana. Nessun colore nuovo:
+   il verde compare perche' la fascia Lab qui pesa di piu', non perche'
+   sia stato dichiarato un secondo marchio.
+   ================================================================== */
+
+.en-paper-status {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+.en-paper-stage {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--color-lab-chip);
+  color: var(--color-lab-text);
+  padding: 3px 8px;
+  border-radius: 3px;
+}
+
+.en-paper-updated {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  color: var(--color-text-light);
+}
+
+.en-paper-title {
+  font-family: var(--font-serif);
+  font-size: 26px;
+  line-height: 1.25;
+  font-weight: 600;
+  margin: 0 0 var(--spacing-sm);
+}
+
+.en-paper-abstract {
+  max-width: 68ch;
+  font-size: 17px;
+  line-height: 1.62;
+  margin-bottom: var(--spacing-md);
+}
+
+.en-paper-claims-head {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-sm);
+}
+
+.en-paper-claims {
+  list-style: none;
+  counter-reset: enclaim;
+  margin: 0 0 var(--spacing-md);
+  padding: 0;
+  display: grid;
+  gap: var(--spacing-sm);
+}
+
+.en-paper-claims > li {
+  counter-increment: enclaim;
+  position: relative;
+  padding-left: 34px;
+  max-width: 68ch;
+}
+
+.en-paper-claims > li::before {
+  content: counter(enclaim);
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-lab-text);
+  border: 1px solid var(--color-lab-chip);
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.en-claim {
+  font-size: 16.5px;
+  line-height: 1.55;
+  margin: 0 0 4px;
+}
+
+.en-claim-falsifier {
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: var(--color-text-light);
+  margin: 0;
+  padding-left: 12px;
+  border-left: 2px solid var(--color-border);
+}
+
+.en-paper-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  font-family: var(--font-sans);
+  font-size: 14px;
+}
+
+.home-lab-item-abstract {
+  display: block;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-text-light);
+  margin-top: 4px;
+}
+
+.en-author-bio,
+.en-author-note {
+  max-width: 68ch;
+  font-size: 17px;
+  line-height: 1.62;
+  margin-bottom: var(--spacing-sm);
+}
+
+.en-author-note {
+  color: var(--color-text-light);
+}
+
+.en-author-episteme {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--color-text-light);
+  margin-top: var(--spacing-sm);
+}
+
+.en-lang-flag {
+  font-size: 12px;
+  color: var(--color-text-hint, var(--color-text-light));
+}
+
+/* --- /en/start-here/ : quattro percorsi, due o tre link ciascuno --- */
+.en-start-intro {
+  max-width: 62ch;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: var(--spacing-lg);
+}
+
+.en-paths {
+  display: grid;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.en-path {
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--spacing-sm);
+}
+
+.en-path-num {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-light);
+}
+
+.en-path-title {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 600;
+  margin: 6px 0 6px;
+}
+
+.en-path-why {
+  max-width: 62ch;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-sm);
+}
+
+.en-path-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.en-path-links a {
+  font-family: var(--font-sans);
+  font-size: 15px;
+}
+
+.en-path-links .en-path-gloss {
+  color: var(--color-text-light);
+  font-size: 13.5px;
+}
+
+.en-language-note {
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--spacing-sm);
+  max-width: 62ch;
+  font-size: 15.5px;
+  line-height: 1.55;
+  color: var(--color-text-light);
+}
+
+@media (min-width: 720px) {
+  .en-paths { grid-template-columns: 1fr 1fr; }
+}
+
+/* Ancore delle fasce inglesi: un po' d'aria sopra il target. */
+#the-paper,
+#the-abstract {
+  scroll-margin-top: 24px;
+}
+
+/* Percorso del programma di ricerca su /en/start-here/: verde Lab,
+   cosi' i due progetti non si leggono come uno solo. */
+.en-path--lab {
+  border-top-color: var(--color-lab);
+}
+
+.en-path--lab .en-path-num {
+  color: var(--color-lab-text);
+}
+
+.en-path-project {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--color-lab-chip);
+  color: var(--color-lab-text);
+  padding: 3px 8px;
+  border-radius: 3px;
+  margin-bottom: 8px;
+}
+
+.en-start-idea {
+  max-width: 62ch;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: var(--spacing-sm);
+}
+
+.en-start-idea strong {
+  font-weight: 600;
+}
+
+.en-path-conclusion {
+  margin-top: var(--spacing-sm);
+  padding-left: 12px;
+  border-left: 2px solid var(--color-border);
+  max-width: 62ch;
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: var(--color-text-light);
 }

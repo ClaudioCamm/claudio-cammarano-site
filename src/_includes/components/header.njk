@@ -2,11 +2,20 @@
     <div class="header-top">
         <div class="container header-top-inner">
             <a href="/" class="header-name" rel="home" aria-label="Claudio Cammarano — home"{% if page.url == "/" %} aria-current="page"{% endif %}>Claudio Cammarano</a>
-            <span class="header-tagline">Libri, mercati, idee</span>
-            <a href="/search/" class="header-search" aria-label="Cerca" title="Cerca">
+            <span class="header-tagline">{% if isENSurface %}Books, markets, ideas{% else %}Libri, mercati, idee{% endif %}</span>
+            {# Switch di lingua: sempre in testata. Punta alla pagina
+               equivalente quando esiste (frontmatter `translation`),
+               altrimenti alla home dell'altra lingua. Nessun redirect
+               automatico, nessuna negoziazione lato server. #}
+            <a class="header-lang" href="{% if translation %}{{ translation.url }}{% elif isENSurface %}/{% else %}/en/{% endif %}"
+               hreflang="{% if isENSurface %}it{% else %}en{% endif %}"
+               lang="{% if isENSurface %}it{% else %}en{% endif %}"
+               aria-label="{% if isENSurface %}Leggi in italiano{% else %}Read in English{% endif %}"
+               title="{% if isENSurface %}Leggi in italiano{% else %}Read in English{% endif %}">{% if isENSurface %}IT{% else %}EN{% endif %}</a>
+            <a href="/search/" class="header-search" aria-label="{% if isENSurface %}Search{% else %}Cerca{% endif %}" title="{% if isENSurface %}Search{% else %}Cerca{% endif %}">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
             </a>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Apri menu" aria-expanded="false" aria-controls="site-nav">
+            <button class="nav-toggle" id="nav-toggle" aria-label="{% if isENSurface %}Open menu{% else %}Apri menu{% endif %}" aria-expanded="false" aria-controls="site-nav">
                 <span class="nav-toggle-bar"></span>
                 <span class="nav-toggle-bar"></span>
                 <span class="nav-toggle-bar"></span>
@@ -19,6 +28,29 @@
        l'autorita' sulle tre entita'. Learning log e Colophon stanno nel
        footer. The Abstract e' la CTA discreta a destra, e punta alla pagina
        interna /newsletter/, mai a substack.com. #}
+{% if isENSurface %}
+    {# Superficie inglese: navigazione autonoma. Nessuna voce porta a
+       contenuti in italiano, quindi niente Writings/Curated/Indice/Mappa.
+       Lab e' gia' interamente in inglese. The Abstract resta la CTA a
+       destra e punta alla fascia della home inglese, non alla pagina
+       italiana /newsletter/. #}
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+        <div class="container">
+            <ul>
+                <li><a href="/en/"{% if page.url == "/en/" %} class="active"{% endif %}>The programme</a></li>
+                <li><a href="/en/start-here/"{% if page.url == "/en/start-here/" %} class="active"{% endif %}>Start here</a></li>
+                <li><a href="/lab/"{% if page.url.indexOf('/lab/') == 0 %} class="active"{% endif %}>Lab</a></li>
+                <li><a href="/en/about/"{% if page.url == "/en/about/" %} class="active"{% endif %}>About</a></li>
+                <li class="nav-abstract-item">
+                    <a class="nav-abstract-pill" href="/en/#the-abstract" data-newsletter-cta data-position="nav_en">
+                        <svg class="nav-abstract-glyph" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+                        <span>The Abstract</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+{% else %}
     <nav class="site-nav" id="site-nav">
         <div class="container">
             <ul>
@@ -38,6 +70,7 @@
             </ul>
         </div>
     </nav>
+{% endif %}
 </header>
 
 <script>

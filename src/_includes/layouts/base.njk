@@ -1,3 +1,12 @@
+{# isEN governa tutte le stringhe di interfaccia condivise fra le due
+   lingue: testata, skip link, barra di consenso. Le pagine italiane
+   passano dal ramo `else` e restano invariate. #}
+{%- set isEN = (lang or 'it') == 'en' -%}
+{# isENSurface e' piu' stretto: solo le pagine sotto /en/. La
+   navigazione e il footer inglesi valgono li'. /lab/ ha lang: en ma
+   resta raggiungibile dalla home italiana, quindi tiene la navigazione
+   italiana e non perde il lettore che ci arriva da /. #}
+{%- set isENSurface = page.url.indexOf('/en/') == 0 -%}
 <!DOCTYPE html>
 <html lang="{{ lang or 'it' }}">
 <head>
@@ -23,6 +32,8 @@
     <meta property="og:image" content="https://claudiocammarano.com/images/og-default.png">
     {% endif %}
     <meta property="og:site_name" content="Claudio Cammarano">
+    <meta property="og:locale" content="{% if isEN %}en_GB{% else %}it_IT{% endif %}">
+    {% if translation %}<meta property="og:locale:alternate" content="{% if isEN %}it_IT{% else %}en_GB{% endif %}">{% endif %}
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:creator" content="@claudiocamm">
     <meta name="twitter:site" content="@claudiocamm">
@@ -78,7 +89,7 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body class="{{ bodyClass }}">
-    <a class="skip-link" href="#main-content">Salta al contenuto</a>
+    <a class="skip-link" href="#main-content">{% if isENSurface %}Skip to content{% else %}Salta al contenuto{% endif %}</a>
     {% include "components/header.njk" %}
 
     <div class="container">
@@ -89,12 +100,12 @@
 
     {% include "components/footer.njk" %}
 
-    <div class="consent-bar" id="consent-bar" role="dialog" aria-live="polite" aria-label="Preferenze di misurazione" hidden>
+    <div class="consent-bar" id="consent-bar" role="dialog" aria-live="polite" aria-label="{% if isENSurface %}Measurement preferences{% else %}Preferenze di misurazione{% endif %}" hidden>
       <div class="container consent-bar-inner">
-        <p class="consent-bar-text">Questo sito usa Google Analytics per contare le letture. Senza consenso non viene scritto alcun cookie di misurazione. <a href="/colophon/">Dettagli nel colophon</a>.</p>
+        <p class="consent-bar-text">{% if isENSurface %}This site uses Google Analytics to count reads. Without consent no measurement cookie is written. <a href="/colophon/" lang="it">Details in the colophon (in Italian)</a>.{% else %}Questo sito usa Google Analytics per contare le letture. Senza consenso non viene scritto alcun cookie di misurazione. <a href="/colophon/">Dettagli nel colophon</a>.{% endif %}</p>
         <div class="consent-bar-actions">
-          <button type="button" class="consent-btn consent-btn--ghost" data-consent="denied">Solo essenziali</button>
-          <button type="button" class="consent-btn consent-btn--solid" data-consent="granted">Accetto</button>
+          <button type="button" class="consent-btn consent-btn--ghost" data-consent="denied">{% if isENSurface %}Essential only{% else %}Solo essenziali{% endif %}</button>
+          <button type="button" class="consent-btn consent-btn--solid" data-consent="granted">{% if isENSurface %}Accept{% else %}Accetto{% endif %}</button>
         </div>
       </div>
     </div>
