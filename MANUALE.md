@@ -2,6 +2,8 @@
 
 Sito statico Eleventy (v3). Sorgenti in `src/`, output compilato in `_site/`. Deploy automatico su Netlify a ogni `git push` sul branch `main`.
 
+*Revisione: 28 agosto 2026. Rispetto alla versione di luglio sono cambiati il percorso del Lab, la notazione dell'intervento AI (che blocca il build), la superficie inglese e il modo in cui vivono i due banchi di misura: sezioni 1, 3, 8 e 9.*
+
 ---
 
 ## Stack in due righe
@@ -11,7 +13,8 @@ Sito statico Eleventy (v3). Sorgenti in `src/`, output compilato in `_site/`. De
 | Generatore | Eleventy 3 + Nunjucks |
 | Stile | CSS custom (`src/css/style.css`) |
 | Deploy | Netlify (auto da git push) |
-| Grafo concetti | Layout a forze custom in JS puro (nessuna dipendenza esterna, build-time + client-side vanilla) |
+| Grafo concetti | Coordinate calcolate a build time da `_data/graphLayout.js`, disegno *hierarchical edge bundling* in `src/js/heb.js` (JS puro, nessuna dipendenza esterna) |
+| Lingue | Italiano su `/`, superficie inglese su `/en/` più tutto `/lab/` — vedi sezione 8 |
 | Font | Source Serif 4 (Google Fonts) |
 | Ricerca | Pagefind (`npm run index`) |
 
@@ -24,7 +27,9 @@ src/
   writings/        # Saggi originali (.md)
   curated/         # Link esterni con commento (.md)
   learning/        # Note di apprendimento (.md)
-  lab/             # Note di ricerca in progress, IT/EN (.md) — output su /episteme-advisory/lab/, vedi sezione 3
+  lab/             # Note di ricerca in progress, in inglese (.md) — output su /lab/, vedi sezione 3
+  en/              # Pagine della superficie inglese (.njk) — /en/, /en/start-here/, /en/about/ — vedi sezione 8
+  pages/           # Pagine con permalink esplicito che non stanno nella loro cartella di destinazione: oggi i due banchi di misura — vedi sezione 9
   _data/
     clusters.js          # Temi → Argomenti (tassonomia a 5 cluster)
     conceptsIndex.js      # Tassonomia Concetti (fonte di verità)
@@ -42,6 +47,8 @@ src/
   css/
     style.css      # Unico file CSS
   images/          # Immagini articoli
+    og/            # Card social 1200x630, una per pezzo, fatte a mano — richiamate da `og_card`
+  js/              # JS client-side: heb.js (disegno del grafo)
   downloads/       # File scaricabili del Learning Log (risorse + documenti del Lab, vedi sezione 3)
   graph-data.njk   # Endpoint statico /graph-data.json letto dal grafo (generato)
   mappa.njk        # Pagina /mappa/ — grafo completo concetti
@@ -68,7 +75,12 @@ git push
 # Netlify fa il resto in automatico
 ```
 
-**Importante:** lanciare sempre `npm run build` (o `npm start`) prima di un push importante e leggere l'output in console. Da poco il build segnala in chiaro eventuali concetti citati ma non registrati (vedi sezione 5) — un controllo che prima non esisteva.
+**Importante:** lanciare sempre `npm run build` (o `npm start`) prima di un push importante e leggere l'output in console. Ci sono due controlli automatici, e si comportano in modo diverso:
+
+- **Concetti non registrati** — avviso, non blocca (sezione 5).
+- **Notazione dell'intervento AI** — errore, **blocca il build** e quindi il deploy. Se manca `ai_prose` su un pezzo in `writings/`, `curated/` o `lab/`, o se il codice è fuori enum, Eleventy si ferma e dice quale file (sezione 1).
+
+Una nota sul percorso: `npm start` non esegue il `prebuild`, cioè `sync-concepts.js`. Per il controllo completo prima di un push serve `npm run build`.
 
 ---
 
@@ -89,8 +101,27 @@ description: "1-2 frasi che funzionano da pitch, non da riassunto."
 category: ["AI", "Geopolitica"]
 lang: "🇮🇹 Italiano"
 tags: [writings]
+ai_prose: ED          # obbligatorio, blocca il build se manca — vedi sotto
+ai_scope: [FM]        # facoltativo, lista
 ---
 ```
+
+### La notazione dell'intervento AI — obbligatoria, blocca il build
+
+Dal 23 agosto 2026 ogni pezzo in `writings/`, `curated/` e `lab/` dichiara quanta della superficie pubblicata è passata da un modello. Non è una misura del peso intellettuale del contributo: è una dichiarazione di superficie. L'archivio anteriore è stato certificato retroattivamente, quindi **non ci sono eccezioni di data**: un pezzo senza `ai_prose` fa fallire il build.
+
+`ai_prose` — valore singolo, obbligatorio:
+
+| Codice | Significato |
+|---|---|
+| `"00"` | Nessun uso oltre il correttore ortografico. **Fra virgolette**: senza, YAML lo legge come il numero 0 e il build si ferma |
+| `DL` | Dialogo — discussione, ricerca e verifica in conversazione. Il testo è mio dalla prima riga |
+| `ED` | Editing — testo interamente scritto da me e sottoposto a revisione assistita |
+| `WR` | Scrittura — parte della prosa pubblicata è stata generata |
+
+`ai_scope` — lista, facoltativa: `FM` (formalizzazione: formule, modelli, codice, tabelle che entrano nel testo) e `TR` (traduzione da o verso l'inglese di un testo già mio).
+
+La fonte unica di codici, etichette e descrizioni è `src/_data/aiNotation.js`: legenda del colophon, tooltip in pagina e messaggi di errore del build leggono tutti da lì. **Aggiungere un codice significa modificare quel file e nient'altro.**
 
 ### Campi opzionali
 ```yaml
@@ -98,6 +129,9 @@ og_image: "/images/nome-file.avif"        # immagine Open Graph e hero
 series: "Nome serie, I"                    # formato esatto con virgola + numero romano
 english_version: "https://substack.com/…" # URL versione inglese
 serie_totale_prevista: 3                   # solo se la serie ha lunghezza pianificata
+og_card: "/images/og/og-slug.png"          # card social 1200x630 dedicata, ha la precedenza su og_image
+og_title: "Titolo diverso per la scheda"   # quando la card deve dire più del <title>
+translation: { lang: en, url: /en/... }    # solo per pagine con una gemella inglese — vedi sezione 8
 ```
 
 ### Tag `category` — i valori "storici" dei writings
@@ -273,12 +307,19 @@ Opzionale. Si usa solo per commenti molto estesi. Di solito il frontmatter basta
 ### Solo in inglese, per scelta
 Il pubblico della sezione (revisori, potenziali endorser arXiv, target journal) legge solo in inglese, ed è la lingua in cui si cerca il cluster semantico su cui punta il GEO del progetto (*ontological taxonomy*, *inter-annotator agreement* ecc.). Il layout `lab-note.njk` imposta `lang: en` di default — non va specificato nel frontmatter delle singole note, né serve gestire coppie di file o link incrociati.
 
-### URL — non è `/lab/`
-La sezione vive sotto `/episteme-advisory/lab/`, non come sezione di primo livello (per non affollare la nav principale). L'URL è impostata via `permalink`, non dalla posizione dei file:
-- `src/lab.njk` ha `permalink: "/episteme-advisory/lab/"` in frontmatter
-- `src/lab/lab.11tydata.js` è un directory data file che assegna a ogni nota `permalink: "/episteme-advisory/lab/<nome-file-senza-estensione>/"`, data compresa nello slug (Eleventy la toglierebbe di default da `fileSlug`/`filePathStem` — per questo serve lo script invece di un semplice `.json`)
+### URL — `/lab/`, dall'agosto 2026
+La sezione stava sotto `/episteme-advisory/lab/` ed è stata spostata in root: la ricerca annidata dentro la società for-profit indeboliva la credibilità della ricerca stessa. Episteme Advisory ora linka il Lab come ricerca indipendente, non come propria vetrina. I vecchi URL rispondono con un 301 definito in `netlify.toml` — **non rimuoverlo**, i link alle note sono già circolati.
 
-I file sorgente restano comunque in `src/lab/` — solo l'URL di output cambia. Non serve toccare `src/episteme-advisory.njk` per la struttura; su quella pagina c'è solo un blocco `.episteme-reading` che rimanda al Lab.
+L'URL è impostata via `permalink`, non dalla posizione dei file:
+- `src/lab.njk` ha `permalink: "/lab/"` in frontmatter
+- `src/lab/lab.11tydata.js` è un directory data file che assegna a ogni nota `permalink: "/lab/<nome-file-senza-estensione>/"`, data compresa nello slug (Eleventy la toglierebbe di default da `fileSlug`/`filePathStem` — per questo serve lo script invece di un semplice `.json`)
+
+I file sorgente restano comunque in `src/lab/` — solo l'URL di output cambia.
+
+### La cornice del Lab è inglese
+Il Lab ha `lang: en` e, dall'agosto 2026, anche la **cornice** inglese: navigazione, piede, briciole, skip link, barra di consenso. Lo governa `isENSurface` in `base.njk`, che considera superficie inglese tutto quello che sta sotto `/en/` **oppure** sotto `/lab/` (sezione 8). Lo switch di lingua su queste pagine dice `IT` e porta alla home italiana. Le briciole delle note sono `The programme · Lab`, dove «The programme» è `/en/`.
+
+Conseguenza da tenere presente: la fascia Lab della home italiana continua a linkare `/lab/`, quindi un lettore italiano che clicca «Tutte le note» finisce in una cornice inglese. È voluto — le note sono in inglese comunque — ma se un giorno la cosa desse fastidio, il punto da cambiare è una riga sola in `base.njk`.
 
 **Niente retrodatazioni.** Ogni nota va datata il giorno reale in cui viene pubblicata — non si simula una cronologia pregressa. Se serve raccontare il lavoro già fatto prima di aprire il log, si scrive una nota "stato dell'arte"/"project overview" datata oggi (vedi il primo esempio in `src/lab/`), non una serie di note con date fittizie nel passato.
 
@@ -313,11 +354,11 @@ Il tagging del lab è manuale e selettivo: si aggiunge un articolo a un concetto
 
 **Formato da usare** per un articolo lab in `conceptsIndex.js`:
 ```js
-{ title: "Titolo della nota", url: "/episteme-advisory/lab/slug-nota/", _source: "lab" }
+{ title: "Titolo della nota", url: "/lab/slug-nota/", _source: "lab" }
 ```
 Nell'indice gli articoli con `_source: "lab"` appaiono con il badge `LAB` in verde Episteme (`#0F6E56`).
 
-I concetti fondativi del progetto (post-cognition, epistemia, tassonomia D1–D7, atti illocutori) puntano alla landing `/episteme-advisory/lab/` come punto di accesso generale — non alle singole note.
+I concetti fondativi del progetto (post-cognition, epistemia, tassonomia D1–D7, atti illocutori) puntano alla landing `/lab/` come punto di accesso generale — non alle singole note.
 
 ### Tassonomia del Lab — separata da quella del sito
 Tre assi indipendenti, pensati apposta per non mescolarsi con `clusters.js`/`conceptsIndex.js`/Indice (che si riempirebbero di "Epistemologia" ripetuta su ogni nota). Nessuna registrazione centrale, nessun controllo automatico — sono liste aperte, aggiungi un valore quando serve:
@@ -331,17 +372,23 @@ Solo `stage` è visibile (badge in testata, nella card dell'indice, nella strisc
 ### Cosa NON fa questo layout (di proposito)
 Niente abstract obbligatorio, niente serie, niente immagine hero, niente TOC, niente share bar, niente post correlati, niente tag liberi. `project`/`stage` sono etichette visive che non toccano `clusters.js` né `conceptsIndex.js`. Le date si formattano con il filtro `formatDateEN` (inglese), non `formatDate` (italiano, usato dal resto del sito). Il corpo della nota (`.article-full--lab .article-body`) è a 16px invece dei 18px dei writings — restano note di cantiere, non saggi.
 
-### Visibilità — niente voce in nav
-Il Lab non ha una voce propria nel menu di primo livello (troppo affollato) e non ha nessun'altra presenza fissa in navigazione. È raggiungibile in due punti:
+### Visibilità
+Il Lab è raggiungibile da quattro punti, tutti automatici:
 
-- un riquadro blu cliccabile (`.episteme-lab-cta`) sotto il paragrafo "Il laboratorio" in `src/episteme-advisory.njk`
-- una striscia blu in home (`.lab-banner` in `src/index.njk`), subito sotto il primo saggio in evidenza, che mostra **solo l'ultima nota pubblicata** (`collections.lab[0]`) — si aggiorna da sola, non richiede manutenzione quando esce una nota nuova
+- **voce «Lab» nella navigazione inglese** (non in quella italiana, che resta a sei voci)
+- **fascia Lab nella home italiana** (`.home-band--lab` in `src/index.njk`): ultima nota con anteprima vera, più le successive
+- **fascia Lab nella home inglese** (`src/en/index.njk`), dove pesa di più — è da lì che viene il verde della pagina
+- un rimando da `src/episteme-advisory.njk`, che linka il Lab come ricerca indipendente
+
+Tutte leggono `collections.lab`: si aggiornano da sole quando esce una nota, non richiedono manutenzione.
 
 ### Documenti citati — link automatico e Learning Log
 
 Le note del Lab citano spesso un documento di lavoro (tassonomia, coding manual, corpus, script, bibliografia). Questi documenti sono anche scaricabili dal Learning Log (`/learning/`), in una sezione verde separata "Dal Lab" — colore Episteme Advisory (`#0F6E56`), diverso apposta dal blu delle risorse standard del Learning Log, per segnalare che sono materiali di lavoro grezzi, non risorse finite.
 
 **Il meccanismo è tutto nel frontmatter — non si tocca `learning.njk` né si crea alcun file in `src/learning/`.**
+
+**0. Il nome del file.** I documenti del programma di ricerca usano uno schema leggibile una volta salvati sul desktop di un lettore: `cammarano-<argomento>-<versione>.pdf` (per esempio `cammarano-post-cognitive-validation-v6.pdf`). I nomi vecchi in stile `11_2026_academic_v6.pdf` sono stati rinominati e i vecchi percorsi hanno un 301 in `netlify.toml`. **Se rinomini un documento già pubblicato**: aggiorna il `file:` nel frontmatter e le chiamate `{% labdoc %}` di tutte le note che lo citano, aggiungi il redirect, e ricontrolla `src/en/index.njk`, che linka tre PDF direttamente.
 
 **1. Il file fisico va in `src/downloads/`** (stessa cartella piatta delle risorse esistenti, copiata in automatico da `addPassthroughCopy` in `.eleventy.js`). Formato preferito: **PDF**, anche per documenti nati come testo — evita ambiguità di formato ed è leggibile ovunque senza Word. Script (`.py`) e dati strutturati (`.bib`, `.json`) restano nel loro formato nativo. Se un file contiene path assoluti della propria macchina (es. `/Users/nome/Documents/...`), toglierli prima di caricarlo — sono superflui per chi scarica e rivelano struttura di cartelle privata.
 
@@ -389,6 +436,8 @@ Lo shortcode cerca il filename in tutti i `documents:` dichiarati nel Lab e gene
 ```
 
 3. Nessun altro intervento: le pagine `/serie/` e `/serie/nome-serie/` si generano automaticamente.
+
+**Attenzione al passo 2.** Il Sommario ragionato in home itera `seriesDescriptions.json`: una serie senza descrizione non compare lì. Non è un errore e non lo vedi nel log — è un'omissione silenziosa, l'unica del sistema.
 
 ---
 
@@ -472,7 +521,7 @@ Più l'**indice analitico** (`/indice/`), che mostra tutti e tre i livelli insie
 
 Ogni concetto ha una pagina propria con: i "concetti vicini" (chip cliccabili — concetti che condividono almeno un articolo), la lista degli articoli collegati, e una **finestra sul grafo globale** — una porzione ritagliata del grafo completo, centrata sul concetto, con una minimappa che mostra dove si trova rispetto all'insieme. Link "Vedi mappa completa →" per aprire `/mappa/` centrata sullo stesso nodo.
 
-Il grafo è **uno solo**, calcolato una volta a build time da `graphLayout.js` (layout a forze custom, nessuna libreria esterna) e esposto come JSON statico su `/graph-data.json`. Ogni pagina concetto e la pagina `/mappa/` lo leggono e ne mostrano porzioni diverse — non sono grafi separati.
+Il grafo è **uno solo**: le coordinate dei nodi sono calcolate una volta a build time da `graphLayout.js` (simulazione a forze deterministica, nessuna libreria esterna) ed esposte come JSON statico su `/graph-data.json`; il disegno è *hierarchical edge bundling*, in `src/js/heb.js`, che ha sostituito nell'agosto 2026 il vecchio grafo a forze visibile a schermo. Ogni pagina concetto e la pagina `/mappa/` lo leggono e ne mostrano porzioni diverse — non sono grafi separati.
 
 **Il grafo è scope-limitato a Concetti e articoli.** Temi e Argomenti non ci entrano: è una scelta deliberata, per non sovraccaricare una visualizzazione già densa.
 
@@ -483,13 +532,13 @@ Il grafo è **uno solo**, calcolato una volta a build time da `graphLayout.js` (
 - **Writings**: Argomento ← `category:` nel frontmatter. Concetto ← voce manuale in `conceptsIndex.js` (sezione 1).
 - **Curated**: Argomento ← `tags:` nel frontmatter, tradotto via `curatedTagAliases.js` (sezione 2). Concetto ← `concepts:` nel frontmatter, automaticamente sincronizzato via `sync-concepts.js` (sezione 5).
 - **Learning**: Concetto ← `concepts:` nel frontmatter, automaticamente sincronizzato via `sync-concepts.js` (sezione 5). Nell'indice gli articoli learning appaiono con il badge `lr` in ambra.
-- **Lab**: Concetto ← tagging **manuale e selettivo** direttamente in `conceptsIndex.js` (vedi sezione 3). `sync-concepts.js` non legge `src/lab/` — ogni nota del lab viene collegata solo ai concetti che arricchisce concretamente, non per default.
+- **Lab**: Concetto ← tagging **manuale e selettivo** direttamente in `conceptsIndex.js`, con URL `/lab/slug/` (vedi sezione 3). `sync-concepts.js` non legge `src/lab/` — ogni nota del lab viene collegata solo ai concetti che arricchisce concretamente, non per default.
 
 **Non esiste un comando per "aggiornare l'indice semantico".** È lo stesso identico `git push` (o `npm run build`) con cui pubblichi il sito. Se i dati a monte sono corretti, il build successivo rigenera tutto: indici, pagine concetto, grafo, Temi, Argomenti — niente da "richiamare" a parte.
 
 ### Il Sommario ragionato (home)
 
-Pannello tipografico in home, sotto il box "Start here": l'albero della tassonomia sul modello del *Système figuré* dell'Encyclopédie (da cui il nome interno dei file, `sistema-figurato`). Mostra i 5 Temi come rami, con una selezione di Argomenti, concetti-campione in corsivo, le serie e i rimandi a `/mappa/` e `/indice/`.
+Pannello tipografico **in coda alla home** italiana, ultima delle fasce orizzontali: l'albero della tassonomia sul modello del *Système figuré* dell'Encyclopédie (da cui il nome interno dei file, `sistema-figurato`). Mostra i 5 Temi come rami, con una selezione di Argomenti, concetti-campione in corsivo, le serie e i rimandi a `/mappa/` e `/indice/`.
 
 - **Template**: `src/_includes/components/sistema-figurato.njk`, incluso da `index.njk`.
 - **Si aggiorna da solo a ogni build**: contatori (temi/argomenti/concetti/serie), elenco argomenti per ramo, serie. Legge `clusters.js`, la collection `mergedConceptsIndex` e `seriesDescriptions.json`.
@@ -525,15 +574,95 @@ Le descrizioni dei Temi vivono in `temiDescriptions.json`, quelle degli Argoment
 
 ---
 
-## 8. Cosa NON toccare senza capire
+## 8. La superficie inglese (`/en/`)
+
+Il sito è uno, in due lingue, non due marchi: la testata blu e l'identità visiva restano le stesse, cambiano navigazione e lingua dei contenuti.
+
+### Struttura e regola non negoziabile
+`/` è italiano, `/en/` è inglese, URL statici. **Nessun redirect per lingua o per geografia**, mai: niente su IP, niente su `Accept-Language`. Una richiesta a `/` da un IP statunitense deve restituire la home italiana, 200, senza catene di redirect. È una scelta di posizionamento, non una dimenticanza: il posizionamento organico italiano va protetto.
+
+### Che cosa esiste in inglese
+`/en/` (home del programma di ricerca, cinque fasce), `/en/start-here/`, `/en/about/`, `/en/visualizations/measuring-bench/`, più l'intero `/lab/`. Fuori perimetro per decisione: indice e mappa semantica in inglese, traduzione dell'archivio dei saggi.
+
+### Dichiarare una coppia di pagine equivalenti
+Nel frontmatter di **entrambe**:
+
+```yaml
+translation:
+  lang: en          # o it
+  url: /en/...
+```
+
+Genera `hreflang` reciproci, `x-default` sempre sull'italiano, e fa puntare lo switch di lingua in testata alla pagina gemella. Senza `translation`, lo switch porta alla home dell'altra lingua — che è il comportamento corretto quando la gemella non esiste.
+
+**Non dichiarare `translation` fra pagine che non sono equivalenti.** `/da-qui/` e `/en/start-here/` hanno funzioni diverse — uno guida chi esplora un archivio, l'altro chi sta decidendo se l'autore è un interlocutore — e dichiararle gemelle sarebbe un hreflang falso.
+
+### Le due variabili del layout, da non confondere
+In `base.njk`:
+
+- **`isEN`** — vero quando `lang: en`. Governa **solo i metadati**: `<html lang>`, `og:locale`.
+- **`isENSurface`** — vero quando l'URL sta sotto `/en/` **oppure** sotto `/lab/`. Governa **la cornice**: navigazione, piede, skip link, barra di consenso, etichetta e destinazione dello switch.
+
+Sono due cose diverse perché il Lab è scritto in inglese ma vive fuori da `/en/`.
+
+### Regole di contenuto sulle pagine inglesi
+- **Nessuna porta commerciale.** Irene Media non compare mai; Episteme Advisory una volta sola, in coda alla home, come contesto istituzionale della ricerca. Il piede inglese è un ramo separato apposta per questo.
+- **Nessun link a contenuto italiano senza segnalarlo**: `lang="it" hreflang="it"` sull'ancora più un'etichetta visibile, «(in Italian)» o «(IT)».
+- I due progetti del sito — il banco di misura e il paper — sono distinti e vanno tenuti distinti. Il raccordo che li mette in relazione è scritto in due punti, la home inglese e la pagina del banco, **con le stesse parole**: se ne cambi uno, cambia anche l'altro.
+
+### Aggiungere una pagina inglese
+1. File in `src/en/`, frontmatter con `permalink: /en/.../`, `lang: en`, `og_card`, ed eventualmente `translation`.
+2. Aggiungere l'URL a mano nella sezione statica di `src/sitemap.njk`.
+3. Se deve stare in navigazione, aggiungerla al ramo inglese di `header.njk`.
+
+### Card social
+`og_card` per l'immagine 1200×630, `og_title` quando il titolo della scheda deve dire più del `<title>`. Le card sono immagini fatte a mano in `src/images/og/`: non esiste un generatore in repo. La forma di casa è fissa — fondo `#f5f5f0`, filetto in testa (blu `#1C0E80` per l'italiano, verde `#0F6E56` per la superficie inglese), occhiello spaziato, titolo serif, dominio in basso.
+
+---
+
+## 9. Gli strumenti interattivi (il banco di misura)
+
+### Dove vivono
+`src/pages/banco-di-misura.html` → `/visualizations/banco-di-misura/`
+`src/pages/measuring-bench.html` → `/en/visualizations/measuring-bench/`
+
+**Non sono file statici copiati**: sono template Eleventy con `layout: layouts/base.njk` e `permalink` esplicito. Stanno in `src/pages/` proprio perché l'URL non corrisponde alla posizione del file. Fino ad agosto erano isole senza cornice, copiate da `addPassthroughCopy`; oggi prendono testata, navigazione e piede del sito nella lingua della pagina.
+
+### Perché il CSS è tutto sotto `.bm`
+Lo strumento porta con sé un reset (`*{margin:0;padding:0}`) e regole su `footer` e `h1`. Globali, quelle regole azzererebbero i margini della testata e riscriverebbero il piede del sito. Sono quindi ristrette a `.bm`, il contenitore che avvolge lo strumento. **Se aggiungi una regola, tienila dentro `.bm`.**
+
+Le variabili di colore dello strumento (`--bg`, `--text`, `--blue`, `--green`…) stanno su `:root` con nomi propri e non collidono con quelle del sito, che sono tutte `--color-*`. Il canvas le legge da `document.documentElement` con la funzione `css()`: **non spostarle sotto `.bm`**, il disegno del piano si spegnerebbe.
+
+`body.bench .container` allarga il contenitore del sito da 800 a 1000px, perché lo strumento ne vuole 940.
+
+### Il modo incorporato
+Il saggio *La forza della scrittura* mostra lo strumento dentro un iframe. Una riga in `base.njk` mette la classe `embedded` su `<html>` quando la pagina non è al primo livello: la cornice si nasconde e Google Analytics non conta una seconda visualizzazione. Se tocchi quel punto, controlla il saggio prima di pubblicare.
+
+### Debito noto — leggere prima di metterci mano
+I due file condividono circa il **novanta per cento** del codice: stessa matematica, stesso canvas, stessa simulazione. Una correzione va applicata **due volte**, e nulla te lo ricorda. Se un giorno vale la pena rifattorizzare, la cosa giusta è un file solo con le stringhe separate per lingua.
+
+Nel frattempo, le tre cose che divergono e che è facile dimenticare:
+
+1. **Preset e verdetti sono tradotti, non paralleli.** Se cambi un caso in italiano, cambialo anche in inglese.
+2. **I numeri**: l'italiano usa la virgola decimale, l'inglese il punto. La differenza sta nella funzione `f2()`.
+3. **L'ordine argomentativo è diverso di proposito.** L'italiano si apre dichiarandosi strumento di lettura del saggio; l'inglese apre con che cosa misura, perché il problema esiste e l'invito a muovere i cursori, e solo dopo rimanda al resto. Non allinearli.
+
+---
+
+## 10. Cosa NON toccare senza capire
 
 | File | Perché è delicato |
 |---|---|
 | `.eleventy.js` | Filtri e collections: un errore blocca il build |
 | `src/_includes/layouts/article.njk` | Template di tutti i saggi |
-| `src/_includes/layouts/base.njk` | Template base di tutto il sito |
-| `src/css/style.css` | Unico file CSS, ~3800 righe |
-| `src/_data/conceptsIndex.js` | Fonte di verità per indice e concetti |
+| `src/_includes/layouts/base.njk` | Template base di tutto il sito. Contiene `isEN`/`isENSurface` (sezione 8), il rilevamento dell'iframe e il consenso GA |
+| `src/_includes/components/header.njk` e `footer.njk` | Hanno due rami, italiano e inglese: modificare il ramo sbagliato non dà errore, cambia solo l'altra lingua |
+| `src/pages/banco-di-misura.html` e `measuring-bench.html` | Gli stessi 850 righe di codice due volte, in due lingue (sezione 9) |
+| `netlify.toml` | Redirect 301: Lab in root, vecchi permalink Medium, nomi dei PDF. Rimuoverne uno rompe link già circolati |
+| `src/sitemap.njk` | La sezione delle pagine statiche è scritta a mano: una pagina nuova non entra da sola |
+| `src/css/style.css` | Unico file CSS, ~7300 righe, tutto a selettori globali: una regola cambiata può toccare cinque pagine |
+| `src/_data/conceptsIndex.js` | Fonte di verità per indice e concetti — 240 voci scritte a mano |
+| `src/_data/aiNotation.js` | Fonte unica della notazione AI: un codice tolto qui fa fallire il build su tutti i pezzi che lo usano |
 | `src/_data/clusters.js` | Tassonomia Temi/Argomenti — usata da `/temi/`, `/indice/`, breadcrumb e dal layout del grafo |
 | `src/_data/curatedTagAliases.js` | Traduce i tag liberi dei curated in Argomenti — un nome cambiato qui "spegne" silenziosamente quell'Argomento per i curated già pubblicati |
 | `src/_data/graphLayout.js` | Calcola le posizioni del grafo. Non richiede modifiche manuali: si rigenera da solo leggendo `conceptsIndex.js` e `clusters.js` |
@@ -541,13 +670,28 @@ Le descrizioni dei Temi vivono in `temiDescriptions.json`, quelle degli Argoment
 
 ---
 
-## 9. Troubleshooting rapido
+## 11. Troubleshooting rapido
 
 **Un concetto/articolo che ho appena pubblicato non appare da nessuna parte**
 → **Prima cosa da controllare**: lancia `npm run build` e leggi la console. Se il concetto è citato in un `concepts:` di un curated ma non registrato, ora compare un avviso `⚠️ CONCETTI NON REGISTRATI` con il nome del file e del concetto mancante (sezione 5). Risolve la maggior parte dei casi.
 
 **Cerco un Concetto-paese e non lo trovo in "Luoghi"**
 → I nomi di stato sono `paese`, non `luogo`: controlla nella sezione "Paesi" dell'indice (sezione 5).
+
+**Build fallisce dicendo che manca `ai_prose`**
+→ Il pezzo non dichiara la notazione dell'intervento AI (sezione 1). Non ci sono eccezioni di data. Se il codice è «nessun intervento», va scritto `ai_prose: "00"` **fra virgolette**: senza, YAML lo legge come il numero 0 e il messaggio di errore te lo dice.
+
+**Una pagina inglese mostra la navigazione italiana (o viceversa)**
+→ La cornice non dipende da `lang:` ma dall'URL: `isENSurface` è vero solo sotto `/en/` e sotto `/lab/` (sezione 8). Una pagina inglese messa altrove prende la cornice italiana.
+
+**Lo switch di lingua porta alla home invece che alla pagina gemella**
+→ Manca `translation` nel frontmatter, o è dichiarato su una sola delle due pagine: serve su entrambe (sezione 8).
+
+**Il banco di misura ha la testata sfasata o il piede strano**
+→ Una regola CSS dello strumento è finita fuori da `.bm` (sezione 9).
+
+**Il piano dei regimi resta bianco**
+→ Le variabili colore dello strumento sono state spostate da `:root`: il canvas le legge da lì (sezione 9).
 
 **Build fallisce con errore Nunjucks**
 → Controllare la sintassi del file `.njk` modificato. Errore più comune: tag `{% %}` non chiusi.
@@ -570,7 +714,7 @@ Le descrizioni dei Temi vivono in `temiDescriptions.json`, quelle degli Argoment
 
 ---
 
-## 10. Linea editoriale e criteri di rifiuto
+## 12. Linea editoriale e criteri di rifiuto
 
 Il sito funziona come una casa editrice con un solo autore: catalogo (writings), collane (serie), selezione con nota del curatore (curated), apparato critico (concetti, indice), R&D (Lab). E come ogni casa editrice, si definisce con i suoi no. Questa sezione è lo statuto: si consulta prima di pubblicare, non dopo.
 
