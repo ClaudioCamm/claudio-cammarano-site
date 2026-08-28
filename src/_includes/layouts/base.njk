@@ -2,11 +2,11 @@
    lingue: testata, skip link, barra di consenso. Le pagine italiane
    passano dal ramo `else` e restano invariate. #}
 {%- set isEN = (lang or 'it') == 'en' -%}
-{# isENSurface e' piu' stretto: solo le pagine sotto /en/. La
-   navigazione e il footer inglesi valgono li'. /lab/ ha lang: en ma
-   resta raggiungibile dalla home italiana, quindi tiene la navigazione
-   italiana e non perde il lettore che ci arriva da /. #}
-{%- set isENSurface = page.url.indexOf('/en/') == 0 -%}
+{# isENSurface marca le pagine con cornice inglese: navigazione,
+   etichette di servizio, piede. Sono /en/* e il Lab, che e' scritto
+   interamente in inglese. Gli URL del Lab non cambiano: cambia solo la
+   cornice, e lo switch di lingua li' propone l'italiano. #}
+{%- set isENSurface = page.url.indexOf('/en/') == 0 or page.url.indexOf('/lab/') == 0 -%}
 <!DOCTYPE html>
 <html lang="{{ lang or 'it' }}">
 <head>

@@ -80,6 +80,9 @@ html.embedded .backnav{display:none}
   margin-bottom:6px;
 }
 h1{font-size:23px;font-weight:500;line-height:1.25;letter-spacing:-.01em;margin-bottom:8px}
+.intro-cols{display:grid;gap:14px;margin-top:2px}
+@media(min-width:820px){.intro-cols{grid-template-columns:1fr 1fr;column-gap:30px;row-gap:16px}}
+.intro-cols .standfirst{max-width:none}
 .standfirst--aside{color:var(--text-hint);font-size:14.5px;border-top:1px solid var(--border);padding-top:12px;margin-top:14px}
 .standfirst{font-size:15px;color:var(--text-light);max-width:62ch;line-height:1.55}
 .standfirst code{font-family:var(--sans);font-size:13.5px;color:var(--text)}
@@ -265,10 +268,12 @@ footer a{color:var(--text-light)}
 <header>
   <p class="eyebrow">The measuring bench · claudiocammarano.com</p>
   <h1>What a text does to a reader, in bits</h1>
+  <div class="intro-cols">
   <p class="standfirst"><b>What it measures.</b> One thing: the distance between what you expected before reading and what you expect after — and whether that move took you towards the world or away from it. Two pure ratios, α and r, decide which of five regimes a text is in. The displacement <i>D</i> stays out of the verdict: it says how hard, not how good.</p>
   <p class="standfirst"><b>Why it was built.</b> The occasion was the argument about writing with language models — whether a text made with them still counts as the author's. The instrument answers structurally rather than morally. Which tools passed over a text, any tools, enter the equation as a coefficient and never as a load-bearing term; what carries the value is what the author put in, which is observation, selection and recombination. Panel 2 shows it directly: move the disclosure codes across the whole grid and watch how little the value moves.</p>
   <p class="standfirst"><b>Move the sliders.</b> Panel 1 computes real quantities in bits from three distributions you set yourself, and places the result on the plane. Panels 2 and 3 explore forms: those numbers are dimensionless and the functions were chosen here, not derived.</p>
-  <p class="standfirst standfirst--aside">This is one of two projects on this site, and the smaller one. The other — <a href="/en/" target="_top">validating what a language model claims</a> — has a different object and a different method. They share a premise, not an apparatus.</p>
+  <p class="standfirst standfirst--aside">Two projects run on this site. This one asks what a text does to the reader who reads it, measured in bits. The other — <a href="/en/" target="_top">validating what a machine claims</a> — asks whether a machine’s claims can be checked, and how. They share a premise, not an apparatus.</p>
+  </div>
 </header>
 
 <nav class="tabs" role="tablist" aria-label="Panels">

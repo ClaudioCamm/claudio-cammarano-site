@@ -10,11 +10,11 @@ discipline: ["Epistemology", "Philosophy of mind", "Cognitive science", "Computa
 method: ["Literature review", "Protocol design", "Model evaluation / benchmarking"]
 description: "A new interpretability result shows that language models can report on concepts held in their own internal states. It did not refute the framework. It forced a flat premise — no metacognition — to be replaced by a narrow one: no epistemic self-classification. The narrow one is what the argument actually needed."
 documents:
-  - file: "11_2026_academic_v6.pdf"
+  - file: "cammarano-post-cognitive-validation-v6.pdf"
     label: "Validating AI — Academic paper (draft)"
     version: "v6"
     id: "paper-draft"
-  - file: "12_2026_backmatter_v6.pdf"
+  - file: "cammarano-post-cognitive-validation-backmatter-v6.pdf"
     label: "Validating AI — Backmatter (references, tables, appendices)"
     version: "v6"
     id: "paper-backmatter"
@@ -58,4 +58,4 @@ So, the state of the facts. One premise has been narrowed: from a claim about me
 
 The operating lesson is one I keep learning in different costumes. [Last time](/lab/2026-07-21-what-counts-as-a-verdict/) it was that a measurement instrument can carry a hidden ontological decision. This time: the premise you state most flatly is the one most exposed to somebody else's experiment, and the flatness is usually doing rhetorical work rather than argumentative work. State the narrowest version that still carries the argument. It is less satisfying to write and much harder to knock over.
 
-Documents: {% labdoc "11_2026_academic_v6.pdf" %}, {% labdoc "12_2026_backmatter_v6.pdf" %}, and the updated bibliography {% labdoc "08_epistemologia_ai_bibliografia_v6.bib" %} — July 2026. The source paper is Gurnee, Sofroniew, Lindsey et al., *Verbalizable Representations Form a Global Workspace in Language Models*, Transformer Circuits Thread, 6 July 2026.
+Documents: {% labdoc "cammarano-post-cognitive-validation-v6.pdf" %}, {% labdoc "cammarano-post-cognitive-validation-backmatter-v6.pdf" %}, and the updated bibliography {% labdoc "08_epistemologia_ai_bibliografia_v6.bib" %} — July 2026. The source paper is Gurnee, Sofroniew, Lindsey et al., *Verbalizable Representations Form a Global Workspace in Language Models*, Transformer Circuits Thread, 6 July 2026.

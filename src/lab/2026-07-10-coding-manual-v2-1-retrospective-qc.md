@@ -10,7 +10,7 @@ discipline: ["Epistemology", "Computational linguistics / NLP", "Statistics"]
 method: ["Protocol design", "Annotation / inter-annotator agreement", "Quantitative analysis"]
 description: "The protocol catches up with the study it governs: six claims codified, AR-lex and AR-sem formally defined, quality control turned into a documentable record. And the record's most prominent entry is the failure of the classifier that produced the headline number — which is the point."
 documents:
-  - file: "Coding_Manual_v2_1.pdf"
+  - file: "cammarano-coding-manual-v2-1.pdf"
     id: "coding-manual"
     label: "Coding Manual v2.1 — Annotation Protocol"
     version: "2.1"
@@ -39,4 +39,4 @@ The manual also gains a deviation log (Appendix C) declaring the four departures
 
 For the paper, the consequences are structural. Section 4 is rewritten on the six-claim design, with the new metrics reported next to Fleiss' κ rather than instead of it. The Results section inherits the quarantine: the study-level gap is citable now, the two classifier-sensitive claim-level results are not, until the classifier revision is decided and the corpus re-extracted. More substantively, the research question sharpens: not "are LLM validations reproducible?" but "reproducibility is layered — near zero at the lexical surface, high at the semantic level." That is the measurable form of the project's thesis that ontology precedes epistemology. The path to submission now runs through the classifier decision, the completion of the open-materials appendix, the two remaining experiments (multi-model control and uplift), and the OSF deposit.
 
-Documents: {% labdoc "Coding_Manual_v2_1.pdf" %} and {% labdoc "QC_Log_Vertical_Validation.pdf" %} — July 2026
+Documents: {% labdoc "cammarano-coding-manual-v2-1.pdf" %} and {% labdoc "QC_Log_Vertical_Validation.pdf" %} — July 2026

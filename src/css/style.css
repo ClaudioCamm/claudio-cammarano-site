@@ -7223,9 +7223,38 @@ a.home-path:hover {
 }
 
 /* Ancore delle fasce inglesi: un po' d'aria sopra il target. */
+/* Ancore delle fasce inglesi. La testata non e' sticky (position:
+   relative), quindi non copre il target: basta un margine di respiro. */
 #the-paper,
 #the-abstract {
-  scroll-margin-top: 24px;
+  scroll-margin-top: 32px;
+}
+
+/* Hero della home inglese: si chiude sul raccordo, non sulle credenziali
+   come quello italiano. Senza questa riduzione fra le CTA e il filetto
+   della fascia successiva restano 144px vuoti (xl dell'hero + xl della
+   fascia), che su viewport alti spingono The Paper fuori schermata. */
+.home-hero--en {
+  padding-bottom: var(--spacing-md);
+}
+
+.home-hero--en + .home-band {
+  padding-top: var(--spacing-lg);
+}
+
+.home-bridge {
+  max-width: 68ch;
+  margin-top: var(--spacing-xs);
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--color-text-light);
+}
+
+.en-author-contact {
+  max-width: 68ch;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: var(--spacing-sm);
 }
 
 /* Percorso del programma di ricerca su /en/start-here/: verde Lab,

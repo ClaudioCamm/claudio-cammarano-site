@@ -54,6 +54,27 @@
 # risolvono l'URL esatto e non seguirebbero un catch-all sbagliato.
 # ------------------------------------------------------------------
 
+# ------------------------------------------------------------------
+# Download del programma di ricerca: i tre PDF hanno nomi leggibili
+# una volta salvati sul desktop di un lettore. I vecchi percorsi
+# restano validi perche' sono gia' circolati per link.
+# ------------------------------------------------------------------
+
+[[redirects]]
+  from = "/downloads/11_2026_academic_v6.pdf"
+  to = "/downloads/cammarano-post-cognitive-validation-v6.pdf"
+  status = 301
+
+[[redirects]]
+  from = "/downloads/12_2026_backmatter_v6.pdf"
+  to = "/downloads/cammarano-post-cognitive-validation-backmatter-v6.pdf"
+  status = 301
+
+[[redirects]]
+  from = "/downloads/Coding_Manual_v2_1.pdf"
+  to = "/downloads/cammarano-coding-manual-v2-1.pdf"
+  status = 301
+
 [[redirects]]
   from = "/episteme-advisory/lab/feed.xml"
   to = "/lab/feed.xml"
