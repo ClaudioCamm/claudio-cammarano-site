@@ -1117,7 +1117,8 @@ module.exports = [
     note: "Costrutto psicologico (Cacioppo e Petty, 1982): la tendenza individuale a impegnarsi e trarre soddisfazione dal pensiero elaborativo. Le persone con alta NFC cercano attivamente la difficoltà cognitiva, la trovano piacevole e la usano per formarsi giudizi propri; quelle con bassa NFC la evitano sistematicamente. Nel sito è il metro con cui Brooks legge la polarizzazione cognitiva nell'era dell'AI: la NFC correla con l'intelligenza ma non coincide — ci sono persone molto intelligenti con bassa NFC e viceversa.",
     articles: [
       { title: "The People Who Will Thrive in the AI Age", url: "/curated/2026-06-28-brooks-people-thrive-ai-age-atlantic/", _source: "curated" },
-      { title: "Una lunga avventura: storia degli adventure game", url: "/curated/2026-06-11-machera-adventure-game-linkideeperlatv/", _source: "curated" }
+      { title: "Una lunga avventura: storia degli adventure game", url: "/curated/2026-06-11-machera-adventure-game-linkideeperlatv/", _source: "curated" },
+      { title: "Shaping the Future of Learning: Education Readiness for the Age of AI", url: "/curated/2026-06-01-wef-education-readiness-ai/", _source: "curated" }
     ]
   },
   {
@@ -1127,6 +1128,14 @@ module.exports = [
     articles: [
       { title: "The People Who Will Thrive in the AI Age", url: "/curated/2026-06-28-brooks-people-thrive-ai-age-atlantic/", _source: "curated" },
       { title: "Europe's public broadcasters go from prime time to hard-to-find", url: "/curated/2026-07-09-economist-psb-europe-hard-to-find/", _source: "curated" }
+    ]
+  },
+  {
+    name: "cognitive offloading",
+    type: "teoria",
+    note: "Processo per cui gli esseri umani delegano carichi cognitivi a strumenti esterni — dalla scrittura alle calcolatrici, fino agli LLM — per ridurre lo sforzo mentale. La distinzione critica è tra strumenti che *estendono* la cognizione (la calcolatrice verifica un calcolo che si sarebbe potuto fare) e strumenti che la *sostituiscono* (l'AI ragiona al posto del soggetto, impedendo che si formi l'architettura neurale necessaria). Nel sito il concetto emerge in relazione all'adozione non strutturata degli LLM nella didattica: il cognitive offloading è fisiologico, ma diventa problematico quando bypassa i processi attraverso cui si costruisce comprensione. Dialoga con *need for cognition* e *polarizzazione cognitiva*.",
+    articles: [
+      { title: "Shaping the Future of Learning: Education Readiness for the Age of AI", url: "/curated/2026-06-01-wef-education-readiness-ai/", _source: "curated" }
     ]
   },
   {
