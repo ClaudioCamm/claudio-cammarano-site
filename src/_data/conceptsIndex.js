@@ -616,7 +616,16 @@ module.exports = [
       { title: "I'm Begging You: Never Write With A.I.", url: "/curated/2026-08-04-stephens-never-write-ai-nyt/", _source: "curated" },
       { title: "If You're Over 40, You're Ready to Use A.I.", url: "/curated/2026-07-27-millman-kabbalah-ai-nyt/", _source: "curated" },
       { title: "AI Has Plunged the Book Publishing Industry Into Utter Chaos", url: "/curated/2026-08-17-silman-ai-publishing-chaos-wsj/", _source: "curated" },
-      { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" }
+      { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" },
+      { title: "A Watermark for Large Language Models", url: "/curated/2023-01-25-kirchenbauer-watermark-llm-arxiv/", _source: "curated" }
+    ]
+  },
+  {
+    name: "watermarking",
+    type: "teoria",
+    note: "Tecnica crittografica per certificare l'origine di testo generato da LLM: prima di campionare ogni token, il modello partiziona il vocabolario in liste 'verde' e 'rossa' tramite un hash pseudocasuale del token precedente, poi favorisce i token verdi. Il segnale è rilevabile statisticamente (z-test) senza accesso al modello, con falsi positivi a 3×10⁻⁵ su segmenti di 16+ token. È il riferimento tecnico più citato sul problema del rilevamento di testo AI — e la dimostrazione più chiara del perché il problema sia ancora irrisolto: funziona solo se implementato dal produttore del modello in fase di generazione. A distanza di tre anni dalla proposta originale (Kirchenbauer et al., 2023), nessun modello mainstream la adotta in produzione. I tool di rilevamento disponibili (Turnitin, GPTZero, Copyleaks) non si basano su watermarking ma su pattern statistici ad alta varianza, inutilizzabili come standard probatorio.",
+    articles: [
+      { title: "A Watermark for Large Language Models", url: "/curated/2023-01-25-kirchenbauer-watermark-llm-arxiv/", _source: "curated" }
     ]
   },
   {
