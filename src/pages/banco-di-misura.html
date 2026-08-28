@@ -1,36 +1,16 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Il banco di misura — La forza della scrittura</title>
-<meta name="description" content="Strumento interattivo per l'equazione del valore di un testo: spostamento, struttura, guadagno epistemico, il piano dei regimi e la dinamica di popolazione.">
-<link rel="canonical" href="https://claudiocammarano.com/visualizations/banco-di-misura/">
-<link rel="alternate" hreflang="it" href="https://claudiocammarano.com/visualizations/banco-di-misura/">
-<link rel="alternate" hreflang="en" href="https://claudiocammarano.com/en/visualizations/measuring-bench/">
-<link rel="alternate" hreflang="x-default" href="https://claudiocammarano.com/visualizations/banco-di-misura/">
-<!-- Open Graph / Twitter. La pagina non passa dal layout base: i meta stanno qui. -->
-<meta property="og:title" content="Il banco di misura — che cosa fa un testo al lettore">
-<meta property="og:description" content="Sposta tre distribuzioni e leggi in bit che cosa fa un testo. Due numeri, α e r, lo collocano sul piano dei regimi. Nessun dato lascia la pagina.">
-<meta property="og:url" content="https://claudiocammarano.com/visualizations/banco-di-misura/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Claudio Cammarano">
-<meta property="og:locale" content="it_IT">
-<meta property="og:locale:alternate" content="en_GB">
-<meta property="og:image" content="https://claudiocammarano.com/images/og/og-banco-di-misura.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Il piano dei regimi: in ascissa α, in ordinata r, con i quattro quadranti Apertura, Valore, Provocazione, Struttura falsa e la banda della Conferma.">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@claudiocamm">
-<meta name="twitter:creator" content="@claudiocamm">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
-<script>
-try{ if (window.self !== window.top) document.documentElement.className += " embedded"; }
-catch(e){ document.documentElement.className += " embedded"; }
-</script>
+---
+layout: layouts/base.njk
+title: "Il banco di misura"
+og_title: "Il banco di misura — che cosa fa un testo al lettore"
+description: "Strumento interattivo per l'equazione del valore di un testo: spostamento, struttura, guadagno epistemico, il piano dei regimi e la dinamica di popolazione."
+permalink: /visualizations/banco-di-misura/
+bodyClass: bench
+og_card: /images/og/og-banco-di-misura.png
+translation:
+  lang: en
+  url: /en/visualizations/measuring-bench/
+---
+
 <style>
 :root{
   color-scheme: light dark;
@@ -51,9 +31,8 @@ catch(e){ document.documentElement.className += " embedded"; }
     --track:rgba(232,228,220,.15);
   }
 }
-*{box-sizing:border-box;margin:0;padding:0}
-html,body{background:var(--bg)}
-body{
+.bm,.bm *{box-sizing:border-box;margin:0;padding:0}
+.bm{
   font-family:var(--serif); color:var(--text);
   font-size:16px; line-height:1.6;
   -webkit-text-size-adjust:100%;
@@ -61,17 +40,6 @@ body{
 }
 .wrap{max-width:940px;margin:0 auto;padding:20px 18px 24px}
 
-/* ---------- ritorno al sito (nascosto quando è incorporato) ---------- */
-.backnav{
-  display:flex; gap:18px; flex-wrap:wrap; align-items:baseline;
-  font-family:var(--sans); font-size:12.5px;
-  margin-bottom:18px; padding-bottom:12px; border-bottom:1px solid var(--border);
-}
-.backnav a{color:var(--text-light);text-decoration:none;border-bottom:1px solid transparent;padding:2px 0}
-.backnav a:hover{color:var(--primary);border-bottom-color:currentColor}
-.backnav a.home{color:var(--primary);font-weight:500}
-.backnav a:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
-html.embedded .backnav{display:none}
 
 /* ---------- testata ---------- */
 .eyebrow{
@@ -79,7 +47,7 @@ html.embedded .backnav{display:none}
   letter-spacing:.14em; text-transform:uppercase; color:var(--text-hint);
   margin-bottom:6px;
 }
-h1{font-size:23px;font-weight:500;line-height:1.25;letter-spacing:-.01em;margin-bottom:8px}
+.bm h1{font-size:23px;font-weight:500;line-height:1.25;letter-spacing:-.01em;margin-bottom:8px}
 .standfirst{font-size:15px;color:var(--text-light);max-width:62ch;line-height:1.55}
 .standfirst code{font-family:var(--sans);font-size:13.5px;color:var(--text)}
 
@@ -242,24 +210,32 @@ canvas{display:block;width:100%;border:1px solid var(--border);border-radius:3px
 
 /* ---------- pannello C ---------- */
 .acts{display:flex;gap:6px;margin:16px 0 14px;flex-wrap:wrap}
-footer{
+.bm footer{
   margin-top:28px;padding-top:14px;border-top:1px solid var(--border);
   font-family:var(--sans);font-size:11px;letter-spacing:.05em;color:var(--text-hint);
   display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
 }
-footer a{color:var(--text-light)}
-@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+.bm footer a{color:var(--text-light)}
+@media(prefers-reduced-motion:reduce){.bm *{transition:none!important}}
+
+/* ---------- innesto nella cornice del sito ----------
+   La pagina non e' piu' un'isola: passa dal layout del sito e prende
+   testata, navigazione e piede nella propria lingua. Il container del
+   sito e' largo 800px, lo strumento ne vuole 940: qui e solo qui si
+   allarga. Quando lo strumento e' incorporato in un iframe dentro il
+   saggio, la cornice sparisce e resta il solo strumento. */
+body.bench .container{max-width:1000px}
+html.embedded .site-header,
+html.embedded .site-footer,
+html.embedded .consent-bar,
+html.embedded .skip-link{display:none!important}
+html.embedded body.bench .container{padding:0}
+html.embedded .bm .wrap{padding-top:0}
 </style>
-</head>
-<body>
+
+<div class="bm">
 <div class="wrap">
 
-<nav class="backnav" aria-label="Torna al sito">
-  <a class="home" href="/" target="_top">&#8592; claudiocammarano.com</a>
-  <a href="/projects/" target="_top">Projects</a>
-  <a href="/writings/2026-08-26-la-forza-della-scrittura/" target="_top">Il saggio che lo spiega</a>
-  <a href="/en/visualizations/measuring-bench/" target="_top" hreflang="en" lang="en" style="margin-left:auto">EN</a>
-</nav>
 
 <header>
   <p class="eyebrow">Banco di misura · claudiocammarano.com</p>
@@ -825,5 +801,4 @@ if(window.matchMedia){
 loadCase("operatore"); renderB(); outC(); reset(); post();
 document.fonts&&document.fonts.ready.then(function(){drawPlane(measure(A.p,A.d,A.w));drawC();post()});
 </script>
-</body>
-</html>
+</div>

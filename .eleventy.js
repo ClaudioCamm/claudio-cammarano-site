@@ -13,11 +13,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/downloads");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
   eleventyConfig.addPassthroughCopy("src/visualizations");
-  // Superficie inglese: gli strumenti interattivi in inglese vivono
-  // sotto /en/visualizations/. Cartella separata perche' i file sono
-  // HTML statici (niente layout) e src/en/ e' invece territorio di
-  // template Eleventy.
-  eleventyConfig.addPassthroughCopy({ "src/en-visualizations": "en/visualizations" });
   eleventyConfig.addPassthroughCopy("src/js");
 
   // === TRANSFORMS ===

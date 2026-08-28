@@ -11,6 +11,11 @@
 <html lang="{{ lang or 'it' }}">
 <head>
     <meta charset="UTF-8">
+    {# Rilevamento dell'incorporamento: il banco di misura gira anche
+       dentro un iframe nel saggio, e li' la cornice del sito non deve
+       comparire. La classe si applica prima che la testata sia dipinta,
+       quindi niente lampo. #}
+    <script>try{if(window.self!==window.top)document.documentElement.className+=" embedded"}catch(e){document.documentElement.className+=" embedded"}</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if title %}{{ title }} - {% endif %}Claudio Cammarano</title>
     <meta name="description" content="{{ (description or 'Libri, mercati, idee') | stripMd }}">
@@ -20,7 +25,9 @@
     <link rel="alternate" hreflang="x-default" href="https://claudiocammarano.com{% if (lang or 'it') == 'it' %}{{ page.url }}{% else %}{{ translation.url }}{% endif %}">
     {% else %}<link rel="alternate" hreflang="x-default" href="https://claudiocammarano.com/">{% endif %}
     <!-- Open Graph -->
-    <meta property="og:title" content="{{ title or 'Claudio Cammarano' }}">
+    {# og_title: quando il titolo della scheda social deve dire piu' del
+       titolo della pagina, senza allungare il <title>. #}
+    <meta property="og:title" content="{{ og_title or title or 'Claudio Cammarano' }}">
     <meta property="og:description" content="{{ (description or 'Libri, mercati, idee') | stripMd }}">
     <meta property="og:type" content="{{ og_type or 'website' }}">
     <meta property="og:url" content="https://claudiocammarano.com{{ page.url }}">
@@ -79,7 +86,11 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8557D7N1Y3"></script>
     <script>
       gtag('js', new Date());
-      gtag('config', 'G-8557D7N1Y3', { anonymize_ip: true });
+      // Dentro un iframe non si conta una seconda visualizzazione: la
+      // pagina che incorpora lo strumento ha gia' inviato la sua.
+      if (window.self === window.top) {
+        gtag('config', 'G-8557D7N1Y3', { anonymize_ip: true });
+      }
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
