@@ -206,6 +206,16 @@ module.exports = function(eleventyConfig) {
       .sort((a, b) => b.date - a.date);
   });
 
+  // La pagina di stato del programma di ricerca vive fuori da src/lab/
+  // (permalink /lab/status/) apposta per non entrare nel changelog: e' una
+  // pagina viva, non una nota datata. Questa collezione serve solo a
+  // leggerne la data dalla home inglese, senza scriverla a mano.
+  eleventyConfig.addCollection("labStatus", function(collectionApi) {
+    return collectionApi.getAll().filter(function(item) {
+      return item.url === "/lab/status/";
+    });
+  });
+
   eleventyConfig.addCollection("learning", function(collectionApi) {
     // Dal piu' recente: e' un log, non un archivio cronologico.
     return collectionApi.getFilteredByGlob("src/learning/*.md")

@@ -40,7 +40,7 @@ translation:
       "@id": "https://claudiocammarano.com/en/#programme",
       "name": "Post-cognition: validating the outputs of language models",
       "url": "https://claudiocammarano.com/en/",
-      "description": "Language models generate outputs without metacognition. The programme develops post-cognition: a structured external procedure that reconstructs the ontological commitments implicit in a model's output before any truth evaluation is attempted.",
+      "description": "Language models produce assertions without classifying what kind of assertion they are producing. The programme develops post-cognition: a validation protocol specified independently of the model and applied to outputs after generation, which reconstructs the ontological commitments the system does not represent.",
       "inLanguage": "en",
       "founder": { "@id": "https://claudiocammarano.com/#person" },
       "member": { "@id": "https://claudiocammarano.com/#person" }
@@ -80,21 +80,21 @@ translation:
 
   <p class="en-paper-status">
     <span class="en-paper-stage">Draft v6 · writing &amp; submission</span>
-    {% if collections.lab.length %}<span class="en-paper-updated">Last change to the programme: {{ collections.lab[0].data.date | formatDateEN }}</span>{% endif %}
+    {% if collections.labStatus.length %}<span class="en-paper-updated">Current figures and open questions: <a href="/lab/status/">Project status</a>, updated {{ collections.labStatus[0].date | formatDateEN }}</span>{% endif %}
   </p>
 
   <h3 class="en-paper-title">Post-cognitive validation of language model outputs</h3>
-  <p class="en-paper-abstract">Language models produce assertions without metacognition. The programme builds <em>post-cognition</em>: an external, auditable procedure that first fixes what kind of claim is on the table — historical, statistical, causal, normative, metaphysical — and only then asks whether it is true. Ontology precedes epistemology. The apparatus is a seven-dimensional taxonomy with a coding manual, tested on a horizontal corpus of 31 claims and a vertical run of 180 model replications.</p>
+  <p class="en-paper-abstract">Language models produce assertions without classifying what kind of assertion they are producing. They can report on some of their own internal states; nothing indicates that content type is among them. The programme builds <em>post-cognition</em>: an external, auditable procedure that first fixes what kind of claim is on the table — historical-factual, empirical-quantitative, ethical-normative, metaphysical-ontological, and seven more — and only then asks whether it is true. Ontology precedes epistemology. The apparatus is a seven-dimensional taxonomy with a coding manual, tested on a horizontal corpus of 31 claims and a vertical run of 180 model replications.</p>
 
   <p class="en-paper-claims-head">Three claims that can be shown to be wrong</p>
   <ol class="en-paper-claims">
     <li>
-      <p class="en-claim">Disagreement between model runs is lexical, not epistemic. Across 180 runs, lexical agreement was 4.44% and semantic agreement 78.33% — a 74-point gap.</p>
-      <p class="en-claim-falsifier">Wrong if the two rates converge on a larger and more varied corpus, or if the semantic rate collapses under a stricter annotation protocol.</p>
+      <p class="en-claim">Disagreement between model runs is lexical, not epistemic. Across 180 runs, lexical agreement was 4.44% and semantic agreement 76.67% — a gap of about 72 points.</p>
+      <p class="en-claim-falsifier">Wrong if the two rates converge on a larger and more varied corpus, or if the semantic rate collapses under a stricter annotation protocol. It has already met one: a label-first re-extraction in July 2026 moved the semantic rate by 1.66 points.</p>
     </li>
     <li>
-      <p class="en-claim">Classifying the type of a claim before evaluating it changes the verdict, and improves agreement between coders.</p>
-      <p class="en-claim-falsifier">Wrong if coders who skip the classification step reach the same verdicts, at the same agreement, as coders who apply it.</p>
+      <p class="en-claim">Classifying the type of a claim before evaluating it changes what the evaluation finds. On four causal claims, a prompt that fixes the claim type first should flag a defective causal premise more often than one that does not.</p>
+      <p class="en-claim-falsifier">Wrong if a naive prompt flags the structural defect at the same rate as the framework prompt. Whether the same holds for human coders — whether classifying first changes what people find, and how far they agree — would need a control arm of annotators who skip the step. That study is not designed yet and sits outside the scope of this phase.</p>
     </li>
     <li>
       <p class="en-claim">A model can report on its own internal states and still not classify the epistemic type of its own claims. That is why the check has to come from outside.</p>
@@ -193,5 +193,5 @@ translation:
   <p class="en-author-bio">Claudio Cammarano leads marketing at De Agostini Libri and teaches at three Italian universities. Twenty years in publishing — Mondadori, Rizzoli, RCS, GEDI — and an academic background in semiotics and philosophy of language. He wrote <cite>Il mercato del libro</cite> (Solferino).</p>
   <p class="en-author-note">The point of the day job is not the credential. It is that the outputs this programme is about are already being shipped, at scale, in the industry he works in.</p>
   <p class="en-author-contact">If you work on validation, epistemics or the economics of content, and any of this is near what you do, write: <a href="mailto:claudio@claudiocammarano.com">claudio@claudiocammarano.com</a>.</p>
-  <p class="en-author-episteme">The research runs under <a href="/episteme-advisory/" lang="it" hreflang="it">Episteme Advisory</a> <span class="en-lang-flag">(page in Italian)</span>.</p>
+  <p class="en-author-episteme"><a href="/episteme-advisory/" lang="it" hreflang="it">Episteme Advisory</a> <span class="en-lang-flag">(page in Italian)</span> is the consulting practice that applies the method. The research is independent of it: conducted in his own name, published in full in the Lab, and accountable to no client.</p>
 </section>

@@ -7301,3 +7301,26 @@ a.home-path:hover {
   line-height: 1.5;
   color: var(--color-text-light);
 }
+
+/* Rimando alla pagina viva di stato, in cima all'indice del Lab. */
+.lab-status-link {
+  margin: var(--spacing-sm) 0 var(--spacing-lg);
+  padding-left: 12px;
+  border-left: 3px solid var(--color-lab);
+  max-width: 68ch;
+}
+
+.lab-status-link a {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-lab-text);
+}
+
+.lab-status-gloss {
+  display: block;
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: var(--color-text-light);
+  margin-top: 3px;
+}

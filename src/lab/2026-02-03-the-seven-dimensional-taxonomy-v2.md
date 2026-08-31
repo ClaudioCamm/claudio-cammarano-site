@@ -15,9 +15,13 @@ documents:
     version: "2.2"
 ---
 
+<div class="info-box">
+  <p><strong>Correction — 28 August 2026.</strong> The codes in this note are right; two of the category names used to illustrate them were not. &ldquo;Statistical&rdquo; and &ldquo;predictive&rdquo; are not D1 categories: empirical-quantitative claims are D1.2, and predictive ones are handled under D1.4. The illustrative list has been corrected in place; the eleven active codes it cites are unchanged and were correct when written. Current state: <a href="/lab/status/">Project status</a>.</p>
+</div>
+
 The first formal artifact of the project is the ontological taxonomy: a seven-dimensional framework for classifying AI-generated claims before any truth evaluation takes place.
 
-Dimension D1 — Content Type is the load-bearing axis. It currently includes eleven active categories (D1.1 through D1.10, plus D1.14), covering the full range from historical and statistical claims to normative, predictive, and metaphysical ones. The remaining dimensions — D2 (temporality), D3 (epistemic certainty), D4 (causal structure), D5 (framework-dependency), D6 (verifiability mode), D7 (falsifiability) — operate as modifiers that describe how a given claim type behaves epistemically.
+Dimension D1 — Content Type is the load-bearing axis. It currently includes eleven active categories (D1.1 through D1.10, plus D1.14), covering the full range from historical-factual and empirical-quantitative claims to ethical-normative and metaphysical-ontological ones. The remaining dimensions — D2 (temporality), D3 (epistemic certainty), D4 (causal structure), D5 (framework-dependency), D6 (verifiability mode), D7 (falsifiability) — operate as modifiers that describe how a given claim type behaves epistemically.
 
 The governing principle, which became the paper's title, is this: ontology precedes epistemology. You cannot determine whether a claim is true without first establishing what type of claim you are dealing with. A statistical claim and a normative claim share nothing in their truth conditions — treating them as interchangeable is the error the framework is designed to prevent.
 
