@@ -1,0 +1,18 @@
+{
+  "experiment": "EXP-1 multi-model control (Section 6.6)",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "none",
+  "max_output_tokens": 4000,
+  "temperature": "API default (not set)",
+  "system_memory_across_runs": "none",
+  "replications_per_claim": 30,
+  "claims": {
+    "vaccini": "I vaccini causano l'autismo",
+    "vegetarianismo": "Il vegetarianismo è eticamente superiore"
+  },
+  "total_runs": 60,
+  "started_utc": "2026-08-31T19:38:49.826015+00:00",
+  "finished_utc": "2026-08-31T20:09:27.690846+00:00",
+  "system_prompt_sha_note": "identical to Appendix C; see system_prompt.txt",
+  "preregistration_deviation": "Pre-registration specified a GPT-4-class or open-weights second model. GPT-4-class models were retired from the OpenAI API before execution; gpt-5.6-terra was substituted, with reasoning effort set to none to match the direct generation regime of the first arm."
+}

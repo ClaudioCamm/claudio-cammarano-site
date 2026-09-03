@@ -7324,3 +7324,199 @@ a.home-path:hover {
   color: var(--color-text-light);
   margin-top: 3px;
 }
+
+/* ==================================================================
+   LE DUE LINEE DI PUBBLICAZIONE — /en/
+   Due stati asimmetrici visibili insieme: una linea pronta e una
+   aperta. Stessa tavolozza, nessun colore nuovo: la differenza fra i
+   due stati la fa il pieno contro il contorno, non una seconda tinta.
+   ================================================================== */
+
+.en-lines {
+  display: grid;
+  gap: var(--spacing-md);
+  margin: var(--spacing-md) 0 var(--spacing-lg);
+}
+
+@media (min-width: 760px) {
+  .en-lines { grid-template-columns: 1fr 1fr; gap: var(--spacing-lg); }
+}
+
+.en-line {
+  border-top: 2px solid var(--color-lab);
+  padding-top: var(--spacing-sm);
+}
+
+.en-line-head { margin-bottom: 8px; }
+
+.en-paper-stage--line {
+  text-transform: none;
+  letter-spacing: 0.03em;
+  font-size: 11px;
+}
+
+.en-paper-stage--open {
+  background: transparent;
+  border: 1px solid var(--color-lab-chip);
+  padding: 2px 7px;
+}
+
+.en-line-title {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  line-height: 1.25;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.en-line-body {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 60ch;
+}
+
+.en-claim-line {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-lab-text);
+  border: 1px solid var(--color-lab-chip);
+  border-radius: 3px;
+  padding: 1px 6px;
+  margin-right: 6px;
+  vertical-align: 2px;
+}
+
+.en-archive {
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}
+
+.en-archive-head {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-sm);
+}
+
+.en-archive-note {
+  font-family: var(--font-sans);
+  font-size: 13.5px;
+  color: var(--color-text-light);
+  margin-top: 10px;
+}
+
+/* ==================================================================
+   /en/deliverables/ — indice dei materiali depositati.
+   Le versioni superate restano in pagina: sbiadite, non nascoste.
+   ================================================================== */
+
+.en-deliv-note {
+  max-width: 68ch;
+  font-size: 15.5px;
+  line-height: 1.55;
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-lg);
+}
+
+.en-deliv-group {
+  border-top: 2px solid var(--color-lab);
+  padding-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+.en-deliv-title {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 600;
+  margin: 0 0 6px;
+}
+
+.en-deliv-gloss {
+  max-width: 66ch;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-sm);
+}
+
+.en-deliv-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.en-deliv-item {
+  border-left: 2px solid var(--color-border);
+  padding-left: 12px;
+}
+
+.en-deliv-doc {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.en-deliv-doc a {
+  font-weight: 500;
+}
+
+.en-deliv-version,
+.en-deliv-flag {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border-radius: 3px;
+  padding: 1px 6px;
+  margin-left: 6px;
+  vertical-align: 2px;
+}
+
+.en-deliv-version {
+  background: var(--color-lab-chip);
+  color: var(--color-lab-text);
+}
+
+.en-deliv-flag {
+  border: 1px solid var(--color-border);
+  color: var(--color-text-light);
+  text-transform: uppercase;
+}
+
+.en-deliv-meta {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--color-text-light);
+  margin: 2px 0 0;
+}
+
+/* Superate: restano leggibili e scaricabili, ma non competono con le
+   versioni correnti per l'attenzione. */
+.en-deliv-item--old .en-deliv-doc a {
+  color: var(--color-text-light);
+  font-weight: 400;
+}
+
+.en-deliv-item--old .en-deliv-version {
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-light);
+}
+
+.en-deliv-foot {
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--spacing-sm);
+  max-width: 68ch;
+  font-size: 15px;
+  color: var(--color-text-light);
+}

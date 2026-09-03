@@ -414,6 +414,8 @@ Lo shortcode cerca il filename in tutti i `documents:` dichiarati nel Lab e gene
 
 **4. Versioni che sostituiscono un documento precedente.** Se una nota pubblica una nuova versione di un documento già registrato (es. una Addendum viene poi assorbita in un Coding Manual v2.0), dare ai due blocchi `documents:` lo **stesso `id`**. Il Learning Log mostra automaticamente solo la versione più recente per ogni `id` (per data della nota); quella precedente sparisce dalla griglia "Dal Lab" ma resta scaricabile dal suo URL e dal link `{% labdoc %}` nella nota vecchia — nulla si cancella, cambia solo cosa compare in vetrina. Senza `id`, ogni documento ha la propria card indipendente (il caso normale).
 
+**La pagina dei deliverables.** Gli stessi `documents:` alimentano anche `/en/deliverables/`, che li raggruppa per funzione — paper, framework, corpus, codice, bibliografia — e marca come `superseded` ogni versione che ne ha una più recente con lo stesso `id`. Le sezioni e l'assegnazione stanno in `src/_data/deliverableGroups.js`. **Un documento nuovo non richiede di toccare quel file:** se non è assegnato per `id` né per nome, cade nel gruppo della sua estensione. Si interviene solo quando la rete di sicurezza lo mette nel posto sbagliato.
+
 **Licenza:** tutte le card "Dal Lab" mostrano CC BY-NC-SA 4.0, la stessa del resto del Learning Log — non è un campo per documento, è fissa nel template.
 
 **Tre ricette pratiche:**

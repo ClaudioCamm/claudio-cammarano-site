@@ -88,6 +88,11 @@ module.exports = function(eleventyConfig) {
     return '<a href="' + doc.downloadUrl + '" class="lab-doc-link">' + (label || filename) + '</a>';
   });
 
+  // Filtra i documenti del Lab per sezione della pagina deliverables.
+  eleventyConfig.addFilter("groupOf", function(docs, key) {
+    return (docs || []).filter(function(d) { return d.group === key; });
+  });
+
   // === COLLECTIONS ===
 
   // Validazione della notazione dell'intervento AI (vedi src/_data/aiNotation.js).
@@ -246,7 +251,31 @@ module.exports = function(eleventyConfig) {
         });
       });
     });
-    return docs.sort(function(a, b) { return b.date - a.date; });
+    docs.sort(function(a, b) { return b.date - a.date; });
+
+    // Annotazioni per la pagina /en/deliverables/: a quale sezione
+    // appartiene ogni documento, e se una versione piu' recente con lo
+    // stesso `id` l'ha superato. Il Learning Log non le usa.
+    var groups = require("./src/_data/deliverableGroups.js");
+    var seenId = {};
+    docs.forEach(function(doc) {
+      var ext = doc.file.indexOf(".") === -1
+        ? ""
+        : doc.file.slice(doc.file.lastIndexOf("."));
+      doc.group = (doc.id && groups.byId[doc.id])
+        || groups.byFile[doc.file]
+        || groups.byExt[ext]
+        || "corpus";
+      // docs e' ordinato dal piu' recente: il primo con un dato `id` e'
+      // quello corrente, tutti gli altri sono versioni superate.
+      doc.superseded = false;
+      if (doc.id) {
+        if (seenId[doc.id]) doc.superseded = true;
+        seenId[doc.id] = true;
+      }
+    });
+
+    return docs;
   }
 
   eleventyConfig.addCollection("labDocuments", function(collectionApi) {

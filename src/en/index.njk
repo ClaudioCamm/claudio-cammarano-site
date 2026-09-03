@@ -72,41 +72,59 @@ translation:
 
 {# === 2 · IL PAPER. La fascia per cui la pagina esiste: stato
        dichiarato, tre affermazioni falsificabili, ultimo aggiornamento. === #}
-<section class="home-band en-paper" id="the-paper" aria-label="The paper">
+<section class="home-band en-paper" id="the-paper" aria-label="The papers">
   <div class="home-sec-head">
-    <h2 class="home-sec-title">The paper</h2>
+    <h2 class="home-sec-title">The papers</h2>
     <a class="home-sec-link" href="/lab/">Research log &#8594;</a>
   </div>
 
   <p class="en-paper-status">
-    <span class="en-paper-stage">Draft v6 · writing &amp; submission</span>
     {% if collections.labStatus.length %}<span class="en-paper-updated">Current figures and open questions: <a href="/lab/status/">Project status</a>, updated {{ collections.labStatus[0].date | formatDateEN }}</span>{% endif %}
   </p>
 
-  <h3 class="en-paper-title">Post-cognitive validation of language model outputs</h3>
-  <p class="en-paper-abstract">Language models produce assertions without classifying what kind of assertion they are producing. They can report on some of their own internal states; nothing indicates that content type is among them. The programme builds <em>post-cognition</em>: an external, auditable procedure that first fixes what kind of claim is on the table — historical-factual, empirical-quantitative, ethical-normative, metaphysical-ontological, and seven more — and only then asks whether it is true. Ontology precedes epistemology. The apparatus is a seven-dimensional taxonomy with a coding manual, tested on a horizontal corpus of 31 claims and a vertical run of 180 model replications.</p>
+  <p class="en-paper-abstract">Language models produce assertions without classifying what kind of assertion they are producing. They can report on some of their own internal states; nothing indicates that content type is among them. The programme builds <em>post-cognition</em>: an external, auditable procedure that first fixes what kind of claim is on the table &mdash; historical-factual, empirical-quantitative, ethical-normative, metaphysical-ontological, and seven more &mdash; and only then asks whether it is true. Ontology precedes epistemology. From September 2026 the programme publishes on two lines, an ontological one and an empirical one, which advance at different speeds.</p>
+
+  {# Due fasce, due stati diversi visibili insieme: un fronte pronto e uno
+     aperto. L'asimmetria e' il punto, non un difetto di allineamento. #}
+  <div class="en-lines">
+    <article class="en-line">
+      <p class="en-line-head"><span class="en-paper-stage en-paper-stage--line">&alpha;1 &middot; Writing &amp; submission</span></p>
+      <h3 class="en-line-title">The ontological line</h3>
+      <p class="en-line-body">It carries the principle that gives the programme its name, the seven-dimensional taxonomy with its coding manual, the asymmetric procedure for causal claims, and the argument that a validation protocol is a configuration of rules, model and researcher rather than an instrument one applies to the other. It is close to finished, and it is answerable to other arguments.</p>
+    </article>
+
+    <article class="en-line">
+      <p class="en-line-head"><span class="en-paper-stage en-paper-stage--open en-paper-stage--line">&beta;1 &middot; In data collection</span></p>
+      <h3 class="en-line-title">The empirical line</h3>
+      <p class="en-line-body">It carries the vertical validation across 180 runs and the multi-model control of 31 August, and two things that are still outstanding: the blind coding, on which two per-claim proportions and the second arm&rsquo;s semantic agreement rate depend, and the uplift experiment, pre-registered and not yet executed. It is not close to finished, and it is answerable to data.</p>
+    </article>
+  </div>
 
   <p class="en-paper-claims-head">Three claims that can be shown to be wrong</p>
   <ol class="en-paper-claims">
     <li>
-      <p class="en-claim">Disagreement between model runs is lexical, not epistemic. Across 180 runs, lexical agreement was 4.44% and semantic agreement 76.67% — a gap of about 72 points.</p>
+      <p class="en-claim"><span class="en-claim-line">&beta;</span> Disagreement between model runs is lexical, not epistemic. Across 180 runs, lexical agreement was 4.44% and semantic agreement 76.67% &mdash; a gap of about 72 points.</p>
       <p class="en-claim-falsifier">Wrong if the two rates converge on a larger and more varied corpus, or if the semantic rate collapses under a stricter annotation protocol. It has already met one: a label-first re-extraction in July 2026 moved the semantic rate by 1.66 points.</p>
     </li>
     <li>
-      <p class="en-claim">Classifying the type of a claim before evaluating it changes what the evaluation finds. On four causal claims, a prompt that fixes the claim type first should flag a defective causal premise more often than one that does not.</p>
-      <p class="en-claim-falsifier">Wrong if a naive prompt flags the structural defect at the same rate as the framework prompt. Whether the same holds for human coders — whether classifying first changes what people find, and how far they agree — would need a control arm of annotators who skip the step. That study is not designed yet and sits outside the scope of this phase.</p>
+      <p class="en-claim"><span class="en-claim-line">&beta;</span> Classifying the type of a claim before evaluating it changes what the evaluation finds. On four causal claims, a prompt that fixes the claim type first should flag a defective causal premise more often than one that does not.</p>
+      <p class="en-claim-falsifier">Wrong if a naive prompt flags the structural defect at the same rate as the framework prompt. Whether the same holds for human coders &mdash; whether classifying first changes what people find, and how far they agree &mdash; would need a control arm of annotators who skip the step. That study is not designed yet and sits outside the scope of this phase.</p>
     </li>
     <li>
-      <p class="en-claim">A model can report on its own internal states and still not classify the epistemic type of its own claims. That is why the check has to come from outside.</p>
+      <p class="en-claim"><span class="en-claim-line">&alpha;</span> A model can report on its own internal states and still not classify the epistemic type of its own claims. That is why the check has to come from outside.</p>
       <p class="en-claim-falsifier">Wrong if a model, with no external scaffolding, assigns claim types to its own outputs at the agreement level of trained human coders.</p>
     </li>
   </ol>
 
-  <p class="en-paper-links">
-    <a href="/downloads/cammarano-post-cognitive-validation-v6.pdf">Working paper, v6 — PDF &#8594;</a>
-    <a href="/downloads/cammarano-post-cognitive-validation-backmatter-v6.pdf">Back matter — PDF &#8594;</a>
-    <a href="/downloads/cammarano-coding-manual-v2-1.pdf">Coding manual, v2.1 — PDF &#8594;</a>
-  </p>
+  <div class="en-archive">
+    <p class="en-archive-head">Unified working paper, v1&ndash;v7 &mdash; closed</p>
+    <p class="en-paper-links">
+      <a href="/downloads/cammarano-post-cognitive-validation-v7.pdf">Working paper, v7 &mdash; PDF &#8594;</a>
+      <a href="/downloads/cammarano-post-cognitive-validation-backmatter-v6.pdf">Back matter, v6 &mdash; PDF &#8594;</a>
+      <a href="/downloads/cammarano-coding-manual-v2-1.pdf">Coding manual, v2.1 &mdash; PDF &#8594;</a>
+    </p>
+    <p class="en-archive-note">The previous draft stays where it was: <a href="/downloads/cammarano-post-cognitive-validation-v6.pdf">working paper, v6</a> <span class="en-lang-flag">superseded by v7</span>. Every version, together with the corpus, the scripts and the raw outputs: <a href="/en/deliverables/">all deposited materials &#8594;</a></p>
+  </div>
 </section>
 
 {# === 3 · LAB come changelog del programma. Trattamento autonomo:

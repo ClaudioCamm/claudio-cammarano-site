@@ -1,0 +1,55 @@
+---
+layout: layouts/base.njk
+title: Deliverables
+description: "Every document the research programme has deposited: the working paper and its versions, the taxonomy and the coding manual, the corpus, the scripts and the raw outputs. Superseded versions stay reachable."
+permalink: /en/deliverables/
+lang: en
+og_card: /images/og/og-en-home.png
+---
+
+{# ===================================================================
+   /en/deliverables/ — indice dei materiali depositati.
+   Legge collections.labDocuments, che e' costruita dal frontmatter
+   `documents:` delle note del Lab: pubblicare un documento nuovo lo fa
+   comparire qui da solo, senza toccare questa pagina. Le sezioni e il
+   loro ordine stanno in src/_data/deliverableGroups.js.
+   Le versioni superate restano in pagina, marcate: il percorso deve
+   essere ricostruibile, e un deposito che sparisce non lo permette.
+   =================================================================== #}
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/en/">The programme</a>
+  <span class="breadcrumb-sep" aria-hidden="true">·</span>
+  <span class="breadcrumb-current">Deliverables</span>
+</nav>
+
+<h1>Deliverables</h1>
+
+<p class="en-start-idea">Everything the programme has deposited, in one place. The materials are open: the coding manual, the annotated corpus, the system prompt, the extraction scripts, the raw outputs of both arms and the blind packet. Anyone who wants to check a figure rather than take it on trust has what it takes to do so.</p>
+
+<p class="en-deliv-note">Superseded versions are kept and marked rather than removed. A programme that corrects itself has to leave the corrections visible, and a reader who cited an earlier draft has to be able to find it. Each entry links to the note that introduced it, where the document is discussed.</p>
+
+{% for key in deliverableGroups.order %}
+  {% set groupDocs = collections.labDocuments | groupOf(key) %}
+  {% if groupDocs.length %}
+<section class="en-deliv-group" aria-label="{{ deliverableGroups.labels[key] }}">
+  <h2 class="en-deliv-title">{{ deliverableGroups.labels[key] }}</h2>
+  {% if deliverableGroups.notes[key] %}<p class="en-deliv-gloss">{{ deliverableGroups.notes[key] }}</p>{% endif %}
+
+  <ul class="en-deliv-list">
+    {% for doc in groupDocs %}
+    <li class="en-deliv-item{% if doc.superseded %} en-deliv-item--old{% endif %}">
+      <p class="en-deliv-doc">
+        <a href="{{ doc.downloadUrl }}">{{ doc.label }}</a>
+        {% if doc.version %}<span class="en-deliv-version">{{ doc.version }}</span>{% endif %}
+        {% if doc.superseded %}<span class="en-deliv-flag">superseded</span>{% endif %}
+      </p>
+      <p class="en-deliv-meta">{{ doc.date | formatDateEN }} &middot; introduced in <a href="{{ doc.sourceUrl }}">{{ doc.sourceTitle }}</a></p>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+  {% endif %}
+{% endfor %}
+
+<p class="en-deliv-foot">The current figures, and which of them are not yet declared, are on the <a href="/lab/status/">project status page</a>. The reasoning behind each document is in the <a href="/lab/">research log</a>.</p>
