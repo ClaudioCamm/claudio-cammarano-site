@@ -533,7 +533,16 @@ module.exports = [
       { title: "Our Military Is Built for the Wrong Century", url: "/curated/2026-05-28-brose-anduril-military-drones-nyt/", _source: "curated" },
       { title: "Meta Glasses, ICE e il futuro della sorveglianza indossabile", url: "/curated/2026-03-01-meta-glasses-privacy/", _source: "curated" },
       { title: "How surge in defence and dual-use technology investment could reconfigure global AI race", url: "/curated/2026-04-01-chatham-house-defence-ai-race/", _source: "curated" },
-      { title: "Making Claude a chemist", url: "/curated/2026-06-05-anthropic-claude-chemist/", _source: "curated" }
+      { title: "Making Claude a chemist", url: "/curated/2026-06-05-anthropic-claude-chemist/", _source: "curated" },
+      { title: "The Future of Ukraine's Drone Democracy", url: "/curated/2026-08-26-gumenyuk-ukraine-drone-democracy-foreignaffairs/", _source: "curated" }
+    ]
+  },
+  {
+    name: "drone democracy",
+    type: "teoria",
+    note: "Concetto introdotto da Nataliya Gumenyuk (Foreign Affairs, 2026) per descrivere il sistema di difesa ucraino: l'innovazione militare emerge dalla cooperazione bottom-up tra soldati, ingegneri, aziende tech, volontari e civili, bypassando la procurement istituzionale tradizionale. Questo genera un doppio effetto: adattabilità operativa superiore sul campo e una forma inedita di accountability politica dal basso — le proteste per il licenziamento del ministro Fedorov ne sono la prova empirica. L'implicazione più profonda è tolstojana: la guerra si protrae perché il popolo ucraino non cede e ha i mezzi tecnologici per esprimere questa intenzione distribuita. I leader diventano accessori. Questo ridimensiona sia il peso della delega politica sia l'efficacia delle decisioni individuali ai tavoli diplomatici. Dialoga per contrasto con il caso Taiwan, dove la drone democracy è bloccata dall'alto per conflitti di interesse strutturali.",
+    articles: [
+      { title: "The Future of Ukraine's Drone Democracy", url: "/curated/2026-08-26-gumenyuk-ukraine-drone-democracy-foreignaffairs/", _source: "curated" }
     ]
   },
   {
@@ -1370,7 +1379,8 @@ module.exports = [
     articles: [
       { title: "Taking Taiwan's democracy hostage", url: "/curated/2026-08-11-economist-taiwan-democracy-hostage/", _source: "curated" },
       { title: "China's Not the Problem. We Are.", url: "/curated/2026-05-14-chan-china-ai-nyt/", _source: "curated" },
-      { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" }
+      { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
+      { title: "The Future of Ukraine's Drone Democracy", url: "/curated/2026-08-26-gumenyuk-ukraine-drone-democracy-foreignaffairs/", _source: "curated" }
     ]
   },
 
@@ -1832,7 +1842,16 @@ module.exports = [
       { title: "IA, bulloni e umanesimo", url: "/curated/2026-06-28-pieranni-ia-bulloni-umanesimo-ilpartito/", _source: "curated" },
       { title: "Who's Afraid of Chinese Models?", url: "/curated/2026-07-20-stratechery-chinese-models/", _source: "curated" },
       { title: "Chartbook 462: China shocked – beyond 1.0 and 2.0 to the 'Big One'", url: "/curated/2026-07-29-tooze-china-shock-chartbook/", _source: "curated" },
-      { title: "The Future, Made in China", url: "/curated/2026-08-03-osnos-future-made-china-newyorker/", _source: "curated" }
+      { title: "The Future, Made in China", url: "/curated/2026-08-03-osnos-future-made-china-newyorker/", _source: "curated" },
+      { title: "In film and in life, China pursues dragon-restaurant diplomacy", url: "/curated/2026-08-31-economist-china-dragon-restaurant-diplomacy/", _source: "curated" }
+    ]
+  },
+  {
+    name: "dragon-restaurant diplomacy",
+    type: "teoria",
+    note: "Frame coniato dall'Economist (2026) per descrivere la politica estera cinese post-Wolf Warrior: mercantilismo aideologico, amicizia con tutti gli attori geopolitici simultaneamente (Iran e monarchie del Golfo, Algeria e Marocco), nessun impegno di sicurezza. Il principio è quello di Ren Zhengfei (Huawei): «In business, speak only of business». Ha un'attrattiva reale per i paesi stanchi delle condizionalità occidentali, ma due limiti strutturali: la superficialità dell'impegno (la Cina evita vincoli militari) e il paradosso Japan — l'unica eccezione alla neutralità, che rivela come la postura sia una scelta costruita, non una struttura. Dialoga con la Wolf Warrior diplomacy come suo opposto stilistico, non ideologico.",
+    articles: [
+      { title: "In film and in life, China pursues dragon-restaurant diplomacy", url: "/curated/2026-08-31-economist-china-dragon-restaurant-diplomacy/", _source: "curated" }
     ]
   },
   {
