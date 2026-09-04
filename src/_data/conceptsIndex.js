@@ -546,6 +546,14 @@ module.exports = [
     ]
   },
   {
+    name: "democrazia di guerra",
+    type: "teoria",
+    note: "Il problema strutturale delle democrazie in guerra totale: mantenere la legittimità democratica mentre si concentra il potere esecutivo, si limita la libertà di movimento e di stampa, si posticipa il voto. Il caso ucraino (PIJL/Chatham House, 2026) documenta tre posizioni tra i cittadini: chi accetta le restrizioni come misure necessarie, chi vede una deriva autoritaria (alcuni paragonano l'Ucraina alla Russia o alla Corea del Nord), chi vede nell'unità nazionale una nuova forma democratica. Il dato più scomodo è quello sugli uomini civili in età di leva che si nascondono per evitare i TCR, accumulando risentimento verso lo Stato. La tesi del sito: sostenere l'Ucraina militarmente non è solo difendere la democrazia contro la tirannia esterna, è anche prevenirne il collasso interno — il parallelo con il Libano, dove pressione esterna e fallimento istituzionale hanno prodotto un vuoto democratico, è lo scenario da evitare.",
+    articles: [
+      { title: "Ukraine's Dual Struggle", url: "/curated/2026-04-01-pijl-gumenyuk-ukraine-dual-struggle/", _source: "curated" }
+    ]
+  },
+  {
     name: "dilemma di Collingridge",
     type: "teoria",
     note: "Paradosso sulla governance tecnologica: una tecnologia è controllabile quando non la capiamo ancora abbastanza da sapere cosa farne; quando la comprendiamo è già così radicata che il controllo è praticabile solo in forma di esenzione parziale. Nel sito spiega strutturalmente perché la classificazione dual use è sempre obsoleta quando diventa applicabile.",
@@ -2241,6 +2249,15 @@ module.exports = [
     note: "Imprenditore, saggista e analista tecnologico britannico-pakistano (1971). Fondatore di Exponential View, newsletter e podcast di riferimento sull'AI e sulle tecnologie esponenziali. Ex dirigente in BBC, Microsoft e Jawbone. Autore di Exponential (2021). Nel sito è citato per The State of the AI Economy (2026): il primo modello bottom-up e de-duplicato della domanda nell'economia AI, costruito a partire dalle disclosure degli hyperscaler e da fonti proprietarie con una metodologia auditabile.",
     articles: [
       { title: "The State of the AI Economy", url: "/curated/2026-06-25-azhar-state-ai-economy-exponentialview/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Gumenyuk, Nataliya",
+    type: "persona",
+    note: "Giornalista e ricercatrice ucraina, CEO del Public Interest Journalism Lab (PIJL). Nel sito compare come autrice di due pezzi complementari sulla democrazia ucraina in tempo di guerra: il concetto di 'drone democracy' (Foreign Affairs, 2026) — l'innovazione militare bottom-up che genera accountability politica dal basso — e il rapporto PIJL 'Ukraine's Dual Struggle' (con Chatham House, 2026), ricerca primaria sul campo sulla tenuta democratica sotto legge marziale. I due pezzi mostrano la stessa energia civica distribuita nelle sue due facce: costruttiva (tecnologia militare) e protettiva (proteste contro lo smantellamento degli organi anticorruzione).",
+    articles: [
+      { title: "The Future of Ukraine's Drone Democracy", url: "/curated/2026-08-26-gumenyuk-ukraine-drone-democracy-foreignaffairs/", _source: "curated" },
+      { title: "Ukraine's Dual Struggle", url: "/curated/2026-04-01-pijl-gumenyuk-ukraine-dual-struggle/", _source: "curated" }
     ]
   },
   {
