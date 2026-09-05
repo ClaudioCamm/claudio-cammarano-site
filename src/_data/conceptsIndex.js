@@ -412,7 +412,8 @@ module.exports = [
       { title: "The Future, Made in China", url: "/curated/2026-08-03-osnos-future-made-china-newyorker/", _source: "curated" },
       { title: "Why people over the age of 55 are the new problem generation", url: "/curated/2025-01-02-economist-boomers-problem-generation/", _source: "curated" },
       { title: "Thucydides the perspicacious", url: "/curated/2026-08-03-polansky-schillinger-thucydides-aeon/", _source: "curated" },
-      { title: "Taking Taiwan's democracy hostage", url: "/curated/2026-08-11-economist-taiwan-democracy-hostage/", _source: "curated" }
+      { title: "Taking Taiwan's democracy hostage", url: "/curated/2026-08-11-economist-taiwan-democracy-hostage/", _source: "curated" },
+      { title: "Cornered, Vladimir Putin plans to escalate his war", url: "/curated/2026-08-30-economist-putin-escalation-orca/", _source: "curated" }
     ]
   },
   {
@@ -528,7 +529,10 @@ module.exports = [
       { title: "The Voice of Google", url: "/curated/2026-07-18-stapleton-voice-of-google-newyorker/", _source: "curated" },
       { title: "AI isn't the Manhattan Project — it's Jurassic Park", url: "/curated/2026-08-11-graff-jurassic-park-ai-doomsdayscenario/", _source: "curated" },
       { title: "An AI for Africa would be built on Hunhu/Ubuntu ethics", url: "/curated/2026-08-04-mangena-hunhu-ubuntu-ai-aeon/", _source: "curated" },
-      { title: "An interview with Elon Musk", url: "/curated/2026-07-24-musk-economist-interview-beddoes/", _source: "curated" }
+      { title: "An interview with Elon Musk", url: "/curated/2026-07-24-musk-economist-interview-beddoes/", _source: "curated" },
+      { title: "Museums and galleries are turning to individual patrons", url: "/curated/2026-09-03-economist-musei-mecenati-privati/", _source: "curated" },
+      { title: "How data centres became one of America's hottest political issues", url: "/curated/2026-09-02-economist-data-center-nimby-politica-usa/", _source: "curated" },
+      { title: "Nvidia is driving the AI boom. Good", url: "/curated/2026-09-05-economist-nvidia-speciale-banca-centrale/", _source: "curated" }
     ]
   },
   {
@@ -583,7 +587,9 @@ module.exports = [
       { title: "IA, bulloni e umanesimo", url: "/curated/2026-06-28-pieranni-ia-bulloni-umanesimo-ilpartito/", _source: "curated" },
       { title: "The State of the AI Economy", url: "/curated/2026-06-25-azhar-state-ai-economy-exponentialview/", _source: "curated" },
       { title: "The Future, Made in China", url: "/curated/2026-08-03-osnos-future-made-china-newyorker/", _source: "curated" },
-      { title: "What Are Companies Getting for All That A.I. Spending?", url: "/curated/2026-08-03-depillis-tokenomics-nyt/", _source: "curated" }
+      { title: "What Are Companies Getting for All That A.I. Spending?", url: "/curated/2026-08-03-depillis-tokenomics-nyt/", _source: "curated" },
+      { title: "How data centres became one of America's hottest political issues", url: "/curated/2026-09-02-economist-data-center-nimby-politica-usa/", _source: "curated" },
+      { title: "Nvidia is driving the AI boom. Good", url: "/curated/2026-09-05-economist-nvidia-speciale-banca-centrale/", _source: "curated" }
     ]
   },
   {
@@ -708,7 +714,8 @@ module.exports = [
       { title: "What Are Companies Getting for All That A.I. Spending?", url: "/curated/2026-08-03-depillis-tokenomics-nyt/", _source: "curated" },
       { title: "A linkless internet", url: "/curated/2024-12-06-jennings-linkless-internet-aeon/", _source: "curated" },
       { title: "I'm Begging You: Never Write With A.I.", url: "/curated/2026-08-04-stephens-never-write-ai-nyt/", _source: "curated" },
-      { title: "If You're Over 40, You're Ready to Use A.I.", url: "/curated/2026-07-27-millman-kabbalah-ai-nyt/", _source: "curated" }
+      { title: "If You're Over 40, You're Ready to Use A.I.", url: "/curated/2026-07-27-millman-kabbalah-ai-nyt/", _source: "curated" },
+      { title: "Does AI stop children from learning?", url: "/curated/2026-08-18-economist-ai-learning-penalty-children/", _source: "curated" }
     ]
   },
   {
@@ -1162,7 +1169,8 @@ module.exports = [
       { title: "The People Who Will Thrive in the AI Age", url: "/curated/2026-06-28-brooks-people-thrive-ai-age-atlantic/", _source: "curated" },
       { title: "Una lunga avventura: storia degli adventure game", url: "/curated/2026-06-11-machera-adventure-game-linkideeperlatv/", _source: "curated" },
       { title: "Shaping the Future of Learning: Education Readiness for the Age of AI", url: "/curated/2026-06-01-wef-education-readiness-ai/", _source: "curated" },
-      { title: "The medieval understanding of intelligence is exactly what we need in the age of A.I.", url: "/curated/2026-08-17-coolman-medieval-intelligence-ai-america/", _source: "curated" }
+      { title: "The medieval understanding of intelligence is exactly what we need in the age of A.I.", url: "/curated/2026-08-17-coolman-medieval-intelligence-ai-america/", _source: "curated" },
+      { title: "Does AI stop children from learning?", url: "/curated/2026-08-18-economist-ai-learning-penalty-children/", _source: "curated" }
     ]
   },
   {
