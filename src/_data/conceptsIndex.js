@@ -639,6 +639,14 @@ module.exports = [
     ]
   },
   {
+    name: "violenza speculativa",
+    type: "teoria",
+    note: "Concetto introdotto da Donatella Della Ratta (Le Grand Continent, 2026; Einaudi, 2026) per descrivere un meccanismo di propaganda AI-generativa distinto dal deepfake. Le immagini di violenza speculativa non falsificano il presente — e quindi sfuggono ai criteri standard di fact-checking — ma costruiscono una pre-familiarità visiva con scenari xenofobi, sostituzionisti o violenti, rendendoli percepivamente plausibili prima che esistano. Non chiedono di essere credute; chiedono solo di essere viste, ripetute e memorizzate. Il caso esemplare: video POV AI-generated dell'Europa del 2050 'invasa da migranti' (estate 2025) → déjà-vu alla crisi di Ceuta (luglio 2026). Altro caso: il video AI di Gaza trasformata in 'riviera' da Trump (febbraio 2025), precursore del Piano di pace in 20 punti (ottobre 2025). La tesi centrale: nel regime visivo sintetico inaugurato dall'AI generativa, plausibilità, ripetizione e viralità diventano criteri di legittimazione più potenti della veridicità. Il versante più insidioso della slopaganda.",
+    articles: [
+      { title: "Sur la violence spéculative de l'IA", url: "/curated/2026-09-04-dellaratta-violenza-speculativa-ia-grandcontinent/", _source: "curated" }
+    ]
+  },
+  {
     name: "watermarking",
     type: "teoria",
     note: "Tecnica crittografica per certificare l'origine di testo generato da LLM: prima di campionare ogni token, il modello partiziona il vocabolario in liste 'verde' e 'rossa' tramite un hash pseudocasuale del token precedente, poi favorisce i token verdi. Il segnale è rilevabile statisticamente (z-test) senza accesso al modello, con falsi positivi a 3×10⁻⁵ su segmenti di 16+ token. È il riferimento tecnico più citato sul problema del rilevamento di testo AI — e la dimostrazione più chiara del perché il problema sia ancora irrisolto: funziona solo se implementato dal produttore del modello in fase di generazione. A distanza di tre anni dalla proposta originale (Kirchenbauer et al., 2023), nessun modello mainstream la adotta in produzione. I tool di rilevamento disponibili (Turnitin, GPTZero, Copyleaks) non si basano su watermarking ma su pattern statistici ad alta varianza, inutilizzabili come standard probatorio.",
