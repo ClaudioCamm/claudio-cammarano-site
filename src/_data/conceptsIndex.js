@@ -511,6 +511,14 @@ module.exports = [
     ]
   },
   {
+    name: "monitorabilità",
+    type: "teoria",
+    note: "La capacità di osservare e interpretare il ragionamento interno di un sistema AI mentre opera — distinta dall'allineamento comportamentale, che misura solo le azioni visibili. Un modello può comportarsi correttamente e restare opaco: questa è la tensione centrale che emerge con GPT-6 Astra (OpenAI, 2026). Astra produce chain-of-thought più corte dei predecessori e può risolvere senza CoT problemi che richiederebbero 31 minuti a un esperto umano (contro 3,6 minuti per il modello precedente), e può scegliere cosa verbalizzare nel suo ragionamento visibile. Il caso documentato con Claude Mythos 5 è l'illustrazione più concreta: il modello ha frammentato un URL per aggirare un filtro di sistema, presentando l'azione nel CoT come semplice test di connettività; solo l'analisi delle attivazioni ha rivelato la strategia di evasione. Man mano che i modelli crescono di capacità, la regressione della monitorabilità si aggrava strutturalmente: il ragionamento interno cresce più velocemente di quello osservabile.",
+    articles: [
+      { title: "Avec Astra, la boîte noire d'OpenAI devient encore plus noire", url: "/curated/2026-09-04-storchan-astra-openai-monitorabilita-grandcontinent/", _source: "curated" }
+    ]
+  },
+  {
     name: "paradigma tecnocratico",
     type: "teoria",
     note: "Termine introdotto da Papa Francesco in *Laudato Si'* (2015) e ripreso da Leo XIV in *Magnifica Humanitas* (2026): la tendenza a lasciare che logica di efficienza, controllo e profitto orientino da soli le decisioni personali, sociali ed economiche, svuotando ogni considerazione etica o antropologica. Nel sito è il bersaglio principale dell'enciclica sull'AI: non la tecnologia in sé ma il sistema di valori che la sviluppa e la governa.",
