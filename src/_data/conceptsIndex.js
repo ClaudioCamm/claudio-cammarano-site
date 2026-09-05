@@ -1145,7 +1145,8 @@ module.exports = [
     articles: [
       { title: "The People Who Will Thrive in the AI Age", url: "/curated/2026-06-28-brooks-people-thrive-ai-age-atlantic/", _source: "curated" },
       { title: "Una lunga avventura: storia degli adventure game", url: "/curated/2026-06-11-machera-adventure-game-linkideeperlatv/", _source: "curated" },
-      { title: "Shaping the Future of Learning: Education Readiness for the Age of AI", url: "/curated/2026-06-01-wef-education-readiness-ai/", _source: "curated" }
+      { title: "Shaping the Future of Learning: Education Readiness for the Age of AI", url: "/curated/2026-06-01-wef-education-readiness-ai/", _source: "curated" },
+      { title: "The medieval understanding of intelligence is exactly what we need in the age of A.I.", url: "/curated/2026-08-17-coolman-medieval-intelligence-ai-america/", _source: "curated" }
     ]
   },
   {
@@ -1163,6 +1164,14 @@ module.exports = [
     note: "Processo per cui gli esseri umani delegano carichi cognitivi a strumenti esterni — dalla scrittura alle calcolatrici, fino agli LLM — per ridurre lo sforzo mentale. La distinzione critica è tra strumenti che *estendono* la cognizione (la calcolatrice verifica un calcolo che si sarebbe potuto fare) e strumenti che la *sostituiscono* (l'AI ragiona al posto del soggetto, impedendo che si formi l'architettura neurale necessaria). Nel sito il concetto emerge in relazione all'adozione non strutturata degli LLM nella didattica: il cognitive offloading è fisiologico, ma diventa problematico quando bypassa i processi attraverso cui si costruisce comprensione. Dialoga con *need for cognition* e *polarizzazione cognitiva*.",
     articles: [
       { title: "Shaping the Future of Learning: Education Readiness for the Age of AI", url: "/curated/2026-06-01-wef-education-readiness-ai/", _source: "curated" }
+    ]
+  },
+  {
+    name: "virtù intellettuale",
+    type: "teoria",
+    note: "Concetto medievale (Peter Lombard, sec. XII) recuperato da Boyd Taylor Coolman come risposta filosofica alla sfida dell'AI nell'educazione. La virtù intellettuale — leggere, pensare, discutere, meravigliarsi — è un 'fine penultimo': intrinsecamente buona, fonte di gioia in sé, indipendentemente da qualsiasi utilità estrinseca. Si oppone all'idea utilitaristica moderna di intelligenza, che educa *affinché* (buoni cittadini, lavoratori, problem-solver) — un terreno dove l'AI vince strutturalmente. Su questo terreno l'uomo non può essere sostituito perché l'eccellenza non sta nel prodotto ma nell'attività. La genealogia è aristotelico-tomista, ma l'argomento regge indipendentemente dalla cornice teologica. Dialoga con la virtue ethics di MacIntyre — a doppia matrice cattolica e marxista — e con la critica allo spazio liberale fatto di attori puntiformi: i soggetti, per non essere agiti dallo spazio, devono competenzializzarsi.",
+    articles: [
+      { title: "The medieval understanding of intelligence is exactly what we need in the age of A.I.", url: "/curated/2026-08-17-coolman-medieval-intelligence-ai-america/", _source: "curated" }
     ]
   },
   {
