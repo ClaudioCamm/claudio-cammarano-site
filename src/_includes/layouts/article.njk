@@ -25,18 +25,11 @@ try {
       "headline": "{{ title | jsonEscape | safe }}",
       "description": "{{ description | stripMd | jsonEscape | safe }}",
       "datePublished": "{{ date | isoDate }}",
+      "dateModified": "{{ (updated or date) | isoDate }}",
       "url": "https://claudiocammarano.com{{ page.url }}",
       "image": "{% if og_image %}https://claudiocammarano.com{{ og_image }}{% else %}https://claudiocammarano.com/images/og-default.png{% endif %}",
-      "author": {
-        "@type": "Person",
-        "@id": "https://claudiocammarano.com/#person",
-        "name": "Claudio Cammarano",
-        "url": "https://claudiocammarano.com/about/"
-      },
-      "publisher": {
-        "@type": "Person",
-        "@id": "https://claudiocammarano.com/#person"
-      },
+      "author": { "@id": "https://claudiocammarano.com/#person" },
+      "publisher": { "@id": "https://claudiocammarano.com/#person" },
       "isPartOf": { "@id": "https://claudiocammarano.com/#website" }
     },
     {
@@ -67,10 +60,22 @@ try {
           "item": "https://claudiocammarano.com{{ page.url }}"
         }{% endif %}
       ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://claudiocammarano.com/#website",
+      "url": "https://claudiocammarano.com",
+      "name": "Claudio Cammarano",
+      "inLanguage": "{{ lang or 'it' }}",
+      "author": { "@id": "https://claudiocammarano.com/#person" }
     }
   ]
 }
 </script>
+{# Person canonica: rende risolvibili gli @id #person (author/publisher)
+   e #website referenziati sopra anche sulle pagine articolo. Un solo nodo
+   #person in tutto il sito, qui referenziato, mai ridefinito. #}
+{% include "components/person-jsonld.njk" %}
 
 <div class="print-header" aria-hidden="true">
   <span class="print-header-site">claudiocammarano.com</span>

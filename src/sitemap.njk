@@ -107,7 +107,7 @@ eleventyExcludeFromCollections: true
   {% for post in collections.writings %}
   <url>
     <loc>https://claudiocammarano.com{{ post.url }}</loc>
-    <lastmod>{{ post.date | isoDate }}</lastmod>
+    <lastmod>{{ (post.data.updated or post.date) | isoDate }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -117,7 +117,7 @@ eleventyExcludeFromCollections: true
   {% for item in collections.curated %}
   <url>
     <loc>https://claudiocammarano.com{{ item.url }}</loc>
-    <lastmod>{{ item.date | isoDate }}</lastmod>
+    <lastmod>{{ (item.data.updated or item.date) | isoDate }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -132,7 +132,7 @@ eleventyExcludeFromCollections: true
   {% for note in collections.lab %}
   <url>
     <loc>https://claudiocammarano.com{{ note.url }}</loc>
-    <lastmod>{{ note.date | isoDate }}</lastmod>
+    <lastmod>{{ (note.data.updated or note.date) | isoDate }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -142,7 +142,7 @@ eleventyExcludeFromCollections: true
   {% for item in collections.learning %}
   <url>
     <loc>https://claudiocammarano.com{{ item.url }}</loc>
-    <lastmod>{{ item.date | isoDate }}</lastmod>
+    <lastmod>{{ (item.data.updated or item.date) | isoDate }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

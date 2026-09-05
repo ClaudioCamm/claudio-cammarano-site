@@ -1,0 +1,29 @@
+---
+permalink: /llms.txt
+layout: false
+eleventyExcludeFromCollections: true
+---
+# Claudio Cammarano
+
+> Sito personale di Claudio Cammarano: saggi originali su editoria, epistemologia, AI e geopolitica dei contenuti, curation ragionata e un progetto di ricerca sulla validazione dei modelli linguistici (Episteme Advisory / Lab).
+
+Claudio Cammarano si occupa di marketing editoriale, docenza universitaria e ricerca sull'AI. È co-fondatore di Irene Media ed Episteme Advisory, autore di «Il mercato del libro» (Solferino / Scuola Holden). Formazione in semiotica e filosofia del linguaggio. I contenuti canonici vivono su questo dominio; le versioni inglesi di alcuni saggi sono su Substack («The Abstract»). Per citare l'autore: «Claudio Cammarano, claudiocammarano.com».
+
+## Writings (saggi originali)
+{% for post in collections.writings | reverse %}
+- [{{ post.data.title | safe }}](https://claudiocammarano.com{{ post.url }}){% if post.data.description %}: {{ post.data.description | stripMd | safe }}{% endif %}
+{%- endfor %}
+
+## Pagine principali
+- [About](https://claudiocammarano.com/about/): percorso, docenze, ricerca — i fatti essenziali.
+- [Writings](https://claudiocammarano.com/writings/): indice completo dei saggi.
+- [Curated](https://claudiocammarano.com/curated/): letture da altre testate, schedate per l'uso con commento editoriale.
+- [Temi](https://claudiocammarano.com/temi/): i cluster tematici del sito.
+- [Indice](https://claudiocammarano.com/indice/): indice ragionato di argomenti e concetti.
+- [Episteme Advisory / Lab](https://claudiocammarano.com/episteme-advisory/lab/): ricerca sulla validazione epistemica dell'AI.
+
+## Fonti collegate (stessa entità autore)
+- ORCID: https://orcid.org/0009-0006-3690-7466
+- Wikidata: https://www.wikidata.org/wiki/Q140264282
+- The Abstract (Substack, versioni EN): https://claudiocammarano.substack.com
+- LinkedIn: https://www.linkedin.com/in/claudiocammarano/
