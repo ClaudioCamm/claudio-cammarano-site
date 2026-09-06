@@ -61,7 +61,8 @@ module.exports = [
     note: "Psicologo e Premio Nobel israeliano-americano (1934–2024). Nel sito compare in due contesti: in L'ombra del futuro per la distinzione Sistema 1 / Sistema 2 applicata alla cooperazione; in La dialettica dell'antilluminismo per mostrare che il pensiero lento è energeticamente costoso, e l'incertezza prolungata produce pressione verso la risoluzione anche a costo di sbagliare la risposta.",
     articles: [
       { title: "L'ombra del futuro", url: "/writings/2026-04-15-lombra-del-futuro/" },
-      { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" }
+      { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" },
+      { title: "The Climate Crisis Is Bigger Than Your Footprint", url: "/curated/2026-08-31-stokes-carbon-footprint-bp-mitpress/", _source: "curated" }
     ]
   },
   {
@@ -281,7 +282,7 @@ module.exports = [
   {
     name: "Ypi, Lea",
     type: "persona",
-    note: "Filosofa e scrittrice albanese, docente alla LSE. Nel sito è citata due volte: come una delle quattro filosofe che secondo Gloria Origgi hanno rifondato la filosofia politica da Parigi — ripensando il marxismo come teoria dell'emancipazione contro un liberalismo che confonde libertà formale e libertà reale — e come una delle voci che hanno suggerito il pezzo di Jonathan White sulla colonizzazione tecnologica del pensiero sul futuro.",
+    note: "Filosofa e scrittrice albanese, docente alla LSE. Nel sito è citata due volte: come una delle quattro filosofe che secondo Gloria Origgi hanno rifondato la filosofia politica da Parigi — ripensando il marxismo come teoria dell'emancipazione contro un liberalismo che confonde libertà formale e libertà reale — e come una delle voci che hanno suggerito il pezzo di Jonathan White sulla colonizzazione tecnologica del pensiero sul futuro. I suoi memoir — Libera (2022) e Dignità (2026), in Italia entrambi pubblicati da Feltrinelli — rappresentano, con un'insospettata efficacia narrativa, un resoconto multi-generazionale della transizione dall'Impero Ottomano al totalitarismo socialista e poi da questo alla democrazia liberale da parte di una famiglia strutturalmente apolide (etnia albanese di lontane origini ebraiche; religione musulmana; cittadinanza ottomana, poi greca, infine albanese) all'intersezione con la grande storia europea.",
     articles: [
       { title: "The End of the Future", url: "/curated/2026-06-15-fp-end-of-the-future/", _source: "curated" },
       { title: "Non più un affare da uomini. Ora il pensiero che guida è donna", url: "/curated/2026-06-21-origgi-filosofia-donne-parigi/", _source: "curated" },
@@ -532,7 +533,8 @@ module.exports = [
       { title: "An interview with Elon Musk", url: "/curated/2026-07-24-musk-economist-interview-beddoes/", _source: "curated" },
       { title: "Museums and galleries are turning to individual patrons", url: "/curated/2026-09-03-economist-musei-mecenati-privati/", _source: "curated" },
       { title: "How data centres became one of America's hottest political issues", url: "/curated/2026-09-02-economist-data-center-nimby-politica-usa/", _source: "curated" },
-      { title: "Nvidia is driving the AI boom. Good", url: "/curated/2026-09-05-economist-nvidia-speciale-banca-centrale/", _source: "curated" }
+      { title: "Nvidia is driving the AI boom. Good", url: "/curated/2026-09-05-economist-nvidia-speciale-banca-centrale/", _source: "curated" },
+      { title: "The Climate Crisis Is Bigger Than Your Footprint", url: "/curated/2026-08-31-stokes-carbon-footprint-bp-mitpress/", _source: "curated" }
     ]
   },
   {
@@ -590,6 +592,14 @@ module.exports = [
       { title: "What Are Companies Getting for All That A.I. Spending?", url: "/curated/2026-08-03-depillis-tokenomics-nyt/", _source: "curated" },
       { title: "How data centres became one of America's hottest political issues", url: "/curated/2026-09-02-economist-data-center-nimby-politica-usa/", _source: "curated" },
       { title: "Nvidia is driving the AI boom. Good", url: "/curated/2026-09-05-economist-nvidia-speciale-banca-centrale/", _source: "curated" }
+    ]
+  },
+  {
+    name: "iperoggetti",
+    type: "teoria",
+    note: "Categoria filosofica introdotta da Timothy Morton in *Iperoggetti* (2013): entità reali ma non localizzabili, distribuite su scale spaziotemporali che eccedono la finestra percettiva umana. Il cambiamento climatico è l'esempio paradigmatico — esiste, produce effetti, ma non si lascia vedere tutto intero da nessun punto di osservazione. Nel sito la categoria si connette alla distinzione Sistema 1/Sistema 2 di Kahneman: gli iperoggetti sono strutturalmente impervi al ragionamento intuitivo e faticano anche con quello analitico. Questo spiega perché le narrative di semplificazione individuale — il carbon footprint calculator di BP — trovano così poca resistenza cognitiva.",
+    articles: [
+      { title: "The Climate Crisis Is Bigger Than Your Footprint", url: "/curated/2026-08-31-stokes-carbon-footprint-bp-mitpress/", _source: "curated" }
     ]
   },
   {
@@ -1041,7 +1051,8 @@ module.exports = [
     type: "teoria",
     note: "Il lavoro non riconosciuto, non retribuito o non attribuito che sorregge la produzione culturale e intellettuale visibile. Nel sito è il filo che connette il caso Dondi (ghostwriting come privilegio del potere) e il caso Melandri (chi ha prodotto conoscenza senza ricevere una rendita adeguata dall'industria che ne ha beneficiato).",
     articles: [
-      { title: "Se uso l'AI sono meno professionista?", url: "/curated/2026-06-21-dondi-ai-professionalita-ghostwriting/", _source: "curated" }
+      { title: "Se uso l'AI sono meno professionista?", url: "/curated/2026-06-21-dondi-ai-professionalita-ghostwriting/", _source: "curated" },
+      { title: "Gloria Steinem's Final Essay", url: "/curated/2026-09-03-steinem-final-essay-newyorker/", _source: "curated" }
     ]
   },
   {
@@ -1307,7 +1318,8 @@ module.exports = [
       { title: "Il femminicidio non esiste", url: "/curated/2026-05-06-columbro-femminicidio-non-esiste/", _source: "curated" },
       { title: "La legge Bacchelli per Lea Melandri", url: "/curated/2026-06-06-internazionale-lea-melandri-bacchelli/", _source: "curated" },
       { title: "The Warrior-Witches of Ukraine's Resistance", url: "/curated/2026-06-21-harbaugh-warrior-witches-ukraine-atlantic/", _source: "curated" },
-      { title: "Non usiamo i media, ci cresciamo dentro", url: "/curated/2026-07-13-tarchetti-media-ecology-non-ho-capito/", _source: "curated" }
+      { title: "Non usiamo i media, ci cresciamo dentro", url: "/curated/2026-07-13-tarchetti-media-ecology-non-ho-capito/", _source: "curated" },
+      { title: "Gloria Steinem's Final Essay", url: "/curated/2026-09-03-steinem-final-essay-newyorker/", _source: "curated" }
     ]
   },
   {
@@ -2307,6 +2319,22 @@ module.exports = [
     note: "Imprenditore e investitore americano (1971), fondatore o co-fondatore di Tesla, SpaceX, X (ex Twitter), xAI. Nel sito è studiato come caso limite del paradigma tecnocratico: straordinaria capacità di hackerare i contesti in cui si muove — trovare leve regolatorie, politiche, finanziarie e portare risultati concreti — associata a una cecità strutturale verso qualsiasi big picture che non sia preconfezionata (accelerazionismo, doomsday AI, abbondanza universale). Framework che hanno in comune la struttura del mito tecnico, non dell'analisi. La sua figura pone una domanda aperta sul rapporto tra salute psichica, performance e potere nell'ecosistema tech.",
     articles: [
       { title: "An interview with Elon Musk", url: "/curated/2026-07-24-musk-economist-interview-beddoes/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Morton, Timothy",
+    type: "persona",
+    note: "Filosofo americano (1968). Autore di *Iperoggetti* (2013), introduce il concetto di hyperobject per descrivere entità — cambiamento climatico, totalità dei materiali nucleari, biosfera — così distribuite nel tempo e nello spazio da eccedere qualsiasi localizzazione percettiva. Nel sito compare come chiave per leggere perché i problemi sistemici resistono all'elaborazione cognitiva ordinaria e restano vulnerabili a narrazioni di semplificazione individuale.",
+    articles: [
+      { title: "The Climate Crisis Is Bigger Than Your Footprint", url: "/curated/2026-08-31-stokes-carbon-footprint-bp-mitpress/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Steinem, Gloria",
+    type: "persona",
+    note: "Giornalista e attivista americana (1934–2026), co-fondatrice di Ms. Magazine e figura centrale del femminismo della seconda ondata. Nel sito compare per il suo ultimo testo scritto, pubblicato su The New Yorker poco prima della morte: un documento testimoniale che rivela una genealogia poco nota — il femminismo politico di Steinem nasce dall'India postcoloniale degli anni Cinquanta e dal contatto con i gandhiani, non dalla teoria accademica occidentale.",
+    articles: [
+      { title: "Gloria Steinem's Final Essay", url: "/curated/2026-09-03-steinem-final-essay-newyorker/", _source: "curated" }
     ]
   },
   {
