@@ -1,7 +1,7 @@
 ---
 layout: layouts/article.njk
 title: "La mappa e il crinale"
-date: 2026-07-01
+date: 2026-09-07
 category: ["Politica", "Filosofia", "Geometria politica"]
 lang: "🇮🇹 Italiano"
 ai_prose: DL
