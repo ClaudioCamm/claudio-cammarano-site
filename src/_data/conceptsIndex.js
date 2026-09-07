@@ -286,7 +286,8 @@ module.exports = [
     articles: [
       { title: "The End of the Future", url: "/curated/2026-06-15-fp-end-of-the-future/", _source: "curated" },
       { title: "Non più un affare da uomini. Ora il pensiero che guida è donna", url: "/curated/2026-06-21-origgi-filosofia-donne-parigi/", _source: "curated" },
-      { title: "The Meaning of Commitment", url: "/curated/2026-07-29-ypi-meaning-of-commitment-tribune/", _source: "curated" }
+      { title: "The Meaning of Commitment", url: "/curated/2026-07-29-ypi-meaning-of-commitment-tribune/", _source: "curated" },
+      { title: "La mappa e il crinale", url: "/writings/2026-07-01-la-mappa-e-il-crinale/" }
     ]
   },
   {
@@ -2351,6 +2352,47 @@ module.exports = [
     note: "Storico ateniese (460 ca.–400 ca. a.C.), autore de «La guerra del Peloponneso». Nel sito è il punto di partenza di un canone di lettura per chi lavora con la complessità organizzativa e geopolitica: Tucidide dà il framework strutturale (l'autoinganno come motore della storia, la debolezza della giustizia tra potenze diseguali, la differenza tra cause profonde e pretesti); Senofonte — cronologicamente successivo — è il manager-pratico (l'Anabasi come caso di project management sotto crisi, ritiro attraverso territorio ostile senza mappa); Erodoto — cronologicamente il più antico — apre la prospettiva etnografica e longue-durée, proto-Braudel ante litteram. Il paradosso è che l'ordine logico di lettura (Tucidide → Senofonte → Erodoto: framework, applicazione, prospettiva) è l'inverso dell'ordine cronologico (Erodoto → Tucidide → Senofonte).",
     articles: [
       { title: "Thucydides the perspicacious", url: "/curated/2026-08-03-polansky-schillinger-thucydides-aeon/", _source: "curated" }
+    ]
+  },
+
+  {
+    name: "Bourdieu, Pierre",
+    type: "persona",
+    note: "Sociologo francese (1930–2002), teorico del capitale simbolico e della distinzione sociale. Nel sito il concetto viene preso in prestito e piegato a un uso diverso dal suo: non la conversione fra forme di capitale, ma la regola di composizione quando un soggetto politico cambia direzione — un nuovo investimento simbolico non si somma al vecchio, lo compone, con una risultante più corta di entrambi.",
+    articles: [
+      { title: "La mappa e il crinale", url: "/writings/2026-07-01-la-mappa-e-il-crinale/" }
+    ]
+  },
+  {
+    name: "capitale simbolico",
+    type: "teoria",
+    note: "Concetto di Bourdieu, ripreso nel sito con un'estensione che non è sua: prendere posizione politica è un investimento che si deposita senza attrito quando il soggetto è nuovo, ma mutare valori non aggiunge un nuovo investimento al vecchio — lo compone vettorialmente, con una risultante più corta e spesso deviata verso la posizione da cui si voleva uscire. Il caso analizzato è la Lega, dal capitale nordista all'ambizione nazionale.",
+    articles: [
+      { title: "La mappa e il crinale", url: "/writings/2026-07-01-la-mappa-e-il-crinale/" }
+    ]
+  },
+  {
+    name: "Schmitt, Carl",
+    type: "persona",
+    note: "Giurista e filosofo politico tedesco (1888–1985), teorico della distinzione amico-nemico come fondamento del politico. Nel sito è il padre nobile dell'ottavo alt-right/MAGA nella mappa a otto famiglie politiche, e la sua coppia concettuale è ciò che permette di tracciare la soglia — non una linea di quadrante ma un confine trasversale — oltre la quale l'avversario smette di essere un concorrente e diventa un nemico da eliminare dal campo.",
+    articles: [
+      { title: "La mappa e il crinale", url: "/writings/2026-07-01-la-mappa-e-il-crinale/" }
+    ]
+  },
+  {
+    name: "Hobsbawm, Eric",
+    type: "persona",
+    note: "Storico britannico (1917–2012), coautore con Terence Ranger di The Invention of Tradition (1983). Nel sito la sua tesi sull'invenzione della tradizione è l'obiezione che costringe a cambiare criterio nel valutare le genealogie intellettuali rivendicate dalle famiglie politiche contemporanee: non conta l'anzianità di un antenato rivendicato, ma se qualcuno riconosciuto come intelligente abbia già sostenuto quelle idee prima.",
+    articles: [
+      { title: "La mappa e il crinale", url: "/writings/2026-07-01-la-mappa-e-il-crinale/" }
+    ]
+  },
+  {
+    name: "Aresu, Alessandro",
+    type: "persona",
+    note: "Saggista italiano, autore di Le potenze del capitalismo politico (2020). Nel sito la sua teoria del capitalismo politico spiega l'anomalia dei \"tech bros\" nella mappa a otto famiglie: attori privati che perseguono fini propri, talvolta coincidenti con quelli degli Stati e talvolta no, con la decisione su quando smettano di coincidere lasciata a un privato — il caso Starlink in Ucraina ne è l'esempio.",
+    articles: [
+      { title: "La mappa e il crinale", url: "/writings/2026-07-01-la-mappa-e-il-crinale/" }
     ]
   },
 
