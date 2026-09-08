@@ -1134,6 +1134,7 @@ article.article-content h3 {
 }
 
 .article-hero img {
+  width: 100%;
   max-width: 100%;
   height: auto;
   display: block;
@@ -1283,6 +1284,12 @@ figcaption {
 }
 
 .diagram-block svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.diagram-block img {
   display: block;
   width: 100%;
   height: auto;

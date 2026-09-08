@@ -144,20 +144,18 @@ Tuttavia, grazie a questa mappa sappiamo già dove è stata recentemente sfrutta
 
 Il caso è interessante per una ragione: dimostra che il terreno politico è anche un campo di idee, e che per un contendente politico è fondamentale sviluppare la capacità di formulare un'idea di mondo e un'ipotesi di futuro — e di questi tempi non ce ne sono molte che siano sia fresche, sia potabili. Resta da vedere che connotati prenderà questa nuova *Marx-renaissance* che ho ipotizzato. Se si depositerà dove la tradizione le assegnerebbe, senza frizioni, allora avremmo falsificato tutta la teoria: questi assi sarebbero sbagliati e la mappa andrebbe buttata. Già aver formulato ipotesi geometriche sulla politica, un po' spinoziane e persino falsificabili non sarebbe male.
 
-## Riferimenti bibliografici
+## Bibliografia
 
-Aresu, A. (2020). *Le potenze del capitalismo politico*. Milano: La Nave di Teseo.
+ARESU, Alessandro, *Le potenze del capitalismo politico*, Milano, La Nave di Teseo, 2020.
 
-Bourdieu, P. (1979). *La distinction. Critique sociale du jugement*. Paris: Les Editions de Minuit.
+BOURDIEU, Pierre, *La distinction. Critique sociale du jugement*, Parigi, Les Éditions de Minuit, 1979 (trad. it. *La distinzione. Critica sociale del gusto*, Bologna, Il Mulino, 1983).
 
-Burke, E. (1790). *Reflections on the Revolution in France*. London: J. Dodsley.
+BURKE, Edmund, *Reflections on the Revolution in France*, Londra, J. Dodsley, 1790.
 
-Hobsbawm, E., Ranger, T. (a cura di) (1983). *The Invention of Tradition*. Cambridge: Cambridge University Press.
+HOBSBAWM, Eric J. e Terence Ranger (a cura di), *The Invention of Tradition*, Cambridge, Cambridge University Press, 1983 (trad. it. *L'invenzione della tradizione*, Torino, Einaudi, 1987).
 
-Schmitt, C. (1932). *Der Begriff des Politischen*. Munchen: Duncker & Humblot.
+SCHMITT, Carl, *Der Begriff des Politischen*, Monaco, Duncker & Humblot, 1932 (trad. it. *Il concetto di 'politico'*, in *Le categorie del 'politico'*, Bologna, Il Mulino, 1972).
 
-Ypi, L. (2019). "The far-right international is here -- when will the left wake up?". *Social Europe*, 26 giugno.
+YPI, Lea, "The far-right international is here — when will the left wake up?", *Social Europe*, 26 giugno 2019.
 
-Ypi, L. (2025). *Confini di classe. Diseguaglianze, migrazione e cittadinanza nello stato capitalista*. Milano: Feltrinelli.
-
-
+YPI, Lea, *Confini di classe. Diseguaglianze, migrazione e cittadinanza nello stato capitalista*, Milano, Feltrinelli, 2025.
