@@ -374,7 +374,7 @@ BOURDIEU, Pierre, [*La distinction. Critique sociale du jugement*](https://openl
 
 BURKE, Edmund, [*Reflections on the Revolution in France*](https://openlibrary.org/books/OL23409811M/Reflections_on_the_revolution_in_France_and_on_the_proceedings_in_certain_societies_in_London_relati), Londra, J. Dodsley, 1790.
 
-DOUTHAT, Ross, "Peter Thiel and the Antichrist", *The New York Times*, 26 giugno 2025 (episodio di *Interesting Times*).
+DOUTHAT, Ross, ["Peter Thiel and the Antichrist"](https://www.nytimes.com/2025/06/26/opinion/peter-thiel-antichrist-ross-douthat.html), *The New York Times*, 26 giugno 2025 (episodio di *Interesting Times*).
 
 HOBSBAWM, Eric J. e Terence Ranger (a cura di), [*The Invention of Tradition*](https://openlibrary.org/books/OL21284575M/The_invention_of_tradition), Cambridge, Cambridge University Press, 1983 (trad. it. *L’invenzione della tradizione*, Torino, Einaudi, 1984).
 
