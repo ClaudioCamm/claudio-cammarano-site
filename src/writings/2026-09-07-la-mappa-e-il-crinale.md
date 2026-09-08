@@ -368,16 +368,16 @@ Il caso è interessante per una ragione: dimostra che il terreno politico è anc
 
 ## Bibliografia
 
-ARESU, Alessandro, *Le potenze del capitalismo politico*, Milano, La Nave di Teseo, 2020.
+ARESU, Alessandro, [*Le potenze del capitalismo politico. Stati Uniti e Cina*](https://lanavediteseo.eu/portfolio/le-potenze-del-capitalismo-politico-stati-uniti-e-cina/), Milano, La Nave di Teseo, 2020.
 
-BOURDIEU, Pierre, *La distinction. Critique sociale du jugement*, Parigi, Les Éditions de Minuit, 1979 (trad. it. *La distinzione. Critica sociale del gusto*, Bologna, Il Mulino, 1983).
+BOURDIEU, Pierre, [*La distinction. Critique sociale du jugement*](https://openlibrary.org/books/OL22186916M/La_distinction), Parigi, Les Éditions de Minuit, 1979 (trad. it. *La distinzione. Critica sociale del gusto*, Bologna, Il Mulino, 1983).
 
-BURKE, Edmund, *Reflections on the Revolution in France*, Londra, J. Dodsley, 1790.
+BURKE, Edmund, [*Reflections on the Revolution in France*](https://openlibrary.org/books/OL23409811M/Reflections_on_the_revolution_in_France_and_on_the_proceedings_in_certain_societies_in_London_relati), Londra, J. Dodsley, 1790.
 
-HOBSBAWM, Eric J. e Terence Ranger (a cura di), *The Invention of Tradition*, Cambridge, Cambridge University Press, 1983 (trad. it. *L'invenzione della tradizione*, Torino, Einaudi, 1987).
+HOBSBAWM, Eric J. e Terence Ranger (a cura di), [*The Invention of Tradition*](https://openlibrary.org/books/OL21284575M/The_invention_of_tradition), Cambridge, Cambridge University Press, 1983 (trad. it. *L'invenzione della tradizione*, Torino, Einaudi, 1984).
 
-SCHMITT, Carl, *Der Begriff des Politischen*, Monaco, Duncker & Humblot, 1932 (trad. it. *Il concetto di 'politico'*, in *Le categorie del 'politico'*, Bologna, Il Mulino, 1972).
+SCHMITT, Carl, [*Der Begriff des Politischen*](https://openlibrary.org/works/OL3586384W/Der_Begriff_des_Politischen._Text_von_1932_mit_einem_Vorwort_und_drei_Corollarien), Monaco, Duncker & Humblot, 1932 (trad. it. *Il concetto di «politico»*, in *Le categorie del «politico». Saggi di teoria politica*, a cura di Gianfranco Miglio e Pierangelo Schiera, Bologna, Il Mulino, 1972).
 
-YPI, Lea, "The far-right international is here — when will the left wake up?", *Social Europe*, 26 giugno 2019.
+YPI, Lea, ["The far-right international is here—when will the left wake up?"](https://www.socialeurope.eu/the-far-right-international), *Social Europe*, 26 giugno 2019.
 
-YPI, Lea, *Confini di classe. Diseguaglianze, migrazione e cittadinanza nello stato capitalista*, Milano, Feltrinelli, 2025.
+YPI, Lea, [*Confini di classe. Diseguaglianze, migrazione e cittadinanza nello stato capitalista*](https://www.feltrinellieditore.it/opera/confini-di-classe/), Milano, Feltrinelli, 2025.
