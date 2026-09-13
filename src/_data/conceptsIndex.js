@@ -22,6 +22,11 @@ module.exports = [
   {
     name: "Descartes, René",
     type: "persona",
+    related: [
+      { name: "embodied mind", why: "Il paradigma nasce per smontare Cartesio: senza corpo non c'è mente nel senso pieno." },
+      { name: "Discours de la méthode", why: "Cartesio nel 1637 demolisce le proprie certezze e si tiene una morale provvisoria per il tempo dei lavori." },
+      { name: "Spinoza, Baruch", why: "Dove Cartesio separa le due sostanze, Spinoza le tiene come due attributi di una sola." }
+    ],
     sameAs: ["https://www.wikidata.org/wiki/Q9191", "https://it.wikipedia.org/wiki/Cartesio"],
     note: "Filosofo e matematico francese (1596–1650), fondatore del dualismo mente/corpo (res cogitans / res extensa). Nel sito compare come punto di partenza per la critica embodied — senza corpo non c'è mente nel senso pieno — e come autore del Discours de la méthode, modello del pensatore che demolisce le fondamenta del sapere adottando una «morale provvisoria» conservatrice nel frattempo.",
     articles: [
@@ -32,6 +37,9 @@ module.exports = [
   {
     name: "Foucault, Michel",
     type: "persona",
+    related: [
+      { name: "Eco, Umberto", why: "La stessa stagione teorica produce chi dissolve i fatti nel discorso e chi li difende dal discorso." }
+    ],
     sameAs: ["https://www.wikidata.org/wiki/Q44272", "https://it.wikipedia.org/wiki/Michel_Foucault"],
     note: "Filosofo francese (1926–1984). Nel sito appare come autore il cui post-strutturalismo è stato «appreso in modo deteriore» da Orbán, Trump e Putin: la tesi che tutto sia effetto di discorso viene usata dai populisti per negare la resistenza della realtà agli schemi mentali. Il sito ricorda anche il suo entusiasmo per la rivoluzione iraniana del 1978 — caso esemplare dei rischi dell'antiilluminismo.",
     articles: [
@@ -82,6 +90,10 @@ module.exports = [
   {
     name: "Axelrod, Robert",
     type: "persona",
+    related: [
+      { name: "The Evolution of Cooperation", why: "Axelrod mette in gara le strategie del dilemma iterato; l'esito è un libro in cui vince la più semplice." },
+      { name: "shadow of the future", why: "Dal torneo di Axelrod esce la condizione: si coopera se ci si aspetta di incontrarsi ancora." }
+    ],
     sameAs: ["https://www.wikidata.org/wiki/Q583438", "https://en.wikipedia.org/wiki/Robert_Axelrod_(political_scientist)"],
     note: "Politologo americano (1943). Nel sito è il protagonista del torneo computazionale del dilemma del prigioniero: ha dimostrato che Tit-for-Tat vince in ambienti iterati. Il suo The Evolution of Cooperation (1984) è il punto di partenza teorico della serie «Ombre»: il lavoro che ha dato base scientifica all'idea che la cooperazione sia razionale.",
     articles: [
@@ -92,6 +104,9 @@ module.exports = [
   {
     name: "Putnam, Robert",
     type: "persona",
+    related: [
+      { name: "two-level games", why: "Putnam nel 1988 mostra che ogni leader negozia su due tavoli, e deve chiuderli tutti e due." }
+    ],
     sameAs: ["https://www.wikidata.org/wiki/Q351815", "https://it.wikipedia.org/wiki/Robert_D._Putnam"],
     note: "Politologo americano (1941–2024). Nel sito è citato per la teoria dei two-level games (1988): ogni leader negozia simultaneamente su un tavolo internazionale e uno domestico, e l'accordo è raggiungibile solo se i win-set si intersecano. Noto anche per Bowling Alone (2000) sul declino del capitale sociale americano.",
     articles: [
@@ -101,6 +116,9 @@ module.exports = [
   {
     name: "Lyotard, Jean-François",
     type: "persona",
+    related: [
+      { name: "incredulità verso le metanarrazioni", why: "Lyotard diagnostica nel 1979 la fine dei grandi racconti di legittimazione. Descriveva, non prescriveva." }
+    ],
     sameAs: ["https://www.wikidata.org/wiki/Q193257", "https://it.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Lyotard"],
     note: "Filosofo francese (1924–1998). Nel sito è l'autore della diagnosi dell'incredulità verso le metanarrazioni (La condition postmoderne, 1979): la perdita di legittimità dei grandi sistemi di giustificazione illuministi. Il sito sottolinea che Lyotard descriveva un fatto, non prescriveva una norma — a differenza dei suoi epigoni.",
     articles: [
@@ -110,6 +128,9 @@ module.exports = [
   {
     name: "Habermas, Jürgen",
     type: "persona",
+    related: [
+      { name: "ragione comunicativa", why: "Habermas definisce la ragione comunicativa come l'universale minimo che sopravvive al relativismo." }
+    ],
     sameAs: ["https://www.wikidata.org/wiki/Q76357", "https://it.wikipedia.org/wiki/J%C3%BCrgen_Habermas"],
     note: "Filosofo tedesco (1929). Nel sito è l'ancoraggio dell'universalismo minimo: ogni volta che argomentiamo presupponiamo già norme condivise — la struttura pragmatica dell'argomentazione richiede che la migliore argomentazione possa prevalere sulla forza. Questo è l'universale che il relativismo non può abolire senza autocontraddirsi.",
     articles: [
@@ -119,6 +140,9 @@ module.exports = [
   {
     name: "Ferraris, Maurizio",
     type: "persona",
+    related: [
+      { name: "inemendabilità della realtà", why: "Ferraris torna indietro dal poststrutturalismo e trova il punto in cui la realtà non cede." }
+    ],
     sameAs: ["https://www.wikidata.org/wiki/Q3848721", "https://it.wikipedia.org/wiki/Maurizio_Ferraris"],
     note: "Filosofo italiano (1956), ha percorso a ritroso la strada dal poststrutturalismo al nuovo realismo. Nel sito è citato per il concetto di inemendabilità della realtà: senza sapere condiviso non rimane libertà di interpretare, ma solo il potere di chi ha forza sufficiente per far valere la propria narrazione.",
     articles: [
@@ -183,6 +207,9 @@ module.exports = [
   {
     name: "Wack, Pierre",
     type: "persona",
+    related: [
+      { name: "scenario planning", why: "Wack lo sviluppa in Shell negli anni Settanta, per rompere i modelli mentali del management." }
+    ],
     sameAs: ["https://www.wikidata.org/wiki/Q7192488", "https://en.wikipedia.org/wiki/Pierre_Wack"],
     note: "Manager e pensatore strategico francese (1922–1997). Nel sito è citato come padre dello scenario planning: lavorando in Shell negli anni Settanta, ha sviluppato la tecnica di costruire scenari alternativi per rompere i modelli mentali del management e preparare l'organizzazione all'imprevedibile. Il suo metodo è il quadro teorico del rifiuto di Amodei al Pentagono.",
     articles: [
@@ -192,6 +219,10 @@ module.exports = [
   {
     name: "Amodei, Dario",
     type: "persona",
+    related: [
+      { name: "Anthropic", why: "L'ha fondata nel 2021 con altri transfughi da OpenAI, e la guida." },
+      { name: "Hegseth, Pete", why: "Le due parti dello stesso rifiuto: la richiesta di partnership militare e il no che la chiude." }
+    ],
     sameAs: ["https://www.wikidata.org/wiki/Q103335665", "https://it.wikipedia.org/wiki/Dario_Amodei"],
     note: "CEO e cofondatore di Anthropic (1983). Nel sito è la figura centrale dell'articolo sul rifiuto di un contratto con il Pentagono: ha usato lo scenario planning per valutare i rischi a lungo termine dell'AI militarizzata, scegliendo di dire no a Pete Hegseth. Incarna la tensione tra sviluppo AI e responsabilità strategica.",
     articles: [
@@ -202,6 +233,9 @@ module.exports = [
   {
     name: "Gerasimov, Valery",
     type: "persona",
+    related: [
+      { name: "dottrina Gerasimov", why: "Sistematizza le «misure attive» sovietiche; il nome di Gerasimov le è attribuito impropriamente." }
+    ],
     sameAs: ["https://www.wikidata.org/wiki/Q36073", "https://it.wikipedia.org/wiki/Valerij_Vasil'evi%C4%8D_Gerasimov"],
     note: "Generale russo, capo di Stato Maggiore (1955). Nel sito è citato per la dottrina della guerra ibrida che porta il suo nome (impropriamente): sistematizzazione delle «misure attive» sovietiche — disinformazione, amplificazione dei conflitti interni, finanziamento di fazioni opposte. La trappola che costruisce è letale: o la democrazia tollera il rumore e si dissolve, o lo sopprime e si nega.",
     articles: [
@@ -240,6 +274,9 @@ module.exports = [
   {
     name: "Clark, Andy",
     type: "persona",
+    related: [
+      { name: "extended mind", why: "Clark e Chalmers nel 1998 spostano il confine: il taccuino di Otto è memoria quanto il suo ippocampo." }
+    ],
     sameAs: ["https://www.wikidata.org/wiki/Q4760523", "https://en.wikipedia.org/wiki/Andy_Clark"],
     note: "Filosofo della mente britannico (1957). Nel sito è co-autore della tesi della extended mind (con Chalmers, 1998): non esiste un confine netto tra mente e strumenti — il taccuino di Otto fa parte della sua memoria tanto quanto il suo ippocampo. Ha anche contribuito al paradigma del cervello come macchina predittiva.",
     articles: [
@@ -249,6 +286,9 @@ module.exports = [
   {
     name: "Varela, Francisco",
     type: "persona",
+    related: [
+      { name: "embodied mind", why: "Varela, Thompson e Rosch nel 1991 rimettono la cognizione dentro il corpo." }
+    ],
     sameAs: ["https://www.wikidata.org/wiki/Q923582", "https://it.wikipedia.org/wiki/Francisco_Varela"],
     note: "Biologo e neuroscienziato cileno (1946–2001). Nel sito è co-autore con Thompson di The Embodied Mind (1991): la cognizione è radicata nella struttura corporea del soggetto. Davanti a un LLM disincarnato, questa posizione cambia statuto: da posizione tra altre diventa criterio di distinzione tra mente biologica e macchina.",
     articles: [
@@ -258,6 +298,9 @@ module.exports = [
   {
     name: "Floridi, Luciano",
     type: "persona",
+    related: [
+      { name: "capitale semantico", why: "Floridi lo usa per una formula secca: l'AI aiuta chi le cose le sa già fare." }
+    ],
     sameAs: ["https://www.wikidata.org/wiki/Q214119", "https://it.wikipedia.org/wiki/Luciano_Floridi"],
     note: "Filosofo dell'informazione italiano (1964), fondatore dell'etica dell'informazione. Nel sito è citato per la formula: «l'AI aiuta chi le cose le sa già fare». Senza capitale semantico — tutto ciò che si è letto, vissuto, capito, sbagliato e corretto — non si sa cosa si sta guardando quando lo strumento ti alza dal suolo.",
     articles: [
@@ -361,6 +404,9 @@ module.exports = [
   {
     name: "Diegoli, Gianluca",
     type: "persona",
+    related: [
+      { name: "e-commerce", why: "Diegoli è probabilmente uno dei più grandi esperti italiani di commercio digitale." }
+    ],
     sameAs: ["https://www.wikidata.org/wiki/Q136512702"],
     note: "Consulente di marketing ed e-commerce, autore della newsletter, blogger della prima ora, grande sperimentatore, figura pubblica, autore di libri rilevanti che vanno al di là del marketing. Nel sito è citato per la sua distinzione fra tre «IA» del commercio digitale — discovery lato consumatore, infrastruttura di back-office, agentica — sistematicamente confuse nel dibattito pubblico nonostante abbiano urgenza, maturità e grado di hype completamente diversi.",
     articles: [
@@ -419,6 +465,10 @@ module.exports = [
   {
     name: "Shannon, Claude E.",
     type: "persona",
+    related: [
+      { name: "A Mathematical Theory of Communication", why: "Nel 1948 Shannon misura l'informazione, e da quella misura nasce tutto il resto." },
+      { name: "neghentropia", why: "L'entropia di Shannon misura l'indifferenza; la neghentropia misura quanta se ne toglie." }
+    ],
     sameAs: ["https://www.wikidata.org/wiki/Q92760", "https://it.wikipedia.org/wiki/Claude_Shannon"],
     note: "Matematico e ingegnere statunitense (1916–2001), fondatore della teoria dell’informazione. Nel sito è il fondamento formale della teoria del valore dei testi: l’entropia di uno stato come misura di indifferenza fra alternative, la ridondanza come nome esatto di ciò che il linguaggio comune chiama informazione, e la coincidenza di forma con l’entropia di Gibbs — notata da von Neumann, sfruttata da Brillouin — che autorizza a usare il lessico termodinamico parlando di scrittura.",
     articles: [
@@ -450,6 +500,10 @@ module.exports = [
   {
     name: "shadow of the future",
     type: "teoria",
+    related: [
+      { name: "fattore di sconto δ", why: "δ è la misura dell'ombra: il futuro pesa quanto δ è alto." },
+      { name: "The Evolution of Cooperation", why: "Il libro di Axelrod è dove il concetto smette di essere un'intuizione e diventa un risultato." }
+    ],
     note: "Il «peso del futuro» nella teoria dei giochi iterata: la cooperazione è sostenibile quando i giocatori si aspettano di incontrarsi ancora e il fattore di sconto δ è sufficientemente alto. Nel sito è il concetto centrale della serie «Ombre»: senza ombra del futuro la diserzione diventa razionale e il sistema cooperativo collassa.",
     articles: [
       { title: "L'ombra del futuro", url: "/writings/2026-04-15-lombra-del-futuro/" },
@@ -466,6 +520,9 @@ module.exports = [
   {
     name: "Tit-for-Tat",
     type: "teoria",
+    related: [
+      { name: "The Evolution of Cooperation", why: "La strategia che vince il torneo raccontato nel libro: quattro righe, nessun rancore." }
+    ],
     note: "Strategia nel dilemma del prigioniero iterato: coopera alla prima mossa, poi copia esattamente l'azione dell'avversario. Nel torneo di Axelrod risulta la strategia vincente: semplice, chiara, non rancorosa. Nel sito è il metro per leggere le relazioni internazionali contemporanee, dove il meccanismo di reciprocità si è inceppato.",
     articles: [
       { title: "L'ombra del futuro", url: "/writings/2026-04-15-lombra-del-futuro/" },
@@ -486,6 +543,9 @@ module.exports = [
   {
     name: "win-set domestico",
     type: "teoria",
+    related: [
+      { name: "two-level games", why: "Il win-set è il pezzo che rende operativo il modello: senza intersezione non si chiude niente." }
+    ],
     note: "Nella teoria dei two-level games di Putnam: l'insieme degli accordi che la base domestica di un leader è disposta ad accettare. Un accordo internazionale è raggiungibile solo se i win-set dei due leader si intersecano. Nel sito spiega i fallimenti diplomatici in cui i vincoli interni rendono impossibile qualsiasi accordo razionale.",
     articles: [
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" }
@@ -520,6 +580,9 @@ module.exports = [
   {
     name: "dottrina Gerasimov",
     type: "teoria",
+    related: [
+      { name: "Putin, Vladimir", why: "Putin pratica le misure attive; la dottrina arriva dopo e le mette in forma." }
+    ],
     note: "Denominazione (impropria) della dottrina russa della guerra ibrida: sistematizzazione delle «misure attive» sovietiche — disinformazione, amplificazione dei conflitti interni, finanziamento simultaneo di fazioni opposte. Nel sito è il modello per leggere gli attacchi alle democrazie: o la democrazia tollera il rumore e si dissolve, o lo sopprime e si nega come tale.",
     articles: [
       { title: "Il rumore a Beirut", url: "/writings/2026-04-09-il-rumore-a-beirut/" },
@@ -588,6 +651,9 @@ module.exports = [
   {
     name: "dual use",
     type: "teoria",
+    related: [
+      { name: "DARPA", why: "L'agenzia è la fabbrica storica del doppio uso: dai suoi progetti militari escono tecnologie civili." }
+    ],
     note: "La proprietà di tecnologie e conoscenze di essere utilizzabili sia per scopi civili che militari. Nel sito è presentato come struttura normale dello sviluppo tecnologico, non come caso speciale: con le general purpose technologies, la distinzione origine/destinazione è inapplicabile per costruzione. Il termine funziona sempre troppo tardi, fino a risultare quasi inutile.",
     articles: [
       { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
@@ -602,6 +668,9 @@ module.exports = [
   {
     name: "drone democracy",
     type: "teoria",
+    related: [
+      { name: "Gumenyuk, Nataliya", why: "Gumenyuk conia il termine su Foreign Affairs nel 2026, guardando la difesa ucraina dal basso." }
+    ],
     note: "Concetto introdotto da Nataliya Gumenyuk (Foreign Affairs, 2026) per descrivere il sistema di difesa ucraino: l'innovazione militare emerge dalla cooperazione bottom-up tra soldati, ingegneri, aziende tech, volontari e civili, bypassando la procurement istituzionale tradizionale. Questo genera un doppio effetto: adattabilità operativa superiore sul campo e una forma inedita di accountability politica dal basso — le proteste per il licenziamento del ministro Fedorov ne sono la prova empirica. L'implicazione più profonda è tolstojana: la guerra si protrae perché il popolo ucraino non cede e ha i mezzi tecnologici per esprimere questa intenzione distribuita. I leader diventano accessori. Questo ridimensiona sia il peso della delega politica sia l'efficacia delle decisioni individuali ai tavoli diplomatici. Dialoga per contrasto con il caso Taiwan, dove la drone democracy è bloccata dall'alto per conflitti di interesse strutturali.",
     articles: [
       { title: "The Future of Ukraine's Drone Democracy", url: "/curated/2026-08-26-gumenyuk-ukraine-drone-democracy-foreignaffairs/", _source: "curated" }
@@ -679,6 +748,9 @@ module.exports = [
   {
     name: "extended mind",
     type: "teoria",
+    related: [
+      { name: "embodied mind", why: "Due modi opposti di uscire dal cognitivismo: la mente esce dal cranio o affonda nel corpo." }
+    ],
     note: "Tesi filosofica di Clark e Chalmers (1998): la mente non finisce dove finisce il cranio. Gli strumenti cognitivi usati regolarmente fanno parte funzionalmente della mente del soggetto. Nel sito è usata per inquadrare il rapporto con i LLM: la domanda non è se il LLM «pensa», ma come modifica la struttura cognitiva di chi lo usa.",
     articles: [
       { title: "La differenza fra Claude e le mie gatte", url: "/writings/2026-04-30-la-differenza-fra-claude-e-le-mie-gatte/" },
@@ -689,6 +761,9 @@ module.exports = [
   {
     name: "embodied mind",
     type: "teoria",
+    related: [
+      { name: "The Embodied Mind", why: "Il libro del 1991 è dove il paradigma prende la forma con cui il sito lo usa." }
+    ],
     note: "Paradigma cognitivo e filosofico secondo cui la cognizione è radicata nella struttura corporea del soggetto e nella sua interazione con l'ambiente, contro il cognitivismo classico (mente come software su hardware). Nel sito è il criterio per distinguere la mente biologica dal LLM: senza corpo non si dà cogito nel senso pieno.",
     articles: [
       { title: "La differenza fra Claude e le mie gatte", url: "/writings/2026-04-30-la-differenza-fra-claude-e-le-mie-gatte/" },
@@ -811,6 +886,9 @@ module.exports = [
   {
     name: "incredulità verso le metanarrazioni",
     type: "teoria",
+    related: [
+      { name: "La condition postmoderne", why: "La formula nasce lì, nel rapporto che Lyotard scrive per il governo del Québec nel 1979." }
+    ],
     note: "Definizione lyotardiana della condizione postmoderna (1979): la perdita di legittimità dei grandi sistemi di giustificazione (Ragione, Storia, Progresso). Nel sito è presentata come diagnosi, non come prescrizione — Lyotard descriveva un fatto, non lo celebrava. Il problema è nei suoi epigoni, che ne hanno fatto uno strumento di relativismo attivo.",
     articles: [
       { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" },
@@ -884,6 +962,9 @@ module.exports = [
   {
     name: "trasferimenti monetari diretti",
     type: "teoria",
+    related: [
+      { name: "macroeconomia", why: "Secondo The Economist dare i soldi ai poveri funziona meglio dell'apparato costruito per aiutarli, e la teoria non l'aveva previsto." }
+    ],
     note: "Strumento di riduzione della povertà estrema che consiste nel dare liquidità diretta ai beneficiari invece di erogare servizi tramite intermediari. Nel sito è citato come dato che mette in discussione decenni di architetture assistenziali più sofisticate e più costose, a parità o superiorità di efficacia.",
     articles: [
       { title: "From weeks of work to days: How I rebuilt two data journalism projects with AI", url: "/curated/2026-06-26-ottaviani-data-journalism-ai-reuters/", _source: "curated" },
@@ -920,6 +1001,9 @@ module.exports = [
   {
     name: "editoria",
     type: "teoria",
+    related: [
+      { name: "legge Bacchelli", why: "Quando chi ha prodotto cultura finisce senza mezzi, lo Stato italiano interviene con un vitalizio caso per caso." }
+    ],
     sameAs: ["https://www.wikidata.org/wiki/Q3972943", "https://it.wikipedia.org/wiki/Editoria"],
     note: "Filo tematico ricorrente nei curated del sito: la sostenibilità economica della produzione culturale e informativa, dalla digitalizzazione di archivi storici dietro paywall, alla precarietà di chi produce conoscenza senza un modello di business solido, alla sovrapposizione crescente tra informazione e difesa nella nomina di figure militari a ruoli editoriali.",
     articles: [
@@ -1105,6 +1189,9 @@ module.exports = [
   {
     name: "ghostwriting",
     type: "teoria",
+    related: [
+      { name: "lavoro invisibile", why: "Il ghostwriting è la forma che il lavoro invisibile prende attorno a chi ha potere, esercitando talvolta un suo potere sul potere stesso." }
+    ],
     sameAs: ["https://www.wikidata.org/wiki/Q131464002"],
     note: "La pratica di scrivere testi firmati da altri. Nel sito è il termine chiave del pezzo di Dondi: il ghostwriting ha sempre reso invisibile il lavoro di supporto alle figure di potere senza che questo fosse considerato imbroglio. L'AI ne è una versione più economica e accessibile — e l'indignazione che suscita rivela che il privilegio viene contestato solo quando smette di essere esclusivo.",
     articles: [
@@ -1142,6 +1229,9 @@ module.exports = [
   {
     name: "costruttivismo",
     type: "teoria",
+    related: [
+      { name: "ontologia sociale", why: "L'ontologia sociale dà al costruttivismo la distinzione che gli manca: come esistono le cose istituite." }
+    ],
     note: "La postura epistemologica secondo cui le categorie con cui descriviamo la realtà sono costruzioni sociali, storiche e culturali, non rispecchiamenti di entità naturali preesistenti. Nel sito è la posizione corretta e ben argomentata di Columbro sulle statistiche — e insieme il punto di vulnerabilità che il negazionismo sfrutta quando la distinzione tra costruzione della categoria e negazione del fenomeno non viene esplicitata.",
     articles: [
       { title: "Il femminicidio non esiste", url: "/curated/2026-05-06-columbro-femminicidio-non-esiste/", _source: "curated" }
@@ -1179,6 +1269,9 @@ module.exports = [
   {
     name: "liberalismo",
     type: "teoria",
+    related: [
+      { name: "marketing valoriale", why: "Il caso Economist: un valore identitario che diventa strategia di marca." }
+    ],
     sameAs: ["https://www.wikidata.org/wiki/Q6216", "https://it.wikipedia.org/wiki/Liberalismo"],
     note: "La tradizione filosofico-politica fondata sulla libertà individuale, i diritti, lo stato di diritto e i limiti al potere arbitrario. Nel sito è il valore identitario con cui The Economist costruisce la propria autorità editoriale — una strategia di marketing valoriale distinta dal «marketing della verità» di WaPo e NYT, più resistente alle crisi di credibilità legate all'assetto proprietario.",
     articles: [
@@ -1266,6 +1359,9 @@ module.exports = [
   {
     name: "need for cognition",
     type: "teoria",
+    related: [
+      { name: "polarizzazione cognitiva", why: "La NFC è la linea lungo cui l'AI separa chi la usa per pensare di più da chi la usa per pensare di meno." }
+    ],
     sameAs: ["https://www.wikidata.org/wiki/Q1778408", "https://it.wikipedia.org/wiki/Bisogno_di_cognizione"],
     note: "Costrutto psicologico (Cacioppo e Petty, 1982): la tendenza individuale a impegnarsi e trarre soddisfazione dal pensiero elaborativo. Le persone con alta NFC cercano attivamente la difficoltà cognitiva, la trovano piacevole e la usano per formarsi giudizi propri; quelle con bassa NFC la evitano sistematicamente. Nel sito è il metro con cui Brooks legge la polarizzazione cognitiva nell'era dell'AI: la NFC correla con l'intelligenza ma non coincide — ci sono persone molto intelligenti con bassa NFC e viceversa.",
     articles: [
@@ -1322,6 +1418,9 @@ module.exports = [
   {
     name: "news avoidance",
     type: "teoria",
+    related: [
+      { name: "sfiducia sistemica", why: "Evitare le notizie è la condotta che la sfiducia sistemica produce, secondo il Digital News Report 2026." }
+    ],
     note: "Comportamento documentato dal Reuters Institute: la scelta attiva — o semi-conscia — di evitare le notizie, spesso o a volte. Non è indifferenza ma una risposta all'ansia, alla sfiducia e alla sensazione che informarsi non cambi nulla. Nel sito è misurata per l'Italia nel 2026 al 36% — dato che va letto insieme al calo della fiducia sistemica: i due fenomeni si alimentano a vicenda. Dialoga con il concetto di iperattenzione di Hayles: l'evitamento delle notizie può essere sia una forma di autodifesa cognitiva sia un effetto collaterale della frammentazione dell'attenzione.",
     articles: [
       { title: "Com'è cambiata l'informazione in Italia negli ultimi 6 anni", url: "/curated/2026-06-19-mauro-informazione-italia-digital-news-report/", _source: "curated" },
@@ -1420,8 +1519,12 @@ module.exports = [
   {
     name: "ecologia dei media",
     type: "teoria",
+    related: [
+      { name: "Postman, Neil", why: "Neil Postman fonda un corso chiamato «Ecologia dei media» alla NYU nel 1971. Avrà una certa fortuna." },
+      { name: "McLuhan, Marshall", why: "McLuhan aveva detto che il medium è il messaggio; la scuola di Neil Postman parte da lì e aggiunge il giudizio morale." }
+    ],
     sameAs: ["https://www.wikidata.org/wiki/Q2583195", "https://it.wikipedia.org/wiki/Ecologia_dei_media"],
-    note: "Scuola di pensiero fondata da Neil Postman nel 1968 (NYU Media Ecology Program): i media non sono canali neutri di trasmissione ma ambienti che modellano la percezione, la cognizione e la struttura sociale indipendentemente dai contenuti. Il precursore è McLuhan con il concetto di «medium come messaggio». Nel sito è applicata da Tarchetti per ricordare agli editori che il digitale non è un canale di distribuzione ma un ambiente che determina quali contenuti possono esistere. Il punto si estende all'AI: un LLM non è neutro rispetto ai contenuti che produce, è un ambiente con proprietà strutturali proprie.",
+    note: "Scuola di pensiero di Neil Postman, che ne introduce il termine nel 1968 e fonda il programma alla NYU nel 1971: i media non sono canali neutri di trasmissione ma ambienti che modellano la percezione, la cognizione e la struttura sociale indipendentemente dai contenuti. Il precursore è McLuhan con il concetto di «medium come messaggio». Nel sito è applicata da Tarchetti per ricordare agli editori che il digitale non è un canale di distribuzione ma un ambiente che determina quali contenuti possono esistere. Il punto si estende all'AI: un LLM non è neutro rispetto ai contenuti che produce, è un ambiente con proprietà strutturali proprie.",
     articles: [
       { title: "Non usiamo i media, ci cresciamo dentro", url: "/curated/2026-07-13-tarchetti-media-ecology-non-ho-capito/", _source: "curated" },
       { title: "Una lunga avventura: storia degli adventure game", url: "/curated/2026-06-11-machera-adventure-game-linkideeperlatv/", _source: "curated" },
@@ -1475,6 +1578,10 @@ module.exports = [
   {
     name: "neghentropia",
     type: "teoria",
+    related: [
+      { name: "guadagno epistemico", why: "Il guadagno corregge la neghentropia, che da sola premierebbe il testo peggiore immaginabile." },
+      { name: "A Mathematical Theory of Communication", why: "La neghentropia si appoggia al formalismo che Shannon costruisce nel 1948." }
+    ],
     note: "Informazione come distanza dallo stato di equiprobabilità, nella linea Schrödinger–Brillouin–Wiener. Nel sito è il criterio con cui si misura l’effetto di un testo su chi legge: non quanto è lungo, elegante o documentato, ma quanta indifferenza fra alternative riduce — un testo privo di effetti sulle attese è l’operatore identità. Da sola però non basta: un saggio scritto benissimo attorno a una tesi falsa è neghentropico in senso stretto e distruttivo in senso epistemico, e va corretta con il guadagno epistemico.",
     articles: [
       { title: "La formula dell’autenticità", url: "/writings/2026-08-23-la-formula-dellautenticita/" },
@@ -1530,6 +1637,9 @@ module.exports = [
   {
     name: "Taiwan",
     type: "luogo",
+    related: [
+      { name: "Taiwan / TSMC", why: "La stessa isola contata due volte: come democrazia, e come collo di bottiglia dei chip avanzati." }
+    ],
     sameAs: ["https://www.wikidata.org/wiki/Q865", "https://it.wikipedia.org/wiki/Taiwan"],
     note: "Isola di 23 milioni di abitanti, democrazia multipartitica dal 1996, produttore di oltre il 90% dei chip avanzati globali. Nel sito è un nodo geopolitico complesso: la sua democrazia non è solo un sistema politico ma un deterrente strutturale — un'annessione non militare richiederebbe repressione visibile al mondo (processi farsa, giuramenti di fedeltà, rieducazione di massa) che alzerebbe il costo politico globale per Pechino. Il caso Taiwan è anche un laboratorio del meccanismo di destabilizzazione dall'interno: legami economici delle aziende KMT-friendly con la Cina creano veti strutturali sulla spesa per la difesa, mentre la campagna di social media continentali deride la democrazia come caotica. Lo stesso schema — avversario sistemico che sfrutta i conflitti di interesse interni a una democrazia — è generalizzabile a Georgia, Ungheria, Serbia e ad altri contesti europei.",
     articles: [
@@ -1675,6 +1785,9 @@ module.exports = [
   {
     name: "Anduril",
     type: "istituzione",
+    related: [
+      { name: "Palantir", why: "Le due aziende che hanno riportato Silicon Valley dentro la difesa, per strade diverse." }
+    ],
     note: "Azienda della difesa fondata nel 2017 da Palmer Luckey. Nel sito è il caso del modello alternativo al contractor tradizionale: VC-funded, rischio imprenditoriale proprio, software (Lattice, sistema di controllo autonomo delle macchine sul campo) e hardware (Collaborative Combat Aircraft, sistema anti-drone Pulsar). Incarna la scelta opposta ad Anthropic: partecipare attivamente allo sviluppo di sistemi d'arma autonomi, ritenendo che non farlo significhi lasciare il campo a chi lo farà peggio.",
     articles: [
       { title: "Our Military Is Built for the Wrong Century", url: "/curated/2026-05-28-brose-anduril-military-drones-nyt/", _source: "curated" }
@@ -1683,6 +1796,9 @@ module.exports = [
   {
     name: "Palantir",
     type: "istituzione",
+    related: [
+      { name: "Karp, Alexander", why: "L'ha fondata con Thiel nel 2003 e nel 2026 ne ha scritto il manifesto politico." }
+    ],
     note: "Azienda di data analytics fondata nel 2003 da Peter Thiel e Alexander Karp. Nel sito è la controparte di Anthropic: Karp ha pubblicato un manifesto in favore dell'impegno militare di Silicon Valley, Palantir lavora attivamente con il Dipartimento della Difesa americano. Caso studio della scelta opposta a quella di Amodei.",
     articles: [
       { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
@@ -1857,6 +1973,9 @@ module.exports = [
   {
     name: "Stratechery",
     type: "testo",
+    related: [
+      { name: "Thompson, Ben", why: "Thompson scrive da solo dal 2013 e da lì costruisce l'Aggregation Theory." }
+    ],
     note: "Newsletter e blog di analisi tecnologica di Ben Thompson (stratechery.com), attivo dal 2013. Ha introdotto e sviluppato l'Aggregation Theory — la tesi che le piattaforme che controllano il rapporto con l'utente finale catturano il valore dell'intera filiera. Nel sito è citata per la sua analisi del 2026 sul costo-opportunità del compute come fine dell'era aggregazionista.",
     citation: "THOMPSON, Ben, <a href=\"https://stratechery.com\"><em>Stratechery</em></a>, newsletter, 2013–.",
     articles: [
@@ -1992,6 +2111,9 @@ module.exports = [
   {
     name: "Unione Europea",
     type: "paese",
+    related: [
+      { name: "Europa", why: "Il sito le tiene distinte di proposito: una è un ordinamento, l'altra un'eredità culturale." }
+    ],
     sameAs: ["https://www.wikidata.org/wiki/Q458", "https://it.wikipedia.org/wiki/Unione_europea"],
     note: "Come istituzione: citata per la sua struttura grande, centralizzata, iperconnessa — che Taleb considera fragile per costruzione perché concentra i rischi e sopprime la varianza locale. Appare come benchmark (spesa R&S media europea 2,2% del PIL contro l'1,3% italiano) e come attore nelle negoziazioni internazionali. Per Europa come concetto culturale e geopolitico, vedi la voce separata.",
     articles: [
@@ -2094,6 +2216,9 @@ module.exports = [
   {
     name: "Trump, Donald",
     type: "persona",
+    related: [
+      { name: "Orbán, Viktor", why: "Orbán ha fatto scuola: Trump ne ripete il metodo su scala americana." }
+    ],
     sameAs: ["https://www.wikidata.org/wiki/Q22686", "https://it.wikipedia.org/wiki/Donald_Trump"],
     note: "Politico americano, presidente degli Stati Uniti (2025 in corso). Nel sito è la figura politica più citata (sei articoli): appare come utilizzatore deteriore del post-strutturalismo (nega la realtà dei fatti), caso studio di basso fattore di sconto δ nella teoria dei giochi, pivot del caos democratico globale post-2016.",
     articles: [
@@ -2110,6 +2235,9 @@ module.exports = [
   {
     name: "Putin, Vladimir",
     type: "persona",
+    related: [
+      { name: "Orbán, Viktor", why: "L'autocrazia illiberale in due taglie: una potenza che riscrive i fatti e uno Stato membro dell'UE." }
+    ],
     sameAs: ["https://www.wikidata.org/wiki/Q7747", "https://it.wikipedia.org/wiki/Vladimir_Putin"],
     note: "Presidente russo (1952). Nel sito compare in quattro articoli: come utilizzatore deteriore della lezione post-strutturalista; come ideatore della guerra ibrida e delle misure attive; come attore della crisi ucraina; come caso di win-set domestico progressivamente compresso e irreversibile dopo l'accentramento del potere.",
     articles: [
@@ -2122,6 +2250,9 @@ module.exports = [
   {
     name: "Zelensky, Volodymyr",
     type: "persona",
+    related: [
+      { name: "fattore di sconto δ", why: "Il caso limite del parametro: δ bassissimo da outsider, altissimo dopo l'invasione." }
+    ],
     sameAs: ["https://www.wikidata.org/wiki/Q3874799", "https://it.wikipedia.org/wiki/Volodymyr_Zelens'kyj"],
     note: "Presidente ucraino (1978). Nel sito è studiato come caso di trasformazione radicale del profilo strategico: outsider comunicativo con basso fattore δ pre-2022, ha cambiato completamente struttura strategica dopo l'invasione russa. Caso limite nella teoria dei two-level games: win-set domestico compresso, win-set internazionale massimizzato. Anche protagonista di una strategia di comunicazione che usa deliberatamente gli influencer MAGA come vettori per raggiungere pubblici inaccessibili ai media tradizionali.",
     articles: [

@@ -24,7 +24,7 @@ const ROOT = path.join(__dirname, '..');
 const index = require(path.join(ROOT, 'src', '_data', 'conceptsIndex.js'));
 
 const MAX_RELATED = 5;
-const MAX_WHY = 120;
+const MAX_WHY = 160;
 const PREFIX_DIR = {
   '/writings/': 'src/writings',
   '/curated/':  'src/curated',
