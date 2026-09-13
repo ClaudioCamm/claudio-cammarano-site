@@ -433,6 +433,134 @@ module.exports = function(eleventyConfig) {
     return JSON.stringify(obj, null, 2);
   });
 
+  // ─── L'indice concettuale come dataset (SKOS + schema.org) ─────────────────
+  // Serve /concetti.json. Doppio vocabolario di proposito: skos: descrive lo
+  // schema di concetti, schema.org resta coerente con il JSON-LD delle pagine.
+  // Il `why` dei legami non ha casa in nessuno dei due, quindi e' reificato in
+  // un termine proprio documentato su /ns/ — vedi MANUALE.md sezione 5.
+  const CC_NS = "https://claudiocammarano.com/ns#";
+  eleventyConfig.addFilter("conceptSchemeJsonLd", function (all, isoDate) {
+    const S = CC_NS, SITE = CC_SITE;
+    isoDate = isoDate || new Date().toISOString().slice(0, 10);
+    const slugify = eleventyConfig.getFilter("slugify");
+    const termId = n => SITE + "/concetti/" + slugify(n) + "/#term";
+    const pageUrl = n => SITE + "/concetti/" + slugify(n) + "/";
+
+    // archi asseriti, risolti nelle due direzioni
+    const edges = new Map();
+    all.forEach(function (c) {
+      (c.related || []).forEach(function (r) {
+        if (!edges.has(c.name)) edges.set(c.name, []);
+        if (!edges.has(r.name)) edges.set(r.name, []);
+        edges.get(c.name).push({ name: r.name, why: r.why });
+        edges.get(r.name).push({ name: c.name, why: r.why });
+      });
+    });
+
+    const terms = all.map(function (c) {
+      const label = ccDisplayName(c.name, c.type);
+      const t = {
+        "@id": termId(c.name),
+        "@type": ["skos:Concept", "DefinedTerm"],
+        prefLabel: label,
+        name: label,
+        termCode: slugify(c.name),
+        conceptType: c.type,
+        url: pageUrl(c.name),
+        inScheme: SITE + "/indice/#set",
+        inDefinedTermSet: SITE + "/indice/#set"
+      };
+      if (c.note) { t.note = ccPlainText(c.note); t.description = t.note; }
+      if (c.citation) t.citation = ccPlainText(c.citation);
+      const same = (c.sameAs && c.sameAs.length) ? c.sameAs : null;
+      if (same) t.exactMatch = same;
+      const aboutType = CC_ABOUT_TYPE[c.type];
+      if (aboutType) {
+        t.about = { "@type": aboutType, name: label };
+        if (same) t.about.sameAs = same;
+      }
+      if (c.articles && c.articles.length) {
+        t.subjectOf = c.articles.map(function (a) {
+          return { "@type": "Article", name: a.title, url: SITE + a.url };
+        });
+      }
+      const es = edges.get(c.name);
+      if (es && es.length) {
+        // percorso standard, per chi legge solo SKOS
+        t.related = es.map(function (x) { return termId(x.name); });
+        // percorso arricchito, con la ragione del legame
+        t.relatedTerm = es.map(function (x) {
+          return { "@type": "cc:Link", target: termId(x.name), why: x.why };
+        });
+      }
+      return t;
+    });
+
+    const withSame = terms.filter(function (t) { return t.exactMatch; }).length;
+    const nEdges = all.reduce(function (s, c) { return s + ((c.related || []).length); }, 0);
+    const byType = {};
+    all.forEach(function (c) { byType[c.type] = (byType[c.type] || 0) + 1; });
+
+    const doc = {
+      "@context": {
+        "@vocab": "https://schema.org/",
+        skos: "http://www.w3.org/2004/02/skos/core#",
+        cc: S,
+        prefLabel: { "@id": "skos:prefLabel" },
+        note: { "@id": "skos:note" },
+        exactMatch: { "@id": "skos:exactMatch", "@type": "@id" },
+        inScheme: { "@id": "skos:inScheme", "@type": "@id" },
+        related: { "@id": "skos:related", "@type": "@id" },
+        hasTopConcept: { "@id": "skos:hasTopConcept" },
+        conceptType: { "@id": "cc:type" },
+        relatedTerm: { "@id": "cc:relatedTerm" },
+        target: { "@id": "cc:target", "@type": "@id" },
+        why: { "@id": "cc:why" }
+      },
+      "@id": SITE + "/indice/#set",
+      "@type": ["skos:ConceptScheme", "DefinedTermSet", "Dataset"],
+      name: "Indice concettuale di claudiocammarano.com",
+      alternateName: "Concept index of claudiocammarano.com",
+      description: "Vocabolario dei concetti — persone, teorie, testi, istituzioni, luoghi e paesi — citati con peso argomentativo negli scritti di Claudio Cammarano. Ogni voce porta una nota discorsiva, gli agganci all'entita' reale su Wikidata e Wikipedia, gli articoli in cui compare e i legami dichiarati verso altri concetti, ciascuno con la ragione del legame.",
+      url: SITE + "/indice/",
+      version: isoDate,
+      dateModified: isoDate,
+      inLanguage: "it",
+      license: "https://creativecommons.org/licenses/by/4.0/",
+      creator: {
+        "@type": "Person",
+        "@id": SITE + "/#person",
+        name: "Claudio Cammarano",
+        url: SITE,
+        sameAs: [
+          "https://orcid.org/0009-0006-3690-7466",
+          "https://www.wikidata.org/wiki/Q140264282"
+        ]
+      },
+      isBasedOn: SITE + "/",
+      keywords: [
+        "indice concettuale", "concept index", "SKOS", "editoria",
+        "epistemologia", "intelligenza artificiale", "teoria dei giochi",
+        "media ecology", "semiotica"
+      ],
+      distribution: {
+        "@type": "DataDownload",
+        encodingFormat: "application/ld+json",
+        contentUrl: SITE + "/concetti.json"
+      },
+      "cc:statistics": {
+        concetti: terms.length,
+        perTipo: byType,
+        conAggancioEsterno: withSame,
+        legamiDichiarati: nEdges
+      },
+      "cc:vocabulary": SITE + "/ns/",
+      hasDefinedTerm: terms,
+      hasTopConcept: terms.map(function (t) { return { "@id": t["@id"] }; })
+    };
+    return JSON.stringify(doc, null, 2);
+  });
+
   eleventyConfig.addCollection("mergedConceptsIndex", function(collectionApi) {
     // Deep-clone to avoid mutating the require() cache across builds
     var index = conceptsIndexData.map(function(c) {

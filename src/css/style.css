@@ -4775,6 +4775,26 @@ a.temi-tag-pill:hover .temi-tag-weight-bar {
   color: var(--color-text-light);
 }
 
+.indice-dataset {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-text-light);
+  border-left: 3px solid var(--color-border);
+  padding-left: 14px;
+  margin-top: var(--spacing-sm);
+}
+
+.indice-dataset a {
+  color: var(--color-primary);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.indice-dataset a:hover {
+  border-bottom-color: var(--color-primary);
+}
+
 /* Finestra sul grafo globale — nascosta su mobile, visibile da desktop */
 .concetto-graph-wrap {
   display: none;

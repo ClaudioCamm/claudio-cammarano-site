@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "Se usi questo dataset, citalo così."
+type: dataset
+title: "Indice concettuale di claudiocammarano.com"
+abstract: >-
+  Vocabolario di 261 concetti — persone, teorie, testi, istituzioni, luoghi
+  e paesi — citati con peso argomentativo negli scritti di Claudio Cammarano.
+  Ogni voce porta una nota discorsiva, gli agganci a Wikidata e Wikipedia dove
+  esistono, gli articoli in cui compare e i legami dichiarati verso altri
+  concetti, ciascuno con la ragione del legame. JSON-LD, SKOS e schema.org.
+authors:
+  - family-names: Cammarano
+    given-names: Claudio
+    orcid: "https://orcid.org/0009-0006-3690-7466"
+version: 1.0.0
+date-released: "2026-09-13"
+license: CC-BY-4.0
+url: "https://claudiocammarano.com/indice/"
+repository-code: "https://github.com/ClaudioCamm/claudio-cammarano-site"
+keywords:
+  - indice concettuale
+  - concept index
+  - SKOS
+  - JSON-LD
+  - editoria
+  - epistemologia
+  - intelligenza artificiale
+  - semiotica
+languages:
+  - ita

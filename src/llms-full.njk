@@ -1,0 +1,47 @@
+---
+permalink: /llms-full.txt
+layout: false
+eleventyExcludeFromCollections: true
+---
+# Claudio Cammarano — versione estesa
+
+> Gli stessi contenuti di /llms.txt con le note e le descrizioni integrali. L'indice concettuale in forma strutturata è su https://claudiocammarano.com/concetti.json (JSON-LD, CC BY 4.0).
+
+Per citare l'autore: «Claudio Cammarano, claudiocammarano.com». ORCID: https://orcid.org/0009-0006-3690-7466
+
+## Writings (saggi originali)
+{% for post in collections.writings | reverse %}
+### {{ post.data.title | safe }}
+URL: https://claudiocammarano.com{{ post.url }}
+{% if post.data.series %}Serie: {{ post.data.series }}
+{% endif %}{% if post.data.category %}Argomenti: {{ post.data.category | join(", ") }}
+{% endif %}{% if post.data.ai_prose %}Notazione AI: {{ post.data.ai_prose }}{% if post.data.ai_scope %}·{{ post.data.ai_scope | join("·") }}{% endif %} (legenda: https://claudiocammarano.com/colophon/#notazione)
+{% endif %}{% if post.data.description %}
+{{ post.data.description | stripMd | safe }}
+{% endif %}
+{%- endfor %}
+
+## Concetti (indice analitico, con le note integrali)
+{% for c in collections.mergedConceptsIndex | sort(false, false, "name") %}
+### {{ c.name | displayName(c.type) }} [{{ c.type }}]
+URL: https://claudiocammarano.com/concetti/{{ c.name | slugify }}/
+{% if c.sameAs %}Entità: {{ c.sameAs | join(" · ") }}
+{% endif %}{% if c.note %}
+{{ c.note | stripMd | safe }}
+{% endif %}{% if c.related %}{% for r in c.related %}
+Legame → {{ r.name }}: {{ r.why }}
+{%- endfor %}
+{% endif %}
+{%- endfor %}
+
+## Curated (letture schedate)
+{% for item in collections.curated | reverse %}
+### {{ item.data.title | safe }}
+Fonte: {{ item.data.source }} — {{ item.data.external_url }}
+Scheda: https://claudiocammarano.com{{ item.url }}
+{% if item.data.criterio %}Criterio: {{ item.data.criterio }}
+{% endif %}{% if item.data.perche %}Perché è entrato: {{ item.data.perche | stripMd | safe }}
+{% endif %}{% if item.data.description %}
+{{ item.data.description | stripMd | safe }}
+{% endif %}
+{%- endfor %}

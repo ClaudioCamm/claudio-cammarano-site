@@ -1,0 +1,39 @@
+---
+layout: layouts/base.njk
+title: "Termini propri del dataset"
+description: "I tre termini dichiarati nel namespace di claudiocammarano.com e usati nell'indice concettuale in formato JSON-LD."
+permalink: /ns/
+---
+
+<div class="ns-page">
+
+  <header class="tag-page-header">
+    <nav class="breadcrumb" aria-label="Navigazione">
+      <a href="/">Home</a>
+      <span class="breadcrumb-sep" aria-hidden="true">·</span>
+      <a href="/indice/">Indice</a>
+      <span class="breadcrumb-sep" aria-hidden="true">·</span>
+      <span class="breadcrumb-current">Termini propri</span>
+    </nav>
+    <p class="tag-page-label">Vocabolario</p>
+    <h1 class="tag-page-title">Termini propri del dataset</h1>
+    <p class="tag-page-intro">L'indice concettuale di questo sito è pubblicato come <a href="/concetti.json">dataset JSON-LD</a> con due vocabolari standard: <a href="http://www.w3.org/2004/02/skos/core" rel="nofollow">SKOS</a> per lo schema di concetti e <a href="https://schema.org/">schema.org</a> per la coerenza con il markup delle pagine. Tre cose che servono a questo indice non hanno un termine in nessuno dei due, e sono dichiarate qui sotto nel namespace <code>https://claudiocammarano.com/ns#</code>. La pagina esiste perché un termine proprio non dichiarato è un termine inventato.</p>
+  </header>
+
+  <div class="article-body">
+
+    <h2><code>cc:type</code></h2>
+    <p>Il tipo della voce nell'indice: <code>persona</code>, <code>teoria</code>, <code>testo</code>, <code>istituzione</code>, <code>luogo</code>, <code>paese</code>. È una classificazione editoriale interna, non un'affermazione ontologica: <code>paese</code> e <code>luogo</code> sono distinti perché finiscono in sezioni diverse dell'indice, non perché uno stato non sia un luogo. Dominio: <code>skos:Concept</code>. Valore: stringa da quell'enumerazione.</p>
+
+    <h2><code>cc:relatedTerm</code> e <code>cc:Link</code></h2>
+    <p>Un legame dichiarato fra due voci, con la ragione del legame. <code>skos:related</code> esprime la relazione ma non ha spazio per motivarla, e la motivazione è la parte che qui porta l'informazione. Ogni legame è quindi reificato in un nodo <code>cc:Link</code> con due proprietà: <code>cc:target</code> (l'IRI della voce collegata) e <code>cc:why</code>. Gli stessi legami sono ripetuti in forma nuda in <code>skos:related</code>, così un consumatore che conosce solo SKOS li vede comunque.</p>
+
+    <h2><code>cc:why</code></h2>
+    <p>La ragione del legame, in una frase entro 160 caratteri, scritta come relazione e non come direzione: l'arco è dichiarato una volta sola e compare su entrambe le pagine, quindi la frase deve reggere letta da tutte e due le parti. Dominio: <code>cc:Link</code>. Valore: stringa.</p>
+
+    <h2>Licenza</h2>
+    <p>Il dataset e queste definizioni sono pubblicati con licenza <a href="https://creativecommons.org/licenses/by/4.0/deed.it" rel="license">CC BY 4.0</a>. Attribuzione richiesta: «Claudio Cammarano, claudiocammarano.com».</p>
+
+  </div>
+
+</div>

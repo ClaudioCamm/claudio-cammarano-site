@@ -22,6 +22,26 @@ Claudio Cammarano si occupa di marketing editoriale, docenza universitaria e ric
 - [Indice](https://claudiocammarano.com/indice/): indice ragionato di argomenti e concetti.
 - [Episteme Advisory / Lab](https://claudiocammarano.com/episteme-advisory/lab/): ricerca sulla validazione epistemica dell'AI.
 
+## Concetti (indice analitico)
+
+Ogni concetto citato con peso argomentativo ha una pagina propria, con una nota discorsiva, l'aggancio all'entità reale su Wikidata e Wikipedia dove esiste, gli articoli in cui compare e i legami dichiarati verso altri concetti. Per citare una voce, usare l'URL della sua pagina.
+{% for c in collections.mergedConceptsIndex | sort(false, false, "name") %}
+- [{{ c.name | displayName(c.type) }}](https://claudiocammarano.com/concetti/{{ c.name | slugify }}/): {{ c.type }}
+{%- endfor %}
+
+## Curated (letture schedate, con commento editoriale)
+
+Selezione e chiave di lettura sono dell'autore e precedono la stesura; la riga dopo i due punti è il criterio con cui il pezzo è entrato.
+{% for item in collections.curated | reverse %}
+- [{{ item.data.title | safe }}](https://claudiocammarano.com{{ item.url }}) — {{ item.data.source }}{% if item.data.perche %}: {{ item.data.perche | stripMd | safe }}{% endif %}
+{%- endfor %}
+
+## File espansi
+
+- [llms-full.txt](https://claudiocammarano.com/llms-full.txt): gli stessi contenuti con le note e le descrizioni integrali.
+- [concetti.json](https://claudiocammarano.com/concetti.json): l'indice concettuale come dataset JSON-LD (SKOS + schema.org), licenza CC BY 4.0.
+- [/ns/](https://claudiocammarano.com/ns/): i termini propri usati nel dataset, con la loro definizione.
+
 ## Fonti collegate (stessa entità autore)
 - ORCID: https://orcid.org/0009-0006-3690-7466
 - Wikidata: https://www.wikidata.org/wiki/Q140264282
