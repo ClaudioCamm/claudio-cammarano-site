@@ -13,6 +13,34 @@
 
 module.exports = {
 
+  // ─── Identita' della specifica ─────────────────────────────────────────────
+  // La notazione e' argomentata nel colophon e nel saggio; qui vive come
+  // oggetto citabile: numero di versione, licenza, changelog. Serve /notazione/
+  // e /notazione.json. Aggiungere o cambiare un codice significa alzare la
+  // versione e scrivere una riga di changelog, non solo modificare questo file.
+  spec: {
+    version: "1.1.0",
+    url: "https://claudiocammarano.com/notazione/",
+    data: "https://claudiocammarano.com/notazione.json",
+    license: "https://creativecommons.org/licenses/by/4.0/",
+    licenseLabel: "CC BY 4.0",
+    updated: "2026-09-13",
+    changelog: [
+      {
+        version: "1.1.0",
+        date: "2026-09-13",
+        it: "La specifica esce dal colophon e diventa una pagina propria, versionata e rilasciata con licenza CC BY 4.0. L'elenco dei metadati fuori perimetro include i legami dichiarati fra concetti, classe che nell'agosto 2026 non esisteva. Nessun codice aggiunto, rimosso o ridefinito.",
+        en: "The specification moves out of the colophon into a page of its own, versioned and released under CC BY 4.0. The list of out-of-scope metadata now includes declared links between concepts, a class that did not exist in August 2026. No code added, removed or redefined."
+      },
+      {
+        version: "1.0.0",
+        date: "2026-08-23",
+        it: "Prima pubblicazione: due assi indipendenti, quattro codici di prosa e due di apparato, applicazione all'archivio con retrodatazione dichiarata pezzo per pezzo.",
+        en: "First publication: two independent axes, four prose codes and two apparatus codes, applied to the archive with per-piece declared backdating."
+      }
+    ]
+  },
+
   // Data di attivazione (ISO). I pezzi anteriori non sono retrodatati e la
   // validazione di build non chiede loro il campo `ai_prose`.
   activeFrom: "2026-08-23",
@@ -82,6 +110,14 @@ module.exports = {
         en: "Assisted adaptation from or into English of a text already mine."
       }
     }
+  },
+
+  // ─── Perimetro della notazione ────────────────────────────────────────────
+  // Che cosa la notazione copre e che cosa no. Il ragionamento e' nel colophon;
+  // qui sta la formulazione breve, per /notazione/ e /notazione.json.
+  scopeStatement: {
+    it: "La notazione si applica ai testi pubblicati: saggi, schede curated, note del Lab, documenti del Learning Log. I metadati che li circondano — concetti assegnati, legami dichiarati fra concetti, criteri e righe di motivazione dei curated, descrizioni — non portano un codice proprio: seguono un metodo costante, dichiarato una volta sola nel colophon, e un codice il cui valore non varia mai non trasporta informazione. Se quel metodo cambia, la dichiarazione va riscritta.",
+    en: "The notation applies to published texts: essays, curated cards, Lab notes, Learning Log documents. The metadata around them — assigned concepts, declared links between concepts, curated selection criteria and rationale lines, descriptions — carry no code of their own: they follow a constant method, declared once in the colophon, and a code whose value never varies carries no information. If that method changes, the declaration must be rewritten."
   },
 
   // Nota di metodo in coda alle note del Lab (sezione in inglese).

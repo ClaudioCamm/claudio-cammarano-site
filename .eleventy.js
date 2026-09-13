@@ -439,6 +439,92 @@ module.exports = function(eleventyConfig) {
   // Il `why` dei legami non ha casa in nessuno dei due, quindi e' reificato in
   // un termine proprio documentato su /ns/ — vedi MANUALE.md sezione 5.
   const CC_NS = "https://claudiocammarano.com/ns#";
+  // ─── La notazione dell'intervento AI come vocabolario ──────────────────────
+  // Serve /notazione.json. Una lista di codici e' esattamente cio' per cui SKOS
+  // esiste: uno schema, due collezioni (i due assi), sei concetti con notazione,
+  // etichetta e definizione nelle due lingue. Il resto — perimetro, politica di
+  // retrodatazione, changelog — sta in termini propri documentati su /ns/.
+  eleventyConfig.addFilter("notationJsonLd", function (n) {
+    const SITE = CC_SITE, BASE = n.spec.url + "#";
+    function term(code, def, axis) {
+      return {
+        "@id": BASE + code,
+        "@type": ["skos:Concept", "DefinedTerm"],
+        notation: code,
+        termCode: code,
+        prefLabel: { it: def.label.it, en: def.label.en },
+        definition: { it: def.desc.it, en: def.desc.en },
+        inScheme: BASE + "scheme",
+        "cc:axis": axis
+      };
+    }
+    const prose = n.proseOrder.map(function (c) { return term(c, n.prose[c], "prosa"); });
+    const scope = n.scopeOrder.map(function (c) { return term(c, n.scope[c], "apparato"); });
+
+    const doc = {
+      "@context": {
+        "@vocab": "https://schema.org/",
+        skos: "http://www.w3.org/2004/02/skos/core#",
+        cc: CC_NS,
+        notation: { "@id": "skos:notation" },
+        prefLabel: { "@id": "skos:prefLabel", "@container": "@language" },
+        definition: { "@id": "skos:definition", "@container": "@language" },
+        inScheme: { "@id": "skos:inScheme", "@type": "@id" },
+        hasTopConcept: { "@id": "skos:hasTopConcept", "@type": "@id" },
+        member: { "@id": "skos:member", "@type": "@id" }
+      },
+      "@id": BASE + "scheme",
+      "@type": ["skos:ConceptScheme", "DefinedTermSet"],
+      name: "Notazione dell'intervento AI",
+      alternateName: "AI intervention notation",
+      description: "Vocabolario dei codici con cui claudiocammarano.com dichiara, su ogni testo pubblicato, quanta della superficie pubblicata e' passata da un modello linguistico. Due assi indipendenti: il primo sulla prosa, obbligatorio e a valore singolo; il secondo sugli apparati tecnici, facoltativo e cumulabile.",
+      url: n.spec.url,
+      version: n.spec.version,
+      datePublished: n.activeFrom,
+      dateModified: n.spec.updated,
+      inLanguage: ["it", "en"],
+      license: n.spec.license,
+      creator: {
+        "@type": "Person",
+        "@id": SITE + "/#person",
+        name: "Claudio Cammarano",
+        url: SITE,
+        sameAs: ["https://orcid.org/0009-0006-3690-7466"]
+      },
+      isBasedOn: SITE + n.essayUrl,
+      "cc:vocabulary": SITE + "/ns/",
+      "cc:scopeStatement": { it: n.scopeStatement.it, en: n.scopeStatement.en },
+      "cc:retroPolicy": {
+        activeFrom: n.activeFrom,
+        it: n.retro.note.it,
+        en: n.retro.note.en
+      },
+      "cc:codeForm": "Un valore del primo asse, eventualmente seguito dai valori del secondo separati da un punto mediano: DL, WR, 00·FM, ED·TR, DL·FM·TR.",
+      "cc:changelog": n.spec.changelog,
+      "cc:axis": [
+        {
+          "@id": BASE + "asse-prosa",
+          "@type": "skos:Collection",
+          prefLabel: { it: "Primo asse — su quanta prosa", en: "First axis — how much prose" },
+          "cc:required": true,
+          "cc:cardinality": "uno",
+          member: prose.map(function (t) { return t["@id"]; })
+        },
+        {
+          "@id": BASE + "asse-apparato",
+          "@type": "skos:Collection",
+          prefLabel: { it: "Secondo asse — su quali apparati", en: "Second axis — which apparatus" },
+          "cc:required": false,
+          "cc:cardinality": "zero o piu'",
+          member: scope.map(function (t) { return t["@id"]; })
+        }
+      ],
+      hasTopConcept: prose.concat(scope).map(function (t) { return t["@id"]; }),
+      hasDefinedTerm: prose.concat(scope)
+    };
+    return JSON.stringify(doc, null, 2);
+  });
+
   eleventyConfig.addFilter("conceptSchemeJsonLd", function (all, isoDate) {
     const S = CC_NS, SITE = CC_SITE;
     isoDate = isoDate || new Date().toISOString().slice(0, 10);

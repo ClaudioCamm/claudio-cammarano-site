@@ -124,6 +124,10 @@ Dal 23 agosto 2026 ogni pezzo in `writings/`, `curated/` e `lab/` dichiara quant
 
 La fonte unica di codici, etichette e descrizioni è `src/_data/aiNotation.js`: legenda del colophon, tooltip in pagina e messaggi di errore del build leggono tutti da lì. **Aggiungere un codice significa modificare quel file e nient'altro.**
 
+**La specifica vive in `src/_data/aiNotation.js`**, ed è l'unica fonte: la legenda del colophon, i `title` in pagina, i messaggi della validazione di build, la pagina `/notazione/` e il file `/notazione.json` attingono tutti da lì. Aggiungere, togliere o ridefinire un codice significa modificare quel file **e** alzare `spec.version` scrivendo una riga di `spec.changelog` — la specifica è pubblicata con licenza CC BY 4.0, e un numero di versione che cambia senza changelog è un numero che non serve a nessuno.
+
+Divisione dei compiti fra le tre superfici, senza testo duplicato: il **colophon** argomenta (perché la notazione esiste, il rapporto col watermarking, la retrodatazione); **`/notazione/`** è la specifica citabile e adottabile (codici, forma del codice, perimetro, regole di conformità, changelog, formula di citazione); **`/notazione.json`** è il vocabolario SKOS per le macchine.
+
 ### Campi opzionali
 ```yaml
 og_image: "/images/nome-file.avif"        # immagine Open Graph e hero

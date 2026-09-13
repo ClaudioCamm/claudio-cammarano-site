@@ -1,0 +1,111 @@
+---
+layout: layouts/base.njk
+title: "Notazione dell'intervento AI"
+description: "La specifica della notazione usata su claudiocammarano.com per dichiarare il grado di intervento di un modello linguistico su ogni testo pubblicato. Versionata, rilasciata con licenza CC BY 4.0."
+permalink: /notazione/
+---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "{{ aiNotation.spec.url }}#spec",
+  "name": "Notazione dell'intervento AI",
+  "headline": "Notazione dell'intervento AI — specifica",
+  "version": "{{ aiNotation.spec.version }}",
+  "dateModified": "{{ aiNotation.spec.updated }}",
+  "datePublished": "{{ aiNotation.activeFrom }}",
+  "inLanguage": "it",
+  "license": "{{ aiNotation.spec.license }}",
+  "url": "{{ aiNotation.spec.url }}",
+  "author": {
+    "@type": "Person",
+    "@id": "https://claudiocammarano.com/#person",
+    "name": "Claudio Cammarano",
+    "url": "https://claudiocammarano.com",
+    "sameAs": ["https://orcid.org/0009-0006-3690-7466"]
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/ld+json",
+    "contentUrl": "{{ aiNotation.spec.data }}"
+  }
+}
+</script>
+
+<div class="notazione-page">
+
+  <header class="tag-page-header">
+    <nav class="breadcrumb" aria-label="Navigazione">
+      <a href="/">Home</a>
+      <span class="breadcrumb-sep" aria-hidden="true">·</span>
+      <a href="/colophon/">Colophon</a>
+      <span class="breadcrumb-sep" aria-hidden="true">·</span>
+      <span class="breadcrumb-current">Notazione</span>
+    </nav>
+    <p class="tag-page-label">Specifica · versione {{ aiNotation.spec.version }}</p>
+    <h1 class="tag-page-title">Notazione dell'intervento AI</h1>
+    <p class="tag-page-intro">Un codice in coda a ogni testo pubblicato, che dichiara quanta della superficie pubblicata è passata da un modello linguistico. Questa pagina è la specifica: i codici, la loro definizione, le regole di applicazione e il perimetro. Il ragionamento che l'ha prodotta sta nel <a href="/colophon/#notazione">colophon</a> e, per esteso, in <a href="{{ aiNotation.essayUrl }}"><em>{{ aiNotation.essayTitle }}</em></a>.</p>
+  </header>
+
+  <div class="article-body">
+
+    <dl class="notazione-meta">
+      <div><dt>Versione</dt><dd>{{ aiNotation.spec.version }}</dd></div>
+      <div><dt>In vigore dal</dt><dd>{{ aiNotation.retro.onLabel.it }}</dd></div>
+      <div><dt>Ultimo aggiornamento</dt><dd>{{ aiNotation.spec.updated }}</dd></div>
+      <div><dt>Licenza</dt><dd><a href="{{ aiNotation.spec.license }}" rel="license">{{ aiNotation.spec.licenseLabel }}</a></dd></div>
+      <div><dt>Dati</dt><dd><a href="{{ aiNotation.spec.data }}">notazione.json</a></dd></div>
+    </dl>
+
+    <h2>Primo asse — su quanta prosa</h2>
+    <p>Obbligatorio, un solo valore. I codici sono ordinati per superficie crescente e cumulativi in senso permissivo: il codice indica il livello massimo raggiunto e implica che i precedenti possano essere stati usati, non che lo siano stati.</p>
+    <dl class="colophon-notazione">
+      {% for c in aiNotation.proseOrder %}
+      <div class="colophon-notazione-voce">
+        <dt><code>{{ c }}</code></dt>
+        <dd><em>{{ aiNotation.prose[c].label.it }}.</em> {{ aiNotation.prose[c].desc.it }}</dd>
+      </div>
+      {% endfor %}
+    </dl>
+
+    <h2>Secondo asse — su quali apparati</h2>
+    <p>Facoltativo, cumulabile, indipendente dal primo. Riguarda porzioni delimitate e verificabili del testo invece della prosa. Un saggio scritto interamente a mano le cui formule sono state costruite in dialogo è <code>00·FM</code>.</p>
+    <dl class="colophon-notazione">
+      {% for c in aiNotation.scopeOrder %}
+      <div class="colophon-notazione-voce">
+        <dt><code>{{ c }}</code></dt>
+        <dd><em>{{ aiNotation.scope[c].label.it }}.</em> {{ aiNotation.scope[c].desc.it }}</dd>
+      </div>
+      {% endfor %}
+    </dl>
+
+    <h2>Forma del codice</h2>
+    <p>Un valore del primo asse, eventualmente seguito dai valori del secondo separati da un punto mediano: <code>DL</code>, <code>WR</code>, <code>00·FM</code>, <code>ED·TR</code>, <code>DL·FM·TR</code>. Nel sorgente dei testi la notazione vive in due campi di frontmatter, <code>ai_prose</code> (obbligatorio, valore singolo) e <code>ai_scope</code> (facoltativo, lista). L'assenza del campo obbligatorio su un testo posteriore alla data di attivazione fa fallire la build.</p>
+
+    <h2>Perimetro</h2>
+    <p>{{ aiNotation.scopeStatement.it }}</p>
+
+    <h2>Retrodatazione</h2>
+    <p>{{ aiNotation.retro.note.it }} La ricostruzione si applica a tutto l'archivio anteriore al {{ aiNotation.retro.onLabel.it }}, e ogni pezzo la dichiara sotto il proprio codice. Le ragioni della scelta sono nel <a href="/colophon/#notazione">colophon</a>.</p>
+
+    <h2>Rapporto con il watermarking</h2>
+    <p>La notazione non sostituisce il watermark statistico incorporato dai modelli e non ne dipende: dichiara ciò che il watermark non può vedere — il dialogo preliminare, che non lascia parole nel testo, e l'editing leggero. L'analisi completa, compresa l'asimmetria delle traduzioni, è nel <a href="/colophon/#notazione">colophon</a>.</p>
+
+    <h2>Adozione</h2>
+    <p>La specifica è rilasciata con licenza <a href="{{ aiNotation.spec.license }}" rel="license">{{ aiNotation.spec.licenseLabel }}</a>: chiunque può adottarla, adattarla o estenderla, con attribuzione. Un'implementazione conforme fa tre cose: usa i codici con le definizioni date qui senza ridefinirli; dichiara la propria data di attivazione e, se applica la notazione a un archivio, lo segnala pezzo per pezzo; pubblica il proprio vocabolario in forma leggibile dalle macchine, come <a href="{{ aiNotation.spec.data }}">notazione.json</a>. Estendere l'enumerazione è legittimo, purché i codici aggiunti siano dichiarati e distinguibili da quelli di questa specifica.</p>
+    <p>Per citarla: «Cammarano, C. (2026). <em>Notazione dell'intervento AI</em>, versione {{ aiNotation.spec.version }}. {{ aiNotation.spec.url }}».</p>
+
+    <h2>Changelog</h2>
+    <dl class="colophon-notazione">
+      {% for v in aiNotation.spec.changelog %}
+      <div class="colophon-notazione-voce">
+        <dt><code>{{ v.version }}</code> · {{ v.date }}</dt>
+        <dd>{{ v.it }}</dd>
+      </div>
+      {% endfor %}
+    </dl>
+
+  </div>
+
+</div>

@@ -4795,6 +4795,43 @@ a.temi-tag-pill:hover .temi-tag-weight-bar {
   border-bottom-color: var(--color-primary);
 }
 
+.notazione-meta {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 4px 18px;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--spacing-sm) 0;
+  margin-bottom: var(--spacing-md);
+}
+
+.notazione-meta > div {
+  display: contents;
+}
+
+.notazione-meta dt {
+  color: var(--color-text-hint);
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  padding-top: 3px;
+}
+
+.notazione-meta dd {
+  margin: 0;
+  color: var(--color-text);
+}
+
+@media (max-width: 480px) {
+  .notazione-meta {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+  .notazione-meta dt { padding-top: 10px; }
+}
+
 /* Finestra sul grafo globale — nascosta su mobile, visibile da desktop */
 .concetto-graph-wrap {
   display: none;
