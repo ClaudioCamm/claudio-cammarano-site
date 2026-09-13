@@ -535,7 +535,8 @@ module.exports = [
       { title: "Museums and galleries are turning to individual patrons", url: "/curated/2026-09-03-economist-musei-mecenati-privati/", _source: "curated" },
       { title: "How data centres became one of America's hottest political issues", url: "/curated/2026-09-02-economist-data-center-nimby-politica-usa/", _source: "curated" },
       { title: "Nvidia is driving the AI boom. Good", url: "/curated/2026-09-05-economist-nvidia-speciale-banca-centrale/", _source: "curated" },
-      { title: "The Climate Crisis Is Bigger Than Your Footprint", url: "/curated/2026-08-31-stokes-carbon-footprint-bp-mitpress/", _source: "curated" }
+      { title: "The Climate Crisis Is Bigger Than Your Footprint", url: "/curated/2026-08-31-stokes-carbon-footprint-bp-mitpress/", _source: "curated" },
+      { title: "The Original Sin of AI", url: "/curated/2026-09-11-turkle-original-sin-ai-atlantic/", _source: "curated" }
     ]
   },
   {
@@ -1092,6 +1093,14 @@ module.exports = [
     ]
   },
   {
+    name: "thymos",
+    type: "teoria",
+    note: "Concetto platonico — la parte dell'anima responsabile dell'orgoglio, dell'indignazione e del desiderio di essere riconosciuti — rielaborato da Hegel e portato al centro dell'analisi politica da Francis Fukuyama in *The End of History and the Last Man* (1992). Il thymos è il bisogno umano di riconoscimento del proprio valore: non risorse, non sicurezza, ma rispetto. La democrazia liberale, per Fukuyama, è il sistema che soddisfa il thymos meglio di qualsiasi alternativa — dando riconoscimento eguale sotto la legge. Il problema è che soddisfarlo rimuove la lotta per ottenerlo, e quella lotta era anch'essa parte del bisogno. Questa irrequietezza thymotic — la noia dell'uomo che ha tutto tranne il rischio — è nel sito il meccanismo che spiega il populismo, i movimenti antidemocratici, la nostalgia per epoche premoderne: non sono irrazionali, rispondono a una domanda di riconoscimento gerarchico che l'uguaglianza eguale non può soddisfare.",
+    articles: [
+      { title: "Why the End of History Is So Miserable", url: "/curated/2026-09-09-beckerman-fukuyama-end-history-atlantic/", _source: "curated" }
+    ]
+  },
+  {
     name: "liberalismo",
     type: "teoria",
     note: "La tradizione filosofico-politica fondata sulla libertà individuale, i diritti, lo stato di diritto e i limiti al potere arbitrario. Nel sito è il valore identitario con cui The Economist costruisce la propria autorità editoriale — una strategia di marketing valoriale distinta dal «marketing della verità» di WaPo e NYT, più resistente alle crisi di credibilità legate all'assetto proprietario.",
@@ -1331,7 +1340,9 @@ module.exports = [
     articles: [
       { title: "Non usiamo i media, ci cresciamo dentro", url: "/curated/2026-07-13-tarchetti-media-ecology-non-ho-capito/", _source: "curated" },
       { title: "Una lunga avventura: storia degli adventure game", url: "/curated/2026-06-11-machera-adventure-game-linkideeperlatv/", _source: "curated" },
-      { title: "Ross Douthat: The Exit Interview", url: "/curated/2026-08-11-klein-douthat-exit-interview-nyt/", _source: "curated" }
+      { title: "Ross Douthat: The Exit Interview", url: "/curated/2026-08-11-klein-douthat-exit-interview-nyt/", _source: "curated" },
+      { title: "The Original Sin of AI", url: "/curated/2026-09-11-turkle-original-sin-ai-atlantic/", _source: "curated" },
+      { title: "My team fed chatbots election lies. Here's what happened.", url: "/curated/2026-08-25-norden-chatbot-election-lies-wapo/", _source: "curated" }
     ]
   },
   {
@@ -1504,6 +1515,15 @@ module.exports = [
     citation: "ACEMOGLU, Daron e James A. Robinson, <a href=\"https://openlibrary.org/works/OL16568759W/Why_Nations_Fail\"><em>Why Nations Fail: The Origins of Power, Prosperity, and Poverty</em></a>, New York, Crown Business, 2012.",
     articles: [
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" }
+    ]
+  },
+  {
+    name: "The End of History and the Last Man",
+    type: "testo",
+    note: "Libro di Francis Fukuyama (1992), derivato dall'articolo 'The End of History?' pubblicato su *The National Interest* nel 1989. Argomenta — in chiave hegeliana — che la dissoluzione dell'URSS segna la fine della storia non come cessazione degli eventi ma come esaurimento delle idee politiche in competizione: la democrazia liberale non ha più un antagonista ideologico credibile. L'equivoco sistematico con cui il libro viene ricevuto è che sia trionfalistico. Non lo è: i capitoli finali, quasi mai letti, descrivono l'instabilità strutturale dell'uomo che abita la fine — il Last Man nietzschiano, colui che ha ottenuto il riconoscimento eguale e non sopporta di non avere più nulla per cui rischiare la vita. Il libro si chiude sull'avvertimento che questa irrequietezza si rivolterà contro la democrazia stessa.",
+    citation: "FUKUYAMA, Francis, <a href=\"https://openlibrary.org/works/OL2639721W/The_end_of_history_and_the_last_man\"><em>The End of History and the Last Man</em></a>, New York, Free Press, 1992 (trad. it. <em>La fine della storia e l'ultimo uomo</em>, Milano, Rizzoli, 1992).",
+    articles: [
+      { title: "Why the End of History Is So Miserable", url: "/curated/2026-09-09-beckerman-fukuyama-end-history-atlantic/", _source: "curated" }
     ]
   },
   {
@@ -2338,6 +2358,22 @@ module.exports = [
     note: "Giornalista e attivista americana (1934–2026), co-fondatrice di Ms. Magazine e figura centrale del femminismo della seconda ondata. Nel sito compare per il suo ultimo testo scritto, pubblicato su The New Yorker poco prima della morte: un documento testimoniale che rivela una genealogia poco nota — il femminismo politico di Steinem nasce dall'India postcoloniale degli anni Cinquanta e dal contatto con i gandhiani, non dalla teoria accademica occidentale.",
     articles: [
       { title: "Gloria Steinem's Final Essay", url: "/curated/2026-09-03-steinem-final-essay-newyorker/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Turkle, Sherry",
+    type: "persona",
+    note: "Sociologa e psicologa americana (1948), professoressa emerita al MIT. Studia da quarant'anni il rapporto tra esseri umani e macchine: *Alone Together* (2011) ha documentato come i social media trasformino la socievolezza in gestione della presenza; *Reclaiming Conversation* (2015) ha argomentato che il testo scritto sta erodendo la capacità di conversazione profonda; *Artificial Intimacy* (2026) applica lo stesso framework ai chatbot relazionali. Nel sito compare come voce critica di riferimento sull'AI: non contro la tecnologia ma contro il design che simula presenza senza che ci sia nessuno dietro.",
+    articles: [
+      { title: "The Original Sin of AI", url: "/curated/2026-09-11-turkle-original-sin-ai-atlantic/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Fukuyama, Francis",
+    type: "persona",
+    note: "Politologo americano (1952), professore alla Stanford University. Ex allievo di Allan Bloom, ha lavorato per la RAND Corporation e per l'amministrazione Reagan prima di rompere con il neoconservatorismo dopo l'invasione dell'Iraq (2003). Autore di *The End of History and the Last Man* (1992) — il libro più citato e frainteso della sua generazione — e della serie *Political Order and Political Decay* (2011-2014). Nel sito compare come il teorico che ha identificato il problema non risolto della democrazia liberale: non la minaccia esterna ma l'instabilità interna generata dal successo stesso — la noia del riconoscimento ottenuto, il thymos che si rivolta contro l'ordine che lo ha soddisfatto.",
+    articles: [
+      { title: "Why the End of History Is So Miserable", url: "/curated/2026-09-09-beckerman-fukuyama-end-history-atlantic/", _source: "curated" }
     ]
   },
   {
