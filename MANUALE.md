@@ -75,12 +75,13 @@ git push
 # Netlify fa il resto in automatico
 ```
 
-**Importante:** lanciare sempre `npm run build` (o `npm start`) prima di un push importante e leggere l'output in console. Ci sono due controlli automatici, e si comportano in modo diverso:
+**Importante:** lanciare sempre `npm run build` (o `npm start`) prima di un push importante e leggere l'output in console. Ci sono tre controlli automatici, e si comportano in modo diverso:
 
 - **Concetti non registrati** — avviso, non blocca (sezione 5).
+- **Integrità dell'indice concettuale** — errore, **blocca il build**. Legami verso nomi inesistenti, articoli senza sorgente, `why` mancanti o troppo lunghi: `validate-concepts.js` si ferma e dice quale voce (sezione 5).
 - **Notazione dell'intervento AI** — errore, **blocca il build** e quindi il deploy. Se manca `ai_prose` su un pezzo in `writings/`, `curated/` o `lab/`, o se il codice è fuori enum, Eleventy si ferma e dice quale file (sezione 1).
 
-Una nota sul percorso: `npm start` non esegue il `prebuild`, cioè `sync-concepts.js`. Per il controllo completo prima di un push serve `npm run build`.
+Da settembre 2026 `npm start` esegue gli stessi controlli del build (hook `prestart`), quindi valgono anche in sviluppo.
 
 ---
 
@@ -455,7 +456,14 @@ Questo file è la **fonte di verità** per l'indice analitico, le pagine `/conce
   articles: [                    // articoli writings che lo citano
     { title: "L'ombra del futuro", url: "/writings/2026-04-15-lombra-del-futuro/" }
   ],
-  note: "Testo facoltativo."     // nota descrittiva (opzionale)
+  note: "Testo facoltativo.",    // nota descrittiva (opzionale)
+  sameAs: [                      // agganci all'entità reale (opzionale)
+    "https://www.wikidata.org/wiki/Q583438",
+    "https://en.wikipedia.org/wiki/Robert_Axelrod_(political_scientist)"
+  ],
+  related: [                     // legami dichiarati verso altri concetti (opzionale)
+    { name: "The Evolution of Cooperation", why: "Axelrod mette in gara le strategie…" }
+  ]
 }
 ```
 
@@ -481,6 +489,28 @@ Questo file è la **fonte di verità** per l'indice analitico, le pagine `/conce
 
 **Ogni nome di stato/nazione è `paese`, non `luogo`** — anche quando nel linguaggio comune lo chiameremmo "un luogo" (es. Giappone, Germania, Iran). `luogo` è riservato a città, regioni, snodi geografici specifici che non sono uno stato (Bologna, Beirut, Taiwan come territorio conteso). I due tipi finiscono in sezioni diverse dell'indice analitico ("Paesi" e "Luoghi"): se un nome non si trova dove lo cerchi, controlla prima l'altra sezione.
 
+### Aggancio all'entità reale — il campo `sameAs`
+
+Array di URL che identificano l'entità di cui la voce parla: il Q-id di Wikidata e, dove esiste, la voce Wikipedia (italiana quando c'è, inglese altrimenti). È facoltativo e va lasciato vuoto quando l'aggancio non è certo: **un Q-id sbagliato è peggio di nessun Q-id**, perché afferma in forma leggibile dalle macchine un'identità falsa.
+
+A settembre 2026: 169 voci su 261 agganciate, 163 con entrambi gli URL. Le 92 restanti sono coniazioni proprie, acronimi e casi dubbi, elencati in `wikidata-da-rivedere.md`.
+
+Il campo finisce nel JSON-LD della pagina `/concetti/slug/`, costruito dal filtro `conceptJsonLd` in `.eleventy.js`. Ogni pagina concetto si dichiara `DefinedTerm` di un `DefinedTermSet` (`/indice/#set`); l'identità dell'entità reale sta nel nodo `about` (`Person`, `Organization`, `Place`, `Country`, `CreativeWork` secondo il tipo), mentre per i concetti astratti il `sameAs` sta sul termine stesso. La nota integrale entra in `description`.
+
+### Legami dichiarati fra concetti — il campo `related`
+
+Archi concetto↔concetto asseriti a mano, distinti dalla co-occorrenza che il sito calcola da solo (i chip «Concetti vicini», dal filtro `relatedConcepts`). Un arco esiste perché qualcuno lo ha scritto, e porta con sé la ragione.
+
+Tre regole, fatte rispettare dal build:
+
+- **Si dichiara una volta sola.** Il filtro `assertedLinks` lo rende su entrambe le pagine. Dichiararlo due volte fa fallire il build.
+- **Il `why` si scrive come relazione, non come direzione.** «coautori di prospect theory» si legge bene da tutte e due le parti, «ha influenzato X» no. Massimo 160 caratteri.
+- **Massimo 5 legami per voce.** Un elenco più lungo torna a essere rumore.
+
+Il criterio per decidere se un legame esiste: *le due note si nominano a vicenda?* Se la nota di A parla di B — o della cosa che B è — il legame è già argomentato e il `why` deve solo renderlo esplicito. Se condividono soltanto un articolo o un po' di lessico, è scenografia.
+
+A settembre 2026: 49 legami su 41 voci dichiaranti, visibili su 74 pagine concetto. I legami **non entrano ancora nel grafo**: `/mappa/` e il riquadro HEB continuano a disegnare la sola co-occorrenza.
+
 ### Il controllo automatico — niente più concetti persi in silenzio
 
 Per anni il sistema ha scartato **senza nessun avviso** qualsiasi nome in `concepts:` di un curated che non corrispondesse a una voce già presente in `conceptsIndex.js`. Risultato: articoli pubblicati con concetti che restavano invisibili nell'indice e nel grafo, senza che nessuno se ne accorgesse — a volte per mesi.
@@ -494,6 +524,16 @@ Per anni il sistema ha scartato **senza nessun avviso** qualsiasi nome in `conce
 ```
 
 Se lo vedi: apri `conceptsIndex.js`, aggiungi la voce mancante (sezione precedente), rifai il build. L'avviso scompare quando tutto è registrato. **Su Netlify lo stesso messaggio compare nei log di deploy** (Deploy → log) — quindi anche pubblicando solo via `git push`, senza build locale, il problema resta visibile.
+
+### Il controllo che blocca — `validate-concepts.js`
+
+Gira nel `prebuild` e nel `prestart`, dopo `sync-concepts.js`, e **fa fallire il build** invece di limitarsi ad avvisare. Controlla:
+
+- `related` — il nome puntato esiste, non è la voce stessa, non è ripetuto, l'arco non è dichiarato in entrambe le direzioni, il `why` c'è e sta sotto i 160 caratteri, e la voce non supera i 5 legami;
+- `articles` — ogni `url` ha un file sorgente corrispondente (gli url di sezione come `/lab/` sono esclusi: sono pagine indice);
+- `sameAs` — è un array di URL http(s).
+
+Un refuso in un nome produceva prima un legame che spariva in silenzio. Ora il build si ferma e dice quale voce.
 
 ---
 
