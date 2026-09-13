@@ -170,6 +170,30 @@ function buildLayout() {
     }
   }
 
+  // Legami dichiarati (`related` in conceptsIndex.js): entrano nel grafo con un
+  // flag proprio. Se la coppia condivide gia' un articolo l'arco esistente viene
+  // marcato, altrimenti se ne aggiunge uno nuovo di peso 1. heb.js li tiene fuori
+  // dalla potatura del backbone e li disegna distinti. Vedi MANUALE.md sezione 5.
+  var idxByName = {};
+  concepts.forEach(function (c, i) { idxByName[c.name] = i; });
+  var edgeKey = {};
+  edges.forEach(function (e, i) { edgeKey[e.source + ":" + e.target] = i; });
+  conceptsIndexData.forEach(function (c) {
+    (c.related || []).forEach(function (r) {
+      var a = idxByName[c.name], b = idxByName[r.name];
+      if (a === undefined || b === undefined || a === b) return;
+      var s = Math.min(a, b), t = Math.max(a, b);
+      var existing = edgeKey[s + ":" + t];
+      if (existing !== undefined) {
+        edges[existing].asserted = true;
+        edges[existing].why = r.why;
+      } else {
+        edges.push({ source: s, target: t, weight: 1, asserted: true, why: r.why });
+        edgeKey[s + ":" + t] = edges.length - 1;
+      }
+    });
+  });
+
   layoutForces(nodes, edges);
 
   return { nodes: nodes, edges: edges, width: W, height: H };
@@ -210,7 +234,9 @@ function layoutForces(nodes, edges) {
       var dx = t.x - s.x, dy = t.y - s.y;
       var dist = Math.sqrt(dx * dx + dy * dy) || 1;
       var targetDist = 95;
-      var k = 0.018 * Math.min(e.weight, 4);
+      // un legame dichiarato tira piu' di una co-occorrenza: e' il motivo per
+      // cui la mappa cambia forma invece di limitarsi a cambiare colore
+      var k = 0.018 * Math.min(e.weight, 4) * (e.asserted ? 2.2 : 1);
       var force = (dist - targetDist) * k;
       var fx2 = (dx / dist) * force, fy2 = (dy / dist) * force;
       s._fx += fx2; s._fy += fy2;

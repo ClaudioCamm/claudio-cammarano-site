@@ -73,6 +73,8 @@
     });
     var keep = new Array(edges.length).fill(false);
     edges.forEach(function (e, idx) {
+      // un legame dichiarato non si pota: e' stato asserito, non calcolato
+      if (e[3]) { keep[idx] = true; return; }
       [e[0], e[1]].forEach(function (i) {
         if (k[i] <= 1) { keep[idx] = true; return; }
         if (Math.pow(1 - e[2] / s[i], k[i] - 1) < alpha) keep[idx] = true;
@@ -82,7 +84,8 @@
     // legami di un concetto pesano uguale, nessuno di essi e' piu' probabile
     // del caso, ed e' matematicamente corretto ma inservibile come mappa.
     // Si aggiunge quindi il legame piu' forte di ciascun nodo: la rete resta
-    // rada (223 archi su 1328) e nessun concetto resta senza porta.
+    // rada (282 archi su 1455, misurato a settembre 2026) e nessun concetto
+    // resta senza porta.
     var byNode = [];
     for (var i = 0; i < nodes.length; i++) byNode.push([]);
     edges.forEach(function (e, idx) { byNode[e[0]].push(idx); byNode[e[1]].push(idx); });
@@ -99,7 +102,9 @@
       return { n: displayName(n.name, n.type), sort: n.name, s: n.slug,
                t: n.type || 'altro', c: n.cluster || null, k: n.count || 1 };
     });
-    var E = data.edges.map(function (e) { return [e.source, e.target, e.weight]; });
+    // [sorgente, destinazione, peso, asserito] — il quarto posto distingue un
+    // legame dichiarato a mano da una co-occorrenza calcolata
+    var E = data.edges.map(function (e) { return [e.source, e.target, e.weight, e.asserted ? 1 : 0]; });
     var deg = new Array(N.length).fill(0);
     E.forEach(function (e) { deg[e[0]]++; deg[e[1]]++; });
     // Si cerca sia sulla forma naturale ("Miranda Fricker") sia su quella
@@ -249,16 +254,22 @@
           var e = list[m], on = !dim || e[0] === a || e[1] === a;
           if ((pass === 0) === on) continue;
           var pts = bspline(controlPoints(L, e[0], e[1]), 14);
+          var asserted = e[3] === 1;
           if (on && dim) {
             var other = e[0] === a ? e[1] : e[0];
             ctx.strokeStyle = L.groups[L.pos[other].g].color;
-            ctx.globalAlpha = 0.95; ctx.lineWidth = 1.5 + (e[2] - 1) * 0.7;
+            ctx.globalAlpha = 0.95;
+            ctx.lineWidth = (asserted ? 2.6 : 1.5) + (e[2] - 1) * 0.7;
           } else if (dim) {
-            ctx.strokeStyle = cssv('--heb-edge'); ctx.globalAlpha = 0.05; ctx.lineWidth = 1;
+            // i legami dichiarati restano leggibili anche nello sfondo spento:
+            // sono lo scheletro asserito sotto il rumore della co-occorrenza
+            ctx.strokeStyle = asserted ? L.groups[L.pos[e[0]].g].color : cssv('--heb-edge');
+            ctx.globalAlpha = asserted ? 0.30 : 0.05;
+            ctx.lineWidth = asserted ? 1.4 : 1;
           } else {
             ctx.strokeStyle = L.groups[L.pos[e[0]].g].color;
-            ctx.globalAlpha = Math.min(0.5, 0.14 + (e[2] - 1) * 0.16);
-            ctx.lineWidth = 1 + (e[2] - 1) * 0.6;
+            ctx.globalAlpha = asserted ? 0.75 : Math.min(0.5, 0.14 + (e[2] - 1) * 0.16);
+            ctx.lineWidth = (asserted ? 2.2 : 1) + (e[2] - 1) * 0.6;
           }
           strokePath(ctx, pts);
         }
@@ -347,8 +358,10 @@
       var el = root.querySelector('[data-heb-stats]');
       if (!el) return;
       var list = edges(), bound = 3 * M.N.length - 6;
+      var ass = list.filter(function (e) { return e[3] === 1; }).length;
       el.textContent = M.N.length + ' concetti · ' + list.length + ' legami disegnati su ' +
-        M.E.length + ' · ' + Math.round(list.length / bound * 100) + '% del tetto di leggibilità (3n−6)';
+        M.E.length + (ass ? ' · ' + ass + ' dichiarati' : '') +
+        ' · ' + Math.round(list.length / bound * 100) + '% del tetto di leggibilità (3n−6)';
     }
 
     function legend() {
