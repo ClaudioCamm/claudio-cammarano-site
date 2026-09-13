@@ -7,6 +7,7 @@
  *   testo       — opera, libro, articolo citato con ruolo strutturale
  *   istituzione — organizzazione, ente, agenzia con ruolo argomentativo
  *   luogo       — luogo geografico con ruolo argomentativo (non tag tematico)
+ *   paese       — stato o area geopolitica con ruolo argomentativo ricorrente
  *
  * Un concetto presente in più articoli è un nodo di navigazione reale.
  * Concetti in un solo articolo sono comunque inclusi se hanno peso distintivo.

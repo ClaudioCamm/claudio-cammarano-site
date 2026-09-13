@@ -5,7 +5,7 @@ source: "Gal Beckerman / The Atlantic"
 date: 2026-09-09
 ai_prose: WR
 criterio: elementi-di-scenario
-perche: "Fukuyama ha scritto il libro più citato e meno letto degli ultimi quarant'anni. L'equivoco è strutturale: The End of History and the Last Man (1992) viene ricordato come il manifesto del trionfalismo liberal-democratico post-Guerra Fredda. Non lo è. Il memoir In the Realm of the Last Man (2026) è l'occasione per articolare quello che il libro originale aveva nei capitoli finali senza che quasi nessuno li leggesse. Il meccanismo è più oscuro del trionfalismo con cui è passato alla storia: non 'abbiamo vinto' ma 'abbiamo ottenuto quello che volevamo e non ci basta mai'. La posta in gioco è capire perché la democrazia liberale, in una prospettiva hegeliana, non può che arretrare — e perché quel moto viene dall'interno, non da un antagonista esterno."
+perche: "Il memoir è l'occasione per smontare l'equivoco sistematico: The End of History non è trionfalistico, è la diagnosi del meccanismo con cui la democrazia liberale si logora dall'interno, non dall'antagonista esterno."
 description: |
   The End of History and the Last Man (1992) non è un testo trionfalistico. La confusione viene dall'argomento hegeliano su cui si regge: se la democrazia liberale è l'unica idea politica rimasta in piedi — se ogni alternativa è stata storicamente discreditata o non ha mai raggiunto una soglia di credibilità teorica — allora non c'è nessuna idea "oltre" su cui appoggiarsi. La storia ha esaurito il suo repertorio concettuale. Questo non significa che tutto vada bene: significa che se la democrazia si muove, può soltanto andare indietro. Non c'è avanti. Il libro lo dice già nell'articolo originale del 1989: "The end of history will be a very sad time."
 

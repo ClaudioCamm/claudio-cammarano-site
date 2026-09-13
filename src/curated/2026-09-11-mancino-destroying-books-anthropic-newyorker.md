@@ -5,7 +5,7 @@ source: "Francesca Mancino / The New Yorker"
 date: 2026-09-11
 ai_prose: WR
 criterio: dato-che-corregge
-perche: "Il pezzo smonta il titolo incendiario che ha circolato — Anthropic distrugge libri rari antichi — e trova un problema più sottile dove nessuno stava guardando. I dati vengono da atti giudiziari, da un GPS tracker applicato da una libraista prima della spedizione, da un'analisi digitale di 600+ titoli. La storia è giornalistica; il problema che apre è concettuale: la lettura meccanica come forma di cancellazione che non riguarda la rarità del supporto ma la natura dell'atto. Le formulazioni di Leah Price e Matthew Kirschenbaum sono estrattive e connettono direttamente a capitale semantico."
+perche: "Il training è fair use, ma il problema più serio è concettuale: la lettura meccanica consuma capitale semantico collettivo senza trasparenza, e i libri più preziosi per l'AI non sono i più rari."
 description: |
   Nel 2024, alcuni librai iniziarono a ricevere ordini insoliti: LLC enigmatiche — Green Parrot Project, Red Sparrow Project — compravano in massa testi accademici fuori moda, libri su impianti fognari, manuali tecnici esauriti. Una libraista di Toronto applicò un tracker GPS a un volume prima di spedirlo: il libro finì in un parco industriale di Addison, Illinois, dove arc Document Solutions gestisce impianti di scansione attivi 24 ore su 24. Gli atti giudiziari di una class action del 2024 hanno svelato il resto: il programma si chiamava Project Panama, ed era definito internamente come "our effort to destructively scan all the books in the world." Destructively: le copertine rimosse con una taglierina idraulica — book guillotine —, le pagine scansionate, le copie fisiche gettate via.
 
