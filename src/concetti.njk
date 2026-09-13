@@ -56,6 +56,21 @@ eleventyComputed:
     {% endif %}
   </header>
 
+  {# ── Legami dichiarati ── #}
+  {% set legami = concept.name | assertedLinks(collections.mergedConceptsIndex) %}
+  {% if legami.length %}
+  <section class="concetto-legami" aria-label="Legami">
+    <p class="concetto-related-label">Legami</p>
+    <ul class="concetto-legami-list">
+      {% for l in legami %}
+      <li class="concetto-legame">
+        <a href="/concetti/{{ l.name | slugify }}/">{{ l.name | displayName(l.type) }}</a>{% if l.why %}<span class="concetto-legame-why"> — {{ l.why }}</span>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
   {# ── Concetti vicini (chip row) ── #}
   {% set related = concept.name | relatedConcepts(collections.mergedConceptsIndex) %}
   {% if related.length %}

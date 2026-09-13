@@ -442,6 +442,7 @@ module.exports = function(eleventyConfig) {
         articles: c.articles.slice(),
         note: c.note || null,
         sameAs: (c.sameAs && c.sameAs.length) ? c.sameAs.slice() : null,
+        related: (c.related && c.related.length) ? c.related.slice() : null,
         citation: c.citation || null,
         lab: c.lab || false
       };
@@ -734,6 +735,32 @@ module.exports = function(eleventyConfig) {
   });
 
   // Related concepts: concepts that share at least one article with the given concept name
+  // ─── Legami dichiarati fra concetti ────────────────────────────────────────
+  // Archi asseriti a mano in conceptsIndex.js (campo `related`), distinti dalla
+  // co-occorrenza calcolata da `relatedConcepts`. Ogni arco si dichiara UNA
+  // volta sola e viene reso in entrambe le direzioni: per questo il `why` si
+  // scrive come relazione e non come direzione.
+  eleventyConfig.addFilter("assertedLinks", function (conceptName, allConcepts) {
+    if (!conceptName || !allConcepts) return [];
+    var byName = {};
+    allConcepts.forEach(function (c) { byName[c.name] = c; });
+    var out = [], seen = {};
+    function push(name, why) {
+      if (!byName[name] || seen[name] || name === conceptName) return;
+      seen[name] = true;
+      out.push({ name: name, type: byName[name].type, why: why || "" });
+    }
+    var self = byName[conceptName];
+    if (self && self.related) {
+      self.related.forEach(function (r) { push(r.name, r.why); });
+    }
+    allConcepts.forEach(function (c) {
+      if (c.name === conceptName || !c.related) return;
+      c.related.forEach(function (r) { if (r.name === conceptName) push(c.name, r.why); });
+    });
+    return out.sort(function (a, b) { return a.name.localeCompare(b.name, "it"); });
+  });
+
   eleventyConfig.addFilter("relatedConcepts", function(conceptName, allConcepts) {
     if (!allConcepts || !conceptName) return [];
     var current = null;
