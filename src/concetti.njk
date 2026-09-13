@@ -11,19 +11,7 @@ eleventyComputed:
 ---
 
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": "{{ concept.name | displayName(concept.type) | jsonEscape | safe }}",
-  "description": "Articoli collegati a {{ concept.name | displayName(concept.type) | jsonEscape | safe }}",
-  "url": "https://claudiocammarano.com{{ page.url }}",
-  "author": {
-    "@type": "Person",
-    "@id": "https://claudiocammarano.com/#person",
-    "name": "Claudio Cammarano",
-    "url": "https://claudiocammarano.com"
-  }
-}
+{{ concept | conceptJsonLd(page.url) | safe }}
 </script>
 
 <div class="concetto-page">

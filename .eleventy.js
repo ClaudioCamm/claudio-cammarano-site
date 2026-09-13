@@ -356,6 +356,83 @@ module.exports = function(eleventyConfig) {
   // concepts[] in their frontmatter. Curated articles are added to matching
   // concept entries; unknown concept names are reported (see warning below)
   // and skipped — they need to be added to conceptsIndex.js first.
+  // ─── JSON-LD dell'indice concettuale (DefinedTerm) ─────────────────────────
+  // Ogni pagina /concetti/<slug>/ e' una voce di vocabolario (DefinedTerm) del
+  // set dichiarato in /indice/. L'identita' dell'entita' reale sta in `about`,
+  // con il sameAs a Wikidata. Vedi MANUALE.md.
+  const CC_SITE = "https://claudiocammarano.com";
+  const CC_ABOUT_TYPE = {
+    persona: "Person",
+    istituzione: "Organization",
+    luogo: "Place",
+    paese: "Country",
+    testo: "CreativeWork"
+  };
+  function ccPlainText(s) {
+    if (!s) return "";
+    return String(s)
+      .replace(/<[^>]+>/g, "")
+      .replace(/!?\[([^\]]*)\]\([^)]*\)/g, "$1")
+      .replace(/[*_`]/g, "")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+  function ccDisplayName(str, type) {
+    if (!str) return "";
+    const s = String(str).trim();
+    if (type && type !== "persona") return s;
+    const parts = s.split(",");
+    if (parts.length !== 2) return s;
+    const last = parts[0].trim(), first = parts[1].trim();
+    if (!last || !first || first.length > 40) return s;
+    return first + " " + last;
+  }
+  eleventyConfig.addFilter("conceptJsonLd", function (concept, pageUrl) {
+    const name = ccDisplayName(concept.name, concept.type);
+    const url = CC_SITE + pageUrl;
+    const obj = {
+      "@context": "https://schema.org",
+      "@type": "DefinedTerm",
+      "@id": url + "#term",
+      "name": name,
+      "inDefinedTermSet": {
+        "@type": "DefinedTermSet",
+        "@id": CC_SITE + "/indice/#set",
+        "name": "Indice concettuale di claudiocammarano.com",
+        "url": CC_SITE + "/indice/"
+      }
+    };
+    try {
+      obj.termCode = eleventyConfig.getFilter("slugify")(concept.name);
+    } catch (err) { /* slugify non disponibile: termCode omesso */ }
+    if (concept.note) obj.description = ccPlainText(concept.note);
+    const aboutType = CC_ABOUT_TYPE[concept.type];
+    const same = (concept.sameAs && concept.sameAs.length) ? concept.sameAs : null;
+    if (aboutType) {
+      obj.about = { "@type": aboutType, "name": name };
+      if (same) obj.about.sameAs = same;
+    } else if (same) {
+      obj.sameAs = same;
+    }
+    obj.mainEntityOfPage = {
+      "@type": "CollectionPage",
+      "@id": url,
+      "url": url,
+      "author": {
+        "@type": "Person",
+        "@id": CC_SITE + "/#person",
+        "name": "Claudio Cammarano",
+        "url": CC_SITE
+      }
+    };
+    if (concept.articles && concept.articles.length) {
+      obj.subjectOf = concept.articles.map(function (a) {
+        return { "@type": "Article", "name": a.title, "url": CC_SITE + a.url };
+      });
+    }
+    return JSON.stringify(obj, null, 2);
+  });
+
   eleventyConfig.addCollection("mergedConceptsIndex", function(collectionApi) {
     // Deep-clone to avoid mutating the require() cache across builds
     var index = conceptsIndexData.map(function(c) {
@@ -364,6 +441,7 @@ module.exports = function(eleventyConfig) {
         type: c.type,
         articles: c.articles.slice(),
         note: c.note || null,
+        sameAs: (c.sameAs && c.sameAs.length) ? c.sameAs.slice() : null,
         citation: c.citation || null,
         lab: c.lab || false
       };
