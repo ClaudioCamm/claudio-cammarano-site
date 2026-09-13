@@ -581,7 +581,8 @@ module.exports = [
       { title: "How data centres became one of America's hottest political issues", url: "/curated/2026-09-02-economist-data-center-nimby-politica-usa/", _source: "curated" },
       { title: "Nvidia is driving the AI boom. Good", url: "/curated/2026-09-05-economist-nvidia-speciale-banca-centrale/", _source: "curated" },
       { title: "The Climate Crisis Is Bigger Than Your Footprint", url: "/curated/2026-08-31-stokes-carbon-footprint-bp-mitpress/", _source: "curated" },
-      { title: "The Original Sin of AI", url: "/curated/2026-09-11-turkle-original-sin-ai-atlantic/", _source: "curated" }
+      { title: "The Original Sin of AI", url: "/curated/2026-09-11-turkle-original-sin-ai-atlantic/", _source: "curated" },
+      { title: "Destroying Books to Build a Mind", url: "/curated/2026-09-11-mancino-destroying-books-anthropic-newyorker/", _source: "curated" }
     ]
   },
   {
@@ -775,7 +776,8 @@ module.exports = [
       { title: "I'm Begging You: Never Write With A.I.", url: "/curated/2026-08-04-stephens-never-write-ai-nyt/", _source: "curated" },
       { title: "If You're Over 40, You're Ready to Use A.I.", url: "/curated/2026-07-27-millman-kabbalah-ai-nyt/", _source: "curated" },
       { title: "Does AI stop children from learning?", url: "/curated/2026-08-18-economist-ai-learning-penalty-children/", _source: "curated" },
-      { title: "Ross Douthat: The Exit Interview", url: "/curated/2026-08-11-klein-douthat-exit-interview-nyt/", _source: "curated" }
+      { title: "Ross Douthat: The Exit Interview", url: "/curated/2026-08-11-klein-douthat-exit-interview-nyt/", _source: "curated" },
+      { title: "Destroying Books to Build a Mind", url: "/curated/2026-09-11-mancino-destroying-books-anthropic-newyorker/", _source: "curated" }
     ]
   },
   {
