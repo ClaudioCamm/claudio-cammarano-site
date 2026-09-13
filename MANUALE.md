@@ -535,6 +535,21 @@ Gira nel `prebuild` e nel `prestart`, dopo `sync-concepts.js`, e **fa fallire il
 
 Un refuso in un nome produceva prima un legame che spariva in silenzio. Ora il build si ferma e dice quale voce.
 
+### L'indice come dataset pubblico
+
+Da settembre 2026 lo stesso indice esce anche in forma aggregata, generata a build time dalla stessa fonte di verità: nessuno di questi file si mantiene a mano.
+
+| URL | Che cos'è |
+|---|---|
+| `/concetti.json` | L'indice come JSON-LD, filtro `conceptSchemeJsonLd`. Radice insieme `skos:ConceptScheme`, `DefinedTermSet` e `Dataset`, con licenza CC BY 4.0, versione, `creator` con ORCID e un blocco `cc:statistics`. Ogni voce porta `prefLabel`, la nota integrale in `skos:note`, `skos:exactMatch` verso Wikidata e Wikipedia, l'entità tipizzata in `about`, gli articoli in `subjectOf` e i legami. |
+| `/llms.txt` | Indice conciso: writings con description, le 261 voci una riga ciascuna, i 116 curated con il loro `perche`, i puntatori ai file espansi. ~85 KB. |
+| `/llms-full.txt` | Gli stessi contenuti con note e descrizioni integrali. ~430 KB. |
+| `/ns/` | I tre termini propri usati nel dataset, dichiarati e dereferenziabili. |
+
+**Perché esiste `/ns/`.** SKOS e schema.org coprono quasi tutto, ma non il `why` di un legame: `skos:related` è una relazione nuda. Il legame è quindi reificato in un nodo `cc:Link` con `cc:target` e `cc:why`, e gli stessi legami sono ripetuti in forma nuda in `skos:related` per chi conosce solo SKOS. Insieme a `cc:type` sono i tre termini dichiarati nel namespace `https://claudiocammarano.com/ns#`. Un termine proprio non dichiarato è un termine inventato: la pagina è la dichiarazione.
+
+**Deposito e DOI.** In `dataset/` ci sono `README.md` (schema, metodo, provenienza, limiti dichiarati), `CITATION.cff` e `zenodo-metadata.md` con i campi già compilati. Il caricamento su Zenodo va fatto a mano dal proprio account; dopo, il DOI va riportato nel README e in `src/llms.njk`, sezione «File espansi». Per le versioni successive usare «New version» sullo stesso record, così il DOI concettuale resta stabile.
+
 ---
 
 ## 6. Come funziona la navigazione semantica
