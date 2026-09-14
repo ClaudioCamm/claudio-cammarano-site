@@ -525,9 +525,8 @@ module.exports = function(eleventyConfig) {
     return JSON.stringify(doc, null, 2);
   });
 
-  eleventyConfig.addFilter("conceptSchemeJsonLd", function (all, isoDate) {
+  eleventyConfig.addFilter("conceptSchemeJsonLd", function (all, ds) {
     const S = CC_NS, SITE = CC_SITE;
-    isoDate = isoDate || new Date().toISOString().slice(0, 10);
     const slugify = eleventyConfig.getFilter("slugify");
     const termId = n => SITE + "/concetti/" + slugify(n) + "/#term";
     const pageUrl = n => SITE + "/concetti/" + slugify(n) + "/";
@@ -609,10 +608,11 @@ module.exports = function(eleventyConfig) {
       alternateName: "Concept index of claudiocammarano.com",
       description: "Vocabolario dei concetti — persone, teorie, testi, istituzioni, luoghi e paesi — citati con peso argomentativo negli scritti di Claudio Cammarano. Ogni voce porta una nota discorsiva, gli agganci all'entita' reale su Wikidata e Wikipedia, gli articoli in cui compare e i legami dichiarati verso altri concetti, ciascuno con la ragione del legame.",
       url: SITE + "/indice/",
-      version: isoDate,
-      dateModified: isoDate,
+      version: ds.version,
+      dateModified: ds.released,
+      datePublished: ds.released,
       inLanguage: "it",
-      license: "https://creativecommons.org/licenses/by/4.0/",
+      license: ds.license,
       creator: {
         "@type": "Person",
         "@id": SITE + "/#person",
@@ -634,6 +634,10 @@ module.exports = function(eleventyConfig) {
         encodingFormat: "application/ld+json",
         contentUrl: SITE + "/concetti.json"
       },
+      // il DOI, quando c'e': `identifier` e `sameAs` puntano entrambi al
+      // record Zenodo, cosi' il file si dichiara come la cosa depositata
+      identifier: ds.doi || undefined,
+      "cc:changelog": ds.changelog,
       "cc:statistics": {
         concetti: terms.length,
         perTipo: byType,

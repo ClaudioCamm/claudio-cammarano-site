@@ -2,7 +2,7 @@
 
 Vocabolario dei concetti — persone, teorie, testi, istituzioni, luoghi e paesi — citati con peso argomentativo negli scritti di Claudio Cammarano su [claudiocammarano.com](https://claudiocammarano.com). Ogni voce porta una nota discorsiva, gli agganci all'entità reale su Wikidata e Wikipedia dove esistono, gli articoli in cui il concetto compare, e i legami dichiarati verso altri concetti con la ragione di ciascun legame.
 
-**Versione 1.0.0 — 13 settembre 2026**
+**Versione 1.0.0 — 14 settembre 2026**
 
 - Dati: <https://claudiocammarano.com/concetti.json> (JSON-LD)
 - Vista navigabile: <https://claudiocammarano.com/indice/>

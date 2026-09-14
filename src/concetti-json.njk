@@ -3,4 +3,4 @@ permalink: /concetti.json
 layout: false
 eleventyExcludeFromCollections: true
 ---
-{{ collections.mergedConceptsIndex | conceptSchemeJsonLd | safe }}
+{{ collections.mergedConceptsIndex | conceptSchemeJsonLd(dataset) | safe }}
