@@ -647,7 +647,8 @@ module.exports = [
       { title: "Nvidia is driving the AI boom. Good", url: "/curated/2026-09-05-economist-nvidia-speciale-banca-centrale/", _source: "curated" },
       { title: "The Climate Crisis Is Bigger Than Your Footprint", url: "/curated/2026-08-31-stokes-carbon-footprint-bp-mitpress/", _source: "curated" },
       { title: "The Original Sin of AI", url: "/curated/2026-09-11-turkle-original-sin-ai-atlantic/", _source: "curated" },
-      { title: "Destroying Books to Build a Mind", url: "/curated/2026-09-11-mancino-destroying-books-anthropic-newyorker/", _source: "curated" }
+      { title: "Destroying Books to Build a Mind", url: "/curated/2026-09-11-mancino-destroying-books-anthropic-newyorker/", _source: "curated" },
+      { title: "Zuckerberg says the science isn't settled. But the harms of short-form video on the brain are starting to show", url: "/curated/2026-09-18-enders-short-form-video-cognizione-guardian/", _source: "curated" }
     ]
   },
   {
@@ -1445,7 +1446,8 @@ module.exports = [
     note: "Concetto di Katherine Hayles: modalità cognitiva caratterizzata da rapido switching tra focus diversi, alta tolleranza alla noia, preferenza per input multipli simultanei. È un adattamento all'ambiente digitale, non un deficit — e la forma dominante dell'attenzione nelle generazioni cresciute con Internet. Nel sito è il contesto che spiega il successo del podcast lungo: il formato fiume non va contro l'iperattenzione ma le offre un'uscita strutturata, uno spazio in cui il carico cognitivo è basso e controllabile.",
     articles: [
       { title: "I podcast lunghi nell'era della mezza attenzione", url: "/curated/2026-06-29-diegoli-podcast-lunghi-mezza-attenzione-linkideeperlatv/", _source: "curated" },
-      { title: "The bombarding of childhood", url: "/curated/2026-09-18-kucirkova-hectic-media-bambini-aeon/", _source: "curated" }
+      { title: "The bombarding of childhood", url: "/curated/2026-09-18-kucirkova-hectic-media-bambini-aeon/", _source: "curated" },
+      { title: "Zuckerberg says the science isn't settled. But the harms of short-form video on the brain are starting to show", url: "/curated/2026-09-18-enders-short-form-video-cognizione-guardian/", _source: "curated" }
     ]
   },
   {
@@ -1548,6 +1550,17 @@ module.exports = [
       { title: "The Warrior-Witches of Ukraine's Resistance", url: "/curated/2026-06-21-harbaugh-warrior-witches-ukraine-atlantic/", _source: "curated" },
       { title: "Non usiamo i media, ci cresciamo dentro", url: "/curated/2026-07-13-tarchetti-media-ecology-non-ho-capito/", _source: "curated" },
       { title: "Gloria Steinem's Final Essay", url: "/curated/2026-09-03-steinem-final-essay-newyorker/", _source: "curated" }
+    ]
+  },
+  {
+    name: "dieta mediatica",
+    type: "teoria",
+    related: [
+      { name: "ecologia dei media", why: "Se i media sono un ambiente e non un canale, l'unità da osservare è il regime di consumo, non il singolo contenuto." }
+    ],
+    note: "L'insieme dei consumi mediali di una persona considerato come regime complessivo — proporzioni, ritmi, orari, alternanza fra formati — invece che come somma di contenuti singoli. Nel sito nasce da un'asimmetria osservata in nutrizione e trasferita qui: gli studi sul singolo alimento producono da decenni risultati piccoli e contraddittori, quelli sui regimi alimentari reggono, e non perché il singolo alimento sia innocuo ma perché non è il livello a cui il fenomeno esiste. La stessa cosa si osserva nella ricerca sui media: la domanda se un formato faccia danno è quasi irrispondibile, mentre l'induzione che certe diete mediatiche nel loro complesso siano nocive è largamente condivisa, anche da chi le pratica. È una critica dell'unità di analisi più che dell'oggetto, e spiega retrospettivamente perché quarant'anni di ricerca sulla televisione abbiano concluso poco. Ha una conseguenza pratica sulla regolazione: gli interventi che le piattaforme accettano quando sono obbligate — tetti orari, blocchi notturni, interruzioni — sono interventi sul regime, non sul contenuto.",
+    articles: [
+      { title: "Zuckerberg says the science isn't settled. But the harms of short-form video on the brain are starting to show", url: "/curated/2026-09-18-enders-short-form-video-cognizione-guardian/", _source: "curated" }
     ]
   },
   {
