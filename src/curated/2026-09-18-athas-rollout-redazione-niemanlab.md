@@ -1,0 +1,13 @@
+---
+title: "New York Times training editor: Take these four steps before you roll out new things"
+external_url: "https://www.niemanlab.org/2026/09/new-york-times-training-editor-take-these-four-steps-before-you-roll-out-new-things/"
+source: "Eric Athas / Nieman Lab"
+date: 2026-09-18
+ai_prose: WR
+criterio: metodo-di-lavoro
+perche: "La proposta scritta prima del prototipo: quando è conoscenza e quando è solo rito di autorizzazione."
+rinvio: /curated/2026-06-30-vogels-two-pizza-culture-allthingsdistributed/
+description: "Eric Athas, deputy editor del team che al New York Times accompagna le redazioni nell'adozione di strumenti e programmi nuovi, propone quattro passi prima di qualunque rollout: accettare che una novità porti con sé elementi ignoti, dimensionare la proposta in una forma scritta a sei campi, pilotare su perimetro ristretto, poi misurare — con un'analogia esplicita alla medicina basata sulle evidenze (Adam Cifu). Il pilota, in fondo, è il modo in cui un'organizzazione prova a uscire dal dilemma di Collingridge senza aspettare di averlo risolto: comprare informazione finché il controllo costa ancora poco. Letto da solo, però, è buon mestiere e poco altro. Diventa interessante messo accanto a Werner Vogels, già in archivio. Il CTO di Amazon difende la «two-pizza culture»: team abbastanza piccoli da essere sfamati con due pizze, che possiedono il problema end-to-end e prendono decisioni reversibili senza chiedere permesso — e che proprio per questo, ora che un coding agent costruisce un prototipo in una sera, scrivono il documento dopo aver costruito, non prima. Athas fa l'opposto: il documento precede il pilota, e il pilota precede tutto. La contraddizione è solo apparente, e scioglierla dice qualcosa sulle organizzazioni editoriali, perché i due metodi non proteggono dallo stesso rischio. Il documento di Amazon protegge dall'errore di previsione, e quando il prototipo diventa gratuito quel documento perde effettivamente valore. La proposta scritta di Athas protegge da un rischio che non è collassato affatto — il costo reputazionale di una redazione che sperimenta in pubblico, e l'attrito interno di chiedere a professionisti formati su un mestiere di cambiarlo. Da qui la regola pratica che mi porto via: dove il rischio è tecnico, prototipa e poi scrivi; dove il rischio è organizzativo o reputazionale, il documento serve ancora, ma bisogna saperlo — altrimenti si scambia per rigore quello che è soltanto una richiesta di permesso."
+tags: [curated, giornalismo, media, decision-making]
+concepts: ["New York Times", "Vogels, Werner", "two-pizza team", "dilemma di Collingridge"]
+---

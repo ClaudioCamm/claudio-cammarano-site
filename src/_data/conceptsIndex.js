@@ -692,7 +692,8 @@ module.exports = [
     articles: [
       { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
       { title: "What If We Can Never Trust A.I.?", url: "/curated/2026-08-01-rothman-trust-ai-newyorker/", _source: "curated" },
-      { title: "AI isn't the Manhattan Project — it's Jurassic Park", url: "/curated/2026-08-11-graff-jurassic-park-ai-doomsdayscenario/", _source: "curated" }
+      { title: "AI isn't the Manhattan Project — it's Jurassic Park", url: "/curated/2026-08-11-graff-jurassic-park-ai-doomsdayscenario/", _source: "curated" },
+      { title: "New York Times training editor: Take these four steps before you roll out new things", url: "/curated/2026-09-18-athas-rollout-redazione-niemanlab/", _source: "curated" }
     ]
   },
   {
@@ -1300,9 +1301,15 @@ module.exports = [
   {
     name: "two-pizza team",
     type: "teoria",
+    related: [
+      { name: "Vogels, Werner", why: "Il principio organizzativo di Amazon che Vogels rilegge quando un coding agent costruisce un prototipo in una sera." }
+    ],
     note: "Principio organizzativo di Amazon (attribuito a Jeff Bezos): nessun team dovrebbe essere così grande da non poter essere sfamato con due pizze. Non è una regola sul cibo ma sull'ownership: team piccoli dove ogni membro conosce il lavoro degli altri, può prendere decisioni reversibili senza chiedere permesso e possiede il problema end-to-end. Nel sito è il sistema immunitario contro l'entropia organizzativa — la tendenza dei team che crescono a sviluppare dipendenze, layer di approvazione e rallentamenti che erodono la velocità che aveva reso il team efficace.",
     articles: [
-      { title: "A Return to Two-Pizza Culture", url: "/curated/2026-06-30-vogels-two-pizza-culture-allthingsdistributed/", _source: "curated" }
+      { title: "A Return to Two-Pizza Culture", url: "/curated/2026-06-30-vogels-two-pizza-culture-allthingsdistributed/", _source: "curated" },
+      { title: "New York Times training editor: Take these four steps before you roll out new things", url: "/curated/2026-09-18-athas-rollout-redazione-niemanlab/", _source: "curated" },
+      { title: "New York Times training editor: Take these four steps before you roll out new things", url: "/curated/2026-09-18-athas-rollout-redazione-niemanlab/", _source: "curated" },
+      { title: "New York Times training editor: Take these four steps before you roll out new things", url: "/curated/2026-09-18-athas-rollout-redazione-niemanlab/", _source: "curated" }
     ]
   },
   {
@@ -1945,9 +1952,10 @@ module.exports = [
     name: "New York Times",
     type: "istituzione",
     sameAs: ["https://www.wikidata.org/wiki/Q9684", "https://it.wikipedia.org/wiki/The_New_York_Times"],
-    note: "Quotidiano americano. Nel sito è citato insieme al Washington Post come testata che ha imbastito un «marketing della verità» al primo insediamento di Trump nel 2016 — una strategia di posizionamento diversa da quella valoriale adottata dall'Economist, e più vulnerabile alle crisi di credibilità legate alle scelte proprietarie.",
+    note: "Quotidiano americano. Nel sito è citato insieme al Washington Post come testata che ha imbastito un «marketing della verità» al primo insediamento di Trump nel 2016 — una strategia di posizionamento diversa da quella valoriale adottata dall'Economist, e più vulnerabile alle crisi di credibilità legate alle scelte proprietarie. Nel sito compare anche in un secondo registro, organizzativo e non reputazionale: la redazione che si dà un metodo formale per adottare strumenti nuovi — proposta scritta, pilota su perimetro ristretto, misura a posteriori — descritto dall'interno da Eric Athas.",
     articles: [
-      { title: "The history of liberalism: a timeline", url: "/curated/2026-06-25-economist-liberalism-timeline/", _source: "curated" }
+      { title: "The history of liberalism: a timeline", url: "/curated/2026-06-25-economist-liberalism-timeline/", _source: "curated" },
+      { title: "New York Times training editor: Take these four steps before you roll out new things", url: "/curated/2026-09-18-athas-rollout-redazione-niemanlab/", _source: "curated" }
     ]
   },
 

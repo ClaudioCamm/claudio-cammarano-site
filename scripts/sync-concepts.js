@@ -130,13 +130,18 @@ if (toAdd.length > 0) {
     const pos      = src.indexOf(nameStr);
     if (pos === -1) continue;
 
+    // Ancora la ricerca a `articles:`, non alla prima quadra utile: dal campo
+    // `related` in poi una voce può avere più array, e il primo `]` dopo il
+    // nome non è detto sia quello degli articoli.
+    const artPos   = src.indexOf('    articles:', pos);
+    if (artPos === -1) continue;
     const emptyArr = '    articles: []';
     const emptyPos = src.indexOf(emptyArr, pos);
     const closeArr = '\n    ]';
-    const closePos = src.indexOf(closeArr, pos);
+    const closePos = src.indexOf(closeArr, artPos);
 
     // Caso: articles: []
-    if (emptyPos !== -1 && (closePos === -1 || emptyPos < closePos)) {
+    if (emptyPos !== -1 && emptyPos === artPos) {
       const newArr = `    articles: [\n      { title: "${article.title}", url: "${article.url}", _source: "${article._source}" }\n    ]`;
       src = src.slice(0, emptyPos) + newArr + src.slice(emptyPos + emptyArr.length);
     } else if (closePos !== -1) {
