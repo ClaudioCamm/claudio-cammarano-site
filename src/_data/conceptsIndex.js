@@ -926,9 +926,13 @@ module.exports = [
   {
     name: "istituzioni inclusive vs. estrattive",
     type: "teoria",
+    related: [
+      { name: "Why Nations Fail", why: "Il libro del 2012 in cui Acemoglu e Robinson costruiscono la distinzione e la mettono alla prova su due secoli." }
+    ],
     note: "Distinzione di Acemoglu e Robinson (Why Nations Fail, 2012): le istituzioni inclusive distribuiscono potere politico ed economico e generano prosperità; quelle estrattive lo concentrano nelle mani di pochi e generano stagnazione. Nel sito è il quadro per leggere le traiettorie di lungo periodo dei paesi analizzati nella serie «Ombre».",
     articles: [
-      { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" }
+      { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
+      { title: "Naomi Klein: 'Extreme wealth has a deranging effect. It turns you into a supremacist'", url: "/curated/2026-09-18-klein-end-times-fascism-guardian/", _source: "curated" }
     ]
   },
   {
@@ -1307,8 +1311,6 @@ module.exports = [
     note: "Principio organizzativo di Amazon (attribuito a Jeff Bezos): nessun team dovrebbe essere così grande da non poter essere sfamato con due pizze. Non è una regola sul cibo ma sull'ownership: team piccoli dove ogni membro conosce il lavoro degli altri, può prendere decisioni reversibili senza chiedere permesso e possiede il problema end-to-end. Nel sito è il sistema immunitario contro l'entropia organizzativa — la tendenza dei team che crescono a sviluppare dipendenze, layer di approvazione e rallentamenti che erodono la velocità che aveva reso il team efficace.",
     articles: [
       { title: "A Return to Two-Pizza Culture", url: "/curated/2026-06-30-vogels-two-pizza-culture-allthingsdistributed/", _source: "curated" },
-      { title: "New York Times training editor: Take these four steps before you roll out new things", url: "/curated/2026-09-18-athas-rollout-redazione-niemanlab/", _source: "curated" },
-      { title: "New York Times training editor: Take these four steps before you roll out new things", url: "/curated/2026-09-18-athas-rollout-redazione-niemanlab/", _source: "curated" },
       { title: "New York Times training editor: Take these four steps before you roll out new things", url: "/curated/2026-09-18-athas-rollout-redazione-niemanlab/", _source: "curated" }
     ]
   },
@@ -2378,11 +2380,15 @@ module.exports = [
   {
     name: "Thiel, Peter",
     type: "persona",
+    related: [
+      { name: "Palantir", why: "L'azienda che porta la teoria del monopolio di Thiel dentro l'apparato di sicurezza statale." }
+    ],
     sameAs: ["https://www.wikidata.org/wiki/Q705525", "https://it.wikipedia.org/wiki/Peter_Thiel"],
     note: "Investitore e imprenditore tedesco-americano (1967). Cofondatore di PayPal e Palantir, finanziatore di Facebook e Trump. Teorico del monopolio come obiettivo strategico (Zero to One, 2014): i mercati competitivi distruggono i margini, il monopolio crea valore — e il «segreto» è la verità che nessuno dice ad alta voce.",
     articles: [
       { title: "La colonizzazione del giudizio", url: "/curated/2026-06-12-corriere-colonizzazione-giudizio/", _source: "curated" },
-      { title: "The End of the Future", url: "/curated/2026-06-15-fp-end-of-the-future/", _source: "curated" }
+      { title: "The End of the Future", url: "/curated/2026-06-15-fp-end-of-the-future/", _source: "curated" },
+      { title: "Naomi Klein: 'Extreme wealth has a deranging effect. It turns you into a supremacist'", url: "/curated/2026-09-18-klein-end-times-fascism-guardian/", _source: "curated" }
     ]
   },
   {
@@ -2532,7 +2538,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q2536951", "https://en.wikipedia.org/wiki/Werner_Vogels"],
     note: "CTO di Amazon (2005 in corso), ingegnere e informatico olandese. Autore del blog *All Things Distributed*, dove scrive di architettura distribuita, cultura organizzativa e innovazione. Nel sito è citato per la riflessione sul ritorno alla «two-pizza culture» e sulla revisione del metodo «working backwards» nell'era dei coding agent: quando costruire un prototipo costa una sera, l'ordine logico del processo creativo si inverte.",
     articles: [
-      { title: "A Return to Two-Pizza Culture", url: "/curated/2026-06-30-vogels-two-pizza-culture-allthingsdistributed/", _source: "curated" }
+      { title: "A Return to Two-Pizza Culture", url: "/curated/2026-06-30-vogels-two-pizza-culture-allthingsdistributed/", _source: "curated" },
+      { title: "New York Times training editor: Take these four steps before you roll out new things", url: "/curated/2026-09-18-athas-rollout-redazione-niemanlab/", _source: "curated" }
     ]
   },
   {
@@ -2642,7 +2649,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q317521", "https://it.wikipedia.org/wiki/Elon_Musk"],
     note: "Imprenditore e investitore americano (1971), fondatore o co-fondatore di Tesla, SpaceX, X (ex Twitter), xAI. Nel sito è studiato come caso limite del paradigma tecnocratico: straordinaria capacità di hackerare i contesti in cui si muove — trovare leve regolatorie, politiche, finanziarie e portare risultati concreti — associata a una cecità strutturale verso qualsiasi big picture che non sia preconfezionata (accelerazionismo, doomsday AI, abbondanza universale). Framework che hanno in comune la struttura del mito tecnico, non dell'analisi. La sua figura pone una domanda aperta sul rapporto tra salute psichica, performance e potere nell'ecosistema tech.",
     articles: [
-      { title: "An interview with Elon Musk", url: "/curated/2026-07-24-musk-economist-interview-beddoes/", _source: "curated" }
+      { title: "An interview with Elon Musk", url: "/curated/2026-07-24-musk-economist-interview-beddoes/", _source: "curated" },
+      { title: "Naomi Klein: 'Extreme wealth has a deranging effect. It turns you into a supremacist'", url: "/curated/2026-09-18-klein-end-times-fascism-guardian/", _source: "curated" }
     ]
   },
   {
@@ -2743,6 +2751,6 @@ module.exports = [
     articles: [
       { title: "La mappa e il crinale", url: "/writings/2026-09-07-la-mappa-e-il-crinale/" }
     ]
-  },
+  }
 
 ];

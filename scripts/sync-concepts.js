@@ -126,9 +126,14 @@ if (toAdd.length > 0) {
   let src = fs.readFileSync(CONCEPTS_FILE, 'utf8');
 
   for (const { conceptName, article } of toAdd) {
-    const nameStr  = `name: "${conceptName}"`;
-    const pos      = src.indexOf(nameStr);
-    if (pos === -1) continue;
+    // Il nome va cercato nella DEFINIZIONE della voce (`name:` seguito da
+    // `type:`), non alla prima occorrenza: dal campo `related` in poi lo stesso
+    // nome compare anche dentro i legami di altre voci, che nel file possono
+    // precederla.
+    const defRe = new RegExp('name: "' + conceptName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '",\n    type:');
+    const defMatch = defRe.exec(src);
+    if (!defMatch) continue;
+    const pos = defMatch.index;
 
     // Ancora la ricerca a `articles:`, non alla prima quadra utile: dal campo
     // `related` in poi una voce può avere più array, e il primo `]` dopo il
