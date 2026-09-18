@@ -22,6 +22,8 @@ module.exports = {
   "educazione": "Formazione",
 
   // Nuovi Argomenti — Geopolitica & potere
+  "guerra": "Guerra",
+  "teoria dei giochi": "Teoria dei giochi",
   "difesa": "Difesa",
   "europa": "Europa",
   "storia": "Storia",
@@ -33,6 +35,10 @@ module.exports = {
   "transizione": "Transizione energetica",
 
   // Nuovi Argomenti — Editoria & comunicazione
+  "comunicazione": "Comunicazione",
+  "societa": "Cultura",
+  "società": "Cultura",
+  "formazione": "Formazione",
   "videogiochi": "Videogiochi",
   "retrogaming": "Videogiochi",
   "media": "Media",
@@ -50,6 +56,9 @@ module.exports = {
   "pubblicità": "Pubblicità",
 
   // Nuovi Argomenti — Epistemologia & AI
+  "tecnologia": "Tecnologia",
+  "etica": "Etica",
+  "cognizione": "Cognizione",
   "ricerca": "Ricerca",
   "sicurezza": "Sicurezza",
   "scienza": "Scienza",
@@ -66,6 +75,7 @@ module.exports = {
   "wearables": "Sorveglianza",
 
   // Nuovi Argomenti — Italia & istituzioni
+  "humanities": "Humanities",
   "femminismo": "Femminismo",
 
   // Nuovi Argomenti — Economia & lavoro
