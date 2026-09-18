@@ -688,6 +688,9 @@ module.exports = [
   {
     name: "dilemma di Collingridge",
     type: "teoria",
+    related: [
+      { name: "dual use", why: "La classificazione dual use arriva quando la tecnologia è già radicata: il dilemma applicato alla normativa." }
+    ],
     note: "Paradosso sulla governance tecnologica: una tecnologia è controllabile quando non la capiamo ancora abbastanza da sapere cosa farne; quando la comprendiamo è già così radicata che il controllo è praticabile solo in forma di esenzione parziale. Nel sito spiega strutturalmente perché la classificazione dual use è sempre obsoleta quando diventa applicabile.",
     articles: [
       { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
@@ -921,6 +924,14 @@ module.exports = [
     articles: [
       { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" },
       { title: "La colonizzazione del giudizio", url: "/curated/2026-06-12-corriere-colonizzazione-giudizio/", _source: "curated" }
+    ]
+  },
+  {
+    name: "vetocrazia",
+    type: "teoria",
+    note: "Termine coniato da Francis Fukuyama in *Political Order and Political Decay* (2014): un sistema istituzionale in cui i punti di veto si sono moltiplicati al punto che nessuno riesce più a decidere, e la legittimità viene cercata nella produzione di altre regole invece che nei risultati. Non è un eccesso di democrazia ma una sua degenerazione procedurale: le stesse garanzie che limitano il potere arbitrario finiscono per impedire anche l'azione legittima, e questo vale indifferentemente per un'agenda conservatrice o progressista. Nel sito è il concetto che tiene insieme due fronti altrimenti distanti: la paralisi amministrativa americana — dieci anni di permessi per una linea di trasmissione elettrica, un programma lunare che dal 2004 non è ancora arrivato — e il proceduralismo europeo, dove ventisette regimi regolatori sovrapposti impediscono il mercato unico che era il punto di partenza. La conseguenza politica è che l'insofferenza per la regola non nasce solo dall'autoritarismo: nasce anche da istituzioni che hanno smesso di produrre esiti.",
+    articles: [
+      { title: "Was Francis Fukuyama Right All Along?", url: "/curated/2026-09-18-ezra-klein-fukuyama-nyt/", _source: "curated" }
     ]
   },
   {
@@ -1288,6 +1299,9 @@ module.exports = [
   {
     name: "marketing valoriale",
     type: "teoria",
+    related: [
+      { name: "New York Times", why: "Difendere la verità come valore giornalistico è l'alternativa che il Times sceglie e l'Economist scarta." }
+    ],
     note: "La strategia comunicativa di costruire l'identità di un brand attorno a un sistema di valori, non solo a una promessa funzionale o fattuale. Nel sito è il modo in cui The Economist ha risposto alla crisi di fiducia nei media: non difendere la verità come valore giornalistico (come WaPo e NYT nel 2016), ma difendere il liberalismo come sistema di valori su scala globale — con molta agiografia, ma con più resistenza strutturale.",
     articles: [
       { title: "The history of liberalism: a timeline", url: "/curated/2026-06-25-economist-liberalism-timeline/", _source: "curated" },
@@ -1959,6 +1973,9 @@ module.exports = [
   {
     name: "New York Times",
     type: "istituzione",
+    related: [
+      { name: "Washington Post", why: "Le due testate che nel 2016 rispondono a Trump con un marketing della verità, e ne pagano insieme l'usura." }
+    ],
     sameAs: ["https://www.wikidata.org/wiki/Q9684", "https://it.wikipedia.org/wiki/The_New_York_Times"],
     note: "Quotidiano americano. Nel sito è citato insieme al Washington Post come testata che ha imbastito un «marketing della verità» al primo insediamento di Trump nel 2016 — una strategia di posizionamento diversa da quella valoriale adottata dall'Economist, e più vulnerabile alle crisi di credibilità legate alle scelte proprietarie. Nel sito compare anche in un secondo registro, organizzativo e non reputazionale: la redazione che si dà un metodo formale per adottare strumenti nuovi — proposta scritta, pilota su perimetro ristretto, misura a posteriori — descritto dall'interno da Eric Athas.",
     articles: [
@@ -2653,6 +2670,9 @@ module.exports = [
   {
     name: "Musk, Elon",
     type: "persona",
+    related: [
+      { name: "paradigma tecnocratico", why: "Il caso limite: hackerare ogni contesto con straordinaria efficacia, senza mai mettere in discussione il quadro." }
+    ],
     sameAs: ["https://www.wikidata.org/wiki/Q317521", "https://it.wikipedia.org/wiki/Elon_Musk"],
     note: "Imprenditore e investitore americano (1971), fondatore o co-fondatore di Tesla, SpaceX, X (ex Twitter), xAI. Nel sito è studiato come caso limite del paradigma tecnocratico: straordinaria capacità di hackerare i contesti in cui si muove — trovare leve regolatorie, politiche, finanziarie e portare risultati concreti — associata a una cecità strutturale verso qualsiasi big picture che non sia preconfezionata (accelerazionismo, doomsday AI, abbondanza universale). Framework che hanno in comune la struttura del mito tecnico, non dell'analisi. La sua figura pone una domanda aperta sul rapporto tra salute psichica, performance e potere nell'ecosistema tech.",
     articles: [

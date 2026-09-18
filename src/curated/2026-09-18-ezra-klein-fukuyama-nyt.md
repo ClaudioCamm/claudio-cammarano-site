@@ -18,5 +18,5 @@ description: |
 
   Resta fuori dal quadro un argomento che il libro del 1992 tratta e questa intervista no — le culture che l'Idea non trasforma. Il nucleo duro qui esaminato è la Cina, descritta come l'unico sistema alternativo con qualche possibilità di competere, stato competentissimo ma non limitato né dalla legge né dalle elezioni, e dunque interamente dipendente dalla qualità dei governanti; con l'aggiunta che il modello non è dato per sostenibile.
 tags: [curated, politica, democrazia, ai]
-concepts: ["Fukuyama, Francis", "The End of History and the Last Man", "thymos", "delega epistemica", "Europa"]
+concepts: ["Fukuyama, Francis", "The End of History and the Last Man", "thymos", "delega epistemica", "Europa", "vetocrazia"]
 ---
