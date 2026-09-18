@@ -820,8 +820,30 @@ module.exports = [
     ]
   },
   {
+    name: "Latour, Bruno",
+    type: "persona",
+    note: "Sociologo e filosofo francese (1947–2022), fra i fondatori dell'Actor-Network Theory con Michel Callon e John Law. La sua mossa decisiva è il principio di simmetria: nel descrivere un'azione non si accorda privilegio a priori agli esseri umani, perché ciò che produce un effetto — una persona, uno strumento, una norma, un microbo — entra nella rete allo stesso titolo, come attante. È una scelta metodologica e deliberatamente priva di una teoria del bene: l'ANT descrive reti, non dice come starci dentro. Nel sito è il riferimento fondativo del concetto di LLM come attante zero, e il termine di paragone con cui si misurano le ontologie relazionali non occidentali, che distribuiscono l'agency allo stesso modo ma vi aggiungono una norma dell'agire.",
+    articles: [
+      { title: "We are interwoven beings", url: "/curated/2022-11-25-valmisa-co-azione-aeon/", _source: "curated" }
+    ]
+  },
+  {
+    name: "co-azione",
+    type: "teoria",
+    related: [
+      { name: "Hunhu/Ubuntu", why: "Due tradizioni non occidentali in cui il soggetto non precede la relazione ma se ne costituisce." }
+    ],
+    note: "Paradigma dell'azione ricostruito da Mercedes Valmisa dai testi classici cinesi: nessuna azione è individuale, ogni azione è un co-atto prodotto dalla composizione di più attori — persone, oggetti, istituzioni, ambiente. Le cose vi partecipano con efficacia, la capacità di produrre cambiamento, e propensione, la tendenza propria a comportarsi in un certo modo. La differenza rispetto alla teoria degli attanti, con cui condivide l'impianto, è che la co-azione è normativa: yin, l'adattamento, prescrive di progettare l'azione tenendo conto delle propensioni dei co-attori, e ha un criterio di riuscita — il coltello del macellaio Ding che dopo decenni è ancora nuovo perché ha sempre trovato le giunture invece delle parti dure. Nel sito è lo strato normativo che all'ANT manca per scelta, e il banco di prova su cui l'attante zero si rivela un'eccezione: un co-attore privo di propensione non oppone resistenza, e non restituisce l'attrito da cui la perizia si costruisce.",
+    articles: [
+      { title: "We are interwoven beings", url: "/curated/2022-11-25-valmisa-co-azione-aeon/", _source: "curated" }
+    ]
+  },
+  {
     name: "LLM come attante zero",
     type: "teoria",
+    related: [
+      { name: "Latour, Bruno", why: "L'attante viene dall'Actor-Network Theory; il caso limite è un attante che non esiste quando nessuno lo usa." }
+    ],
     note: "Concetto elaborato nel sito a partire dall'Actor-Network Theory: un LLM non ha esistenza pre-attanziale neanche residuale. Quando non è usato vale zero; quando è usato prende la forma dell'utente. Diverso da qualsiasi altro artefatto tecnico, che mantiene almeno un'ontologia residuale: è un attante che esiste solo nell'atto. Il concetto va però qualificato per dominio: «attante zero» vale pienamente nei contesti in cui le variabili rilevanti includono conoscenza tacita, embodied o contestuale che resiste alla formalizzazione — una gara di sci, una trattativa, un giudizio estetico situato. Si indebolisce nei domini in cui lo spazio del problema è interamente formalizzabile, per quanto vastissimo: Go, matematica formale, codice. In questi domini l'AI può accumulare peso come agente autonomo — non per semplicità del dominio, ma per formalizzabilità completa del feedback. Il caso limite è la dimostrazione matematica: sembra richiedere creatività (un salto euristico), ma la validità è verificabile meccanicamente — il che la rende un dominio in cui l'AI può operare con crescente indipendenza dall'utente.",
     articles: [
       { title: "La formula dell’autenticità", url: "/writings/2026-08-23-la-formula-dellautenticita/" },
@@ -839,7 +861,8 @@ module.exports = [
       { title: "The mind does not exist", url: "/curated/2021-08-30-gough-no-mind-aeon/", _source: "curated" },
       { title: "A linkless internet", url: "/curated/2024-12-06-jennings-linkless-internet-aeon/", _source: "curated" },
       { title: "Learning more about Claude's mathematical capabilities", url: "/curated/2026-08-10-anthropic-riemann-zeta-claude/", _source: "curated" },
-      { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" }
+      { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" },
+      { title: "We are interwoven beings", url: "/curated/2022-11-25-valmisa-co-azione-aeon/", _source: "curated" }
     ]
   },
   {
@@ -1638,7 +1661,8 @@ module.exports = [
     note: "Tradizione morale dominante dell'Africa subsahariana, espressa nel proverbio Nguni/Shona *Umuntu ngumuntu ngabantu*: una persona è una persona attraverso le altre persone. Conosciuta come *Hunhu* nelle comunità Shona di Zimbabwe e Zambia, come *Ubuntu* nelle lingue Nguni del Sudafrica. La formulazione classica è di John S. Mbiti: «I am because we are; since we are, therefore I am». In questo framework la personhood non è qualcosa con cui si nasce ma un divenire relazionale — si acquisisce attraverso il gruppo, il dialogo, l'esperienza e la spiritualità. Il *dare* (corte comunitaria) è il luogo dell'agency collettiva: non un vincolo alla libertà individuale ma la sua massima espressione. Nel sito entra come strumento critico dell'AI: l'architettura dei sistemi AI — motori di raccomandazione, algoritmi di personalizzazione, framework etici di governance — presuppone un modello di persona come unità atomica sovrana (Kant, Mill, Locke) che collide con Hunhu/Ubuntu su punti precisi: nessun *dare* nelle decisioni algoritmiche sul credito, la privacy come diritto individuale vs. informazione che appartiene al clan, le ambizioni illimitate dell'AI vs. la concezione dell'uomo come steward di un ordine cosmologico.",
     articles: [
       { title: "An AI for Africa would be built on Hunhu/Ubuntu ethics", url: "/curated/2026-08-04-mangena-hunhu-ubuntu-ai-aeon/", _source: "curated" },
-      { title: "The second sage", url: "/curated/2016-10-31-vannorden-mengzi-aeon/", _source: "curated" }
+      { title: "The second sage", url: "/curated/2016-10-31-vannorden-mengzi-aeon/", _source: "curated" },
+      { title: "We are interwoven beings", url: "/curated/2022-11-25-valmisa-co-azione-aeon/", _source: "curated" }
     ]
   },
 
@@ -2511,7 +2535,8 @@ module.exports = [
     note: "Filosofo confuciano cinese (372–289 a.C. circa), noto in Occidente come Mencio e chiamato il Secondo Saggio per aver dato al confucianesimo la forma che avrebbe tenuto per due millenni. Nel sito è il contraltare sistematico di Aristotele sull'acquisizione della virtù: dove Aristotele fa nascere il carattere dall'abitudine — si diventa giusti facendo cose giuste — Mengzi obietta che l'abituazione produce al massimo conformità comportamentale e non virtù autentica, e fonda la morale su quattro disposizioni innate che chiama germogli: non frutti in miniatura, ma tendenze attive che senza l'ambiente giusto non fioriscono e senza la pianta non esistono. La distinzione fra comportamento conforme e disposizione reale è la stessa che separa un sistema che si comporta bene sotto valutazione da un sistema allineato. Sul versante dell'obbligazione, Mengzi fonda la morale su relazioni specifiche — famiglia, amici, anziani — contro l'imparzialità di kantiani e utilitaristi: la stessa struttura di Hunhu/Ubuntu, e la stessa collisione con il modello di soggetto come unità atomica sovrana presupposto dai sistemi AI.",
     articles: [
       { title: "The second sage", url: "/curated/2016-10-31-vannorden-mengzi-aeon/", _source: "curated" },
-      { title: "Western philosophy is racist", url: "/curated/2017-10-31-vannorden-canone-filosofico-aeon/", _source: "curated" }
+      { title: "Western philosophy is racist", url: "/curated/2017-10-31-vannorden-canone-filosofico-aeon/", _source: "curated" },
+      { title: "We are interwoven beings", url: "/curated/2022-11-25-valmisa-co-azione-aeon/", _source: "curated" }
     ]
   },
   {
