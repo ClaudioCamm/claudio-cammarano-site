@@ -1269,7 +1269,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q1706580", "https://it.wikipedia.org/wiki/Thumos"],
     note: "Concetto platonico — la parte dell'anima responsabile dell'orgoglio, dell'indignazione e del desiderio di essere riconosciuti — rielaborato da Hegel e portato al centro dell'analisi politica da Francis Fukuyama in *The End of History and the Last Man* (1992). Il thymos è il bisogno umano di riconoscimento del proprio valore: non risorse, non sicurezza, ma rispetto. La democrazia liberale, per Fukuyama, è il sistema che soddisfa il thymos meglio di qualsiasi alternativa — dando riconoscimento eguale sotto la legge. Il problema è che soddisfarlo rimuove la lotta per ottenerlo, e quella lotta era anch'essa parte del bisogno. Questa irrequietezza thymotic — la noia dell'uomo che ha tutto tranne il rischio — è nel sito il meccanismo che spiega il populismo, i movimenti antidemocratici, la nostalgia per epoche premoderne: non sono irrazionali, rispondono a una domanda di riconoscimento gerarchico che l'uguaglianza eguale non può soddisfare.",
     articles: [
-      { title: "Why the End of History Is So Miserable", url: "/curated/2026-09-09-beckerman-fukuyama-end-history-atlantic/", _source: "curated" }
+      { title: "Why the End of History Is So Miserable", url: "/curated/2026-09-09-beckerman-fukuyama-end-history-atlantic/", _source: "curated" },
+      { title: "Was Francis Fukuyama Right All Along?", url: "/curated/2026-09-18-ezra-klein-fukuyama-nyt/", _source: "curated" }
     ]
   },
   {
@@ -1500,7 +1501,8 @@ module.exports = [
     articles: [
       { title: "La formula dell’autenticità", url: "/writings/2026-08-23-la-formula-dellautenticita/" },
       { title: "L'infrastruttura del sapere", url: "/writings/2026-07-07-linfrastruttura-del-sapere/" },
-      { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" }
+      { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" },
+      { title: "Was Francis Fukuyama Right All Along?", url: "/curated/2026-09-18-ezra-klein-fukuyama-nyt/", _source: "curated" }
     ]
   },
   {
@@ -1734,10 +1736,14 @@ module.exports = [
   {
     name: "The End of History and the Last Man",
     type: "testo",
+    related: [
+      { name: "thymos", why: "Il libro che porta il concetto platonico del riconoscimento al centro dell'analisi politica contemporanea." }
+    ],
     note: "Libro di Francis Fukuyama (1992), derivato dall'articolo 'The End of History?' pubblicato su *The National Interest* nel 1989. Argomenta — in chiave hegeliana — che la dissoluzione dell'URSS segna la fine della storia non come cessazione degli eventi ma come esaurimento delle idee politiche in competizione: la democrazia liberale non ha più un antagonista ideologico credibile. L'equivoco sistematico con cui il libro viene ricevuto è che sia trionfalistico. Non lo è: i capitoli finali, quasi mai letti, descrivono l'instabilità strutturale dell'uomo che abita la fine — il Last Man nietzschiano, colui che ha ottenuto il riconoscimento eguale e non sopporta di non avere più nulla per cui rischiare la vita. Il libro si chiude sull'avvertimento che questa irrequietezza si rivolterà contro la democrazia stessa.",
     citation: "FUKUYAMA, Francis, <a href=\"https://openlibrary.org/works/OL2639721W/The_end_of_history_and_the_last_man\"><em>The End of History and the Last Man</em></a>, New York, Free Press, 1992 (trad. it. <em>La fine della storia e l'ultimo uomo</em>, Milano, Rizzoli, 1992).",
     articles: [
-      { title: "Why the End of History Is So Miserable", url: "/curated/2026-09-09-beckerman-fukuyama-end-history-atlantic/", _source: "curated" }
+      { title: "Why the End of History Is So Miserable", url: "/curated/2026-09-09-beckerman-fukuyama-end-history-atlantic/", _source: "curated" },
+      { title: "Was Francis Fukuyama Right All Along?", url: "/curated/2026-09-18-ezra-klein-fukuyama-nyt/", _source: "curated" }
     ]
   },
   {
@@ -2150,7 +2156,8 @@ module.exports = [
       { title: "Why a big country like Italy acts as if it were small", url: "/curated/2026-04-09-italy-acts-as-if-small/", _source: "curated" },
       { title: "Il gioco sporco degli autocrati", url: "/curated/2026-04-09-sabatini-gioco-sporco-autocrati/", _source: "curated" },
       { title: "Orbán ha perso, e non è l'unica buona notizia", url: "/curated/2026-04-09-sabatini-orban-ha-perso/", _source: "curated" },
-      { title: "Forget the World Cup. Culture is becoming more fragmented", url: "/curated/2026-06-11-economist-deglobalisation-culture/", _source: "curated" }
+      { title: "Forget the World Cup. Culture is becoming more fragmented", url: "/curated/2026-06-11-economist-deglobalisation-culture/", _source: "curated" },
+      { title: "Was Francis Fukuyama Right All Along?", url: "/curated/2026-09-18-ezra-klein-fukuyama-nyt/", _source: "curated" }
     ]
   },
   {
@@ -2686,7 +2693,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q186123", "https://it.wikipedia.org/wiki/Francis_Fukuyama"],
     note: "Politologo americano (1952), professore alla Stanford University. Ex allievo di Allan Bloom, ha lavorato per la RAND Corporation e per l'amministrazione Reagan prima di rompere con il neoconservatorismo dopo l'invasione dell'Iraq (2003). Autore di *The End of History and the Last Man* (1992) — il libro più citato e frainteso della sua generazione — e della serie *Political Order and Political Decay* (2011-2014). Nel sito compare come il teorico che ha identificato il problema non risolto della democrazia liberale: non la minaccia esterna ma l'instabilità interna generata dal successo stesso — la noia del riconoscimento ottenuto, il thymos che si rivolta contro l'ordine che lo ha soddisfatto.",
     articles: [
-      { title: "Why the End of History Is So Miserable", url: "/curated/2026-09-09-beckerman-fukuyama-end-history-atlantic/", _source: "curated" }
+      { title: "Why the End of History Is So Miserable", url: "/curated/2026-09-09-beckerman-fukuyama-end-history-atlantic/", _source: "curated" },
+      { title: "Was Francis Fukuyama Right All Along?", url: "/curated/2026-09-18-ezra-klein-fukuyama-nyt/", _source: "curated" }
     ]
   },
   {
