@@ -2483,6 +2483,9 @@ module.exports = [
   {
     name: "Mengzi",
     type: "persona",
+    related: [
+      { name: "Aristotele", why: "Due impianti della virtù che divergono sul meccanismo: il carattere nasce dall'abitudine o da disposizioni innate da coltivare." }
+    ],
     note: "Filosofo confuciano cinese (372–289 a.C. circa), noto in Occidente come Mencio e chiamato il Secondo Saggio per aver dato al confucianesimo la forma che avrebbe tenuto per due millenni. Nel sito è il contraltare sistematico di Aristotele sull'acquisizione della virtù: dove Aristotele fa nascere il carattere dall'abitudine — si diventa giusti facendo cose giuste — Mengzi obietta che l'abituazione produce al massimo conformità comportamentale e non virtù autentica, e fonda la morale su quattro disposizioni innate che chiama germogli: non frutti in miniatura, ma tendenze attive che senza l'ambiente giusto non fioriscono e senza la pianta non esistono. La distinzione fra comportamento conforme e disposizione reale è la stessa che separa un sistema che si comporta bene sotto valutazione da un sistema allineato. Sul versante dell'obbligazione, Mengzi fonda la morale su relazioni specifiche — famiglia, amici, anziani — contro l'imparzialità di kantiani e utilitaristi: la stessa struttura di Hunhu/Ubuntu, e la stessa collisione con il modello di soggetto come unità atomica sovrana presupposto dai sistemi AI.",
     articles: [
       { title: "The second sage", url: "/curated/2016-10-31-vannorden-mengzi-aeon/", _source: "curated" }
