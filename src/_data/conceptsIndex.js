@@ -1186,7 +1186,28 @@ module.exports = [
     note: "Il concetto greco di formazione integrale della persona — non istruzione tecnica ma coltivazione del carattere, del giudizio e della capacità di partecipare alla vita civica. Nel sito è il termine che gli umanisti invocano per difendere le proprie discipline, e che Pinillos identifica come parte del problema: un argomento circolare che funziona solo su chi è già convinto del valore della formazione umanistica.",
     articles: [
       { title: "A Defense of a Liberal Arts Education in the Age of A.I.", url: "/curated/2026-05-21-frey-liberal-arts-ai-nyt/", _source: "curated" },
-      { title: "Why Are Humanists So Bad at Defending the Humanities?", url: "/curated/2026-06-15-pinillos-humanists-humanities-chronicle/", _source: "curated" }
+      { title: "Why Are Humanists So Bad at Defending the Humanities?", url: "/curated/2026-06-15-pinillos-humanists-humanities-chronicle/", _source: "curated" },
+      { title: "Western philosophy is racist", url: "/curated/2017-10-31-vannorden-canone-filosofico-aeon/", _source: "curated" }
+    ]
+  },
+  {
+    name: "canone",
+    type: "teoria",
+    related: [
+      { name: "università", why: "Chi decide cosa entra nel canone decide anche che cosa l'istituzione insegnerà come necessario." }
+    ],
+    note: "L'insieme delle opere che una cultura tratta come necessarie, e che si presenta come l'elenco di ciò che va letto mentre è l'esito di scelte databili, interessate e reversibili: un catalogo che ha dimenticato di essere stato scelto. Nel sito è studiato nel suo caso più netto — il restringimento del canone filosofico occidentale fra Otto e primo Novecento, ricostruito da Van Norden — ma la struttura è generale e vale per una collana, un piano editoriale, un premio, un programma di studi. Due conseguenze lo rendono utile: se un canone è una decisione, allora ha una data e degli autori, e il suo allargamento è una correzione storiografica prima che una rivendicazione; e se a produrlo è un'istituzione, il canone è anche la forma in cui quell'istituzione dichiara che cosa considera necessario sapere. Questo sito è a sua volta un canone in costruzione, e lo dichiara nella struttura del Sommario ragionato.",
+    articles: [
+      { title: "Western philosophy is racist", url: "/curated/2017-10-31-vannorden-canone-filosofico-aeon/", _source: "curated" }
+    ]
+  },
+  {
+    name: "L'alba di tutto",
+    type: "testo",
+    note: "Libro di David Graeber e David Wengrow (2021), che rilegge la preistoria e la protostoria contro lo schema evolutivo canonico — dalle bande di cacciatori-raccoglitori allo Stato attraverso l'agricoltura — mostrando società che sperimentano stagionalmente forme politiche diverse, costruiscono città senza gerarchie riconoscibili e abbandonano deliberatamente assetti che altrove vengono descritti come inevitabili. Nel sito conta soprattutto per la tesi della critica indigena: alcune categorie centrali del pensiero politico europeo — libertà, uguaglianza, critica dell'autorità — si sarebbero formate dentro il confronto con interlocutori non europei, dalla voce di figure come Kandiaronk nelle relazioni dei missionari all'amministrazione cinese discussa come modello di selezione per merito. Le tesi del libro sono state in parte contestate e il dibattito storiografico resta aperto; l'impianto tiene, ed è fecondo. Se ha ragione anche solo in parte, il restringimento ottocentesco del canone non ha omesso materiale estraneo: ha amputato una relazione costitutiva.",
+    citation: "GRAEBER, David, WENGROW, David, <em>The Dawn of Everything. A New History of Humanity</em>, London, Allen Lane, 2021 (trad. it. <em>L'alba di tutto. Una nuova storia dell'umanità</em>).",
+    articles: [
+      { title: "Western philosophy is racist", url: "/curated/2017-10-31-vannorden-canone-filosofico-aeon/", _source: "curated" }
     ]
   },
   {
@@ -1196,7 +1217,8 @@ module.exports = [
     note: "Nel sito compare in due contesti distinti: come istituzione che ha abdicato alla formazione umanistica — riducendola a critica dell'oppressione o convertendola in business school — e come luogo in cui quella formazione, fatta bene, produce ancora la competenza cognitiva più preziosa del presente: leggere, scrivere, argomentare con precisione.",
     articles: [
       { title: "A Defense of a Liberal Arts Education in the Age of A.I.", url: "/curated/2026-05-21-frey-liberal-arts-ai-nyt/", _source: "curated" },
-      { title: "Why Are Humanists So Bad at Defending the Humanities?", url: "/curated/2026-06-15-pinillos-humanists-humanities-chronicle/", _source: "curated" }
+      { title: "Why Are Humanists So Bad at Defending the Humanities?", url: "/curated/2026-06-15-pinillos-humanists-humanities-chronicle/", _source: "curated" },
+      { title: "Western philosophy is racist", url: "/curated/2017-10-31-vannorden-canone-filosofico-aeon/", _source: "curated" }
     ]
   },
   {
@@ -2488,7 +2510,8 @@ module.exports = [
     ],
     note: "Filosofo confuciano cinese (372–289 a.C. circa), noto in Occidente come Mencio e chiamato il Secondo Saggio per aver dato al confucianesimo la forma che avrebbe tenuto per due millenni. Nel sito è il contraltare sistematico di Aristotele sull'acquisizione della virtù: dove Aristotele fa nascere il carattere dall'abitudine — si diventa giusti facendo cose giuste — Mengzi obietta che l'abituazione produce al massimo conformità comportamentale e non virtù autentica, e fonda la morale su quattro disposizioni innate che chiama germogli: non frutti in miniatura, ma tendenze attive che senza l'ambiente giusto non fioriscono e senza la pianta non esistono. La distinzione fra comportamento conforme e disposizione reale è la stessa che separa un sistema che si comporta bene sotto valutazione da un sistema allineato. Sul versante dell'obbligazione, Mengzi fonda la morale su relazioni specifiche — famiglia, amici, anziani — contro l'imparzialità di kantiani e utilitaristi: la stessa struttura di Hunhu/Ubuntu, e la stessa collisione con il modello di soggetto come unità atomica sovrana presupposto dai sistemi AI.",
     articles: [
-      { title: "The second sage", url: "/curated/2016-10-31-vannorden-mengzi-aeon/", _source: "curated" }
+      { title: "The second sage", url: "/curated/2016-10-31-vannorden-mengzi-aeon/", _source: "curated" },
+      { title: "Western philosophy is racist", url: "/curated/2017-10-31-vannorden-canone-filosofico-aeon/", _source: "curated" }
     ]
   },
   {
