@@ -620,7 +620,8 @@ module.exports = [
       { title: "When AI builds itself", url: "/curated/2026-06-19-anthropic-recursive-self-improvement/", _source: "curated" },
       { title: "Why Big AI Labs Are Hiring So Many Philosophers", url: "/curated/2026-06-24-economist-ai-labs-philosophers/", _source: "curated" },
       { title: "Deep Dive into LLMs like ChatGPT", url: "/curated/2026-07-12-karpathy-deep-dive-llm-youtube/", _source: "curated" },
-      { title: "What the Pope Said About A.I.", url: "/curated/2026-05-27-lepore-pope-leo-ai-newyorker/", _source: "curated" }
+      { title: "What the Pope Said About A.I.", url: "/curated/2026-05-27-lepore-pope-leo-ai-newyorker/", _source: "curated" },
+      { title: "The second sage", url: "/curated/2016-10-31-vannorden-mengzi-aeon/", _source: "curated" }
     ]
   },
   {
@@ -1275,7 +1276,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q1086395", "https://en.wikipedia.org/wiki/Virtue_ethics"],
     note: "La tradizione etica che si concentra sul carattere del soggetto morale piuttosto che su principi universali o calcolo delle conseguenze. Nel sito è riletta attraverso Brady su Nussbaum come una diversa ontologia etica: non un'alternativa all'utilitarismo che aggiunge «virtù» all'ontologia, ma una proposta in cui i problemi — le sfere dell'attività umana dove la scelta è inevitabile — sono primari, e le virtù ne sono le soluzioni virtuali.",
     articles: [
-      { title: "A Problem-Based Reading of Nussbaum's Virtue Ethics", url: "/curated/2018-09-04-brady-nussbaum-virtue-ethics-epochemagazine/", _source: "curated" }
+      { title: "A Problem-Based Reading of Nussbaum's Virtue Ethics", url: "/curated/2018-09-04-brady-nussbaum-virtue-ethics-epochemagazine/", _source: "curated" },
+      { title: "The second sage", url: "/curated/2016-10-31-vannorden-mengzi-aeon/", _source: "curated" }
     ]
   },
   {
@@ -1608,9 +1610,13 @@ module.exports = [
   {
     name: "Hunhu/Ubuntu",
     type: "teoria",
+    related: [
+      { name: "cosmotecnica", why: "Ogni cosmologia produce la propria idea di persona, e da lì una tecnica che con altre cosmologie collide." }
+    ],
     note: "Tradizione morale dominante dell'Africa subsahariana, espressa nel proverbio Nguni/Shona *Umuntu ngumuntu ngabantu*: una persona è una persona attraverso le altre persone. Conosciuta come *Hunhu* nelle comunità Shona di Zimbabwe e Zambia, come *Ubuntu* nelle lingue Nguni del Sudafrica. La formulazione classica è di John S. Mbiti: «I am because we are; since we are, therefore I am». In questo framework la personhood non è qualcosa con cui si nasce ma un divenire relazionale — si acquisisce attraverso il gruppo, il dialogo, l'esperienza e la spiritualità. Il *dare* (corte comunitaria) è il luogo dell'agency collettiva: non un vincolo alla libertà individuale ma la sua massima espressione. Nel sito entra come strumento critico dell'AI: l'architettura dei sistemi AI — motori di raccomandazione, algoritmi di personalizzazione, framework etici di governance — presuppone un modello di persona come unità atomica sovrana (Kant, Mill, Locke) che collide con Hunhu/Ubuntu su punti precisi: nessun *dare* nelle decisioni algoritmiche sul credito, la privacy come diritto individuale vs. informazione che appartiene al clan, le ambizioni illimitate dell'AI vs. la concezione dell'uomo come steward di un ordine cosmologico.",
     articles: [
-      { title: "An AI for Africa would be built on Hunhu/Ubuntu ethics", url: "/curated/2026-08-04-mangena-hunhu-ubuntu-ai-aeon/", _source: "curated" }
+      { title: "An AI for Africa would be built on Hunhu/Ubuntu ethics", url: "/curated/2026-08-04-mangena-hunhu-ubuntu-ai-aeon/", _source: "curated" },
+      { title: "The second sage", url: "/curated/2016-10-31-vannorden-mengzi-aeon/", _source: "curated" }
     ]
   },
 
@@ -2475,12 +2481,24 @@ module.exports = [
     ]
   },
   {
+    name: "Mengzi",
+    type: "persona",
+    note: "Filosofo confuciano cinese (372–289 a.C. circa), noto in Occidente come Mencio e chiamato il Secondo Saggio per aver dato al confucianesimo la forma che avrebbe tenuto per due millenni. Nel sito è il contraltare sistematico di Aristotele sull'acquisizione della virtù: dove Aristotele fa nascere il carattere dall'abitudine — si diventa giusti facendo cose giuste — Mengzi obietta che l'abituazione produce al massimo conformità comportamentale e non virtù autentica, e fonda la morale su quattro disposizioni innate che chiama germogli: non frutti in miniatura, ma tendenze attive che senza l'ambiente giusto non fioriscono e senza la pianta non esistono. La distinzione fra comportamento conforme e disposizione reale è la stessa che separa un sistema che si comporta bene sotto valutazione da un sistema allineato. Sul versante dell'obbligazione, Mengzi fonda la morale su relazioni specifiche — famiglia, amici, anziani — contro l'imparzialità di kantiani e utilitaristi: la stessa struttura di Hunhu/Ubuntu, e la stessa collisione con il modello di soggetto come unità atomica sovrana presupposto dai sistemi AI.",
+    articles: [
+      { title: "The second sage", url: "/curated/2016-10-31-vannorden-mengzi-aeon/", _source: "curated" }
+    ]
+  },
+  {
     name: "Aristotele",
     type: "persona",
+    related: [
+      { name: "etica della virtù", why: "L'impianto in cui le virtù sono la risposta eccellente a problemi che vengono prima di loro." }
+    ],
     sameAs: ["https://www.wikidata.org/wiki/Q868", "https://it.wikipedia.org/wiki/Aristotele"],
     note: "Filosofo greco (384–322 a.C.), allievo di Platone, fondatore del Liceo. Nel sito è il fondamento teorico dell'etica della virtù riletta da Nussbaum: non un catalogo di caratteristiche positive, ma una logica in cui i problemi — le sfere dell'attività umana dove la scelta è inevitabile e rischiosa — sono primari, e le virtù ne sono la risposta eccellente.",
     articles: [
-      { title: "A Problem-Based Reading of Nussbaum's Virtue Ethics", url: "/curated/2018-09-04-brady-nussbaum-virtue-ethics-epochemagazine/", _source: "curated" }
+      { title: "A Problem-Based Reading of Nussbaum's Virtue Ethics", url: "/curated/2018-09-04-brady-nussbaum-virtue-ethics-epochemagazine/", _source: "curated" },
+      { title: "The second sage", url: "/curated/2016-10-31-vannorden-mengzi-aeon/", _source: "curated" }
     ]
   },
   {
