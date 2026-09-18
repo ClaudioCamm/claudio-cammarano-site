@@ -835,7 +835,8 @@ module.exports = [
     ],
     note: "Paradigma dell'azione ricostruito da Mercedes Valmisa dai testi classici cinesi: nessuna azione è individuale, ogni azione è un co-atto prodotto dalla composizione di più attori — persone, oggetti, istituzioni, ambiente. Le cose vi partecipano con efficacia, la capacità di produrre cambiamento, e propensione, la tendenza propria a comportarsi in un certo modo. La differenza rispetto alla teoria degli attanti, con cui condivide l'impianto, è che la co-azione è normativa: yin, l'adattamento, prescrive di progettare l'azione tenendo conto delle propensioni dei co-attori, e ha un criterio di riuscita — il coltello del macellaio Ding che dopo decenni è ancora nuovo perché ha sempre trovato le giunture invece delle parti dure. Nel sito è lo strato normativo che all'ANT manca per scelta, e il banco di prova su cui l'attante zero si rivela un'eccezione: un co-attore privo di propensione non oppone resistenza, e non restituisce l'attrito da cui la perizia si costruisce.",
     articles: [
-      { title: "We are interwoven beings", url: "/curated/2022-11-25-valmisa-co-azione-aeon/", _source: "curated" }
+      { title: "We are interwoven beings", url: "/curated/2022-11-25-valmisa-co-azione-aeon/", _source: "curated" },
+      { title: "Essence is fluttering", url: "/curated/2025-09-01-douglas-zhuangzi-identita-aeon/", _source: "curated" }
     ]
   },
   {
@@ -862,7 +863,8 @@ module.exports = [
       { title: "A linkless internet", url: "/curated/2024-12-06-jennings-linkless-internet-aeon/", _source: "curated" },
       { title: "Learning more about Claude's mathematical capabilities", url: "/curated/2026-08-10-anthropic-riemann-zeta-claude/", _source: "curated" },
       { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" },
-      { title: "We are interwoven beings", url: "/curated/2022-11-25-valmisa-co-azione-aeon/", _source: "curated" }
+      { title: "We are interwoven beings", url: "/curated/2022-11-25-valmisa-co-azione-aeon/", _source: "curated" },
+      { title: "Essence is fluttering", url: "/curated/2025-09-01-douglas-zhuangzi-identita-aeon/", _source: "curated" }
     ]
   },
   {
@@ -1356,7 +1358,8 @@ module.exports = [
     note: "La strategia comunicativa di costruire l'identità di un brand attorno a un sistema di valori, non solo a una promessa funzionale o fattuale. Nel sito è il modo in cui The Economist ha risposto alla crisi di fiducia nei media: non difendere la verità come valore giornalistico (come WaPo e NYT nel 2016), ma difendere il liberalismo come sistema di valori su scala globale — con molta agiografia, ma con più resistenza strutturale.",
     articles: [
       { title: "The history of liberalism: a timeline", url: "/curated/2026-06-25-economist-liberalism-timeline/", _source: "curated" },
-      { title: "Per contare devi farti amare (l'attenzione non basta più)", url: "/curated/2025-11-10-tarchetti-love-brand-editoria-nonhocapito/", _source: "curated" }
+      { title: "Per contare devi farti amare (l'attenzione non basta più)", url: "/curated/2025-11-10-tarchetti-love-brand-editoria-nonhocapito/", _source: "curated" },
+      { title: "Essence is fluttering", url: "/curated/2025-09-01-douglas-zhuangzi-identita-aeon/", _source: "curated" }
     ]
   },
   {
@@ -2536,7 +2539,8 @@ module.exports = [
     articles: [
       { title: "The second sage", url: "/curated/2016-10-31-vannorden-mengzi-aeon/", _source: "curated" },
       { title: "Western philosophy is racist", url: "/curated/2017-10-31-vannorden-canone-filosofico-aeon/", _source: "curated" },
-      { title: "We are interwoven beings", url: "/curated/2022-11-25-valmisa-co-azione-aeon/", _source: "curated" }
+      { title: "We are interwoven beings", url: "/curated/2022-11-25-valmisa-co-azione-aeon/", _source: "curated" },
+      { title: "Essence is fluttering", url: "/curated/2025-09-01-douglas-zhuangzi-identita-aeon/", _source: "curated" }
     ]
   },
   {
