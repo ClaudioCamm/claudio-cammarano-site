@@ -33,6 +33,8 @@ module.exports = {
   "transizione": "Transizione energetica",
 
   // Nuovi Argomenti — Editoria & comunicazione
+  "videogiochi": "Videogiochi",
+  "retrogaming": "Videogiochi",
   "media": "Media",
   "giornalismo": "Giornalismo",
   "cultura": "Cultura",

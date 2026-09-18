@@ -1012,7 +1012,8 @@ module.exports = [
     type: "teoria",
     note: "Nel sito è il contesto dimensionale in cui si gioca il problema della successione aziendale nelle industrie creative: scale ridotte, dipendenza dalla figura fondatrice, assenza delle strutture di governance che attutiscono il passaggio generazionale nelle organizzazioni più grandi.",
     articles: [
-      { title: "Podcast: la successione nelle aziende creative", url: "/curated/2026-04-09-podcast-successione-aziende-creative/", _source: "curated" }
+      { title: "Podcast: la successione nelle aziende creative", url: "/curated/2026-04-09-podcast-successione-aziende-creative/", _source: "curated" },
+      { title: "C'è un videogioco in cui vivi le poche gioie e i tanti dolori di un dipendente di una piccola casa editrice indipendente", url: "/curated/2026-09-18-giudici-small-press-tycoon-rivistastudio/", _source: "curated" }
     ]
   },
   {
@@ -1033,7 +1034,8 @@ module.exports = [
       { title: "Com'è cambiata l'informazione in Italia negli ultimi 6 anni", url: "/curated/2026-06-19-mauro-informazione-italia-digital-news-report/", _source: "curated" },
       { title: "Europe's public broadcasters go from prime time to hard-to-find", url: "/curated/2026-07-09-economist-psb-europe-hard-to-find/", _source: "curated" },
       { title: "Per contare devi farti amare (l'attenzione non basta più)", url: "/curated/2025-11-10-tarchetti-love-brand-editoria-nonhocapito/", _source: "curated" },
-      { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" }
+      { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" },
+      { title: "C'è un videogioco in cui vivi le poche gioie e i tanti dolori di un dipendente di una piccola casa editrice indipendente", url: "/curated/2026-09-18-giudici-small-press-tycoon-rivistastudio/", _source: "curated" }
     ]
   },
   {
@@ -1578,7 +1580,8 @@ module.exports = [
       { title: "The dark underbelly of \"Paw Patrol\"", url: "/curated/2026-08-07-economist-paw-patrol-dark-underbelly/", _source: "curated" },
       { title: "L'Arabia Saudita si sta comprando l'industria dei videogiochi. Ecco come", url: "/curated/2026-08-12-lupetti-arabia-saudita-videogiochi-artribune/", _source: "curated" },
       { title: "Si stava meglio quando c'erano i video musicali", url: "/curated/2026-06-10-peroni-video-musicali-crisi-rivistastudio/", _source: "curated" },
-      { title: "AI Has Plunged the Book Publishing Industry Into Utter Chaos", url: "/curated/2026-08-17-silman-ai-publishing-chaos-wsj/", _source: "curated" }
+      { title: "AI Has Plunged the Book Publishing Industry Into Utter Chaos", url: "/curated/2026-08-17-silman-ai-publishing-chaos-wsj/", _source: "curated" },
+      { title: "C'è un videogioco in cui vivi le poche gioie e i tanti dolori di un dipendente di una piccola casa editrice indipendente", url: "/curated/2026-09-18-giudici-small-press-tycoon-rivistastudio/", _source: "curated" }
     ]
   },
 
