@@ -430,7 +430,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q4953004", "https://en.wikipedia.org/wiki/N._Katherine_Hayles"],
     note: "Critica letteraria e teorica dei media americana (1943), docente a Duke. Nel sito è citata per la distinzione tra *iperattenzione* e *attenzione profonda* come due modalità cognitive: l'iperattenzione — la mente che passa rapidamente da stimolo a stimolo, multiprocesso e alta tolleranza alla noia — è un adattamento all'ambiente digitale contemporaneo, non un deficit. È il contesto culturale che rende il podcast lungo un antidoto strutturale, non un capriccio di formato.",
     articles: [
-      { title: "I podcast lunghi nell'era della mezza attenzione", url: "/curated/2026-06-29-diegoli-podcast-lunghi-mezza-attenzione-linkideeperlatv/", _source: "curated" }
+      { title: "I podcast lunghi nell'era della mezza attenzione", url: "/curated/2026-06-29-diegoli-podcast-lunghi-mezza-attenzione-linkideeperlatv/", _source: "curated" },
+      { title: "The bombarding of childhood", url: "/curated/2026-09-18-kucirkova-hectic-media-bambini-aeon/", _source: "curated" }
     ]
   },
   {
@@ -1437,9 +1438,14 @@ module.exports = [
   {
     name: "iperattenzione",
     type: "teoria",
+    related: [
+      { name: "Hayles, Katherine", why: "Hayles distingue iperattenzione e attenzione profonda come due modalità cognitive, non come un deficit e la sua cura." },
+      { name: "mezza attenzione", why: "Due modalità che convivono: lo switching rapido fra stimoli e l'ascolto stratificato in sottofondo." }
+    ],
     note: "Concetto di Katherine Hayles: modalità cognitiva caratterizzata da rapido switching tra focus diversi, alta tolleranza alla noia, preferenza per input multipli simultanei. È un adattamento all'ambiente digitale, non un deficit — e la forma dominante dell'attenzione nelle generazioni cresciute con Internet. Nel sito è il contesto che spiega il successo del podcast lungo: il formato fiume non va contro l'iperattenzione ma le offre un'uscita strutturata, uno spazio in cui il carico cognitivo è basso e controllabile.",
     articles: [
-      { title: "I podcast lunghi nell'era della mezza attenzione", url: "/curated/2026-06-29-diegoli-podcast-lunghi-mezza-attenzione-linkideeperlatv/", _source: "curated" }
+      { title: "I podcast lunghi nell'era della mezza attenzione", url: "/curated/2026-06-29-diegoli-podcast-lunghi-mezza-attenzione-linkideeperlatv/", _source: "curated" },
+      { title: "The bombarding of childhood", url: "/curated/2026-09-18-kucirkova-hectic-media-bambini-aeon/", _source: "curated" }
     ]
   },
   {
@@ -1558,7 +1564,8 @@ module.exports = [
       { title: "Una lunga avventura: storia degli adventure game", url: "/curated/2026-06-11-machera-adventure-game-linkideeperlatv/", _source: "curated" },
       { title: "Ross Douthat: The Exit Interview", url: "/curated/2026-08-11-klein-douthat-exit-interview-nyt/", _source: "curated" },
       { title: "The Original Sin of AI", url: "/curated/2026-09-11-turkle-original-sin-ai-atlantic/", _source: "curated" },
-      { title: "My team fed chatbots election lies. Here's what happened.", url: "/curated/2026-08-25-norden-chatbot-election-lies-wapo/", _source: "curated" }
+      { title: "My team fed chatbots election lies. Here's what happened.", url: "/curated/2026-08-25-norden-chatbot-election-lies-wapo/", _source: "curated" },
+      { title: "The bombarding of childhood", url: "/curated/2026-09-18-kucirkova-hectic-media-bambini-aeon/", _source: "curated" }
     ]
   },
   {
