@@ -513,7 +513,11 @@ Tre regole, fatte rispettare dal build:
 
 Il criterio per decidere se un legame esiste: *le due note si nominano a vicenda?* Se la nota di A parla di B — o della cosa che B è — il legame è già argomentato e il `why` deve solo renderlo esplicito. Se condividono soltanto un articolo o un po' di lessico, è scenografia.
 
-A settembre 2026: 49 legami su 41 voci dichiaranti, visibili su 74 pagine concetto. I legami **non entrano ancora nel grafo**: `/mappa/` e il riquadro HEB continuano a disegnare la sola co-occorrenza.
+A settembre 2026: 52 legami su 44 voci dichiaranti. I legami **non entrano ancora nel grafo**: `/mappa/` e il riquadro HEB continuano a disegnare la sola co-occorrenza.
+
+**Un effetto collaterale da conoscere: `related` duplica i nomi nel file.** Dichiarare un legame significa scrivere il nome di una voce dentro un'altra voce — e quel nome può trovarsi molto prima della voce vera e propria. `sync-concepts.js` cercava il concetto alla prima occorrenza del nome nel file: con i legami attivi, quella prima occorrenza può essere un `related` altrui, e l'articolo finiva appeso alla voce sbagliata. Peggio: il controllo anti-duplicazione guardava la voce giusta, quindi il problema si ripeteva a ogni build, in silenzio, accumulando copie.
+
+Corretto a settembre 2026 — ora la voce si cerca dalla sua **definizione** (`name:` seguito da `type:`), non dalla prima occorrenza del nome. La regola per chi metterà mano a questi script: *il nome di un concetto non è una chiave univoca nel file, lo è solo la sua definizione.* Se un giorno si aggiungessero altri campi che citano concetti per nome, vale lo stesso avvertimento.
 
 ### Il controllo automatico — niente più concetti persi in silenzio
 
