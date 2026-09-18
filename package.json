@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve",
-    "prestart": "node scripts/sync-concepts.js && node scripts/validate-concepts.js",
-    "prebuild": "node scripts/sync-concepts.js && node scripts/validate-concepts.js",
+    "prestart": "node scripts/sync-concepts.js && node scripts/validate-concepts.js && node scripts/check-tags.js",
+    "prebuild": "node scripts/sync-concepts.js && node scripts/validate-concepts.js && node scripts/check-tags.js",
     "build": "eleventy && (npx pagefind --site _site || true)",
     "index": "npx pagefind --site _site",
     "test": "echo \"Error: no test specified\" && exit 1"

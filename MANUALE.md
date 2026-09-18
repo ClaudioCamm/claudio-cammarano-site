@@ -302,6 +302,8 @@ I tag liberi che scrivi in `tags:` (oltre a `curated`) vengono **tradotti** in u
 
 Se invece il tema è in realtà un'**entità** (una persona, un paese, un'istituzione) e non un argomento trasversale, probabilmente appartiene ai Concetti (sezione 5), non agli Argomenti — è il caso tipico dei nomi di paese: vanno nel campo `concepts:`, non in `tags:`.
 
+**Dal settembre 2026 non devi più ricordartene da solo.** `scripts/check-tags.js` gira nel `prebuild` insieme a `sync-concepts.js` e segnala in console tre cose, in ordine di urgenza: gli **alias mancanti** (il tag corrisponde a un Argomento che esiste già in `clusters.js` — perdita secca, si risolve con una riga), i **tag decorativi ricorrenti** sopra le tre occorrenze (promuoverli o lasciarli, purché sia una scelta), e gli **Argomenti orfani** (alias che puntano a un nome assente da `clusters.js`: la pagina `/tag/` esiste ma non ha Tema né breadcrumb). I nomi di paese sono esclusi dal controllo di proposito. Come `sync-concepts.js`, avvisa e non blocca; `node scripts/check-tags.js --all` elenca anche la coda sotto soglia.
+
 ### Body
 Opzionale. Si usa solo per commenti molto estesi. Di solito il frontmatter basta.
 
