@@ -23,7 +23,7 @@ module.exports = {
   doi: "https://doi.org/10.5281/zenodo.22843731",
   // Da aggiornare a ogni «New version» su Zenodo, prima del push:
   // il DOI si riserva nella bozza e si incolla qui.
-  versionDoi: null,
+  versionDoi: "https://doi.org/10.5281/zenodo.22850180",
   changelog: [
     {
       version: "1.1.0",

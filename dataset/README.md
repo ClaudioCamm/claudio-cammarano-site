@@ -8,6 +8,7 @@ Vocabolario dei concetti — persone, teorie, testi, istituzioni, luoghi e paesi
 - Vista navigabile: <https://claudiocammarano.com/indice/>
 - Termini propri: <https://claudiocammarano.com/ns/>
 - DOI (tutte le versioni): [10.5281/zenodo.22843731](https://doi.org/10.5281/zenodo.22843731)
+- DOI di questa versione (1.1.0): [10.5281/zenodo.22850180](https://doi.org/10.5281/zenodo.22850180)
 - DOI della versione 1.0.0: [10.5281/zenodo.22843732](https://doi.org/10.5281/zenodo.22843732)
 - Licenza: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
