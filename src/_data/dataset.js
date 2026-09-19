@@ -15,9 +15,13 @@ module.exports = {
   released: "2026-09-19",
   license: "https://creativecommons.org/licenses/by/4.0/",
   licenseLabel: "CC BY 4.0",
-  // Compilare dopo il deposito: il DOI concettuale, quello che punta sempre
-  // all'ultima versione. Finisce in `identifier` dentro /concetti.json.
-  doi: "https://doi.org/10.5281/zenodo.22843732",
+  // Due DOI, e non sono intercambiabili. `doi` e' quello CONCETTUALE: non
+  // cambia mai e risolve sempre all'ultima versione — e' quello da citare e
+  // da mettere nelle pagine. `versionDoi` identifica questa versione e sola
+  // questa: cambia a ogni «New version» su Zenodo. Entrambi finiscono in
+  // `identifier` dentro /concetti.json, il concettuale per primo.
+  doi: "https://doi.org/10.5281/zenodo.22843731",
+  versionDoi: "https://doi.org/10.5281/zenodo.22843732",
   changelog: [
     {
       version: "1.0.0",

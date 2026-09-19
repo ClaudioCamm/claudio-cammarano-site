@@ -634,9 +634,11 @@ module.exports = function(eleventyConfig) {
         encodingFormat: "application/ld+json",
         contentUrl: SITE + "/concetti.json"
       },
-      // il DOI, quando c'e': `identifier` e `sameAs` puntano entrambi al
-      // record Zenodo, cosi' il file si dichiara come la cosa depositata
-      identifier: ds.doi || undefined,
+      // i DOI, quando ci sono: prima il concettuale (stabile), poi quello
+      // di questa versione, cosi' il file si dichiara come la cosa depositata
+      identifier: [ds.doi, ds.versionDoi].filter(Boolean).length
+        ? [ds.doi, ds.versionDoi].filter(Boolean)
+        : undefined,
       "cc:changelog": ds.changelog,
       "cc:statistics": {
         concetti: terms.length,

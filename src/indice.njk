@@ -35,7 +35,7 @@ permalink: "/indice/"
     <p class="tag-page-label">Indice analitico</p>
     <h1 class="temi-page-title">Indice</h1>
     <p class="temi-page-intro">Il sito si naviga su tre livelli, dal più ampio al più specifico: <strong>Temi</strong>, <strong>Argomenti</strong> (i tag sopra ogni articolo) e <strong>Concetti</strong> (persone, teorie, paesi, luoghi, istituzioni e testi citati, sotto). Questo indice li raccoglie tutti, così è chiaro su quale livello ci si trova in ogni momento.</p>
-    <p class="indice-dataset">Disponibile anche come <a href="/concetti.json">dataset JSON-LD</a> — {{ collections.mergedConceptsIndex.length }} concetti tipizzati, con note, agganci a Wikidata e legami motivati. Licenza CC BY 4.0, <a href="/ns/">termini propri documentati</a>.</p>
+    <p class="indice-dataset">Disponibile anche come <a href="/concetti.json">dataset JSON-LD</a> — {{ collections.mergedConceptsIndex.length }} concetti tipizzati, con note, agganci a Wikidata e legami motivati. Licenza CC BY 4.0, <a href="/ns/">termini propri documentati</a>. Depositato su Zenodo e citabile: <a href="{{ dataset.doi }}">{{ dataset.doi | replace("https://doi.org/", "") }}</a>.</p>
     <nav class="indice-jump-nav" aria-label="Salta a sezione">
       <a href="#temi">Temi</a>
       <a href="#serie">Serie</a>

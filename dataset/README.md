@@ -7,7 +7,8 @@ Vocabolario dei concetti — persone, teorie, testi, istituzioni, luoghi e paesi
 - Dati: <https://claudiocammarano.com/concetti.json> (JSON-LD)
 - Vista navigabile: <https://claudiocammarano.com/indice/>
 - Termini propri: <https://claudiocammarano.com/ns/>
-- DOI: [10.5281/zenodo.22843732](https://doi.org/10.5281/zenodo.22843732)
+- DOI (tutte le versioni): [10.5281/zenodo.22843731](https://doi.org/10.5281/zenodo.22843731)
+- DOI di questa versione: [10.5281/zenodo.22843732](https://doi.org/10.5281/zenodo.22843732)
 - Licenza: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
 ## Contenuto
@@ -78,6 +79,6 @@ I dati sono generati a build time da `src/_data/conceptsIndex.js`, che è la fon
 
 ## Citazione
 
-> Cammarano, C. (2026). *Indice concettuale di claudiocammarano.com* (versione 1.0.0) [Dataset]. Zenodo. CC BY 4.0. https://doi.org/10.5281/zenodo.22843732
+> Cammarano, C. (2026). *Indice concettuale di claudiocammarano.com* (versione 1.0.0) [Dataset]. Zenodo. CC BY 4.0. https://doi.org/10.5281/zenodo.22843731
 
 Vedi anche `CITATION.cff` in questa cartella.
