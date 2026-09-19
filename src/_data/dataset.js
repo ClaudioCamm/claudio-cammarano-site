@@ -12,16 +12,16 @@
  */
 module.exports = {
   version: "1.0.0",
-  released: "2026-09-14",
+  released: "2026-09-19",
   license: "https://creativecommons.org/licenses/by/4.0/",
   licenseLabel: "CC BY 4.0",
   // Compilare dopo il deposito: il DOI concettuale, quello che punta sempre
   // all'ultima versione. Finisce in `identifier` dentro /concetti.json.
-  doi: null,
+  doi: "https://doi.org/10.5281/zenodo.22843732",
   changelog: [
     {
       version: "1.0.0",
-      date: "2026-09-14",
+      date: "2026-09-19",
       it: "Prima pubblicazione: 261 concetti tipizzati, 169 con aggancio a Wikidata e Wikipedia, 49 legami dichiarati con la loro ragione, 533 riferimenti ad articoli."
     }
   ]

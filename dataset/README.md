@@ -2,28 +2,29 @@
 
 Vocabolario dei concetti — persone, teorie, testi, istituzioni, luoghi e paesi — citati con peso argomentativo negli scritti di Claudio Cammarano su [claudiocammarano.com](https://claudiocammarano.com). Ogni voce porta una nota discorsiva, gli agganci all'entità reale su Wikidata e Wikipedia dove esistono, gli articoli in cui il concetto compare, e i legami dichiarati verso altri concetti con la ragione di ciascun legame.
 
-**Versione 1.0.0 — 14 settembre 2026**
+**Versione 1.0.0 — 19 settembre 2026**
 
 - Dati: <https://claudiocammarano.com/concetti.json> (JSON-LD)
 - Vista navigabile: <https://claudiocammarano.com/indice/>
 - Termini propri: <https://claudiocammarano.com/ns/>
+- DOI: [10.5281/zenodo.22843732](https://doi.org/10.5281/zenodo.22843732)
 - Licenza: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
 ## Contenuto
 
 | | |
 |---|---|
-| Concetti | 261 |
-| — teorie | 109 |
-| — persone | 99 |
+| Concetti | 268 |
+| — teorie | 113 |
+| — persone | 101 |
 | — istituzioni | 20 |
-| — testi | 16 |
+| — testi | 17 |
 | — paesi | 10 |
 | — luoghi | 7 |
 | Voci con aggancio esterno (Wikidata, Wikipedia) | 169 |
-| Legami dichiarati fra concetti | 49 |
-| Parole di note discorsive | ~17.500 |
-| Articoli referenziati | 132 |
+| Legami dichiarati fra concetti | 66 |
+| Parole di note discorsive | ~18.400 |
+| Articoli referenziati | 143 |
 
 ## Schema
 
@@ -70,13 +71,13 @@ I dati sono generati a build time da `src/_data/conceptsIndex.js`, che è la fon
 
 ## Limiti dichiarati
 
-- 92 voci su 261 non hanno `exactMatch`.
-- I legami coprono 74 voci su 261: 35 concetti presenti in più di un articolo e 152 concetti presenti in uno solo non hanno ancora legami dichiarati.
-- Il grafo visibile sul sito (`/mappa/`) disegna ancora la sola co-occorrenza fra articoli, non i legami dichiarati.
-- Le note sono scritte in italiano e dal punto di vista del sito: dicono come un concetto è usato in questo corpus, non che cosa il concetto sia in generale.
+- 99 voci su 268 non hanno `exactMatch`: sono coniazioni proprie, acronimi, o casi in cui il candidato trovato era l'entita' sbagliata.
+- I legami coprono 100 voci su 268: 32 concetti presenti in piu' di un articolo e 136 presenti in uno solo non hanno ancora legami dichiarati.
+- Il grafo visibile sul sito (`/mappa/`) disegna sia la co-occorrenza fra articoli sia i legami dichiarati, distinti nel tratto; il file qui depositato contiene i soli legami dichiarati.
+- Le note sono scritte in italiano e dal punto di vista del sito: dicono come un concetto e' usato in questo corpus, non che cosa il concetto sia in generale.
 
 ## Citazione
 
-> Cammarano, C. (2026). *Indice concettuale di claudiocammarano.com* (versione 1.0.0) [Dataset]. CC BY 4.0. https://claudiocammarano.com/concetti.json
+> Cammarano, C. (2026). *Indice concettuale di claudiocammarano.com* (versione 1.0.0) [Dataset]. Zenodo. CC BY 4.0. https://doi.org/10.5281/zenodo.22843732
 
 Vedi anche `CITATION.cff` in questa cartella.

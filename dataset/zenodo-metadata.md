@@ -11,7 +11,7 @@ Da compilare nel form di <https://zenodo.org/uploads/new>. **Il caricamento lo f
 | Authors | Cammarano, Claudio — ORCID 0009-0006-3690-7466 |
 | Description | *vedi sotto* |
 | Version | 1.0.0 |
-| Publication date | 2026-09-13 |
+| Publication date | 2026-09-19 |
 | Language | Italian |
 | License | Creative Commons Attribution 4.0 International (CC BY 4.0) |
 | Keywords | indice concettuale; concept index; SKOS; JSON-LD; editoria; epistemologia; intelligenza artificiale; semiotica |
@@ -19,7 +19,7 @@ Da compilare nel form di <https://zenodo.org/uploads/new>. **Il caricamento lo f
 
 ## Description da incollare
 
-Vocabolario di 261 concetti — persone, teorie, testi, istituzioni, luoghi e paesi — citati con peso argomentativo negli scritti di Claudio Cammarano su claudiocammarano.com. Ogni voce porta una nota discorsiva, gli agganci all'entità reale su Wikidata e Wikipedia dove esistono (169 voci su 261), gli articoli in cui il concetto compare, e 49 legami dichiarati verso altri concetti, ciascuno con la ragione del legame.
+Vocabolario di 268 concetti — persone, teorie, testi, istituzioni, luoghi e paesi — citati con peso argomentativo negli scritti di Claudio Cammarano su claudiocammarano.com. Ogni voce porta una nota discorsiva, gli agganci all'entità reale su Wikidata e Wikipedia dove esistono (169 voci su 268), gli articoli in cui il concetto compare, e 66 legami dichiarati verso altri concetti, ciascuno con la ragione del legame.
 
 Il formato è JSON-LD con due vocabolari standard: SKOS per lo schema di concetti e schema.org per la coerenza con il markup delle pagine. Tre termini propri — il tipo editoriale della voce e la coppia che reifica la ragione di un legame — sono dichiarati e dereferenziabili su https://claudiocammarano.com/ns/.
 
