@@ -50,6 +50,9 @@ module.exports = [
   },
   {
     name: "Derrida, Jacques",
+    related: [
+      { name: "ermeneutica del sospetto", why: "La decostruzione e lo smascheramento delle ideologie condividono il gesto che, rovesciato, diventa cinismo politico." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q130631", "https://it.wikipedia.org/wiki/Jacques_Derrida"],
     note: "Filosofo algerino-francese (1930–2004), fondatore della decostruzione. Nel sito è citato insieme a Foucault come fonte del post-strutturalismo deviato: la decostruzione come strumento critico si rovescia in cinismo politico quando viene adottata da chi vuole dissolvere ogni fondamento normativo. Teorico della differenza e della traccia.",
@@ -60,6 +63,9 @@ module.exports = [
   },
   {
     name: "Averroè",
+    related: [
+      { name: "disputa sugli universali", why: "L'intelletto unico separato che pensa attraverso gli individui pone la stessa domanda: dove stanno i contenuti, se non nel singolo." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q39837", "https://it.wikipedia.org/wiki/Averro%C3%A8"],
     note: "Filosofo e medico andaluso (1126–1198), commentatore principale di Aristotele nel mondo islamico medievale. Nel sito è usato per avvicinare la struttura dei LLM: il suo intelletto unico separato che «pensa attraverso gli individui» anticipa metaforicamente un grande modello linguistico come bacino di sapere collettivo a cui ci si connette temporaneamente.",
@@ -70,6 +76,9 @@ module.exports = [
   },
   {
     name: "Kahneman, Daniel",
+    related: [
+      { name: "shadow of the future", why: "Sistema 1 e Sistema 2 applicati alla cooperazione: l'ombra del futuro chiede il pensiero lento, che è energeticamente costoso." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q233950", "https://it.wikipedia.org/wiki/Daniel_Kahneman"],
     note: "Psicologo e Premio Nobel israeliano-americano (1934–2024). Nel sito compare in due contesti: in L'ombra del futuro per la distinzione Sistema 1 / Sistema 2 applicata alla cooperazione; in La dialettica dell'antilluminismo per mostrare che il pensiero lento è energeticamente costoso, e l'incertezza prolungata produce pressione verso la risoluzione anche a costo di sbagliare la risposta.",
@@ -81,6 +90,10 @@ module.exports = [
   },
   {
     name: "Taleb, Nassim Nicholas",
+    related: [
+      { name: "cigni neri", why: "I cigni neri sono l'altra metà della sua epistemologia del rischio: le code spesse che la statistica gaussiana sottostima." },
+      { name: "antifragilità", why: "L'antifragilità è il cuore della sua epistemologia del rischio, insieme ai cigni neri e allo skin in the game." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q333521", "https://it.wikipedia.org/wiki/Nassim_Nicholas_Taleb"],
     note: "Matematico e saggista libanese-americano (1960). Nel sito è presentato come uno dei pochi pensatori veramente nuovi degli ultimi venticinque anni: ex trader, ha costruito un'epistemologia del rischio basata su cigni neri, antifragilità e skin in the game. Libanese di Amioun, fa del Libano un uso teorico costante come laboratorio della complessità caotica.",
@@ -162,6 +175,9 @@ module.exports = [
   },
   {
     name: "Yarros, Rebecca",
+    related: [
+      { name: "piano dei regimi", why: "«Fourth Wing» è il caso della banda della conferma: consegna al lettore le attese con cui è entrato, e resta sotto lo zero." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q121091992", "https://it.wikipedia.org/wiki/Rebecca_Yarros"],
     note: "Scrittrice statunitense (1981). Nel sito «Fourth Wing» è il caso della banda della conferma: consegna al lettore le attese di genere con cui è entrato, e ciò che fa davvero non sta sul piano dei regimi. Contrae la varianza fra i produttori e insieme allarga la popolazione dei riceventi, due effetti di segno opposto tenuti sotto un solo coefficiente.",
@@ -171,6 +187,9 @@ module.exports = [
   },
   {
     name: "Hesse, Hermann",
+    related: [
+      { name: "guadagno epistemico", why: "La sindrome di Siddharta è il caso limite della misura: spostamento massimo del lettore, guadagno nullo rispetto al mondo." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q25973", "https://it.wikipedia.org/wiki/Hermann_Hesse"],
     note: "Scrittore tedesco (1877–1962). Nel sito dà il nome alla «sindrome di Siddharta», il caso in cui un testo sposta molto il lettore senza avvicinarlo al mondo. Il nome tradisce in parte il romanzo, dove i movimenti laterali sono le tappe necessarie di un percorso che converge: la discrepanza isola la distinzione fra guadagno per testo e guadagno per traiettoria.",
@@ -180,6 +199,9 @@ module.exports = [
   },
   {
     name: "Joyce, James",
+    related: [
+      { name: "guadagno epistemico", why: "«Finnegans Wake» mostra l'errore formale: l'efficienza con cui un testo arriva non è sua proprietà, dipende dal ricevente." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q6882", "https://it.wikipedia.org/wiki/James_Joyce"],
     note: "Scrittore irlandese (1882–1941). Nel sito «Finnegans Wake» è il caso che dimostra un errore formale nell'equazione del valore: l'efficienza con cui un testo arriva a destinazione non è una proprietà del testo, ma dipende dal ricevente. Lo stesso libro sta nella singolarità dell'origine per il lettore ordinario e in alto a destra per lo specialista.",
@@ -189,6 +211,10 @@ module.exports = [
   },
   {
     name: "Dostoevskij, Fëdor",
+    related: [
+      { name: "piano dei regimi", why: "I «Fratelli Karamazov» sono l'emblema del regime dell'apertura: il lettore esce con più voci in gioco di quante ne avesse entrando." },
+      { name: "Yarros, Rebecca", why: "I due poli dello stesso piano: la conferma restituisce al lettore ciò con cui è entrato, l'apertura gliene toglie la comodità." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q991", "https://it.wikipedia.org/wiki/F%C3%ABdor_Dostoevskij"],
     note: "Scrittore russo (1821–1881). Nel sito è l'emblema del regime dell'apertura: la struttura polifonica dei «Fratelli Karamazov» lascia il lettore con più voci in gioco di quante ne avesse entrando, e questo ha valore perché il mondo contiene un conflitto morale irriducibile. Il caso che obbliga a togliere alla struttura lo statuto di co-requisito del valore.",
@@ -198,6 +224,9 @@ module.exports = [
   },
   {
     name: "Tolstoj, Lev",
+    related: [
+      { name: "drone democracy", why: "La difesa ucraina è tolstojana: la guerra si protrae perché il popolo non cede, e i leader diventano accessori." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q7243", "https://it.wikipedia.org/wiki/Lev_Tolstoj"],
     note: "Scrittore russo (1828–1910). Nel sito compare come caso di osservazione genuina: «Guerra e pace» è costruito su archivi, reduci interrogati e ricognizioni sui campi di battaglia, e i suoi capitoli saggistici sono la traccia visibile di un autore che sposta il proprio prior mentre scrive. «Resurrezione» è invece il caso in cui il giudizio su un testo dipende interamente da chi fornisce la distribuzione di riferimento.",
@@ -246,6 +275,9 @@ module.exports = [
   },
   {
     name: "Acemoglu, Daron",
+    related: [
+      { name: "istituzioni inclusive vs. estrattive", why: "La distinzione fra istituzioni inclusive ed estrattive è sua: nel sito è la chiave per le traiettorie di lungo periodo degli stati." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q718581", "https://it.wikipedia.org/wiki/Daron_Acemo%C4%9Flu"],
     note: "Economista turco-americano, Premio Nobel 2024 (1967). Nel sito è citato per Why Nations Fail (con Robinson): la distinzione tra istituzioni inclusive (che distribuiscono potere) e estrattive (che lo concentrano) come chiave per spiegare le traiettorie degli stati. Anche per la struttura del win-set domestico nelle negoziazioni internazionali.",
@@ -255,6 +287,9 @@ module.exports = [
   },
   {
     name: "Platone",
+    related: [
+      { name: "paideia", why: "Fonte classica del concetto: la formazione come coltivazione del carattere e del giudizio, non come addestramento a una tecnica." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q859", "https://it.wikipedia.org/wiki/Platone"],
     note: "Filosofo ateniese (427–347 a.C.). Nel sito compare in due contesti: nell'insegnamento di Eco come contrasto alla figura di Alcibiade (la formazione non produce filosofi ma persone capaci di stare nel mondo); e nel Fedro come autore dell'immagine dello slancio verticale dello spirito, usata per discutere la natura del desiderio nell'intelligenza artificiale.",
@@ -311,6 +346,9 @@ module.exports = [
   },
   {
     name: "Braudel, Fernand",
+    related: [
+      { name: "Mediterraneo come spazio strategico", why: "Ha studiato il Mediterraneo come nessuno: è il modello di competenza analitica a cui il sito misura le analisi correnti." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q185105", "https://it.wikipedia.org/wiki/Fernand_Braudel"],
     note: "Storico francese (1902–1985), fondatore della scuola delle Annales, autore di La Méditerranée (1949). Nel sito è citato come modello del pensatore capace di studiare il Mediterraneo «come nessuno», con competenza analitica rara. Rappresenta l'approccio strategico al bacino marino che l'Italia non ha saputo applicare.",
@@ -320,6 +358,9 @@ module.exports = [
   },
   {
     name: "Vico, Giambattista",
+    related: [
+      { name: "verum ipsum factum", why: "Il principio è suo (1725): conosciamo veramente solo ciò che abbiamo fatto." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q178709", "https://it.wikipedia.org/wiki/Giambattista_Vico"],
     note: "Filosofo napoletano (1668–1744). Nel sito è la fonte del principio verum ipsum factum (1725): conosciamo veramente solo ciò che abbiamo fatto. Le humanities studiano istituzioni umane conoscibili dall'interno perché le abbiamo costruite noi — fondamento epistemologico della loro rilevanza irriducibile.",
@@ -329,6 +370,9 @@ module.exports = [
   },
   {
     name: "Friston, Karl",
+    related: [
+      { name: "free-energy principle", why: "Il cervello come sistema di previsione bayesiana che minimizza l'errore fra modello interno e mondo." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q6371926", "https://it.wikipedia.org/wiki/Karl_J._Friston"],
     note: "Neuroscienziato britannico (1959). Nel sito è citato come autore del free-energy principle: il cervello è un sistema di previsione bayesiana che minimizza l'errore tra modello interno e mondo esterno. Citato per mostrare che anche le teorie più potenti della cognizione biologica sono modelli, non prove di coscienza.",
@@ -338,6 +382,9 @@ module.exports = [
   },
   {
     name: "Melandri, Lea",
+    related: [
+      { name: "femminismo", why: "Dalla rivista «L'erba voglio» a «L'infamia originaria»: una delle voci fondative della teoria femminista italiana." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q3829208", "https://it.wikipedia.org/wiki/Lea_Melandri"],
     note: "Saggista, insegnante e attivista femminista italiana (1941). Fondatrice con Elvio Fachinelli della rivista «L'erba voglio» negli anni Settanta, poi di «Lapis»; autrice di testi come L'infamia originaria, pietre miliari della teoria femminista italiana. Nel sito, in un pezzo di Annalisa Camilli su «Internazionale», è il caso che mette a fuoco la tensione tra impatto culturale indiscutibile e assenza di un modello di business che ne garantisca il sostentamento. Cosa imputabile naturalmente non a Melandri stessa, quanto a un vero e proprio fallimento del mercato.",
@@ -347,6 +394,9 @@ module.exports = [
   },
   {
     name: "Miyazaki, Hayao",
+    related: [
+      { name: "industria dell'animazione", why: "Il modello artigianale e il mentoring che hanno formato la sua generazione sono ciò che l'industria ha smantellato dopo il 1973." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q55400", "https://it.wikipedia.org/wiki/Hayao_Miyazaki"],
     note: "Regista e animatore giapponese (1941), cofondatore dello Studio Ghibli. Nel sito è citato come riferimento implicito del dibattito sulla crisi degli animatori giapponesi: il modello artigianale e il mentoring che hanno formato la sua generazione sono esattamente ciò che l'industria ha smantellato dopo il 1973.",
@@ -356,6 +406,9 @@ module.exports = [
   },
   {
     name: "Ypi, Lea",
+    related: [
+      { name: "liberalismo", why: "Ripensa il marxismo come teoria dell'emancipazione contro un liberalismo che confonde libertà formale e libertà reale." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q109453577", "https://it.wikipedia.org/wiki/Lea_Ypi"],
     note: "Filosofa e scrittrice albanese, docente alla LSE. Nel sito è citata due volte: come una delle quattro filosofe che secondo Gloria Origgi hanno rifondato la filosofia politica da Parigi — ripensando il marxismo come teoria dell'emancipazione contro un liberalismo che confonde libertà formale e libertà reale — e come una delle voci che hanno suggerito il pezzo di Jonathan White sulla colonizzazione tecnologica del pensiero sul futuro. I suoi memoir — Libera (2022) e Dignità (2026), in Italia entrambi pubblicati da Feltrinelli — rappresentano, con un'insospettata efficacia narrativa, un resoconto multi-generazionale della transizione dall'Impero Ottomano al totalitarismo socialista e poi da questo alla democrazia liberale da parte di una famiglia strutturalmente apolide (etnia albanese di lontane origini ebraiche; religione musulmana; cittadinanza ottomana, poi greca, infine albanese) all'intersezione con la grande storia europea.",
@@ -395,6 +448,12 @@ module.exports = [
   },
   {
     name: "Origgi, Gloria",
+    related: [
+      { name: "Ypi, Lea", why: "Una delle quattro filosofe con cui mostra che la filosofia politica è stata rifondata da Parigi, fuori dall'egemonia maschile." },
+      { name: "Cordelli, Chiara", why: "Una delle quattro filosofe con cui mostra che la filosofia politica è stata rifondata da Parigi, fuori dall'egemonia maschile." },
+      { name: "Landemore, Hélène", why: "Una delle quattro filosofe con cui mostra che la filosofia politica è stata rifondata da Parigi, fuori dall'egemonia maschile." },
+      { name: "Fricker, Miranda", why: "Una delle quattro filosofe con cui mostra che la filosofia politica è stata rifondata da Parigi, fuori dall'egemonia maschile." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q5571439", "https://en.wikipedia.org/wiki/Gloria_Origgi"],
     note: "Filosofa, ricercatrice CNRS a Parigi. Nel sito è l'autrice del pezzo che presenta quattro filosofe — Ypi, Cordelli, Landemore, Fricker — come prova che la filosofia politica, dopo decenni di egemonia maschile fatta più di sfoggio retorico che di proposte concrete, è tornata a essere una disciplina seria e politicamente rilevante.",
@@ -417,6 +476,9 @@ module.exports = [
   },
   {
     name: "Brooks, David",
+    related: [
+      { name: "need for cognition", why: "La sua tesi: nell'era dell'AI la discriminante non è l'intelligenza ma l'attitudine allo sforzo mentale." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q938475", "https://en.wikipedia.org/wiki/David_Brooks_(commentator)"],
     note: "Giornalista e saggista americano (1961), columnist del New York Times e staff writer del The Atlantic. Nel sito è citato per la tesi che nell'era dell'AI la discriminante non sia l'intelligenza ma il *need for cognition* — l'attitudine psicologica allo sforzo mentale. La sua tassonomia in tre gruppi (Productive Passengers, Reluctant Optimizers, Mental Marathoners) è uno strumento utile per leggere come le persone si rapporteranno all'AI nel lungo periodo.",
@@ -446,6 +508,9 @@ module.exports = [
 
   {
     name: "Austin, John L.",
+    related: [
+      { name: "atti illocutori", why: "La distinzione fra locutorio, illocutorio e perlocutorio viene da How to Do Things with Words." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q272615", "https://it.wikipedia.org/wiki/John_Langshaw_Austin"],
     lab: true,
@@ -456,6 +521,9 @@ module.exports = [
   },
   {
     name: "Frayn, Michael",
+    related: [
+      { name: "Copenhagen", why: "Autore della ricostruzione teatrale dell'incontro Bohr-Heisenberg del 1941." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q506231", "https://it.wikipedia.org/wiki/Michael_Frayn"],
     note: "Storico e drammaturgo inglese (1933). Nel sito è citato per *Copenhagen* (1998), la sua ricostruzione teatrale dell'incontro del 1941 tra Niels Bohr e Werner Heisenberg: un caso studio di come due scienziati dentro sistemi di potere in conflitto perdano una lingua comune. L'impossibilità di stabilire cosa i due si dissero davvero è, nel testo, la cifra della fine della scienza come conversazione neutrale.",
@@ -480,6 +548,9 @@ module.exports = [
   },
   {
     name: "Ashby, W. Ross",
+    related: [
+      { name: "legge della varietà richiesta", why: "Solo la varietà assorbe varietà: nel sito la legge regge sia la selezione sia la misura dell'adeguatezza di un corpus." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q711172", "https://it.wikipedia.org/wiki/William_Ross_Ashby"],
     note: "Psichiatra e cibernetico britannico (1903–1972), autore di <em>An Introduction to Cybernetics</em> (1956). Nel sito è il riferimento della legge della varietà richiesta, usata su due fronti: selezionare è l’operazione che rende un corpus adeguato a un problema, e un campo in cui i prior degli autori convergono diventa internamente muto pur continuando a pubblicare.",
@@ -489,6 +560,9 @@ module.exports = [
   },
   {
     name: "Landauer, Rolf",
+    related: [
+      { name: "principio di Landauer", why: "Cancellare un bit ha un costo fisico minimo non nullo: l'ancoraggio termodinamico dell'argomento sulla generazione." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q69412", "https://it.wikipedia.org/wiki/Rolf_Landauer"],
     note: "Fisico di IBM (1927–1999). Il suo principio — cancellare un bit ha un costo fisico minimo non nullo — è nel sito l’ancoraggio termodinamico dell’argomento sull’AI generativa: il costo di un testo è sempre stato nella cancellazione delle alternative, cioè nella selezione, mai nella produzione della stringa. Chi conclude che scrivere sia diventato gratuito ha misurato il termine sbagliato.",
@@ -533,6 +607,9 @@ module.exports = [
   },
   {
     name: "dilemma del prigioniero iterato",
+    related: [
+      { name: "fattore di sconto δ", why: "Il gioco iterato produce cooperazione solo se il futuro pesa abbastanza: δ è il parametro che decide se l'equilibrio tiene." }
+    ],
     type: "teoria",
     note: "Versione ripetuta del classico gioco in cui due attori ottengono risultati migliori cooperando, ma ognuno ha incentivo individuale a disertare. Quando il gioco è iterato e i giocatori si riconoscono, la cooperazione è un equilibrio stabile — ma richiede che il futuro pesi abbastanza. Nel sito è il modello teorico delle relazioni internazionali.",
     articles: [
@@ -609,6 +686,9 @@ module.exports = [
   },
   {
     name: "allineamento AI",
+    related: [
+      { name: "monitorabilità", why: "Un modello può comportarsi bene e restare opaco: l'allineamento misura le azioni, la monitorabilità chiede di vedere il ragionamento." }
+    ],
     type: "teoria",
     note: "Il problema di assicurare che i sistemi di intelligenza artificiale perseguano obiettivi coerenti con i valori umani, anche man mano che diventano più capaci. Nel sito è il quadro implicito che motiva le scelte di Anthropic: rifiutare contratti militari dipende dall'importanza di mantenere il controllo sullo sviluppo dell'AI a lungo termine.",
     articles: [
@@ -704,6 +784,9 @@ module.exports = [
   },
   {
     name: "general purpose technologies",
+    related: [
+      { name: "dual use", why: "Se una tecnologia è general purpose abita per costruzione entrambi i domini: il dual use non è un caso speciale ma la condizione normale." }
+    ],
     type: "teoria",
     note: "Tecnologie (Bresnahan & Trajtenberg, 1995) che migliorano nel tempo, si applicano pervasivamente a tutti i settori e generano innovazioni complementari su scala sistemica: stampa, vapore, elettricità, Internet, AI. Nel sito è la categoria che rende inapplicabile la distinzione civile/militare: una GPT abita entrambi i domini per costruzione.",
     articles: [
@@ -729,6 +812,9 @@ module.exports = [
   },
   {
     name: "riserva cognitiva",
+    related: [
+      { name: "disuguaglianze", why: "Chi non ha potuto accumulare riserva non è meno fortunato: è stato escluso dalle condizioni che la rendono possibile." }
+    ],
     type: "teoria",
     sameAs: ["https://www.wikidata.org/wiki/Q579471", "https://it.wikipedia.org/wiki/Riserva_cognitiva"],
     note: "Concetto delle neuroscienze: la salute cognitiva non è un dato biologico fisso ma una risorsa accumulata nel corso della vita attraverso istruzione, stimolazione mentale, attività fisica e reti sociali. Determina quanto a lungo il cervello riesce a compensare il danno neurodegenerativo prima che la demenza si manifesti. Nel sito è la chiave per leggere le disuguaglianze cognitive come disuguaglianze strutturali: chi non ha potuto accumulare riserva non è «meno fortunato», è stato sistematicamente escluso dalle condizioni che la rendono possibile.",
@@ -780,6 +866,9 @@ module.exports = [
   },
   {
     name: "scrittura",
+    related: [
+      { name: "capitale semantico", why: "La scrittura ordinaria è il modo in cui il capitale semantico si accumula: senza quella pratica manca il metro per giudicare la macchina." }
+    ],
     type: "teoria",
     sameAs: ["https://www.wikidata.org/wiki/Q37260", "https://it.wikipedia.org/wiki/Scrittura"],
     note: "La scrittura come atto cognitivo, non solo comunicativo, è uno dei fili tematici più sottili e costanti del sito. Il dibattito sull'AI vi entra da angolazioni diverse: come rivelatore — il tratto stilistico è segnale di origine, e l'em dash è il caso emblematico; come strumento — chi usa Claude Code non smette di scrivere, cambia il rapporto con la struttura del testo; come rischio — Stephens sostiene che delegare la scrittura all'AI significhi delegare l'articolazione del pensiero. Il fondamento teorico comune è il capitale semantico: la pratica della scrittura ordinaria è la stessa riserva cognitiva che si attiva nella scrittura che conta.",
@@ -797,6 +886,9 @@ module.exports = [
   },
   {
     name: "violenza speculativa",
+    related: [
+      { name: "watermarking", why: "Immagini che non falsificano il presente sfuggono alla verifica d'origine: il watermark certifica la provenienza, non la pretesa di verità." }
+    ],
     type: "teoria",
     note: "Concetto introdotto da Donatella Della Ratta (Le Grand Continent, 2026; Einaudi, 2026) per descrivere un meccanismo di propaganda AI-generativa distinto dal deepfake. Le immagini di violenza speculativa non falsificano il presente — e quindi sfuggono ai criteri standard di fact-checking — ma costruiscono una pre-familiarità visiva con scenari xenofobi, sostituzionisti o violenti, rendendoli percepivamente plausibili prima che esistano. Non chiedono di essere credute; chiedono solo di essere viste, ripetute e memorizzate. Il caso esemplare: video POV AI-generated dell'Europa del 2050 'invasa da migranti' (estate 2025) → déjà-vu alla crisi di Ceuta (luglio 2026). Altro caso: il video AI di Gaza trasformata in 'riviera' da Trump (febbraio 2025), precursore del Piano di pace in 20 punti (ottobre 2025). La tesi centrale: nel regime visivo sintetico inaugurato dall'AI generativa, plausibilità, ripetizione e viralità diventano criteri di legittimazione più potenti della veridicità. Il versante più insidioso della slopaganda.",
     articles: [
@@ -939,6 +1031,9 @@ module.exports = [
   },
   {
     name: "educazione estetica",
+    related: [
+      { name: "paideia", why: "Schiller riprende la promessa greca e la sposta sull'arte: non precettistica ma capacità di abitare prospettive diverse." }
+    ],
     type: "teoria",
     note: "Concetto di Friedrich Schiller (Lettere sull'educazione estetica dell'uomo, 1795): l'arte come processo collettivo di ricerca della verità, capace di orientare l'essere umano da una vita puramente sensibile verso una moralità più coltivata — non come precettistica rigida ma come capacità di abitare prospettive diverse e costruire relazioni con altri. Nel sito è il framework con cui Ypi legge la letteratura impegnata: la scrittura come mezzo per rompere il rapporto con le predazioni del presente e immaginare alternative.",
     articles: [
@@ -987,6 +1082,9 @@ module.exports = [
   },
   {
     name: "Mavi Vatan",
+    related: [
+      { name: "Mediterraneo come spazio strategico", why: "La Turchia rivendica il mare come spazio di sicurezza nazionale; è il contrasto con l'incapacità italiana di pensarlo strategicamente." }
+    ],
     type: "teoria",
     sameAs: ["https://www.wikidata.org/wiki/Q97725332", "https://en.wikipedia.org/wiki/Blue_Homeland"],
     note: "«Patria Blu»: dottrina geopolitica turca che rivendica la sovranità sul Mediterraneo orientale, il Mar Nero e il Mar Egeo come spazio di sicurezza nazionale. Nel sito è il contrasto implicito con l'incapacità italiana di pensare strategicamente il mare: la Turchia ha costruito un'identità politica fondata sul bacino marino, l'Italia lo vede solo come emergenza.",
@@ -1020,6 +1118,9 @@ module.exports = [
   },
   {
     name: "aiuto allo sviluppo",
+    related: [
+      { name: "trasferimenti monetari diretti", why: "L'architettura assistenziale è il bersaglio implicito: dare contanti batte i programmi, secondo l'evidenza riportata da The Economist." }
+    ],
     type: "teoria",
     sameAs: ["https://www.wikidata.org/wiki/Q2827815", "https://it.wikipedia.org/wiki/Aiuto_allo_sviluppo"],
     note: "Il complesso di politiche, programmi e architetture istituzionali con cui paesi e organizzazioni internazionali trasferiscono risorse ai paesi a basso reddito. Nel sito è il bersaglio implicito del dibattito sui trasferimenti monetari diretti: l'evidenza che la semplicità batta la sofisticazione costringe a riconsiderare l'intero impianto tradizionale.",
@@ -1144,6 +1245,9 @@ module.exports = [
   },
   {
     name: "GS1 Web Vocabulary",
+    related: [
+      { name: "Schema.org", why: "Il vocabolario GS1 estende Schema.org con i termini del largo consumo: categoria merceologica, allergeni, logistica." }
+    ],
     type: "teoria",
     sameAs: ["https://www.wikidata.org/wiki/Q140514629"],
     note: "Standard che estende Schema.org con termini specifici per il largo consumo — categoria merceologica, allergeni, dettagli logistici — per dare «voce» ai codici a barre sul web. Nel sito è il caso esemplare di infrastruttura semantica mancante: un barcode tradizionale è muto per i motori di ricerca, generativi compresi.",
@@ -1162,6 +1266,9 @@ module.exports = [
   },
   {
     name: "web semantico",
+    related: [
+      { name: "GS1 Web Vocabulary", why: "GS1 è l'implementazione concreta della promessa: contenuti leggibili dalle macchine, non solo dagli umani." }
+    ],
     type: "teoria",
     sameAs: ["https://www.wikidata.org/wiki/Q54837", "https://it.wikipedia.org/wiki/Web_semantico"],
     note: "L'idea — di cui il GS1 Web Vocabulary è un'implementazione concreta — che i contenuti del web debbano essere strutturati in modo leggibile dalle macchine, non solo dagli umani. Nel sito è il prerequisito infrastrutturale, spesso assente nei cataloghi italiani, perché i prodotti siano «letti» e citati dai motori di ricerca generativi.",
@@ -1426,6 +1533,9 @@ module.exports = [
   },
   {
     name: "vibe coding",
+    related: [
+      { name: "data journalism", why: "La decomposizione in compiti discreti e testabili viene dal pipeline del data journalism: stessa struttura modulare, stesso divide et impera." }
+    ],
     type: "teoria",
     sameAs: ["https://www.wikidata.org/wiki/Q133150082", "https://it.wikipedia.org/wiki/Vibe_coding"],
     note: "Modalità di sviluppo software in cui si descrive ciò che si vuole in linguaggio naturale e si lascia che un LLM scriva il codice. Nel sito è presentato nella versione strutturata di Ottaviani: non un prompt unico ma una decomposizione in compiti discreti e testabili (divide et impera), ognuno con un solo scopo, buildabile e verificabile indipendentemente. La struttura modulare riflette le fasi del pipeline del data journalism e riduce i bug.",
@@ -1545,7 +1655,7 @@ module.exports = [
     name: "epistemia",
     type: "teoria",
     lab: true,
-    note: "Condizione dei modelli linguistici di generare output privi di metacognizione: il modello non può valutare lo statuto epistemico delle proprie affermazioni. Il termine è mutuato da Loru et al. (PNAS 2025) e Quattrociocchi et al. (2025). L'assenza di epistemia è la premessa che motiva il progetto <em>post-cognition</em>.",
+    note: "Illusione di conoscenza che emerge nell'interazione con i modelli linguistici: si esce dallo scambio con la sensazione di sapere, senza che si sia prodotta conoscenza. Il termine è di Loru et al. (PNAS 2025) e Quattrociocchi et al. (2025). Non è una proprietà del modello ma un effetto su chi lo usa — il modello vi contribuisce in quanto privo di metacognizione, incapace di valutare lo statuto epistemico di ciò che afferma. È la condizione che <em>post-cognition</em> si propone di contrastare.",
     articles: [
       { title: "Validating AI — note di ricerca", url: "/lab/", _source: "lab" }
     ]
@@ -1570,6 +1680,9 @@ module.exports = [
   },
   {
     name: "delega epistemica",
+    related: [
+      { name: "epistemia", why: "Si delega la valutazione a un sistema che non la esegue; l'epistemia è l'illusione che la valutazione sia avvenuta." }
+    ],
     type: "teoria",
     note: "La discontinuità specifica introdotta dall'AI rispetto all'automazione precedente: non si delega un'operazione, si delega una valutazione — la selezione dei candidati, il merito creditizio, la diagnosi, il ranking delle informazioni. Nel sito è il concetto che spiega perché un'organizzazione che usa AI senza validazione esplicita si trovi a usare output come se fossero conoscenza, senza poter rispondere alle domande che la conoscenza richiede.",
     articles: [
@@ -1589,6 +1702,9 @@ module.exports = [
   },
   {
     name: "femminismo",
+    related: [
+      { name: "ecologia dei media", why: "Meyrowitz mostra che la televisione patriarcale ha generato suo malgrado la coscienza femminista: l'ambiente conta più del contenuto." }
+    ],
     type: "teoria",
     sameAs: ["https://www.wikidata.org/wiki/Q7252", "https://it.wikipedia.org/wiki/Femminismo"],
     note: "Pur non essendo finalizzato all'attivismo, questo sito non può prescindere da una rappresentazione dell'umanità la più vasta e inclusiva possibile. Alcuni registri in cui compare: come effetto imprevisto di ambienti mediali — Meyrowitz dimostra che la televisione patriarcale degli anni Cinquanta ha generato, suo malgrado, le condizioni per una coscienza femminista allargata; come riequilibrio in corso nell'autorità intellettuale, con le donne che guidano oggi il pensiero filosofico (Origgi); come strumento di lettura della violenza di genere e delle sue rappresentazioni pubbliche (Columbro, Melandri). Il filo comune: una rappresentazione cognitivamente povera del reale (orientata esclusivamente al maschile, alle persone di pelle bianca, con una formazione di stampo anglosassone ecc.) produrrà effetti sociali altrettanto miseri - quando non dannosi.",
@@ -1642,6 +1758,9 @@ module.exports = [
 
   {
     name: "industrie creative",
+    related: [
+      { name: "successione aziendale", why: "Nelle aziende creative piccole la successione non somiglia né all'impresa familiare né alla corporation: dipende dalla figura fondatrice." }
+    ],
     type: "teoria",
     note: "Termine dell'economia della cultura che indica i settori in cui la produzione artistica e culturale si combina con logiche di sfruttamento commerciale: editoria, cinema, televisione, videogiochi, musica, merchandise. Nel sito funziona come lente strutturale — non per classificare contenuti ma per osservare le trasformazioni dell'industria che li produce e distribuisce: come le piattaforme (BookTok, algoritmi di raccomandazione) hanno ridisegnato la scoperta e invertito il potere negoziale tra autori indie e editori tradizionali; come i fandom si sono trasformati da audience passive in ecosistemi economici con merch, retreat ed eventi; come la logica dell'IP spinge ogni successo editoriale o videoludico verso l'adattamento cinematografico, spesso con risultati deludenti; come i capitali sovrani (Arabia Saudita) e il private equity entrano come acquirenti di infrastrutture culturali. Il filo comune non è il contenuto delle opere ma la struttura economica e distributiva che le produce, le fa circolare e le monetizza.",
     articles: [
@@ -1943,6 +2062,9 @@ module.exports = [
   },
   {
     name: "The Economist",
+    related: [
+      { name: "propaganda", why: "La nomina di un ex comandante della 77 Brigade a defence editor è il punto in cui informazione e difesa smettono di essere piani distinti." }
+    ],
     type: "istituzione",
     sameAs: ["https://www.wikidata.org/wiki/Q180089", "https://it.wikipedia.org/wiki/The_Economist"],
     note: "Settimanale britannico. Nel sito è il caso della nomina del generale Alex Turner — ex comandante della 77 Brigade, ancora in servizio attivo al momento della nomina — a defence editor: un caso che rende visibile la sovrapposizione crescente tra i piani dell'informazione e della difesa.",
@@ -1961,6 +2083,9 @@ module.exports = [
   },
   {
     name: "Studio Ghibli",
+    related: [
+      { name: "industria dell'animazione", why: "Lo studio è il riferimento implicito di qualità artigianale nel dibattito sulla crisi degli animatori giapponesi." }
+    ],
     type: "istituzione",
     sameAs: ["https://www.wikidata.org/wiki/Q182950", "https://it.wikipedia.org/wiki/Studio_Ghibli"],
     note: "Studio d'animazione giapponese fondato nel 1985 da Hayao Miyazaki e Isao Takahata. Nel sito è il riferimento implicito di qualità artigianale nel dibattito sulla crisi degli animatori giapponesi: il modello di formazione sul campo che lo studio ha incarnato è esattamente ciò che l'industria, nel suo insieme, ha smantellato dopo il 1973.",
@@ -2172,6 +2297,9 @@ module.exports = [
 
   {
     name: "Russia",
+    related: [
+      { name: "controllo riflessivo", why: "La guerra ibrida russa non attacca il canale ma il contenuto: il controllo riflessivo ne è la forma cognitiva." }
+    ],
     type: "paese",
     sameAs: ["https://www.wikidata.org/wiki/Q159", "https://it.wikipedia.org/wiki/Russia"],
     note: "Nel sito è l'attore della guerra ibrida: ha sistematizzato la dottrina Gerasimov, usato i social media come amplificatori del caos, testato le strategie nell'Est Europa prima di esportarle globalmente dal 2014 in poi. Caso di fragilità sistemica nascosta da apparente potenza — la pandemia ha mostrato la patologia delle istituzioni accentrate.",
@@ -2186,6 +2314,9 @@ module.exports = [
   },
   {
     name: "Ucraina",
+    related: [
+      { name: "drone democracy", why: "Il laboratorio ucraino non è solo strategico ma istituzionale: la difesa nasce dal basso e produce accountability, non solo droni." }
+    ],
     type: "paese",
     sameAs: ["https://www.wikidata.org/wiki/Q212", "https://it.wikipedia.org/wiki/Ucraina"],
     note: "Nel sito è il laboratorio del win-set compresso e del fattore δ rivoluzionato: Zelensky, outsider con basso δ pre-2022, ha trasformato la propria struttura strategica dopo l'invasione russa. È anche uno dei «primi laboratori» della guerra ibrida russa insieme a Estonia, Georgia e Moldova.",
@@ -2201,6 +2332,9 @@ module.exports = [
   },
   {
     name: "Stati Uniti",
+    related: [
+      { name: "Taiwan / TSMC", why: "La deterrenza su Taiwan è il punto in cui la potenza americana dipende da una fabbrica che non controlla." }
+    ],
     type: "paese",
     sameAs: ["https://www.wikidata.org/wiki/Q30", "https://it.wikipedia.org/wiki/Stati_Uniti_d'America"],
     note: "Nel sito è l'attore centrale su cui convergono la maggior parte delle analisi: sede delle grandi aziende AI (Anthropic, Palantir), pivot del disordine globale con Trump, potenza con cui si devono fare i conti nella geopolitica del Mediterraneo e nella deterrenza su Taiwan. Citato in quattro articoli.",
@@ -2257,6 +2391,9 @@ module.exports = [
   },
   {
     name: "Cina",
+    related: [
+      { name: "istituzioni inclusive vs. estrattive", why: "Il «modello cinese» promette che istituzioni estrattive decidano meglio; Wuhan mostra che è il tipo di istituzione a produrre il ritardo." }
+    ],
     type: "paese",
     sameAs: ["https://www.wikidata.org/wiki/Q148", "https://it.wikipedia.org/wiki/Cina"],
     note: "Nel sito è il caso studio della fragilità autoritaria: il «modello cinese» (decisioni rapide perché senza opposizione) è una sciocchezza confutata dalla pandemia — i medici di Wuhan zittiti, l'occultamento attivo, il ritardo nella condivisione del genoma. Citata anche come attore geopolitico che gioca su tre tavoli incompatibili simultaneamente.",
@@ -2395,6 +2532,9 @@ module.exports = [
   },
   {
     name: "Xi, Jinping",
+    related: [
+      { name: "win-set domestico", why: "L'accentramento dal 2012 ha compresso il win-set: meno margine interno, meno accordi possibili all'esterno." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q15031", "https://it.wikipedia.org/wiki/Xi_Jinping"],
     note: "Presidente cinese (1953). Nel sito è analizzato come caso di accentramento del potere (dal 2012) che ha compresso il win-set domestico: abolizione del limite ai mandati, campagna anticorruzione strumentale, irrigidimento ideologico del Partito. Fattore di sconto δ probabilmente alto, ma il ρ relazionale che lui stesso ha costruito è altissimo.",
@@ -2682,6 +2822,9 @@ module.exports = [
   },
   {
     name: "Pieranni, Simone",
+    related: [
+      { name: "Cina", why: "Fonte principale del sito sulla Cina: il ruolo cinese come broker nel nuovo ordine energetico post-Hormuz." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q115625750", "https://it.wikipedia.org/wiki/Simone_Pieranni"],
     note: "Giornalista e autore italiano, tra i principali esperti di Cina in Italia. Autore di *Red Mirror* (2021) e della newsletter/podcast *Il Partito* e *Altri Orienti*. Nel sito compare in due contesti: in *L'ombra del passato* come fonte cruciale sul nuovo ordine energetico post-Hormuz — la sua analisi del ruolo cinese come broker fra Teheran e Washington («la stabilità di Hormuz è diventata due facce della stessa medaglia geopolitica») alimenta l'estensione del modello teorico sulla Cina a ρ alto; e nel curated su AI e lavoro come curatore della mappa narrativa cinese sull'automazione e il patto sociale.",
@@ -2805,6 +2948,10 @@ module.exports = [
   },
   {
     name: "Fukuyama, Francis",
+    related: [
+      { name: "vetocrazia", why: "Il termine è suo, da Political Order and Political Decay (2014): i punti di veto si moltiplicano finché nessuno decide più." },
+      { name: "thymos", why: "È lui a portare il thymos platonico al centro dell'analisi politica: il riconoscimento come motore della storia." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q186123", "https://it.wikipedia.org/wiki/Francis_Fukuyama"],
     note: "Politologo americano (1952), professore alla Stanford University. Ex allievo di Allan Bloom, ha lavorato per la RAND Corporation e per l'amministrazione Reagan prima di rompere con il neoconservatorismo dopo l'invasione dell'Iraq (2003). Autore di *The End of History and the Last Man* (1992) — il libro più citato e frainteso della sua generazione — e della serie *Political Order and Political Decay* (2011-2014). Nel sito compare come il teorico che ha identificato il problema non risolto della democrazia liberale: non la minaccia esterna ma l'instabilità interna generata dal successo stesso — la noia del riconoscimento ottenuto, il thymos che si rivolta contro l'ordine che lo ha soddisfatto.",
