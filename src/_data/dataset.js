@@ -22,7 +22,7 @@ module.exports = {
     {
       version: "1.0.0",
       date: "2026-09-19",
-      it: "Prima pubblicazione: 261 concetti tipizzati, 169 con aggancio a Wikidata e Wikipedia, 49 legami dichiarati con la loro ragione, 533 riferimenti ad articoli."
+      it: "Prima pubblicazione: 268 concetti tipizzati, 169 con aggancio a Wikidata e Wikipedia, 66 legami dichiarati con la loro ragione, 143 riferimenti ad articoli."
     }
   ]
 };
