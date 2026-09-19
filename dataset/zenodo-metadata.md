@@ -25,6 +25,18 @@ Il formato è JSON-LD con due vocabolari standard: SKOS per lo schema di concett
 
 Un aggancio esterno è stato accettato solo con corrispondenza esatta di etichetta o alias e tipo compatibile, poi verificato voce per voce contro la nota. I limiti del dataset sono dichiarati nel README.
 
+## Description in English
+
+Il record è stato depositato con la descrizione in inglese, per leggibilità internazionale; il campo Language resta `Italian`, perché descrive la lingua delle note, non quella del record.
+
+A vocabulary of 268 concepts — people, theories, texts, institutions, places and countries — cited with argumentative weight in Claudio Cammarano's writing on claudiocammarano.com. Each entry carries a discursive note, links to the real-world entity on Wikidata and Wikipedia where they exist (169 entries out of 268), the articles in which the concept appears, and 66 asserted links to other concepts, each with the reason for the link.
+
+The format is JSON-LD with two standard vocabularies: SKOS for the concept scheme and schema.org for consistency with the markup of the pages themselves. Three proprietary terms — the editorial type of an entry, and the pair that reifies the reason for a link — are declared and dereferenceable at https://claudiocammarano.com/ns/.
+
+An external link was accepted only on an exact label or alias match with a compatible type, then verified entry by entry against the note. The limits of the dataset are stated in the README.
+
+**Keywords in inglese**: concept index; SKOS; JSON-LD; publishing; epistemology; artificial intelligence; semiotics; Italian
+
 ## Dopo il deposito
 
 1. Riportare il DOI nel `README.md` di questa cartella e in `src/llms.njk`, sezione «File espansi».
