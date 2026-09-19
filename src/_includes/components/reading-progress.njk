@@ -1,0 +1,46 @@
+{#
+  Barra di avanzamento + pulsante «torna su».
+  Un solo punto di verità: era duplicato in article.njk, ora lo includono
+  sia gli articoli sia le pagine lunghe (indice).
+
+  Parametro opzionale `progressTarget`: selettore CSS dell'elemento su cui
+  misurare l'avanzamento. Se assente, o se l'elemento non c'è, si misura
+  sull'intero documento — che è il caso giusto per una pagina-elenco.
+#}
+<div id="reading-progress"{% if progressTarget %} data-progress-target="{{ progressTarget }}"{% endif %}></div>
+<button id="back-to-top" aria-label="Torna su" title="Torna su">↑</button>
+
+<script>
+(function() {
+  var bar = document.getElementById('reading-progress');
+  if (!bar) return;
+  var sel = bar.getAttribute('data-progress-target');
+  var body = sel ? document.querySelector(sel) : null;
+  function update() {
+    var pct;
+    if (body) {
+      var bodyTop = body.getBoundingClientRect().top + window.scrollY;
+      pct = (window.scrollY - bodyTop) / body.offsetHeight * 100;
+    } else {
+      var max = document.documentElement.scrollHeight - window.innerHeight;
+      pct = max > 0 ? window.scrollY / max * 100 : 0;
+    }
+    bar.style.width = Math.min(Math.max(pct, 0), 100) + '%';
+  }
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update, { passive: true });
+  update();
+})();
+
+(function() {
+  var btn = document.getElementById('back-to-top');
+  if (!btn) return;
+  window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+  btn.addEventListener('click', function() {
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+  });
+})();
+</script>

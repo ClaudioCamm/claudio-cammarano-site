@@ -3,8 +3,8 @@ layout: layouts/base.njk
 og_type: article
 ---
 
-<div id="reading-progress"></div>
-<button id="back-to-top" aria-label="Torna su" title="Torna su">↑</button>
+{% set progressTarget = ".article-body" %}
+{% include "components/reading-progress.njk" %}
 
 <script>
 // Applica subito la preferenza sul rail dei curated per evitare
@@ -207,21 +207,6 @@ try {
 
 <script>
 (function() {
-  var bar = document.getElementById('reading-progress');
-  var body = document.querySelector('.article-body');
-  if (!bar || !body) return;
-  function update() {
-    var bodyTop = body.getBoundingClientRect().top + window.scrollY;
-    var bodyHeight = body.offsetHeight;
-    var scrolled = window.scrollY - bodyTop;
-    var pct = Math.min(Math.max(scrolled / bodyHeight * 100, 0), 100);
-    bar.style.width = pct + '%';
-  }
-  window.addEventListener('scroll', update, { passive: true });
-  update();
-})();
-
-(function() {
   var shareBtn = document.getElementById('share-btn');
   var shareMenu = document.getElementById('share-menu');
   var shareCopy = document.getElementById('share-copy');
@@ -257,18 +242,6 @@ try {
     if (!shareBtn.contains(e.target) && !shareMenu.contains(e.target)) {
       shareMenu.hidden = true;
     }
-  });
-})();
-
-(function() {
-  var btn = document.getElementById('back-to-top');
-  if (!btn) return;
-  window.addEventListener('scroll', function() {
-    btn.classList.toggle('visible', window.scrollY > 400);
-  }, { passive: true });
-  btn.addEventListener('click', function() {
-    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
   });
 })();
 </script>

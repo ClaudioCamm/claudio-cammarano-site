@@ -917,6 +917,7 @@ module.exports = [
   },
   {
     name: "Latour, Bruno",
+    sameAs: ["https://www.wikidata.org/wiki/Q355237", "https://it.wikipedia.org/wiki/Bruno_Latour"],
     type: "persona",
     note: "Sociologo e filosofo francese (1947–2022), fra i fondatori dell'Actor-Network Theory con Michel Callon e John Law. La sua mossa decisiva è il principio di simmetria: nel descrivere un'azione non si accorda privilegio a priori agli esseri umani, perché ciò che produce un effetto — una persona, uno strumento, una norma, un microbo — entra nella rete allo stesso titolo, come attante. È una scelta metodologica e deliberatamente priva di una teoria del bene: l'ANT descrive reti, non dice come starci dentro. Nel sito è il riferimento fondativo del concetto di LLM come attante zero, e il termine di paragone con cui si misurano le ontologie relazionali non occidentali, che distribuiscono l'agency allo stesso modo ma vi aggiungono una norma dell'agire.",
     articles: [
@@ -1339,6 +1340,7 @@ module.exports = [
   },
   {
     name: "L'alba di tutto",
+    sameAs: ["https://www.wikidata.org/wiki/Q108922801", "https://en.wikipedia.org/wiki/The_Dawn_of_Everything"],
     type: "testo",
     note: "Libro di David Graeber e David Wengrow (2021), che rilegge la preistoria e la protostoria contro lo schema evolutivo canonico — dalle bande di cacciatori-raccoglitori allo Stato attraverso l'agricoltura — mostrando società che sperimentano stagionalmente forme politiche diverse, costruiscono città senza gerarchie riconoscibili e abbandonano deliberatamente assetti che altrove vengono descritti come inevitabili. Nel sito conta soprattutto per la tesi della critica indigena: alcune categorie centrali del pensiero politico europeo — libertà, uguaglianza, critica dell'autorità — si sarebbero formate dentro il confronto con interlocutori non europei, dalla voce di figure come Kandiaronk nelle relazioni dei missionari all'amministrazione cinese discussa come modello di selezione per merito. Le tesi del libro sono state in parte contestate e il dibattito storiografico resta aperto; l'impianto tiene, ed è fecondo. Se ha ragione anche solo in parte, il restringimento ottocentesco del canone non ha omesso materiale estraneo: ha amputato una relazione costitutiva.",
     citation: "GRAEBER, David, WENGROW, David, <em>The Dawn of Everything. A New History of Humanity</em>, London, Allen Lane, 2021 (trad. it. <em>L'alba di tutto. Una nuova storia dell'umanità</em>).",
@@ -1925,6 +1927,7 @@ module.exports = [
   },
   {
     name: "La condition postmoderne",
+    sameAs: ["https://www.wikidata.org/wiki/Q2186033", "https://it.wikipedia.org/wiki/La_condizione_postmoderna"],
     type: "testo",
     note: "Rapporto di Jean-François Lyotard (1979) sulla «condizione del sapere» nelle società avanzate. Conia la formula «incredulità verso le metanarrazioni». Nel sito è usato per mostrare come la diagnosi postmoderna sia stata rovesciata in strumento di potere dai populismi contemporanei — uso che Lyotard non aveva prescritto.",
     citation: "LYOTARD, Jean-François, <a href=\"https://openlibrary.org/books/OL4462200M/La_condition_postmoderne\"><em>La condition postmoderne: rapport sur le savoir</em></a>, Parigi, Les Éditions de Minuit, 1979 (trad. it. <em>La condizione postmoderna</em>, Milano, Feltrinelli, 1981).",
@@ -1944,6 +1947,7 @@ module.exports = [
   },
   {
     name: "Why Nations Fail",
+    sameAs: ["https://www.wikidata.org/wiki/Q7997840", "https://it.wikipedia.org/wiki/Perché_le_nazioni_falliscono"],
     type: "testo",
     note: "Libro di Daron Acemoglu e James Robinson (2012). Argomenta che prosperità e fallimento degli stati dipendono dalla qualità delle loro istituzioni — inclusive o estrattive. Nel sito è il quadro teorico per leggere le traiettorie degli stati analizzati nella serie «Ombre».",
     citation: "ACEMOGLU, Daron e James A. Robinson, <a href=\"https://openlibrary.org/works/OL16568759W/Why_Nations_Fail\"><em>Why Nations Fail: The Origins of Power, Prosperity, and Poverty</em></a>, New York, Crown Business, 2012.",
@@ -1953,6 +1957,7 @@ module.exports = [
   },
   {
     name: "The End of History and the Last Man",
+    sameAs: ["https://www.wikidata.org/wiki/Q1340341", "https://en.wikipedia.org/wiki/The_End_of_History_and_the_Last_Man"],
     type: "testo",
     related: [
       { name: "thymos", why: "Il libro che porta il concetto platonico del riconoscimento al centro dell'analisi politica contemporanea." }
@@ -2021,6 +2026,7 @@ module.exports = [
   },
   {
     name: "Anduril",
+    sameAs: ["https://www.wikidata.org/wiki/Q61918830", "https://en.wikipedia.org/wiki/Anduril_Industries"],
     type: "istituzione",
     related: [
       { name: "Palantir", why: "Le due aziende che hanno riportato Silicon Valley dentro la difesa, per strade diverse." }
@@ -2032,6 +2038,7 @@ module.exports = [
   },
   {
     name: "Palantir",
+    sameAs: ["https://www.wikidata.org/wiki/Q2047336", "https://it.wikipedia.org/wiki/Palantir_Technologies"],
     type: "istituzione",
     related: [
       { name: "Karp, Alexander", why: "L'ha fondata con Thiel nel 2003 e nel 2026 ne ha scritto il manifesto politico." }
@@ -2091,6 +2098,7 @@ module.exports = [
   },
   {
     name: "77 Brigade",
+    sameAs: ["https://www.wikidata.org/wiki/Q4643592", "https://en.wikipedia.org/wiki/77th_Brigade_(United_Kingdom)"],
     related: [
       { name: "propaganda", why: "Un'unità per le «attività informative» che monitora il dibattito dei propri cittadini: informazione e difesa sullo stesso piano." }
     ],
@@ -2134,6 +2142,7 @@ module.exports = [
   },
   {
     name: "Cannes Lions",
+    sameAs: ["https://www.wikidata.org/wiki/Q621422", "https://it.wikipedia.org/wiki/Festival_internazionale_della_creatività_Leoni_di_Cannes"],
     type: "istituzione",
     note: "Il festival internazionale della creatività pubblicitaria. Nel sito è il palcoscenico in cui OpenAI si presenta come protagonista a sorpresa puntando a metà dei ricavi pubblicitari di Meta, e in cui — l'anno precedente — un Grand Prix è stato ritirato dopo la scoperta che il case study era stato manipolato con l'AI.",
     articles: [
@@ -2591,6 +2600,7 @@ module.exports = [
   },
   {
     name: "Karp, Alexander",
+    sameAs: ["https://www.wikidata.org/wiki/Q19560940", "https://it.wikipedia.org/wiki/Alex_Karp"],
     type: "persona",
     note: "CEO di Palantir (1967). Nel sito è citato per il suo «manifesto» del 2026: l'élite ingegneristica di Silicon Valley ha un debito morale con il paese che ne ha reso possibile l'ascesa e un obbligo affermativo di partecipare alla difesa della nazione. Il sito condivide la premessa ma non le conclusioni.",
     articles: [
@@ -2724,6 +2734,7 @@ module.exports = [
   },
   {
     name: "Mengzi",
+    sameAs: ["https://www.wikidata.org/wiki/Q188903", "https://it.wikipedia.org/wiki/Mencio"],
     type: "persona",
     related: [
       { name: "Aristotele", why: "Due impianti della virtù che divergono sul meccanismo: il carattere nasce dall'abitudine o da disposizioni innate da coltivare." }

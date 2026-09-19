@@ -12,8 +12,8 @@ authors:
   - family-names: Cammarano
     given-names: Claudio
     orcid: "https://orcid.org/0009-0006-3690-7466"
-version: 1.0.0
-doi: 10.5281/zenodo.22843732
+version: 1.1.0
+doi: 10.5281/zenodo.22843731
 date-released: "2026-09-19"
 license: CC-BY-4.0
 url: "https://claudiocammarano.com/indice/"

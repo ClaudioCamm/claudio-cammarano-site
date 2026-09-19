@@ -10,7 +10,7 @@ Da compilare nel form di <https://zenodo.org/uploads/new>. **Il caricamento lo f
 | Title | Indice concettuale di claudiocammarano.com |
 | Authors | Cammarano, Claudio — ORCID 0009-0006-3690-7466 |
 | Description | *vedi sotto* |
-| Version | 1.0.0 |
+| Version | 1.1.0 |
 | Publication date | 2026-09-19 |
 | Language | Italian |
 | License | Creative Commons Attribution 4.0 International (CC BY 4.0) |
@@ -19,7 +19,7 @@ Da compilare nel form di <https://zenodo.org/uploads/new>. **Il caricamento lo f
 
 ## Description da incollare
 
-Vocabolario di 268 concetti — persone, teorie, testi, istituzioni, luoghi e paesi — citati con peso argomentativo negli scritti di Claudio Cammarano su claudiocammarano.com. Ogni voce porta una nota discorsiva, gli agganci all'entità reale su Wikidata e Wikipedia dove esistono (169 voci su 268), gli articoli in cui il concetto compare, e 66 legami dichiarati verso altri concetti, ciascuno con la ragione del legame.
+Vocabolario di 268 concetti — persone, teorie, testi, istituzioni, luoghi e paesi — citati con peso argomentativo negli scritti di Claudio Cammarano su claudiocammarano.com. Ogni voce porta una nota discorsiva, gli agganci all'entità reale su Wikidata e Wikipedia dove esistono (180 voci su 268), gli articoli in cui il concetto compare, e 148 legami dichiarati verso altri concetti, ciascuno con la ragione del legame.
 
 Il formato è JSON-LD con due vocabolari standard: SKOS per lo schema di concetti e schema.org per la coerenza con il markup delle pagine. Tre termini propri — il tipo editoriale della voce e la coppia che reifica la ragione di un legame — sono dichiarati e dereferenziabili su https://claudiocammarano.com/ns/.
 
@@ -29,7 +29,7 @@ Un aggancio esterno è stato accettato solo con corrispondenza esatta di etichet
 
 Il record è stato depositato con la descrizione in inglese, per leggibilità internazionale; il campo Language resta `Italian`, perché descrive la lingua delle note, non quella del record.
 
-A vocabulary of 268 concepts — people, theories, texts, institutions, places and countries — cited with argumentative weight in Claudio Cammarano's writing on claudiocammarano.com. Each entry carries a discursive note, links to the real-world entity on Wikidata and Wikipedia where they exist (169 entries out of 268), the articles in which the concept appears, and 66 asserted links to other concepts, each with the reason for the link.
+A vocabulary of 268 concepts — people, theories, texts, institutions, places and countries — cited with argumentative weight in Claudio Cammarano's writing on claudiocammarano.com. Each entry carries a discursive note, links to the real-world entity on Wikidata and Wikipedia where they exist (180 entries out of 268), the articles in which the concept appears, and 148 asserted links to other concepts, each with the reason for the link.
 
 The format is JSON-LD with two standard vocabularies: SKOS for the concept scheme and schema.org for consistency with the markup of the pages themselves. Three proprietary terms — the editorial type of an entry, and the pair that reifies the reason for a link — are declared and dereferenceable at https://claudiocammarano.com/ns/.
 

@@ -29,6 +29,8 @@ permalink: "/indice/"
 {% set istituzioni = collections.mergedConceptsIndex | filterByType("istituzione") %}
 {% set testi       = collections.mergedConceptsIndex | filterByType("testo") %}
 
+{% include "components/reading-progress.njk" %}
+
 <div class="indice-page">
 
   <header class="temi-page-header">
