@@ -91,6 +91,7 @@ module.exports = [
   {
     name: "Taleb, Nassim Nicholas",
     related: [
+      { name: "Antifragile", why: "Il libro in cui formalizza la distinzione fra sistemi fragili, robusti e antifragili." },
       { name: "cigni neri", why: "I cigni neri sono l'altra metà della sua epistemologia del rischio: le code spesse che la statistica gaussiana sottostima." },
       { name: "antifragilità", why: "L'antifragilità è il cuore della sua epistemologia del rischio, insieme ai cigni neri e allo skin in the game." }
     ],
@@ -498,6 +499,9 @@ module.exports = [
   },
   {
     name: "Droga, David",
+    related: [
+      { name: "pubblicità", why: "Distingue il lavoro creativo formulaico, che l'AI sostituirà, dall'originalità di gusto e strategia." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q17002782", "https://en.wikipedia.org/wiki/David_Droga"],
     note: "Fondatore dell'agenzia Droga5, ex CEO di Accenture Song. Nel sito è citato per la sua tesi provocatoria: l'AI sta per spazzare via il mercato della creatività mediocre, non quella di qualità — un argomento che distingue nettamente fra lavoro «formulaico e medio» (automatizzabile) e originalità di gusto, contesto e strategia (non automatizzabile, secondo lui).",
@@ -1644,6 +1648,9 @@ module.exports = [
 
   {
     name: "post-cognition",
+    related: [
+      { name: "tassonomia D1–D7", why: "La tassonomia è lo strumento con cui l'intervento esterno tipizza le claim: senza di essa post-cognition non ha su cosa operare." }
+    ],
     type: "teoria",
     lab: true,
     note: "Intervento esterno strutturato sugli output dei modelli linguistici per ricostruire gli impegni ontologici impliciti che il modello stesso non è in grado di rendere espliciti. Il termine, coniato nell'ambito del progetto <em>Validating AI</em>, designa un'operazione epistemica che precede la valutazione della verità: prima di chiedersi se una claim è vera o falsa, occorre stabilire di che tipo di claim si tratti.",
@@ -1979,6 +1986,9 @@ module.exports = [
 
   {
     name: "Le Fake News e il Marketing del Vero",
+    related: [
+      { name: "post-cognition", why: "Il precursore intellettuale: la domanda su come si produce e si commercia il vero, posta otto anni prima del progetto." }
+    ],
     type: "testo",
     lab: true,
     note: "Articolo di Claudio Cammarano pubblicato su Medium (The Abstract, 2018). Precursore intellettuale del progetto <em>Validating AI</em>: la domanda su come si produce e si commercializza la verità prefigura l'indagine successiva su come i modelli linguistici generino output epistemicamente non fondati.",
@@ -2044,6 +2054,9 @@ module.exports = [
   },
   {
     name: "NSDAP",
+    related: [
+      { name: "memoria storica", why: "La digitalizzazione delle schede di iscrizione da parte di Der Spiegel è ciò che riapre lo scontro sulla memoria." }
+    ],
     type: "istituzione",
     sameAs: ["https://www.wikidata.org/wiki/Q7320", "https://it.wikipedia.org/wiki/Partito_Nazionalsocialista_Tedesco_dei_Lavoratori"],
     note: "Partito nazionalsocialista tedesco (1920–1945). Nel sito è il riferimento storico della digitalizzazione, da parte di Der Spiegel con l'ausilio dell'AI, di milioni di schede di iscrizione rilasciate dagli Archivi Nazionali americani nel 2026: uno strumento che rende chiunque in grado di costruirsi un dossier su cosa ha fatto la propria famiglia sotto Hitler.",
@@ -2053,6 +2066,9 @@ module.exports = [
   },
   {
     name: "AfD",
+    related: [
+      { name: "memoria storica", why: "Contesta politicamente la memoria: il caso in cui la cultura tedesca del ricordo viene messa alla prova." }
+    ],
     type: "istituzione",
     sameAs: ["https://www.wikidata.org/wiki/Q6721203", "https://it.wikipedia.org/wiki/Alternative_f%C3%BCr_Deutschland"],
     note: "Alternative für Deutschland, partito di estrema destra tedesco. Nel sito è citato come attore della contestazione politica della memoria storica: un dirigente del partito, Björn Höcke, si è scagliato contro la digitalizzazione degli archivi NSDAP — mentre il partito stesso continua a guadagnare terreno in diverse regioni tedesche.",
@@ -2075,6 +2091,9 @@ module.exports = [
   },
   {
     name: "77 Brigade",
+    related: [
+      { name: "propaganda", why: "Un'unità per le «attività informative» che monitora il dibattito dei propri cittadini: informazione e difesa sullo stesso piano." }
+    ],
     type: "istituzione",
     note: "Unità dell'esercito britannico per le «attività informative», istituita nel 2015. Nel sito è citata per il suo ruolo nel monitoraggio del dibattito online dei cittadini britannici durante la pandemia (secondo una richiesta FOI del 2024) e per la sovrapposizione, nel caso Turner/Economist, tra comando militare di un'unità di information warfare e ruolo editoriale.",
     articles: [
@@ -2095,6 +2114,9 @@ module.exports = [
   },
   {
     name: "GS1",
+    related: [
+      { name: "GS1 Web Vocabulary", why: "L'organizzazione degli standard di identificazione è la fonte del vocabolario semantico." }
+    ],
     type: "istituzione",
     sameAs: ["https://www.wikidata.org/wiki/Q731100", "https://it.wikipedia.org/wiki/GS1"],
     note: "Organizzazione globale di standard per l'identificazione di prodotti (codici a barre) e la tracciabilità della filiera. Nel sito è la fonte del GS1 Web Vocabulary e il punto di vista — tramite la newsletter Tendenze di GS1 Italy — da cui arrivano più pezzi curated sull'infrastruttura semantica del commercio digitale.",
@@ -2120,6 +2142,9 @@ module.exports = [
   },
   {
     name: "OpenAI",
+    related: [
+      { name: "Cannes Lions", why: "Il festival è il palcoscenico da cui punta a metà dei ricavi pubblicitari di Meta in tre anni." }
+    ],
     type: "istituzione",
     sameAs: ["https://www.wikidata.org/wiki/Q21708200", "https://it.wikipedia.org/wiki/OpenAI"],
     note: "Nel sito compare nel caso Droga come l'azienda che punta a metà dei ricavi pubblicitari attuali di Meta in tre anni — piattaforma ad self-serve, test pubblicitari in Giappone, Ad Tools generativi — segno che il fronte AI vs. mercato pubblicitario tradizionale si sta aprendo prima e più aggressivamente di quanto raccontato altrove sul sito a proposito di Anthropic o Palantir.",
@@ -2130,6 +2155,9 @@ module.exports = [
   },
   {
     name: "Bending Spoons",
+    related: [
+      { name: "stock option", why: "Il pool da 51 milioni di azioni ai dipendenti è il meccanismo al centro del caso." }
+    ],
     type: "istituzione",
     sameAs: ["https://www.wikidata.org/wiki/Q96314827", "https://it.wikipedia.org/wiki/Bending_Spoons"],
     note: "Azienda tech italiana, quotata al Nasdaq a giugno 2026 con una valutazione di 20 miliardi di dollari. Nel sito è il caso studio di cosa potrebbe sbloccare per l'ecosistema startup italiano: non l'azienda in sé, ma il pool di 51 milioni di azioni distribuite ai dipendenti, potenziale innesco di una generazione di startup di seconda mano sul modello di Berlino e Londra.",
@@ -2139,6 +2167,9 @@ module.exports = [
   },
   {
     name: "Zalando",
+    related: [
+      { name: "Rocket Internet", why: "I due motori dell'effetto di seconda generazione berlinese: ex dipendenti che fondano startup." }
+    ],
     type: "istituzione",
     sameAs: ["https://www.wikidata.org/wiki/Q136570", "https://it.wikipedia.org/wiki/Zalando"],
     note: "E-commerce di moda tedesco, quotato. Nel sito è uno dei casi di riferimento — insieme a Rocket Internet — per misurare l'effetto «ex-dipendenti che fondano startup» a Berlino: 138 nuove startup da 24 unicorni tedeschi, l'81% rimaste nella stessa città.",
@@ -2259,6 +2290,9 @@ module.exports = [
   },
   {
     name: "Iran 1978–79",
+    related: [
+      { name: "Foucault, Michel", why: "Ci andò da corrispondente, entusiasta di una mobilitazione che rifiutava entrambi i blocchi: il caso del suo giudizio più sbagliato." }
+    ],
     type: "luogo",
     note: "Nel sito è caso studio della dialettica dell'antiilluminismo: Foucault si recò in Iran come corrispondente, entusiasmato da una mobilitazione di massa che rifiutava entrambe le metanarrazioni egemoni. Nel giro di pochi mesi il potere teocratico cancellò diritti, eliminò dissidenti, costruì uno degli apparati repressivi più brutali del dopoguerra.",
     articles: [
@@ -2277,6 +2311,9 @@ module.exports = [
   },
   {
     name: "Bologna",
+    related: [
+      { name: "Eco, Umberto", why: "Il DAMS e le istituzioni culturali che ha fondato: l'università come luogo che forma persone capaci di stare nel mondo, non accademici." }
+    ],
     type: "luogo",
     sameAs: ["https://www.wikidata.org/wiki/Q1891", "https://it.wikipedia.org/wiki/Bologna"],
     note: "Nel sito è lo sfondo dell'articolo su Umberto Eco: il DAMS, le istituzioni culturali fondate da Eco, l'università come luogo di formazione non di accademici ma di persone capaci di stare nel mondo e influenzarlo — «lo scopo non è creare Platone, ma Alcibiade». Bologna come laboratorio intellettuale del secondo Novecento italiano.",
@@ -2286,6 +2323,9 @@ module.exports = [
   },
   {
     name: "Bergamo / Val Brembana",
+    related: [
+      { name: "dual use", why: "Il Museo dei Tasso a Cornello: la storia delle poste come primo caso di infrastruttura a doppio uso." }
+    ],
     type: "luogo",
     note: "Nel sito è il punto di partenza della riflessione sul dual use tecnologico: il Museo dei Tasso a Cornello del Tasso, a venti chilometri da Bergamo, racconta come la storia postale — e quindi la storia della comunicazione moderna — sia sempre la storia di un dual use che nessuno ha pianificato.",
     articles: [
@@ -2444,6 +2484,9 @@ module.exports = [
   },
   {
     name: "Regno Unito",
+    related: [
+      { name: "77 Brigade", why: "Il paese in cui information warfare militare e giornalismo di difesa si sovrappongono, resa visibile da una nomina." }
+    ],
     type: "paese",
     sameAs: ["https://www.wikidata.org/wiki/Q145", "https://it.wikipedia.org/wiki/Regno_Unito"],
     note: "Nel sito è il contesto della 77 Brigade e della sovrapposizione fra information warfare militare e giornalismo di difesa, resa visibile dalla nomina di un suo ex comandante a defence editor dell'Economist.",
@@ -2453,6 +2496,9 @@ module.exports = [
   },
   {
     name: "Giappone",
+    related: [
+      { name: "industria dell'animazione", why: "Un mercato dell'anime quasi triplicato in un decennio, sostenuto da una manodopera che non viene più formata né pagata." }
+    ],
     type: "paese",
     sameAs: ["https://www.wikidata.org/wiki/Q17", "https://it.wikipedia.org/wiki/Giappone"],
     note: "Nel sito è il caso della crisi degli animatori: un mercato dell'anime quasi triplicato in un decennio fino a 19 miliardi di dollari, sostenuto da una manodopera cronicamente sottopagata e mal formata dopo lo smantellamento del sistema di apprendistato seguito al fallimento di Mushi Production nel 1973.",
@@ -2644,6 +2690,9 @@ module.exports = [
   },
   {
     name: "Kojève, Alexandre",
+    related: [
+      { name: "Fukuyama, Francis", why: "La fine della storia arriva a Fukuyama dalla lettura kojèviana di Hegel: il riconoscimento come motore che si esaurisce." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q354504", "https://it.wikipedia.org/wiki/Alexandre_Koj%C3%A8ve"],
     note: "Filosofo russo-francese (1902–1968). Le sue letture di Hegel agli anni Trenta hanno formato un'intera generazione di intellettuali europei (Aron, Bataille, Merleau-Ponty). Teorico della «fine della storia» ante litteram e dell'impero post-storico — il Lateinisches Reich come possibile risposta europea alla fine dei conflitti ideologici.",
@@ -2653,6 +2702,10 @@ module.exports = [
   },
   {
     name: "Kelly, Kevin",
+    related: [
+      { name: "The Technium", why: "Il blog porta il nome del suo concetto centrale: la tecnosfera come sistema vivente con tendenze proprie." },
+      { name: "metodo scientifico", why: "La sua carrellata storica mostra il metodo come stratificazione di strumenti, non come protocollo fisso." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q2707355", "https://it.wikipedia.org/wiki/Kevin_Kelly"],
     note: "Futurista e saggista americano (1952), co-fondatore di Wired, autore di Out of Control (1994), What Technology Wants (2010), The Inevitable (2016). Nel sito è citato per un saggio del 2006 sulle possibili evoluzioni del metodo scientifico — quattordici speculazioni che vent'anni dopo leggono come una descrizione del presente, soprattutto alla luce dell'AI.",
@@ -2707,6 +2760,9 @@ module.exports = [
   },
   {
     name: "Dondi, Ilaria Maria",
+    related: [
+      { name: "privilegio", why: "Chi ha potere ha sempre avuto accesso a supporto — ghostwriter, editor, assistenti — senza che si chiamasse delega." }
+    ],
     type: "persona",
     note: "Giornalista e autrice della newsletter «Anomalia. Umani in tempi artificiali». Nel sito è la voce che demistifica l'indignazione per l'uso dell'AI nel lavoro creativo: il supporto invisibile (ghostwriter, editor, speechwriter) è sempre stato accessibile al potere senza essere considerato imbroglio — l'AI ne è una versione più economica e accessibile a chi storicamente ne era escluso.",
     articles: [
@@ -2715,6 +2771,9 @@ module.exports = [
   },
   {
     name: "Columbro, Donata",
+    related: [
+      { name: "femminicidio", why: "Dimostra che la categoria statistica è costruita socialmente, e che contarla è un atto politico." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q110887039", "https://it.wikipedia.org/wiki/Donata_Columbro"],
     note: "Data journalist e autrice di «Perché contare i femminicidi è un atto politico» (2026) e della newsletter «Ti spiego il dato». Nel sito è la voce che dimostra il carattere costruito di tutte le categorie statistiche — dal femminicidio alla disoccupazione — e che distingue questa postura costruttivista legittima dall'uso negazionista della stessa tesi.",
@@ -2759,6 +2818,9 @@ module.exports = [
   },
   {
     name: "Klein, Ezra",
+    related: [
+      { name: "Thompson, Derek", why: "Coautori di Abundance (2025), il libro che ha rilanciato il dibattito sul progressismo dal lato dell'offerta." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q605", "https://it.wikipedia.org/wiki/Ezra_Klein"],
     note: "Giornalista e commentatore americano (1983), cofondatore di Vox, editorialista del NYT e conduttore dell'Ezra Klein Show. Nel sito è citato per il libro *Abundance* (2025, con Derek Thompson) e per il podcast che ne fa un bilancio a un anno dall'uscita: un caso in cui una certa idea della realtà — la scarsità come prodotto di scelte istituzionali, non di destino — ha cominciato a produrre effetti sul comportamento politico americano.",
@@ -2777,6 +2839,9 @@ module.exports = [
   },
   {
     name: "Ottaviani, Jacopo",
+    related: [
+      { name: "data journalism", why: "Lavora all'incrocio fra codice, dati e inchiesta: è la fonte del pipeline che il sito usa anche fuori dal giornalismo." }
+    ],
     type: "persona",
     note: "Giornalista e informatico italiano, senior strategist a Code for Africa e fellow del Reuters Institute. Premio per il data journalism, lavora all'incrocio tra codice, dati e storytelling su temi sociali urgenti. Nel sito è il caso che mostra il capitale semantico in azione: ha ricostruito in due giorni *Patrie Galere* (mappa delle morti nelle carceri italiane) che nel 2012 gli aveva richiesto tre settimane, usando il vibe coding strutturato — divide et impera applicato all'AI.",
     articles: [
@@ -2804,6 +2869,9 @@ module.exports = [
   },
   {
     name: "Askell, Amanda",
+    related: [
+      { name: "allineamento AI", why: "Guida la redazione della costituzione etica dei modelli Claude: l'allineamento come documento scritto, non come proprietà emergente." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q115661373", "https://en.wikipedia.org/wiki/Amanda_Askell"],
     note: "Filosofa di Anthropic, responsabile della costituzione etica dei modelli Claude. Ha guidato la redazione dell'ultima iterazione del documento di 78 pagine soprannominato internamente «soul doc», che integra principi kantiani, la Dichiarazione Universale dei Diritti Umani e i termini di servizio di Apple. Nel sito è la figura che incarna la svolta: la filosofia come infrastruttura tecnica interna alle AI labs, non consulenza esterna.",
@@ -2813,6 +2881,9 @@ module.exports = [
   },
   {
     name: "Hui, Yuk",
+    related: [
+      { name: "cosmotecnica", why: "Teorico della cosmotecnica: ogni civiltà produce una tecnica radicata nella propria cosmologia." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q106863978", "https://en.wikipedia.org/wiki/Yuk_Hui"],
     note: "Filosofo cinese-hongkonghese (1985), docente alla City University of Hong Kong. Teorico della cosmotecnica: ogni civiltà produce una tecnica radicata nella propria cosmologia, contro l'idea che la tecnologia moderna sia universale e neutra. Autore di *Recursivity and Contingency* (2019) e *Art and Cosmotechnics* (2021). Nel sito è la fonte del concetto che ridefinisce la competizione AI sino-americana come scontro tra cosmologie, non solo tra modelli.",
@@ -2845,6 +2916,9 @@ module.exports = [
   },
   {
     name: "Brose, Christian",
+    related: [
+      { name: "armi autonome", why: "Il suo ragionamento porta al punto terminale: la normativa non proibisce l'automazione della kill chain." }
+    ],
     type: "persona",
     note: "Presidente e chief strategy officer di Anduril. Ex capo del personale della Commissione per le Forze Armate del Senato americano, poi direttore delle politiche al Pentagono. Autore di The Kill Chain (2020). Nel sito è la voce opposta ad Amodei sul rapporto tra aziende tecnologiche e apparato militare: o ci si fida del governo democraticamente eletto per decidere come usare la tecnologia, o si esce dal business. Ha definito il rifiuto di Anthropic di lavorare con il Pentagono «where Anthropic went wrong».",
     articles: [
@@ -2853,6 +2927,9 @@ module.exports = [
   },
   {
     name: "Casey Newton",
+    related: [
+      { name: "Platformer", why: "Ha fondato la newsletter nel 2021 con Zoe Schiffer." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q78906087", "https://en.wikipedia.org/wiki/Casey_Newton"],
     note: "Giornalista tecnologico americano, co-fondatore con Zoe Schiffer di Platformer (2021). In precedenza ha scritto di tech per The Verge. Nel sito è l'autore di riferimento per il giornalismo sulle piattaforme e sulla governance tech: cultura interna delle grandi aziende, moderazione dei contenuti, rapporto tra piattaforme e democrazia.",
@@ -2921,6 +2998,9 @@ module.exports = [
   },
   {
     name: "Morton, Timothy",
+    related: [
+      { name: "iperoggetti", why: "Introduce il termine in Iperoggetti (2013): entità reali che eccedono la finestra percettiva umana." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q4854071", "https://it.wikipedia.org/wiki/Timothy_Morton"],
     note: "Filosofo americano (1968). Autore di *Iperoggetti* (2013), introduce il concetto di hyperobject per descrivere entità — cambiamento climatico, totalità dei materiali nucleari, biosfera — così distribuite nel tempo e nello spazio da eccedere qualsiasi localizzazione percettiva. Nel sito compare come chiave per leggere perché i problemi sistemici resistono all'elaborazione cognitiva ordinaria e restano vulnerabili a narrazioni di semplificazione individuale.",
@@ -2981,6 +3061,9 @@ module.exports = [
 
   {
     name: "Bourdieu, Pierre",
+    related: [
+      { name: "capitale simbolico", why: "Il concetto è suo; nel sito viene preso in prestito e piegato a un uso che Bourdieu non gli aveva dato." }
+    ],
     type: "persona",
     sameAs: ["https://www.wikidata.org/wiki/Q156268", "https://it.wikipedia.org/wiki/Pierre_Bourdieu"],
     note: "Sociologo francese (1930–2002), teorico del capitale simbolico e della distinzione sociale. Nel sito il concetto viene preso in prestito e piegato a un uso diverso dal suo: non la conversione fra forme di capitale, ma la regola di composizione quando un soggetto politico cambia direzione — un nuovo investimento simbolico non si somma al vecchio, lo compone, con una risultante più corta di entrambi.",
