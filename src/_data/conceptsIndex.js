@@ -600,6 +600,7 @@ module.exports = [
   {
     name: "Tit-for-Tat",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q1367487"],
     related: [
       { name: "The Evolution of Cooperation", why: "La strategia che vince il torneo raccontato nel libro: quattro righe, nessun rancore." }
     ],
@@ -637,6 +638,7 @@ module.exports = [
   {
     name: "two-level games",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q7858724"],
     note: "Modello di Putnam (1988): ogni negoziazione internazionale è in realtà due giochi simultanei — uno sul tavolo estero, uno domestico. Il leader deve chiudere un accordo ratificabile dalla propria constituency. Nel sito è applicato ai casi Trump/Zelensky/Xi per mostrare come la struttura interna vincola la politica estera.",
     articles: [
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
@@ -647,6 +649,7 @@ module.exports = [
   {
     name: "antifragilità",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q18352621"],
     note: "Concetto di Taleb: i sistemi antifragili traggono beneficio dallo stress e diventano più forti (oltre la dicotomia fragile/robusto). Richiede architettura distribuita: tante unità semi-indipendenti, fallimento localizzato, skin in the game. Nel sito è il metro per misurare la vulnerabilità delle democrazie: il caos indotto satura tutti i livelli simultaneamente e impedisce l'antifragilità.",
     articles: [
       { title: "Il rumore a Beirut", url: "/writings/2026-04-09-il-rumore-a-beirut/" }
@@ -655,6 +658,7 @@ module.exports = [
   {
     name: "cigni neri",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q2074634"],
     note: "Concetto di Taleb: eventi rari, imprevedibili e di grande impatto che le statistiche tradizionali basate su distribuzioni gaussiane sistematicamente sottostimano. I fenomeni sociali ed economici hanno «code spesse». Nel sito è il presupposto epistemico per cui l'architettura antifragile è necessaria: il caos non è anomalia, è struttura.",
     articles: [
       { title: "Il rumore a Beirut", url: "/writings/2026-04-09-il-rumore-a-beirut/" }
@@ -663,6 +667,7 @@ module.exports = [
   {
     name: "dottrina Gerasimov",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q28666367"],
     related: [
       { name: "Putin, Vladimir", why: "Putin pratica le misure attive; la dottrina arriva dopo e le mette in forma." }
     ],
@@ -679,6 +684,7 @@ module.exports = [
   {
     name: "controllo riflessivo",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q30893759"],
     note: "Concetto sviluppato da Vladimir Lefebvre negli anni Sessanta e militarizzato dalla dottrina russa: la capacità di indurre un avversario a prendere «volontariamente» decisioni favorevoli ai propri obiettivi, fornendogli informazioni selettive. Nel sito è la forma cognitiva della guerra ibrida: non si attacca il canale, si manipola il contenuto semantico.",
     articles: [
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
@@ -694,6 +700,7 @@ module.exports = [
       { name: "monitorabilità", why: "Un modello può comportarsi bene e restare opaco: l'allineamento misura le azioni, la monitorabilità chiede di vedere il ragionamento." }
     ],
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q24882728"],
     note: "Il problema di assicurare che i sistemi di intelligenza artificiale perseguano obiettivi coerenti con i valori umani, anche man mano che diventano più capaci. Nel sito è il quadro implicito che motiva le scelte di Anthropic: rifiutare contratti militari dipende dall'importanza di mantenere il controllo sullo sviluppo dell'AI a lungo termine.",
     articles: [
       { title: "Why Are Palantir and OpenAI Scared of Alex Bores?", url: "/curated/2026-04-21-bores-palantir-openai-regulation-nyt/", _source: "curated" },
@@ -739,6 +746,7 @@ module.exports = [
   {
     name: "dual use",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q1262529"],
     related: [
       { name: "DARPA", why: "L'agenzia è la fabbrica storica del doppio uso: dai suoi progetti militari escono tecnologie civili." }
     ],
@@ -775,6 +783,7 @@ module.exports = [
   {
     name: "dilemma di Collingridge",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q1109683"],
     related: [
       { name: "dual use", why: "La classificazione dual use arriva quando la tecnologia è già radicata: il dilemma applicato alla normativa." }
     ],
@@ -792,6 +801,7 @@ module.exports = [
       { name: "dual use", why: "Se una tecnologia è general purpose abita per costruzione entrambi i domini: il dual use non è un caso speciale ma la condizione normale." }
     ],
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q5532384"],
     note: "Tecnologie (Bresnahan & Trajtenberg, 1995) che migliorano nel tempo, si applicano pervasivamente a tutti i settori e generano innovazioni complementari su scala sistemica: stampa, vapore, elettricità, Internet, AI. Nel sito è la categoria che rende inapplicabile la distinzione civile/militare: una GPT abita entrambi i domini per costruzione.",
     articles: [
       { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
@@ -809,6 +819,7 @@ module.exports = [
   {
     name: "iperoggetti",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q106651271"],
     note: "Categoria filosofica introdotta da Timothy Morton in *Iperoggetti* (2013): entità reali ma non localizzabili, distribuite su scale spaziotemporali che eccedono la finestra percettiva umana. Il cambiamento climatico è l'esempio paradigmatico — esiste, produce effetti, ma non si lascia vedere tutto intero da nessun punto di osservazione. Nel sito la categoria si connette alla distinzione Sistema 1/Sistema 2 di Kahneman: gli iperoggetti sono strutturalmente impervi al ragionamento intuitivo e faticano anche con quello analitico. Questo spiega perché le narrative di semplificazione individuale — il carbon footprint calculator di BP — trovano così poca resistenza cognitiva.",
     articles: [
       { title: "The Climate Crisis Is Bigger Than Your Footprint", url: "/curated/2026-08-31-stokes-carbon-footprint-bp-mitpress/", _source: "curated" }
@@ -829,6 +840,7 @@ module.exports = [
   {
     name: "WEIRD",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q63372322"],
     note: "Acronimo (Western, Educated, Industrialized, Rich, Democratic) coniato dagli psicologi Henrich, Heine e Norenzayan (2010) per descrivere il campione implicito della ricerca scientifica e del design tecnologico. La stragrande maggioranza degli studi psicologici, cognitivi e medici — e degli strumenti digitali — è progettata per e testata su popolazioni WEIRD, che rappresentano meno del 15% dell'umanità. Nel sito è il concetto che mette in questione il presupposto implicito dell'infrastruttura cognitiva: chi è l'utente che immaginiamo?",
     articles: [
       { title: "How dementia is being defeated", url: "/curated/2026-07-09-economist-dementia-defeated/", _source: "curated" },
@@ -838,6 +850,7 @@ module.exports = [
   {
     name: "disuguaglianze",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q5431887"],
     note: "Le disuguaglianze strutturali — di reddito, istruzione, accesso alle cure, geografia — come variabile esplicativa trasversale. Nel sito entrano come correttivo al paradigma tecnologico dominante: gli strumenti cognitivi (AI inclusa) sono progettati per chi è già avvantaggiato, e rischiano di ampliare i divari invece di ridurli. La salute cognitiva in vecchiaia è un caso emblematico: il declino della demenza nei paesi ricchi convive con proiezioni invariate di triplicazione dei casi nel resto del mondo.",
     articles: [
       { title: "How dementia is being defeated", url: "/curated/2026-07-09-economist-dementia-defeated/", _source: "curated" }
@@ -846,6 +859,7 @@ module.exports = [
   {
     name: "extended mind",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q25051581"],
     related: [
       { name: "embodied mind", why: "Due modi opposti di uscire dal cognitivismo: la mente esce dal cranio o affonda nel corpo." }
     ],
@@ -859,6 +873,7 @@ module.exports = [
   {
     name: "embodied mind",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q1335050"],
     related: [
       { name: "The Embodied Mind", why: "Il libro del 1991 è dove il paradigma prende la forma con cui il sito lo usa." }
     ],
@@ -910,6 +925,7 @@ module.exports = [
   {
     name: "free-energy principle",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q17014702"],
     note: "Teoria di Karl Friston: il cervello è un sistema di previsione bayesiana che minimizza continuamente l'errore tra il modello interno del mondo e gli input sensoriali in arrivo. Nel sito è citato per mostrare che anche le teorie più potenti della cognizione biologica sono modelli, non prove di coscienza — e non colmano il divario con i LLM.",
     articles: [
       { title: "La differenza fra Claude e le mie gatte", url: "/writings/2026-04-30-la-differenza-fra-claude-e-le-mie-gatte/" }
@@ -1007,6 +1023,7 @@ module.exports = [
   {
     name: "ermeneutica del sospetto",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q3823131"],
     note: "Espressione di Paul Ricœur per descrivere l'approccio di Marx, Nietzsche e Freud: smascherare le ideologie dietro il testo. Nel sito è citata come il metodo dell'ala accademica progressista che ha ridotto la tradizione umanistica a documento dell'oppressione, fornendo involontariamente copertura a chi voleva trasformare l'università in business school.",
     articles: [
       { title: "Salveremo le humanities", url: "/writings/2026-03-15-salveremo-le-humanities/" },
@@ -1048,6 +1065,7 @@ module.exports = [
   {
     name: "ragione comunicativa",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q4355373"],
     note: "Concetto di Habermas: ogni volta che argomentiamo presupponiamo già norme condivise — la struttura pragmatica dell'argomentazione richiede che la migliore argomentazione possa prevalere sulla forza. Nel sito è l'universale minimo che il relativismo non può abolire senza autocontraddirsi: argomentare contro l'argomentazione è già argomentare.",
     articles: [
       { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" },
@@ -1057,6 +1075,7 @@ module.exports = [
   {
     name: "vetocrazia",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q7923762"],
     note: "Termine coniato da Francis Fukuyama in *Political Order and Political Decay* (2014): un sistema istituzionale in cui i punti di veto si sono moltiplicati al punto che nessuno riesce più a decidere, e la legittimità viene cercata nella produzione di altre regole invece che nei risultati. Non è un eccesso di democrazia ma una sua degenerazione procedurale: le stesse garanzie che limitano il potere arbitrario finiscono per impedire anche l'azione legittima, e questo vale indifferentemente per un'agenda conservatrice o progressista. Nel sito è il concetto che tiene insieme due fronti altrimenti distanti: la paralisi amministrativa americana — dieci anni di permessi per una linea di trasmissione elettrica, un programma lunare che dal 2004 non è ancora arrivato — e il proceduralismo europeo, dove ventisette regimi regolatori sovrapposti impediscono il mercato unico che era il punto di partenza. La conseguenza politica è che l'insofferenza per la regola non nasce solo dall'autoritarismo: nasce anche da istituzioni che hanno smesso di produrre esiti.",
     articles: [
       { title: "Was Francis Fukuyama Right All Along?", url: "/curated/2026-09-18-ezra-klein-fukuyama-nyt/", _source: "curated" }
@@ -1144,6 +1163,7 @@ module.exports = [
   {
     name: "piccola impresa",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q1109680"],
     note: "Nel sito è il contesto dimensionale in cui si gioca il problema della successione aziendale nelle industrie creative: scale ridotte, dipendenza dalla figura fondatrice, assenza delle strutture di governance che attutiscono il passaggio generazionale nelle organizzazioni più grandi.",
     articles: [
       { title: "Podcast: la successione nelle aziende creative", url: "/curated/2026-04-09-podcast-successione-aziende-creative/", _source: "curated" },
@@ -1293,6 +1313,7 @@ module.exports = [
   {
     name: "GEO",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q134083964"],
     note: "Generative Engine Optimization: l'equivalente della SEO per i motori di ricerca generativi. Nel sito è il problema pratico di chi si lamenta di non comparire nelle risposte AI senza sapere che, spesso, il blocco bot di Cloudflare attivo di default restituisce 403 proprio ai crawler che vorrebbe accogliere.",
     articles: [
       { title: "Le tre IA del Netcomm Forum", url: "/curated/2026-05-21-diegoli-tre-ia-netcomm-forum/", _source: "curated" }
@@ -1330,6 +1351,7 @@ module.exports = [
   {
     name: "canone",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q861437"],
     related: [
       { name: "università", why: "Chi decide cosa entra nel canone decide anche che cosa l'istituzione insegnerà come necessario." }
     ],
@@ -1411,6 +1433,7 @@ module.exports = [
   {
     name: "costruttivismo",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q179270"],
     related: [
       { name: "ontologia sociale", why: "L'ontologia sociale dà al costruttivismo la distinzione che gli manca: come esistono le cose istituite." }
     ],
@@ -1515,6 +1538,7 @@ module.exports = [
   {
     name: "patto sociale",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q1326430"],
     note: "L'accordo implicito tra Stato e cittadini che definisce i termini della legittimità politica: obbedienza e ordine in cambio di protezione, benessere e opportunità. Nel sito è il quadro con cui leggere la Cina di fronte all'automazione: il lavoro non è solo questione economica ma fondamento del patto tra il Partito e la popolazione — 12,7 milioni di neolaureati espulsi dal mercato dal lavoro degli agenti AI non è solo un dato occupazionale, è una pressione sulla tenuta del consenso.",
     articles: [
       { title: "IA, bulloni e umanesimo", url: "/curated/2026-06-28-pieranni-ia-bulloni-umanesimo-ilpartito/", _source: "curated" }
@@ -1532,6 +1556,7 @@ module.exports = [
   {
     name: "dati come beni comuni",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q26759606"],
     note: "L'idea che i dati — specialmente quelli prodotti collettivamente da comunità, territori e archivi culturali — debbano essere governati come beni comuni anziché come risorse estrattive di soggetti privati. Nel sito emerge dalla lettura di *Magnifica Humanitas* da parte di Boccia Artieri: la privacy individuale non basta, serve una risposta collettiva che includa infrastrutture pubbliche, dataset aperti e verificabili, forme cooperative di produzione tecnologica. Dialoga con il tema del capitale semantico e con la critica all'economia dell'estrazione.",
     articles: [
       { title: "Magnifica Humanitas: le nuove terre rare del potere", url: "/curated/2026-06-17-boccia-artieri-magnifica-humanitas-substack/", _source: "curated" }
@@ -1605,6 +1630,7 @@ module.exports = [
   {
     name: "iperattenzione",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q5957651"],
     related: [
       { name: "Hayles, Katherine", why: "Hayles distingue iperattenzione e attenzione profonda come due modalità cognitive, non come un deficit e la sua cura." },
       { name: "mezza attenzione", why: "Due modalità che convivono: lo switching rapido fra stimoli e l'ascolto stratificato in sottofondo." }
@@ -1642,6 +1668,7 @@ module.exports = [
   {
     name: "armi autonome",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q25378861"],
     note: "Sistemi d'arma che identificano e ingaggiano bersagli senza intervento umano diretto. Nel sito è il punto terminale del ragionamento di Brose: la normativa del Pentagono non proibisce esplicitamente l'automazione della kill chain, e in conflitti protratti ci si avvicina a sistemi che «vanno finché trovano qualcosa da colpire». Dialoga con il problema del rubber stamp — un umano tecnicamente nel loop che in pratica non può mai dire no — e con la distinzione tra uso difensivo (bar più basso) e offensivo (bar più alto, ma non proibito).",
     articles: [
       { title: "Our Military Is Built for the Wrong Century", url: "/curated/2026-05-28-brose-anduril-military-drones-nyt/", _source: "curated" }
@@ -1663,6 +1690,7 @@ module.exports = [
   {
     name: "epistemia",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q138835467"],
     lab: true,
     note: "Illusione di conoscenza che emerge nell'interazione con i modelli linguistici: si esce dallo scambio con la sensazione di sapere, senza che si sia prodotta conoscenza. Il termine è di Loru et al. (PNAS 2025) e Quattrociocchi et al. (2025). Non è una proprietà del modello ma un effetto su chi lo usa — il modello vi contribuisce in quanto privo di metacognizione, incapace di valutare lo statuto epistemico di ciò che afferma. È la condizione che <em>post-cognition</em> si propone di contrastare.",
     articles: [
@@ -1681,6 +1709,7 @@ module.exports = [
   {
     name: "atti illocutori",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q1599204"],
     lab: true,
     note: "Categoria della teoria degli atti linguistici (Austin 1962) che designa ciò che si fa nel dire qualcosa — affermare, promettere, ordinare, dichiarare. Nel progetto <em>Validating AI</em>, la classificazione illocutoria costituisce il Pre-Step 0: verificare che un enunciato sia un'asserzione è condizione necessaria prima di applicare la tassonomia D1–D7.",
     articles: [
@@ -1759,6 +1788,7 @@ module.exports = [
   {
     name: "narrazione interattiva",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q2903135"],
     note: "Forma narrativa in cui il lettore-giocatore partecipa attivamente alla costruzione della storia attraverso scelte, enigmi o movimenti nello spazio. Nel sito è il concetto-ombrello che copre l'evoluzione dall'avventura grafica classica (punta e clicca, anni '80-'90) alle forme contemporanee: story-driven games (Telltale, Quantic Dream), walking simulator (*Dear Esther*, *Phoenix Springs*), serie animate interattive (*Dispatch*). Il punto teorico rilevante è che la narrazione interattiva ha progressivamente separato le due componenti originarie dell'adventure game — gli enigmi e la storia — privilegiando la seconda.",
     articles: [
       { title: "Una lunga avventura: storia degli adventure game", url: "/curated/2026-06-11-machera-adventure-game-linkideeperlatv/", _source: "curated" }
@@ -1771,6 +1801,7 @@ module.exports = [
       { name: "successione aziendale", why: "Nelle aziende creative piccole la successione non somiglia né all'impresa familiare né alla corporation: dipende dalla figura fondatrice." }
     ],
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q969040"],
     note: "Termine dell'economia della cultura che indica i settori in cui la produzione artistica e culturale si combina con logiche di sfruttamento commerciale: editoria, cinema, televisione, videogiochi, musica, merchandise. Nel sito funziona come lente strutturale — non per classificare contenuti ma per osservare le trasformazioni dell'industria che li produce e distribuisce: come le piattaforme (BookTok, algoritmi di raccomandazione) hanno ridisegnato la scoperta e invertito il potere negoziale tra autori indie e editori tradizionali; come i fandom si sono trasformati da audience passive in ecosistemi economici con merch, retreat ed eventi; come la logica dell'IP spinge ogni successo editoriale o videoludico verso l'adattamento cinematografico, spesso con risultati deludenti; come i capitali sovrani (Arabia Saudita) e il private equity entrano come acquirenti di infrastrutture culturali. Il filo comune non è il contenuto delle opere ma la struttura economica e distributiva che le produce, le fa circolare e le monetizza.",
     articles: [
       { title: "La formula dell’autenticità", url: "/writings/2026-08-23-la-formula-dellautenticita/" },
@@ -1786,6 +1817,7 @@ module.exports = [
   {
     name: "Hunhu/Ubuntu",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q213843"],
     related: [
       { name: "cosmotecnica", why: "Ogni cosmologia produce la propria idea di persona, e da lì una tecnica che con altre cosmologie collide." }
     ],
@@ -1810,6 +1842,7 @@ module.exports = [
   {
     name: "neghentropia",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q252552"],
     related: [
       { name: "guadagno epistemico", why: "Il guadagno corregge la neghentropia, che da sola premierebbe il testo peggiore immaginabile." },
       { name: "A Mathematical Theory of Communication", why: "La neghentropia si appoggia al formalismo che Shannon costruisce nel 1948." }
@@ -1823,6 +1856,7 @@ module.exports = [
   {
     name: "legge della varietà richiesta",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q724967"],
     note: "Legge di Ashby: la varietà del regolatore deve eguagliare quella del sistema regolato — solo varietà distrugge varietà. Nel sito ha due usi complementari. Dal lato del singolo testo, spiega perché la selezione (scelta della domanda, del taglio, di ciò che resta fuori) sia l’operazione che rende un corpus adeguato a un problema. Dal lato del sistema, spiega perché la contrazione della varianza fra i prior degli autori attivi in un campo sia il solo effetto dell’AI generativa che meriti davvero allarme.",
     articles: [
       { title: "La formula dell’autenticità", url: "/writings/2026-08-23-la-formula-dellautenticita/" }
@@ -1972,6 +2006,7 @@ module.exports = [
   {
     name: "The Embodied Mind",
     type: "testo",
+    sameAs: ["https://www.wikidata.org/wiki/Q139812985"],
     note: "Libro di Francisco Varela, Evan Thompson ed Eleanor Rosch (1991). Propone la cognizione come radicata nel corpo e nell'esperienza vissuta, contro il cognitivismo classico. Nel sito è il testo che «cambia statuto» davanti a un LLM: da posizione tra altre diventa criterio di distinzione tra mente biologica e macchina.",
     citation: "VARELA, Francisco J., Evan Thompson e Eleanor Rosch, <a href=\"https://openlibrary.org/books/OL26933223M/The_embodied_mind\"><em>The Embodied Mind: Cognitive Science and Human Experience</em></a>, Cambridge (MA), MIT Press, 1991.",
     articles: [
@@ -3085,6 +3120,7 @@ module.exports = [
   {
     name: "capitale simbolico",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q1751638"],
     note: "Concetto di Bourdieu, ripreso nel sito con un'estensione che non è sua: prendere posizione politica è un investimento che si deposita senza attrito quando il soggetto è nuovo, ma mutare valori non aggiunge un nuovo investimento al vecchio — lo compone vettorialmente, con una risultante più corta e spesso deviata verso la posizione da cui si voleva uscire. Il caso analizzato è la Lega, dal capitale nordista all'ambizione nazionale.",
     articles: [
       { title: "La mappa e il crinale", url: "/writings/2026-09-07-la-mappa-e-il-crinale/" }

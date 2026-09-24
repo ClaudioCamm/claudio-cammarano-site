@@ -226,6 +226,165 @@
       "paesi": [
         "Stati Uniti"
       ]
+    },
+    "LLM come attante zero": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "post-cognition": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "tassonomia D1–D7": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "delega epistemica": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "sovranità cognitiva": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "guadagno epistemico": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "piano dei regimi": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "Le Fake News e il Marketing del Vero": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "monitorabilità": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "dieta mediatica": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "marketing valoriale": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "trasferimenti monetari diretti": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "successione aziendale": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "capitale semantico": {
+      "modo": "teorico",
+      "paesi": [
+        "Italia"
+      ]
+    },
+    "two-pizza team": {
+      "modo": "teorico",
+      "paesi": [
+        "Stati Uniti"
+      ]
+    },
+    "memoria storica": {
+      "modo": "diretta",
+      "paesi": [
+        "Germania"
+      ]
+    },
+    "Netcomm Forum": {
+      "modo": "diretta",
+      "paesi": [
+        "Italia"
+      ]
+    },
+    "The Technium": {
+      "modo": "diretta",
+      "paesi": [
+        "Stati Uniti"
+      ]
+    },
+    "Stratechery": {
+      "modo": "diretta",
+      "paesi": [
+        "Stati Uniti",
+        "Taiwan"
+      ]
+    },
+    "Digital News Report": {
+      "modo": "diretta",
+      "paesi": [
+        "Regno Unito"
+      ]
+    },
+    "Libano / Beirut": {
+      "modo": "diretta",
+      "paesi": [
+        "Libano"
+      ]
+    },
+    "Iran 1978–79": {
+      "modo": "diretta",
+      "paesi": [
+        "Iran"
+      ]
+    },
+    "Taiwan / TSMC": {
+      "modo": "diretta",
+      "paesi": [
+        "Taiwan"
+      ]
+    },
+    "Bergamo / Val Brembana": {
+      "modo": "diretta",
+      "paesi": [
+        "Italia"
+      ]
+    },
+    "Mediterraneo come spazio strategico": {
+      "modo": "diretta",
+      "paesi": [
+        "Italia"
+      ]
+    },
+    "Dondi, Ilaria Maria": {
+      "modo": "diretta",
+      "paesi": [
+        "Italia"
+      ]
+    },
+    "Ottaviani, Jacopo": {
+      "modo": "diretta",
+      "paesi": [
+        "Italia"
+      ]
+    },
+    "Frey, Jennifer": {
+      "modo": "diretta",
+      "paesi": [
+        "Stati Uniti"
+      ]
+    },
+    "Brose, Christian": {
+      "modo": "diretta",
+      "paesi": [
+        "Stati Uniti"
+      ]
     }
-  }
+  },
+  "conio": [
+    "LLM come attante zero",
+    "post-cognition",
+    "tassonomia D1–D7",
+    "delega epistemica",
+    "sovranità cognitiva",
+    "guadagno epistemico",
+    "piano dei regimi",
+    "Le Fake News e il Marketing del Vero"
+  ]
 }
