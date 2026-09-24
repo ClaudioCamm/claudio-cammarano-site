@@ -61,7 +61,7 @@ def search(term, lang):
     return [{"id": x["id"], "label": x.get("label", ""), "description": x.get("description", "")}
             for x in d.get("search", [])]
 
-GEO_QUERY = """
+GEO_QUERY_UNUSED = """
 SELECT ?item ?prop ?country ?countryLabel WHERE {
   VALUES ?item { %s }
   { ?item wdt:P495 ?country . BIND("origine" AS ?prop) } UNION
@@ -99,21 +99,55 @@ def main():
     if cand:
         (OUT / "candidati.json").write_text(json.dumps(cand, ensure_ascii=False, indent=2))
 
-    geo = {c["name"]: {"qid": qid(c), "type": c["type"], "paesi": []} for c in con}
+    # Geografia via API wbgetentities (piu' affidabile del servizio SPARQL).
+    DIRECT = {"P495": "origine", "P27": "cittadinanza", "P17": "paese",
+              "P1001": "giurisdizione", "P2341": "diffusione"}
+    VIA_PLACE = {"P159": "sede", "P937": "luogo di lavoro", "P276": "luogo"}
+
+    def entities(ids, props):
+        res = {}
+        for i in range(0, len(ids), 50):
+            d = get(API, {"action": "wbgetentities", "ids": "|".join(ids[i:i + 50]),
+                          "props": props, "languages": "it|en", "format": "json"})
+            res.update(d.get("entities", {}))
+            time.sleep(0.5)
+        return res
+
+    def targets(ent, pid):
+        out = []
+        for cl in ent.get("claims", {}).get(pid, []):
+            v = cl.get("mainsnak", {}).get("datavalue", {}).get("value")
+            if isinstance(v, dict) and v.get("id"): out.append(v["id"])
+        return out
+
     by_q = {}
     for c in con: by_q.setdefault(qid(c), []).append(c["name"])
-    qs = list(by_q)
-    for i in range(0, len(qs), 15):
-        chunk = qs[i:i + 15]
-        d = get(SPARQL, {"query": GEO_QUERY % " ".join("wd:" + q for q in chunk), "format": "json"})
-        for b in d["results"]["bindings"]:
-            q = b["item"]["value"].rsplit("/", 1)[1]
-            row = {"rel": b["prop"]["value"], "qid": b["country"]["value"].rsplit("/", 1)[1],
-                   "label": b.get("countryLabel", {}).get("value", "")}
-            for n in by_q[q]:
-                if row not in geo[n]["paesi"]: geo[n]["paesi"].append(row)
-        print(f"  geo {min(i + 15, len(qs))}/{len(qs)}")
-        time.sleep(1)
+    items = entities(list(by_q), "claims")
+    print(f"  lette {len(items)} voci")
+    places = sorted({t for e in items.values() for p in VIA_PLACE for t in targets(e, p)})
+    place_ents = entities(places, "claims") if places else {}
+    rows = {}
+    for q, e in items.items():
+        lst = []
+        for p, rel in DIRECT.items():
+            lst += [(rel, t) for t in targets(e, p)]
+        for p, rel in VIA_PLACE.items():
+            for pl in targets(e, p):
+                lst += [(rel, t) for t in targets(place_ents.get(pl, {}), "P17")]
+        rows[q] = lst
+    countries = sorted({t for lst in rows.values() for _, t in lst})
+    labels = entities(countries, "labels") if countries else {}
+    def lab(q):
+        l = labels.get(q, {}).get("labels", {})
+        return (l.get("it") or l.get("en") or {}).get("value", q)
+    geo = {}
+    for q, names in by_q.items():
+        seen, paesi = set(), []
+        for rel, t in rows.get(q, []):
+            if (rel, t) not in seen:
+                seen.add((rel, t)); paesi.append({"rel": rel, "qid": t, "label": lab(t)})
+        for n in names:
+            geo[n] = {"qid": q, "type": next(c["type"] for c in con if c["name"] == n), "paesi": paesi}
     (OUT / "geo.json").write_text(json.dumps(geo, ensure_ascii=False, indent=2))
     print("Fatto: scripts/wikidata/out/candidati.json e geo.json")
 
