@@ -319,6 +319,28 @@ module.exports = function(eleventyConfig) {
     return Array.from(seriesSet).sort();
   });
 
+  // Schede serie per la home (audit 2026, L4): nome, numero di saggi,
+  // data dell'ultimo, ordinate dalla serie aggiornata piu' di recente.
+  eleventyConfig.addCollection("seriesCards", function(collectionApi) {
+    var map = {};
+    collectionApi.getFilteredByGlob("src/writings/*.md").forEach(function(item) {
+      var s = item.data.series;
+      if (!s) return;
+      var base = s.replace(/,\s+[IVXLCDM]+$/i, '').trim();
+      if (!map[base]) map[base] = { name: base, count: 0, latest: item.date };
+      map[base].count += 1;
+      if (item.date > map[base].latest) map[base].latest = item.date;
+    });
+    return Object.values(map).sort(function(a, b) { return b.latest - a.latest; });
+  });
+
+  // Prima frase di un testo (fino a . ? ! seguiti da spazio o fine).
+  eleventyConfig.addFilter("firstSentence", function(str) {
+    if (!str) return "";
+    var m = String(str).match(/^.*?[.?!](?=\s|$)/);
+    return m ? m[0] : String(str);
+  });
+
   // All unique Argomenti: category tags from writings + curated tags mapped
   // through curatedTagAliases.js onto their canonical Argomento name.
   eleventyConfig.addCollection("tagList", function(collectionApi) {

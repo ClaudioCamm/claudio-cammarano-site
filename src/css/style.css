@@ -7687,3 +7687,94 @@ a.home-path:hover {
     margin-top: 0;
   }
 }
+
+/* ===================================================================
+   Audit 2026 — L4 home italiana: serie, ultimo saggio, riga Lab
+   =================================================================== */
+.home-series {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--spacing-md);
+}
+.home-serie {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 4px 0 4px 14px;
+  border-left: 4px solid var(--color-primary);
+  text-decoration: none;
+  color: inherit;
+}
+.home-serie-name {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--color-text);
+}
+.home-serie-desc {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-text-light);
+}
+.home-serie-count {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+.home-serie:hover .home-serie-name,
+.home-serie:focus-visible .home-serie-name {
+  color: var(--color-primary);
+}
+
+.home-latest {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 12px;
+  margin: 0;
+}
+.home-latest-label,
+.home-lab-line-label {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-light);
+  text-decoration: none;
+}
+.home-latest-title {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+.home-latest-title:hover { text-decoration: underline; }
+.home-latest-meta {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--color-text-light);
+}
+
+.home-lab-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 12px;
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--color-text-light);
+}
+.home-lab-line-label { color: var(--color-lab-text); }
+.home-lab-line a:not(.home-lab-line-label) { color: var(--color-text); }
+
+@media (max-width: 600px) {
+  .home-serie-name { font-size: 18px; }
+  .home-latest-title { font-size: 19px; }
+}

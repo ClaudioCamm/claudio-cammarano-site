@@ -72,71 +72,32 @@ bodyClass: home
   <p class="home-abstract-hint"><a href="/newsletter/" data-newsletter-cta data-position="home_hero">The Abstract &#8212; la newsletter in inglese, un saggio al mese sull'economia dei contenuti &#8594;</a></p>
 </section>
 
-{# === 2 · IN EVIDENZA: rail con i metadati + titolo, standfirst, anteprima === #}
-{% set featured = collections.writings[0] %}
-{% if featured %}
-<section class="home-band home-band--featured" aria-label="In evidenza">
-  <div class="home-featured">
-    <div class="home-featured-rail">
-      {% if featured.data.series %}<div class="article-series-card-label"><a href="/serie/{{ featured.data.series | seriesBaseName | slugify }}/">{{ featured.data.series }}</a></div>{% endif %}
-      <div class="article-meta">
-        <span class="article-date">{{ featured.date | formatDate }}</span>
-        {% if featured.templateContent %}<span class="reading-time">{{ featured.templateContent | readingTime }}</span>{% endif %}
-        {% if featured.data.category %}
-          {% if featured.data.category.length %}
-            {% for cat in featured.data.category %}<a class="article-tag" href="/tag/{{ cat | slugify }}/">{{ cat }}</a>{% endfor %}
-          {% else %}
-            <a class="article-tag" href="/tag/{{ featured.data.category | slugify }}/">{{ featured.data.category }}</a>
-          {% endif %}
-        {% endif %}
-      </div>
-    </div>
-    <article class="article-card article-card--featured">
-      <h2><a href="{{ featured.url }}">{{ featured.data.title }}</a></h2>
-      {% if featured.data.description %}<p class="featured-description">{{ featured.data.description | mdInline | safe }}</p>{% endif %}
-      {% if featured.templateContent %}
-      <p class="article-excerpt">{{ featured.templateContent | excerpt(700) }}</p>
-      <p class="featured-continua"><a href="{{ featured.url }}">Continua a leggere &#8594;</a></p>
-      {% endif %}
-    </article>
+{# === 2 · LE SERIE (audit 2026, L4/B1): porte d'ingresso al corpus subito
+       dopo il claim. Ordinate dalla serie aggiornata piu' di recente. === #}
+{% if collections.seriesCards.length %}
+<section class="home-band home-band--series" aria-label="Le serie">
+  <div class="home-sec-head">
+    <h2 class="home-sec-title">Le serie</h2>
+  </div>
+  <div class="home-series">
+    {% for serie in collections.seriesCards %}
+    <a class="home-serie" href="/serie/{{ serie.name | slugify }}/">
+      <span class="home-serie-name">{{ serie.name }}</span>
+      {% if seriesDescriptions[serie.name] %}<span class="home-serie-desc">{{ seriesDescriptions[serie.name] | firstSentence }}</span>{% endif %}
+      <span class="home-serie-count">{{ serie.count }} {% if serie.count == 1 %}saggio{% else %}saggi{% endif %} &#8594;</span>
+    </a>
+    {% endfor %}
   </div>
 </section>
 {% endif %}
 
-{# === 3 · LAB: anteprima estesa della nota piu' recente + le successive === #}
-{% if collections.lab.length %}
-{% set labFeature = collections.lab[0] %}
-<section class="home-band home-band--lab" aria-label="Lab">
-  <div class="home-lab-head">
-    <div>
-      <span class="home-lab-label">Lab · Ricerca indipendente</span>
-      <p class="home-lab-intro">Dated, in-progress research notes. Not finished essays — the open work behind the research on post-cognition and the validation of language model outputs.</p>
-    </div>
-    <p class="home-lab-all"><a href="/lab/">Tutte le note &#8594;</a></p>
-  </div>
-  <div class="home-lab">
-    <article class="home-lab-feature">
-      <div class="article-meta">
-        <span class="article-date">{{ labFeature.data.date | formatDateEN }}</span>
-        {% if labFeature.data.project %}<span class="article-tag">{{ labFeature.data.project }}</span>{% endif %}
-        {% if labFeature.data.stage %}<span class="home-lab-stage">{{ labFeature.data.stage }}</span>{% endif %}
-      </div>
-      <h3><a href="{{ labFeature.url }}">{{ labFeature.data.title }}</a></h3>
-      {% if labFeature.data.description %}<p class="home-lab-abstract">{{ labFeature.data.description }}</p>{% endif %}
-      <p><a class="home-lab-go" href="{{ labFeature.url }}">Leggi la nota &#8594;</a></p>
-    </article>
-    {% if collections.lab.length > 1 %}
-    <div class="home-lab-more">
-      <p class="home-lab-more-title">Note recenti</p>
-      {% for nota in collections.lab | limit(4) %}{% if loop.index0 > 0 %}
-      <a class="home-lab-item" href="{{ nota.url }}">
-        <span class="home-lab-item-meta">{{ nota.data.date | formatDateEN }}{% if nota.data.stage %} · {{ nota.data.stage }}{% endif %}</span>
-        <span class="home-lab-item-title">{{ nota.data.title }}</span>
-      </a>
-      {% endif %}{% endfor %}
-    </div>
-    {% endif %}
-  </div>
+{# Qui andra' la carta "Dove guarda questo sito" (lotto L9). #}
+
+{# === 2b · ULTIMO SAGGIO: una riga, non piu' un blocco in evidenza === #}
+{% set featured = collections.writings[0] %}
+{% if featured %}
+<section class="home-band home-band--latest" aria-label="Ultimo saggio">
+  <p class="home-latest"><span class="home-latest-label">Ultimo saggio</span> <a class="home-latest-title" href="{{ featured.url }}">{{ featured.data.title }} &#8594;</a> <span class="home-latest-meta">{{ featured.date | formatDate }}{% if featured.templateContent %} · {{ featured.templateContent | readingTime }}{% endif %}</span></p>
 </section>
 {% endif %}
 
@@ -192,6 +153,15 @@ bodyClass: home
   </div>
   <p class="curated-all"><a href="/curated/">Tutte le segnalazioni &#8594;</a></p>
 </section>
+
+{# === LAB (audit 2026, L4/A6): una riga in fondo, con l'avviso che le note
+       sono in inglese. === #}
+{% if collections.lab.length %}
+{% set labFeature = collections.lab[0] %}
+<section class="home-band home-band--lab-line" aria-label="Lab">
+  <p class="home-lab-line"><a class="home-lab-line-label" href="/lab/">Lab</a> <span class="home-lab-line-text">Note di ricerca in corso, in inglese &middot; ultima: <a href="{{ labFeature.url }}" lang="en">{{ labFeature.data.title }} &#8594;</a></span></p>
+</section>
+{% endif %}
 
 {# === 6 · THE ABSTRACT: fascia orizzontale a tre voci === #}
 {% if abstract.posts and abstract.posts.length > 0 %}
