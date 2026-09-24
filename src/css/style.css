@@ -7778,3 +7778,14 @@ a.home-path:hover {
   .home-serie-name { font-size: 18px; }
   .home-latest-title { font-size: 19px; }
 }
+
+/* Audit 2026 — L3a: righe di raccordo nelle About */
+.about-invite {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-text-light);
+  margin: 0 0 var(--spacing-xs);
+}
+.about-invite + .about-cta { margin-top: var(--spacing-md); }
+.about-invite a { color: var(--color-primary); }
