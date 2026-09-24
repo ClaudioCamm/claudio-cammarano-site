@@ -658,6 +658,143 @@
     "ghostwriting": {
       "modo": "nessuna",
       "paesi": []
+    },
+    "ontologia sociale": {
+      "modo": "teorico",
+      "paesi": [
+        "Stati Uniti"
+      ]
+    },
+    "etica della virtù": {
+      "modo": "teorico",
+      "paesi": [
+        "Grecia"
+      ]
+    },
+    "thymos": {
+      "modo": "teorico",
+      "paesi": [
+        "Grecia",
+        "Stati Uniti"
+      ]
+    },
+    "vibe coding": {
+      "modo": "teorico",
+      "paesi": [
+        "Slovacchia",
+        "Canada"
+      ]
+    },
+    "need for cognition": {
+      "modo": "teorico",
+      "paesi": [
+        "Stati Uniti"
+      ]
+    },
+    "virtù intellettuale": {
+      "modo": "teorico",
+      "paesi": [
+        "Italia"
+      ]
+    },
+    "atti illocutori": {
+      "modo": "teorico",
+      "paesi": [
+        "Regno Unito"
+      ]
+    },
+    "industrie creative": {
+      "modo": "teorico",
+      "paesi": [
+        "Regno Unito"
+      ]
+    },
+    "metamodernismo": {
+      "modo": "teorico",
+      "paesi": [
+        "Paesi Bassi"
+      ]
+    },
+    "principio di Landauer": {
+      "modo": "teorico",
+      "paesi": [
+        "Germania",
+        "Stati Uniti"
+      ]
+    },
+    "divergenza di Kullback-Leibler": {
+      "modo": "teorico",
+      "paesi": [
+        "Stati Uniti"
+      ]
+    },
+    "privilegio": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "lavoro invisibile": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "femminicidio": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "costruttivismo": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "liberalismo": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "data journalism": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "patto sociale": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "guerra asimmetrica": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "dati come beni comuni": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "cognitive offloading": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "armi autonome": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "femminismo": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "narrazione interattiva": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "riserva cognitiva": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "scrittura": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "allineamento AI": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "disuguaglianze": {
+      "modo": "nessuna",
+      "paesi": []
     }
   },
   "conio": [
