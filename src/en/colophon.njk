@@ -1,0 +1,43 @@
+---
+layout: layouts/base.njk
+title: Colophon
+description: "How claudiocammarano.com works, for readers of the English side: languages, the AI-involvement notation, the concept dataset, licences."
+permalink: /en/colophon/
+lang: en
+---
+
+{# Audit 2026, A6: versione inglese breve del Colophon. Non e' una
+   traduzione integrale: tiene solo cio' che serve a chi legge il lato
+   inglese. BOZZA da rivedere. #}
+
+<div class="colophon-content">
+  <h1>Colophon</h1>
+  <p>How this site works, in brief. The full colophon, with the taxonomy and the rules for curated links, is <a href="/colophon/" lang="it" hreflang="it">in Italian</a>.</p>
+
+  <h2>Languages</h2>
+  <p>The site holds two bodies of work under one premise. The research programme on validating language model outputs is in English: the programme page, the Lab, the papers, the measuring bench. The essays, the curated links, the concept index and the map of the site are in Italian. The two languages do different work; the Italian archive is not a translation waiting to happen.</p>
+
+  <h2>The AI-involvement notation</h2>
+  <p>Every published text ends with a code declaring how far a language model was involved in producing it. The code measures how much of the published surface passed through a model, not the intellectual weight of the contribution. Responsibility for every published text is mine.</p>
+  <p><strong>First axis: the prose.</strong> Always present, one value, cumulative in the permissive sense.</p>
+  <dl class="colophon-codes">
+    {% for c in aiNotation.proseOrder %}
+    <dt><code>{{ c }}</code></dt>
+    <dd>{{ aiNotation.prose[c].label.en }}. {{ aiNotation.prose[c].desc.en }}</dd>
+    {% endfor %}
+  </dl>
+  <p><strong>Second axis: the apparatus.</strong> Optional, combinable.</p>
+  <dl class="colophon-codes">
+    {% for c in aiNotation.scopeOrder %}
+    <dt><code>{{ c }}</code></dt>
+    <dd>{{ aiNotation.scope[c].label.en }}. {{ aiNotation.scope[c].desc.en }}</dd>
+    {% endfor %}
+  </dl>
+  <p>The notation was introduced on 23 August 2026; codes on earlier pieces are declared reconstructions. The specification is a versioned page of its own, released under {{ aiNotation.spec.licenseLabel }} so that anyone can adopt it: <a href="/notazione/" lang="it" hreflang="it">the specification</a> <span class="en-lang-flag">(in Italian)</span>, and the machine-readable vocabulary in <a href="/notazione.json">notazione.json</a>.</p>
+
+  <h2>Data</h2>
+  <p>The concepts assigned to each piece form a dataset published as JSON-LD at <a href="/concetti.json">concetti.json</a>, with terms documented at <a href="/ns/">/ns/</a>, under CC BY 4.0 and deposited on Zenodo: <a href="{{ dataset.doi }}">{{ dataset.doi }}</a>.</p>
+
+  <h2>Licences and technology</h2>
+  <p>Content is copyright; reproduction is allowed with attribution. Downloadable teaching materials are released under CC BY-NC-SA 4.0. Static site built with Eleventy and published on Netlify; typeface Source Serif 4, served from this domain. No profiling cookies, no paywall, no recommendation algorithms. Statistics: Google Analytics 4, aggregated, only with consent.</p>
+</div>

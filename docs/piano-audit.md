@@ -12,7 +12,7 @@ Decisioni e piano completo: Project claude.ai "Costruire Il Mio Sito Personale",
 - [x] **L1** Correzioni rapide EN — tagline "Ideas, claims, checks"; riga "Paper α1, in preparation → Project status"; niente hreflang/translation fra le due home. **In sospeso:** il link D2 "Not a researcher? Try the quick test →" (il hero ha già un link al measuring bench: da chiarire con Claudio)
 - [x] **L2** Testata — nav (b) con gruppo "Esplora" (anche mobile); bottone "Research EN" / "Saggi IT" con tooltip
 - [x] **L3a** Raccordo — /da-qui/ "Che cosa c'è in inglese"; righe nelle About; riga inviti nell'About; riga IT su Lab (dipende da L2)
-- [ ] **L3b** Traduzioni — Episteme EN (bozza); Colophon EN breve
+- [x] **L3b** Traduzioni — /en/episteme-advisory/ e /en/colophon/ pubblicabili come BOZZE: attendono la revisione dei testi di Claudio prima del merge
 - [x] **L4** Home IT — serie dopo il claim; "Ultimo saggio" in una riga; Lab in fondo; spazio per la carta
 - [x] **L5** Tecnica — font self-hosted (Source Serif 4, Cormorant Garamond per le visualizzazioni dual-use); MathJax 3.2.2 ospitato in /vendor/mathjax/ (già caricato solo nei 4 saggi con formule); rimozione Decap CMS e del dns-prefetch jsDelivr
 - [ ] **L6** PDF/ePub — GitHub Action Pandoc; "Scarica: PDF · ePub"
