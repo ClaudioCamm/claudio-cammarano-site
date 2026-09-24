@@ -7632,3 +7632,58 @@ a.home-path:hover {
 .en-hero-status a {
   color: var(--color-primary);
 }
+
+/* ===================================================================
+   Audit 2026 — L2 testata
+   A2/A3: il bottone di lingua nomina l'altra opera ("Research EN" /
+   "Saggi IT"). A1b: Indice e Mappa in un gruppo "Esplora".
+   =================================================================== */
+.header-lang {
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+.header-lang small {
+  font-size: 0.82em;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  opacity: 0.65;
+  margin-left: 2px;
+}
+
+.nav-group-label {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.38);
+  padding: 0 4px 0 14px;
+  margin-left: 6px;
+  border-left: 1px solid rgba(255,255,255,0.25);
+  align-self: center;
+  line-height: 16px;
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  .nav-group-label {
+    display: block;
+    border-left: none;
+    border-top: 1px solid rgba(255,255,255,0.12);
+    margin: 6px 0 0;
+    padding: 12px var(--spacing-sm) 2px;
+    font-size: 10px;
+    line-height: 1.4;
+    align-self: stretch;
+    text-align: left;
+    color: rgba(255,255,255,0.5);
+  }
+  /* Cerca sta nel gruppo Esplora: niente filetto proprio */
+  .nav-group-label ~ .nav-search-item {
+    border-top: none;
+    margin-top: 0;
+  }
+}

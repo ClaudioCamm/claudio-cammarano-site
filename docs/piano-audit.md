@@ -10,7 +10,7 @@ Decisioni e piano completo: Project claude.ai "Costruire Il Mio Sito Personale",
 ## Stato
 - [x] **L0** Misure di partenza e piano nel repo
 - [x] **L1** Correzioni rapide EN — tagline "Ideas, claims, checks"; riga "Paper α1, in preparation → Project status"; niente hreflang/translation fra le due home. **In sospeso:** il link D2 "Not a researcher? Try the quick test →" (il hero ha già un link al measuring bench: da chiarire con Claudio)
-- [ ] **L2** Testata — nav (b) con gruppo "Esplora" (anche mobile); bottone "Research EN" / "Saggi IT" con tooltip
+- [x] **L2** Testata — nav (b) con gruppo "Esplora" (anche mobile); bottone "Research EN" / "Saggi IT" con tooltip
 - [ ] **L3a** Raccordo — /da-qui/ "Che cosa c'è in inglese"; righe nelle About; riga inviti nell'About; riga IT su Lab (dipende da L2)
 - [ ] **L3b** Traduzioni — Episteme EN (bozza); Colophon EN breve
 - [ ] **L4** Home IT — serie dopo il claim; "Ultimo saggio" in una riga; Lab in fondo; spazio per la carta
