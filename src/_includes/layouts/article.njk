@@ -29,7 +29,8 @@ try {
       "url": "https://claudiocammarano.com{{ page.url }}",
       "image": "{% if og_image %}https://claudiocammarano.com{{ og_image }}{% else %}https://claudiocammarano.com/images/og-default.png{% endif %}",
       "author": { "@id": "https://claudiocammarano.com/#person" },
-      "publisher": { "@id": "https://claudiocammarano.com/#person" },
+      "publisher": { "@id": "https://claudiocammarano.com/#person" },{% if page.inputPath and '/writings/' in page.inputPath %}
+      "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",{% endif %}
       "isPartOf": { "@id": "https://claudiocammarano.com/#website" }
     },
     {
