@@ -1,0 +1,29 @@
+{
+  "_nota": "Scelte approvate da Claudio Cammarano nella revisione del 25 settembre 2026 (audit L7). Si applicano all'indice con apply.py.",
+  "successori": {
+    "Regno di Prussia": "Germania", "Impero tedesco": "Germania", "Repubblica di Weimar": "Germania",
+    "Germania nazista": "Germania", "Germania Ovest": "Germania", "Repubblica Democratica Tedesca": "Germania",
+    "Confederazione Tedesca del Nord": "Germania", "Brandeburgo-Prussia": "Germania", "Marca di Brandeburgo": "Germania",
+    "Zona di occupazione sovietica": "Germania", "Sacro Romano Impero": "Germania",
+    "Regno d'Italia": "Italia", "Impero russo": "Russia",
+    "Regno di Gran Bretagna": "Regno Unito", "Regno Unito di Gran Bretagna e Irlanda": "Regno Unito", "Regno d'Inghilterra": "Regno Unito",
+    "Regno franco": "Francia", "Primo Impero francese": "Francia",
+    "Unione Sovietica": "DA DECIDERE CASO PER CASO"
+  },
+  "sameAs": {
+    "Tit-for-Tat": "Q1367487",
+    "antifragilità": "Q18352621",
+    "dual use": "Q1262529",
+    "extended mind": "Q25051581",
+    "free-energy principle": "Q17014702",
+    "canone": "Q861437",
+    "costruttivismo": "Q179270",
+    "The Embodied Mind": "Q139812985"
+  },
+  "nessun_qid": {
+    "cosmotecnica": "Solo il libro di Yuk Hui ha un elemento: il concetto eredita la geografia dal teorico."
+  },
+  "da_verificare": {
+    "epistemia": "Concetto di Walter Quattrociocchi. Q138835467 e' vuoto: verificare nella seconda ricerca se e' collegato a lui."
+  }
+}
