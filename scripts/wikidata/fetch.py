@@ -22,7 +22,7 @@ def get(url, params):
     # certificati, curl usa quelli del portachiavi.
     q = url + "?" + urllib.parse.urlencode(params)
     for attempt in range(4):
-        r = subprocess.run(["curl", "-sS", "-f", "--max-time", "60", "-A", UA,
+        r = subprocess.run(["curl", "-sS", "-f", "--max-time", "150", "-A", UA,
                             "-H", "Accept: application/json", q],
                            capture_output=True, text=True)
         if r.returncode == 0:
@@ -83,6 +83,9 @@ def main():
     print(f"{len(cs)} voci: {len(con)} con Q-id, {len(senza)} senza")
 
     cand = {}
+    if (OUT / "candidati.json").exists():
+        print("candidati.json c'e' gia': salto la ricerca dei candidati")
+        senza = []
     for i, c in enumerate(senza, 1):
         seen, lst = set(), []
         for term in variants(c)[:3]:
@@ -93,14 +96,15 @@ def main():
                 time.sleep(0.3)
         cand[c["name"]] = {"type": c["type"], "candidati": lst[:8]}
         print(f"  [{i}/{len(senza)}] {c['name']}: {len(lst)} candidati")
-    (OUT / "candidati.json").write_text(json.dumps(cand, ensure_ascii=False, indent=2))
+    if cand:
+        (OUT / "candidati.json").write_text(json.dumps(cand, ensure_ascii=False, indent=2))
 
     geo = {c["name"]: {"qid": qid(c), "type": c["type"], "paesi": []} for c in con}
     by_q = {}
     for c in con: by_q.setdefault(qid(c), []).append(c["name"])
     qs = list(by_q)
-    for i in range(0, len(qs), 40):
-        chunk = qs[i:i + 40]
+    for i in range(0, len(qs), 15):
+        chunk = qs[i:i + 15]
         d = get(SPARQL, {"query": GEO_QUERY % " ".join("wd:" + q for q in chunk), "format": "json"})
         for b in d["results"]["bindings"]:
             q = b["item"]["value"].rsplit("/", 1)[1]
@@ -108,7 +112,7 @@ def main():
                    "label": b.get("countryLabel", {}).get("value", "")}
             for n in by_q[q]:
                 if row not in geo[n]["paesi"]: geo[n]["paesi"].append(row)
-        print(f"  geo {min(i + 40, len(qs))}/{len(qs)}")
+        print(f"  geo {min(i + 15, len(qs))}/{len(qs)}")
         time.sleep(1)
     (OUT / "geo.json").write_text(json.dumps(geo, ensure_ascii=False, indent=2))
     print("Fatto: scripts/wikidata/out/candidati.json e geo.json")
