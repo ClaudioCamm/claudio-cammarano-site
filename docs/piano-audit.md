@@ -18,7 +18,7 @@ Decisioni e piano completo: Project claude.ai "Costruire Il Mio Sito Personale",
 - [x] **L6** PDF/ePub — .github/workflows/ebooks.yml + scripts/ebooks/ (Pandoc + XeLaTeX, Source Serif 4); soglia 3000 parole = 15 minuti; link "Scarica: PDF · ePub" in testa e in coda ai saggi quando i file esistono. I file li genera la Action dopo il merge su main
 - [x] **L7** Wikidata (216 voci su 268 agganciate; decisioni in scripts/wikidata/decisioni.json, anche per la geografia delle voci senza Q-id) — Q-id per le 92 voci senza sameAs; i termini di conio solo in /ns/
 - [x] **L8** Layer geografico (campo geo su 268 voci: 166 dirette, 49 dal teorico, 53 senza; forme-stato in src/_data/geoPaesi.json; controllo scripts/validate-geo.js nel build) — campo `geo`, validazione, precompilazione Wikidata, revisione (dipende da L7)
-- [ ] **L9** Carta di Goode "Dove guarda questo sito" (dipende da L4, L8)
+- [x] **L9** Carta di Goode "Dove guarda questo sito": filtro cartaGeo in .eleventy.js, geometria precalcolata in src/_data/cartaGeometria.json (rigenerabile con scripts/carta/geometria.mjs), fascia in home dopo le serie
 
 Fuori piano: preprint rinviato ad α1 (il v7 resta scaricabile); Episteme su dominio proprio; GA4 resta.
 

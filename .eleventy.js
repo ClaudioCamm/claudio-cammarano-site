@@ -346,6 +346,82 @@ module.exports = function(eleventyConfig) {
     return { pdf: "/downloads/saggi/" + slug + ".pdf", epub: "/downloads/saggi/" + slug + ".epub" };
   });
 
+  // Carta "Dove guarda questo sito" (audit 2026, L9). Riceve
+  // mergedConceptsIndex e restituisce { svg, legenda, altri }.
+  // Peso di ogni voce = numero di pezzi collegati x peso del modo:
+  // luogo/paese citato 1, altra geografia diretta 0,5, dal teorico 0,25.
+  // Forme-stato: l'UE colora i membri; l'Italia e i membri con menzioni
+  // proprie sommano UE + proprie; le regioni danno peso pieno ai membri.
+  // Cinque classi a quantili sui valori delle voci di legenda.
+  eleventyConfig.addFilter("cartaGeo", function(index) {
+    const geom = require("./src/_data/cartaGeometria.json");
+    const paesi = require("./src/_data/geoPaesi.json");
+    const slugify = eleventyConfig.getFilter("slugify");
+    const unita = {};
+    (index || []).forEach(function(c) {
+      if (!c.geo || c.geo.modo === "nessuna" || !c.geo.paesi.length) return;
+      const n = (c.articles || []).length;
+      if (!n) return;
+      const w = c.geo.modo === "teorico" ? 0.25 : (c.type === "luogo" || c.type === "paese" ? 1 : 0.5);
+      c.geo.paesi.forEach(function(p) { unita[p] = (unita[p] || 0) + n * w; });
+    });
+    const ue = paesi.regioni.UE.membri;
+    const valUE = unita.UE || 0;
+    const perIso = {};
+    const diretti = {}; // paesi citati per nome: solo questi ricevono il punto se piccoli
+    const voci = [];
+    Object.keys(unita).forEach(function(nome) {
+      let v = unita[nome];
+      if (nome === "UE") { voci.push({ nome: "Unione europea", chiave: "UE", valore: v }); return; }
+      if (paesi.regioni[nome] && paesi.regioni[nome].iso) {
+        paesi.regioni[nome].iso.forEach(function(i) { perIso[i] = Math.max(perIso[i] || 0, v); });
+        voci.push({ nome: nome, chiave: nome, valore: v }); return;
+      }
+      // Colore: i membri UE sommano il peso dell'Unione. Legenda: l'Italia
+      // mostra la somma (decisione del 24/9), gli altri membri solo il peso
+      // proprio, perche' l'Unione ha gia' la sua voce.
+      const membro = ue.indexOf(nome) >= 0;
+      const iso = paesi.stati[nome];
+      if (iso) { perIso[iso] = Math.max(perIso[iso] || 0, membro ? v + valUE : v); diretti[iso] = true; }
+      voci.push({ nome: nome, chiave: nome, valore: (membro && nome === "Italia") ? v + valUE : v });
+    });
+    ue.forEach(function(m) {
+      const iso = paesi.stati[m];
+      if (iso && !perIso[iso] && valUE) perIso[iso] = valUE;
+    });
+    // Classi a quantili sui valori delle voci di legenda
+    const valori = voci.map(function(v) { return v.valore; }).sort(function(a, b) { return a - b; });
+    const soglie = [0.2, 0.4, 0.6, 0.8].map(function(q) { return valori[Math.floor(q * (valori.length - 1))]; });
+    function classe(v) {
+      if (!v) return 0;
+      let k = 1; soglie.forEach(function(t) { if (v > t) k++; }); return Math.min(k, 5);
+    }
+    // Link alla pagina concetto con lo stesso nome, se esiste
+    const nomi = {};
+    (index || []).forEach(function(c) { nomi[c.name] = c; });
+    function url(v) {
+      const cand = v.chiave === "UE" ? "Unione Europea" : v.nome;
+      return nomi[cand] ? "/concetti/" + slugify(cand) + "/" : "/indice/#paesi";
+    }
+    voci.forEach(function(v) { v.classe = classe(v.valore); v.url = url(v); v.peso = Math.max(1, Math.round(v.valore)); });
+    voci.sort(function(a, b) { return b.valore - a.valore || a.nome.localeCompare(b.nome); });
+    // SVG
+    let svg = '<svg class="carta-svg" viewBox="' + geom.viewBox + '" role="img" aria-labelledby="carta-titolo carta-desc">'
+      + '<title id="carta-titolo">Dove guarda questo sito</title>'
+      + '<desc id="carta-desc">Carta del mondo in proiezione di Goode interrotta. Ogni paese è colorato in cinque classi secondo quanto il sito ne parla; il dettaglio con i valori è nella legenda testuale.</desc>'
+      + '<clipPath id="carta-clip"><path d="' + geom.sphere + '"/></clipPath>'
+      + '<path class="carta-sfera" d="' + geom.sphere + '"/>'
+      + '<path class="carta-reticolo" d="' + geom.graticule + '"/><g clip-path="url(#carta-clip)">';
+    const punti = [];
+    Object.keys(geom.countries).forEach(function(iso) {
+      const c = geom.countries[iso], k = classe(perIso[iso]);
+      if (c.d) svg += '<path class="carta-p carta-c' + k + '" d="' + c.d + '"/>';
+      if (k && c.area < 40 && diretti[iso]) punti.push('<circle class="carta-punto carta-c' + k + '" cx="' + c.cx + '" cy="' + c.cy + '" r="4"/>');
+    });
+    svg += '</g>' + punti.join("") + '</svg>';
+    return { svg: svg, legenda: voci.slice(0, 12), altri: Math.max(0, voci.length - 12), totale: voci.length };
+  });
+
   // Prima frase di un testo (fino a . ? ! seguiti da spazio o fine).
   eleventyConfig.addFilter("firstSentence", function(str) {
     if (!str) return "";
@@ -699,7 +775,8 @@ module.exports = function(eleventyConfig) {
         sameAs: (c.sameAs && c.sameAs.length) ? c.sameAs.slice() : null,
         related: (c.related && c.related.length) ? c.related.slice() : null,
         citation: c.citation || null,
-        lab: c.lab || false
+        lab: c.lab || false,
+        geo: c.geo || null
       };
     });
 

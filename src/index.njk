@@ -91,7 +91,34 @@ bodyClass: home
 </section>
 {% endif %}
 
-{# Qui andra' la carta "Dove guarda questo sito" (lotto L9). #}
+{# === CARTA "Dove guarda questo sito" (audit 2026, L9/B2). Generata al
+       build da conceptsIndex (campo geo) e cartaGeometria.json: nessun
+       JavaScript, la legenda e' testo vero con i link alle voci. === #}
+{% set carta = collections.mergedConceptsIndex | cartaGeo %}
+{% if carta.legenda.length %}
+<section class="home-band home-band--carta" aria-labelledby="carta-h">
+  <div class="home-sec-head">
+    <h2 class="home-sec-title" id="carta-h">Dove guarda questo sito</h2>
+  </div>
+  <div class="carta">
+    <figure class="carta-figura">
+      {{ carta.svg | safe }}
+      <figcaption class="carta-didascalia">Proiezione di Goode: la sfera non si appiattisce senza tagli. Qui si vede dove.</figcaption>
+    </figure>
+    <div class="carta-legenda">
+      <div class="carta-scala" aria-hidden="true">{% for k in [1,2,3,4,5] %}<span class="carta-c{{ k }}"></span>{% endfor %}</div>
+      <p class="carta-scala-etichette" aria-hidden="true"><span>meno</span><span>più</span></p>
+      <ul class="carta-voci">
+        {% for v in carta.legenda %}
+        <li><span class="carta-sw carta-c{{ v.classe }}" aria-hidden="true"></span><a href="{{ v.url }}">{{ v.nome }}</a><span class="carta-peso">{{ v.peso }}</span></li>
+        {% endfor %}
+      </ul>
+      <p class="carta-nota">I paesi dell'Unione europea prendono anche il colore dell'Unione.</p>
+      {% if carta.altri %}<p class="carta-altri"><a href="/indice/#paesi">Altri {{ carta.altri }} paesi nell'indice &#8594;</a></p>{% endif %}
+    </div>
+  </div>
+</section>
+{% endif %}
 
 {# === 2b · ULTIMO SAGGIO: una riga, non piu' un blocco in evidenza === #}
 {% set featured = collections.writings[0] %}
