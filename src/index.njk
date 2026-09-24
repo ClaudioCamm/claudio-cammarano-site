@@ -96,6 +96,10 @@ bodyClass: home
       </ul>
       <p class="carta-nota">I paesi dell'Unione europea prendono anche il colore dell'Unione.</p>
       {% if carta.altri %}<p class="carta-altri"><a href="/indice/#paesi">Altri {{ carta.altri }} paesi nell'indice &#8594;</a></p>{% endif %}
+    </div>
+  </div>
+</section>
+{% endif %}
 
 {# === 2 · LE SERIE (audit 2026, L4/B1): porte d'ingresso al corpus subito
        dopo il claim. Ordinate dalla serie aggiornata piu' di recente. === #}
@@ -116,11 +120,6 @@ bodyClass: home
 </section>
 {% endif %}
 
-
-    </div>
-  </div>
-</section>
-{% endif %}
 
 {# === 2b · ULTIMO SAGGIO: una riga, non piu' un blocco in evidenza === #}
 {% set featured = collections.writings[0] %}
