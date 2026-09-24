@@ -110,6 +110,8 @@ try {
         {% endif %}
       {% endif %}
       {% if content %}<span class="reading-time">{{ content | readingTime }}</span>{% endif %}
+      {% set ebook = page.inputPath | ebook %}
+      {% if ebook %}<span class="article-download">Scarica: <a href="{{ ebook.pdf }}" download>PDF</a> · <a href="{{ ebook.epub }}" download>ePub</a></span>{% endif %}
     </div>
     {% if series %}<p class="article-series"><a href="/serie/{{ series | seriesBaseName | slugify }}/">{{ series }}</a></p>{% endif %}
     <h1>{{ title }}</h1>
@@ -136,6 +138,7 @@ try {
   
   <div class="article-body">
     {{ content | safe }}
+    {% if ebook %}<p class="article-download article-download--end">Scarica il saggio: <a href="{{ ebook.pdf }}" download>PDF</a> · <a href="{{ ebook.epub }}" download>ePub</a></p>{% endif %}
     {% include "components/ai-notation.njk" %}
   </div>
 </article>

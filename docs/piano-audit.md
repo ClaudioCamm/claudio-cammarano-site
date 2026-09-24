@@ -15,7 +15,7 @@ Decisioni e piano completo: Project claude.ai "Costruire Il Mio Sito Personale",
 - [x] **L3b** Traduzioni — /en/episteme-advisory/ e /en/colophon/ pubblicabili come BOZZE: attendono la revisione dei testi di Claudio prima del merge
 - [x] **L4** Home IT — serie dopo il claim; "Ultimo saggio" in una riga; Lab in fondo; spazio per la carta
 - [x] **L5** Tecnica — font self-hosted (Source Serif 4, Cormorant Garamond per le visualizzazioni dual-use); MathJax 3.2.2 ospitato in /vendor/mathjax/ (già caricato solo nei 4 saggi con formule); rimozione Decap CMS e del dns-prefetch jsDelivr
-- [ ] **L6** PDF/ePub — GitHub Action Pandoc; "Scarica: PDF · ePub"
+- [x] **L6** PDF/ePub — .github/workflows/ebooks.yml + scripts/ebooks/ (Pandoc + XeLaTeX, Source Serif 4); soglia 3000 parole = 15 minuti; link "Scarica: PDF · ePub" in testa e in coda ai saggi quando i file esistono. I file li genera la Action dopo il merge su main
 - [ ] **L7** Wikidata — Q-id per le 92 voci senza sameAs; i termini di conio solo in /ns/
 - [ ] **L8** Layer geografico — campo `geo`, validazione, precompilazione Wikidata, revisione (dipende da L7)
 - [ ] **L9** Carta di Goode "Dove guarda questo sito" (dipende da L4, L8)

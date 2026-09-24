@@ -334,6 +334,18 @@ module.exports = function(eleventyConfig) {
     return Object.values(map).sort(function(a, b) { return b.latest - a.latest; });
   });
 
+  // PDF ed ePub di un saggio lungo, se la GitHub Action li ha generati
+  // (audit 2026, L6). Riceve page.inputPath; null se i file non ci sono.
+  eleventyConfig.addFilter("ebook", function(inputPath) {
+    if (!inputPath) return null;
+    var fs = require("fs"), path = require("path");
+    var slug = path.basename(inputPath, ".md");
+    var dir = path.join(__dirname, "src", "downloads", "saggi");
+    var pdf = path.join(dir, slug + ".pdf"), epub = path.join(dir, slug + ".epub");
+    if (!fs.existsSync(pdf) || !fs.existsSync(epub)) return null;
+    return { pdf: "/downloads/saggi/" + slug + ".pdf", epub: "/downloads/saggi/" + slug + ".epub" };
+  });
+
   // Prima frase di un testo (fino a . ? ! seguiti da spazio o fine).
   eleventyConfig.addFilter("firstSentence", function(str) {
     if (!str) return "";

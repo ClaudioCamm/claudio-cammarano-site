@@ -7789,3 +7789,12 @@ a.home-path:hover {
 }
 .about-invite + .about-cta { margin-top: var(--spacing-md); }
 .about-invite a { color: var(--color-primary); }
+
+/* Audit 2026 — L6: PDF ed ePub dei saggi lunghi */
+.article-download {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--color-text-light);
+}
+.article-download a { color: var(--color-primary); }
+.article-download--end { margin: var(--spacing-md) 0 var(--spacing-sm); }
