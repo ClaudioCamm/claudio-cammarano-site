@@ -539,6 +539,125 @@
       "paesi": [
         "Germania"
       ]
+    },
+    "vetocrazia": {
+      "modo": "teorico",
+      "paesi": [
+        "Stati Uniti"
+      ]
+    },
+    "embodied mind": {
+      "modo": "teorico",
+      "paesi": [
+        "Stati Uniti"
+      ]
+    },
+    "scenario planning": {
+      "modo": "teorico",
+      "paesi": [
+        "Regno Unito",
+        "Paesi Bassi"
+      ]
+    },
+    "legge Bacchelli": {
+      "modo": "diretta",
+      "paesi": [
+        "Italia"
+      ]
+    },
+    "GS1 Web Vocabulary": {
+      "modo": "diretta",
+      "paesi": [
+        "Belgio"
+      ]
+    },
+    "Schema.org": {
+      "modo": "diretta",
+      "paesi": [
+        "Stati Uniti"
+      ]
+    },
+    "web semantico": {
+      "modo": "teorico",
+      "paesi": [
+        "Regno Unito"
+      ]
+    },
+    "stock option": {
+      "modo": "diretta",
+      "paesi": [
+        "Italia"
+      ]
+    },
+    "paideia": {
+      "modo": "teorico",
+      "paesi": [
+        "Grecia"
+      ]
+    },
+    "disputa sugli universali": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "aiuto allo sviluppo": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "piccola impresa": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "editoria": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "propaganda": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "economia": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "macroeconomia": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "commoditizzazione": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "marketing": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "e-commerce": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "GEO": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "pubblicità": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "canone": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "università": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "metodo scientifico": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "ghostwriting": {
+      "modo": "nessuna",
+      "paesi": []
     }
   },
   "conio": [
