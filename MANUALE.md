@@ -15,7 +15,9 @@ Sito statico Eleventy (v3). Sorgenti in `src/`, output compilato in `_site/`. De
 | Deploy | Netlify (auto da git push) |
 | Grafo concetti | Coordinate calcolate a build time da `_data/graphLayout.js`, disegno *hierarchical edge bundling* in `src/js/heb.js` (JS puro, nessuna dipendenza esterna) |
 | Lingue | Italiano su `/`, superficie inglese su `/en/` più tutto `/lab/` — vedi sezione 8 |
-| Font | Source Serif 4 (Google Fonts) |
+| Font | Source Serif 4, ospitato sul dominio (`src/fonts/fonts.css`, Fontsource, SIL OFL). Nessuna richiesta a Google Fonts |
+| Formule | MathJax 3.2.2 ospitato in `src/vendor/mathjax/`, caricato solo dai saggi che lo richiamano |
+| PDF ed ePub | GitHub Action `.github/workflows/ebooks.yml` + Pandoc/XeLaTeX (`scripts/ebooks/`) — sezione 1 |
 | Ricerca | Pagefind (`npm run index`) |
 
 ---
@@ -75,10 +77,11 @@ git push
 # Netlify fa il resto in automatico
 ```
 
-**Importante:** lanciare sempre `npm run build` (o `npm start`) prima di un push importante e leggere l'output in console. Ci sono tre controlli automatici, e si comportano in modo diverso:
+**Importante:** lanciare sempre `npm run build` (o `npm start`) prima di un push importante e leggere l'output in console. Ci sono quattro controlli automatici, e si comportano in modo diverso:
 
 - **Concetti non registrati** — avviso, non blocca (sezione 5).
 - **Integrità dell'indice concettuale** — errore, **blocca il build**. Legami verso nomi inesistenti, articoli senza sorgente, `why` mancanti o troppo lunghi: `validate-concepts.js` si ferma e dice quale voce (sezione 5).
+- **Geografia dei concetti** — errore, **blocca il build**. Ogni voce di `conceptsIndex.js` deve avere il campo `geo`, con paesi che esistono in `src/_data/geoPaesi.json`: `validate-geo.js` si ferma e dice quale voce (sezione 5).
 - **Notazione dell'intervento AI** — errore, **blocca il build** e quindi il deploy. Se manca `ai_prose` su un pezzo in `writings/`, `curated/` o `lab/`, o se il codice è fuori enum, Eleventy si ferma e dice quale file (sezione 1).
 
 Da settembre 2026 `npm start` esegue gli stessi controlli del build (hook `prestart`), quindi valgono anche in sviluppo.
@@ -212,10 +215,26 @@ window.MathJax = {
   svg: { fontCache: 'global' }
 };
 </script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script id="MathJax-script" async src="/vendor/mathjax/tex-mml-chtml.js"></script>
 ```
 
 Poi nel testo: `$formula inline$` oppure `$$formula display$$`.
+
+Da settembre 2026 MathJax è servito dal dominio, non più da jsDelivr: non usare l'indirizzo esterno. Nei quattro saggi con formule il percorso è già stato cambiato.
+
+### PDF ed ePub — automatici, per i saggi da 15 minuti in su
+
+Non c'è niente da fare a mano. Quando un saggio da almeno 3000 parole (15 minuti a 200 parole al minuto) arriva su `main`, la GitHub Action **«PDF ed ePub dei saggi»** lo converte con Pandoc (PDF A4 in Source Serif 4 con XeLaTeX, ePub con le formule in MathML), salva i file in `src/downloads/saggi/` con un commit proprio, e Netlify li pubblica. Rigenera solo i saggi cambiati: gli hash stanno in `src/downloads/saggi/manifest.json`.
+
+- Nella pagina del saggio compare «Scarica: PDF · ePub» accanto al tempo di lettura e in coda al testo, **solo se i file esistono** (filtro `ebook` in `.eleventy.js`).
+- In coda a ogni file: codice dell'intervento AI con le etichette per esteso, nota di retrodatazione per i pezzi anteriori al 23 agosto 2026, licenza CC BY-NC-ND 4.0, URL canonico. La licenza è anche nei metadati del file.
+- Le parti interattive restano solo online; le immagini WebP e SVG non entrano nel PDF (LaTeX non le gestisce).
+- Per rigenerare tutto (per esempio dopo aver cambiato lo script): su GitHub, Actions → «PDF ed ePub dei saggi» → Run workflow, spuntando *Rigenera tutti i file*. In locale: `python3 scripts/ebooks/build.py --force` (servono Pandoc, XeLaTeX e Source Serif 4 installato).
+- Requisito una tantum: nel repo, Settings → Actions → General → Workflow permissions → *Read and write permissions*.
+
+### Licenze
+
+Saggi: **CC BY-NC-ND 4.0** (dichiarata nel Colophon, nel JSON-LD di ogni saggio e nei PDF/ePub). Learning Log: CC BY-NC-SA 4.0. Dataset dei concetti: CC BY 4.0.
 
 ### Collegare i concetti — passaggio manuale, non automatico
 
@@ -224,12 +243,12 @@ A differenza dei curated, per i **writings** il collegamento ai concetti non pas
 - Se l'articolo cita un concetto già in tassonomia → aggiungi `{ title: "Titolo articolo", url: "/writings/slug-articolo/" }` all'array `articles` della voce corrispondente in `conceptsIndex.js` (sezione 5 per il formato).
 - Se introduce un concetto nuovo → crea una nuova voce.
 
-**La skill `pubblica-articolo` non fa questo passaggio.** Genera solo il file markdown del writing; non tocca `conceptsIndex.js`. Va fatto a mano, articolo per articolo.
+**La skill `pubblica-articolo` prepara il blocco da incollare** in `conceptsIndex.js` — righe per le voci esistenti e voci nuove complete di `geo` e, se esiste, `sameAs` — ma non lo scrive nel file: l'incollatura resta un passaggio tuo, articolo per articolo. Controlla sempre, nella nota finale della skill, le scelte di geografia e Wikidata delle voci nuove.
 
 Checklist completa per pubblicare un writing:
 
 1. Salva il file in `src/writings/`
-2. Apri `src/_data/conceptsIndex.js` e aggiorna le voci dei concetti citati (vedi sopra)
+2. Apri `src/_data/conceptsIndex.js` e aggiorna le voci dei concetti citati (vedi sopra). **Ogni voce nuova con il campo `geo`** (sezione 5), altrimenti il build si ferma
 3. `npm run build` in locale — leggi l'output: se un concetto non è registrato, ora il build te lo segnala (sezione 5)
 4. `git push` — non esiste un comando separato di "aggiornamento semantico": indici, pagine `/concetti/`, chip e grafo si rigenerano da soli al build, una volta che i dati sono corretti
 
@@ -463,6 +482,7 @@ Questo file è la **fonte di verità** per l'indice analitico, le pagine `/conce
     { title: "L'ombra del futuro", url: "/writings/2026-04-15-lombra-del-futuro/" }
   ],
   note: "Testo facoltativo.",    // nota descrittiva (opzionale)
+  geo: { modo: "diretta", paesi: ["Stati Uniti"] },  // OBBLIGATORIO — vedi «La geografia»
   sameAs: [                      // agganci all'entità reale (opzionale)
     "https://www.wikidata.org/wiki/Q583438",
     "https://en.wikipedia.org/wiki/Robert_Axelrod_(political_scientist)"
@@ -499,9 +519,27 @@ Questo file è la **fonte di verità** per l'indice analitico, le pagine `/conce
 
 Array di URL che identificano l'entità di cui la voce parla: il Q-id di Wikidata e, dove esiste, la voce Wikipedia (italiana quando c'è, inglese altrimenti). È facoltativo e va lasciato vuoto quando l'aggancio non è certo: **un Q-id sbagliato è peggio di nessun Q-id**, perché afferma in forma leggibile dalle macchine un'identità falsa.
 
-A settembre 2026: 169 voci su 261 agganciate, 163 con entrambi gli URL. Le 92 restanti sono coniazioni proprie, acronimi e casi dubbi, elencati in `wikidata-da-rivedere.md`.
+Al 25 settembre 2026: **216 voci su 268 agganciate a Wikidata**. Le scelte della revisione (Q-id accettati, scartati, termini di conio) sono registrate in `scripts/wikidata/decisioni.json`, che sostituisce il vecchio `wikidata-da-rivedere.md`. **I termini di conio non hanno Q-id**: restano ancorati solo in `/ns/`. Per cercare candidati si usa `scripts/wikidata/fetch.py` e `search2.py`, da lanciare dal Mac (serve la rete; usano `curl` per i certificati).
 
 Il campo finisce nel JSON-LD della pagina `/concetti/slug/`, costruito dal filtro `conceptJsonLd` in `.eleventy.js`. Ogni pagina concetto si dichiara `DefinedTerm` di un `DefinedTermSet` (`/indice/#set`); l'identità dell'entità reale sta nel nodo `about` (`Person`, `Organization`, `Place`, `Country`, `CreativeWork` secondo il tipo), mentre per i concetti astratti il `sameAs` sta sul termine stesso. La nota integrale entra in `description`.
+
+### La geografia — il campo `geo` (obbligatorio da settembre 2026)
+
+Alimenta la carta «Dove guarda questo sito» in home. Forma: `geo: { modo: "...", paesi: [...] }`.
+
+| `modo` | Quando | Peso sulla carta | Esempi |
+|---|---|---|---|
+| `diretta` | Entità concrete: persone (cittadinanza, **tutte** se più d'una), istituzioni (sede), testi (origine), luoghi e paesi (sé stessi); concetti che parlano di un luogo preciso | 1 se il luogo è citato nel pezzo, 0,5 se arriva tramite un concetto | `Diegoli, Gianluca` → Italia; `Stratechery` → Stati Uniti, Taiwan; `dottrina Gerasimov` → Russia |
+| `teorico` | Concetti astratti che portano il luogo di chi li ha formulati | 0,25 | `antifragilità` → Libano, Stati Uniti (Taleb); `epistemia` → Italia (Quattrociocchi) |
+| `nessuna` | Concetti trasversali senza teorico; **tutti i termini di conio** (non ereditano l'Italia dall'autore) | non contano | `editoria`, `allineamento AI`, `post-cognition` |
+
+Regole:
+
+- **Nomi dei paesi**: esattamente quelli di `src/_data/geoPaesi.json` (in italiano, con codice ISO). Un paese nuovo si aggiunge lì, sotto `stati`.
+- **Forme-stato**: l'UE (e l'Europa come progetto politico) si scrive `"UE"` e colora tutti i membri; l'Italia ha voce propria (menzioni Italia + UE). Le sole regioni ammesse sono in `regioni` (`UE`, `Africa subsahariana`) e distribuiscono il peso pieno su ogni Stato membro.
+- **Stati storici → Stato attuale erede** (Prussia, Impero tedesco, DDR → Germania; Regno di Napoli → Italia; Atene → Grecia). Per l'URSS la repubblica effettiva, mai l'URSS.
+
+Il controllo `scripts/validate-geo.js` gira in `prestart` e `prebuild` e **blocca** se una voce non ha `geo`, se il modo non è valido, se `nessuna` ha paesi o gli altri modi no, o se un paese non è in `geoPaesi.json`. Per rigenerare il campo su tutto l'indice dalle decisioni registrate: `python3 scripts/wikidata/apply_geo.py`.
 
 ### Legami dichiarati fra concetti — il campo `related`
 
@@ -542,6 +580,8 @@ Gira nel `prebuild` e nel `prestart`, dopo `sync-concepts.js`, e **fa fallire il
 - `related` — il nome puntato esiste, non è la voce stessa, non è ripetuto, l'arco non è dichiarato in entrambe le direzioni, il `why` c'è e sta sotto i 160 caratteri, e la voce non supera i 5 legami;
 - `articles` — ogni `url` ha un file sorgente corrispondente (gli url di sezione come `/lab/` sono esclusi: sono pagine indice);
 - `sameAs` — è un array di URL http(s).
+
+Subito dopo gira `validate-geo.js`, che controlla il campo `geo` (vedi «La geografia»).
 
 Un refuso in un nome produceva prima un legame che spariva in silenzio. Ora il build si ferma e dice quale voce.
 
@@ -649,7 +689,7 @@ Il sito è uno, in due lingue, non due marchi: la testata blu e l'identità visi
 `/` è italiano, `/en/` è inglese, URL statici. **Nessun redirect per lingua o per geografia**, mai: niente su IP, niente su `Accept-Language`. Una richiesta a `/` da un IP statunitense deve restituire la home italiana, 200, senza catene di redirect. È una scelta di posizionamento, non una dimenticanza: il posizionamento organico italiano va protetto.
 
 ### Che cosa esiste in inglese
-`/en/` (home del programma di ricerca, cinque fasce), `/en/start-here/`, `/en/about/`, `/en/visualizations/measuring-bench/`, più l'intero `/lab/`. Fuori perimetro per decisione: indice e mappa semantica in inglese, traduzione dell'archivio dei saggi.
+`/en/` (home del programma di ricerca, cinque fasce), `/en/start-here/`, `/en/about/`, `/en/episteme-advisory/`, `/en/colophon/` (versione breve), `/en/visualizations/measuring-bench/`, più l'intero `/lab/`. Fuori perimetro per decisione: indice e mappa semantica in inglese, traduzione dell'archivio dei saggi.
 
 ### Dichiarare una coppia di pagine equivalenti
 Nel frontmatter di **entrambe**:
@@ -660,7 +700,9 @@ translation:
   url: /en/...
 ```
 
-Genera `hreflang` reciproci, `x-default` sempre sull'italiano, e fa puntare lo switch di lingua in testata alla pagina gemella. Senza `translation`, lo switch porta alla home dell'altra lingua — che è il comportamento corretto quando la gemella non esiste.
+Genera `hreflang` reciproci, `x-default` sull'italiano, e fa puntare il bottone di testata alla pagina gemella. Senza `translation` non esce nessun `x-default` e il bottone porta alla home dell'altra opera — il comportamento corretto quando la gemella non esiste.
+
+**Le due home non sono gemelle** (decisione di settembre 2026): `/` e `/en/` sono due opere diverse, non la traduzione l'una dell'altra, e non hanno `translation`. Il bottone in testata non dice più IT/EN: dice **«Research EN»** sul lato italiano e **«Saggi IT»** su quello inglese, con un tooltip che spiega l'altra opera. Pagine gemelle vere oggi: Episteme Advisory (`/episteme-advisory/` ↔ `/en/episteme-advisory/`) e le poche altre dichiarate.
 
 **Non dichiarare `translation` fra pagine che non sono equivalenti.** `/da-qui/` e `/en/start-here/` hanno funzioni diverse — uno guida chi esplora un archivio, l'altro chi sta decidendo se l'autore è un interlocutore — e dichiararle gemelle sarebbe un hreflang falso.
 
