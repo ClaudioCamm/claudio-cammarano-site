@@ -7617,3 +7617,18 @@ a.home-path:hover {
   font-size: 15px;
   color: var(--color-text-light);
 }
+
+/* Audit 2026, A7 — stato del paper nel hero della home inglese */
+.en-hero-status {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--color-text-light);
+  margin: 0 0 var(--spacing-sm);
+}
+.en-hero-status-label {
+  font-weight: 600;
+  color: var(--color-text);
+}
+.en-hero-status a {
+  color: var(--color-primary);
+}

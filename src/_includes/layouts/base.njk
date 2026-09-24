@@ -23,7 +23,7 @@
     <link rel="alternate" hreflang="{{ lang or 'it' }}" href="https://claudiocammarano.com{{ page.url }}">
     {% if translation %}<link rel="alternate" hreflang="{{ translation.lang }}" href="https://claudiocammarano.com{{ translation.url }}">
     <link rel="alternate" hreflang="x-default" href="https://claudiocammarano.com{% if (lang or 'it') == 'it' %}{{ page.url }}{% else %}{{ translation.url }}{% endif %}">
-    {% else %}<link rel="alternate" hreflang="x-default" href="https://claudiocammarano.com/">{% endif %}
+    {% endif %}{# Senza traduzione nessun x-default: le due superfici sono opere distinte (audit 2026, Dec2). #}
     <!-- Open Graph -->
     {# og_title: quando il titolo della scheda social deve dire piu' del
        titolo della pagina, senza allungare il <title>. #}
