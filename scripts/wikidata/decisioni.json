@@ -1,13 +1,24 @@
 {
   "_nota": "Scelte approvate da Claudio Cammarano nella revisione del 25 settembre 2026 (audit L7). Si applicano all'indice con apply.py.",
   "successori": {
-    "Regno di Prussia": "Germania", "Impero tedesco": "Germania", "Repubblica di Weimar": "Germania",
-    "Germania nazista": "Germania", "Germania Ovest": "Germania", "Repubblica Democratica Tedesca": "Germania",
-    "Confederazione Tedesca del Nord": "Germania", "Brandeburgo-Prussia": "Germania", "Marca di Brandeburgo": "Germania",
-    "Zona di occupazione sovietica": "Germania", "Sacro Romano Impero": "Germania",
-    "Regno d'Italia": "Italia", "Impero russo": "Russia",
-    "Regno di Gran Bretagna": "Regno Unito", "Regno Unito di Gran Bretagna e Irlanda": "Regno Unito", "Regno d'Inghilterra": "Regno Unito",
-    "Regno franco": "Francia", "Primo Impero francese": "Francia",
+    "Regno di Prussia": "Germania",
+    "Impero tedesco": "Germania",
+    "Repubblica di Weimar": "Germania",
+    "Germania nazista": "Germania",
+    "Germania Ovest": "Germania",
+    "Repubblica Democratica Tedesca": "Germania",
+    "Confederazione Tedesca del Nord": "Germania",
+    "Brandeburgo-Prussia": "Germania",
+    "Marca di Brandeburgo": "Germania",
+    "Zona di occupazione sovietica": "Germania",
+    "Sacro Romano Impero": "Germania",
+    "Regno d'Italia": "Italia",
+    "Impero russo": "Russia",
+    "Regno di Gran Bretagna": "Regno Unito",
+    "Regno Unito di Gran Bretagna e Irlanda": "Regno Unito",
+    "Regno d'Inghilterra": "Regno Unito",
+    "Regno franco": "Francia",
+    "Primo Impero francese": "Francia",
     "Unione Sovietica": "DA DECIDERE CASO PER CASO"
   },
   "sameAs": {
@@ -18,12 +29,203 @@
     "free-energy principle": "Q17014702",
     "canone": "Q861437",
     "costruttivismo": "Q179270",
-    "The Embodied Mind": "Q139812985"
+    "The Embodied Mind": "Q139812985",
+    "two-level games": "Q7858724",
+    "cigni neri": "Q2074634",
+    "dottrina Gerasimov": "Q28666367",
+    "controllo riflessivo": "Q30893759",
+    "allineamento AI": "Q24882728",
+    "dilemma di Collingridge": "Q1109683",
+    "general purpose technologies": "Q5532384",
+    "iperoggetti": "Q106651271",
+    "WEIRD": "Q63372322",
+    "disuguaglianze": "Q5431887",
+    "embodied mind": "Q1335050",
+    "ermeneutica del sospetto": "Q3823131",
+    "ragione comunicativa": "Q4355373",
+    "vetocrazia": "Q7923762",
+    "piccola impresa": "Q1109680",
+    "GEO": "Q134083964",
+    "patto sociale": "Q1326430",
+    "dati come beni comuni": "Q26759606",
+    "armi autonome": "Q25378861",
+    "atti illocutori": "Q1599204",
+    "narrazione interattiva": "Q2903135",
+    "industrie creative": "Q969040",
+    "epistemia": "Q138835467",
+    "Hunhu/Ubuntu": "Q213843",
+    "neghentropia": "Q252552",
+    "legge della varietà richiesta": "Q724967",
+    "capitale simbolico": "Q1751638",
+    "iperattenzione": "Q5957651"
   },
   "nessun_qid": {
-    "cosmotecnica": "Solo il libro di Yuk Hui ha un elemento: il concetto eredita la geografia dal teorico."
+    "cosmotecnica": "Solo il libro di Yuk Hui ha un elemento: il concetto eredita la geografia dal teorico.",
+    "incredulità verso le metanarrazioni": "Eredita da Lyotard.",
+    "istituzioni inclusive vs. estrattive": "Eredita da Acemoglu e Robinson."
   },
-  "da_verificare": {
-    "epistemia": "Concetto di Walter Quattrociocchi. Q138835467 e' vuoto: verificare nella seconda ricerca se e' collegato a lui."
+  "da_verificare": {},
+  "geo": {
+    "_nota": "diretta = peso 0,5 via concetto (1 se luogo citato); teorico = peso 0,25; nessuna = non conta sulla carta",
+    "Hunhu/Ubuntu": {
+      "modo": "diretta",
+      "paesi": [
+        "Africa subsahariana"
+      ]
+    },
+    "neghentropia": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "legge della varietà richiesta": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "capitale simbolico": {
+      "modo": "teorico",
+      "paesi": [
+        "Francia"
+      ]
+    },
+    "iperattenzione": {
+      "modo": "teorico",
+      "paesi": [
+        "Stati Uniti"
+      ]
+    },
+    "watermarking": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "shadow of the future": {
+      "modo": "teorico",
+      "paesi": [
+        "Stati Uniti"
+      ]
+    },
+    "dilemma del prigioniero iterato": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "win-set domestico": {
+      "modo": "teorico",
+      "paesi": [
+        "Stati Uniti"
+      ]
+    },
+    "fattore di sconto δ": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "paradigma tecnocratico": {
+      "modo": "teorico",
+      "paesi": [
+        "Città del Vaticano"
+      ]
+    },
+    "drone democracy": {
+      "modo": "diretta",
+      "paesi": [
+        "Ucraina"
+      ]
+    },
+    "democrazia di guerra": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "violenza speculativa": {
+      "modo": "teorico",
+      "paesi": [
+        "Italia"
+      ]
+    },
+    "co-azione": {
+      "modo": "diretta",
+      "paesi": [
+        "Cina"
+      ]
+    },
+    "verum ipsum factum": {
+      "modo": "teorico",
+      "paesi": [
+        "Italia"
+      ]
+    },
+    "inemendabilità della realtà": {
+      "modo": "teorico",
+      "paesi": [
+        "Italia"
+      ]
+    },
+    "educazione estetica": {
+      "modo": "teorico",
+      "paesi": [
+        "Germania"
+      ]
+    },
+    "moral deskilling": {
+      "modo": "teorico",
+      "paesi": [
+        "Stati Uniti"
+      ]
+    },
+    "mezza attenzione": {
+      "modo": "teorico",
+      "paesi": [
+        "Italia"
+      ]
+    },
+    "polarizzazione cognitiva": {
+      "modo": "teorico",
+      "paesi": [
+        "Stati Uniti"
+      ]
+    },
+    "sfiducia sistemica": {
+      "modo": "diretta",
+      "paesi": [
+        "Italia"
+      ]
+    },
+    "news avoidance": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "dragon-restaurant diplomacy": {
+      "modo": "diretta",
+      "paesi": [
+        "Cina"
+      ]
+    },
+    "industria dell'animazione": {
+      "modo": "diretta",
+      "paesi": [
+        "Giappone"
+      ]
+    },
+    "cosmotecnica": {
+      "modo": "teorico",
+      "paesi": [
+        "Cina"
+      ]
+    },
+    "epistemia": {
+      "modo": "teorico",
+      "paesi": [
+        "Italia"
+      ]
+    },
+    "incredulità verso le metanarrazioni": {
+      "modo": "teorico",
+      "paesi": [
+        "Francia"
+      ]
+    },
+    "istituzioni inclusive vs. estrattive": {
+      "modo": "teorico",
+      "paesi": [
+        "Stati Uniti"
+      ]
+    }
   }
 }
