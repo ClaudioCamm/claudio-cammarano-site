@@ -1,0 +1,1935 @@
+{
+  "Descartes, René": {
+    "qid": "Q9191",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q142",
+        "label": "Francia"
+      }
+    ]
+  },
+  "Foucault, Michel": {
+    "qid": "Q44272",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q142",
+        "label": "Francia"
+      }
+    ]
+  },
+  "Derrida, Jacques": {
+    "qid": "Q130631",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q142",
+        "label": "Francia"
+      }
+    ]
+  },
+  "Averroè": {
+    "qid": "Q39837",
+    "type": "persona",
+    "paesi": []
+  },
+  "Kahneman, Daniel": {
+    "qid": "Q233950",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q801",
+        "label": "Israele"
+      },
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Taleb, Nassim Nicholas": {
+    "qid": "Q333521",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q822",
+        "label": "Libano"
+      },
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Axelrod, Robert": {
+    "qid": "Q583438",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Putnam, Robert": {
+    "qid": "Q351815",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Lyotard, Jean-François": {
+    "qid": "Q193257",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q142",
+        "label": "Francia"
+      }
+    ]
+  },
+  "Habermas, Jürgen": {
+    "qid": "Q76357",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q183",
+        "label": "Germania"
+      }
+    ]
+  },
+  "Ferraris, Maurizio": {
+    "qid": "Q3848721",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q38",
+        "label": "Italia"
+      }
+    ]
+  },
+  "Eco, Umberto": {
+    "qid": "Q12807",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q38",
+        "label": "Italia"
+      }
+    ]
+  },
+  "Yarros, Rebecca": {
+    "qid": "Q121091992",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Hesse, Hermann": {
+    "qid": "Q25973",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q43287",
+        "label": "Impero tedesco"
+      },
+      {
+        "rel": "cittadinanza",
+        "qid": "Q39",
+        "label": "Svizzera"
+      },
+      {
+        "rel": "cittadinanza",
+        "qid": "Q183",
+        "label": "Germania"
+      }
+    ]
+  },
+  "Joyce, James": {
+    "qid": "Q6882",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q27",
+        "label": "Irlanda"
+      },
+      {
+        "rel": "cittadinanza",
+        "qid": "Q145",
+        "label": "Regno Unito"
+      },
+      {
+        "rel": "cittadinanza",
+        "qid": "Q142",
+        "label": "Francia"
+      }
+    ]
+  },
+  "Dostoevskij, Fëdor": {
+    "qid": "Q991",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q34266",
+        "label": "Impero russo"
+      }
+    ]
+  },
+  "Tolstoj, Lev": {
+    "qid": "Q7243",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q34266",
+        "label": "Impero russo"
+      }
+    ]
+  },
+  "Wack, Pierre": {
+    "qid": "Q7192488",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q142",
+        "label": "Francia"
+      }
+    ]
+  },
+  "Amodei, Dario": {
+    "qid": "Q103335665",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Gerasimov, Valery": {
+    "qid": "Q36073",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q159",
+        "label": "Russia"
+      }
+    ]
+  },
+  "Acemoglu, Daron": {
+    "qid": "Q718581",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q43",
+        "label": "Turchia"
+      },
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Platone": {
+    "qid": "Q859",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q844930",
+        "label": "Atene"
+      }
+    ]
+  },
+  "Spinoza, Baruch": {
+    "qid": "Q35802",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q170072",
+        "label": "Repubblica delle Sette Province Unite"
+      }
+    ]
+  },
+  "Clark, Andy": {
+    "qid": "Q4760523",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Varela, Francisco": {
+    "qid": "Q923582",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q298",
+        "label": "Cile"
+      }
+    ]
+  },
+  "Floridi, Luciano": {
+    "qid": "Q214119",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q38",
+        "label": "Italia"
+      }
+    ]
+  },
+  "Braudel, Fernand": {
+    "qid": "Q185105",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q142",
+        "label": "Francia"
+      }
+    ]
+  },
+  "Vico, Giambattista": {
+    "qid": "Q178709",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q173065",
+        "label": "Regno di Napoli"
+      }
+    ]
+  },
+  "Friston, Karl": {
+    "qid": "Q6371926",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q145",
+        "label": "Regno Unito"
+      }
+    ]
+  },
+  "Melandri, Lea": {
+    "qid": "Q3829208",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q38",
+        "label": "Italia"
+      }
+    ]
+  },
+  "Miyazaki, Hayao": {
+    "qid": "Q55400",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q17",
+        "label": "Giappone"
+      }
+    ]
+  },
+  "Ypi, Lea": {
+    "qid": "Q109453577",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q222",
+        "label": "Albania"
+      }
+    ]
+  },
+  "Cordelli, Chiara": {
+    "qid": "Q110916797",
+    "type": "persona",
+    "paesi": []
+  },
+  "Landemore, Hélène": {
+    "qid": "Q58146490",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q142",
+        "label": "Francia"
+      },
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Fricker, Miranda": {
+    "qid": "Q13522475",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q145",
+        "label": "Regno Unito"
+      }
+    ]
+  },
+  "Origgi, Gloria": {
+    "qid": "Q5571439",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q38",
+        "label": "Italia"
+      }
+    ]
+  },
+  "Diegoli, Gianluca": {
+    "qid": "Q136512702",
+    "type": "persona",
+    "paesi": []
+  },
+  "Brooks, David": {
+    "qid": "Q938475",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Hayles, Katherine": {
+    "qid": "Q4953004",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Droga, David": {
+    "qid": "Q17002782",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q408",
+        "label": "Australia"
+      }
+    ]
+  },
+  "Austin, John L.": {
+    "qid": "Q272615",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q145",
+        "label": "Regno Unito"
+      }
+    ]
+  },
+  "Frayn, Michael": {
+    "qid": "Q506231",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q145",
+        "label": "Regno Unito"
+      }
+    ]
+  },
+  "Shannon, Claude E.": {
+    "qid": "Q92760",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Ashby, W. Ross": {
+    "qid": "Q711172",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q145",
+        "label": "Regno Unito"
+      }
+    ]
+  },
+  "Landauer, Rolf": {
+    "qid": "Q69412",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q183",
+        "label": "Germania"
+      },
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Tit-for-Tat": {
+    "qid": "Q1367487",
+    "type": "teoria",
+    "paesi": []
+  },
+  "two-level games": {
+    "qid": "Q7858724",
+    "type": "teoria",
+    "paesi": []
+  },
+  "antifragilità": {
+    "qid": "Q18352621",
+    "type": "teoria",
+    "paesi": []
+  },
+  "cigni neri": {
+    "qid": "Q2074634",
+    "type": "teoria",
+    "paesi": []
+  },
+  "dottrina Gerasimov": {
+    "qid": "Q28666367",
+    "type": "teoria",
+    "paesi": []
+  },
+  "controllo riflessivo": {
+    "qid": "Q30893759",
+    "type": "teoria",
+    "paesi": []
+  },
+  "allineamento AI": {
+    "qid": "Q24882728",
+    "type": "teoria",
+    "paesi": []
+  },
+  "dual use": {
+    "qid": "Q1262529",
+    "type": "teoria",
+    "paesi": []
+  },
+  "dilemma di Collingridge": {
+    "qid": "Q1109683",
+    "type": "teoria",
+    "paesi": []
+  },
+  "general purpose technologies": {
+    "qid": "Q5532384",
+    "type": "teoria",
+    "paesi": []
+  },
+  "iperoggetti": {
+    "qid": "Q106651271",
+    "type": "teoria",
+    "paesi": []
+  },
+  "riserva cognitiva": {
+    "qid": "Q579471",
+    "type": "teoria",
+    "paesi": []
+  },
+  "WEIRD": {
+    "qid": "Q63372322",
+    "type": "teoria",
+    "paesi": []
+  },
+  "disuguaglianze": {
+    "qid": "Q5431887",
+    "type": "teoria",
+    "paesi": []
+  },
+  "extended mind": {
+    "qid": "Q25051581",
+    "type": "teoria",
+    "paesi": []
+  },
+  "embodied mind": {
+    "qid": "Q1335050",
+    "type": "teoria",
+    "paesi": []
+  },
+  "scrittura": {
+    "qid": "Q37260",
+    "type": "teoria",
+    "paesi": []
+  },
+  "free-energy principle": {
+    "qid": "Q17014702",
+    "type": "teoria",
+    "paesi": []
+  },
+  "Latour, Bruno": {
+    "qid": "Q355237",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q142",
+        "label": "Francia"
+      }
+    ]
+  },
+  "scenario planning": {
+    "qid": "Q1931373",
+    "type": "teoria",
+    "paesi": []
+  },
+  "ermeneutica del sospetto": {
+    "qid": "Q3823131",
+    "type": "teoria",
+    "paesi": []
+  },
+  "ragione comunicativa": {
+    "qid": "Q4355373",
+    "type": "teoria",
+    "paesi": []
+  },
+  "vetocrazia": {
+    "qid": "Q7923762",
+    "type": "teoria",
+    "paesi": []
+  },
+  "disputa sugli universali": {
+    "qid": "Q6092032",
+    "type": "teoria",
+    "paesi": []
+  },
+  "Mavi Vatan": {
+    "qid": "Q97725332",
+    "type": "teoria",
+    "paesi": [
+      {
+        "rel": "paese",
+        "qid": "Q43",
+        "label": "Turchia"
+      }
+    ]
+  },
+  "aiuto allo sviluppo": {
+    "qid": "Q2827815",
+    "type": "teoria",
+    "paesi": []
+  },
+  "piccola impresa": {
+    "qid": "Q1109680",
+    "type": "teoria",
+    "paesi": []
+  },
+  "editoria": {
+    "qid": "Q3972943",
+    "type": "teoria",
+    "paesi": []
+  },
+  "legge Bacchelli": {
+    "qid": "Q3829711",
+    "type": "teoria",
+    "paesi": []
+  },
+  "propaganda": {
+    "qid": "Q7281",
+    "type": "teoria",
+    "paesi": []
+  },
+  "economia": {
+    "qid": "Q8134",
+    "type": "teoria",
+    "paesi": []
+  },
+  "macroeconomia": {
+    "qid": "Q39680",
+    "type": "teoria",
+    "paesi": []
+  },
+  "commoditizzazione": {
+    "qid": "Q5153139",
+    "type": "teoria",
+    "paesi": []
+  },
+  "marketing": {
+    "qid": "Q39809",
+    "type": "teoria",
+    "paesi": []
+  },
+  "GS1 Web Vocabulary": {
+    "qid": "Q140514629",
+    "type": "teoria",
+    "paesi": []
+  },
+  "Schema.org": {
+    "qid": "Q3475322",
+    "type": "teoria",
+    "paesi": []
+  },
+  "web semantico": {
+    "qid": "Q54837",
+    "type": "teoria",
+    "paesi": []
+  },
+  "e-commerce": {
+    "qid": "Q484847",
+    "type": "teoria",
+    "paesi": []
+  },
+  "GEO": {
+    "qid": "Q134083964",
+    "type": "teoria",
+    "paesi": []
+  },
+  "pubblicità": {
+    "qid": "Q37038",
+    "type": "teoria",
+    "paesi": []
+  },
+  "stock option": {
+    "qid": "Q187860",
+    "type": "teoria",
+    "paesi": []
+  },
+  "paideia": {
+    "qid": "Q1365399",
+    "type": "teoria",
+    "paesi": []
+  },
+  "canone": {
+    "qid": "Q861437",
+    "type": "teoria",
+    "paesi": []
+  },
+  "L'alba di tutto": {
+    "qid": "Q108922801",
+    "type": "testo",
+    "paesi": []
+  },
+  "università": {
+    "qid": "Q3918",
+    "type": "istituzione",
+    "paesi": []
+  },
+  "metodo scientifico": {
+    "qid": "Q46857",
+    "type": "teoria",
+    "paesi": []
+  },
+  "ghostwriting": {
+    "qid": "Q131464002",
+    "type": "teoria",
+    "paesi": []
+  },
+  "privilegio": {
+    "qid": "Q7246302",
+    "type": "teoria",
+    "paesi": []
+  },
+  "lavoro invisibile": {
+    "qid": "Q130333052",
+    "type": "teoria",
+    "paesi": []
+  },
+  "femminicidio": {
+    "qid": "Q1342425",
+    "type": "teoria",
+    "paesi": []
+  },
+  "costruttivismo": {
+    "qid": "Q179270",
+    "type": "teoria",
+    "paesi": []
+  },
+  "ontologia sociale": {
+    "qid": "Q1713511",
+    "type": "teoria",
+    "paesi": []
+  },
+  "etica della virtù": {
+    "qid": "Q1086395",
+    "type": "teoria",
+    "paesi": []
+  },
+  "thymos": {
+    "qid": "Q1706580",
+    "type": "teoria",
+    "paesi": []
+  },
+  "liberalismo": {
+    "qid": "Q6216",
+    "type": "teoria",
+    "paesi": []
+  },
+  "data journalism": {
+    "qid": "Q5227309",
+    "type": "teoria",
+    "paesi": []
+  },
+  "patto sociale": {
+    "qid": "Q1326430",
+    "type": "teoria",
+    "paesi": []
+  },
+  "guerra asimmetrica": {
+    "qid": "Q752673",
+    "type": "teoria",
+    "paesi": []
+  },
+  "dati come beni comuni": {
+    "qid": "Q26759606",
+    "type": "teoria",
+    "paesi": []
+  },
+  "vibe coding": {
+    "qid": "Q133150082",
+    "type": "teoria",
+    "paesi": []
+  },
+  "need for cognition": {
+    "qid": "Q1778408",
+    "type": "teoria",
+    "paesi": []
+  },
+  "cognitive offloading": {
+    "qid": "Q135067344",
+    "type": "teoria",
+    "paesi": []
+  },
+  "virtù intellettuale": {
+    "qid": "Q10391780",
+    "type": "teoria",
+    "paesi": []
+  },
+  "iperattenzione": {
+    "qid": "Q5957651",
+    "type": "teoria",
+    "paesi": []
+  },
+  "armi autonome": {
+    "qid": "Q25378861",
+    "type": "teoria",
+    "paesi": []
+  },
+  "epistemia": {
+    "qid": "Q138835467",
+    "type": "teoria",
+    "paesi": []
+  },
+  "atti illocutori": {
+    "qid": "Q1599204",
+    "type": "teoria",
+    "paesi": []
+  },
+  "femminismo": {
+    "qid": "Q7252",
+    "type": "teoria",
+    "paesi": []
+  },
+  "ecologia dei media": {
+    "qid": "Q2583195",
+    "type": "teoria",
+    "paesi": []
+  },
+  "narrazione interattiva": {
+    "qid": "Q2903135",
+    "type": "teoria",
+    "paesi": []
+  },
+  "industrie creative": {
+    "qid": "Q969040",
+    "type": "teoria",
+    "paesi": []
+  },
+  "Hunhu/Ubuntu": {
+    "qid": "Q213843",
+    "type": "teoria",
+    "paesi": []
+  },
+  "metamodernismo": {
+    "qid": "Q3380771",
+    "type": "teoria",
+    "paesi": []
+  },
+  "neghentropia": {
+    "qid": "Q252552",
+    "type": "teoria",
+    "paesi": []
+  },
+  "legge della varietà richiesta": {
+    "qid": "Q724967",
+    "type": "teoria",
+    "paesi": []
+  },
+  "principio di Landauer": {
+    "qid": "Q657486",
+    "type": "teoria",
+    "paesi": []
+  },
+  "divergenza di Kullback-Leibler": {
+    "qid": "Q255166",
+    "type": "teoria",
+    "paesi": []
+  },
+  "Taiwan": {
+    "qid": "Q865",
+    "type": "luogo",
+    "paesi": [
+      {
+        "rel": "paese",
+        "qid": "Q865",
+        "label": "Taiwan"
+      }
+    ]
+  },
+  "A Mathematical Theory of Communication": {
+    "qid": "Q724029",
+    "type": "testo",
+    "paesi": [
+      {
+        "rel": "origine",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "The Evolution of Cooperation": {
+    "qid": "Q915809",
+    "type": "testo",
+    "paesi": [
+      {
+        "rel": "origine",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Copenhagen": {
+    "qid": "Q1561910",
+    "type": "testo",
+    "paesi": []
+  },
+  "Antifragile": {
+    "qid": "Q4774726",
+    "type": "testo",
+    "paesi": [
+      {
+        "rel": "origine",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "La condition postmoderne": {
+    "qid": "Q2186033",
+    "type": "testo",
+    "paesi": [
+      {
+        "rel": "origine",
+        "qid": "Q142",
+        "label": "Francia"
+      }
+    ]
+  },
+  "Dialektik der Aufklärung": {
+    "qid": "Q1208415",
+    "type": "testo",
+    "paesi": [
+      {
+        "rel": "origine",
+        "qid": "Q183",
+        "label": "Germania"
+      }
+    ]
+  },
+  "Why Nations Fail": {
+    "qid": "Q7997840",
+    "type": "testo",
+    "paesi": [
+      {
+        "rel": "origine",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "The End of History and the Last Man": {
+    "qid": "Q1340341",
+    "type": "testo",
+    "paesi": [
+      {
+        "rel": "origine",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "The Embodied Mind": {
+    "qid": "Q139812985",
+    "type": "testo",
+    "paesi": []
+  },
+  "Discours de la méthode": {
+    "qid": "Q731224",
+    "type": "testo",
+    "paesi": []
+  },
+  "Anthropic": {
+    "qid": "Q116758847",
+    "type": "istituzione",
+    "paesi": [
+      {
+        "rel": "paese",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Anduril": {
+    "qid": "Q61918830",
+    "type": "istituzione",
+    "paesi": [
+      {
+        "rel": "paese",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Palantir": {
+    "qid": "Q2047336",
+    "type": "istituzione",
+    "paesi": [
+      {
+        "rel": "paese",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "DARPA": {
+    "qid": "Q207361",
+    "type": "istituzione",
+    "paesi": [
+      {
+        "rel": "paese",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "NSDAP": {
+    "qid": "Q7320",
+    "type": "istituzione",
+    "paesi": [
+      {
+        "rel": "paese",
+        "qid": "Q41304",
+        "label": "Repubblica di Weimar"
+      },
+      {
+        "rel": "paese",
+        "qid": "Q7318",
+        "label": "Germania nazista"
+      }
+    ]
+  },
+  "AfD": {
+    "qid": "Q6721203",
+    "type": "istituzione",
+    "paesi": [
+      {
+        "rel": "paese",
+        "qid": "Q183",
+        "label": "Germania"
+      }
+    ]
+  },
+  "The Economist": {
+    "qid": "Q180089",
+    "type": "istituzione",
+    "paesi": [
+      {
+        "rel": "paese",
+        "qid": "Q145",
+        "label": "Regno Unito"
+      }
+    ]
+  },
+  "77 Brigade": {
+    "qid": "Q4643592",
+    "type": "istituzione",
+    "paesi": [
+      {
+        "rel": "paese",
+        "qid": "Q145",
+        "label": "Regno Unito"
+      }
+    ]
+  },
+  "Studio Ghibli": {
+    "qid": "Q182950",
+    "type": "istituzione",
+    "paesi": [
+      {
+        "rel": "paese",
+        "qid": "Q17",
+        "label": "Giappone"
+      }
+    ]
+  },
+  "GS1": {
+    "qid": "Q731100",
+    "type": "istituzione",
+    "paesi": [
+      {
+        "rel": "paese",
+        "qid": "Q31",
+        "label": "Belgio"
+      }
+    ]
+  },
+  "Cannes Lions": {
+    "qid": "Q621422",
+    "type": "istituzione",
+    "paesi": [
+      {
+        "rel": "paese",
+        "qid": "Q142",
+        "label": "Francia"
+      }
+    ]
+  },
+  "OpenAI": {
+    "qid": "Q21708200",
+    "type": "istituzione",
+    "paesi": [
+      {
+        "rel": "paese",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Bending Spoons": {
+    "qid": "Q96314827",
+    "type": "istituzione",
+    "paesi": [
+      {
+        "rel": "paese",
+        "qid": "Q38",
+        "label": "Italia"
+      }
+    ]
+  },
+  "Zalando": {
+    "qid": "Q136570",
+    "type": "istituzione",
+    "paesi": [
+      {
+        "rel": "paese",
+        "qid": "Q183",
+        "label": "Germania"
+      }
+    ]
+  },
+  "Rocket Internet": {
+    "qid": "Q82229",
+    "type": "istituzione",
+    "paesi": [
+      {
+        "rel": "paese",
+        "qid": "Q183",
+        "label": "Germania"
+      }
+    ]
+  },
+  "Revolut": {
+    "qid": "Q22908307",
+    "type": "istituzione",
+    "paesi": [
+      {
+        "rel": "paese",
+        "qid": "Q37",
+        "label": "Lituania"
+      }
+    ]
+  },
+  "Washington Post": {
+    "qid": "Q166032",
+    "type": "istituzione",
+    "paesi": [
+      {
+        "rel": "paese",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "New York Times": {
+    "qid": "Q9684",
+    "type": "istituzione",
+    "paesi": [
+      {
+        "rel": "paese",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Magnifica Humanitas": {
+    "qid": "Q139027804",
+    "type": "testo",
+    "paesi": []
+  },
+  "Platformer": {
+    "qid": "Q136926265",
+    "type": "testo",
+    "paesi": []
+  },
+  "Bologna": {
+    "qid": "Q1891",
+    "type": "luogo",
+    "paesi": [
+      {
+        "rel": "paese",
+        "qid": "Q38",
+        "label": "Italia"
+      }
+    ]
+  },
+  "Russia": {
+    "qid": "Q159",
+    "type": "paese",
+    "paesi": [
+      {
+        "rel": "paese",
+        "qid": "Q159",
+        "label": "Russia"
+      }
+    ]
+  },
+  "Ucraina": {
+    "qid": "Q212",
+    "type": "paese",
+    "paesi": [
+      {
+        "rel": "paese",
+        "qid": "Q212",
+        "label": "Ucraina"
+      }
+    ]
+  },
+  "Stati Uniti": {
+    "qid": "Q30",
+    "type": "paese",
+    "paesi": [
+      {
+        "rel": "paese",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Unione Europea": {
+    "qid": "Q458",
+    "type": "paese",
+    "paesi": [
+      {
+        "rel": "paese",
+        "qid": "Q1072012",
+        "label": "internazionale"
+      }
+    ]
+  },
+  "Europa": {
+    "qid": "Q46",
+    "type": "paese",
+    "paesi": [
+      {
+        "rel": "se stesso",
+        "qid": "Q46",
+        "label": "Europa"
+      }
+    ]
+  },
+  "Cina": {
+    "qid": "Q148",
+    "type": "paese",
+    "paesi": [
+      {
+        "rel": "paese",
+        "qid": "Q148",
+        "label": "Cina"
+      }
+    ]
+  },
+  "Iran": {
+    "qid": "Q794",
+    "type": "paese",
+    "paesi": [
+      {
+        "rel": "paese",
+        "qid": "Q794",
+        "label": "Iran"
+      }
+    ]
+  },
+  "Germania": {
+    "qid": "Q183",
+    "type": "paese",
+    "paesi": [
+      {
+        "rel": "paese",
+        "qid": "Q183",
+        "label": "Germania"
+      }
+    ]
+  },
+  "Regno Unito": {
+    "qid": "Q145",
+    "type": "paese",
+    "paesi": [
+      {
+        "rel": "paese",
+        "qid": "Q145",
+        "label": "Regno Unito"
+      }
+    ]
+  },
+  "Giappone": {
+    "qid": "Q17",
+    "type": "paese",
+    "paesi": [
+      {
+        "rel": "paese",
+        "qid": "Q17",
+        "label": "Giappone"
+      }
+    ]
+  },
+  "Trump, Donald": {
+    "qid": "Q22686",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Putin, Vladimir": {
+    "qid": "Q7747",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q159",
+        "label": "Russia"
+      }
+    ]
+  },
+  "Zelensky, Volodymyr": {
+    "qid": "Q3874799",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q212",
+        "label": "Ucraina"
+      }
+    ]
+  },
+  "Orbán, Viktor": {
+    "qid": "Q57641",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q28",
+        "label": "Ungheria"
+      }
+    ]
+  },
+  "Netanyahu, Benjamin": {
+    "qid": "Q43723",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q801",
+        "label": "Israele"
+      }
+    ]
+  },
+  "Xi, Jinping": {
+    "qid": "Q15031",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q148",
+        "label": "Cina"
+      }
+    ]
+  },
+  "Karp, Alexander": {
+    "qid": "Q19560940",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Karpathy, Andrej": {
+    "qid": "Q56037405",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q214",
+        "label": "Slovacchia"
+      },
+      {
+        "rel": "cittadinanza",
+        "qid": "Q16",
+        "label": "Canada"
+      }
+    ]
+  },
+  "Hegseth, Pete": {
+    "qid": "Q7172014",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Thompson, Ben": {
+    "qid": "Q25351425",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Tooze, Adam": {
+    "qid": "Q351075",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q145",
+        "label": "Regno Unito"
+      }
+    ]
+  },
+  "Polanyi, Karl": {
+    "qid": "Q318029",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q28",
+        "label": "Ungheria"
+      }
+    ]
+  },
+  "Lepore, Jill": {
+    "qid": "Q6192915",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Arendt, Hannah": {
+    "qid": "Q60025",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Thiel, Peter": {
+    "qid": "Q705525",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q664",
+        "label": "Nuova Zelanda"
+      },
+      {
+        "rel": "cittadinanza",
+        "qid": "Q183",
+        "label": "Germania"
+      },
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "van Middelaar, Luuk": {
+    "qid": "Q4761828",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q29999",
+        "label": "Regno dei Paesi Bassi"
+      }
+    ]
+  },
+  "Kojève, Alexandre": {
+    "qid": "Q354504",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q142",
+        "label": "Francia"
+      },
+      {
+        "rel": "cittadinanza",
+        "qid": "Q34266",
+        "label": "Impero russo"
+      },
+      {
+        "rel": "cittadinanza",
+        "qid": "Q2305208",
+        "label": "Russia sovietica"
+      }
+    ]
+  },
+  "Kelly, Kevin": {
+    "qid": "Q2707355",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Nussbaum, Martha": {
+    "qid": "Q235470",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Mengzi": {
+    "qid": "Q188903",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q227007",
+        "label": "Zhu"
+      }
+    ]
+  },
+  "Aristotele": {
+    "qid": "Q868",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "luogo di lavoro",
+        "qid": "Q41",
+        "label": "Grecia"
+      }
+    ]
+  },
+  "Deleuze, Gilles": {
+    "qid": "Q184226",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q142",
+        "label": "Francia"
+      }
+    ]
+  },
+  "Columbro, Donata": {
+    "qid": "Q110887039",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q38",
+        "label": "Italia"
+      }
+    ]
+  },
+  "Bores, Alex": {
+    "qid": "Q117328293",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Chan, Kyle": {
+    "qid": "Q95952534",
+    "type": "persona",
+    "paesi": []
+  },
+  "Zakaria, Fareed": {
+    "qid": "Q333425",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Klein, Ezra": {
+    "qid": "Q605",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Thompson, Derek": {
+    "qid": "Q45099198",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Harbaugh, Ken": {
+    "qid": "Q28530060",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Vogels, Werner": {
+    "qid": "Q2536951",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q29999",
+        "label": "Regno dei Paesi Bassi"
+      }
+    ]
+  },
+  "Askell, Amanda": {
+    "qid": "Q115661373",
+    "type": "persona",
+    "paesi": []
+  },
+  "Hui, Yuk": {
+    "qid": "Q106863978",
+    "type": "persona",
+    "paesi": []
+  },
+  "Pieranni, Simone": {
+    "qid": "Q115625750",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q38",
+        "label": "Italia"
+      }
+    ]
+  },
+  "Boccia Artieri, Giovanni": {
+    "qid": "Q3107105",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q38",
+        "label": "Italia"
+      }
+    ]
+  },
+  "Casey Newton": {
+    "qid": "Q78906087",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "McLuhan, Marshall": {
+    "qid": "Q193871",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q16",
+        "label": "Canada"
+      }
+    ]
+  },
+  "Postman, Neil": {
+    "qid": "Q436131",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Azhar, Azeem": {
+    "qid": "Q104414503",
+    "type": "persona",
+    "paesi": []
+  },
+  "Gumenyuk, Nataliya": {
+    "qid": "Q17361190",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q212",
+        "label": "Ucraina"
+      }
+    ]
+  },
+  "Meloni, Giorgia": {
+    "qid": "Q451791",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q38",
+        "label": "Italia"
+      }
+    ]
+  },
+  "Musk, Elon": {
+    "qid": "Q317521",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q258",
+        "label": "Sudafrica"
+      },
+      {
+        "rel": "cittadinanza",
+        "qid": "Q16",
+        "label": "Canada"
+      },
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Morton, Timothy": {
+    "qid": "Q4854071",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Steinem, Gloria": {
+    "qid": "Q231178",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Turkle, Sherry": {
+    "qid": "Q52919",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Fukuyama, Francis": {
+    "qid": "Q186123",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Nelson, Ted": {
+    "qid": "Q62852",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q30",
+        "label": "Stati Uniti"
+      }
+    ]
+  },
+  "Tucidide": {
+    "qid": "Q41683",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q844930",
+        "label": "Atene"
+      }
+    ]
+  },
+  "Bourdieu, Pierre": {
+    "qid": "Q156268",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q142",
+        "label": "Francia"
+      }
+    ]
+  },
+  "capitale simbolico": {
+    "qid": "Q1751638",
+    "type": "teoria",
+    "paesi": []
+  },
+  "Schmitt, Carl": {
+    "qid": "Q77148",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q183",
+        "label": "Germania"
+      }
+    ]
+  },
+  "Hobsbawm, Eric": {
+    "qid": "Q34933",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q145",
+        "label": "Regno Unito"
+      }
+    ]
+  },
+  "Aresu, Alessandro": {
+    "qid": "Q131236382",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q38",
+        "label": "Italia"
+      }
+    ]
+  }
+}

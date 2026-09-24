@@ -19,7 +19,15 @@
     "Regno d'Inghilterra": "Regno Unito",
     "Regno franco": "Francia",
     "Primo Impero francese": "Francia",
-    "Unione Sovietica": "DA DECIDERE CASO PER CASO"
+    "Unione Sovietica": "DA DECIDERE CASO PER CASO",
+    "Atene": "Grecia",
+    "Zhu": "Cina",
+    "Repubblica delle Sette Province Unite": "Paesi Bassi",
+    "Regno dei Paesi Bassi": "Paesi Bassi",
+    "Regno di Napoli": "Italia",
+    "Russia sovietica": "Russia",
+    "internazionale": "UE",
+    "Europa": "UE"
   },
   "sameAs": {
     "Tit-for-Tat": "Q1367487",
@@ -375,6 +383,162 @@
       "paesi": [
         "Stati Uniti"
       ]
+    },
+    "Averroè": {
+      "modo": "diretta",
+      "paesi": [
+        "Spagna"
+      ]
+    },
+    "Cordelli, Chiara": {
+      "modo": "diretta",
+      "paesi": [
+        "Italia",
+        "Stati Uniti"
+      ]
+    },
+    "Diegoli, Gianluca": {
+      "modo": "diretta",
+      "paesi": [
+        "Italia"
+      ]
+    },
+    "Chan, Kyle": {
+      "modo": "diretta",
+      "paesi": [
+        "Stati Uniti"
+      ]
+    },
+    "Askell, Amanda": {
+      "modo": "diretta",
+      "paesi": [
+        "Regno Unito",
+        "Stati Uniti"
+      ]
+    },
+    "Hui, Yuk": {
+      "modo": "diretta",
+      "paesi": [
+        "Cina"
+      ]
+    },
+    "Azhar, Azeem": {
+      "modo": "diretta",
+      "paesi": [
+        "Regno Unito"
+      ]
+    },
+    "L'alba di tutto": {
+      "modo": "diretta",
+      "paesi": [
+        "Stati Uniti",
+        "Regno Unito"
+      ]
+    },
+    "Copenhagen": {
+      "modo": "diretta",
+      "paesi": [
+        "Regno Unito"
+      ]
+    },
+    "The Embodied Mind": {
+      "modo": "diretta",
+      "paesi": [
+        "Stati Uniti"
+      ]
+    },
+    "Discours de la méthode": {
+      "modo": "diretta",
+      "paesi": [
+        "Francia"
+      ]
+    },
+    "Magnifica Humanitas": {
+      "modo": "diretta",
+      "paesi": [
+        "Città del Vaticano"
+      ]
+    },
+    "Platformer": {
+      "modo": "diretta",
+      "paesi": [
+        "Stati Uniti"
+      ]
+    },
+    "two-level games": {
+      "modo": "teorico",
+      "paesi": [
+        "Stati Uniti"
+      ]
+    },
+    "antifragilità": {
+      "modo": "teorico",
+      "paesi": [
+        "Libano",
+        "Stati Uniti"
+      ]
+    },
+    "cigni neri": {
+      "modo": "teorico",
+      "paesi": [
+        "Libano",
+        "Stati Uniti"
+      ]
+    },
+    "controllo riflessivo": {
+      "modo": "diretta",
+      "paesi": [
+        "Russia"
+      ]
+    },
+    "dilemma di Collingridge": {
+      "modo": "teorico",
+      "paesi": [
+        "Regno Unito"
+      ]
+    },
+    "general purpose technologies": {
+      "modo": "teorico",
+      "paesi": [
+        "Stati Uniti"
+      ]
+    },
+    "iperoggetti": {
+      "modo": "teorico",
+      "paesi": [
+        "Regno Unito"
+      ]
+    },
+    "WEIRD": {
+      "modo": "teorico",
+      "paesi": [
+        "Stati Uniti"
+      ]
+    },
+    "extended mind": {
+      "modo": "teorico",
+      "paesi": [
+        "Regno Unito",
+        "Australia"
+      ]
+    },
+    "free-energy principle": {
+      "modo": "teorico",
+      "paesi": [
+        "Regno Unito"
+      ]
+    },
+    "ermeneutica del sospetto": {
+      "modo": "teorico",
+      "paesi": [
+        "Francia"
+      ]
+    },
+    "ragione comunicativa": {
+      "modo": "teorico",
+      "paesi": [
+        "Germania"
+      ]
     }
   },
   "conio": [
@@ -386,5 +550,6 @@
     "guadagno epistemico",
     "piano dei regimi",
     "Le Fake News e il Marketing del Vero"
-  ]
+  ],
+  "cittadinanze_multiple": "si tengono tutte (approvato 25/9)"
 }

@@ -1,0 +1,1563 @@
+{
+  "shadow of the future": [],
+  "dilemma del prigioniero iterato": [
+    {
+      "id": "Q34276418",
+      "label": "Iterated Prisoner's Dilemma contains strategies that dominate any evolutionary opponent",
+      "description": "articolo scientifico",
+      "da": "iterated prisoner's dilemma"
+    },
+    {
+      "id": "Q50791045",
+      "label": "Iterated prisoner's dilemma in an asocial world dominated by loners, not by defectors.",
+      "description": "articolo scientifico",
+      "da": "iterated prisoner's dilemma"
+    },
+    {
+      "id": "Q51101165",
+      "label": "Iterated Prisoner's Dilemma: pay-off variance",
+      "description": "articolo scientifico",
+      "da": "iterated prisoner's dilemma"
+    }
+  ],
+  "two-level games": [
+    {
+      "id": "Q7858724",
+      "label": "two-level game theory",
+      "description": "political model of international conflict resolution",
+      "da": "two-level game theory"
+    },
+    {
+      "id": "Q57635880",
+      "label": "Diplomacy and domestic politics: the logic of two-level games",
+      "description": "article",
+      "da": "Diplomacy and Domestic Politics: The Logic of Two-Level Games"
+    }
+  ],
+  "win-set domestico": [],
+  "cigni neri": [
+    {
+      "id": "Q2074634",
+      "label": "Teoria del Cigno Nero",
+      "description": "teoria sulle reazioni ad un evento imprevisto",
+      "da": "black swan theory"
+    },
+    {
+      "id": "Q141447518",
+      "label": "Black Swan Theory",
+      "description": "Philosophical case study examining the intersection of bioethics, medical anomalies, and structural blind spots; a first-hand account.",
+      "da": "black swan theory"
+    },
+    {
+      "id": "Q125740381",
+      "label": "Black Swan Theory: Applications to energy market histories and technologies",
+      "description": "articolo scientifico",
+      "da": "black swan theory"
+    },
+    {
+      "id": "Q126348740",
+      "label": "The Black Swan",
+      "description": "2007 hardcover edition",
+      "da": "The Black Swan: The Impact of the Highly Improbable"
+    },
+    {
+      "id": "Q2397469",
+      "label": "Il cigno nero",
+      "description": "saggio di Nassim Nicholas Taleb",
+      "da": "The Black Swan: The Impact of the Highly Improbable"
+    },
+    {
+      "id": "Q57525683",
+      "label": "The Black Swan: The Impact of the Highly Improbable, Second Edition by Nassim Nicholas Taleb",
+      "description": "",
+      "da": "The Black Swan: The Impact of the Highly Improbable"
+    },
+    {
+      "id": "Q129896177",
+      "label": "The Black Swan: The Impact of the Highly ImprobableBy TalebNassim Nicholas; Random House, 2010 (2nd ed.), 366 pages",
+      "description": "articolo scientifico",
+      "da": "The Black Swan: The Impact of the Highly Improbable"
+    }
+  ],
+  "dottrina Gerasimov": [
+    {
+      "id": "Q28666367",
+      "label": "Gerasimov doctrine",
+      "description": "Russian military strategic concept",
+      "da": "Gerasimov doctrine"
+    }
+  ],
+  "controllo riflessivo": [
+    {
+      "id": "Q30893759",
+      "label": "Reflexive control",
+      "description": "indirect control over an opponent's decisions",
+      "da": "reflexive control"
+    },
+    {
+      "id": "Q122150607",
+      "label": "Reflexive Control as a Risk Factor for Using OSINT: Insights from the Russia–Ukraine Conflict",
+      "description": "articolo scientifico",
+      "da": "reflexive control"
+    }
+  ],
+  "allineamento AI": [
+    {
+      "id": "Q24882728",
+      "label": "AI alignment",
+      "description": "alignment of AI systems towards human goals, preferences and ethical principles",
+      "da": "AI alignment"
+    },
+    {
+      "id": "Q139883219",
+      "label": "AI Alignment Network",
+      "description": "Japanese nonprofit promoting AI alignment research, community building, and outreach",
+      "da": "AI alignment"
+    },
+    {
+      "id": "Q137013569",
+      "label": "AI Alignment for Ethical Compliance and Risk Mitigation in Industrial Applications",
+      "description": "",
+      "da": "AI alignment"
+    },
+    {
+      "id": "Q131288183",
+      "label": "AI Alignment: A Comprehensive Survey",
+      "description": "articolo scientifico",
+      "da": "AI alignment"
+    }
+  ],
+  "paradigma tecnocratico": [
+    {
+      "id": "Q123310311",
+      "label": "Technocratic paradigm",
+      "description": "pagina di disambiguazione di un progetto Wikimedia",
+      "da": "technocratic paradigm"
+    },
+    {
+      "id": "Q20064904",
+      "label": "Laudato si'",
+      "description": "enciclica di papa Francesco del 2015",
+      "da": "Laudato si'"
+    },
+    {
+      "id": "Q27994990",
+      "label": "Laudato si’",
+      "description": "Oratorio",
+      "da": "Laudato si'"
+    },
+    {
+      "id": "Q122011942",
+      "label": "Laudato si' papeže Františka: encyklika: o péči o společný domov",
+      "description": "book edition published in 2018",
+      "da": "Laudato si'"
+    },
+    {
+      "id": "Q114965912",
+      "label": "Laudato Si' Movement",
+      "description": "global Catholic climate and justice network",
+      "da": "Laudato si'"
+    },
+    {
+      "id": "Q121962790",
+      "label": "Laudato si' papeže Františka",
+      "description": "book edition published in 2015",
+      "da": "Laudato si'"
+    }
+  ],
+  "dilemma di Collingridge": [
+    {
+      "id": "Q1109683",
+      "label": "Collingridge dilemma",
+      "description": "methodological quandary",
+      "da": "Collingridge dilemma"
+    }
+  ],
+  "general purpose technologies": [
+    {
+      "id": "Q5532384",
+      "label": "general purpose",
+      "description": "Tecnologie che possono influenzare un'intera economia su larga scala",
+      "da": "general-purpose technology"
+    }
+  ],
+  "iperoggetti": [
+    {
+      "id": "Q106651271",
+      "label": "hyperobject",
+      "description": "",
+      "da": "hyperobject"
+    },
+    {
+      "id": "Q108490234",
+      "label": "Hyperobject Industries",
+      "description": "American film and television production company",
+      "da": "hyperobject"
+    },
+    {
+      "id": "Q100982195",
+      "label": "Hyperobjects: Philosophy and Ecology after the End of the World",
+      "description": "",
+      "da": "hyperobject"
+    },
+    {
+      "id": "Q136281177",
+      "label": "Hyperobjects: Philosophy and Ecology after the End of the World",
+      "description": "book 2013",
+      "da": "hyperobject"
+    },
+    {
+      "id": "Q141254780",
+      "label": "Hyperobjects, Hyposubjects and Solidarity in the Anthropocene: Anthropocenes Interview with Timothy Morton and Dominic Boyer",
+      "description": "articolo scientifico",
+      "da": "hyperobject"
+    }
+  ],
+  "WEIRD": [
+    {
+      "id": "Q63372322",
+      "label": "WEIRD",
+      "description": "set of demographics often encountered as selection biases in human research, or people in these demographics",
+      "da": "Western, educated, industrialized, rich and democratic"
+    },
+    {
+      "id": "Q97164643",
+      "label": "The WEIRDest People in the World",
+      "description": "2020 book by Joseph Henrich",
+      "da": "The WEIRDest People in the World"
+    },
+    {
+      "id": "Q37765324",
+      "label": "The weirdest people in the world?",
+      "description": "articolo scientifico",
+      "da": "The WEIRDest People in the World"
+    },
+    {
+      "id": "Q39863990",
+      "label": "The weirdest people in the world are a harbinger of the future of the world",
+      "description": "articolo scientifico",
+      "da": "The WEIRDest People in the World"
+    }
+  ],
+  "disuguaglianze": [
+    {
+      "id": "Q5431887",
+      "label": "disuguaglianza sociale",
+      "description": "fenomeno sociale",
+      "da": "social inequality"
+    },
+    {
+      "id": "Q136293679",
+      "label": "Social Inequality",
+      "description": "book edition 2004",
+      "da": "social inequality"
+    },
+    {
+      "id": "Q59576889",
+      "label": "Social inequality in coronary heart disease outcomes",
+      "description": "doctoral thesis by Tarani Chandola",
+      "da": "social inequality"
+    },
+    {
+      "id": "Q59583043",
+      "label": "Social inequality and educational choice",
+      "description": "doctoral thesis by Anita Koo",
+      "da": "social inequality"
+    },
+    {
+      "id": "Q136275306",
+      "label": "Social inequality and public health",
+      "description": "book 2009",
+      "da": "social inequality"
+    }
+  ],
+  "embodied mind": [
+    {
+      "id": "Q1335050",
+      "label": "cognizione incorporata",
+      "description": "interdisciplinary theory",
+      "da": "embodied cognition"
+    },
+    {
+      "id": "Q56298745",
+      "label": "embodied artificial intelligence",
+      "description": "area in AI research",
+      "da": "embodied cognition"
+    },
+    {
+      "id": "Q107523487",
+      "label": "Embodied cognition and information experiences of transgender people",
+      "description": "webpage published in 2019",
+      "da": "embodied cognition"
+    },
+    {
+      "id": "Q112910226",
+      "label": "Embodied Cognition and Representation in Domesticated Dogs",
+      "description": "2015 doctoral thesis by Kate Osto at University of Waikato",
+      "da": "embodied cognition"
+    },
+    {
+      "id": "Q128321171",
+      "label": "Embodied Cognition and the Archaeology of Mind: A Radical Reassessment",
+      "description": "",
+      "da": "embodied cognition"
+    },
+    {
+      "id": "Q80345810",
+      "label": "Embodied minds, restless spirits: mid-life rural women speak of their health",
+      "description": "scientific article published on 01 January 2004",
+      "da": "embodied mind"
+    },
+    {
+      "id": "Q114688405",
+      "label": "Embodied Minds: Hearts and Brains in Psychiatry and Chinese Medicine",
+      "description": "scientific article published in 2021",
+      "da": "embodied mind"
+    }
+  ],
+  "watermarking": [
+    {
+      "id": "Q875932",
+      "label": "watermark",
+      "description": "simbolo",
+      "da": "digital watermarking"
+    },
+    {
+      "id": "Q121069524",
+      "label": "Digital watermarking",
+      "description": "US patent 11443401",
+      "da": "digital watermarking"
+    },
+    {
+      "id": "Q27996706",
+      "label": "Digital Watermarking — IWDW 2008",
+      "description": "2009 Springer Berlin Heidelberg edition",
+      "da": "digital watermarking"
+    },
+    {
+      "id": "Q106087660",
+      "label": "Digital Watermarking, 7th International Workshop, IWDW 2008, Busan, Korea, November 10-12, 2008",
+      "description": "academic workshop",
+      "da": "digital watermarking"
+    },
+    {
+      "id": "Q106245484",
+      "label": "Digital Watermarking, Second International Workshop, IWDW 2003, Seoul, Korea, October 20-22, 2003",
+      "description": "academic workshop",
+      "da": "digital watermarking"
+    },
+    {
+      "id": "Q131277858",
+      "label": "Text watermarking",
+      "description": "watermarking technique for AI-generated text",
+      "da": "text watermarking"
+    },
+    {
+      "id": "Q126197228",
+      "label": "Text watermarking method and apparatus for hiding information into text documents",
+      "description": "US patent 11469879",
+      "da": "text watermarking"
+    }
+  ],
+  "verum ipsum factum": [],
+  "ermeneutica del sospetto": [
+    {
+      "id": "Q3823131",
+      "label": "Scuola del sospetto",
+      "description": "Literary interpretation style",
+      "da": "hermeneutics of suspicion"
+    },
+    {
+      "id": "Q116307643",
+      "label": "Hermeneutics of Suspicion",
+      "description": "dictionary entry",
+      "da": "hermeneutics of suspicion"
+    }
+  ],
+  "incredulità verso le metanarrazioni": [
+    {
+      "id": "Q2359754",
+      "label": "metanarrazione",
+      "description": "concetto storiografico",
+      "da": "metanarrative"
+    },
+    {
+      "id": "Q64594168",
+      "label": "Metanarratives and the (re)invention of the Neolithic",
+      "description": "scholarly article by David Robinson published in October 2008",
+      "da": "metanarrative"
+    },
+    {
+      "id": "Q128079029",
+      "label": "Metanarrative as Inoculation in What’s Bred in the Bone",
+      "description": "articolo scientifico",
+      "da": "metanarrative"
+    },
+    {
+      "id": "Q109583059",
+      "label": "Metanarrative of the \"New Father\" and Narratives of Young Finnish First-Time Fathers",
+      "description": "articolo scientifico",
+      "da": "metanarrative"
+    },
+    {
+      "id": "Q139867163",
+      "label": "The postmodern condition",
+      "description": "book chapter in The Postmodern Turn (1994)",
+      "da": "The Postmodern Condition"
+    },
+    {
+      "id": "Q2186033",
+      "label": "La condizione postmoderna",
+      "description": "opera dal filosofo francese Jean-François Lyotard",
+      "da": "The Postmodern Condition"
+    },
+    {
+      "id": "Q110997837",
+      "label": "The Postmodern Condition: a report on knowledge",
+      "description": "book",
+      "da": "The Postmodern Condition"
+    },
+    {
+      "id": "Q139875264",
+      "label": "The Postmodern Condition: A Report on Knowledge",
+      "description": "",
+      "da": "The Postmodern Condition"
+    }
+  ],
+  "ragione comunicativa": [
+    {
+      "id": "Q4355373",
+      "label": "Communicative rationality",
+      "description": "set of philosophical theories",
+      "da": "communicative rationality"
+    },
+    {
+      "id": "Q119102304",
+      "label": "Communicative Rationality and Legal Philosophy in the Times of Globeclization:A Review on Van Hoeche’s Law as Communication",
+      "description": "",
+      "da": "communicative rationality"
+    },
+    {
+      "id": "Q114950435",
+      "label": "Communicative Rationality and Open-Ended Law in Sweden",
+      "description": "articolo scientifico",
+      "da": "communicative rationality"
+    },
+    {
+      "id": "Q140918373",
+      "label": "Communicative Rationality of the Maxwellian Revolution",
+      "description": "articolo scientifico",
+      "da": "communicative rationality"
+    },
+    {
+      "id": "Q60629993",
+      "label": "Communicative Rationality in the Clinic? Exploring the Parental Role in the Management of Gastro-Oesophageal Reflux in Children",
+      "description": "",
+      "da": "communicative rationality"
+    },
+    {
+      "id": "Q140183057",
+      "label": "The theory of communicative action",
+      "description": "book chapter in The Philosophy of Habermas (2014)",
+      "da": "The Theory of Communicative Action"
+    },
+    {
+      "id": "Q140124146",
+      "label": "The theory of communicative action",
+      "description": "book chapter in Habermas (2006)",
+      "da": "The Theory of Communicative Action"
+    },
+    {
+      "id": "Q140183058",
+      "label": "The theory of communicative action",
+      "description": "book chapter in The Philosophy of Habermas (2005)",
+      "da": "The Theory of Communicative Action"
+    }
+  ],
+  "vetocrazia": [
+    {
+      "id": "Q7923762",
+      "label": "vetocracy",
+      "description": "dysfunctional governance system in which no-one can effect any change",
+      "da": "vetocracy"
+    }
+  ],
+  "istituzioni inclusive vs. estrattive": [
+    {
+      "id": "Q129778407",
+      "label": "Extractive institutions in non-tradeable industries",
+      "description": "articolo scientifico",
+      "da": "extractive institutions"
+    },
+    {
+      "id": "Q127242458",
+      "label": "Extractive institutions? Investor returns to Indian railway companies in the age of high imperialism",
+      "description": "articolo scientifico",
+      "da": "extractive institutions"
+    },
+    {
+      "id": "Q7997840",
+      "label": "Perché le nazioni falliscono",
+      "description": "saggio di Daron Acemoğlu e James A. Robinson",
+      "da": "Why Nations Fail"
+    },
+    {
+      "id": "Q139773084",
+      "label": "Why Nations Fail: Managerial Decisions and Performance in Indian Cotton Textiles, 1890–1938",
+      "description": "",
+      "da": "Why Nations Fail"
+    },
+    {
+      "id": "Q58109661",
+      "label": "Why Nations Fail: The Origins of Power, Prosperity, and Poverty by Daron Acemoglu and James Robinson",
+      "description": "book review",
+      "da": "Why Nations Fail"
+    },
+    {
+      "id": "Q122645218",
+      "label": "Why Nations Fail: The Origins of Power, Prosperity, and Poverty",
+      "description": "articolo scientifico",
+      "da": "Why Nations Fail"
+    },
+    {
+      "id": "Q123180876",
+      "label": "Why Nations Fail. The Origins of Power, Prosperity, and Poverty",
+      "description": "scientific article published in 2012",
+      "da": "Why Nations Fail"
+    }
+  ],
+  "fattore di sconto δ": [
+    {
+      "id": "Q10998070",
+      "label": "sconto",
+      "description": "operazione di calcolo dalla matematica finanziaria per il valore di un pagamento futuro",
+      "da": "discount factor"
+    },
+    {
+      "id": "Q113343587",
+      "label": "Discount Factors and Risk Aversion in Managing Random Fish Populations",
+      "description": "scientific article published on 24 April 2011",
+      "da": "discount factor"
+    }
+  ],
+  "trasferimenti monetari diretti": [
+    {
+      "id": "Q119970536",
+      "label": "cash benefit",
+      "description": "",
+      "da": "cash transfer"
+    },
+    {
+      "id": "Q139989545",
+      "label": "Cash Transfers, Poverty, and Inequality in Latin America and the Caribbean",
+      "description": "research report published in 2023",
+      "da": "cash transfer"
+    },
+    {
+      "id": "Q106822506",
+      "label": "cash and voucher assistance",
+      "description": "form of humanitarian assistance involving transfer of cash or cash equivalent direct to aid recipients",
+      "da": "cash transfer"
+    },
+    {
+      "id": "Q74281720",
+      "label": "Cash Transfers to Increase Dietary Diversity in Grand Gedeh County, Liberia",
+      "description": "studio clinico",
+      "da": "cash transfer"
+    },
+    {
+      "id": "Q63394400",
+      "label": "Cash Transfer to Adolescent Girls and Young Women to Reduce Sexual Risk Behavior - an Impact Evaluation",
+      "description": "clinical trial",
+      "da": "cash transfer"
+    },
+    {
+      "id": "Q5565603",
+      "label": "GiveDirectly",
+      "description": "aid organization",
+      "da": "GiveDirectly"
+    },
+    {
+      "id": "Q131848168",
+      "label": "GiveDirectly, Inc.",
+      "description": "",
+      "da": "GiveDirectly"
+    }
+  ],
+  "successione aziendale": [],
+  "piccola impresa": [
+    {
+      "id": "Q1109680",
+      "label": "small business",
+      "description": "private business with relatively small number of employees, capital, or revenue",
+      "da": "small business"
+    },
+    {
+      "id": "Q7542688",
+      "label": "Small Business Economics",
+      "description": "rivista scientifica",
+      "da": "small business"
+    },
+    {
+      "id": "Q495354",
+      "label": "Agenzia per le piccole imprese",
+      "description": "Agenzia governativa statunitense",
+      "da": "small business"
+    },
+    {
+      "id": "Q100163981",
+      "label": "Small Business, Enterprise and Employment Act 2015",
+      "description": "Public General Act of Parliament of the United Kingdom",
+      "da": "small business"
+    },
+    {
+      "id": "Q112970946",
+      "label": "Small Business Management",
+      "description": "field of research",
+      "da": "small business"
+    }
+  ],
+  "memoria storica": [
+    {
+      "id": "Q139734904",
+      "label": "Historical Memory in Greece, 1821–1930",
+      "description": "",
+      "da": "historical memory"
+    },
+    {
+      "id": "Q703535",
+      "label": "Legge sulla memoria storica",
+      "description": "Spanish law passed in 2007",
+      "da": "historical memory"
+    },
+    {
+      "id": "Q64494814",
+      "label": "Historical Memory Foundation",
+      "description": "Russian non-profit-organization for the scientific study of the history of the 20th century",
+      "da": "historical memory"
+    },
+    {
+      "id": "Q16737824",
+      "label": "Historical Memory and Environmental Awareness Park",
+      "description": "park in Chaidari, Attica, Greece",
+      "da": "historical memory"
+    },
+    {
+      "id": "Q136724186",
+      "label": "Dead Woman Walking: “Historical Memory,” Trauma, and Adaptation in Dulce Chacón’s La voz dormida",
+      "description": "chapter published in \"Spanish Women Writers and Spain's Civil War\"",
+      "da": "historical memory"
+    },
+    {
+      "id": "Q254217",
+      "label": "memoria collettiva",
+      "description": "shared pool of memories, knowledge and information of a social group that is significantly associated with the group's identity",
+      "da": "collective memory"
+    },
+    {
+      "id": "Q139722883",
+      "label": "Collective Memory",
+      "description": "",
+      "da": "collective memory"
+    },
+    {
+      "id": "Q111828852",
+      "label": "Collective Memory",
+      "description": "nono episodio della diciannovesima stagione di NCIS - Unità anticrimine",
+      "da": "collective memory"
+    }
+  ],
+  "industria dell'animazione": [
+    {
+      "id": "Q65091261",
+      "label": "Animation industry in South Africa",
+      "description": "",
+      "da": "animation industry"
+    }
+  ],
+  "GEO": [
+    {
+      "id": "Q134083964",
+      "label": "Generative Engine Optimization",
+      "description": "tecnica di marketing digitale per migliorare la visibilità nei motori di ricerca basati su intelligenza artificiale",
+      "da": "generative engine optimization"
+    },
+    {
+      "id": "Q141356501",
+      "label": "The GEO Handbook",
+      "description": "open reference work on generative engine optimization",
+      "da": "generative engine optimization"
+    },
+    {
+      "id": "Q141356502",
+      "label": "The GEO Cookbook",
+      "description": "reproducible experiments on the machine legibility of web content for generative engines",
+      "da": "generative engine optimization"
+    },
+    {
+      "id": "Q140921449",
+      "label": "Generative Engine Optimization (GEO) y visibilidad de marcas en recomendaciones turísticas generadas por IA: un análisis exploratorio",
+      "description": "articolo scientifico",
+      "da": "generative engine optimization"
+    },
+    {
+      "id": "Q140878999",
+      "label": "Generative Engine Optimization (GEO): a review of approaches, metrics, and strategies",
+      "description": "2026 scholarly article",
+      "da": "generative engine optimization"
+    }
+  ],
+  "moral deskilling": [
+    {
+      "id": "Q5264558",
+      "label": "dequalificazione",
+      "description": "elimination of skilled labor from an economy due to the introduction of new technology",
+      "da": "deskilling"
+    },
+    {
+      "id": "Q140035348",
+      "label": "Deskilling and delanguaging African migrants in Barcelona: pathways of labour market incorporation and the value of ‘global’ English",
+      "description": "",
+      "da": "deskilling"
+    },
+    {
+      "id": "Q42605628",
+      "label": "Deskilling and adaptation among primary care physicians using two work innovations",
+      "description": "articolo scientifico pubblicato il 1 ottobre 2011",
+      "da": "deskilling"
+    },
+    {
+      "id": "Q57791440",
+      "label": "Deskilling in ophthalmology is the inevitable controllable?",
+      "description": "article",
+      "da": "deskilling"
+    },
+    {
+      "id": "Q91750755",
+      "label": "Deskilling and return to practice on low-tempo contingency operations",
+      "description": "scientific article published on 02 May 2019",
+      "da": "deskilling"
+    }
+  ],
+  "cosmotecnica": [],
+  "patto sociale": [
+    {
+      "id": "Q1326430",
+      "label": "contratto sociale",
+      "description": "concetto di filosofia politica",
+      "da": "social contract"
+    },
+    {
+      "id": "Q10470064",
+      "label": "The Social Contract",
+      "description": "1993 Swedish documentary film directed by Stefan Jarl",
+      "da": "social contract"
+    },
+    {
+      "id": "Q7551026",
+      "label": "Social contract",
+      "description": "understanding that non-Malays can be citizens of Malaysia if they accept a special role for Malays",
+      "da": "social contract"
+    },
+    {
+      "id": "Q7550484",
+      "label": "Social Contract",
+      "description": "1970s British government policy",
+      "da": "social contract"
+    },
+    {
+      "id": "Q134700463",
+      "label": "The Social Contract",
+      "description": "American magazine (1991-2019)",
+      "da": "social contract"
+    }
+  ],
+  "dati come beni comuni": [
+    {
+      "id": "Q100423431",
+      "label": "Data Commons",
+      "description": "knowledge graph hosted by Google",
+      "da": "data commons"
+    },
+    {
+      "id": "Q26759606",
+      "label": "data commons",
+      "description": "shared virtual infrastructure for data",
+      "da": "data commons"
+    },
+    {
+      "id": "Q141010510",
+      "label": "Data commons",
+      "description": "articolo scientifico",
+      "da": "data commons"
+    },
+    {
+      "id": "Q36386056",
+      "label": "Data Commons to Support Pediatric Cancer Research",
+      "description": "articolo scientifico",
+      "da": "data commons"
+    }
+  ],
+  "polarizzazione cognitiva": [
+    {
+      "id": "Q3082509",
+      "label": "Polarizzazione",
+      "description": "processo di psicologia sociale",
+      "da": "political polarization"
+    },
+    {
+      "id": "Q97357722",
+      "label": "political polarization in the United States",
+      "description": "prominent component of politics in the United States",
+      "da": "political polarization"
+    },
+    {
+      "id": "Q104852943",
+      "label": "political polarization in Turkey",
+      "description": "",
+      "da": "political polarization"
+    },
+    {
+      "id": "Q67212808",
+      "label": "Political Polarization and Typology Survey, 2014",
+      "description": "dataset",
+      "da": "political polarization"
+    },
+    {
+      "id": "Q139319961",
+      "label": "Political Polarization of Belief in Climate Change and Its Impact on Policy Support Among Politicians and Citizens From Eight Countries",
+      "description": "",
+      "da": "political polarization"
+    }
+  ],
+  "iperattenzione": [
+    {
+      "id": "Q5957651",
+      "label": "Hyper attention",
+      "description": "",
+      "da": "hyper attention"
+    }
+  ],
+  "news avoidance": [
+    {
+      "id": "Q119285109",
+      "label": "News Avoidance within a Digital Media Ecosystem: Meanings, Logics and Coping Strategies",
+      "description": "",
+      "da": "news avoidance"
+    },
+    {
+      "id": "Q130532906",
+      "label": "News Avoidance and Poverty: Intersectional Marginalization in the Norwegian “Media Welfare State”",
+      "description": "scientific article published in 2024",
+      "da": "news avoidance"
+    },
+    {
+      "id": "Q120091677",
+      "label": "News Avoidance and Its Realistic Influence in the Post-Truth Era:Based on a Dialectical Perspective",
+      "description": "scholarly article in Editorial Friend, no. 1, 2022",
+      "da": "news avoidance"
+    },
+    {
+      "id": "Q7447766",
+      "label": "Selective exposure theory",
+      "description": "theory within the practice of psychology",
+      "da": "selective exposure"
+    },
+    {
+      "id": "Q63829273",
+      "label": "Selective Exposure in HIV Prevention",
+      "description": "studio clinico",
+      "da": "selective exposure"
+    },
+    {
+      "id": "Q36119025",
+      "label": "Selective exposure reporting and Medline indexing limited the search sensitivity for observational studies of the adverse effects of oral contraceptives",
+      "description": "articolo scientifico",
+      "da": "selective exposure"
+    },
+    {
+      "id": "Q34730325",
+      "label": "Selective exposure of the fetal lung and skin/amnion (but not gastro-intestinal tract) to LPS elicits acute systemic inflammation in fetal sheep",
+      "description": "articolo scientifico",
+      "da": "selective exposure"
+    },
+    {
+      "id": "Q56341213",
+      "label": "Selective Exposure in the Age of Social Media",
+      "description": "scholarly article by Solomon Messing & Sean J. Westwood published 31 December 2012 in Communication Research",
+      "da": "selective exposure"
+    }
+  ],
+  "armi autonome": [
+    {
+      "id": "Q25378861",
+      "label": "lethal autonomous weapon",
+      "description": "military weapon system capable of selecting and engaging targets without meaningful human control",
+      "da": "lethal autonomous weapon"
+    },
+    {
+      "id": "Q59596961",
+      "label": "Lethal Autonomous Weapon Systems: Issues for Congress",
+      "description": "Congressional Research Service report",
+      "da": "lethal autonomous weapon"
+    },
+    {
+      "id": "Q92612792",
+      "label": "Lethal autonomous weapons",
+      "description": "scientific article published on 25 March 2019",
+      "da": "lethal autonomous weapon"
+    },
+    {
+      "id": "Q114036128",
+      "label": "Lethal autonomous weapon systems and respect for human dignity",
+      "description": "articolo scientifico",
+      "da": "lethal autonomous weapon"
+    },
+    {
+      "id": "Q129205435",
+      "label": "Lethal Autonomous Weapon Systems and Responsibility Gaps",
+      "description": "articolo scientifico",
+      "da": "lethal autonomous weapon"
+    }
+  ],
+  "atti illocutori": [
+    {
+      "id": "Q1599204",
+      "label": "Illocuzione",
+      "description": "linguistic term coined by J. L. Austin",
+      "da": "illocutionary act"
+    },
+    {
+      "id": "Q136285939",
+      "label": "Illocutionary Acts and Sentence Meaning",
+      "description": "book 2000",
+      "da": "illocutionary act"
+    },
+    {
+      "id": "Q141267995",
+      "label": "ILLOCUTIONARY ACTS IN THE MOVIE MIDWAY (2019): A CULTURAL AND PRAGMATIC PERSPECTIVE",
+      "description": "articolo scientifico",
+      "da": "illocutionary act"
+    },
+    {
+      "id": "Q105582151",
+      "label": "Illocutionary acts and sentence meaning: a review essay",
+      "description": "articolo scientifico",
+      "da": "illocutionary act"
+    },
+    {
+      "id": "Q114024035",
+      "label": "Illocutionary Acts of the Prime Minister of Singapore in Curbing the Transmission of COVID-19",
+      "description": "articolo scientifico",
+      "da": "illocutionary act"
+    }
+  ],
+  "delega epistemica": [
+    {
+      "id": "Q136949281",
+      "label": "Epistemic trust and social learning: a transdiagnostic integrative model of mental disorders and therapeutic interventions",
+      "description": "",
+      "da": "epistemic trust"
+    },
+    {
+      "id": "Q47996844",
+      "label": "Epistemic trust: modeling children’s reasoning about others’ knowledge and intent",
+      "description": "articolo scientifico pubblicato il 28 febbraio 2012",
+      "da": "epistemic trust"
+    },
+    {
+      "id": "Q140216999",
+      "label": "Epistemic Trust and Social Location",
+      "description": "",
+      "da": "epistemic trust"
+    },
+    {
+      "id": "Q47916189",
+      "label": "Epistemic Trust and Education: Effects of Informant Reliability on Student Learning of Decimal Concepts",
+      "description": "articolo scientifico",
+      "da": "epistemic trust"
+    },
+    {
+      "id": "Q53136064",
+      "label": "Epistemic trust, epistemic responsibility, and medical practice",
+      "description": "articolo scientifico",
+      "da": "epistemic trust"
+    }
+  ],
+  "dieta mediatica": [
+    {
+      "id": "Q6805591",
+      "label": "consumo dei media",
+      "description": "usage of media",
+      "da": "media diet"
+    },
+    {
+      "id": "Q127231859",
+      "label": "Media Diet on Facebook During a Political Crisis: The Case of Judicial System Reform in Poland in 2017",
+      "description": "articolo scientifico",
+      "da": "media diet"
+    }
+  ],
+  "narrazione interattiva": [
+    {
+      "id": "Q2903135",
+      "label": "interactive storytelling",
+      "description": "storytelling with a non-pre-determined plot",
+      "da": "interactive storytelling"
+    },
+    {
+      "id": "Q59307650",
+      "label": "Interactive Storytelling",
+      "description": "",
+      "da": "interactive storytelling"
+    },
+    {
+      "id": "Q59226110",
+      "label": "Interactive Storytelling",
+      "description": "",
+      "da": "interactive storytelling"
+    },
+    {
+      "id": "Q106068072",
+      "label": "Interactive Storytelling, Second Joint International Conference on Interactive Digital Storytelling, ICIDS 2009, Guimarães, Portugal, December 9-11, 2009",
+      "description": "academic conference",
+      "da": "interactive storytelling"
+    },
+    {
+      "id": "Q106068070",
+      "label": "Interactive Storytelling - 6th International Conference, ICIDS 2013, Istanbul, Turkey, November 6-9, 2013",
+      "description": "academic conference",
+      "da": "interactive storytelling"
+    },
+    {
+      "id": "Q134777979",
+      "label": "Interactive narrative for adaptive educational games: architecture and an application to character education",
+      "description": "doctoral thesis",
+      "da": "interactive narrative"
+    },
+    {
+      "id": "Q130329343",
+      "label": "Interactive Narrative and the Art of Steering Through Possible Worlds",
+      "description": "a scholarly work by Christine Wilks",
+      "da": "interactive narrative"
+    },
+    {
+      "id": "Q46322308",
+      "label": "Interactive narrative",
+      "description": "articolo scientifico",
+      "da": "interactive narrative"
+    }
+  ],
+  "industrie creative": [
+    {
+      "id": "Q969040",
+      "label": "industria creativa",
+      "description": "ramo economico",
+      "da": "creative industries"
+    },
+    {
+      "id": "Q134391538",
+      "label": "Creative industries",
+      "description": "",
+      "da": "creative industries"
+    },
+    {
+      "id": "Q15763079",
+      "label": "Creative Industries Journal",
+      "description": "rivista scientifica",
+      "da": "creative industries"
+    },
+    {
+      "id": "Q14404809",
+      "label": "Stimuleringsfonds",
+      "description": "Dutch funding body for design, architecture and digital culture",
+      "da": "creative industries"
+    },
+    {
+      "id": "Q18712174",
+      "label": "Creative Industries Federation",
+      "description": "arts organisation (2014–2021)",
+      "da": "creative industries"
+    }
+  ],
+  "Hunhu/Ubuntu": [
+    {
+      "id": "Q213843",
+      "label": "Ubuntu",
+      "description": "etica dell'Africa sub-Sahariana",
+      "da": "Ubuntu philosophy"
+    },
+    {
+      "id": "Q93233003",
+      "label": "Ubuntu philosophy and the consensus regarding incidental findings in genomic research: a heuristic approach",
+      "description": "scientific article published on 25 April 2020",
+      "da": "Ubuntu philosophy"
+    }
+  ],
+  "neghentropia": [
+    {
+      "id": "Q204570",
+      "label": "entropia dell'informazione",
+      "description": "valore atteso della quantità di informazione convogliata da un messaggio",
+      "da": "negentropy"
+    },
+    {
+      "id": "Q252552",
+      "label": "Negentropia",
+      "description": "fattore di organizzazione dei sistemi psichici, sociali e umani, opposto alla tendenza naturale alla disgregazione",
+      "da": "negentropy"
+    },
+    {
+      "id": "Q59007558",
+      "label": "Negentropy, Information and the Feeding of Organisms",
+      "description": "scientific article published in Nature",
+      "da": "negentropy"
+    },
+    {
+      "id": "Q99605761",
+      "label": "Negentropy-Based Sparsity-Promoting Reconstruction with Fast Iterative Solution from Noisy Measurements",
+      "description": "scientific article published on 20 September 2020",
+      "da": "negentropy"
+    },
+    {
+      "id": "Q126745651",
+      "label": "Negentropy: Energy Creating Tools for Organizational Development",
+      "description": "scholarly article",
+      "da": "negentropy"
+    }
+  ],
+  "legge della varietà richiesta": [
+    {
+      "id": "Q724967",
+      "label": "Law of Requisite Variety",
+      "description": "teoria scientifica",
+      "da": "law of requisite variety"
+    },
+    {
+      "id": "Q113863733",
+      "label": "Law of requisite variety in practice: Assessing the match between risk and actors' contribution to resilient performance",
+      "description": "scientific article published in 2022",
+      "da": "law of requisite variety"
+    }
+  ],
+  "capitale simbolico": [
+    {
+      "id": "Q1751638",
+      "label": "symbolic capital",
+      "description": "symbol and its capital",
+      "da": "symbolic capital"
+    },
+    {
+      "id": "Q130531165",
+      "label": "symbolic capitalism",
+      "description": "sociological concept",
+      "da": "symbolic capital"
+    },
+    {
+      "id": "Q138286342",
+      "label": "Symbolic capital and linguistic practice in street culture",
+      "description": "dissertation",
+      "da": "symbolic capital"
+    },
+    {
+      "id": "Q138379250",
+      "label": "Symbolic capital, accounting and <i>caciques</i> in local political life: The charity of Mr Rafael Tenorio (1909–20)",
+      "description": "articolo scientifico",
+      "da": "symbolic capital"
+    },
+    {
+      "id": "Q51772125",
+      "label": "Symbolic Capital, Consumption, and Health Inequality",
+      "description": "articolo scientifico pubblicato il 16 dicembre 2010",
+      "da": "symbolic capital"
+    }
+  ],
+  "The Technium": [
+    {
+      "id": "Q75724501",
+      "label": "Kevin Kelly",
+      "description": "elder brother of Autumn Phillips",
+      "da": "Kevin Kelly"
+    },
+    {
+      "id": "Q131620774",
+      "label": "Kevin Kelly",
+      "description": "Irish Gaelic footballer (1945–2024)",
+      "da": "Kevin Kelly"
+    },
+    {
+      "id": "Q116858594",
+      "label": "Kevin Kelly",
+      "description": "Australian rugby league footballer",
+      "da": "Kevin Kelly"
+    },
+    {
+      "id": "Q57318369",
+      "label": "Kevin J Kelly",
+      "description": "researcher (ORCID 0000-0002-2954-6117)",
+      "da": "Kevin Kelly"
+    },
+    {
+      "id": "Q2707355",
+      "label": "Kevin Kelly",
+      "description": "saggista, fotografo e ambientalista statunitense",
+      "da": "Kevin Kelly"
+    }
+  ],
+  "Stratechery": [
+    {
+      "id": "Q115441474",
+      "label": "Ben Thompson",
+      "description": "American penciller and inker",
+      "da": "Ben Thompson"
+    },
+    {
+      "id": "Q112968170",
+      "label": "Ben Thompson",
+      "description": "British footballer",
+      "da": "Ben Thompson"
+    },
+    {
+      "id": "Q119026635",
+      "label": "Ben Thompson",
+      "description": "American para-archer",
+      "da": "Ben Thompson"
+    },
+    {
+      "id": "Q115210387",
+      "label": "Ben Thompson",
+      "description": "research sociologist",
+      "da": "Ben Thompson"
+    },
+    {
+      "id": "Q100935052",
+      "label": "Ben Thompson",
+      "description": "college basketball player (1954–1956) Navy",
+      "da": "Ben Thompson"
+    }
+  ],
+  "Digital News Report": [
+    {
+      "id": "Q140153813",
+      "label": "Reuters Institute Digital News Report 2015",
+      "description": "",
+      "da": "Reuters Institute Digital News Report"
+    },
+    {
+      "id": "Q7317632",
+      "label": "Reuters Institute for the Study of Journalism",
+      "description": "British research centre part of the University of Oxford",
+      "da": "Reuters Institute for the Study of Journalism"
+    }
+  ],
+  "Netcomm Forum": [
+    {
+      "id": "Q11236486",
+      "label": "NetCommons",
+      "description": "",
+      "da": "Netcomm"
+    },
+    {
+      "id": "Q140660507",
+      "label": "NetComm Wireless Pty Ltd",
+      "description": "",
+      "da": "Netcomm"
+    },
+    {
+      "id": "Q34760004",
+      "label": "NetComm: a network analysis tool based on communicability",
+      "description": "articolo scientifico pubblicato il 13 agosto 2014",
+      "da": "Netcomm"
+    }
+  ],
+  "Frey, Jennifer": [],
+  "Brose, Christian": [
+    {
+      "id": "Q133012306",
+      "label": "Christian Broser",
+      "description": "",
+      "da": "Christian Brose"
+    }
+  ],
+  "Ottaviani, Jacopo": [],
+  "Dondi, Ilaria Maria": [],
+  "drone democracy": [],
+  "educazione estetica": [
+    {
+      "id": "Q331159",
+      "label": "Lettere sull'educazione estetica dell'uomo",
+      "description": "saggio epistolare di Friedrich Schiller",
+      "da": "On the Aesthetic Education of Man"
+    },
+    {
+      "id": "Q138515757",
+      "label": "On the Aesthetic Education of Man",
+      "description": "2016 paperback edition",
+      "da": "On the Aesthetic Education of Man"
+    },
+    {
+      "id": "Q139993621",
+      "label": "On the Aesthetic Education of Man",
+      "description": "journal article from The Modern Language Review, published in 1969",
+      "da": "On the Aesthetic Education of Man"
+    },
+    {
+      "id": "Q140040750",
+      "label": "On the Aesthetic Education of Man, in a Series of Letters.",
+      "description": "journal article from The Journal of Philosophy, published in 1955",
+      "da": "On the Aesthetic Education of Man"
+    },
+    {
+      "id": "Q256855",
+      "label": "aesthetic education",
+      "description": "approach in educational sciences",
+      "da": "aesthetic education"
+    },
+    {
+      "id": "Q122317383",
+      "label": "Aesthetic Education in Colleges and Universities:Connotation,Value and Practical Path",
+      "description": "scholarly article in Jiangsu Higher Education, no. 6, 2022",
+      "da": "aesthetic education"
+    },
+    {
+      "id": "Q122856927",
+      "label": "Aesthetic Education, Childlike Innocence and Creativity",
+      "description": "articolo scientifico",
+      "da": "aesthetic education"
+    },
+    {
+      "id": "Q122638238",
+      "label": "Aesthetic Education in Physics Teaching",
+      "description": "scholarly article in Curriculum, Teaching Material and Method, no. 1, 2015",
+      "da": "aesthetic education"
+    }
+  ],
+  "inemendabilità della realtà": [
+    {
+      "id": "Q3848721",
+      "label": "Maurizio Ferraris",
+      "description": "filosofo e accademico italiano (1956-)",
+      "da": "Maurizio Ferraris"
+    },
+    {
+      "id": "Q140807260",
+      "label": "Maurizio Ferraris",
+      "description": "",
+      "da": "Maurizio Ferraris"
+    },
+    {
+      "id": "Q126932157",
+      "label": "Maurizio Ferraris, Documanità: Filosofia del mondo nuovo, Bari, Laterza, 2021, pp. 417",
+      "description": "articolo scientifico",
+      "da": "Maurizio Ferraris"
+    },
+    {
+      "id": "Q140803848",
+      "label": "Maurizio Ferraris, o el camino del realismo",
+      "description": "",
+      "da": "Maurizio Ferraris"
+    },
+    {
+      "id": "Q140803428",
+      "label": "Maurizio Ferraris: «No creo que se pueda tener una ética sin ontología».",
+      "description": "",
+      "da": "Maurizio Ferraris"
+    },
+    {
+      "id": "Q276308",
+      "label": "Nouveau Réalisme",
+      "description": "movimento artistico degli anni '60",
+      "da": "new realism"
+    },
+    {
+      "id": "Q1468157",
+      "label": "neorealismo",
+      "description": "teoria filosofica",
+      "da": "new realism"
+    },
+    {
+      "id": "Q136482609",
+      "label": "New Realism and Contemporary Philosophy",
+      "description": "",
+      "da": "new realism"
+    }
+  ],
+  "epistemia": [
+    {
+      "id": "Q87401176",
+      "label": "Walter Quattrociocchi",
+      "description": "ricercatore e docente di informatica (1980-)",
+      "da": "Walter Quattrociocchi"
+    }
+  ],
+  "_verifica": {
+    "Q138835467": {
+      "type": "item",
+      "id": "Q138835467",
+      "labels": {
+        "it": {
+          "language": "it",
+          "value": "Epistemia"
+        },
+        "en": {
+          "language": "en",
+          "value": "Epistemia"
+        }
+      },
+      "descriptions": {
+        "it": {
+          "language": "it",
+          "value": "epistemia"
+        }
+      },
+      "claims": {
+        "P5844": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P5844",
+              "hash": "35f1410fb48ce424821727a7f9a690c96c1b4ebf",
+              "datavalue": {
+                "value": "/neo-epistemia_(Neologismi)/",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P1810": [
+                {
+                  "snaktype": "value",
+                  "property": "P1810",
+                  "hash": "3afc79b100b6ea947a7b1ab3a615f8a2ee72feff",
+                  "datavalue": {
+                    "value": "Epistemia",
+                    "type": "string"
+                  },
+                  "datatype": "string"
+                }
+              ],
+              "P577": [
+                {
+                  "snaktype": "value",
+                  "property": "P577",
+                  "hash": "76e9913c0df0cf08fd4a864ebdd8574374ce9968",
+                  "datavalue": {
+                    "value": {
+                      "time": "+2026-00-00T00:00:00Z",
+                      "timezone": 0,
+                      "before": 0,
+                      "after": 0,
+                      "precision": 9,
+                      "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                    },
+                    "type": "time"
+                  },
+                  "datatype": "time"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P1810",
+              "P577"
+            ],
+            "id": "Q138835467$f3c14c74-4190-2bf8-db80-547e6494daf4",
+            "rank": "normal"
+          }
+        ],
+        "P854": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P854",
+              "hash": "929721f27ef6740fb34547af2b7f0e3c6cf824ee",
+              "datavalue": {
+                "value": "https://www.rizzolieducation.it/news/ben-detto-lautorevolezza-nella-comunicazione-digitale-in-3-parole-3-epistemia/%3Fpdf",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "id": "Q138835467$cf41bbb8-4551-5f19-431a-0ec1e02434ce",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P854",
+              "hash": "d86869f01c1eceaa047fddaac5466bf67c571c04",
+              "datavalue": {
+                "value": "https://www.treccani.it/magazine/lingua_italiana/articoli/parole/2025_12_10_Par_AlfabetoExtra_Cristalli.html",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "id": "Q138835467$43bb5730-4011-50da-55df-4ce064951921",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P854",
+              "hash": "5dfcef1a3e716cd105ff8c137cd62ea8421941c8",
+              "datavalue": {
+                "value": "https://www.wired.it/article/epistemia-illusione-conoscenza-chatbot/",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "id": "Q138835467$93662b68-4799-51b8-9aac-403194ebd493",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P854",
+              "hash": "1fe7ac85f835f5df84a7f07cda6a9e1244df7c6e",
+              "datavalue": {
+                "value": "https://www.ansa.it/sito/podcast/la_parola_della_settimana/2026/01/03/epistemia_72fb5405-f520-411a-ab77-4e723e5595b3.html",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "id": "Q138835467$6c1f16c7-4e11-09df-3805-2b4d19901bfe",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P854",
+              "hash": "baaf3e20727fc22b40793a3bab909290666a98af",
+              "datavalue": {
+                "value": "https://www.rsi.ch/rete-due/programmi/cultura/kappa-e-spalla/Epistem%C3%ACa--3180741.html",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "id": "Q138835467$899743cf-4f7f-95c4-e095-e12c8036acae",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P854",
+              "hash": "0e04bfd136427e4d38537091f2600f1012e3afce",
+              "datavalue": {
+                "value": "https://www.repubblica.it/cronaca/2025/12/13/news/intelligenza_artificiale_epistemia_illusione_sapere-425037494/",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "id": "Q138835467$5aea76a1-41ec-c023-471c-1554059f0fe3",
+            "rank": "normal"
+          }
+        ]
+      }
+    }
+  }
+}
