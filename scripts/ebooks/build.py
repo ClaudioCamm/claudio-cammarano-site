@@ -16,9 +16,15 @@ MANIFEST = OUT / "manifest.json"
 FILTER = ROOT / "scripts" / "ebooks" / "filter.lua"
 CSS = ROOT / "scripts" / "ebooks" / "epub.css"
 MIN_WORDS = 3000
+LICENSE_LABEL = "CC BY-NC-ND 4.0"
+LICENSE_URL = "https://creativecommons.org/licenses/by-nc-nd/4.0/deed.it"
+AI = json.loads(subprocess.run(
+    ["node", "-e", "const a=require('./src/_data/aiNotation.js');"
+     "console.log(JSON.stringify(typeof a==='function'?a():a))"],
+    cwd=ROOT, capture_output=True, text=True, check=True).stdout)
 SITE = "https://claudiocammarano.com"
 MAINFONT = os.environ.get("EBOOK_MAINFONT", "Source Serif 4")
-TOOLCHAIN = "v1"  # cambiare per forzare la rigenerazione di tutto
+TOOLCHAIN = "v2"  # v2: notazione AI e licenza CC BY-NC-ND 4.0 in coda  # cambiare per forzare la rigenerazione di tutto
 
 def split_front(text):
     m = re.match(r"^---\n(.*?)\n---\n(.*)$", text, re.S)
@@ -57,8 +63,29 @@ def main():
         # Le entita' numeriche servono a markdown-it (formule con _ e *);
         # a Pandoc vanno restituiti i caratteri veri.
         body = body.replace("&#95;", "_").replace("&#42;", "*").replace("&#92;", "\\")
-        tmp.write_text(body + f"\n\n---\n\nVersione originale e aggiornata: <{url}>. "
-                       "Le parti interattive del saggio sono disponibili solo online.\n", encoding="utf-8")
+        # Certificazione dell'intervento AI, come in coda alle pagine del sito.
+        pm = re.search(r'^ai_prose:\s*(\w+)', front, re.M)
+        sm = re.search(r'^ai_scope:\s*\[(.*?)\]', front, re.M)
+        codes, labels = [], []
+        if pm and pm.group(1) in AI["prose"]:
+            codes.append(pm.group(1)); labels.append(AI["prose"][pm.group(1)]["label"]["it"])
+        for sc in (sm.group(1).split(",") if sm else []):
+            sc = sc.strip().strip("'\"")
+            if sc in AI["scope"]:
+                codes.append(sc); labels.append(AI["scope"][sc]["label"]["it"])
+        coda = "\n\n---\n\n"
+        if codes:
+            coda += (f"**Intervento AI: {'·'.join(codes)}** ({' · '.join(labels)}). "
+                     f"Notazione descritta in <{SITE}/notazione/>.")
+            if dm and dm.group(1) < AI["activeFrom"]:
+                coda += " " + AI["retro"]["note"]["it"]
+            coda += "\n\n"
+        coda += (f"© Claudio Cammarano. Licenza [{LICENSE_LABEL}]({LICENSE_URL}): "
+                 "si può condividere citando l'autore e la fonte, non a fini commerciali "
+                 "e senza modifiche.\n\n"
+                 f"Versione originale e aggiornata: <{url}>. "
+                 "Le parti interattive del saggio sono disponibili solo online.\n")
+        tmp.write_text(body + coda, encoding="utf-8")
         common = [
             "pandoc", str(tmp),
             "-f", "markdown+tex_math_single_backslash+tex_math_dollars",
@@ -67,7 +94,7 @@ def main():
             "-M", "author=Claudio Cammarano",
             "-M", "lang=it-IT",
             "-M", f"date={date}",
-            "-M", f"rights=© Claudio Cammarano. Riproduzione consentita citando la fonte: {url}",
+            "-M", f"rights=© Claudio Cammarano. {LICENSE_LABEL} ({LICENSE_URL}). {url}",
             "--resource-path", str(ROOT),
         ]
         subprocess.run(common + [
