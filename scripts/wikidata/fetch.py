@@ -100,9 +100,18 @@ def main():
         (OUT / "candidati.json").write_text(json.dumps(cand, ensure_ascii=False, indent=2))
 
     # Geografia via API wbgetentities (piu' affidabile del servizio SPARQL).
-    DIRECT = {"P495": "origine", "P27": "cittadinanza", "P17": "paese",
-              "P1001": "giurisdizione", "P2341": "diffusione"}
-    VIA_PLACE = {"P159": "sede", "P937": "luogo di lavoro", "P276": "luogo"}
+    # Proprieta' diverse per tipo di voce; si scartano le affermazioni con
+    # data di fine (P582) o deprecate, e si preferiscono quelle "preferred":
+    # cosi' Francoforte da' Germania e non tutti gli Stati storici.
+    BY_TYPE = {
+        "persona": [("P27", "cittadinanza", False), ("P937", "luogo di lavoro", True)],
+        "istituzione": [("P17", "paese", False), ("P159", "sede", True)],
+        "testo": [("P495", "origine", False), ("P17", "paese", False)],
+        "teoria": [("P495", "origine", False), ("P1001", "giurisdizione", False),
+                   ("P2341", "diffusione", False), ("P17", "paese", False)],
+        "luogo": [("P17", "paese", False)],
+        "paese": [("P17", "paese", False)],
+    }
 
     def entities(ids, props):
         res = {}
@@ -114,26 +123,36 @@ def main():
         return res
 
     def targets(ent, pid):
+        cls = [c for c in ent.get("claims", {}).get(pid, [])
+               if c.get("rank") != "deprecated" and "P582" not in c.get("qualifiers", {})]
+        pref = [c for c in cls if c.get("rank") == "preferred"]
         out = []
-        for cl in ent.get("claims", {}).get(pid, []):
+        for cl in (pref or cls):
             v = cl.get("mainsnak", {}).get("datavalue", {}).get("value")
             if isinstance(v, dict) and v.get("id"): out.append(v["id"])
         return out
 
-    by_q = {}
-    for c in con: by_q.setdefault(qid(c), []).append(c["name"])
+    by_q, types = {}, {}
+    for c in con:
+        by_q.setdefault(qid(c), []).append(c["name"]); types[qid(c)] = c["type"]
     items = entities(list(by_q), "claims")
     print(f"  lette {len(items)} voci")
-    places = sorted({t for e in items.values() for p in VIA_PLACE for t in targets(e, p)})
+    places = sorted({t for q, e in items.items() for p, _, via in BY_TYPE.get(types[q], [])
+                     if via for t in targets(e, p)})
     place_ents = entities(places, "claims") if places else {}
     rows = {}
     for q, e in items.items():
         lst = []
-        for p, rel in DIRECT.items():
-            lst += [(rel, t) for t in targets(e, p)]
-        for p, rel in VIA_PLACE.items():
-            for pl in targets(e, p):
-                lst += [(rel, t) for t in targets(place_ents.get(pl, {}), "P17")]
+        for p, rel, via in BY_TYPE.get(types[q], []):
+            if lst and via:
+                continue  # il luogo di lavoro o la sede servono solo se manca il resto
+            for t in targets(e, p):
+                if via:
+                    lst += [(rel, c) for c in targets(place_ents.get(t, {}), "P17")]
+                else:
+                    lst.append((rel, t))
+        if types[q] in ("paese", "luogo") and not lst:
+            lst.append(("se stesso", q))
         rows[q] = lst
     countries = sorted({t for lst in rows.values() for _, t in lst})
     labels = entities(countries, "labels") if countries else {}
@@ -147,7 +166,7 @@ def main():
             if (rel, t) not in seen:
                 seen.add((rel, t)); paesi.append({"rel": rel, "qid": t, "label": lab(t)})
         for n in names:
-            geo[n] = {"qid": q, "type": next(c["type"] for c in con if c["name"] == n), "paesi": paesi}
+            geo[n] = {"qid": q, "type": types[q], "paesi": paesi}
     (OUT / "geo.json").write_text(json.dumps(geo, ensure_ascii=False, indent=2))
     print("Fatto: scripts/wikidata/out/candidati.json e geo.json")
 
