@@ -7859,3 +7859,7 @@ a.home-path:hover {
   .carta-voci { grid-template-columns: 1fr 1fr; column-gap: 16px; font-size: 13px; }
 }
 .carta-nota { font-family: var(--font-sans); font-size: 12px; color: var(--color-text-light); margin: 10px 0 0; }
+.carta-link .carta-p, .carta-link .carta-punto { cursor: pointer; transition: fill-opacity 0.15s; }
+.carta-link:hover .carta-p, .carta-link:focus-visible .carta-p { fill-opacity: 1; stroke: var(--color-text); stroke-width: 1; }
+.carta-link:focus-visible { outline: none; }
+.carta-p:hover { stroke: var(--color-text); stroke-width: 0.8; }

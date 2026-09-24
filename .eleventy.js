@@ -369,12 +369,13 @@ module.exports = function(eleventyConfig) {
     const valUE = unita.UE || 0;
     const perIso = {};
     const diretti = {}; // paesi citati per nome: solo questi ricevono il punto se piccoli
+    const info = {};    // iso -> { titolo, nome } per il mouse over e il link
     const voci = [];
     Object.keys(unita).forEach(function(nome) {
       let v = unita[nome];
       if (nome === "UE") { voci.push({ nome: "Unione europea", chiave: "UE", valore: v }); return; }
       if (paesi.regioni[nome] && paesi.regioni[nome].iso) {
-        paesi.regioni[nome].iso.forEach(function(i) { perIso[i] = Math.max(perIso[i] || 0, v); });
+        paesi.regioni[nome].iso.forEach(function(i) { perIso[i] = Math.max(perIso[i] || 0, v); if (!info[i]) info[i] = { titolo: nome + ' · peso ' + Math.max(1, Math.round(v)), nome: null }; });
         voci.push({ nome: nome, chiave: nome, valore: v }); return;
       }
       // Colore: i membri UE sommano il peso dell'Unione. Legenda: l'Italia
@@ -382,12 +383,19 @@ module.exports = function(eleventyConfig) {
       // proprio, perche' l'Unione ha gia' la sua voce.
       const membro = ue.indexOf(nome) >= 0;
       const iso = paesi.stati[nome];
-      if (iso) { perIso[iso] = Math.max(perIso[iso] || 0, membro ? v + valUE : v); diretti[iso] = true; }
+      if (iso) {
+        perIso[iso] = Math.max(perIso[iso] || 0, membro ? v + valUE : v); diretti[iso] = true;
+        const tot = Math.max(1, Math.round(membro ? v + valUE : v));
+        info[iso] = { titolo: nome + ' · peso ' + tot + (membro && valUE ? ' (con l’Unione europea)' : ''), nome: nome };
+      }
       voci.push({ nome: nome, chiave: nome, valore: (membro && nome === "Italia") ? v + valUE : v });
     });
     ue.forEach(function(m) {
       const iso = paesi.stati[m];
-      if (iso && !perIso[iso] && valUE) perIso[iso] = valUE;
+      if (iso && !perIso[iso] && valUE) {
+        perIso[iso] = valUE;
+        info[iso] = { titolo: m + ' · tramite l’Unione europea (peso ' + Math.max(1, Math.round(valUE)) + ')', nome: "Unione Europea" };
+      }
     });
     // Classi a quantili sui valori delle voci di legenda
     const valori = voci.map(function(v) { return v.valore; }).sort(function(a, b) { return a - b; });
@@ -406,7 +414,12 @@ module.exports = function(eleventyConfig) {
     voci.forEach(function(v) { v.classe = classe(v.valore); v.url = url(v); v.peso = Math.max(1, Math.round(v.valore)); });
     voci.sort(function(a, b) { return b.valore - a.valore || a.nome.localeCompare(b.nome); });
     // SVG
-    let svg = '<svg class="carta-svg" viewBox="' + geom.viewBox + '" role="img" aria-labelledby="carta-titolo carta-desc">'
+    function esc(t) { return String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;"); }
+    function linkIso(iso) {
+      const i = info[iso];
+      return i && i.nome && nomi[i.nome] ? "/concetti/" + slugify(i.nome) + "/" : null;
+    }
+    let svg = '<svg class="carta-svg" viewBox="' + geom.viewBox + '" role="group" aria-labelledby="carta-titolo carta-desc">'
       + '<title id="carta-titolo">Dove guarda questo sito</title>'
       + '<desc id="carta-desc">Carta del mondo in proiezione di Goode interrotta. Ogni paese è colorato in cinque classi secondo quanto il sito ne parla; il dettaglio con i valori è nella legenda testuale.</desc>'
       + '<clipPath id="carta-clip"><path d="' + geom.sphere + '"/></clipPath>'
@@ -415,8 +428,11 @@ module.exports = function(eleventyConfig) {
     const punti = [];
     Object.keys(geom.countries).forEach(function(iso) {
       const c = geom.countries[iso], k = classe(perIso[iso]);
-      if (c.d) svg += '<path class="carta-p carta-c' + k + '" d="' + c.d + '"/>';
-      if (k && c.area < 40 && diretti[iso]) punti.push('<circle class="carta-punto carta-c' + k + '" cx="' + c.cx + '" cy="' + c.cy + '" r="4"/>');
+      const t = k && info[iso] ? '<title>' + esc(info[iso].titolo) + '</title>' : '';
+      const href = k ? linkIso(iso) : null;
+      function wrap(el) { return href ? '<a href="' + href + '" class="carta-link">' + el + '</a>' : el; }
+      if (c.d) svg += wrap('<path class="carta-p carta-c' + k + '" d="' + c.d + '">' + t + '</path>');
+      if (k && c.area < 40 && diretti[iso]) punti.push(wrap('<circle class="carta-punto carta-c' + k + '" cx="' + c.cx + '" cy="' + c.cy + '" r="4">' + t + '</circle>'));
     });
     svg += '</g>' + punti.join("") + '</svg>';
     return { svg: svg, legenda: voci.slice(0, 12), altri: Math.max(0, voci.length - 12), totale: voci.length };

@@ -72,25 +72,6 @@ bodyClass: home
   <p class="home-abstract-hint"><a href="/newsletter/" data-newsletter-cta data-position="home_hero">The Abstract &#8212; la newsletter in inglese, un saggio al mese sull'economia dei contenuti &#8594;</a></p>
 </section>
 
-{# === 2 · LE SERIE (audit 2026, L4/B1): porte d'ingresso al corpus subito
-       dopo il claim. Ordinate dalla serie aggiornata piu' di recente. === #}
-{% if collections.seriesCards.length %}
-<section class="home-band home-band--series" aria-label="Le serie">
-  <div class="home-sec-head">
-    <h2 class="home-sec-title">Le serie</h2>
-  </div>
-  <div class="home-series">
-    {% for serie in collections.seriesCards %}
-    <a class="home-serie" href="/serie/{{ serie.name | slugify }}/">
-      <span class="home-serie-name">{{ serie.name }}</span>
-      {% if seriesDescriptions[serie.name] %}<span class="home-serie-desc">{{ seriesDescriptions[serie.name] | firstSentence }}</span>{% endif %}
-      <span class="home-serie-count">{{ serie.count }} {% if serie.count == 1 %}saggio{% else %}saggi{% endif %} &#8594;</span>
-    </a>
-    {% endfor %}
-  </div>
-</section>
-{% endif %}
-
 {# === CARTA "Dove guarda questo sito" (audit 2026, L9/B2). Generata al
        build da conceptsIndex (campo geo) e cartaGeometria.json: nessun
        JavaScript, la legenda e' testo vero con i link alle voci. === #}
@@ -115,6 +96,27 @@ bodyClass: home
       </ul>
       <p class="carta-nota">I paesi dell'Unione europea prendono anche il colore dell'Unione.</p>
       {% if carta.altri %}<p class="carta-altri"><a href="/indice/#paesi">Altri {{ carta.altri }} paesi nell'indice &#8594;</a></p>{% endif %}
+
+{# === 2 · LE SERIE (audit 2026, L4/B1): porte d'ingresso al corpus subito
+       dopo il claim. Ordinate dalla serie aggiornata piu' di recente. === #}
+{% if collections.seriesCards.length %}
+<section class="home-band home-band--series" aria-label="Le serie">
+  <div class="home-sec-head">
+    <h2 class="home-sec-title">Le serie</h2>
+  </div>
+  <div class="home-series">
+    {% for serie in collections.seriesCards %}
+    <a class="home-serie" href="/serie/{{ serie.name | slugify }}/">
+      <span class="home-serie-name">{{ serie.name }}</span>
+      {% if seriesDescriptions[serie.name] %}<span class="home-serie-desc">{{ seriesDescriptions[serie.name] | firstSentence }}</span>{% endif %}
+      <span class="home-serie-count">{{ serie.count }} {% if serie.count == 1 %}saggio{% else %}saggi{% endif %} &#8594;</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+
     </div>
   </div>
 </section>
