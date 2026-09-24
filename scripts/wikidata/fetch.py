@@ -18,15 +18,20 @@ API = "https://www.wikidata.org/w/api.php"
 SPARQL = "https://query.wikidata.org/sparql"
 
 def get(url, params):
+    # Usa curl di sistema: su macOS il Python di python.org non trova i
+    # certificati, curl usa quelli del portachiavi.
     q = url + "?" + urllib.parse.urlencode(params)
-    req = urllib.request.Request(q, headers={"User-Agent": UA, "Accept": "application/json"})
     for attempt in range(4):
-        try:
-            with urllib.request.urlopen(req, timeout=60) as r:
-                return json.load(r)
-        except Exception as e:
-            print(f"  riprovo ({e})", file=sys.stderr)
-            time.sleep(3 * (attempt + 1))
+        r = subprocess.run(["curl", "-sS", "-f", "--max-time", "60", "-A", UA,
+                            "-H", "Accept: application/json", q],
+                           capture_output=True, text=True)
+        if r.returncode == 0:
+            try:
+                return json.loads(r.stdout)
+            except ValueError:
+                pass
+        print(f"  riprovo ({r.stderr.strip()[:100]})", file=sys.stderr)
+        time.sleep(3 * (attempt + 1))
     raise RuntimeError("Wikidata non risponde: " + q[:120])
 
 def concepts():
