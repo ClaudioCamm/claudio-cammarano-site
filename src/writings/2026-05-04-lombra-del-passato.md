@@ -20,7 +20,7 @@ window.MathJax = {
   svg: { fontCache: 'global' }
 };
 </script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script id="MathJax-script" async src="/vendor/mathjax/tex-mml-chtml.js"></script>
 
 <style>
 .MathJax_Display, mjx-container[display="true"] { text-align: center !important; margin: 1.5em 0 !important; }

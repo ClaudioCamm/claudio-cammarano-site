@@ -14,7 +14,7 @@ Decisioni e piano completo: Project claude.ai "Costruire Il Mio Sito Personale",
 - [ ] **L3a** Raccordo — /da-qui/ "Che cosa c'è in inglese"; righe nelle About; riga inviti nell'About; riga IT su Lab (dipende da L2)
 - [ ] **L3b** Traduzioni — Episteme EN (bozza); Colophon EN breve
 - [ ] **L4** Home IT — serie dopo il claim; "Ultimo saggio" in una riga; Lab in fondo; spazio per la carta
-- [ ] **L5** Tecnica — font self-hosted; MathJax solo dove serve, self-hosted; rimozione Decap CMS
+- [x] **L5** Tecnica — font self-hosted (Source Serif 4, Cormorant Garamond per le visualizzazioni dual-use); MathJax 3.2.2 ospitato in /vendor/mathjax/ (già caricato solo nei 4 saggi con formule); rimozione Decap CMS e del dns-prefetch jsDelivr
 - [ ] **L6** PDF/ePub — GitHub Action Pandoc; "Scarica: PDF · ePub"
 - [ ] **L7** Wikidata — Q-id per le 92 voci senza sameAs; i termini di conio solo in /ns/
 - [ ] **L8** Layer geografico — campo `geo`, validazione, precompilazione Wikidata, revisione (dipende da L7)

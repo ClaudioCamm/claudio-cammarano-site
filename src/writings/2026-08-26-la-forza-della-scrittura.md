@@ -19,7 +19,7 @@ window.MathJax = {
   svg: { fontCache: 'global' }
 };
 </script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script id="MathJax-script" async src="/vendor/mathjax/tex-mml-chtml.js"></script>
 
 <figure class="article-hero">
   <img src="/images/passaggio-del-niemen-1812-hero.jpg" alt="Acquatinta ottocentesca: l’esercito di Napoleone attraversa il Niemen su ponti di barche, con lo stato maggiore a cavallo in primo piano." />

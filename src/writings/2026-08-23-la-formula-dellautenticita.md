@@ -19,7 +19,7 @@ window.MathJax = {
   svg: { fontCache: 'global' }
 };
 </script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script id="MathJax-script" async src="/vendor/mathjax/tex-mml-chtml.js"></script>
 
 <figure class="article-hero">
   <img src="/images/platone-accademia-atene-hero.jpg" alt="La statua di Platone davanti all’Accademia Nazionale di Atene." />

@@ -20,7 +20,7 @@ window.MathJax = {
   svg: { fontCache: 'global' }
 };
 </script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script id="MathJax-script" async src="/vendor/mathjax/tex-mml-chtml.js"></script>
 
 <figure class="article-hero">
   <img src="/images/wargames-hero.jpg" alt="Una scena dal film WarGames di John Badham (1983)." />
