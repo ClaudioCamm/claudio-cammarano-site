@@ -450,7 +450,81 @@ module.exports = function(eleventyConfig) {
     svg += punti.join("");
     if (geom.centro) svg += '<circle class="carta-centro" cx="' + geom.centro.x + '" cy="' + geom.centro.y + '" r="5"/>'; // solo il punto, senza nome (25/9)
     svg += '</svg>';
-    return { svg: svg, legenda: voci.slice(0, 12), altri: Math.max(0, voci.length - 12), totale: voci.length };
+    return { svg: svg, legenda: voci.slice(0, 12), altri: Math.max(0, voci.length - 12), totale: voci.length,
+      classi: Object.fromEntries(Object.keys(perIso).map(function(i) { return [i, classe(perIso[i])]; })) };
+  });
+
+  // === Immagini di condivisione automatiche (audit 2026, L11) ===========
+  // I filtri restituiscono il percorso dell'immagine e registrano il lavoro;
+  // le immagini si generano in eleventy.after (solo in build) con
+  // scripts/og/render.js. L'hash nel nome cambia quando cambia il contenuto,
+  // cosi' i social non restano sulla versione vecchia.
+  const ogLavori = new Map();
+  const ogHash = function(o) { return require("crypto").createHash("sha1").update(require("./scripts/og/render.js").VERSIONE + JSON.stringify(o)).digest("hex").slice(0, 10); };
+  const ogReg = function(dir, slug, job) {
+    const out = "/og/" + dir + "/" + slug + "-" + ogHash(job) + ".jpg";
+    ogLavori.set(out, Object.assign({ out: out }, job));
+    return out;
+  };
+  const ogIso = function(nomi) {
+    const paesi = require("./src/_data/geoPaesi.json");
+    const out = new Set();
+    (nomi || []).forEach(function(n) {
+      if (n === "UE") paesi.regioni.UE.membri.forEach(function(m) { if (paesi.stati[m]) out.add(paesi.stati[m]); });
+      else if (paesi.regioni[n] && paesi.regioni[n].iso) paesi.regioni[n].iso.forEach(function(i) { out.add(i); });
+      else if (paesi.stati[n]) out.add(paesi.stati[n]);
+    });
+    return Array.from(out);
+  };
+  const ogCartaSito = function(index, lang) {
+    return eleventyConfig.getFilter("cartaGeo")(index, { geom: lang === "en" ? "goode" : "bergamo", lang: lang }).classi;
+  };
+  eleventyConfig.addFilter("ogHome", function(index, lang) {
+    const en = lang === "en";
+    return ogReg("home", en ? "en" : "it", {
+      kind: "carta", geom: en ? "goode" : "bergamo",
+      kicker: en ? "Claudio Cammarano · Research" : "Claudio Cammarano",
+      titolo: en ? "Ideas are real things. Somebody has to check them." : "Le idee sono cose reali. Il mercato è dove si incontrano.",
+      sottotitolo: en ? "" : "Dove guarda questo sito",
+      classi: ogCartaSito(index, en ? "en" : "it")
+    });
+  });
+  const ogTipo = { persona: "Persona", teoria: "Concetto", testo: "Opera", istituzione: "Istituzione", luogo: "Luogo", paese: "Paese" };
+  eleventyConfig.addFilter("ogConcept", function(concept, index) {
+    const g = concept.geo || { modo: "nessuna", paesi: [] };
+    let classi;
+    if (g.modo === "nessuna" || !g.paesi.length) classi = ogCartaSito(index, "it");
+    else { classi = {}; ogIso(g.paesi).forEach(function(i) { classi[i] = g.modo === "teorico" ? 3 : 5; }); }
+    let nome = concept.name;
+    if (concept.type === "persona" && /^[^,]+, [^,]+$/.test(nome)) nome = nome.split(", ").reverse().join(" ");
+    const n = (concept.articles || []).length;
+    return ogReg("c", eleventyConfig.getFilter("slugify")(concept.name), {
+      kind: "carta", geom: "bergamo", marca: g.modo !== "nessuna" && g.paesi.length > 0, kicker: "Indice dei concetti", titolo: nome,
+      sottotitolo: (ogTipo[concept.type] || "Concetto") + (n ? " · " + n + (n === 1 ? " testo" : " testi") : ""),
+      classi: classi
+    });
+  });
+  eleventyConfig.addFilter("ogCurated", function(title, source, concepts, index, url) {
+    const perNome = {};
+    (index || []).forEach(function(c) { perNome[c.name] = c; });
+    const nomi = [];
+    (concepts || []).forEach(function(n) { const c = perNome[n]; if (c && c.geo && c.geo.modo !== "nessuna") c.geo.paesi.forEach(function(p) { nomi.push(p); }); });
+    let classi;
+    if (!nomi.length) classi = ogCartaSito(index, "it");
+    else { classi = {}; ogIso(nomi).forEach(function(i) { classi[i] = 5; }); }
+    const slug = String(url || title).split("/").filter(Boolean).pop();
+    return ogReg("cur", slug, { kind: "carta", geom: "bergamo", marca: nomi.length > 0, kicker: "Curated" + (source ? " · " + source : ""), titolo: title, sottotitolo: "", classi: classi });
+  });
+  eleventyConfig.addFilter("ogFoto", function(src) {
+    if (!src || /\.(jpe?g|png)$/i.test(src)) return src;
+    const base = require("path").basename(src).replace(/\.[^.]+$/, "");
+    return ogReg("w", base, { kind: "foto", src: src });
+  });
+  eleventyConfig.on("eleventy.after", async function(arg) {
+    if ((arg && arg.runMode) !== "build" && !process.env.OG) return;
+    const t0 = Date.now();
+    const n = await require("./scripts/og/render.js").rendi(Array.from(ogLavori.values()), (arg && arg.directories && arg.directories.output) || (arg && arg.dir && arg.dir.output) || "_site");
+    console.log("[og] " + n + " immagini di condivisione in " + ((Date.now() - t0) / 1000).toFixed(1) + " s");
   });
 
   // Prima frase di un testo (fino a . ? ! seguiti da spazio o fine).

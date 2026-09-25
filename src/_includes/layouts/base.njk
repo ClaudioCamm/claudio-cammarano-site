@@ -31,13 +31,20 @@
     <meta property="og:description" content="{{ (description or 'Libri, mercati, idee') | stripMd }}">
     <meta property="og:type" content="{{ og_type or 'website' }}">
     <meta property="og:url" content="https://claudiocammarano.com{{ page.url }}">
-    {% if og_card %}
-    <meta property="og:image" content="https://claudiocammarano.com{{ og_card }}">
-    {% elif og_image %}
-    <meta property="og:image" content="https://claudiocammarano.com{{ og_image }}">
-    {% else %}
-    <meta property="og:image" content="https://claudiocammarano.com/images/og-default.png">
+    {# Immagine di condivisione (audit 2026, L11): scheda dedicata se c'e';
+       foto del saggio (convertita in JPG se WebP/AVIF); carta del concetto;
+       carta dei paesi del curated; altrimenti la carta della home nella
+       lingua della pagina. Le schede automatiche sono generate in build. #}
+    {% if og_card %}{% set ogImg = og_card %}{% set ogAlt = title %}
+    {% elif og_image %}{% set ogImg = og_image | ogFoto %}{% set ogAlt = title %}
+    {% elif concept and concept.name %}{% set ogImg = concept | ogConcept(collections.mergedConceptsIndex) %}{% set ogAlt = "Carta dei paesi collegati a " + concept.name %}
+    {% elif external_url %}{% set ogImg = title | ogCurated(source, concepts, collections.mergedConceptsIndex, page.url) %}{% set ogAlt = "Carta dei paesi di cui parla la segnalazione" %}
+    {% else %}{% set ogImg = collections.mergedConceptsIndex | ogHome(lang or 'it') %}{% if isEN %}{% set ogAlt = "Map: where the Italian essays look" %}{% else %}{% set ogAlt = "Carta: dove guarda questo sito" %}{% endif %}
     {% endif %}
+    <meta property="og:image" content="https://claudiocammarano.com{{ ogImg }}">
+    {% if ogImg and ogImg.indexOf('/og/') == 0 %}<meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">{% endif %}
+    <meta property="og:image:alt" content="{{ ogAlt | striptags }}">
     <meta property="og:site_name" content="Claudio Cammarano">
     <meta property="og:locale" content="{% if isEN %}en_GB{% else %}it_IT{% endif %}">
     {% if translation %}<meta property="og:locale:alternate" content="{% if isEN %}it_IT{% else %}en_GB{% endif %}">{% endif %}
