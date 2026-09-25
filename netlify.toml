@@ -2,6 +2,10 @@
   command = "npm run build"
   publish = "_site"
 
+# sharp (immagini di condivisione, L11) richiede Node 20.9 o successivo.
+[build.environment]
+  NODE_VERSION = "22"
+
 # Immagini, font e asset statici — cache aggressiva (1 anno)
 [[headers]]
   for = "/images/*"
