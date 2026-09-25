@@ -72,10 +72,11 @@ bodyClass: home
   <p class="home-abstract-hint"><a href="/newsletter/" data-newsletter-cta data-position="home_hero">The Abstract &#8212; la newsletter in inglese, un saggio al mese sull'economia dei contenuti &#8594;</a></p>
 </section>
 
-{# === CARTA "Dove guarda questo sito" (audit 2026, L9/B2). Generata al
-       build da conceptsIndex (campo geo) e cartaGeometria.json: nessun
+{# === CARTA "Dove guarda questo sito" (audit 2026, L9/B2; L10). Generata al
+       build da conceptsIndex (campo geo) e cartaGeometriaBergamo.json:
+       Lambert azimutale equivalente centrata su Bergamo. Nessun
        JavaScript, la legenda e' testo vero con i link alle voci. === #}
-{% set carta = collections.mergedConceptsIndex | cartaGeo %}
+{% set carta = collections.mergedConceptsIndex | cartaGeo({ geom: "bergamo" }) %}
 {% if carta.legenda.length %}
 <section class="home-band home-band--carta" aria-labelledby="carta-h">
   <div class="home-sec-head">
@@ -84,7 +85,7 @@ bodyClass: home
   <div class="carta">
     <figure class="carta-figura">
       {{ carta.svg | safe }}
-      <figcaption class="carta-didascalia">Proiezione di Goode: la sfera non si appiattisce senza tagli. Qui si vede dove.</figcaption>
+      <figcaption class="carta-didascalia">Proiezione azimutale equivalente, centrata su Bergamo: il mondo visto da dove scrivo. I cerchi tratteggiati sono le distanze da Bergamo: ogni 30° di arco sono circa 3.300 km.</figcaption>
     </figure>
     <div class="carta-legenda">
       <div class="carta-scala" aria-hidden="true">{% for k in [1,2,3,4,5] %}<span class="carta-c{{ k }}"></span>{% endfor %}</div>
@@ -121,11 +122,36 @@ bodyClass: home
 {% endif %}
 
 
-{# === 2b · ULTIMO SAGGIO: una riga, non piu' un blocco in evidenza === #}
+{# === 2b · ULTIMO SAGGIO (L10, 25/9): torna l'anteprima estesa; senza
+       estratto l'ingresso perdeva la ragione per entrare. L'elenco Writings
+       sotto parte gia' dal secondo saggio. === #}
 {% set featured = collections.writings[0] %}
 {% if featured %}
-<section class="home-band home-band--latest" aria-label="Ultimo saggio">
-  <p class="home-latest"><span class="home-latest-label">Ultimo saggio</span> <a class="home-latest-title" href="{{ featured.url }}">{{ featured.data.title }} &#8594;</a> <span class="home-latest-meta">{{ featured.date | formatDate }}{% if featured.templateContent %} · {{ featured.templateContent | readingTime }}{% endif %}</span></p>
+<section class="home-band home-band--featured" aria-label="Ultimo saggio">
+  <div class="home-featured">
+    <div class="home-featured-rail">
+      {% if featured.data.series %}<div class="article-series-card-label"><a href="/serie/{{ featured.data.series | seriesBaseName | slugify }}/">{{ featured.data.series }}</a></div>{% endif %}
+      <div class="article-meta">
+        <span class="article-date">{{ featured.date | formatDate }}</span>
+        {% if featured.templateContent %}<span class="reading-time">{{ featured.templateContent | readingTime }}</span>{% endif %}
+        {% if featured.data.category %}
+          {% if featured.data.category.length %}
+            {% for cat in featured.data.category %}<a class="article-tag" href="/tag/{{ cat | slugify }}/">{{ cat }}</a>{% endfor %}
+          {% else %}
+            <a class="article-tag" href="/tag/{{ featured.data.category | slugify }}/">{{ featured.data.category }}</a>
+          {% endif %}
+        {% endif %}
+      </div>
+    </div>
+    <article class="article-card article-card--featured">
+      <h2><a href="{{ featured.url }}">{{ featured.data.title }}</a></h2>
+      {% if featured.data.description %}<p class="featured-description">{{ featured.data.description | mdInline | safe }}</p>{% endif %}
+      {% if featured.templateContent %}
+      <p class="article-excerpt">{{ featured.templateContent | excerpt(700) }}</p>
+      <p class="featured-continua"><a href="{{ featured.url }}">Continua a leggere &#8594;</a></p>
+      {% endif %}
+    </article>
+  </div>
 </section>
 {% endif %}
 

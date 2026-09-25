@@ -1,9 +1,11 @@
-// Geometria della carta "Dove guarda questo sito" (audit 2026, L9).
-// Proiezione di Goode interrotta, confini Natural Earth 1:110M (world-atlas).
+// Geometrie delle carte "Dove guarda questo sito" (audit 2026, L9 e L10).
+// Home inglese: proiezione di Goode interrotta -> src/_data/cartaGeometria.json
+// Home italiana: azimutale equivalente di Lambert centrata su Bergamo, globo
+// intero, con i cerchi di distanza ogni 30 gradi -> cartaGeometriaBergamo.json
+// Confini Natural Earth 1:110M (world-atlas).
 // Si lancia solo quando cambia la geometria, non a ogni build:
 //   npm i --no-save d3-geo d3-geo-projection topojson-client world-atlas
 //   node scripts/carta/geometria.mjs
-// Scrive src/_data/cartaGeometria.json (percorsi SVG per codice ISO).
 import * as d3 from "d3-geo";
 import * as P from "d3-geo-projection";
 import { feature } from "topojson-client";
@@ -72,3 +74,38 @@ const out = {
 };
 fs.writeFileSync(new URL("../../src/_data/cartaGeometria.json", import.meta.url), JSON.stringify(out));
 console.log("paesi:", Object.keys(countries).length, "byte:", JSON.stringify(out).length);
+
+// --- Home italiana: Lambert azimutale equivalente, centro Bergamo (L10) ---
+// Equivalente e non equidistante: le aree restano vere, quindi il colore di
+// un paese pesa quanto il paese. Il bordo e' l'antipodo di Bergamo.
+const BG = [9.67, 45.70];
+const WB = 600;
+const pb = d3.geoAzimuthalEqualArea().rotate([-BG[0], -BG[1]]).clipAngle(179.5).fitSize([WB, WB], { type: "Sphere" });
+const pathB = d3.geoPath(pb).digits(0);
+const cB = {};
+for (const f of feature(topo, topo.objects.countries).features) {
+  if (f.id === "010" || !f.id) continue;
+  const d = pathB(f);
+  if (!d) continue;
+  const [cx, cy] = pb(d3.geoCentroid(f)) || [0, 0];
+  cB[f.id] = { d, cx: +cx.toFixed(1), cy: +cy.toFixed(1), area: Math.round(pathB.area(f)) };
+}
+for (const [id, ll] of Object.entries(tiny)) {
+  if (cB[id]) continue;
+  const [cx, cy] = pb(ll);
+  cB[id] = { d: "", cx: +cx.toFixed(1), cy: +cy.toFixed(1), area: 0 };
+}
+const anelli = [];
+for (let a = 30; a < 180; a += 30) anelli.push(pathB(d3.geoCircle().center(BG).radius(a)()));
+const [bx, by] = pb(BG);
+const outB = {
+  _nota: "Generato da scripts/carta/geometria.mjs. Non modificare a mano.",
+  viewBox: `0 0 ${WB} ${WB}`,
+  sphere: pathB({ type: "Sphere" }),
+  graticule: pathB(d3.geoGraticule().step([30, 30])()),
+  anelli: anelli.join(""),
+  centro: { nome: "Bergamo", x: +bx.toFixed(1), y: +by.toFixed(1) },
+  countries: cB
+};
+fs.writeFileSync(new URL("../../src/_data/cartaGeometriaBergamo.json", import.meta.url), JSON.stringify(outB));
+console.log("Bergamo: paesi:", Object.keys(cB).length, "byte:", JSON.stringify(outB).length);

@@ -525,7 +525,7 @@ Il campo finisce nel JSON-LD della pagina `/concetti/slug/`, costruito dal filtr
 
 ### La geografia — il campo `geo` (obbligatorio da settembre 2026)
 
-Alimenta la carta «Dove guarda questo sito» in home. Forma: `geo: { modo: "...", paesi: [...] }`.
+Alimenta le due carte in home: in italiano «Dove guarda questo sito», proiezione azimutale equivalente di Lambert centrata su Bergamo; in inglese «Where the Italian essays look», proiezione di Goode, con i link alle pagine italiane marcati (IT). Le geometrie stanno in `cartaGeometriaBergamo.json` e `cartaGeometria.json` e si rigenerano solo se cambiano i confini, con `scripts/carta/geometria.mjs`. Forma: `geo: { modo: "...", paesi: [...] }`.
 
 | `modo` | Quando | Peso sulla carta | Esempi |
 |---|---|---|---|
@@ -535,7 +535,7 @@ Alimenta la carta «Dove guarda questo sito» in home. Forma: `geo: { modo: "...
 
 Regole:
 
-- **Nomi dei paesi**: esattamente quelli di `src/_data/geoPaesi.json` (in italiano, con codice ISO). Un paese nuovo si aggiunge lì, sotto `stati`.
+- **Nomi dei paesi**: esattamente quelli di `src/_data/geoPaesi.json` (in italiano, con codice ISO). Un paese nuovo si aggiunge lì, sotto `stati`, **e con il nome inglese sotto `nomiEn`** (serve alla carta della home inglese; il controllo si ferma se manca).
 - **Forme-stato**: l'UE (e l'Europa come progetto politico) si scrive `"UE"` e colora tutti i membri; l'Italia ha voce propria (menzioni Italia + UE). Le sole regioni ammesse sono in `regioni` (`UE`, `Africa subsahariana`) e distribuiscono il peso pieno su ogni Stato membro.
 - **Stati storici → Stato attuale erede** (Prussia, Impero tedesco, DDR → Germania; Regno di Napoli → Italia; Atene → Grecia). Per l'URSS la repubblica effettiva, mai l'URSS.
 

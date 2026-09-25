@@ -353,9 +353,16 @@ module.exports = function(eleventyConfig) {
   // Forme-stato: l'UE colora i membri; l'Italia e i membri con menzioni
   // proprie sommano UE + proprie; le regioni danno peso pieno ai membri.
   // Cinque classi a quantili sui valori delle voci di legenda.
-  eleventyConfig.addFilter("cartaGeo", function(index) {
-    const geom = require("./src/_data/cartaGeometria.json");
+  // opzioni: { geom: "goode" | "bergamo", lang: "it" | "en" } (L10: la home
+  // italiana usa Lambert centrata su Bergamo, quella inglese Goode).
+  eleventyConfig.addFilter("cartaGeo", function(index, opzioni) {
+    const o = opzioni || {};
+    const bergamo = o.geom === "bergamo";
+    const en = o.lang === "en";
+    const geom = require(bergamo ? "./src/_data/cartaGeometriaBergamo.json" : "./src/_data/cartaGeometria.json");
     const paesi = require("./src/_data/geoPaesi.json");
+    const N = function(n) { return en ? ((paesi.nomiEn || {})[n] || n) : n; };
+    const W = en ? " · weight " : " · peso ";
     const slugify = eleventyConfig.getFilter("slugify");
     const unita = {};
     (index || []).forEach(function(c) {
@@ -373,10 +380,10 @@ module.exports = function(eleventyConfig) {
     const voci = [];
     Object.keys(unita).forEach(function(nome) {
       let v = unita[nome];
-      if (nome === "UE") { voci.push({ nome: "Unione europea", chiave: "UE", valore: v }); return; }
+      if (nome === "UE") { voci.push({ nome: en ? N("UE") : "Unione europea", chiave: "UE", valore: v }); return; }
       if (paesi.regioni[nome] && paesi.regioni[nome].iso) {
-        paesi.regioni[nome].iso.forEach(function(i) { perIso[i] = Math.max(perIso[i] || 0, v); if (!info[i]) info[i] = { titolo: nome + ' · peso ' + Math.max(1, Math.round(v)), nome: null }; });
-        voci.push({ nome: nome, chiave: nome, valore: v }); return;
+        paesi.regioni[nome].iso.forEach(function(i) { perIso[i] = Math.max(perIso[i] || 0, v); if (!info[i]) info[i] = { titolo: N(nome) + W + Math.max(1, Math.round(v)), nome: null }; });
+        voci.push({ nome: N(nome), chiave: nome, valore: v }); return;
       }
       // Colore: i membri UE sommano il peso dell'Unione. Legenda: l'Italia
       // mostra la somma (decisione del 24/9), gli altri membri solo il peso
@@ -386,15 +393,15 @@ module.exports = function(eleventyConfig) {
       if (iso) {
         perIso[iso] = Math.max(perIso[iso] || 0, membro ? v + valUE : v); diretti[iso] = true;
         const tot = Math.max(1, Math.round(membro ? v + valUE : v));
-        info[iso] = { titolo: nome + ' · peso ' + tot + (membro && valUE ? ' (con l’Unione europea)' : ''), nome: nome };
+        info[iso] = { titolo: N(nome) + W + tot + (membro && valUE ? (en ? ' (with the European Union)' : ' (con l’Unione europea)') : ''), nome: nome };
       }
-      voci.push({ nome: nome, chiave: nome, valore: (membro && nome === "Italia") ? v + valUE : v });
+      voci.push({ nome: N(nome), chiave: nome, valore: (membro && nome === "Italia") ? v + valUE : v });
     });
     ue.forEach(function(m) {
       const iso = paesi.stati[m];
       if (iso && !perIso[iso] && valUE) {
         perIso[iso] = valUE;
-        info[iso] = { titolo: m + ' · tramite l’Unione europea (peso ' + Math.max(1, Math.round(valUE)) + ')', nome: "Unione Europea" };
+        info[iso] = { titolo: N(m) + (en ? ' · through the European Union (weight ' : ' · tramite l’Unione europea (peso ') + Math.max(1, Math.round(valUE)) + ')', nome: "Unione Europea" };
       }
     });
     // Classi a quantili sui valori delle voci di legenda
@@ -408,11 +415,11 @@ module.exports = function(eleventyConfig) {
     const nomi = {};
     (index || []).forEach(function(c) { nomi[c.name] = c; });
     function url(v) {
-      const cand = v.chiave === "UE" ? "Unione Europea" : v.nome;
+      const cand = v.chiave === "UE" ? "Unione Europea" : v.chiave;
       return nomi[cand] ? "/concetti/" + slugify(cand) + "/" : "/indice/#paesi";
     }
     voci.forEach(function(v) { v.classe = classe(v.valore); v.url = url(v); v.peso = Math.max(1, Math.round(v.valore)); });
-    voci.sort(function(a, b) { return b.valore - a.valore || a.nome.localeCompare(b.nome); });
+    voci.sort(function(a, b) { return b.valore - a.valore || a.chiave.localeCompare(b.chiave); });
     // SVG
     function esc(t) { return String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;"); }
     function linkIso(iso) {
@@ -420,8 +427,12 @@ module.exports = function(eleventyConfig) {
       return i && i.nome && nomi[i.nome] ? "/concetti/" + slugify(i.nome) + "/" : null;
     }
     let svg = '<svg class="carta-svg" viewBox="' + geom.viewBox + '" role="group" aria-labelledby="carta-titolo carta-desc">'
-      + '<title id="carta-titolo">Dove guarda questo sito</title>'
-      + '<desc id="carta-desc">Carta del mondo in proiezione di Goode interrotta. Ogni paese è colorato in cinque classi secondo quanto il sito ne parla; il dettaglio con i valori è nella legenda testuale.</desc>'
+      + '<title id="carta-titolo">' + (en ? 'Where the Italian essays look' : 'Dove guarda questo sito') + '</title>'
+      + '<desc id="carta-desc">' + (en
+        ? 'World map in Goode’s interrupted projection. Each country is shaded in five classes by how much the Italian essays discuss it; the values are in the text legend.'
+        : (bergamo
+          ? 'Carta del mondo in proiezione azimutale equivalente di Lambert, centrata su Bergamo, con i cerchi di distanza ogni 30 gradi. Ogni paese è colorato in cinque classi secondo quanto il sito ne parla; il dettaglio con i valori è nella legenda testuale.'
+          : 'Carta del mondo in proiezione di Goode interrotta. Ogni paese è colorato in cinque classi secondo quanto il sito ne parla; il dettaglio con i valori è nella legenda testuale.')) + '</desc>'
       + '<clipPath id="carta-clip"><path d="' + geom.sphere + '"/></clipPath>'
       + '<path class="carta-sfera" d="' + geom.sphere + '"/>'
       + '<path class="carta-reticolo" d="' + geom.graticule + '"/><g clip-path="url(#carta-clip)">';
@@ -432,9 +443,13 @@ module.exports = function(eleventyConfig) {
       const href = k ? linkIso(iso) : null;
       function wrap(el) { return href ? '<a href="' + href + '" class="carta-link">' + el + '</a>' : el; }
       if (c.d) svg += wrap('<path class="carta-p carta-c' + k + '" d="' + c.d + '">' + t + '</path>');
-      if (k && c.area < 40 && diretti[iso]) punti.push(wrap('<circle class="carta-punto carta-c' + k + '" cx="' + c.cx + '" cy="' + c.cy + '" r="4">' + t + '</circle>'));
+      if (k && c.area < (bergamo ? 20 : 40) && diretti[iso]) punti.push(wrap('<circle class="carta-punto carta-c' + k + '" cx="' + c.cx + '" cy="' + c.cy + '" r="4">' + t + '</circle>'));
     });
-    svg += '</g>' + punti.join("") + '</svg>';
+    svg += '</g>';
+    if (geom.anelli) svg += '<path class="carta-anello" d="' + geom.anelli + '"/>';
+    svg += punti.join("");
+    if (geom.centro) svg += '<circle class="carta-centro" cx="' + geom.centro.x + '" cy="' + geom.centro.y + '" r="4.5"/><text class="carta-centro-nome" x="' + (geom.centro.x + 9) + '" y="' + (geom.centro.y - 8) + '">' + geom.centro.nome + '</text>';
+    svg += '</svg>';
     return { svg: svg, legenda: voci.slice(0, 12), altri: Math.max(0, voci.length - 12), totale: voci.length };
   });
 

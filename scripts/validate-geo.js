@@ -15,6 +15,8 @@ for (const v of voci) {
   if (modo !== "nessuna" && !paesi.length) errori.push(`${v.name}: modo ${modo} senza paesi`);
   for (const p of paesi) if (!noti.has(p)) errori.push(`${v.name}: paese sconosciuto "${p}" (aggiungerlo a geoPaesi.json)`);
 }
+// Home inglese (L10): ogni stato e regione deve avere il nome inglese.
+for (const n of noti) if (!(g.nomiEn || {})[n]) errori.push(`geoPaesi.json: manca il nome inglese di "${n}" in nomiEn`);
 if (errori.length) {
   console.error("[geo] errori nell'indice:\n  " + errori.join("\n  "));
   process.exit(1);

@@ -169,6 +169,38 @@ og_card: /images/og/og-en-home.png
 </section>
 {% endif %}
 
+{# === 3b · I SAGGI ITALIANI (L10, 25/9). Il grosso del sito e' in
+       italiano: per il ricercatore e' una ragione in piu' anche se non li
+       leggera'. La carta e' Goode, senza centro; i link portano alle pagine
+       italiane dei concetti e lo dichiarano con (IT). === #}
+{% set carta = collections.mergedConceptsIndex | cartaGeo({ geom: "goode", lang: "en" }) %}
+{% if carta.legenda.length %}
+<section class="home-band home-band--carta" aria-labelledby="carta-h" lang="en">
+  <div class="home-sec-head">
+    <h2 class="home-sec-title" id="carta-h">Where the Italian essays look</h2>
+    <a class="home-sec-link" href="/writings/" hreflang="it">The essays, in Italian &#8594;</a>
+  </div>
+  <p class="en-carta-intro">Most of this site is in Italian: essays on publishing, epistemology and the geopolitics of content, indexed concept by concept. This is where they look.</p>
+  <div class="carta">
+    <figure class="carta-figura">
+      {{ carta.svg | safe }}
+      <figcaption class="carta-didascalia">Goode&rsquo;s interrupted projection: no centre, the sphere cut open.</figcaption>
+    </figure>
+    <div class="carta-legenda">
+      <div class="carta-scala" aria-hidden="true">{% for k in [1,2,3,4,5] %}<span class="carta-c{{ k }}"></span>{% endfor %}</div>
+      <p class="carta-scala-etichette" aria-hidden="true"><span>less</span><span>more</span></p>
+      <ul class="carta-voci">
+        {% for v in carta.legenda %}
+        <li><span class="carta-sw carta-c{{ v.classe }}" aria-hidden="true"></span><a href="{{ v.url }}" hreflang="it">{{ v.nome }} <span class="en-lang-it">(IT)</span></a><span class="carta-peso">{{ v.peso }}</span></li>
+        {% endfor %}
+      </ul>
+      <p class="carta-nota">EU member states also take the Union&rsquo;s colour.</p>
+      {% if carta.altri %}<p class="carta-altri"><a href="/indice/#paesi" hreflang="it">{{ carta.altri }} more countries in the Italian index &#8594;</a></p>{% endif %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
 {# === 4 · THE ABSTRACT: seconda voce editoriale, ultime uscite e
        iscrizione. Il feed e' gia' in inglese. === #}
 <section class="home-band home-band--abstract" aria-label="The Abstract">

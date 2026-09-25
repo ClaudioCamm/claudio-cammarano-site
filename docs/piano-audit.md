@@ -34,3 +34,5 @@ Peso compresso (gzip) delle risorse del sito, esclusi Google Fonts e GA4:
 Risorse esterne caricate in ogni pagina: Google Fonts (CSS + font da fonts.gstatic.com), GA4 (googletagmanager.com), dns-prefetch verso cdn.jsdelivr.net. MathJax solo nelle pagine con formule.
 
 Budget advisory: home ≤ 200 KB compressi esclusi i font → rispettato (GA4 escluso per decisione). Da misurare sulle anteprime Netlify: LCP, CLS e accessibilità (Lighthouse / PageSpeed Insights).
+
+- [x] L10 carte (25/9): anteprima ultimo saggio ripristinata; home IT in Lambert azimutale equivalente su Bergamo con cerchi di distanza; home EN con Goode nella fascia «Where the Italian essays look»; nomiEn in geoPaesi.json con controllo.
