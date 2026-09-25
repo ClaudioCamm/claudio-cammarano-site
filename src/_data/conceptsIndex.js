@@ -43,9 +43,6 @@ module.exports = [
     related: [
       { name: "Eco, Umberto", why: "La stessa stagione teorica produce chi dissolve i fatti nel discorso e chi li difende dal discorso." }
     ],
-    related: [
-      { name: "Enciclopedia Einaudi", why: "Vi scrisse alcune voci, fra cui «Segno» e «Metafora», poi confluite in Semiotica e filosofia del linguaggio (1984)." }
-    ],
     sameAs: ["https://www.wikidata.org/wiki/Q44272", "https://it.wikipedia.org/wiki/Michel_Foucault"],
     note: "Filosofo francese (1926–1984). Nel sito appare come autore il cui post-strutturalismo è stato «appreso in modo deteriore» da Orbán, Trump e Putin: la tesi che tutto sia effetto di discorso viene usata dai populisti per negare la resistenza della realtà agli schemi mentali. Il sito ricorda anche il suo entusiasmo per la rivoluzione iraniana del 1978 — caso esemplare dei rischi dell'antiilluminismo.",
     articles: [
@@ -182,6 +179,9 @@ module.exports = [
     name: "Eco, Umberto",
     type: "persona",
     geo: { modo: "diretta", paesi: ["Italia"] },
+    related: [
+      { name: "Enciclopedia Einaudi", why: "Vi scrisse alcune voci, fra cui «Segno» e «Metafora», poi confluite in Semiotica e filosofia del linguaggio (1984)." }
+    ],
     sameAs: ["https://www.wikidata.org/wiki/Q12807", "https://it.wikipedia.org/wiki/Umberto_Eco"],
     note: "Semiologo, scrittore e intellettuale pubblico italiano (1932–2016). Nel sito è figura centrale: mente combinatoria capace di fondare istituzioni (DAMS, Comunicazione, Master in Editoria), «terapista wittgensteiniano del discorso pubblico». La sua lezione: la realtà resiste ai nostri schemi mentali, non è tutto soltanto un effetto di discorso.",
     articles: [
@@ -3435,7 +3435,6 @@ module.exports = [
       { name: "Eco, Umberto", why: "Il maestro da cui l'autore ha imparato a cercare la struttura sotto la superficie." }
     ],
     sameAs: ["https://www.wikidata.org/wiki/Q179168", "https://it.wikipedia.org/wiki/Strutturalismo"],
-    sameAs: ["https://www.wikidata.org/wiki/Q267932", "https://it.wikipedia.org/wiki/Post-strutturalismo"],
     note: "Il metodo che legge un fenomeno come sistema di relazioni: un elemento vale per la posizione che occupa rispetto agli altri, non per ciò che è preso da solo. Nasce dalla linguistica di Saussure e passa, con Jakobson, Lévi-Strauss, Barthes e Greimas, all'antropologia e alla semiotica. In questo sito è l'organon implicito, lo strumento con cui ragiona: cercare la struttura sotto la superficie. Il sito ne ricava una posizione. Del poststrutturalismo resta almeno un'acquisizione buona: ogni pensiero è situato. Ma la struttura viene prima del gesto di collocarsi in un contesto. La lingua è la mappa del pensiero (non coincide, ma lo indica), e studiarla con rigore è un esercizio geografico. In questa famiglia entra anche il Tractatus di Wittgenstein: quello del primo Wittgenstein è un mondo di fatti, e di proposizioni che ne sono l'immagine. Wittgenstein non ne avrebbe forse approvato l'etichetta, ma è noto che l'uomo di suo approvava ben poco. In italiano il riferimento culturale più importante e più dimenticato è l'Enciclopedia Einaudi, un'opera grande in 16 volumi che rinunciò all'ordine alfabetico per un sistema di voci collegate. Il suo sforzo fu di gettare le basi per una nuova metodologia delle scienze umane e non, ma arrivò troppo tardi e fallì miseramente. Non è più disponibile, se non in forma di remainder, ma per poco tempo è stata possibile, e questo conta.",
     articles: [
       { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-04-04-dieci-anni-senza-umberto-eco/" }
@@ -3451,6 +3450,7 @@ module.exports = [
       { name: "Derrida, Jacques", why: "L'altro nome: la decostruzione come metodo." },
       { name: "Ferraris, Maurizio", why: "Ne ha percorso la strada a ritroso fino al nuovo realismo." }
     ],
+    sameAs: ["https://www.wikidata.org/wiki/Q267932", "https://it.wikipedia.org/wiki/Post-strutturalismo"],
     note: "La corrente che, da Foucault e Derrida in poi, legge ogni enunciato di verità come effetto di discorso e quindi di potere. Nel sito ha due facce. Lascia un'acquisizione buona: ogni pensiero è situato. Ma la sua lezione è stata appresa in modo deteriore da leader come Orbán, Trump e Putin, che la usano per negare che la realtà resista agli schemi: non è l'illuminismo che si è rovesciato su se stesso, è la sua critica. Maurizio Ferraris ne ha percorso la strada a ritroso fino al nuovo realismo.",
     articles: [
       { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-04-04-dieci-anni-senza-umberto-eco/" },
