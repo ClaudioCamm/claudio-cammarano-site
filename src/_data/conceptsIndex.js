@@ -3420,6 +3420,64 @@ module.exports = [
     articles: [
       { title: "La mappa e il crinale", url: "/writings/2026-09-07-la-mappa-e-il-crinale/" }
     ]
+  },
+  {
+    name: "strutturalismo",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Svizzera", "Francia"] },
+    related: [
+      { name: "Wittgenstein, Ludwig", why: "Il mondo del Tractatus è fatto di fatti, e le proposizioni ne sono l'immagine: una struttura prima che un contenuto." },
+      { name: "Enciclopedia Einaudi", why: "Il tentativo italiano più ambizioso di organizzare il sapere per relazioni invece che per alfabeto." },
+      { name: "poststrutturalismo", why: "Ne eredita l'idea buona, che ogni pensiero è situato; il sito ne rifiuta l'esito, che la struttura si dissolva nel discorso." },
+      { name: "Eco, Umberto", why: "Il maestro da cui l'autore ha imparato a cercare la struttura sotto la superficie." }
+    ],
+    sameAs: ["https://it.wikipedia.org/wiki/Strutturalismo"],
+    note: "Il metodo che legge un fenomeno come sistema di relazioni: un elemento vale per la posizione che occupa rispetto agli altri, non per ciò che è preso da solo. Nasce dalla linguistica di Saussure e passa, con Jakobson, Lévi-Strauss, Barthes e Greimas, all'antropologia e alla semiotica. In questo sito è l'organon implicito, lo strumento con cui ragiona: cercare la struttura sotto la superficie. Il sito ne ricava una posizione. Del poststrutturalismo resta almeno un'acquisizione buona: ogni pensiero è situato. Ma la struttura viene prima del gesto di collocarsi in un contesto. La lingua è la mappa del pensiero (non coincide, ma lo indica), e studiarla con rigore è un esercizio geografico. In questa famiglia entra anche il Tractatus di Wittgenstein: quello del primo Wittgenstein è un mondo di fatti, e di proposizioni che ne sono l'immagine. Wittgenstein non ne avrebbe forse approvato l'etichetta, ma è noto che l'uomo di suo approvava ben poco. In italiano il riferimento culturale più importante e più dimenticato è l'Enciclopedia Einaudi, un'opera grande in 16 volumi che rinunciò all'ordine alfabetico per un sistema di voci collegate. Il suo sforzo fu di gettare le basi per una nuova metodologia delle scienze umane e non, ma arrivò troppo tardi e fallì miseramente. Non è più disponibile, se non in forma di remainder, ma per poco tempo è stata possibile, e questo conta.",
+    articles: [
+      { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-04-04-dieci-anni-senza-umberto-eco/" }
+    ]
+  },
+  {
+    name: "poststrutturalismo",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Francia"] },
+    related: [
+      { name: "strutturalismo", why: "Nasce come sua critica: dove lo strutturalismo cercava la struttura, il poststrutturalismo cerca il potere che la istituisce." },
+      { name: "Foucault, Michel", why: "Uno dei due nomi con cui il sito identifica la corrente." },
+      { name: "Derrida, Jacques", why: "L'altro nome: la decostruzione come metodo." },
+      { name: "Ferraris, Maurizio", why: "Ne ha percorso la strada a ritroso fino al nuovo realismo." }
+    ],
+    note: "La corrente che, da Foucault e Derrida in poi, legge ogni enunciato di verità come effetto di discorso e quindi di potere. Nel sito ha due facce. Lascia un'acquisizione buona: ogni pensiero è situato. Ma la sua lezione è stata appresa in modo deteriore da leader come Orbán, Trump e Putin, che la usano per negare che la realtà resista agli schemi: non è l'illuminismo che si è rovesciato su se stesso, è la sua critica. Maurizio Ferraris ne ha percorso la strada a ritroso fino al nuovo realismo.",
+    articles: [
+      { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-04-04-dieci-anni-senza-umberto-eco/" },
+      { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" }
+    ]
+  },
+  {
+    name: "Wittgenstein, Ludwig",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Austria", "Regno Unito"] },
+    related: [
+      { name: "strutturalismo", why: "Non avrebbe forse approvato l'etichetta, ma il Tractatus descrive il mondo come struttura di fatti." },
+      { name: "Eco, Umberto", why: "Eco come «terapista wittgensteiniano del discorso pubblico»." }
+    ],
+    sameAs: ["https://www.wikidata.org/wiki/Q9391", "https://it.wikipedia.org/wiki/Ludwig_Wittgenstein"],
+    note: "Filosofo austriaco (1889–1951), attivo soprattutto a Cambridge. Nel sito compare per la terapia del linguaggio: Eco come «terapista wittgensteiniano del discorso pubblico», che corregge la domanda prima di rispondere. È anche il ponte fra logica e struttura: il Tractatus (1921) descrive il mondo come totalità dei fatti e la proposizione come immagine di uno stato di cose, una teoria della raffigurazione che si lascia leggere come teoria della mappa.",
+    articles: [
+      { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-04-04-dieci-anni-senza-umberto-eco/" }
+    ]
+  },
+  {
+    name: "Enciclopedia Einaudi",
+    type: "testo",
+    geo: { modo: "diretta", paesi: ["Italia"] },
+    related: [
+      { name: "strutturalismo", why: "Un'impresa strutturalista nella forma prima ancora che nei contenuti." }
+    ],
+    sameAs: ["https://it.wikipedia.org/wiki/Enciclopedia_Einaudi"],
+    note: "Opera in sedici volumi pubblicata da Einaudi fra il 1977 e il 1984, diretta da Ruggiero Romano. Rompe con l'ordine alfabetico: i primi quattordici volumi raccolgono circa 548 voci-saggio collegate da rimandi; il quindicesimo (1982) ne ricostruisce la sistematica, con 73 articoli di «sistematica locale» e dieci percorsi tematici; il sedicesimo (1984) raccoglie gli indici. È un'enciclopedia pensata come rete di relazioni più che come elenco di definizioni: un'impresa strutturalista nella forma prima ancora che nei contenuti, spesso indicata come anticipazione dell'ipertesto. Non è mai stata aggiornata né portata in digitale. Nel sito è il riferimento strutturale dell'indice dei concetti, che funziona allo stesso modo: voci collegate, non un glossario.",
+    citation: "ROMANO, Ruggiero (dir.), <em>Enciclopedia</em>, Torino, Einaudi, 1977-1984, 16 voll.",
+    articles: []
   }
 
 ];
