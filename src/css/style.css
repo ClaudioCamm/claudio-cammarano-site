@@ -7921,3 +7921,5 @@ a.home-path:hover {
 .home-lab-preview-go, .home-lab-preview-go a { color: #fff; }
 @media (prefers-color-scheme: dark) { .home-lab-preview { box-shadow: inset 0 0 0 1px rgba(255,255,255,.12); } }
 .home-lab-preview .home-lab-line-text { font-family: var(--font-sans); font-size: 13px; }
+.home-lab-preview { max-width: none; } /* a giustezza, come la griglia delle serie (25/9) */
+.home-lab-preview-abstract { max-width: 80ch; }
