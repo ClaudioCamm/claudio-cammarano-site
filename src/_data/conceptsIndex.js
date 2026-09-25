@@ -3472,12 +3472,15 @@ module.exports = [
     type: "testo",
     geo: { modo: "diretta", paesi: ["Italia"] },
     related: [
-      { name: "strutturalismo", why: "Un'impresa strutturalista nella forma prima ancora che nei contenuti." }
+      { name: "strutturalismo", why: "Un'impresa strutturalista nella forma prima ancora che nei contenuti." },
+      { name: "Eco, Umberto", why: "La stessa stagione intellettuale: il sapere come sistema di relazioni, da percorrere e non da consultare." }
     ],
     sameAs: ["https://it.wikipedia.org/wiki/Enciclopedia_Einaudi"],
     note: "Opera in sedici volumi pubblicata da Einaudi fra il 1977 e il 1984, diretta da Ruggiero Romano. Rompe con l'ordine alfabetico: i primi quattordici volumi raccolgono circa 548 voci-saggio collegate da rimandi; il quindicesimo (1982) ne ricostruisce la sistematica, con 73 articoli di «sistematica locale» e dieci percorsi tematici; il sedicesimo (1984) raccoglie gli indici. È un'enciclopedia pensata come rete di relazioni più che come elenco di definizioni: un'impresa strutturalista nella forma prima ancora che nei contenuti, spesso indicata come anticipazione dell'ipertesto. Non è mai stata aggiornata né portata in digitale. Nel sito è il riferimento strutturale dell'indice dei concetti, che funziona allo stesso modo: voci collegate, non un glossario.",
     citation: "ROMANO, Ruggiero (dir.), <em>Enciclopedia</em>, Torino, Einaudi, 1977-1984, 16 voll.",
-    articles: []
+    articles: [
+      { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-04-04-dieci-anni-senza-umberto-eco/" }
+    ]
   }
 
 ];

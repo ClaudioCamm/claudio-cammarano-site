@@ -1931,5 +1931,16 @@
         "label": "Italia"
       }
     ]
+  },
+  "Wittgenstein, Ludwig": {
+    "qid": "Q9391",
+    "type": "persona",
+    "paesi": [
+      {
+        "rel": "cittadinanza",
+        "qid": "Q145",
+        "label": "Regno Unito"
+      }
+    ]
   }
 }
