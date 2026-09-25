@@ -208,12 +208,17 @@ bodyClass: home
   <p class="curated-all"><a href="/curated/">Tutte le segnalazioni &#8594;</a></p>
 </section>
 
-{# === LAB (audit 2026, L4/A6): una riga in fondo, con l'avviso che le note
-       sono in inglese. === #}
+{# === LAB (audit 2026, L4/A6; L10 25/9): piccola anteprima dell'ultima
+       nota, come per l'ultimo saggio. Le note sono in inglese e lo dice. === #}
 {% if collections.lab.length %}
 {% set labFeature = collections.lab[0] %}
 <section class="home-band home-band--lab-line" aria-label="Lab">
-  <p class="home-lab-line"><a class="home-lab-line-label" href="/lab/">Lab</a> <span class="home-lab-line-text">Note di ricerca in corso, in inglese &middot; ultima: <a href="{{ labFeature.url }}" lang="en">{{ labFeature.data.title }} &#8594;</a></span></p>
+  <div class="home-lab-preview">
+    <p class="home-lab-preview-head"><a class="home-lab-line-label" href="/lab/">Lab</a> <span class="home-lab-line-text">Note di ricerca in corso, in inglese &middot; {{ labFeature.data.date | formatDate }}{% if labFeature.data.stage %} &middot; <span lang="en">{{ labFeature.data.stage }}</span>{% endif %}</span></p>
+    <h3 class="home-lab-preview-title" lang="en"><a href="{{ labFeature.url }}">{{ labFeature.data.title }}</a></h3>
+    {% if labFeature.data.description %}<p class="home-lab-preview-abstract" lang="en">{{ labFeature.data.description | excerpt(260) }}</p>{% endif %}
+    <p class="home-lab-preview-go"><a href="{{ labFeature.url }}">Leggi la nota, in inglese &#8594;</a> <span aria-hidden="true">&middot;</span> <a href="/lab/">Tutte le note &#8594;</a></p>
+  </div>
 </section>
 {% endif %}
 

@@ -7900,3 +7900,13 @@ a.home-path:hover {
 @media (max-width: 600px) { .carta-centro { r: 8; } }
 .carta-payoff { display: block; font-style: normal; color: var(--color-text); margin-bottom: 4px; }
 .carta-payoff a { color: var(--color-primary); }
+/* L10: anteprima dell'ultima nota del Lab in home italiana */
+.home-lab-preview { border-left: 4px solid var(--color-lab-text, var(--color-primary)); padding: 4px 0 4px 18px; max-width: 760px; }
+.home-lab-preview-head { margin: 0 0 6px; }
+.home-lab-preview-title { font-family: var(--font-serif, Georgia, serif); font-size: 24px; line-height: 1.25; margin: 0 0 8px; text-wrap: balance; }
+.home-lab-preview-title a { color: var(--color-text); text-decoration: none; }
+.home-lab-preview-title a:hover { color: var(--color-primary); }
+.home-lab-preview-abstract { color: var(--color-text-light); margin: 0 0 8px; }
+.home-lab-preview-go { font-family: var(--font-sans); font-size: 14px; margin: 0; }
+.home-lab-preview-go a { color: var(--color-lab-text, var(--color-primary)); }
+@media (max-width: 600px) { .home-lab-preview-title { font-size: 20px; } }
