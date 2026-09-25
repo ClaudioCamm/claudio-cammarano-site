@@ -179,9 +179,6 @@ module.exports = [
     name: "Eco, Umberto",
     type: "persona",
     geo: { modo: "diretta", paesi: ["Italia"] },
-    related: [
-      { name: "Enciclopedia Einaudi", why: "Vi scrisse alcune voci, fra cui «Segno» e «Metafora», poi confluite in Semiotica e filosofia del linguaggio (1984)." }
-    ],
     sameAs: ["https://www.wikidata.org/wiki/Q12807", "https://it.wikipedia.org/wiki/Umberto_Eco"],
     note: "Semiologo, scrittore e intellettuale pubblico italiano (1932–2016). Nel sito è figura centrale: mente combinatoria capace di fondare istituzioni (DAMS, Comunicazione, Master in Editoria), «terapista wittgensteiniano del discorso pubblico». La sua lezione: la realtà resiste ai nostri schemi mentali, non è tutto soltanto un effetto di discorso.",
     articles: [
@@ -3445,7 +3442,6 @@ module.exports = [
     type: "teoria",
     geo: { modo: "teorico", paesi: ["Francia"] },
     related: [
-      { name: "strutturalismo", why: "Nasce come sua critica: dove lo strutturalismo cercava la struttura, il poststrutturalismo cerca il potere che la istituisce." },
       { name: "Foucault, Michel", why: "Uno dei due nomi con cui il sito identifica la corrente." },
       { name: "Derrida, Jacques", why: "L'altro nome: la decostruzione come metodo." },
       { name: "Ferraris, Maurizio", why: "Ne ha percorso la strada a ritroso fino al nuovo realismo." }
@@ -3462,7 +3458,6 @@ module.exports = [
     type: "persona",
     geo: { modo: "diretta", paesi: ["Austria", "Regno Unito"] },
     related: [
-      { name: "strutturalismo", why: "Non avrebbe forse approvato l'etichetta, ma il Tractatus descrive il mondo come struttura di fatti." },
       { name: "Eco, Umberto", why: "Eco come «terapista wittgensteiniano del discorso pubblico»." }
     ],
     sameAs: ["https://www.wikidata.org/wiki/Q9391", "https://it.wikipedia.org/wiki/Ludwig_Wittgenstein"],
@@ -3476,7 +3471,6 @@ module.exports = [
     type: "testo",
     geo: { modo: "diretta", paesi: ["Italia"] },
     related: [
-      { name: "strutturalismo", why: "Un'impresa strutturalista nella forma prima ancora che nei contenuti." },
       { name: "Eco, Umberto", why: "Vi scrisse alcune voci, fra cui «Segno» e «Metafora», poi confluite in Semiotica e filosofia del linguaggio (1984)." }
     ],
     sameAs: ["https://www.wikidata.org/wiki/Q3725029", "https://it.wikipedia.org/wiki/Enciclopedia_Einaudi"],
