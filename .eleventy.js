@@ -431,7 +431,7 @@ module.exports = function(eleventyConfig) {
       + '<desc id="carta-desc">' + (en
         ? 'World map in Goode’s interrupted projection. Each country is shaded in five classes by how much the Italian essays discuss it; the values are in the text legend.'
         : (bergamo
-          ? 'Carta del mondo in proiezione azimutale equivalente di Lambert, centrata su Bergamo, con i cerchi di distanza ogni 30 gradi. Ogni paese è colorato in cinque classi secondo quanto il sito ne parla; il dettaglio con i valori è nella legenda testuale.'
+          ? 'Carta del mondo in proiezione azimutale equivalente di Lambert, centrata su dove scrive l’autore, con i cerchi di distanza ogni 30 gradi. Ogni paese è colorato in cinque classi secondo quanto il sito ne parla; il dettaglio con i valori è nella legenda testuale.'
           : 'Carta del mondo in proiezione di Goode interrotta. Ogni paese è colorato in cinque classi secondo quanto il sito ne parla; il dettaglio con i valori è nella legenda testuale.')) + '</desc>'
       + '<clipPath id="carta-clip"><path d="' + geom.sphere + '"/></clipPath>'
       + '<path class="carta-sfera" d="' + geom.sphere + '"/>'
