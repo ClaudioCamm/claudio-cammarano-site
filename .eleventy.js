@@ -448,7 +448,7 @@ module.exports = function(eleventyConfig) {
     svg += '</g>';
     if (geom.anelli) svg += '<path class="carta-anello" d="' + geom.anelli + '"/>';
     svg += punti.join("");
-    if (geom.centro) svg += '<circle class="carta-centro" cx="' + geom.centro.x + '" cy="' + geom.centro.y + '" r="4.5"/><text class="carta-centro-nome" x="' + (geom.centro.x + 9) + '" y="' + (geom.centro.y - 8) + '">' + geom.centro.nome + '</text>';
+    if (geom.centro) svg += '<circle class="carta-centro" cx="' + geom.centro.x + '" cy="' + geom.centro.y + '" r="5"/>'; // solo il punto, senza nome (25/9)
     svg += '</svg>';
     return { svg: svg, legenda: voci.slice(0, 12), altri: Math.max(0, voci.length - 12), totale: voci.length };
   });
