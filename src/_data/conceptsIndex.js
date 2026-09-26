@@ -1076,7 +1076,8 @@ module.exports = [
       { title: "If You're Over 40, You're Ready to Use A.I.", url: "/curated/2026-07-27-millman-kabbalah-ai-nyt/", _source: "curated" },
       { title: "Does AI stop children from learning?", url: "/curated/2026-08-18-economist-ai-learning-penalty-children/", _source: "curated" },
       { title: "Ross Douthat: The Exit Interview", url: "/curated/2026-08-11-klein-douthat-exit-interview-nyt/", _source: "curated" },
-      { title: "Destroying Books to Build a Mind", url: "/curated/2026-09-11-mancino-destroying-books-anthropic-newyorker/", _source: "curated" }
+      { title: "Destroying Books to Build a Mind", url: "/curated/2026-09-11-mancino-destroying-books-anthropic-newyorker/", _source: "curated" },
+      { title: "Aaron Sorkin Goes Off Script", url: "/curated/2026-09-19-sorkin-social-reckoning-nyt/", _source: "curated" }
     ]
   },
   {
@@ -2019,7 +2020,8 @@ module.exports = [
     note: "Informazione come distanza dallo stato di equiprobabilità, nella linea Schrödinger–Brillouin–Wiener. Nel sito è il criterio con cui si misura l’effetto di un testo su chi legge: non quanto è lungo, elegante o documentato, ma quanta indifferenza fra alternative riduce — un testo privo di effetti sulle attese è l’operatore identità. Da sola però non basta: un saggio scritto benissimo attorno a una tesi falsa è neghentropico in senso stretto e distruttivo in senso epistemico, e va corretta con il guadagno epistemico.",
     articles: [
       { title: "La formula dell’autenticità", url: "/writings/2026-08-23-la-formula-dellautenticita/" },
-      { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" }
+      { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" },
+      { title: "Aaron Sorkin Goes Off Script", url: "/curated/2026-09-19-sorkin-social-reckoning-nyt/", _source: "curated" }
     ]
   },
   {
@@ -3338,6 +3340,15 @@ module.exports = [
     note: "Giornalista e attivista americana (1934–2026), co-fondatrice di Ms. Magazine e figura centrale del femminismo della seconda ondata. Nel sito compare per il suo ultimo testo scritto, pubblicato su The New Yorker poco prima della morte: un documento testimoniale che rivela una genealogia poco nota — il femminismo politico di Steinem nasce dall'India postcoloniale degli anni Cinquanta e dal contatto con i gandhiani, non dalla teoria accademica occidentale.",
     articles: [
       { title: "Gloria Steinem's Final Essay", url: "/curated/2026-09-03-steinem-final-essay-newyorker/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Sorkin, Aaron",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    note: "Sceneggiatore americano (1961). Ha drammatizzato per un quarto di secolo le istituzioni al centro della società americana — *A Few Good Men*, *The American President*, *The West Wing*, *The Newsroom* — e ha scritto per il cinema il racconto che ha fissato l'origine di Facebook nell'immaginario collettivo, *The Social Network* (2010), a cui è tornato nel 2026 con *The Social Reckoning*, dedicato alla whistle-blower Frances Haugen. Nel sito entra per due ragioni distinte. La prima è una teoria implicita del valore per provenienza: il quadro astratto che gli piaceva e che ha smesso di dirgli qualcosa nel momento esatto in cui ha saputo che l'aveva dipinto una macchina è il controesempio più netto alla tesi che l'autenticità non sia la grandezza che conta — l'oggetto non era cambiato, era cambiata un'informazione sulla sua origine. La seconda è il romanticismo istituzionale, che dichiara apertamente e di cui offre la difesa minima: la reverenza per il Congresso, i tribunali e il giornalismo può anche essere mal riposta, ma una critica delle istituzioni priva di un'idea di ricambio non è una posizione. Va però tenuto fermo che il suo talento è diagnostico sul presente e non predittivo. *The West Wing* si chiude con C.J. Cregg — la portavoce interpretata da Allison Janney, diventata capo di gabinetto nella sesta stagione — che lascia la Casa Bianca per dirigere la fondazione di un miliardario filantropo, perché è lì che ormai si fa la politica che conta: letta nel 2026, è la prefigurazione entusiasta del trasferimento di potere che il sito osserva altrove con ben altro animo. E le ultime stagioni condividono l'assunto dell'epoca secondo cui l'integrazione commerciale avrebbe liberalizzato le autocrazie asiatiche, la Cina in testa — un pronostico che i vent'anni successivi hanno smentito. Sorkin coglie con precisione lo spirito di un tempo e i sogni che quel tempo fa su se stesso; non la direzione in cui andrà. È il motivo per cui le sue opere restano utili come reperti oltre che come racconti, e per cui il sito le usa senza sottoscriverne le previsioni.",
+    articles: [
+      { title: "Aaron Sorkin Goes Off Script", url: "/curated/2026-09-19-sorkin-social-reckoning-nyt/", _source: "curated" }
     ]
   },
   {
