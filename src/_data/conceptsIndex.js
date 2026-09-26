@@ -1171,7 +1171,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q7923762"],
     note: "Termine coniato da Francis Fukuyama in *Political Order and Political Decay* (2014): un sistema istituzionale in cui i punti di veto si sono moltiplicati al punto che nessuno riesce più a decidere, e la legittimità viene cercata nella produzione di altre regole invece che nei risultati. Non è un eccesso di democrazia ma una sua degenerazione procedurale: le stesse garanzie che limitano il potere arbitrario finiscono per impedire anche l'azione legittima, e questo vale indifferentemente per un'agenda conservatrice o progressista. Nel sito è il concetto che tiene insieme due fronti altrimenti distanti: la paralisi amministrativa americana — dieci anni di permessi per una linea di trasmissione elettrica, un programma lunare che dal 2004 non è ancora arrivato — e il proceduralismo europeo, dove ventisette regimi regolatori sovrapposti impediscono il mercato unico che era il punto di partenza. La conseguenza politica è che l'insofferenza per la regola non nasce solo dall'autoritarismo: nasce anche da istituzioni che hanno smesso di produrre esiti.",
     articles: [
-      { title: "Was Francis Fukuyama Right All Along?", url: "/curated/2026-09-18-ezra-klein-fukuyama-nyt/", _source: "curated" }
+      { title: "Was Francis Fukuyama Right All Along?", url: "/curated/2026-09-18-ezra-klein-fukuyama-nyt/", _source: "curated" },
+      { title: "The right balance: how to fix European Union artificial intelligence regulation", url: "/curated/2026-06-11-mariniello-ai-act-costi-conformita-bruegel/", _source: "curated" }
     ]
   },
   {
@@ -1362,7 +1363,8 @@ module.exports = [
     note: "La dinamica per cui un bene o servizio che era differenziato diventa fungibile e il vantaggio competitivo si sposta sul costo marginale di produzione. Nel sito è la lente con cui Thompson legge la competizione sui modelli AI: il token non è la merce giusta, lo è l'intelligenza (output corretto per unità di costo). Chi ha il costo marginale più basso vince; chi non riesce a coprire i costi fissi esce. La strategia cinese di pubblicare i pesi è letta come 'commoditize your complements': aprire l'AI riduce il vantaggio americano nel software e accelera il vantaggio cinese nel mondo fisico.",
     articles: [
       { title: "Who's Afraid of Chinese Models?", url: "/curated/2026-07-20-stratechery-chinese-models/", _source: "curated" },
-      { title: "The U.S. Is Betting the Economy on 'Scaling' AI: Where Is the Intelligence When One Needs It?", url: "/curated/2025-12-08-storm-scaling-ai-bolla-inet/", _source: "curated" }
+      { title: "The U.S. Is Betting the Economy on 'Scaling' AI: Where Is the Intelligence When One Needs It?", url: "/curated/2025-12-08-storm-scaling-ai-bolla-inet/", _source: "curated" },
+      { title: "Open Weights, Closed Ranks: The AI Manifesto War", url: "/curated/2026-08-12-zuniga-pesi-aperti-manifesti-icle/", _source: "curated" }
     ]
   },
   {
@@ -1905,7 +1907,8 @@ module.exports = [
     geo: { modo: "nessuna", paesi: [] },
     note: "La dipendenza da tecnologie cognitive estere come rischio epistemico, non solo operativo: chi controlla l'infrastruttura controlla le condizioni di produzione della conoscenza. Nel sito è l'igiene cognitiva sovrana — sapere cosa sa il proprio sistema, come lo sa, e in quali condizioni potrebbe smettere di saperlo — messa in luce dal caso Fable 5, in cui un executive order americano ha spento un'infrastruttura scientifica in quarantotto ore. Il caso Fable 5 è la versione da politica commerciale del problema: la capacità si spegne perché il fornitore, o il suo governo, decide così. La versione strutturale riguarda i pesi: chi li possiede esercita la capacità a condizioni proprie, e per questo una regolazione che renda i modelli a pesi aperti troppo onerosi da rilasciare produce dipendenza cognitiva come effetto collaterale.",
     articles: [
-      { title: "L'infrastruttura del sapere", url: "/writings/2026-07-07-linfrastruttura-del-sapere/" }
+      { title: "L'infrastruttura del sapere", url: "/writings/2026-07-07-linfrastruttura-del-sapere/" },
+      { title: "The End of the Foundation Model Era: Open-Weight Models, Sovereign AI, and Inference as Infrastructure", url: "/curated/2026-03-09-grogan-pesi-aperti-sovranita-ai/", _source: "curated" }
     ]
   },
   {
@@ -2670,7 +2673,8 @@ module.exports = [
       { title: "La Chine et les États-Unis peuvent-ils s'accorder sur la sécurité de l'IA ?", url: "/curated/2026-09-25-grandcontinent-sicurezza-ai-cina-stati-uniti/", _source: "curated" },
       { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" },
       { title: "The U.S. Is Betting the Economy on 'Scaling' AI: Where Is the Intelligence When One Needs It?", url: "/curated/2025-12-08-storm-scaling-ai-bolla-inet/", _source: "curated" },
-      { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-criti-hype-hugging-face-lawfare/", _source: "curated" }
+      { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-criti-hype-hugging-face-lawfare/", _source: "curated" },
+      { title: "Why open-weight models are crucial for American AI leadership", url: "/curated/2026-08-10-villasenor-pesi-aperti-leadership-brookings/", _source: "curated" }
     ]
   },
   {
@@ -2687,7 +2691,8 @@ module.exports = [
       { title: "Cartolina dal paese più bello del mondo", url: "/writings/2026-04-24-cartolina-dal-paese-piu-bello-del-mondo/" },
       { title: "L'infrastruttura del sapere", url: "/writings/2026-07-07-linfrastruttura-del-sapere/" },
       { title: "Europe Needs to Come Together. This Man Has Some Ideas.", url: "/curated/2026-06-09-nyt-europe-defense-van-middelaar/", _source: "curated" },
-      { title: "Why a big country like Italy acts as if it were small", url: "/curated/2026-04-09-italy-acts-as-if-small/", _source: "curated" }
+      { title: "Why a big country like Italy acts as if it were small", url: "/curated/2026-04-09-italy-acts-as-if-small/", _source: "curated" },
+      { title: "The right balance: how to fix European Union artificial intelligence regulation", url: "/curated/2026-06-11-mariniello-ai-act-costi-conformita-bruegel/", _source: "curated" }
     ]
   },
   {
@@ -2734,7 +2739,10 @@ module.exports = [
       { title: "In film and in life, China pursues dragon-restaurant diplomacy", url: "/curated/2026-08-31-economist-china-dragon-restaurant-diplomacy/", _source: "curated" },
       { title: "One China, one world", url: "/curated/2026-03-26-perdue-tianxia-unita-cina-aeon/", _source: "curated" },
       { title: "La Chine et les États-Unis peuvent-ils s'accorder sur la sécurité de l'IA ?", url: "/curated/2026-09-25-grandcontinent-sicurezza-ai-cina-stati-uniti/", _source: "curated" },
-      { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" }
+      { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" },
+      { title: "The End of the Foundation Model Era: Open-Weight Models, Sovereign AI, and Inference as Infrastructure", url: "/curated/2026-03-09-grogan-pesi-aperti-sovranita-ai/", _source: "curated" },
+      { title: "Why open-weight models are crucial for American AI leadership", url: "/curated/2026-08-10-villasenor-pesi-aperti-leadership-brookings/", _source: "curated" },
+      { title: "Open Weights, Closed Ranks: The AI Manifesto War", url: "/curated/2026-08-12-zuniga-pesi-aperti-manifesti-icle/", _source: "curated" }
     ]
   },
   {
@@ -3547,7 +3555,8 @@ module.exports = [
     note: "Azienda americana di semiconduttori fondata nel 1993, oggi la società a maggiore capitalizzazione al mondo. Nel sito non compare come produttore di chip ma come infrastruttura di sistema: la sua architettura è fungibile — la usano tutti i laboratori, per dati, pretraining, post-training, valutazione e inferenza — e questa fungibilità è ciò che le permette di comportarsi da banca centrale dell'ecosistema, garantendo ricavi ai neocloud, entrando nel capitale dei clienti e rendendo il compute un attivo collateralizzabile. Gli impegni d'acquisto verso TSMC, Foxconn e la filiera taiwanese sono la leva con cui ha spostato manifattura negli Stati Uniti. È l'attore in cui la questione industriale, quella geopolitica e quella finanziaria dell'AI diventano lo stesso problema. Su questa struttura poggia l'ipotesi che l'archivio registra alla voce criti-hype, e che non sottoscrive: che il circolo fissi aspettative di ricavo onorabili solo dichiarando i modelli troppo potenti per essere distribuiti liberamente.",
     articles: [
       { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" },
-      { title: "The U.S. Is Betting the Economy on 'Scaling' AI: Where Is the Intelligence When One Needs It?", url: "/curated/2025-12-08-storm-scaling-ai-bolla-inet/", _source: "curated" }
+      { title: "The U.S. Is Betting the Economy on 'Scaling' AI: Where Is the Intelligence When One Needs It?", url: "/curated/2025-12-08-storm-scaling-ai-bolla-inet/", _source: "curated" },
+      { title: "The End of the Foundation Model Era: Open-Weight Models, Sovereign AI, and Inference as Infrastructure", url: "/curated/2026-03-09-grogan-pesi-aperti-sovranita-ai/", _source: "curated" }
     ]
   },
   {
@@ -3560,7 +3569,7 @@ module.exports = [
       { name: "Nvidia", why: "Ipotesi aperta: il circolo finanziario fissa aspettative che i laboratori possono onorare solo a parole, e la pericolosità diventa la moneta." },
       { name: "Anthropic", why: "Il caso limite dell'ipotesi: anche chi dichiara il rischio in buona fede finisce a venderlo, se il mercato compra la pericolosità come capacità." }
     ],
-    note: "Termine coniato dallo storico della tecnologia Lee Vinsel (2021) per la critica che si nutre dell'hype e insieme lo alimenta: denunciare una tecnologia come pericolosa richiede prima accreditarla come potente, e l'accreditamento è la parte che resta. Nella formulazione originale il bersaglio erano i critici; nel dibattito sull'AI il meccanismo si è rovesciato, e sono i produttori a trarre vantaggio dal descrivere i propri sistemi come difficili da controllare — un annuncio di rischio che funziona come dimostrazione di capacità. Nel sito è lo strumento che permette di leggere insieme due posizioni apparentemente opposte, l'allarme dei laboratori e la deflazione industriale di Jensen Huang, riconoscendo che entrambe trattano la potenza del sistema come un fatto acquisito e discutono solo su chi debba risponderne. Il corollario metodologico è che una dichiarazione di pericolo non è mai una prova neutrale della sua entità: va pesata sapendo chi la emette e cosa ci guadagna, senza che questo la falsifichi. Su questo innesto l'archivio registra un'ipotesi più forte, senza sottoscriverla perché mancano gli elementi per deciderla: che il criti-hype dei laboratori non sia una scelta di comunicazione ma una necessità imposta dalla struttura finanziaria a monte. Il circolo costruito attorno a Nvidia — partecipazioni nei clienti, garanzie sui ricavi, compute trattato come classe di attivo — fissa aspettative di fatturato che nessun laboratorio è in grado di onorare con i prodotti che ha; dichiarare i modelli troppo potenti e pericolosi per essere distribuiti senza cautele sarebbe allora il modo di vendere al contrario una performance che non si può dimostrare, rinviando la verifica a data da destinarsi. L'esito previsto dall'ipotesi è una perdita di credibilità collettiva quando la verifica arriva, e riguarderebbe anche chi ha dichiarato il rischio in buona fede. Nessuna delle fonti in archivio la formula per intero: Storm si ferma alla catena finanziaria, Klonick e Seymour al meccanismo retorico. Il ponte fra le due metà resta da argomentare. L'ipotesi ha poi una terza faccia, registrata alla voce cattura regolatoria: lo stesso allarme che vende il prodotto rende ragionevole il regime di autorizzazione che tiene fuori chi non può pagarne il costo fisso. Le tre facce non si escludono — vendere potenza, giustificare il capitale investito, alzare la soglia d'ingresso sono lo stesso enunciato letto da tre mercati diversi.",
+    note: "Termine coniato dallo storico della tecnologia Lee Vinsel (2021) per la critica che si nutre dell'hype e insieme lo alimenta: denunciare una tecnologia come pericolosa richiede prima accreditarla come potente, e l'accreditamento è la parte che resta. Nella formulazione originale il bersaglio erano i critici; nel dibattito sull'AI il meccanismo si è rovesciato, e sono i produttori a trarre vantaggio dal descrivere i propri sistemi come difficili da controllare — un annuncio di rischio che funziona come dimostrazione di capacità. Nel sito è lo strumento che permette di leggere insieme due posizioni apparentemente opposte, l'allarme dei laboratori e la deflazione industriale di Jensen Huang, riconoscendo che entrambe trattano la potenza del sistema come un fatto acquisito e discutono solo su chi debba risponderne. Il corollario metodologico è che una dichiarazione di pericolo non è mai una prova neutrale della sua entità: va pesata sapendo chi la emette e cosa ci guadagna, senza che questo la falsifichi. Su questo innesto l'archivio registra un'ipotesi più forte, senza sottoscriverla perché mancano gli elementi per deciderla: che il criti-hype dei laboratori non sia una scelta di comunicazione ma una necessità imposta dalla struttura finanziaria a monte. Il circolo costruito attorno a Nvidia — partecipazioni nei clienti, garanzie sui ricavi, compute trattato come classe di attivo — fissa aspettative di fatturato che nessun laboratorio è in grado di onorare con i prodotti che ha; dichiarare i modelli troppo potenti e pericolosi per essere distribuiti senza cautele sarebbe allora il modo di vendere al contrario una performance che non si può dimostrare, rinviando la verifica a data da destinarsi. L'esito previsto dall'ipotesi è una perdita di credibilità collettiva quando la verifica arriva, e riguarderebbe anche chi ha dichiarato il rischio in buona fede. Nessuna delle fonti in archivio la formula per intero: Storm si ferma alla catena finanziaria, Klonick e Seymour al meccanismo retorico. Il ponte fra le due metà resta da argomentare. L'ipotesi ha poi una terza faccia, registrata alla voce cattura regolatoria: lo stesso allarme che vende il prodotto rende ragionevole il regime di autorizzazione che tiene fuori chi non può pagarne il costo fisso. Le tre facce non si escludono — vendere potenza, giustificare il capitale investito, alzare la soglia d'ingresso sono lo stesso enunciato letto da tre mercati diversi. Tenerle insieme richiede un'argomentazione che una scheda di archivio non può portare: la questione resta registrata come aperta, e la sintesi è rinviata a un saggio.",
     articles: [
       { title: "The U.S. Is Betting the Economy on 'Scaling' AI: Where Is the Intelligence When One Needs It?", url: "/curated/2025-12-08-storm-scaling-ai-bolla-inet/", _source: "curated" },
       { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-criti-hype-hugging-face-lawfare/", _source: "curated" }
@@ -3580,6 +3589,27 @@ module.exports = [
     articles: [
       { title: "Why Are Palantir and OpenAI Scared of Alex Bores?", url: "/curated/2026-04-21-bores-palantir-openai-regulation-nyt/", _source: "curated" },
       { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-criti-hype-hugging-face-lawfare/", _source: "curated" },
+      { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" },
+      { title: "The End of the Foundation Model Era: Open-Weight Models, Sovereign AI, and Inference as Infrastructure", url: "/curated/2026-03-09-grogan-pesi-aperti-sovranita-ai/", _source: "curated" },
+      { title: "The right balance: how to fix European Union artificial intelligence regulation", url: "/curated/2026-06-11-mariniello-ai-act-costi-conformita-bruegel/", _source: "curated" },
+      { title: "Why open-weight models are crucial for American AI leadership", url: "/curated/2026-08-10-villasenor-pesi-aperti-leadership-brookings/", _source: "curated" },
+      { title: "Open Weights, Closed Ranks: The AI Manifesto War", url: "/curated/2026-08-12-zuniga-pesi-aperti-manifesti-icle/", _source: "curated" }
+    ]
+  },
+  {
+    name: "modelli a pesi aperti",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    related: [
+      { name: "commoditizzazione", why: "Pubblicare i pesi azzera il prezzo del modello e sposta il margine a valle: la commoditizzazione scelta come strategia invece che subita." },
+      { name: "sovranità cognitiva", why: "Possedere i pesi è la forma tecnica dell'indipendenza: la capacità non si spegne quando cambia la politica commerciale di un fornitore." }
+    ],
+    note: "Modelli i cui parametri addestrati sono pubblicati e scaricabili, eseguibili e riaddestrabili da chiunque disponga dell'hardware. Vanno distinti tanto dai modelli chiusi, accessibili solo tramite interfaccia remota, quanto dall'open source in senso proprio, che richiederebbe anche dati e codice di addestramento. Nel sito sono il punto in cui tre questioni separate diventano la stessa. La concorrenza: pochi modelli aperti robusti bastano a disciplinare il prezzo e la condotta di quelli proprietari, e i pesi pubblicati permettono di costruire prodotti senza sostenere il costo iniziale di addestramento, che è la barriera vera del settore. La geopolitica: la leadership sull'aperto è oggi in larga parte cinese — DeepSeek, Qwen, Zhipu — e i controlli americani all'esportazione limitano l'accesso cinese ai chip senza avere alcun equivalente sul lato dei pesi, che è il lato da cui l'influenza si propaga più in fretta. La sovranità: eseguire un modello in locale è la sola forma in cui una capacità cognitiva non dipende dalla politica commerciale di un fornitore, e vale allo stesso modo per uno Stato, per un ospedale e per un archivio. La conseguenza normativa tiene insieme le tre: qualsiasi regola costruita attorno a un titolare che risponda del proprio modello li colpisce per costruzione, perché un peso pubblicato non ha un responsabile a valle.",
+    articles: [
+      { title: "The End of the Foundation Model Era: Open-Weight Models, Sovereign AI, and Inference as Infrastructure", url: "/curated/2026-03-09-grogan-pesi-aperti-sovranita-ai/", _source: "curated" },
+      { title: "Who's Afraid of Chinese Models?", url: "/curated/2026-07-20-stratechery-chinese-models/", _source: "curated" },
+      { title: "Why open-weight models are crucial for American AI leadership", url: "/curated/2026-08-10-villasenor-pesi-aperti-leadership-brookings/", _source: "curated" },
+      { title: "Open Weights, Closed Ranks: The AI Manifesto War", url: "/curated/2026-08-12-zuniga-pesi-aperti-manifesti-icle/", _source: "curated" },
       { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" }
     ]
   }

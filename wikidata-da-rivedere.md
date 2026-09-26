@@ -118,6 +118,7 @@ In buona parte sono coniazioni tue, acronimi, o formulazioni italiane che su Wik
 
 - cattura regolatoria
 - criti-hype
+- modelli a pesi aperti
 
 **persona**
 
