@@ -769,7 +769,8 @@ module.exports = [
       { title: "What the Pope Said About A.I.", url: "/curated/2026-05-27-lepore-pope-leo-ai-newyorker/", _source: "curated" },
       { title: "The second sage", url: "/curated/2016-10-31-vannorden-mengzi-aeon/", _source: "curated" },
       { title: "La Chine et les États-Unis peuvent-ils s'accorder sur la sécurité de l'IA ?", url: "/curated/2026-09-25-grandcontinent-sicurezza-ai-cina-stati-uniti/", _source: "curated" },
-      { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" }
+      { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" },
+      { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-criti-hype-hugging-face-lawfare/", _source: "curated" }
     ]
   },
   {
@@ -780,7 +781,8 @@ module.exports = [
     articles: [
       { title: "Avec Astra, la boîte noire d'OpenAI devient encore plus noire", url: "/curated/2026-09-04-storchan-astra-openai-monitorabilita-grandcontinent/", _source: "curated" },
       { title: "La Chine et les États-Unis peuvent-ils s'accorder sur la sécurité de l'IA ?", url: "/curated/2026-09-25-grandcontinent-sicurezza-ai-cina-stati-uniti/", _source: "curated" },
-      { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" }
+      { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" },
+      { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-criti-hype-hugging-face-lawfare/", _source: "curated" }
     ]
   },
   {
@@ -857,7 +859,8 @@ module.exports = [
       { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
       { title: "What If We Can Never Trust A.I.?", url: "/curated/2026-08-01-rothman-trust-ai-newyorker/", _source: "curated" },
       { title: "AI isn't the Manhattan Project — it's Jurassic Park", url: "/curated/2026-08-11-graff-jurassic-park-ai-doomsdayscenario/", _source: "curated" },
-      { title: "New York Times training editor: Take these four steps before you roll out new things", url: "/curated/2026-09-18-athas-rollout-redazione-niemanlab/", _source: "curated" }
+      { title: "New York Times training editor: Take these four steps before you roll out new things", url: "/curated/2026-09-18-athas-rollout-redazione-niemanlab/", _source: "curated" },
+      { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-criti-hype-hugging-face-lawfare/", _source: "curated" }
     ]
   },
   {
@@ -1337,7 +1340,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q8134", "https://it.wikipedia.org/wiki/Scienze_economiche"],
     note: "Filo tematico ricorrente nei curated del sito, in due varianti distinte: come dibattito sugli strumenti di riduzione della povertà estrema (i trasferimenti monetari diretti contro l'architettura assistenziale tradizionale) e come lente con cui leggere la sostenibilità di filiere produttive — dalla cultura all'animazione — che crescono senza remunerare chi ci lavora.",
     articles: [
-      { title: "One neat trick to end extreme poverty", url: "/curated/2026-04-09-end-extreme-poverty/", _source: "curated" }
+      { title: "One neat trick to end extreme poverty", url: "/curated/2026-04-09-end-extreme-poverty/", _source: "curated" },
+      { title: "The U.S. Is Betting the Economy on 'Scaling' AI: Where Is the Intelligence When One Needs It?", url: "/curated/2025-12-08-storm-scaling-ai-bolla-inet/", _source: "curated" }
     ]
   },
   {
@@ -1357,7 +1361,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q5153139", "https://it.wikipedia.org/wiki/Commoditizzazione"],
     note: "La dinamica per cui un bene o servizio che era differenziato diventa fungibile e il vantaggio competitivo si sposta sul costo marginale di produzione. Nel sito è la lente con cui Thompson legge la competizione sui modelli AI: il token non è la merce giusta, lo è l'intelligenza (output corretto per unità di costo). Chi ha il costo marginale più basso vince; chi non riesce a coprire i costi fissi esce. La strategia cinese di pubblicare i pesi è letta come 'commoditize your complements': aprire l'AI riduce il vantaggio americano nel software e accelera il vantaggio cinese nel mondo fisico.",
     articles: [
-      { title: "Who's Afraid of Chinese Models?", url: "/curated/2026-07-20-stratechery-chinese-models/", _source: "curated" }
+      { title: "Who's Afraid of Chinese Models?", url: "/curated/2026-07-20-stratechery-chinese-models/", _source: "curated" },
+      { title: "The U.S. Is Betting the Economy on 'Scaling' AI: Where Is the Intelligence When One Needs It?", url: "/curated/2025-12-08-storm-scaling-ai-bolla-inet/", _source: "curated" }
     ]
   },
   {
@@ -2398,7 +2403,8 @@ module.exports = [
     note: "Nel sito compare nel caso Droga come l'azienda che punta a metà dei ricavi pubblicitari attuali di Meta in tre anni — piattaforma ad self-serve, test pubblicitari in Giappone, Ad Tools generativi — segno che il fronte AI vs. mercato pubblicitario tradizionale si sta aprendo prima e più aggressivamente di quanto raccontato altrove sul sito a proposito di Anthropic o Palantir.",
     articles: [
       { title: "Why Are Palantir and OpenAI Scared of Alex Bores?", url: "/curated/2026-04-21-bores-palantir-openai-regulation-nyt/", _source: "curated" },
-      { title: "David Droga on AI and the end of 'mediocre' human-made ads", url: "/curated/2026-06-21-droga-ai-mediocre-ads/", _source: "curated" }
+      { title: "David Droga on AI and the end of 'mediocre' human-made ads", url: "/curated/2026-06-21-droga-ai-mediocre-ads/", _source: "curated" },
+      { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-criti-hype-hugging-face-lawfare/", _source: "curated" }
     ]
   },
   {
@@ -2662,7 +2668,9 @@ module.exports = [
       { title: "America's Next Story", url: "/curated/2026-04-09-lepore-americas-next-story/", _source: "curated" },
       { title: "The End of the Future", url: "/curated/2026-06-15-fp-end-of-the-future/", _source: "curated" },
       { title: "La Chine et les États-Unis peuvent-ils s'accorder sur la sécurité de l'IA ?", url: "/curated/2026-09-25-grandcontinent-sicurezza-ai-cina-stati-uniti/", _source: "curated" },
-      { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" }
+      { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" },
+      { title: "The U.S. Is Betting the Economy on 'Scaling' AI: Where Is the Intelligence When One Needs It?", url: "/curated/2025-12-08-storm-scaling-ai-bolla-inet/", _source: "curated" },
+      { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-criti-hype-hugging-face-lawfare/", _source: "curated" }
     ]
   },
   {
@@ -3536,9 +3544,26 @@ module.exports = [
     related: [
       { name: "Taiwan / TSMC", why: "Nvidia progetta, TSMC fabbrica: la dipendenza è reciproca e passa per l'isola su cui si esercita la deterrenza." }
     ],
-    note: "Azienda americana di semiconduttori fondata nel 1993, oggi la società a maggiore capitalizzazione al mondo. Nel sito non compare come produttore di chip ma come infrastruttura di sistema: la sua architettura è fungibile — la usano tutti i laboratori, per dati, pretraining, post-training, valutazione e inferenza — e questa fungibilità è ciò che le permette di comportarsi da banca centrale dell'ecosistema, garantendo ricavi ai neocloud, entrando nel capitale dei clienti e rendendo il compute un attivo collateralizzabile. Gli impegni d'acquisto verso TSMC, Foxconn e la filiera taiwanese sono la leva con cui ha spostato manifattura negli Stati Uniti. È l'attore in cui la questione industriale, quella geopolitica e quella finanziaria dell'AI diventano lo stesso problema.",
+    note: "Azienda americana di semiconduttori fondata nel 1993, oggi la società a maggiore capitalizzazione al mondo. Nel sito non compare come produttore di chip ma come infrastruttura di sistema: la sua architettura è fungibile — la usano tutti i laboratori, per dati, pretraining, post-training, valutazione e inferenza — e questa fungibilità è ciò che le permette di comportarsi da banca centrale dell'ecosistema, garantendo ricavi ai neocloud, entrando nel capitale dei clienti e rendendo il compute un attivo collateralizzabile. Gli impegni d'acquisto verso TSMC, Foxconn e la filiera taiwanese sono la leva con cui ha spostato manifattura negli Stati Uniti. È l'attore in cui la questione industriale, quella geopolitica e quella finanziaria dell'AI diventano lo stesso problema. Su questa struttura poggia l'ipotesi che l'archivio registra alla voce criti-hype, e che non sottoscrive: che il circolo fissi aspettative di ricavo onorabili solo dichiarando i modelli troppo potenti per essere distribuiti liberamente.",
     articles: [
-      { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" }
+      { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" },
+      { title: "The U.S. Is Betting the Economy on 'Scaling' AI: Where Is the Intelligence When One Needs It?", url: "/curated/2025-12-08-storm-scaling-ai-bolla-inet/", _source: "curated" }
+    ]
+  },
+  {
+    name: "criti-hype",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "Huang, Jensen", why: "Huang accusa i laboratori di allarmismo interessato; il criti-hype dice che ha ragione, e che il meccanismo vale anche per chi lo denuncia." },
+      { name: "allineamento AI", why: "Il rischio dichiarato è anche un argomento di vendita: chi valuta l'allineamento deve pesare chi trae vantaggio dall'annunciarne il fallimento." },
+      { name: "Nvidia", why: "Ipotesi aperta: il circolo finanziario fissa aspettative che i laboratori possono onorare solo a parole, e la pericolosità diventa la moneta." },
+      { name: "Anthropic", why: "Il caso limite dell'ipotesi: anche chi dichiara il rischio in buona fede finisce a venderlo, se il mercato compra la pericolosità come capacità." }
+    ],
+    note: "Termine coniato dallo storico della tecnologia Lee Vinsel (2021) per la critica che si nutre dell'hype e insieme lo alimenta: denunciare una tecnologia come pericolosa richiede prima accreditarla come potente, e l'accreditamento è la parte che resta. Nella formulazione originale il bersaglio erano i critici; nel dibattito sull'AI il meccanismo si è rovesciato, e sono i produttori a trarre vantaggio dal descrivere i propri sistemi come difficili da controllare — un annuncio di rischio che funziona come dimostrazione di capacità. Nel sito è lo strumento che permette di leggere insieme due posizioni apparentemente opposte, l'allarme dei laboratori e la deflazione industriale di Jensen Huang, riconoscendo che entrambe trattano la potenza del sistema come un fatto acquisito e discutono solo su chi debba risponderne. Il corollario metodologico è che una dichiarazione di pericolo non è mai una prova neutrale della sua entità: va pesata sapendo chi la emette e cosa ci guadagna, senza che questo la falsifichi. Su questo innesto l'archivio registra un'ipotesi più forte, senza sottoscriverla perché mancano gli elementi per deciderla: che il criti-hype dei laboratori non sia una scelta di comunicazione ma una necessità imposta dalla struttura finanziaria a monte. Il circolo costruito attorno a Nvidia — partecipazioni nei clienti, garanzie sui ricavi, compute trattato come classe di attivo — fissa aspettative di fatturato che nessun laboratorio è in grado di onorare con i prodotti che ha; dichiarare i modelli troppo potenti e pericolosi per essere distribuiti senza cautele sarebbe allora il modo di vendere al contrario una performance che non si può dimostrare, rinviando la verifica a data da destinarsi. L'esito previsto dall'ipotesi è una perdita di credibilità collettiva quando la verifica arriva, e riguarderebbe anche chi ha dichiarato il rischio in buona fede. Nessuna delle fonti in archivio la formula per intero: Storm si ferma alla catena finanziaria, Klonick e Seymour al meccanismo retorico. Il ponte fra le due metà resta da argomentare.",
+    articles: [
+      { title: "The U.S. Is Betting the Economy on 'Scaling' AI: Where Is the Intelligence When One Needs It?", url: "/curated/2025-12-08-storm-scaling-ai-bolla-inet/", _source: "curated" },
+      { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-criti-hype-hugging-face-lawfare/", _source: "curated" }
     ]
   }
 
