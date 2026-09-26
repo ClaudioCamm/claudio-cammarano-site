@@ -22,5 +22,5 @@ description: |
 
   Vale come documento perché è la posizione più articolata disponibile di chi ha l'interesse più grande al mondo a che nessuno rallenti — e proprio per questo va letto tenendo separate due cose che l'intervista tiene insieme: la descrizione ingegneristica, dove Huang è probabilmente il più competente della stanza, e l'inferenza istituzionale che ne ricava, dove la competenza non trasferisce. Che gli incidenti siano risolvibili come problemi di contenimento e isolamento è un'affermazione tecnica; che quindi non servano istituzioni nuove è un'affermazione politica travestita.
 tags: [curated, ai, sicurezza, semiconduttori, economia]
-concepts: ["Huang, Jensen", "Nvidia", "allineamento AI", "monitorabilità", "general purpose technologies", "Taiwan / TSMC", "Cina", "Stati Uniti"]
+concepts: ["Huang, Jensen", "Nvidia", "allineamento AI", "monitorabilità", "general purpose technologies", "cattura regolatoria", "Taiwan / TSMC", "Cina", "Stati Uniti"]
 ---

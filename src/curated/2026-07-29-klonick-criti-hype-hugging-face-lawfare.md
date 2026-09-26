@@ -16,5 +16,5 @@ description: |
 
   Messo accanto all'intervista di Jensen Huang, che di questo stesso incidente dice «that is just software — nothing magical about it», il pezzo produce una simmetria che vale più di entrambi presi da soli. Huang accusa i laboratori di vendere allarme; Klonick mostra che l'accusa è fondata e che il meccanismo è più profondo di quanto lui ammetta, perché non serve malafede, basta l'istinto narrativo dell'azienda. Ma i due arrivano alla stessa terapia — responsabilità, audit, segnalazione — da premesse opposte: per Huang le regole ci sono già e basta applicarle, per Klonick esistono ma non arrivano dove servirebbe. Chi legge le due schede in sequenza ha davanti l'intero spazio del disaccordo, e il punto esatto in cui smette di essere filosofico e diventa una questione di perimetro normativo.
 tags: [curated, ai, sicurezza, comunicazione]
-concepts: ["criti-hype", "OpenAI", "allineamento AI", "monitorabilità", "dilemma di Collingridge", "Stati Uniti"]
+concepts: ["criti-hype", "OpenAI", "allineamento AI", "monitorabilità", "dilemma di Collingridge", "cattura regolatoria", "Stati Uniti"]
 ---

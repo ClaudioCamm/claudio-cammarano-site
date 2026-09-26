@@ -114,6 +114,11 @@ In buona parte sono coniazioni tue, acronimi, o formulazioni italiane che su Wik
 - violenza speculativa
 - win-set domestico
 
+**teoria**
+
+- cattura regolatoria
+- criti-hype
+
 **persona**
 
 - Huang, Jensen
