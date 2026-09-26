@@ -1,6 +1,6 @@
 # Wikidata — voci da rivedere
 
-Allineate automaticamente: **169 su 261**. Restano **92** voci senza `sameAs`.
+Allineate: **224 su 279**. Restano **55** voci senza `sameAs`.
 
 Regola applicata: aggancio accettato solo con corrispondenza esatta di label o alias **e** tipo (P31) compatibile, poi verifica a mano contro la nota della voce. Un Q-id sbagliato e' peggio di nessun Q-id.
 
@@ -64,6 +64,7 @@ In buona parte sono coniazioni tue, acronimi, o formulazioni italiane che su Wik
 - controllo riflessivo
 - cosmotecnica
 - dati come beni comuni
+- criti-hype
 - delega epistemica
 - democrazia di guerra
 - dilemma del prigioniero iterato
@@ -113,20 +114,6 @@ In buona parte sono coniazioni tue, acronimi, o formulazioni italiane che su Wik
 - verum ipsum factum
 - violenza speculativa
 - win-set domestico
-
-**teoria**
-
-- cattura regolatoria
-- criti-hype
-- modelli a pesi aperti
-
-**persona**
-
-- Huang, Jensen
-
-**istituzione**
-
-- Nvidia
 
 **testo**
 

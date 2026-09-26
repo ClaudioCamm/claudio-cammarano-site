@@ -2910,6 +2910,15 @@ body.irene-page .site-nav a.active {
   font-style: italic;
 }
 
+/* Convenzione tipografica: dentro un blocco in corsivo l'enfasi si rovescia
+   in tondo, altrimenti i titoli marcati nelle note dei concetti sono
+   indistinguibili dal resto. Vale per /concetti/, /tag/, /serie/, /ns/. */
+.tag-page-intro em,
+.tag-page-intro i,
+.tag-page-intro cite {
+  font-style: normal;
+}
+
 /* === SERIES NAVIGATION === */
 .series-nav {
   margin-top: var(--spacing-xl);

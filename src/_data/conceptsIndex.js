@@ -3535,6 +3535,7 @@ module.exports = [
   {
     name: "Huang, Jensen",
     type: "persona",
+    sameAs: ["https://www.wikidata.org/wiki/Q305177"],
     geo: { modo: "diretta", paesi: ["Stati Uniti", "Taiwan"] },
     related: [
       { name: "Nvidia", why: "La fonda nel 1993 e la guida da allora: la dottrina sull'AI e la strategia dell'azienda sono lo stesso discorso." },
@@ -3548,6 +3549,7 @@ module.exports = [
   {
     name: "Nvidia",
     type: "istituzione",
+    sameAs: ["https://www.wikidata.org/wiki/Q182477"],
     geo: { modo: "diretta", paesi: ["Stati Uniti"] },
     related: [
       { name: "Taiwan / TSMC", why: "Nvidia progetta, TSMC fabbrica: la dipendenza è reciproca e passa per l'isola su cui si esercita la deterrenza." }
@@ -3578,6 +3580,7 @@ module.exports = [
   {
     name: "cattura regolatoria",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q2408462"],
     geo: { modo: "teorico", paesi: ["Stati Uniti"] },
     related: [
       { name: "criti-hype", why: "Due usi dello stesso allarme: uno vende il prodotto come potente, l'altro rende ragionevole la regola che tiene fuori chi non può pagarla." },
@@ -3599,6 +3602,7 @@ module.exports = [
   {
     name: "modelli a pesi aperti",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q140928105"],
     geo: { modo: "nessuna", paesi: [] },
     related: [
       { name: "commoditizzazione", why: "Pubblicare i pesi azzera il prezzo del modello e sposta il margine a valle: la commoditizzazione scelta come strategia invece che subita." },
