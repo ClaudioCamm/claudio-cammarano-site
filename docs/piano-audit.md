@@ -38,3 +38,5 @@ Budget advisory: home ≤ 200 KB compressi esclusi i font → rispettato (GA4 es
 - [x] L10 carte (25/9): anteprima ultimo saggio ripristinata; home IT in Lambert azimutale equivalente su Bergamo con cerchi di distanza; home EN con Goode nella fascia «Where the Italian essays look»; nomiEn in geoPaesi.json con controllo.
 
 - [x] L11 immagini di condivisione (25/9): schede automatiche con claim e carta per home IT/EN e pagine senza immagine; carta dei paesi per concetti e curated; foto dei saggi convertite in JPG.
+
+- [x] L12 condividi (26/9): componente unico; in fondo ai saggi, nei curated, nei concetti e nel Lab; Threads, WhatsApp ed email nel menu.

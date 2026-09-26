@@ -7924,3 +7924,6 @@ a.home-path:hover {
 .home-lab-preview { max-width: none; } /* a giustezza, come la griglia delle serie (25/9) */
 .home-lab-preview-abstract { max-width: 80ch; }
 .home-lab-preview-abstract { font-size: 17px; line-height: 1.6; }
+/* L12: Condividi anche in fondo ai testi */
+.share-bar--end { margin: 28px 0 8px; }
+.share-bar--end .share-menu { top: auto; bottom: calc(100% + 6px); }

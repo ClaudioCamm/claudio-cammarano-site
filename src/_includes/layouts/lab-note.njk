@@ -48,6 +48,7 @@ lang: en
 
   <div class="article-body">
     {{ content | safe }}
+    {% set shareEN = true %}{% set shareEnd = true %}{% include "components/share.njk" %}
     {% set aiLangKey = "en" %}{% set aiMethodNote = true %}{% include "components/ai-notation.njk" %}
   </div>
 </article>

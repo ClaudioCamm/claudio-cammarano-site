@@ -1,0 +1,21 @@
+{# Condividi (audit 2026, L12). Su iPhone/iPad e dove il browser lo consente
+   apre il pannello di condivisione del sistema; altrove un menu di semplici
+   link, senza script di terze parti. Variabili: shareEN (bool), shareTitle. #}
+{%- set shareUrl = "https://claudiocammarano.com" + page.url -%}
+{%- set shareT = shareTitle or title -%}
+{%- set shareTesto = (shareT | striptags) + " " + shareUrl -%}
+<div class="share-bar{% if shareEnd %} share-bar--end{% endif %}" data-share-url="{{ shareUrl }}" data-share-title="{{ shareT | striptags }}">
+  <button class="share-btn" type="button" aria-haspopup="true" aria-expanded="false">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+    {% if shareEN %}Share{% else %}Condividi{% endif %}
+  </button>
+  <div class="share-menu" hidden>
+    <button class="share-menu-item" type="button" data-share-copy data-label-ok="{% if shareEN %}Copied{% else %}Copiato{% endif %}">{% if shareEN %}Copy link{% else %}Copia link{% endif %}</button>
+    <a class="share-menu-item" href="https://www.linkedin.com/sharing/share-offsite/?url={{ shareUrl | urlencode }}" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="share-menu-item" href="https://www.threads.net/intent/post?text={{ shareTesto | urlencode }}" target="_blank" rel="noopener">Threads</a>
+    <a class="share-menu-item" href="https://x.com/intent/post?url={{ shareUrl | urlencode }}&amp;text={{ shareT | striptags | urlencode }}" target="_blank" rel="noopener">X</a>
+    <a class="share-menu-item" href="https://wa.me/?text={{ shareTesto | urlencode }}" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="share-menu-item" href="mailto:?subject={{ shareT | striptags | urlencode }}&amp;body={{ shareUrl | urlencode }}">Email</a>
+  </div>
+</div>
+<script src="/js/share.js" defer></script>

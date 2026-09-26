@@ -48,6 +48,7 @@ eleventyComputed:
       {% elif concept.articles.length == 1 %}1 articolo
       {% else %}{{ concept.articles.length }} articoli{% endif %}
     </p>
+    {% set shareEN = false %}{% set shareTitle = (concept.name | displayName(concept.type)) + " — indice dei concetti" %}{% include "components/share.njk" %}
     {% if concept.type == "testo" and concept.citation %}
     <p class="concetto-citation">{{ concept.citation | safe }}</p>
     {% endif %}

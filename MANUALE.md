@@ -866,3 +866,8 @@ Ogni pagina ha la sua immagine per i social, generata in automatico durante la b
 - **Saggi**: l'immagine di `og_image`; se è WebP o AVIF viene convertita in JPG (i social non le leggono). Le schede con la carta sono PNG a doppia risoluzione (2400×1260), nitide sugli schermi retina; niente JPEG progressivi, che LinkedIn mostra sgranati. `og_card` vince su tutto.
 
 Le immagini stanno in `/og/…` con un codice nel nome che cambia quando cambia il contenuto, così i social non restano sulla versione vecchia. Codice: `scripts/og/render.js` (grafica, font in `scripts/og/fonts/`) e i filtri `ogHome`, `ogConcept`, `ogCurated`, `ogFoto` in `.eleventy.js`. Se cambi la grafica, aumenta `VERSIONE` in `render.js`. LinkedIn tiene in cache le anteprime per circa sette giorni: per aggiornarle subito si usa il suo Post Inspector.
+
+
+## Condividi (audit 2026, L12)
+
+Il pulsante «Condividi» è un componente unico (`src/_includes/components/share.njk`, script `src/js/share.js`): nei saggi in alto e in fondo, nei curated, nelle pagine dei concetti e nelle note del Lab (in inglese). Su iPhone e iPad apre il pannello di condivisione di iOS; su computer un menu con Copia link, LinkedIn, Threads, X, WhatsApp, Email. Sono link semplici, nessuno script di terze parti.

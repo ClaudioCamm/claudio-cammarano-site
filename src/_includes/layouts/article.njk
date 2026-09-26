@@ -124,22 +124,13 @@ try {
       <a href="{{ english_version }}" target="_blank" rel="noopener">🇬🇧 Read in English →</a>
     </div>
     {% endif %}
-    <div class="share-bar">
-      <button class="share-btn" id="share-btn" aria-label="Condividi">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
-        Condividi
-      </button>
-      <div class="share-menu" id="share-menu" hidden>
-        <button class="share-menu-item" id="share-copy">Copia link</button>
-        <a class="share-menu-item" id="share-linkedin" href="#" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="share-menu-item" id="share-twitter" href="#" target="_blank" rel="noopener">Twitter / X</a>
-      </div>
-    </div>
+    {% set shareEN = false %}{% include "components/share.njk" %}
   </header>
   
   <div class="article-body">
     {{ content | safe }}
     {% if ebook %}<p class="article-download article-download--end">Scarica il saggio: <a href="{{ ebook.pdf }}" download>PDF</a> · <a href="{{ ebook.epub }}" download>ePub</a></p>{% endif %}
+    {% set shareEnd = true %}{% include "components/share.njk" %}{% set shareEnd = false %}
     {% include "components/ai-notation.njk" %}
   </div>
 </article>
@@ -209,46 +200,7 @@ try {
 })();
 </script>
 
-<script>
-(function() {
-  var shareBtn = document.getElementById('share-btn');
-  var shareMenu = document.getElementById('share-menu');
-  var shareCopy = document.getElementById('share-copy');
-  var shareLinkedIn = document.getElementById('share-linkedin');
-  var shareTwitter = document.getElementById('share-twitter');
-  if (!shareBtn) return;
 
-  var url = window.location.href;
-  var title = document.title;
-
-  if (shareLinkedIn) shareLinkedIn.href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(url);
-  if (shareTwitter) shareTwitter.href = 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(url) + '&text=' + encodeURIComponent(title);
-
-  shareBtn.addEventListener('click', function() {
-    if (navigator.share) {
-      navigator.share({ title: title, url: url }).catch(function() {});
-    } else {
-      var open = !shareMenu.hidden;
-      shareMenu.hidden = open;
-    }
-  });
-
-  if (shareCopy) {
-    shareCopy.addEventListener('click', function() {
-      navigator.clipboard.writeText(url).then(function() {
-        shareCopy.textContent = 'Copiato!';
-        setTimeout(function() { shareCopy.textContent = 'Copia link'; shareMenu.hidden = true; }, 1800);
-      });
-    });
-  }
-
-  document.addEventListener('click', function(e) {
-    if (!shareBtn.contains(e.target) && !shareMenu.contains(e.target)) {
-      shareMenu.hidden = true;
-    }
-  });
-})();
-</script>
 
 {% if series %}
   {% set seriesNav = collections.writings | getSeriesNav(series | seriesBaseName, page.url) %}
