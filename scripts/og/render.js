@@ -4,8 +4,9 @@
 // Chiamato da .eleventy.js nell'evento eleventy.after, solo in build.
 const fs = require("fs");
 const path = require("path");
-const { Resvg } = require("@resvg/resvg-js");
-const sharp = require("sharp");
+// resvg e sharp si caricano solo quando si generano le immagini (build):
+// cosi' npm start funziona anche se i loro binari non sono installati.
+let Resvg, sharp;
 
 const W = 1200, H = 630;
 // Cambiare VERSIONE quando cambia la grafica: entra nell'hash dei nomi file.
@@ -95,6 +96,7 @@ function scheda(job) {
 }
 
 async function rendi(jobs, outDir) {
+  Resvg = require("@resvg/resvg-js").Resvg; sharp = require("sharp");
   let n = 0;
   const coda = jobs.slice();
   async function lavora() { let job; while ((job = coda.shift())) { await uno(job); n++; } }
