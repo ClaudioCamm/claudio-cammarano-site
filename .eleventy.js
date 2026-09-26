@@ -462,7 +462,7 @@ module.exports = function(eleventyConfig) {
   const ogLavori = new Map();
   const ogHash = function(o) { return require("crypto").createHash("sha1").update(require("./scripts/og/render.js").VERSIONE + JSON.stringify(o)).digest("hex").slice(0, 10); };
   const ogReg = function(dir, slug, job) {
-    const out = "/og/" + dir + "/" + slug + "-" + ogHash(job) + ".jpg";
+    const out = "/og/" + dir + "/" + slug + "-" + ogHash(job) + (job.kind === "foto" ? ".jpg" : ".png");
     ogLavori.set(out, Object.assign({ out: out }, job));
     return out;
   };

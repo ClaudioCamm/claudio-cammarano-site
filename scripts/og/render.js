@@ -9,7 +9,9 @@ const sharp = require("sharp");
 
 const W = 1200, H = 630;
 // Cambiare VERSIONE quando cambia la grafica: entra nell'hash dei nomi file.
-const VERSIONE = "3";
+const VERSIONE = "4";
+// Le schede si disegnano a 2x (2400x1260): nitide sugli schermi retina.
+const SCALA = 2;
 const BLU = "#1C0E80", VERDE = "#1f9d55";
 const FONT = [path.join(__dirname, "fonts/SourceSerif4-Regular.ttf"), path.join(__dirname, "fonts/SourceSerif4-Semibold.ttf")];
 const OPAC = [0, 0.2, 0.38, 0.56, 0.76, 0.96];
@@ -100,10 +102,12 @@ async function rendi(jobs, outDir) {
     const dest = path.join(outDir, job.out);
     fs.mkdirSync(path.dirname(dest), { recursive: true });
     if (job.kind === "foto") {
-      await sharp(path.join(process.cwd(), "src", job.src)).resize(W, H, { fit: "cover" }).jpeg({ quality: 84, mozjpeg: true }).toFile(dest);
+      await sharp(path.join(process.cwd(), "src", job.src)).resize(W * SCALA, H * SCALA, { fit: "cover", withoutEnlargement: false }).jpeg({ quality: 86, progressive: false, chromaSubsampling: "4:4:4" }).toFile(dest);
     } else {
-      const png = new Resvg(scheda(job), { font: { fontFiles: FONT, loadSystemFonts: false, defaultFontFamily: "Source Serif 4" } }).render().asPng();
-      await sharp(png).jpeg({ quality: 86, mozjpeg: true }).toFile(dest);
+      // PNG e non JPEG: testo e contorni restano netti. JPEG progressivi
+      // vengono mostrati sgranati da alcuni social (LinkedIn).
+      const png = new Resvg(scheda(job), { fitTo: { mode: "width", value: W * SCALA }, font: { fontFiles: FONT, loadSystemFonts: false, defaultFontFamily: "Source Serif 4" } }).render().asPng();
+      await sharp(png).png({ compressionLevel: 9, palette: true, quality: 90 }).toFile(dest);
     }
   }
   await Promise.all([1, 2, 3, 4].map(lavora));
