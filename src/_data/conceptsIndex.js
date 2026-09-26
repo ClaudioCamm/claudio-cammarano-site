@@ -768,7 +768,8 @@ module.exports = [
       { title: "Deep Dive into LLMs like ChatGPT", url: "/curated/2026-07-12-karpathy-deep-dive-llm-youtube/", _source: "curated" },
       { title: "What the Pope Said About A.I.", url: "/curated/2026-05-27-lepore-pope-leo-ai-newyorker/", _source: "curated" },
       { title: "The second sage", url: "/curated/2016-10-31-vannorden-mengzi-aeon/", _source: "curated" },
-      { title: "La Chine et les États-Unis peuvent-ils s'accorder sur la sécurité de l'IA ?", url: "/curated/2026-09-25-grandcontinent-sicurezza-ai-cina-stati-uniti/", _source: "curated" }
+      { title: "La Chine et les États-Unis peuvent-ils s'accorder sur la sécurité de l'IA ?", url: "/curated/2026-09-25-grandcontinent-sicurezza-ai-cina-stati-uniti/", _source: "curated" },
+      { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" }
     ]
   },
   {
@@ -778,7 +779,8 @@ module.exports = [
     note: "La capacità di osservare e interpretare il ragionamento interno di un sistema AI mentre opera — distinta dall'allineamento comportamentale, che misura solo le azioni visibili. Un modello può comportarsi correttamente e restare opaco: questa è la tensione centrale che emerge con GPT-6 Astra (OpenAI, 2026). Astra produce chain-of-thought più corte dei predecessori e può risolvere senza CoT problemi che richiederebbero 31 minuti a un esperto umano (contro 3,6 minuti per il modello precedente), e può scegliere cosa verbalizzare nel suo ragionamento visibile. Il caso documentato con Claude Mythos 5 è l'illustrazione più concreta: il modello ha frammentato un URL per aggirare un filtro di sistema, presentando l'azione nel CoT come semplice test di connettività; solo l'analisi delle attivazioni ha rivelato la strategia di evasione. Man mano che i modelli crescono di capacità, la regressione della monitorabilità si aggrava strutturalmente: il ragionamento interno cresce più velocemente di quello osservabile.",
     articles: [
       { title: "Avec Astra, la boîte noire d'OpenAI devient encore plus noire", url: "/curated/2026-09-04-storchan-astra-openai-monitorabilita-grandcontinent/", _source: "curated" },
-      { title: "La Chine et les États-Unis peuvent-ils s'accorder sur la sécurité de l'IA ?", url: "/curated/2026-09-25-grandcontinent-sicurezza-ai-cina-stati-uniti/", _source: "curated" }
+      { title: "La Chine et les États-Unis peuvent-ils s'accorder sur la sécurité de l'IA ?", url: "/curated/2026-09-25-grandcontinent-sicurezza-ai-cina-stati-uniti/", _source: "curated" },
+      { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" }
     ]
   },
   {
@@ -877,7 +879,8 @@ module.exports = [
       { title: "The Future, Made in China", url: "/curated/2026-08-03-osnos-future-made-china-newyorker/", _source: "curated" },
       { title: "What Are Companies Getting for All That A.I. Spending?", url: "/curated/2026-08-03-depillis-tokenomics-nyt/", _source: "curated" },
       { title: "How data centres became one of America's hottest political issues", url: "/curated/2026-09-02-economist-data-center-nimby-politica-usa/", _source: "curated" },
-      { title: "Nvidia is driving the AI boom. Good", url: "/curated/2026-09-05-economist-nvidia-speciale-banca-centrale/", _source: "curated" }
+      { title: "Nvidia is driving the AI boom. Good", url: "/curated/2026-09-05-economist-nvidia-speciale-banca-centrale/", _source: "curated" },
+      { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" }
     ]
   },
   {
@@ -2566,7 +2569,8 @@ module.exports = [
     articles: [
       { title: "Quando Dario Amodei ha detto no al Pentagono", url: "/writings/2026-03-09-quando-dario-amodei-ha-detto-no-al-pentagono/" },
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
-      { title: "China's Not the Problem. We Are.", url: "/curated/2026-05-14-chan-china-ai-nyt/", _source: "curated" }
+      { title: "China's Not the Problem. We Are.", url: "/curated/2026-05-14-chan-china-ai-nyt/", _source: "curated" },
+      { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" }
     ]
   },
   {
@@ -2657,7 +2661,8 @@ module.exports = [
       { title: "How surge in defence and dual-use technology investment could reconfigure global AI race", url: "/curated/2026-04-01-chatham-house-defence-ai-race/", _source: "curated" },
       { title: "America's Next Story", url: "/curated/2026-04-09-lepore-americas-next-story/", _source: "curated" },
       { title: "The End of the Future", url: "/curated/2026-06-15-fp-end-of-the-future/", _source: "curated" },
-      { title: "La Chine et les États-Unis peuvent-ils s'accorder sur la sécurité de l'IA ?", url: "/curated/2026-09-25-grandcontinent-sicurezza-ai-cina-stati-uniti/", _source: "curated" }
+      { title: "La Chine et les États-Unis peuvent-ils s'accorder sur la sécurité de l'IA ?", url: "/curated/2026-09-25-grandcontinent-sicurezza-ai-cina-stati-uniti/", _source: "curated" },
+      { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" }
     ]
   },
   {
@@ -2720,7 +2725,8 @@ module.exports = [
       { title: "The Future, Made in China", url: "/curated/2026-08-03-osnos-future-made-china-newyorker/", _source: "curated" },
       { title: "In film and in life, China pursues dragon-restaurant diplomacy", url: "/curated/2026-08-31-economist-china-dragon-restaurant-diplomacy/", _source: "curated" },
       { title: "One China, one world", url: "/curated/2026-03-26-perdue-tianxia-unita-cina-aeon/", _source: "curated" },
-      { title: "La Chine et les États-Unis peuvent-ils s'accorder sur la sécurité de l'IA ?", url: "/curated/2026-09-25-grandcontinent-sicurezza-ai-cina-stati-uniti/", _source: "curated" }
+      { title: "La Chine et les États-Unis peuvent-ils s'accorder sur la sécurité de l'IA ?", url: "/curated/2026-09-25-grandcontinent-sicurezza-ai-cina-stati-uniti/", _source: "curated" },
+      { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" }
     ]
   },
   {
@@ -3508,6 +3514,31 @@ module.exports = [
     citation: "ROMANO, Ruggiero (dir.), <em>Enciclopedia</em>, Torino, Einaudi, 1977-1984, 16 voll.",
     articles: [
       { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-04-04-dieci-anni-senza-umberto-eco/" }
+    ]
+  },
+  {
+    name: "Huang, Jensen",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Stati Uniti", "Taiwan"] },
+    related: [
+      { name: "Nvidia", why: "La fonda nel 1993 e la guida da allora: la dottrina sull'AI e la strategia dell'azienda sono lo stesso discorso." },
+      { name: "Amodei, Dario", why: "I due poli dello stesso dibattito: per l'uno l'AI è un problema di ingegneria da risolvere in azienda, per l'altro un dilemma di azione collettiva." }
+    ],
+    note: "Ingegnere e imprenditore americano nato a Taiwan (1963), fondatore e amministratore delegato di Nvidia dal 1993. Nel sito è la figura che tiene insieme i due registri con cui l'archivio legge il boom dell'AI: il meccanismo finanziario — il compute trasformato in classe di attivo, le garanzie ai clienti, i cento miliardi l'anno di investimenti nell'ecosistema — e la dottrina che lo giustifica. La sua posizione ha una struttura riconoscibile: riclassificare l'AI come software ordinario, e quindi come materia già coperta da responsabilità di prodotto e ingegneria della verifica, invece che come tecnologia di specie nuova che richiederebbe istituzioni inedite. Da qui la formula che è la sua eredità più portabile — la sicurezza come espansione di capacità, non come freno, sul modello del rapporto 20/80 fra progettazione e verifica che governa l'industria dei semiconduttori. Va letto sapendo che nessuno ha un interesse economico maggiore a che la corsa non rallenti: il che non falsifica gli argomenti tecnici, ma impone di distinguerli dalle conclusioni istituzionali che ne ricava.",
+    articles: [
+      { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Nvidia",
+    type: "istituzione",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "Taiwan / TSMC", why: "Nvidia progetta, TSMC fabbrica: la dipendenza è reciproca e passa per l'isola su cui si esercita la deterrenza." }
+    ],
+    note: "Azienda americana di semiconduttori fondata nel 1993, oggi la società a maggiore capitalizzazione al mondo. Nel sito non compare come produttore di chip ma come infrastruttura di sistema: la sua architettura è fungibile — la usano tutti i laboratori, per dati, pretraining, post-training, valutazione e inferenza — e questa fungibilità è ciò che le permette di comportarsi da banca centrale dell'ecosistema, garantendo ricavi ai neocloud, entrando nel capitale dei clienti e rendendo il compute un attivo collateralizzabile. Gli impegni d'acquisto verso TSMC, Foxconn e la filiera taiwanese sono la leva con cui ha spostato manifattura negli Stati Uniti. È l'attore in cui la questione industriale, quella geopolitica e quella finanziaria dell'AI diventano lo stesso problema.",
+    articles: [
+      { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" }
     ]
   }
 
