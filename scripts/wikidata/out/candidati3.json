@@ -1,0 +1,73 @@
+{
+ "strutturalismo": [
+  {
+   "id": "Q179168",
+   "label": "strutturalismo",
+   "desc": "theory that elements of human culture must be understood in terms of their relationship to a larger, overarching system or structure"
+  },
+  {
+   "id": "Q2466334",
+   "label": "strutturalismo",
+   "desc": "corrente linguistica"
+  },
+  {
+   "id": "Q1667680",
+   "label": "strutturalismo",
+   "desc": "movimento architettonico"
+  },
+  {
+   "id": "Q2895066",
+   "label": "strutturalismo",
+   "desc": "approccio psicologico inaugurato da Wilhelm Wundt"
+  },
+  {
+   "id": "Q2236965",
+   "label": "strutturalismo",
+   "desc": "movimento filosofico"
+  },
+  {
+   "id": "Q140151453",
+   "label": "Structuralism",
+   "desc": null
+  },
+  {
+   "id": "Q139866362",
+   "label": "Structuralism",
+   "desc": null
+  }
+ ],
+ "poststrutturalismo": [
+  {
+   "id": "Q267932",
+   "label": "Post-strutturalismo",
+   "desc": "movimento filosofico"
+  },
+  {
+   "id": "Q103962509",
+   "label": "Post-structuralism",
+   "desc": "encyclopedia article"
+  },
+  {
+   "id": "Q104011748",
+   "label": "Post-structuralism in the USA",
+   "desc": "encyclopedia article"
+  },
+  {
+   "id": "Q58868194",
+   "label": "Post-Structuralism",
+   "desc": null
+  },
+  {
+   "id": "Q57811908",
+   "label": "Post-structuralism and Marxism: education as knowledge capitalism",
+   "desc": null
+  }
+ ],
+ "Enciclopedia Einaudi": [
+  {
+   "id": "Q3725029",
+   "label": "Enciclopedia Einaudi",
+   "desc": "enciclopedia della casa editrice Giulio Einaudi Autore"
+  }
+ ]
+}

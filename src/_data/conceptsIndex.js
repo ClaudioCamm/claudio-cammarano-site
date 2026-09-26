@@ -1654,12 +1654,25 @@ module.exports = [
     ]
   },
   {
+    name: "tianxia",
+    type: "teoria",
+    geo: { modo: "diretta", paesi: ["Cina"] },
+    related: [
+      { name: "cosmotecnica", why: "Due letture della continuità cinese: una la assume come cosmologia, l'altra la mostra come costruzione recente." }
+    ],
+    note: "«Tutto sotto il cielo»: concetto di origine Zhou che designa l'ordine del mondo come spazio unico e gerarchicamente armonizzato, senza confini di sovranità paritaria. Nel dibattito contemporaneo è stato rilanciato dal filosofo Zhao Tingyang come modello di governance globale alternativo al sistema degli stati-nazione in competizione: comunità e beneficio reciproco al posto dell'individualismo competitivo occidentale. Nel sito è studiato nella lettura critica di Peter C. Perdue, che lo colloca dentro la dottrina della «grande unità» — huaxia, datong, ren — con cui il discorso ufficiale cinese afferma una continuità civilizzazionale di cinquemila anni: un montaggio recente, che eredita il vocabolario dal Datongshu di Kang Youwei (1902) e l'impianto dalla propaganda nazionalista degli anni Quaranta. Da qui la sua ambiguità strutturale: nato per tenere insieme l'interno, all'esterno chiede agli altri di occupare la posizione che dentro occupano le minoranze, e per questo funziona come collante domestico e non come proposta universale.",
+    articles: [
+      { title: "One China, one world", url: "/curated/2026-03-26-perdue-tianxia-unita-cina-aeon/", _source: "curated" }
+    ]
+  },
+  {
     name: "cosmotecnica",
     type: "teoria",
     geo: { modo: "teorico", paesi: ["Cina"] },
     note: "Termine del filosofo Yuk Hui: ogni civiltà ha la propria tecnica radicata nella propria cosmologia — la tecnologia non è universale ma espressione di un modo di stare nel mondo. La cosmotecnica occidentale è fondata sul dominio sulla natura (Cartesio, Bacone); quella cinese sulle grandi tradizioni filosofiche (taoismo, confucianesimo, buddismo) che hanno sempre concepito la macchina come un elemento non necessariamente alieno, e sulla continuità della tradizione statale. Nel sito è il quadro che ridefinisce la «gara» sino-americana sull'AI: non chi costruisce modelli più potenti, ma chi costruisce modelli con quale cosmologia sottostante.",
     articles: [
-      { title: "Cosa intende la Cina per «intelligenza artificiale»", url: "/curated/2026-06-25-pieranni-cina-intelligenza-artificiale-altriorienti/", _source: "curated" }
+      { title: "Cosa intende la Cina per «intelligenza artificiale»", url: "/curated/2026-06-25-pieranni-cina-intelligenza-artificiale-altriorienti/", _source: "curated" },
+      { title: "One China, one world", url: "/curated/2026-03-26-perdue-tianxia-unita-cina-aeon/", _source: "curated" }
     ]
   },
   {
@@ -2700,7 +2713,8 @@ module.exports = [
       { title: "Who's Afraid of Chinese Models?", url: "/curated/2026-07-20-stratechery-chinese-models/", _source: "curated" },
       { title: "Chartbook 462: China shocked – beyond 1.0 and 2.0 to the 'Big One'", url: "/curated/2026-07-29-tooze-china-shock-chartbook/", _source: "curated" },
       { title: "The Future, Made in China", url: "/curated/2026-08-03-osnos-future-made-china-newyorker/", _source: "curated" },
-      { title: "In film and in life, China pursues dragon-restaurant diplomacy", url: "/curated/2026-08-31-economist-china-dragon-restaurant-diplomacy/", _source: "curated" }
+      { title: "In film and in life, China pursues dragon-restaurant diplomacy", url: "/curated/2026-08-31-economist-china-dragon-restaurant-diplomacy/", _source: "curated" },
+      { title: "One China, one world", url: "/curated/2026-03-26-perdue-tianxia-unita-cina-aeon/", _source: "curated" }
     ]
   },
   {
@@ -3344,7 +3358,8 @@ module.exports = [
     note: "Politologo americano (1952), professore alla Stanford University. Ex allievo di Allan Bloom, ha lavorato per la RAND Corporation e per l'amministrazione Reagan prima di rompere con il neoconservatorismo dopo l'invasione dell'Iraq (2003). Autore di *The End of History and the Last Man* (1992) — il libro più citato e frainteso della sua generazione — e della serie *Political Order and Political Decay* (2011-2014). Nel sito compare come il teorico che ha identificato il problema non risolto della democrazia liberale: non la minaccia esterna ma l'instabilità interna generata dal successo stesso — la noia del riconoscimento ottenuto, il thymos che si rivolta contro l'ordine che lo ha soddisfatto.",
     articles: [
       { title: "Why the End of History Is So Miserable", url: "/curated/2026-09-09-beckerman-fukuyama-end-history-atlantic/", _source: "curated" },
-      { title: "Was Francis Fukuyama Right All Along?", url: "/curated/2026-09-18-ezra-klein-fukuyama-nyt/", _source: "curated" }
+      { title: "Was Francis Fukuyama Right All Along?", url: "/curated/2026-09-18-ezra-klein-fukuyama-nyt/", _source: "curated" },
+      { title: "One China, one world", url: "/curated/2026-03-26-perdue-tianxia-unita-cina-aeon/", _source: "curated" }
     ]
   },
   {

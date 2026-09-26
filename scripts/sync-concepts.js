@@ -122,17 +122,27 @@ if (toAdd.length === 0 && missing.length === 0) {
   process.exit(0);
 }
 
+const notFound = []; // voci che esistono nell'indice ma non si trovano nel file
+
 if (toAdd.length > 0) {
   let src = fs.readFileSync(CONCEPTS_FILE, 'utf8');
 
   for (const { conceptName, article } of toAdd) {
-    // Il nome va cercato nella DEFINIZIONE della voce (`name:` seguito da
-    // `type:`), non alla prima occorrenza: dal campo `related` in poi lo stesso
-    // nome compare anche dentro i legami di altre voci, che nel file possono
-    // precederla.
-    const defRe = new RegExp('name: "' + conceptName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '",\n    type:');
+    // Il nome va cercato nella DEFINIZIONE della voce, non alla prima
+    // occorrenza: dal campo `related` in poi lo stesso nome compare dentro i
+    // legami di altre voci, che nel file possono precederla.
+    //
+    // L'ancora è la POSIZIONE nel file, non l'ordine dei campi: la definizione
+    // è sempre `name:` a inizio riga con quattro spazi di rientro, mentre un
+    // riferimento in `related` è `{ name: ... }` inline con sei spazi. Non
+    // ancorare a `name:` seguito da `type:`: l'ordine dei campi varia da voce
+    // a voce (related e geo possono stare in mezzo) e la voce verrebbe saltata.
+    const defRe = new RegExp('\n    name: "' + conceptName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '",');
     const defMatch = defRe.exec(src);
-    if (!defMatch) continue;
+    if (!defMatch) {
+      notFound.push(conceptName);
+      continue;
+    }
     const pos = defMatch.index;
 
     // Ancora la ricerca a `articles:`, non alla prima quadra utile: dal campo
@@ -156,6 +166,15 @@ if (toAdd.length > 0) {
     }
 
     console.log(`[concepts] ✓ Aggiunto "${article.title}" → ${conceptName}`);
+  }
+
+  if (notFound.length > 0) {
+    // Non deve succedere: la voce esiste (il require l'ha letta) ma il suo
+    // `name:` non si trova nel sorgente. Segnalarlo forte, perché il silenzio
+    // qui ha gia' prodotto due bug passati inosservati per settimane.
+    console.log('\n[concepts] ✗ VOCI NON LOCALIZZATE nel sorgente — articolo NON aggiunto:');
+    for (const n of notFound) console.log(`   - "${n}"`);
+    console.log('   Probabile causa: la forma della voce in conceptsIndex.js e\' cambiata.\n');
   }
 
   fs.writeFileSync(CONCEPTS_FILE, src, 'utf8');
