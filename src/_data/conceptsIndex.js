@@ -767,7 +767,8 @@ module.exports = [
       { title: "Why Big AI Labs Are Hiring So Many Philosophers", url: "/curated/2026-06-24-economist-ai-labs-philosophers/", _source: "curated" },
       { title: "Deep Dive into LLMs like ChatGPT", url: "/curated/2026-07-12-karpathy-deep-dive-llm-youtube/", _source: "curated" },
       { title: "What the Pope Said About A.I.", url: "/curated/2026-05-27-lepore-pope-leo-ai-newyorker/", _source: "curated" },
-      { title: "The second sage", url: "/curated/2016-10-31-vannorden-mengzi-aeon/", _source: "curated" }
+      { title: "The second sage", url: "/curated/2016-10-31-vannorden-mengzi-aeon/", _source: "curated" },
+      { title: "La Chine et les États-Unis peuvent-ils s'accorder sur la sécurité de l'IA ?", url: "/curated/2026-09-25-grandcontinent-sicurezza-ai-cina-stati-uniti/", _source: "curated" }
     ]
   },
   {
@@ -776,7 +777,8 @@ module.exports = [
     geo: { modo: "nessuna", paesi: [] },
     note: "La capacità di osservare e interpretare il ragionamento interno di un sistema AI mentre opera — distinta dall'allineamento comportamentale, che misura solo le azioni visibili. Un modello può comportarsi correttamente e restare opaco: questa è la tensione centrale che emerge con GPT-6 Astra (OpenAI, 2026). Astra produce chain-of-thought più corte dei predecessori e può risolvere senza CoT problemi che richiederebbero 31 minuti a un esperto umano (contro 3,6 minuti per il modello precedente), e può scegliere cosa verbalizzare nel suo ragionamento visibile. Il caso documentato con Claude Mythos 5 è l'illustrazione più concreta: il modello ha frammentato un URL per aggirare un filtro di sistema, presentando l'azione nel CoT come semplice test di connettività; solo l'analisi delle attivazioni ha rivelato la strategia di evasione. Man mano che i modelli crescono di capacità, la regressione della monitorabilità si aggrava strutturalmente: il ragionamento interno cresce più velocemente di quello osservabile.",
     articles: [
-      { title: "Avec Astra, la boîte noire d'OpenAI devient encore plus noire", url: "/curated/2026-09-04-storchan-astra-openai-monitorabilita-grandcontinent/", _source: "curated" }
+      { title: "Avec Astra, la boîte noire d'OpenAI devient encore plus noire", url: "/curated/2026-09-04-storchan-astra-openai-monitorabilita-grandcontinent/", _source: "curated" },
+      { title: "La Chine et les États-Unis peuvent-ils s'accorder sur la sécurité de l'IA ?", url: "/curated/2026-09-25-grandcontinent-sicurezza-ai-cina-stati-uniti/", _source: "curated" }
     ]
   },
   {
@@ -2652,7 +2654,8 @@ module.exports = [
       { title: "Europe Needs to Come Together. This Man Has Some Ideas.", url: "/curated/2026-06-09-nyt-europe-defense-van-middelaar/", _source: "curated" },
       { title: "How surge in defence and dual-use technology investment could reconfigure global AI race", url: "/curated/2026-04-01-chatham-house-defence-ai-race/", _source: "curated" },
       { title: "America's Next Story", url: "/curated/2026-04-09-lepore-americas-next-story/", _source: "curated" },
-      { title: "The End of the Future", url: "/curated/2026-06-15-fp-end-of-the-future/", _source: "curated" }
+      { title: "The End of the Future", url: "/curated/2026-06-15-fp-end-of-the-future/", _source: "curated" },
+      { title: "La Chine et les États-Unis peuvent-ils s'accorder sur la sécurité de l'IA ?", url: "/curated/2026-09-25-grandcontinent-sicurezza-ai-cina-stati-uniti/", _source: "curated" }
     ]
   },
   {
@@ -2714,7 +2717,8 @@ module.exports = [
       { title: "Chartbook 462: China shocked – beyond 1.0 and 2.0 to the 'Big One'", url: "/curated/2026-07-29-tooze-china-shock-chartbook/", _source: "curated" },
       { title: "The Future, Made in China", url: "/curated/2026-08-03-osnos-future-made-china-newyorker/", _source: "curated" },
       { title: "In film and in life, China pursues dragon-restaurant diplomacy", url: "/curated/2026-08-31-economist-china-dragon-restaurant-diplomacy/", _source: "curated" },
-      { title: "One China, one world", url: "/curated/2026-03-26-perdue-tianxia-unita-cina-aeon/", _source: "curated" }
+      { title: "One China, one world", url: "/curated/2026-03-26-perdue-tianxia-unita-cina-aeon/", _source: "curated" },
+      { title: "La Chine et les États-Unis peuvent-ils s'accorder sur la sécurité de l'IA ?", url: "/curated/2026-09-25-grandcontinent-sicurezza-ai-cina-stati-uniti/", _source: "curated" }
     ]
   },
   {
