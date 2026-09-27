@@ -1715,7 +1715,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q26759606"],
     note: "L'idea che i dati — specialmente quelli prodotti collettivamente da comunità, territori e archivi culturali — debbano essere governati come beni comuni anziché come risorse estrattive di soggetti privati. Nel sito emerge dalla lettura di *Magnifica Humanitas* da parte di Boccia Artieri: la privacy individuale non basta, serve una risposta collettiva che includa infrastrutture pubbliche, dataset aperti e verificabili, forme cooperative di produzione tecnologica. Dialoga con il tema del capitale semantico e con la critica all'economia dell'estrazione.",
     articles: [
-      { title: "Magnifica Humanitas: le nuove terre rare del potere", url: "/curated/2026-06-17-boccia-artieri-magnifica-humanitas-substack/", _source: "curated" }
+      { title: "Magnifica Humanitas: le nuove terre rare del potere", url: "/curated/2026-06-17-boccia-artieri-magnifica-humanitas-substack/", _source: "curated" },
+      { title: "Che cosa sono le ambasciate dei dati", url: "/curated/2026-09-27-crescenzi-ambasciate-dati-guerredirete/", _source: "curated" }
     ]
   },
   {
@@ -1908,7 +1909,8 @@ module.exports = [
     note: "La dipendenza da tecnologie cognitive estere come rischio epistemico, non solo operativo: chi controlla l'infrastruttura controlla le condizioni di produzione della conoscenza. Nel sito è l'igiene cognitiva sovrana — sapere cosa sa il proprio sistema, come lo sa, e in quali condizioni potrebbe smettere di saperlo — messa in luce dal caso Fable 5, in cui un executive order americano ha spento un'infrastruttura scientifica in quarantotto ore. Il caso Fable 5 è la versione da politica commerciale del problema: la capacità si spegne perché il fornitore, o il suo governo, decide così. La versione strutturale riguarda i pesi: chi li possiede esercita la capacità a condizioni proprie, e per questo una regolazione che renda i modelli a pesi aperti troppo onerosi da rilasciare produce dipendenza cognitiva come effetto collaterale.",
     articles: [
       { title: "L'infrastruttura del sapere", url: "/writings/2026-07-07-linfrastruttura-del-sapere/" },
-      { title: "The End of the Foundation Model Era: Open-Weight Models, Sovereign AI, and Inference as Infrastructure", url: "/curated/2026-03-09-grogan-pesi-aperti-sovranita-ai/", _source: "curated" }
+      { title: "The End of the Foundation Model Era: Open-Weight Models, Sovereign AI, and Inference as Infrastructure", url: "/curated/2026-03-09-grogan-pesi-aperti-sovranita-ai/", _source: "curated" },
+      { title: "Che cosa sono le ambasciate dei dati", url: "/curated/2026-09-27-crescenzi-ambasciate-dati-guerredirete/", _source: "curated" }
     ]
   },
   {
@@ -3615,6 +3617,32 @@ module.exports = [
       { title: "Why open-weight models are crucial for American AI leadership", url: "/curated/2026-08-10-villasenor-pesi-aperti-leadership-brookings/", _source: "curated" },
       { title: "Open Weights, Closed Ranks: The AI Manifesto War", url: "/curated/2026-08-12-zuniga-pesi-aperti-manifesti-icle/", _source: "curated" },
       { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" }
+    ]
+  },
+  {
+    name: "ambasciata dei dati",
+    type: "teoria",
+    geo: { modo: "diretta", paesi: ["Estonia", "Lussemburgo"] },
+    related: [
+      { name: "sovranità cognitiva", why: "La risposta giuridica allo stesso problema: quando l'infrastruttura non può stare in casa, si sposta il confine invece del dato." },
+      { name: "modelli a pesi aperti", why: "Due modi di non dipendere: l'enclave protegge un archivio fermo, i pesi una capacità — che però, per funzionare, ha bisogno di calcolo." }
+    ],
+    note: "Enclave giuridica in cui uno Stato ospita infrastruttura digitale critica su territorio straniero conservandone la piena sovranità. Non è un backup all'estero, che sarebbe una copia sotto giurisdizione altrui, né una regola di residenza dei dati, che si limita a imporre dove stiano: l'archivio gode di immunità e inviolabilità analoghe a quelle di una sede diplomatica, e nessuno — nemmeno l'autorità ospitante — vi accede senza autorizzazione formale. La cifratura end-to-end con chiavi controllate dal solo paese d'origine rende l'inviolabilità opponibile anche a chi la invoca sotto costrizione. Il primo caso è estone, 2017, in Lussemburgo: catasto, anagrafe, registro delle imprese, previdenza. Nel sito è la risposta giuridica al problema che altrove viene affrontato per via tecnica — la dipendenza da un'infrastruttura che non si controlla — e i suoi due limiti sono la parte utile. Il primo è di diritto internazionale: non esiste un quadro che riconosca formalmente queste enclavi, quindi l'immunità resta un'obbligazione bilaterale fra due Stati e regge finché regge il rapporto fra i due, che è la variabile da cui ci si voleva rendere indipendenti. Il secondo è di oggetto: il dispositivo mette al sicuro archivi fermi, non capacità di calcolo, e non si estende all'inferenza.",
+    articles: [
+      { title: "Che cosa sono le ambasciate dei dati", url: "/curated/2026-09-27-crescenzi-ambasciate-dati-guerredirete/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Estonia",
+    type: "paese",
+    geo: { modo: "diretta", paesi: ["Estonia"] },
+    related: [
+      { name: "controllo riflessivo", why: "Gli attacchi del 2007 sono l'origine dell'ambasciata dei dati: la dottrina russa ha prodotto la contromisura che non prevedeva." }
+    ],
+    note: "Repubblica baltica, membro dell'Unione europea e della NATO. Nel sito è presente per una sequenza causale che la riguarda per intero. Nel 2007 è il primo Stato bersaglio di un attacco informatico su scala nazionale, con DDoS massicci attribuiti ad ambienti russi, e figura fra i paesi del vicinato russo che l'archivio tratta come laboratorio del controllo riflessivo. Dieci anni dopo è il primo paese al mondo ad aprire un'ambasciata dei dati, in Lussemburgo, mettendo al riparo catasto, anagrafe, registro delle imprese e previdenza: la dottrina che l'aveva presa di mira ha prodotto per reazione la contromisura che non prevedeva. Taavi Kotka, CIO del paese dal 2013 al 2017, la descriveva come questione di sopravvivenza, non come misura di continuità operativa.",
+    articles: [
+      { title: "Il rumore a Beirut", url: "/writings/2026-04-09-il-rumore-a-beirut/" },
+      { title: "Che cosa sono le ambasciate dei dati", url: "/curated/2026-09-27-crescenzi-ambasciate-dati-guerredirete/", _source: "curated" }
     ]
   }
 

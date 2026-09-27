@@ -1,0 +1,22 @@
+---
+title: "Che cosa sono le ambasciate dei dati"
+external_url: "https://guerredirete.substack.com/p/che-cosa-sono-le-ambasciate-dei-dati"
+source: "Chiara Crescenzi / Guerre di Rete"
+date: 2026-09-27
+ai_prose: WR
+criterio: strumento-concettuale
+perche: "Un'ambasciata dei dati è un'enclave giuridica: un archivio di Stato ospitato all'estero che conserva immunità e inviolabilità di sede diplomatica, con le chiavi di cifratura in mano al solo paese d'origine. La categoria vale oltre il caso estone perché dice che la sovranità su un'informazione non dipende dal luogo in cui sta, ma dal regime giuridico che vi si applica. Il limite ne definisce la portata: protegge un archivio fermo, non una capacità di calcolo."
+rinvio: /curated/2026-03-09-grogan-pesi-aperti-sovranita-ai/
+description: |
+  L'Estonia ha aperto la prima nel 2017, in Lussemburgo, dentro un data center di livello Tier 4: ci sono il catasto, l'anagrafe, il registro delle imprese, la previdenza. Non è un backup all'estero, che sarebbe soltanto una copia sotto giurisdizione altrui: è un'enclave con garanzie di immunità e inviolabilità analoghe a quelle di una sede diplomatica, in cui nessuno — nemmeno l'autorità ospitante — può entrare senza autorizzazione formale. La tenuta tecnica poggia su cifratura end-to-end con chiavi controllate esclusivamente dal paese d'origine, il che produce una proprietà controintuitiva che il funzionario estone Allan Allmere descrive nel modo più diretto: «Se qualcuno mi puntasse una pistola alla testa e dicesse: cancella tutti i nostri sistemi», da remoto non si può fare. L'inviolabilità vale anche verso chi la invoca.
+
+  Il modello si sta diffondendo, e non solo per ragioni di conflitto. Il Principato di Monaco è il secondo paese dal 2021, con un accordo sempre lussemburghese a Bissen, motivato dall'esposizione del proprio territorio ai disastri naturali; India ed Emirati Arabi Uniti hanno una collaborazione in sviluppo alla GIFT City in Gujarat; Singapore sta valutando un'ambasciata in India e si è fermata davanti agli ostacoli normativi. Gartner prevede che entro il 2029 almeno il 15% dei paesi collocati in aree geopoliticamente instabili avrà stipulato accordi formali di questo tipo, e Daniel Nieto inquadra la pratica in una categoria più ampia, la sovranità dispersa: separare i dati essenziali dalla loro collocazione geografica.
+
+  L'ostacolo vero non è tecnico ma di diritto internazionale, e il pezzo non lo nasconde. Non esiste un quadro che riconosca formalmente queste enclavi: l'avvocata Ketaki Mehta, che lavora alla GIFT City, segnala che manca il riconoscimento e con esso la protezione dall'accesso delle autorità del paese ospitante. Oggi l'immunità di un'ambasciata dei dati è un'obbligazione bilaterale fra due Stati, non uno status riconosciuto — regge finché regge il rapporto fra i due, che è esattamente la variabile da cui ci si voleva rendere indipendenti.
+
+  L'origine della pratica vale quanto la pratica. L'Estonia ci è arrivata dopo gli attacchi DDoS massicci del 2007 attribuiti ad ambienti russi, e Taavi Kotka, che è stato CIO del paese dal 2013 al 2017, la descriveva come questione di sopravvivenza. È lo stesso episodio che il sito ha già incontrato da un'altra angolazione, nella ricostruzione del vicinato russo come laboratorio del controllo riflessivo: la dottrina ha prodotto, per reazione, la contromisura che non prevedeva. Vale la pena registrare anche ciò di cui il pezzo non parla, perché è la parte che un lettore italiano o europeo si aspetterebbe: non c'è il Cloud Act, non c'è la dipendenza dagli hyperscaler, non c'è l'Unione Europea. La scheda entra quindi come presentazione del dispositivo, non come valutazione della sua applicabilità qui.
+
+  Per l'archivio il rilievo è di confine, ed è il motivo per cui questa scheda dialoga con quella di Grogan. Sono due risposte allo stesso problema — non dipendere da un'infrastruttura che non si controlla — e falliscono su fronti opposti. L'ambasciata dei dati protegge benissimo un archivio fermo e non dice nulla su chi lo elabora; possedere i pesi di un modello protegge una capacità, ma quella capacità per funzionare ha bisogno di calcolo, e il calcolo in un'enclave non ci sta. Un catasto si può mettere al sicuro dentro un confine spostato. Un'inferenza no.
+tags: [curated, geopolitica, sicurezza, tecnologia]
+concepts: ["ambasciata dei dati", "Estonia", "sovranità cognitiva", "dati come beni comuni"]
+---

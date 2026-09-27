@@ -52,9 +52,14 @@ In buona parte sono coniazioni tue, acronimi, o formulazioni italiane che su Wik
 - Dondi, Ilaria Maria
 - Ottaviani, Jacopo
 
+**paese**
+
+- Estonia
+
 **teoria**
 
 - allineamento AI
+- ambasciata dei dati
 - antifragilità
 - armi autonome
 - atti illocutori
