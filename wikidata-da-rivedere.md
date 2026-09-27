@@ -1,6 +1,6 @@
 # Wikidata — voci da rivedere
 
-Allineate: **232 su 290**. Restano **58** voci senza `sameAs`.
+Allineate: **232 su 295**. Restano **63** voci senza `sameAs`.
 
 Regola applicata: aggancio accettato solo con corrispondenza esatta di label o alias **e** tipo (P31) compatibile, poi verifica a mano contro la nota della voce. Un Q-id sbagliato e' peggio di nessun Q-id.
 
@@ -137,3 +137,13 @@ Per aggiungerne una: apri `src/_data/conceptsIndex.js`, trova la voce e inserisc
 ```
 
 Il build la propaga da solo: nessun'altra modifica serve.
+
+## C — voci nuove, ricerca non ancora lanciata (5)
+
+Entrate con la scheda MIT Technology Review del 24 agosto 2026. Termini da cercare:
+
+- **Chomsky, Noam** *(persona)* — cercare `Noam Chomsky`.
+- **Gopnik, Alison** *(persona)* — cercare `Alison Gopnik`.
+- **povertà dello stimolo** *(teoria)* — cercare `poverty of the stimulus`.
+- **BabyLM** *(istituzione)* — cercare `BabyLM`. Probabile assenza: e' una competizione accademica recente.
+- **divario di efficienza dei dati** *(teoria)* — cercare `data efficiency`. Attenzione: se il match e' un concetto generico di efficienza computazionale, e' errore di categoria e si scarta.

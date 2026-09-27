@@ -960,7 +960,8 @@ module.exports = [
     note: "Paradigma cognitivo e filosofico secondo cui la cognizione è radicata nella struttura corporea del soggetto e nella sua interazione con l'ambiente, contro il cognitivismo classico (mente come software su hardware). Nel sito è il criterio per distinguere la mente biologica dal LLM: senza corpo non si dà cogito nel senso pieno.",
     articles: [
       { title: "La differenza fra Claude e le mie gatte", url: "/writings/2026-04-30-la-differenza-fra-claude-e-le-mie-gatte/" },
-      { title: "The mind does not exist", url: "/curated/2021-08-30-gough-no-mind-aeon/", _source: "curated" }
+      { title: "The mind does not exist", url: "/curated/2021-08-30-gough-no-mind-aeon/", _source: "curated" },
+      { title: "Kids outlearn AI—and we still don't know why", url: "/curated/2026-08-24-cutts-divario-efficienza-dati-mit-techreview/", _source: "curated" }
     ]
   },
   {
@@ -1089,7 +1090,8 @@ module.exports = [
       { title: "Ross Douthat: The Exit Interview", url: "/curated/2026-08-11-klein-douthat-exit-interview-nyt/", _source: "curated" },
       { title: "Destroying Books to Build a Mind", url: "/curated/2026-09-11-mancino-destroying-books-anthropic-newyorker/", _source: "curated" },
       { title: "Aaron Sorkin Goes Off Script", url: "/curated/2026-09-19-sorkin-social-reckoning-nyt/", _source: "curated" },
-      { title: "Don't let AI kill the author", url: "/curated/2026-09-24-economist-dont-let-ai-kill-the-author/", _source: "curated" }
+      { title: "Don't let AI kill the author", url: "/curated/2026-09-24-economist-dont-let-ai-kill-the-author/", _source: "curated" },
+      { title: "Kids outlearn AI—and we still don't know why", url: "/curated/2026-08-24-cutts-divario-efficienza-dati-mit-techreview/", _source: "curated" }
     ]
   },
   {
@@ -1912,7 +1914,8 @@ module.exports = [
       { title: "L'infrastruttura del sapere", url: "/writings/2026-07-07-linfrastruttura-del-sapere/" },
       { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" },
       { title: "Was Francis Fukuyama Right All Along?", url: "/curated/2026-09-18-ezra-klein-fukuyama-nyt/", _source: "curated" },
-      { title: "AI-written speeches are taking over politics", url: "/curated/2026-09-23-economist-discorsi-scritti-ai-politica/", _source: "curated" }
+      { title: "AI-written speeches are taking over politics", url: "/curated/2026-09-23-economist-discorsi-scritti-ai-politica/", _source: "curated" },
+      { title: "Kids outlearn AI—and we still don't know why", url: "/curated/2026-08-24-cutts-divario-efficienza-dati-mit-techreview/", _source: "curated" }
     ]
   },
   {
@@ -1926,7 +1929,8 @@ module.exports = [
       { title: "Che cosa sono le ambasciate dei dati", url: "/curated/2026-09-27-crescenzi-ambasciate-dati-guerredirete/", _source: "curated" },
       { title: "Internet Fragmentation's Outward Turn", url: "/curated/2025-06-01-fidler-splinternet-outward-turn-sciencespo/", _source: "curated" },
       { title: "The Great Russian Firewall: the Kremlin's ultimate crackdown on internet freedom", url: "/curated/2025-12-19-osw-great-russian-firewall/", _source: "curated" },
-      { title: "Internet Governance in 2026: Sovereignty, Security, and the Limits of Multistakeholderism", url: "/curated/2026-01-04-kulesza-internet-governance-2026-circleid/", _source: "curated" }
+      { title: "Internet Governance in 2026: Sovereignty, Security, and the Limits of Multistakeholderism", url: "/curated/2026-01-04-kulesza-internet-governance-2026-circleid/", _source: "curated" },
+      { title: "Kids outlearn AI—and we still don't know why", url: "/curated/2026-08-24-cutts-divario-efficienza-dati-mit-techreview/", _source: "curated" }
     ]
   },
   {
@@ -3806,6 +3810,61 @@ module.exports = [
     note: "«Occidentossicazione»: termine reso celebre da Jalal Al-e-Ahmad nel saggio omonimo (1962) per l'infatuazione dell'Iran verso l'Occidente, descritta come una malattia che intacca la cultura ospite dall'interno. Nel sito è il caso più nitido di un fenomeno generale: l'antioccidentalismo non nasce fuori dall'Occidente ma dentro le società appena occidentalizzate, e la stessa reazione si ripete a distanza in Dostoevskij dopo la Crimea, in Lu Xun in Cina, in Mishima in Giappone, in Oğuz Atay in Turchia. Il termine passò nel lessico della rivoluzione del 1979, il che è anche il suo avvertimento: una diagnosi culturale che descrive l'influenza straniera come contagio ha uno sbocco politico prevedibile.",
     articles: [
       { title: "Ranks of Humanity", url: "/curated/2026-09-24-meaney-varouxakis-idea-occidente-lrb/", _source: "curated" }
+    ]
+  },
+  {
+    name: "divario di efficienza dei dati",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    related: [
+      { name: "povertà dello stimolo", why: "Chomsky diceva che la statistica non basta; i modelli mostrano che basta, al prezzo di centomila volte i dati di un bambino." },
+      { name: "capitale semantico", why: "Se la forma più economica di apprendimento umano resta inspiegata, l'idea che il capitale semantico si possa saltare perde la sua base." },
+      { name: "sovranità cognitiva", why: "Il prezzo d'ingresso in token decide chi può addestrare un modello nella propria lingua e chi userà quello altrui." },
+      { name: "embodied mind", why: "SAYCam e i mille giorni di Hasson spostano la domanda dal testo al corpo: imparare dagli occhi e dalle orecchie, non dal corpus." }
+    ],
+    note: "Il divario fra i dati necessari a un bambino e quelli necessari a un modello linguistico per arrivare alla padronanza di una lingua: circa cinque ordini di grandezza. Un bambino produce frasi grammaticali dopo una decina di milioni di parole udite e ne ha sentite cento milioni da preadolescente; Llama 3.1 ne ha viste quindici trilioni, e i modelli di frontiera forse dieci volte tanto. Nel sito il concetto tiene insieme tre piani che di solito si discutono separati. Il primo è cognitivo: nessuno sa spiegare perché il bambino ce la faccia, e le due risposte migliori — Alison Gopnik, i bambini scelgono attivamente i propri dati; Elizabeth Bonawitz, ragionano sull'insegnante e non solo sull'evidenza — non sono proprietà che si ottengano aggiungendo token. Il secondo è industriale: il pozzo dei dati facilmente disponibili potrebbe esaurirsi già negli anni Trenta, e l'efficienza diventa un vincolo prima che una virtù. Il terzo è politico, ed è quello che il sito considera decisivo: finché il prezzo d'ingresso è di trilioni di token, una lingua che ne ha qualche decina di milioni — il sami, cioè la scala dell'esposizione di un bambino di due anni — non può avere un modello proprio. Il divario non è una curiosità cognitiva: è il fattore che decide chi ha diritto a un modello nella propria lingua.",
+    articles: [
+      { title: "Kids outlearn AI—and we still don't know why", url: "/curated/2026-08-24-cutts-divario-efficienza-dati-mit-techreview/", _source: "curated" }
+    ]
+  },
+  {
+    name: "povertà dello stimolo",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Stati Uniti"] },
+    note: "L'argomento con cui Noam Chomsky, negli anni Cinquanta, risponde al comportamentismo di Skinner: la sintassi è troppo complessa e l'esposizione linguistica del bambino troppo povera perché la grammatica possa essere appresa dalla sola statistica, quindi una parte della conoscenza dev'essere innata. Su questa premessa si costruiscono la grammatica generativa e, di rimbalzo, decenni di AI simbolica che prova a scrivere le regole a mano e fallisce, fino all'inverno dell'AI degli anni Settanta. Nel sito la voce serve per il rovesciamento, che è più interessante dell'argomento: i modelli linguistici hanno imparato la sintassi esattamente nel modo dichiarato impossibile, e Alison Gopnik lo ha ammesso pubblicamente. Ma l'hanno fatto a un costo che nessun bambino paga, e quel costo è la misura di quanto lo stimolo fosse davvero povero. L'argomento è stato aggirato empiricamente e confermato di sbieco nello stesso movimento.",
+    articles: [
+      { title: "Kids outlearn AI—and we still don't know why", url: "/curated/2026-08-24-cutts-divario-efficienza-dati-mit-techreview/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Chomsky, Noam",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    note: "Linguista e filosofo americano (1928), fondatore della grammatica generativa. Nel sito entra per la povertà dello stimolo, l'argomento con cui negli anni Cinquanta risponde a Skinner e che ha strutturato mezzo secolo di linguistica e, di riflesso, l'AI simbolica. La sua posizione sui modelli linguistici è di rifiuto netto — macchine che, per lui, non spiegano nulla del linguaggio umano — e il sito non la adotta né la liquida: la tratta come la formulazione più rigorosa disponibile di una domanda che i modelli hanno aggirato senza risolvere. Si usa come autorità sulla domanda, non sulla risposta.",
+    articles: [
+      { title: "Kids outlearn AI—and we still don't know why", url: "/curated/2026-08-24-cutts-divario-efficienza-dati-mit-techreview/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Gopnik, Alison",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "divario di efficienza dei dati", why: "L'ingrediente mancante non è la scala: i bambini scelgono i propri dati e cercano l'effetto sul mondo." },
+      { name: "delega epistemica", why: "Bonawitz: i bambini ragionano sull'insegnante e sul perché stia dicendo quella cosa. Fiducia epistemica prima del linguaggio." }
+    ],
+    note: "Psicologa dello sviluppo all'Università della California, Berkeley (1955). Nel sito vale per due cose. La prima è rara e va registrata: ha ammesso pubblicamente di essersi sbagliata sulla possibilità che un sistema puramente statistico imparasse la sintassi. La seconda è la sua tesi sull'ingrediente mancante — i bambini non guardano il mondo passare, esplorano attivamente, cioè scelgono i propri dati, e cercano l'empowerment, la capacità di produrre un effetto prevedibile sul mondo. Ne segue la sua previsione sull'industria: non saranno i laboratori di frontiera a imitare i bambini, ma la generazione di AI che verrà dopo il transformer. Si usa come fonte sulla struttura dell'apprendimento infantile, terreno in cui è autorità di prima mano, e non come voce sull'architettura dei modelli.",
+    articles: [
+      { title: "Kids outlearn AI—and we still don't know why", url: "/curated/2026-08-24-cutts-divario-efficienza-dati-mit-techreview/", _source: "curated" }
+    ]
+  },
+  {
+    name: "BabyLM",
+    type: "istituzione",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    note: "Competizione annuale fondata nel 2022 da Alex Warstadt e Leshem Choshen: addestrare modelli linguistici su un corpus «plausibile dal punto di vista dello sviluppo» — cento milioni di parole, dieci milioni nel binario neonatale — tratto da libri illustrati, dialoghi, sottotitoli, Simple English Wikipedia e trascrizioni di parlato rivolto ai bambini, e valutarli con i test che gli psicolinguisti usano sugli esseri umani. Nel sito è il caso di un programma di ricerca che vale soprattutto per ciò che ha smontato: il curriculum learning, partire dal semplice e salire, non ha funzionato come ci si aspettava; i modelli che imparano interagendo con altri modelli non hanno battuto gli standard; e il campione 2024, GPT-BERT, non è ispirato ai neonati affatto. Il risultato più citato — cento milioni di parole che superano Llama 2 70B su un benchmark — va tenuto insieme al suo limite, cioè che molti modelli-bambino non sanno produrre testo. La geografia è quella prevalente degli organizzatori e non l'unica: partecipano gruppi europei, e uno degli architetti di GPT-BERT lavora a Oslo.",
+    articles: [
+      { title: "Kids outlearn AI—and we still don't know why", url: "/curated/2026-08-24-cutts-divario-efficienza-dati-mit-techreview/", _source: "curated" }
     ]
   }
 
