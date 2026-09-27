@@ -108,6 +108,7 @@ In buona parte sono coniazioni tue, acronimi, o formulazioni italiane che su Wik
 - ragione comunicativa
 - sfiducia sistemica
 - shadow of the future
+- splinternet
 - successione aziendale
 - tassonomia D1–D7
 - trasferimenti monetari diretti
