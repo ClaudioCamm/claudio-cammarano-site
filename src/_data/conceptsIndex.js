@@ -979,7 +979,8 @@ module.exports = [
       { title: "If You're Over 40, You're Ready to Use A.I.", url: "/curated/2026-07-27-millman-kabbalah-ai-nyt/", _source: "curated" },
       { title: "AI Has Plunged the Book Publishing Industry Into Utter Chaos", url: "/curated/2026-08-17-silman-ai-publishing-chaos-wsj/", _source: "curated" },
       { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" },
-      { title: "A Watermark for Large Language Models", url: "/curated/2023-01-25-kirchenbauer-watermark-llm-arxiv/", _source: "curated" }
+      { title: "A Watermark for Large Language Models", url: "/curated/2023-01-25-kirchenbauer-watermark-llm-arxiv/", _source: "curated" },
+      { title: "Don't let AI kill the author", url: "/curated/2026-09-24-economist-dont-let-ai-kill-the-author/", _source: "curated" }
     ]
   },
   {
@@ -1085,7 +1086,8 @@ module.exports = [
       { title: "Does AI stop children from learning?", url: "/curated/2026-08-18-economist-ai-learning-penalty-children/", _source: "curated" },
       { title: "Ross Douthat: The Exit Interview", url: "/curated/2026-08-11-klein-douthat-exit-interview-nyt/", _source: "curated" },
       { title: "Destroying Books to Build a Mind", url: "/curated/2026-09-11-mancino-destroying-books-anthropic-newyorker/", _source: "curated" },
-      { title: "Aaron Sorkin Goes Off Script", url: "/curated/2026-09-19-sorkin-social-reckoning-nyt/", _source: "curated" }
+      { title: "Aaron Sorkin Goes Off Script", url: "/curated/2026-09-19-sorkin-social-reckoning-nyt/", _source: "curated" },
+      { title: "Don't let AI kill the author", url: "/curated/2026-09-24-economist-dont-let-ai-kill-the-author/", _source: "curated" }
     ]
   },
   {
@@ -1530,7 +1532,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q131464002"],
     note: "La pratica di scrivere testi firmati da altri. Nel sito è il termine chiave del pezzo di Dondi: il ghostwriting ha sempre reso invisibile il lavoro di supporto alle figure di potere senza che questo fosse considerato imbroglio. L'AI ne è una versione più economica e accessibile — e l'indignazione che suscita rivela che il privilegio viene contestato solo quando smette di essere esclusivo.",
     articles: [
-      { title: "Se uso l'AI sono meno professionista?", url: "/curated/2026-06-21-dondi-ai-professionalita-ghostwriting/", _source: "curated" }
+      { title: "Se uso l'AI sono meno professionista?", url: "/curated/2026-06-21-dondi-ai-professionalita-ghostwriting/", _source: "curated" },
+      { title: "AI-written speeches are taking over politics", url: "/curated/2026-09-23-economist-discorsi-scritti-ai-politica/", _source: "curated" }
     ]
   },
   {
@@ -1772,7 +1775,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q135067344"],
     note: "Processo per cui gli esseri umani delegano carichi cognitivi a strumenti esterni — dalla scrittura alle calcolatrici, fino agli LLM — per ridurre lo sforzo mentale. La distinzione critica è tra strumenti che *estendono* la cognizione (la calcolatrice verifica un calcolo che si sarebbe potuto fare) e strumenti che la *sostituiscono* (l'AI ragiona al posto del soggetto, impedendo che si formi l'architettura neurale necessaria). Nel sito il concetto emerge in relazione all'adozione non strutturata degli LLM nella didattica: il cognitive offloading è fisiologico, ma diventa problematico quando bypassa i processi attraverso cui si costruisce comprensione. Dialoga con *need for cognition* e *polarizzazione cognitiva*.",
     articles: [
-      { title: "Shaping the Future of Learning: Education Readiness for the Age of AI", url: "/curated/2026-06-01-wef-education-readiness-ai/", _source: "curated" }
+      { title: "Shaping the Future of Learning: Education Readiness for the Age of AI", url: "/curated/2026-06-01-wef-education-readiness-ai/", _source: "curated" },
+      { title: "Don't let AI kill the author", url: "/curated/2026-09-24-economist-dont-let-ai-kill-the-author/", _source: "curated" }
     ]
   },
   {
@@ -1903,7 +1907,8 @@ module.exports = [
       { title: "La formula dell’autenticità", url: "/writings/2026-08-23-la-formula-dellautenticita/" },
       { title: "L'infrastruttura del sapere", url: "/writings/2026-07-07-linfrastruttura-del-sapere/" },
       { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" },
-      { title: "Was Francis Fukuyama Right All Along?", url: "/curated/2026-09-18-ezra-klein-fukuyama-nyt/", _source: "curated" }
+      { title: "Was Francis Fukuyama Right All Along?", url: "/curated/2026-09-18-ezra-klein-fukuyama-nyt/", _source: "curated" },
+      { title: "AI-written speeches are taking over politics", url: "/curated/2026-09-23-economist-discorsi-scritti-ai-politica/", _source: "curated" }
     ]
   },
   {
@@ -2796,7 +2801,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q145", "https://it.wikipedia.org/wiki/Regno_Unito"],
     note: "Nel sito è il contesto della 77 Brigade e della sovrapposizione fra information warfare militare e giornalismo di difesa, resa visibile dalla nomina di un suo ex comandante a defence editor dell'Economist.",
     articles: [
-      { title: "Alex Turner appointed as Defence Editor of The Economist", url: "/curated/2026-06-19-economist-defence-editor-turner/", _source: "curated" }
+      { title: "Alex Turner appointed as Defence Editor of The Economist", url: "/curated/2026-06-19-economist-defence-editor-turner/", _source: "curated" },
+      { title: "AI-written speeches are taking over politics", url: "/curated/2026-09-23-economist-discorsi-scritti-ai-politica/", _source: "curated" }
     ]
   },
   {
@@ -3670,6 +3676,35 @@ module.exports = [
       { title: "以贡献为导向深化高校分类评价改革", url: "/curated/2026-03-24-xia-valutazione-differenziata-universita-cina/", _source: "curated" },
       { title: "Does AI stop children from learning?", url: "/curated/2026-08-18-economist-ai-learning-penalty-children/", _source: "curated" },
       { title: "La Chine et les États-Unis peuvent-ils s'accorder sur la sécurité de l'IA ?", url: "/curated/2026-09-25-grandcontinent-sicurezza-ai-cina-stati-uniti/", _source: "curated" }
+    ]
+  },
+  {
+    name: "segnale costoso",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Stati Uniti", "Israele"] },
+    related: [
+      { name: "capitale semantico", why: "Il costo della scrittura era anche il modo in cui il capitale semantico si accumulava: chi lo aggira ottiene il testo e non l'accumulo." },
+      { name: "legge di Goodhart", why: "Un segnale il cui costo crolla diventa un bersaglio raggiungibile da chiunque: è il momento in cui la misura smette di misurare." },
+      { name: "scrittura", why: "La fatica di scrivere è in larga parte la fatica di pensare: il costo non era un attrito da eliminare, era il processo." }
+    ],
+    note: "Nella teoria dei segnali — Michael Spence (1973) per i mercati, Amotz Zahavi (1975) per la biologia — un segnale è credibile quando produrlo costa, e costa di più a chi mente che a chi dice il vero: il costo non certifica il contenuto, certifica che qualcuno ha ritenuto valesse la pena sostenerlo. Nel sito è il concetto che spiega che cosa si rompe quando l'AI entra nella scrittura. Un testo umano richiede più tempo a scriversi che a leggersi, e quell'asimmetria era una garanzia di sforzo — non di qualità, il mondo è pieno di prosa pessima, ma di intenzione. Azzerato il costo di produzione, il segnale smette di discriminare, e la fiducia che vi si appoggiava deve trovare un'altra base: è la ragione per cui la dichiarazione esplicita dell'intervento non è un vezzo di trasparenza ma il sostituto funzionale di un costo che non c'è più. Il corollario vale oltre la scrittura: ogni volta che una tecnologia abbatte il costo di emettere un segnale, le istituzioni che su quel segnale poggiavano vanno ricostruite, non difese.",
+    articles: [
+      { title: "AI-written speeches are taking over politics", url: "/curated/2026-09-23-economist-discorsi-scritti-ai-politica/", _source: "curated" },
+      { title: "Don't let AI kill the author", url: "/curated/2026-09-24-economist-dont-let-ai-kill-the-author/", _source: "curated" }
+    ]
+  },
+  {
+    name: "morte dell'autore",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Francia"] },
+    related: [
+      { name: "segnale costoso", why: "Barthes toglieva l'autore come garante del senso; l'AI lo toglie come produttore del testo, e solo la seconda azzera il costo del segnale." },
+      { name: "canone", why: "Un canone è un elenco di autori: se l'autore non garantisce più il senso, cade anche il criterio con cui si sceglie chi entra." },
+      { name: "poststrutturalismo", why: "Il saggio del 1967 è il punto in cui la teoria del segno diventa una pratica della lettura." }
+    ],
+    note: "Tesi di Roland Barthes (1967) per cui l'unità di un testo non sta nella sua origine ma nella sua destinazione: attribuirne il senso all'intenzione dell'autore è una scorciatoia critica, e la figura dell'autore come garante del significato è storica e recente, non necessaria. Nel sito la voce esiste per una ragione che Barthes non poteva prevedere: la tesi viene oggi invocata, di solito da chi non l'ha letta, come se autorizzasse l'indifferenza verso chi ha materialmente prodotto un testo. La distinzione che tiene in piedi tutto il resto è questa — Barthes toglieva l'autore come garante del senso, lasciando intatto il fatto che qualcuno avesse scritto; la scrittura artificiale toglie l'autore come produttore del testo, lasciando intatta la pretesa che quel testo significhi qualcosa per qualcuno. Sono due operazioni diverse che condividono uno slogan, e confonderle è l'errore più frequente del dibattito corrente. Il controcanto empirico è che i lettori non hanno mai accettato la prima: continuano a voler sapere che a scrivere sia stata una persona, e la comprensione di una poesia poggia sulla promessa che sia significata a qualcuno.",
+    articles: [
+      { title: "Don't let AI kill the author", url: "/curated/2026-09-24-economist-dont-let-ai-kill-the-author/", _source: "curated" }
     ]
   }
 
