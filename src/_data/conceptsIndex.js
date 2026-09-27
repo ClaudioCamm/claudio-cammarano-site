@@ -277,7 +277,8 @@ module.exports = [
     note: "CEO e cofondatore di Anthropic (1983). Nel sito è la figura centrale dell'articolo sul rifiuto di un contratto con il Pentagono: ha usato lo scenario planning per valutare i rischi a lungo termine dell'AI militarizzata, scegliendo di dire no a Pete Hegseth. Incarna la tensione tra sviluppo AI e responsabilità strategica.",
     articles: [
       { title: "Quando Dario Amodei ha detto no al Pentagono", url: "/writings/2026-03-09-quando-dario-amodei-ha-detto-no-al-pentagono/" },
-      { title: "When AI builds itself", url: "/curated/2026-06-19-anthropic-recursive-self-improvement/", _source: "curated" }
+      { title: "When AI builds itself", url: "/curated/2026-06-19-anthropic-recursive-self-improvement/", _source: "curated" },
+      { title: "Intelligenza artificiale e rischio estinzione, che cosa pensano (davvero) gli scienziati?", url: "/curated/2026-09-26-signorelli-rischio-estinzione-scienziati-backdoor/", _source: "curated" }
     ]
   },
   {
@@ -770,7 +771,8 @@ module.exports = [
       { title: "The second sage", url: "/curated/2016-10-31-vannorden-mengzi-aeon/", _source: "curated" },
       { title: "La Chine et les États-Unis peuvent-ils s'accorder sur la sécurité de l'IA ?", url: "/curated/2026-09-25-grandcontinent-sicurezza-ai-cina-stati-uniti/", _source: "curated" },
       { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" },
-      { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-criti-hype-hugging-face-lawfare/", _source: "curated" }
+      { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-criti-hype-hugging-face-lawfare/", _source: "curated" },
+      { title: "Intelligenza artificiale e rischio estinzione, che cosa pensano (davvero) gli scienziati?", url: "/curated/2026-09-26-signorelli-rischio-estinzione-scienziati-backdoor/", _source: "curated" }
     ]
   },
   {
@@ -2260,7 +2262,8 @@ module.exports = [
       { title: "To Land a Job in AI, Try Reading Kant", url: "/curated/2026-06-12-wired-philosophers-ai-jobs/", _source: "curated" },
       { title: "When AI builds itself", url: "/curated/2026-06-19-anthropic-recursive-self-improvement/", _source: "curated" },
       { title: "Why Big AI Labs Are Hiring So Many Philosophers", url: "/curated/2026-06-24-economist-ai-labs-philosophers/", _source: "curated" },
-      { title: "Claude Code for writers", url: "/curated/2026-01-15-newton-claude-code-writers-platformer/", _source: "curated" }
+      { title: "Claude Code for writers", url: "/curated/2026-01-15-newton-claude-code-writers-platformer/", _source: "curated" },
+      { title: "Intelligenza artificiale e rischio estinzione, che cosa pensano (davvero) gli scienziati?", url: "/curated/2026-09-26-signorelli-rischio-estinzione-scienziati-backdoor/", _source: "curated" }
     ]
   },
   {
@@ -3343,7 +3346,8 @@ module.exports = [
     note: "Imprenditore e investitore americano (1971), fondatore o co-fondatore di Tesla, SpaceX, X (ex Twitter), xAI. Nel sito è studiato come caso limite del paradigma tecnocratico: straordinaria capacità di hackerare i contesti in cui si muove — trovare leve regolatorie, politiche, finanziarie e portare risultati concreti — associata a una cecità strutturale verso qualsiasi big picture che non sia preconfezionata (accelerazionismo, doomsday AI, abbondanza universale). Framework che hanno in comune la struttura del mito tecnico, non dell'analisi. La sua figura pone una domanda aperta sul rapporto tra salute psichica, performance e potere nell'ecosistema tech.",
     articles: [
       { title: "An interview with Elon Musk", url: "/curated/2026-07-24-musk-economist-interview-beddoes/", _source: "curated" },
-      { title: "Naomi Klein: 'Extreme wealth has a deranging effect. It turns you into a supremacist'", url: "/curated/2026-09-18-klein-end-times-fascism-guardian/", _source: "curated" }
+      { title: "Naomi Klein: 'Extreme wealth has a deranging effect. It turns you into a supremacist'", url: "/curated/2026-09-18-klein-end-times-fascism-guardian/", _source: "curated" },
+      { title: "Intelligenza artificiale e rischio estinzione, che cosa pensano (davvero) gli scienziati?", url: "/curated/2026-09-26-signorelli-rischio-estinzione-scienziati-backdoor/", _source: "curated" }
     ]
   },
   {
@@ -3579,7 +3583,8 @@ module.exports = [
     note: "Termine coniato dallo storico della tecnologia Lee Vinsel (2021) per la critica che si nutre dell'hype e insieme lo alimenta: denunciare una tecnologia come pericolosa richiede prima accreditarla come potente, e l'accreditamento è la parte che resta. Nella formulazione originale il bersaglio erano i critici; nel dibattito sull'AI il meccanismo si è rovesciato, e sono i produttori a trarre vantaggio dal descrivere i propri sistemi come difficili da controllare — un annuncio di rischio che funziona come dimostrazione di capacità. Nel sito è lo strumento che permette di leggere insieme due posizioni apparentemente opposte, l'allarme dei laboratori e la deflazione industriale di Jensen Huang, riconoscendo che entrambe trattano la potenza del sistema come un fatto acquisito e discutono solo su chi debba risponderne. Il corollario metodologico è che una dichiarazione di pericolo non è mai una prova neutrale della sua entità: va pesata sapendo chi la emette e cosa ci guadagna, senza che questo la falsifichi. Su questo innesto l'archivio registra un'ipotesi più forte, senza sottoscriverla perché mancano gli elementi per deciderla: che il criti-hype dei laboratori non sia una scelta di comunicazione ma una necessità imposta dalla struttura finanziaria a monte. Il circolo costruito attorno a Nvidia — partecipazioni nei clienti, garanzie sui ricavi, compute trattato come classe di attivo — fissa aspettative di fatturato che nessun laboratorio è in grado di onorare con i prodotti che ha; dichiarare i modelli troppo potenti e pericolosi per essere distribuiti senza cautele sarebbe allora il modo di vendere al contrario una performance che non si può dimostrare, rinviando la verifica a data da destinarsi. L'esito previsto dall'ipotesi è una perdita di credibilità collettiva quando la verifica arriva, e riguarderebbe anche chi ha dichiarato il rischio in buona fede. Nessuna delle fonti in archivio la formula per intero: Storm si ferma alla catena finanziaria, Klonick e Seymour al meccanismo retorico. Il ponte fra le due metà resta da argomentare. L'ipotesi ha poi una terza faccia, registrata alla voce cattura regolatoria: lo stesso allarme che vende il prodotto rende ragionevole il regime di autorizzazione che tiene fuori chi non può pagarne il costo fisso. Le tre facce non si escludono — vendere potenza, giustificare il capitale investito, alzare la soglia d'ingresso sono lo stesso enunciato letto da tre mercati diversi. Tenerle insieme richiede un'argomentazione che una scheda di archivio non può portare: la questione resta registrata come aperta, e la sintesi è rinviata a un saggio.",
     articles: [
       { title: "The U.S. Is Betting the Economy on 'Scaling' AI: Where Is the Intelligence When One Needs It?", url: "/curated/2025-12-08-storm-scaling-ai-bolla-inet/", _source: "curated" },
-      { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-criti-hype-hugging-face-lawfare/", _source: "curated" }
+      { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-criti-hype-hugging-face-lawfare/", _source: "curated" },
+      { title: "Intelligenza artificiale e rischio estinzione, che cosa pensano (davvero) gli scienziati?", url: "/curated/2026-09-26-signorelli-rischio-estinzione-scienziati-backdoor/", _source: "curated" }
     ]
   },
   {
