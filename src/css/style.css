@@ -676,6 +676,21 @@ a.article-tag:hover {
   font-weight: 600;
 }
 
+/* Qualificatore della fonte accanto al badge del criterio: stessa geometria,
+   colore attenuato. Il criterio dice perche' il pezzo e' in archivio, questo
+   dice come va letta la scheda. Vedi _data/lingueFonte.json. */
+.lingua-badge {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-text-light);
+  border: 1px solid currentColor;
+  padding: 1px 8px;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
 .criterio-perche {
   font-size: 13px;
   color: var(--color-text-light);

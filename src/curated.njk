@@ -26,7 +26,7 @@ description: "Link curati su media, marketing e content industries — selezione
         {% endif %}
     </div>
     <h2><a href="{{ item.url }}">{{ item.data.title }}</a></h2>
-    {% set criterioSlug = item.data.criterio %}{% set criterioPerche = item.data.perche %}{% include "components/criterio-badge.njk" %}
+    {% set criterioSlug = item.data.criterio %}{% set criterioPerche = item.data.perche %}{% set linguaFonte = item.data.lingua_fonte %}{% include "components/criterio-badge.njk" %}
     {% if item.data.description %}
     <p class="curated-preview">{{ item.data.description | mdInline | safe }}</p>
     <p class="curated-continua"><a href="{{ item.url }}">Continua a leggere →</a></p>

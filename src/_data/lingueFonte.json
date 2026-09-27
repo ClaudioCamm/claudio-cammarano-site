@@ -1,0 +1,32 @@
+{
+  "cinese": {
+    "label": "Resoconto dal cinese"
+  },
+  "coreano": {
+    "label": "Resoconto dal coreano"
+  },
+  "giapponese": {
+    "label": "Resoconto dal giapponese"
+  },
+  "vietnamita": {
+    "label": "Resoconto dal vietnamita"
+  },
+  "russo": {
+    "label": "Resoconto dal russo"
+  },
+  "turco": {
+    "label": "Resoconto dal turco"
+  },
+  "persiano": {
+    "label": "Resoconto dal persiano"
+  },
+  "hindi": {
+    "label": "Resoconto dall'hindi"
+  },
+  "arabo": {
+    "label": "Resoconto dall'arabo"
+  },
+  "ebraico": {
+    "label": "Resoconto dall'ebraico"
+  }
+}

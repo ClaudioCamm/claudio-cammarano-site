@@ -1185,7 +1185,8 @@ module.exports = [
     note: "Distinzione di Acemoglu e Robinson (Why Nations Fail, 2012): le istituzioni inclusive distribuiscono potere politico ed economico e generano prosperità; quelle estrattive lo concentrano nelle mani di pochi e generano stagnazione. Nel sito è il quadro per leggere le traiettorie di lungo periodo dei paesi analizzati nella serie «Ombre».",
     articles: [
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
-      { title: "Naomi Klein: 'Extreme wealth has a deranging effect. It turns you into a supremacist'", url: "/curated/2026-09-18-klein-end-times-fascism-guardian/", _source: "curated" }
+      { title: "Naomi Klein: 'Extreme wealth has a deranging effect. It turns you into a supremacist'", url: "/curated/2026-09-18-klein-end-times-fascism-guardian/", _source: "curated" },
+      { title: "以贡献为导向深化高校分类评价改革", url: "/curated/2026-03-24-xia-valutazione-differenziata-universita-cina/", _source: "curated" }
     ]
   },
   {
@@ -1503,7 +1504,8 @@ module.exports = [
     articles: [
       { title: "A Defense of a Liberal Arts Education in the Age of A.I.", url: "/curated/2026-05-21-frey-liberal-arts-ai-nyt/", _source: "curated" },
       { title: "Why Are Humanists So Bad at Defending the Humanities?", url: "/curated/2026-06-15-pinillos-humanists-humanities-chronicle/", _source: "curated" },
-      { title: "Western philosophy is racist", url: "/curated/2017-10-31-vannorden-canone-filosofico-aeon/", _source: "curated" }
+      { title: "Western philosophy is racist", url: "/curated/2017-10-31-vannorden-canone-filosofico-aeon/", _source: "curated" },
+      { title: "以贡献为导向深化高校分类评价改革", url: "/curated/2026-03-24-xia-valutazione-differenziata-universita-cina/", _source: "curated" }
     ]
   },
   {
@@ -2744,7 +2746,8 @@ module.exports = [
       { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" },
       { title: "The End of the Foundation Model Era: Open-Weight Models, Sovereign AI, and Inference as Infrastructure", url: "/curated/2026-03-09-grogan-pesi-aperti-sovranita-ai/", _source: "curated" },
       { title: "Why open-weight models are crucial for American AI leadership", url: "/curated/2026-08-10-villasenor-pesi-aperti-leadership-brookings/", _source: "curated" },
-      { title: "Open Weights, Closed Ranks: The AI Manifesto War", url: "/curated/2026-08-12-zuniga-pesi-aperti-manifesti-icle/", _source: "curated" }
+      { title: "Open Weights, Closed Ranks: The AI Manifesto War", url: "/curated/2026-08-12-zuniga-pesi-aperti-manifesti-icle/", _source: "curated" },
+      { title: "以贡献为导向深化高校分类评价改革", url: "/curated/2026-03-24-xia-valutazione-differenziata-universita-cina/", _source: "curated" }
     ]
   },
   {
@@ -3643,6 +3646,22 @@ module.exports = [
     articles: [
       { title: "Il rumore a Beirut", url: "/writings/2026-04-09-il-rumore-a-beirut/" },
       { title: "Che cosa sono le ambasciate dei dati", url: "/curated/2026-09-27-crescenzi-ambasciate-dati-guerredirete/", _source: "curated" }
+    ]
+  },
+  {
+    name: "legge di Goodhart",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Regno Unito"] },
+    related: [
+      { name: "capitale semantico", why: "Quando l'indicatore diventa l'obiettivo si ottimizza l'output e si salta il processo: il capitale semantico è ciò che il salto non costruisce." },
+      { name: "monitorabilità", why: "Un modello che sa di essere osservato ottimizza la misura invece del comportamento: Goodhart applicato a un sistema che se ne può accorgere." },
+      { name: "università", why: "Il ranking unico è il caso in cui la misura ha riscritto l'istituzione che avrebbe dovuto descrivere." }
+    ],
+    note: "Formulata da Charles Goodhart (1975) a proposito degli aggregati monetari e resa nella forma oggi corrente da Marilyn Strathern (1997): quando una misura diventa un obiettivo, cessa di essere una buona misura. Il meccanismo non richiede malafede — basta che qualcuno sia valutato su un indicatore perché cominci a ottimizzare l'indicatore invece della cosa che l'indicatore doveva rappresentare, e da quel momento i due si separano. Nel sito non è una curiosità di teoria della misurazione ma lo schema ricorrente che l'archivio ha isolato in domini diversi prima di dargli un nome: i voti dei compiti che salgono mentre gli esami peggiorano, e smettono quindi di predirli; gli incidenti segnalati che scendono senza che si sappia nulla degli incidenti; la valutazione differenziata degli atenei cinesi che rischia di produrre una nuova gerarchia proprio perché è agganciata al finanziamento. La variante che interessa di più è quella in cui il misurato può accorgersi di essere misurato: lì l'ottimizzazione dell'indicatore diventa strategica e il divario fra segnale e sostanza smette di essere un effetto collaterale. Il corollario pratico è che un sistema di valutazione va giudicato non dalla bontà degli indicatori ma dal legame fra chi misura e chi paga: dove quel legame è assente o distribuito fra più mani, la legge morde meno.",
+    articles: [
+      { title: "以贡献为导向深化高校分类评价改革", url: "/curated/2026-03-24-xia-valutazione-differenziata-universita-cina/", _source: "curated" },
+      { title: "Does AI stop children from learning?", url: "/curated/2026-08-18-economist-ai-learning-penalty-children/", _source: "curated" },
+      { title: "La Chine et les États-Unis peuvent-ils s'accorder sur la sécurité de l'IA ?", url: "/curated/2026-09-25-grandcontinent-sicurezza-ai-cina-stati-uniti/", _source: "curated" }
     ]
   }
 

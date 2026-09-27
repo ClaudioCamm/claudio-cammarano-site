@@ -1,11 +1,14 @@
 {#
-  Badge del criterio + glossa per le schede curated.
-  Uso: impostare criterioSlug (e opzionalmente criterioPerche) prima dell'include.
-  Fallback totale: se lo slug manca o non è nella lista _data/criteri.json,
-  non renderizza nulla — la scheda resta identica a prima.
+  Badge del criterio e della lingua della fonte, piu' la glossa, per le schede curated.
+  Uso: impostare criterioSlug (e opzionalmente criterioPerche, linguaFonte) prima dell'include.
+  Fallback totale: se gli slug mancano o non sono nelle liste _data/criteri.json e
+  _data/lingueFonte.json, non renderizzano nulla — la scheda resta identica a prima.
 #}
-{% if criterioSlug and criteri[criterioSlug] %}
-<p class="curated-criterio"><span class="criterio-badge">{{ criteri[criterioSlug].label }}</span>{% if criterioPerche %} <span class="criterio-perche">{{ criterioPerche | mdInline | safe }}</span>{% endif %}</p>
+{% set haCriterio = criterioSlug and criteri[criterioSlug] %}
+{% set haLingua = linguaFonte and lingueFonte[linguaFonte] %}
+{% if haCriterio or haLingua %}
+<p class="curated-criterio">{% if haCriterio %}<span class="criterio-badge">{{ criteri[criterioSlug].label }}</span>{% endif %}{% if haLingua %} <span class="lingua-badge">{{ lingueFonte[linguaFonte].label }}</span>{% endif %}{% if criterioPerche %} <span class="criterio-perche">{{ criterioPerche | mdInline | safe }}</span>{% endif %}</p>
 {% endif %}
 {% set criterioSlug = null %}
 {% set criterioPerche = null %}
+{% set linguaFonte = null %}

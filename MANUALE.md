@@ -305,6 +305,29 @@ Dal luglio 2026 ogni curated dichiara **perché entra in archivio**, con un badg
 
 `concepts`: lista di nomi dalla tassonomia concetti (sezione 5). Usa `[]` se nessuno si applica. **I nomi sono case-sensitive** e devono coincidere esattamente con un `name` in `conceptsIndex.js` — altrimenti vengono scartati (vedi sezione 5 per il controllo automatico).
 
+### Fonti in lingue non accessibili — il campo `lingua_fonte`
+
+Quando la fonte è in una lingua che il lettore italiano non può presumibilmente leggere — cinese, coreano, vietnamita, giapponese, russo, arabo — il link da solo non serve: rimanda a una pagina che resta chiusa. In quel caso la scheda cambia genere, e lo dichiara.
+
+Due cose insieme:
+
+1. **La descrizione diventa un resoconto esteso.** Non un riassunto e non una traduzione: l'argomento dell'originale ricostruito per intero in italiano, con citazioni brevi, tradotte e attribuite. La lunghezza è proporzionata all'inaccessibilità della fonte, non all'importanza del pezzo.
+2. **La prima riga della descrizione lo dichiara in chiaro**: che l'originale è in quella lingua, se esista o no una versione inglese, e che quello che segue è un resoconto e non una traduzione.
+
+Non si pubblica la traduzione integrale di un articolo altrui. È un'opera derivata e i diritti sono di chi l'ha pubblicato; il resoconto assolve la stessa funzione per il lettore senza appropriarsi del testo.
+
+Sul piano tecnico basta il campo facoltativo:
+
+```yaml
+lingua_fonte: cinese
+```
+
+La lista chiusa vive in `src/_data/lingueFonte.json`, con l'etichetta già scritta per esteso (`"arabo": "Resoconto dall'arabo"`) così le elisioni non si gestiscono a runtime. Il template rende un badge accanto a quello del criterio — `RESOCONTO DAL CINESE` — stessa geometria, colore attenuato: il criterio dice *perché* il pezzo è in archivio, questo dice *come* va letta la scheda. Una lingua fuori lista non rende il badge e non rompe la build.
+
+Il badge però è presentazione, e non sopravvive al feed, al JSON-LD e a `llms-full`: per questo la dichiarazione in prima riga non è ridondante, sta su un altro livello.
+
+Una nota sulla notazione: le citazioni tradotte entrano nella superficie pubblicata, quindi va aggiunto `ai_scope: [TR]`.
+
 ### I `tags` dei curated ora contano come Argomenti — ma solo se sono "riconosciuti"
 
 I tag liberi che scrivi in `tags:` (oltre a `curated`) vengono **tradotti** in un Argomento vero — visibile in `/indice/`, `/temi/` e con una pagina `/tag/...` propria — tramite la mappa in **`src/_data/curatedTagAliases.js`**. Funziona così:
@@ -514,6 +537,14 @@ Questo file è la **fonte di verità** per l'indice analitico, le pagine `/conce
 | `paese` | Europa · Stati Uniti · Cina · Russia · Giappone |
 
 **Ogni nome di stato/nazione è `paese`, non `luogo`** — anche quando nel linguaggio comune lo chiameremmo "un luogo" (es. Giappone, Germania, Iran). `luogo` è riservato a città, regioni, snodi geografici specifici che non sono uno stato (Bologna, Beirut, Taiwan come territorio conteso). I due tipi finiscono in sezioni diverse dell'indice analitico ("Paesi" e "Luoghi"): se un nome non si trova dove lo cerchi, controlla prima l'altra sezione.
+
+### La nota di una voce `persona` — chiudere con il criterio d'uso della fonte
+
+Le note di tipo `persona` chiudono con una frase che non descrive la persona ma dice **come il sito usa quella fonte**: dove è affidabile, dove non lo è, che cosa va tenuto presente leggendola. Non è un giudizio morale ed è il contrario di una stroncatura — serve ad archiviare figure di cui il sito si serve senza sottoscriverle.
+
+Qualche esempio già in archivio: Sorkin è diagnostico sul presente e non predittivo; Huang è probabilmente il più competente della stanza sulla descrizione ingegneristica, ma quella competenza non si trasferisce alle conclusioni istituzionali che ne ricava; Van Norden va letto tenendo distinta la ricostruzione storica dalla tesi militante.
+
+La frase sta in coda al campo `note`, non in un campo proprio. Se non c'è nulla da avvertire si omette: non è un modulo da riempire.
 
 ### Aggancio all'entità reale — il campo `sameAs`
 

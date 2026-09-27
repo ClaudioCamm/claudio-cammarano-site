@@ -70,6 +70,7 @@ In buona parte sono coniazioni tue, acronimi, o formulazioni italiane che su Wik
 - cosmotecnica
 - dati come beni comuni
 - criti-hype
+- legge di Goodhart
 - delega epistemica
 - democrazia di guerra
 - dilemma del prigioniero iterato
