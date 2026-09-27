@@ -3764,6 +3764,7 @@ module.exports = [
   {
     name: "Comte, Auguste",
     type: "persona",
+    sameAs: ["https://www.wikidata.org/wiki/Q12718"],
     geo: { modo: "diretta", paesi: ["Francia"] },
     note: "Filosofo francese (1798–1857), fondatore del positivismo e della sociologia. Nel sito è l'inventore dell'Occidente: la *République occidentale* progettata negli anni Quaranta dell'Ottocento è la prima formulazione del termine come progetto politico, e la legge dei tre stadi — teologico, metafisico, positivo — è l'impianto che fa dell'Occidente un'avanguardia dell'umanità e non una regione. Ciò che complica il ritratto è che l'inventore dell'Occidente non era un imperialista: chiese il ritiro francese dall'Algeria e quello britannico da India, Gibilterra e Caraibi, e volle i paesi della sua repubblica spezzati in polities grandi come la Toscana. Scrisse allo zar Nicola che la Russia, proprio per la sua arretratezza, poteva saltare lo stadio parlamentare ed entrare direttamente nei ranghi finiti dell'Umanità — una generosità che i suoi discepoli inglesi rovesciarono in esclusione. Si usa come origine documentata del concetto, non come autorità sul contenuto: la scala di progresso che sostiene tutto l'impianto è precisamente ciò che il sito considera da smontare.",
     articles: [
@@ -3782,6 +3783,7 @@ module.exports = [
   {
     name: "Huntington, Samuel",
     type: "persona",
+    sameAs: ["https://www.wikidata.org/wiki/Q19074"],
     geo: { modo: "diretta", paesi: ["Stati Uniti"] },
     related: [
       { name: "idea di Occidente", why: "Chiede all'Occidente di accettare i propri limiti civilizzazionali: la versione restrittiva del termine, oggi maggioritaria a destra." },
@@ -3795,6 +3797,7 @@ module.exports = [
   {
     name: "gharbzadegi",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q3104781"],
     geo: { modo: "teorico", paesi: ["Iran"] },
     related: [
       { name: "idea di Occidente", why: "È la reazione speculare: il termine occidentale classifica, l'occidentossicazione diagnostica il contagio di chi è stato classificato." },

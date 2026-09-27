@@ -1,11 +1,11 @@
 # Wikidata — voci da rivedere
 
-Allineate: **229 su 290**. Restano **61** voci senza `sameAs`.
+Allineate: **232 su 290**. Restano **58** voci senza `sameAs`.
 
 Regola applicata: aggancio accettato solo con corrispondenza esatta di label o alias **e** tipo (P31) compatibile, poi verifica a mano contro la nota della voce. Un Q-id sbagliato e' peggio di nessun Q-id.
 
 
-## A — candidato trovato e scartato (17)
+## A — candidato trovato e scartato (19)
 
 Qui Wikidata ha qualcosa con quel nome esatto, ma non e' la tua voce. Servono i tuoi occhi.
 
@@ -27,6 +27,8 @@ Qui Wikidata ha qualcosa con quel nome esatto, ma non e' la tua voce. Servono i 
 - **La condition postmoderne** *(testo)* — Q131715313 e' privo di descrizione, probabilmente un'edizione. L'opera ha un item diverso, da scegliere a mano.
 - **The Embodied Mind** *(testo)* — Quattro match, tutti edizioni prive di descrizione.
 - **The End of History and the Last Man** *(testo)* — Q1340341 e' il concetto 'fine della storia', non il libro; Q60412221 e' l'edizione 1992. Scegli tu quale dei due e' la tua voce.
+- **Meaney, Thomas** *(persona)* — L'unico match esatto e' Q7792360, un politico irlandese. Il direttore di Granta non ha un item.
+- **idea di Occidente** *(teoria)* — Q160381 *Western world* e' l'insieme dei paesi di cultura originariamente europea, cioe' una regione culturale, non la storia del termine. Errore di categoria, stesso caso di morte dell'autore. Scartato.
 
 
 ## B — nessuna corrispondenza esatta (75)
@@ -135,13 +137,3 @@ Per aggiungerne una: apri `src/_data/conceptsIndex.js`, trova la voce e inserisc
 ```
 
 Il build la propaga da solo: nessun'altra modifica serve.
-
-## C — voci nuove, ricerca non ancora lanciata (5)
-
-Entrate con la scheda LRB del 24 settembre 2026. Termini da cercare:
-
-- **idea di Occidente** *(teoria)* — cercare `Western world`. Attenzione all'errore di categoria: se l'elemento descrive la regione o la civiltà e non la storia del termine, si scarta (precedente Barthes).
-- **Comte, Auguste** *(persona)* — cercare `Auguste Comte`.
-- **Meaney, Thomas** *(persona)* — cercare `Thomas Meaney`.
-- **Huntington, Samuel** *(persona)* — cercare `Samuel P. Huntington`.
-- **gharbzadegi** *(teoria)* — cercare `Westoxification`, in subordine `Gharbzadegi`.
