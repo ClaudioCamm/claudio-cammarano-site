@@ -3681,13 +3681,14 @@ module.exports = [
   {
     name: "segnale costoso",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q249240"],
     geo: { modo: "teorico", paesi: ["Stati Uniti", "Israele"] },
     related: [
       { name: "capitale semantico", why: "Il costo della scrittura era anche il modo in cui il capitale semantico si accumulava: chi lo aggira ottiene il testo e non l'accumulo." },
       { name: "legge di Goodhart", why: "Un segnale il cui costo crolla diventa un bersaglio raggiungibile da chiunque: è il momento in cui la misura smette di misurare." },
       { name: "scrittura", why: "La fatica di scrivere è in larga parte la fatica di pensare: il costo non era un attrito da eliminare, era il processo." }
     ],
-    note: "Nella teoria dei segnali — Michael Spence (1973) per i mercati, Amotz Zahavi (1975) per la biologia — un segnale è credibile quando produrlo costa, e costa di più a chi mente che a chi dice il vero: il costo non certifica il contenuto, certifica che qualcuno ha ritenuto valesse la pena sostenerlo. Nel sito è il concetto che spiega che cosa si rompe quando l'AI entra nella scrittura. Un testo umano richiede più tempo a scriversi che a leggersi, e quell'asimmetria era una garanzia di sforzo — non di qualità, il mondo è pieno di prosa pessima, ma di intenzione. Azzerato il costo di produzione, il segnale smette di discriminare, e la fiducia che vi si appoggiava deve trovare un'altra base: è la ragione per cui la dichiarazione esplicita dell'intervento non è un vezzo di trasparenza ma il sostituto funzionale di un costo che non c'è più. Il corollario vale oltre la scrittura: ogni volta che una tecnologia abbatte il costo di emettere un segnale, le istituzioni che su quel segnale poggiavano vanno ricostruite, non difese.",
+    note: "Nella teoria dei segnali — Michael Spence (1973) per i mercati, Amotz Zahavi (1975) per la biologia, con il principio dell'handicap — un segnale è credibile quando produrlo costa, e costa di più a chi mente che a chi dice il vero: il costo non certifica il contenuto, certifica che qualcuno ha ritenuto valesse la pena sostenerlo. Nel sito è il concetto che spiega che cosa si rompe quando l'AI entra nella scrittura. Un testo umano richiede più tempo a scriversi che a leggersi, e quell'asimmetria era una garanzia di sforzo — non di qualità, il mondo è pieno di prosa pessima, ma di intenzione. Azzerato il costo di produzione, il segnale smette di discriminare, e la fiducia che vi si appoggiava deve trovare un'altra base: è la ragione per cui la dichiarazione esplicita dell'intervento non è un vezzo di trasparenza ma il sostituto funzionale di un costo che non c'è più. Il corollario vale oltre la scrittura: ogni volta che una tecnologia abbatte il costo di emettere un segnale, le istituzioni che su quel segnale poggiavano vanno ricostruite, non difese.",
     articles: [
       { title: "AI-written speeches are taking over politics", url: "/curated/2026-09-23-economist-discorsi-scritti-ai-politica/", _source: "curated" },
       { title: "Don't let AI kill the author", url: "/curated/2026-09-24-economist-dont-let-ai-kill-the-author/", _source: "curated" }

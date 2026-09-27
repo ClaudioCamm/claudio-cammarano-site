@@ -1,6 +1,6 @@
 # Wikidata — voci da rivedere
 
-Allineate: **227 su 284**. Restano **57** voci senza `sameAs`.
+Allineate: **228 su 284**. Restano **56** voci senza `sameAs`.
 
 Regola applicata: aggancio accettato solo con corrispondenza esatta di label o alias **e** tipo (P31) compatibile, poi verifica a mano contro la nota della voce. Un Q-id sbagliato e' peggio di nessun Q-id.
 
@@ -106,7 +106,6 @@ In buona parte sono coniazioni tue, acronimi, o formulazioni italiane che su Wik
 - polarizzazione cognitiva
 - post-cognition
 - ragione comunicativa
-- segnale costoso
 - sfiducia sistemica
 - shadow of the future
 - successione aziendale
