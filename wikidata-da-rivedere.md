@@ -1,6 +1,6 @@
 # Wikidata — voci da rivedere
 
-Allineate: **228 su 284**. Restano **56** voci senza `sameAs`.
+Allineate: **229 su 285**. Restano **56** voci senza `sameAs`.
 
 Regola applicata: aggancio accettato solo con corrispondenza esatta di label o alias **e** tipo (P31) compatibile, poi verifica a mano contro la nota della voce. Un Q-id sbagliato e' peggio di nessun Q-id.
 
@@ -108,7 +108,6 @@ In buona parte sono coniazioni tue, acronimi, o formulazioni italiane che su Wik
 - ragione comunicativa
 - sfiducia sistemica
 - shadow of the future
-- splinternet
 - successione aziendale
 - tassonomia D1–D7
 - trasferimenti monetari diretti

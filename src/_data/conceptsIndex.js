@@ -3723,6 +3723,7 @@ module.exports = [
   {
     name: "splinternet",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q7578586"],
     geo: { modo: "nessuna", paesi: [] },
     related: [
       { name: "sovranità cognitiva", why: "La sovranità cognitiva è la posta; lo splinternet è il modo in cui si gioca — cavi, protocolli, controlli all'esportazione." },
