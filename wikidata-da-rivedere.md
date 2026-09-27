@@ -1,11 +1,11 @@
 # Wikidata — voci da rivedere
 
-Allineate: **232 su 295**. Restano **63** voci senza `sameAs`.
+Allineate: **236 su 295**. Restano **59** voci senza `sameAs`.
 
 Regola applicata: aggancio accettato solo con corrispondenza esatta di label o alias **e** tipo (P31) compatibile, poi verifica a mano contro la nota della voce. Un Q-id sbagliato e' peggio di nessun Q-id.
 
 
-## A — candidato trovato e scartato (19)
+## A — candidato trovato e scartato (20)
 
 Qui Wikidata ha qualcosa con quel nome esatto, ma non e' la tua voce. Servono i tuoi occhi.
 
@@ -29,6 +29,7 @@ Qui Wikidata ha qualcosa con quel nome esatto, ma non e' la tua voce. Servono i 
 - **The End of History and the Last Man** *(testo)* — Q1340341 e' il concetto 'fine della storia', non il libro; Q60412221 e' l'edizione 1992. Scegli tu quale dei due e' la tua voce.
 - **Meaney, Thomas** *(persona)* — L'unico match esatto e' Q7792360, un politico irlandese. Il direttore di Granta non ha un item.
 - **idea di Occidente** *(teoria)* — Q160381 *Western world* e' l'insieme dei paesi di cultura originariamente europea, cioe' una regione culturale, non la storia del termine. Errore di categoria, stesso caso di morte dell'autore. Scartato.
+- **divario di efficienza dei dati** *(teoria)* — Q5227281 *Data efficiency* e' privo di descrizione e quindi non verificabile, e in ogni caso l'efficienza dei dati in generale non e' il divario fra bambino e modello. Scartato per entrambe le ragioni.
 
 
 ## B — nessuna corrispondenza esatta (75)
@@ -137,13 +138,3 @@ Per aggiungerne una: apri `src/_data/conceptsIndex.js`, trova la voce e inserisc
 ```
 
 Il build la propaga da solo: nessun'altra modifica serve.
-
-## C — voci nuove, ricerca non ancora lanciata (5)
-
-Entrate con la scheda MIT Technology Review del 24 agosto 2026. Termini da cercare:
-
-- **Chomsky, Noam** *(persona)* — cercare `Noam Chomsky`.
-- **Gopnik, Alison** *(persona)* — cercare `Alison Gopnik`.
-- **povertà dello stimolo** *(teoria)* — cercare `poverty of the stimulus`.
-- **BabyLM** *(istituzione)* — cercare `BabyLM`. Probabile assenza: e' una competizione accademica recente.
-- **divario di efficienza dei dati** *(teoria)* — cercare `data efficiency`. Attenzione: se il match e' un concetto generico di efficienza computazionale, e' errore di categoria e si scarta.

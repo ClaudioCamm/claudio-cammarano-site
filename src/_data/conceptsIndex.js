@@ -3830,6 +3830,7 @@ module.exports = [
   {
     name: "povertà dello stimolo",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q1780470"],
     geo: { modo: "teorico", paesi: ["Stati Uniti"] },
     note: "L'argomento con cui Noam Chomsky, negli anni Cinquanta, risponde al comportamentismo di Skinner: la sintassi è troppo complessa e l'esposizione linguistica del bambino troppo povera perché la grammatica possa essere appresa dalla sola statistica, quindi una parte della conoscenza dev'essere innata. Su questa premessa si costruiscono la grammatica generativa e, di rimbalzo, decenni di AI simbolica che prova a scrivere le regole a mano e fallisce, fino all'inverno dell'AI degli anni Settanta. Nel sito la voce serve per il rovesciamento, che è più interessante dell'argomento: i modelli linguistici hanno imparato la sintassi esattamente nel modo dichiarato impossibile, e Alison Gopnik lo ha ammesso pubblicamente. Ma l'hanno fatto a un costo che nessun bambino paga, e quel costo è la misura di quanto lo stimolo fosse davvero povero. L'argomento è stato aggirato empiricamente e confermato di sbieco nello stesso movimento.",
     articles: [
@@ -3839,6 +3840,7 @@ module.exports = [
   {
     name: "Chomsky, Noam",
     type: "persona",
+    sameAs: ["https://www.wikidata.org/wiki/Q9049"],
     geo: { modo: "diretta", paesi: ["Stati Uniti"] },
     note: "Linguista e filosofo americano (1928), fondatore della grammatica generativa. Nel sito entra per la povertà dello stimolo, l'argomento con cui negli anni Cinquanta risponde a Skinner e che ha strutturato mezzo secolo di linguistica e, di riflesso, l'AI simbolica. La sua posizione sui modelli linguistici è di rifiuto netto — macchine che, per lui, non spiegano nulla del linguaggio umano — e il sito non la adotta né la liquida: la tratta come la formulazione più rigorosa disponibile di una domanda che i modelli hanno aggirato senza risolvere. Si usa come autorità sulla domanda, non sulla risposta.",
     articles: [
@@ -3848,6 +3850,7 @@ module.exports = [
   {
     name: "Gopnik, Alison",
     type: "persona",
+    sameAs: ["https://www.wikidata.org/wiki/Q2647225"],
     geo: { modo: "diretta", paesi: ["Stati Uniti"] },
     related: [
       { name: "divario di efficienza dei dati", why: "L'ingrediente mancante non è la scala: i bambini scelgono i propri dati e cercano l'effetto sul mondo." },
@@ -3861,6 +3864,7 @@ module.exports = [
   {
     name: "BabyLM",
     type: "istituzione",
+    sameAs: ["https://www.wikidata.org/wiki/Q141203819"],
     geo: { modo: "diretta", paesi: ["Stati Uniti"] },
     note: "Competizione annuale fondata nel 2022 da Alex Warstadt e Leshem Choshen: addestrare modelli linguistici su un corpus «plausibile dal punto di vista dello sviluppo» — cento milioni di parole, dieci milioni nel binario neonatale — tratto da libri illustrati, dialoghi, sottotitoli, Simple English Wikipedia e trascrizioni di parlato rivolto ai bambini, e valutarli con i test che gli psicolinguisti usano sugli esseri umani. Nel sito è il caso di un programma di ricerca che vale soprattutto per ciò che ha smontato: il curriculum learning, partire dal semplice e salire, non ha funzionato come ci si aspettava; i modelli che imparano interagendo con altri modelli non hanno battuto gli standard; e il campione 2024, GPT-BERT, non è ispirato ai neonati affatto. Il risultato più citato — cento milioni di parole che superano Llama 2 70B su un benchmark — va tenuto insieme al suo limite, cioè che molti modelli-bambino non sanno produrre testo. La geografia è quella prevalente degli organizzatori e non l'unica: partecipano gruppi europei, e uno degli architetti di GPT-BERT lavora a Oslo.",
     articles: [
