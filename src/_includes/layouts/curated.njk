@@ -48,6 +48,8 @@ layout: layouts/base.njk
     {% if rinvio %}{% set rinvioPost = collections.all | findByUrl(rinvio) %}
     <p class="curated-rinvio">In dialogo con → <a href="{{ rinvio }}">{% if rinvioPost %}{{ rinvioPost.data.title }}{% else %}{{ rinvio }}{% endif %}</a></p>
     {% endif %}
+    {% set citatoIn = collections.writings | soloCatene | citatoIn(page.inputPath) %}
+    {% if citatoIn.length %}<p class="curated-citato-in"><span class="curated-citato-in-label">Citato in</span>{% for c in citatoIn %}{% if not loop.first %} · {% endif %}<a href="{{ c.url }}">Catena · {{ c.data.title }}</a>{% endfor %}</p>{% endif %}
     <p class="curated-original-link"><a href="{{ external_url }}" target="_blank" rel="noopener noreferrer"><strong>Leggi l'originale{% if source %} su {{ source }}{% endif %} ↗</strong></a></p>
   </header>
 

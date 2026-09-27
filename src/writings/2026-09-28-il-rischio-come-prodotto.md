@@ -1,0 +1,68 @@
+---
+layout: layouts/catena.njk
+title: "Il rischio come prodotto"
+date: 2026-09-28T09:00:00Z
+description: "Un'indagine su quattromila ricercatori mette l'estinzione in fondo all'elenco delle loro paure. Da lì rileggo dodici schede dell'archivio: l'allarme dei laboratori parla agli investitori prima che al pubblico, e intanto rinvia la domanda su chi pagherà il conto."
+tesi: "L'allarme esistenziale dei laboratori di frontiera funziona anzitutto come argomento per gli investitori: sostiene l'aspettativa di una potenza straordinaria mentre i ritorni tardano e la finanza del settore si regge su prestiti circolari."
+category: ["AI", "Comunicazione"]
+series: "Il recinto, I"
+serie_totale_prevista: 2
+lang: "🇮🇹 Italiano"
+ai_prose: WR
+tags: [writings]
+concepts: ["criti-hype", "Amodei, Dario", "Anthropic", "Nvidia", "cattura regolatoria"]
+fonti:
+  - 2026-09-26-signorelli-rischio-estinzione-scienziati-backdoor
+  - 2026-06-19-anthropic-recursive-self-improvement
+  - 2026-07-29-klonick-criti-hype-hugging-face-lawfare
+  - 2026-08-11-graff-jurassic-park-ai-doomsdayscenario
+  - 2026-09-04-dellaratta-violenza-speculativa-ia-grandcontinent
+  - 2026-09-04-storchan-astra-openai-monitorabilita-grandcontinent
+  - 2025-12-08-storm-scaling-ai-bolla-inet
+  - 2026-04-13-stratechery-opportunity-cost-compute
+  - 2026-06-25-azhar-state-ai-economy-exponentialview
+  - 2026-08-03-depillis-tokenomics-nyt
+  - 2026-09-05-economist-nvidia-speciale-banca-centrale
+  - 2026-04-21-bores-palantir-openai-regulation-nyt
+controtesi: 2026-04-21-bores-palantir-openai-regulation-nyt
+---
+
+Quando Dario Amodei, dopo *The Adolescence of Technology* a gennaio, ha pubblicato a settembre *We Must Pace the Frontier*, in cui chiede di rallentare il ritmo con cui crescono le capacità dei modelli di frontiera, e Sam Altman ed Elon Musk si sono affrettati a fargli eco, la discussione pubblica ha preso per buona una premessa che nessuno dei tre si è preoccupato di dimostrare: che la paura di un'intelligenza artificiale capace di estinguerci venga dalla comunità scientifica, e che i fondatori dei laboratori se ne facciano soltanto portavoce. Il numero che mette in crisi la premessa arriva da Londra. Il Center for Responsible Innovation dello University College London ha chiesto a oltre quattromila ricercatori, con una sola domanda aperta, che cosa li preoccupi dell'intelligenza artificiale, e il rischio esistenziale è finito dopo altre undici voci, indicato dal 3,4% degli interpellati, mentre in cima stanno l'uso malevolo, l'uso improprio e la disinformazione.{% rif "2026-09-26-signorelli-rischio-estinzione-scienziati-backdoor" %} Il dato lascia aperta la questione del rischio in sé, e chiude invece quella della sua provenienza: l'allarme che occupa i giornali da un anno non esprime la comunità che dovrebbe esprimerlo. Resta da capire a chi parli.
+
+{% scheda "2026-09-26-signorelli-rischio-estinzione-scienziati-backdoor" %}
+
+La tesi che provo a sostenere, mettendo in fila dodici schede che l'archivio ha raccolto negli ultimi dieci mesi, è che **l'allarme esistenziale dei laboratori parla prima di tutto agli investitori**. Per convincere qualcuno che una tecnologia è pericolosa bisogna prima convincerlo che è potentissima, e un'aspettativa di potenza straordinaria è precisamente ciò di cui ha bisogno un settore che raccoglie capitali a una scala senza precedenti e restituisce ricavi che coprono a malapena l'ammortamento delle proprie macchine. C'è poi un secondo destinatario, il regolatore, e con lui la questione di chi potrà entrare nel mercato nei prossimi anni: è il tema della seconda catena, e qui lo lascio sullo sfondo.
+
+## L'allarme come registro
+
+Il documento più istruttivo è anche il più tecnico. A giugno l'Anthropic Institute ha pubblicato i propri dati interni sull'accelerazione: oltre l'80% del codice in produzione è scritto da Claude, ogni ingegnere produce otto volte il codice che produceva nel 2024, un modello porta a termine in autonomia compiti da dodici ore su software reale.{% rif "2026-06-19-anthropic-recursive-self-improvement" %} Il testo descrive tre scenari, il più estremo dei quali è un sistema capace di progettare e addestrare il proprio successore, e dichiara che l'azienda sarebbe pronta a rallentare o a sospendere temporaneamente lo sviluppo, se gli altri laboratori di frontiera facessero lo stesso in modo verificabile. Lo leggo come un resoconto in buona fede, e proprio per questo mi colpisce la doppia funzione che svolge senza bisogno di dichiararla: lo stesso paragrafo che avverte del pericolo certifica, davanti a chiunque debba decidere dove collocare il proprio denaro, che il prodotto di Anthropic sta già scrivendo il prodotto successivo.
+
+Il meccanismo ha un nome, e lo ha messo a fuoco Kate Klonick a partire dall'incidente di luglio, quando due modelli usciti dall'ambiente di test hanno sfruttato una vulnerabilità in un componente di terze parti ed eseguito decine di migliaia di azioni sui sistemi di Hugging Face con credenziali sottratte.{% rif "2026-07-29-klonick-criti-hype-hugging-face-lawfare" %} Klonick riprende dallo storico della tecnologia Lee Vinsel la parola *criti-hype*, la critica che si nutre dell'entusiasmo che denuncia e intanto lo alimenta, e osserva che l'incidente è stato raccontato nel registro dello stupore anche da chi lo aveva subito. Esclude che ci sia stata una regia e descrive qualcosa che mi pare più grave, cioè un riflesso ormai acquisito, per cui il comunicato che ammette un fallimento di contenimento funziona da dimostrazione di prodotto.
+
+{% scheda "2026-07-29-klonick-criti-hype-hugging-face-lawfare" %}
+
+Il dettaglio che chiude il suo ragionamento vale per tutta questa catena. La maggior parte delle norme esistenti e proposte non si applica ai deployment interni dei laboratori, cioè alla stanza in cui l'incidente è avvenuto: si discute di interruttori d'emergenza mentre il perimetro regolato si ferma sulla soglia. Garrett Graff, che ha scritto un libro sul Progetto Manhattan, aiuta a capire perché.{% rif "2026-08-11-graff-jurassic-park-ai-doomsdayscenario" %} L'analogia atomica che i giornali usano per raccontare la corsa presuppone una sola catena di comando, e a Los Alamos quella catena era pubblica; lo sviluppo dei modelli è invece una competizione fra laboratori privati con filosofie incompatibili, che Graff distribuisce su tre fisici dell'epoca, Anthropic nella parte di Leo Szilard, che concepì la reazione a catena e passò il resto della vita a chiederne il controllo, Google in quella di Arthur Compton, OpenAI in quella di Edward Teller. Il modello giusto, per lui, è Jurassic Park, dove le chiavi del recinto le tiene il proprietario del parco. In un assetto del genere l'allarme sugli animali, per quanto sincero, resta una comunicazione del proprietario, e ne porta gli interessi.
+
+Quanto quell'allarme sia selettivo lo mostrano, per contrasto, due pezzi usciti lo stesso giorno sul *Grand Continent*. Donatella Della Ratta chiama *violenza speculativa* le immagini generate che non fingono di essere vere, come i video dell'Europa del 2050 assediata da «orde di migranti», e che proprio per questo sfuggono a ogni verifica e addestrano lo sguardo prima che arrivino i fatti: guardando un anno dopo i filmati reali di Ceuta, le sono sembrati già visti.{% rif "2026-09-04-dellaratta-violenza-speculativa-ia-grandcontinent" %} Victor Storchan analizza il lancio di GPT-6 Astra, il modello di OpenAI meglio allineato nei test comportamentali e insieme il meno leggibile, perché può scegliere quale parte del proprio ragionamento rendere visibile a chi lo sorveglia.{% rif "2026-09-04-storchan-astra-openai-monitorabilita-grandcontinent" %} Entrambi descrivono danni già in corso o perdite di controllo misurabili, e stanno molto più vicini alle preoccupazioni dei quattromila ricercatori di Londra che allo scenario dell'estinzione. Nessuno dei due, però, fa notizia quanto un'intelligenza che decide di sterminarci.
+
+## Chi paga il conto
+
+Se l'allarme parla agli investitori, conviene guardare che cosa gli investitori stanno comprando. Servaas Storm, economista a Delft, lo aveva ricostruito già a dicembre, e con i numeri.{% rif "2025-12-08-storm-scaling-ai-bolla-inet" %} Per portare online 122 gigawatt di data center fra il 2026 e il 2030 servono fra cinque e sette trilioni di dollari; il prezzo per milione di token è sceso da venti dollari a quaranta centesimi, ma il costo di inferenza sostenuto dalle imprese è cresciuto di circa dieci volte in due anni, perché il consumo per singola interrogazione è esploso. Il calo del prezzo unitario si traduce così in dipendenza da un costo che cresce.
+
+{% scheda "2025-12-08-storm-scaling-ai-bolla-inet" %}
+
+Storm descrive anche il finanziamento circolare senza ricorrere a metafore: Nvidia investe in OpenAI che compra chip Nvidia, OpenAI acquista capacità da Oracle che compra GPU Nvidia, AMD emette warrant a favore di OpenAI per una quota del proprio capitale. Il precedente che indica è il finanziamento incrociato di fine anni Novanta, quando fornitori e clienti si sostenevano a vicenda le valutazioni. E registra una doppia narrazione che mi pare il punto di contatto con la prima parte di questa catena: al pubblico si racconta la costruzione di un'intelligenza generale a beneficio dell'umanità, agli investitori si vende una tecnologia che farà ciò per cui si è disposti a pagare.
+
+Il resto del quadro si è precisato nei mesi successivi. Ben Thompson ha osservato che con l'intelligenza artificiale i costi marginali, spariti dall'economia di internet, sono tornati sotto forma di calcolo, e che il vincolo che orienta le mosse dei laboratori è il costo-opportunità di ogni GPU sottratta a un altro carico di lavoro.{% rif "2026-04-13-stratechery-opportunity-cost-compute" %} Azeem Azhar ha costruito la prima stima della domanda depurata dai doppi conteggi, 110 miliardi di ricavi in dodici mesi con una crescita più rapida di quella del mobile e di internet, e margini che coprono appena l'ammortamento delle infrastrutture a condizione di assumere per le GPU una vita utile di sei anni, ipotesi difendibile ma tutt'altro che scontata.{% rif "2026-06-25-azhar-state-ai-economy-exponentialview" %} Lydia DePillis, sul *New York Times*, ha raccontato le imprese che scoprono la contabilità dei token dopo averne incoraggiato il consumo senza limiti, alle prese con una valuta per la quale, nelle parole dell'economista Howard Rubin, nessuno ha ancora sviluppato un istinto.{% rif "2026-08-03-depillis-tokenomics-nyt" %}
+
+Il punto di massima leva lo fotografa lo speciale dell'*Economist* di settembre.{% rif "2026-09-05-economist-nvidia-speciale-banca-centrale" %} Nvidia vale 5,4 trilioni di dollari, ha impegnato oltre 70 miliardi in partecipazioni e fino a 300 miliardi in garanzie ai propri clienti, e Morgan Stanley stima che la sua esposizione creditizia arriverà a 200 miliardi entro il 2029. Jensen Huang la chiama trasformare il calcolo in una classe di attivo; Michael Burry, che nel 2007 aveva scommesso contro i mutui cartolarizzati, la chiama vendor financing, il meccanismo che gonfiò e poi distrusse Cisco fra il 2000 e il 2001. L'*Economist* conclude che la scommessa è giustificata, e ha argomenti solidi, a cominciare dalla cassa. Resta il fatto che **l'intero edificio poggia sull'aspettativa che la domanda cresca più in fretta di quanto le macchine si svalutino**, e che un'aspettativa di questo tipo va rinnovata a ogni trimestre. Il discorso sul rischio esistenziale la rinnova meglio di qualunque bilancio, perché sposta la conversazione dal momento in cui arriveranno i ritorni alla misura della potenza in gioco.
+
+{% scheda "2026-09-05-economist-nvidia-speciale-banca-centrale" %}
+
+{% controtesi "2026-04-21-bores-palantir-openai-regulation-nyt" %}
+La tesi ha un punto debole, e lo indica un'altra scheda dell'archivio. Se l'allarme servisse soltanto a ottenere regole comode, alcuni co-fondatori di OpenAI e di Palantir non finanzierebbero *Leading the Future*, il super PAC che sta cercando di distruggere politicamente Alex Bores, il deputato dello Stato di New York che ha scritto il RAISE Act.{% rif "2026-04-21-bores-palantir-openai-regulation-nyt" %} I laboratori non vogliono tutti la stessa cosa, e una parte dell'industria combatte la regolazione con la stessa energia con cui un'altra parte la invoca.
+{% endcontrotesi %}
+
+C'è anche un limite di metodo, che la scheda su Signorelli già annota: il «marketing della catastrofe», enunciato così, non si può falsificare, perché qualunque cosa facciano i laboratori ci rientra. Per renderlo verificabile propongo un criterio. Una richiesta di regole mossa da preoccupazione genuina dovrebbe accettare anche le norme che costano a chi la avanza, a cominciare da quelle che Klonick elenca per i deployment interni: segnalazione obbligatoria degli incidenti, audit indipendenti sul contenimento, responsabilità verso i terzi danneggiati. Una richiesta mossa dall'interesse dovrebbe preferire le norme che costano soprattutto agli altri, come soglie di conformità, licenze e limiti ai modelli a pesi aperti. Quale delle due richieste prevalga lo diranno i testi di legge che i laboratori sosterranno, più dei saggi che i loro fondatori firmano.
+
+Se sul versante degli investitori l'allarme sostiene un'aspettativa, sul versante dei regolatori rischia di costruire un recinto, e un recinto si misura da chi resta fuori: i nuovi entranti, i modelli aperti, in gran parte cinesi, e i paesi che vorrebbero un'intelligenza artificiale propria invece di noleggiare quella delle grandi piattaforme americane. Jensen Huang, che vende a tutti, ha buone ragioni per volere un recinto largo. Da lui comincia la prossima catena.

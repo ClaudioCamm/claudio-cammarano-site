@@ -6,6 +6,8 @@ const curatedTagAliases = require("./src/_data/curatedTagAliases.js");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setLibrary("md", md);
+  // Formato "Catena": shortcode, filtri e rimandi (vedi lib/catene.js)
+  require("./lib/catene.js")(eleventyConfig, md, conceptsIndexData);
 
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/images");
@@ -918,6 +920,8 @@ module.exports = function(eleventyConfig) {
 
     walkCollection(collectionApi.getFilteredByGlob("src/curated/*.md"), "curated");
     walkCollection(collectionApi.getFilteredByGlob("src/learning/*.md"), "learning");
+    // Le Catene dichiarano i concetti in frontmatter come i curated
+    walkCollection(collectionApi.getFilteredByGlob("src/writings/*.md").filter(function(i) { return i.data.layout === "layouts/catena.njk"; }), "writings");
 
     if (missing.length > 0) {
       console.warn("\n⚠️  CONCETTI NON REGISTRATI (ignorati nell'indice/grafo) — aggiungili a src/_data/conceptsIndex.js:");
@@ -1387,6 +1391,9 @@ module.exports = function(eleventyConfig) {
     let text = content.replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '');
     text = text.replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '');
     text = text.replace(/<figure[^>]*>[\s\S]*?<\/figure>/gi, '');
+    // Catene: via i numeri di rimando e le schede incastonate (lib/catene.js)
+    text = text.replace(/<sup class="catena-rif">[\s\S]*?<\/sup>/gi, '');
+    text = text.replace(/<aside class="catena-[\s\S]*?<\/aside>/gi, '');
     // Preserve heading text as its own line before stripping HTML
     text = text.replace(/<\/h[1-6]>/gi, '\n');
     text = text.replace(/<[^>]*>/g, ' ');

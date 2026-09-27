@@ -31,9 +31,10 @@ permalink: "/serie/"
   {% for serieName in collections.seriesList %}
     {% set seriePosts = collections.writings | filterBySeries(serieName) %}
     {% set serieDesc = seriesDescriptions[serieName] %}
-    <article class="serie-listing-item">
+    {% set serieComp = seriePosts | serieComposizione %}
+    <article class="serie-listing-item serie-listing-item--{{ serieComp.tipo }}">
       <div class="serie-listing-meta">
-        <span class="serie-listing-count">{{ seriePosts.length }} {% if seriePosts.length == 1 %}articolo{% else %}articoli{% endif %}</span>
+        <span class="serie-listing-count">{{ serieComp.label }}</span>
         {% if seriePosts[0].data.serie_totale_prevista %}
         <span class="serie-listing-total">di {{ seriePosts[0].data.serie_totale_prevista }} previsti</span>
         {% endif %}

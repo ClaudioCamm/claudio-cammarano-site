@@ -39,11 +39,12 @@ eleventyComputed:
 }
 </script>
 
-<div class="tag-page">
+<div class="tag-page tag-page--serie-{{ (seriePosts | serieComposizione).tipo }}">
   <header class="tag-page-header">
     <p class="tag-page-label">Serie</p>
     <h1 class="tag-page-title">{{ serie }}</h1>
-    <p class="tag-page-count">{{ seriePosts.length }} {% if seriePosts.length == 1 %}articolo{% else %}articoli{% endif %}</p>
+    {% set serieComp = seriePosts | serieComposizione %}
+    <p class="tag-page-count">{{ serieComp.label }}</p>
     {% if seriesDescriptions[serie] %}
     <p class="tag-page-intro">{{ seriesDescriptions[serie] }}</p>
     {% endif %}
@@ -51,7 +52,8 @@ eleventyComputed:
 
   <div class="tag-page-posts">
     {% for post in seriePosts %}
-    <article class="article-card article-card--secondary">
+    <article class="article-card article-card--secondary{% if post.data.layout == "layouts/catena.njk" %} is-catena{% endif %}">
+      {% if post.data.layout == "layouts/catena.njk" %}<span class="catena-badge">Catena</span>{% endif %}
       <div class="article-series-card-label"><a href="/serie/{{ post.data.series | seriesBaseName | slugify }}/">{{ post.data.series }}</a></div>
       <div class="article-meta">
         <span class="article-date">{{ post.date | formatDate }}</span>

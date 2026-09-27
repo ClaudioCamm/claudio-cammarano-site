@@ -242,6 +242,8 @@ try {
 {% endif %}
 
 {% set pertinentCurated = collections.curated | relatedCurated(page.url, category, collections.mergedConceptsIndex, content) %}
+{# Catene: la colonna propone letture pertinenti diverse dalle fonti gia' nel testo #}
+{% if fonti %}{% set pertinentCurated = pertinentCurated | escludiUrl(fonti | catenaUrlFonti) %}{% endif %}
 {% if pertinentCurated.length %}
 <aside class="curated-rail" data-pagefind-ignore aria-label="Letture pertinenti dai curated">
   <div class="curated-rail-head">

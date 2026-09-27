@@ -1,0 +1,387 @@
+
+/* =====================================================================
+   CATENE — writing che lega curated gia' pubblicati attorno a una tesi.
+   Accento: il bordeaux di Irene Media, terzo colore del sito accanto al
+   blu dei saggi e al verde del Lab. Le schede usano il
+   filetto superiore, non il bordo sinistro dei writings.
+   ===================================================================== */
+:root {
+  --color-catena: var(--color-irene); /* bordeaux di Irene Media */
+  --color-catena-tint: rgba(128, 0, 32, 0.06);
+  /* Superfici piene a testo bianco: fisse anche in dark mode (contrasto) */
+  --color-catena-fill: #800020;
+  --color-catena-fill-hover: #66001A;
+  --color-catena-on-blue: #D46A82;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-catena: #D46A82; /* bordeaux schiarito: leggibile sul fondo scuro */
+    --color-catena-tint: rgba(212, 106, 130, 0.10);
+  }
+}
+
+/* Etichetta sopra il titolo: il nome della serie diventa "Catena · …" */
+body.catena .article-series::before {
+  content: "Catena · ";
+  color: var(--color-catena);
+  font-weight: 600;
+}
+
+.catena-num {
+  color: var(--color-catena);
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Striscia cronologica in testa al corpo */
+.catena-striscia {
+  margin: 0 0 var(--spacing-lg);
+  padding: var(--spacing-sm) 0 var(--spacing-md);
+  border-top: 1px solid var(--color-text);
+  border-bottom: 1px solid var(--color-border);
+  font-family: var(--font-sans);
+}
+.catena-striscia-head {
+  margin: 0 0 var(--spacing-sm);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--color-text-hint);
+}
+.catena-kicker {
+  color: var(--color-catena);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+.catena-striscia-lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(92px, 1fr));
+  gap: 12px 8px;
+}
+.catena-striscia-lista a {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 13px;
+  line-height: 1.3;
+}
+.catena-striscia-lista .catena-num {
+  width: 28px;
+  height: 28px;
+  border: 1.5px solid var(--color-catena);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+.catena-striscia-lista .is-controtesi .catena-num {
+  border-style: dashed;
+  border-color: var(--color-text-hint);
+  color: var(--color-text-hint);
+}
+.catena-striscia-data {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-hint);
+}
+.catena-striscia-lista a:hover .catena-striscia-fonte { color: var(--color-catena); }
+
+/* Le liste della Catena non ereditano rientri e numerazione del corpo testo */
+.article-body ol.catena-striscia-lista,
+.article-body ol.catena-indice-lista { list-style: none; margin: 0; padding: 0; }
+.article-body ol.catena-striscia-lista > li,
+.article-body ol.catena-indice-lista > li { margin: 0; padding: 0; }
+.article-body ol.catena-striscia-lista > li::before,
+.article-body ol.catena-indice-lista > li::before { content: none; }
+
+/* Rimandi in apice */
+.catena-rif a {
+  color: var(--color-catena);
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 0.68em;
+  text-decoration: none;
+  padding: 0 1px;
+}
+.catena-rif a:hover { text-decoration: underline; }
+
+/* Scheda incastonata */
+.catena-scheda {
+  margin: var(--spacing-md) 0;
+  padding: 20px 24px;
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-top: 3px solid var(--color-catena);
+  font-family: var(--font-sans);
+}
+.catena-scheda p { margin: 0; }
+.catena-scheda-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 12px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-light);
+}
+.catena-scheda-meta .catena-num { font-size: 15px; }
+.catena-scheda-criterio {
+  margin-left: auto;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  padding: 2px 8px;
+  font-size: 11px;
+}
+.catena-scheda-titolo {
+  margin-top: 10px !important;
+  font-family: var(--font-serif);
+  font-size: 22px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+.catena-scheda-titolo a { color: var(--color-text); text-decoration: none; }
+.catena-scheda-titolo a:hover { color: var(--color-catena); }
+.catena-scheda-perche {
+  margin-top: 8px !important;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--color-text-light);
+}
+.catena-scheda-link {
+  margin-top: 12px !important;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+  font-size: 14px;
+}
+.catena-scheda-link a { font-weight: 600; text-decoration: none; }
+.catena-scheda-link .catena-scheda-ext { font-weight: 400; color: var(--color-text-light); }
+
+/* Controtesi */
+.catena-controtesi {
+  margin: var(--spacing-lg) 0 var(--spacing-md);
+  padding: 20px 24px;
+  border: 1.5px dashed var(--color-text-hint);
+}
+.catena-controtesi > p { margin: 0 0 12px; }
+.catena-controtesi-label {
+  font-family: var(--font-sans);
+  font-size: 12px !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+.catena-controtesi-label span {
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  color: var(--color-text-hint);
+  margin-left: 8px;
+}
+.catena-controtesi .catena-rif a { color: var(--color-text-hint); }
+.catena-controtesi .catena-scheda-link { margin: 0 !important; font-family: var(--font-sans); }
+
+/* Nella catena */
+.catena-indice {
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-sm);
+  border-top: 1px solid var(--color-text);
+  font-family: var(--font-sans);
+}
+.catena-indice-titolo {
+  font-family: var(--font-sans) !important;
+  font-size: 12px !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin: 0 0 12px !important;
+  border: 0 !important;
+  padding: 0 !important;
+}
+.catena-indice-lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 32px;
+  font-size: 14px;
+  line-height: 1.45;
+}
+.catena-indice-lista li { display: flex; gap: 10px; margin: 0; scroll-margin-top: 90px; }
+.catena-indice-lista li:target { background: var(--color-catena-tint); }
+.catena-indice-lista .catena-num { width: 20px; flex-shrink: 0; }
+.catena-indice-lista .is-controtesi .catena-num { color: var(--color-text-hint); }
+.catena-indice-fonte { color: var(--color-text-light); }
+.catena-indice-lista a { text-decoration: none; }
+.catena-indice-ct {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-hint);
+}
+.catena-ricorrenti {
+  margin: var(--spacing-md) 0 0;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.catena-ricorrenti-label {
+  display: block;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-hint);
+}
+.catena-ricorrenti a { text-decoration: none; }
+.catena-ricorrenti-n { font-size: 11px; color: var(--color-text-hint); margin: 0 6px 0 2px; }
+
+/* "Citato in" sulle pagine dei curated */
+.curated-citato-in {
+  margin: var(--spacing-sm) 0 0;
+  font-family: var(--font-sans);
+  font-size: 14px;
+}
+.curated-citato-in-label {
+  color: var(--color-catena);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 11px;
+  margin-right: 6px;
+}
+
+/* Home: fascia dell'ultima Catena */
+.home-band--catena .home-catena {
+  border-top: 3px solid var(--color-catena);
+  padding-top: var(--spacing-sm);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+  gap: var(--spacing-md) var(--spacing-lg);
+  align-items: start;
+}
+.home-catena-kicker {
+  margin: 0 0 6px;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-text-hint);
+}
+.home-catena-kicker b { color: var(--color-catena); }
+.home-catena-titolo {
+  margin: 0 0 8px;
+  font-family: var(--font-serif);
+  font-size: 30px;
+  line-height: 1.15;
+}
+.home-catena-titolo a { color: var(--color-text); text-decoration: none; }
+.home-catena-titolo a:hover { color: var(--color-catena); }
+.home-catena-tesi {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--color-text-light);
+}
+.home-catena-fonti {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.4;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px 24px;
+}
+.home-catena-fonti li { display: flex; gap: 8px; margin: 0; }
+.home-catena-fonti .catena-num { width: 18px; flex-shrink: 0; }
+.home-catena-fonti span.home-catena-testata { color: var(--color-text-light); }
+.home-catena-go { margin: 12px 0 0; font-family: var(--font-sans); font-size: 14px; font-weight: 600; }
+.home-catena-go a { text-decoration: none; }
+
+/* Badge "Catena" nelle liste (Writings, home, pagine serie): come i badge
+   di categoria del sito, ma rosso. Le card di una catena usano il rosso
+   dove le altre usano il blu. */
+.catena-badge {
+  display: inline-block;
+  background: var(--color-catena-fill);
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: 10.5px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 4px 7px 3px;
+  border-radius: 2px;
+  margin-bottom: 6px;
+}
+.is-catena .article-series-card-label { color: var(--color-catena); }
+.article-card.is-catena .featured-description { color: var(--color-catena); }
+.is-catena h2 a:hover,
+.is-catena h3 a:hover { color: var(--color-catena); }
+
+/* Pagina della catena: serie e navigazione di serie in rosso */
+body.catena .article-series a { color: var(--color-catena); }
+body.catena .series-nav { border-color: var(--color-catena); }
+body.catena .series-nav-title,
+body.catena .series-nav-label { color: var(--color-catena); }
+
+/* Serie: blu se di soli saggi, rosso se di sole catene, blu con filetto
+   rosso se mista (il conteggio dice quante parti per tipo). */
+.home-serie.home-serie--catene { background: var(--color-catena-fill); }
+.home-serie.home-serie--catene:hover,
+.home-serie.home-serie--catene:focus-visible { background: var(--color-catena-fill-hover); }
+.home-serie.home-serie--mista { box-shadow: inset 0 5px 0 0 var(--color-catena-on-blue); padding-top: 22px; }
+.serie-listing-item--catene { border-left-color: var(--color-catena) !important; }
+.serie-listing-item--catene .serie-listing-title a,
+.serie-listing-item--catene .serie-listing-count { color: var(--color-catena); }
+.serie-listing-item--mista { box-shadow: inset 0 3px 0 0 var(--color-catena); padding-top: 12px; }
+.tag-page--serie-catene .tag-page-label,
+.tag-page--serie-catene .tag-page-title { color: var(--color-catena); }
+
+@media (max-width: 768px) {
+  .catena-striscia-lista {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    gap: 8px;
+    padding-bottom: 4px;
+  }
+  .catena-striscia-lista::-webkit-scrollbar { display: none; }
+  .catena-striscia-lista li { flex: 0 0 auto; }
+  .catena-striscia-lista a {
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--color-border);
+    padding: 8px 12px;
+    min-height: 28px;
+  }
+  .catena-striscia-lista .catena-num {
+    width: auto;
+    height: auto;
+    border: 0;
+    margin: 0;
+    font-size: 13px;
+  }
+  .catena-scheda, .catena-controtesi { padding: 16px; }
+  .catena-scheda-criterio { margin-left: 0; }
+  .catena-scheda-titolo { font-size: 19px; }
+  .catena-scheda-perche { font-size: 16px; }
+  .catena-indice-lista, .home-catena-fonti { grid-template-columns: minmax(0, 1fr); }
+  .home-band--catena .home-catena { grid-template-columns: minmax(0, 1fr); gap: var(--spacing-sm); }
+  .home-catena-titolo { font-size: 26px; }
+}

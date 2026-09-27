@@ -1,0 +1,32 @@
+---
+layout: layouts/article.njk
+bodyClass: catena
+---
+{# Catena: writing che lega curated gia' pubblicati attorno a una tesi.
+   Tutto cio' che segue deriva dal campo `fonti` del pezzo (vedi .eleventy.js,
+   blocco CATENE). La prosa arriva in `content`; le schede nel testo le mettono
+   gli shortcode {% raw %}{% scheda %}, {% rif %}, {% controtesi %}{% endraw %}. #}
+{% set catenaLista = fonti | catenaFonti %}
+<section class="catena-striscia" aria-label="Le fonti della catena in ordine di data">
+  <p class="catena-striscia-head"><span class="catena-kicker">Catena</span> {{ catenaLista.length }} fonti · {{ fonti | catenaPeriodo }} · <span class="catena-striscia-nota">in ordine di data, il numero è l'ordine di lettura</span></p>
+  <ol class="catena-striscia-lista">
+    {% for f in fonti | catenaCrono %}
+    <li{% if f.slug == controtesi %} class="is-controtesi"{% endif %}><a href="#catena-fonte-{{ f.n }}"><span class="catena-num">{{ f.n }}</span><span class="catena-striscia-data">{{ f.dataBreve }}</span><span class="catena-striscia-fonte">{{ f.testata }}</span></a></li>
+    {% endfor %}
+  </ol>
+</section>
+
+{{ content | safe }}
+
+<section class="catena-indice" aria-labelledby="catena-indice-h">
+  <h2 class="catena-indice-titolo" id="catena-indice-h">Nella catena</h2>
+  <ol class="catena-indice-lista">
+    {% for f in catenaLista %}
+    <li id="catena-fonte-{{ f.n }}"{% if f.slug == controtesi %} class="is-controtesi"{% endif %}><span class="catena-num">{{ f.n }}</span><span><span class="catena-indice-fonte">{{ f.source }} — </span><a href="{{ f.url }}">{{ f.title }}</a>{% if f.slug == controtesi %} <span class="catena-indice-ct">controtesi</span>{% endif %}</span></li>
+    {% endfor %}
+  </ol>
+  {% set ricorrenti = fonti | catenaRicorrenti %}
+  {% if ricorrenti.length %}
+  <p class="catena-ricorrenti"><span class="catena-ricorrenti-label">Concetti ricorrenti nelle fonti</span>{% for c in ricorrenti %} <a href="/concetti/{{ c.name | slugify }}/">{{ c.name }}</a><span class="catena-ricorrenti-n">×{{ c.count }}</span>{% endfor %}</p>
+  {% endif %}
+</section>

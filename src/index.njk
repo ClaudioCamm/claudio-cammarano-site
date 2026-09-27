@@ -111,10 +111,11 @@ bodyClass: home
   </div>
   <div class="home-series">
     {% for serie in collections.seriesCards %}
-    <a class="home-serie" href="/serie/{{ serie.name | slugify }}/">
+    {% set serieComp = collections.writings | filterBySeries(serie.name) | serieComposizione %}
+    <a class="home-serie home-serie--{{ serieComp.tipo }}" href="/serie/{{ serie.name | slugify }}/">
       <span class="home-serie-name">{{ serie.name }}</span>
       {% if seriesDescriptions[serie.name] %}<span class="home-serie-desc">{{ seriesDescriptions[serie.name] | firstSentence }}</span>{% endif %}
-      <span class="home-serie-count">{{ serie.count }} {% if serie.count == 1 %}saggio{% else %}saggi{% endif %} &#8594;</span>
+      <span class="home-serie-count">{{ serieComp.label }} &#8594;</span>
     </a>
     {% endfor %}
   </div>
@@ -125,7 +126,12 @@ bodyClass: home
 {# === 2b · ULTIMO SAGGIO (L10, 25/9): torna l'anteprima estesa; senza
        estratto l'ingresso perdeva la ragione per entrare. L'elenco Writings
        sotto parte gia' dal secondo saggio. === #}
-{% set featured = collections.writings[0] %}
+{# Le Catene (layout catena.njk) stanno nel flusso Writings ma non prendono
+   mai il posto dell'ultimo saggio: l'ultima ha una fascia propria, sotto. #}
+{% set writingsSaggi = collections.writings | senzaCatene %}
+{% set featured = writingsSaggi[0] %}
+{% set catenePubblicate = collections.writings | soloCatene %}
+{% set catenaHome = catenePubblicate | catenaInEvidenza %}
 {% if featured %}
 <section class="home-band home-band--featured" aria-label="Ultimo saggio">
   <div class="home-featured">
@@ -155,6 +161,24 @@ bodyClass: home
 </section>
 {% endif %}
 
+{# === 2c · ULTIMA CATENA: rassegna ragionata di curated gia' pubblicati.
+       Fascia propria, piu' bassa dell'ultimo saggio; la catena in fascia
+       non si ripete nella griglia Writings. === #}
+{% if catenaHome %}
+<section class="home-band home-band--catena" aria-label="Ultima catena">
+  <div class="home-catena">
+    <div>
+      <p class="home-catena-kicker"><b>Catena</b>{% if catenaHome.data.series %} · {{ catenaHome.data.series }}{% endif %} · {{ catenaHome.data.fonti.length }} fonti</p>
+      <h2 class="home-catena-titolo"><a href="{{ catenaHome.url }}">{{ catenaHome.data.title }}</a></h2>
+      <p class="home-catena-tesi">{{ (catenaHome.data.tesi or catenaHome.data.description) | mdInline | safe }}</p>
+      <p class="home-catena-go"><a href="{{ catenaHome.url }}">Leggi la catena &#8594;</a></p>
+    </div>
+    <ol class="home-catena-fonti">
+      {% for f in catenaHome.data.fonti | catenaFonti %}<li><span class="catena-num">{{ f.n }}</span><span><span class="home-catena-testata">{{ f.testata }}</span> — <a href="{{ f.url }}">{{ f.title }}</a></span></li>{% endfor %}
+    </ol>
+  </div>
+</section>
+{% endif %}
 {# === 4 · WRITINGS: griglia, estratti troncati, meta allineate in fondo === #}
 <section class="home-band home-band--writings" aria-label="Writings">
   <div class="home-sec-head">
@@ -162,8 +186,10 @@ bodyClass: home
     <a class="home-sec-link" href="/writings/">Tutti &#8594;</a>
   </div>
   <div class="writings-compact">
-    {% for post in collections.writings | limit(7) %}{% if loop.index0 > 0 %}
-    <article class="article-card article-card--compact">
+    {% set homeEsclusi = [featured.url if featured else "", catenaHome.url if catenaHome else ""] %}
+    {% for post in collections.writings | escludiUrl(homeEsclusi) | limit(6) %}{% if post %}
+    <article class="article-card article-card--compact{% if post.data.layout == "layouts/catena.njk" %} is-catena{% endif %}">
+      {% if post.data.layout == "layouts/catena.njk" %}<span class="catena-badge">Catena</span>{% endif %}
       {% if post.data.series %}<div class="article-series-card-label"><a href="/serie/{{ post.data.series | seriesBaseName | slugify }}/">{{ post.data.series }}</a></div>{% endif %}
       <h3 class="article-card-compact-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
       {% if post.data.description %}<p class="article-card-subtitle">{{ post.data.description | mdInline | safe }}</p>{% endif %}
