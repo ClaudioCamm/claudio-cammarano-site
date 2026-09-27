@@ -1,6 +1,6 @@
 # Wikidata — voci da rivedere
 
-Allineate: **224 su 279**. Restano **55** voci senza `sameAs`.
+Allineate: **227 su 282**. Restano **55** voci senza `sameAs`.
 
 Regola applicata: aggancio accettato solo con corrispondenza esatta di label o alias **e** tipo (P31) compatibile, poi verifica a mano contro la nota della voce. Un Q-id sbagliato e' peggio di nessun Q-id.
 
@@ -52,14 +52,10 @@ In buona parte sono coniazioni tue, acronimi, o formulazioni italiane che su Wik
 - Dondi, Ilaria Maria
 - Ottaviani, Jacopo
 
-**paese**
-
-- Estonia
 
 **teoria**
 
 - allineamento AI
-- ambasciata dei dati
 - antifragilità
 - armi autonome
 - atti illocutori
@@ -70,7 +66,6 @@ In buona parte sono coniazioni tue, acronimi, o formulazioni italiane che su Wik
 - cosmotecnica
 - dati come beni comuni
 - criti-hype
-- legge di Goodhart
 - delega epistemica
 - democrazia di guerra
 - dilemma del prigioniero iterato

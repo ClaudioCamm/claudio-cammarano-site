@@ -3630,6 +3630,7 @@ module.exports = [
   {
     name: "ambasciata dei dati",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q104856868"],
     geo: { modo: "diretta", paesi: ["Estonia", "Lussemburgo"] },
     related: [
       { name: "sovranità cognitiva", why: "La risposta giuridica allo stesso problema: quando l'infrastruttura non può stare in casa, si sposta il confine invece del dato." },
@@ -3643,6 +3644,7 @@ module.exports = [
   {
     name: "Estonia",
     type: "paese",
+    sameAs: ["https://www.wikidata.org/wiki/Q191"],
     geo: { modo: "diretta", paesi: ["Estonia"] },
     related: [
       { name: "controllo riflessivo", why: "Gli attacchi del 2007 sono l'origine dell'ambasciata dei dati: la dottrina russa ha prodotto la contromisura che non prevedeva." }
@@ -3656,6 +3658,7 @@ module.exports = [
   {
     name: "legge di Goodhart",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q2575082"],
     geo: { modo: "teorico", paesi: ["Regno Unito"] },
     related: [
       { name: "capitale semantico", why: "Quando l'indicatore diventa l'obiettivo si ottimizza l'output e si salta il processo: il capitale semantico è ciò che il salto non costruisce." },
