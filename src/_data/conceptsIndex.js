@@ -236,7 +236,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q991", "https://it.wikipedia.org/wiki/F%C3%ABdor_Dostoevskij"],
     note: "Scrittore russo (1821–1881). Nel sito è l'emblema del regime dell'apertura: la struttura polifonica dei «Fratelli Karamazov» lascia il lettore con più voci in gioco di quante ne avesse entrando, e questo ha valore perché il mondo contiene un conflitto morale irriducibile. Il caso che obbliga a togliere alla struttura lo statuto di co-requisito del valore.",
     articles: [
-      { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" }
+      { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" },
+      { title: "Ranks of Humanity", url: "/curated/2026-09-24-meaney-varouxakis-idea-occidente-lrb/", _source: "curated" }
     ]
   },
   {
@@ -2302,7 +2303,8 @@ module.exports = [
     articles: [
       { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
       { title: "Why Are Palantir and OpenAI Scared of Alex Bores?", url: "/curated/2026-04-21-bores-palantir-openai-regulation-nyt/", _source: "curated" },
-      { title: "The End of the Future", url: "/curated/2026-06-15-fp-end-of-the-future/", _source: "curated" }
+      { title: "The End of the Future", url: "/curated/2026-06-15-fp-end-of-the-future/", _source: "curated" },
+      { title: "Ranks of Humanity", url: "/curated/2026-09-24-meaney-varouxakis-idea-occidente-lrb/", _source: "curated" }
     ]
   },
   {
@@ -2645,7 +2647,8 @@ module.exports = [
       { title: "Europe Needs to Come Together. This Man Has Some Ideas.", url: "/curated/2026-06-09-nyt-europe-defense-van-middelaar/", _source: "curated" },
       { title: "How a former model from Kyiv blew up Russia's $20bn gas pipeline", url: "/curated/2026-06-15-times-nord-stream-diver/", _source: "curated" },
       { title: "A Splintered Internet? Internet Fragmentation and the Strategies of China, Russia, India and the European Union", url: "/curated/2024-02-01-nocetti-splintered-internet-ifri/", _source: "curated" },
-      { title: "The Great Russian Firewall: the Kremlin's ultimate crackdown on internet freedom", url: "/curated/2025-12-19-osw-great-russian-firewall/", _source: "curated" }
+      { title: "The Great Russian Firewall: the Kremlin's ultimate crackdown on internet freedom", url: "/curated/2025-12-19-osw-great-russian-firewall/", _source: "curated" },
+      { title: "Ranks of Humanity", url: "/curated/2026-09-24-meaney-varouxakis-idea-occidente-lrb/", _source: "curated" }
     ]
   },
   {
@@ -2695,7 +2698,8 @@ module.exports = [
       { title: "The U.S. Is Betting the Economy on 'Scaling' AI: Where Is the Intelligence When One Needs It?", url: "/curated/2025-12-08-storm-scaling-ai-bolla-inet/", _source: "curated" },
       { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-criti-hype-hugging-face-lawfare/", _source: "curated" },
       { title: "Why open-weight models are crucial for American AI leadership", url: "/curated/2026-08-10-villasenor-pesi-aperti-leadership-brookings/", _source: "curated" },
-      { title: "Internet Fragmentation's Outward Turn", url: "/curated/2025-06-01-fidler-splinternet-outward-turn-sciencespo/", _source: "curated" }
+      { title: "Internet Fragmentation's Outward Turn", url: "/curated/2025-06-01-fidler-splinternet-outward-turn-sciencespo/", _source: "curated" },
+      { title: "Ranks of Humanity", url: "/curated/2026-09-24-meaney-varouxakis-idea-occidente-lrb/", _source: "curated" }
     ]
   },
   {
@@ -2800,7 +2804,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q183", "https://it.wikipedia.org/wiki/Germania"],
     note: "Nel sito è il contesto della digitalizzazione degli archivi NSDAP da parte di Der Spiegel e dell'avanzata dell'AfD in diverse regioni: il caso in cui la cultura della memoria storica diventa esplicitamente terreno di scontro politico contemporaneo.",
     articles: [
-      { title: "NSDAP-Archiv: Finden Sie heraus, was Ihre Familie unter Hitler getan hat", url: "/curated/2026-05-07-spiegel-nsdap-archiv/", _source: "curated" }
+      { title: "NSDAP-Archiv: Finden Sie heraus, was Ihre Familie unter Hitler getan hat", url: "/curated/2026-05-07-spiegel-nsdap-archiv/", _source: "curated" },
+      { title: "Ranks of Humanity", url: "/curated/2026-09-24-meaney-varouxakis-idea-occidente-lrb/", _source: "curated" }
     ]
   },
   {
@@ -2928,7 +2933,8 @@ module.exports = [
     articles: [
       { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
       { title: "La colonizzazione del giudizio", url: "/curated/2026-06-12-corriere-colonizzazione-giudizio/", _source: "curated" },
-      { title: "The End of the Future", url: "/curated/2026-06-15-fp-end-of-the-future/", _source: "curated" }
+      { title: "The End of the Future", url: "/curated/2026-06-15-fp-end-of-the-future/", _source: "curated" },
+      { title: "Ranks of Humanity", url: "/curated/2026-09-24-meaney-varouxakis-idea-occidente-lrb/", _source: "curated" }
     ]
   },
   {
@@ -3477,7 +3483,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q77148", "https://it.wikipedia.org/wiki/Carl_Schmitt"],
     note: "Giurista e filosofo politico tedesco (1888–1985), teorico della distinzione amico-nemico come fondamento del politico. Nel sito è il padre nobile dell'ottavo alt-right/MAGA nella mappa a otto famiglie politiche, e la sua coppia concettuale è ciò che permette di tracciare la soglia — non una linea di quadrante ma un confine trasversale — oltre la quale l'avversario smette di essere un concorrente e diventa un nemico da eliminare dal campo.",
     articles: [
-      { title: "La mappa e il crinale", url: "/writings/2026-09-07-la-mappa-e-il-crinale/" }
+      { title: "La mappa e il crinale", url: "/writings/2026-09-07-la-mappa-e-il-crinale/" },
+      { title: "Ranks of Humanity", url: "/curated/2026-09-24-meaney-varouxakis-idea-occidente-lrb/", _source: "curated" }
     ]
   },
   {
@@ -3736,6 +3743,66 @@ module.exports = [
       { title: "Internet Fragmentation's Outward Turn", url: "/curated/2025-06-01-fidler-splinternet-outward-turn-sciencespo/", _source: "curated" },
       { title: "The Great Russian Firewall: the Kremlin's ultimate crackdown on internet freedom", url: "/curated/2025-12-19-osw-great-russian-firewall/", _source: "curated" },
       { title: "Internet Governance in 2026: Sovereignty, Security, and the Limits of Multistakeholderism", url: "/curated/2026-01-04-kulesza-internet-governance-2026-circleid/", _source: "curated" }
+    ]
+  },
+  {
+    name: "idea di Occidente",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Francia", "Regno Unito"] },
+    related: [
+      { name: "Comte, Auguste", why: "Ne è l'inventore: la République occidentale degli anni Quaranta dell'Ottocento è la prima formulazione del termine come progetto politico." },
+      { name: "Russia", why: "L'Occidente si definisce per sottrazione: la Crimea è la scomunica della Russia, e la formula regge fino al «West politico» di Lavrov." },
+      { name: "Dostoevskij, Fëdor", why: "L'antioccidentalismo nasce dentro le società occidentalizzate, non fuori: la Crimea lo radicalizza e ne fa il Cristo umiliato delle nazioni." },
+      { name: "Karp, Alexander", why: "La civiltà evocata per disciplinare una classe imprenditoriale poco nazionalista: Meaney legge così il manifesto di Karp." },
+      { name: "splinternet", why: "La rottura della rete per giurisdizione è l'erede tecnica di una separazione che la Crimea aveva già compiuto in politica." }
+    ],
+    note: "L'Occidente come manufatto politico datato, non come dato geografico. Georgios Varouxakis (*The West: The History of an Idea*, Princeton 2025) ne fissa la nascita negli anni Quaranta dell'Ottocento a Parigi, nella *République occidentale* di Auguste Comte: una parola inventata per risolvere un problema di perimetro, tenere dentro la Gran Bretagna e i coloni europei delle Americhe e tagliare via l'Europa orientale, che «Europa» e «cristianità» non riuscivano a separare. I positivisti inglesi la traducono e la affilano contro la Russia — Richard Congreve, 1866: «L'eliminazione della Russia dal sistema è la prima grande rettifica» — e la guerra di Crimea ne è la scomunica. Nel sito il concetto serve a due cose. La prima è ricordare che il termine è sempre stato anche una graduatoria e non solo una geografia: nel 1853 Francis Lieber cerca un aggettivo per «l'intera porzione caucasica occidentale dell'umanità» e propone *Cis-Caucasian*, con il taglio che passa dentro l'Europa ed esclude slavi e «bianchi retrogradi» del sud e dell'est. La seconda è la categoria che Thomas Meaney ne ricava, ed è la parte esportabile: l'Occidente ha battuto i termini concorrenti perché elide la contraddizione — storicamente e geograficamente circoscritto e insieme eterno e universale, perimetro quando conviene difendersi e orizzonte quando conviene espandersi. Nella stessa forma funzionano il *tianxia* cinese e il civilizzazionismo russo, ed è per questo che il concetto va tenuto comparativo e non identitario.",
+    articles: [
+      { title: "Ranks of Humanity", url: "/curated/2026-09-24-meaney-varouxakis-idea-occidente-lrb/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Comte, Auguste",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Francia"] },
+    note: "Filosofo francese (1798–1857), fondatore del positivismo e della sociologia. Nel sito è l'inventore dell'Occidente: la *République occidentale* progettata negli anni Quaranta dell'Ottocento è la prima formulazione del termine come progetto politico, e la legge dei tre stadi — teologico, metafisico, positivo — è l'impianto che fa dell'Occidente un'avanguardia dell'umanità e non una regione. Ciò che complica il ritratto è che l'inventore dell'Occidente non era un imperialista: chiese il ritiro francese dall'Algeria e quello britannico da India, Gibilterra e Caraibi, e volle i paesi della sua repubblica spezzati in polities grandi come la Toscana. Scrisse allo zar Nicola che la Russia, proprio per la sua arretratezza, poteva saltare lo stadio parlamentare ed entrare direttamente nei ranghi finiti dell'Umanità — una generosità che i suoi discepoli inglesi rovesciarono in esclusione. Si usa come origine documentata del concetto, non come autorità sul contenuto: la scala di progresso che sostiene tutto l'impianto è precisamente ciò che il sito considera da smontare.",
+    articles: [
+      { title: "Ranks of Humanity", url: "/curated/2026-09-24-meaney-varouxakis-idea-occidente-lrb/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Meaney, Thomas",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    note: "Direttore di *Granta*, collaboratore regolare della *London Review of Books*, ha scritto per il *New Yorker* e *Harper's*; premio Robert B. Silvers per il giornalismo nel 2022. Nel sito entra con la recensione al libro di Varouxakis sull'idea di Occidente, ed è utile per il registro più che per la singola tesi: la recensione-saggio lunga, che usa il libro come occasione per un argomento proprio e lo eccede nella chiusa. La tesi che vale la pena portarsi via è sua e non del libro recensito: l'Occidente dura perché elide la contraddizione. Si usa come lettore forte di libri altrui, cioè come fonte di categorie, non come fonte di fatti.",
+    articles: [
+      { title: "Ranks of Humanity", url: "/curated/2026-09-24-meaney-varouxakis-idea-occidente-lrb/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Huntington, Samuel",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "idea di Occidente", why: "Chiede all'Occidente di accettare i propri limiti civilizzazionali: la versione restrittiva del termine, oggi maggioritaria a destra." },
+      { name: "Fukuyama, Francis", why: "Stessa domanda sull'ordine post-guerra fredda, risposte opposte: universalismo liberale contro limiti di civiltà." }
+    ],
+    note: "Politologo americano (1927–2008), autore di *The Clash of Civilizations and the Remaking of World Order* (1996). Nel sito è la controparte restrittiva di Fukuyama: alla fine della guerra fredda rispondono entrambi alla domanda sull'ordine successivo, e le risposte sono opposte — universalismo liberale contro limiti di civiltà. La posizione che conta qui è la richiesta che l'Occidente rinunci alle proprie pretese universali e si accetti come una civiltà fra le altre: impopolare nell'America degli anni Novanta, oggi maggioritaria a destra su entrambe le sponde. La stessa logica gli fece chiedere l'espulsione della Grecia dalla Nato, non abbastanza occidentale, il che mostra dove porta la mappa a civiltà quando la si prende alla lettera. Si usa come posizione da discutere, non come descrizione del mondo: il modello è grossolano, ma è il modello che il discorso politico corrente ha effettivamente adottato.",
+    articles: [
+      { title: "Ranks of Humanity", url: "/curated/2026-09-24-meaney-varouxakis-idea-occidente-lrb/", _source: "curated" }
+    ]
+  },
+  {
+    name: "gharbzadegi",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Iran"] },
+    related: [
+      { name: "idea di Occidente", why: "È la reazione speculare: il termine occidentale classifica, l'occidentossicazione diagnostica il contagio di chi è stato classificato." },
+      { name: "Iran 1978–79", why: "Il termine entrò nel lessico della rivoluzione, ed è l'anello fra critica culturale ed esito politico." }
+    ],
+    note: "«Occidentossicazione»: termine reso celebre da Jalal Al-e-Ahmad nel saggio omonimo (1962) per l'infatuazione dell'Iran verso l'Occidente, descritta come una malattia che intacca la cultura ospite dall'interno. Nel sito è il caso più nitido di un fenomeno generale: l'antioccidentalismo non nasce fuori dall'Occidente ma dentro le società appena occidentalizzate, e la stessa reazione si ripete a distanza in Dostoevskij dopo la Crimea, in Lu Xun in Cina, in Mishima in Giappone, in Oğuz Atay in Turchia. Il termine passò nel lessico della rivoluzione del 1979, il che è anche il suo avvertimento: una diagnosi culturale che descrive l'influenza straniera come contagio ha uno sbocco politico prevedibile.",
+    articles: [
+      { title: "Ranks of Humanity", url: "/curated/2026-09-24-meaney-varouxakis-idea-occidente-lrb/", _source: "curated" }
     ]
   }
 
