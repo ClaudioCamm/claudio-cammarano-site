@@ -1,6 +1,6 @@
 # Wikidata — voci da rivedere
 
-Allineate: **227 su 282**. Restano **55** voci senza `sameAs`.
+Allineate: **227 su 284**. Restano **57** voci senza `sameAs`.
 
 Regola applicata: aggancio accettato solo con corrispondenza esatta di label o alias **e** tipo (P31) compatibile, poi verifica a mano contro la nota della voce. Un Q-id sbagliato e' peggio di nessun Q-id.
 
@@ -19,6 +19,7 @@ Qui Wikidata ha qualcosa con quel nome esatto, ma non e' la tua voce. Servono i 
 - **costruttivismo** *(teoria)* — Q207103 e' il costruttivismo russo in arte e architettura. La tua voce e' la postura epistemologica: va scelta a mano fra social constructionism e constructivism (philosophy of science).
 - **dual use** *(teoria)* — Match esatti su un tipo di operazione elicotteristica e su un articolo scientifico.
 - **epistemia** *(teoria)* — Q138835467 esiste ma senza descrizione ne' tipo: non verificabile.
+- **morte dell'autore** *(teoria)* — Q2166649 e' *The Death of the Author*, il saggio di Barthes del 1967, non la tesi. Stesso caso di extended mind: la voce e' il concetto, l'unico match e' il testo. Scartato.
 - **extended mind** *(teoria)* — L'unico match esatto e' Q1362699, l'articolo di Clark e Chalmers (1998), non la tesi.
 - **general purpose technologies** *(teoria)* — Unico match esatto: un articolo scientifico.
 - **sovranità cognitiva** *(teoria)* — Q141256368 e' un costrutto del 2026 di F. S. Canepa, di significato diverso dal tuo.
@@ -64,8 +65,8 @@ In buona parte sono coniazioni tue, acronimi, o formulazioni italiane che su Wik
 - cigni neri
 - controllo riflessivo
 - cosmotecnica
-- dati come beni comuni
 - criti-hype
+- dati come beni comuni
 - delega epistemica
 - democrazia di guerra
 - dilemma del prigioniero iterato
@@ -105,6 +106,7 @@ In buona parte sono coniazioni tue, acronimi, o formulazioni italiane che su Wik
 - polarizzazione cognitiva
 - post-cognition
 - ragione comunicativa
+- segnale costoso
 - sfiducia sistemica
 - shadow of the future
 - successione aziendale
