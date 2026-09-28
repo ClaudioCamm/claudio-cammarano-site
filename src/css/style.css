@@ -8011,3 +8011,5 @@ a.home-path:hover {
   .catena-voce h3 { font-size: 20px; }
   .catena-voce .t { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 }
+
+.carta-didascalia-metodo { display: block; margin-top: 6px; }

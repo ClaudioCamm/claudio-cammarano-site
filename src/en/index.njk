@@ -183,7 +183,7 @@ bodyClass: home
   <div class="carta">
     <figure class="carta-figura">
       {{ carta.svg | safe }}
-      <figcaption class="carta-didascalia">Goode&rsquo;s interrupted projection: no centre, the sphere cut open.</figcaption>
+      <figcaption class="carta-didascalia">Goode&rsquo;s interrupted projection: no centre, the sphere cut open.<span class="carta-didascalia-metodo">The figure is a weight, not a count of mentions: linked pieces times 1, 0.5 or 0.25 depending on how direct the reference is. Geography is assigned and validated by the author at publication; the map updates with every new piece. <a href="/en/colophon/#map">Method &#8594;</a></span></figcaption>
     </figure>
     <div class="carta-legenda">
       <div class="carta-scala" aria-hidden="true">{% for k in [1,2,3,4,5] %}<span class="carta-c{{ k }}"></span>{% endfor %}</div>
@@ -194,7 +194,6 @@ bodyClass: home
         {% endfor %}
       </ul>
       <p class="carta-nota">EU member states also take the Union&rsquo;s colour.</p>
-      <p class="carta-metodo">The figure is a weight, not a count of mentions: linked pieces times 1, 0.5 or 0.25 depending on how direct the reference is. Geography is assigned and validated by the author at publication; the map updates with every new piece. <a href="/en/colophon/#map">Method &#8594;</a></p>
       {% if carta.altri %}<p class="carta-altri"><a href="/indice/#paesi" hreflang="it">{{ carta.altri }} more countries in the Italian index &#8594;</a></p>{% endif %}
     </div>
   </div>
