@@ -1,0 +1,33 @@
+# Uscite programmate (27/9/2026). Ogni mattina controlla se in src/writings c'è
+# un pezzo datato oggi; se c'è, chiede a Netlify una build, che lo pubblica.
+# I pezzi con data futura restano fuori dalla build (vedi .eleventy.js,
+# "uscite-programmate"). Orario dei pezzi consigliato: T04:00:00Z o dopo di poco
+# ma prima delle 04:30 UTC; il controllo parte alle 04:30 UTC
+# (6:30 in Italia con l'ora legale, 5:30 con l'ora solare).
+# Richiede il secret NETLIFY_BUILD_HOOK (Netlify > Build hooks).
+name: Uscite programmate
+
+on:
+  schedule:
+    - cron: "30 4 * * *"
+  workflow_dispatch:
+
+jobs:
+  uscita:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: C'è un'uscita oggi?
+        id: oggi
+        run: |
+          OGGI=$(date -u +%F)
+          if grep -l -E "^date: ${OGGI}" src/writings/*.md; then
+            echo "esce=1" >> "$GITHUB_OUTPUT"
+          else
+            echo "Nessuna uscita il ${OGGI}."
+          fi
+      - name: Avvia la build su Netlify
+        if: steps.oggi.outputs.esce == '1' || github.event_name == 'workflow_dispatch'
+        env:
+          HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}
+        run: curl -fsS -X POST -d '{}' "$HOOK"

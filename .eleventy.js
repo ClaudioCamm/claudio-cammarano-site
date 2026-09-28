@@ -6,6 +6,18 @@ const curatedTagAliases = require("./src/_data/curatedTagAliases.js");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setLibrary("md", md);
+  // Uscite programmate: in produzione un writing con data futura resta fuori
+  // dalla build e esce da solo con la build automatica del mattino
+  // (.github/workflows/uscite.yml). In locale (npm start) si vede comunque,
+  // per poterlo rivedere. USCITE_OGGI=AAAA-MM-GG simula la build di quel giorno.
+  eleventyConfig.addPreprocessor("uscite-programmate", "md", function(data) {
+    if (process.env.ELEVENTY_RUN_MODE === "serve" && !process.env.USCITE_OGGI) return;
+    if (!data.page || !/\/writings\//.test(data.page.inputPath || "")) return;
+    var d = data.page.date instanceof Date ? data.page.date : new Date(data.date);
+    var adesso = process.env.USCITE_OGGI ? new Date(process.env.USCITE_OGGI + "T23:59:59Z") : new Date();
+    if (d.getTime() > adesso.getTime()) return false;
+  });
+
   // Formato "Catena": shortcode, filtri e rimandi (vedi lib/catene.js)
   require("./lib/catene.js")(eleventyConfig, md, conceptsIndexData);
 
