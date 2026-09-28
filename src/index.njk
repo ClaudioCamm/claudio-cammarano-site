@@ -217,7 +217,7 @@ bodyClass: home
   {% if catenePrecedenti.length %}
   <ol class="home-catene-altre">
     {% for c in catenePrecedenti %}{% if c %}
-    <li><span class="k">{% if c.data.series %}{{ c.data.series }} · {% endif %}{{ c.date | formatDate }}</span><a href="{{ c.url }}">{{ c.data.title }}</a><span class="n">{{ c.data.fonti.length }} fonti</span></li>
+    <li><span class="k">{% if c.data.series %}{{ c.data.series }} · {% endif %}{{ c.date | formatDate }} · {{ c.data.fonti.length }} fonti</span><a href="{{ c.url }}">{{ c.data.title }}</a><span class="t">{{ (c.data.tesi or c.data.description) | firstSentence }}</span></li>
     {% endif %}{% endfor %}
   </ol>
   {% endif %}
