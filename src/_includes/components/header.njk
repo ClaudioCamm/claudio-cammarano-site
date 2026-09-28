@@ -60,14 +60,15 @@
             <ul>
                 <li><a href="/writings/"{% if page.url == "/writings/" or page.url.indexOf('/writings/') == 0 %} class="active"{% endif %}>Writings</a></li>
                 <li><a href="/curated/"{% if page.url.indexOf('/curated/') == 0 %} class="active"{% endif %}>Curated</a></li>
-                <li><a href="/projects/"{% if page.url.indexOf('/projects/') == 0 or page.url.indexOf('/irene-media/') == 0 or page.url.indexOf('/episteme-advisory/') == 0 %} class="active"{% endif %}>Projects</a></li>
+                <li><a href="/catene/"{% if page.url == "/catene/" %} class="active"{% endif %}>Catene</a></li>
                 <li><a href="/about/"{% if page.url == "/about/" %} class="active"{% endif %}>About</a></li>
                 {# Gruppo "Esplora" (audit 2026, A1b): strumenti per attraversare il
-                   corpus, distinti dalle sezioni di contenuto. #}
+                   corpus, distinti dalle sezioni di contenuto. Dal 29/9 Catene sta
+                   al primo livello e Projects chiude Esplora. #}
                 <li class="nav-group-label" aria-hidden="true">Esplora</li>
-                <li class="nav-explore nav-explore--catene"><a href="/catene/"{% if page.url == "/catene/" %} class="active"{% endif %}>Catene</a></li>
                 <li class="nav-explore"><a href="/indice/"{% if page.url == "/indice/" %} class="active"{% endif %}>Indice</a></li>
                 <li class="nav-explore"><a href="/mappa/"{% if page.url == "/mappa/" %} class="active"{% endif %}>Mappa</a></li>
+                <li class="nav-explore"><a href="/projects/"{% if page.url.indexOf('/projects/') == 0 or page.url.indexOf('/irene-media/') == 0 or page.url.indexOf('/episteme-advisory/') == 0 %} class="active"{% endif %}>Projects</a></li>
                 <li class="nav-search-item" style="display:none"><a href="/search/">Cerca</a></li>
                 <li class="nav-abstract-item">
                     <a class="nav-abstract-pill" href="/newsletter/" data-newsletter-cta data-position="nav"{% if page.url == "/newsletter/" %} aria-current="page"{% endif %}>
