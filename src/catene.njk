@@ -1,0 +1,39 @@
+---
+layout: layouts/base.njk
+title: Catene
+description: "Saggi costruiti sulle schede dei Curated: letture già archiviate, messe in fila attorno a una tesi e discusse."
+permalink: /catene/
+---
+{# Pagina delle catene (28/9). Raggiungibile da Esplora, dal fondo di ogni
+   catena e dai Curated; non sta nel menu di primo livello. Gruppi per serie,
+   dalla serie aggiornata piu' di recente; in coda le catene fuori serie. #}
+{% set catene = collections.writings | soloCatene %}
+{% set gruppi = catene | catenePerSerie %}
+<div class="catene-page">
+  <h1>Catene</h1>
+  <p class="catene-standfirst">Saggi costruiti sulle schede dei Curated: letture già archiviate, messe in fila attorno a una tesi e discusse. Ogni brano resta di chi l’ha scritto; il montaggio e la tesi sono miei, e ne rispondo.</p>
+  <p class="catene-come"><a href="/colophon/#catene">Come si legge una catena, e da dove viene il nome &#8594;</a></p>
+
+  {% if gruppi.length > 1 %}
+  <nav class="catene-filtri" aria-label="Serie">
+    <a class="on" href="#catene-tutte">Tutte · {{ catene.length }}</a>
+    {% for g in gruppi %}<a href="#serie-{{ g.nome | slugify }}">{{ g.nome }} · {{ g.catene.length }}</a>{% endfor %}
+  </nav>
+  {% endif %}
+
+  <div id="catene-tutte">
+  {% for g in gruppi %}
+  <section class="catene-gruppo" id="serie-{{ g.nome | slugify }}">
+    <h2>{% if g.serie %}<a href="/serie/{{ g.nome | slugify }}/"><b>{{ g.nome }}</b></a>{% else %}<b>{{ g.nome }}</b>{% endif %} · {{ g.catene.length }} {{ "catena" if g.catene.length == 1 else "catene" }}</h2>
+    {% for c in g.catene %}
+    <article class="catena-voce">
+      <p class="k"><b>Catena</b>{% if c.data.series %} · {{ c.data.series }}{% endif %} · {{ c.data.fonti.length }} fonti · {{ c.date | formatDate }}</p>
+      <h3><a href="{{ c.url }}">{{ c.data.title }}</a></h3>
+      <p class="t">{{ (c.data.tesi or c.data.description) | mdInline | safe }}</p>
+      <p class="f">{{ c.data.fonti | catenaTestate | join(" · ") }}</p>
+    </article>
+    {% endfor %}
+  </section>
+  {% endfor %}
+  </div>
+</div>

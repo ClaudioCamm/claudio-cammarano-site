@@ -4,8 +4,10 @@ title: Writings
 ---
 
 <h1>Writings</h1>
+<p class="colophon-link">Le catene, i saggi costruiti sulle schede dei Curated, hanno una pagina propria: <a href="/catene/">Catene &#8594;</a></p>
+{% set saggi = collections.writings | senzaCatene %}
 
-{% for post in collections.writings %}
+{% for post in saggi %}
   {% if loop.index0 == 0 %}
   <article class="article-card article-card--featured{% if post.data.layout == "layouts/catena.njk" %} is-catena{% endif %}">
     {% if post.data.layout == "layouts/catena.njk" %}<span class="catena-badge">Catena</span>{% endif %}
@@ -25,7 +27,7 @@ title: Writings
     {% if post.data.description %}<p class="featured-description">{{ post.data.description }}</p>{% endif %}
     {% if post.templateContent %}<p class="article-excerpt">{{ post.templateContent | excerpt(750) }}</p>{% endif %}
   </article>
-  {% if collections.writings.length > 1 %}<div class="writings-secondary-grid">{% endif %}
+  {% if saggi.length > 1 %}<div class="writings-secondary-grid">{% endif %}
   {% else %}
   <article class="article-card article-card--secondary{% if post.data.layout == "layouts/catena.njk" %} is-catena{% endif %}">
     {% if post.data.layout == "layouts/catena.njk" %}<span class="catena-badge">Catena</span>{% endif %}
@@ -45,6 +47,6 @@ title: Writings
     {% if post.data.description %}<p>{{ post.data.description }}</p>{% endif %}
     {% if loop.index0 <= 4 and post.templateContent %}<p class="article-excerpt">{{ post.templateContent | excerpt }}</p>{% endif %}
   </article>
-  {% if loop.last and collections.writings.length > 1 %}</div>{% endif %}
+  {% if loop.last and saggi.length > 1 %}</div>{% endif %}
   {% endif %}
 {% endfor %}

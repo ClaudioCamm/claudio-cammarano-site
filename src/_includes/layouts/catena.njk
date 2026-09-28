@@ -29,4 +29,5 @@ bodyClass: catena
   {% if ricorrenti.length %}
   <p class="catena-ricorrenti"><span class="catena-ricorrenti-label">Concetti ricorrenti nelle fonti</span>{% for c in ricorrenti %} <a href="/concetti/{{ c.name | slugify }}/">{{ c.name }}</a><span class="catena-ricorrenti-n">×{{ c.count }}</span>{% endfor %}</p>
   {% endif %}
+  <p class="catena-tutte"><a href="/catene/">Tutte le catene &#8594;</a></p>
 </section>

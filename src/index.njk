@@ -110,8 +110,8 @@ bodyClass: home
     <a class="home-sec-link" href="/serie/">Tutte &#8594;</a>
   </div>
   <div class="home-series">
-    {% for serie in collections.seriesCards %}
-    {% set serieComp = collections.writings | filterBySeries(serie.name) | serieComposizione %}
+    {% for serie in collections.seriesCards | serieHome(collections.writings) %}
+    {% set serieComp = serie.comp %}
     <a class="home-serie home-serie--{{ serieComp.tipo }}" href="/serie/{{ serie.name | slugify }}/">
       <span class="home-serie-name">{{ serie.name }}</span>
       {% if seriesDescriptions[serie.name] %}<span class="home-serie-desc">{{ seriesDescriptions[serie.name] | firstSentence }}</span>{% endif %}
@@ -164,21 +164,7 @@ bodyClass: home
 {# === 2c · ULTIMA CATENA: rassegna ragionata di curated gia' pubblicati.
        Fascia propria, piu' bassa dell'ultimo saggio; la catena in fascia
        non si ripete nella griglia Writings. === #}
-{% if catenaHome %}
-<section class="home-band home-band--catena" aria-label="Ultima catena">
-  <div class="home-catena">
-    <div>
-      <p class="home-catena-kicker"><b>Catena</b>{% if catenaHome.data.series %} · {{ catenaHome.data.series }}{% endif %} · {{ catenaHome.data.fonti.length }} fonti</p>
-      <h2 class="home-catena-titolo"><a href="{{ catenaHome.url }}">{{ catenaHome.data.title }}</a></h2>
-      <p class="home-catena-tesi">{{ (catenaHome.data.tesi or catenaHome.data.description) | mdInline | safe }}</p>
-      <p class="home-catena-go"><a href="{{ catenaHome.url }}">Leggi la catena &#8594;</a></p>
-    </div>
-    <ol class="home-catena-fonti">
-      {% for f in catenaHome.data.fonti | catenaFonti %}<li><span class="catena-num">{{ f.n }}</span><span><span class="home-catena-testata">{{ f.testata }}</span> — <a href="{{ f.url }}">{{ f.title }}</a></span></li>{% endfor %}
-    </ol>
-  </div>
-</section>
-{% endif %}
+
 {# === 4 · WRITINGS: griglia, estratti troncati, meta allineate in fondo === #}
 <section class="home-band home-band--writings" aria-label="Writings">
   <div class="home-sec-head">
@@ -186,8 +172,7 @@ bodyClass: home
     <a class="home-sec-link" href="/writings/">Tutti &#8594;</a>
   </div>
   <div class="writings-compact">
-    {% set homeEsclusi = [featured.url if featured else "", catenaHome.url if catenaHome else ""] %}
-    {% for post in collections.writings | escludiUrl(homeEsclusi) | limit(6) %}{% if post %}
+    {% for post in writingsSaggi | escludiUrl([featured.url]) | limit(6) %}{% if post %}
     <article class="article-card article-card--compact{% if post.data.layout == "layouts/catena.njk" %} is-catena{% endif %}">
       {% if post.data.layout == "layouts/catena.njk" %}<span class="catena-badge">Catena</span>{% endif %}
       {% if post.data.series %}<div class="article-series-card-label"><a href="/serie/{{ post.data.series | seriesBaseName | slugify }}/">{{ post.data.series }}</a></div>{% endif %}
@@ -209,6 +194,35 @@ bodyClass: home
     {% endif %}{% endfor %}
   </div>
 </section>
+
+{# === CATENE (28/9): fascia propria tra saggi e schede; i Writings in home sono solo saggi. === #}
+{% if catenaHome %}
+<section class="home-band home-band--catena home-band--catene" aria-label="Catene">
+  <div class="home-sec-head">
+    <h2 class="home-sec-title">Catene</h2>
+    <a class="home-sec-link" href="/catene/">Tutte le catene &#8594;</a>
+  </div>
+  <div class="home-catena">
+    <div>
+      <p class="home-catena-kicker"><b>Catena</b>{% if catenaHome.data.series %} · {{ catenaHome.data.series }}{% endif %} · {{ catenaHome.data.fonti.length }} fonti</p>
+      <h2 class="home-catena-titolo"><a href="{{ catenaHome.url }}">{{ catenaHome.data.title }}</a></h2>
+      <p class="home-catena-tesi">{{ (catenaHome.data.tesi or catenaHome.data.description) | mdInline | safe }}</p>
+      <p class="home-catena-go"><a href="{{ catenaHome.url }}">Leggi la catena &#8594;</a></p>
+    </div>
+    <ol class="home-catena-fonti">
+      {% for f in catenaHome.data.fonti | catenaFonti %}<li><span class="catena-num">{{ f.n }}</span><span><span class="home-catena-testata">{{ f.testata }}</span> — <a href="{{ f.url }}">{{ f.title }}</a></span></li>{% endfor %}
+    </ol>
+  </div>
+  {% set catenePrecedenti = catenePubblicate | escludiUrl([catenaHome.url]) | limit(4) %}
+  {% if catenePrecedenti.length %}
+  <ol class="home-catene-altre">
+    {% for c in catenePrecedenti %}{% if c %}
+    <li><span class="k">{% if c.data.series %}{{ c.data.series }} · {% endif %}{{ c.date | formatDate }}</span><a href="{{ c.url }}">{{ c.data.title }}</a><span class="n">{{ c.data.fonti.length }} fonti</span></li>
+    {% endif %}{% endfor %}
+  </ol>
+  {% endif %}
+</section>
+{% endif %}
 
 {# === 5 · CURATED: fascia a piena larghezza, le glosse hanno respiro === #}
 <section class="home-band home-band--tinted home-band--curated" aria-label="Curated">
