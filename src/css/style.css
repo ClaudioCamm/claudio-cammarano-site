@@ -7985,7 +7985,6 @@ a.home-path:hover {
 .home-catene-altre .t { font-size: 14px; line-height: 1.5; color: var(--color-text-light); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 @media (max-width: 967px) { .home-catene-altre { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 767px) { .home-catene-altre { grid-template-columns: minmax(0, 1fr); } }
-.nav-explore--catene a { color: var(--color-irene); }
 .catena-tutte { font-family: var(--font-sans); font-size: 14px; margin: var(--spacing-md) 0 0; }
 .catena-tutte a { color: var(--color-irene); }
 .catene-page h1 { color: var(--color-irene); }
