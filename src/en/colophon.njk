@@ -35,6 +35,10 @@ lang: en
   </dl>
   <p>The notation was introduced on 23 August 2026; codes on earlier pieces are declared reconstructions. The specification is a versioned page of its own, released under {{ aiNotation.spec.licenseLabel }} so that anyone can adopt it: <a href="/notazione/" lang="it" hreflang="it">the specification</a> <span class="en-lang-flag">(in Italian)</span>, and the machine-readable vocabulary in <a href="/notazione.json">notazione.json</a>.</p>
 
+  <h2 id="map">The map</h2>
+  <p>The map on the home page is generated at every publication from the concept index. A concept can carry a geography: one or more countries or regions, and the way it concerns them. Geographic fields are assigned and validated by the author when a piece is published; there is no automatic extraction.</p>
+  <p>For each concept with a geography, the linked pieces are counted and multiplied by <code>1</code> if the concept is a place or a country, <code>0.5</code> if it has a direct geography but is not a place, <code>0.25</code> if the link to that country is only theoretical. Values are summed country by country. The European Union has a weight of its own that also colours its member states; a member with references of its own adds the two. Regions give full weight to each country they include. The five colour classes are quantiles of the legend values. The figure next to each country is therefore a weight, not a count of mentions. The Italian side uses the same data under a different projection (Lambert azimuthal equal-area, centred on Bergamo).</p>
+
   <h2>Data</h2>
   <p>The concepts assigned to each piece form a dataset published as JSON-LD at <a href="/concetti.json">concetti.json</a>, with terms documented at <a href="/ns/">/ns/</a>, under CC BY 4.0 and deposited on Zenodo: <a href="{{ dataset.doi }}">{{ dataset.doi }}</a>.</p>
 

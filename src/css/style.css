@@ -7951,3 +7951,26 @@ a.home-path:hover {
 /* L12: Condividi anche in fondo ai testi */
 .share-bar--end { margin: 28px 0 8px; }
 .share-bar--end .share-menu { top: auto; bottom: calc(100% + 6px); }
+
+
+/* === Parere 27/9: metodo della carta e firma Irene Media === */
+.carta-metodo { font-family: var(--font-sans); font-size: 12px; line-height: 1.5; color: var(--color-text-light); margin: 10px 0 0; }
+.carta-metodo a { color: var(--color-primary); }
+.sf-firma { margin: var(--spacing-md) 0 0; text-align: center; color: var(--color-irene); }
+.sf-firma a.home-service-irene { border-bottom-color: var(--color-irene); }
+/* Fascia richieste in coda (hero senza richieste) */
+.home-band--lavoro .home-abstract-hint { margin: 0 0 8px; }
+.home-band--lavoro .home-service { margin: 0; padding-left: 15px; }
+
+/* === Parere 27/9, punto 5: home mobile, stessa sequenza, meno elementi === */
+@media (max-width: 767px) {
+  .home-band { padding: var(--spacing-lg) 0; }
+  .carta-voci li:nth-child(n+9) { display: none !important; }
+  .home-series > a:nth-child(n+3) { display: none !important; }
+  .home-band--writings .writings-compact > article:nth-child(n+4) { display: none !important; }
+  .home-curated > article:nth-child(n+3) { display: none !important; }
+  .home-curated .criterio-perche { display: none !important; }
+  .home-lab-preview-abstract { display: none !important; }
+  .home-abstract-posts > article:nth-child(n+2) { display: none !important; }
+  .sf-ramo-body { display: none !important; }
+}
