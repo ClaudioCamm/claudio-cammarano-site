@@ -3959,12 +3959,13 @@ module.exports = [
   {
     name: "Harris, Leslie M.",
     type: "persona",
+    sameAs: ["https://www.wikidata.org/wiki/Q95208970"],
     geo: { modo: "diretta", paesi: ["Stati Uniti"] },
     related: [
       { name: "Hannah-Jones, Nikole", why: "Il 19 agosto 2019, a Georgia Public Radio, la ascoltò «in silenzio attonito» ripetere l'affermazione che aveva smontato." },
       { name: "Lepore, Jill", why: "La sua sintesi in una riga è la struttura in due tempi di These Truths: le verità fondanti erano reali, e sono state tradite dall'inizio." }
     ],
-    note: "Storica americana della schiavitù e della vita afroamericana, professoressa alla Northwestern University, autrice di *In the Shadow of Slavery: African Americans in New York City, 1626-1863* (2003) e di *Slavery and the University: Histories and Legacies*. Nel sito entra con l'articolo del 6 marzo 2020 su *Politico Magazine*, e vale per la postura più che per il caso. Interpellata dal *New York Times* come verifica esterna sul 1619 Project nell'estate 2019, contestò l'affermazione centrale, fu pubblicata lo stesso, e poi fece quattro cose invece di una: nominò l'errore, ne diede la contro-evidenza storica — il caso Somerset del 1772 non toccava le colonie americane, dunque non c'era nulla da cui separarsi per proteggere la schiavitù —, rifiutò che la correzione servisse a liquidare il progetto, e applicò lo stesso controllo bibliografico ai cinque storici che lo attaccavano, contando le voci d'indice nelle loro opere. Si usa come modello di metodo — come si corregge un fatto senza cedere la cornice, e come si corregge una cornice senza allargare i fatti — più che come fonte su un singolo dibattito americano.",
+    note: "Storica americana della schiavitù e della vita afroamericana, professoressa alla Northwestern University, autrice di *In the Shadow of Slavery: African Americans in New York City, 1626-1863* (2003) e curatrice, con James T. Campbell e Alfred L. Brophy, di *Slavery and the University: Histories and Legacies* (University of Georgia Press, 2019). Nel sito entra con l'articolo del 6 marzo 2020 su *Politico Magazine*, e vale per la postura più che per il caso. Interpellata dal *New York Times* come verifica esterna sul 1619 Project nell'estate 2019, contestò l'affermazione centrale, fu pubblicata lo stesso, e poi fece quattro cose invece di una: nominò l'errore, ne diede la contro-evidenza storica — il caso Somerset del 1772 non toccava le colonie americane, dunque non c'era nulla da cui separarsi per proteggere la schiavitù —, rifiutò che la correzione servisse a liquidare il progetto, e applicò lo stesso controllo bibliografico ai cinque storici che lo attaccavano, contando le voci d'indice nelle loro opere. Si usa come modello di metodo — come si corregge un fatto senza cedere la cornice, e come si corregge una cornice senza allargare i fatti — più che come fonte su un singolo dibattito americano.",
     articles: [
       { title: "I Helped Fact-Check the 1619 Project. The Times Ignored Me.", url: "/curated/2020-03-06-harris-1619-project-fact-check-politico/", _source: "curated" },
       { title: "Hulu's Fascinating and Incomplete \"1619 Project\"", url: "/curated/2023-02-28-taylor-1619-project-hulu-newyorker/", _source: "curated" }
@@ -3973,6 +3974,7 @@ module.exports = [
   {
     name: "Taylor, Keeanga-Yamahtta",
     type: "persona",
+    sameAs: ["https://www.wikidata.org/wiki/Q30104171"],
     geo: { modo: "diretta", paesi: ["Stati Uniti"] },
     related: [
       { name: "1619 Project", why: "Nel febbraio 2023 ne fa la critica che non viene da destra e non riguarda i fatti: non sbagliato, incompleto." },

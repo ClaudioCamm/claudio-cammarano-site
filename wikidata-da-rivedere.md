@@ -1,11 +1,11 @@
 # Wikidata — voci da rivedere
 
-Allineate: **240 su 300**. Restano **60** voci senza `sameAs`.
+Allineate: **242 su 302**. Restano **60** voci senza `sameAs`.
 
 Regola applicata: aggancio accettato solo con corrispondenza esatta di label o alias **e** tipo (P31) compatibile, poi verifica a mano contro la nota della voce. Un Q-id sbagliato e' peggio di nessun Q-id.
 
 
-## A — candidato trovato e scartato (20)
+## A — candidato trovato e scartato (21)
 
 Qui Wikidata ha qualcosa con quel nome esatto, ma non e' la tua voce. Servono i tuoi occhi.
 
@@ -30,6 +30,7 @@ Qui Wikidata ha qualcosa con quel nome esatto, ma non e' la tua voce. Servono i 
 - **Meaney, Thomas** *(persona)* — L'unico match esatto e' Q7792360, un politico irlandese. Il direttore di Granta non ha un item.
 - **idea di Occidente** *(teoria)* — Q160381 *Western world* e' l'insieme dei paesi di cultura originariamente europea, cioe' una regione culturale, non la storia del termine. Errore di categoria, stesso caso di morte dell'autore. Scartato.
 - **divario di efficienza dei dati** *(teoria)* — Q5227281 *Data efficiency* e' privo di descrizione e quindi non verificabile, e in ogni caso l'efficienza dei dati in generale non e' il divario fra bambino e modello. Scartato per entrambe le ragioni.
+- **monocausalita** *(teoria)* — `monocausal explanation` non restituisce nulla; Q206829 *reductionism* e' la riduzione di un livello di descrizione alle sue parti, non la riduzione a una causa sola. Errore di categoria, scartato. Resta ancorata solo in /ns/, come gli altri conii.
 
 
 ## B — nessuna corrispondenza esatta (75)
@@ -138,7 +139,3 @@ Per aggiungerne una: apri `src/_data/conceptsIndex.js`, trova la voce e inserisc
 ```
 
 Il build la propaga da solo: nessun'altra modifica serve.
-
-## C — voci nuove, ricerca non ancora lanciata (1)
-
-- **Harris, Leslie M.** *(persona)* — cercare `Leslie M. Harris`, e in subordine `Leslie Harris`. La ricerca del 29 settembre 2026 e' fallita perche' il termine era `Leslie M. Harris historian`: wbsearchentities cerca per label esatto e un qualificatore lo fa fallire. I termini si passano nudi.
