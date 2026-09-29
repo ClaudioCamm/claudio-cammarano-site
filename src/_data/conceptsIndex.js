@@ -3932,6 +3932,7 @@ module.exports = [
   {
     name: "1619 Project",
     type: "testo",
+    sameAs: ["https://www.wikidata.org/wiki/Q66438352"],
     geo: { modo: "diretta", paesi: ["Stati Uniti"] },
     related: [
       { name: "Harris, Leslie M.", why: "Interpellata come verifica esterna nell'estate 2019, contestò l'affermazione centrale, e il Times la pubblicò comunque." },

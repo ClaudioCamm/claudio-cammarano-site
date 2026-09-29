@@ -1,6 +1,6 @@
 # Wikidata — voci da rivedere
 
-Allineate: **239 su 298**. Restano **59** voci senza `sameAs`.
+Allineate: **240 su 300**. Restano **60** voci senza `sameAs`.
 
 Regola applicata: aggancio accettato solo con corrispondenza esatta di label o alias **e** tipo (P31) compatibile, poi verifica a mano contro la nota della voce. Un Q-id sbagliato e' peggio di nessun Q-id.
 
@@ -138,3 +138,7 @@ Per aggiungerne una: apri `src/_data/conceptsIndex.js`, trova la voce e inserisc
 ```
 
 Il build la propaga da solo: nessun'altra modifica serve.
+
+## C — voci nuove, ricerca non ancora lanciata (1)
+
+- **Harris, Leslie M.** *(persona)* — cercare `Leslie M. Harris`, e in subordine `Leslie Harris`. La ricerca del 29 settembre 2026 e' fallita perche' il termine era `Leslie M. Harris historian`: wbsearchentities cerca per label esatto e un qualificatore lo fa fallire. I termini si passano nudi.
