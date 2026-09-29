@@ -963,7 +963,8 @@ module.exports = [
     articles: [
       { title: "La differenza fra Claude e le mie gatte", url: "/writings/2026-04-30-la-differenza-fra-claude-e-le-mie-gatte/" },
       { title: "The mind does not exist", url: "/curated/2021-08-30-gough-no-mind-aeon/", _source: "curated" },
-      { title: "Kids outlearn AI—and we still don't know why", url: "/curated/2026-08-24-cutts-divario-efficienza-dati-mit-techreview/", _source: "curated" }
+      { title: "Kids outlearn AI—and we still don't know why", url: "/curated/2026-08-24-cutts-divario-efficienza-dati-mit-techreview/", _source: "curated" },
+      { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" }
     ]
   },
   {
@@ -985,7 +986,8 @@ module.exports = [
       { title: "AI Has Plunged the Book Publishing Industry Into Utter Chaos", url: "/curated/2026-08-17-silman-ai-publishing-chaos-wsj/", _source: "curated" },
       { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" },
       { title: "A Watermark for Large Language Models", url: "/curated/2023-01-25-kirchenbauer-watermark-llm-arxiv/", _source: "curated" },
-      { title: "Don't let AI kill the author", url: "/curated/2026-09-24-economist-dont-let-ai-kill-the-author/", _source: "curated" }
+      { title: "Don't let AI kill the author", url: "/curated/2026-09-24-economist-dont-let-ai-kill-the-author/", _source: "curated" },
+      { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" }
     ]
   },
   {
@@ -1068,7 +1070,8 @@ module.exports = [
       { title: "Learning more about Claude's mathematical capabilities", url: "/curated/2026-08-10-anthropic-riemann-zeta-claude/", _source: "curated" },
       { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" },
       { title: "We are interwoven beings", url: "/curated/2022-11-25-valmisa-co-azione-aeon/", _source: "curated" },
-      { title: "Essence is fluttering", url: "/curated/2025-09-01-douglas-zhuangzi-identita-aeon/", _source: "curated" }
+      { title: "Essence is fluttering", url: "/curated/2025-09-01-douglas-zhuangzi-identita-aeon/", _source: "curated" },
+      { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" }
     ]
   },
   {
@@ -2717,7 +2720,8 @@ module.exports = [
       { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" },
       { title: "I Helped Fact-Check the 1619 Project. The Times Ignored Me.", url: "/curated/2020-03-06-harris-1619-project-fact-check-politico/", _source: "curated" },
       { title: "Hulu's Fascinating and Incomplete \"1619 Project\"", url: "/curated/2023-02-28-taylor-1619-project-hulu-newyorker/", _source: "curated" },
-      { title: "What Was the American Revolution For?", url: "/curated/2025-11-17-lepore-rivoluzione-americana-250-newyorker/", _source: "curated" }
+      { title: "What Was the American Revolution For?", url: "/curated/2025-11-17-lepore-rivoluzione-americana-250-newyorker/", _source: "curated" },
+      { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" }
     ]
   },
   {
@@ -3733,10 +3737,11 @@ module.exports = [
       { name: "legge di Goodhart", why: "Un segnale il cui costo crolla diventa un bersaglio raggiungibile da chiunque: è il momento in cui la misura smette di misurare." },
       { name: "scrittura", why: "La fatica di scrivere è in larga parte la fatica di pensare: il costo non era un attrito da eliminare, era il processo." }
     ],
-    note: "Nella teoria dei segnali — Michael Spence (1973) per i mercati, Amotz Zahavi (1975) per la biologia, con il principio dell'handicap — un segnale è credibile quando produrlo costa, e costa di più a chi mente che a chi dice il vero: il costo non certifica il contenuto, certifica che qualcuno ha ritenuto valesse la pena sostenerlo. Nel sito è il concetto che spiega che cosa si rompe quando l'AI entra nella scrittura. Un testo umano richiede più tempo a scriversi che a leggersi, e quell'asimmetria era una garanzia di sforzo — non di qualità, il mondo è pieno di prosa pessima, ma di intenzione. Azzerato il costo di produzione, il segnale smette di discriminare, e la fiducia che vi si appoggiava deve trovare un'altra base: è la ragione per cui la dichiarazione esplicita dell'intervento non è un vezzo di trasparenza ma il sostituto funzionale di un costo che non c'è più. Il corollario vale oltre la scrittura: ogni volta che una tecnologia abbatte il costo di emettere un segnale, le istituzioni che su quel segnale poggiavano vanno ricostruite, non difese.",
+    note: "Nella teoria dei segnali — Michael Spence (1973) per i mercati, Amotz Zahavi (1975) per la biologia, con il principio dell'handicap — un segnale è credibile quando produrlo costa, e costa di più a chi mente che a chi dice il vero: il costo non certifica il contenuto, certifica che qualcuno ha ritenuto valesse la pena sostenerlo. Nel sito è il concetto che spiega che cosa si rompe quando l'AI entra nella scrittura. Un testo umano richiede più tempo a scriversi che a leggersi, e quell'asimmetria era una garanzia di sforzo — non di qualità, il mondo è pieno di prosa pessima, ma di intenzione. Azzerato il costo di produzione, il segnale smette di discriminare, e la fiducia che vi si appoggiava deve trovare un'altra base: è la ragione per cui la dichiarazione esplicita dell'intervento non è un vezzo di trasparenza ma il sostituto funzionale di un costo che non c'è più. Il corollario vale oltre la scrittura: ogni volta che una tecnologia abbatte il costo di emettere un segnale, le istituzioni che su quel segnale poggiavano vanno ricostruite, non difese. C'è poi la conseguenza dal lato di chi riceve, che Louis Menand formula nel settembre 2026 e che è più scomoda della prima: quando il segnale non è più leggibile, il sospetto diventa il default. Il timore corrente è l'inganno — scambiare la poesia di una macchina per quella di una persona — ma è un rischio simmetrico e occasionale; il sospetto è sistematico e cade per primo su chi non ha barato, perché un testo umano non possiede alcun modo interno di dimostrare di esserlo. Ne segue che dichiarare l'intervento non è una confessione ma una difesa, e che il costo dell'azzeramento lo paga chi quel costo l'aveva sostenuto.",
     articles: [
       { title: "AI-written speeches are taking over politics", url: "/curated/2026-09-23-economist-discorsi-scritti-ai-politica/", _source: "curated" },
-      { title: "Don't let AI kill the author", url: "/curated/2026-09-24-economist-dont-let-ai-kill-the-author/", _source: "curated" }
+      { title: "Don't let AI kill the author", url: "/curated/2026-09-24-economist-dont-let-ai-kill-the-author/", _source: "curated" },
+      { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" }
     ]
   },
   {
@@ -3750,7 +3755,8 @@ module.exports = [
     ],
     note: "Tesi di Roland Barthes (1967) per cui l'unità di un testo non sta nella sua origine ma nella sua destinazione: attribuirne il senso all'intenzione dell'autore è una scorciatoia critica, e la figura dell'autore come garante del significato è storica e recente, non necessaria. Nel sito la voce esiste per una ragione che Barthes non poteva prevedere: la tesi viene oggi invocata, di solito da chi non l'ha letta, come se autorizzasse l'indifferenza verso chi ha materialmente prodotto un testo. La distinzione che tiene in piedi tutto il resto è questa — Barthes toglieva l'autore come garante del senso, lasciando intatto il fatto che qualcuno avesse scritto; la scrittura artificiale toglie l'autore come produttore del testo, lasciando intatta la pretesa che quel testo significhi qualcosa per qualcuno. Sono due operazioni diverse che condividono uno slogan, e confonderle è l'errore più frequente del dibattito corrente. Il controcanto empirico è che i lettori non hanno mai accettato la prima: continuano a voler sapere che a scrivere sia stata una persona, e la comprensione di una poesia poggia sulla promessa che sia significata a qualcuno.",
     articles: [
-      { title: "Don't let AI kill the author", url: "/curated/2026-09-24-economist-dont-let-ai-kill-the-author/", _source: "curated" }
+      { title: "Don't let AI kill the author", url: "/curated/2026-09-24-economist-dont-let-ai-kill-the-author/", _source: "curated" },
+      { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" }
     ]
   },
   {
@@ -4001,6 +4007,21 @@ module.exports = [
     articles: [
       { title: "What Was the American Revolution For?", url: "/curated/2025-11-17-lepore-rivoluzione-americana-250-newyorker/", _source: "curated" }
     ]
+  },
+  {
+    name: "Menand, Louis",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "segnale costoso", why: "Nel settembre 2026 ne dà la conseguenza sul ricevente: azzerato il costo, il sospetto diventa il default e colpisce per primo chi non ha barato." },
+      { name: "morte dell'autore", why: "Se smettiamo di immaginare una persona dietro le parole, il testo diventa segno da decodificare: la tesi di Barthes realizzata per via tecnica." },
+      { name: "embodied mind", why: "Hazrat e Kaufman aderiscono alla cognizione incarnata, e per Menand i loro libri sono elegie a una lettura prossima alla fine." }
+    ],
+    note: "Critico e storico delle idee americano (1952), staff writer del *New Yorker* e professore a Harvard, premio Pulitzer per la storia con *The Metaphysical Club* (2001) e autore di *The Free World: Art and Thought in the Cold War* (2021). Nel sito entra con il saggio del settembre 2026 su punteggiatura e verbi, e vale per la chiusa più che per l'argomento: il timore corrente è che scambiamo la poesia di una macchina per quella di una persona, mentre la prospettiva peggiore è che liquideremo quella di una persona come slop. È anche una buona misura di che cosa sia la critica quando è fatta bene — corregge gli autori recensiti sui dettagli tecnici, concede loro il punto dove ce l'hanno, e ricava dai due libri una tesi che nessuno dei due formula. Si usa come lettore di libri altrui, cioè come fonte di categorie, e come testimone competente del mestiere editoriale.",
+    articles: [
+      { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" }
+    ]
   }
 
 ];
+
