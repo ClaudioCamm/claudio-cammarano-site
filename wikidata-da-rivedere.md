@@ -1,6 +1,6 @@
 # Wikidata — voci da rivedere
 
-Allineate: **242 su 302**. Restano **60** voci senza `sameAs`.
+Allineate: **242 su 306**. Restano **64** voci senza `sameAs`.
 
 Regola applicata: aggancio accettato solo con corrispondenza esatta di label o alias **e** tipo (P31) compatibile, poi verifica a mano contro la nota della voce. Un Q-id sbagliato e' peggio di nessun Q-id.
 
@@ -139,3 +139,14 @@ Per aggiungerne una: apri `src/_data/conceptsIndex.js`, trova la voce e inserisc
 ```
 
 Il build la propaga da solo: nessun'altra modifica serve.
+
+## C — voci nuove, ricerca non ancora lanciata (4)
+
+Entrate con le schede del 29 settembre 2026. Termini da passare **nudi**, senza qualificatori: wbsearchentities cerca per label esatto e un qualificatore lo fa fallire (errore commesso il 29 settembre su `Leslie M. Harris historian`).
+
+- **Menand, Louis** *(persona)* — cercare `Louis Menand`. Aggancio atteso senza discussione.
+- **Bayne, Tim** *(persona)* — cercare `Tim Bayne`.
+- **coscienza fenomenica** *(teoria)* — cercare `phenomenal consciousness`. Il termine e' di Ned Block, anni Novanta.
+- **not even wrong** *(teoria)* — cercare `not even wrong`. Attenzione: esiste un libro omonimo di Peter Woit (2006) sulla teoria delle stringhe. Se il solo match e' il libro, e' l'errore di categoria del precedente Barthes e si scarta.
+
+Gia' cercate e scartate oggi, in sezione A: `idea di Occidente`, `divario di efficienza dei dati`, `monocausalita`, `Meaney, Thomas`.
