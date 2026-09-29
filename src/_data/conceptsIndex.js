@@ -964,7 +964,8 @@ module.exports = [
       { title: "La differenza fra Claude e le mie gatte", url: "/writings/2026-04-30-la-differenza-fra-claude-e-le-mie-gatte/" },
       { title: "The mind does not exist", url: "/curated/2021-08-30-gough-no-mind-aeon/", _source: "curated" },
       { title: "Kids outlearn AI—and we still don't know why", url: "/curated/2026-08-24-cutts-divario-efficienza-dati-mit-techreview/", _source: "curated" },
-      { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" }
+      { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" },
+      { title: "What if 'consciousness' isn't real?", url: "/curated/2026-09-15-bayne-coscienza-non-reale-sciam/", _source: "curated" }
     ]
   },
   {
@@ -1071,7 +1072,8 @@ module.exports = [
       { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" },
       { title: "We are interwoven beings", url: "/curated/2022-11-25-valmisa-co-azione-aeon/", _source: "curated" },
       { title: "Essence is fluttering", url: "/curated/2025-09-01-douglas-zhuangzi-identita-aeon/", _source: "curated" },
-      { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" }
+      { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" },
+      { title: "What if 'consciousness' isn't real?", url: "/curated/2026-09-15-bayne-coscienza-non-reale-sciam/", _source: "curated" }
     ]
   },
   {
@@ -1875,7 +1877,8 @@ module.exports = [
     lab: true,
     note: "Intervento esterno strutturato sugli output dei modelli linguistici per ricostruire gli impegni ontologici impliciti che il modello stesso non è in grado di rendere espliciti. Il termine, coniato nell'ambito del progetto <em>Validating AI</em>, designa un'operazione epistemica che precede la valutazione della verità: prima di chiedersi se una claim è vera o falsa, occorre stabilire di che tipo di claim si tratti.",
     articles: [
-      { title: "Validating AI — note di ricerca", url: "/lab/", _source: "lab" }
+      { title: "Validating AI — note di ricerca", url: "/lab/", _source: "lab" },
+      { title: "What if 'consciousness' isn't real?", url: "/curated/2026-09-15-bayne-coscienza-non-reale-sciam/", _source: "curated" }
     ]
   },
   {
@@ -4021,7 +4024,32 @@ module.exports = [
     articles: [
       { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" }
     ]
+  },
+  {
+    name: "coscienza fenomenica",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "Bayne, Tim", why: "Nel settembre 2026 ne mette in dubbio l'idoneità scientifica, pur essendo fra chi lavora a operazionalizzarla." },
+      { name: "LLM come attante zero", why: "Chiedere se un modello sia cosciente presuppone che ci sia qualcosa da rilevare: il sito preferisce sostituire la domanda." },
+      { name: "post-cognition", why: "Gli impegni ontologici vengono prima della valutazione, e qui è il concetto stesso a doverli superare prima di ogni misura." },
+      { name: "embodied mind", why: "Il mapudungun rakizuam include l'interdipendenza con gli altri e col mondo naturale, elemento relazionale che «coscienza» non contiene." }
+    ],
+    note: "Termine introdotto dal filosofo Ned Block negli anni Novanta, allora al MIT, per lo stato in cui «si prova qualcosa» a essere — la sabbia fra le dita, la fragola matura, il sole sulla neve — in contrasto con il sonno senza sogni o la sedazione profonda. Ha guidato trent'anni di scienza della coscienza e soprattutto ha assunto un carico etico: chiedersi se si provi qualcosa a essere un neonato, un'ape o un bot è diventato il modo di tracciare il confine fra gli enti con statuto morale intrinseco e quelli senza. Nel sito la voce esiste per il dubbio che Tim Bayne solleva nel settembre 2026: un buon concetto scientifico taglia la natura alle giunture, e «coscienza» potrebbe fallire il taglio, raggruppando fenomeni che non condividono una natura o mancando di raggrupparne altri che la condividono. L'indizio linguistico non è probante e Bayne lo dichiara — Kathleen Wilkes osservò nel 1988 che non esistono sinonimi in greco antico, mandarino, croato e inglese anteriore al Seicento, ma nessuna di quelle lingue ha un sinonimo nemmeno per *quark* o *apoptosi* — mentre i precedenti storici pesano: il «fuoco» degli antichi metteva insieme combustione, attività solare, fulmini, lucciole e aurora boreale, e servirono Galileo per separare velocità media e istantanea e Joseph Black, nel Settecento, per separare calore e temperatura. La conseguenza operativa è uno strumento di rifiuto più che di risposta: prima di costruire un rilevatore di coscienza per api, neonati e macchine, occorre chiedersi se ci sia qualcosa da rilevare, ed è possibile che sia la domanda a dover essere sostituita.",
+    articles: [
+      { title: "What if 'consciousness' isn't real?", url: "/curated/2026-09-15-bayne-coscienza-non-reale-sciam/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Bayne, Tim",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Australia"] },
+    note: "Filosofo della mente e delle scienze cognitive, professore alla Monash University di Melbourne e co-direttore del programma *Brain, Mind and Consciousness* del Canadian Institute for Advanced Research. Nel sito entra con l'articolo del settembre 2026 su *Scientific American*, e vale soprattutto per la posizione da cui parla: lavora con gli scienziati per capire come si possa testare la coscienza nelle popolazioni che non comunicano verbalmente — neonati, animali non umani, sistemi artificiali — cioè è fra chi il rilevatore lo sta costruendo, e usa quella posizione per dubitare del concetto che il rilevatore dovrebbe misurare. Un dubbio metodologico pesa di più quando viene da dentro. La geografia della voce registra la sede accademica e non la cittadinanza, che le fonti accessibili non documentano.",
+    articles: [
+      { title: "What if 'consciousness' isn't real?", url: "/curated/2026-09-15-bayne-coscienza-non-reale-sciam/", _source: "curated" }
+    ]
   }
 
 ];
+
 
