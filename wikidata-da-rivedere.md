@@ -1,6 +1,6 @@
 # Wikidata — voci da rivedere
 
-Allineate: **242 su 306**. Restano **64** voci senza `sameAs`.
+Allineate: **245 su 306**. Restano **61** voci senza `sameAs`.
 
 Regola applicata: aggancio accettato solo con corrispondenza esatta di label o alias **e** tipo (P31) compatibile, poi verifica a mano contro la nota della voce. Un Q-id sbagliato e' peggio di nessun Q-id.
 
@@ -140,13 +140,18 @@ Per aggiungerne una: apri `src/_data/conceptsIndex.js`, trova la voce e inserisc
 
 Il build la propaga da solo: nessun'altra modifica serve.
 
-## C — voci nuove, ricerca non ancora lanciata (4)
+## C — una voce sospesa, serve un secondo controllo (1)
 
-Entrate con le schede del 29 settembre 2026. Termini da passare **nudi**, senza qualificatori: wbsearchentities cerca per label esatto e un qualificatore lo fa fallire (errore commesso il 29 settembre su `Leslie M. Harris historian`).
+- **coscienza fenomenica** *(teoria)* — `phenomenal consciousness` restituisce **Q11573483**, label esatto, ma **senza descrizione**. Gli altri match sono un libro del 2011 e due articoli scientifici, quindi scartati. Non lo agganciamo finche' non sappiamo che tipo di elemento sia: un label esatto senza descrizione puo' essere un concetto tipizzato, una disambigua o un elemento vuoto, e il precedente `epistemia` (Q138835467) e' stato scartato proprio per questo. Il controllo e' una chiamata sola:
 
-- **Menand, Louis** *(persona)* — cercare `Louis Menand`. Aggancio atteso senza discussione.
-- **Bayne, Tim** *(persona)* — cercare `Tim Bayne`.
-- **coscienza fenomenica** *(teoria)* — cercare `phenomenal consciousness`. Il termine e' di Ned Block, anni Novanta.
-- **not even wrong** *(teoria)* — cercare `not even wrong`. Attenzione: esiste un libro omonimo di Peter Woit (2006) sulla teoria delle stringhe. Se il solo match e' il libro, e' l'errore di categoria del precedente Barthes e si scarta.
+```
+curl -s -G "https://www.wikidata.org/w/api.php" \
+  --data-urlencode "action=wbgetentities" \
+  --data-urlencode "ids=Q11573483" \
+  --data-urlencode "props=claims|sitelinks|descriptions" \
+  --data-urlencode "languages=en" \
+  --data-urlencode "format=json" \
+| python3 -c "import json,sys; d=json.load(sys.stdin)['entities']['Q11573483']; print('P31:', [c['mainsnak']['datavalue']['value']['id'] for c in d.get('claims',{}).get('P31',[])]); print('sitelink en:', d.get('sitelinks',{}).get('enwiki',{}).get('title','nessuno'))"
+```
 
-Gia' cercate e scartate oggi, in sezione A: `idea di Occidente`, `divario di efficienza dei dati`, `monocausalita`, `Meaney, Thomas`.
+Se `P31` contiene un tipo concettuale e c'e' un sitelink inglese sensato, si aggancia; se e' una disambigua (Q4167410) o non c'e' nulla, si scarta e la voce resta ancorata solo in /ns/.

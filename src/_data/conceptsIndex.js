@@ -4027,6 +4027,7 @@ module.exports = [
   {
     name: "Menand, Louis",
     type: "persona",
+    sameAs: ["https://www.wikidata.org/wiki/Q3262682"],
     geo: { modo: "diretta", paesi: ["Stati Uniti"] },
     related: [
       { name: "segnale costoso", why: "Nel settembre 2026 ne dà la conseguenza sul ricevente: azzerato il costo, il sospetto diventa il default e colpisce per primo chi non ha barato." },
@@ -4056,6 +4057,7 @@ module.exports = [
   {
     name: "Bayne, Tim",
     type: "persona",
+    sameAs: ["https://www.wikidata.org/wiki/Q110122299"],
     geo: { modo: "diretta", paesi: ["Australia"] },
     note: "Filosofo della mente e delle scienze cognitive, professore alla Monash University di Melbourne e co-direttore del programma *Brain, Mind and Consciousness* del Canadian Institute for Advanced Research. Nel sito entra con l'articolo del settembre 2026 su *Scientific American*, e vale soprattutto per la posizione da cui parla: lavora con gli scienziati per capire come si possa testare la coscienza nelle popolazioni che non comunicano verbalmente — neonati, animali non umani, sistemi artificiali — cioè è fra chi il rilevatore lo sta costruendo, e usa quella posizione per dubitare del concetto che il rilevatore dovrebbe misurare. Un dubbio metodologico pesa di più quando viene da dentro. La geografia della voce registra la sede accademica e non la cittadinanza, che le fonti accessibili non documentano.",
     articles: [
@@ -4065,6 +4067,7 @@ module.exports = [
   {
     name: "not even wrong",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q1225402"],
     geo: { modo: "teorico", paesi: ["Austria", "Svizzera"] },
     related: [
       { name: "Floridi, Luciano", why: "Con Novelli e Morley ne fa lo strumento di due audit nel 2026: le previsioni sul lavoro dal 2012 e quelle sull'AGI dal 1950." },
