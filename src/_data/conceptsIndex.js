@@ -931,7 +931,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q5431887"],
     note: "Le disuguaglianze strutturali — di reddito, istruzione, accesso alle cure, geografia — come variabile esplicativa trasversale. Nel sito entrano come correttivo al paradigma tecnologico dominante: gli strumenti cognitivi (AI inclusa) sono progettati per chi è già avvantaggiato, e rischiano di ampliare i divari invece di ridurli. La salute cognitiva in vecchiaia è un caso emblematico: il declino della demenza nei paesi ricchi convive con proiezioni invariate di triplicazione dei casi nel resto del mondo.",
     articles: [
-      { title: "How dementia is being defeated", url: "/curated/2026-07-09-economist-dementia-defeated/", _source: "curated" }
+      { title: "How dementia is being defeated", url: "/curated/2026-07-09-economist-dementia-defeated/", _source: "curated" },
+      { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" }
     ]
   },
   {
@@ -1091,7 +1092,8 @@ module.exports = [
       { title: "Destroying Books to Build a Mind", url: "/curated/2026-09-11-mancino-destroying-books-anthropic-newyorker/", _source: "curated" },
       { title: "Aaron Sorkin Goes Off Script", url: "/curated/2026-09-19-sorkin-social-reckoning-nyt/", _source: "curated" },
       { title: "Don't let AI kill the author", url: "/curated/2026-09-24-economist-dont-let-ai-kill-the-author/", _source: "curated" },
-      { title: "Kids outlearn AI—and we still don't know why", url: "/curated/2026-08-24-cutts-divario-efficienza-dati-mit-techreview/", _source: "curated" }
+      { title: "Kids outlearn AI—and we still don't know why", url: "/curated/2026-08-24-cutts-divario-efficienza-dati-mit-techreview/", _source: "curated" },
+      { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" }
     ]
   },
   {
@@ -1195,7 +1197,8 @@ module.exports = [
     articles: [
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
       { title: "Naomi Klein: 'Extreme wealth has a deranging effect. It turns you into a supremacist'", url: "/curated/2026-09-18-klein-end-times-fascism-guardian/", _source: "curated" },
-      { title: "以贡献为导向深化高校分类评价改革", url: "/curated/2026-03-24-xia-valutazione-differenziata-universita-cina/", _source: "curated" }
+      { title: "以贡献为导向深化高校分类评价改革", url: "/curated/2026-03-24-xia-valutazione-differenziata-universita-cina/", _source: "curated" },
+      { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" }
     ]
   },
   {
@@ -1915,7 +1918,8 @@ module.exports = [
       { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" },
       { title: "Was Francis Fukuyama Right All Along?", url: "/curated/2026-09-18-ezra-klein-fukuyama-nyt/", _source: "curated" },
       { title: "AI-written speeches are taking over politics", url: "/curated/2026-09-23-economist-discorsi-scritti-ai-politica/", _source: "curated" },
-      { title: "Kids outlearn AI—and we still don't know why", url: "/curated/2026-08-24-cutts-divario-efficienza-dati-mit-techreview/", _source: "curated" }
+      { title: "Kids outlearn AI—and we still don't know why", url: "/curated/2026-08-24-cutts-divario-efficienza-dati-mit-techreview/", _source: "curated" },
+      { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" }
     ]
   },
   {
@@ -2703,7 +2707,8 @@ module.exports = [
       { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-criti-hype-hugging-face-lawfare/", _source: "curated" },
       { title: "Why open-weight models are crucial for American AI leadership", url: "/curated/2026-08-10-villasenor-pesi-aperti-leadership-brookings/", _source: "curated" },
       { title: "Internet Fragmentation's Outward Turn", url: "/curated/2025-06-01-fidler-splinternet-outward-turn-sciencespo/", _source: "curated" },
-      { title: "Ranks of Humanity", url: "/curated/2026-09-24-meaney-varouxakis-idea-occidente-lrb/", _source: "curated" }
+      { title: "Ranks of Humanity", url: "/curated/2026-09-24-meaney-varouxakis-idea-occidente-lrb/", _source: "curated" },
+      { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" }
     ]
   },
   {
@@ -3692,13 +3697,15 @@ module.exports = [
     related: [
       { name: "capitale semantico", why: "Quando l'indicatore diventa l'obiettivo si ottimizza l'output e si salta il processo: il capitale semantico è ciò che il salto non costruisce." },
       { name: "monitorabilità", why: "Un modello che sa di essere osservato ottimizza la misura invece del comportamento: Goodhart applicato a un sistema che se ne può accorgere." },
-      { name: "università", why: "Il ranking unico è il caso in cui la misura ha riscritto l'istituzione che avrebbe dovuto descrivere." }
+      { name: "università", why: "Il ranking unico è il caso in cui la misura ha riscritto l'istituzione che avrebbe dovuto descrivere." },
+      { name: "segregazione scolastica", why: "Il rovescio della legge, New York 2015-2026: non la misura corrotta perché diventata obiettivo, ma la misura abbandonata e nessuno che se ne accorga." }
     ],
     note: "Formulata da Charles Goodhart (1975) a proposito degli aggregati monetari e resa nella forma oggi corrente da Marilyn Strathern (1997): quando una misura diventa un obiettivo, cessa di essere una buona misura. Il meccanismo non richiede malafede — basta che qualcuno sia valutato su un indicatore perché cominci a ottimizzare l'indicatore invece della cosa che l'indicatore doveva rappresentare, e da quel momento i due si separano. Nel sito non è una curiosità di teoria della misurazione ma lo schema ricorrente che l'archivio ha isolato in domini diversi prima di dargli un nome: i voti dei compiti che salgono mentre gli esami peggiorano, e smettono quindi di predirli; gli incidenti segnalati che scendono senza che si sappia nulla degli incidenti; la valutazione differenziata degli atenei cinesi che rischia di produrre una nuova gerarchia proprio perché è agganciata al finanziamento. La variante che interessa di più è quella in cui il misurato può accorgersi di essere misurato: lì l'ottimizzazione dell'indicatore diventa strategica e il divario fra segnale e sostanza smette di essere un effetto collaterale. Il corollario pratico è che un sistema di valutazione va giudicato non dalla bontà degli indicatori ma dal legame fra chi misura e chi paga: dove quel legame è assente o distribuito fra più mani, la legge morde meno.",
     articles: [
       { title: "以贡献为导向深化高校分类评价改革", url: "/curated/2026-03-24-xia-valutazione-differenziata-universita-cina/", _source: "curated" },
       { title: "Does AI stop children from learning?", url: "/curated/2026-08-18-economist-ai-learning-penalty-children/", _source: "curated" },
-      { title: "La Chine et les États-Unis peuvent-ils s'accorder sur la sécurité de l'IA ?", url: "/curated/2026-09-25-grandcontinent-sicurezza-ai-cina-stati-uniti/", _source: "curated" }
+      { title: "La Chine et les États-Unis peuvent-ils s'accorder sur la sécurité de l'IA ?", url: "/curated/2026-09-25-grandcontinent-sicurezza-ai-cina-stati-uniti/", _source: "curated" },
+      { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" }
     ]
   },
   {
@@ -3869,6 +3876,43 @@ module.exports = [
     note: "Competizione annuale fondata nel 2022 da Alex Warstadt e Leshem Choshen: addestrare modelli linguistici su un corpus «plausibile dal punto di vista dello sviluppo» — cento milioni di parole, dieci milioni nel binario neonatale — tratto da libri illustrati, dialoghi, sottotitoli, Simple English Wikipedia e trascrizioni di parlato rivolto ai bambini, e valutarli con i test che gli psicolinguisti usano sugli esseri umani. Nel sito è il caso di un programma di ricerca che vale soprattutto per ciò che ha smontato: il curriculum learning, partire dal semplice e salire, non ha funzionato come ci si aspettava; i modelli che imparano interagendo con altri modelli non hanno battuto gli standard; e il campione 2024, GPT-BERT, non è ispirato ai neonati affatto. Il risultato più citato — cento milioni di parole che superano Llama 2 70B su un benchmark — va tenuto insieme al suo limite, cioè che molti modelli-bambino non sanno produrre testo. La geografia è quella prevalente degli organizzatori e non l'unica: partecipano gruppi europei, e uno degli architetti di GPT-BERT lavora a Oslo.",
     articles: [
       { title: "Kids outlearn AI—and we still don't know why", url: "/curated/2026-08-24-cutts-divario-efficienza-dati-mit-techreview/", _source: "curated" }
+    ]
+  },
+  {
+    name: "segregazione scolastica",
+    type: "teoria",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "Brown v. Board of Education", why: "Sentenza del 1954: vinse in tribunale e non fu applicata. Alla McDonogh 19 di New Orleans, nel 1960, l'integrazione non durò fino alle tre del pomeriggio." },
+      { name: "capitale semantico", why: "A New York, fra il 2015 e il 2024, lacune accumulate a monte — divisioni, frazioni — e A in algebra senza algebra: a valle nessun recupero è indolore." },
+      { name: "delega epistemica", why: "Brooklyn, 2019: compiti mai corretti, e la bambina si crede brava perché l'unico segnale disponibile glielo dice. Valutare è un atto delegato." },
+      { name: "disuguaglianze", why: "EdBuild, 2019: negli Stati Uniti 23 miliardi l'anno in meno ai distretti a maggioranza non bianca. Lo svantaggio è della scuola prima che dello studente." },
+      { name: "istituzioni inclusive vs. estrattive", why: "La school choice di New York alloca per merito dichiarato e per capacità di pagare il tutoraggio: filtro estrattivo con nome inclusivo." }
+    ],
+    note: "La segregazione scolastica americana, nella forma che ha assunto dopo la fine della segregazione legale: non più per legge ma per combinazione di segregazione abitativa e di selezione accademica in ingresso, quella che a New York si chiama *school choice* e comincia già alla scuola dell'infanzia. I numeri da tenere: negli Stati Uniti, secondo l'analisi EdBuild del 2019, le scuole dei distretti a maggioranza non bianca ricevono ventitré miliardi di dollari l'anno in meno delle controparti a maggioranza bianca; a New York, nel 2026, studenti neri e latini sono il dieci per cento di chi supera l'esame d'ingresso alle *specialized high school* pur essendo la maggioranza degli iscritti alla scuola pubblica cittadina. Nel sito la voce non serve come tema politico americano ma per il meccanismo che la reportage di Nikole Hannah-Jones documenta dal di dentro fra il 2015 e il 2026: un'aspettativa su una popolazione diventa pratica di misurazione, e la misurazione fabbrica la prova dell'aspettativa. Le verifiche di lettura che l'insegnante non somministra perché l'esito è dato per scontato, i compiti restituiti senza correzione, la valutazione in curva che produce A in algebra senza algebra. È il rovescio della legge di Goodhart: lì la misura si corrompe perché diventa obiettivo, qui si corrompe perché viene abbandonata, e la differenza pratica è che nessuno se ne accorge — chi è misurato meno di tutti. L'educazione è una delle due derive cause-related dichiarate del sito, e questa voce sta lì.",
+    articles: [
+      { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Hannah-Jones, Nikole",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "segregazione scolastica", why: "Con l'articolo del 2016 ha riaperto il dossier nel discorso pubblico americano; con quello del 2026 ne ha dichiarato il prezzo privato." }
+    ],
+    note: "Giornalista americana (1976), corrispondente del *New York Times Magazine* su ingiustizia razziale e diritti civili, curatrice del 1619 Project (2019) e premio Pulitzer per il commento nello stesso anno. Nel sito entra con i due articoli che fanno coppia a dieci anni di distanza: nel 2016 *Choosing a School for My Daughter in a Segregated City*, che riportò la segregazione scolastica nel discorso pubblico americano, e nel settembre 2026 il consuntivo in cui dichiara il costo che quella scelta ha avuto per la figlia. Il criterio d'uso è preciso: fonte di prima mano sui fatti che ha osservato come reporter e vissuto come madre — e su quel piano il suo resoconto è verificabile e documentato — non autorità sulla cornice interpretativa americana, che il sito riporta senza adottare.",
+    articles: [
+      { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Brown v. Board of Education",
+    type: "testo",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    note: "Sentenza della Corte suprema degli Stati Uniti del 1954 che dichiarò incostituzionale la segregazione razziale nelle scuole pubbliche, ottenuta dal NAACP Legal Defense Fund portando in giudizio genitori neri e i loro figli come ricorrenti. Nel sito non è una voce di storia americana ma il caso esemplare di una figura che torna altrove: una norma che vince in tribunale e non viene applicata. Il governo federale non la fece rispettare; l'attuazione fu lasciata alle famiglie, cioè a bambini di sei anni mandati dentro le scuole bianche fra la folla — nel novembre 1960, alla McDonogh 19 di New Orleans, l'integrazione non durò fino alle tre del pomeriggio, perché entro quell'ora tutti i genitori bianchi avevano ritirato i figli. Settant'anni dopo, nel 2026, le scuole di New York sono segregate quanto trent'anni prima. Da tenere presente quando si valuta qualunque architettura regolatoria: fra l'adozione di una norma e il suo effetto c'è un problema di enforcement che la norma da sola non risolve.",
+    articles: [
+      { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" }
     ]
   }
 

@@ -886,6 +886,23 @@ Il catalogo attuale pende verso l'ecosistema NYT/Atlantic/Economist: liberal-dem
 
 Regola d'ingaggio: mai per quota, solo quando il singolo pezzo supera il criterio 1. In italiano niente firme antagoniste (criterio 3, corollario).
 
+### La deriva cause-related ammessa
+
+Il sito gira sulla questione cognitiva, declinata in chiave epistemica, geopolitica ed editoriale. Non è un sito di cause, e la militanza tematica è fuori linea per costruzione.
+
+Le eccezioni dichiarate sono due, e sono solo due: **l'educazione** e **la lotta alle demenze**. Su questi due fronti l'archivio può ospitare pezzi che non passano dal punto di attraversamento abituale, e la nota del curatore può prendere posizione invece di limitarsi al framework. Restano dentro perché sono la stessa questione cognitiva vista da altri due lati: come si costruisce una mente e come la si perde.
+
+Conseguenza operativa per la curation: un pezzo sull'istruzione non ha bisogno di essere giustificato come se fosse fuori perimetro. È dentro il perimetro. Vale anche quando il caso è straniero e politicamente carico — si applica allora la regola di ancoraggio qui sotto, non un cappello difensivo.
+
+### Ancoraggio: ogni affermazione ha una data e un luogo
+
+Ogni affermazione fattuale che entra nel sito — in una `description`, in un `perche`, nella nota di un concetto, nel `why` di un legame — porta con sé **quando** e **dove**. Non è pedanteria accademica: è ciò che impedisce all'archivio di diventare un pastrocchio in cui un dato americano del 2019, uno cinese del 2026 e una sentenza del 1954 galleggiano nello stesso presente indistinto.
+
+Sbagliato: «23 miliardi l'anno in meno ai distretti a maggioranza non bianca».
+Giusto: «negli Stati Uniti, dati EdBuild 2019, 23 miliardi l'anno in meno ai distretti a maggioranza non bianca».
+
+La regola vale doppio per i pezzi su un solo paese. Un articolo americano descrive gli Stati Uniti, non «la scuola» o «l'università»: il lettore italiano che incontra la scheda deve capire dal primo rigo di che paese si sta parlando, senza dover aprire il link. Stessa cosa per i pezzi cinesi, britannici, russi.
+
 
 ## Immagini di condivisione (audit 2026, L11)
 

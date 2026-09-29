@@ -1,6 +1,6 @@
 # Wikidata — voci da rivedere
 
-Allineate: **236 su 295**. Restano **59** voci senza `sameAs`.
+Allineate: **236 su 298**. Restano **62** voci senza `sameAs`.
 
 Regola applicata: aggancio accettato solo con corrispondenza esatta di label o alias **e** tipo (P31) compatibile, poi verifica a mano contro la nota della voce. Un Q-id sbagliato e' peggio di nessun Q-id.
 
@@ -138,3 +138,11 @@ Per aggiungerne una: apri `src/_data/conceptsIndex.js`, trova la voce e inserisc
 ```
 
 Il build la propaga da solo: nessun'altra modifica serve.
+
+## C — voci nuove, ricerca non ancora lanciata (3)
+
+Entrate con la scheda NYT Magazine del 20 settembre 2026. Termini da cercare:
+
+- **Hannah-Jones, Nikole** *(persona)* — cercare `Nikole Hannah-Jones`.
+- **Brown v. Board of Education** *(testo)* — cercare `Brown v. Board of Education`. Attenzione alla granularita': esistono probabilmente la sentenza del 1954 e il caso complessivo; la voce del sito e' la sentenza.
+- **segregazione scolastica** *(teoria)* — cercare `school segregation in the United States`. Se il match e' la segregazione scolastica in generale e non il caso americano, e' errore di categoria e si scarta: la voce ha geo diretta sugli Stati Uniti.
