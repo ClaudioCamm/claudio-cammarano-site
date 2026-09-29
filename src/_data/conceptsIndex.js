@@ -3881,6 +3881,7 @@ module.exports = [
   {
     name: "segregazione scolastica",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q17031188"],
     geo: { modo: "diretta", paesi: ["Stati Uniti"] },
     related: [
       { name: "Brown v. Board of Education", why: "Sentenza del 1954: vinse in tribunale e non fu applicata. Alla McDonogh 19 di New Orleans, nel 1960, l'integrazione non durò fino alle tre del pomeriggio." },
@@ -3897,6 +3898,7 @@ module.exports = [
   {
     name: "Hannah-Jones, Nikole",
     type: "persona",
+    sameAs: ["https://www.wikidata.org/wiki/Q21063790"],
     geo: { modo: "diretta", paesi: ["Stati Uniti"] },
     related: [
       { name: "segregazione scolastica", why: "Con l'articolo del 2016 ha riaperto il dossier nel discorso pubblico americano; con quello del 2026 ne ha dichiarato il prezzo privato." }
@@ -3909,8 +3911,9 @@ module.exports = [
   {
     name: "Brown v. Board of Education",
     type: "testo",
+    sameAs: ["https://www.wikidata.org/wiki/Q875738"],
     geo: { modo: "diretta", paesi: ["Stati Uniti"] },
-    note: "Sentenza della Corte suprema degli Stati Uniti del 1954 che dichiarò incostituzionale la segregazione razziale nelle scuole pubbliche, ottenuta dal NAACP Legal Defense Fund portando in giudizio genitori neri e i loro figli come ricorrenti. Nel sito non è una voce di storia americana ma il caso esemplare di una figura che torna altrove: una norma che vince in tribunale e non viene applicata. Il governo federale non la fece rispettare; l'attuazione fu lasciata alle famiglie, cioè a bambini di sei anni mandati dentro le scuole bianche fra la folla — nel novembre 1960, alla McDonogh 19 di New Orleans, l'integrazione non durò fino alle tre del pomeriggio, perché entro quell'ora tutti i genitori bianchi avevano ritirato i figli. Settant'anni dopo, nel 2026, le scuole di New York sono segregate quanto trent'anni prima. Da tenere presente quando si valuta qualunque architettura regolatoria: fra l'adozione di una norma e il suo effetto c'è un problema di enforcement che la norma da sola non risolve.",
+    note: "Sentenza della Corte suprema degli Stati Uniti del 1954 che dichiarò incostituzionale la segregazione razziale nelle scuole pubbliche, ottenuta dal NAACP Legal Defense Fund portando in giudizio genitori neri e i loro figli come ricorrenti. Nel sito non è una voce di storia americana ma il caso esemplare di una figura che torna altrove: una norma che vince in tribunale e non viene applicata. L'anno dopo, con Brown II (1955), la Corte stabilì che la desegregazione avvenisse «with all deliberate speed», formula abbastanza elastica da diventare la clausola di rinvio: il dispositivo di fuga fu scritto dallo stesso tribunale che aveva emesso la sentenza. Il governo federale non la fece rispettare; l'attuazione fu lasciata alle famiglie, cioè a bambini di sei anni mandati dentro le scuole bianche fra la folla — nel novembre 1960, alla McDonogh 19 di New Orleans, l'integrazione non durò fino alle tre del pomeriggio, perché entro quell'ora tutti i genitori bianchi avevano ritirato i figli. Settant'anni dopo, nel 2026, le scuole di New York sono segregate quanto trent'anni prima. Da tenere presente quando si valuta qualunque architettura regolatoria: fra l'adozione di una norma e il suo effetto c'è un problema di enforcement che la norma da sola non risolve.",
     articles: [
       { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" }
     ]
