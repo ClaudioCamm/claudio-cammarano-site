@@ -370,7 +370,8 @@ module.exports = [
     note: "Filosofo dell'informazione italiano (1964), fondatore dell'etica dell'informazione. Nel sito è citato per la formula: «l'AI aiuta chi le cose le sa già fare». Senza capitale semantico — tutto ciò che si è letto, vissuto, capito, sbagliato e corretto — non si sa cosa si sta guardando quando lo strumento ti alza dal suolo.",
     articles: [
       { title: "La macchina e la lotta", url: "/writings/2026-06-01-la-macchina-e-la-lotta/" },
-      { title: "Why Big AI Labs Are Hiring So Many Philosophers", url: "/curated/2026-06-24-economist-ai-labs-philosophers/", _source: "curated" }
+      { title: "Why Big AI Labs Are Hiring So Many Philosophers", url: "/curated/2026-06-24-economist-ai-labs-philosophers/", _source: "curated" },
+      { title: "Not Even Wrong 1: AI and the Labour Market, From Frey–Osborne to ChatGPT, 2012–2026", url: "/curated/2026-06-10-floridi-not-even-wrong-1-lavoro-ssrn/", _source: "curated" }
     ]
   },
   {
@@ -2724,7 +2725,8 @@ module.exports = [
       { title: "I Helped Fact-Check the 1619 Project. The Times Ignored Me.", url: "/curated/2020-03-06-harris-1619-project-fact-check-politico/", _source: "curated" },
       { title: "Hulu's Fascinating and Incomplete \"1619 Project\"", url: "/curated/2023-02-28-taylor-1619-project-hulu-newyorker/", _source: "curated" },
       { title: "What Was the American Revolution For?", url: "/curated/2025-11-17-lepore-rivoluzione-americana-250-newyorker/", _source: "curated" },
-      { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" }
+      { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" },
+      { title: "Not Even Wrong 1: AI and the Labour Market, From Frey–Osborne to ChatGPT, 2012–2026", url: "/curated/2026-06-10-floridi-not-even-wrong-1-lavoro-ssrn/", _source: "curated" }
     ]
   },
   {
@@ -3744,7 +3746,8 @@ module.exports = [
     articles: [
       { title: "AI-written speeches are taking over politics", url: "/curated/2026-09-23-economist-discorsi-scritti-ai-politica/", _source: "curated" },
       { title: "Don't let AI kill the author", url: "/curated/2026-09-24-economist-dont-let-ai-kill-the-author/", _source: "curated" },
-      { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" }
+      { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" },
+      { title: "Not Even Wrong 1: AI and the Labour Market, From Frey–Osborne to ChatGPT, 2012–2026", url: "/curated/2026-06-10-floridi-not-even-wrong-1-lavoro-ssrn/", _source: "curated" }
     ]
   },
   {
@@ -4048,8 +4051,24 @@ module.exports = [
     articles: [
       { title: "What if 'consciousness' isn't real?", url: "/curated/2026-09-15-bayne-coscienza-non-reale-sciam/", _source: "curated" }
     ]
+  },
+  {
+    name: "not even wrong",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Austria", "Svizzera"] },
+    related: [
+      { name: "Floridi, Luciano", why: "Con Novelli e Morley ne fa lo strumento di due audit nel 2026: le previsioni sul lavoro dal 2012 e quelle sull'AGI dal 1950." },
+      { name: "monocausalità", why: "Parenti da non confondere: là la spiegazione fallisce per architettura causale, qui l'affermazione fallisce per condizioni di verità." },
+      { name: "coscienza fenomenica", why: "Il caso più profondo: se il concetto non taglia alle giunture, non è la previsione a non essere testabile ma la domanda." },
+      { name: "segnale costoso", why: "La precisione di superficie è un segnale a costo zero: una cifra esibita senza metodo non prova nulla di ciò che sembra provare." }
+    ],
+    note: "Diagnosi attribuita al fisico Wolfgang Pauli, che avrebbe liquidato il lavoro di un giovane collega dicendo che non era «nemmeno sbagliato», *nicht einmal falsch*. La forza della formula sta nel diniego di dignità: chiamare sbagliata un'affermazione le riconosce di essere almeno il tipo di cosa che può essere messa alla prova e fallire, mentre chiamarla non nemmeno sbagliata glielo nega. Luciano Floridi, Claudio Novelli e Jessica Morley, che nel 2026 ne fanno lo strumento di due audit sulle previsioni dell'AI, registrano con scrupolo che l'aneddoto è riportato da Peierls nel 1960, che il fraseggio varia fra i resoconti e che il lavoro recensito da Pauli non è mai stato identificato con certezza: adottano l'uso diagnostico che la formula ha acquisito nella filosofia della scienza del Novecento, indipendentemente dai fatti storici — ed è una precauzione che vale la pena imitare, visto l'oggetto. Il concetto ha due registri, e tenerli distinti è metà del suo valore. In senso stretto nomina un'affermazione che non fissa alcuna proposizione, perché le manca uno dei quattro elementi che danno condizioni di verità: variabile obiettivo, perimetro, orizzonte, condizione d'esito. In senso operativo, che è il caso di gran lunga più frequente, nomina un'affermazione che una proposizione la fissa benissimo e poi la colloca fuori dalla portata di qualunque test severo — *determinata ma non divulgata*, quando trattiene il metodo e l'incertezza che permetterebbero all'evidenza di incidere, oppure *equivoca*, quando è determinata sotto una lettura e circola sotto un'altra, sopravvivendo ritirandosi verso quella che i dati non hanno ancora raggiunto. Nel sito la figura ha due parentele da non confondere. La prima è con la monocausalità: là la spiegazione fallisce per architettura causale pur poggiando su dati corretti, qui l'affermazione fallisce prima, sulle condizioni di verità. La seconda è più profonda e viene da Tim Bayne: se un concetto come «coscienza» non taglia la natura alle giunture, allora non è la singola previsione a non essere nemmeno sbagliata ma la domanda che la ospita, e nessuna divulgazione di metodo potrebbe salvarla.",
+    articles: [
+      { title: "Not Even Wrong 1: AI and the Labour Market, From Frey–Osborne to ChatGPT, 2012–2026", url: "/curated/2026-06-10-floridi-not-even-wrong-1-lavoro-ssrn/", _source: "curated" }
+    ]
   }
 
 ];
+
 
 
