@@ -932,7 +932,8 @@ module.exports = [
     note: "Le disuguaglianze strutturali — di reddito, istruzione, accesso alle cure, geografia — come variabile esplicativa trasversale. Nel sito entrano come correttivo al paradigma tecnologico dominante: gli strumenti cognitivi (AI inclusa) sono progettati per chi è già avvantaggiato, e rischiano di ampliare i divari invece di ridurli. La salute cognitiva in vecchiaia è un caso emblematico: il declino della demenza nei paesi ricchi convive con proiezioni invariate di triplicazione dei casi nel resto del mondo.",
     articles: [
       { title: "How dementia is being defeated", url: "/curated/2026-07-09-economist-dementia-defeated/", _source: "curated" },
-      { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" }
+      { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" },
+      { title: "Hulu's Fascinating and Incomplete \"1619 Project\"", url: "/curated/2023-02-28-taylor-1619-project-hulu-newyorker/", _source: "curated" }
     ]
   },
   {
@@ -2713,7 +2714,8 @@ module.exports = [
       { title: "Internet Fragmentation's Outward Turn", url: "/curated/2025-06-01-fidler-splinternet-outward-turn-sciencespo/", _source: "curated" },
       { title: "Ranks of Humanity", url: "/curated/2026-09-24-meaney-varouxakis-idea-occidente-lrb/", _source: "curated" },
       { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" },
-      { title: "I Helped Fact-Check the 1619 Project. The Times Ignored Me.", url: "/curated/2020-03-06-harris-1619-project-fact-check-politico/", _source: "curated" }
+      { title: "I Helped Fact-Check the 1619 Project. The Times Ignored Me.", url: "/curated/2020-03-06-harris-1619-project-fact-check-politico/", _source: "curated" },
+      { title: "Hulu's Fascinating and Incomplete \"1619 Project\"", url: "/curated/2023-02-28-taylor-1619-project-hulu-newyorker/", _source: "curated" }
     ]
   },
   {
@@ -3916,7 +3918,8 @@ module.exports = [
     note: "Giornalista americana (1976), corrispondente del *New York Times Magazine* su ingiustizia razziale e diritti civili, curatrice del 1619 Project (2019) e premio Pulitzer per il commento nello stesso anno. Nel sito entra con i due articoli che fanno coppia a dieci anni di distanza: nel 2016 *Choosing a School for My Daughter in a Segregated City*, che riportò la segregazione scolastica nel discorso pubblico americano, e nel settembre 2026 il consuntivo in cui dichiara il costo che quella scelta ha avuto per la figlia. Va registrato anche l'episodio che il sito archivia a parte: nell'estate del 2019 il *New York Times* sottopose a Leslie M. Harris, storica della schiavitù, l'affermazione centrale del saggio d'apertura — che una ragione critica dell'indipendenza americana fosse proteggere la schiavitù — e Harris la contestò in modo documentato; il giornale la pubblicò lo stesso. La decisione fu della redazione e non sua, ma l'affermazione era nel suo testo, e Hannah-Jones ha poi riconosciuto di aver sovraesteso l'argomento, annunciando di volerlo emendare nella versione in volume. Resta che sulla centralità della schiavitù nella storia americana la sua posizione coincide con quella di Jill Lepore e della stessa Harris, e la divergenza riguarda un punto di causalità, non l'impianto. Il criterio d'uso è quello, reso più preciso: fonte di prima mano sui fatti che ha osservato come reporter e vissuto come madre — e su quel piano il resoconto è verificabile e documentato —, da leggere con una verifica in più quando ricostruisce cause storiche. Il caso è in archivio, non in nota a margine: la cautela sta dove sta la stima.",
     articles: [
       { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" },
-      { title: "I Helped Fact-Check the 1619 Project. The Times Ignored Me.", url: "/curated/2020-03-06-harris-1619-project-fact-check-politico/", _source: "curated" }
+      { title: "I Helped Fact-Check the 1619 Project. The Times Ignored Me.", url: "/curated/2020-03-06-harris-1619-project-fact-check-politico/", _source: "curated" },
+      { title: "Hulu's Fascinating and Incomplete \"1619 Project\"", url: "/curated/2023-02-28-taylor-1619-project-hulu-newyorker/", _source: "curated" }
     ]
   },
   {
@@ -3941,10 +3944,11 @@ module.exports = [
       { name: "guadagno epistemico", why: "Il testo che organizza benissimo le attese attorno a una tesi falsa: la frase dell'agosto 2019 sulla Rivoluzione americana è quel caso." },
       { name: "canone", why: "Correzione di un canone storiografico che aveva espulso schiavitù e razza; l'errore di fatto del 2019 non annulla la correzione di cornice." }
     ],
-    note: "Progetto editoriale del *New York Times Magazine*, pubblicato nell'agosto 2019 e ideato da Nikole Hannah-Jones, che propone di datare la fondazione degli Stati Uniti al 1619, anno d'arrivo in Virginia dei primi africani schiavizzati, invece che al 1776; premio Pulitzer per il commento nel 2020, poi podcast, inserto e curriculum scolastico. Nel sito è il caso su cui si tiene insieme una distinzione che quasi ovunque collassa, e va letto su tre piani separati. Sulla **centralità** — la schiavitù come elemento strutturale della storia americana e non come macchia — il progetto ha ragione, e lo concede anche chi lo ha criticato: «gli Stati Uniti non furono fondati per proteggere la schiavitù, ma il Times ha ragione sul fatto che la schiavitù fu centrale nella loro storia», scrive Leslie M. Harris nel marzo 2020. Sulla **causalità** il saggio d'apertura afferma che una ragione critica dell'indipendenza dalla Gran Bretagna fu proteggere la schiavitù: è l'affermazione che Harris contestò come verificatrice esterna nell'estate 2019 e che il giornale pubblicò lo stesso, quella su cui cinque storici accademici chiesero rettifiche nel dicembre 2019, e quella che Hannah-Jones ha poi riconosciuto di aver sovraesteso. Sul **metodo** sta la conseguenza che interessa al sito: la storiografia di Jill Lepore, che il sito adotta, tratta le verità fondanti americane come affermazioni sul mondo e non come miti, dunque processabili con le prove — e un impianto simile non può permettersi fatti larghi, perché il fatto largo è l'arma che si consegna a chi difende la cornice vecchia. Harris lo aveva previsto scrivendo alla redazione, e lo registra come consuntivo nello stesso articolo.",
+    note: "Progetto editoriale del *New York Times Magazine*, pubblicato nell'agosto 2019 e ideato da Nikole Hannah-Jones, che propone di datare la fondazione degli Stati Uniti al 1619, anno d'arrivo in Virginia dei primi africani schiavizzati, invece che al 1776; premio Pulitzer per il commento nel 2020, poi podcast, inserto e curriculum scolastico. Nel sito è il caso su cui si tiene insieme una distinzione che quasi ovunque collassa, e va letto su tre piani separati. Sulla **centralità** — la schiavitù come elemento strutturale della storia americana e non come macchia — il progetto ha ragione, e lo concede anche chi lo ha criticato: «gli Stati Uniti non furono fondati per proteggere la schiavitù, ma il Times ha ragione sul fatto che la schiavitù fu centrale nella loro storia», scrive Leslie M. Harris nel marzo 2020. Sulla **causalità** il saggio d'apertura afferma che una ragione critica dell'indipendenza dalla Gran Bretagna fu proteggere la schiavitù: è l'affermazione che Harris contestò come verificatrice esterna nell'estate 2019 e che il giornale pubblicò lo stesso, quella su cui cinque storici accademici chiesero rettifiche nel dicembre 2019, e quella che Hannah-Jones ha poi riconosciuto di aver sovraesteso. Sul **metodo** sta la conseguenza che interessa al sito: la storiografia di Jill Lepore, che il sito adotta, tratta le verità fondanti americane come affermazioni sul mondo e non come miti, dunque processabili con le prove — e un impianto simile non può permettersi fatti larghi, perché il fatto largo è l'arma che si consegna a chi difende la cornice vecchia. Harris lo aveva previsto scrivendo alla redazione, e lo registra come consuntivo nello stesso articolo. Il giornale ha poi apportato una modifica per chiarire la portata di quell'affermazione, come registra Keeanga-Yamahtta Taylor sul *New Yorker* nel febbraio 2023. Va aggiunta una terza linea di critica, che non viene da destra e non riguarda i fatti: sempre Taylor osserva che l'enfasi sulla schiavitù come causa unica del presente cancella la comprensione di come il cambiamento sia avvenuto nel tempo, e con essa i movimenti sociali che l'hanno prodotto. Non «sbagliato» ma «incompleto» — difetto di architettura causale, non di documentazione.",
     articles: [
       { title: "I Helped Fact-Check the 1619 Project. The Times Ignored Me.", url: "/curated/2020-03-06-harris-1619-project-fact-check-politico/", _source: "curated" },
-      { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" }
+      { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" },
+      { title: "Hulu's Fascinating and Incomplete \"1619 Project\"", url: "/curated/2023-02-28-taylor-1619-project-hulu-newyorker/", _source: "curated" }
     ]
   },
   {
@@ -3957,8 +3961,24 @@ module.exports = [
     ],
     note: "Storica americana della schiavitù e della vita afroamericana, professoressa alla Northwestern University, autrice di *In the Shadow of Slavery: African Americans in New York City, 1626-1863* (2003) e di *Slavery and the University: Histories and Legacies*. Nel sito entra con l'articolo del 6 marzo 2020 su *Politico Magazine*, e vale per la postura più che per il caso. Interpellata dal *New York Times* come verifica esterna sul 1619 Project nell'estate 2019, contestò l'affermazione centrale, fu pubblicata lo stesso, e poi fece quattro cose invece di una: nominò l'errore, ne diede la contro-evidenza storica — il caso Somerset del 1772 non toccava le colonie americane, dunque non c'era nulla da cui separarsi per proteggere la schiavitù —, rifiutò che la correzione servisse a liquidare il progetto, e applicò lo stesso controllo bibliografico ai cinque storici che lo attaccavano, contando le voci d'indice nelle loro opere. Si usa come modello di metodo — come si corregge un fatto senza cedere la cornice, e come si corregge una cornice senza allargare i fatti — più che come fonte su un singolo dibattito americano.",
     articles: [
-      { title: "I Helped Fact-Check the 1619 Project. The Times Ignored Me.", url: "/curated/2020-03-06-harris-1619-project-fact-check-politico/", _source: "curated" }
+      { title: "I Helped Fact-Check the 1619 Project. The Times Ignored Me.", url: "/curated/2020-03-06-harris-1619-project-fact-check-politico/", _source: "curated" },
+      { title: "Hulu's Fascinating and Incomplete \"1619 Project\"", url: "/curated/2023-02-28-taylor-1619-project-hulu-newyorker/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Taylor, Keeanga-Yamahtta",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "1619 Project", why: "Nel febbraio 2023 ne fa la critica che non viene da destra e non riguarda i fatti: non sbagliato, incompleto." },
+      { name: "Harris, Leslie M.", why: "Stessa università e critiche complementari: Harris sul fatto sbagliato, Taylor sull'architettura causale troppo sottile." },
+      { name: "disuguaglianze", why: "Negli Stati Uniti la mortalità materna nera è triplicata fra il 1990 e il 2023 ed è cresciuta anche fra le bianche: l'origine non basta." }
+    ],
+    note: "Studiosa americana di African American Studies, Leon Forrest Professor alla Northwestern University e contributing writer del *New Yorker*, autrice di *Race for Profit: How Banks and the Real Estate Industry Undermined Black Homeownership*, finalista al premio Pulitzer per la storia nel 2020. Nel sito entra con la recensione del febbraio 2023 alla serie Hulu tratta dal 1619 Project, e vale perché porta una specie di critica che l'archivio non aveva: non da destra, non sui fatti, e senza mettere in discussione la centralità della schiavitù nella storia americana. La sua obiezione è di architettura — l'enfasi sulla schiavitù come causa unica del presente cancella la comprensione di come il cambiamento sia avvenuto nel tempo, e con essa i movimenti sociali che l'hanno prodotto — e la argomenta con dati, non con la teoria: la mortalità materna americana fra il 1990 e il 2023, la formazione delle polizie urbane a fine Ottocento, la militarizzazione della fine degli anni Sessanta. La sua posizione è dichiaratamente di sinistra e di analisi di classe, e il sito la riporta come tale: quello che adotta è la forma dell'obiezione, non la soluzione che propone.",
+    articles: [
+      { title: "Hulu's Fascinating and Incomplete \"1619 Project\"", url: "/curated/2023-02-28-taylor-1619-project-hulu-newyorker/", _source: "curated" }
     ]
   }
 
 ];
+
