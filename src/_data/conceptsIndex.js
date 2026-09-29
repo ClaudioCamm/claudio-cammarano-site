@@ -1492,9 +1492,10 @@ module.exports = [
     related: [
       { name: "università", why: "Chi decide cosa entra nel canone decide anche che cosa l'istituzione insegnerà come necessario." }
     ],
-    note: "L'insieme delle opere che una cultura tratta come necessarie, e che si presenta come l'elenco di ciò che va letto mentre è l'esito di scelte databili, interessate e reversibili: un catalogo che ha dimenticato di essere stato scelto. Nel sito è studiato nel suo caso più netto — il restringimento del canone filosofico occidentale fra Otto e primo Novecento, ricostruito da Van Norden — ma la struttura è generale e vale per una collana, un piano editoriale, un premio, un programma di studi. Due conseguenze lo rendono utile: se un canone è una decisione, allora ha una data e degli autori, e il suo allargamento è una correzione storiografica prima che una rivendicazione; e se a produrlo è un'istituzione, il canone è anche la forma in cui quell'istituzione dichiara che cosa considera necessario sapere. Questo sito è a sua volta un canone in costruzione, e lo dichiara nella struttura del Sommario ragionato.",
+    note: "L'insieme delle opere che una cultura tratta come necessarie, e che si presenta come l'elenco di ciò che va letto mentre è l'esito di scelte databili, interessate e reversibili: un catalogo che ha dimenticato di essere stato scelto. Nel sito è studiato nel suo caso più netto — il restringimento del canone filosofico occidentale fra Otto e primo Novecento, ricostruito da Van Norden — ma la struttura è generale e vale per una collana, un piano editoriale, un premio, un programma di studi. Due conseguenze lo rendono utile: se un canone è una decisione, allora ha una data e degli autori, e il suo allargamento è una correzione storiografica prima che una rivendicazione; e se a produrlo è un'istituzione, il canone è anche la forma in cui quell'istituzione dichiara che cosa considera necessario sapere. Questo sito è a sua volta un canone in costruzione, e lo dichiara nella struttura del Sommario ragionato. Il caso del 1619 Project, negli Stati Uniti fra il 2019 e il 2020, aggiunge una torsione che vale la pena registrare: lì chi corregge il canone — la storiografia americana che aveva espulso schiavitù e razza — commette un errore di fatto verificato, e chi lo difende ha ragione su quel punto e ha passato la carriera a non vedere il resto. Leslie M. Harris lo mostra contando le voci d'indice: una sola per «Negroes» e nessuna per la schiavitù in *The Creation of the American Republic* di Gordon Wood, 1969. La correzione di cornice resta giusta, l'errore di fatto resta un errore, e tenere insieme le due cose è tutto il lavoro.",
     articles: [
-      { title: "Western philosophy is racist", url: "/curated/2017-10-31-vannorden-canone-filosofico-aeon/", _source: "curated" }
+      { title: "Western philosophy is racist", url: "/curated/2017-10-31-vannorden-canone-filosofico-aeon/", _source: "curated" },
+      { title: "I Helped Fact-Check the 1619 Project. The Times Ignored Me.", url: "/curated/2020-03-06-harris-1619-project-fact-check-politico/", _source: "curated" }
     ]
   },
   {
@@ -1907,6 +1908,7 @@ module.exports = [
   {
     name: "delega epistemica",
     related: [
+      { name: "1619 Project", why: "Nell'estate 2019 il Times delegò a una storica la valutazione di un'affermazione e poi non ne accettò l'esito: verifica presente e scavalcata." },
       { name: "epistemia", why: "Si delega la valutazione a un sistema che non la esegue; l'epistemia è l'illusione che la valutazione sia avvenuta." }
     ],
     type: "teoria",
@@ -1919,7 +1921,8 @@ module.exports = [
       { title: "Was Francis Fukuyama Right All Along?", url: "/curated/2026-09-18-ezra-klein-fukuyama-nyt/", _source: "curated" },
       { title: "AI-written speeches are taking over politics", url: "/curated/2026-09-23-economist-discorsi-scritti-ai-politica/", _source: "curated" },
       { title: "Kids outlearn AI—and we still don't know why", url: "/curated/2026-08-24-cutts-divario-efficienza-dati-mit-techreview/", _source: "curated" },
-      { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" }
+      { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" },
+      { title: "I Helped Fact-Check the 1619 Project. The Times Ignored Me.", url: "/curated/2020-03-06-harris-1619-project-fact-check-politico/", _source: "curated" }
     ]
   },
   {
@@ -2085,10 +2088,11 @@ module.exports = [
     name: "guadagno epistemico",
     type: "teoria",
     geo: { modo: "nessuna", paesi: [] },
-    note: "Misura di quanto un testo accorcia la distanza fra le attese di un ricevente e il mondo. Si distingue dalla sola riduzione di entropia, che premierebbe il testo peggiore immaginabile — quello che organizza benissimo le attese attorno a una tesi falsa — e ammette un caso nullo che il dibattito non considera mai: il lettore si sposta lateralmente, sostituisce un errore con un altro ugualmente distante, e ha la sensazione di aver imparato qualcosa. È definito sempre su un ricevente, mai in astratto: lo stesso identico testo vale molto per un pubblico e zero per un altro senza che una virgola sia cambiata.",
+    note: "Misura di quanto un testo accorcia la distanza fra le attese di un ricevente e il mondo. Si distingue dalla sola riduzione di entropia, che premierebbe il testo peggiore immaginabile — quello che organizza benissimo le attese attorno a una tesi falsa — e ammette un caso nullo che il dibattito non considera mai: il lettore si sposta lateralmente, sostituisce un errore con un altro ugualmente distante, e ha la sensazione di aver imparato qualcosa. È definito sempre su un ricevente, mai in astratto: lo stesso identico testo vale molto per un pubblico e zero per un altro senza che una virgola sia cambiata.Il caso documentato è la frase del 1619 Project sulla Rivoluzione americana, agosto 2019: una sola proposizione che rende l'intera narrazione più coerente, più memorabile e più insegnabile, e che è falsa. È il testo peggiore immaginabile nel senso tecnico della definizione — organizza le attese attorno a una tesi sbagliata — e il fatto che serva una causa giusta non cambia il calcolo.",
     articles: [
       { title: "La formula dell’autenticità", url: "/writings/2026-08-23-la-formula-dellautenticita/" },
-      { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" }
+      { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" },
+      { title: "I Helped Fact-Check the 1619 Project. The Times Ignored Me.", url: "/curated/2020-03-06-harris-1619-project-fact-check-politico/", _source: "curated" }
     ]
   },
   {
@@ -2708,7 +2712,8 @@ module.exports = [
       { title: "Why open-weight models are crucial for American AI leadership", url: "/curated/2026-08-10-villasenor-pesi-aperti-leadership-brookings/", _source: "curated" },
       { title: "Internet Fragmentation's Outward Turn", url: "/curated/2025-06-01-fidler-splinternet-outward-turn-sciencespo/", _source: "curated" },
       { title: "Ranks of Humanity", url: "/curated/2026-09-24-meaney-varouxakis-idea-occidente-lrb/", _source: "curated" },
-      { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" }
+      { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" },
+      { title: "I Helped Fact-Check the 1619 Project. The Times Ignored Me.", url: "/curated/2020-03-06-harris-1619-project-fact-check-politico/", _source: "curated" }
     ]
   },
   {
@@ -3003,9 +3008,14 @@ module.exports = [
     type: "persona",
     geo: { modo: "diretta", paesi: ["Stati Uniti"] },
     sameAs: ["https://www.wikidata.org/wiki/Q6192915", "https://it.wikipedia.org/wiki/Jill_Lepore"],
-    note: "Storica e scrittrice americana (1966), staff writer del New Yorker e professoressa a Harvard. Autrice di *These Truths: A History of the United States* (2018), storia degli Stati Uniti costruita attorno all'idea che le verità fondanti — uguaglianza, diritti, sovranità popolare — non siano astrazioni ma oggetti concreti con effetti concreti nella vita delle persone: un'impostazione storiografica in piena sintonia con il filo teorico del sito. Tra le voci più acute nella critica storica alla Silicon Valley e alla mitologia del progresso tecnologico. Nel sito è citata per la lettura dell'enciclica *Magnifica Humanitas* di Leo XIV: il Papa come prima autorità spirituale a nominare il «paradigma tecnocratico», in una genealogia critica che risale ad Arendt e Mumford.",
+    note: "Storica e scrittrice americana (1966), staff writer del New Yorker e professoressa a Harvard. Autrice di *These Truths: A History of the United States* (2018), storia degli Stati Uniti costruita attorno all'idea che le verità fondanti — uguaglianza, diritti, sovranità popolare — non siano astrazioni ma oggetti concreti con effetti concreti nella vita delle persone: un'impostazione storiografica in piena sintonia con il filo teorico del sito. Tra le voci più acute nella critica storica alla Silicon Valley e alla mitologia del progresso tecnologico. Nel sito è citata per la lettura dell'enciclica *Magnifica Humanitas* di Leo XIV: il Papa come prima autorità spirituale a nominare il «paradigma tecnocratico», in una genealogia critica che risale ad Arendt e Mumford. Sul dibattito intorno al 1619 Project la sua rilevanza è strutturale prima che polemica, e il sito la usa come chiave di lettura: l'impianto di *These Truths* richiede che le proposizioni fondanti fossero intenzioni vere, perché se la Rivoluzione americana fosse stata combattuta in primo luogo per proteggere la schiavitù non ci sarebbe nulla da tradire e il libro perderebbe il proprio motore — resterebbe una storia più semplice e molto meno interessante, ipocrisia fino in fondo. La tesi difficile che Lepore sceglie è che gli stessi uomini intendessero davvero quelle proposizioni e possedessero persone, e che la contraddizione non si sciolga decidendo che mentivano. Questo la colloca con il 1619 Project sulla centralità della schiavitù — e infatti non firmò la lettera dei cinque storici del dicembre 2019 — e contro la sua affermazione sulla causalità, nella stessa posizione di Leslie M. Harris.",
+    related: [
+      { name: "paradigma tecnocratico", why: "Nel maggio 2026 legge l'enciclica di Leone XIV come la prima volta che un'autorità spirituale nomina il paradigma tecnocratico." }
+    ],
     articles: [
-      { title: "What the Pope Said About A.I.", url: "/curated/2026-05-27-lepore-pope-leo-ai-newyorker/", _source: "curated" }
+      { title: "What the Pope Said About A.I.", url: "/curated/2026-05-27-lepore-pope-leo-ai-newyorker/", _source: "curated" },
+      { title: "I Helped Fact-Check the 1619 Project. The Times Ignored Me.", url: "/curated/2020-03-06-harris-1619-project-fact-check-politico/", _source: "curated" },
+      { title: "America's Next Story", url: "/curated/2026-04-09-lepore-americas-next-story/", _source: "curated" }
     ]
   },
   {
@@ -3903,9 +3913,10 @@ module.exports = [
     related: [
       { name: "segregazione scolastica", why: "Con l'articolo del 2016 ha riaperto il dossier nel discorso pubblico americano; con quello del 2026 ne ha dichiarato il prezzo privato." }
     ],
-    note: "Giornalista americana (1976), corrispondente del *New York Times Magazine* su ingiustizia razziale e diritti civili, curatrice del 1619 Project (2019) e premio Pulitzer per il commento nello stesso anno. Nel sito entra con i due articoli che fanno coppia a dieci anni di distanza: nel 2016 *Choosing a School for My Daughter in a Segregated City*, che riportò la segregazione scolastica nel discorso pubblico americano, e nel settembre 2026 il consuntivo in cui dichiara il costo che quella scelta ha avuto per la figlia. Il criterio d'uso è preciso: fonte di prima mano sui fatti che ha osservato come reporter e vissuto come madre — e su quel piano il suo resoconto è verificabile e documentato — non autorità sulla cornice interpretativa americana, che il sito riporta senza adottare.",
+    note: "Giornalista americana (1976), corrispondente del *New York Times Magazine* su ingiustizia razziale e diritti civili, curatrice del 1619 Project (2019) e premio Pulitzer per il commento nello stesso anno. Nel sito entra con i due articoli che fanno coppia a dieci anni di distanza: nel 2016 *Choosing a School for My Daughter in a Segregated City*, che riportò la segregazione scolastica nel discorso pubblico americano, e nel settembre 2026 il consuntivo in cui dichiara il costo che quella scelta ha avuto per la figlia. Va registrato anche l'episodio che il sito archivia a parte: nell'estate del 2019 il *New York Times* sottopose a Leslie M. Harris, storica della schiavitù, l'affermazione centrale del saggio d'apertura — che una ragione critica dell'indipendenza americana fosse proteggere la schiavitù — e Harris la contestò in modo documentato; il giornale la pubblicò lo stesso. La decisione fu della redazione e non sua, ma l'affermazione era nel suo testo, e Hannah-Jones ha poi riconosciuto di aver sovraesteso l'argomento, annunciando di volerlo emendare nella versione in volume. Resta che sulla centralità della schiavitù nella storia americana la sua posizione coincide con quella di Jill Lepore e della stessa Harris, e la divergenza riguarda un punto di causalità, non l'impianto. Il criterio d'uso è quello, reso più preciso: fonte di prima mano sui fatti che ha osservato come reporter e vissuto come madre — e su quel piano il resoconto è verificabile e documentato —, da leggere con una verifica in più quando ricostruisce cause storiche. Il caso è in archivio, non in nota a margine: la cautela sta dove sta la stima.",
     articles: [
-      { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" }
+      { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" },
+      { title: "I Helped Fact-Check the 1619 Project. The Times Ignored Me.", url: "/curated/2020-03-06-harris-1619-project-fact-check-politico/", _source: "curated" }
     ]
   },
   {
@@ -3916,6 +3927,36 @@ module.exports = [
     note: "Sentenza della Corte suprema degli Stati Uniti del 1954 che dichiarò incostituzionale la segregazione razziale nelle scuole pubbliche, ottenuta dal NAACP Legal Defense Fund portando in giudizio genitori neri e i loro figli come ricorrenti. Nel sito non è una voce di storia americana ma il caso esemplare di una figura che torna altrove: una norma che vince in tribunale e non viene applicata. L'anno dopo, con Brown II (1955), la Corte stabilì che la desegregazione avvenisse «with all deliberate speed», formula abbastanza elastica da diventare la clausola di rinvio: il dispositivo di fuga fu scritto dallo stesso tribunale che aveva emesso la sentenza. Il governo federale non la fece rispettare; l'attuazione fu lasciata alle famiglie, cioè a bambini di sei anni mandati dentro le scuole bianche fra la folla — nel novembre 1960, alla McDonogh 19 di New Orleans, l'integrazione non durò fino alle tre del pomeriggio, perché entro quell'ora tutti i genitori bianchi avevano ritirato i figli. Settant'anni dopo, nel 2026, le scuole di New York sono segregate quanto trent'anni prima. Da tenere presente quando si valuta qualunque architettura regolatoria: fra l'adozione di una norma e il suo effetto c'è un problema di enforcement che la norma da sola non risolve.",
     articles: [
       { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" }
+    ]
+  },
+  {
+    name: "1619 Project",
+    type: "testo",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "Harris, Leslie M.", why: "Interpellata come verifica esterna nell'estate 2019, contestò l'affermazione centrale, e il Times la pubblicò comunque." },
+      { name: "Hannah-Jones, Nikole", why: "Ne è l'ideatrice e curatrice: il saggio d'apertura dell'agosto 2019 è suo, ed è lì che l'affermazione contestata fu pubblicata." },
+      { name: "Lepore, Jill", why: "Non firmò la lettera dei cinque storici del dicembre 2019: è con il progetto sulla centralità, contro la sua tesi sulla causalità." },
+      { name: "guadagno epistemico", why: "Il testo che organizza benissimo le attese attorno a una tesi falsa: la frase dell'agosto 2019 sulla Rivoluzione americana è quel caso." },
+      { name: "canone", why: "Correzione di un canone storiografico che aveva espulso schiavitù e razza; l'errore di fatto del 2019 non annulla la correzione di cornice." }
+    ],
+    note: "Progetto editoriale del *New York Times Magazine*, pubblicato nell'agosto 2019 e ideato da Nikole Hannah-Jones, che propone di datare la fondazione degli Stati Uniti al 1619, anno d'arrivo in Virginia dei primi africani schiavizzati, invece che al 1776; premio Pulitzer per il commento nel 2020, poi podcast, inserto e curriculum scolastico. Nel sito è il caso su cui si tiene insieme una distinzione che quasi ovunque collassa, e va letto su tre piani separati. Sulla **centralità** — la schiavitù come elemento strutturale della storia americana e non come macchia — il progetto ha ragione, e lo concede anche chi lo ha criticato: «gli Stati Uniti non furono fondati per proteggere la schiavitù, ma il Times ha ragione sul fatto che la schiavitù fu centrale nella loro storia», scrive Leslie M. Harris nel marzo 2020. Sulla **causalità** il saggio d'apertura afferma che una ragione critica dell'indipendenza dalla Gran Bretagna fu proteggere la schiavitù: è l'affermazione che Harris contestò come verificatrice esterna nell'estate 2019 e che il giornale pubblicò lo stesso, quella su cui cinque storici accademici chiesero rettifiche nel dicembre 2019, e quella che Hannah-Jones ha poi riconosciuto di aver sovraesteso. Sul **metodo** sta la conseguenza che interessa al sito: la storiografia di Jill Lepore, che il sito adotta, tratta le verità fondanti americane come affermazioni sul mondo e non come miti, dunque processabili con le prove — e un impianto simile non può permettersi fatti larghi, perché il fatto largo è l'arma che si consegna a chi difende la cornice vecchia. Harris lo aveva previsto scrivendo alla redazione, e lo registra come consuntivo nello stesso articolo.",
+    articles: [
+      { title: "I Helped Fact-Check the 1619 Project. The Times Ignored Me.", url: "/curated/2020-03-06-harris-1619-project-fact-check-politico/", _source: "curated" },
+      { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Harris, Leslie M.",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "Hannah-Jones, Nikole", why: "Il 19 agosto 2019, a Georgia Public Radio, la ascoltò «in silenzio attonito» ripetere l'affermazione che aveva smontato." },
+      { name: "Lepore, Jill", why: "La sua sintesi in una riga è la struttura in due tempi di These Truths: le verità fondanti erano reali, e sono state tradite dall'inizio." }
+    ],
+    note: "Storica americana della schiavitù e della vita afroamericana, professoressa alla Northwestern University, autrice di *In the Shadow of Slavery: African Americans in New York City, 1626-1863* (2003) e di *Slavery and the University: Histories and Legacies*. Nel sito entra con l'articolo del 6 marzo 2020 su *Politico Magazine*, e vale per la postura più che per il caso. Interpellata dal *New York Times* come verifica esterna sul 1619 Project nell'estate 2019, contestò l'affermazione centrale, fu pubblicata lo stesso, e poi fece quattro cose invece di una: nominò l'errore, ne diede la contro-evidenza storica — il caso Somerset del 1772 non toccava le colonie americane, dunque non c'era nulla da cui separarsi per proteggere la schiavitù —, rifiutò che la correzione servisse a liquidare il progetto, e applicò lo stesso controllo bibliografico ai cinque storici che lo attaccavano, contando le voci d'indice nelle loro opere. Si usa come modello di metodo — come si corregge un fatto senza cedere la cornice, e come si corregge una cornice senza allargare i fatti — più che come fonte su un singolo dibattito americano.",
+    articles: [
+      { title: "I Helped Fact-Check the 1619 Project. The Times Ignored Me.", url: "/curated/2020-03-06-harris-1619-project-fact-check-politico/", _source: "curated" }
     ]
   }
 

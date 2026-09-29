@@ -633,6 +633,12 @@ Da settembre 2026 lo stesso indice esce anche in forma aggregata, generata a bui
 
 ---
 
+### Modificare una voce esistente: ancorare sulla nota, mai sul nome
+
+`conceptsIndex.js` contiene il nome di una voce in due posti diversi: nella sua definizione (`name:`) e dentro i `related` di ogni altra voce che la richiama. Una sostituzione testuale ancorata su `name: "X"` colpisce la prima occorrenza nel file, che quasi sempre **non** è la definizione ma un riferimento in un'altra voce — e il testo finisce nella nota sbagliata senza che nessun validatore se ne accorga, perché il file resta sintatticamente valido.
+
+Regola: per modificare la nota di una voce esistente si ancora su una stringa presa **dalla nota stessa**, verificando che compaia una volta sola nel file. Stessa cosa per aggiungere un legame: si ancora sul `why` di un legame già presente in quella voce, non sul nome della voce di destinazione. Dopo ogni modifica si rilegge la voce toccata e si controlla che il testo sia dove doveva andare: i validatori verificano struttura e geografia, non la destinazione di una sostituzione.
+
 ## 6. Come funziona la navigazione semantica
 
 Il sito ha tre livelli di navigazione, dal più ampio al più specifico:
