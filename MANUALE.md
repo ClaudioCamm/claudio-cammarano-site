@@ -886,13 +886,15 @@ Il catalogo attuale pende verso l'ecosistema NYT/Atlantic/Economist: liberal-dem
 
 Regola d'ingaggio: mai per quota, solo quando il singolo pezzo supera il criterio 1. In italiano niente firme antagoniste (criterio 3, corollario).
 
-### La deriva cause-related ammessa
+### La deriva cause-related: preferenza dell'autore, non posizione del sito
 
-Il sito gira sulla questione cognitiva, declinata in chiave epistemica, geopolitica ed editoriale. Non è un sito di cause, e la militanza tematica è fuori linea per costruzione.
+Il sito gira sulla questione cognitiva, declinata in chiave epistemica, geopolitica ed editoriale. Non è un sito di cause e non ne dichiara nessuna.
 
-Le eccezioni dichiarate sono due, e sono solo due: **l'educazione** e **la lotta alle demenze**. Su questi due fronti l'archivio può ospitare pezzi che non passano dal punto di attraversamento abituale, e la nota del curatore può prendere posizione invece di limitarsi al framework. Restano dentro perché sono la stessa questione cognitiva vista da altri due lati: come si costruisce una mente e come la si perde.
+Esiste però una preferenza dell'autore, che orienta la selezione in ingresso: due fronti su cui l'archivio può ospitare pezzi che non passano dal punto di attraversamento abituale, **l'educazione** e **la lotta alle demenze**. Sono la stessa questione cognitiva vista da altri due lati — come si costruisce una mente e come la si perde — ed è questo, non il merito della causa, a renderli ammissibili.
 
-Conseguenza operativa per la curation: un pezzo sull'istruzione non ha bisogno di essere giustificato come se fosse fuori perimetro. È dentro il perimetro. Vale anche quando il caso è straniero e politicamente carico — si applica allora la regola di ancoraggio qui sotto, non un cappello difensivo.
+**Resta implicita, e questo è un vincolo, non una timidezza.** Una preferenza dichiarata nel sito senza nulla alle spalle è virtue-signalling: il sito incasserebbe la postura senza aver fatto niente per meritarla. Se un giorno diventerà una causa strutturata — un progetto, una serie, un impegno verificabile — allora si dichiarerà, e sarà una decisione separata, da prendere in quel momento. Fino ad allora nessuna `description`, nessun `perche`, nessuna nota di concetto scrive che il sito crede in qualcosa o che un tema è una sua causa. Il criterio vive qui, nel manuale, e agisce soltanto sul sì e sul no in ingresso.
+
+Conseguenza operativa per la curation: un pezzo sull'istruzione è ammissibile e non va giustificato come eccezione al perimetro — ma la chiosa resta quella di sempre, cioè che cosa il pezzo documenta e che cosa se ne porta via, senza adesione dichiarata.
 
 ### Ancoraggio: ogni affermazione ha una data e un luogo
 
