@@ -2,7 +2,7 @@
 layout: layouts/catena.njk
 title: "La firma e il segnale"
 date: 2026-09-28T20:20:00Z
-description: "Un decimo delle parole pronunciate a Westminster è scritto da un modello. Dieci schede dell'archivio su che cosa resta del valore di un testo quando scriverlo non costa più nulla, e sul perché riconoscere la macchina dallo stile è una strada chiusa."
+description: "Un decimo delle parole pronunciate a Westminster è scritto da un modello. Dodici schede dell'archivio su che cosa resta del valore di un testo quando scriverlo non costa più nulla, e sul perché riconoscere la macchina dallo stile è una strada chiusa."
 tesi: "Quando produrre un testo non costa più nulla, il suo valore si sposta sul segnale costoso che lo accompagna: chi lo firma, e come dichiara il lavoro che c'è dietro."
 category: ["Scrittura", "AI"]
 series: "La fiducia, I"
@@ -17,6 +17,8 @@ fonti:
   - 2026-07-30-economist-ai-writing-detection
   - 2026-06-10-nyt-em-dash-ai
   - 2023-01-25-kirchenbauer-watermark-llm-arxiv
+  - 2026-09-28-menand-punteggiatura-autore-newyorker
+  - 2026-09-21-upson-donne-tech-sondaggio-wired
   - 2026-09-19-sorkin-social-reckoning-nyt
   - 2026-06-21-dondi-ai-professionalita-ghostwriting
   - 2026-07-27-millman-kabbalah-ai-nyt
@@ -29,7 +31,7 @@ A settembre l'*Economist* ha passato i dibattiti di Westminster a uno strumento 
 
 {% scheda "2026-09-24-economist-dont-let-ai-kill-the-author" %}
 
-La tesi che ricavo dalle dieci schede di questa catena è che **quando produrre un testo non costa più nulla, il suo valore si sposta sul segnale che lo accompagna**: chi lo firma, e come dichiara il lavoro che c'è dietro. Per ricostruire quel segnale le strade sono due, riconoscere la macchina o farsi riconoscere da chi scrive, e l'archivio documenta abbastanza bene perché la prima sia chiusa.
+La tesi che ricavo dalle dodici schede di questa catena è che **quando produrre un testo non costa più nulla, il suo valore si sposta sul segnale che lo accompagna**: chi lo firma, e come dichiara il lavoro che c'è dietro. Per ricostruire quel segnale le strade sono due, riconoscere la macchina o farsi riconoscere da chi scrive, e l'archivio documenta abbastanza bene perché la prima sia chiusa.
 
 ## Riconoscere la macchina
 
@@ -38,6 +40,12 @@ L'*Economist* ci ha provato con metodo, costruendo un corpus di quasi cinquantas
 Resta la via tecnica, e il riferimento è il lavoro di Kirchenbauer e dei suoi colleghi del Maryland sulla filigrana: il modello favorisce in modo impercettibile una parte del vocabolario scelta da una funzione pseudocasuale, e un test statistico riconosce la traccia anche in frammenti brevi, con un tasso di falsi positivi prossimo a zero.{% rif "2023-01-25-kirchenbauer-watermark-llm-arxiv" %} La soluzione è elegante e ha un solo difetto, che è decisivo: funziona se chi produce il modello la applica al momento della generazione. A tre anni dalla pubblicazione nessun modello di largo uso l'ha adottata in produzione, e gli strumenti di rilevamento in commercio lavorano su indizi statistici troppo incerti per valere come prova.
 
 {% scheda "2023-01-25-kirchenbauer-watermark-llm-arxiv" %}
+
+## Il sospetto
+
+Se la macchina non si lascia riconoscere, il sospetto si sposta sugli esseri umani. Louis Menand, sul *New Yorker*, parte da un caso ottocentesco: le virgole della prima frase di *Orgoglio e pregiudizio* probabilmente non sono di Jane Austen, che nei manoscritti usava trattini, ma del redattore che ripulì i suoi testi per l'editore.{% rif "2026-09-28-menand-punteggiatura-autore-newyorker" %} Il saggio comincia con un'autorialità assistita e finisce sull'intelligenza artificiale, per rovesciare il timore corrente: il rischio è meno di scambiare la poesia di una macchina per quella di una persona, e più di liquidare come prodotto della macchina quella di una persona, perché un testo umano, azzerato il segnale costoso, non ha più modo di provare di esserlo. Il sospetto, poi, non cade su tutti allo stesso modo. In un sondaggio di *Wired* fra seicentotrentaquattro donne che lavorano nel tech, l'osservazione che torna è che lo stesso lavoro fatto male con l'AI viene lodato se lo presenta un uomo e costerebbe il posto a una di loro.{% rif "2026-09-21-upson-donne-tech-sondaggio-wired" %} Una dichiarazione del processo, a questo punto, protegge anche chi scrive senza macchina.
+
+{% scheda "2026-09-28-menand-punteggiatura-autore-newyorker" %}
 
 ## Il valore sta nella provenienza
 

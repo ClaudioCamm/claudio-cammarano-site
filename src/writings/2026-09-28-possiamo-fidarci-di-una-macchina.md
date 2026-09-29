@@ -2,7 +2,7 @@
 layout: layouts/catena.njk
 title: "Possiamo fidarci di una macchina?"
 date: 2026-09-28T20:25:00Z
-description: "Una versione di Claude ha migliorato un risultato sulla funzione zeta di Riemann, e lo sappiamo perché un sistema formale e quattro matematici l'hanno controllato. Nove schede su che cosa voglia dire fidarsi di una macchina, e su dove vada cercata la verifica."
+description: "Una versione di Claude ha migliorato un risultato sulla funzione zeta di Riemann, e lo sappiamo perché un sistema formale e quattro matematici l'hanno controllato. Dieci schede su che cosa voglia dire fidarsi di una macchina, e su dove vada cercata la verifica."
 tesi: "Le capacità dei modelli crescono più in fretta della possibilità di verificarle dall'interno; la fiducia può poggiare solo su una verifica esterna dei risultati, fatta con strumenti che non dipendono dal modello."
 category: ["AI", "Epistemologia"]
 series: "La fiducia, II"
@@ -17,6 +17,7 @@ fonti:
   - 2026-08-01-rothman-trust-ai-newyorker
   - 2026-07-12-karpathy-deep-dive-llm-youtube
   - 2021-08-30-gough-no-mind-aeon
+  - 2026-09-15-bayne-coscienza-non-reale-sciam
   - 2026-08-24-cutts-divario-efficienza-dati-mit-techreview
   - 2026-06-05-anthropic-claude-chemist
   - 2026-05-04-kevin-kelly-future-scientific-method
@@ -38,9 +39,9 @@ Il primo problema riguarda noi. Stephanie Shen si chiede se capiamo davvero ciò
 
 ## Che cosa abbiamo davanti
 
-Fidarsi di qualcosa presuppone di sapere, almeno a grandi linee, che cosa sia, e qui l'archivio offre più domande che risposte. Andrej Karpathy, in tre ore di lezione che restano il riferimento per capire come funzionano i modelli linguistici, insiste su due punti: i modelli hanno bisogno di token per pensare, perché il ragionamento emerge nell'atto della generazione, e la loro intelligenza è frastagliata, eccellente dove ci aspetteremmo difficoltà e fallace dove ci aspetteremmo facilità.{% rif "2026-07-12-karpathy-deep-dive-llm-youtube" %} Qualsiasi scala lineare delle capacità, in queste condizioni, serve a poco. Joe Gough, su *Aeon*, mostra quanto sia confusa già la parola che usiamo per la domanda, perché «mente» significa di volta in volta agentività, cognizione, coscienza, e ricorda che il greco di Omero descriveva gli esseri umani come un insieme di parti che comunicano, senza un termine per ciò che noi chiamiamo mente.{% rif "2021-08-30-gough-no-mind-aeon" %} Elise Cutts, sulla *MIT Technology Review*, porta il dato che imbarazza tutti: un bambino impara una lingua con cento milioni di parole, un modello ne richiede decine di trilioni, e nessuno sa spiegare perché.{% rif "2026-08-24-cutts-divario-efficienza-dati-mit-techreview" %}
+Fidarsi di qualcosa presuppone di sapere, almeno a grandi linee, che cosa sia, e qui l'archivio offre più domande che risposte. Andrej Karpathy, in tre ore di lezione che restano il riferimento per capire come funzionano i modelli linguistici, insiste su due punti: i modelli hanno bisogno di token per pensare, perché il ragionamento emerge nell'atto della generazione, e la loro intelligenza è frastagliata, eccellente dove ci aspetteremmo difficoltà e fallace dove ci aspetteremmo facilità.{% rif "2026-07-12-karpathy-deep-dive-llm-youtube" %} Qualsiasi scala lineare delle capacità, in queste condizioni, serve a poco. Joe Gough, su *Aeon*, mostra quanto sia confusa già la parola che usiamo per la domanda, perché «mente» significa di volta in volta agentività, cognizione, coscienza, e ricorda che il greco di Omero descriveva gli esseri umani come un insieme di parti che comunicano, senza un termine per ciò che noi chiamiamo mente.{% rif "2021-08-30-gough-no-mind-aeon" %} Tim Bayne, sullo *Scientific American*, porta lo stesso sospetto sulla coscienza: forse il termine non appartiene al linguaggio della scienza, e prima di costruire un rilevatore che dica se api, neonati o chatbot facciano parte del club dei coscienti bisogna chiedersi se ci sia qualcosa da rilevare.{% rif "2026-09-15-bayne-coscienza-non-reale-sciam" %} Elise Cutts, sulla *MIT Technology Review*, porta il dato che imbarazza tutti: un bambino impara una lingua con cento milioni di parole, un modello ne richiede decine di trilioni, e nessuno sa spiegare perché.{% rif "2026-08-24-cutts-divario-efficienza-dati-mit-techreview" %}
 
-Messe insieme, le tre schede dicono che non disponiamo di una teoria di che cosa siano questi sistemi, e che una fiducia fondata sulla comprensione del loro funzionamento interno è, per ora, fuori portata. Resta la fiducia fondata sui risultati.
+Messe insieme, queste schede dicono che non disponiamo di una teoria di che cosa siano questi sistemi, e che una fiducia fondata sulla comprensione del loro funzionamento interno è, per ora, fuori portata. Resta la fiducia fondata sui risultati.
 
 ## Dove si verifica
 
