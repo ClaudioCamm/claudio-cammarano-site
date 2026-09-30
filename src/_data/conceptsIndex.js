@@ -4316,6 +4316,7 @@ module.exports = [
   {
     name: "crisi della replicazione",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q25303778", "https://it.wikipedia.org/wiki/Crisi_della_riproducibilit%C3%A0"],
     geo: { modo: "nessuna", paesi: [] },
     related: [
       { name: "p-value", why: "Il numero al centro della crisi: non perché sia sbagliato, ma perché è stato usato come certificato di verità di un singolo studio." },
@@ -4340,6 +4341,7 @@ module.exports = [
   {
     name: "giardino dei sentieri che si biforcano",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q121365276"],
     geo: { modo: "teorico", paesi: ["Stati Uniti"] },
     related: [
       { name: "Gelman, Andrew", why: "La formula è sua, con Eric Loken, nel 2014: il titolo del working paper dice già che non serve nessuna pesca nei dati." },
@@ -4355,6 +4357,7 @@ module.exports = [
   {
     name: "preregistrazione",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q60752967"],
     geo: { modo: "nessuna", paesi: [] },
     related: [
       { name: "statistica dell'errore", why: "Non è un adempimento burocratico ma la condizione che rende calcolabile la probabilità d'errore di una procedura." },
@@ -4371,6 +4374,7 @@ module.exports = [
   {
     name: "Ioannidis, John",
     type: "persona",
+    sameAs: ["https://www.wikidata.org/wiki/Q6251482"],
     geo: { modo: "diretta", paesi: ["Stati Uniti", "Grecia"] },
     related: [
       { name: "inferenza bayesiana", why: "Il suo argomento è bayesiano nella struttura anche quando chi lo cita non lo sa: conta la probabilità a priori che l'ipotesi sia vera." },
@@ -4385,6 +4389,7 @@ module.exports = [
   {
     name: "Gelman, Andrew",
     type: "persona",
+    sameAs: ["https://www.wikidata.org/wiki/Q4757073"],
     geo: { modo: "diretta", paesi: ["Stati Uniti"] },
     related: [
       { name: "inferenza bayesiana", why: "Sta dentro il campo bayesiano e ne è la voce meno ortodossa: il suo workflow prescrive di tentare di far fallire il proprio modello." },
@@ -4400,6 +4405,7 @@ module.exports = [
   {
     name: "Fisher, Ronald Aylmer",
     type: "persona",
+    sameAs: ["https://www.wikidata.org/wiki/Q216723", "https://it.wikipedia.org/wiki/Ronald_Fisher"],
     geo: { modo: "diretta", paesi: ["Regno Unito"] },
     related: [
       { name: "p-value", why: "Lo introduce nell'uso corrente nel 1925, insieme alla soglia del 5 per cento che proponeva come comoda e non come regola." },

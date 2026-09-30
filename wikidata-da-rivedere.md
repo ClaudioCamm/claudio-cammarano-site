@@ -1,6 +1,8 @@
 # Wikidata — voci da rivedere
 
-Allineate: **252 su 318**. Restano **66** voci senza `sameAs`.
+Allineate: **258 su 324**. Restano **66** voci senza `sameAs`.
+
+Giro del 30 settembre 2026, sera — agganciate le sei voci dell'apparato sulla crisi della replicazione: `Fisher, Ronald Aylmer` (Q216723), `Gelman, Andrew` (Q4757073), `Ioannidis, John` (Q6251482), `crisi della replicazione` (Q25303778), `preregistrazione` (Q60752967), `giardino dei sentieri che si biforcano` (Q121365276).
 
 Giro del 30 settembre 2026, pomeriggio — agganciate: `Popper, Karl` (Q81244), `Jaynes, Edwin Thompson` (Q711210), `Error and the Growth of Experimental Knowledge` (Q140105163), `inferenza bayesiana` (Q812535), `p-value` (Q253255). Tre scartate con motivo, in sezione A.
 
@@ -11,11 +13,15 @@ Ultimo giro: 30 settembre 2026 — Peirce, Mayo, test severo.
 Regola applicata: aggancio accettato solo con corrispondenza esatta di label o alias **e** tipo (P31) compatibile, poi verifica a mano contro la nota della voce. Un Q-id sbagliato e' peggio di nessun Q-id.
 
 
-## A — candidato trovato e scartato (25)
+## A — candidato trovato e scartato (26)
 
 Qui Wikidata ha qualcosa con quel nome esatto, ma non e' la tua voce. Servono i tuoi occhi.
 
 - **Anduril** *(istituzione)* — I match esatti sono la spada di Tolkien e un framework software. L'azienda non compare con questo label.
+
+- **giardino dei sentieri che si biforcano** *(teoria)*, secondo candidato — `garden of forking paths` restituisce anche **Q120986778 scartato**, che è una pagina di disambiguazione di Wikimedia e rimanda in prima istanza al racconto di Borges. La voce è agganciata invece a **Q121365276**, `forking paths problem`, descritto come «fallacy in statistical hypothesis testing». Nota metodologica: qui l'aggancio non passa dalla corrispondenza di etichetta, perché il nome italiano segue la metafora di Gelman e Loken mentre Wikidata usa il nome descrittivo; passa dall'identità di concetto, confermata dalla descrizione. È l'eccezione consentita alla regola dell'etichetta esatta, e va dichiarata quando si applica.
+
+- **Ioannidis, John** *(persona)*, **agganciato con riserva** — Q6251482 è descritto solo come «professor and chairman at the Department of Hygiene and Epidemiology», che corrisponde alla sua cattedra a Ioannina ma non nomina né Stanford né il lavoro del 2005. L'altro omonimo (Q113992340) è uno scienziato della computazione alla Columbia, cioè un'altra persona. L'identificazione l'ho fatta su un fatto biografico che conosco, non sull'etichetta: se vuoi lo standard pieno serve una chiamata di conferma su `P108` (datore di lavoro) e `P569` (data di nascita).
 
 - **statistica dell'errore** *(teoria)* — `frequentist inference` restituisce **Q2158281, scartato**, e lo scarto è il punto della voce. Quell'elemento descrive l'inferenza frequentista come famiglia di tecniche; la voce nomina la posizione filosofica specifica di Mayo, e la nota dice esplicitamente che quel nome è preferibile al generico frequentismo proprio perché le distingue. Agganciarla lì identificherebbe la tesi con la famiglia che la contiene: è l'errore che questa sezione esiste per evitare.
 
