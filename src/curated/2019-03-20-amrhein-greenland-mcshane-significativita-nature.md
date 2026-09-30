@@ -1,0 +1,22 @@
+---
+title: "Scientists rise up against statistical significance"
+external_url: "https://www.nature.com/articles/d41586-019-00857-9"
+source: "Valentin Amrhein, Sander Greenland e Blake McShane / Nature"
+date: 2019-03-20
+ai_prose: WR
+criterio: metodo-di-lavoro
+perche: "Non chiedono di abolire i p-value, chiedono di smettere di dicotomizzarli: è la distinzione che quasi tutti i commentatori hanno saltato, e cambia cosa si scrive in un paper."
+rinvio: /curated/2016-03-07-wasserstein-lazar-dichiarazione-asa-p-value/
+description: |
+  Comment su *Nature* 567, n. 7748, pp. 305–307, pubblicato online il 20 marzo 2019, firmato da Valentin Amrhein, Sander Greenland, Blake McShane «e più di 800 firmatari». Nota bibliografica: il titolo online è quello riportato qui, quello della versione a stampa è *Retire statistical significance*. Non è ad accesso libero.
+
+  La distinzione da fissare, perché è quella che tutta la ripresa successiva ha confuso, è fra due richieste diverse. Quello che chiedono: «Concordiamo, e chiediamo che l'intero concetto di significatività statistica sia abbandonato», e più precisamente «chiediamo che si smetta di usare i p-value nel modo convenzionale, dicotomico — per decidere se un risultato refuti o sostenga un'ipotesi scientifica». Quello che **non** chiedono, detto da loro in due punti distinti dell'articolo: «Non stiamo chiedendo un divieto dei p-value» e «di nuovo, non stiamo sostenendo un divieto dei p-value, degli intervalli di confidenza o di altre misure statistiche — solo che non dovremmo trattarli categoricamente». Chiedono anzi che i p-value continuino a essere riportati, e con più precisione di adesso: «Quando i p-value sono riportati, saranno dati con precisione sensata (per esempio, P = 0,021 o P = 0,13).» L'oggetto dell'abolizione è la soglia e l'etichetta, non lo strumento.
+
+  L'argomento forte è quello contro l'inferenza dal non significativo all'assenza di effetto, e viene con un caso che si può citare da solo. Due studi sui farmaci antinfiammatori e la fibrillazione atriale di nuova insorgenza trovano **lo stesso identico rapporto di rischio, 1,2**. Il primo, statisticamente non significativo, ha un intervallo al 95 per cento che va da una diminuzione del rischio del 3 per cento a un aumento del 48 (p = 0,091), e i suoi autori concludono che l'esposizione «non era associata» alla fibrillazione. Il secondo, significativo, ha un intervallo che va dal 9 al 33 per cento di aumento (p = 0,0003). Le due stime puntuali coincidono: differisce solo la precisione. «È ridicolo concludere che i risultati statisticamente non significativi mostrassero nessuna associazione.» E la diffusione dell'errore è misurata: «Indagini su centinaia di articoli hanno trovato che i risultati statisticamente non significativi sono interpretati come indicanti nessuna differenza o nessun effetto in circa la metà dei casi.»
+
+  La proposta terminologica è l'altra cosa esportabile: rinominare gli intervalli di confidenza **intervalli di compatibilità**, perché «tutti i valori fra i limiti dell'intervallo sono ragionevolmente compatibili con i dati, date le assunzioni statistiche usate per calcolare l'intervallo» — da cui segue che «isolare un valore particolare (come il valore nullo) nell'intervallo come *mostrato* non ha senso», e che «un intervallo che contiene il valore nullo conterrà spesso anche valori non nulli di grande importanza pratica». Con la simmetria che di solito si dimentica: i valori fuori dall'intervallo non sono incompatibili, «sono solo meno compatibili».
+
+  Sui firmatari va detto come sono stati raccolti, perché è una bozza circolata e non un sondaggio: «Quando abbiamo invitato altri a leggere una bozza di questo commento e a firmare se concordavano con il nostro messaggio, 250 lo hanno fatto nelle prime 24 ore»; dopo una settimana erano più di 800, tutti verificati per affiliazione accademica o lavoro in un campo che dipende dalla modellazione statistica. La cifra di 854 che circola nella letteratura secondaria viene dal materiale supplementare; nell'articolo la formula è «più di 800». E la chiusa è quella che fa vedere che la richiesta è più modesta di come è stata letta: «I p-value, gli intervalli e le altre misure statistiche hanno tutti il loro posto, ma è tempo che la significatività statistica se ne vada.»
+tags: [curated, epistemologia, scienza, istituzioni]
+concepts: ["p-value", "guerre della statistica", "crisi della replicazione", "conflitto di interessi intellettuale", "test severo"]
+---

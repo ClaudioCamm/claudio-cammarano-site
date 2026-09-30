@@ -1544,7 +1544,9 @@ module.exports = [
     note: "Il processo con cui acquisiamo informazione e strutturiamo la conoscenza. Nel sito è l'oggetto della carrellata di Kevin Kelly (2006/2026): non un insieme fisso di protocolli ma una struttura vivente che si modifica con gli strumenti disponibili — e che l'AI potrebbe cambiare nei prossimi 80 anni più di quanto non abbia fatto nei precedenti 80.",
     articles: [
       { title: "Speculations on the Future of the Scientific Method", url: "/curated/2026-05-04-kevin-kelly-future-scientific-method/", _source: "curated" },
-      { title: "Happy Birthday C.S. Peirce: Peircean Induction and the Error-Correcting Thesis", url: "/curated/2026-09-11-mayo-peirce-tesi-autocorrettiva-errorstatistics/", _source: "curated" }
+      { title: "Happy Birthday C.S. Peirce: Peircean Induction and the Error-Correcting Thesis", url: "/curated/2026-09-11-mayo-peirce-tesi-autocorrettiva-errorstatistics/", _source: "curated" },
+      { title: "Philosophy of Statistics", url: "/curated/2025-10-01-romeijn-filosofia-della-statistica-sep/", _source: "curated" },
+      { title: "Karl Popper", url: "/curated/2026-07-31-thornton-karl-popper-sep/", _source: "curated" }
     ]
   },
   {
@@ -2737,7 +2739,8 @@ module.exports = [
       { title: "Not Even Wrong 2: An Audit of Public AGI Prediction, 1950–2026", url: "/curated/2026-09-14-floridi-not-even-wrong-2-agi-ssrn/", _source: "curated" },
       { title: "We Surveyed 634 Women Who Work in Tech. They Let Loose", url: "/curated/2026-09-21-upson-donne-tech-sondaggio-wired/", _source: "curated" },
       { title: "Happy Birthday C.S. Peirce: Peircean Induction and the Error-Correcting Thesis", url: "/curated/2026-09-11-mayo-peirce-tesi-autocorrettiva-errorstatistics/", _source: "curated" },
-      { title: "The statistics wars and intellectual conflicts of interest", url: "/curated/2021-12-06-mayo-conflitti-interesse-intellettuali-conbio/", _source: "curated" }
+      { title: "The statistics wars and intellectual conflicts of interest", url: "/curated/2021-12-06-mayo-conflitti-interesse-intellettuali-conbio/", _source: "curated" },
+      { title: "The ASA President's Task Force Statement on Statistical Significance and Replicability", url: "/curated/2021-08-01-task-force-asa-significativita-replicabilita-aoas/", _source: "curated" }
     ]
   },
   {
@@ -3762,7 +3765,8 @@ module.exports = [
       { title: "Don't let AI kill the author", url: "/curated/2026-09-24-economist-dont-let-ai-kill-the-author/", _source: "curated" },
       { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" },
       { title: "Not Even Wrong 1: AI and the Labour Market, From Frey–Osborne to ChatGPT, 2012–2026", url: "/curated/2026-06-10-floridi-not-even-wrong-1-lavoro-ssrn/", _source: "curated" },
-      { title: "We Surveyed 634 Women Who Work in Tech. They Let Loose", url: "/curated/2026-09-21-upson-donne-tech-sondaggio-wired/", _source: "curated" }
+      { title: "We Surveyed 634 Women Who Work in Tech. They Let Loose", url: "/curated/2026-09-21-upson-donne-tech-sondaggio-wired/", _source: "curated" },
+      { title: "Why Most Published Research Findings Are False", url: "/curated/2005-08-30-ioannidis-most-published-findings-false-plosmed/", _source: "curated" }
     ]
   },
   {
@@ -4086,7 +4090,8 @@ module.exports = [
     articles: [
       { title: "Not Even Wrong 1: AI and the Labour Market, From Frey–Osborne to ChatGPT, 2012–2026", url: "/curated/2026-06-10-floridi-not-even-wrong-1-lavoro-ssrn/", _source: "curated" },
       { title: "Not Even Wrong 2: An Audit of Public AGI Prediction, 1950–2026", url: "/curated/2026-09-14-floridi-not-even-wrong-2-agi-ssrn/", _source: "curated" },
-      { title: "Happy Birthday C.S. Peirce: Peircean Induction and the Error-Correcting Thesis", url: "/curated/2026-09-11-mayo-peirce-tesi-autocorrettiva-errorstatistics/", _source: "curated" }
+      { title: "Happy Birthday C.S. Peirce: Peircean Induction and the Error-Correcting Thesis", url: "/curated/2026-09-11-mayo-peirce-tesi-autocorrettiva-errorstatistics/", _source: "curated" },
+      { title: "Karl Popper", url: "/curated/2026-07-31-thornton-karl-popper-sep/", _source: "curated" }
     ]
   },
   {
@@ -4121,7 +4126,8 @@ module.exports = [
     note: "Filosofa della statistica statunitense, professoressa emerita alla Virginia Tech, autrice di <em>Error and the Growth of Experimental Knowledge</em> (Chicago, 1996), premio Lakatos 1998, e di <em>Statistical Inference as Severe Testing: How to Get Beyond the Statistics Wars</em> (Cambridge, 2018). Nel sito ha una posizione particolare, perché è la fonte di uno strumento che l'archivio aveva adottato prima di risalire a lei: quando Floridi, Novelli e Morley nel 2026 definiscono una previsione «severamente testabile», lo fanno dichiarando il prestito — nel senso reso preciso <em>after Mayo</em>. Il suo contributo sta in due mosse. La prima è la definizione di severità, che sposta l'oggetto della valutazione dall'ipotesi alla procedura: non quanto è probabile che H sia vera, ma quanto era probabile che il procedimento segnalasse l'errore se l'errore c'era stato. La seconda è la difesa di Peirce contro la sua lettura più diffusa: l'autocorrezione non è la promessa che i dati, accumulandosi, correggano da sé, perché quella sarebbe l'induzione rozza, che Mayo giudica una sonda dell'errore altamente inaffidabile. È pubblicata prevalentemente in sede accademica e sul proprio blog, e in questo archivio è anche il caso di specie che dimostra come la testata non decida: un blog personale senza apparato redazionale, quando chi scrive è la fonte primaria dello standard di cui parla, vale più di una rivista con una firma fuori campo.",
     articles: [
       { title: "Happy Birthday C.S. Peirce: Peircean Induction and the Error-Correcting Thesis", url: "/curated/2026-09-11-mayo-peirce-tesi-autocorrettiva-errorstatistics/", _source: "curated" },
-      { title: "The statistics wars and intellectual conflicts of interest", url: "/curated/2021-12-06-mayo-conflitti-interesse-intellettuali-conbio/", _source: "curated" }
+      { title: "The statistics wars and intellectual conflicts of interest", url: "/curated/2021-12-06-mayo-conflitti-interesse-intellettuali-conbio/", _source: "curated" },
+      { title: "The ASA President's Task Force Statement on Statistical Significance and Replicability", url: "/curated/2021-08-01-task-force-asa-significativita-replicabilita-aoas/", _source: "curated" }
     ]
   },
   {
@@ -4138,7 +4144,17 @@ module.exports = [
     note: "Standard di valutazione delle prove formulato da Deborah Mayo, che ne ricava la forma leggendo la tesi autocorrettiva di Charles Sanders Peirce. Nella definizione di Mayo un'ipotesi H supera un test severo con il dato x se e solo se, primo, x concorda con H, e secondo, la procedura sperimentale avrebbe segnalato con probabilità molto alta la presenza di un errore, nel caso ci fosse stata una discordanza. In forma breve: un test è severo se l'ipotesi avrebbe potuto fallirlo davvero. La conseguenza è uno spostamento dell'oggetto, ed è la parte che si dimentica per prima: <strong>le probabilità si attaccano alle procedure, non alle ipotesi</strong>. Peirce lo scrive già nel 1878 (2.748) rifiutando la probabilità inversa — la teoria proposta non assegna alcuna probabilità alla conclusione induttiva. Non si dice quanto è probabile che H sia vera; si dice quanto è affidabile il procedimento che l'ha messa alla prova. Da questo standard Mayo ricava tre ordini di induzione, e la scala è utilizzabile anche dove non compare un numero: il primo è l'induzione rozza, che procede per assenza di confutazione ed è quindi un argomento dall'ignoranza; il secondo è qualitativo, e la sua forza dipende da quanto la previsione vada contro ciò che ci si aspetterebbe senza l'ipotesi; il terzo è quantitativo, e comincia quando quel quanto diventa misurabile attraverso probabilità d'errore oggettive. Il corollario pratico più immediato riguarda la predesignazione, cioè l'obbligo di dichiarare l'ipotesi prima di guardare i dati: se si esaminano venti fattori e si riporta come test quello che è risultato significativo, la probabilità di aver trovato almeno un falso positivo non è il 5% dichiarato ma circa il 64%, perché 0,95 elevato a venti fa 0,36 — e quella, non 0,95, è la severità del test che si è davvero condotto. Va detto che non è lo standard, ma <strong>uno</strong> degli standard in campo: appartiene alla statistica dell'errore, e gli si oppone la tradizione bayesiana, per cui la domanda legittima è quanto sia credibile un'ipotesi alla luce dei dati osservati e non quanto affidabilmente una procedura avrebbe sbagliato. Mayo difende la propria parte contro i test basati sul fattore di Bayes nel 2025, sul <em>British Journal for the Philosophy of Science</em>; l'archivio registra entrambe le posizioni alle voci <em>inferenza bayesiana</em> e <em>guerre della statistica</em>, e adotta questa sapendo di adottarne una. Nel sito è lo strumento in ingresso più usato e il più a lungo non dichiarato: l'archivio lo adotta nel giugno 2026 con il primo audit di Floridi, che lo prende da Mayo, e la voce esiste per restituirlo alla sua fonte. La domanda che porta con sé, e che si può rivolgere a qualunque affermazione, non è se abbia prove a favore: è quante possibilità aveva di non averne.",
     articles: [
       { title: "Happy Birthday C.S. Peirce: Peircean Induction and the Error-Correcting Thesis", url: "/curated/2026-09-11-mayo-peirce-tesi-autocorrettiva-errorstatistics/", _source: "curated" },
-      { title: "The statistics wars and intellectual conflicts of interest", url: "/curated/2021-12-06-mayo-conflitti-interesse-intellettuali-conbio/", _source: "curated" }
+      { title: "The statistics wars and intellectual conflicts of interest", url: "/curated/2021-12-06-mayo-conflitti-interesse-intellettuali-conbio/", _source: "curated" },
+      { title: "Why Most Published Research Findings Are False", url: "/curated/2005-08-30-ioannidis-most-published-findings-false-plosmed/", _source: "curated" },
+      { title: "Scientific method: Statistical errors", url: "/curated/2014-02-12-nuzzo-errori-statistici-nature/", _source: "curated" },
+      { title: "The Statistical Crisis in Science", url: "/curated/2014-11-01-gelman-loken-giardino-sentieri-biforcano-americanscientist/", _source: "curated" },
+      { title: "Estimating the reproducibility of psychological science", url: "/curated/2015-08-28-open-science-collaboration-riproducibilita-science/", _source: "curated" },
+      { title: "The ASA Statement on p-Values: Context, Process, and Purpose", url: "/curated/2016-03-07-wasserstein-lazar-dichiarazione-asa-p-value/", _source: "curated" },
+      { title: "Redefine statistical significance", url: "/curated/2017-09-01-benjamin-redefine-statistical-significance-nhb/", _source: "curated" },
+      { title: "Justify your alpha", url: "/curated/2018-02-26-lakens-justify-your-alpha-nhb/", _source: "curated" },
+      { title: "Scientists rise up against statistical significance", url: "/curated/2019-03-20-amrhein-greenland-mcshane-significativita-nature/", _source: "curated" },
+      { title: "Philosophy of Statistics", url: "/curated/2025-10-01-romeijn-filosofia-della-statistica-sep/", _source: "curated" },
+      { title: "Karl Popper", url: "/curated/2026-07-31-thornton-karl-popper-sep/", _source: "curated" }
     ]
   },
   {
@@ -4154,7 +4170,16 @@ module.exports = [
     ],
     note: "Nome corrente — <em>statistics wars</em> — della controversia che percorre la statistica e la filosofia della scienza da circa un secolo, prima fra Ronald Fisher e la coppia Neyman–Pearson negli anni Trenta, poi lungo la faglia principale fra approcci bayesiani e approcci frequentisti. La posta non è un dettaglio tecnico, ed è la ragione per cui la disputa non si chiude: è che cosa significhi <em>probabilità</em> dentro un'inferenza, e quindi che cosa vogliamo che un'inferenza ci consegni. Per un bayesiano la risposta legittima è quanto è credibile un'ipotesi alla luce dei dati; per la statistica dell'errore quella domanda è mal posta, e l'unica risposta disponibile riguarda quanto affidabilmente la procedura avrebbe segnalato uno sbaglio. Nessuna evidenza empirica può dirimere la questione, perché non è una questione empirica. Le conseguenze però sono materiali, e questo è il motivo per cui la voce esiste in un archivio che non è di statistica: dalla faglia dipendono quali metodi una rivista pretende, che cosa viene pubblicato e che cosa no, come si approva un farmaco, come si dichiara replicata una scoperta, e quali risultati di un modello si possono chiamare miglioramenti. L'uso pratico è diagnostico e vale ben oltre le scienze quantitative: davanti a un'affermazione che dice <em>i dati mostrano che</em>, conviene chiedersi quale delle due concezioni è in gioco, perché gran parte della confusione nel dibattito pubblico sull'evidenza nasce da uno scambio silenzioso fra le due — si invoca il rigore della procedura e si conclude con un grado di fiducia, o viceversa. Il sito prende posizione su un punto solo, e minimo: qualunque concezione si adotti, un'affermazione che nessun esito potrebbe smentire non è in gioco in nessuna delle due.",
     articles: [
-      { title: "The statistics wars and intellectual conflicts of interest", url: "/curated/2021-12-06-mayo-conflitti-interesse-intellettuali-conbio/", _source: "curated" }
+      { title: "The statistics wars and intellectual conflicts of interest", url: "/curated/2021-12-06-mayo-conflitti-interesse-intellettuali-conbio/", _source: "curated" },
+      { title: "Scientific method: Statistical errors", url: "/curated/2014-02-12-nuzzo-errori-statistici-nature/", _source: "curated" },
+      { title: "Estimating the reproducibility of psychological science", url: "/curated/2015-08-28-open-science-collaboration-riproducibilita-science/", _source: "curated" },
+      { title: "The ASA Statement on p-Values: Context, Process, and Purpose", url: "/curated/2016-03-07-wasserstein-lazar-dichiarazione-asa-p-value/", _source: "curated" },
+      { title: "Redefine statistical significance", url: "/curated/2017-09-01-benjamin-redefine-statistical-significance-nhb/", _source: "curated" },
+      { title: "Justify your alpha", url: "/curated/2018-02-26-lakens-justify-your-alpha-nhb/", _source: "curated" },
+      { title: "Scientists rise up against statistical significance", url: "/curated/2019-03-20-amrhein-greenland-mcshane-significativita-nature/", _source: "curated" },
+      { title: "The ASA President's Task Force Statement on Statistical Significance and Replicability", url: "/curated/2021-08-01-task-force-asa-significativita-replicabilita-aoas/", _source: "curated" },
+      { title: "Philosophy of Statistics", url: "/curated/2025-10-01-romeijn-filosofia-della-statistica-sep/", _source: "curated" },
+      { title: "Karl Popper", url: "/curated/2026-07-31-thornton-karl-popper-sep/", _source: "curated" }
     ]
   },
   {
@@ -4170,7 +4195,12 @@ module.exports = [
       { name: "free-energy principle", why: "La cognizione descritta come inferenza bayesiana: il cervello come sistema che minimizza l'errore fra modello interno e mondo." }
     ],
     note: "La concezione per cui la probabilità misura un grado di credenza, e inferire significa aggiornarlo: si parte da una probabilità a priori dell'ipotesi, si osservano i dati, e il teorema di Bayes restituisce la probabilità a posteriori. Il pregio dichiarato è che l'output è ciò che davvero interessa a chi ragiona — quanto è credibile questa tesi, adesso — mentre un p-value non lo dice e viene continuamente letto come se lo dicesse. Sulla critica più comune, l'arbitrarietà del prior, la risposta bayesiana è che il prior non è un difetto ma una dichiarazione: chiunque inferisca ne ha uno, e il frequentista semplicemente lo nasconde nella scelta del modello, del test e delle ipotesi ausiliarie. Il cuore tecnico è il <em>principio di verosimiglianza</em>: tutta la portata probatoria dei dati sta nella funzione di verosimiglianza, dunque conta ciò che si è osservato e non ciò che si sarebbe potuto osservare. Da qui l'obiezione più affilata all'altra parte, che va presa sul serio: le probabilità d'errore dipendono dal piano di campionamento, cioè da esiti mai avvenuti e dalle intenzioni private dello sperimentatore su quando fermarsi — e due ricercatori con dati identici e regole d'arresto diverse ottengono p-value diversi, che per un bayesiano è assurdo. La genealogia va da Thomas Bayes e Laplace a Bruno de Finetti, che negli anni Trenta fonda la probabilità soggettiva sulla coerenza delle scommesse, e poi a Jeffreys, Savage, Lindley, Jaynes. Un avvertimento contro le caricature: i due campi non sono monoliti, e la posizione più interessante è quella di chi sta dentro il primo e vuole qualcosa del secondo — il <em>workflow</em> bayesiano di Andrew Gelman prescrive controlli predittivi a posteriori che nello spirito sono controlli d'errore, cioè tentativi di far fallire il proprio modello.",
-    articles: []
+    articles: [
+      { title: "Why Most Published Research Findings Are False", url: "/curated/2005-08-30-ioannidis-most-published-findings-false-plosmed/", _source: "curated" },
+      { title: "Scientific method: Statistical errors", url: "/curated/2014-02-12-nuzzo-errori-statistici-nature/", _source: "curated" },
+      { title: "Redefine statistical significance", url: "/curated/2017-09-01-benjamin-redefine-statistical-significance-nhb/", _source: "curated" },
+      { title: "Philosophy of Statistics", url: "/curated/2025-10-01-romeijn-filosofia-della-statistica-sep/", _source: "curated" }
+    ]
   },
   {
     name: "statistica dell'errore",
@@ -4184,7 +4214,8 @@ module.exports = [
     ],
     note: "Nome che Deborah Mayo dà alla propria posizione — <em>error statistics</em> — e che è preferibile al generico frequentismo, perché ne isola la tesi filosofica invece della tecnica. La probabilità qui non misura la credibilità di un'ipotesi ma la frequenza con cui una procedura sbaglierebbe, e l'output di un'inferenza non è la probabilità che l'ipotesi sia vera: quella domanda, sostiene Mayo, non è la domanda giusta. Ciò che si può sapere è quanto severamente l'ipotesi è stata sondata, e per saperlo serve esattamente quello che la parte avversa considera irrilevante — la distribuzione campionaria, gli esiti che non si sono verificati, la regola d'arresto. La ragione è concreta e regge: gli effetti di selezione — la pesca nei dati, l'arresto opportunistico, l'ipotesi scelta dopo aver guardato — non cambiano nulla nella funzione di verosimiglianza e cambiano tutto nella probabilità d'errore. Sono quindi invisibili a un resoconto puramente verosimigliantista, mentre sono la prima causa dei risultati che non si replicano. Da qui l'accusa che Mayo porta nel 2025 sul <em>British Journal for the Philosophy of Science</em>: i test basati sul fattore di Bayes possono attribuire evidenza forte a una tesi anche quando poco è stato fatto per escludere i difetti di quella tesi. La risposta bayesiana migliore, che va registrata perché non è debole: un modello specificato come si deve può includere al proprio interno il processo di selezione, e un prior onesto penalizza da sé un'ipotesi pescata nel rumore. La genealogia passa da Peirce a Fisher, a Neyman e Egon Pearson, e arriva a Mayo e Aris Spanos.",
     articles: [
-      { title: "The statistics wars and intellectual conflicts of interest", url: "/curated/2021-12-06-mayo-conflitti-interesse-intellettuali-conbio/", _source: "curated" }
+      { title: "The statistics wars and intellectual conflicts of interest", url: "/curated/2021-12-06-mayo-conflitti-interesse-intellettuali-conbio/", _source: "curated" },
+      { title: "Philosophy of Statistics", url: "/curated/2025-10-01-romeijn-filosofia-della-statistica-sep/", _source: "curated" }
     ]
   },
   {
@@ -4200,7 +4231,9 @@ module.exports = [
       { name: "Dialektik der Aufklärung", why: "Il libro dell'altra parte in quella disputa: per Popper la critica totale della ragione strumentale rinuncia a poter essere corretta." }
     ],
     note: "Filosofo della scienza nato a Vienna (1902–1994), poi cittadino britannico e docente alla London School of Economics, autore della <em>Logik der Forschung</em> (1934, in inglese <em>The Logic of Scientific Discovery</em>, 1959), di <em>Congetture e confutazioni</em> (1963) e della <em>Società aperta e i suoi nemici</em> (1945). La sua mossa fondativa è un criterio di demarcazione: una teoria è scientifica se vieta qualcosa, cioè se esiste un'osservazione che la confuterebbe. Nessuna quantità di cigni bianchi dimostra la generalizzazione, un cigno nero la abbatte; e una teoria che sopravvive alle prove non è dimostrata, è soltanto non ancora confutata — Popper chiama questo corroborazione e nega che sia sostegno induttivo. Ne segue una preferenza controintuitiva per le congetture audaci: meglio una teoria improbabile e ricca di contenuto, perché vieta di più e quindi si espone di più. I suoi bersagli dichiarati erano la psicoanalisi e il marxismo storicista, apparati che spiegano ogni esito e non ne proibiscono nessuno. Nel sito arriva tardi e per una strada obliqua, ed è giusto dire perché: tutta la famiglia di strumenti che l'archivio usa in ingresso — il <em>not even wrong</em>, il test severo, la lettura del criti-hype — poggia sulla falsificabilità, e mancava l'antenato. La lettura che il sito adotta non è però devota, ed è quella di Deborah Mayo: Popper aveva il criterio giusto e non aveva il modo di farlo mordere, perché non ha mai fornito un resoconto di che cosa renda un test un <em>buon</em> test. Senza una misura della severità, la falsificabilità resta una parola d'ordine, e in pratica qualunque teoria può dirsi corroborata da qualunque prova le sia sopravvissuta. C'è infine un'appendice che riguarda l'altra metà dell'archivio: nella Positivismusstreit aperta a Tubinga nel 1961 Popper si trovò contro la scuola di Francoforte, con Habermas dall'altro lato, e l'accusa che muoveva è la stessa che qui si muove altrove — una critica totale della ragione rinuncia per costruzione a poter essere corretta.",
-    articles: []
+    articles: [
+      { title: "Karl Popper", url: "/curated/2026-07-31-thornton-karl-popper-sep/", _source: "curated" }
+    ]
   },
   {
     name: "conflitto di interessi intellettuale",
@@ -4214,7 +4247,10 @@ module.exports = [
     ],
     note: "Categoria formulata da Deborah Mayo in un editoriale su <em>Conservation Biology</em> del dicembre 2021, a proposito delle riviste che impongono una posizione metodologica dentro una disputa scientifica ancora aperta. Il conflitto non è economico: chi decide non ha azioni, consulenze o brevetti da dichiarare, e proprio per questo non compare in nessuna delle dichiarazioni che le riviste pretendono dagli autori. Funziona però come ogni conflitto d'interessi, perché chi ha il potere di stabilire la regola con cui gli altri saranno valutati ha un interesse nella regola, e se quella regola coincide con la tesi che sostiene da vent'anni, imporla non è un atto tecnico ma una vittoria ottenuta per via amministrativa invece che per argomenti. L'utilità dello strumento sta nella portabilità, perché la struttura si ripresenta ogni volta che chi definisce il criterio è anche parte in causa su ciò che il criterio deciderà: un comitato che sceglie i benchmark su cui sarà misurato un modello, un'agenzia che fissa la soglia di approvazione di un farmaco, un sistema di valutazione della ricerca progettato da chi ne sarà valutato, una redazione che stabilisce che cosa conti come fonte. La domanda da porre non è se chi decide sia in buona fede, perché di norma lo è e il sospetto di malafede fa perdere il punto: è se la regola che impone sia la stessa che difende. Va aggiunta una cautela che riguarda l'origine del concetto, e che non lo indebolisce: Mayo è parte in causa nella disputa che descrive, sostiene una delle due posizioni in campo, e quell'editoriale è anche una mossa nella sua guerra. Lo strumento resta valido, e si applica anche a lei.",
     articles: [
-      { title: "The statistics wars and intellectual conflicts of interest", url: "/curated/2021-12-06-mayo-conflitti-interesse-intellettuali-conbio/", _source: "curated" }
+      { title: "The statistics wars and intellectual conflicts of interest", url: "/curated/2021-12-06-mayo-conflitti-interesse-intellettuali-conbio/", _source: "curated" },
+      { title: "The ASA Statement on p-Values: Context, Process, and Purpose", url: "/curated/2016-03-07-wasserstein-lazar-dichiarazione-asa-p-value/", _source: "curated" },
+      { title: "Scientists rise up against statistical significance", url: "/curated/2019-03-20-amrhein-greenland-mcshane-significativita-nature/", _source: "curated" },
+      { title: "The ASA President's Task Force Statement on Statistical Significance and Replicability", url: "/curated/2021-08-01-task-force-asa-significativita-replicabilita-aoas/", _source: "curated" }
     ]
   },
   {
@@ -4264,7 +4300,116 @@ module.exports = [
     ],
     note: "Il numero più frainteso della scienza contemporanea, e la voce esiste per questo. <strong>Definizione</strong>: il p-value è la probabilità, <em>supposta vera l'ipotesi nulla</em>, di osservare un risultato almeno tanto estremo quanto quello osservato. Introdotto nell'uso corrente da Ronald Fisher nel 1925, insieme alla soglia del 5% che proponeva come comoda e non come regola. Tre elementi di quella definizione fanno tutto il danno, e conviene smontarli uno per uno.<br><br>Primo, <em>supposta vera l'ipotesi nulla</em>. L'ipotesi sta nella condizione, non nella conclusione: il p-value non dice quanto è probabile che l'ipotesi nulla sia vera, e non può dirlo, perché è la probabilità dei dati dato H e non di H dati i dati. Confondere le due è la fallacia del condizionale trasposto, e si vede meglio con un esempio brutto: la probabilità che qualcuno sia morto, dato che è stato impiccato, è altissima; quella che sia stato impiccato, dato che è morto, è minima. Secondo, <em>almeno tanto estremo</em>: il calcolo include dati che non si sono osservati, perché somma una coda della distribuzione campionaria. È esattamente la proprietà che un bayesiano considera illegittima, perché viola il principio di verosimiglianza, ed esattamente quella che la statistica dell'errore considera indispensabile, perché è ciò che rende la probabilità d'errore una probabilità di qualcosa. Terzo, <em>un risultato</em>: che cosa conti come risultato dipende dal test che si è specificato, dunque il p-value dipende dal piano di campionamento e dalla regola d'arresto — ed è per questo che dichiarare l'ipotesi prima di guardare i dati non è una formalità.<br><br><strong>Che cosa non è</strong>, in una lista che l'American Statistical Association ha dovuto pubblicare nel 2016 perché gli errori erano sistematici. Non è la probabilità che l'ipotesi nulla sia vera. Non è la probabilità che il risultato sia dovuto al caso. Non è la probabilità di replicare il risultato, e 1 meno p non lo è nemmeno. Non è una misura della dimensione o dell'importanza di un effetto: con un campione abbastanza grande un effetto irrilevante produce un p minuscolo, e con un campione piccolo un effetto grosso non lo produce. E soprattutto, un risultato non significativo non è una prova che l'effetto non ci sia — assenza di prova non è prova d'assenza, ed è l'errore con le conseguenze pratiche più gravi, perché chiude questioni aperte.<br><br><strong>Il ruolo nella disputa</strong> è asimmetrico e va tenuto presente per leggere qualunque polemica in materia. Per la statistica dell'errore il p-value non è affatto una misura di evidenza: è uno strumento che dice quanto male la procedura si sarebbe comportata, e un p piccolo isolato non vale niente — Fisher stesso insisteva che serve un metodo affidabile per generarli, non un episodio. Per la tradizione bayesiana è invece un numero che risponde alla domanda sbagliata e viene letto come se rispondesse a quella giusta; l'obiezione ha anche una forma tecnica precisa, il paradosso di Lindley, per cui con dati abbastanza numerosi un risultato significativo al 5% può corrispondere a un'evidenza bayesiana forte <em>in favore</em> dell'ipotesi nulla. Le due cornici non divergono solo per accento: possono divergere di segno. A questo si aggiunge l'argomento che nel 2005 John Ioannidis rende celebre, ed è bayesiano nella struttura anche quando chi lo cita non lo sa: se in un campo le ipotesi plausibili sono poche e quelle testate molte, e se si pubblica solo ciò che risulta significativo, la maggior parte dei risultati significativi è falsa pur essendo ogni singolo p-value calcolato correttamente.<br><br><strong>Uso pratico</strong>, che è la ragione per cui la voce sta in questo archivio e non in un manuale. Davanti a un <em>p &lt; 0,05</em> le domande sono quattro, in ordine: quale era l'ipotesi nulla, e se è stata dichiarata prima dei dati; quanti confronti sono stati esaminati per arrivare a quello riportato; quanto è grande l'effetto, con il suo intervallo, perché il p non lo dice; e se un risultato non significativo sia stato presentato come prova che non ci sia nulla. Una precisazione sull'alternativa che si propone più spesso: sostituire i p-value con gli intervalli di confidenza non aggira nessuna di queste obiezioni, perché un intervallo al 95% è l'insieme dei valori che non verrebbero rifiutati al 5% — è la stessa macchina scritta in un altro modo, e va bene per altre ragioni, non perché sfugga alla disputa.",
     articles: [
-      { title: "The statistics wars and intellectual conflicts of interest", url: "/curated/2021-12-06-mayo-conflitti-interesse-intellettuali-conbio/", _source: "curated" }
+      { title: "The statistics wars and intellectual conflicts of interest", url: "/curated/2021-12-06-mayo-conflitti-interesse-intellettuali-conbio/", _source: "curated" },
+      { title: "Why Most Published Research Findings Are False", url: "/curated/2005-08-30-ioannidis-most-published-findings-false-plosmed/", _source: "curated" },
+      { title: "Scientific method: Statistical errors", url: "/curated/2014-02-12-nuzzo-errori-statistici-nature/", _source: "curated" },
+      { title: "The Statistical Crisis in Science", url: "/curated/2014-11-01-gelman-loken-giardino-sentieri-biforcano-americanscientist/", _source: "curated" },
+      { title: "Estimating the reproducibility of psychological science", url: "/curated/2015-08-28-open-science-collaboration-riproducibilita-science/", _source: "curated" },
+      { title: "The ASA Statement on p-Values: Context, Process, and Purpose", url: "/curated/2016-03-07-wasserstein-lazar-dichiarazione-asa-p-value/", _source: "curated" },
+      { title: "Redefine statistical significance", url: "/curated/2017-09-01-benjamin-redefine-statistical-significance-nhb/", _source: "curated" },
+      { title: "Justify your alpha", url: "/curated/2018-02-26-lakens-justify-your-alpha-nhb/", _source: "curated" },
+      { title: "Scientists rise up against statistical significance", url: "/curated/2019-03-20-amrhein-greenland-mcshane-significativita-nature/", _source: "curated" },
+      { title: "The ASA President's Task Force Statement on Statistical Significance and Replicability", url: "/curated/2021-08-01-task-force-asa-significativita-replicabilita-aoas/", _source: "curated" },
+      { title: "Philosophy of Statistics", url: "/curated/2025-10-01-romeijn-filosofia-della-statistica-sep/", _source: "curated" }
+    ]
+  },
+  {
+    name: "crisi della replicazione",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    related: [
+      { name: "p-value", why: "Il numero al centro della crisi: non perché sia sbagliato, ma perché è stato usato come certificato di verità di un singolo studio." },
+      { name: "Ioannidis, John", why: "Nel 2005 ne dà il modello formale prima che ci fossero i dati: il valore predittivo di un campo dipende da quante ipotesi false vi circolano." },
+      { name: "giardino dei sentieri che si biforcano", why: "Il meccanismo che la spiega senza chiamare in causa la disonestà: basta che le scelte analitiche vengano dopo i dati." },
+      { name: "preregistrazione", why: "Il rimedio su cui converge quasi tutta la letteratura, e l'unico su cui bayesiani e frequentisti non litigano." },
+      { name: "guerre della statistica", why: "La crisi è ciò che ha portato una disputa filosofica secolare dentro le decisioni editoriali delle riviste." }
+    ],
+    note: "Nome corrente della constatazione, maturata fra il 2005 e il 2015 soprattutto in psicologia e in medicina, che una quota larga dei risultati pubblicati non regge a un secondo tentativo. La misura di riferimento è del 2015, quando la Open Science Collaboration pubblica su <em>Science</em> l'esito di cento replicazioni di studi psicologici del 2008: il 97 per cento degli originali aveva un risultato significativo, il 36 per cento delle repliche lo ha avuto, e le dimensioni d'effetto si sono dimezzate. Il modello formale però viene prima dei dati, ed è di John Ioannidis nel 2005: la probabilità che un risultato dichiarato sia vero dipende dalla potenza dello studio, dal rapporto fra ipotesi vere e false che circolano nel campo e da un termine di distorsione, e nessuna soglia sul p-value conosce quei tre parametri. Nel sito la voce serve a tenere insieme tre cose che si confondono. La prima è che la crisi non riguarda la frode: il meccanismo descritto da Gelman e Loken nel 2014 funziona con ricercatori onesti che compiono una sola analisi, perché basta che le scelte su esclusioni, codifiche e trasformazioni siano state prese dopo aver visto i dati. La seconda è che un fallimento di replicazione non dimostra che l'originale fosse falso, come gli autori dello studio del 2015 dicono esplicitamente, e chi lo tratta come una confutazione commette lo stesso errore logico che denuncia. La terza è che la crisi ha una causa editoriale prima che statistica: la bassa potenza dei disegni combinata con la pubblicazione selettiva dei risultati positivi produce una letteratura con effetti gonfiati al rialzo, e la contrazione osservata nelle repliche è ciò che ci si deve aspettare, non una sorpresa. È il contesto in cui la disputa fra bayesiani e frequentisti smette di essere accademica e comincia a decidere che cosa viene pubblicato.",
+    articles: [
+      { title: "Why Most Published Research Findings Are False", url: "/curated/2005-08-30-ioannidis-most-published-findings-false-plosmed/", _source: "curated" },
+      { title: "Scientific method: Statistical errors", url: "/curated/2014-02-12-nuzzo-errori-statistici-nature/", _source: "curated" },
+      { title: "The Statistical Crisis in Science", url: "/curated/2014-11-01-gelman-loken-giardino-sentieri-biforcano-americanscientist/", _source: "curated" },
+      { title: "Estimating the reproducibility of psychological science", url: "/curated/2015-08-28-open-science-collaboration-riproducibilita-science/", _source: "curated" },
+      { title: "The ASA Statement on p-Values: Context, Process, and Purpose", url: "/curated/2016-03-07-wasserstein-lazar-dichiarazione-asa-p-value/", _source: "curated" },
+      { title: "Redefine statistical significance", url: "/curated/2017-09-01-benjamin-redefine-statistical-significance-nhb/", _source: "curated" },
+      { title: "Justify your alpha", url: "/curated/2018-02-26-lakens-justify-your-alpha-nhb/", _source: "curated" },
+      { title: "Scientists rise up against statistical significance", url: "/curated/2019-03-20-amrhein-greenland-mcshane-significativita-nature/", _source: "curated" },
+      { title: "The ASA President's Task Force Statement on Statistical Significance and Replicability", url: "/curated/2021-08-01-task-force-asa-significativita-replicabilita-aoas/", _source: "curated" }
+    ]
+  },
+  {
+    name: "giardino dei sentieri che si biforcano",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "Gelman, Andrew", why: "La formula è sua, con Eric Loken, nel 2014: il titolo del working paper dice già che non serve nessuna pesca nei dati." },
+      { name: "p-value", why: "Ne è l'invalidazione silenziosa: il calcolo presuppone un test fissato in anticipo, e qui il test è stato scelto guardando i dati." },
+      { name: "test severo", why: "La severità reale di un test scelto dopo i dati è molto minore di quella dichiarata, e nessuno dei due numeri appare nel paper." },
+      { name: "preregistrazione", why: "Il rimedio proposto dagli stessi autori, con l'ammissione che nella loro pratica di ricerca è spesso impraticabile." }
+    ],
+    note: "Formula di Andrew Gelman ed Eric Loken, dal titolo di un working paper del novembre 2013 e poi dall'articolo su <em>American Scientist</em> del 2014, per il modo in cui un p-value si invalida senza che nessuno abbia barato. La distinzione dal <em>p-hacking</em> è tutto il contenuto del concetto e va tenuta ferma: il p-hacking presuppone che il ricercatore esegua molte analisi e riporti quella significativa, mentre qui l'analisi condotta è <strong>una sola</strong>. Ciò che invalida il calcolo non è quante analisi siano state fatte, ma quante avrebbero potuto essere fatte con dati diversi: se le decisioni su quali casi escludere, come codificare le variabili, quali trasformazioni applicare e quali interazioni testare sono state prese guardando i dati, il test risultante è condizionato ai dati, e la distribuzione di riferimento sotto l'ipotesi nulla non è quella che si è usata. La conseguenza è, testualmente, «lo stesso effetto che se avessero deliberatamente pescato quei risultati». Da qui la frase che rovescia la presunzione morale di tutta la discussione sull'integrità della ricerca: il fatto stesso che gli scienziati generalmente non barino li rende vulnerabili a trarre conclusioni forti quando incontrano uno schema abbastanza robusto da superare la soglia. Nel sito è lo strumento che rende il concetto esportabile fuori dalla statistica, perché la struttura è quella di qualunque analisi in cui il criterio viene fissato dopo aver visto il materiale: un indicatore scelto dopo aver guardato i risultati trimestrali, una definizione di successo assestata a campagna conclusa, un caso di studio selezionato perché conferma. Il nome viene da Borges, e la metafora funziona perché descrive un'illusione di necessità: qualunque strada si prenda sembra predeterminata, ed è perché le scelte sono state fatte implicitamente.",
+    articles: [
+      { title: "The Statistical Crisis in Science", url: "/curated/2014-11-01-gelman-loken-giardino-sentieri-biforcano-americanscientist/", _source: "curated" }
+    ]
+  },
+  {
+    name: "preregistrazione",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    related: [
+      { name: "statistica dell'errore", why: "Non è un adempimento burocratico ma la condizione che rende calcolabile la probabilità d'errore di una procedura." },
+      { name: "Mayo, Deborah", why: "La chiama fra i modi più efficaci di promuovere la replicazione, e ne dà la ragione: senza predesignazione la severità non si può nemmeno calcolare." },
+      { name: "p-value", why: "Ciò che il calcolo presuppone e che nessun articolo dimostra: che l'ipotesi fosse fissata prima di vedere i dati." }
+    ],
+    note: "Pratica di depositare pubblicamente, prima di raccogliere o guardare i dati, l'ipotesi che si intende testare, il protocollo di raccolta, i criteri di esclusione e la regola con cui si deciderà di fermarsi. Nel dibattito sulla crisi della replicazione è l'unico rimedio su cui convergono posizioni altrimenti incompatibili: la raccomandano Gelman e Loken nel 2014, Mayo dalla parte della statistica dell'errore, Lakens e i suoi ottantasette coautori nel 2018. La ragione della convergenza è che non si tratta di una norma di trasparenza ma di una condizione di calcolabilità. La probabilità d'errore di una procedura dipende da quali esiti quella procedura avrebbe potuto produrre; se l'ipotesi è scelta dopo aver visto i dati, l'insieme degli esiti possibili non è quello che si è usato per il calcolo, e il numero riportato non misura ciò che dichiara. Lo stesso vale in forma quantificata nel caso più semplice: chi esamina venti fattori e riporta come test quello risultato significativo ha una probabilità di falso positivo intorno al 64 per cento e non del 5. L'obiezione onesta è quella che fanno gli stessi Gelman e Loken, e vale la pena tenerla nella voce: nella ricerca applicata si impara molto guardando i dati, e preregistrare tutto renderebbe impossibile una parte del lavoro che è legittima. La risposta corrente non è un divieto ma una separazione dei registri: l'analisi esplorativa resta libera e va dichiarata esplorativa, e il test confermativo è quello che si preregistra. Fuori dalla ricerca scientifica la struttura si ritrova ogni volta che un criterio di successo viene fissato prima o dopo l'esito.",
+    articles: [
+      { title: "The Statistical Crisis in Science", url: "/curated/2014-11-01-gelman-loken-giardino-sentieri-biforcano-americanscientist/", _source: "curated" },
+      { title: "Estimating the reproducibility of psychological science", url: "/curated/2015-08-28-open-science-collaboration-riproducibilita-science/", _source: "curated" },
+      { title: "Justify your alpha", url: "/curated/2018-02-26-lakens-justify-your-alpha-nhb/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Ioannidis, John",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Stati Uniti", "Grecia"] },
+    related: [
+      { name: "inferenza bayesiana", why: "Il suo argomento è bayesiano nella struttura anche quando chi lo cita non lo sa: conta la probabilità a priori che l'ipotesi sia vera." },
+      { name: "p-value", why: "Ne mostra il limite strutturale: una soglia non può conoscere quante ipotesi false circolano nel campo in cui viene applicata." },
+      { name: "conflitto di interessi intellettuale", why: "Il suo quinto corollario riguarda gli interessi finanziari; Mayo vent'anni dopo nomina la variante che non passa dal denaro." }
+    ],
+    note: "Medico ed epidemiologo, nato negli Stati Uniti e cresciuto ad Atene, professore a Stanford, autore nel 2005 dell'articolo più citato della letteratura sulla riproducibilità, <em>Why Most Published Research Findings Are False</em>. Nel sito vale per l'argomento e non per il titolo, che è diventato uno slogan e ha coperto la cosa utile: l'articolo non è un pamphlet ma un modello, che calcola la probabilità che un risultato dichiarato sia vero a partire dalla potenza dello studio, dal rapporto fra ipotesi vere e false testate in quel campo e da un termine di distorsione. Ne ricava sei corollari utilizzabili come lista di controllo su qualunque disciplina — meno un campo fa studi grandi, meno i suoi risultati sono veri; meno gli effetti sono grandi, meno sono veri; più relazioni si testano e meno le si seleziona, meno sono veri; più c'è flessibilità nei disegni e nelle definizioni, meno sono veri; più ci sono interessi in gioco, meno sono veri; e, controintuitivo, più un campo è caldo e affollato di squadre in competizione, meno i suoi risultati sono veri. La conseguenza che porta più lontano riguarda che cosa si stia misurando quando si misura male: in molti campi i risultati dichiarati «possono essere semplicemente misure accurate del bias prevalente», e le dimensioni d'effetto pubblicate sono la stima più accurata della distorsione netta invece che dell'effetto. Va registrato che dal 2020 Ioannidis ha assunto sulla pandemia posizioni molto discusse, comprese stime di letalità che si sono rivelate basse; il sito lo cita per il lavoro del 2005, che regge per conto proprio, e non come autorità generale.",
+    articles: [
+      { title: "Why Most Published Research Findings Are False", url: "/curated/2005-08-30-ioannidis-most-published-findings-false-plosmed/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Gelman, Andrew",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "inferenza bayesiana", why: "Sta dentro il campo bayesiano e ne è la voce meno ortodossa: il suo workflow prescrive di tentare di far fallire il proprio modello." },
+      { name: "statistica dell'errore", why: "La posizione più interessante della disputa: un bayesiano che rivendica i controlli d'errore come parte necessaria dell'analisi." },
+      { name: "test severo", why: "I controlli predittivi a posteriori che raccomanda sono, nello spirito, tentativi di sottoporre il modello a un test che potrebbe fallire." },
+      { name: "p-value", why: "Non ne chiede l'abolizione: mostra come si invalidi da sé quando l'analisi che lo produce è stata scelta guardando i dati." }
+    ],
+    note: "Statistico statunitense, professore di statistica e scienze politiche alla Columbia, autore con Eric Loken della formula del giardino dei sentieri che si biforcano (2013–2014). Nel sito ha un ruolo particolare, perché occupa la posizione che rende la disputa fra bayesiani e frequentisti più interessante di uno scontro fra scuole: è bayesiano dichiarato, e insieme il più insistente sul fatto che un modello vada messo alla prova con controlli che potrebbero farlo fallire. Il suo <em>workflow</em> bayesiano prescrive controlli predittivi a posteriori — confrontare i dati che il modello prevede con quelli che si hanno — e nello spirito sono controlli d'errore, cioè esattamente la mossa che la statistica dell'errore rivendica come propria e che il bayesianismo ortodosso considera superflua. Il contributo che l'archivio usa più spesso è però la diagnosi del 2014, e la sua forza sta nel non accusare nessuno: il p-value pubblicato può essere invalido anche quando il ricercatore ha condotto una sola analisi in perfetta buona fede, perché ciò che conta non è quante analisi abbia fatto ma quante avrebbero potuto essere fatte con dati diversi. È anche uno dei pochi in questo dibattito ad ammettere pubblicamente il limite della propria proposta: sulla preregistrazione scrive che per la maggior parte dei suoi progetti applicati sembra difficilmente praticabile, perché guardando i dati si impara molto.",
+    articles: [
+      { title: "The Statistical Crisis in Science", url: "/curated/2014-11-01-gelman-loken-giardino-sentieri-biforcano-americanscientist/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Fisher, Ronald Aylmer",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Regno Unito"] },
+    related: [
+      { name: "p-value", why: "Lo introduce nell'uso corrente nel 1925, insieme alla soglia del 5 per cento che proponeva come comoda e non come regola." },
+      { name: "statistica dell'errore", why: "Primo anello della genealogia che Mayo rivendica, dopo Peirce: l'idea che serva un metodo affidabile e non un risultato isolato." },
+      { name: "guerre della statistica", why: "La prima faglia è interna al suo campo: il contenzioso con Neyman e Pearson negli anni Trenta precede quello con i bayesiani." },
+      { name: "preregistrazione", why: "La predesignazione dell'ipotesi e la randomizzazione sono suoi requisiti, non aggiunte successive della scienza aperta." }
+    ],
+    note: "Statistico e genetista britannico (1890–1962), a Rothamsted e poi a Cambridge, autore di <em>Statistical Methods for Research Workers</em> (1925) e di <em>The Design of Experiments</em> (1935). Gli si devono il p-value nell'uso corrente, la randomizzazione come fondamento del disegno sperimentale, l'analisi della varianza, la stima di massima verosimiglianza e la nozione stessa di ipotesi nulla: buona parte dell'apparato con cui la scienza sperimentale del Novecento ha deciso che cosa contasse come risultato. Due cose vanno dette per non consegnare una figura di comodo. La prima è che la soglia del 5 per cento è sua ma non come regola: la proponeva come convenzione comoda, e insisteva che un p-value piccolo isolato non stabilisce nulla, perché quello che serve è un metodo affidabile nel generarli — cioè esattamente ciò che la pratica successiva ha smesso di chiedere mentre conservava il suo numero. La seconda è che la prima delle guerre della statistica è interna alla tradizione classica e non lo vede contro i bayesiani: il contenzioso con Jerzy Neyman ed Egon Pearson, negli anni Trenta, riguarda se un test serva a valutare l'evidenza in un singolo esperimento, come voleva lui, o a regolare un comportamento di lungo periodo con tassi d'errore controllati, come volevano loro. Va infine registrato, perché il sito si occupa di chi fissa gli standard di prova e con quale interesse, che Fisher fu un eugenista di primo piano e che negli anni Cinquanta, mentre era consulente del comitato dei produttori di tabacco britannici, contestò l'inferenza causale dal fumo al cancro sostenendo che l'associazione potesse essere confusa o invertita. I due fatti non toccano la validità dei suoi metodi e non vanno usati per liquidarli; toccano la tesi che la competenza tecnica metta al riparo dal conflitto d'interessi.",
+    articles: [
+      { title: "Philosophy of Statistics", url: "/curated/2025-10-01-romeijn-filosofia-della-statistica-sep/", _source: "curated" }
     ]
   }
 
