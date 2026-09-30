@@ -385,3 +385,48 @@ body.catena .series-nav-label { color: var(--color-catena); }
   .home-band--catena .home-catena { grid-template-columns: minmax(0, 1fr); gap: var(--spacing-sm); }
   .home-catena-titolo { font-size: 26px; }
 }
+
+/* Apparato didattico dentro una Catena: tabelle e liste di lavoro */
+.catena-apparato {
+  margin: var(--spacing-lg) 0;
+  padding: 20px 24px;
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-catena);
+  font-family: var(--font-sans);
+}
+.catena-apparato-label {
+  margin: 0 0 12px !important;
+  font-size: 12px !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-catena);
+}
+.catena-apparato-tabella {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.article-body .catena-apparato table {
+  width: 100%;
+  min-width: 640px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.45;
+}
+.article-body .catena-apparato table td,
+.article-body .catena-apparato table tr:nth-child(even) td { background: var(--color-bg); }
+.article-body .catena-apparato table td:first-child { font-weight: 600; }
+.catena-apparato-lista {
+  margin: 0;
+  padding-left: 1.4em;
+  font-size: 16px;
+  line-height: 1.55;
+}
+.catena-apparato-lista li { margin: 0 0 12px; }
+.catena-apparato-lista li:last-child { margin-bottom: 0; }
+@media (max-width: 768px) {
+  .catena-apparato { padding: 16px; }
+  .article-body .catena-apparato table { font-size: 13px; min-width: 560px; }
+  .catena-apparato-lista { font-size: 15px; }
+}
