@@ -20,5 +20,5 @@ description: |
 
   Nella formulazione più tagliente, che viene da un suo articolo di due anni prima sull'*European Journal of Clinical Investigation*: «L'argomento *le soglie di significatività possono essere usate molto male, dunque togliamo le soglie* è un argomento molto cattivo.»
 tags: [curated, epistemologia, scienza, istituzioni]
-concepts: ["conflitto di interessi intellettuale", "guerre della statistica", "Mayo, Deborah", "test severo", "statistica dell'errore", "Stati Uniti"]
+concepts: ["conflitto di interessi intellettuale", "guerre della statistica", "p-value", "Mayo, Deborah", "test severo", "statistica dell'errore", "Stati Uniti"]
 ---
