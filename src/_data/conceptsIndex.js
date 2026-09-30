@@ -4160,6 +4160,7 @@ module.exports = [
   {
     name: "inferenza bayesiana",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q812535", "https://it.wikipedia.org/wiki/Inferenza_bayesiana"],
     geo: { modo: "teorico", paesi: ["Regno Unito", "Francia", "Italia", "Stati Uniti"] },
     related: [
       { name: "Probability Theory: The Logic of Science", why: "La formulazione più ambiziosa: non una scelta fra metodi, ma l'unica estensione coerente della logica all'informazione incompleta." },
@@ -4189,6 +4190,7 @@ module.exports = [
   {
     name: "Popper, Karl",
     type: "persona",
+    sameAs: ["https://www.wikidata.org/wiki/Q81244", "https://it.wikipedia.org/wiki/Karl_Popper"],
     geo: { modo: "diretta", paesi: ["Austria", "Regno Unito"] },
     related: [
       { name: "not even wrong", why: "La forma pura del suo criterio: un'affermazione che non vieta nulla non è falsa, è fuori dal gioco." },
@@ -4218,6 +4220,7 @@ module.exports = [
   {
     name: "Jaynes, Edwin Thompson",
     type: "persona",
+    sameAs: ["https://www.wikidata.org/wiki/Q711210"],
     geo: { modo: "diretta", paesi: ["Stati Uniti"] },
     related: [
       { name: "Shannon, Claude E.", why: "Il principio di massima entropia riprende l'entropia di Shannon e la usa come criterio per scegliere una distribuzione." },
@@ -4239,6 +4242,7 @@ module.exports = [
   {
     name: "Error and the Growth of Experimental Knowledge",
     type: "testo",
+    sameAs: ["https://www.wikidata.org/wiki/Q140105163"],
     geo: { modo: "diretta", paesi: ["Stati Uniti"] },
     related: [
       { name: "Popper, Karl", why: "Il libro nasce dal suo problema e gli dà quello che gli mancava: non il criterio di falsificabilità, ma una misura di quanto un test sia severo." }
@@ -4249,6 +4253,7 @@ module.exports = [
   {
     name: "p-value",
     type: "teoria",
+    sameAs: ["https://www.wikidata.org/wiki/Q253255"],
     geo: { modo: "teorico", paesi: ["Regno Unito"] },
     related: [
       { name: "guerre della statistica", why: "È l'oggetto materiale della disputa: quasi tutto il conflitto si combatte su come debba essere letto questo numero." },

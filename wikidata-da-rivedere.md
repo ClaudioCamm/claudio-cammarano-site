@@ -1,6 +1,8 @@
 # Wikidata — voci da rivedere
 
-Allineate: **247 su 317**. Restano **70** voci senza `sameAs`.
+Allineate: **252 su 318**. Restano **66** voci senza `sameAs`.
+
+Giro del 30 settembre 2026, pomeriggio — agganciate: `Popper, Karl` (Q81244), `Jaynes, Edwin Thompson` (Q711210), `Error and the Growth of Experimental Knowledge` (Q140105163), `inferenza bayesiana` (Q812535), `p-value` (Q253255). Tre scartate con motivo, in sezione A.
 
 Da verificare, aggiunte il 30 settembre 2026 con l'apparato bayesiani/frequentisti: `Popper, Karl`, `Jaynes, Edwin Thompson`, `Probability Theory: The Logic of Science`, `Error and the Growth of Experimental Knowledge`, `inferenza bayesiana`, `statistica dell'errore`, `guerre della statistica`, `conflitto di interessi intellettuale`. Sulle ultime due non mi aspetto corrispondenze: `error statistics` e il conflitto d'interessi intellettuale sono formulazioni di Mayo, non termini con voce propria.
 
@@ -9,11 +11,17 @@ Ultimo giro: 30 settembre 2026 — Peirce, Mayo, test severo.
 Regola applicata: aggancio accettato solo con corrispondenza esatta di label o alias **e** tipo (P31) compatibile, poi verifica a mano contro la nota della voce. Un Q-id sbagliato e' peggio di nessun Q-id.
 
 
-## A — candidato trovato e scartato (22)
+## A — candidato trovato e scartato (25)
 
 Qui Wikidata ha qualcosa con quel nome esatto, ma non e' la tua voce. Servono i tuoi occhi.
 
 - **Anduril** *(istituzione)* — I match esatti sono la spada di Tolkien e un framework software. L'azienda non compare con questo label.
+
+- **statistica dell'errore** *(teoria)* — `frequentist inference` restituisce **Q2158281, scartato**, e lo scarto è il punto della voce. Quell'elemento descrive l'inferenza frequentista come famiglia di tecniche; la voce nomina la posizione filosofica specifica di Mayo, e la nota dice esplicitamente che quel nome è preferibile al generico frequentismo proprio perché le distingue. Agganciarla lì identificherebbe la tesi con la famiglia che la contiene: è l'errore che questa sezione esiste per evitare.
+
+- **conflitto di interessi intellettuale** *(teoria)* — `conflict of interest` restituisce **Q211067, scartato**, stesso errore di categoria: il conflitto d'interessi generico è il genere, la formulazione di Mayo è la specie, e la specie su Wikidata non c'è. Gli altri match sono quattro episodi di serie televisive.
+
+- **Probability Theory: The Logic of Science** *(testo)* — due candidati, **entrambi scartati**. Q105611991 è dato come pubblicato nel 2013, anno che contraddice la nota; Q135651180 si dichiara «2003 hardcover edition», cioè un elemento a livello di edizione e non di opera. Tutti i ventidue `testo` già in indice usano elementi d'opera, nessuno di stampa, e non vale rompere la regola per ottenere una simmetria. **Nota per te:** ne risulta un'asimmetria visibile, perché i due libri si fronteggiano nell'indice e uno solo è ancorato. Si recupera appena compare un elemento d'opera.
 
 - **coscienza fenomenica** *(teoria)* — **Q11573483 scartato**, controllo eseguito il 30 settembre 2026: `P31` vuoto, nessun sitelink inglese, label solo in inglese. E' un elemento nudo, e per il criterio scritto nella sezione C si scarta. Vale la pena aggiungere la ragione di merito: non e' una coniazione recente ma il termine di Ned Block dei primi anni Novanta, con trent'anni di letteratura dietro; se una nozione con quella storia su Wikidata e' solo un'etichetta senza tipo e senza voce enciclopedica, l'aggancio asserirebbe un'identificazione che l'elemento non sostiene. La voce resta ancorata soltanto in /ns/.
 
@@ -152,7 +160,7 @@ Il build la propaga da solo: nessun'altra modifica serve.
 
 ## C — voci sospese (0)
 
-Nessuna sospesa. Chiusa il 30 settembre 2026: `coscienza fenomenica` e' passata in sezione A.
+Nessuna sospesa. Chiusa il 30 settembre 2026: `coscienza fenomenica` è passata in sezione A.
 
 ### Archivio del controllo eseguito
 
@@ -172,5 +180,7 @@ Se `P31` contiene un tipo concettuale e c'e' un sitelink inglese sensato, si agg
 
 
 ## D — verificati in anticipo, per nodi non ancora creati
+
+- **falsificabilità** — `falsifiability` restituisce **Q220888**, definizione esatta: «property of a theory/hypothesis/statement that can be logically contradicted by an empirical test or a fact». Oggi vive dentro la nota di `Popper, Karl` e non ha voce propria; se verrà scorporata, il Q-id è pronto.
 
 - **abduzione** — `abductive reasoning` restituisce **Q308495**, definizione esatta («form of logical inference that seeks the best conclusion that explains a set of given observations»). Il concetto e' oggi dentro la nota di Peirce e non ha voce propria: quando avra' due casi in archivio e verra' scorporato, il Q-id e' pronto.
