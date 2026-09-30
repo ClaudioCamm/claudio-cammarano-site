@@ -81,6 +81,7 @@ module.exports = [
   {
     name: "Kahneman, Daniel",
     related: [
+      { name: "inferenza bayesiana", why: "Il metro su cui misura lo scarto: gli euristici umani violano l'aggiornamento bayesiano in modi regolari, a partire dalla base rate." },
       { name: "shadow of the future", why: "Sistema 1 e Sistema 2 applicati alla cooperazione: l'ombra del futuro chiede il pensiero lento, che è energeticamente costoso." }
     ],
     type: "persona",
@@ -2735,7 +2736,8 @@ module.exports = [
       { title: "Not Even Wrong 1: AI and the Labour Market, From Frey–Osborne to ChatGPT, 2012–2026", url: "/curated/2026-06-10-floridi-not-even-wrong-1-lavoro-ssrn/", _source: "curated" },
       { title: "Not Even Wrong 2: An Audit of Public AGI Prediction, 1950–2026", url: "/curated/2026-09-14-floridi-not-even-wrong-2-agi-ssrn/", _source: "curated" },
       { title: "We Surveyed 634 Women Who Work in Tech. They Let Loose", url: "/curated/2026-09-21-upson-donne-tech-sondaggio-wired/", _source: "curated" },
-      { title: "Happy Birthday C.S. Peirce: Peircean Induction and the Error-Correcting Thesis", url: "/curated/2026-09-11-mayo-peirce-tesi-autocorrettiva-errorstatistics/", _source: "curated" }
+      { title: "Happy Birthday C.S. Peirce: Peircean Induction and the Error-Correcting Thesis", url: "/curated/2026-09-11-mayo-peirce-tesi-autocorrettiva-errorstatistics/", _source: "curated" },
+      { title: "The statistics wars and intellectual conflicts of interest", url: "/curated/2021-12-06-mayo-conflitti-interesse-intellettuali-conbio/", _source: "curated" }
     ]
   },
   {
@@ -4112,11 +4114,14 @@ module.exports = [
     related: [
       { name: "test severo", why: "La definizione è sua: un test è severo se la procedura avrebbe segnalato l'errore, con probabilità molto alta, nel caso ci fosse stato." },
       { name: "not even wrong", why: "Floridi definisce «severamente testabile» dichiarando il prestito, after Mayo: lo standard adottato dall'archivio nasce da lei." },
-      { name: "Peirce, Charles Sanders", why: "Ne rilegge la tesi autocorrettiva contro l'uso corrente: non convergenza asintotica, ma rilevazione dell'errore su questo campione." }
+      { name: "Peirce, Charles Sanders", why: "Ne rilegge la tesi autocorrettiva contro l'uso corrente: non convergenza asintotica, ma rilevazione dell'errore su questo campione." },
+      { name: "guerre della statistica", why: "E' parte in causa, non arbitro: la sua posizione e' una delle due, e l'archivio registra anche l'altra." },
+      { name: "conflitto di interessi intellettuale", why: "La categoria e' sua, dal dicembre 2021, e si applica per prima al potere di imporre uno standard metodologico." }
     ],
     note: "Filosofa della statistica statunitense, professoressa emerita alla Virginia Tech, autrice di <em>Error and the Growth of Experimental Knowledge</em> (Chicago, 1996), premio Lakatos 1998, e di <em>Statistical Inference as Severe Testing: How to Get Beyond the Statistics Wars</em> (Cambridge, 2018). Nel sito ha una posizione particolare, perché è la fonte di uno strumento che l'archivio aveva adottato prima di risalire a lei: quando Floridi, Novelli e Morley nel 2026 definiscono una previsione «severamente testabile», lo fanno dichiarando il prestito — nel senso reso preciso <em>after Mayo</em>. Il suo contributo sta in due mosse. La prima è la definizione di severità, che sposta l'oggetto della valutazione dall'ipotesi alla procedura: non quanto è probabile che H sia vera, ma quanto era probabile che il procedimento segnalasse l'errore se l'errore c'era stato. La seconda è la difesa di Peirce contro la sua lettura più diffusa: l'autocorrezione non è la promessa che i dati, accumulandosi, correggano da sé, perché quella sarebbe l'induzione rozza, che Mayo giudica una sonda dell'errore altamente inaffidabile. È pubblicata prevalentemente in sede accademica e sul proprio blog, e in questo archivio è anche il caso di specie che dimostra come la testata non decida: un blog personale senza apparato redazionale, quando chi scrive è la fonte primaria dello standard di cui parla, vale più di una rivista con una firma fuori campo.",
     articles: [
-      { title: "Happy Birthday C.S. Peirce: Peircean Induction and the Error-Correcting Thesis", url: "/curated/2026-09-11-mayo-peirce-tesi-autocorrettiva-errorstatistics/", _source: "curated" }
+      { title: "Happy Birthday C.S. Peirce: Peircean Induction and the Error-Correcting Thesis", url: "/curated/2026-09-11-mayo-peirce-tesi-autocorrettiva-errorstatistics/", _source: "curated" },
+      { title: "The statistics wars and intellectual conflicts of interest", url: "/curated/2021-12-06-mayo-conflitti-interesse-intellettuali-conbio/", _source: "curated" }
     ]
   },
   {
@@ -4130,10 +4135,116 @@ module.exports = [
       { name: "epistemia", why: "Il rovescio esatto: l'epistemia è la sensazione di sapere senza che ci sia stato un test, la severità è il test che quella sensazione non fornisce." },
       { name: "metodo scientifico", why: "Il criterio con cui il sito lo giudica: non i protocolli seguiti, ma la probabilità che la procedura avrebbe segnalato l'errore." }
     ],
-    note: "Standard di valutazione delle prove formulato da Deborah Mayo, che ne ricava la forma leggendo la tesi autocorrettiva di Charles Sanders Peirce. Nella definizione di Mayo un'ipotesi H supera un test severo con il dato x se e solo se, primo, x concorda con H, e secondo, la procedura sperimentale avrebbe segnalato con probabilità molto alta la presenza di un errore, nel caso ci fosse stata una discordanza. In forma breve: un test è severo se l'ipotesi avrebbe potuto fallirlo davvero. La conseguenza è uno spostamento dell'oggetto, ed è la parte che si dimentica per prima: <strong>le probabilità si attaccano alle procedure, non alle ipotesi</strong>. Peirce lo scrive già nel 1878 (2.748) rifiutando la probabilità inversa — la teoria proposta non assegna alcuna probabilità alla conclusione induttiva. Non si dice quanto è probabile che H sia vera; si dice quanto è affidabile il procedimento che l'ha messa alla prova. Da questo standard Mayo ricava tre ordini di induzione, e la scala è utilizzabile anche dove non compare un numero: il primo è l'induzione rozza, che procede per assenza di confutazione ed è quindi un argomento dall'ignoranza; il secondo è qualitativo, e la sua forza dipende da quanto la previsione vada contro ciò che ci si aspetterebbe senza l'ipotesi; il terzo è quantitativo, e comincia quando quel quanto diventa misurabile attraverso probabilità d'errore oggettive. Il corollario pratico più immediato riguarda la predesignazione, cioè l'obbligo di dichiarare l'ipotesi prima di guardare i dati: se si esaminano venti fattori e si riporta come test quello che è risultato significativo, la probabilità di aver trovato almeno un falso positivo non è il 5% dichiarato ma circa il 64%, perché 0,95 elevato a venti fa 0,36 — e quella, non 0,95, è la severità del test che si è davvero condotto. Nel sito è lo strumento in ingresso più usato e il più a lungo non dichiarato: l'archivio lo adotta nel giugno 2026 con il primo audit di Floridi, che lo prende da Mayo, e la voce esiste per restituirlo alla sua fonte. La domanda che porta con sé, e che si può rivolgere a qualunque affermazione, non è se abbia prove a favore: è quante possibilità aveva di non averne.",
+    note: "Standard di valutazione delle prove formulato da Deborah Mayo, che ne ricava la forma leggendo la tesi autocorrettiva di Charles Sanders Peirce. Nella definizione di Mayo un'ipotesi H supera un test severo con il dato x se e solo se, primo, x concorda con H, e secondo, la procedura sperimentale avrebbe segnalato con probabilità molto alta la presenza di un errore, nel caso ci fosse stata una discordanza. In forma breve: un test è severo se l'ipotesi avrebbe potuto fallirlo davvero. La conseguenza è uno spostamento dell'oggetto, ed è la parte che si dimentica per prima: <strong>le probabilità si attaccano alle procedure, non alle ipotesi</strong>. Peirce lo scrive già nel 1878 (2.748) rifiutando la probabilità inversa — la teoria proposta non assegna alcuna probabilità alla conclusione induttiva. Non si dice quanto è probabile che H sia vera; si dice quanto è affidabile il procedimento che l'ha messa alla prova. Da questo standard Mayo ricava tre ordini di induzione, e la scala è utilizzabile anche dove non compare un numero: il primo è l'induzione rozza, che procede per assenza di confutazione ed è quindi un argomento dall'ignoranza; il secondo è qualitativo, e la sua forza dipende da quanto la previsione vada contro ciò che ci si aspetterebbe senza l'ipotesi; il terzo è quantitativo, e comincia quando quel quanto diventa misurabile attraverso probabilità d'errore oggettive. Il corollario pratico più immediato riguarda la predesignazione, cioè l'obbligo di dichiarare l'ipotesi prima di guardare i dati: se si esaminano venti fattori e si riporta come test quello che è risultato significativo, la probabilità di aver trovato almeno un falso positivo non è il 5% dichiarato ma circa il 64%, perché 0,95 elevato a venti fa 0,36 — e quella, non 0,95, è la severità del test che si è davvero condotto. Va detto che non è lo standard, ma <strong>uno</strong> degli standard in campo: appartiene alla statistica dell'errore, e gli si oppone la tradizione bayesiana, per cui la domanda legittima è quanto sia credibile un'ipotesi alla luce dei dati osservati e non quanto affidabilmente una procedura avrebbe sbagliato. Mayo difende la propria parte contro i test basati sul fattore di Bayes nel 2025, sul <em>British Journal for the Philosophy of Science</em>; l'archivio registra entrambe le posizioni alle voci <em>inferenza bayesiana</em> e <em>guerre della statistica</em>, e adotta questa sapendo di adottarne una. Nel sito è lo strumento in ingresso più usato e il più a lungo non dichiarato: l'archivio lo adotta nel giugno 2026 con il primo audit di Floridi, che lo prende da Mayo, e la voce esiste per restituirlo alla sua fonte. La domanda che porta con sé, e che si può rivolgere a qualunque affermazione, non è se abbia prove a favore: è quante possibilità aveva di non averne.",
     articles: [
-      { title: "Happy Birthday C.S. Peirce: Peircean Induction and the Error-Correcting Thesis", url: "/curated/2026-09-11-mayo-peirce-tesi-autocorrettiva-errorstatistics/", _source: "curated" }
+      { title: "Happy Birthday C.S. Peirce: Peircean Induction and the Error-Correcting Thesis", url: "/curated/2026-09-11-mayo-peirce-tesi-autocorrettiva-errorstatistics/", _source: "curated" },
+      { title: "The statistics wars and intellectual conflicts of interest", url: "/curated/2021-12-06-mayo-conflitti-interesse-intellettuali-conbio/", _source: "curated" }
     ]
+  },
+  {
+    name: "guerre della statistica",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Stati Uniti", "Regno Unito"] },
+    related: [
+      { name: "inferenza bayesiana", why: "Una delle due parti: la probabilità come grado di credenza, aggiornata dai dati che si sono osservati." },
+      { name: "statistica dell'errore", why: "L'altra: la probabilità come frequenza d'errore di una procedura, misurata su esiti che non si sono verificati." },
+      { name: "conflitto di interessi intellettuale", why: "Il rischio istituzionale della disputa: chi ha il potere di chiuderla per decreto ha un interesse in quale delle due vinca." },
+      { name: "metodo scientifico", why: "La disputa non è tecnica: è su che cosa vogliamo che un'inferenza ci consegni, e quindi su che cosa chiamiamo metodo." },
+      { name: "Popper, Karl", why: "L'antenato comune e contestato: entrambe le parti rivendicano la falsificabilità, e nessuna la trova sufficiente come Popper l'ha lasciata." }
+    ],
+    note: "Nome corrente — <em>statistics wars</em> — della controversia che percorre la statistica e la filosofia della scienza da circa un secolo, prima fra Ronald Fisher e la coppia Neyman–Pearson negli anni Trenta, poi lungo la faglia principale fra approcci bayesiani e approcci frequentisti. La posta non è un dettaglio tecnico, ed è la ragione per cui la disputa non si chiude: è che cosa significhi <em>probabilità</em> dentro un'inferenza, e quindi che cosa vogliamo che un'inferenza ci consegni. Per un bayesiano la risposta legittima è quanto è credibile un'ipotesi alla luce dei dati; per la statistica dell'errore quella domanda è mal posta, e l'unica risposta disponibile riguarda quanto affidabilmente la procedura avrebbe segnalato uno sbaglio. Nessuna evidenza empirica può dirimere la questione, perché non è una questione empirica. Le conseguenze però sono materiali, e questo è il motivo per cui la voce esiste in un archivio che non è di statistica: dalla faglia dipendono quali metodi una rivista pretende, che cosa viene pubblicato e che cosa no, come si approva un farmaco, come si dichiara replicata una scoperta, e quali risultati di un modello si possono chiamare miglioramenti. L'uso pratico è diagnostico e vale ben oltre le scienze quantitative: davanti a un'affermazione che dice <em>i dati mostrano che</em>, conviene chiedersi quale delle due concezioni è in gioco, perché gran parte della confusione nel dibattito pubblico sull'evidenza nasce da uno scambio silenzioso fra le due — si invoca il rigore della procedura e si conclude con un grado di fiducia, o viceversa. Il sito prende posizione su un punto solo, e minimo: qualunque concezione si adotti, un'affermazione che nessun esito potrebbe smentire non è in gioco in nessuna delle due.",
+    articles: [
+      { title: "The statistics wars and intellectual conflicts of interest", url: "/curated/2021-12-06-mayo-conflitti-interesse-intellettuali-conbio/", _source: "curated" }
+    ]
+  },
+  {
+    name: "inferenza bayesiana",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Regno Unito", "Francia", "Italia", "Stati Uniti"] },
+    related: [
+      { name: "Probability Theory: The Logic of Science", why: "La formulazione più ambiziosa: non una scelta fra metodi, ma l'unica estensione coerente della logica all'informazione incompleta." },
+      { name: "Jaynes, Edwin Thompson", why: "Ne dà la versione forte e la fallacia che ne deriva: proiettare sul mondo una proprietà del proprio stato di conoscenza." },
+      { name: "statistica dell'errore", why: "La posizione avversaria, e il punto di rottura è uno: se conti gli esiti che non si sono verificati o soltanto quello che hai." },
+      { name: "test severo", why: "Lo standard che le si oppone: non quanto è credibile l'ipotesi, ma quanto la procedura avrebbe potuto smentirla." },
+      { name: "free-energy principle", why: "La cognizione descritta come inferenza bayesiana: il cervello come sistema che minimizza l'errore fra modello interno e mondo." }
+    ],
+    note: "La concezione per cui la probabilità misura un grado di credenza, e inferire significa aggiornarlo: si parte da una probabilità a priori dell'ipotesi, si osservano i dati, e il teorema di Bayes restituisce la probabilità a posteriori. Il pregio dichiarato è che l'output è ciò che davvero interessa a chi ragiona — quanto è credibile questa tesi, adesso — mentre un p-value non lo dice e viene continuamente letto come se lo dicesse. Sulla critica più comune, l'arbitrarietà del prior, la risposta bayesiana è che il prior non è un difetto ma una dichiarazione: chiunque inferisca ne ha uno, e il frequentista semplicemente lo nasconde nella scelta del modello, del test e delle ipotesi ausiliarie. Il cuore tecnico è il <em>principio di verosimiglianza</em>: tutta la portata probatoria dei dati sta nella funzione di verosimiglianza, dunque conta ciò che si è osservato e non ciò che si sarebbe potuto osservare. Da qui l'obiezione più affilata all'altra parte, che va presa sul serio: le probabilità d'errore dipendono dal piano di campionamento, cioè da esiti mai avvenuti e dalle intenzioni private dello sperimentatore su quando fermarsi — e due ricercatori con dati identici e regole d'arresto diverse ottengono p-value diversi, che per un bayesiano è assurdo. La genealogia va da Thomas Bayes e Laplace a Bruno de Finetti, che negli anni Trenta fonda la probabilità soggettiva sulla coerenza delle scommesse, e poi a Jeffreys, Savage, Lindley, Jaynes. Un avvertimento contro le caricature: i due campi non sono monoliti, e la posizione più interessante è quella di chi sta dentro il primo e vuole qualcosa del secondo — il <em>workflow</em> bayesiano di Andrew Gelman prescrive controlli predittivi a posteriori che nello spirito sono controlli d'errore, cioè tentativi di far fallire il proprio modello.",
+    articles: []
+  },
+  {
+    name: "statistica dell'errore",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Stati Uniti", "Regno Unito"] },
+    related: [
+      { name: "Error and the Growth of Experimental Knowledge", why: "Il libro in cui Mayo la costruisce nel 1996, e in cui la severità diventa una misura invece che un auspicio." },
+      { name: "test severo", why: "Lo standard che ne è il prodotto: la valutazione si sposta dall'ipotesi alla procedura che l'ha messa alla prova." },
+      { name: "not even wrong", why: "La conseguenza diagnostica: senza probabilità d'errore non c'è modo di dire che un'affermazione ha superato qualcosa." },
+      { name: "Peirce, Charles Sanders", why: "L'antenato che Mayo rivendica: la tesi autocorrettiva letta come rilevazione dell'errore, non come convergenza." }
+    ],
+    note: "Nome che Deborah Mayo dà alla propria posizione — <em>error statistics</em> — e che è preferibile al generico frequentismo, perché ne isola la tesi filosofica invece della tecnica. La probabilità qui non misura la credibilità di un'ipotesi ma la frequenza con cui una procedura sbaglierebbe, e l'output di un'inferenza non è la probabilità che l'ipotesi sia vera: quella domanda, sostiene Mayo, non è la domanda giusta. Ciò che si può sapere è quanto severamente l'ipotesi è stata sondata, e per saperlo serve esattamente quello che la parte avversa considera irrilevante — la distribuzione campionaria, gli esiti che non si sono verificati, la regola d'arresto. La ragione è concreta e regge: gli effetti di selezione — la pesca nei dati, l'arresto opportunistico, l'ipotesi scelta dopo aver guardato — non cambiano nulla nella funzione di verosimiglianza e cambiano tutto nella probabilità d'errore. Sono quindi invisibili a un resoconto puramente verosimigliantista, mentre sono la prima causa dei risultati che non si replicano. Da qui l'accusa che Mayo porta nel 2025 sul <em>British Journal for the Philosophy of Science</em>: i test basati sul fattore di Bayes possono attribuire evidenza forte a una tesi anche quando poco è stato fatto per escludere i difetti di quella tesi. La risposta bayesiana migliore, che va registrata perché non è debole: un modello specificato come si deve può includere al proprio interno il processo di selezione, e un prior onesto penalizza da sé un'ipotesi pescata nel rumore. La genealogia passa da Peirce a Fisher, a Neyman e Egon Pearson, e arriva a Mayo e Aris Spanos.",
+    articles: [
+      { title: "The statistics wars and intellectual conflicts of interest", url: "/curated/2021-12-06-mayo-conflitti-interesse-intellettuali-conbio/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Popper, Karl",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Austria", "Regno Unito"] },
+    related: [
+      { name: "not even wrong", why: "La forma pura del suo criterio: un'affermazione che non vieta nulla non è falsa, è fuori dal gioco." },
+      { name: "test severo", why: "La critica che il sito adotta: aveva il criterio e non la misura, perché non disse mai che cosa rende buono un test." },
+      { name: "criti-hype", why: "Il bersaglio classico aggiornato: una catastrofe annunciata senza condizioni di smentita è una teoria che spiega tutto e vieta niente." },
+      { name: "Habermas, Jürgen", why: "Avversari nella Positivismusstreit aperta a Tubinga nel 1961: Popper contro la scuola di Francoforte sul metodo delle scienze sociali." },
+      { name: "Dialektik der Aufklärung", why: "Il libro dell'altra parte in quella disputa: per Popper la critica totale della ragione strumentale rinuncia a poter essere corretta." }
+    ],
+    note: "Filosofo della scienza nato a Vienna (1902–1994), poi cittadino britannico e docente alla London School of Economics, autore della <em>Logik der Forschung</em> (1934, in inglese <em>The Logic of Scientific Discovery</em>, 1959), di <em>Congetture e confutazioni</em> (1963) e della <em>Società aperta e i suoi nemici</em> (1945). La sua mossa fondativa è un criterio di demarcazione: una teoria è scientifica se vieta qualcosa, cioè se esiste un'osservazione che la confuterebbe. Nessuna quantità di cigni bianchi dimostra la generalizzazione, un cigno nero la abbatte; e una teoria che sopravvive alle prove non è dimostrata, è soltanto non ancora confutata — Popper chiama questo corroborazione e nega che sia sostegno induttivo. Ne segue una preferenza controintuitiva per le congetture audaci: meglio una teoria improbabile e ricca di contenuto, perché vieta di più e quindi si espone di più. I suoi bersagli dichiarati erano la psicoanalisi e il marxismo storicista, apparati che spiegano ogni esito e non ne proibiscono nessuno. Nel sito arriva tardi e per una strada obliqua, ed è giusto dire perché: tutta la famiglia di strumenti che l'archivio usa in ingresso — il <em>not even wrong</em>, il test severo, la lettura del criti-hype — poggia sulla falsificabilità, e mancava l'antenato. La lettura che il sito adotta non è però devota, ed è quella di Deborah Mayo: Popper aveva il criterio giusto e non aveva il modo di farlo mordere, perché non ha mai fornito un resoconto di che cosa renda un test un <em>buon</em> test. Senza una misura della severità, la falsificabilità resta una parola d'ordine, e in pratica qualunque teoria può dirsi corroborata da qualunque prova le sia sopravvissuta. C'è infine un'appendice che riguarda l'altra metà dell'archivio: nella Positivismusstreit aperta a Tubinga nel 1961 Popper si trovò contro la scuola di Francoforte, con Habermas dall'altro lato, e l'accusa che muoveva è la stessa che qui si muove altrove — una critica totale della ragione rinuncia per costruzione a poter essere corretta.",
+    articles: []
+  },
+  {
+    name: "conflitto di interessi intellettuale",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "criti-hype", why: "Parenti, non gemelli: là si guadagna dichiarando potente una tecnologia, qui si guadagna dettando la regola con cui la si valuta." },
+      { name: "segnale costoso", why: "Chi fissa la regola non paga nulla per fissarla: è un segnale a costo zero che decide il costo di tutti gli altri." },
+      { name: "università", why: "Il caso più visibile: i criteri di valutazione della ricerca sono scritti, di norma, da chi sarà valutato secondo quei criteri." },
+      { name: "legge di Goodhart", why: "Lo stadio precedente: prima qualcuno scrive la misura avendone un interesse, poi la misura diventa obiettivo e si guasta." }
+    ],
+    note: "Categoria formulata da Deborah Mayo in un editoriale su <em>Conservation Biology</em> del dicembre 2021, a proposito delle riviste che impongono una posizione metodologica dentro una disputa scientifica ancora aperta. Il conflitto non è economico: chi decide non ha azioni, consulenze o brevetti da dichiarare, e proprio per questo non compare in nessuna delle dichiarazioni che le riviste pretendono dagli autori. Funziona però come ogni conflitto d'interessi, perché chi ha il potere di stabilire la regola con cui gli altri saranno valutati ha un interesse nella regola, e se quella regola coincide con la tesi che sostiene da vent'anni, imporla non è un atto tecnico ma una vittoria ottenuta per via amministrativa invece che per argomenti. L'utilità dello strumento sta nella portabilità, perché la struttura si ripresenta ogni volta che chi definisce il criterio è anche parte in causa su ciò che il criterio deciderà: un comitato che sceglie i benchmark su cui sarà misurato un modello, un'agenzia che fissa la soglia di approvazione di un farmaco, un sistema di valutazione della ricerca progettato da chi ne sarà valutato, una redazione che stabilisce che cosa conti come fonte. La domanda da porre non è se chi decide sia in buona fede, perché di norma lo è e il sospetto di malafede fa perdere il punto: è se la regola che impone sia la stessa che difende. Va aggiunta una cautela che riguarda l'origine del concetto, e che non lo indebolisce: Mayo è parte in causa nella disputa che descrive, sostiene una delle due posizioni in campo, e quell'editoriale è anche una mossa nella sua guerra. Lo strumento resta valido, e si applica anche a lei.",
+    articles: [
+      { title: "The statistics wars and intellectual conflicts of interest", url: "/curated/2021-12-06-mayo-conflitti-interesse-intellettuali-conbio/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Jaynes, Edwin Thompson",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "Shannon, Claude E.", why: "Il principio di massima entropia riprende l'entropia di Shannon e la usa come criterio per scegliere una distribuzione." },
+      { name: "inemendabilità della realtà", why: "La fallacia di proiezione mentale è l'errore simmetrico: non il mondo che resiste agli schemi, ma lo schema preso per mondo." }
+    ],
+    note: "Fisico statunitense (1922–1998), professore alla Washington University di Saint Louis, la voce più intransigente del bayesianismo del Novecento. Due contributi lo tengono in questo indice. Il primo è il principio di massima entropia (1957): fra tutte le distribuzioni compatibili con ciò che si sa, si scelga quella di entropia massima, cioè quella che non aggiunge informazione che non si possiede — una regola che riprende l'entropia di Shannon e la converte da misura in criterio di scelta, e che riformula la meccanica statistica come un problema di inferenza invece che di fisica. Il secondo è la <em>fallacia di proiezione mentale</em>, ed è l'attrezzo che conta qui: consiste nell'attribuire al mondo una proprietà del proprio stato di conoscenza o del proprio modello — dire che un fenomeno è casuale quando si vuol dire che non se ne conosce la legge, o che un sistema è complesso quando si vuol dire che il proprio strumento non lo risolve. È l'errore simmetrico rispetto a quello che il sito registra più spesso: non la realtà che resiste agli schemi, ma lo schema preso per la realtà. La sua posizione sulla probabilità è la più forte disponibile e va enunciata nella sua forma vera, non in caricatura: non sostiene che il metodo bayesiano sia preferibile, sostiene che sia l'unica estensione coerente della logica deduttiva al caso dell'informazione incompleta, e che quindi non ci sia nulla da scegliere. Se ha ragione, la disputa non è una disputa ma un errore di una delle parti.",
+    articles: []
+  },
+  {
+    name: "Probability Theory: The Logic of Science",
+    type: "testo",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "Error and the Growth of Experimental Knowledge", why: "I due libri che si fronteggiano: la probabilità come logica dell'inferenza contro la probabilità come frequenza d'errore della procedura." }
+    ],
+    note: "Opera maggiore di Edwin Thompson Jaynes, rimasta incompiuta alla sua morte nel 1998 e pubblicata da Cambridge University Press nel 2003 a cura di G. Larry Bretthorst, dopo anni di circolazione come manoscritto. La tesi è nel titolo e non è una metafora: la teoria della probabilità non è un ramo della matematica applicata ma la logica stessa, estesa dal caso in cui si sa tutto al caso in cui si sa qualcosa. L'argomento poggia sui teoremi di Cox — poste alcune condizioni minime di coerenza su come un ragionamento plausibile deve comportarsi, le regole che ne risultano sono le regole della probabilità, e sono uniche — e viene condotto attraverso la finzione di un <em>robot</em> che ragiona solo secondo quei criteri, così che ogni conclusione sia controllabile. Nel sito la voce esiste come uno dei due poli dell'apparato che l'archivio usa per valutare le prove, l'altro essendo il libro di Mayo del 1996: non un manuale fra altri, ma l'enunciato più ambizioso della posizione secondo cui non c'è scelta da fare fra metodi statistici, perché uno solo è coerente. È anche un libro polemico e talvolta ingiusto verso la parte avversa, e vale leggerlo sapendolo.",
+    articles: []
+  },
+  {
+    name: "Error and the Growth of Experimental Knowledge",
+    type: "testo",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "Popper, Karl", why: "Il libro nasce dal suo problema e gli dà quello che gli mancava: non il criterio di falsificabilità, ma una misura di quanto un test sia severo." }
+    ],
+    note: "Libro di Deborah Mayo pubblicato dalla University of Chicago Press nel 1996, premio Lakatos 1998, e il testo in cui la severità passa da auspicio a misura. L'impianto è una risposta a Popper: il criterio di falsificabilità è giusto e resta inerte finché non si dice che cosa renda un test un buon test, e la proposta di Mayo è che lo renda buono la probabilità che quel test avrebbe segnalato l'errore se l'errore ci fosse stato. Da lì derivano le due tesi che il libro porta oltre la statistica. La prima è il carattere frammentario della verifica: non si mettono alla prova grandi teorie in blocco, si mettono alla prova singoli errori possibili, uno per volta, e questo è anche il modo di disinnescare il problema di Duhem e Quine — se un'ipotesi non si può testare isolatamente, si testa ciò che si può isolare. La seconda è il <em>ragionare dall'errore</em>: si conclude qualcosa su un'ipotesi non perché i dati le somiglino, ma perché un errore specifico, se ci fosse stato, si sarebbe visto e non si è visto. Nel sito è uno dei due poli dell'apparato di valutazione delle prove, di fronte al libro di Jaynes del 2003, e i due sono utili insieme proprio perché non sono conciliabili.",
+    articles: []
   }
 
 ];

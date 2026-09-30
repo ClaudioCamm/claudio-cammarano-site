@@ -1,6 +1,8 @@
 # Wikidata — voci da rivedere
 
-Allineate: **247 su 309**. Restano **62** voci senza `sameAs`.
+Allineate: **247 su 317**. Restano **70** voci senza `sameAs`.
+
+Da verificare, aggiunte il 30 settembre 2026 con l'apparato bayesiani/frequentisti: `Popper, Karl`, `Jaynes, Edwin Thompson`, `Probability Theory: The Logic of Science`, `Error and the Growth of Experimental Knowledge`, `inferenza bayesiana`, `statistica dell'errore`, `guerre della statistica`, `conflitto di interessi intellettuale`. Sulle ultime due non mi aspetto corrispondenze: `error statistics` e il conflitto d'interessi intellettuale sono formulazioni di Mayo, non termini con voce propria.
 
 Ultimo giro: 30 settembre 2026 — Peirce, Mayo, test severo.
 
