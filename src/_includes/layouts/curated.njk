@@ -55,7 +55,7 @@ layout: layouts/base.njk
 
   <div class="article-body">
     {% if description %}
-    <p>{{ description | mdInline | safe }}</p>
+    <div class="curated-description">{{ description | mdBlock | safe }}</div>
     {% endif %}
     {{ content | safe }}
     {% set shareEN = false %}{% set shareEnd = true %}{% include "components/share.njk" %}

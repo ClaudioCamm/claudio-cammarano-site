@@ -1064,6 +1064,15 @@ module.exports = function(eleventyConfig) {
     return md.renderInline(String(str));
   });
 
+  // Render markdown completo: capoversi, liste, citazioni. Per i campi lunghi
+  // (description dei curated, note dei concetti) che prima passavano da
+  // mdInline e collassavano in un paragrafo unico. Va usato dentro un <div>,
+  // non dentro un <p>, perche' emette blocchi.
+  eleventyConfig.addFilter("mdBlock", function(str) {
+    if (!str) return '';
+    return md.render(String(str));
+  });
+
   // Rimuove i marcatori markdown di enfasi (*...*, _..._) restituendo testo
   // pulito: per meta tag, title e altri contesti che non renderizzano HTML.
   // Nome in forma naturale per title, H1 e breadcrumb delle pagine-entita':
@@ -1085,8 +1094,12 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("stripMd", function(str) {
     if (!str) return '';
     return String(str)
+      .replace(/<[^>]*>/g, "")
+      .replace(/\*\*([^*]+)\*\*/g, "$1")
       .replace(/\*([^*]+)\*/g, "$1")
-      .replace(/_([^_]+)_/g, "$1");
+      .replace(/_([^_]+)_/g, "$1")
+      .replace(/\s+/g, " ")
+      .trim();
   });
 
   // Full JSON serialization (used for the /graph-data.json output and inline data blocks)

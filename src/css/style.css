@@ -2930,8 +2930,27 @@ body.irene-page .site-nav a.active {
    indistinguibili dal resto. Vale per /concetti/, /tag/, /serie/, /ns/. */
 .tag-page-intro em,
 .tag-page-intro i,
-.tag-page-intro cite {
+.tag-page-intro cite,
+.tag-page-intro strong {
   font-style: normal;
+}
+
+/* La nota dei concetti e la description dei curated passano da mdBlock, che
+   emette capoversi veri: prima erano un <p> unico con i ritorni a capo
+   collassati. I margini interni vanno dichiarati qui perche' questi blocchi
+   non stanno dentro .article-body. */
+.tag-page-intro p {
+  margin: 0 0 var(--spacing-sm);
+}
+
+.tag-page-intro p:last-child {
+  margin-bottom: 0;
+}
+
+.tag-page-intro ol,
+.tag-page-intro ul {
+  margin: 0 0 var(--spacing-sm);
+  padding-left: 1.4em;
 }
 
 /* === SERIES NAVIGATION === */

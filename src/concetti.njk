@@ -53,7 +53,7 @@ eleventyComputed:
     <p class="concetto-citation">{{ concept.citation | safe }}</p>
     {% endif %}
     {% if concept.note %}
-    <p class="tag-page-intro">{{ concept.note | mdInline | safe }}</p>
+    <div class="tag-page-intro">{{ concept.note | mdBlock | safe }}</div>
     {% endif %}
   </header>
 
