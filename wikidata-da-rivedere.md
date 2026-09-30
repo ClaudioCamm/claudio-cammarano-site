@@ -1,15 +1,21 @@
 # Wikidata — voci da rivedere
 
-Allineate: **245 su 306**. Restano **61** voci senza `sameAs`.
+Allineate: **247 su 309**. Restano **62** voci senza `sameAs`.
+
+Ultimo giro: 30 settembre 2026 — Peirce, Mayo, test severo.
 
 Regola applicata: aggancio accettato solo con corrispondenza esatta di label o alias **e** tipo (P31) compatibile, poi verifica a mano contro la nota della voce. Un Q-id sbagliato e' peggio di nessun Q-id.
 
 
-## A — candidato trovato e scartato (21)
+## A — candidato trovato e scartato (22)
 
 Qui Wikidata ha qualcosa con quel nome esatto, ma non e' la tua voce. Servono i tuoi occhi.
 
 - **Anduril** *(istituzione)* — I match esatti sono la spada di Tolkien e un framework software. L'azienda non compare con questo label.
+
+- **coscienza fenomenica** *(teoria)* — **Q11573483 scartato**, controllo eseguito il 30 settembre 2026: `P31` vuoto, nessun sitelink inglese, label solo in inglese. E' un elemento nudo, e per il criterio scritto nella sezione C si scarta. Vale la pena aggiungere la ragione di merito: non e' una coniazione recente ma il termine di Ned Block dei primi anni Novanta, con trent'anni di letteratura dietro; se una nozione con quella storia su Wikidata e' solo un'etichetta senza tipo e senza voce enciclopedica, l'aggancio asserirebbe un'identificazione che l'elemento non sostiene. La voce resta ancorata soltanto in /ns/.
+
+  **Da sciogliere, incoerenza fra tre file.** Questa riga motiva lo scarto citando `epistemia` come precedente scartato, ma l'archivio dice altro: `conceptsIndex.js` (riga 1895) ha `sameAs: Q138835467` e `scripts/wikidata/decisioni.json` lo registra come accettato. Due file su tre dicono accettato, e la sezione A qui sotto dice scartato. Probabilmente e' questo file a essere rimasto indietro dopo un'accettazione successiva — ma e' una decisione tua, e non tocco un `sameAs` esistente per allineare un registro.
 - **Palantir** *(istituzione)* — I match esatti sono i palantiri di Tolkien. L'azienda non compare con questo label.
 - **Frey, Jennifer** *(persona)* — I match sono una giornalista del Washington Post e una generica 'researcher'. La filosofa non e' identificabile con certezza.
 - **Karp, Alexander** *(persona)* — Nessun candidato e' il CEO di Palantir: i match esatti sono tre matematici omonimi.
@@ -33,9 +39,11 @@ Qui Wikidata ha qualcosa con quel nome esatto, ma non e' la tua voce. Servono i 
 - **monocausalita** *(teoria)* — `monocausal explanation` non restituisce nulla; Q206829 *reductionism* e' la riduzione di un livello di descrizione alle sue parti, non la riduzione a una causa sola. Errore di categoria, scartato. Resta ancorata solo in /ns/, come gli altri conii.
 
 
-## B — nessuna corrispondenza esatta (75)
+## B — nessuna corrispondenza esatta (76)
 
 In buona parte sono coniazioni tue, acronimi, o formulazioni italiane che su Wikidata esistono sotto un label diverso (spesso inglese). Una seconda passata con corrispondenza allentata ne recupererebbe stimati 30-40, ma richiede una scelta caso per caso.
+
+- **test severo** *(teoria)* — verificato il 30 settembre 2026. `severity` restituisce un videogioco del 2009, un modificatore clinico, un indice di gravita' della malattia, l'arcangelo Samael e una voce di dizionario (Q19358103, «intensity, seriousness or critical state»). Nessuno e' lo standard di Mayo. Resta senza `sameAs`.
 
 
 **istituzione**
@@ -140,7 +148,11 @@ Per aggiungerne una: apri `src/_data/conceptsIndex.js`, trova la voce e inserisc
 
 Il build la propaga da solo: nessun'altra modifica serve.
 
-## C — una voce sospesa, serve un secondo controllo (1)
+## C — voci sospese (0)
+
+Nessuna sospesa. Chiusa il 30 settembre 2026: `coscienza fenomenica` e' passata in sezione A.
+
+### Archivio del controllo eseguito
 
 - **coscienza fenomenica** *(teoria)* — `phenomenal consciousness` restituisce **Q11573483**, label esatto, ma **senza descrizione**. Gli altri match sono un libro del 2011 e due articoli scientifici, quindi scartati. Non lo agganciamo finche' non sappiamo che tipo di elemento sia: un label esatto senza descrizione puo' essere un concetto tipizzato, una disambigua o un elemento vuoto, e il precedente `epistemia` (Q138835467) e' stato scartato proprio per questo. Il controllo e' una chiamata sola:
 
@@ -155,3 +167,8 @@ curl -s -G "https://www.wikidata.org/w/api.php" \
 ```
 
 Se `P31` contiene un tipo concettuale e c'e' un sitelink inglese sensato, si aggancia; se e' una disambigua (Q4167410) o non c'e' nulla, si scarta e la voce resta ancorata solo in /ns/.
+
+
+## D — verificati in anticipo, per nodi non ancora creati
+
+- **abduzione** — `abductive reasoning` restituisce **Q308495**, definizione esatta («form of logical inference that seeks the best conclusion that explains a set of given observations»). Il concetto e' oggi dentro la nota di Peirce e non ha voce propria: quando avra' due casi in archivio e verra' scorporato, il Q-id e' pronto.

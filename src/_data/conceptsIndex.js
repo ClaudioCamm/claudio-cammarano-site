@@ -364,7 +364,8 @@ module.exports = [
     type: "persona",
     geo: { modo: "diretta", paesi: ["Italia"] },
     related: [
-      { name: "capitale semantico", why: "Floridi lo usa per una formula secca: l'AI aiuta chi le cose le sa già fare." }
+      { name: "capitale semantico", why: "Floridi lo usa per una formula secca: l'AI aiuta chi le cose le sa già fare." },
+      { name: "Mayo, Deborah", why: "Lo strumento dei due audit del 2026 è preso in prestito da lei, e il paper lo dichiara: severamente testabile, after Mayo." }
     ],
     sameAs: ["https://www.wikidata.org/wiki/Q214119", "https://it.wikipedia.org/wiki/Luciano_Floridi"],
     note: "Filosofo dell'informazione italiano (1964), fondatore dell'etica dell'informazione. Nel sito è citato per la formula: «l'AI aiuta chi le cose le sa già fare». Senza capitale semantico — tutto ciò che si è letto, vissuto, capito, sbagliato e corretto — non si sa cosa si sta guardando quando lo strumento ti alza dal suolo.",
@@ -1541,7 +1542,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q46857", "https://it.wikipedia.org/wiki/Metodo_scientifico"],
     note: "Il processo con cui acquisiamo informazione e strutturiamo la conoscenza. Nel sito è l'oggetto della carrellata di Kevin Kelly (2006/2026): non un insieme fisso di protocolli ma una struttura vivente che si modifica con gli strumenti disponibili — e che l'AI potrebbe cambiare nei prossimi 80 anni più di quanto non abbia fatto nei precedenti 80.",
     articles: [
-      { title: "Speculations on the Future of the Scientific Method", url: "/curated/2026-05-04-kevin-kelly-future-scientific-method/", _source: "curated" }
+      { title: "Speculations on the Future of the Scientific Method", url: "/curated/2026-05-04-kevin-kelly-future-scientific-method/", _source: "curated" },
+      { title: "Happy Birthday C.S. Peirce: Peircean Induction and the Error-Correcting Thesis", url: "/curated/2026-09-11-mayo-peirce-tesi-autocorrettiva-errorstatistics/", _source: "curated" }
     ]
   },
   {
@@ -2732,7 +2734,8 @@ module.exports = [
       { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" },
       { title: "Not Even Wrong 1: AI and the Labour Market, From Frey–Osborne to ChatGPT, 2012–2026", url: "/curated/2026-06-10-floridi-not-even-wrong-1-lavoro-ssrn/", _source: "curated" },
       { title: "Not Even Wrong 2: An Audit of Public AGI Prediction, 1950–2026", url: "/curated/2026-09-14-floridi-not-even-wrong-2-agi-ssrn/", _source: "curated" },
-      { title: "We Surveyed 634 Women Who Work in Tech. They Let Loose", url: "/curated/2026-09-21-upson-donne-tech-sondaggio-wired/", _source: "curated" }
+      { title: "We Surveyed 634 Women Who Work in Tech. They Let Loose", url: "/curated/2026-09-21-upson-donne-tech-sondaggio-wired/", _source: "curated" },
+      { title: "Happy Birthday C.S. Peirce: Peircean Induction and the Error-Correcting Thesis", url: "/curated/2026-09-11-mayo-peirce-tesi-autocorrettiva-errorstatistics/", _source: "curated" }
     ]
   },
   {
@@ -4032,7 +4035,8 @@ module.exports = [
     related: [
       { name: "segnale costoso", why: "Nel settembre 2026 ne dà la conseguenza sul ricevente: azzerato il costo, il sospetto diventa il default e colpisce per primo chi non ha barato." },
       { name: "morte dell'autore", why: "Se smettiamo di immaginare una persona dietro le parole, il testo diventa segno da decodificare: la tesi di Barthes realizzata per via tecnica." },
-      { name: "embodied mind", why: "Hazrat e Kaufman aderiscono alla cognizione incarnata, e per Menand i loro libri sono elegie a una lettura prossima alla fine." }
+      { name: "embodied mind", why: "Hazrat e Kaufman aderiscono alla cognizione incarnata, e per Menand i loro libri sono elegie a una lettura prossima alla fine." },
+      { name: "Peirce, Charles Sanders", why: "The Metaphysical Club, premio Pulitzer, è la sua storia del gruppo di Cambridge da cui nasce il pragmatismo: il suo Peirce è il nostro." }
     ],
     note: "Critico e storico delle idee americano (1952), staff writer del *New Yorker* e professore a Harvard, premio Pulitzer per la storia con *The Metaphysical Club* (2001) e autore di *The Free World: Art and Thought in the Cold War* (2021). Nel sito entra con il saggio del settembre 2026 su punteggiatura e verbi, e vale per la chiusa più che per l'argomento: il timore corrente è che scambiamo la poesia di una macchina per quella di una persona, mentre la prospettiva peggiore è che liquideremo quella di una persona come slop. È anche una buona misura di che cosa sia la critica quando è fatta bene — corregge gli autori recensiti sui dettagli tecnici, concede loro il punto dove ce l'hanno, e ricava dai due libri una tesi che nessuno dei due formula. Si usa come lettore di libri altrui, cioè come fonte di categorie, e come testimone competente del mestiere editoriale.",
     articles: [
@@ -4079,7 +4083,56 @@ module.exports = [
     note: "Diagnosi attribuita al fisico Wolfgang Pauli, che avrebbe liquidato il lavoro di un giovane collega dicendo che non era «nemmeno sbagliato», *nicht einmal falsch*. La forza della formula sta nel diniego di dignità: chiamare sbagliata un'affermazione le riconosce di essere almeno il tipo di cosa che può essere messa alla prova e fallire, mentre chiamarla non nemmeno sbagliata glielo nega. Luciano Floridi, Claudio Novelli e Jessica Morley, che nel 2026 ne fanno lo strumento di due audit sulle previsioni dell'AI, registrano con scrupolo che l'aneddoto è riportato da Peierls nel 1960, che il fraseggio varia fra i resoconti e che il lavoro recensito da Pauli non è mai stato identificato con certezza: adottano l'uso diagnostico che la formula ha acquisito nella filosofia della scienza del Novecento, indipendentemente dai fatti storici — ed è una precauzione che vale la pena imitare, visto l'oggetto. Il concetto ha due registri, e tenerli distinti è metà del suo valore. In senso stretto nomina un'affermazione che non fissa alcuna proposizione, perché le manca uno dei quattro elementi che danno condizioni di verità: variabile obiettivo, perimetro, orizzonte, condizione d'esito. In senso operativo, che è il caso di gran lunga più frequente, nomina un'affermazione che una proposizione la fissa benissimo e poi la colloca fuori dalla portata di qualunque test severo — *determinata ma non divulgata*, quando trattiene il metodo e l'incertezza che permetterebbero all'evidenza di incidere, oppure *equivoca*, quando è determinata sotto una lettura e circola sotto un'altra, sopravvivendo ritirandosi verso quella che i dati non hanno ancora raggiunto. Nel sito la figura ha due parentele da non confondere. La prima è con la monocausalità: là la spiegazione fallisce per architettura causale pur poggiando su dati corretti, qui l'affermazione fallisce prima, sulle condizioni di verità. La seconda è più profonda e viene da Tim Bayne: se un concetto come «coscienza» non taglia la natura alle giunture, allora non è la singola previsione a non essere nemmeno sbagliata ma la domanda che la ospita, e nessuna divulgazione di metodo potrebbe salvarla.",
     articles: [
       { title: "Not Even Wrong 1: AI and the Labour Market, From Frey–Osborne to ChatGPT, 2012–2026", url: "/curated/2026-06-10-floridi-not-even-wrong-1-lavoro-ssrn/", _source: "curated" },
-      { title: "Not Even Wrong 2: An Audit of Public AGI Prediction, 1950–2026", url: "/curated/2026-09-14-floridi-not-even-wrong-2-agi-ssrn/", _source: "curated" }
+      { title: "Not Even Wrong 2: An Audit of Public AGI Prediction, 1950–2026", url: "/curated/2026-09-14-floridi-not-even-wrong-2-agi-ssrn/", _source: "curated" },
+      { title: "Happy Birthday C.S. Peirce: Peircean Induction and the Error-Correcting Thesis", url: "/curated/2026-09-11-mayo-peirce-tesi-autocorrettiva-errorstatistics/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Peirce, Charles Sanders",
+    type: "persona",
+    sameAs: ["https://www.wikidata.org/wiki/Q187520", "https://it.wikipedia.org/wiki/Charles_Sanders_Peirce"],
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "Eco, Umberto", why: "Il canale italiano: il Trattato del 1975 è costruito sul segno triadico, e il lettore modello è un interpretante con un nome." },
+      { name: "strutturalismo", why: "Il bivio alla radice: il segno diadico di Saussure contro quello triadico di Peirce, dove il senso ha bisogno di un terzo che interpreti." },
+      { name: "Descartes, René", why: "Nel 1868 smonta l'intuizione cartesiana: nessuna conoscenza senza una conoscenza precedente, e il dubbio non si comincia per decisione." },
+      { name: "test severo", why: "Mayo legge la sua tesi autocorrettiva come rilevazione dell'errore e non come convergenza: lo standard dell'archivio nasce qui." },
+      { name: "metodo scientifico", why: "Il primo a definirlo per la capacità di rilevare il proprio errore invece che per l'accumulo di conferme." }
+    ],
+    note: "Filosofo, logico e matematico statunitense (1839–1914), nato a Cambridge, Massachusetts. Non ha mai tenuto una cattedra stabile: per trent'anni ha lavorato allo United States Coast Survey facendo misure di gravità, ha pubblicato su riviste e ha lasciato migliaia di pagine manoscritte, raccolte solo dopo la morte nei <em>Collected Papers</em> (Harvard, 1931–1958) — che si citano per volume e paragrafo, ed è la ragione per cui nel sito compare come 5.145 o 2.748 invece che con un titolo. Coniò «pragmatismo» e poi lo ribattezzò «pragmaticismo» perché la prima parola gli era stata portata altrove, scegliendo un termine «abbastanza brutto da essere al sicuro dai rapitori»: la distanza fra quel pragmatismo e ciò che oggi in italiano chiamiamo pragmatico è tutta da percorrere, e va percorsa prima di leggerlo. Nel sito è il nodo che mancava, perché tiene insieme le due metà dell'archivio che fin qui non avevano un antenato comune. Da un lato la metà semiotica e strutturale: il segno di Peirce è triadico, non diadico — un rappresentante, un oggetto e un interpretante — e significa soltanto attraverso il terzo termine, che a sua volta diventa segno, e così via senza termine. È il bivio che si apre alla radice del Novecento: la linguistica di Saussure prende la strada del segno a due posti, Peirce quella del segno che ha bisogno di qualcuno che lo legga, e il canale italiano di questa seconda via è Umberto Eco, il cui Trattato del 1975 vi è costruito sopra e il cui lettore modello è un interpretante con un nome proprio. Un indice di concetti legati da relazioni, come quello di questo sito, è un oggetto strutturalista; ma il fatto che qualcuno lo legga, e che leggendolo produca il senso che nessuna delle voci contiene da sola, è il terzo termine di Peirce. Dall'altro lato la metà epistemica. A Peirce si deve il nome della terza inferenza accanto a deduzione e induzione, l'abduzione: la mossa che inventa l'ipotesi invece di dedurla o generalizzarla, l'unica delle tre che produce qualcosa di nuovo e l'unica che può sbagliare nel modo che conta. E si deve la tesi autocorrettiva, che Deborah Mayo difende nel 2026 contro la lettura corrente: l'induzione merita il nome di metodo non perché migliori accumulando dati, ma perché contiene il modo di rilevare il proprio errore — fino al punto, dice Peirce nel 1878 (3.575), di correggere perfino le proprie premesse. Le due metà sono la stessa mossa vista da due lati: nessun segno significa da solo, nessuna misura si giudica da sola. Il fallibilismo che ne deriva — ogni credenza è tenuta con riserva di revisione — non è scetticismo, ed è la posizione che il sito riconosce come propria: la realtà resiste ai nostri schemi, e il modo di scoprirlo è costruire procedimenti che possano accorgersene.",
+    articles: [
+      { title: "Happy Birthday C.S. Peirce: Peircean Induction and the Error-Correcting Thesis", url: "/curated/2026-09-11-mayo-peirce-tesi-autocorrettiva-errorstatistics/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Mayo, Deborah",
+    type: "persona",
+    sameAs: ["https://www.wikidata.org/wiki/Q16732191"],
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "test severo", why: "La definizione è sua: un test è severo se la procedura avrebbe segnalato l'errore, con probabilità molto alta, nel caso ci fosse stato." },
+      { name: "not even wrong", why: "Floridi definisce «severamente testabile» dichiarando il prestito, after Mayo: lo standard adottato dall'archivio nasce da lei." },
+      { name: "Peirce, Charles Sanders", why: "Ne rilegge la tesi autocorrettiva contro l'uso corrente: non convergenza asintotica, ma rilevazione dell'errore su questo campione." }
+    ],
+    note: "Filosofa della statistica statunitense, professoressa emerita alla Virginia Tech, autrice di <em>Error and the Growth of Experimental Knowledge</em> (Chicago, 1996), premio Lakatos 1998, e di <em>Statistical Inference as Severe Testing: How to Get Beyond the Statistics Wars</em> (Cambridge, 2018). Nel sito ha una posizione particolare, perché è la fonte di uno strumento che l'archivio aveva adottato prima di risalire a lei: quando Floridi, Novelli e Morley nel 2026 definiscono una previsione «severamente testabile», lo fanno dichiarando il prestito — nel senso reso preciso <em>after Mayo</em>. Il suo contributo sta in due mosse. La prima è la definizione di severità, che sposta l'oggetto della valutazione dall'ipotesi alla procedura: non quanto è probabile che H sia vera, ma quanto era probabile che il procedimento segnalasse l'errore se l'errore c'era stato. La seconda è la difesa di Peirce contro la sua lettura più diffusa: l'autocorrezione non è la promessa che i dati, accumulandosi, correggano da sé, perché quella sarebbe l'induzione rozza, che Mayo giudica una sonda dell'errore altamente inaffidabile. È pubblicata prevalentemente in sede accademica e sul proprio blog, e in questo archivio è anche il caso di specie che dimostra come la testata non decida: un blog personale senza apparato redazionale, quando chi scrive è la fonte primaria dello standard di cui parla, vale più di una rivista con una firma fuori campo.",
+    articles: [
+      { title: "Happy Birthday C.S. Peirce: Peircean Induction and the Error-Correcting Thesis", url: "/curated/2026-09-11-mayo-peirce-tesi-autocorrettiva-errorstatistics/", _source: "curated" }
+    ]
+  },
+  {
+    name: "test severo",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "not even wrong", why: "Lo standard che regge la diagnosi: un'affermazione collocata fuori dalla portata di un test severo non è sbagliata, è nemmeno sbagliata." },
+      { name: "legge di Goodhart", why: "Parenti stretti da non confondere: là la misura si guasta perché diventa obiettivo, qui il test perché l'ipotesi è scelta dopo i dati." },
+      { name: "coscienza fenomenica", why: "Il limite superiore: se il concetto non taglia la natura alle giunture non c'è test severo possibile, perché non si sa che cosa fallirebbe." },
+      { name: "epistemia", why: "Il rovescio esatto: l'epistemia è la sensazione di sapere senza che ci sia stato un test, la severità è il test che quella sensazione non fornisce." },
+      { name: "metodo scientifico", why: "Il criterio con cui il sito lo giudica: non i protocolli seguiti, ma la probabilità che la procedura avrebbe segnalato l'errore." }
+    ],
+    note: "Standard di valutazione delle prove formulato da Deborah Mayo, che ne ricava la forma leggendo la tesi autocorrettiva di Charles Sanders Peirce. Nella definizione di Mayo un'ipotesi H supera un test severo con il dato x se e solo se, primo, x concorda con H, e secondo, la procedura sperimentale avrebbe segnalato con probabilità molto alta la presenza di un errore, nel caso ci fosse stata una discordanza. In forma breve: un test è severo se l'ipotesi avrebbe potuto fallirlo davvero. La conseguenza è uno spostamento dell'oggetto, ed è la parte che si dimentica per prima: <strong>le probabilità si attaccano alle procedure, non alle ipotesi</strong>. Peirce lo scrive già nel 1878 (2.748) rifiutando la probabilità inversa — la teoria proposta non assegna alcuna probabilità alla conclusione induttiva. Non si dice quanto è probabile che H sia vera; si dice quanto è affidabile il procedimento che l'ha messa alla prova. Da questo standard Mayo ricava tre ordini di induzione, e la scala è utilizzabile anche dove non compare un numero: il primo è l'induzione rozza, che procede per assenza di confutazione ed è quindi un argomento dall'ignoranza; il secondo è qualitativo, e la sua forza dipende da quanto la previsione vada contro ciò che ci si aspetterebbe senza l'ipotesi; il terzo è quantitativo, e comincia quando quel quanto diventa misurabile attraverso probabilità d'errore oggettive. Il corollario pratico più immediato riguarda la predesignazione, cioè l'obbligo di dichiarare l'ipotesi prima di guardare i dati: se si esaminano venti fattori e si riporta come test quello che è risultato significativo, la probabilità di aver trovato almeno un falso positivo non è il 5% dichiarato ma circa il 64%, perché 0,95 elevato a venti fa 0,36 — e quella, non 0,95, è la severità del test che si è davvero condotto. Nel sito è lo strumento in ingresso più usato e il più a lungo non dichiarato: l'archivio lo adotta nel giugno 2026 con il primo audit di Floridi, che lo prende da Mayo, e la voce esiste per restituirlo alla sua fonte. La domanda che porta con sé, e che si può rivolgere a qualunque affermazione, non è se abbia prove a favore: è quante possibilità aveva di non averne.",
+    articles: [
+      { title: "Happy Birthday C.S. Peirce: Peircean Induction and the Error-Correcting Thesis", url: "/curated/2026-09-11-mayo-peirce-tesi-autocorrettiva-errorstatistics/", _source: "curated" }
     ]
   }
 
