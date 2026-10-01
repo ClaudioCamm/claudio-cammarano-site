@@ -1318,7 +1318,9 @@ module.exports = [
       { title: "Europe's public broadcasters go from prime time to hard-to-find", url: "/curated/2026-07-09-economist-psb-europe-hard-to-find/", _source: "curated" },
       { title: "Per contare devi farti amare (l'attenzione non basta più)", url: "/curated/2025-11-10-tarchetti-love-brand-editoria-nonhocapito/", _source: "curated" },
       { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" },
-      { title: "C'è un videogioco in cui vivi le poche gioie e i tanti dolori di un dipendente di una piccola casa editrice indipendente", url: "/curated/2026-09-18-giudici-small-press-tycoon-rivistastudio/", _source: "curated" }
+      { title: "C'è un videogioco in cui vivi le poche gioie e i tanti dolori di un dipendente di una piccola casa editrice indipendente", url: "/curated/2026-09-18-giudici-small-press-tycoon-rivistastudio/", _source: "curated" },
+      { title: "The great regression", url: "/curated/2022-08-05-alt-grande-regressione-kidult-aeon/", _source: "curated" },
+      { title: "The Atlantic is getting more subscribers from Google traffic, even as referrals fall", url: "/curated/2026-09-16-scire-atlantic-google-abbonati-niemanlab/", _source: "curated" }
     ]
   },
   {
@@ -1358,7 +1360,8 @@ module.exports = [
     geo: { modo: "diretta", paesi: ["Giappone"] },
     note: "Nel sito è il caso degli animatori giapponesi: un mercato quasi triplicato in un decennio (fino a 19 miliardi di dollari) che resta cronicamente incapace di formare e remunerare chi produce materialmente il valore — solo uno su cinque riceve oggi formazione sul campo, contro sette su dieci una generazione fa. Un caso da manuale per chi si occupa di editoria e publishing più in generale.",
     articles: [
-      { title: "The strange disappearance of Japan's animators", url: "/curated/2026-06-19-economist-1843-japan-animators/", _source: "curated" }
+      { title: "The strange disappearance of Japan's animators", url: "/curated/2026-06-19-economist-1843-japan-animators/", _source: "curated" },
+      { title: "The great regression", url: "/curated/2022-08-05-alt-grande-regressione-kidult-aeon/", _source: "curated" }
     ]
   },
   {
@@ -1391,7 +1394,8 @@ module.exports = [
     articles: [
       { title: "Who's Afraid of Chinese Models?", url: "/curated/2026-07-20-stratechery-chinese-models/", _source: "curated" },
       { title: "The U.S. Is Betting the Economy on 'Scaling' AI: Where Is the Intelligence When One Needs It?", url: "/curated/2025-12-08-storm-scaling-ai-bolla-inet/", _source: "curated" },
-      { title: "Open Weights, Closed Ranks: The AI Manifesto War", url: "/curated/2026-08-12-zuniga-pesi-aperti-manifesti-icle/", _source: "curated" }
+      { title: "Open Weights, Closed Ranks: The AI Manifesto War", url: "/curated/2026-08-12-zuniga-pesi-aperti-manifesti-icle/", _source: "curated" },
+      { title: "The Atlantic is getting more subscribers from Google traffic, even as referrals fall", url: "/curated/2026-09-16-scire-atlantic-google-abbonati-niemanlab/", _source: "curated" }
     ]
   },
   {
@@ -1462,7 +1466,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q134083964"],
     note: "Generative Engine Optimization: l'equivalente della SEO per i motori di ricerca generativi. Nel sito è il problema pratico di chi si lamenta di non comparire nelle risposte AI senza sapere che, spesso, il blocco bot di Cloudflare attivo di default restituisce 403 proprio ai crawler che vorrebbe accogliere.",
     articles: [
-      { title: "Le tre IA del Netcomm Forum", url: "/curated/2026-05-21-diegoli-tre-ia-netcomm-forum/", _source: "curated" }
+      { title: "Le tre IA del Netcomm Forum", url: "/curated/2026-05-21-diegoli-tre-ia-netcomm-forum/", _source: "curated" },
+      { title: "The Atlantic is getting more subscribers from Google traffic, even as referrals fall", url: "/curated/2026-09-16-scire-atlantic-google-abbonati-niemanlab/", _source: "curated" }
     ]
   },
   {
@@ -1803,7 +1808,8 @@ module.exports = [
     note: "Processo per cui gli esseri umani delegano carichi cognitivi a strumenti esterni — dalla scrittura alle calcolatrici, fino agli LLM — per ridurre lo sforzo mentale. La distinzione critica è tra strumenti che *estendono* la cognizione (la calcolatrice verifica un calcolo che si sarebbe potuto fare) e strumenti che la *sostituiscono* (l'AI ragiona al posto del soggetto, impedendo che si formi l'architettura neurale necessaria). Nel sito il concetto emerge in relazione all'adozione non strutturata degli LLM nella didattica: il cognitive offloading è fisiologico, ma diventa problematico quando bypassa i processi attraverso cui si costruisce comprensione. Dialoga con *need for cognition* e *polarizzazione cognitiva*.",
     articles: [
       { title: "Shaping the Future of Learning: Education Readiness for the Age of AI", url: "/curated/2026-06-01-wef-education-readiness-ai/", _source: "curated" },
-      { title: "Don't let AI kill the author", url: "/curated/2026-09-24-economist-dont-let-ai-kill-the-author/", _source: "curated" }
+      { title: "Don't let AI kill the author", url: "/curated/2026-09-24-economist-dont-let-ai-kill-the-author/", _source: "curated" },
+      { title: "We're living through an explainer epidemic", url: "/curated/2026-09-10-pitcher-epidemia-explainer-dazed/", _source: "curated" }
     ]
   },
   {
@@ -1822,7 +1828,8 @@ module.exports = [
     geo: { modo: "teorico", paesi: ["Italia"] },
     note: "Espressione usata da Gianluca Diegoli per descrivere una modalità di fruizione dei media in cui l'utente è impegnato in un'attività principale (stirare, cucinare, fare le faccende) mentre segue un contenuto audio o video in sottofondo. Non distrazione, ma ascolto stratificato: la televisione pomeridiana l'ha strutturato per decenni, YouTube e i podcast video lunghi la replicano oggi per un pubblico più giovane e istruito. Dialoga con il concetto di iperattenzione di Hayles: i due poli non si escludono, convivono nella stessa persona a seconda del contesto.",
     articles: [
-      { title: "I podcast lunghi nell'era della mezza attenzione", url: "/curated/2026-06-29-diegoli-podcast-lunghi-mezza-attenzione-linkideeperlatv/", _source: "curated" }
+      { title: "I podcast lunghi nell'era della mezza attenzione", url: "/curated/2026-06-29-diegoli-podcast-lunghi-mezza-attenzione-linkideeperlatv/", _source: "curated" },
+      { title: "We're living through an explainer epidemic", url: "/curated/2026-09-10-pitcher-epidemia-explainer-dazed/", _source: "curated" }
     ]
   },
   {
@@ -1895,11 +1902,16 @@ module.exports = [
     name: "epistemia",
     type: "teoria",
     geo: { modo: "teorico", paesi: ["Italia"] },
+    related: [
+      { name: "ecologia dei media", why: "Il medium pone il limite: un formato che non supera i tre minuti produce la sensazione di avere capito, non il tempo di capire." },
+      { name: "segnale costoso", why: "Lo screenshot di un chatbot esibito come fonte è l'apparenza della verifica, ed è quella a produrre la sensazione di sapere." }
+    ],
     sameAs: ["https://www.wikidata.org/wiki/Q138835467"],
     lab: true,
-    note: "Illusione di conoscenza che emerge nell'interazione con i modelli linguistici: si esce dallo scambio con la sensazione di sapere, senza che si sia prodotta conoscenza. Il termine è di Loru et al. (PNAS 2025) e Quattrociocchi et al. (2025). Non è una proprietà del modello ma un effetto su chi lo usa — il modello vi contribuisce in quanto privo di metacognizione, incapace di valutare lo statuto epistemico di ciò che afferma. È la condizione che <em>post-cognition</em> si propone di contrastare.",
+    note: "Illusione di conoscenza che emerge nell'interazione con i modelli linguistici: si esce dallo scambio con la sensazione di sapere, senza che si sia prodotta conoscenza. Il termine è di Loru et al. (PNAS 2025) e Quattrociocchi et al. (2025). Non è una proprietà del modello ma un effetto su chi lo usa — il modello vi contribuisce in quanto privo di metacognizione, incapace di valutare lo statuto epistemico di ciò che afferma. È la condizione che <em>post-cognition</em> si propone di contrastare. Nel settembre 2026 l'archivio ne registra la stessa forma in un medium dove il modello non è l'interlocutore ma la scorciatoia di chi parla: nei video *explainer* descritti da *Dazed*, dove la teorica della moda Shuang Bright parla di una «facciata di educazione» — si guarda, si ha la sensazione di essersi arricchiti, si passa al successivo. È un allargamento utile, perché mostra che l'epistemia non richiede un modello linguistico dall'altra parte: richiede soltanto che la forma dello scambio imiti l'esito di una comprensione senza produrla.",
     articles: [
-      { title: "Validating AI — note di ricerca", url: "/lab/", _source: "lab" }
+      { title: "Validating AI — note di ricerca", url: "/lab/", _source: "lab" },
+      { title: "We're living through an explainer epidemic", url: "/curated/2026-09-10-pitcher-epidemia-explainer-dazed/", _source: "curated" }
     ]
   },
   {
@@ -1940,7 +1952,9 @@ module.exports = [
       { title: "AI-written speeches are taking over politics", url: "/curated/2026-09-23-economist-discorsi-scritti-ai-politica/", _source: "curated" },
       { title: "Kids outlearn AI—and we still don't know why", url: "/curated/2026-08-24-cutts-divario-efficienza-dati-mit-techreview/", _source: "curated" },
       { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" },
-      { title: "I Helped Fact-Check the 1619 Project. The Times Ignored Me.", url: "/curated/2020-03-06-harris-1619-project-fact-check-politico/", _source: "curated" }
+      { title: "I Helped Fact-Check the 1619 Project. The Times Ignored Me.", url: "/curated/2020-03-06-harris-1619-project-fact-check-politico/", _source: "curated" },
+      { title: "We're living through an explainer epidemic", url: "/curated/2026-09-10-pitcher-epidemia-explainer-dazed/", _source: "curated" },
+      { title: "The Atlantic is getting more subscribers from Google traffic, even as referrals fall", url: "/curated/2026-09-16-scire-atlantic-google-abbonati-niemanlab/", _source: "curated" }
     ]
   },
   {
@@ -2005,7 +2019,8 @@ module.exports = [
       { title: "Ross Douthat: The Exit Interview", url: "/curated/2026-08-11-klein-douthat-exit-interview-nyt/", _source: "curated" },
       { title: "The Original Sin of AI", url: "/curated/2026-09-11-turkle-original-sin-ai-atlantic/", _source: "curated" },
       { title: "My team fed chatbots election lies. Here's what happened.", url: "/curated/2026-08-25-norden-chatbot-election-lies-wapo/", _source: "curated" },
-      { title: "The bombarding of childhood", url: "/curated/2026-09-18-kucirkova-hectic-media-bambini-aeon/", _source: "curated" }
+      { title: "The bombarding of childhood", url: "/curated/2026-09-18-kucirkova-hectic-media-bambini-aeon/", _source: "curated" },
+      { title: "We're living through an explainer epidemic", url: "/curated/2026-09-10-pitcher-epidemia-explainer-dazed/", _source: "curated" }
     ]
   },
   {
@@ -2027,7 +2042,7 @@ module.exports = [
     type: "teoria",
     geo: { modo: "teorico", paesi: ["Regno Unito"] },
     sameAs: ["https://www.wikidata.org/wiki/Q969040"],
-    note: "Termine dell'economia della cultura che indica i settori in cui la produzione artistica e culturale si combina con logiche di sfruttamento commerciale: editoria, cinema, televisione, videogiochi, musica, merchandise. Nel sito funziona come lente strutturale — non per classificare contenuti ma per osservare le trasformazioni dell'industria che li produce e distribuisce: come le piattaforme (BookTok, algoritmi di raccomandazione) hanno ridisegnato la scoperta e invertito il potere negoziale tra autori indie e editori tradizionali; come i fandom si sono trasformati da audience passive in ecosistemi economici con merch, retreat ed eventi; come la logica dell'IP spinge ogni successo editoriale o videoludico verso l'adattamento cinematografico, spesso con risultati deludenti; come i capitali sovrani (Arabia Saudita) e il private equity entrano come acquirenti di infrastrutture culturali. Il filo comune non è il contenuto delle opere ma la struttura economica e distributiva che le produce, le fa circolare e le monetizza.",
+    note: "Termine dell'economia della cultura che indica i settori in cui la produzione artistica e culturale si combina con logiche di sfruttamento commerciale: editoria, cinema, televisione, videogiochi, musica, merchandise. Nel sito funziona come lente strutturale — non per classificare contenuti ma per osservare le trasformazioni dell'industria che li produce e distribuisce: come le piattaforme (BookTok, algoritmi di raccomandazione) hanno ridisegnato la scoperta e invertito il potere negoziale tra autori indie e editori tradizionali; come i fandom si sono trasformati da audience passive in ecosistemi economici con merch, retreat ed eventi; come la logica dell'IP spinge ogni successo editoriale o videoludico verso l'adattamento cinematografico, spesso con risultati deludenti; come i capitali sovrani (Arabia Saudita) e il private equity entrano come acquirenti di infrastrutture culturali. Il filo comune non è il contenuto delle opere ma la struttura economica e distributiva che le produce, le fa circolare e le monetizza. A questa struttura, che è tutta dal lato dell'offerta, Matt Alt aggiunge nel 2022 una causa di domanda, ed è la tesi che chiama *Grande Regressione*: il consumo adulto di cultura prodotta per bambini — narrativa per ragazzi, manga, Lego, collezionabili — non è immaturità ma adattamento a un orizzonte che non si può pianificare, e comincia nel Giappone degli anni Novanta dopo lo scoppio della bolla, non nell'America dei millennial. La tesi è contestata e Alt cita per nome chi la contesta. Se però regge, ha una conseguenza pratica per chi pubblica: il lettore adulto di narrativa per ragazzi non è una moda né un ripiego, è un mercato con una causa, e si comporta in modo prevedibile finché la causa non si attenua.",
     articles: [
       { title: "La formula dell’autenticità", url: "/writings/2026-08-23-la-formula-dellautenticita/" },
       { title: "The Steamy, Magical and Now Very Lucrative Romantasy Business", url: "/curated/2026-08-12-miller-muller-romantasy-bloomberg/", _source: "curated" },
@@ -2035,7 +2050,8 @@ module.exports = [
       { title: "L'Arabia Saudita si sta comprando l'industria dei videogiochi. Ecco come", url: "/curated/2026-08-12-lupetti-arabia-saudita-videogiochi-artribune/", _source: "curated" },
       { title: "Si stava meglio quando c'erano i video musicali", url: "/curated/2026-06-10-peroni-video-musicali-crisi-rivistastudio/", _source: "curated" },
       { title: "AI Has Plunged the Book Publishing Industry Into Utter Chaos", url: "/curated/2026-08-17-silman-ai-publishing-chaos-wsj/", _source: "curated" },
-      { title: "C'è un videogioco in cui vivi le poche gioie e i tanti dolori di un dipendente di una piccola casa editrice indipendente", url: "/curated/2026-09-18-giudici-small-press-tycoon-rivistastudio/", _source: "curated" }
+      { title: "C'è un videogioco in cui vivi le poche gioie e i tanti dolori di un dipendente di una piccola casa editrice indipendente", url: "/curated/2026-09-18-giudici-small-press-tycoon-rivistastudio/", _source: "curated" },
+      { title: "The great regression", url: "/curated/2022-08-05-alt-grande-regressione-kidult-aeon/", _source: "curated" }
     ]
   },
 
@@ -2062,7 +2078,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q3380771", "https://en.wikipedia.org/wiki/Metamodernism"],
     note: "Sensibilità culturale e framework teorico elaborato da Timotheus Vermeulen e Robin van den Akker nel saggio «Notes on Metamodernism» (2010, Journal of Aesthetics & Culture), poi sviluppato da Greg Dember e altri. Emerge dalla fine degli anni Novanta come reazione al doppio esaurimento del modernismo (riduzionismo scientifico) e del postmodernismo (svuotamento del senso attraverso ironica distanza). La motivazione centrale, nella formulazione di Dember, è proteggere l'esperienza vissuta (felt experience) — la soggettività interiore, l'earnestness, la vulnerabilità — senza rigettare la consapevolezza ironica acquisita dal postmodernismo. Nel sito è un'antenna utile per leggere una certa qualità della cultura contemporanea: la capacità di essere sinceri e ironici insieme, di oscillare tra modernista convinzione e postmoderna relativizzazione senza rimanere paralizzati in nessuna delle due posizioni.",
     articles: [
-      { title: "After Postmodernism: Eleven Metamodern Methods in the Arts", url: "/curated/2018-04-17-dember-metamodern-methods-medium/", _source: "curated" }
+      { title: "After Postmodernism: Eleven Metamodern Methods in the Arts", url: "/curated/2018-04-17-dember-metamodern-methods-medium/", _source: "curated" },
+      { title: "The great regression", url: "/curated/2022-08-05-alt-grande-regressione-kidult-aeon/", _source: "curated" }
     ]
   },
 
@@ -2376,12 +2393,13 @@ module.exports = [
   {
     name: "The Economist",
     related: [
+      { name: "morte dell'autore", why: "Il rovescio della tesi, dal lato dell'abbonamento: nel 2026 abbandona l'anonimato perché la firma converte." },
       { name: "propaganda", why: "La nomina di un ex comandante della 77 Brigade a defence editor è il punto in cui informazione e difesa smettono di essere piani distinti." }
     ],
     type: "istituzione",
     geo: { modo: "diretta", paesi: ["Regno Unito"] },
     sameAs: ["https://www.wikidata.org/wiki/Q180089", "https://it.wikipedia.org/wiki/The_Economist"],
-    note: "Settimanale britannico. Nel sito è il caso della nomina del generale Alex Turner — ex comandante della 77 Brigade, ancora in servizio attivo al momento della nomina — a defence editor: un caso che rende visibile la sovrapposizione crescente tra i piani dell'informazione e della difesa.",
+    note: "Settimanale britannico. Nel sito è il caso della nomina del generale Alex Turner — ex comandante della 77 Brigade, ancora in servizio attivo al momento della nomina — a defence editor: un caso che rende visibile la sovrapposizione crescente tra i piani dell'informazione e della difesa. Alla Future of Media Technology Conference del Press Gazette, a Londra, il 30 settembre 2026, il settimanale dichiara di avere abbandonato l'anonimato dei propri articoli per mettere in evidenza le personalità dei giornalisti: «crea una connessione, e abbiamo di sicuro molti abbonati che vogliono vedere cosa fanno i nostri giornalisti», dice Andrew Palmer. Per una testata che ha costruito quasi due secoli di identità sull'articolo non firmato è una rottura, e arriva dal lato dell'abbonamento: l'autore non muore, viene richiamato in servizio perché il nome converte.",
     articles: [
       { title: "Alex Turner appointed as Defence Editor of The Economist", url: "/curated/2026-06-19-economist-defence-editor-turner/", _source: "curated" },
       { title: "The history of liberalism: a timeline", url: "/curated/2026-06-25-economist-liberalism-timeline/", _source: "curated" }
@@ -2740,7 +2758,8 @@ module.exports = [
       { title: "We Surveyed 634 Women Who Work in Tech. They Let Loose", url: "/curated/2026-09-21-upson-donne-tech-sondaggio-wired/", _source: "curated" },
       { title: "Happy Birthday C.S. Peirce: Peircean Induction and the Error-Correcting Thesis", url: "/curated/2026-09-11-mayo-peirce-tesi-autocorrettiva-errorstatistics/", _source: "curated" },
       { title: "The statistics wars and intellectual conflicts of interest", url: "/curated/2021-12-06-mayo-conflitti-interesse-intellettuali-conbio/", _source: "curated" },
-      { title: "The ASA President's Task Force Statement on Statistical Significance and Replicability", url: "/curated/2021-08-01-task-force-asa-significativita-replicabilita-aoas/", _source: "curated" }
+      { title: "The ASA President's Task Force Statement on Statistical Significance and Replicability", url: "/curated/2021-08-01-task-force-asa-significativita-replicabilita-aoas/", _source: "curated" },
+      { title: "The Atlantic is getting more subscribers from Google traffic, even as referrals fall", url: "/curated/2026-09-16-scire-atlantic-google-abbonati-niemanlab/", _source: "curated" }
     ]
   },
   {
@@ -2874,7 +2893,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q17", "https://it.wikipedia.org/wiki/Giappone"],
     note: "Nel sito è il caso della crisi degli animatori: un mercato dell'anime quasi triplicato in un decennio fino a 19 miliardi di dollari, sostenuto da una manodopera cronicamente sottopagata e mal formata dopo lo smantellamento del sistema di apprendistato seguito al fallimento di Mushi Production nel 1973.",
     articles: [
-      { title: "The strange disappearance of Japan's animators", url: "/curated/2026-06-19-economist-1843-japan-animators/", _source: "curated" }
+      { title: "The strange disappearance of Japan's animators", url: "/curated/2026-06-19-economist-1843-japan-animators/", _source: "curated" },
+      { title: "The great regression", url: "/curated/2022-08-05-alt-grande-regressione-kidult-aeon/", _source: "curated" }
     ]
   },
 
@@ -3759,14 +3779,15 @@ module.exports = [
       { name: "legge di Goodhart", why: "Un segnale il cui costo crolla diventa un bersaglio raggiungibile da chiunque: è il momento in cui la misura smette di misurare." },
       { name: "scrittura", why: "La fatica di scrivere è in larga parte la fatica di pensare: il costo non era un attrito da eliminare, era il processo." }
     ],
-    note: "Nella teoria dei segnali — Michael Spence (1973) per i mercati, Amotz Zahavi (1975) per la biologia, con il principio dell'handicap — un segnale è credibile quando produrlo costa, e costa di più a chi mente che a chi dice il vero: il costo non certifica il contenuto, certifica che qualcuno ha ritenuto valesse la pena sostenerlo. Nel sito è il concetto che spiega che cosa si rompe quando l'AI entra nella scrittura. Un testo umano richiede più tempo a scriversi che a leggersi, e quell'asimmetria era una garanzia di sforzo — non di qualità, il mondo è pieno di prosa pessima, ma di intenzione. Azzerato il costo di produzione, il segnale smette di discriminare, e la fiducia che vi si appoggiava deve trovare un'altra base: è la ragione per cui la dichiarazione esplicita dell'intervento non è un vezzo di trasparenza ma il sostituto funzionale di un costo che non c'è più. Il corollario vale oltre la scrittura: ogni volta che una tecnologia abbatte il costo di emettere un segnale, le istituzioni che su quel segnale poggiavano vanno ricostruite, non difese. C'è poi la conseguenza dal lato di chi riceve, che Louis Menand formula nel settembre 2026 e che è più scomoda della prima: quando il segnale non è più leggibile, il sospetto diventa il default. Il timore corrente è l'inganno — scambiare la poesia di una macchina per quella di una persona — ma è un rischio simmetrico e occasionale; il sospetto è sistematico e cade per primo su chi non ha barato, perché un testo umano non possiede alcun modo interno di dimostrare di esserlo. Ne segue che dichiarare l'intervento non è una confessione ma una difesa, e che il costo dell'azzeramento lo paga chi quel costo l'aveva sostenuto. E non si distribuisce in modo uniforme: un sondaggio WIRED del settembre 2026 fra 634 donne che lavorano nel tech raccoglie l'osservazione che lo stesso lavoro sciatto fatto con l'AI riceve lodi se lo presenta un uomo e costerebbe il posto a una collega. L'accusa di slop è comoda perché si traveste da critica tecnica, non richiede argomentazione e non è confutabile, e un pregiudizio preesistente vi trova un vocabolario nuovo e molto più negabile.",
+    note: "Nella teoria dei segnali — Michael Spence (1973) per i mercati, Amotz Zahavi (1975) per la biologia, con il principio dell'handicap — un segnale è credibile quando produrlo costa, e costa di più a chi mente che a chi dice il vero: il costo non certifica il contenuto, certifica che qualcuno ha ritenuto valesse la pena sostenerlo. Nel sito è il concetto che spiega che cosa si rompe quando l'AI entra nella scrittura. Un testo umano richiede più tempo a scriversi che a leggersi, e quell'asimmetria era una garanzia di sforzo — non di qualità, il mondo è pieno di prosa pessima, ma di intenzione. Azzerato il costo di produzione, il segnale smette di discriminare, e la fiducia che vi si appoggiava deve trovare un'altra base: è la ragione per cui la dichiarazione esplicita dell'intervento non è un vezzo di trasparenza ma il sostituto funzionale di un costo che non c'è più. Il corollario vale oltre la scrittura: ogni volta che una tecnologia abbatte il costo di emettere un segnale, le istituzioni che su quel segnale poggiavano vanno ricostruite, non difese. C'è poi la conseguenza dal lato di chi riceve, che Louis Menand formula nel settembre 2026 e che è più scomoda della prima: quando il segnale non è più leggibile, il sospetto diventa il default. Il timore corrente è l'inganno — scambiare la poesia di una macchina per quella di una persona — ma è un rischio simmetrico e occasionale; il sospetto è sistematico e cade per primo su chi non ha barato, perché un testo umano non possiede alcun modo interno di dimostrare di esserlo. Ne segue che dichiarare l'intervento non è una confessione ma una difesa, e che il costo dell'azzeramento lo paga chi quel costo l'aveva sostenuto. E non si distribuisce in modo uniforme: un sondaggio WIRED del settembre 2026 fra 634 donne che lavorano nel tech raccoglie l'osservazione che lo stesso lavoro sciatto fatto con l'AI riceve lodi se lo presenta un uomo e costerebbe il posto a una collega. L'accusa di slop è comoda perché si traveste da critica tecnica, non richiede argomentazione e non è confutabile, e un pregiudizio preesistente vi trova un vocabolario nuovo e molto più negabile. Il settembre 2026 aggiunge la forma più pura della famiglia, e viene dai video *explainer*: il creator che sostanzia un'affermazione mostrando lo screenshot di un chatbot esibisce l'apparenza della fonte senza la fonte. Il gesto costa pochi secondi, somiglia in tutto a una citazione, e chi guarda non può risalire né all'articolo né alla ricerca da cui il modello sta attingendo. Quel che resta è il segnale di avere verificato, al prezzo di non verificare.",
     articles: [
       { title: "AI-written speeches are taking over politics", url: "/curated/2026-09-23-economist-discorsi-scritti-ai-politica/", _source: "curated" },
       { title: "Don't let AI kill the author", url: "/curated/2026-09-24-economist-dont-let-ai-kill-the-author/", _source: "curated" },
       { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" },
       { title: "Not Even Wrong 1: AI and the Labour Market, From Frey–Osborne to ChatGPT, 2012–2026", url: "/curated/2026-06-10-floridi-not-even-wrong-1-lavoro-ssrn/", _source: "curated" },
       { title: "We Surveyed 634 Women Who Work in Tech. They Let Loose", url: "/curated/2026-09-21-upson-donne-tech-sondaggio-wired/", _source: "curated" },
-      { title: "Why Most Published Research Findings Are False", url: "/curated/2005-08-30-ioannidis-most-published-findings-false-plosmed/", _source: "curated" }
+      { title: "Why Most Published Research Findings Are False", url: "/curated/2005-08-30-ioannidis-most-published-findings-false-plosmed/", _source: "curated" },
+      { title: "We're living through an explainer epidemic", url: "/curated/2026-09-10-pitcher-epidemia-explainer-dazed/", _source: "curated" }
     ]
   },
   {
@@ -3781,7 +3802,8 @@ module.exports = [
     note: "Tesi di Roland Barthes (1967) per cui l'unità di un testo non sta nella sua origine ma nella sua destinazione: attribuirne il senso all'intenzione dell'autore è una scorciatoia critica, e la figura dell'autore come garante del significato è storica e recente, non necessaria. Nel sito la voce esiste per una ragione che Barthes non poteva prevedere: la tesi viene oggi invocata, di solito da chi non l'ha letta, come se autorizzasse l'indifferenza verso chi ha materialmente prodotto un testo. La distinzione che tiene in piedi tutto il resto è questa — Barthes toglieva l'autore come garante del senso, lasciando intatto il fatto che qualcuno avesse scritto; la scrittura artificiale toglie l'autore come produttore del testo, lasciando intatta la pretesa che quel testo significhi qualcosa per qualcuno. Sono due operazioni diverse che condividono uno slogan, e confonderle è l'errore più frequente del dibattito corrente. Il controcanto empirico è che i lettori non hanno mai accettato la prima: continuano a voler sapere che a scrivere sia stata una persona, e la comprensione di una poesia poggia sulla promessa che sia significata a qualcuno.",
     articles: [
       { title: "Don't let AI kill the author", url: "/curated/2026-09-24-economist-dont-let-ai-kill-the-author/", _source: "curated" },
-      { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" }
+      { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" },
+      { title: "We're living through an explainer epidemic", url: "/curated/2026-09-10-pitcher-epidemia-explainer-dazed/", _source: "curated" }
     ]
   },
   {
