@@ -1744,7 +1744,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q752673", "https://it.wikipedia.org/wiki/Guerra_asimmetrica"],
     note: "Conflitto in cui gli attori dispongono di capacità radicalmente diverse e il più debole compensa con tattiche non convenzionali — intelligence umana, sabotaggio, reti clandestine. Nel sito è il quadro operativo della resistenza ucraina nei territori occupati: la kill chain alimentata da agenti civili (*vidma*) sostituisce le forze regolari dove queste non possono operare. Dialoga con la dottrina Gerasimov e il controllo riflessivo già presenti nel sito, ma dalla prospettiva opposta: non dell'aggressore ibrido, ma di chi subisce l'occupazione e risponde con gli strumenti del più debole.",
     articles: [
-      { title: "The Warrior-Witches of Ukraine's Resistance", url: "/curated/2026-06-21-harbaugh-warrior-witches-ukraine-atlantic/", _source: "curated" }
+      { title: "The Warrior-Witches of Ukraine's Resistance", url: "/curated/2026-06-21-harbaugh-warrior-witches-ukraine-atlantic/", _source: "curated" },
+      { title: "Is Kaliningrad, Russia's exclave surrounded by EU countries, an asset or a liability?", url: "/curated/2022-06-06-economist-kaliningrad-risorsa-o-ostaggio/", _source: "curated" }
     ]
   },
   {
@@ -2696,7 +2697,8 @@ module.exports = [
       { title: "How a former model from Kyiv blew up Russia's $20bn gas pipeline", url: "/curated/2026-06-15-times-nord-stream-diver/", _source: "curated" },
       { title: "A Splintered Internet? Internet Fragmentation and the Strategies of China, Russia, India and the European Union", url: "/curated/2024-02-01-nocetti-splintered-internet-ifri/", _source: "curated" },
       { title: "The Great Russian Firewall: the Kremlin's ultimate crackdown on internet freedom", url: "/curated/2025-12-19-osw-great-russian-firewall/", _source: "curated" },
-      { title: "Ranks of Humanity", url: "/curated/2026-09-24-meaney-varouxakis-idea-occidente-lrb/", _source: "curated" }
+      { title: "Ranks of Humanity", url: "/curated/2026-09-24-meaney-varouxakis-idea-occidente-lrb/", _source: "curated" },
+      { title: "Is Kaliningrad, Russia's exclave surrounded by EU countries, an asset or a liability?", url: "/curated/2022-06-06-economist-kaliningrad-risorsa-o-ostaggio/", _source: "curated" }
     ]
   },
   {
@@ -2778,7 +2780,8 @@ module.exports = [
       { title: "Europe Needs to Come Together. This Man Has Some Ideas.", url: "/curated/2026-06-09-nyt-europe-defense-van-middelaar/", _source: "curated" },
       { title: "Why a big country like Italy acts as if it were small", url: "/curated/2026-04-09-italy-acts-as-if-small/", _source: "curated" },
       { title: "The right balance: how to fix European Union artificial intelligence regulation", url: "/curated/2026-06-11-mariniello-ai-act-costi-conformita-bruegel/", _source: "curated" },
-      { title: "A Splintered Internet? Internet Fragmentation and the Strategies of China, Russia, India and the European Union", url: "/curated/2024-02-01-nocetti-splintered-internet-ifri/", _source: "curated" }
+      { title: "A Splintered Internet? Internet Fragmentation and the Strategies of China, Russia, India and the European Union", url: "/curated/2024-02-01-nocetti-splintered-internet-ifri/", _source: "curated" },
+      { title: "Is Kaliningrad, Russia's exclave surrounded by EU countries, an asset or a liability?", url: "/curated/2022-06-06-economist-kaliningrad-risorsa-o-ostaggio/", _source: "curated" }
     ]
   },
   {
@@ -3075,7 +3078,8 @@ module.exports = [
     note: "Filosofa politica tedesco-americana (1906–1975). Autrice de Le origini del totalitarismo (1951) e La banalità del male (1963). Teorica della sfera pubblica, della natalità come categoria politica e della distinzione tra lavoro, opera e azione come fondamento dell'analisi della vita attiva.",
     articles: [
       { title: "La colonizzazione del giudizio", url: "/curated/2026-06-12-corriere-colonizzazione-giudizio/", _source: "curated" },
-      { title: "What the Pope Said About A.I.", url: "/curated/2026-05-27-lepore-pope-leo-ai-newyorker/", _source: "curated" }
+      { title: "What the Pope Said About A.I.", url: "/curated/2026-05-27-lepore-pope-leo-ai-newyorker/", _source: "curated" },
+      { title: "Is Kaliningrad, Russia's exclave surrounded by EU countries, an asset or a liability?", url: "/curated/2022-06-06-economist-kaliningrad-risorsa-o-ostaggio/", _source: "curated" }
     ]
   },
   {
@@ -4438,6 +4442,21 @@ module.exports = [
     note: "Statistico e genetista britannico (1890–1962), a Rothamsted e poi a Cambridge, autore di *Statistical Methods for Research Workers* (1925) e di *The Design of Experiments* (1935). Gli si devono il p-value nell'uso corrente, la randomizzazione come fondamento del disegno sperimentale, l'analisi della varianza, la stima di massima verosimiglianza e la nozione stessa di ipotesi nulla: buona parte dell'apparato con cui la scienza sperimentale del Novecento ha deciso che cosa contasse come risultato. Due cose vanno dette per non consegnare una figura di comodo. La prima è che la soglia del 5 per cento è sua ma non come regola: la proponeva come convenzione comoda, e insisteva che un p-value piccolo isolato non stabilisce nulla, perché quello che serve è un metodo affidabile nel generarli — cioè esattamente ciò che la pratica successiva ha smesso di chiedere mentre conservava il suo numero. La seconda è che la prima delle guerre della statistica è interna alla tradizione classica e non lo vede contro i bayesiani: il contenzioso con Jerzy Neyman ed Egon Pearson, negli anni Trenta, riguarda se un test serva a valutare l'evidenza in un singolo esperimento, come voleva lui, o a regolare un comportamento di lungo periodo con tassi d'errore controllati, come volevano loro. Va infine registrato, perché il sito si occupa di chi fissa gli standard di prova e con quale interesse, che Fisher fu un eugenista di primo piano e che negli anni Cinquanta, mentre era consulente del comitato dei produttori di tabacco britannici, contestò l'inferenza causale dal fumo al cancro sostenendo che l'associazione potesse essere confusa o invertita. I due fatti non toccano la validità dei suoi metodi e non vanno usati per liquidarli; toccano la tesi che la competenza tecnica metta al riparo dal conflitto d'interessi.",
     articles: [
       { title: "Philosophy of Statistics", url: "/curated/2025-10-01-romeijn-filosofia-della-statistica-sep/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Kaliningrad",
+    type: "luogo",
+    geo: { modo: "diretta", paesi: ["Russia"] },
+    related: [
+      { name: "Russia", why: "L'unico territorio russo separato dal resto del paese e circondato, dal 2024, soltanto da membri della NATO." },
+      { name: "Unione Europea", why: "Il blocco lituano del giugno 2022 sul transito ferroviario e il chiarimento della Commissione a luglio: la geografia come leva, e il suo limite." },
+      { name: "guerra asimmetrica", why: "La posizione avanzata vale finché non si combatte: in guerra è impossibile disperdersi e difficile rifornirsi." },
+      { name: "Arendt, Hannah", why: "Nata a Königsberg come Kant: la città che ha prodotto la Critica della ragion pura oggi è una base missilistica." }
+    ],
+    note: "Exclave russa sul Baltico, grande all'incirca come l'Irlanda del Nord, separata dal resto del paese e confinante solo con Polonia e Lituania. Nel sito è il caso che dà forma a una tesi esportabile: *una posizione avanzata è una risorsa in pace e un ostaggio in guerra*. I due lati poggiano sullo stesso identico fatto geografico. Da un lato è una zona cuscinetto irta di radar, sede della flotta del Baltico, libera dai ghiacci tutto l'anno, dotata di S-400 dal 2012 e di Iskander dal 2016, e serve a minacciare l'Europa da vicino; dall'altro, in caso di conflitto, la sua posizione stretta fra membri dell'alleanza lascia pochissimo spazio di dispersione alle forze russe, il rifornimento è difficile, e — nella formulazione di Michael Kofman del CNA — non c'è probabilmente parte della Russia più strettamente osservata dalle spie occidentali. La salienza taglia da entrambi i lati: ciò che permette di minacciare è anche ciò che espone, e la struttura si ritrova fuori dalla geografia militare, in qualunque avamposto che si difende perché è visibile. Il caso ha anche un valore di metodo per l'archivio, perché è una previsione che si è potuta controllare: nel giugno 2022 l'analisi sosteneva che, se Svezia e Finlandia fossero entrate nella NATO, l'exclave si sarebbe trovata accerchiata; la Finlandia è entrata il 4 aprile 2023 e la Svezia il 7 marzo 2024, e il lato dell'ostaggio è cresciuto mentre quello della risorsa è rimasto fermo. Sotto la questione militare resta la stratificazione storica: fondata nel 1255 dai cavalieri teutonici, come Königsberg è stata la capitale commerciale della Prussia orientale e ha dato Kant, Hannah Arendt ed E.T.A. Hoffmann; sovietica dal 1945, ripopolata e intitolata al bolscevico Michail Kalinin; dal 1991 i suoi 950.000 abitanti sono tagliati fuori dalla Russia, e dopo le proteste del 2010 Mosca ha stretto su stampa locale e società civile.",
+    articles: [
+      { title: "Is Kaliningrad, Russia's exclave surrounded by EU countries, an asset or a liability?", url: "/curated/2022-06-06-economist-kaliningrad-risorsa-o-ostaggio/", _source: "curated" }
     ]
   }
 

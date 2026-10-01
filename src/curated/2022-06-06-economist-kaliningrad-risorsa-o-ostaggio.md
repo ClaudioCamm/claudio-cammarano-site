@@ -1,0 +1,22 @@
+---
+title: "Is Kaliningrad, Russia's exclave surrounded by EU countries, an asset or a liability?"
+external_url: "https://www.economist.com/the-economist-explains/2022/06/06/is-kaliningrad-russias-exclave-surrounded-by-eu-countries-an-asset-or-a-liability"
+source: "The Economist"
+date: 2022-06-06
+ai_prose: WR
+criterio: strumento-concettuale
+perche: "Una posizione avanzata è una risorsa in pace e un ostaggio in guerra: la stessa prossimità che permette di minacciare è quella che impedisce di disperdersi e rende difficile rifornirsi."
+rinvio: /curated/2026-08-30-economist-putin-escalation-orca/
+description: |
+  *The Economist explains*, 6 giugno 2022, edizione a stampa dell'11 giugno. Entra in archivio con quattro anni di ritardo e per una ragione che il pezzo da solo non ha: la previsione condizionale che contiene si è nel frattempo risolta, e nella direzione che indicava.
+
+  La tesi sta nella domanda del titolo, e la risposta è doppia. Dal lato della risorsa: Kaliningrad è una «zona cuscinetto naturale» che fornisce la prima linea di difesa dalla parte occidentale, dice Jonas Kjellen, analista del FOI, l'agenzia svedese di ricerca sulla difesa. È irta di radar che sorvegliano il cielo dell'Europa centrale, ospita la flotta del Baltico e, a differenza di molti porti russi, resta libera dai ghiacci tutto l'anno; dal 2012 ha il sistema antimissile a lungo raggio S-400 e dal 2016 gli Iskander a corto raggio, che in teoria permettono di collocare testate nucleari sgradevolmente vicino alle città europee. Nel maggio 2022, durante un'esercitazione navale, più di cento soldati russi hanno simulato il lancio di razzi nucleari contro posizioni nemiche immaginarie in Europa.
+
+  Dal lato dell'ostaggio, lo stesso identico fatto geografico. «In caso di guerra, la posizione stretta del territorio fra membri della NATO lascia poco spazio alle forze russe per disperdersi», e rifornirla sarebbe difficile. Michael Kofman, direttore del programma di studi sulla Russia del CNA, dà la formulazione più netta del rovesciamento: «Non c'è probabilmente parte della Russia più strettamente osservata dalle spie occidentali.» E la Russia, aggiunge il pezzo, potrebbe colpire obiettivi europei con missili a lungo raggio senza bisogno dell'exclave. La stessa prossimità che rende Kaliningrad utile a minacciare la rende inutile a combattere.
+
+  È qui che il tempo ha fatto il suo lavoro. Nel giugno 2022 il pezzo scriveva: «Se e quando Svezia e Finlandia entreranno nella NATO, Kaliningrad si troverà circondata da membri dell'alleanza», e Kjellen avvertiva che poteva diventare il «punto di interazione più ravvicinato» fra forze NATO e Russia — «se dovesse accadere un incidente, molto probabilmente sarebbe nel Mar Baltico». La Finlandia ha depositato lo strumento di adesione il **4 aprile 2023**, trentunesimo membro; la Svezia il **7 marzo 2024**, trentaduesimo. La condizione si è avverata, e con essa il lato dell'ostaggio è cresciuto mentre quello della risorsa è rimasto fermo. Anche la crisi che la nota del direttore registrava — il blocco lituano del 17 giugno 2022 sul transito di merci sanzionate, con il Cremlino che la definì mossa «apertamente ostile» e convocò l'ambasciatore dell'Unione — si è chiusa poche settimane dopo: il 13 luglio 2022 la Commissione europea ha chiarito che il transito ferroviario verso Kaliningrad non ricade nelle sanzioni.
+
+  Resta, sotto la questione militare, una stratificazione che vale da sola. Il porto fu fondato nel 1255 dai cavalieri teutonici; come Königsberg, capitale commerciale della Prussia orientale, ha prodotto Immanuel Kant, Hannah Arendt ed E.T.A. Hoffmann, l'autore dello *Schiaccianoci*. Alla fine della seconda guerra mondiale la Germania perse il territorio a favore dell'Unione Sovietica, che lo ripopolò con russi e bielorussi e lo intitolò a Michail Kalinin, un politico bolscevico. Nel 1991, con l'indipendenza delle repubbliche baltiche, i suoi 950.000 abitanti si trovarono tagliati fuori dal resto della Russia; il separatismo non ha mai attecchito, e dopo le proteste del 2010 contro i candidati governatori del Cremlino Mosca ha stretto su stampa locale e società civile. L'economia non è decollata nonostante gli incentivi fiscali del 1996, e dalla guerra in poi i voli sono proibitivi perché buona parte dello spazio aereo europeo è chiusa ai vettori russi. «Raramente gli abitanti di Kaliningrad si saranno sentiti più lontani dalla Russia.»
+tags: [curated, geopolitica]
+concepts: ["Kaliningrad", "Russia", "Unione Europea", "Arendt, Hannah", "guerra asimmetrica"]
+---
