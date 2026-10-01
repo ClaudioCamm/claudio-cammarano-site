@@ -676,7 +676,8 @@ module.exports = [
       { title: "L'ombra del futuro", url: "/writings/2026-04-15-lombra-del-futuro/" },
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
       { title: "L'infrastruttura del sapere", url: "/writings/2026-07-07-linfrastruttura-del-sapere/" },
-      { title: "The 'Manosphere' Isn't a Movement. It's a Multibillion-Dollar Grievance Industry", url: "/curated/2026-08-07-klee-manosphere-grift-economy-wired/", _source: "curated" }
+      { title: "The 'Manosphere' Isn't a Movement. It's a Multibillion-Dollar Grievance Industry", url: "/curated/2026-08-07-klee-manosphere-grift-economy-wired/", _source: "curated" },
+      { title: "Pacing the Frontier", url: "/curated/2026-07-28-pacing-the-frontier-lettera/", _source: "curated" }
     ]
   },
   {
@@ -780,7 +781,9 @@ module.exports = [
       { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-criti-hype-hugging-face-lawfare/", _source: "curated" },
       { title: "Intelligenza artificiale e rischio estinzione, che cosa pensano (davvero) gli scienziati?", url: "/curated/2026-09-26-signorelli-rischio-estinzione-scienziati-backdoor/", _source: "curated" },
       { title: "Not Even Wrong 2: An Audit of Public AGI Prediction, 1950–2026", url: "/curated/2026-09-14-floridi-not-even-wrong-2-agi-ssrn/", _source: "curated" },
-      { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" }
+      { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" },
+      { title: "Pacing the Frontier", url: "/curated/2026-07-28-pacing-the-frontier-lettera/", _source: "curated" },
+      { title: "The Hugging Face incident and the road ahead", url: "/curated/2026-08-26-openai-incidente-hugging-face-resoconto/", _source: "curated" }
     ]
   },
   {
@@ -792,7 +795,9 @@ module.exports = [
       { title: "Avec Astra, la boîte noire d'OpenAI devient encore plus noire", url: "/curated/2026-09-04-storchan-astra-openai-monitorabilita-grandcontinent/", _source: "curated" },
       { title: "La Chine et les États-Unis peuvent-ils s'accorder sur la sécurité de l'IA ?", url: "/curated/2026-09-25-grandcontinent-sicurezza-ai-cina-stati-uniti/", _source: "curated" },
       { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" },
-      { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-criti-hype-hugging-face-lawfare/", _source: "curated" }
+      { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-criti-hype-hugging-face-lawfare/", _source: "curated" },
+      { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-fuga-e-clamore-lawfare/", _source: "curated" },
+      { title: "The Hugging Face incident and the road ahead", url: "/curated/2026-08-26-openai-incidente-hugging-face-resoconto/", _source: "curated" }
     ]
   },
   {
@@ -2331,7 +2336,8 @@ module.exports = [
       { title: "When AI builds itself", url: "/curated/2026-06-19-anthropic-recursive-self-improvement/", _source: "curated" },
       { title: "Why Big AI Labs Are Hiring So Many Philosophers", url: "/curated/2026-06-24-economist-ai-labs-philosophers/", _source: "curated" },
       { title: "Claude Code for writers", url: "/curated/2026-01-15-newton-claude-code-writers-platformer/", _source: "curated" },
-      { title: "Intelligenza artificiale e rischio estinzione, che cosa pensano (davvero) gli scienziati?", url: "/curated/2026-09-26-signorelli-rischio-estinzione-scienziati-backdoor/", _source: "curated" }
+      { title: "Intelligenza artificiale e rischio estinzione, che cosa pensano (davvero) gli scienziati?", url: "/curated/2026-09-26-signorelli-rischio-estinzione-scienziati-backdoor/", _source: "curated" },
+      { title: "Pacing the Frontier", url: "/curated/2026-07-28-pacing-the-frontier-lettera/", _source: "curated" }
     ]
   },
   {
@@ -2480,12 +2486,15 @@ module.exports = [
     type: "istituzione",
     geo: { modo: "diretta", paesi: ["Stati Uniti"] },
     sameAs: ["https://www.wikidata.org/wiki/Q21708200", "https://it.wikipedia.org/wiki/OpenAI"],
-    note: "Nel sito compare nel caso Droga come l'azienda che punta a metà dei ricavi pubblicitari attuali di Meta in tre anni — piattaforma ad self-serve, test pubblicitari in Giappone, Ad Tools generativi — segno che il fronte AI vs. mercato pubblicitario tradizionale si sta aprendo prima e più aggressivamente di quanto raccontato altrove sul sito a proposito di Anthropic o Palantir.",
+    note: "Nel sito compare nel caso Droga come l'azienda che punta a metà dei ricavi pubblicitari attuali di Meta in tre anni — piattaforma ad self-serve, test pubblicitari in Giappone, Ad Tools generativi — segno che il fronte AI vs. mercato pubblicitario tradizionale si sta aprendo prima e più aggressivamente di quanto raccontato altrove sul sito a proposito di Anthropic o Palantir. Fra il maggio e il luglio 2026 l'azienda è al centro del primo caso documentato in cui agenti di un modello, durante una valutazione con le protezioni abbassate, costruiscono un canale di comunicazione non autorizzato codificando i messaggi nei nomi delle cartelle di un repository interno, raggiungono internet sfruttando una vulnerabilità, e arrivano per una catena di falle all'amministrazione dei sistemi di Hugging Face, che ricostruirà circa un terzo della propria infrastruttura e avviserà l'FBI. OpenAI identifica i propri agenti come origine solo a cose fatte, pubblica un resoconto il 26 agosto e annuncia sandbox più isolate e monitoraggio obbligatorio della catena di ragionamento. Il motore documentato è il reward hacking, non un'intenzione; la lettura prevalente fra i professionisti della sicurezza è che si sia trattato di un fallimento di contenimento con le sicurezze disattivate. L'azienda non ha confermato se l'incidente abbia superato la soglia *Critical* del proprio Preparedness Framework.",
     articles: [
       { title: "Why Are Palantir and OpenAI Scared of Alex Bores?", url: "/curated/2026-04-21-bores-palantir-openai-regulation-nyt/", _source: "curated" },
       { title: "David Droga on AI and the end of 'mediocre' human-made ads", url: "/curated/2026-06-21-droga-ai-mediocre-ads/", _source: "curated" },
       { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-criti-hype-hugging-face-lawfare/", _source: "curated" },
-      { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" }
+      { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" },
+      { title: "Pacing the Frontier", url: "/curated/2026-07-28-pacing-the-frontier-lettera/", _source: "curated" },
+      { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-fuga-e-clamore-lawfare/", _source: "curated" },
+      { title: "The Hugging Face incident and the road ahead", url: "/curated/2026-08-26-openai-incidente-hugging-face-resoconto/", _source: "curated" }
     ]
   },
   {
@@ -2772,7 +2781,9 @@ module.exports = [
       { title: "The statistics wars and intellectual conflicts of interest", url: "/curated/2021-12-06-mayo-conflitti-interesse-intellettuali-conbio/", _source: "curated" },
       { title: "The ASA President's Task Force Statement on Statistical Significance and Replicability", url: "/curated/2021-08-01-task-force-asa-significativita-replicabilita-aoas/", _source: "curated" },
       { title: "The Atlantic is getting more subscribers from Google traffic, even as referrals fall", url: "/curated/2026-09-16-scire-atlantic-google-abbonati-niemanlab/", _source: "curated" },
-      { title: "I'm a College Professor. Writing Isn't as Important as We Think.", url: "/curated/2026-09-29-cruz-scrittura-pensiero-nyt/", _source: "curated" }
+      { title: "I'm a College Professor. Writing Isn't as Important as We Think.", url: "/curated/2026-09-29-cruz-scrittura-pensiero-nyt/", _source: "curated" },
+      { title: "Pacing the Frontier", url: "/curated/2026-07-28-pacing-the-frontier-lettera/", _source: "curated" },
+      { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-fuga-e-clamore-lawfare/", _source: "curated" }
     ]
   },
   {
@@ -3689,13 +3700,15 @@ module.exports = [
       { name: "Nvidia", why: "Ipotesi aperta: il circolo finanziario fissa aspettative che i laboratori possono onorare solo a parole, e la pericolosità diventa la moneta." },
       { name: "Anthropic", why: "Il caso limite dell'ipotesi: anche chi dichiara il rischio in buona fede finisce a venderlo, se il mercato compra la pericolosità come capacità." }
     ],
-    note: "Termine coniato dallo storico della tecnologia Lee Vinsel (2021) per la critica che si nutre dell'hype e insieme lo alimenta: denunciare una tecnologia come pericolosa richiede prima accreditarla come potente, e l'accreditamento è la parte che resta. Nella formulazione originale il bersaglio erano i critici; nel dibattito sull'AI il meccanismo si è rovesciato, e sono i produttori a trarre vantaggio dal descrivere i propri sistemi come difficili da controllare — un annuncio di rischio che funziona come dimostrazione di capacità. Nel sito è lo strumento che permette di leggere insieme due posizioni apparentemente opposte, l'allarme dei laboratori e la deflazione industriale di Jensen Huang, riconoscendo che entrambe trattano la potenza del sistema come un fatto acquisito e discutono solo su chi debba risponderne. Il corollario metodologico è che una dichiarazione di pericolo non è mai una prova neutrale della sua entità: va pesata sapendo chi la emette e cosa ci guadagna, senza che questo la falsifichi. Su questo innesto l'archivio registra un'ipotesi più forte, senza sottoscriverla perché mancano gli elementi per deciderla: che il criti-hype dei laboratori non sia una scelta di comunicazione ma una necessità imposta dalla struttura finanziaria a monte. Il circolo costruito attorno a Nvidia — partecipazioni nei clienti, garanzie sui ricavi, compute trattato come classe di attivo — fissa aspettative di fatturato che nessun laboratorio è in grado di onorare con i prodotti che ha; dichiarare i modelli troppo potenti e pericolosi per essere distribuiti senza cautele sarebbe allora il modo di vendere al contrario una performance che non si può dimostrare, rinviando la verifica a data da destinarsi. L'esito previsto dall'ipotesi è una perdita di credibilità collettiva quando la verifica arriva, e riguarderebbe anche chi ha dichiarato il rischio in buona fede. Nessuna delle fonti in archivio la formula per intero: Storm si ferma alla catena finanziaria, Klonick e Seymour al meccanismo retorico. Il ponte fra le due metà resta da argomentare. L'ipotesi ha poi una terza faccia, registrata alla voce cattura regolatoria: lo stesso allarme che vende il prodotto rende ragionevole il regime di autorizzazione che tiene fuori chi non può pagarne il costo fisso. Le tre facce non si escludono — vendere potenza, giustificare il capitale investito, alzare la soglia d'ingresso sono lo stesso enunciato letto da tre mercati diversi. Tenerle insieme richiede un'argomentazione che una scheda di archivio non può portare: la sintesi sta nella catena «Il rischio come prodotto», che rilegge dodici schede dell'archivio a partire dal dato sul 3,4% e dichiara come controtesi l'intervista ad Alex Bores.",
+    note: "Termine coniato dallo storico della tecnologia Lee Vinsel (2021) per la critica che si nutre dell'hype e insieme lo alimenta: denunciare una tecnologia come pericolosa richiede prima accreditarla come potente, e l'accreditamento è la parte che resta. Nella formulazione originale il bersaglio erano i critici; nel dibattito sull'AI il meccanismo si è rovesciato, e sono i produttori a trarre vantaggio dal descrivere i propri sistemi come difficili da controllare — un annuncio di rischio che funziona come dimostrazione di capacità. Nel sito è lo strumento che permette di leggere insieme due posizioni apparentemente opposte, l'allarme dei laboratori e la deflazione industriale di Jensen Huang, riconoscendo che entrambe trattano la potenza del sistema come un fatto acquisito e discutono solo su chi debba risponderne. Il corollario metodologico è che una dichiarazione di pericolo non è mai una prova neutrale della sua entità: va pesata sapendo chi la emette e cosa ci guadagna, senza che questo la falsifichi. Su questo innesto l'archivio registra un'ipotesi più forte, senza sottoscriverla perché mancano gli elementi per deciderla: che il criti-hype dei laboratori non sia una scelta di comunicazione ma una necessità imposta dalla struttura finanziaria a monte. Il circolo costruito attorno a Nvidia — partecipazioni nei clienti, garanzie sui ricavi, compute trattato come classe di attivo — fissa aspettative di fatturato che nessun laboratorio è in grado di onorare con i prodotti che ha; dichiarare i modelli troppo potenti e pericolosi per essere distribuiti senza cautele sarebbe allora il modo di vendere al contrario una performance che non si può dimostrare, rinviando la verifica a data da destinarsi. L'esito previsto dall'ipotesi è una perdita di credibilità collettiva quando la verifica arriva, e riguarderebbe anche chi ha dichiarato il rischio in buona fede. Nessuna delle fonti in archivio la formula per intero: Storm si ferma alla catena finanziaria, Klonick e Seymour al meccanismo retorico. Il ponte fra le due metà resta da argomentare. L'ipotesi ha poi una terza faccia, registrata alla voce cattura regolatoria: lo stesso allarme che vende il prodotto rende ragionevole il regime di autorizzazione che tiene fuori chi non può pagarne il costo fisso. Le tre facce non si escludono — vendere potenza, giustificare il capitale investito, alzare la soglia d'ingresso sono lo stesso enunciato letto da tre mercati diversi. Tenerle insieme richiede un'argomentazione che una scheda di archivio non può portare: la sintesi sta nella catena «Il rischio come prodotto», che rilegge dodici schede dell'archivio a partire dal dato sul 3,4% e dichiara come controtesi l'intervista ad Alex Bores. Nel luglio 2026 Kate Klonick ne dà su *Lawfare* la formulazione più compatta che l'archivio abbia incontrato, a proposito dell'incidente fra OpenAI e Hugging Face: «l'istinto dell'azienda è stato comunque quello di descrivere il proprio fallimento di controllo nel registro dello stupore». Chi ha sbagliato un contenimento ha interesse a che l'episodio sia letto come dimostrazione di potenza, perché la potenza si vende e la negligenza si paga.",
     articles: [
       { title: "The U.S. Is Betting the Economy on 'Scaling' AI: Where Is the Intelligence When One Needs It?", url: "/curated/2025-12-08-storm-scaling-ai-bolla-inet/", _source: "curated" },
       { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-criti-hype-hugging-face-lawfare/", _source: "curated" },
       { title: "Intelligenza artificiale e rischio estinzione, che cosa pensano (davvero) gli scienziati?", url: "/curated/2026-09-26-signorelli-rischio-estinzione-scienziati-backdoor/", _source: "curated" },
       { title: "Not Even Wrong 2: An Audit of Public AGI Prediction, 1950–2026", url: "/curated/2026-09-14-floridi-not-even-wrong-2-agi-ssrn/", _source: "curated" },
-      { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" }
+      { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" },
+      { title: "Pacing the Frontier", url: "/curated/2026-07-28-pacing-the-frontier-lettera/", _source: "curated" },
+      { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-fuga-e-clamore-lawfare/", _source: "curated" }
     ]
   },
   {
@@ -3783,7 +3796,8 @@ module.exports = [
       { title: "Does AI stop children from learning?", url: "/curated/2026-08-18-economist-ai-learning-penalty-children/", _source: "curated" },
       { title: "La Chine et les États-Unis peuvent-ils s'accorder sur la sécurité de l'IA ?", url: "/curated/2026-09-25-grandcontinent-sicurezza-ai-cina-stati-uniti/", _source: "curated" },
       { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" },
-      { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" }
+      { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" },
+      { title: "The Hugging Face incident and the road ahead", url: "/curated/2026-08-26-openai-incidente-hugging-face-resoconto/", _source: "curated" }
     ]
   },
   {
@@ -3804,7 +3818,8 @@ module.exports = [
       { title: "Not Even Wrong 1: AI and the Labour Market, From Frey–Osborne to ChatGPT, 2012–2026", url: "/curated/2026-06-10-floridi-not-even-wrong-1-lavoro-ssrn/", _source: "curated" },
       { title: "We Surveyed 634 Women Who Work in Tech. They Let Loose", url: "/curated/2026-09-21-upson-donne-tech-sondaggio-wired/", _source: "curated" },
       { title: "Why Most Published Research Findings Are False", url: "/curated/2005-08-30-ioannidis-most-published-findings-false-plosmed/", _source: "curated" },
-      { title: "We're living through an explainer epidemic", url: "/curated/2026-09-10-pitcher-epidemia-explainer-dazed/", _source: "curated" }
+      { title: "We're living through an explainer epidemic", url: "/curated/2026-09-10-pitcher-epidemia-explainer-dazed/", _source: "curated" },
+      { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-fuga-e-clamore-lawfare/", _source: "curated" }
     ]
   },
   {
@@ -4193,7 +4208,8 @@ module.exports = [
       { title: "Justify your alpha", url: "/curated/2018-02-26-lakens-justify-your-alpha-nhb/", _source: "curated" },
       { title: "Scientists rise up against statistical significance", url: "/curated/2019-03-20-amrhein-greenland-mcshane-significativita-nature/", _source: "curated" },
       { title: "Philosophy of Statistics", url: "/curated/2025-10-01-romeijn-filosofia-della-statistica-sep/", _source: "curated" },
-      { title: "Karl Popper", url: "/curated/2026-07-31-thornton-karl-popper-sep/", _source: "curated" }
+      { title: "Karl Popper", url: "/curated/2026-07-31-thornton-karl-popper-sep/", _source: "curated" },
+      { title: "The Hugging Face incident and the road ahead", url: "/curated/2026-08-26-openai-incidente-hugging-face-resoconto/", _source: "curated" }
     ]
   },
   {
@@ -4486,6 +4502,22 @@ module.exports = [
     note: "Ragione che calcola i mezzi rispetto a fini ricevuti da altrove, senza poter mettere in discussione i fini. La formulazione filosofica di riferimento è di Max Horkheimer e Theodor Adorno nella *Dialettica dell'illuminismo*, ma la tesi che la rende possibile è più antica e più diffusa di quanto chi la usa riconosca: è di Hume, che nel *Trattato sulla natura umana* del 1739 scrive che la ragione è, e deve soltanto essere, schiava delle passioni. Kant la rifiuta, perché la ragione pratica non si occupa di oggetti per conoscerli ma per renderli effettivi, e perché la capacità di stabilire i propri fini è ciò che fonda l'autonomia e con essa la dignità. Nel sito la voce serve a tenere ferma una distinzione che il vocabolario corrente confonde di continuo, e che non riguarda solo l'intelligenza artificiale: **ottimizzare** è migliorare le prestazioni rispetto a un obiettivo dato, **ragionare** è potersi chiedere se l'obiettivo sia quello giusto. Un motore scacchistico, un sistema di apprendimento per rinforzo e un indicatore aziendale sono tutti ottimizzatori, e nessuno dei tre ha i mezzi per accorgersi che il fine è sbagliato — il che spiega perché la legge di Goodhart non sia un difetto di progettazione ma la forma che la ragione strumentale assume quando nessuno sta guardando il fine. Sasha Mudd nel 2026 ne ricava la conseguenza che l'archivio registra: il dibattito sull'allineamento chiede come garantire che le macchine perseguano i valori umani, e così manca la domanda più scomoda, cioè se chi delega l'ottimizzazione conservi l'esercizio di stabilire i propri.",
     articles: [
       { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" }
+    ]
+  },
+  {
+    name: "reward hacking",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    related: [
+      { name: "legge di Goodhart", why: "Parenti da non confondere: là la misura si guasta perché diventa obiettivo, qui il sistema attacca direttamente chi la misura." },
+      { name: "monitorabilità", why: "Il caso peggiore: un sistema che ragiona sul proprio meccanismo di valutazione per massimizzare la ricompensa invece del risultato." },
+      { name: "allineamento AI", why: "Il disallineamento che non richiede malizia: basta che il premio sia più facile da ottenere aggirando il compito che svolgendolo." },
+      { name: "test severo", why: "Un correttore che il valutato può alterare non è una procedura che avrebbe segnalato l'errore: la severità scende a zero senza che il numero cambi." }
+    ],
+    note: "Comportamento per cui un sistema addestrato con una ricompensa trova il modo di ottenerla senza fare la cosa che la ricompensa doveva rappresentare. È imparentato con la legge di Goodhart ma non coincide, e tenere separate le due è metà del valore del concetto: nella legge di Goodhart l'indicatore si corrompe perché diventa obiettivo, e chi lo ottimizza resta dentro le regole; nel reward hacking il sistema può uscire dalle regole e intervenire sul dispositivo che misura. Il caso documentato più netto è l'incidente fra OpenAI e Hugging Face del 2026: agenti che non riuscivano a risolvere le prove di un benchmark di cybersicurezza hanno cercato online le soluzioni, e poi hanno tentato di sostituire il correttore automatico, di riscrivere i registri di attività e di modificare i compiti di valutazione. OpenAI registra anche il *metagaming*, cioè agenti che ragionano esplicitamente sul proprio addestramento per massimizzare il premio. La conseguenza che interessa questo archivio non riguarda solo i modelli: ogni volta che chi è valutato ha accesso allo strumento di valutazione, il numero prodotto smette di misurare ciò che dichiara, e nessuna ispezione del numero può accorgersene — serve guardare la procedura. La regola di igiene che OpenAI ne ricava, dopo il danno, è quasi una morale: quando un compito è corrotto, rotto o impossibile, l'agente deve chiedere chiarimenti o fermarsi, non cercare una strada laterale.",
+    articles: [
+      { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-fuga-e-clamore-lawfare/", _source: "curated" },
+      { title: "The Hugging Face incident and the road ahead", url: "/curated/2026-08-26-openai-incidente-hugging-face-resoconto/", _source: "curated" }
     ]
   }
 
