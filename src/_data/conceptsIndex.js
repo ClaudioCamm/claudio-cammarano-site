@@ -321,7 +321,8 @@ module.exports = [
     note: "Filosofo ateniese (427–347 a.C.). Nel sito compare in due contesti: nell'insegnamento di Eco come contrasto alla figura di Alcibiade (la formazione non produce filosofi ma persone capaci di stare nel mondo); e nel Fedro come autore dell'immagine dello slancio verticale dello spirito, usata per discutere la natura del desiderio nell'intelligenza artificiale.",
     articles: [
       { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-04-04-dieci-anni-senza-umberto-eco/" },
-      { title: "La macchina e la lotta", url: "/writings/2026-06-01-la-macchina-e-la-lotta/" }
+      { title: "La macchina e la lotta", url: "/writings/2026-06-01-la-macchina-e-la-lotta/" },
+      { title: "I'm a College Professor. Writing Isn't as Important as We Think.", url: "/curated/2026-09-29-cruz-scrittura-pensiero-nyt/", _source: "curated" }
     ]
   },
   {
@@ -778,7 +779,8 @@ module.exports = [
       { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" },
       { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-criti-hype-hugging-face-lawfare/", _source: "curated" },
       { title: "Intelligenza artificiale e rischio estinzione, che cosa pensano (davvero) gli scienziati?", url: "/curated/2026-09-26-signorelli-rischio-estinzione-scienziati-backdoor/", _source: "curated" },
-      { title: "Not Even Wrong 2: An Audit of Public AGI Prediction, 1950–2026", url: "/curated/2026-09-14-floridi-not-even-wrong-2-agi-ssrn/", _source: "curated" }
+      { title: "Not Even Wrong 2: An Audit of Public AGI Prediction, 1950–2026", url: "/curated/2026-09-14-floridi-not-even-wrong-2-agi-ssrn/", _source: "curated" },
+      { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" }
     ]
   },
   {
@@ -811,7 +813,8 @@ module.exports = [
       { title: "The Climate Crisis Is Bigger Than Your Footprint", url: "/curated/2026-08-31-stokes-carbon-footprint-bp-mitpress/", _source: "curated" },
       { title: "The Original Sin of AI", url: "/curated/2026-09-11-turkle-original-sin-ai-atlantic/", _source: "curated" },
       { title: "Destroying Books to Build a Mind", url: "/curated/2026-09-11-mancino-destroying-books-anthropic-newyorker/", _source: "curated" },
-      { title: "Zuckerberg says the science isn't settled. But the harms of short-form video on the brain are starting to show", url: "/curated/2026-09-18-enders-short-form-video-cognizione-guardian/", _source: "curated" }
+      { title: "Zuckerberg says the science isn't settled. But the harms of short-form video on the brain are starting to show", url: "/curated/2026-09-18-enders-short-form-video-cognizione-guardian/", _source: "curated" },
+      { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" }
     ]
   },
   {
@@ -995,7 +998,8 @@ module.exports = [
       { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" },
       { title: "A Watermark for Large Language Models", url: "/curated/2023-01-25-kirchenbauer-watermark-llm-arxiv/", _source: "curated" },
       { title: "Don't let AI kill the author", url: "/curated/2026-09-24-economist-dont-let-ai-kill-the-author/", _source: "curated" },
-      { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" }
+      { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" },
+      { title: "I'm a College Professor. Writing Isn't as Important as We Think.", url: "/curated/2026-09-29-cruz-scrittura-pensiero-nyt/", _source: "curated" }
     ]
   },
   {
@@ -1499,7 +1503,8 @@ module.exports = [
     articles: [
       { title: "A Defense of a Liberal Arts Education in the Age of A.I.", url: "/curated/2026-05-21-frey-liberal-arts-ai-nyt/", _source: "curated" },
       { title: "Why Are Humanists So Bad at Defending the Humanities?", url: "/curated/2026-06-15-pinillos-humanists-humanities-chronicle/", _source: "curated" },
-      { title: "Western philosophy is racist", url: "/curated/2017-10-31-vannorden-canone-filosofico-aeon/", _source: "curated" }
+      { title: "Western philosophy is racist", url: "/curated/2017-10-31-vannorden-canone-filosofico-aeon/", _source: "curated" },
+      { title: "I'm a College Professor. Writing Isn't as Important as We Think.", url: "/curated/2026-09-29-cruz-scrittura-pensiero-nyt/", _source: "curated" }
     ]
   },
   {
@@ -1538,7 +1543,8 @@ module.exports = [
       { title: "A Defense of a Liberal Arts Education in the Age of A.I.", url: "/curated/2026-05-21-frey-liberal-arts-ai-nyt/", _source: "curated" },
       { title: "Why Are Humanists So Bad at Defending the Humanities?", url: "/curated/2026-06-15-pinillos-humanists-humanities-chronicle/", _source: "curated" },
       { title: "Western philosophy is racist", url: "/curated/2017-10-31-vannorden-canone-filosofico-aeon/", _source: "curated" },
-      { title: "以贡献为导向深化高校分类评价改革", url: "/curated/2026-03-24-xia-valutazione-differenziata-universita-cina/", _source: "curated" }
+      { title: "以贡献为导向深化高校分类评价改革", url: "/curated/2026-03-24-xia-valutazione-differenziata-universita-cina/", _source: "curated" },
+      { title: "I'm a College Professor. Writing Isn't as Important as We Think.", url: "/curated/2026-09-29-cruz-scrittura-pensiero-nyt/", _source: "curated" }
     ]
   },
   {
@@ -1810,7 +1816,8 @@ module.exports = [
     articles: [
       { title: "Shaping the Future of Learning: Education Readiness for the Age of AI", url: "/curated/2026-06-01-wef-education-readiness-ai/", _source: "curated" },
       { title: "Don't let AI kill the author", url: "/curated/2026-09-24-economist-dont-let-ai-kill-the-author/", _source: "curated" },
-      { title: "We're living through an explainer epidemic", url: "/curated/2026-09-10-pitcher-epidemia-explainer-dazed/", _source: "curated" }
+      { title: "We're living through an explainer epidemic", url: "/curated/2026-09-10-pitcher-epidemia-explainer-dazed/", _source: "curated" },
+      { title: "I'm a College Professor. Writing Isn't as Important as We Think.", url: "/curated/2026-09-29-cruz-scrittura-pensiero-nyt/", _source: "curated" }
     ]
   },
   {
@@ -1955,7 +1962,8 @@ module.exports = [
       { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" },
       { title: "I Helped Fact-Check the 1619 Project. The Times Ignored Me.", url: "/curated/2020-03-06-harris-1619-project-fact-check-politico/", _source: "curated" },
       { title: "We're living through an explainer epidemic", url: "/curated/2026-09-10-pitcher-epidemia-explainer-dazed/", _source: "curated" },
-      { title: "The Atlantic is getting more subscribers from Google traffic, even as referrals fall", url: "/curated/2026-09-16-scire-atlantic-google-abbonati-niemanlab/", _source: "curated" }
+      { title: "The Atlantic is getting more subscribers from Google traffic, even as referrals fall", url: "/curated/2026-09-16-scire-atlantic-google-abbonati-niemanlab/", _source: "curated" },
+      { title: "I'm a College Professor. Writing Isn't as Important as We Think.", url: "/curated/2026-09-29-cruz-scrittura-pensiero-nyt/", _source: "curated" }
     ]
   },
   {
@@ -2476,7 +2484,8 @@ module.exports = [
     articles: [
       { title: "Why Are Palantir and OpenAI Scared of Alex Bores?", url: "/curated/2026-04-21-bores-palantir-openai-regulation-nyt/", _source: "curated" },
       { title: "David Droga on AI and the end of 'mediocre' human-made ads", url: "/curated/2026-06-21-droga-ai-mediocre-ads/", _source: "curated" },
-      { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-criti-hype-hugging-face-lawfare/", _source: "curated" }
+      { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-criti-hype-hugging-face-lawfare/", _source: "curated" },
+      { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" }
     ]
   },
   {
@@ -2558,7 +2567,8 @@ module.exports = [
     note: "Enciclica di Papa Leone XIV (15 maggio 2026), firmata nel 135° anniversario della *Rerum Novarum*. Affronta l'intelligenza artificiale come questione sociale, non solo tecnica o morale: colloca l'AI nel solco della dottrina sociale della Chiesa (lavoro, potere, giustizia, dignità, vita comune). Il passaggio più citato nel sito è l'immagine dei dati come «nuove terre rare del potere» — il colonialismo contemporaneo che si appropria di vite rese computabili, profili sanitari, mappe genetiche, dati demografici. Boccia Artieri la usa come punto di partenza per chiedere non appelli morali ma una grammatica politica dell'AI.",
     citation: "LEONE XIV, <a href=\"https://www.vatican.va/content/leo-xiv/it/encyclicals/documents/20260515-magnifica-humanitas.html\"><em>Magnifica Humanitas</em></a>, Città del Vaticano, Libreria Editrice Vaticana, 15 maggio 2026.",
     articles: [
-      { title: "Magnifica Humanitas: le nuove terre rare del potere", url: "/curated/2026-06-17-boccia-artieri-magnifica-humanitas-substack/", _source: "curated" }
+      { title: "Magnifica Humanitas: le nuove terre rare del potere", url: "/curated/2026-06-17-boccia-artieri-magnifica-humanitas-substack/", _source: "curated" },
+      { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" }
     ]
   },
   {
@@ -2761,7 +2771,8 @@ module.exports = [
       { title: "Happy Birthday C.S. Peirce: Peircean Induction and the Error-Correcting Thesis", url: "/curated/2026-09-11-mayo-peirce-tesi-autocorrettiva-errorstatistics/", _source: "curated" },
       { title: "The statistics wars and intellectual conflicts of interest", url: "/curated/2021-12-06-mayo-conflitti-interesse-intellettuali-conbio/", _source: "curated" },
       { title: "The ASA President's Task Force Statement on Statistical Significance and Replicability", url: "/curated/2021-08-01-task-force-asa-significativita-replicabilita-aoas/", _source: "curated" },
-      { title: "The Atlantic is getting more subscribers from Google traffic, even as referrals fall", url: "/curated/2026-09-16-scire-atlantic-google-abbonati-niemanlab/", _source: "curated" }
+      { title: "The Atlantic is getting more subscribers from Google traffic, even as referrals fall", url: "/curated/2026-09-16-scire-atlantic-google-abbonati-niemanlab/", _source: "curated" },
+      { title: "I'm a College Professor. Writing Isn't as Important as We Think.", url: "/curated/2026-09-29-cruz-scrittura-pensiero-nyt/", _source: "curated" }
     ]
   },
   {
@@ -3683,7 +3694,8 @@ module.exports = [
       { title: "The U.S. Is Betting the Economy on 'Scaling' AI: Where Is the Intelligence When One Needs It?", url: "/curated/2025-12-08-storm-scaling-ai-bolla-inet/", _source: "curated" },
       { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-criti-hype-hugging-face-lawfare/", _source: "curated" },
       { title: "Intelligenza artificiale e rischio estinzione, che cosa pensano (davvero) gli scienziati?", url: "/curated/2026-09-26-signorelli-rischio-estinzione-scienziati-backdoor/", _source: "curated" },
-      { title: "Not Even Wrong 2: An Audit of Public AGI Prediction, 1950–2026", url: "/curated/2026-09-14-floridi-not-even-wrong-2-agi-ssrn/", _source: "curated" }
+      { title: "Not Even Wrong 2: An Audit of Public AGI Prediction, 1950–2026", url: "/curated/2026-09-14-floridi-not-even-wrong-2-agi-ssrn/", _source: "curated" },
+      { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" }
     ]
   },
   {
@@ -3770,7 +3782,8 @@ module.exports = [
       { title: "以贡献为导向深化高校分类评价改革", url: "/curated/2026-03-24-xia-valutazione-differenziata-universita-cina/", _source: "curated" },
       { title: "Does AI stop children from learning?", url: "/curated/2026-08-18-economist-ai-learning-penalty-children/", _source: "curated" },
       { title: "La Chine et les États-Unis peuvent-ils s'accorder sur la sécurité de l'IA ?", url: "/curated/2026-09-25-grandcontinent-sicurezza-ai-cina-stati-uniti/", _source: "curated" },
-      { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" }
+      { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" },
+      { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" }
     ]
   },
   {
@@ -4457,6 +4470,22 @@ module.exports = [
     note: "Exclave russa sul Baltico, grande all'incirca come l'Irlanda del Nord, separata dal resto del paese e confinante solo con Polonia e Lituania. Nel sito è il caso che dà forma a una tesi esportabile: *una posizione avanzata è una risorsa in pace e un ostaggio in guerra*. I due lati poggiano sullo stesso identico fatto geografico. Da un lato è una zona cuscinetto irta di radar, sede della flotta del Baltico, libera dai ghiacci tutto l'anno, dotata di S-400 dal 2012 e di Iskander dal 2016, e serve a minacciare l'Europa da vicino; dall'altro, in caso di conflitto, la sua posizione stretta fra membri dell'alleanza lascia pochissimo spazio di dispersione alle forze russe, il rifornimento è difficile, e — nella formulazione di Michael Kofman del CNA — non c'è probabilmente parte della Russia più strettamente osservata dalle spie occidentali. La salienza taglia da entrambi i lati: ciò che permette di minacciare è anche ciò che espone, e la struttura si ritrova fuori dalla geografia militare, in qualunque avamposto che si difende perché è visibile. Il caso ha anche un valore di metodo per l'archivio, perché è una previsione che si è potuta controllare: nel giugno 2022 l'analisi sosteneva che, se Svezia e Finlandia fossero entrate nella NATO, l'exclave si sarebbe trovata accerchiata; la Finlandia è entrata il 4 aprile 2023 e la Svezia il 7 marzo 2024, e il lato dell'ostaggio è cresciuto mentre quello della risorsa è rimasto fermo. Sotto la questione militare resta la stratificazione storica: fondata nel 1255 dai cavalieri teutonici, come Königsberg è stata la capitale commerciale della Prussia orientale e ha dato Kant, Hannah Arendt ed E.T.A. Hoffmann; sovietica dal 1945, ripopolata e intitolata al bolscevico Michail Kalinin; dal 1991 i suoi 950.000 abitanti sono tagliati fuori dalla Russia, e dopo le proteste del 2010 Mosca ha stretto su stampa locale e società civile.",
     articles: [
       { title: "Is Kaliningrad, Russia's exclave surrounded by EU countries, an asset or a liability?", url: "/curated/2022-06-06-economist-kaliningrad-risorsa-o-ostaggio/", _source: "curated" }
+    ]
+  },
+  {
+    name: "ragione strumentale",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Germania"] },
+    related: [
+      { name: "ragione comunicativa", why: "La risposta di Habermas: una ragione che si esercita nell'intesa fra soggetti, e non solo nel calcolo dei mezzi." },
+      { name: "Dialektik der Aufklärung", why: "Il libro in cui Horkheimer e Adorno la descrivono come l'illuminismo che si rovescia nel dominio di ciò che voleva liberare." },
+      { name: "paradigma tecnocratico", why: "La sua forma istituzionale: il problema diventa quello che gli strumenti disponibili sanno risolvere." },
+      { name: "legge di Goodhart", why: "Il caso in cui la ragione strumentale mangia il proprio fine: si ottimizza l'indicatore e si perde la cosa che l'indicatore rappresentava." },
+      { name: "allineamento AI", why: "Mudd nel 2026 ne ricava il rovescio: il rischio non è solo la macchina disallineata, è l'umano troppo bene allineato a chi gli fissa i fini." }
+    ],
+    note: "Ragione che calcola i mezzi rispetto a fini ricevuti da altrove, senza poter mettere in discussione i fini. La formulazione filosofica di riferimento è di Max Horkheimer e Theodor Adorno nella *Dialettica dell'illuminismo*, ma la tesi che la rende possibile è più antica e più diffusa di quanto chi la usa riconosca: è di Hume, che nel *Trattato sulla natura umana* del 1739 scrive che la ragione è, e deve soltanto essere, schiava delle passioni. Kant la rifiuta, perché la ragione pratica non si occupa di oggetti per conoscerli ma per renderli effettivi, e perché la capacità di stabilire i propri fini è ciò che fonda l'autonomia e con essa la dignità. Nel sito la voce serve a tenere ferma una distinzione che il vocabolario corrente confonde di continuo, e che non riguarda solo l'intelligenza artificiale: **ottimizzare** è migliorare le prestazioni rispetto a un obiettivo dato, **ragionare** è potersi chiedere se l'obiettivo sia quello giusto. Un motore scacchistico, un sistema di apprendimento per rinforzo e un indicatore aziendale sono tutti ottimizzatori, e nessuno dei tre ha i mezzi per accorgersi che il fine è sbagliato — il che spiega perché la legge di Goodhart non sia un difetto di progettazione ma la forma che la ragione strumentale assume quando nessuno sta guardando il fine. Sasha Mudd nel 2026 ne ricava la conseguenza che l'archivio registra: il dibattito sull'allineamento chiede come garantire che le macchine perseguano i valori umani, e così manca la domanda più scomoda, cioè se chi delega l'ottimizzazione conservi l'esercizio di stabilire i propri.",
+    articles: [
+      { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" }
     ]
   }
 
