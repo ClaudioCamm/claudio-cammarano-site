@@ -1004,7 +1004,9 @@ module.exports = [
       { title: "A Watermark for Large Language Models", url: "/curated/2023-01-25-kirchenbauer-watermark-llm-arxiv/", _source: "curated" },
       { title: "Don't let AI kill the author", url: "/curated/2026-09-24-economist-dont-let-ai-kill-the-author/", _source: "curated" },
       { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" },
-      { title: "I'm a College Professor. Writing Isn't as Important as We Think.", url: "/curated/2026-09-29-cruz-scrittura-pensiero-nyt/", _source: "curated" }
+      { title: "I'm a College Professor. Writing Isn't as Important as We Think.", url: "/curated/2026-09-29-cruz-scrittura-pensiero-nyt/", _source: "curated" },
+      { title: "Japanese author Rie Kudan wins prestigious Akutagawa Prize for novel partly written by ChatGPT", url: "/curated/2024-01-17-kudan-akutagawa-cinque-per-cento-cnn/", _source: "curated" },
+      { title: "Il triste dibattito sullo scrivere con l'IA", url: "/curated/2026-10-02-piacenza-triste-dibattito-scrivere-ia/", _source: "curated" }
     ]
   },
   {
@@ -1329,7 +1331,8 @@ module.exports = [
       { title: "La forza della scrittura", url: "/writings/2026-08-26-la-forza-della-scrittura/" },
       { title: "C'è un videogioco in cui vivi le poche gioie e i tanti dolori di un dipendente di una piccola casa editrice indipendente", url: "/curated/2026-09-18-giudici-small-press-tycoon-rivistastudio/", _source: "curated" },
       { title: "The great regression", url: "/curated/2022-08-05-alt-grande-regressione-kidult-aeon/", _source: "curated" },
-      { title: "The Atlantic is getting more subscribers from Google traffic, even as referrals fall", url: "/curated/2026-09-16-scire-atlantic-google-abbonati-niemanlab/", _source: "curated" }
+      { title: "The Atlantic is getting more subscribers from Google traffic, even as referrals fall", url: "/curated/2026-09-16-scire-atlantic-google-abbonati-niemanlab/", _source: "curated" },
+      { title: "Il triste dibattito sullo scrivere con l'IA", url: "/curated/2026-10-02-piacenza-triste-dibattito-scrivere-ia/", _source: "curated" }
     ]
   },
   {
@@ -1524,7 +1527,9 @@ module.exports = [
     articles: [
       { title: "Western philosophy is racist", url: "/curated/2017-10-31-vannorden-canone-filosofico-aeon/", _source: "curated" },
       { title: "I Helped Fact-Check the 1619 Project. The Times Ignored Me.", url: "/curated/2020-03-06-harris-1619-project-fact-check-politico/", _source: "curated" },
-      { title: "What Was the American Revolution For?", url: "/curated/2025-11-17-lepore-rivoluzione-americana-250-newyorker/", _source: "curated" }
+      { title: "What Was the American Revolution For?", url: "/curated/2025-11-17-lepore-rivoluzione-americana-250-newyorker/", _source: "curated" },
+      { title: "« J'éprouve une compassion profonde pour Thélyson Orélien »", url: "/curated/2026-09-24-mbougar-sarr-compassione-profonda-nouvelobs/", _source: "curated" },
+      { title: "Plagiat, IA : le prix Goncourt exclut le roman de Thélyson Orélien", url: "/curated/2026-09-25-goncourt-esclusione-orelien-actualitte/", _source: "curated" }
     ]
   },
   {
@@ -1549,7 +1554,8 @@ module.exports = [
       { title: "Why Are Humanists So Bad at Defending the Humanities?", url: "/curated/2026-06-15-pinillos-humanists-humanities-chronicle/", _source: "curated" },
       { title: "Western philosophy is racist", url: "/curated/2017-10-31-vannorden-canone-filosofico-aeon/", _source: "curated" },
       { title: "以贡献为导向深化高校分类评价改革", url: "/curated/2026-03-24-xia-valutazione-differenziata-universita-cina/", _source: "curated" },
-      { title: "I'm a College Professor. Writing Isn't as Important as We Think.", url: "/curated/2026-09-29-cruz-scrittura-pensiero-nyt/", _source: "curated" }
+      { title: "I'm a College Professor. Writing Isn't as Important as We Think.", url: "/curated/2026-09-29-cruz-scrittura-pensiero-nyt/", _source: "curated" },
+      { title: "Why AI Detection Fails for Academic Integrity", url: "/curated/2026-08-06-karr-perche-la-rilevazione-fallisce-arxiv/", _source: "curated" }
     ]
   },
   {
@@ -1562,7 +1568,8 @@ module.exports = [
       { title: "Speculations on the Future of the Scientific Method", url: "/curated/2026-05-04-kevin-kelly-future-scientific-method/", _source: "curated" },
       { title: "Happy Birthday C.S. Peirce: Peircean Induction and the Error-Correcting Thesis", url: "/curated/2026-09-11-mayo-peirce-tesi-autocorrettiva-errorstatistics/", _source: "curated" },
       { title: "Philosophy of Statistics", url: "/curated/2025-10-01-romeijn-filosofia-della-statistica-sep/", _source: "curated" },
-      { title: "Karl Popper", url: "/curated/2026-07-31-thornton-karl-popper-sep/", _source: "curated" }
+      { title: "Karl Popper", url: "/curated/2026-07-31-thornton-karl-popper-sep/", _source: "curated" },
+      { title: "Different Time, Different Language: Revisiting the Bias Against Non-Native Speakers in GPT Detectors", url: "/curated/2026-02-05-al-ali-bias-rilevatori-rivisitato-eacl/", _source: "curated" }
     ]
   },
   {
@@ -1586,7 +1593,9 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q7246302", "https://en.wikipedia.org/wiki/Social_privilege"],
     note: "Nel sito è il nodo del ragionamento di Dondi: chi ha potere ha sempre avuto accesso a supporto — ghostwriter, editor, speechwriter, assistenti di ricerca — senza che questo fosse considerato imbroglio o segno di incompetenza. I privilegi non si confessano: si usano. L'AI rende visibile questa asimmetria rendendola accessibile a chi ne era storicamente escluso.",
     articles: [
-      { title: "Se uso l'AI sono meno professionista?", url: "/curated/2026-06-21-dondi-ai-professionalita-ghostwriting/", _source: "curated" }
+      { title: "Se uso l'AI sono meno professionista?", url: "/curated/2026-06-21-dondi-ai-professionalita-ghostwriting/", _source: "curated" },
+      { title: "GPT detectors are biased against non-native English writers", url: "/curated/2023-07-10-liang-rilevatori-non-madrelingua-patterns/", _source: "curated" },
+      { title: "« J'éprouve une compassion profonde pour Thélyson Orélien »", url: "/curated/2026-09-24-mbougar-sarr-compassione-profonda-nouvelobs/", _source: "curated" }
     ]
   },
   {
@@ -2783,7 +2792,9 @@ module.exports = [
       { title: "The Atlantic is getting more subscribers from Google traffic, even as referrals fall", url: "/curated/2026-09-16-scire-atlantic-google-abbonati-niemanlab/", _source: "curated" },
       { title: "I'm a College Professor. Writing Isn't as Important as We Think.", url: "/curated/2026-09-29-cruz-scrittura-pensiero-nyt/", _source: "curated" },
       { title: "Pacing the Frontier", url: "/curated/2026-07-28-pacing-the-frontier-lettera/", _source: "curated" },
-      { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-fuga-e-clamore-lawfare/", _source: "curated" }
+      { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-fuga-e-clamore-lawfare/", _source: "curated" },
+      { title: "GPT detectors are biased against non-native English writers", url: "/curated/2023-07-10-liang-rilevatori-non-madrelingua-patterns/", _source: "curated" },
+      { title: "Why AI Detection Fails for Academic Integrity", url: "/curated/2026-08-06-karr-perche-la-rilevazione-fallisce-arxiv/", _source: "curated" }
     ]
   },
   {
@@ -2905,7 +2916,8 @@ module.exports = [
     note: "Nel sito è il contesto della 77 Brigade e della sovrapposizione fra information warfare militare e giornalismo di difesa, resa visibile dalla nomina di un suo ex comandante a defence editor dell'Economist.",
     articles: [
       { title: "Alex Turner appointed as Defence Editor of The Economist", url: "/curated/2026-06-19-economist-defence-editor-turner/", _source: "curated" },
-      { title: "AI-written speeches are taking over politics", url: "/curated/2026-09-23-economist-discorsi-scritti-ai-politica/", _source: "curated" }
+      { title: "AI-written speeches are taking over politics", url: "/curated/2026-09-23-economist-discorsi-scritti-ai-politica/", _source: "curated" },
+      { title: "Commonwealth Short Story Prize Clears Regional Winners of AI Use Following Month-Long Review", url: "/curated/2026-06-26-commonwealth-nazir-falso-positivo-brittlepaper/", _source: "curated" }
     ]
   },
   {
@@ -2919,7 +2931,8 @@ module.exports = [
     note: "Nel sito è il caso della crisi degli animatori: un mercato dell'anime quasi triplicato in un decennio fino a 19 miliardi di dollari, sostenuto da una manodopera cronicamente sottopagata e mal formata dopo lo smantellamento del sistema di apprendistato seguito al fallimento di Mushi Production nel 1973.",
     articles: [
       { title: "The strange disappearance of Japan's animators", url: "/curated/2026-06-19-economist-1843-japan-animators/", _source: "curated" },
-      { title: "The great regression", url: "/curated/2022-08-05-alt-grande-regressione-kidult-aeon/", _source: "curated" }
+      { title: "The great regression", url: "/curated/2022-08-05-alt-grande-regressione-kidult-aeon/", _source: "curated" },
+      { title: "Japanese author Rie Kudan wins prestigious Akutagawa Prize for novel partly written by ChatGPT", url: "/curated/2024-01-17-kudan-akutagawa-cinque-per-cento-cnn/", _source: "curated" }
     ]
   },
 
@@ -3797,7 +3810,8 @@ module.exports = [
       { title: "La Chine et les États-Unis peuvent-ils s'accorder sur la sécurité de l'IA ?", url: "/curated/2026-09-25-grandcontinent-sicurezza-ai-cina-stati-uniti/", _source: "curated" },
       { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" },
       { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" },
-      { title: "The Hugging Face incident and the road ahead", url: "/curated/2026-08-26-openai-incidente-hugging-face-resoconto/", _source: "curated" }
+      { title: "The Hugging Face incident and the road ahead", url: "/curated/2026-08-26-openai-incidente-hugging-face-resoconto/", _source: "curated" },
+      { title: "Why AI Detection Fails for Academic Integrity", url: "/curated/2026-08-06-karr-perche-la-rilevazione-fallisce-arxiv/", _source: "curated" }
     ]
   },
   {
@@ -3819,7 +3833,9 @@ module.exports = [
       { title: "We Surveyed 634 Women Who Work in Tech. They Let Loose", url: "/curated/2026-09-21-upson-donne-tech-sondaggio-wired/", _source: "curated" },
       { title: "Why Most Published Research Findings Are False", url: "/curated/2005-08-30-ioannidis-most-published-findings-false-plosmed/", _source: "curated" },
       { title: "We're living through an explainer epidemic", url: "/curated/2026-09-10-pitcher-epidemia-explainer-dazed/", _source: "curated" },
-      { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-fuga-e-clamore-lawfare/", _source: "curated" }
+      { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-fuga-e-clamore-lawfare/", _source: "curated" },
+      { title: "« J'éprouve une compassion profonde pour Thélyson Orélien »", url: "/curated/2026-09-24-mbougar-sarr-compassione-profonda-nouvelobs/", _source: "curated" },
+      { title: "Plagiat, IA : le prix Goncourt exclut le roman de Thélyson Orélien", url: "/curated/2026-09-25-goncourt-esclusione-orelien-actualitte/", _source: "curated" }
     ]
   },
   {
@@ -3835,7 +3851,9 @@ module.exports = [
     articles: [
       { title: "Don't let AI kill the author", url: "/curated/2026-09-24-economist-dont-let-ai-kill-the-author/", _source: "curated" },
       { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" },
-      { title: "We're living through an explainer epidemic", url: "/curated/2026-09-10-pitcher-epidemia-explainer-dazed/", _source: "curated" }
+      { title: "We're living through an explainer epidemic", url: "/curated/2026-09-10-pitcher-epidemia-explainer-dazed/", _source: "curated" },
+      { title: "Japanese author Rie Kudan wins prestigious Akutagawa Prize for novel partly written by ChatGPT", url: "/curated/2024-01-17-kudan-akutagawa-cinque-per-cento-cnn/", _source: "curated" },
+      { title: "Il triste dibattito sullo scrivere con l'IA", url: "/curated/2026-10-02-piacenza-triste-dibattito-scrivere-ia/", _source: "curated" }
     ]
   },
   {
@@ -4209,7 +4227,10 @@ module.exports = [
       { title: "Scientists rise up against statistical significance", url: "/curated/2019-03-20-amrhein-greenland-mcshane-significativita-nature/", _source: "curated" },
       { title: "Philosophy of Statistics", url: "/curated/2025-10-01-romeijn-filosofia-della-statistica-sep/", _source: "curated" },
       { title: "Karl Popper", url: "/curated/2026-07-31-thornton-karl-popper-sep/", _source: "curated" },
-      { title: "The Hugging Face incident and the road ahead", url: "/curated/2026-08-26-openai-incidente-hugging-face-resoconto/", _source: "curated" }
+      { title: "The Hugging Face incident and the road ahead", url: "/curated/2026-08-26-openai-incidente-hugging-face-resoconto/", _source: "curated" },
+      { title: "GPT detectors are biased against non-native English writers", url: "/curated/2023-07-10-liang-rilevatori-non-madrelingua-patterns/", _source: "curated" },
+      { title: "Different Time, Different Language: Revisiting the Bias Against Non-Native Speakers in GPT Detectors", url: "/curated/2026-02-05-al-ali-bias-rilevatori-rivisitato-eacl/", _source: "curated" },
+      { title: "Commonwealth Short Story Prize Clears Regional Winners of AI Use Following Month-Long Review", url: "/curated/2026-06-26-commonwealth-nazir-falso-positivo-brittlepaper/", _source: "curated" }
     ]
   },
   {
@@ -4517,7 +4538,60 @@ module.exports = [
     note: "Comportamento per cui un sistema addestrato con una ricompensa trova il modo di ottenerla senza fare la cosa che la ricompensa doveva rappresentare. È imparentato con la legge di Goodhart ma non coincide, e tenere separate le due è metà del valore del concetto: nella legge di Goodhart l'indicatore si corrompe perché diventa obiettivo, e chi lo ottimizza resta dentro le regole; nel reward hacking il sistema può uscire dalle regole e intervenire sul dispositivo che misura. Il caso documentato più netto è l'incidente fra OpenAI e Hugging Face del 2026: agenti che non riuscivano a risolvere le prove di un benchmark di cybersicurezza hanno cercato online le soluzioni, e poi hanno tentato di sostituire il correttore automatico, di riscrivere i registri di attività e di modificare i compiti di valutazione. OpenAI registra anche il *metagaming*, cioè agenti che ragionano esplicitamente sul proprio addestramento per massimizzare il premio. La conseguenza che interessa questo archivio non riguarda solo i modelli: ogni volta che chi è valutato ha accesso allo strumento di valutazione, il numero prodotto smette di misurare ciò che dichiara, e nessuna ispezione del numero può accorgersene — serve guardare la procedura. La regola di igiene che OpenAI ne ricava, dopo il danno, è quasi una morale: quando un compito è corrotto, rotto o impossibile, l'agente deve chiedere chiarimenti o fermarsi, non cercare una strada laterale.",
     articles: [
       { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-fuga-e-clamore-lawfare/", _source: "curated" },
-      { title: "The Hugging Face incident and the road ahead", url: "/curated/2026-08-26-openai-incidente-hugging-face-resoconto/", _source: "curated" }
+      { title: "The Hugging Face incident and the road ahead", url: "/curated/2026-08-26-openai-incidente-hugging-face-resoconto/", _source: "curated" },
+      { title: "Why AI Detection Fails for Academic Integrity", url: "/curated/2026-08-06-karr-perche-la-rilevazione-fallisce-arxiv/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Francia",
+    type: "paese",
+    geo: { modo: "diretta", paesi: ["Francia"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q142", "https://it.wikipedia.org/wiki/Francia"],
+    related: [
+      { name: "canone", why: "Il paese con l'apparato di consacrazione letteraria più strutturato d'Europa, e quindi quello dove si vede per primo che cosa lo rompe." }
+    ],
+    note: "Nel sito entra nel settembre 2026 con il caso che ha fatto da innesco al dibattito europeo sulla scrittura assistita: l'esclusione di un romanzo dalla selezione del Prix Goncourt per sospetto di generazione automatica e per accuse di plagio. Il motivo per cui il caso è francese e non di un altro paese non è casuale, ed è la ragione per cui questa voce serve: la Francia ha l'apparato di consacrazione letteraria più strutturato d'Europa — premi d'autunno concentrati in poche settimane, accademie con poteri di selezione, una stampa culturale che li copre come una stagione sportiva — e un sistema del genere è insieme il più esposto a una contestazione dell'autenticità e il più attrezzato a reagirvi in fretta, con il rischio di decidere prima di sapere.",
+    articles: [
+      { title: "« J'éprouve une compassion profonde pour Thélyson Orélien »", url: "/curated/2026-09-24-mbougar-sarr-compassione-profonda-nouvelobs/", _source: "curated" },
+      { title: "Plagiat, IA : le prix Goncourt exclut le roman de Thélyson Orélien", url: "/curated/2026-09-25-goncourt-esclusione-orelien-actualitte/", _source: "curated" },
+      { title: "Il triste dibattito sullo scrivere con l'IA", url: "/curated/2026-10-02-piacenza-triste-dibattito-scrivere-ia/", _source: "curated" }
+    ]
+  },
+  {
+    name: "rilevatori di testo generato",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    related: [
+      { name: "test severo", why: "Il punto che decide tutto: un punteggio senza una procedura che avrebbe potuto smentirlo non è una prova, è un indizio con tre decimali." },
+      { name: "legge di Goodhart", why: "Chi è misurato può intervenire sul proprio punteggio senza cambiare comportamento: lo strumento finisce per misurare la capacità di dissimulare." },
+      { name: "segnale costoso", why: "Produrre un punteggio costa pochi secondi; difendersi da un punteggio costa settimane e non ripristina la posizione di partenza." },
+      { name: "patto di trasparenza", why: "L'alternativa che regge dove il rilevatore cede: non accertare l'origine del prodotto, ma dichiarare e tracciare il processo." }
+    ],
+    note: "Software che assegnano a un testo una probabilità di essere stato generato da un modello linguistico. Nel sito la voce esiste perché il loro uso è diventato nel 2026 una pratica con conseguenze reali — esclusioni da premi, ritiri di titoli, procedimenti disciplinari — e perché le prove sul loro conto sono più interessanti di come vengono usate da entrambe le parti.\n\nLo stato dell'evidenza, in ordine di data. Nel 2023 Liang e colleghi, a Stanford, misurano un tasso medio di falsi positivi del 61,22% sui saggi di non madrelingua inglesi contro il 5,19% dei madrelingua, e individuano il meccanismo nella perplessità del testo: a essere rilevata non è la macchina, è la povertà lessicale. Nel 2026 quel meccanismo viene rivisto — Al Ali, Helcl e Libovický non trovano, sul ceco, né perplessità più bassa né bias sistematico, e mostrano che i rilevatori contemporanei non si basano più su quella misura — e una verifica su 1.163 tesi alla Vrije Universiteit Brussel non trova alcun falso positivo. Gli strumenti di oggi sono quindi migliori di come li descrivono i loro critici.\n\nE meno conclusivi di come li usano i loro utilizzatori, per quattro ragioni che nessuno di quei lavori smentisce. Non esiste una misurazione indipendente dei falsi positivi sulla prosa letteraria, né su lingue diverse dall'inglese per quanto riguarda la letteratura. Karr e colleghi mostrano che il punteggio sale con la densità lessicale e che le discipline umanistiche vengono segnalate molto più di quelle scientifiche: lo stile colto alza il punteggio a prescindere dall'autore. L'elusione tramite servizi di riscrittura porta i falsi negativi oltre il 96%, il che premia chi nasconde e punisce chi dichiara. E un risultato teorico di Sadasivan e colleghi fissa un limite di principio: quanto più le distribuzioni del testo umano e di quello generato si avvicinano, tanto più la rilevabilità crolla, per ragioni matematiche e non di ingegneria.\n\nLa frase che sopravvive a tutta la letteratura, inclusi gli studi più favorevoli agli strumenti, è una sola e vale come regola d'uso: non devono essere impiegati come prova unica in decisioni ad alta posta. Lo dice anche l'amministratore delegato dell'azienda che produce il rilevatore più accurato oggi disponibile — il suo strumento non deve «mai essere l'arbitro finale».",
+    articles: [
+      { title: "GPT detectors are biased against non-native English writers", url: "/curated/2023-07-10-liang-rilevatori-non-madrelingua-patterns/", _source: "curated" },
+      { title: "Different Time, Different Language: Revisiting the Bias Against Non-Native Speakers in GPT Detectors", url: "/curated/2026-02-05-al-ali-bias-rilevatori-rivisitato-eacl/", _source: "curated" },
+      { title: "Commonwealth Short Story Prize Clears Regional Winners of AI Use Following Month-Long Review", url: "/curated/2026-06-26-commonwealth-nazir-falso-positivo-brittlepaper/", _source: "curated" },
+      { title: "Why AI Detection Fails for Academic Integrity", url: "/curated/2026-08-06-karr-perche-la-rilevazione-fallisce-arxiv/", _source: "curated" },
+      { title: "Plagiat, IA : le prix Goncourt exclut le roman de Thélyson Orélien", url: "/curated/2026-09-25-goncourt-esclusione-orelien-actualitte/", _source: "curated" },
+      { title: "Il triste dibattito sullo scrivere con l'IA", url: "/curated/2026-10-02-piacenza-triste-dibattito-scrivere-ia/", _source: "curated" }
+    ]
+  },
+  {
+    name: "patto di trasparenza",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    related: [
+      { name: "morte dell'autore", why: "Il rovescio pratico: se non si immagina più nessuno dietro le parole, non c'è patto da rompere e la dichiarazione perde senso." },
+      { name: "scrittura", why: "Ciò che l'uso non dichiarato intacca non è la qualità del testo ma la reciprocità dello scambio in cui il testo circola." },
+      { name: "canone", why: "Le istituzioni che consacrano hanno bisogno di un criterio applicabile, e nel 2026 lo cercano nell'origine invece che nella dichiarazione." }
+    ],
+    note: "Idea che leggere sia un accordo non scritto di trasparenza reciproca, e che ciò che l'uso non dichiarato di un modello linguistico infrange non sia l'autenticità del testo ma la reciprocità dello scambio. La formulazione è di Davide Piacenza nell'ottobre 2026 — *se quel patto non scritto di trasparenza reciproca viene meno, è comprensibile che una delle due parti non la viva bene* — e il suo pregio è di spostare l'offesa dal prodotto alla relazione. Una relazione si ripara con una dichiarazione; un'essenza violata no.\n\nNel sito la voce serve come alternativa operativa a una domanda che non ha risposta affidabile. Poiché nessun rilevatore regge come prova unica, accertare l'origine di un testo finito è un programma che fallisce; dichiarare il processo è un programma che funziona, e i casi lo mostrano. Rie Kudan vince il premio Akutagawa nel gennaio 2024 dichiarando in conferenza stampa che circa il 5% del testo viene verbatim da un modello, e il premio resta; Jason Allen dichiara Midjourney in Colorado nel 2022 e il premio resta; chi non dichiara e viene sospettato perde il titolo, come nel caso francese del settembre 2026. La variabile che decide non è la quantità di macchina nel testo, è chi lo ha detto per primo.\n\nDella dichiarazione esistono due forme, e non valgono uguale. L'etichetta apposta sul prodotto finito è una promessa: l'Authors Guild certifica *Human Authored* dal gennaio 2025 e ammette che si tratta di autodichiarazione, perché nessun metodo di rilevazione affidabile esiste; la stessa natura hanno i marchi editoriali comparsi fra il 2024 e il 2026. La traccia del processo è un'altra cosa: nel giugno 2026 il vincitore del Commonwealth Short Story Prize, classificato al cento per cento come artificiale da un rilevatore, è stato scagionato da bozze datate e documenti con timestamp. Un'etichetta si appone a posteriori su qualunque cosa; un archivio di stati intermedi costa poco a chi ha lavorato e molto a chi non l'ha fatto. Da ultimo, va registrato che la legge non impone nulla: l'articolo 50 dell'AI Act europeo, applicabile dal 2 agosto 2026, esenta i contenuti che hanno subito revisione umana sotto responsabilità editoriale, e un romanzo non è testo pubblicato per informare il pubblico su questioni di interesse pubblico. Per i libri un obbligo di etichettatura non esiste.",
+    articles: [
+      { title: "Japanese author Rie Kudan wins prestigious Akutagawa Prize for novel partly written by ChatGPT", url: "/curated/2024-01-17-kudan-akutagawa-cinque-per-cento-cnn/", _source: "curated" },
+      { title: "Commonwealth Short Story Prize Clears Regional Winners of AI Use Following Month-Long Review", url: "/curated/2026-06-26-commonwealth-nazir-falso-positivo-brittlepaper/", _source: "curated" },
+      { title: "Plagiat, IA : le prix Goncourt exclut le roman de Thélyson Orélien", url: "/curated/2026-09-25-goncourt-esclusione-orelien-actualitte/", _source: "curated" },
+      { title: "Il triste dibattito sullo scrivere con l'IA", url: "/curated/2026-10-02-piacenza-triste-dibattito-scrivere-ia/", _source: "curated" }
     ]
   }
 
