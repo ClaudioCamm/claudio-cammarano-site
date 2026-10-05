@@ -4522,7 +4522,8 @@ module.exports = [
     ],
     note: "Ragione che calcola i mezzi rispetto a fini ricevuti da altrove, senza poter mettere in discussione i fini. La formulazione filosofica di riferimento è di Max Horkheimer e Theodor Adorno nella *Dialettica dell'illuminismo*, ma la tesi che la rende possibile è più antica e più diffusa di quanto chi la usa riconosca: è di Hume, che nel *Trattato sulla natura umana* del 1739 scrive che la ragione è, e deve soltanto essere, schiava delle passioni. Kant la rifiuta, perché la ragione pratica non si occupa di oggetti per conoscerli ma per renderli effettivi, e perché la capacità di stabilire i propri fini è ciò che fonda l'autonomia e con essa la dignità. Nel sito la voce serve a tenere ferma una distinzione che il vocabolario corrente confonde di continuo, e che non riguarda solo l'intelligenza artificiale: **ottimizzare** è migliorare le prestazioni rispetto a un obiettivo dato, **ragionare** è potersi chiedere se l'obiettivo sia quello giusto. Un motore scacchistico, un sistema di apprendimento per rinforzo e un indicatore aziendale sono tutti ottimizzatori, e nessuno dei tre ha i mezzi per accorgersi che il fine è sbagliato — il che spiega perché la legge di Goodhart non sia un difetto di progettazione ma la forma che la ragione strumentale assume quando nessuno sta guardando il fine. Sasha Mudd nel 2026 ne ricava la conseguenza che l'archivio registra: il dibattito sull'allineamento chiede come garantire che le macchine perseguano i valori umani, e così manca la domanda più scomoda, cioè se chi delega l'ottimizzazione conservi l'esercizio di stabilire i propri.",
     articles: [
-      { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" }
+      { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" },
+      { title: "NAZA: il danno collaterale come parametro operativo", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" }
     ]
   },
   {
@@ -4539,7 +4540,8 @@ module.exports = [
     articles: [
       { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-fuga-e-clamore-lawfare/", _source: "curated" },
       { title: "The Hugging Face incident and the road ahead", url: "/curated/2026-08-26-openai-incidente-hugging-face-resoconto/", _source: "curated" },
-      { title: "Why AI Detection Fails for Academic Integrity", url: "/curated/2026-08-06-karr-perche-la-rilevazione-fallisce-arxiv/", _source: "curated" }
+      { title: "Why AI Detection Fails for Academic Integrity", url: "/curated/2026-08-06-karr-perche-la-rilevazione-fallisce-arxiv/", _source: "curated" },
+      { title: "NAZA: il danno collaterale come parametro operativo", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" }
     ]
   },
   {
@@ -4592,6 +4594,72 @@ module.exports = [
       { title: "Commonwealth Short Story Prize Clears Regional Winners of AI Use Following Month-Long Review", url: "/curated/2026-06-26-commonwealth-nazir-falso-positivo-brittlepaper/", _source: "curated" },
       { title: "Plagiat, IA : le prix Goncourt exclut le roman de Thélyson Orélien", url: "/curated/2026-09-25-goncourt-esclusione-orelien-actualitte/", _source: "curated" },
       { title: "Il triste dibattito sullo scrivere con l'IA", url: "/curated/2026-10-02-piacenza-triste-dibattito-scrivere-ia/", _source: "curated" }
+    ]
+  },
+  {
+    name: "gamification",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    related: [
+      { name: "reward hacking", why: "Rovesci della stessa struttura: là il giocatore attacca la misura, qui è l'architetto a costruirla perché il giocatore la persegua." },
+      { name: "legge di Goodhart", why: "Non la misura che si guasta diventando obiettivo, ma la misura progettata come obiettivo: l'effetto è cercato, non subito." },
+      { name: "ragione strumentale", why: "La sua applicazione al progetto dell'esperienza: i fini restano all'architetto, al giocatore resta l'ottimizzazione dei mezzi." },
+      { name: "allineamento AI", why: "Il problema dell'allineamento applicato agli esseri umani, con la differenza che su di loro, storicamente, riesce." },
+      { name: "danno collaterale", why: "Quando il morto ammissibile diventa un numero con una soglia, entra nella classe degli oggetti che si possono ottimizzare." }
+    ],
+    note: "Progettazione di un'esperienza dentro un sistema di incentivi e punizioni costruito per far coincidere gli obiettivi di chi progetta con quelli di chi partecipa. Il termine nasce nel marketing di fine anni Novanta con un significato più ristretto e sbagliato, quello di costruire videogiochi per vendere prodotti e servizi, come nella stagione italiana di MyTv.it e di Gino il pollo. La storia successiva ha mostrato che l'idea giusta era un'altra e molto più grande: non il gioco come veicolo pubblicitario, ma la progettazione dell'intera esperienza come gioco. In questa accezione è la più esatta profezia del marketing degli ultimi quarant'anni, e si riconosce nel design dell'app bancaria, nella UX delle piattaforme sociali, nei programmi fedeltà, nel punteggio di credito sociale cinese.\n\nIl valore della voce sta nel rapporto con le tre che le stanno intorno, perché le distinzioni sono precise e il vocabolario corrente le confonde. Nella **legge di Goodhart** la misura si corrompe perché diventa obiettivo, e nessuno lo ha voluto. Nel **reward hacking** chi è valutato attacca il dispositivo che misura. Nella gamification la misura è progettata da qualcuno perché qualcun altro la persegua: l'effetto non è subito, è cercato. Da questo lato la gamification è il problema dell'**allineamento** visto dalla parte di chi lo progetta, applicato a esseri umani invece che a modelli, con la differenza imbarazzante che sugli umani, storicamente, funziona.\n\nNel settembre 2026 il documentario *NAZA* fornisce il caso limite, e va detto con precisione in che senso. Il film documenta la quantificazione dei civili ammessi per bersaglio come parametro di routine, e il distacco di chi la maneggia, fino alla frase di un testimone: è come un videogioco. Non documenta un'architettura di incentivi, perché non mostra classifiche, punteggi, gare fra operatori né obiettivi di rendimento. La gamification resta dunque la cornice che tiene insieme appartenenza a un'élite, costruzione collettiva del nemico e obiettivo misurabile: una lettura, non un reperto. Tenere la distinzione è il modo in cui questo archivio usa un attrezzo senza fargli dire più di quello che regge.",
+    articles: [
+      { title: "NAZA: il danno collaterale come parametro operativo", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" }
+    ]
+  },
+  {
+    name: "danno collaterale",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    related: [
+      { name: "contrappesi istituzionali", why: "Un giudizio di proporzionalità è controllabile solo se qualcuno pubblica l'atto in cui è stato formulato." }
+    ],
+    note: "Nella dottrina del diritto dei conflitti armati, i civili la cui morte è prevista come effetto non intenzionale di un attacco contro un obiettivo militare legittimo; il principio di proporzionalità ne fa il termine di un confronto con il vantaggio militare atteso. La voce entra nell'archivio perché il documentario *NAZA* del 2026 ne mostra la forma operativa: il titolo del film è l'acronimo ebraico *nezek agavi*, danno collaterale, e nelle testimonianze degli ufficiali dell'intelligence militare israeliana funziona come un'unità di misura. Dieci NAZA. Tre NAZA, tutti bambini. Una soglia di riferimento intorno a venti.\n\nIl punto che interessa questo archivio è la trasformazione di un giudizio in un parametro, perché le due cose hanno proprietà logiche diverse. **Un giudizio di proporzionalità deve poter concludere che l'attacco non si fa; un parametro con una soglia deve soltanto essere rispettato.** Nel momento in cui il morto ammissibile diventa un numero, entra nella classe degli oggetti che si possono ottimizzare, e la domanda su che cosa autorizzi quel numero smette di essere posta da chi lo applica.\n\nIl precedente documentario non nasce con il film: l'inchiesta *Lavender* di Yuval Abraham su *+972 Magazine* e *Local Call*, 3 aprile 2024, riportava trentasettemila persone marcate come obiettivi, un tasso di errore intorno al dieci per cento, una revisione umana di venti secondi e una tolleranza dichiarata di quindici-venti civili per un miliziano di basso rango. L'IDF nega: il 12 settembre e il 1° ottobre 2026 ha respinto le testimonianze del film, affermando che le decisioni sono state prese solo da personale umano e che un attacco con cinquecento vittime civili attese non è mai stato pianificato né approvato. La contestazione va registrata insieme al dato, perché la verifica indipendente sul terreno non è disponibile, e la ragione per cui non lo è dipende da una delle due parti.",
+    articles: [
+      { title: "NAZA: il danno collaterale come parametro operativo", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Paragon Solutions",
+    type: "istituzione",
+    geo: { modo: "diretta", paesi: ["Israele"] },
+    related: [
+      { name: "contrappesi istituzionali", why: "Stessa tecnologia, due stati del controllo: in Italia nel 2025 un atto parlamentare pubblico, in Israele nessun verbale." }
+    ],
+    note: "Azienda israeliana di sorveglianza fondata nel 2019 a Tel Aviv, fra i cui fondatori figura Ehud Barak, già primo ministro di Israele. Produce lo spyware *Graphite*, che secondo Citizen Lab accede alle applicazioni di messaggistica di un dispositivo invece di prenderne il controllo completo, intercettando fra l'altro Signal e Messenger. Nel 2024 è stata acquisita per oltre mezzo miliardo di dollari da RED Lattice, società statunitense del gruppo AE Industrial Partners.\n\nNell'archivio la voce serve come àncora italiana di una questione che si racconta sempre altrove. Il 31 gennaio 2025 WhatsApp notifica a un gruppo di utenti italiani di essere stati bersaglio di Graphite: fra loro il direttore di Fanpage Francesco Cancellato, l'attivista Luca Casarini e alcuni suoi collaboratori. Il 6 giugno 2025 il Copasir approva all'unanimità una relazione che conferma l'uso di Graphite da parte dei servizi contro Casarini e altri, in riferimento ad attività potenzialmente relative all'immigrazione irregolare, e nega che Cancellato sia stato sorvegliato; Citizen Lab sostiene il contrario, e nello stesso mese documenta che era stato preso di mira anche il giornalista Ciro Pellegrino. Paragon dichiara di avere rescisso il contratto con il governo italiano.\n\nIl motivo per cui il caso italiano vale più di un esempio è strutturale: **sulla stessa classe di tecnologia esistono due stati del controllo**. In Italia un organo parlamentare ha prodotto un atto pubblico, che l'azienda fornitrice e Citizen Lab hanno potuto contestare in pubblico; la contestazione è possibile perché l'atto esiste. Dove nessun organo pubblica nulla, la stessa tecnologia produce soltanto testimonianze anonime, e non perché sia usata peggio.",
+    articles: [
+      { title: "NAZA: il danno collaterale come parametro operativo", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Abraham, Yuval",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Israele"] },
+    related: [
+      { name: "danno collaterale", why: "Le inchieste su Habsora e Lavender documentano la soglia di civili tollerati due anni prima che il film la metta in scena." }
+    ],
+    note: "Giornalista e regista israeliano. Nel sito entra come il caso in cui la catena documentaria è ricostruibile per intero: due inchieste su *+972 Magazine* e *Local Call* precedono di due anni il documentario *NAZA*, presentato alla Mostra di Venezia il 10 settembre 2026 e coprodotto dal Guardian. La prima, *A mass assassination factory*, del 30 novembre 2023, riguarda il sistema Habsora; la seconda, *Lavender*, del 3 aprile 2024, il sistema di designazione degli obiettivi e la soglia di civili tollerata. Di *NAZA* è coregista con Rachel Szor, con cui aveva firmato *No Other Land*.\n\nLa ricostruibilità è ciò che rende la sua posizione utile all'archivio e insieme ciò che ne segna il limite, e vale la pena essere espliciti su entrambi i lati. Il materiale del film non è indipendente dall'autore delle inchieste che lo precedono. Ma quelle inchieste sono state pubblicate altrove, due anni prima, e in quei due anni sono state contestate pubblicamente: questo le colloca in una classe probatoria diversa dalla testimonianza anonima raccolta e verificata dalla stessa squadra. **La differenza si vede dentro il film stesso**: il capitolo sulla quantificazione dei civili ha un precedente controllabile, quello sul reparto dedicato ai ricorsi presso le corti internazionali no.",
+    articles: [
+      { title: "NAZA: il danno collaterale come parametro operativo", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" }
+    ]
+  },
+  {
+    name: "contrappesi istituzionali",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    related: [
+      { name: "test severo", why: "Una procedura che non può concludere contro chi la ospita non ha severità, qualunque sia la frequenza delle sedute." },
+      { name: "monitorabilità", why: "La stessa esigenza sul versante delle macchine: senza una traccia leggibile dall'esterno il controllo è indistinguibile dalla fiducia." },
+      { name: "conflitto di interessi intellettuale", why: "Chi ha il potere di chiudere una disputa ha un interesse nell'esito, e per questo non può essere l'unico a verificarla." }
+    ],
+    note: "Insieme dei meccanismi per cui un potere è limitato da un altro potere anziché dalla propria disciplina interna; la formula inglese è *checks and balances*. La voce entra nell'archivio con un criterio che la rende verificabile invece che edificante: **un contrappeso esiste nella misura in cui produce un atto pubblico**. Dove nessun organo pubblica un verbale il controllo non è debole, è indistinguibile dalla fiducia, e la differenza fra le due cose non è di grado.\n\nIl caso che mette alla prova il criterio è la vigilanza sull'intelligence militare israeliana. L'architettura esiste e ha un nome: la Commissione affari esteri e difesa della Knesset riceve i resoconti dei capi di Mossad, Shabak e Aman. Ma la maggior parte del lavoro si svolge nelle sottocommissioni, alcune classificate al grado più alto di segretezza e senza accesso della stampa, e i verbali restano in larga parte non pubblicati. Ne segue una conseguenza sulla qualità delle prove disponibili, non soltanto sulla qualità del controllo: dove nessun organo pubblica un atto, l'unica prova che arriva è una testimonianza anonima, e questo è prevedibile prima di sapere se quella testimonianza sia vera. Nel settembre 2026 il documentario *NAZA* mostra le due facce dello stesso fatto, perché il suo capitolo meno sostenuto è quello su un reparto di cui nessun atto pubblico attesta l'esistenza.\n\nIl confronto che chiarisce il criterio è italiano. Sulla stessa classe di tecnologia di sorveglianza, nel giugno 2025, il Copasir ha prodotto una relazione pubblica, che l'azienda fornitrice e Citizen Lab hanno potuto contestare per punti. Che la relazione sia contestata non è un difetto del contrappeso: è la prova che funziona, perché solo un atto esistente può essere smentito.",
+    articles: [
+      { title: "NAZA: il danno collaterale come parametro operativo", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" }
     ]
   }
 
