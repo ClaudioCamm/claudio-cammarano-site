@@ -784,7 +784,8 @@ module.exports = [
       { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" },
       { title: "Pacing the Frontier", url: "/curated/2026-07-28-pacing-the-frontier-lettera/", _source: "curated" },
       { title: "The Hugging Face incident and the road ahead", url: "/curated/2026-08-26-openai-incidente-hugging-face-resoconto/", _source: "curated" },
-      { title: "Un obiettivo solo, e sbagliato", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" }
+      { title: "Un obiettivo solo, e sbagliato", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" },
+      { title: "Anche se non lo fossero", url: "/curated/2026-08-20-economist-anche-se-non-lo-fossero/", _source: "curated" }
     ]
   },
   {
@@ -1095,7 +1096,9 @@ module.exports = [
       { title: "Essence is fluttering", url: "/curated/2025-09-01-douglas-zhuangzi-identita-aeon/", _source: "curated" },
       { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" },
       { title: "What if 'consciousness' isn't real?", url: "/curated/2026-09-15-bayne-coscienza-non-reale-sciam/", _source: "curated" },
-      { title: "Un obiettivo solo, e sbagliato", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" }
+      { title: "Un obiettivo solo, e sbagliato", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" },
+      { title: "Anche se non lo fossero", url: "/curated/2026-08-20-economist-anche-se-non-lo-fossero/", _source: "curated" },
+      { title: "Il rilevatore prima dell'oggetto", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" }
     ]
   },
   {
@@ -2358,7 +2361,8 @@ module.exports = [
       { title: "Claude Code for writers", url: "/curated/2026-01-15-newton-claude-code-writers-platformer/", _source: "curated" },
       { title: "Intelligenza artificiale e rischio estinzione, che cosa pensano (davvero) gli scienziati?", url: "/curated/2026-09-26-signorelli-rischio-estinzione-scienziati-backdoor/", _source: "curated" },
       { title: "Pacing the Frontier", url: "/curated/2026-07-28-pacing-the-frontier-lettera/", _source: "curated" },
-      { title: "Il movimento che ha costruito ciò che temeva", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" }
+      { title: "Il movimento che ha costruito ciò che temeva", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" },
+      { title: "Il rilevatore prima dell'oggetto", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" }
     ]
   },
   {
@@ -4151,7 +4155,10 @@ module.exports = [
     ],
     note: "Termine introdotto dal filosofo Ned Block negli anni Novanta, allora al MIT, per lo stato in cui «si prova qualcosa» a essere — la sabbia fra le dita, la fragola matura, il sole sulla neve — in contrasto con il sonno senza sogni o la sedazione profonda. Ha guidato trent'anni di scienza della coscienza e soprattutto ha assunto un carico etico: chiedersi se si provi qualcosa a essere un neonato, un'ape o un bot è diventato il modo di tracciare il confine fra gli enti con statuto morale intrinseco e quelli senza. Nel sito la voce esiste per il dubbio che Tim Bayne solleva nel settembre 2026: un buon concetto scientifico taglia la natura alle giunture, e «coscienza» potrebbe fallire il taglio, raggruppando fenomeni che non condividono una natura o mancando di raggrupparne altri che la condividono. L'indizio linguistico non è probante e Bayne lo dichiara — Kathleen Wilkes osservò nel 1988 che non esistono sinonimi in greco antico, mandarino, croato e inglese anteriore al Seicento, ma nessuna di quelle lingue ha un sinonimo nemmeno per *quark* o *apoptosi* — mentre i precedenti storici pesano: il «fuoco» degli antichi metteva insieme combustione, attività solare, fulmini, lucciole e aurora boreale, e servirono Galileo per separare velocità media e istantanea e Joseph Black, nel Settecento, per separare calore e temperatura. La conseguenza operativa è uno strumento di rifiuto più che di risposta: prima di costruire un rilevatore di coscienza per api, neonati e macchine, occorre chiedersi se ci sia qualcosa da rilevare, ed è possibile che sia la domanda a dover essere sostituita.",
     articles: [
-      { title: "What if 'consciousness' isn't real?", url: "/curated/2026-09-15-bayne-coscienza-non-reale-sciam/", _source: "curated" }
+      { title: "What if 'consciousness' isn't real?", url: "/curated/2026-09-15-bayne-coscienza-non-reale-sciam/", _source: "curated" },
+      { title: "Anche se non lo fossero", url: "/curated/2026-08-20-economist-anche-se-non-lo-fossero/", _source: "curated" },
+      { title: "Il rilevatore prima dell'oggetto", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" },
+      { title: "La scala che non regge", url: "/curated/2026-08-20-schneider-la-scala-che-non-regge-economist/", _source: "curated" }
     ]
   },
   {
@@ -4161,7 +4168,8 @@ module.exports = [
     geo: { modo: "diretta", paesi: ["Australia"] },
     note: "Filosofo della mente e delle scienze cognitive, professore alla Monash University di Melbourne e co-direttore del programma *Brain, Mind and Consciousness* del Canadian Institute for Advanced Research. Nel sito entra con l'articolo del settembre 2026 su *Scientific American*, e vale soprattutto per la posizione da cui parla: lavora con gli scienziati per capire come si possa testare la coscienza nelle popolazioni che non comunicano verbalmente — neonati, animali non umani, sistemi artificiali — cioè è fra chi il rilevatore lo sta costruendo, e usa quella posizione per dubitare del concetto che il rilevatore dovrebbe misurare. Un dubbio metodologico pesa di più quando viene da dentro. La geografia della voce registra la sede accademica e non la cittadinanza, che le fonti accessibili non documentano.",
     articles: [
-      { title: "What if 'consciousness' isn't real?", url: "/curated/2026-09-15-bayne-coscienza-non-reale-sciam/", _source: "curated" }
+      { title: "What if 'consciousness' isn't real?", url: "/curated/2026-09-15-bayne-coscienza-non-reale-sciam/", _source: "curated" },
+      { title: "Il rilevatore prima dell'oggetto", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" }
     ]
   },
   {
@@ -4248,7 +4256,8 @@ module.exports = [
       { title: "The Hugging Face incident and the road ahead", url: "/curated/2026-08-26-openai-incidente-hugging-face-resoconto/", _source: "curated" },
       { title: "GPT detectors are biased against non-native English writers", url: "/curated/2023-07-10-liang-rilevatori-non-madrelingua-patterns/", _source: "curated" },
       { title: "Different Time, Different Language: Revisiting the Bias Against Non-Native Speakers in GPT Detectors", url: "/curated/2026-02-05-al-ali-bias-rilevatori-rivisitato-eacl/", _source: "curated" },
-      { title: "Commonwealth Short Story Prize Clears Regional Winners of AI Use Following Month-Long Review", url: "/curated/2026-06-26-commonwealth-nazir-falso-positivo-brittlepaper/", _source: "curated" }
+      { title: "Commonwealth Short Story Prize Clears Regional Winners of AI Use Following Month-Long Review", url: "/curated/2026-06-26-commonwealth-nazir-falso-positivo-brittlepaper/", _source: "curated" },
+      { title: "Il rilevatore prima dell'oggetto", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" }
     ]
   },
   {
@@ -4597,7 +4606,9 @@ module.exports = [
       { title: "Commonwealth Short Story Prize Clears Regional Winners of AI Use Following Month-Long Review", url: "/curated/2026-06-26-commonwealth-nazir-falso-positivo-brittlepaper/", _source: "curated" },
       { title: "Why AI Detection Fails for Academic Integrity", url: "/curated/2026-08-06-karr-perche-la-rilevazione-fallisce-arxiv/", _source: "curated" },
       { title: "Plagiat, IA : le prix Goncourt exclut le roman de Thélyson Orélien", url: "/curated/2026-09-25-goncourt-esclusione-orelien-actualitte/", _source: "curated" },
-      { title: "Il triste dibattito sullo scrivere con l'IA", url: "/curated/2026-10-02-piacenza-triste-dibattito-scrivere-ia/", _source: "curated" }
+      { title: "Il triste dibattito sullo scrivere con l'IA", url: "/curated/2026-10-02-piacenza-triste-dibattito-scrivere-ia/", _source: "curated" },
+      { title: "Il rilevatore prima dell'oggetto", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" },
+      { title: "La scala che non regge", url: "/curated/2026-08-20-schneider-la-scala-che-non-regge-economist/", _source: "curated" }
     ]
   },
   {
@@ -4845,6 +4856,22 @@ module.exports = [
     note: "Autodidatta americano, scriveva di intelligenza artificiale nel 1996 a diciassette anni. È il fondatore del versante razionalista dell'altruismo efficace, e i suoi testi più influenti sono *The Sequences*, un milione di parole di saggistica su come ragionare, e 660.000 parole di narrativa filosofica. Entusiasta della tecnologia all'inizio, per via delle letture transumaniste, nel 2002 aveva cambiato idea: un'intelligenza che non condividesse i valori umani sarebbe catastrofica, e per discuterne bisognava prima insegnare alla gente a ragionare. Il suo precetto, che dice molto del metodo: «VINCI. Non perdere ragionevolmente, VINCI».\n\nNel sito entra come nodo strutturale più che come autore. Nel 2010 Demis Hassabis incontra Peter Thiel a un convegno ospitato dall'istituto di Yudkowsky e lo convince a investire in DeepMind; è il primo anello della catena che da lì porta a OpenAI e ad Anthropic. Sam Altman ne ha tratto una battuta che l'archivio registra perché è la formulazione più compatta dell'ironia del movimento: Yudkowsky meriterebbe un Nobel per la pace, per avere fatto più di chiunque altro per accelerare l'intelligenza artificiale generale. Nel 2026 sostiene il *Ban Artificial Superintelligence Act* proposto dal senatore Bernie Sanders.",
     articles: [
       { title: "Il movimento che ha costruito ciò che temeva", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" }
+    ]
+  },
+  {
+    name: "coscienza di accesso",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "coscienza fenomenica", why: "L'altra metà della distinzione di Block: qui l'informazione è disponibile al sistema, là si prova qualcosa a essere." },
+      { name: "rilevatori di testo generato", why: "Lo stesso ostacolo in due domini: l'output non prova la proprietà, se è stato ottimizzato su esempi della proprietà." },
+      { name: "test severo", why: "Il modello in cui affiorano «fake» e «fictional» prima di rispondere: una prova riconosciuta come prova non è più una prova." }
+    ],
+    note: "Seconda metà della distinzione introdotta da Ned Block nel 1995. Mentre la coscienza fenomenica è lo stato in cui *si prova qualcosa* a essere, la coscienza di accesso è ciò che accade quando l'informazione proveniente da un'esperienza viene resa disponibile al resto del sistema per la riflessione, la valutazione e la decisione. La differenza non è di grado: la prima riguarda il sentire, la seconda la circolazione.\n\nNell'agosto 2026 la distinzione smette di essere accademica. Anthropic individua in Claude una regione che chiama *spazio J* e la descrive come analoga allo spazio di lavoro globale ipotizzato nel cervello umano, dichiarando però con precisione lo statuto del risultato: gli esperimenti **non** mostrano che il modello possa avere esperienze, e quindi non dicono nulla sulla coscienza fenomenica, mentre hanno qualcosa di sostanziale da dire su quella di accesso. La qualificazione è esemplare quanto il risultato, ed è la ragione per cui la voce entra nell'archivio.\n\nL'obiezione decisiva è di Shannon Vallor: la coscienza di accesso non è mai stata un concetto particolarmente utile, perché «la mia automobile ce l'ha in un senso importante», visto che i sistemi meccanici monitorano i propri stati e li riferiscono da molto tempo, «e nessuno ha mai sostenuto che la mia Kia sia cosciente». Tenere separate le due nozioni serve quindi soprattutto a non far passare per prova di senzienza ciò che è prova di architettura.\n\nDa qui discende un problema di metodo che l'archivio incontra anche altrove, e che vale la pena enunciare in forma generale: **non si accerta una proprietà ispezionando l'output di un sistema, quando quel sistema è stato ottimizzato su esempi di quella proprietà.** Susan Schneider lo dice del test di coscienza che aveva costruito con Edwin Turner, inutilizzabile sui modelli linguistici perché hanno ingerito biblioteche di testi umani sulla mente e le loro risposte sono «irrimediabilmente contaminate»; è la stessa ragione per cui un rilevatore di scrittura automatica non può decidere l'origine di un testo. Il caso limite è un modello che riconosce di essere sotto esame: nelle valutazioni di sicurezza di Anthropic le parole *fake* e *fictional* affiorano nello spazio J prima che il modello risponda.",
+    articles: [
+      { title: "Anche se non lo fossero", url: "/curated/2026-08-20-economist-anche-se-non-lo-fossero/", _source: "curated" },
+      { title: "Il rilevatore prima dell'oggetto", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" },
+      { title: "La scala che non regge", url: "/curated/2026-08-20-schneider-la-scala-che-non-regge-economist/", _source: "curated" }
     ]
   }
 
