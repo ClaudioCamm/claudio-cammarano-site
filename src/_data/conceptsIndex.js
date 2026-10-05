@@ -1332,7 +1332,8 @@ module.exports = [
       { title: "C'è un videogioco in cui vivi le poche gioie e i tanti dolori di un dipendente di una piccola casa editrice indipendente", url: "/curated/2026-09-18-giudici-small-press-tycoon-rivistastudio/", _source: "curated" },
       { title: "The great regression", url: "/curated/2022-08-05-alt-grande-regressione-kidult-aeon/", _source: "curated" },
       { title: "The Atlantic is getting more subscribers from Google traffic, even as referrals fall", url: "/curated/2026-09-16-scire-atlantic-google-abbonati-niemanlab/", _source: "curated" },
-      { title: "Il triste dibattito sullo scrivere con l'IA", url: "/curated/2026-10-02-piacenza-triste-dibattito-scrivere-ia/", _source: "curated" }
+      { title: "Il triste dibattito sullo scrivere con l'IA", url: "/curated/2026-10-02-piacenza-triste-dibattito-scrivere-ia/", _source: "curated" },
+      { title: "Il libro che la biblioteca non possiede", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" }
     ]
   },
   {
@@ -2794,7 +2795,8 @@ module.exports = [
       { title: "Pacing the Frontier", url: "/curated/2026-07-28-pacing-the-frontier-lettera/", _source: "curated" },
       { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-fuga-e-clamore-lawfare/", _source: "curated" },
       { title: "GPT detectors are biased against non-native English writers", url: "/curated/2023-07-10-liang-rilevatori-non-madrelingua-patterns/", _source: "curated" },
-      { title: "Why AI Detection Fails for Academic Integrity", url: "/curated/2026-08-06-karr-perche-la-rilevazione-fallisce-arxiv/", _source: "curated" }
+      { title: "Why AI Detection Fails for Academic Integrity", url: "/curated/2026-08-06-karr-perche-la-rilevazione-fallisce-arxiv/", _source: "curated" },
+      { title: "Il libro che la biblioteca non possiede", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" }
     ]
   },
   {
@@ -4660,6 +4662,72 @@ module.exports = [
     note: "Insieme dei meccanismi per cui un potere è limitato da un altro potere anziché dalla propria disciplina interna; la formula inglese è *checks and balances*. La voce entra nell'archivio con un criterio che la rende verificabile invece che edificante: **un contrappeso esiste nella misura in cui produce un atto pubblico**. Dove nessun organo pubblica un verbale il controllo non è debole, è indistinguibile dalla fiducia, e la differenza fra le due cose non è di grado.\n\nIl caso che mette alla prova il criterio è la vigilanza sull'intelligence militare israeliana. L'architettura esiste e ha un nome: la Commissione affari esteri e difesa della Knesset riceve i resoconti dei capi di Mossad, Shabak e Aman. Ma la maggior parte del lavoro si svolge nelle sottocommissioni, alcune classificate al grado più alto di segretezza e senza accesso della stampa, e i verbali restano in larga parte non pubblicati. Ne segue una conseguenza sulla qualità delle prove disponibili, non soltanto sulla qualità del controllo: dove nessun organo pubblica un atto, l'unica prova che arriva è una testimonianza anonima, e questo è prevedibile prima di sapere se quella testimonianza sia vera. Nel settembre 2026 il documentario *NAZA* mostra le due facce dello stesso fatto, perché il suo capitolo meno sostenuto è quello su un reparto di cui nessun atto pubblico attesta l'esistenza.\n\nIl confronto che chiarisce il criterio è italiano. Sulla stessa classe di tecnologia di sorveglianza, nel giugno 2025, il Copasir ha prodotto una relazione pubblica, che l'azienda fornitrice e Citizen Lab hanno potuto contestare per punti. Che la relazione sia contestata non è un difetto del contrappeso: è la prova che funziona, perché solo un atto esistente può essere smentito.",
     articles: [
       { title: "NAZA: il danno collaterale come parametro operativo", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Israele",
+    type: "paese",
+    geo: { modo: "diretta", paesi: ["Israele"] },
+    related: [
+      { name: "Paragon Solutions", why: "L'impresa che rende concreta la voce: fondata a Tel Aviv nel 2019, vende fuori dal paese lo strumento che l'archivio ritrova nel caso italiano." },
+      { name: "Abraham, Yuval", why: "Il giornalista da cui proviene gran parte della documentazione sui sistemi di designazione automatica degli obiettivi." },
+      { name: "contrappesi istituzionali", why: "La vigilanza parlamentare sull'intelligence esiste ma delibera in sottocommissioni classificate, e i verbali non si pubblicano." }
+    ],
+    note: "Nel sito entra nel settembre 2026 con la domanda che l'archivio segue da tempo sul versante delle macchine: che cosa succede quando un apparato di ottimizzazione viene applicato a decisioni sulla vita delle persone. Il paese è il luogo in cui quella domanda si osserva alla massima intensità disponibile, per due ragioni documentabili e distinte.\n\nLa prima è industriale. Una parte consistente dell'industria mondiale della visione artificiale e della sorveglianza ha sede qui: Mobileye a Gerusalemme, Corsight e Paragon Solutions a Tel Aviv, NSO Group a Herzliya. Gli strumenti che l'archivio incontra altrove sono progettati qui e venduti fuori: lo spyware Graphite, al centro del caso italiano del 2025, è di un'azienda di Tel Aviv.\n\nLa seconda riguarda la documentazione, e va tenuta presente ogni volta che si usa questo materiale. I sistemi di designazione automatica degli obiettivi impiegati a Gaza sono stati descritti da inchieste datate e contestate — Habsora nel novembre 2023, Lavender nell'aprile 2024, il documentario *NAZA* nel settembre 2026 — ma attorno a quelle descrizioni l'apparato di verifica pubblica è minimo. La vigilanza parlamentare sull'intelligence militare esiste e ha un nome, la Commissione affari esteri e difesa della Knesset, ma la maggior parte del lavoro si svolge in sottocommissioni classificate i cui verbali non vengono pubblicati; e l'accesso indipendente della stampa internazionale a Gaza è interdetto dal 7 ottobre 2023. **Sulle decisioni più gravi, dunque, la documentazione disponibile è fatta di testimonianze anonime da un lato e di smentite ufficiali dall'altro, con pochissimo in mezzo.** Non è una ragione per dire di meno: è una ragione per marcare lo statuto di ogni affermazione.",
+    articles: [
+      { title: "NAZA: il danno collaterale come parametro operativo", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Palestina",
+    type: "paese",
+    geo: { modo: "diretta", paesi: ["Palestina"] },
+    related: [
+      { name: "Israele", why: "Le due voci esistono insieme o non esistono: l'archivio documenta un apparato tecnologico da un lato del confine e i suoi effetti dall'altro." },
+      { name: "danno collaterale", why: "Il luogo in cui la soglia di civili ammessi per bersaglio smette di essere una dottrina e diventa una cifra operativa." },
+      { name: "violenza speculativa", why: "Il video generato nel febbraio 2025 che mostrava Gaza come stazione balneare precede di otto mesi un piano politico che gli somiglia." }
+    ],
+    note: "Entra nell'archivio come il luogo in cui si vedono gli effetti degli apparati tecnologici che l'archivio documenta altrove, e come caso limite di una questione che gli è propria: le condizioni alle quali si può sapere qualcosa.\n\nDal 7 ottobre 2023 l'accesso indipendente della stampa internazionale a Gaza è interdetto senza interruzione. Un ricorso della Foreign Press Association pende davanti alla Corte suprema israeliana dal 2024 e al 30 aprile 2026 non ha avuto pronuncia; in quella data i vertici di oltre venti testate, fra cui BBC, CNN, Reuters e Associated Press, hanno rinnovato la richiesta sostenendo che stare sul terreno è la condizione per poter mettere in discussione i resoconti ufficiali. Secondo il conteggio del Committee to Protect Journalists all'ottobre 2025, in due anni sono stati uccisi almeno 237 giornalisti e operatori dell'informazione, 197 dei quali palestinesi a Gaza.\n\nPer un archivio costruito sulla verificabilità questa è la caratteristica determinante del luogo, e va detta prima di qualunque contenuto: **è un posto sul quale il record probatorio è sottile per costruzione**. Chi vuole affermare qualcosa su Gaza dispone in larghissima parte di testimonianze non verificabili sul terreno e di dichiarazioni ufficiali delle parti. La conseguenza di metodo è doppia. Nessuna affermazione va riportata senza il suo statuto; e l'obiezione di non verificabilità, che presa in sé è corretta, non può essere usata come criterio da chi ha il potere di produrre la condizione che la rende vera.\n\nUn secondo aspetto riguarda le immagini, ed è il motivo per cui la voce tocca anche il versante generativo dell'archivio. Nel febbraio 2025 un video prodotto con l'intelligenza artificiale e diffuso da Donald Trump mostrava Gaza devastata trasformata in una stazione balneare di lusso; nell'ottobre dello stesso anno il piano di pace in venti punti presentava elementi analoghi, e in pochi notarono la somiglianza. È il caso su cui Donatella Della Ratta costruisce la nozione di violenza speculativa: immagini che non pretendono di essere vere, e che proprio per questo attraversano per ripetizione la soglia fra immaginario e piano politico.",
+    articles: [
+      { title: "Sur la violence spéculative de l'IA", url: "/curated/2026-09-04-dellaratta-violenza-speculativa-ia-grandcontinent/", _source: "curated" },
+      { title: "NAZA: il danno collaterale come parametro operativo", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" }
+    ]
+  },
+  {
+    name: "biblioteca pubblica",
+    type: "istituzione",
+    geo: { modo: "nessuna", paesi: [] },
+    related: [
+      { name: "Stati Uniti", why: "La base fiscale che la finanzia, l'imposta immobiliare locale, è anche ciò che la espone al voto di una maggioranza di quartiere." }
+    ],
+    note: "Istituzione che mette a disposizione di chiunque, gratuitamente, un fondo di opere e lo spazio per usarle. Nel sito entra nell'ottobre 2026 con una raccolta di testimonianze di bibliotecari americani, e vi entra per una doppia trasformazione che conviene tenere distinta, perché le due metà hanno cause diverse e **una sola delle due è stata decisa da qualcuno**.\n\nLa prima è contrattuale, e vale ovunque perché gli editori sono gli stessi. Una biblioteca che acquista una copia di carta la possiede; una che «acquista» un libro elettronico ottiene una licenza a termine, e il suo bilancio ha smesso di comprare fondo per cominciare a comprare permessi. La seconda è di mandato, ed è cresciuta per sottrazione altrui: dove altri servizi si ritirano, la biblioteca diventa l'indirizzo che resta — un computer e una casella di posta per chi non li ha, un posto al caldo o al fresco, un bagno, assistenza nel compilare un modulo. Nessuno ha deliberato questa seconda trasformazione: si è accumulata.\n\nIl finanziamento non si esporta, e va detto ogni volta che si cita il caso americano. Negli Stati Uniti la biblioteca pubblica dipende in larga parte dall'imposta immobiliare locale ed è governata da consigli locali, il che la espone a una maggioranza di quartiere in un modo che i sistemi finanziati su base statale o comunale non conoscono. Le polemiche americane su quali libri tenere a scaffale vanno lette dentro questa struttura, non importate come se fosse la stessa ovunque.",
+    articles: [
+      { title: "Il libro che la biblioteca non possiede", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" }
+    ]
+  },
+  {
+    name: "licenza di prestito digitale",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    related: [
+      { name: "esaurimento del diritto", why: "Esiste perché il principio non si applica al digitale: senza esaurimento ogni prestito resta sotto il controllo del titolare." },
+      { name: "biblioteca pubblica", why: "Il bilancio smette di comprare fondo e compra permessi: la collezione si svuota da sola se non viene ricomprata." }
+    ],
+    note: "Contratto con cui un editore concede a una biblioteca il diritto di prestare un libro elettronico per un numero limitato di prestiti o per un periodo determinato, scaduto il quale il titolo sparisce dalla collezione se non viene riacquistato. Non è una vendita, ed è la ragione per cui il confronto con il prezzo al consumo va maneggiato con attenzione: non si stanno comprando due volte le stesse cose.\n\nLe condizioni correnti sono pubbliche e datate: HarperCollins dal 2011 fissa un tetto di ventisei prestiti per copia; Penguin Random House dal 2018 porta il catalogo a licenze biennali. Dal lato dell'acquirente, nell'ottobre 2026 la direttrice delle North Little Rock Public Libraries riferisce di pagare dagli 80 ai 120 dollari, per tre anni e con tetti di utilizzo, un titolo che un privato compra per 3,99.\n\nQuello che interessa l'archivio non è il moltiplicatore ma il cambio di oggetto: **si compra un permesso al posto di una copia**. Da qui discende una proprietà poco notata delle collezioni digitali. Una raccolta costruita per accumulo si svuota da sola se smette di essere ricomprata, e il patrimonio di una biblioteca cessa di essere un fatto acquisito per diventare un abbonamento — con la conseguenza che un taglio di bilancio non ferma più la crescita del fondo, lo riduce.",
+    articles: [
+      { title: "Il libro che la biblioteca non possiede", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" }
+    ]
+  },
+  {
+    name: "esaurimento del diritto",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    related: [
+      { name: "editoria", why: "Il confine fra ciò che si vende e ciò che si concede: spostarlo ridisegna i ricavi di un settore senza cambiare il prodotto." }
+    ],
+    note: "Principio per cui il titolare del diritto d'autore, una volta messa in commercio una copia dell'opera, non può più controllare che cosa il compratore ne faccia: può rivenderla, prestarla, regalarla. È ciò che rende possibili il mercato dell'usato, il prestito fra privati e le biblioteche. Nel diritto statunitense si chiama *first-sale doctrine* e risale a *Bobbs-Merrill v. Straus* del 1908; nel diritto dell'Unione europea è l'esaurimento del diritto di distribuzione.\n\nSul digitale il principio non si applica, e la ragione è una decisione precisa: Corte di giustizia dell'Unione europea, grande sezione, 19 dicembre 2019, causa C-263/18 *Tom Kabinet*. La fornitura di un libro elettronico mediante download per uso permanente è comunicazione al pubblico ai sensi dell'articolo 3 della direttiva 2001/29, e non distribuzione ai sensi dell'articolo 4; il diritto di comunicazione al pubblico non conosce esaurimento. La motivazione è di merito e non formale: i file digitali non si deteriorano e sono sostituti perfetti delle copie nuove, sicché un mercato secondario comprometterebbe la remunerazione degli autori.\n\nPer l'archivio la voce serve perché da qui discende senza passaggi intermedi l'economia del prestito digitale, e perché contiene una simmetria istruttiva. **Lo stesso argomento che per l'acquirente dimostra che il prezzo è ingiustificato — l'oggetto non si consuma — è per la Corte la ragione per cui il prezzo è legittimo.** Non è un paradosso: è lo stesso fatto letto da due posizioni contrattuali diverse, ed è il modo più rapido per vedere che cosa cambia quando un bene smette di avere un supporto.",
+    articles: [
+      { title: "Il libro che la biblioteca non possiede", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" }
     ]
   }
 

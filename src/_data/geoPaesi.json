@@ -30,6 +30,7 @@
     "Malta": "470",
     "Nuova Zelanda": "554",
     "Paesi Bassi": "528",
+    "Palestina": "275",
     "Polonia": "616",
     "Portogallo": "620",
     "Regno Unito": "826",
@@ -136,6 +137,7 @@
     }
   },
   "nomiEn": {
+    "Africa subsahariana": "Sub-Saharan Africa",
     "Albania": "Albania",
     "Australia": "Australia",
     "Austria": "Austria",
@@ -165,6 +167,7 @@
     "Malta": "Malta",
     "Nuova Zelanda": "New Zealand",
     "Paesi Bassi": "Netherlands",
+    "Palestina": "Palestine",
     "Polonia": "Poland",
     "Portogallo": "Portugal",
     "Regno Unito": "United Kingdom",
@@ -180,9 +183,8 @@
     "Svizzera": "Switzerland",
     "Taiwan": "Taiwan",
     "Turchia": "Turkey",
-    "Ucraina": "Ukraine",
-    "Ungheria": "Hungary",
     "UE": "European Union",
-    "Africa subsahariana": "Sub-Saharan Africa"
+    "Ucraina": "Ukraine",
+    "Ungheria": "Hungary"
   }
 }
