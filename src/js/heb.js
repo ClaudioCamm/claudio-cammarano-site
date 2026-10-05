@@ -100,7 +100,8 @@
   function makeModel(data) {
     var N = data.nodes.map(function (n) {
       return { n: displayName(n.name, n.type), sort: n.name, s: n.slug,
-               t: n.type || 'altro', c: n.cluster || null, k: n.count || 1 };
+               t: n.type || 'altro', c: n.cluster || null, k: n.count || 1,
+               p: n.peso || n.count || 1 };
     });
     // [sorgente, destinazione, peso, asserito] — il quarto posto distingue un
     // legame dichiarato a mano da una co-occorrenza calcolata
@@ -287,7 +288,7 @@
         if (hidden[L.keyOf(i)]) return;
         var p = L.pos[i], g = L.groups[p.g];
         var cls = a >= 0 ? ((i === a || nbr[i]) ? 'on' : 'off') : '';
-        var rad = 2.6 + Math.min(2.4, (n.k - 1) * 0.5) + (i === a ? 1.8 : 0);
+        var rad = 2.6 + Math.min(2.4, (n.p - 1) * 0.5) + (i === a ? 1.8 : 0);
         s += '<circle cx="' + p.x.toFixed(1) + '" cy="' + p.y.toFixed(1) + '" r="' + rad.toFixed(1) +
              '" fill="' + g.color + '" opacity="' + (cls === 'off' ? 0.25 : 1) + '"/>';
         s += radialLabel(n.n, p.ang, CX, CY, R + 12, cls, ' data-i="' + i + '"');

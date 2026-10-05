@@ -362,7 +362,9 @@ module.exports = function(eleventyConfig) {
 
   // Carta "Dove guarda questo sito" (audit 2026, L9). Riceve
   // mergedConceptsIndex e restituisce { svg, legenda, altri }.
-  // Peso di ogni voce = numero di pezzi collegati x peso del modo:
+  // Peso di ogni voce = somma dei pesi dei pezzi collegati x peso del modo:
+  // Il peso del singolo pezzo (saggio o catena 1,5, curated 1, piu' 0,25 per
+  // ogni catena che lo cita fra le fonti) sta in scripts/peso.js.
   // luogo/paese citato 1, altra geografia diretta 0,5, dal teorico 0,25.
   // Forme-stato: l'UE colora i membri; l'Italia e i membri con menzioni
   // proprie sommano UE + proprie; le regioni danno peso pieno ai membri.
@@ -375,13 +377,14 @@ module.exports = function(eleventyConfig) {
     const en = o.lang === "en";
     const geom = require(bergamo ? "./src/_data/cartaGeometriaBergamo.json" : "./src/_data/cartaGeometria.json");
     const paesi = require("./src/_data/geoPaesi.json");
+    const peso = require("./scripts/peso.js");
     const N = function(n) { return en ? ((paesi.nomiEn || {})[n] || n) : n; };
     const W = en ? " · weight " : " · peso ";
     const slugify = eleventyConfig.getFilter("slugify");
     const unita = {};
     (index || []).forEach(function(c) {
       if (!c.geo || c.geo.modo === "nessuna" || !c.geo.paesi.length) return;
-      const n = (c.articles || []).length;
+      const n = peso.somma(c.articles);
       if (!n) return;
       const w = c.geo.modo === "teorico" ? 0.25 : (c.type === "luogo" || c.type === "paese" ? 1 : 0.5);
       c.geo.paesi.forEach(function(p) { unita[p] = (unita[p] || 0) + n * w; });

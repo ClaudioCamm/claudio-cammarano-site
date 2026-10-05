@@ -17,6 +17,7 @@ const path = require("path");
 const matter = require("gray-matter");
 const conceptsIndexData = require("./conceptsIndex.js");
 const clustersData = require("./clusters.js");
+const pesoArt = require("../../scripts/peso.js");
 
 const ROOT = path.join(__dirname, "..", "..");
 
@@ -94,7 +95,13 @@ function buildLayout() {
   var writings = readMd("src/writings").map(function (w) {
     return {
       url: "/writings/" + w.file.replace(/\.md$/, "") + "/",
-      cluster: clusterOfCategory(w.data.category)
+      cluster: clusterOfCategory(w.data.category),
+      // Le catene dichiarano i concetti in frontmatter come i curated. Senza
+      // questo /mappa/ le ignorava, e calcolava i nodi su un insieme piu'
+      // piccolo di quello delle pagine /concetti/ e della carta: il flag
+      // fromWriting qui sotto risultava sempre falso.
+      concepts: Array.isArray(w.data.concepts) ? w.data.concepts : [],
+      catena: w.data.layout === "layouts/catena.njk"
     };
   });
   var curatedFiles = readMd("src/curated").map(function (c) {
@@ -126,6 +133,14 @@ function buildLayout() {
       if (!already) c.articles.push({ url: cur.url, cluster: cur.cluster });
     });
   });
+  writings.filter(function (w) { return w.catena; }).forEach(function (wr) {
+    wr.concepts.forEach(function (name) {
+      var c = byName[name];
+      if (!c) return;
+      var already = c.articles.some(function (a) { return a.url === wr.url; });
+      if (!already) c.articles.push({ url: wr.url, cluster: wr.cluster });
+    });
+  });
 
   // Cluster primario + flag cross-cluster
   concepts.forEach(function (c) {
@@ -152,6 +167,9 @@ function buildLayout() {
       clusters: c.clusters,
       crossCluster: c.crossCluster,
       count: c.articles.length,
+      // Il conteggio resta un conteggio (e' quello che il tooltip scrive);
+      // il peso e' una quantita' continua e decide il raggio del nodo.
+      peso: pesoArt.somma(c.articles),
       // true se almeno un writing (non solo curated) cita questo concetto —
       // usato in /mappa/ per decidere quali etichette mostrare di default
       fromWriting: c.articles.some(function (a) { return a.url.indexOf("/writings/") === 0; })
