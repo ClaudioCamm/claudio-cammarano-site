@@ -7,7 +7,7 @@ ai_scope: [FM]
 description: "Ho costruito un simulatore della mia equazione sull’autenticità e il simulatore l’ha rotta in tre punti. Che cosa succede al valore di un testo quando si smette di misurare quanto sposta il lettore e si comincia a misurare in che direzione lo sposta."
 category: ["Epistemologia", "Scrittura", "AI"]
 series: "L’equazione del valore, II"
-serie_totale_prevista: 2
+serie_totale_prevista: 3
 lang: "🇮🇹 Italiano"
 tags: [writings]
 og_image: "/images/passaggio-del-niemen-1812-hero.jpg"

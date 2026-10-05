@@ -9,3 +9,5 @@ deploy-*.zip
 
 # Claude Code local settings
 .claude/
+.build-trash/
+.git-lock-trash/
