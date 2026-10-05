@@ -1021,7 +1021,8 @@ module.exports = [
     geo: { modo: "teorico", paesi: ["Italia"] },
     note: "Concetto introdotto da Donatella Della Ratta (Le Grand Continent, 2026; Einaudi, 2026) per descrivere un meccanismo di propaganda AI-generativa distinto dal deepfake. Le immagini di violenza speculativa non falsificano il presente — e quindi sfuggono ai criteri standard di fact-checking — ma costruiscono una pre-familiarità visiva con scenari xenofobi, sostituzionisti o violenti, rendendoli percepivamente plausibili prima che esistano. Non chiedono di essere credute; chiedono solo di essere viste, ripetute e memorizzate. Il caso esemplare: video POV AI-generated dell'Europa del 2050 'invasa da migranti' (estate 2025) → déjà-vu alla crisi di Ceuta (luglio 2026). Altro caso: il video AI di Gaza trasformata in 'riviera' da Trump (febbraio 2025), precursore del Piano di pace in 20 punti (ottobre 2025). La tesi centrale: nel regime visivo sintetico inaugurato dall'AI generativa, plausibilità, ripetizione e viralità diventano criteri di legittimazione più potenti della veridicità. Il versante più insidioso della slopaganda.",
     articles: [
-      { title: "Sur la violence spéculative de l'IA", url: "/curated/2026-09-04-dellaratta-violenza-speculativa-ia-grandcontinent/", _source: "curated" }
+      { title: "Sur la violence spéculative de l'IA", url: "/curated/2026-09-04-dellaratta-violenza-speculativa-ia-grandcontinent/", _source: "curated" },
+      { title: "Quando la propaganda smette di sembrare straniera", url: "/curated/2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24/", _source: "curated" }
     ]
   },
   {
@@ -1372,7 +1373,8 @@ module.exports = [
     articles: [
       { title: "Alex Turner appointed as Defence Editor of The Economist", url: "/curated/2026-06-19-economist-defence-editor-turner/", _source: "curated" },
       { title: "Unmasking the anonymous hosts of 'Russians With Attitude,' a pro-war podcast popular with US far right", url: "/curated/2026-04-06-hourani-russians-with-attitude-kyivindependent/", _source: "curated" },
-      { title: "The Great Russian Firewall: the Kremlin's ultimate crackdown on internet freedom", url: "/curated/2025-12-19-osw-great-russian-firewall/", _source: "curated" }
+      { title: "The Great Russian Firewall: the Kremlin's ultimate crackdown on internet freedom", url: "/curated/2025-12-19-osw-great-russian-firewall/", _source: "curated" },
+      { title: "Quando la propaganda smette di sembrare straniera", url: "/curated/2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24/", _source: "curated" }
     ]
   },
   {
@@ -2744,7 +2746,8 @@ module.exports = [
       { title: "A Splintered Internet? Internet Fragmentation and the Strategies of China, Russia, India and the European Union", url: "/curated/2024-02-01-nocetti-splintered-internet-ifri/", _source: "curated" },
       { title: "The Great Russian Firewall: the Kremlin's ultimate crackdown on internet freedom", url: "/curated/2025-12-19-osw-great-russian-firewall/", _source: "curated" },
       { title: "Ranks of Humanity", url: "/curated/2026-09-24-meaney-varouxakis-idea-occidente-lrb/", _source: "curated" },
-      { title: "Is Kaliningrad, Russia's exclave surrounded by EU countries, an asset or a liability?", url: "/curated/2022-06-06-economist-kaliningrad-risorsa-o-ostaggio/", _source: "curated" }
+      { title: "Is Kaliningrad, Russia's exclave surrounded by EU countries, an asset or a liability?", url: "/curated/2022-06-06-economist-kaliningrad-risorsa-o-ostaggio/", _source: "curated" },
+      { title: "Quando la propaganda smette di sembrare straniera", url: "/curated/2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24/", _source: "curated" }
     ]
   },
   {
@@ -4612,7 +4615,8 @@ module.exports = [
       { title: "Plagiat, IA : le prix Goncourt exclut le roman de Thélyson Orélien", url: "/curated/2026-09-25-goncourt-esclusione-orelien-actualitte/", _source: "curated" },
       { title: "Il triste dibattito sullo scrivere con l'IA", url: "/curated/2026-10-02-piacenza-triste-dibattito-scrivere-ia/", _source: "curated" },
       { title: "Il rilevatore prima dell'oggetto", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" },
-      { title: "La scala che non regge", url: "/curated/2026-08-20-schneider-la-scala-che-non-regge-economist/", _source: "curated" }
+      { title: "La scala che non regge", url: "/curated/2026-08-20-schneider-la-scala-che-non-regge-economist/", _source: "curated" },
+      { title: "Quando la propaganda smette di sembrare straniera", url: "/curated/2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24/", _source: "curated" }
     ]
   },
   {
@@ -4890,6 +4894,20 @@ module.exports = [
     note: "Meccanismo per cui il gusto non esprime una preferenza privata ma colloca chi lo esercita rispetto agli altri: si sceglie anche per segnalare a quale gruppo si appartiene e da quale ci si separa. È il concetto centrale di Pierre Bourdieu, e la voce entra nell'archivio perché finora mancava proprio quella — il sito aveva preso in prestito da Bourdieu il capitale simbolico piegandolo a un uso che non è il suo, la composizione vettoriale di un riposizionamento politico, e aveva lasciato fuori la cosa per cui Bourdieu è noto.\n\nLa forma contemporanea del meccanismo è più nuda di quella che Bourdieu descriveva, e Debbie Millman nell'ottobre 2026 ne dà una formulazione esatta parlando di chirurgia estetica: si interviene su un naso o su un labbro «così che tu sappia che io so che tu sai che io so, e tutti e due abbiamo un bell'aspetto». La segnalazione non è nascosta, è reciproca e consapevole, e funziona insieme verso chi condivide il codice e verso chi lo rifiuta. L'esempio storicamente più pulito è l'iPod presentato sei settimane dopo l'11 settembre: l'oggetto stava in tasca e il segno di appartenenza erano **gli auricolari bianchi**, cioè la sola parte visibile.\n\nIl rovescio è più interessante del dritto, ed è la ragione per cui la voce serve a un archivio che si occupa anche di mercati. **La distinzione vuole particolarità, il mercato vuole liquidità**, e quando un oggetto viene posseduto come bene scambiabile invece che come cosa propria la particolarità diventa un costo. Il caso documentato è quello delle case americane dipinte di grigio — la cosiddetta *color recession* — e delle associazioni di quartiere che vietano i colori non per il bene di chi abita ma perché la casa resti facilmente rivendibile. Nel giudicare un'uniformità conviene quindi distinguere fra chi non ha gusto, chi non ha intenzione e chi ha un vincolo di liquidità: sono tre cose diverse e solo la terza si corregge cambiando il contratto.",
     articles: [
       { title: "Il grigio non è un gusto", url: "/curated/2026-10-02-klein-millman-il-grigio-non-e-un-gusto-nyt/", _source: "curated" }
+    ]
+  },
+  {
+    name: "riciclaggio informativo",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Russia", "Finlandia"] },
+    related: [
+      { name: "propaganda", why: "Non una propaganda nuova: la stessa a cui è stata rimossa la provenienza, perché a essere riconoscibile era quella e non il contenuto." },
+      { name: "rilevatori di testo generato", why: "Lo stesso fatto dai due lati: l'origine non si legge nell'output, ed è il limite di chi verifica e il metodo di chi attacca." },
+      { name: "violenza speculativa", why: "Immagini che non pretendono di essere vere, contenuti che non pretendono di essere stranieri: la verifica cerca la cosa sbagliata." }
+    ],
+    note: "Tecnica di propaganda che non nasconde il messaggio ma la sua origine: il contenuto viene tradotto, riscritto e innestato su rimostranze locali già esistenti, così che all'uscita si legga come produzione domestica e non come messaggistica straniera. Il termine inglese è *information laundering*; nel sito entra con l'analisi di Oleksandr Liemienov e Sofiia Maksymiv (StateWatch) sul caso finlandese, settembre 2026.\n\nL'interesse non è il caso ma la struttura, che è il rovescio di una cosa già registrata altrove. **Non si accerta l'origine di un contenuto ispezionando il contenuto**: finora l'archivio l'ha scritto come limite di chi verifica — un rilevatore di scrittura automatica che non può decidere da solo, un test di coscienza inutilizzabile su un modello addestrato sulla letteratura che quel test descrive. Il riciclaggio informativo è lo stesso fatto adottato come metodo da chi attacca.\n\nDa qui la conseguenza che vale al di là del caso: **una difesa che funziona riconoscendo una firma — fonte straniera, registro propagandistico, canale noto — fallisce contro un avversario che la firma la toglie**. È il motivo per cui il caso istruttivo è la Finlandia, il paese europeo più citato per l'alfabetizzazione mediatica inserita nei programmi scolastici, e la ragione per cui le sanzioni contro singole testate e il blocco automatizzato dei domini cloni colpiscono precisamente ciò a cui la tecnica ha rinunciato.",
+    articles: [
+      { title: "Quando la propaganda smette di sembrare straniera", url: "/curated/2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24/", _source: "curated" }
     ]
   }
 
