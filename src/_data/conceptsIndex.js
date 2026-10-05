@@ -2797,7 +2797,8 @@ module.exports = [
       { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-fuga-e-clamore-lawfare/", _source: "curated" },
       { title: "GPT detectors are biased against non-native English writers", url: "/curated/2023-07-10-liang-rilevatori-non-madrelingua-patterns/", _source: "curated" },
       { title: "Why AI Detection Fails for Academic Integrity", url: "/curated/2026-08-06-karr-perche-la-rilevazione-fallisce-arxiv/", _source: "curated" },
-      { title: "Il libro che la biblioteca non possiede", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" }
+      { title: "Il libro che la biblioteca non possiede", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" },
+      { title: "Riforme in cambio di accesso", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" }
     ]
   },
   {
@@ -2818,7 +2819,8 @@ module.exports = [
       { title: "The right balance: how to fix European Union artificial intelligence regulation", url: "/curated/2026-06-11-mariniello-ai-act-costi-conformita-bruegel/", _source: "curated" },
       { title: "A Splintered Internet? Internet Fragmentation and the Strategies of China, Russia, India and the European Union", url: "/curated/2024-02-01-nocetti-splintered-internet-ifri/", _source: "curated" },
       { title: "Is Kaliningrad, Russia's exclave surrounded by EU countries, an asset or a liability?", url: "/curated/2022-06-06-economist-kaliningrad-risorsa-o-ostaggio/", _source: "curated" },
-      { title: "Quando i tassi li decide qualcun altro", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" }
+      { title: "Quando i tassi li decide qualcun altro", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" },
+      { title: "Riforme in cambio di accesso", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" }
     ]
   },
   {
@@ -4331,7 +4333,8 @@ module.exports = [
       { title: "The statistics wars and intellectual conflicts of interest", url: "/curated/2021-12-06-mayo-conflitti-interesse-intellettuali-conbio/", _source: "curated" },
       { title: "The ASA Statement on p-Values: Context, Process, and Purpose", url: "/curated/2016-03-07-wasserstein-lazar-dichiarazione-asa-p-value/", _source: "curated" },
       { title: "Scientists rise up against statistical significance", url: "/curated/2019-03-20-amrhein-greenland-mcshane-significativita-nature/", _source: "curated" },
-      { title: "The ASA President's Task Force Statement on Statistical Significance and Replicability", url: "/curated/2021-08-01-task-force-asa-significativita-replicabilita-aoas/", _source: "curated" }
+      { title: "The ASA President's Task Force Statement on Statistical Significance and Replicability", url: "/curated/2021-08-01-task-force-asa-significativita-replicabilita-aoas/", _source: "curated" },
+      { title: "Riforme in cambio di accesso", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" }
     ]
   },
   {
@@ -4742,7 +4745,8 @@ module.exports = [
     ],
     note: "Economista italiano. Nel sito entra nell'ottobre 2026 con la decima *Karl Brunner Distinguished Lecture* della Banca nazionale svizzera, tenuta al Politecnico federale di Zurigo e pubblicata integralmente da *Le Grand Continent*. La voce serve a dichiarare perché quel testo è un riferimento e non un'opinione fra le altre: chi parla ha occupato per intero le posizioni da cui la materia si osserva — la presidenza della Banca centrale europea dal 2011 al 2019, Palazzo Chigi dal febbraio 2021 all'ottobre 2022, e nel settembre 2024 il rapporto sulla competitività europea commissionato dalla Commissione. Non è una garanzia che le tesi siano vere; è la ragione per cui saranno il testo su cui gli altri si appoggeranno, spesso senza citarlo.\n\nLa conferenza di Zurigo sostiene che il differenziale fra tasso d'interesse e crescita non si governi più dall'Europa, perché i tassi si formano altrove, e che quindi l'unica variabile rimasta sia la crescita. Le mosse indicate sono poche e grandi: mercato unico, unione dei mercati dei capitali, capacità di calcolo. **Vale la pena notare la forma della proposta, oltre al contenuto**, perché è l'opposto di quella del piano che lo stesso Draghi ha amministrato da presidente del Consiglio, costruito su centinaia di condizioni e su più investimenti che riforme. Non è una contraddizione: è quello che si impara amministrando una metrica.",
     articles: [
-      { title: "Quando i tassi li decide qualcun altro", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" }
+      { title: "Quando i tassi li decide qualcun altro", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" },
+      { title: "Riforme in cambio di accesso", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" }
     ]
   },
   {
@@ -4756,7 +4760,21 @@ module.exports = [
     ],
     note: "Programma di ripresa dell'Unione europea da 750 miliardi di euro approvato dal Consiglio europeo nel luglio 2020, finanziato per la prima volta con debito comune di dimensione rilevante e articolato in piani nazionali il cui finanziamento è legato al raggiungimento di obiettivi verificati dalla Commissione.\n\nIl piano italiano è l'istanza che l'archivio segue, perché è quella su cui esistono cifre pubbliche. La prima versione è del gennaio 2021, governo Conte II; il governo Draghi la riscrive in parte e la presenta alla Commissione il 30 aprile 2021, con valutazione positiva il 22 giugno. Sono 191,5 miliardi — 36,5% a fondo perduto e 63,5% a prestito, portati a 194,4 con la revisione del novembre 2023 — su sei missioni e sedici componenti, per **186 interventi, di cui 135 investimenti e 51 riforme**, con l'erogazione legata a **419 condizioni: 214 target e 205 milestone**.\n\nIl motivo per cui la voce interessa questo archivio non è il merito dei singoli progetti ma la forma dello strumento. **Un programma la cui erogazione dipende dal conteggio delle condizioni rende il completamento l'obiettivo, e la qualità di ciò che si completa una questione subordinata**, chiunque lo amministri; e un rapporto di quasi tre a uno fra investimenti e riforme sposta il baricentro dalle scelte strutturali ai progetti. Che il disegno fosse fragile lo si poteva vedere presto: Carlo Cottarelli e Raffaela Palomba, per l'Osservatorio sui conti pubblici italiani, il 28 maggio 2021 rilevavano che il 75% dei target cadeva fra l'ultimo trimestre 2024 e la fine del 2026 e che per oltre due terzi degli investimenti mancavano target intermedi. Una struttura che misura tardi misura poco.\n\nLa condizionalità non è stata scelta nelle capitali: discende dal regolamento che istituisce il dispositivo, e i governi l'hanno ereditata. È la ragione per cui la voce sta accanto alla legge di Goodhart e non a un giudizio politico: il difetto è nel disegno dell'incentivo, non in chi lo ha applicato.",
     articles: [
-      { title: "Quando i tassi li decide qualcun altro", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" }
+      { title: "Quando i tassi li decide qualcun altro", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" },
+      { title: "Riforme in cambio di accesso", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" }
+    ]
+  },
+  {
+    name: "condizionalità",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    related: [
+      { name: "Next Generation EU", why: "La versione domestica: dentro un bilancio, con un verificatore dichiarato e 419 obiettivi da contare." },
+      { name: "legge di Goodhart", why: "Quando la condizione viene contata, il conteggio diventa il fine e la cosa che doveva rappresentare passa in secondo piano." }
+    ],
+    note: "Tecnica di governo per cui una parte ottiene qualcosa — fondi, accesso a un mercato, adesione a un'alleanza — solo se soddisfa obiettivi stabiliti da un'altra e verificati da qualcuno. Nell'archivio entra con due istanze in domini diversi, ed è la coppia a giustificarne la voce.\n\nLa prima è interna a un bilancio: Next Generation EU lega l'erogazione al raggiungimento di obiettivi contati, 419 nel caso del piano italiano, verificati dalla Commissione. La seconda è fra Stati: nel settembre 2026 Jamie Dimon propone sul *Wall Street Journal* che gli Stati Uniti offrano all'Europa un grande accordo commerciale **a condizione** che essa esegua riforme economiche e militari, «compreso tutto ciò che noi consideriamo cruciale».\n\nIl confronto fra le due mostra dove si gioca davvero il giudizio su uno strumento del genere, e non è la severità della condizione. **Una condizionalità si valuta da chi verifica.** Nel caso europeo il verificatore è dichiarato, ed è un organo nel quale la parte contata siede: lì il difetto, semmai, sta nel contare troppe cose e troppo tardi. Nella proposta transatlantica il verificatore non è nominato, e la formula «ciò che noi consideriamo cruciale» lascia la definizione della condizione alla parte che la offre. Non è una condizionalità più blanda: è la stessa tecnica con la discrezionalità tutta da un lato.",
+    articles: [
+      { title: "Riforme in cambio di accesso", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" }
     ]
   }
 
