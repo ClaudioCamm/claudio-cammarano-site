@@ -1191,7 +1191,8 @@ module.exports = [
     geo: { modo: "teorico", paesi: ["Germania"] },
     note: "Concetto di Friedrich Schiller (Lettere sull'educazione estetica dell'uomo, 1795): l'arte come processo collettivo di ricerca della verità, capace di orientare l'essere umano da una vita puramente sensibile verso una moralità più coltivata — non come precettistica rigida ma come capacità di abitare prospettive diverse e costruire relazioni con altri. Nel sito è il framework con cui Ypi legge la letteratura impegnata: la scrittura come mezzo per rompere il rapporto con le predazioni del presente e immaginare alternative.",
     articles: [
-      { title: "The Meaning of Commitment", url: "/curated/2026-07-29-ypi-meaning-of-commitment-tribune/", _source: "curated" }
+      { title: "The Meaning of Commitment", url: "/curated/2026-07-29-ypi-meaning-of-commitment-tribune/", _source: "curated" },
+      { title: "Il grigio non è un gusto", url: "/curated/2026-10-02-klein-millman-il-grigio-non-e-un-gusto-nyt/", _source: "curated" }
     ]
   },
   {
@@ -3314,7 +3315,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q605", "https://it.wikipedia.org/wiki/Ezra_Klein"],
     note: "Giornalista e commentatore americano (1983), cofondatore di Vox, editorialista del NYT e conduttore dell'Ezra Klein Show. Nel sito è citato per il libro *Abundance* (2025, con Derek Thompson) e per il podcast che ne fa un bilancio a un anno dall'uscita: un caso in cui una certa idea della realtà — la scarsità come prodotto di scelte istituzionali, non di destino — ha cominciato a produrre effetti sul comportamento politico americano.",
     articles: [
-      { title: "What Worries Me Most About 'Abundance'", url: "/curated/2026-04-28-klein-abundance-nyt/", _source: "curated" }
+      { title: "What Worries Me Most About 'Abundance'", url: "/curated/2026-04-28-klein-abundance-nyt/", _source: "curated" },
+      { title: "Il grigio non è un gusto", url: "/curated/2026-10-02-klein-millman-il-grigio-non-e-un-gusto-nyt/", _source: "curated" }
     ]
   },
   {
@@ -3591,7 +3593,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q156268", "https://it.wikipedia.org/wiki/Pierre_Bourdieu"],
     note: "Sociologo francese (1930–2002), teorico del capitale simbolico e della distinzione sociale. Nel sito il concetto viene preso in prestito e piegato a un uso diverso dal suo: non la conversione fra forme di capitale, ma la regola di composizione quando un soggetto politico cambia direzione — un nuovo investimento simbolico non si somma al vecchio, lo compone, con una risultante più corta di entrambi.",
     articles: [
-      { title: "La mappa e il crinale", url: "/writings/2026-09-07-la-mappa-e-il-crinale/" }
+      { title: "La mappa e il crinale", url: "/writings/2026-09-07-la-mappa-e-il-crinale/" },
+      { title: "Il grigio non è un gusto", url: "/curated/2026-10-02-klein-millman-il-grigio-non-e-un-gusto-nyt/", _source: "curated" }
     ]
   },
   {
@@ -3601,7 +3604,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q1751638"],
     note: "Concetto di Bourdieu, ripreso nel sito con un'estensione che non è sua: prendere posizione politica è un investimento che si deposita senza attrito quando il soggetto è nuovo, ma mutare valori non aggiunge un nuovo investimento al vecchio — lo compone vettorialmente, con una risultante più corta e spesso deviata verso la posizione da cui si voleva uscire. Il caso analizzato è la Lega, dal capitale nordista all'ambizione nazionale.",
     articles: [
-      { title: "La mappa e il crinale", url: "/writings/2026-09-07-la-mappa-e-il-crinale/" }
+      { title: "La mappa e il crinale", url: "/writings/2026-09-07-la-mappa-e-il-crinale/" },
+      { title: "Il grigio non è un gusto", url: "/curated/2026-10-02-klein-millman-il-grigio-non-e-un-gusto-nyt/", _source: "curated" }
     ]
   },
   {
@@ -4872,6 +4876,20 @@ module.exports = [
       { title: "Anche se non lo fossero", url: "/curated/2026-08-20-economist-anche-se-non-lo-fossero/", _source: "curated" },
       { title: "Il rilevatore prima dell'oggetto", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" },
       { title: "La scala che non regge", url: "/curated/2026-08-20-schneider-la-scala-che-non-regge-economist/", _source: "curated" }
+    ]
+  },
+  {
+    name: "distinzione",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Francia"] },
+    related: [
+      { name: "Bourdieu, Pierre", why: "Il concetto che è davvero suo, e che il sito finora aveva aggirato prendendone in prestito un altro per un fine diverso." },
+      { name: "capitale simbolico", why: "La distinzione è il modo in cui quel capitale si spende: non si accumula per sé, si esibisce per collocarsi." },
+      { name: "educazione estetica", why: "Se la bellezza possa essere un valore pubblicamente condiviso è la domanda di Schiller, e resta aperta." }
+    ],
+    note: "Meccanismo per cui il gusto non esprime una preferenza privata ma colloca chi lo esercita rispetto agli altri: si sceglie anche per segnalare a quale gruppo si appartiene e da quale ci si separa. È il concetto centrale di Pierre Bourdieu, e la voce entra nell'archivio perché finora mancava proprio quella — il sito aveva preso in prestito da Bourdieu il capitale simbolico piegandolo a un uso che non è il suo, la composizione vettoriale di un riposizionamento politico, e aveva lasciato fuori la cosa per cui Bourdieu è noto.\n\nLa forma contemporanea del meccanismo è più nuda di quella che Bourdieu descriveva, e Debbie Millman nell'ottobre 2026 ne dà una formulazione esatta parlando di chirurgia estetica: si interviene su un naso o su un labbro «così che tu sappia che io so che tu sai che io so, e tutti e due abbiamo un bell'aspetto». La segnalazione non è nascosta, è reciproca e consapevole, e funziona insieme verso chi condivide il codice e verso chi lo rifiuta. L'esempio storicamente più pulito è l'iPod presentato sei settimane dopo l'11 settembre: l'oggetto stava in tasca e il segno di appartenenza erano **gli auricolari bianchi**, cioè la sola parte visibile.\n\nIl rovescio è più interessante del dritto, ed è la ragione per cui la voce serve a un archivio che si occupa anche di mercati. **La distinzione vuole particolarità, il mercato vuole liquidità**, e quando un oggetto viene posseduto come bene scambiabile invece che come cosa propria la particolarità diventa un costo. Il caso documentato è quello delle case americane dipinte di grigio — la cosiddetta *color recession* — e delle associazioni di quartiere che vietano i colori non per il bene di chi abita ma perché la casa resti facilmente rivendibile. Nel giudicare un'uniformità conviene quindi distinguere fra chi non ha gusto, chi non ha intenzione e chi ha un vincolo di liquidità: sono tre cose diverse e solo la terza si corregge cambiando il contratto.",
+    articles: [
+      { title: "Il grigio non è un gusto", url: "/curated/2026-10-02-klein-millman-il-grigio-non-e-un-gusto-nyt/", _source: "curated" }
     ]
   }
 
