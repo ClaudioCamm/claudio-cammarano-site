@@ -819,7 +819,8 @@ module.exports = [
       { title: "The Original Sin of AI", url: "/curated/2026-09-11-turkle-original-sin-ai-atlantic/", _source: "curated" },
       { title: "Destroying Books to Build a Mind", url: "/curated/2026-09-11-mancino-destroying-books-anthropic-newyorker/", _source: "curated" },
       { title: "Zuckerberg says the science isn't settled. But the harms of short-form video on the brain are starting to show", url: "/curated/2026-09-18-enders-short-form-video-cognizione-guardian/", _source: "curated" },
-      { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" }
+      { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" },
+      { title: "Quando i tassi li decide qualcun altro", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -2816,7 +2817,8 @@ module.exports = [
       { title: "Why a big country like Italy acts as if it were small", url: "/curated/2026-04-09-italy-acts-as-if-small/", _source: "curated" },
       { title: "The right balance: how to fix European Union artificial intelligence regulation", url: "/curated/2026-06-11-mariniello-ai-act-costi-conformita-bruegel/", _source: "curated" },
       { title: "A Splintered Internet? Internet Fragmentation and the Strategies of China, Russia, India and the European Union", url: "/curated/2024-02-01-nocetti-splintered-internet-ifri/", _source: "curated" },
-      { title: "Is Kaliningrad, Russia's exclave surrounded by EU countries, an asset or a liability?", url: "/curated/2022-06-06-economist-kaliningrad-risorsa-o-ostaggio/", _source: "curated" }
+      { title: "Is Kaliningrad, Russia's exclave surrounded by EU countries, an asset or a liability?", url: "/curated/2022-06-06-economist-kaliningrad-risorsa-o-ostaggio/", _source: "curated" },
+      { title: "Quando i tassi li decide qualcun altro", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -3813,7 +3815,8 @@ module.exports = [
       { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" },
       { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" },
       { title: "The Hugging Face incident and the road ahead", url: "/curated/2026-08-26-openai-incidente-hugging-face-resoconto/", _source: "curated" },
-      { title: "Why AI Detection Fails for Academic Integrity", url: "/curated/2026-08-06-karr-perche-la-rilevazione-fallisce-arxiv/", _source: "curated" }
+      { title: "Why AI Detection Fails for Academic Integrity", url: "/curated/2026-08-06-karr-perche-la-rilevazione-fallisce-arxiv/", _source: "curated" },
+      { title: "Quando i tassi li decide qualcun altro", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -4728,6 +4731,32 @@ module.exports = [
     note: "Principio per cui il titolare del diritto d'autore, una volta messa in commercio una copia dell'opera, non può più controllare che cosa il compratore ne faccia: può rivenderla, prestarla, regalarla. È ciò che rende possibili il mercato dell'usato, il prestito fra privati e le biblioteche. Nel diritto statunitense si chiama *first-sale doctrine* e risale a *Bobbs-Merrill v. Straus* del 1908; nel diritto dell'Unione europea è l'esaurimento del diritto di distribuzione.\n\nSul digitale il principio non si applica, e la ragione è una decisione precisa: Corte di giustizia dell'Unione europea, grande sezione, 19 dicembre 2019, causa C-263/18 *Tom Kabinet*. La fornitura di un libro elettronico mediante download per uso permanente è comunicazione al pubblico ai sensi dell'articolo 3 della direttiva 2001/29, e non distribuzione ai sensi dell'articolo 4; il diritto di comunicazione al pubblico non conosce esaurimento. La motivazione è di merito e non formale: i file digitali non si deteriorano e sono sostituti perfetti delle copie nuove, sicché un mercato secondario comprometterebbe la remunerazione degli autori.\n\nPer l'archivio la voce serve perché da qui discende senza passaggi intermedi l'economia del prestito digitale, e perché contiene una simmetria istruttiva. **Lo stesso argomento che per l'acquirente dimostra che il prezzo è ingiustificato — l'oggetto non si consuma — è per la Corte la ragione per cui il prezzo è legittimo.** Non è un paradosso: è lo stesso fatto letto da due posizioni contrattuali diverse, ed è il modo più rapido per vedere che cosa cambia quando un bene smette di avere un supporto.",
     articles: [
       { title: "Il libro che la biblioteca non possiede", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Draghi, Mario",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Italia"] },
+    related: [
+      { name: "Next Generation EU", why: "Ne ha riscritto e presentato il piano italiano nel 2021, ereditando una condizionalità decisa dal regolamento europeo." }
+    ],
+    note: "Economista italiano. Nel sito entra nell'ottobre 2026 con la decima *Karl Brunner Distinguished Lecture* della Banca nazionale svizzera, tenuta al Politecnico federale di Zurigo e pubblicata integralmente da *Le Grand Continent*. La voce serve a dichiarare perché quel testo è un riferimento e non un'opinione fra le altre: chi parla ha occupato per intero le posizioni da cui la materia si osserva — la presidenza della Banca centrale europea dal 2011 al 2019, Palazzo Chigi dal febbraio 2021 all'ottobre 2022, e nel settembre 2024 il rapporto sulla competitività europea commissionato dalla Commissione. Non è una garanzia che le tesi siano vere; è la ragione per cui saranno il testo su cui gli altri si appoggeranno, spesso senza citarlo.\n\nLa conferenza di Zurigo sostiene che il differenziale fra tasso d'interesse e crescita non si governi più dall'Europa, perché i tassi si formano altrove, e che quindi l'unica variabile rimasta sia la crescita. Le mosse indicate sono poche e grandi: mercato unico, unione dei mercati dei capitali, capacità di calcolo. **Vale la pena notare la forma della proposta, oltre al contenuto**, perché è l'opposto di quella del piano che lo stesso Draghi ha amministrato da presidente del Consiglio, costruito su centinaia di condizioni e su più investimenti che riforme. Non è una contraddizione: è quello che si impara amministrando una metrica.",
+    articles: [
+      { title: "Quando i tassi li decide qualcun altro", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Next Generation EU",
+    type: "istituzione",
+    geo: { modo: "teorico", paesi: ["UE"] },
+    related: [
+      { name: "legge di Goodhart", why: "La forma che la legge assume in finanza pubblica: l'erogazione legata al conteggio delle condizioni rende il completamento l'obiettivo." },
+      { name: "paradigma tecnocratico", why: "Il problema diventa quello che lo strumento sa misurare: progetti con una scadenza, non riforme con un esito." },
+      { name: "Unione Europea", why: "Il primo debito comune di dimensione rilevante, e il primo dispositivo che lega l'erogazione a obiettivi verificati dalla Commissione." }
+    ],
+    note: "Programma di ripresa dell'Unione europea da 750 miliardi di euro approvato dal Consiglio europeo nel luglio 2020, finanziato per la prima volta con debito comune di dimensione rilevante e articolato in piani nazionali il cui finanziamento è legato al raggiungimento di obiettivi verificati dalla Commissione.\n\nIl piano italiano è l'istanza che l'archivio segue, perché è quella su cui esistono cifre pubbliche. La prima versione è del gennaio 2021, governo Conte II; il governo Draghi la riscrive in parte e la presenta alla Commissione il 30 aprile 2021, con valutazione positiva il 22 giugno. Sono 191,5 miliardi — 36,5% a fondo perduto e 63,5% a prestito, portati a 194,4 con la revisione del novembre 2023 — su sei missioni e sedici componenti, per **186 interventi, di cui 135 investimenti e 51 riforme**, con l'erogazione legata a **419 condizioni: 214 target e 205 milestone**.\n\nIl motivo per cui la voce interessa questo archivio non è il merito dei singoli progetti ma la forma dello strumento. **Un programma la cui erogazione dipende dal conteggio delle condizioni rende il completamento l'obiettivo, e la qualità di ciò che si completa una questione subordinata**, chiunque lo amministri; e un rapporto di quasi tre a uno fra investimenti e riforme sposta il baricentro dalle scelte strutturali ai progetti. Che il disegno fosse fragile lo si poteva vedere presto: Carlo Cottarelli e Raffaela Palomba, per l'Osservatorio sui conti pubblici italiani, il 28 maggio 2021 rilevavano che il 75% dei target cadeva fra l'ultimo trimestre 2024 e la fine del 2026 e che per oltre due terzi degli investimenti mancavano target intermedi. Una struttura che misura tardi misura poco.\n\nLa condizionalità non è stata scelta nelle capitali: discende dal regolamento che istituisce il dispositivo, e i governi l'hanno ereditata. È la ragione per cui la voce sta accanto alla legge di Goodhart e non a un giudizio politico: il difetto è nel disegno dell'incentivo, non in chi lo ha applicato.",
+    articles: [
+      { title: "Quando i tassi li decide qualcun altro", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" }
     ]
   }
 
