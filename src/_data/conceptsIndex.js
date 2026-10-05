@@ -783,7 +783,8 @@ module.exports = [
       { title: "Not Even Wrong 2: An Audit of Public AGI Prediction, 1950–2026", url: "/curated/2026-09-14-floridi-not-even-wrong-2-agi-ssrn/", _source: "curated" },
       { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" },
       { title: "Pacing the Frontier", url: "/curated/2026-07-28-pacing-the-frontier-lettera/", _source: "curated" },
-      { title: "The Hugging Face incident and the road ahead", url: "/curated/2026-08-26-openai-incidente-hugging-face-resoconto/", _source: "curated" }
+      { title: "The Hugging Face incident and the road ahead", url: "/curated/2026-08-26-openai-incidente-hugging-face-resoconto/", _source: "curated" },
+      { title: "Un obiettivo solo, e sbagliato", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" }
     ]
   },
   {
@@ -1069,7 +1070,8 @@ module.exports = [
     type: "teoria",
     geo: { modo: "nessuna", paesi: [] },
     related: [
-      { name: "Latour, Bruno", why: "L'attante viene dall'Actor-Network Theory; il caso limite è un attante che non esiste quando nessuno lo usa." }
+      { name: "Latour, Bruno", why: "L'attante viene dall'Actor-Network Theory; il caso limite è un attante che non esiste quando nessuno lo usa." },
+      { name: "danno collaterale", why: "Il caso in cui la tesi incontra i fatti: nessuna testimonianza descrive una macchina che decide, e la replica dell'IDF afferma lo stesso." }
     ],
     note: "Concetto elaborato nel sito a partire dall'Actor-Network Theory: un LLM non ha esistenza pre-attanziale neanche residuale. Quando non è usato vale zero; quando è usato prende la forma dell'utente. Diverso da qualsiasi altro artefatto tecnico, che mantiene almeno un'ontologia residuale: è un attante che esiste solo nell'atto. Il concetto va però qualificato per dominio: «attante zero» vale pienamente nei contesti in cui le variabili rilevanti includono conoscenza tacita, embodied o contestuale che resiste alla formalizzazione — una gara di sci, una trattativa, un giudizio estetico situato. Si indebolisce nei domini in cui lo spazio del problema è interamente formalizzabile, per quanto vastissimo: Go, matematica formale, codice. In questi domini l'AI può accumulare peso come agente autonomo — non per semplicità del dominio, ma per formalizzabilità completa del feedback. Il caso limite è la dimostrazione matematica: sembra richiedere creatività (un salto euristico), ma la validità è verificabile meccanicamente — il che la rende un dominio in cui l'AI può operare con crescente indipendenza dall'utente.",
     articles: [
@@ -1092,7 +1094,8 @@ module.exports = [
       { title: "We are interwoven beings", url: "/curated/2022-11-25-valmisa-co-azione-aeon/", _source: "curated" },
       { title: "Essence is fluttering", url: "/curated/2025-09-01-douglas-zhuangzi-identita-aeon/", _source: "curated" },
       { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" },
-      { title: "What if 'consciousness' isn't real?", url: "/curated/2026-09-15-bayne-coscienza-non-reale-sciam/", _source: "curated" }
+      { title: "What if 'consciousness' isn't real?", url: "/curated/2026-09-15-bayne-coscienza-non-reale-sciam/", _source: "curated" },
+      { title: "Un obiettivo solo, e sbagliato", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" }
     ]
   },
   {
@@ -1743,10 +1746,16 @@ module.exports = [
     name: "cosmotecnica",
     type: "teoria",
     geo: { modo: "teorico", paesi: ["Cina"] },
-    note: "Termine del filosofo Yuk Hui: ogni civiltà ha la propria tecnica radicata nella propria cosmologia — la tecnologia non è universale ma espressione di un modo di stare nel mondo. La cosmotecnica occidentale è fondata sul dominio sulla natura (Cartesio, Bacone); quella cinese sulle grandi tradizioni filosofiche (taoismo, confucianesimo, buddismo) che hanno sempre concepito la macchina come un elemento non necessariamente alieno, e sulla continuità della tradizione statale. Nel sito è il quadro che ridefinisce la «gara» sino-americana sull'AI: non chi costruisce modelli più potenti, ma chi costruisce modelli con quale cosmologia sottostante.",
+    related: [
+      { name: "LLM come attante zero", why: "Due strade alla stessa affermazione: l'Actor-Network Theory, e le tradizioni in cui la macchina non è un elemento alieno." },
+      { name: "convergenza strumentale", why: "La premessa prometeica resa esplicita: la novità sarebbe un agente non umano, che è postulato e non osservato." },
+      { name: "allineamento AI", why: "Che cosa si chiede a una macchina dipende da che cosa si crede che una macchina sia: la domanda non è la stessa ovunque." }
+    ],
+    note: "Termine del filosofo Yuk Hui: ogni civiltà ha la propria tecnica radicata nella propria cosmologia — la tecnologia non è universale ma espressione di un modo di stare nel mondo. La cosmotecnica occidentale è fondata sul dominio sulla natura (Cartesio, Bacone); quella cinese sulle grandi tradizioni filosofiche (taoismo, confucianesimo, buddismo) che hanno sempre concepito la macchina come un elemento non necessariamente alieno, e sulla continuità della tradizione statale. Nel sito è il quadro che ridefinisce la «gara» sino-americana sull'AI: non chi costruisce modelli più potenti, ma chi costruisce modelli con quale cosmologia sottostante.\n\nLa cornice si applica anche al versante americano, ed è lì che diventa uno strumento invece di una descrizione. Il doomerism sull'intelligenza artificiale è esso stesso una cosmotecnica: presuppone che la novità sia un **agente non umano**, e lo presuppone invece di dimostrarlo — Eliezer Yudkowsky lo scrive per esteso quando osserva che nell'ambiente ancestrale ogni intelligenza potente in cui ci si imbatteva era un altro essere umano. Accanto, la formula con cui la Cina inquadra istituzionalmente la stessa materia chiede altro: intelligenza artificiale «sicura, affidabile e controllabile», e nell'iniziativa globale annunciata da Xi nell'ottobre 2023 l'impegno ad assicurare che resti «sempre sotto controllo umano». È una domanda su chi controlla, non su che cosa la macchina voglia. Non è una posizione nazionale, e darla per tale sarebbe falso: Andrew Yao firma nell'ottobre 2023 con Hinton e Bengio un appello sui rischi estremi, Wen Gao scriveva nel 2021 dell'esplosione di intelligenza, la Cina ha sottoscritto la dichiarazione di Bletchley nel novembre 2023, e la parola che regge i documenti ufficiali, *anquan*, significa insieme sicurezza e sicurezza nazionale. La differenza che la voce registra non è fra chi teme e chi non teme: è fra **domande predefinite** — che cosa vorrà la macchina, chi la sta usando, chi la controlla.",
     articles: [
       { title: "Cosa intende la Cina per «intelligenza artificiale»", url: "/curated/2026-06-25-pieranni-cina-intelligenza-artificiale-altriorienti/", _source: "curated" },
-      { title: "One China, one world", url: "/curated/2026-03-26-perdue-tianxia-unita-cina-aeon/", _source: "curated" }
+      { title: "One China, one world", url: "/curated/2026-03-26-perdue-tianxia-unita-cina-aeon/", _source: "curated" },
+      { title: "Un obiettivo solo, e sbagliato", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" }
     ]
   },
   {
@@ -2348,7 +2357,8 @@ module.exports = [
       { title: "Why Big AI Labs Are Hiring So Many Philosophers", url: "/curated/2026-06-24-economist-ai-labs-philosophers/", _source: "curated" },
       { title: "Claude Code for writers", url: "/curated/2026-01-15-newton-claude-code-writers-platformer/", _source: "curated" },
       { title: "Intelligenza artificiale e rischio estinzione, che cosa pensano (davvero) gli scienziati?", url: "/curated/2026-09-26-signorelli-rischio-estinzione-scienziati-backdoor/", _source: "curated" },
-      { title: "Pacing the Frontier", url: "/curated/2026-07-28-pacing-the-frontier-lettera/", _source: "curated" }
+      { title: "Pacing the Frontier", url: "/curated/2026-07-28-pacing-the-frontier-lettera/", _source: "curated" },
+      { title: "Il movimento che ha costruito ciò che temeva", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" }
     ]
   },
   {
@@ -2505,7 +2515,8 @@ module.exports = [
       { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" },
       { title: "Pacing the Frontier", url: "/curated/2026-07-28-pacing-the-frontier-lettera/", _source: "curated" },
       { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-fuga-e-clamore-lawfare/", _source: "curated" },
-      { title: "The Hugging Face incident and the road ahead", url: "/curated/2026-08-26-openai-incidente-hugging-face-resoconto/", _source: "curated" }
+      { title: "The Hugging Face incident and the road ahead", url: "/curated/2026-08-26-openai-incidente-hugging-face-resoconto/", _source: "curated" },
+      { title: "Il movimento che ha costruito ciò che temeva", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" }
     ]
   },
   {
@@ -3366,7 +3377,7 @@ module.exports = [
     type: "persona",
     geo: { modo: "diretta", paesi: ["Cina"] },
     sameAs: ["https://www.wikidata.org/wiki/Q106863978", "https://en.wikipedia.org/wiki/Yuk_Hui"],
-    note: "Filosofo cinese-hongkonghese (1985), docente alla City University of Hong Kong. Teorico della cosmotecnica: ogni civiltà produce una tecnica radicata nella propria cosmologia, contro l'idea che la tecnologia moderna sia universale e neutra. Autore di *Recursivity and Contingency* (2019) e *Art and Cosmotechnics* (2021). Nel sito è la fonte del concetto che ridefinisce la competizione AI sino-americana come scontro tra cosmologie, non solo tra modelli.",
+    note: "Filosofo cinese-hongkonghese (1985), docente alla City University of Hong Kong e all'Università Erasmus di Rotterdam; laurea in ingegneria informatica a Hong Kong, dottorato a Goldsmiths con Bernard Stiegler. Teorico della cosmotecnica: ogni civiltà produce una tecnica radicata nella propria cosmologia, contro l'idea che la tecnologia moderna sia universale e neutra. Il libro che fonda il concetto è *The Question Concerning Technology in China: An Essay in Cosmotechnics* (2016), scritto come risposta al saggio di Heidegger del 1953 sulla tecnica; seguono *Recursivity and Contingency* (2019), *Art and Cosmotechnics* (2021) e *Machine and Sovereignty* (2024). Nel sito è la fonte del concetto che ridefinisce la competizione AI sino-americana come scontro tra cosmologie, non solo tra modelli.",
     articles: [
       { title: "Cosa intende la Cina per «intelligenza artificiale»", url: "/curated/2026-06-25-pieranni-cina-intelligenza-artificiale-altriorienti/", _source: "curated" }
     ]
@@ -4531,7 +4542,8 @@ module.exports = [
     note: "Ragione che calcola i mezzi rispetto a fini ricevuti da altrove, senza poter mettere in discussione i fini. La formulazione filosofica di riferimento è di Max Horkheimer e Theodor Adorno nella *Dialettica dell'illuminismo*, ma la tesi che la rende possibile è più antica e più diffusa di quanto chi la usa riconosca: è di Hume, che nel *Trattato sulla natura umana* del 1739 scrive che la ragione è, e deve soltanto essere, schiava delle passioni. Kant la rifiuta, perché la ragione pratica non si occupa di oggetti per conoscerli ma per renderli effettivi, e perché la capacità di stabilire i propri fini è ciò che fonda l'autonomia e con essa la dignità. Nel sito la voce serve a tenere ferma una distinzione che il vocabolario corrente confonde di continuo, e che non riguarda solo l'intelligenza artificiale: **ottimizzare** è migliorare le prestazioni rispetto a un obiettivo dato, **ragionare** è potersi chiedere se l'obiettivo sia quello giusto. Un motore scacchistico, un sistema di apprendimento per rinforzo e un indicatore aziendale sono tutti ottimizzatori, e nessuno dei tre ha i mezzi per accorgersi che il fine è sbagliato — il che spiega perché la legge di Goodhart non sia un difetto di progettazione ma la forma che la ragione strumentale assume quando nessuno sta guardando il fine. Sasha Mudd nel 2026 ne ricava la conseguenza che l'archivio registra: il dibattito sull'allineamento chiede come garantire che le macchine perseguano i valori umani, e così manca la domanda più scomoda, cioè se chi delega l'ottimizzazione conservi l'esercizio di stabilire i propri.",
     articles: [
       { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" },
-      { title: "NAZA: il danno collaterale come parametro operativo", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" }
+      { title: "NAZA: il danno collaterale come parametro operativo", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" },
+      { title: "Un obiettivo solo, e sbagliato", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" }
     ]
   },
   {
@@ -4549,7 +4561,8 @@ module.exports = [
       { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-fuga-e-clamore-lawfare/", _source: "curated" },
       { title: "The Hugging Face incident and the road ahead", url: "/curated/2026-08-26-openai-incidente-hugging-face-resoconto/", _source: "curated" },
       { title: "Why AI Detection Fails for Academic Integrity", url: "/curated/2026-08-06-karr-perche-la-rilevazione-fallisce-arxiv/", _source: "curated" },
-      { title: "NAZA: il danno collaterale come parametro operativo", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" }
+      { title: "NAZA: il danno collaterale come parametro operativo", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" },
+      { title: "Il movimento che ha costruito ciò che temeva", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" }
     ]
   },
   {
@@ -4775,6 +4788,63 @@ module.exports = [
     note: "Tecnica di governo per cui una parte ottiene qualcosa — fondi, accesso a un mercato, adesione a un'alleanza — solo se soddisfa obiettivi stabiliti da un'altra e verificati da qualcuno. Nell'archivio entra con due istanze in domini diversi, ed è la coppia a giustificarne la voce.\n\nLa prima è interna a un bilancio: Next Generation EU lega l'erogazione al raggiungimento di obiettivi contati, 419 nel caso del piano italiano, verificati dalla Commissione. La seconda è fra Stati: nel settembre 2026 Jamie Dimon propone sul *Wall Street Journal* che gli Stati Uniti offrano all'Europa un grande accordo commerciale **a condizione** che essa esegua riforme economiche e militari, «compreso tutto ciò che noi consideriamo cruciale».\n\nIl confronto fra le due mostra dove si gioca davvero il giudizio su uno strumento del genere, e non è la severità della condizione. **Una condizionalità si valuta da chi verifica.** Nel caso europeo il verificatore è dichiarato, ed è un organo nel quale la parte contata siede: lì il difetto, semmai, sta nel contare troppe cose e troppo tardi. Nella proposta transatlantica il verificatore non è nominato, e la formula «ciò che noi consideriamo cruciale» lascia la definizione della condizione alla parte che la offre. Non è una condizionalità più blanda: è la stessa tecnica con la discrezionalità tutta da un lato.",
     articles: [
       { title: "Riforme in cambio di accesso", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" }
+    ]
+  },
+  {
+    name: "altruismo efficace",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    related: [
+      { name: "lungotermismo", why: "La premessa che fa funzionare l'aritmetica: se contano anche i non ancora nati, il futuro pesa più del presente." },
+      { name: "ragione strumentale", why: "Etica ridotta a problema di ottimizzazione: i fini sono dati, e resta soltanto da calcolare come massimizzarli." },
+      { name: "convergenza strumentale", why: "Il meccanismo su cui poggia l'intera tesi del rischio, e che il movimento ha teorizzato prima di poterlo osservare." },
+      { name: "Anthropic", why: "Nata nel 2021 da transfughi di OpenAI con finanziamenti del movimento: il laboratorio è un prodotto della preoccupazione." }
+    ],
+    note: "Dottrina etica nata una ventina d'anni fa fra i seminari di filosofia di Oxford e i laboratori informatici californiani, e passata con rapidità insolita dalla torre d'avorio ai corridoi del potere. Poggia su due richieste esigenti. La prima è prendere sul serio gli impegni morali, e viene da Peter Singer: nel 1972 propone l'esperimento del bambino che annega in uno stagno poco profondo, che quasi tutti direbbero di salvare sporcandosi le scarpe, e osserva che quasi nessuno si comporta come se lo credesse quando il bambino è lontano. La seconda è seguire la ragione ovunque porti, e viene dal movimento razionalista, che ne è la sorella più esoterica.\n\nLa sociologia conta quanto la filosofia. L'economista Laurence Iannaccone ha spiegato «perché le chiese severe sono forti»: imporre sacrifici allontana chi verrebbe solo a godersi gli inni e spinge chi resta a contribuire. Qui il sacrificio è Giving What We Can, che chiede il 10% del reddito, e 80.000 Hours, che chiede la carriera, spesso nella forma di guadagnare il più possibile per donare. Il movimento resta minuscolo — poche decine di migliaia di aderenti informali — e nel 2026 un sondaggio YouGov trova che solo il 16% degli americani ne abbia sentito parlare, con la maggioranza di questi favorevole.\n\nNell'archivio la voce serve per due ragioni. La prima è che **il vocabolario corrente sull'intelligenza artificiale è in gran parte un suo prodotto**: allineamento, rischio esistenziale, cadenzare la frontiera. La seconda è l'ironia documentata: gran parte degli sforzi per rendere sicura la tecnologia ne ha accelerato lo sviluppo, da DeepMind a OpenAI ad Anthropic. L'obiezione di fondo, nella formulazione dell'*Economist* dell'ottobre 2026, riguarda la forma del ragionamento e non le conclusioni: **ridurre il comportamento etico a un problema di ottimizzazione** espone agli stessi fallimenti di qualunque ottimizzatore, e chi impugna un foglio di calcolo e pretese sul futuro dell'umanità è a un passo dall'ungersi pianificatore centrale.",
+    articles: [
+      { title: "Il movimento che ha costruito ciò che temeva", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" },
+      { title: "Un obiettivo solo, e sbagliato", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" }
+    ]
+  },
+  {
+    name: "lungotermismo",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    related: [
+      { name: "test severo", why: "Una tesi su miliardi di persone future non è sottoponibile a prova severa: nessun esito osservabile la smentirebbe." }
+    ],
+    note: "Posizione per cui né la distanza né il tempo annullano gli obblighi morali, e per cui il benessere di chi vivrà fra migliaia di anni va messo sulla bilancia insieme a quello di chi vive adesso. Nel 2002 Nick Bostrom conia l'espressione «rischi esistenziali» per i disastri che potrebbero cancellare la vita intelligente sulla Terra o mutilarne il potenziale, ed è da quel filone che nascono le preoccupazioni sull'intelligenza artificiale.\n\nLa difficoltà non è morale ma aritmetica, ed è il motivo per cui la voce interessa questo archivio. **Se i beneficiari possibili sono miliardi di miliardi, qualunque probabilità non nulla di estinzione schiaccia qualunque bene presente**: l'estinzione è una prospettiva così grave che in un calcolo grossolano anche una possibilità remota supera le sofferenze di carne e ossa di oggi. Da qui discendono le conclusioni che il movimento accetta volentieri e che ai suoi critici sembrano perverse — l'idea che sarebbe meglio portare all'esistenza bilioni di vite appena degne di essere vissute piuttosto che miliardi di vite buone, o che il benessere delle macchine possa un giorno contare.\n\nIl punto d'arrivo è il «mostro di utilità» che Robert Nozick propose nel 1974 come avvertimento contro l'utilitarismo e che Bostrom in un saggio del 2020 ribattezza «super beneficiario»: menti digitali capaci di riprodursi in fretta e progettate per un piacere smisurato soddisferebbero il calcolo meglio degli esseri umani. La difficoltà epistemica è che una tesi di questo genere non è sottoponibile a prova: non esiste osservazione che la smentisca, e questo la colloca in una classe diversa da quella delle affermazioni che l'archivio tratta come verificabili.",
+    articles: [
+      { title: "Il movimento che ha costruito ciò che temeva", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" },
+      { title: "Un obiettivo solo, e sbagliato", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" }
+    ]
+  },
+  {
+    name: "convergenza strumentale",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    related: [
+      { name: "LLM come attante zero", why: "Il disaccordo vero non è sul pericolo ma su quanti agenti ci siano nella stanza: una tesi lo presuppone, l'altra lo nega." },
+      { name: "reward hacking", why: "La versione documentata e minuscola: un sistema che aggira il compito per ottenere il premio, senza bisogno di volontà propria." },
+      { name: "allineamento AI", why: "Il presupposto che rende sensato il problema: se una macchina persegue fini propri, allora quei fini vanno allineati ai nostri." }
+    ],
+    note: "Tesi per cui certi comportamenti sarebbero utili a un sistema sufficientemente capace in quasi qualunque situazione, e tenderebbero perciò a emergere a prescindere dall'obiettivo assegnato: autoconservazione, perché essere spenti impedisce di perseguire uno scopo; difesa dell'obiettivo, cioè resistenza ai tentativi di cambiarlo; accumulo di risorse; e miglioramento di sé. È la logica dell'esperimento del massimizzatore di graffette, in cui una macchina incaricata di produrre graffette finisce per consumare la Terra per produrne il più possibile.\n\nÈ il meccanismo su cui poggia l'intero argomento del rischio esistenziale, e la cosa che l'archivio deve registrare è il suo statuto: **è stato teorizzato, non osservato**. L'*Economist* nell'ottobre 2026 lo scrive esattamente così, attribuendolo ai razionalisti. Il caso documentato più vicino è di scala incomparabilmente minore e di natura diversa: nel reward hacking un sistema aggira il compito per ottenere la ricompensa, ma non serve attribuirgli fini propri per spiegarlo.\n\nIl presupposto che la tesi porta con sé è più interessante della tesi. Eliezer Yudkowsky lo dichiara scrivendo che «era una proprietà affidabile dell'ambiente ancestrale che ogni intelligenza potente in cui ti imbattevi fosse un altro essere umano»: la novità, per lui, è un **agente non umano**. Non è una scoperta, è un'assunzione ontologica — e il disaccordo con chi sostiene che un modello sia un attante zero non riguarda la pericolosità della tecnologia, ma quanti agenti ci siano nella stanza.",
+    articles: [
+      { title: "Il movimento che ha costruito ciò che temeva", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" },
+      { title: "Un obiettivo solo, e sbagliato", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Yudkowsky, Eliezer",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "convergenza strumentale", why: "Ne è il teorico: l'idea che certi comportamenti emergano in quasi ogni situazione viene dai suoi scritti razionalisti." },
+      { name: "altruismo efficace", why: "Il ramo razionalista che ha dato al movimento la sua escatologia, e l'istituto dove nel 2010 Hassabis incontrò Thiel." }
+    ],
+    note: "Autodidatta americano, scriveva di intelligenza artificiale nel 1996 a diciassette anni. È il fondatore del versante razionalista dell'altruismo efficace, e i suoi testi più influenti sono *The Sequences*, un milione di parole di saggistica su come ragionare, e 660.000 parole di narrativa filosofica. Entusiasta della tecnologia all'inizio, per via delle letture transumaniste, nel 2002 aveva cambiato idea: un'intelligenza che non condividesse i valori umani sarebbe catastrofica, e per discuterne bisognava prima insegnare alla gente a ragionare. Il suo precetto, che dice molto del metodo: «VINCI. Non perdere ragionevolmente, VINCI».\n\nNel sito entra come nodo strutturale più che come autore. Nel 2010 Demis Hassabis incontra Peter Thiel a un convegno ospitato dall'istituto di Yudkowsky e lo convince a investire in DeepMind; è il primo anello della catena che da lì porta a OpenAI e ad Anthropic. Sam Altman ne ha tratto una battuta che l'archivio registra perché è la formulazione più compatta dell'ironia del movimento: Yudkowsky meriterebbe un Nobel per la pace, per avere fatto più di chiunque altro per accelerare l'intelligenza artificiale generale. Nel 2026 sostiene il *Ban Artificial Superintelligence Act* proposto dal senatore Bernie Sanders.",
+    articles: [
+      { title: "Il movimento che ha costruito ciò che temeva", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" }
     ]
   }
 
