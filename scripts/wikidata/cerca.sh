@@ -1,13 +1,15 @@
 #!/usr/bin/env bash
 # Candidati Wikidata per le voci di conceptsIndex.js. Da lanciare dal Mac (serve la rete).
 #
-#   scripts/wikidata/cerca.sh "hagwon" "mark to market"   cerca quei termini
-#   scripts/wikidata/cerca.sh --elenco                    elenca le voci ancora senza sameAs
-#   scripts/wikidata/cerca.sh --tutte                     cerca tutte le voci elencate sopra
+#   scripts/wikidata/cerca.sh "hagwon" "mark to market"        cerca quei termini
+#   scripts/wikidata/cerca.sh "danno collaterale=collateral damage|collateral casualty"
+#                                                            voce=termini di ricerca, separati da |
+#   scripts/wikidata/cerca.sh --elenco                         elenca le voci ancora senza sameAs
+#   scripts/wikidata/cerca.sh --tutte                          cerca tutte le voci elencate sopra
 #
-# Non scrive nulla: stampa i primi cinque candidati (inglese e italiano) con Q-id,
-# etichetta e descrizione. Si sceglie guardando la descrizione e si risponde con le
-# associazioni. Un Q-id sbagliato è peggio di nessun Q-id: nel dubbio, nessuno.
+# Senza "=", i termini si ricavano dal nome: "Cognome, Nome" diventa "Nome Cognome",
+# "A / B" si cerca come A e come B. Non scrive nulla: stampa i candidati (inglese e
+# italiano) con Q-id, etichetta e descrizione. Un Q-id sbagliato è peggio di nessuno.
 set -u
 cd "$(dirname "$0")/../.." || exit 1
 UA="claudiocammarano.com wikidata-check (https://claudiocammarano.com)"
@@ -27,7 +29,7 @@ for p in sys.argv[1:]:
         seen.add(r["id"])
         print("  %-11s %-38s %s" % (r["id"], (r.get("label") or "")[:38], (r.get("description") or "")[:90]))
 if not seen:
-    print("  (nessun candidato, o rete non raggiungibile)")
+    print("  (nessun candidato)")
 PYEOF
 
 voci_mancanti() {
@@ -40,22 +42,42 @@ voci_mancanti() {
   '
 }
 
+termini_di() {
+  local v="$1"
+  case "$v" in
+    *=*) printf '%s\n' "${v#*=}" | tr '|' '\n'; return ;;
+  esac
+  v="${v// δ/}"
+  if [[ "$v" =~ ^([^,]+),\ (.+)$ ]]; then
+    echo "${BASH_REMATCH[2]} ${BASH_REMATCH[1]}"
+  else
+    printf '%s\n' "$v" | awk '{ gsub(/ \/ /, "\n"); print }'
+  fi
+}
+
 cerca() {
-  local term="$1" lang
-  echo "── $term"
-  for lang in en it; do
-    curl -s -m 20 -A "$UA" -G "https://www.wikidata.org/w/api.php" \
-      --data-urlencode "action=wbsearchentities" --data-urlencode "search=$term" \
-      --data-urlencode "language=$lang" --data-urlencode "uselang=$lang" \
-      --data-urlencode "limit=5" --data-urlencode "format=json" > "$TMP/$lang.json"
-  done
-  python3 "$TMP/stampa.py" "$TMP/en.json" "$TMP/it.json"
+  local voce="$1" t lang i=0
+  echo "── ${voce%%=*}"
+  rm -f "$TMP"/r*.json
+  while IFS= read -r t; do
+    [ -z "$t" ] && continue
+    for lang in en it; do
+      i=$((i+1))
+      curl -s -m 20 -A "$UA" -G "https://www.wikidata.org/w/api.php" \
+        --data-urlencode "action=wbsearchentities" --data-urlencode "search=$t" \
+        --data-urlencode "language=$lang" --data-urlencode "uselang=$lang" \
+        --data-urlencode "limit=5" --data-urlencode "format=json" > "$(printf '%s/r%03d.json' "$TMP" "$i")"
+    done
+  done <<EOF
+$(termini_di "$voce")
+EOF
+  python3 "$TMP/stampa.py" "$TMP"/r*.json
   sleep 0.3
 }
 
 case "${1:-}" in
   --elenco) voci_mancanti ;;
   --tutte)  voci_mancanti | while IFS= read -r t; do cerca "$t"; done ;;
-  "")       sed -n '2,9p' "$0" | sed 's/^# \{0,1\}//' ;;
+  "")       sed -n '2,12p' "$0" | sed 's/^# \{0,1\}//' ;;
   *)        for t in "$@"; do cerca "$t"; done ;;
 esac
