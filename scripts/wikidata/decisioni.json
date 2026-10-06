@@ -65,12 +65,15 @@
     "neghentropia": "Q252552",
     "legge della varietà richiesta": "Q724967",
     "capitale simbolico": "Q1751638",
-    "iperattenzione": "Q5957651"
+    "iperattenzione": "Q5957651",
+    "mark to market": "Q1900567",
+    "hagwon": "Q487517"
   },
   "nessun_qid": {
     "cosmotecnica": "Solo il libro di Yuk Hui ha un elemento: il concetto eredita la geografia dal teorico.",
     "incredulità verso le metanarrazioni": "Eredita da Lyotard.",
-    "istituzioni inclusive vs. estrattive": "Eredita da Acemoglu e Robinson."
+    "istituzioni inclusive vs. estrattive": "Eredita da Acemoglu e Robinson.",
+    "abitabilità": "Q21012180 (habitability) esiste ma è l'abitabilità planetaria/astrobiologica: non coincide con il senso socio-geografico di Blanc e Fleury. Lasciato senza aggancio."
   },
   "da_verificare": {},
   "geo": {
@@ -805,7 +808,9 @@
     "sovranità cognitiva",
     "guadagno epistemico",
     "piano dei regimi",
-    "Le Fake News e il Marketing del Vero"
+    "Le Fake News e il Marketing del Vero",
+    "riciclaggio informativo",
+    "indennizzo trattato da vendita"
   ],
   "cittadinanze_multiple": "si tengono tutte (approvato 25/9)"
 }

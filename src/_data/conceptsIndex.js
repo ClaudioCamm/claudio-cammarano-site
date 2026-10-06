@@ -4934,6 +4934,7 @@ module.exports = [
     name: "mark to market",
     type: "teoria",
     geo: { modo: "teorico", paesi: ["Stati Uniti"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q1900567", "https://en.wikipedia.org/wiki/Mark-to-market_accounting"],
     related: [
       { name: "condizionalità", why: "La stessa tecnica dichiarata due mesi prima da chi la esercita: accesso e sicurezza su un piatto, spesa militare e dazi sull'altro." },
       { name: "segnale costoso", why: "Una garanzia vale perché abbandonarla costa: dichiarare che verrà riprezzata in continuo toglie al segnale ciò che lo rendeva credibile." }
@@ -4960,6 +4961,7 @@ module.exports = [
     name: "hagwon",
     type: "istituzione",
     geo: { modo: "diretta", paesi: ["Corea del Sud"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q487517", "https://en.wikipedia.org/wiki/Hagwon"],
     related: [
       { name: "distinzione", why: "Lo stesso riconoscimento reciproco di Millman applicato a un capitale che non si rivende: la scuola media, non un oggetto, e dura una vita." },
       { name: "segregazione scolastica", why: "Stessa funzione di filtro per istruzione d'élite: qui il filtro è desiderato e insufficiente, là è subito e intenzionale." }
