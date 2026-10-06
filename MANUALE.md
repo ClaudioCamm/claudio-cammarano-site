@@ -349,6 +349,14 @@ Se invece il tema è in realtà un'**entità** (una persona, un paese, un'istitu
 ### Body
 Opzionale. Si usa solo per commenti molto estesi. Di solito il frontmatter basta.
 
+### Tipografia della description e delle note dei concetti
+
+La `description` dei curated (blocco YAML `|`) e la `note` delle voci di `conceptsIndex.js` passano dal filtro `mdBlock`, che rende Markdown con capoversi veri: nella description il capoverso è una riga vuota, nella `note` è `\n\n` dentro la stringa.
+
+- *Corsivo* per titoli di libri, riviste, film, podcast, e per i termini stranieri non acclimatati.
+- **Grassetto: solo asserzioni chiave, come frasi intere** — la stessa regola dei writings (sezione 1). Al massimo uno per capoverso, e non in ogni capoverso. Mai su un'etichetta, un nome, un termine o una cifra isolata: per quelli basta il corsivo, o niente.
+- **Resa**: il grassetto è blu, peso 500, come negli articoli (`.article-body strong`). Nelle note dei concetti, che sono in corsivo, l'enfasi si rovescia in tondo. Fino all'ottobre 2026 description e note non avevano una regola per il grassetto e il browser rendeva un nero pieno; la regola sta ora in `style.css`, accanto a `.tag-page-intro`.
+
 ---
 
 ## 3. Pubblicare una nota del Lab
@@ -521,7 +529,7 @@ Questo file è la **fonte di verità** per l'indice analitico, le pagine `/conce
 1. Aprire `src/_data/conceptsIndex.js`
 2. Aggiungere la voce nell'array, rispettando il formato sopra
 3. Per i **writings**: inserire subito gli articoli che lo citano nell'array `articles`
-4. Per i **curated** e **learning**: lasciare `articles: []` e aggiungere il nome nel campo `concepts:` del file — il sistema li unisce automaticamente a build time tramite `sync-concepts.js` (prebuild) e `mergedConceptsIndex` (build)
+4. Per i **curated** e **learning**: lasciare `articles: []` — **su una riga sola**: aperto su due righe vuote, `sync-concepts.js` lascia una virgola orfana e il build si ferma con «articolo senza url» — e aggiungere il nome nel campo `concepts:` del file — il sistema li unisce automaticamente a build time tramite `sync-concepts.js` (prebuild) e `mergedConceptsIndex` (build)
 5. Per le **note del lab**: tagging manuale selettivo — vedi sezione 3
 6. Fare il build: la pagina `/concetti/nome-slug/` appare automaticamente
 
@@ -584,7 +592,7 @@ Tre regole, fatte rispettare dal build:
 
 Il criterio per decidere se un legame esiste: *le due note si nominano a vicenda?* Se la nota di A parla di B — o della cosa che B è — il legame è già argomentato e il `why` deve solo renderlo esplicito. Se condividono soltanto un articolo o un po' di lessico, è scenografia.
 
-A settembre 2026: 52 legami su 44 voci dichiaranti. I legami **non entrano ancora nel grafo**: `/mappa/` e il riquadro HEB continuano a disegnare la sola co-occorrenza.
+A ottobre 2026: 389 legami su 211 voci dichiaranti. Il limite di 5 conta i legami **dichiarati nella voce**, non quelli che riceve: una voce già a 5 può ancora essere la destinazione di un legame dichiarato altrove — ed è lì che va scritto. I legami **non entrano ancora nel grafo**: `/mappa/` e il riquadro HEB continuano a disegnare la sola co-occorrenza.
 
 **Un effetto collaterale da conoscere: `related` duplica i nomi nel file.** Dichiarare un legame significa scrivere il nome di una voce dentro un'altra voce — e quel nome può trovarsi molto prima della voce vera e propria. `sync-concepts.js` cercava il concetto alla prima occorrenza del nome nel file: con i legami attivi, quella prima occorrenza può essere un `related` altrui, e l'articolo finiva appeso alla voce sbagliata. Peggio: il controllo anti-duplicazione guardava la voce giusta, quindi il problema si ripeteva a ogni build, in silenzio, accumulando copie.
 
@@ -638,6 +646,14 @@ Da settembre 2026 lo stesso indice esce anche in forma aggregata, generata a bui
 `conceptsIndex.js` contiene il nome di una voce in due posti diversi: nella sua definizione (`name:`) e dentro i `related` di ogni altra voce che la richiama. Una sostituzione testuale ancorata su `name: "X"` colpisce la prima occorrenza nel file, che quasi sempre **non** è la definizione ma un riferimento in un'altra voce — e il testo finisce nella nota sbagliata senza che nessun validatore se ne accorga, perché il file resta sintatticamente valido.
 
 Regola: per modificare la nota di una voce esistente si ancora su una stringa presa **dalla nota stessa**, verificando che compaia una volta sola nel file. Stessa cosa per aggiungere un legame: si ancora sul `why` di un legame già presente in quella voce, non sul nome della voce di destinazione. Dopo ogni modifica si rilegge la voce toccata e si controlla che il testo sia dove doveva andare: i validatori verificano struttura e geografia, non la destinazione di una sostituzione.
+
+### Quanto pesa un pezzo — carta e mappa
+
+Dal 5 ottobre 2026 non tutti i pezzi pesano uguale. Un writing vale **1,5**, un curated **1**, e ogni catena che cita un curated nel proprio campo `fonti` gli aggiunge **0,25**. Il calcolo vive in `scripts/peso.js` (costanti `PESO_WRITING` e `BONUS_CATENA`) e lo usano la carta della home (filtro `cartaGeo` in `.eleventy.js`) e il raggio dei nodi in `/mappa/` (`graphLayout.js` → campo `peso`, letto da `heb.js`); il tooltip della mappa continua a mostrare il numero intero dei pezzi.
+
+Le catene (`layout: layouts/catena.njk`) entrano nel grafo: i loro `concepts` vengono aggiunti agli `articles` delle voci. I writings ordinari no — per loro il collegamento resta manuale in `conceptsIndex.js` (sezione 1).
+
+La regola è dichiarata pubblicamente in home e nel colophon: **se si cambiano le costanti, vanno aggiornati anche quei due testi.**
 
 ## 6. Come funziona la navigazione semantica
 
@@ -854,6 +870,15 @@ Nel frattempo, le tre cose che divergono e che è facile dimenticare:
 
 **Netlify build fallisce**
 → Guardare il log su `app.netlify.com` → Deploy → log del deploy fallito. Di solito è un errore di sintassi in un file `.md` o `.njk`, oppure (da oggi) un avviso di concetti non registrati che però non blocca il deploy — è solo un promemoria, non un errore.
+
+**Il build si ferma con «articolo senza url» su una voce appena creata**
+→ La voce ha `articles` aperto su due righe vuote: `sync-concepts.js` inserisce l'articolo dopo `[` e lascia una virgola orfana. Scrivere `articles: []` su una riga sola (sezione 5).
+
+**Il build fallisce per un legame «dichiarato due volte»**
+→ L'arco esiste già, scritto nell'altra voce. Non duplicarlo: se serve aggiornarne la ragione, si modifica il `why` dove è dichiarato (sezione 5).
+
+**Il build lanciato da una sessione Claude fallisce su `@resvg/resvg-js-linux-arm64-gnu` o con `EACCES` in `_site/downloads`**
+→ Artefatti dell'ambiente Linux della sessione, non del repo: sul Mac e su Netlify non si presentano. Rimedi: `npm install --no-save @resvg/resvg-js-linux-arm64-gnu` (non tocca `package.json`) e `rm -rf _site/downloads` prima di ricostruire.
 
 **Grafo non compare**
 → Il grafo (pagine concetto e `/mappa/`) è visibile solo su schermo ≥ 900px. Su mobile è sostituito dalla lista articoli, invariata.

@@ -2935,6 +2935,15 @@ body.irene-page .site-nav a.active {
   font-style: normal;
 }
 
+/* Il grassetto nelle description dei curated e nelle note dei concetti segue
+   la convenzione dei writings (.article-body strong): peso 500, blu. Prima
+   questi due blocchi non avevano regola e il browser rendeva un nero pieno. */
+.curated-description strong,
+.tag-page-intro strong {
+  font-weight: 500;
+  color: var(--color-primary-medium);
+}
+
 /* La nota dei concetti e la description dei curated passano da mdBlock, che
    emette capoversi veri: prima erano un <p> unico con i ritorni a capo
    collassati. I margini interni vanno dichiarati qui perche' questi blocchi
