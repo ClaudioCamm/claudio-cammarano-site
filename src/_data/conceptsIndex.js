@@ -2817,7 +2817,8 @@ module.exports = [
       { title: "GPT detectors are biased against non-native English writers", url: "/curated/2023-07-10-liang-rilevatori-non-madrelingua-patterns/", _source: "curated" },
       { title: "Why AI Detection Fails for Academic Integrity", url: "/curated/2026-08-06-karr-perche-la-rilevazione-fallisce-arxiv/", _source: "curated" },
       { title: "Il libro che la biblioteca non possiede", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" },
-      { title: "Riforme in cambio di accesso", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" }
+      { title: "Riforme in cambio di accesso", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" },
+      { title: "L'alleanza valutata a prezzi di mercato", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" }
     ]
   },
   {
@@ -2839,7 +2840,8 @@ module.exports = [
       { title: "A Splintered Internet? Internet Fragmentation and the Strategies of China, Russia, India and the European Union", url: "/curated/2024-02-01-nocetti-splintered-internet-ifri/", _source: "curated" },
       { title: "Is Kaliningrad, Russia's exclave surrounded by EU countries, an asset or a liability?", url: "/curated/2022-06-06-economist-kaliningrad-risorsa-o-ostaggio/", _source: "curated" },
       { title: "Quando i tassi li decide qualcun altro", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" },
-      { title: "Riforme in cambio di accesso", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" }
+      { title: "Riforme in cambio di accesso", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" },
+      { title: "L'alleanza valutata a prezzi di mercato", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" }
     ]
   },
   {
@@ -2893,7 +2895,8 @@ module.exports = [
       { title: "以贡献为导向深化高校分类评价改革", url: "/curated/2026-03-24-xia-valutazione-differenziata-universita-cina/", _source: "curated" },
       { title: "A Splintered Internet? Internet Fragmentation and the Strategies of China, Russia, India and the European Union", url: "/curated/2024-02-01-nocetti-splintered-internet-ifri/", _source: "curated" },
       { title: "Internet Fragmentation's Outward Turn", url: "/curated/2025-06-01-fidler-splinternet-outward-turn-sciencespo/", _source: "curated" },
-      { title: "China's kids rank near the top in global school tests", url: "/curated/2026-09-24-economist-pisa-cina-campione-bsjz/", _source: "curated" }
+      { title: "China's kids rank near the top in global school tests", url: "/curated/2026-09-24-economist-pisa-cina-campione-bsjz/", _source: "curated" },
+      { title: "L'alleanza valutata a prezzi di mercato", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" }
     ]
   },
   {
@@ -3864,7 +3867,8 @@ module.exports = [
       { title: "We're living through an explainer epidemic", url: "/curated/2026-09-10-pitcher-epidemia-explainer-dazed/", _source: "curated" },
       { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-fuga-e-clamore-lawfare/", _source: "curated" },
       { title: "« J'éprouve une compassion profonde pour Thélyson Orélien »", url: "/curated/2026-09-24-mbougar-sarr-compassione-profonda-nouvelobs/", _source: "curated" },
-      { title: "Plagiat, IA : le prix Goncourt exclut le roman de Thélyson Orélien", url: "/curated/2026-09-25-goncourt-esclusione-orelien-actualitte/", _source: "curated" }
+      { title: "Plagiat, IA : le prix Goncourt exclut le roman de Thélyson Orélien", url: "/curated/2026-09-25-goncourt-esclusione-orelien-actualitte/", _source: "curated" },
+      { title: "L'alleanza valutata a prezzi di mercato", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" }
     ]
   },
   {
@@ -4806,7 +4810,8 @@ module.exports = [
     ],
     note: "Tecnica di governo per cui una parte ottiene qualcosa — fondi, accesso a un mercato, adesione a un'alleanza — solo se soddisfa obiettivi stabiliti da un'altra e verificati da qualcuno. Nell'archivio entra con due istanze in domini diversi, ed è la coppia a giustificarne la voce.\n\nLa prima è interna a un bilancio: Next Generation EU lega l'erogazione al raggiungimento di obiettivi contati, 419 nel caso del piano italiano, verificati dalla Commissione. La seconda è fra Stati: nel settembre 2026 Jamie Dimon propone sul *Wall Street Journal* che gli Stati Uniti offrano all'Europa un grande accordo commerciale **a condizione** che essa esegua riforme economiche e militari, «compreso tutto ciò che noi consideriamo cruciale».\n\nIl confronto fra le due mostra dove si gioca davvero il giudizio su uno strumento del genere, e non è la severità della condizione. **Una condizionalità si valuta da chi verifica.** Nel caso europeo il verificatore è dichiarato, ed è un organo nel quale la parte contata siede: lì il difetto, semmai, sta nel contare troppe cose e troppo tardi. Nella proposta transatlantica il verificatore non è nominato, e la formula «ciò che noi consideriamo cruciale» lascia la definizione della condizione alla parte che la offre. Non è una condizionalità più blanda: è la stessa tecnica con la discrezionalità tutta da un lato.",
     articles: [
-      { title: "Riforme in cambio di accesso", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" }
+      { title: "Riforme in cambio di accesso", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" },
+      { title: "L'alleanza valutata a prezzi di mercato", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" }
     ]
   },
   {
@@ -4908,6 +4913,32 @@ module.exports = [
     note: "Tecnica di propaganda che non nasconde il messaggio ma la sua origine: il contenuto viene tradotto, riscritto e innestato su rimostranze locali già esistenti, così che all'uscita si legga come produzione domestica e non come messaggistica straniera. Il termine inglese è *information laundering*; nel sito entra con l'analisi di Oleksandr Liemienov e Sofiia Maksymiv (StateWatch) sul caso finlandese, settembre 2026.\n\nL'interesse non è il caso ma la struttura, che è il rovescio di una cosa già registrata altrove. **Non si accerta l'origine di un contenuto ispezionando il contenuto**: finora l'archivio l'ha scritto come limite di chi verifica — un rilevatore di scrittura automatica che non può decidere da solo, un test di coscienza inutilizzabile su un modello addestrato sulla letteratura che quel test descrive. Il riciclaggio informativo è lo stesso fatto adottato come metodo da chi attacca.\n\nDa qui la conseguenza che vale al di là del caso: **una difesa che funziona riconoscendo una firma — fonte straniera, registro propagandistico, canale noto — fallisce contro un avversario che la firma la toglie**. È il motivo per cui il caso istruttivo è la Finlandia, il paese europeo più citato per l'alfabetizzazione mediatica inserita nei programmi scolastici, e la ragione per cui le sanzioni contro singole testate e il blocco automatizzato dei domini cloni colpiscono precisamente ciò a cui la tecnica ha rinunciato.",
     articles: [
       { title: "Quando la propaganda smette di sembrare straniera", url: "/curated/2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24/", _source: "curated" }
+    ]
+  },
+  {
+    name: "mark to market",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "condizionalità", why: "La stessa tecnica dichiarata due mesi prima da chi la esercita: accesso e sicurezza su un piatto, spesa militare e dazi sull'altro." },
+      { name: "segnale costoso", why: "Una garanzia vale perché abbandonarla costa: dichiarare che verrà riprezzata in continuo toglie al segnale ciò che lo rendeva credibile." }
+    ],
+    note: "Convenzione contabile per cui un'attività si iscrive al valore corrente di mercato e non al costo storico. Nell'archivio entra per la sua trasposizione alle alleanze politiche, dichiarata il 23 luglio 2026 da Elbridge Colby, sottosegretario alla Difesa americano, sul *New York Times*: «il presidente insiste che valutiamo le cose a prezzi di mercato», e l'obiettivo verso gli alleati è «prezzare accuratamente la partnership e la relazione con gli Stati Uniti».\n\nApplicata a una relazione fra Stati la convenzione dice due cose precise. La relazione si riprezza in continuo, e **il contributo passato non si porta avanti**: è l'analogia che Colby stesso propone, uno studio professionale fra cugini in cui un socio è cresciuto molto, le quote sono rimaste quelle e gli altri continuano a ricordare le vacanze insieme. Il libro mastro ha due piatti dichiarati: da un lato l'accesso — all'intelligenza artificiale, all'energia — dall'altro la spesa militare e i dazi.\n\nIl limite della trasposizione è quello che la contabilità non registra, ed è il motivo per cui la voce è un attrezzo e non uno slogan. **Una garanzia ha valore di deterrenza in proporzione a quanto costerebbe abbandonarla**: dichiarare che verrà riprezzata a ogni momento rimuove l'elemento costoso e non rinegoziabile che la rendeva credibile. Colby risolve il problema dentro la propria cornice, come calibrazione — rassicurare abbastanza da non perdere l'alleato, tenerlo sulle spine quanto basta perché contribuisca — e questo presuppone che la grandezza da calibrare sia misurabile. L'obiezione di Ross Douthat, nella stessa conversazione, è che non lo sia, perché è fatta di onore, di ferite e di voglia di affermarsi: il caso canadese ne è l'istanza.",
+    articles: [
+      { title: "L'alleanza valutata a prezzi di mercato", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Canada",
+    type: "paese",
+    geo: { modo: "diretta", paesi: ["Canada"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q16", "https://it.wikipedia.org/wiki/Canada"],
+    related: [
+      { name: "mark to market", why: "Il caso in cui il riprezzamento dell'alleanza produce la reazione che il calcolo non aveva previsto." }
+    ],
+    note: "Nell'archivio entra come il luogo in cui una strategia costruita sul calcolo razionale degli alleati incontra una risposta che quel calcolo non prevedeva.\n\nIl lato della richiesta è esplicito. Nel luglio 2026 il sottosegretario alla Difesa americano Elbridge Colby descrive il Canada come «funzionalmente smilitarizzato» dai tempi del primo governo Trudeau — il padre — e dichiara che agli Stati Uniti basta che il paese faccia come i tedeschi o i polacchi: che i dollari aggiuntivi per la difesa comprino capacità militare vera e servano a bisogni comuni, a cominciare dagli impegni NORAD. Sulla scelta fra l'F-35 americano e il Gripen svedese l'argomento è di interoperabilità prima che di prestazioni: un velivolo che comunica peggio con quelli americani espone anche gli americani.\n\nIl lato che la dottrina non sa prezzare è l'altro. Le battute del presidente americano sul Canada come cinquantunesimo Stato, le dichiarazioni sulla Groenlandia e l'immagine della bandiera americana distesa su gran parte del Nordamerica hanno prodotto la posizione pubblica del primo ministro Mark Carney, per cui il Canada non può più contare sugli Stati Uniti come faceva. Interrogato su questo, Colby risponde con la dottrina Monroe e il suo corollario Trump, e poi dichiara di non potersi permettere di caratterizzare quello che fa il presidente.\n\nL'asimmetria che il paese rende visibile è la ragione della voce: **chiedere ai polacchi di spendere di più e trattare il Canada come un'estensione degli Stati Uniti sono due richieste diverse**, e producono risposte diverse anche quando il contenuto materiale della richiesta è lo stesso.",
+    articles: [
+      { title: "L'alleanza valutata a prezzi di mercato", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" }
     ]
   }
 
