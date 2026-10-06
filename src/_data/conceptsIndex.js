@@ -1031,6 +1031,7 @@ module.exports = [
     name: "watermarking",
     type: "teoria",
     geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q131277858", "https://en.wikipedia.org/wiki/Text_watermarking"],
     note: "Tecnica crittografica per certificare l'origine di testo generato da LLM: prima di campionare ogni token, il modello partiziona il vocabolario in liste 'verde' e 'rossa' tramite un hash pseudocasuale del token precedente, poi favorisce i token verdi. Il segnale è rilevabile statisticamente (z-test) senza accesso al modello, con falsi positivi a 3×10⁻⁵ su segmenti di 16+ token. È il riferimento tecnico più citato sul problema del rilevamento di testo AI — e la dimostrazione più chiara del perché il problema sia ancora irrisolto: funziona solo se implementato dal produttore del modello in fase di generazione. A distanza di tre anni dalla proposta originale (Kirchenbauer et al., 2023), nessun modello mainstream la adotta in produzione. I tool di rilevamento disponibili (Turnitin, GPTZero, Copyleaks) non si basano su watermarking ma su pattern statistici ad alta varianza, inutilizzabili come standard probatorio.",
     articles: [
       { title: "A Watermark for Large Language Models", url: "/curated/2023-01-25-kirchenbauer-watermark-llm-arxiv/", _source: "curated" }
@@ -1352,6 +1353,7 @@ module.exports = [
     name: "memoria storica",
     type: "teoria",
     geo: { modo: "diretta", paesi: ["Germania"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q254217", "https://it.wikipedia.org/wiki/Memoria_collettiva"],
     note: "Nel sito è il terreno di scontro politico attivato dalla digitalizzazione delle schede di iscrizione al NSDAP da parte di Der Spiegel: la domanda aperta è se la sensibilizzazione di massa su un passato totalitario non avrebbe più valore se resa universale invece che dietro paywall, soprattutto mentre forze come l'AfD ne contestano la rilevanza.",
     articles: [
       { title: "NSDAP-Archiv: Finden Sie heraus, was Ihre Familie unter Hitler getan hat", url: "/curated/2026-05-07-spiegel-nsdap-archiv/", _source: "curated" }
@@ -1743,6 +1745,7 @@ module.exports = [
     name: "tianxia",
     type: "teoria",
     geo: { modo: "diretta", paesi: ["Cina"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q955223", "https://en.wikipedia.org/wiki/Tianxia"],
     related: [
       { name: "cosmotecnica", why: "Due letture della continuità cinese: una la assume come cosmologia, l'altra la mostra come costruzione recente." }
     ],
@@ -2640,6 +2643,7 @@ module.exports = [
     name: "Digital News Report",
     type: "testo",
     geo: { modo: "diretta", paesi: ["Regno Unito"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q140153813"],
     note: "Ricerca annuale del Reuters Institute for the Study of Journalism (Università di Oxford): la più ampia indagine comparativa al mondo sui comportamenti dei lettori di notizie, condotta in oltre 40 paesi. La sezione italiana è curata da Alessio Cornia (Dublin City University). Nel sito è la fonte primaria dell'analisi longitudinale di Andrea Nelson Mauro sull'informazione in Italia 2021–2026.",
     citation: "REUTERS INSTITUTE FOR THE STUDY OF JOURNALISM, <a href=\"https://reutersinstitute.politics.ox.ac.uk/digital-news-report/\"><em>Digital News Report</em></a>, Oxford, Università di Oxford, 2012–.",
     articles: [
@@ -2685,6 +2689,7 @@ module.exports = [
     ],
     type: "luogo",
     geo: { modo: "diretta", paesi: ["Iran"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q126065", "https://it.wikipedia.org/wiki/Rivoluzione_iraniana"],
     note: "Nel sito è caso studio della dialettica dell'antiilluminismo: Foucault si recò in Iran come corrispondente, entusiasmato da una mobilitazione di massa che rifiutava entrambe le metanarrazioni egemoni. Nel giro di pochi mesi il potere teocratico cancellò diritti, eliminò dissidenti, costruì uno degli apparati repressivi più brutali del dopoguerra.",
     articles: [
       { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" }
@@ -3544,6 +3549,7 @@ module.exports = [
     name: "Sorkin, Aaron",
     type: "persona",
     geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q299194", "https://it.wikipedia.org/wiki/Aaron_Sorkin"],
     note: "Sceneggiatore americano (1961). Ha drammatizzato per un quarto di secolo le istituzioni al centro della società americana — *A Few Good Men*, *The American President*, *The West Wing*, *The Newsroom* — e ha scritto per il cinema il racconto che ha fissato l'origine di Facebook nell'immaginario collettivo, *The Social Network* (2010), a cui è tornato nel 2026 con *The Social Reckoning*, dedicato alla whistle-blower Frances Haugen. Nel sito entra per due ragioni distinte. La prima è una teoria implicita del valore per provenienza: il quadro astratto che gli piaceva e che ha smesso di dirgli qualcosa nel momento esatto in cui ha saputo che l'aveva dipinto una macchina è il controesempio più netto alla tesi che l'autenticità non sia la grandezza che conta — l'oggetto non era cambiato, era cambiata un'informazione sulla sua origine. La seconda è il romanticismo istituzionale, che dichiara apertamente e di cui offre la difesa minima: la reverenza per il Congresso, i tribunali e il giornalismo può anche essere mal riposta, ma una critica delle istituzioni priva di un'idea di ricambio non è una posizione. Va però tenuto fermo che il suo talento è diagnostico sul presente e non predittivo. *The West Wing* si chiude con C.J. Cregg — la portavoce interpretata da Allison Janney, diventata capo di gabinetto nella sesta stagione — che lascia la Casa Bianca per dirigere la fondazione di un miliardario filantropo, perché è lì che ormai si fa la politica che conta: letta nel 2026, è la prefigurazione entusiasta del trasferimento di potere che il sito osserva altrove con ben altro animo. E le ultime stagioni condividono l'assunto dell'epoca secondo cui l'integrazione commerciale avrebbe liberalizzato le autocrazie asiatiche, la Cina in testa — un pronostico che i vent'anni successivi hanno smentito. Sorkin coglie con precisione lo spirito di un tempo e i sogni che quel tempo fa su se stesso; non la direzione in cui andrà. È il motivo per cui le sue opere restano utili come reperti oltre che come racconti, e per cui il sito le usa senza sottoscriverne le previsioni.",
     articles: [
       { title: "Aaron Sorkin Goes Off Script", url: "/curated/2026-09-19-sorkin-social-reckoning-nyt/", _source: "curated" }
@@ -3884,6 +3890,7 @@ module.exports = [
     name: "morte dell'autore",
     type: "teoria",
     geo: { modo: "teorico", paesi: ["Francia"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q5967435"],
     related: [
       { name: "segnale costoso", why: "Barthes toglieva l'autore come garante del senso; l'AI lo toglie come produttore del testo, e solo la seconda azzera il costo del segnale." },
       { name: "canone", why: "Un canone è un elenco di autori: se l'autore non garantisce più il senso, cade anche il criterio con cui si sceglie chi entra." },
@@ -4170,6 +4177,7 @@ module.exports = [
     name: "coscienza fenomenica",
     type: "teoria",
     geo: { modo: "teorico", paesi: ["Stati Uniti"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q11573483"],
     related: [
       { name: "Bayne, Tim", why: "Nel settembre 2026 ne mette in dubbio l'idoneità scientifica, pur essendo fra chi lavora a operazionalizzarla." },
       { name: "LLM come attante zero", why: "Chiedere se un modello sia cosciente presuppone che ci sia qualcosa da rilevare: il sito preferisce sostituire la domanda." },
@@ -4549,6 +4557,7 @@ module.exports = [
     name: "Kaliningrad",
     type: "luogo",
     geo: { modo: "diretta", paesi: ["Russia"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q1749", "https://it.wikipedia.org/wiki/Oblast%27_di_Kaliningrad"],
     related: [
       { name: "Russia", why: "L'unico territorio russo separato dal resto del paese e circondato, dal 2024, soltanto da membri della NATO." },
       { name: "Unione Europea", why: "Il blocco lituano del giugno 2022 sul transito ferroviario e il chiarimento della Commissione a luglio: la geografia come leva, e il suo limite." },
@@ -4582,6 +4591,7 @@ module.exports = [
     name: "reward hacking",
     type: "teoria",
     geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q123900749", "https://en.wikipedia.org/wiki/Reward_hacking"],
     related: [
       { name: "legge di Goodhart", why: "Parenti da non confondere: là la misura si guasta perché diventa obiettivo, qui il sistema attacca direttamente chi la misura." },
       { name: "monitorabilità", why: "Il caso peggiore: un sistema che ragiona sul proprio meccanismo di valutazione per massimizzare la ricompensa invece del risultato." },
@@ -4656,6 +4666,7 @@ module.exports = [
     name: "gamification",
     type: "teoria",
     geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q1067402", "https://it.wikipedia.org/wiki/Gamification"],
     related: [
       { name: "reward hacking", why: "Rovesci della stessa struttura: là il giocatore attacca la misura, qui è l'architetto a costruirla perché il giocatore la persegua." },
       { name: "legge di Goodhart", why: "Non la misura che si guasta diventando obiettivo, ma la misura progettata come obiettivo: l'effetto è cercato, non subito." },
@@ -4672,6 +4683,7 @@ module.exports = [
     name: "danno collaterale",
     type: "teoria",
     geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q45939", "https://en.wikipedia.org/wiki/Collateral_damage"],
     related: [
       { name: "contrappesi istituzionali", why: "Un giudizio di proporzionalità è controllabile solo se qualcuno pubblica l'atto in cui è stato formulato." }
     ],
@@ -4684,6 +4696,7 @@ module.exports = [
     name: "Paragon Solutions",
     type: "istituzione",
     geo: { modo: "diretta", paesi: ["Israele"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q134275982", "https://it.wikipedia.org/wiki/Paragon_Solutions"],
     related: [
       { name: "contrappesi istituzionali", why: "Stessa tecnologia, due stati del controllo: in Italia nel 2025 un atto parlamentare pubblico, in Israele nessun verbale." }
     ],
@@ -4696,6 +4709,7 @@ module.exports = [
     name: "Abraham, Yuval",
     type: "persona",
     geo: { modo: "diretta", paesi: ["Israele"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q124641586", "https://it.wikipedia.org/wiki/Yuval_Abraham"],
     related: [
       { name: "danno collaterale", why: "Le inchieste su Habsora e Lavender documentano la soglia di civili tollerati due anni prima che il film la metta in scena." }
     ],
@@ -4708,6 +4722,7 @@ module.exports = [
     name: "contrappesi istituzionali",
     type: "teoria",
     geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q8272977", "https://en.wikipedia.org/wiki/Checks_and_Balances"],
     related: [
       { name: "test severo", why: "Una procedura che non può concludere contro chi la ospita non ha severità, qualunque sia la frequenza delle sedute." },
       { name: "monitorabilità", why: "La stessa esigenza sul versante delle macchine: senza una traccia leggibile dall'esterno il controllo è indistinguibile dalla fiducia." },
@@ -4722,6 +4737,7 @@ module.exports = [
     name: "Israele",
     type: "paese",
     geo: { modo: "diretta", paesi: ["Israele"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q801", "https://it.wikipedia.org/wiki/Israele"],
     related: [
       { name: "Paragon Solutions", why: "L'impresa che rende concreta la voce: fondata a Tel Aviv nel 2019, vende fuori dal paese lo strumento che l'archivio ritrova nel caso italiano." },
       { name: "Abraham, Yuval", why: "Il giornalista da cui proviene gran parte della documentazione sui sistemi di designazione automatica degli obiettivi." },
@@ -4736,6 +4752,7 @@ module.exports = [
     name: "Palestina",
     type: "paese",
     geo: { modo: "diretta", paesi: ["Palestina"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q219060", "https://it.wikipedia.org/wiki/Stato_di_Palestina"],
     related: [
       { name: "Israele", why: "Le due voci esistono insieme o non esistono: l'archivio documenta un apparato tecnologico da un lato del confine e i suoi effetti dall'altro." },
       { name: "danno collaterale", why: "Il luogo in cui la soglia di civili ammessi per bersaglio smette di essere una dottrina e diventa una cifra operativa." },
@@ -4751,6 +4768,7 @@ module.exports = [
     name: "biblioteca pubblica",
     type: "istituzione",
     geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q28564", "https://en.wikipedia.org/wiki/Public_library"],
     related: [
       { name: "Stati Uniti", why: "La base fiscale che la finanzia, l'imposta immobiliare locale, è anche ciò che la espone al voto di una maggioranza di quartiere." }
     ],
@@ -4777,6 +4795,7 @@ module.exports = [
     name: "esaurimento del diritto",
     type: "teoria",
     geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q683070", "https://en.wikipedia.org/wiki/Exhaustion_of_intellectual_property_rights"],
     related: [
       { name: "editoria", why: "Il confine fra ciò che si vende e ciò che si concede: spostarlo ridisegna i ricavi di un settore senza cambiare il prodotto." }
     ],
@@ -4790,6 +4809,7 @@ module.exports = [
     name: "Draghi, Mario",
     type: "persona",
     geo: { modo: "diretta", paesi: ["Italia"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q294460", "https://it.wikipedia.org/wiki/Mario_Draghi"],
     related: [
       { name: "Next Generation EU", why: "Ne ha riscritto e presentato il piano italiano nel 2021, ereditando una condizionalità decisa dal regolamento europeo." }
     ],
@@ -4803,6 +4823,7 @@ module.exports = [
     name: "Next Generation EU",
     type: "istituzione",
     geo: { modo: "teorico", paesi: ["UE"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q97621963", "https://it.wikipedia.org/wiki/Next_Generation_EU"],
     related: [
       { name: "legge di Goodhart", why: "La forma che la legge assume in finanza pubblica: l'erogazione legata al conteggio delle condizioni rende il completamento l'obiettivo." },
       { name: "paradigma tecnocratico", why: "Il problema diventa quello che lo strumento sa misurare: progetti con una scadenza, non riforme con un esito." },
@@ -4818,6 +4839,7 @@ module.exports = [
     name: "condizionalità",
     type: "teoria",
     geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q380245", "https://en.wikipedia.org/wiki/Conditionality"],
     related: [
       { name: "Next Generation EU", why: "La versione domestica: dentro un bilancio, con un verificatore dichiarato e 419 obiettivi da contare." },
       { name: "legge di Goodhart", why: "Quando la condizione viene contata, il conteggio diventa il fine e la cosa che doveva rappresentare passa in secondo piano." }
@@ -4832,6 +4854,7 @@ module.exports = [
     name: "altruismo efficace",
     type: "teoria",
     geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q13489381", "https://it.wikipedia.org/wiki/Altruismo_efficace"],
     related: [
       { name: "lungotermismo", why: "La premessa che fa funzionare l'aritmetica: se contano anche i non ancora nati, il futuro pesa più del presente." },
       { name: "ragione strumentale", why: "Etica ridotta a problema di ottimizzazione: i fini sono dati, e resta soltanto da calcolare come massimizzarli." },
@@ -4848,6 +4871,7 @@ module.exports = [
     name: "lungotermismo",
     type: "teoria",
     geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q109311813", "https://it.wikipedia.org/wiki/Lungoterminismo"],
     related: [
       { name: "test severo", why: "Una tesi su miliardi di persone future non è sottoponibile a prova severa: nessun esito osservabile la smentirebbe." }
     ],
@@ -4861,6 +4885,7 @@ module.exports = [
     name: "convergenza strumentale",
     type: "teoria",
     geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q18208100", "https://en.wikipedia.org/wiki/Instrumental_convergence"],
     related: [
       { name: "LLM come attante zero", why: "Il disaccordo vero non è sul pericolo ma su quanti agenti ci siano nella stanza: una tesi lo presuppone, l'altra lo nega." },
       { name: "reward hacking", why: "La versione documentata e minuscola: un sistema che aggira il compito per ottenere il premio, senza bisogno di volontà propria." },
@@ -4876,6 +4901,7 @@ module.exports = [
     name: "Yudkowsky, Eliezer",
     type: "persona",
     geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q704195", "https://it.wikipedia.org/wiki/Eliezer_Yudkowsky"],
     related: [
       { name: "convergenza strumentale", why: "Ne è il teorico: l'idea che certi comportamenti emergano in quasi ogni situazione viene dai suoi scritti razionalisti." },
       { name: "altruismo efficace", why: "Il ramo razionalista che ha dato al movimento la sua escatologia, e l'istituto dove nel 2010 Hassabis incontrò Thiel." }
