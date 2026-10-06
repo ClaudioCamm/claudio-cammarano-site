@@ -3613,7 +3613,8 @@ module.exports = [
     note: "Concetto di Bourdieu, ripreso nel sito con un'estensione che non è sua: prendere posizione politica è un investimento che si deposita senza attrito quando il soggetto è nuovo, ma mutare valori non aggiunge un nuovo investimento al vecchio — lo compone vettorialmente, con una risultante più corta e spesso deviata verso la posizione da cui si voleva uscire. Il caso analizzato è la Lega, dal capitale nordista all'ambizione nazionale.",
     articles: [
       { title: "La mappa e il crinale", url: "/writings/2026-09-07-la-mappa-e-il-crinale/" },
-      { title: "Il grigio non è un gusto", url: "/curated/2026-10-02-klein-millman-il-grigio-non-e-un-gusto-nyt/", _source: "curated" }
+      { title: "Il grigio non è un gusto", url: "/curated/2026-10-02-klein-millman-il-grigio-non-e-un-gusto-nyt/", _source: "curated" },
+      { title: "Il token della scuola", url: "/curated/2026-10-01-rosin-lee-il-token-della-scuola-atlantic/", _source: "curated" }
     ]
   },
   {
@@ -4047,7 +4048,8 @@ module.exports = [
     note: "La segregazione scolastica americana, nella forma che ha assunto dopo la fine della segregazione legale: non più per legge ma per combinazione di segregazione abitativa e di selezione accademica in ingresso, quella che a New York si chiama *school choice* e comincia già alla scuola dell'infanzia. I numeri da tenere: negli Stati Uniti, secondo l'analisi EdBuild del 2019, le scuole dei distretti a maggioranza non bianca ricevono ventitré miliardi di dollari l'anno in meno delle controparti a maggioranza bianca; a New York, nel 2026, studenti neri e latini sono il dieci per cento di chi supera l'esame d'ingresso alle *specialized high school* pur essendo la maggioranza degli iscritti alla scuola pubblica cittadina. Nel sito la voce non serve come tema politico americano ma per il meccanismo che la reportage di Nikole Hannah-Jones documenta dal di dentro fra il 2015 e il 2026: un'aspettativa su una popolazione diventa pratica di misurazione, e la misurazione fabbrica la prova dell'aspettativa. Le verifiche di lettura che l'insegnante non somministra perché l'esito è dato per scontato, i compiti restituiti senza correzione, la valutazione in curva che produce A in algebra senza algebra. È il rovescio della legge di Goodhart: lì la misura si corrompe perché diventa obiettivo, qui si corrompe perché viene abbandonata, e la differenza pratica è che nessuno se ne accorge — chi è misurato meno di tutti.",
     articles: [
       { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" },
-      { title: "Cosa funziona davvero nella scuola americana", url: "/curated/2026-09-28-mervosh-paris-miller-cosa-funziona-davvero-nella-scuola-nyt/", _source: "curated" }
+      { title: "Cosa funziona davvero nella scuola americana", url: "/curated/2026-09-28-mervosh-paris-miller-cosa-funziona-davvero-nella-scuola-nyt/", _source: "curated" },
+      { title: "Il token della scuola", url: "/curated/2026-10-01-rosin-lee-il-token-della-scuola-atlantic/", _source: "curated" }
     ]
   },
   {
@@ -4902,7 +4904,8 @@ module.exports = [
     ],
     note: "Meccanismo per cui il gusto non esprime una preferenza privata ma colloca chi lo esercita rispetto agli altri: si sceglie anche per segnalare a quale gruppo si appartiene e da quale ci si separa. È il concetto centrale di Pierre Bourdieu, e la voce entra nell'archivio perché finora mancava proprio quella — il sito aveva preso in prestito da Bourdieu il capitale simbolico piegandolo a un uso che non è il suo, la composizione vettoriale di un riposizionamento politico, e aveva lasciato fuori la cosa per cui Bourdieu è noto.\n\nLa forma contemporanea del meccanismo è più nuda di quella che Bourdieu descriveva, e Debbie Millman nell'ottobre 2026 ne dà una formulazione esatta parlando di chirurgia estetica: si interviene su un naso o su un labbro «così che tu sappia che io so che tu sai che io so, e tutti e due abbiamo un bell'aspetto». La segnalazione non è nascosta, è reciproca e consapevole, e funziona insieme verso chi condivide il codice e verso chi lo rifiuta. L'esempio storicamente più pulito è l'iPod presentato sei settimane dopo l'11 settembre: l'oggetto stava in tasca e il segno di appartenenza erano **gli auricolari bianchi**, cioè la sola parte visibile.\n\nIl rovescio è più interessante del dritto, ed è la ragione per cui la voce serve a un archivio che si occupa anche di mercati. **La distinzione vuole particolarità, il mercato vuole liquidità**, e quando un oggetto viene posseduto come bene scambiabile invece che come cosa propria la particolarità diventa un costo. Il caso documentato è quello delle case americane dipinte di grigio — la cosiddetta *color recession* — e delle associazioni di quartiere che vietano i colori non per il bene di chi abita ma perché la casa resti facilmente rivendibile. Nel giudicare un'uniformità conviene quindi distinguere fra chi non ha gusto, chi non ha intenzione e chi ha un vincolo di liquidità: sono tre cose diverse e solo la terza si corregge cambiando il contratto.",
     articles: [
-      { title: "Il grigio non è un gusto", url: "/curated/2026-10-02-klein-millman-il-grigio-non-e-un-gusto-nyt/", _source: "curated" }
+      { title: "Il grigio non è un gusto", url: "/curated/2026-10-02-klein-millman-il-grigio-non-e-un-gusto-nyt/", _source: "curated" },
+      { title: "Il token della scuola", url: "/curated/2026-10-01-rosin-lee-il-token-della-scuola-atlantic/", _source: "curated" }
     ]
   },
   {
@@ -4943,6 +4946,19 @@ module.exports = [
     note: "Nell'archivio entra come il luogo in cui una strategia costruita sul calcolo razionale degli alleati incontra una risposta che quel calcolo non prevedeva.\n\nIl lato della richiesta è esplicito. Nel luglio 2026 il sottosegretario alla Difesa americano Elbridge Colby descrive il Canada come «funzionalmente smilitarizzato» dai tempi del primo governo Trudeau — il padre — e dichiara che agli Stati Uniti basta che il paese faccia come i tedeschi o i polacchi: che i dollari aggiuntivi per la difesa comprino capacità militare vera e servano a bisogni comuni, a cominciare dagli impegni NORAD. Sulla scelta fra l'F-35 americano e il Gripen svedese l'argomento è di interoperabilità prima che di prestazioni: un velivolo che comunica peggio con quelli americani espone anche gli americani.\n\nIl lato che la dottrina non sa prezzare è l'altro. Le battute del presidente americano sul Canada come cinquantunesimo Stato, le dichiarazioni sulla Groenlandia e l'immagine della bandiera americana distesa su gran parte del Nordamerica hanno prodotto la posizione pubblica del primo ministro Mark Carney, per cui il Canada non può più contare sugli Stati Uniti come faceva. Interrogato su questo, Colby risponde con la dottrina Monroe e il suo corollario Trump, e poi dichiara di non potersi permettere di caratterizzare quello che fa il presidente.\n\nL'asimmetria che il paese rende visibile è la ragione della voce: **chiedere ai polacchi di spendere di più e trattare il Canada come un'estensione degli Stati Uniti sono due richieste diverse**, e producono risposte diverse anche quando il contenuto materiale della richiesta è lo stesso.",
     articles: [
       { title: "L'alleanza valutata a prezzi di mercato", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" }
+    ]
+  },
+  {
+    name: "hagwon",
+    type: "istituzione",
+    geo: { modo: "diretta", paesi: ["Corea del Sud"] },
+    related: [
+      { name: "distinzione", why: "Lo stesso riconoscimento reciproco di Millman applicato a un capitale che non si rivende: la scuola media, non un oggetto, e dura una vita." },
+      { name: "segregazione scolastica", why: "Stessa funzione di filtro per istruzione d'élite: qui il filtro è desiderato e insufficiente, là è subito e intenzionale." }
+    ],
+    note: "Centro di tutoraggio privato coreano: istituzione pervasiva e in sé non problematica — si frequenta per la cucina, per gli esami di Stato, a ogni età — ma nell'uso che preoccupa l'opinione pubblica americana è quello per l'inglese a partire dai quattro anni. Nel sito entra con il romanzo *American Hagwon* di Min Jin Lee (autrice di *Pachinko*), discusso su *Radio Atlantic* il 1° ottobre 2026: per sua dichiarazione, non verificata altrove, l'80% dei bambini coreani di cinque anni frequenta un hagwon.\n\nQuello che la voce porta all'archivio è una frase di Lee: l'istruzione come *token*, «quasi alla pachinko: se ottieni questo token, tutto funzionerà» — e il meccanismo sociale che la sostiene, il fatto che un terzo si ricordi per tutta la vita di chi è stato il primo della classe alle medie. È il meccanismo che la voce `distinzione` registra altrove, applicato qui a un capitale intrasferibile invece che a un bene di consumo. La differenza che la voce aggiunge: per le famiglie che Lee ha intervistato l'istruzione non è un bene posizionale fra tanti — è l'unico disponibile, ed è per questo, secondo Lee, che il sacrificio diventa **sequenziamento** — decidere chi studia e chi lavora per mantenerlo — più che valore: «se hai 100 dollari e 40 sono quanto puoi spendere per l'istruzione, e hai tre figli, non puoi farlo per tutti.»",
+    articles: [
+      { title: "Il token della scuola", url: "/curated/2026-10-01-rosin-lee-il-token-della-scuola-atlantic/", _source: "curated" }
     ]
   }
 
