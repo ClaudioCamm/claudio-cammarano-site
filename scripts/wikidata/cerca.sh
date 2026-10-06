@@ -6,6 +6,7 @@
 #                                                            voce=termini di ricerca, separati da |
 #   scripts/wikidata/cerca.sh --elenco                         elenca le voci ancora senza sameAs
 #   scripts/wikidata/cerca.sh --tutte                          cerca tutte le voci elencate sopra
+#   scripts/wikidata/cerca.sh --wiki Q294460 Q704195           voci Wikipedia (it, altrimenti en) dei Q-id
 #
 # Senza "=", i termini si ricavano dal nome: "Cognome, Nome" diventa "Nome Cognome",
 # "A / B" si cerca come A e come B. Non scrive nulla: stampa i candidati (inglese e
@@ -78,6 +79,19 @@ EOF
 case "${1:-}" in
   --elenco) voci_mancanti ;;
   --tutte)  voci_mancanti | while IFS= read -r t; do cerca "$t"; done ;;
-  "")       sed -n '2,12p' "$0" | sed 's/^# \{0,1\}//' ;;
+  --wiki)   shift
+            ids="$(IFS='|'; echo "$*")"
+            curl -s -m 30 -A "$UA" -G "https://www.wikidata.org/w/api.php" \
+              --data-urlencode "action=wbgetentities" --data-urlencode "ids=$ids" \
+              --data-urlencode "props=sitelinks/urls" --data-urlencode "sitefilter=itwiki|enwiki" \
+              --data-urlencode "format=json" | python3 -c '
+import sys, json
+d = json.load(sys.stdin)
+for q, e in d.get("entities", {}).items():
+    sl = e.get("sitelinks", {})
+    w = sl.get("itwiki") or sl.get("enwiki")
+    print("  %-11s %s" % (q, w["url"] if w else "(nessuna voce Wikipedia it/en)"))
+' ;;
+  "")       sed -n '2,13p' "$0" | sed 's/^# \{0,1\}//' ;;
   *)        for t in "$@"; do cerca "$t"; done ;;
 esac
