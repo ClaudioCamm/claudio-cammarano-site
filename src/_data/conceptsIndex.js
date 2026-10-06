@@ -952,7 +952,8 @@ module.exports = [
       { title: "Hulu's Fascinating and Incomplete \"1619 Project\"", url: "/curated/2023-02-28-taylor-1619-project-hulu-newyorker/", _source: "curated" },
       { title: "China's kids rank near the top in global school tests", url: "/curated/2026-09-24-economist-pisa-cina-campione-bsjz/", _source: "curated" },
       { title: "We Surveyed 634 Women Who Work in Tech. They Let Loose", url: "/curated/2026-09-21-upson-donne-tech-sondaggio-wired/", _source: "curated" },
-      { title: "Cosa funziona davvero nella scuola americana", url: "/curated/2026-09-28-mervosh-paris-miller-cosa-funziona-davvero-nella-scuola-nyt/", _source: "curated" }
+      { title: "Cosa funziona davvero nella scuola americana", url: "/curated/2026-09-28-mervosh-paris-miller-cosa-funziona-davvero-nella-scuola-nyt/", _source: "curated" },
+      { title: "Quindici anni di scelte opposte, fra Inghilterra e Scozia", url: "/curated/2026-09-08-economist-pisa-inghilterra-scozia-vie-opposte/", _source: "curated" }
     ]
   },
   {
@@ -1343,7 +1344,8 @@ module.exports = [
       { title: "The great regression", url: "/curated/2022-08-05-alt-grande-regressione-kidult-aeon/", _source: "curated" },
       { title: "The Atlantic is getting more subscribers from Google traffic, even as referrals fall", url: "/curated/2026-09-16-scire-atlantic-google-abbonati-niemanlab/", _source: "curated" },
       { title: "Il triste dibattito sullo scrivere con l'IA", url: "/curated/2026-10-02-piacenza-triste-dibattito-scrivere-ia/", _source: "curated" },
-      { title: "Il libro che la biblioteca non possiede", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" }
+      { title: "Il libro che la biblioteca non possiede", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" },
+      { title: "Un risarcimento distribuito come una vendita", url: "/curated/2026-10-01-alpern-risarcimento-distribuito-come-vendita-vulture/", _source: "curated" }
     ]
   },
   {
@@ -2820,7 +2822,9 @@ module.exports = [
       { title: "Il libro che la biblioteca non possiede", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" },
       { title: "Riforme in cambio di accesso", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" },
       { title: "L'alleanza valutata a prezzi di mercato", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" },
-      { title: "Cosa funziona davvero nella scuola americana", url: "/curated/2026-09-28-mervosh-paris-miller-cosa-funziona-davvero-nella-scuola-nyt/", _source: "curated" }
+      { title: "Cosa funziona davvero nella scuola americana", url: "/curated/2026-09-28-mervosh-paris-miller-cosa-funziona-davvero-nella-scuola-nyt/", _source: "curated" },
+      { title: "Quindici anni di scelte opposte, fra Inghilterra e Scozia", url: "/curated/2026-09-08-economist-pisa-inghilterra-scozia-vie-opposte/", _source: "curated" },
+      { title: "Un risarcimento distribuito come una vendita", url: "/curated/2026-10-01-alpern-risarcimento-distribuito-come-vendita-vulture/", _source: "curated" }
     ]
   },
   {
@@ -2947,7 +2951,8 @@ module.exports = [
     articles: [
       { title: "Alex Turner appointed as Defence Editor of The Economist", url: "/curated/2026-06-19-economist-defence-editor-turner/", _source: "curated" },
       { title: "AI-written speeches are taking over politics", url: "/curated/2026-09-23-economist-discorsi-scritti-ai-politica/", _source: "curated" },
-      { title: "Commonwealth Short Story Prize Clears Regional Winners of AI Use Following Month-Long Review", url: "/curated/2026-06-26-commonwealth-nazir-falso-positivo-brittlepaper/", _source: "curated" }
+      { title: "Commonwealth Short Story Prize Clears Regional Winners of AI Use Following Month-Long Review", url: "/curated/2026-06-26-commonwealth-nazir-falso-positivo-brittlepaper/", _source: "curated" },
+      { title: "Quindici anni di scelte opposte, fra Inghilterra e Scozia", url: "/curated/2026-09-08-economist-pisa-inghilterra-scozia-vie-opposte/", _source: "curated" }
     ]
   },
   {
@@ -4049,7 +4054,8 @@ module.exports = [
     articles: [
       { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" },
       { title: "Cosa funziona davvero nella scuola americana", url: "/curated/2026-09-28-mervosh-paris-miller-cosa-funziona-davvero-nella-scuola-nyt/", _source: "curated" },
-      { title: "Il token della scuola", url: "/curated/2026-10-01-rosin-lee-il-token-della-scuola-atlantic/", _source: "curated" }
+      { title: "Il token della scuola", url: "/curated/2026-10-01-rosin-lee-il-token-della-scuola-atlantic/", _source: "curated" },
+      { title: "Quindici anni di scelte opposte, fra Inghilterra e Scozia", url: "/curated/2026-09-08-economist-pisa-inghilterra-scozia-vie-opposte/", _source: "curated" }
     ]
   },
   {
@@ -4750,7 +4756,8 @@ module.exports = [
     ],
     note: "Istituzione che mette a disposizione di chiunque, gratuitamente, un fondo di opere e lo spazio per usarle. Nel sito entra nell'ottobre 2026 con una raccolta di testimonianze di bibliotecari americani, e vi entra per una doppia trasformazione che conviene tenere distinta, perché le due metà hanno cause diverse e **una sola delle due è stata decisa da qualcuno**.\n\nLa prima è contrattuale, e vale ovunque perché gli editori sono gli stessi. Una biblioteca che acquista una copia di carta la possiede; una che «acquista» un libro elettronico ottiene una licenza a termine, e il suo bilancio ha smesso di comprare fondo per cominciare a comprare permessi. La seconda è di mandato, ed è cresciuta per sottrazione altrui: dove altri servizi si ritirano, la biblioteca diventa l'indirizzo che resta — un computer e una casella di posta per chi non li ha, un posto al caldo o al fresco, un bagno, assistenza nel compilare un modulo. Nessuno ha deliberato questa seconda trasformazione: si è accumulata.\n\nIl finanziamento non si esporta, e va detto ogni volta che si cita il caso americano. Negli Stati Uniti la biblioteca pubblica dipende in larga parte dall'imposta immobiliare locale ed è governata da consigli locali, il che la espone a una maggioranza di quartiere in un modo che i sistemi finanziati su base statale o comunale non conoscono. Le polemiche americane su quali libri tenere a scaffale vanno lette dentro questa struttura, non importate come se fosse la stessa ovunque.",
     articles: [
-      { title: "Il libro che la biblioteca non possiede", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" }
+      { title: "Il libro che la biblioteca non possiede", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" },
+      { title: "L'abitabilità non è una soglia che si supera", url: "/curated/2026-09-28-legros-abitabilita-non-e-una-soglia-lemonde/", _source: "curated" }
     ]
   },
   {
@@ -4775,7 +4782,8 @@ module.exports = [
     ],
     note: "Principio per cui il titolare del diritto d'autore, una volta messa in commercio una copia dell'opera, non può più controllare che cosa il compratore ne faccia: può rivenderla, prestarla, regalarla. È ciò che rende possibili il mercato dell'usato, il prestito fra privati e le biblioteche. Nel diritto statunitense si chiama *first-sale doctrine* e risale a *Bobbs-Merrill v. Straus* del 1908; nel diritto dell'Unione europea è l'esaurimento del diritto di distribuzione.\n\nSul digitale il principio non si applica, e la ragione è una decisione precisa: Corte di giustizia dell'Unione europea, grande sezione, 19 dicembre 2019, causa C-263/18 *Tom Kabinet*. La fornitura di un libro elettronico mediante download per uso permanente è comunicazione al pubblico ai sensi dell'articolo 3 della direttiva 2001/29, e non distribuzione ai sensi dell'articolo 4; il diritto di comunicazione al pubblico non conosce esaurimento. La motivazione è di merito e non formale: i file digitali non si deteriorano e sono sostituti perfetti delle copie nuove, sicché un mercato secondario comprometterebbe la remunerazione degli autori.\n\nPer l'archivio la voce serve perché da qui discende senza passaggi intermedi l'economia del prestito digitale, e perché contiene una simmetria istruttiva. **Lo stesso argomento che per l'acquirente dimostra che il prezzo è ingiustificato — l'oggetto non si consuma — è per la Corte la ragione per cui il prezzo è legittimo.** Non è un paradosso: è lo stesso fatto letto da due posizioni contrattuali diverse, ed è il modo più rapido per vedere che cosa cambia quando un bene smette di avere un supporto.",
     articles: [
-      { title: "Il libro che la biblioteca non possiede", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" }
+      { title: "Il libro che la biblioteca non possiede", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" },
+      { title: "Un risarcimento distribuito come una vendita", url: "/curated/2026-10-01-alpern-risarcimento-distribuito-come-vendita-vulture/", _source: "curated" }
     ]
   },
   {
@@ -4959,6 +4967,31 @@ module.exports = [
     note: "Centro di tutoraggio privato coreano: istituzione pervasiva e in sé non problematica — si frequenta per la cucina, per gli esami di Stato, a ogni età — ma nell'uso che preoccupa l'opinione pubblica americana è quello per l'inglese a partire dai quattro anni. Nel sito entra con il romanzo *American Hagwon* di Min Jin Lee (autrice di *Pachinko*), discusso su *Radio Atlantic* il 1° ottobre 2026: per sua dichiarazione, non verificata altrove, l'80% dei bambini coreani di cinque anni frequenta un hagwon.\n\nQuello che la voce porta all'archivio è una frase di Lee: l'istruzione come *token*, «quasi alla pachinko: se ottieni questo token, tutto funzionerà» — e il meccanismo sociale che la sostiene, il fatto che un terzo si ricordi per tutta la vita di chi è stato il primo della classe alle medie. È il meccanismo che la voce `distinzione` registra altrove, applicato qui a un capitale intrasferibile invece che a un bene di consumo. La differenza che la voce aggiunge: per le famiglie che Lee ha intervistato l'istruzione non è un bene posizionale fra tanti — è l'unico disponibile, ed è per questo, secondo Lee, che il sacrificio diventa sequenziamento — decidere chi studia e chi lavora per mantenerlo — più che valore: «se hai 100 dollari e 40 sono quanto puoi spendere per l'istruzione, e hai tre figli, non puoi farlo per tutti.»",
     articles: [
       { title: "Il token della scuola", url: "/curated/2026-10-01-rosin-lee-il-token-della-scuola-atlantic/", _source: "curated" }
+    ]
+  },
+  {
+    name: "abitabilità",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    related: [
+      { name: "biblioteca pubblica", why: "Klinenberg lo mostra per Chicago: a fare da argine all'ondata di calore non è stata la temperatura ma le biblioteche e le reti di vicinato ancora attive." }
+    ],
+    note: "Capacità di un luogo di sostenere una vita dignitosa. Nell'archivio entra il 28 settembre 2026 con un'inchiesta di Le Monde che distingue due definizioni: quella fisica dell'IPCC, una soglia di calore, acqua e livello del mare che un luogo supera o non supera; e quella della geografa Nathalie Blanc, per cui **l'abitabilità è un processo relazionale fra uno spazio e chi lo abita**, non uno stato che il luogo possiede da solo.\n\nLa differenza non è accademica. Una classifica delle città più vivibili, scrive Blanc, misura solo la prima definizione e finisce per servire chi ha i mezzi per trasferirsi; chi è povero, malato o lavora in prima linea resta a subire il clima in spazi non adatti, qualunque sia il punteggio della città in cui vive. Eric Klinenberg lo documenta empiricamente per Chicago: due quartieri con lo stesso profilo sociale ebbero mortalità opposta nell'ondata di calore del 1995, e la differenza furono le istituzioni di prossimità — biblioteche, parchi, associazioni — ancora attive in uno dei due.",
+    articles: [
+      { title: "L'abitabilità non è una soglia che si supera", url: "/curated/2026-09-28-legros-abitabilita-non-e-una-soglia-lemonde/", _source: "curated" }
+    ]
+  },
+  {
+    name: "indennizzo trattato da vendita",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    related: [
+      { name: "editoria", why: "Lo stesso settore, due volte: prima il confine fra vendere e concedere in licenza, poi la regola con cui si divide un risarcimento come se fosse un incasso." },
+      { name: "esaurimento del diritto", why: "Parenti stretti: là una decisione giuridica ridisegna chi guadagna da un uso nuovo del testo, qui lo fa una transazione negoziata in fretta." }
+    ],
+    note: "Meccanismo per cui una somma pensata per risarcire un illecito viene distribuita secondo le regole di un contratto di vendita ordinaria, anche quando nessun contratto aveva previsto l'uso che ha generato il risarcimento. Nell'archivio entra il 1° ottobre 2026 con la transazione *Bartz v. Anthropic*: 1,5 miliardi di dollari per i libri usati senza permesso nell'addestramento di un modello linguistico, 3.000 dollari a titolo, divisi 50 e 50 fra autore ed editore — la stessa proporzione di una vendita, applicata a un danno che la vendita non ha generato.\n\n**Chi controlla l'infrastruttura contrattuale dei diritti — l'editore, non l'autore — intercetta la parte maggiore**, non perché un contratto gliela assegni esplicitamente per questo caso, ma perché nessun contratto gliela nega: la causa era stata intentata a nome degli autori, e il 50 e 50 è un default ereditato, non una clausola negoziata per un illecito che non esisteva quando i contratti furono firmati.",
+    articles: [
+      { title: "Un risarcimento distribuito come una vendita", url: "/curated/2026-10-01-alpern-risarcimento-distribuito-come-vendita-vulture/", _source: "curated" }
     ]
   }
 
