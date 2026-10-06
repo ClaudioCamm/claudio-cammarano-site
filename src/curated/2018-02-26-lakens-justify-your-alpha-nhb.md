@@ -8,7 +8,7 @@ criterio: metodo-di-lavoro
 perche: "La risposta opposta alla stessa domanda: il problema non è il valore della soglia ma l'esistenza di una soglia unica, e va giustificata caso per caso."
 rinvio: /curated/2017-09-01-benjamin-redefine-statistical-significance-nhb/
 description: |
-  *Nature Human Behaviour* 2(3), pp. 168–171, del 26 febbraio 2018. **Ottantotto autori** guidati da Daniël Lakens, e l'articolo si dichiara risposta diretta al precedente, che cita in apertura. Non è ad accesso libero; esiste un preprint su PsyArXiv e una copia nel repository White Rose.
+  *Nature Human Behaviour* 2(3), pp. 168–171, del 26 febbraio 2018. Ottantotto autori guidati da Daniël Lakens, e l'articolo si dichiara risposta diretta al precedente, che cita in apertura. Non è ad accesso libero; esiste un preprint su PsyArXiv e una copia nel repository White Rose.
 
   L'accordo con gli avversari è totale sulla premessa: «Condividiamo le loro preoccupazioni riguardo all'apparente non replicabilità di molti studi scientifici, e concordiamo che un alfa universale di 0,05 sia indesiderabile.» Il dissenso è sul rimedio, in tre punti: «(1) non c'è evidenza sufficiente che lo standard corrente sia una causa principale della non riproducibilità; (2) gli argomenti in favore di un default generalizzato di p ≤ 0,005 non giustificano l'implementazione immediata e diffusa di una tale politica; (3) una soglia di significatività più bassa avrà probabilmente conseguenze negative non discusse da Benjamin e colleghi.»
 

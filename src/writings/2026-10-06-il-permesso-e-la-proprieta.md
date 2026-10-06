@@ -22,7 +22,7 @@ fonti:
 controtesi: 2026-07-29-tooze-china-shock-chartbook
 ---
 
-Fra la fine di settembre e l'inizio di ottobre 2026 sono uscite, nell'ordine, un'inchiesta sulle biblioteche americane, una lezione di Mario Draghi a Zurigo, un intervento di Jamie Dimon sul *Wall Street Journal* e un preprint sulla sovranità dell'intelligenza artificiale. Non si citano a vicenda e non trattano lo stesso settore. Mettono però in scena lo stesso meccanismo visto da quattro angoli diversi: qualcuno possiede o controlla una risorsa — un libro, un tasso d'interesse, una riforma, un modello — e chi ne ha bisogno non la compra più, la affitta a condizioni fissate da chi la concede. Questa catena segue il meccanismo dall'editoria alla geopolitica fino all'intelligenza artificiale, prima di chiedersi se valga sempre nella stessa direzione.
+Fra la fine di settembre e l'inizio di ottobre 2026 sono uscite, nell'ordine, un'inchiesta sulle biblioteche americane, una lezione di Mario Draghi a Zurigo, un intervento di Jamie Dimon sul *Wall Street Journal* e un preprint sulla sovranità dell'intelligenza artificiale. Non si citano a vicenda e non trattano lo stesso settore. Mettono però in scena lo stesso meccanismo visto da quattro angoli diversi: qualcuno possiede o controlla una risorsa — un libro, un tasso d'interesse, una riforma, un modello — e **chi ne ha bisogno non la compra più, la affitta a condizioni fissate da chi la concede**. Questa catena segue il meccanismo dall'editoria alla geopolitica fino all'intelligenza artificiale, prima di chiedersi se valga sempre nella stessa direzione.
 
 ## Il libro che non si possiede più
 

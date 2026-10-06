@@ -254,6 +254,12 @@ Checklist completa per pubblicare un writing:
 
 ---
 
+### Le catene — writing che legano curated già pubblicati
+
+Una catena è un writing con `layout: layouts/catena.njk` che lega attorno a una tesi curated già in archivio. Campi propri: `tesi` (la tesi in una frase), `fonti` (slug dei curated, nell'ordine in cui il testo li chiama), `controtesi` (lo slug della fonte che le resiste, che deve stare anche in `fonti`), e `concepts` come i curated. Nel testo le schede si richiamano con gli shortcode `{% scheda %}`, `{% rif %}` e `{% controtesi %}`; striscia e indice delle fonti si generano da `fonti`.
+
+**Un grassetto soltanto**: la tesi riformulata nel corpo, di solito nel capoverso d'apertura. Le catene entrano nel grafo e pesano sulla carta (sezione 5, «Quanto pesa un pezzo»). Il formato completo sta nel documento di progetto `formato-catena.md`.
+
 ## 2. Pubblicare un curated
 
 ### File
@@ -354,7 +360,7 @@ Opzionale. Si usa solo per commenti molto estesi. Di solito il frontmatter basta
 La `description` dei curated (blocco YAML `|`) e la `note` delle voci di `conceptsIndex.js` passano dal filtro `mdBlock`, che rende Markdown con capoversi veri: nella description il capoverso è una riga vuota, nella `note` è `\n\n` dentro la stringa.
 
 - *Corsivo* per titoli di libri, riviste, film, podcast, e per i termini stranieri non acclimatati.
-- **Grassetto: solo asserzioni chiave, come frasi intere** — la stessa regola dei writings (sezione 1). Al massimo uno per capoverso, e non in ogni capoverso. Mai su un'etichetta, un nome, un termine o una cifra isolata: per quelli basta il corsivo, o niente.
+- **Un grassetto soltanto, ed è la tesi portante.** Vale per la description di ogni curated, per la `note` di ogni voce e per ogni catena. Si scrive come frase intera, in genere quella che il `perche` riassume. Mai su un'etichetta, un nome, un termine o una cifra: per quelli basta il corsivo, o niente. Se nessuna frase del testo regge da sola la tesi, nessun grassetto. Regola fissata il 6 ottobre 2026 e applicata a tutto l'archivio quel giorno. I writings ordinari restano alla regola della sezione 1.
 - **Resa**: il grassetto è blu, peso 500, come negli articoli (`.article-body strong`). Nelle note dei concetti, che sono in corsivo, l'enfasi si rovescia in tondo. Fino all'ottobre 2026 description e note non avevano una regola per il grassetto e il browser rendeva un nero pieno; la regola sta ora in `style.css`, accanto a `.tag-page-intro`.
 
 ---
