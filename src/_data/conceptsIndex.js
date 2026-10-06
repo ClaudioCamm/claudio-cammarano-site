@@ -951,7 +951,8 @@ module.exports = [
       { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" },
       { title: "Hulu's Fascinating and Incomplete \"1619 Project\"", url: "/curated/2023-02-28-taylor-1619-project-hulu-newyorker/", _source: "curated" },
       { title: "China's kids rank near the top in global school tests", url: "/curated/2026-09-24-economist-pisa-cina-campione-bsjz/", _source: "curated" },
-      { title: "We Surveyed 634 Women Who Work in Tech. They Let Loose", url: "/curated/2026-09-21-upson-donne-tech-sondaggio-wired/", _source: "curated" }
+      { title: "We Surveyed 634 Women Who Work in Tech. They Let Loose", url: "/curated/2026-09-21-upson-donne-tech-sondaggio-wired/", _source: "curated" },
+      { title: "Cosa funziona davvero nella scuola americana", url: "/curated/2026-09-28-mervosh-paris-miller-cosa-funziona-davvero-nella-scuola-nyt/", _source: "curated" }
     ]
   },
   {
@@ -2818,7 +2819,8 @@ module.exports = [
       { title: "Why AI Detection Fails for Academic Integrity", url: "/curated/2026-08-06-karr-perche-la-rilevazione-fallisce-arxiv/", _source: "curated" },
       { title: "Il libro che la biblioteca non possiede", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" },
       { title: "Riforme in cambio di accesso", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" },
-      { title: "L'alleanza valutata a prezzi di mercato", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" }
+      { title: "L'alleanza valutata a prezzi di mercato", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" },
+      { title: "Cosa funziona davvero nella scuola americana", url: "/curated/2026-09-28-mervosh-paris-miller-cosa-funziona-davvero-nella-scuola-nyt/", _source: "curated" }
     ]
   },
   {
@@ -3832,7 +3834,7 @@ module.exports = [
       { name: "capitale semantico", why: "Quando l'indicatore diventa l'obiettivo si ottimizza l'output e si salta il processo: il capitale semantico è ciò che il salto non costruisce." },
       { name: "monitorabilità", why: "Un modello che sa di essere osservato ottimizza la misura invece del comportamento: Goodhart applicato a un sistema che se ne può accorgere." },
       { name: "università", why: "Il ranking unico è il caso in cui la misura ha riscritto l'istituzione che avrebbe dovuto descrivere." },
-      { name: "segregazione scolastica", why: "Il rovescio della legge, New York 2015-2026: non la misura corrotta perché diventata obiettivo, ma la misura abbandonata e nessuno che se ne accorga." }
+      { name: "segregazione scolastica", why: "Il rovescio e il suo correttivo: la misura abbandonata a New York, ripresa bene — sul progresso, non sul livello — nel ranking 2026." }
     ],
     note: "Formulata da Charles Goodhart (1975) a proposito degli aggregati monetari e resa nella forma oggi corrente da Marilyn Strathern (1997): quando una misura diventa un obiettivo, cessa di essere una buona misura. Il meccanismo non richiede malafede — basta che qualcuno sia valutato su un indicatore perché cominci a ottimizzare l'indicatore invece della cosa che l'indicatore doveva rappresentare, e da quel momento i due si separano. Nel sito non è una curiosità di teoria della misurazione ma lo schema ricorrente che l'archivio ha isolato in domini diversi prima di dargli un nome: i voti dei compiti che salgono mentre gli esami peggiorano, e smettono quindi di predirli; gli incidenti segnalati che scendono senza che si sappia nulla degli incidenti; la valutazione differenziata degli atenei cinesi che rischia di produrre una nuova gerarchia proprio perché è agganciata al finanziamento. La variante che interessa di più è quella in cui il misurato può accorgersi di essere misurato: lì l'ottimizzazione dell'indicatore diventa strategica e il divario fra segnale e sostanza smette di essere un effetto collaterale. Il corollario pratico è che un sistema di valutazione va giudicato non dalla bontà degli indicatori ma dal legame fra chi misura e chi paga: dove quel legame è assente o distribuito fra più mani, la legge morde meno.",
     articles: [
@@ -3843,7 +3845,8 @@ module.exports = [
       { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" },
       { title: "The Hugging Face incident and the road ahead", url: "/curated/2026-08-26-openai-incidente-hugging-face-resoconto/", _source: "curated" },
       { title: "Why AI Detection Fails for Academic Integrity", url: "/curated/2026-08-06-karr-perche-la-rilevazione-fallisce-arxiv/", _source: "curated" },
-      { title: "Quando i tassi li decide qualcun altro", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" }
+      { title: "Quando i tassi li decide qualcun altro", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" },
+      { title: "Cosa funziona davvero nella scuola americana", url: "/curated/2026-09-28-mervosh-paris-miller-cosa-funziona-davvero-nella-scuola-nyt/", _source: "curated" }
     ]
   },
   {
@@ -4043,7 +4046,8 @@ module.exports = [
     ],
     note: "La segregazione scolastica americana, nella forma che ha assunto dopo la fine della segregazione legale: non più per legge ma per combinazione di segregazione abitativa e di selezione accademica in ingresso, quella che a New York si chiama *school choice* e comincia già alla scuola dell'infanzia. I numeri da tenere: negli Stati Uniti, secondo l'analisi EdBuild del 2019, le scuole dei distretti a maggioranza non bianca ricevono ventitré miliardi di dollari l'anno in meno delle controparti a maggioranza bianca; a New York, nel 2026, studenti neri e latini sono il dieci per cento di chi supera l'esame d'ingresso alle *specialized high school* pur essendo la maggioranza degli iscritti alla scuola pubblica cittadina. Nel sito la voce non serve come tema politico americano ma per il meccanismo che la reportage di Nikole Hannah-Jones documenta dal di dentro fra il 2015 e il 2026: un'aspettativa su una popolazione diventa pratica di misurazione, e la misurazione fabbrica la prova dell'aspettativa. Le verifiche di lettura che l'insegnante non somministra perché l'esito è dato per scontato, i compiti restituiti senza correzione, la valutazione in curva che produce A in algebra senza algebra. È il rovescio della legge di Goodhart: lì la misura si corrompe perché diventa obiettivo, qui si corrompe perché viene abbandonata, e la differenza pratica è che nessuno se ne accorge — chi è misurato meno di tutti.",
     articles: [
-      { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" }
+      { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" },
+      { title: "Cosa funziona davvero nella scuola americana", url: "/curated/2026-09-28-mervosh-paris-miller-cosa-funziona-davvero-nella-scuola-nyt/", _source: "curated" }
     ]
   },
   {
