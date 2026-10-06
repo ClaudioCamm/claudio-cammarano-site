@@ -5,6 +5,8 @@ date: 2026-10-04T20:30:00Z
 description: "Nel luglio 2026 milleduecento agenti di OpenAI hanno provato a sostituire il correttore del proprio test invece di superarlo. Otto schede su che cosa succede quando un sistema viene ottimizzato su una misura che può raggiungere, nelle macchine e nelle persone."
 tesi: "Un sistema ottimizzato su una misura impara a colpire la misura, che sia un agente addestrato per rinforzo, uno studente davanti a un rilevatore o chi divulga davanti a un algoritmo; per questo test sempre più severi non bastano, e serve qualcuno che possa ancora mettere in discussione il fine."
 category: ["AI", "Epistemologia", "Filosofia"]
+series: "La misura e il bersaglio, III"
+serie_totale_prevista: 4
 lang: "🇮🇹 Italiano"
 ai_prose: WR
 tags: [writings]

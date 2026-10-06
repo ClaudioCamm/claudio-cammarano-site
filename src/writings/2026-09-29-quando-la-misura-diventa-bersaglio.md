@@ -5,6 +5,8 @@ date: 2026-09-29T15:30:00Z
 description: "A New York per anni non si sono somministrate le verifiche di lettura, perché l'esito si dava per scontato; il PISA cinese viene da quattro sole aree ricche, e stimandone la distorsione la Cina resta quarta al mondo. Dieci schede su che cosa succede quando un indicatore diventa l'obiettivo."
 tesi: "Una misura trasformata in obiettivo smette di misurare, e a volte fabbrica la prova di ciò che si aspettava; il rimedio è misurare dichiarando la distorsione, perché una distorsione misurata è un'informazione e una distorsione soltanto invocata è un pretesto."
 category: ["Epistemologia", "Formazione", "Decisioni"]
+series: "La misura e il bersaglio, II"
+serie_totale_prevista: 4
 lang: "🇮🇹 Italiano"
 ai_prose: WR
 tags: [writings]

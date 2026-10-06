@@ -5,6 +5,8 @@ date: 2026-09-28T21:00:00Z
 description: "Un'utente di Harare chiede a un modello se accettare una promozione che la porterebbe lontano dalla sua comunità, e la risposta parla la lingua di Locke e di Mill. Dieci schede sull'etica che insegniamo alle macchine, e sulle tradizioni che ne restano fuori."
 tesi: "L'allineamento dei modelli codifica un'etica occidentale e individualista presentata come universale; le tradizioni relazionali offrono un'altra idea di buon comportamento, a condizione di non trasformarle a loro volta in miti identitari."
 category: ["Filosofia", "AI", "Etica"]
+series: "L’attante zero, I"
+serie_totale_prevista: 3
 lang: "🇮🇹 Italiano"
 ai_prose: WR
 tags: [writings]

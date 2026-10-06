@@ -5,6 +5,8 @@ date: 2026-09-28T21:05:00Z
 description: "Un italiano su tre sceglie cosa comprare chiedendolo a un assistente, e molti marchi bloccano senza saperlo i programmi che dovrebbero leggerli. Otto schede su un marketing che deve farsi capire dalle macchine e farsi amare dalle persone, mentre il mezzo sparisce."
 tesi: "Un marchio deve ormai parlare a due lettori, le macchine che scelgono per conto dei clienti e le persone che scelgono di appartenergli; la fascia intermedia, fatta di contenuti e strategie medie, sparisce perché le macchine la producono gratis."
 category: ["Marketing", "AI", "Editoria"]
+series: "La misura e il bersaglio, I"
+serie_totale_prevista: 4
 lang: "🇮🇹 Italiano"
 ai_prose: WR
 tags: [writings]
