@@ -280,7 +280,8 @@ module.exports = [
     articles: [
       { title: "Quando Dario Amodei ha detto no al Pentagono", url: "/writings/2026-03-09-quando-dario-amodei-ha-detto-no-al-pentagono/" },
       { title: "When AI builds itself", url: "/curated/2026-06-19-anthropic-recursive-self-improvement/", _source: "curated" },
-      { title: "Intelligenza artificiale e rischio estinzione, che cosa pensano (davvero) gli scienziati?", url: "/curated/2026-09-26-signorelli-rischio-estinzione-scienziati-backdoor/", _source: "curated" }
+      { title: "Intelligenza artificiale e rischio estinzione, che cosa pensano (davvero) gli scienziati?", url: "/curated/2026-09-26-signorelli-rischio-estinzione-scienziati-backdoor/", _source: "curated" },
+      { title: "AI’s Real Gift to Science", url: "/curated/2026-10-04-kiros-ai-real-gift-science-atlantic/", _source: "curated" }
     ]
   },
   {
@@ -2372,7 +2373,8 @@ module.exports = [
       { title: "Intelligenza artificiale e rischio estinzione, che cosa pensano (davvero) gli scienziati?", url: "/curated/2026-09-26-signorelli-rischio-estinzione-scienziati-backdoor/", _source: "curated" },
       { title: "Pacing the Frontier", url: "/curated/2026-07-28-pacing-the-frontier-lettera/", _source: "curated" },
       { title: "How effective altruism conquered the world", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" },
-      { title: "The search for consciousness inside AI", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" }
+      { title: "The search for consciousness inside AI", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" },
+      { title: "AI’s Real Gift to Science", url: "/curated/2026-10-04-kiros-ai-real-gift-science-atlantic/", _source: "curated" }
     ]
   },
   {
@@ -3769,7 +3771,8 @@ module.exports = [
       { title: "Not Even Wrong 2: An Audit of Public AGI Prediction, 1950–2026", url: "/curated/2026-09-14-floridi-not-even-wrong-2-agi-ssrn/", _source: "curated" },
       { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" },
       { title: "Pacing the Frontier", url: "/curated/2026-07-28-pacing-the-frontier-lettera/", _source: "curated" },
-      { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-fuga-e-clamore-lawfare/", _source: "curated" }
+      { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-fuga-e-clamore-lawfare/", _source: "curated" },
+      { title: "AI’s Real Gift to Science", url: "/curated/2026-10-04-kiros-ai-real-gift-science-atlantic/", _source: "curated" }
     ]
   },
   {
