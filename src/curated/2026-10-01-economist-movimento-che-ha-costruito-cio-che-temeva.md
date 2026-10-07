@@ -1,5 +1,5 @@
 ---
-title: "Il movimento che ha costruito ciò che temeva"
+title: "How effective altruism conquered the world"
 external_url: "https://www.economist.com/international/2026/10/01/how-effective-altruism-conquered-the-world"
 source: "The Economist"
 date: 2026-10-01

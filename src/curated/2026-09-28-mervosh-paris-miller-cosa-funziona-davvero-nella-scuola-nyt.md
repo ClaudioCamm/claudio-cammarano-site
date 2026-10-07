@@ -1,5 +1,5 @@
 ---
-title: "Cosa funziona davvero nella scuola americana"
+title: "30 Ideas for Fixing U.S. Schools, Ranked by Experts"
 external_url: "https://www.nytimes.com/2026/09/28/upshot/ideas-fixing-schools-ranked.html"
 source: "Sarah Mervosh, Francesca Paris e Claire Cain Miller / The New York Times"
 date: 2026-09-28

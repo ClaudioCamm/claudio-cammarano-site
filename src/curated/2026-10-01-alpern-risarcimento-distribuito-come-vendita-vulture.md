@@ -1,5 +1,5 @@
 ---
-title: "Un risarcimento distribuito come una vendita"
+title: "Publishers Hit the AI Jackpot"
 external_url: "https://www.vulture.com/article/publishers-hit-the-ai-jackpot.html"
 source: "Emma Alpern / Vulture"
 date: 2026-10-01

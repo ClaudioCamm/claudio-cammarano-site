@@ -1,5 +1,5 @@
 ---
-title: "Il token della scuola"
+title: "Min Jin Lee's Underdog Morality"
 external_url: "https://www.theatlantic.com/podcasts/2026/10/min-jin-lee-american-hagwon/688835/"
 source: "Hanna Rosin e Min Jin Lee / The Atlantic (Radio Atlantic)"
 date: 2026-10-01

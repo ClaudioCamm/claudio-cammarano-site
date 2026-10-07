@@ -1,5 +1,5 @@
 ---
-title: "Quindici anni di scelte opposte, fra Inghilterra e Scozia"
+title: "Are teenagers growing dimmer?"
 external_url: "https://www.economist.com/international/2026/09/08/are-teenagers-growing-dimmer"
 source: "The Economist"
 date: 2026-09-08

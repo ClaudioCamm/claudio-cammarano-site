@@ -1,5 +1,5 @@
 ---
-title: "L'abitabilità non è una soglia che si supera"
+title: "Where to live? How climate change is forcing us to rethink our relationship with our surroundings"
 external_url: "https://www.lemonde.fr/en/environment/article/2026/09/28/where-to-live-how-climate-change-is-forcing-us-to-rethink-our-relationship-with-our-surroundings_6758019_114.html"
 source: "Claire Legros / Le Monde"
 date: 2026-09-28
