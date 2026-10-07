@@ -1,5 +1,5 @@
 ---
-title: "Anche se non lo fossero"
+title: "Could AIs become conscious?"
 external_url: "https://www.economist.com/leaders/2026/08/20/could-ais-become-conscious"
 source: "The Economist"
 date: 2026-08-20

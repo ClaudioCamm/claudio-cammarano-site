@@ -1,5 +1,5 @@
 ---
-title: "Quando la propaganda smette di sembrare straniera"
+title: "How Russian Propaganda Learned to Look Finnish"
 external_url: "https://united24media.com/world/how-russian-propaganda-learned-to-look-finnish-22477"
 source: "Oleksandr Liemienov e Sofiia Maksymiv / UNITED24 Media"
 date: 2026-09-16

@@ -1,5 +1,5 @@
 ---
-title: "La scala che non regge"
+title: "Don’t mistake chatbot intelligence for consciousness"
 external_url: "https://www.economist.com/by-invitation/2026/08/20/dont-mistake-chatbot-intelligence-for-consciousness"
 source: "Susan Schneider / The Economist"
 date: 2026-08-20

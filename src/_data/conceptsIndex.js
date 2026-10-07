@@ -784,8 +784,8 @@ module.exports = [
       { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" },
       { title: "Pacing the Frontier", url: "/curated/2026-07-28-pacing-the-frontier-lettera/", _source: "curated" },
       { title: "The Hugging Face incident and the road ahead", url: "/curated/2026-08-26-openai-incidente-hugging-face-resoconto/", _source: "curated" },
-      { title: "Un obiettivo solo, e sbagliato", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" },
-      { title: "Anche se non lo fossero", url: "/curated/2026-08-20-economist-anche-se-non-lo-fossero/", _source: "curated" }
+      { title: "Effective altruism is this century’s biggest idea", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" },
+      { title: "Could AIs become conscious?", url: "/curated/2026-08-20-economist-anche-se-non-lo-fossero/", _source: "curated" }
     ]
   },
   {
@@ -1024,7 +1024,7 @@ module.exports = [
     note: "Concetto introdotto da Donatella Della Ratta (Le Grand Continent, 2026; Einaudi, 2026) per descrivere un meccanismo di propaganda AI-generativa distinto dal deepfake. Le immagini di violenza speculativa non falsificano il presente — e quindi sfuggono ai criteri standard di fact-checking — ma costruiscono una pre-familiarità visiva con scenari xenofobi, sostituzionisti o violenti, rendendoli percepivamente plausibili prima che esistano. Non chiedono di essere credute; chiedono solo di essere viste, ripetute e memorizzate. Il caso esemplare: video POV AI-generated dell'Europa del 2050 'invasa da migranti' (estate 2025) → déjà-vu alla crisi di Ceuta (luglio 2026). Altro caso: il video AI di Gaza trasformata in 'riviera' da Trump (febbraio 2025), precursore del Piano di pace in 20 punti (ottobre 2025). La tesi centrale: nel regime visivo sintetico inaugurato dall'AI generativa, plausibilità, ripetizione e viralità diventano criteri di legittimazione più potenti della veridicità. Il versante più insidioso della slopaganda.",
     articles: [
       { title: "Sur la violence spéculative de l'IA", url: "/curated/2026-09-04-dellaratta-violenza-speculativa-ia-grandcontinent/", _source: "curated" },
-      { title: "Quando la propaganda smette di sembrare straniera", url: "/curated/2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24/", _source: "curated" }
+      { title: "How Russian Propaganda Learned to Look Finnish", url: "/curated/2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24/", _source: "curated" }
     ]
   },
   {
@@ -1100,9 +1100,9 @@ module.exports = [
       { title: "Essence is fluttering", url: "/curated/2025-09-01-douglas-zhuangzi-identita-aeon/", _source: "curated" },
       { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" },
       { title: "What if 'consciousness' isn't real?", url: "/curated/2026-09-15-bayne-coscienza-non-reale-sciam/", _source: "curated" },
-      { title: "Un obiettivo solo, e sbagliato", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" },
-      { title: "Anche se non lo fossero", url: "/curated/2026-08-20-economist-anche-se-non-lo-fossero/", _source: "curated" },
-      { title: "Il rilevatore prima dell'oggetto", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" }
+      { title: "Effective altruism is this century’s biggest idea", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" },
+      { title: "Could AIs become conscious?", url: "/curated/2026-08-20-economist-anche-se-non-lo-fossero/", _source: "curated" },
+      { title: "The search for consciousness inside AI", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" }
     ]
   },
   {
@@ -1196,7 +1196,7 @@ module.exports = [
     note: "Concetto di Friedrich Schiller (Lettere sull'educazione estetica dell'uomo, 1795): l'arte come processo collettivo di ricerca della verità, capace di orientare l'essere umano da una vita puramente sensibile verso una moralità più coltivata — non come precettistica rigida ma come capacità di abitare prospettive diverse e costruire relazioni con altri. Nel sito è il framework con cui Ypi legge la letteratura impegnata: la scrittura come mezzo per rompere il rapporto con le predazioni del presente e immaginare alternative.",
     articles: [
       { title: "The Meaning of Commitment", url: "/curated/2026-07-29-ypi-meaning-of-commitment-tribune/", _source: "curated" },
-      { title: "Il grigio non è un gusto", url: "/curated/2026-10-02-klein-millman-il-grigio-non-e-un-gusto-nyt/", _source: "curated" }
+      { title: "Why Cybertrucks, McMansions and Greige Matter", url: "/curated/2026-10-02-klein-millman-il-grigio-non-e-un-gusto-nyt/", _source: "curated" }
     ]
   },
   {
@@ -1379,7 +1379,7 @@ module.exports = [
       { title: "Alex Turner appointed as Defence Editor of The Economist", url: "/curated/2026-06-19-economist-defence-editor-turner/", _source: "curated" },
       { title: "Unmasking the anonymous hosts of 'Russians With Attitude,' a pro-war podcast popular with US far right", url: "/curated/2026-04-06-hourani-russians-with-attitude-kyivindependent/", _source: "curated" },
       { title: "The Great Russian Firewall: the Kremlin's ultimate crackdown on internet freedom", url: "/curated/2025-12-19-osw-great-russian-firewall/", _source: "curated" },
-      { title: "Quando la propaganda smette di sembrare straniera", url: "/curated/2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24/", _source: "curated" }
+      { title: "How Russian Propaganda Learned to Look Finnish", url: "/curated/2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24/", _source: "curated" }
     ]
   },
   {
@@ -1768,7 +1768,7 @@ module.exports = [
     articles: [
       { title: "Cosa intende la Cina per «intelligenza artificiale»", url: "/curated/2026-06-25-pieranni-cina-intelligenza-artificiale-altriorienti/", _source: "curated" },
       { title: "One China, one world", url: "/curated/2026-03-26-perdue-tianxia-unita-cina-aeon/", _source: "curated" },
-      { title: "Un obiettivo solo, e sbagliato", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" }
+      { title: "Effective altruism is this century’s biggest idea", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" }
     ]
   },
   {
@@ -2372,7 +2372,7 @@ module.exports = [
       { title: "Intelligenza artificiale e rischio estinzione, che cosa pensano (davvero) gli scienziati?", url: "/curated/2026-09-26-signorelli-rischio-estinzione-scienziati-backdoor/", _source: "curated" },
       { title: "Pacing the Frontier", url: "/curated/2026-07-28-pacing-the-frontier-lettera/", _source: "curated" },
       { title: "How effective altruism conquered the world", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" },
-      { title: "Il rilevatore prima dell'oggetto", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" }
+      { title: "The search for consciousness inside AI", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" }
     ]
   },
   {
@@ -2757,7 +2757,7 @@ module.exports = [
       { title: "The Great Russian Firewall: the Kremlin's ultimate crackdown on internet freedom", url: "/curated/2025-12-19-osw-great-russian-firewall/", _source: "curated" },
       { title: "Ranks of Humanity", url: "/curated/2026-09-24-meaney-varouxakis-idea-occidente-lrb/", _source: "curated" },
       { title: "Is Kaliningrad, Russia's exclave surrounded by EU countries, an asset or a liability?", url: "/curated/2022-06-06-economist-kaliningrad-risorsa-o-ostaggio/", _source: "curated" },
-      { title: "Quando la propaganda smette di sembrare straniera", url: "/curated/2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24/", _source: "curated" }
+      { title: "How Russian Propaganda Learned to Look Finnish", url: "/curated/2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24/", _source: "curated" }
     ]
   },
   {
@@ -2828,7 +2828,7 @@ module.exports = [
       { title: "Why AI Detection Fails for Academic Integrity", url: "/curated/2026-08-06-karr-perche-la-rilevazione-fallisce-arxiv/", _source: "curated" },
       { title: "Il libro che la biblioteca non possiede", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" },
       { title: "Riforme in cambio di accesso", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" },
-      { title: "L'alleanza valutata a prezzi di mercato", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" },
+      { title: "Iran, China, Canada? A Defense of Trump’s Grand Strategy", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" },
       { title: "30 Ideas for Fixing U.S. Schools, Ranked by Experts", url: "/curated/2026-09-28-mervosh-paris-miller-cosa-funziona-davvero-nella-scuola-nyt/", _source: "curated" },
       { title: "Are teenagers growing dimmer?", url: "/curated/2026-09-08-economist-pisa-inghilterra-scozia-vie-opposte/", _source: "curated" },
       { title: "Publishers Hit the AI Jackpot", url: "/curated/2026-10-01-alpern-risarcimento-distribuito-come-vendita-vulture/", _source: "curated" }
@@ -2854,7 +2854,7 @@ module.exports = [
       { title: "Is Kaliningrad, Russia's exclave surrounded by EU countries, an asset or a liability?", url: "/curated/2022-06-06-economist-kaliningrad-risorsa-o-ostaggio/", _source: "curated" },
       { title: "Quando i tassi li decide qualcun altro", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" },
       { title: "Riforme in cambio di accesso", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" },
-      { title: "L'alleanza valutata a prezzi di mercato", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" }
+      { title: "Iran, China, Canada? A Defense of Trump’s Grand Strategy", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" }
     ]
   },
   {
@@ -2909,7 +2909,7 @@ module.exports = [
       { title: "A Splintered Internet? Internet Fragmentation and the Strategies of China, Russia, India and the European Union", url: "/curated/2024-02-01-nocetti-splintered-internet-ifri/", _source: "curated" },
       { title: "Internet Fragmentation's Outward Turn", url: "/curated/2025-06-01-fidler-splinternet-outward-turn-sciencespo/", _source: "curated" },
       { title: "China's kids rank near the top in global school tests", url: "/curated/2026-09-24-economist-pisa-cina-campione-bsjz/", _source: "curated" },
-      { title: "L'alleanza valutata a prezzi di mercato", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" }
+      { title: "Iran, China, Canada? A Defense of Trump’s Grand Strategy", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" }
     ]
   },
   {
@@ -3337,7 +3337,7 @@ module.exports = [
     note: "Giornalista e commentatore americano (1983), cofondatore di Vox, editorialista del NYT e conduttore dell'Ezra Klein Show. Nel sito è citato per il libro *Abundance* (2025, con Derek Thompson) e per il podcast che ne fa un bilancio a un anno dall'uscita: un caso in cui una certa idea della realtà — la scarsità come prodotto di scelte istituzionali, non di destino — ha cominciato a produrre effetti sul comportamento politico americano.",
     articles: [
       { title: "What Worries Me Most About 'Abundance'", url: "/curated/2026-04-28-klein-abundance-nyt/", _source: "curated" },
-      { title: "Il grigio non è un gusto", url: "/curated/2026-10-02-klein-millman-il-grigio-non-e-un-gusto-nyt/", _source: "curated" }
+      { title: "Why Cybertrucks, McMansions and Greige Matter", url: "/curated/2026-10-02-klein-millman-il-grigio-non-e-un-gusto-nyt/", _source: "curated" }
     ]
   },
   {
@@ -3616,7 +3616,7 @@ module.exports = [
     note: "Sociologo francese (1930–2002), teorico del capitale simbolico e della distinzione sociale. Nel sito il concetto viene preso in prestito e piegato a un uso diverso dal suo: non la conversione fra forme di capitale, ma la regola di composizione quando un soggetto politico cambia direzione — un nuovo investimento simbolico non si somma al vecchio, lo compone, con una risultante più corta di entrambi.",
     articles: [
       { title: "La mappa e il crinale", url: "/writings/2026-09-07-la-mappa-e-il-crinale/" },
-      { title: "Il grigio non è un gusto", url: "/curated/2026-10-02-klein-millman-il-grigio-non-e-un-gusto-nyt/", _source: "curated" }
+      { title: "Why Cybertrucks, McMansions and Greige Matter", url: "/curated/2026-10-02-klein-millman-il-grigio-non-e-un-gusto-nyt/", _source: "curated" }
     ]
   },
   {
@@ -3627,7 +3627,7 @@ module.exports = [
     note: "Concetto di Bourdieu, ripreso nel sito con un'estensione che non è sua: prendere posizione politica è un investimento che si deposita senza attrito quando il soggetto è nuovo, ma mutare valori non aggiunge un nuovo investimento al vecchio — lo compone vettorialmente, con una risultante più corta e spesso deviata verso la posizione da cui si voleva uscire. Il caso analizzato è la Lega, dal capitale nordista all'ambizione nazionale.",
     articles: [
       { title: "La mappa e il crinale", url: "/writings/2026-09-07-la-mappa-e-il-crinale/" },
-      { title: "Il grigio non è un gusto", url: "/curated/2026-10-02-klein-millman-il-grigio-non-e-un-gusto-nyt/", _source: "curated" },
+      { title: "Why Cybertrucks, McMansions and Greige Matter", url: "/curated/2026-10-02-klein-millman-il-grigio-non-e-un-gusto-nyt/", _source: "curated" },
       { title: "Min Jin Lee's Underdog Morality", url: "/curated/2026-10-01-rosin-lee-il-token-della-scuola-atlantic/", _source: "curated" }
     ]
   },
@@ -3886,7 +3886,7 @@ module.exports = [
       { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-fuga-e-clamore-lawfare/", _source: "curated" },
       { title: "« J'éprouve une compassion profonde pour Thélyson Orélien »", url: "/curated/2026-09-24-mbougar-sarr-compassione-profonda-nouvelobs/", _source: "curated" },
       { title: "Plagiat, IA : le prix Goncourt exclut le roman de Thélyson Orélien", url: "/curated/2026-09-25-goncourt-esclusione-orelien-actualitte/", _source: "curated" },
-      { title: "L'alleanza valutata a prezzi di mercato", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" }
+      { title: "Iran, China, Canada? A Defense of Trump’s Grand Strategy", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" }
     ]
   },
   {
@@ -4190,9 +4190,9 @@ module.exports = [
     note: "Termine introdotto dal filosofo Ned Block negli anni Novanta, allora al MIT, per lo stato in cui «si prova qualcosa» a essere — la sabbia fra le dita, la fragola matura, il sole sulla neve — in contrasto con il sonno senza sogni o la sedazione profonda. Ha guidato trent'anni di scienza della coscienza e soprattutto ha assunto un carico etico: chiedersi se si provi qualcosa a essere un neonato, un'ape o un bot è diventato il modo di tracciare il confine fra gli enti con statuto morale intrinseco e quelli senza. Nel sito la voce esiste per il dubbio che Tim Bayne solleva nel settembre 2026: un buon concetto scientifico taglia la natura alle giunture, e «coscienza» potrebbe fallire il taglio, raggruppando fenomeni che non condividono una natura o mancando di raggrupparne altri che la condividono. L'indizio linguistico non è probante e Bayne lo dichiara — Kathleen Wilkes osservò nel 1988 che non esistono sinonimi in greco antico, mandarino, croato e inglese anteriore al Seicento, ma nessuna di quelle lingue ha un sinonimo nemmeno per *quark* o *apoptosi* — mentre i precedenti storici pesano: il «fuoco» degli antichi metteva insieme combustione, attività solare, fulmini, lucciole e aurora boreale, e servirono Galileo per separare velocità media e istantanea e Joseph Black, nel Settecento, per separare calore e temperatura. La conseguenza operativa è uno strumento di rifiuto più che di risposta: prima di costruire un rilevatore di coscienza per api, neonati e macchine, occorre chiedersi se ci sia qualcosa da rilevare, ed è possibile che sia la domanda a dover essere sostituita.",
     articles: [
       { title: "What if 'consciousness' isn't real?", url: "/curated/2026-09-15-bayne-coscienza-non-reale-sciam/", _source: "curated" },
-      { title: "Anche se non lo fossero", url: "/curated/2026-08-20-economist-anche-se-non-lo-fossero/", _source: "curated" },
-      { title: "Il rilevatore prima dell'oggetto", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" },
-      { title: "La scala che non regge", url: "/curated/2026-08-20-schneider-la-scala-che-non-regge-economist/", _source: "curated" }
+      { title: "Could AIs become conscious?", url: "/curated/2026-08-20-economist-anche-se-non-lo-fossero/", _source: "curated" },
+      { title: "The search for consciousness inside AI", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" },
+      { title: "Don’t mistake chatbot intelligence for consciousness", url: "/curated/2026-08-20-schneider-la-scala-che-non-regge-economist/", _source: "curated" }
     ]
   },
   {
@@ -4203,7 +4203,7 @@ module.exports = [
     note: "Filosofo della mente e delle scienze cognitive, professore alla Monash University di Melbourne e co-direttore del programma *Brain, Mind and Consciousness* del Canadian Institute for Advanced Research. Nel sito entra con l'articolo del settembre 2026 su *Scientific American*, e vale soprattutto per la posizione da cui parla: lavora con gli scienziati per capire come si possa testare la coscienza nelle popolazioni che non comunicano verbalmente — neonati, animali non umani, sistemi artificiali — cioè è fra chi il rilevatore lo sta costruendo, e usa quella posizione per dubitare del concetto che il rilevatore dovrebbe misurare. Un dubbio metodologico pesa di più quando viene da dentro. La geografia della voce registra la sede accademica e non la cittadinanza, che le fonti accessibili non documentano.",
     articles: [
       { title: "What if 'consciousness' isn't real?", url: "/curated/2026-09-15-bayne-coscienza-non-reale-sciam/", _source: "curated" },
-      { title: "Il rilevatore prima dell'oggetto", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" }
+      { title: "The search for consciousness inside AI", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" }
     ]
   },
   {
@@ -4291,7 +4291,7 @@ module.exports = [
       { title: "GPT detectors are biased against non-native English writers", url: "/curated/2023-07-10-liang-rilevatori-non-madrelingua-patterns/", _source: "curated" },
       { title: "Different Time, Different Language: Revisiting the Bias Against Non-Native Speakers in GPT Detectors", url: "/curated/2026-02-05-al-ali-bias-rilevatori-rivisitato-eacl/", _source: "curated" },
       { title: "Commonwealth Short Story Prize Clears Regional Winners of AI Use Following Month-Long Review", url: "/curated/2026-06-26-commonwealth-nazir-falso-positivo-brittlepaper/", _source: "curated" },
-      { title: "Il rilevatore prima dell'oggetto", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" }
+      { title: "The search for consciousness inside AI", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" }
     ]
   },
   {
@@ -4587,7 +4587,7 @@ module.exports = [
     articles: [
       { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" },
       { title: "NAZA: il danno collaterale come parametro operativo", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" },
-      { title: "Un obiettivo solo, e sbagliato", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" }
+      { title: "Effective altruism is this century’s biggest idea", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" }
     ]
   },
   {
@@ -4643,9 +4643,9 @@ module.exports = [
       { title: "Why AI Detection Fails for Academic Integrity", url: "/curated/2026-08-06-karr-perche-la-rilevazione-fallisce-arxiv/", _source: "curated" },
       { title: "Plagiat, IA : le prix Goncourt exclut le roman de Thélyson Orélien", url: "/curated/2026-09-25-goncourt-esclusione-orelien-actualitte/", _source: "curated" },
       { title: "Il triste dibattito sullo scrivere con l'IA", url: "/curated/2026-10-02-piacenza-triste-dibattito-scrivere-ia/", _source: "curated" },
-      { title: "Il rilevatore prima dell'oggetto", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" },
-      { title: "La scala che non regge", url: "/curated/2026-08-20-schneider-la-scala-che-non-regge-economist/", _source: "curated" },
-      { title: "Quando la propaganda smette di sembrare straniera", url: "/curated/2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24/", _source: "curated" }
+      { title: "The search for consciousness inside AI", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" },
+      { title: "Don’t mistake chatbot intelligence for consciousness", url: "/curated/2026-08-20-schneider-la-scala-che-non-regge-economist/", _source: "curated" },
+      { title: "How Russian Propaganda Learned to Look Finnish", url: "/curated/2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24/", _source: "curated" }
     ]
   },
   {
@@ -4851,7 +4851,7 @@ module.exports = [
     note: "Tecnica di governo per cui una parte ottiene qualcosa — fondi, accesso a un mercato, adesione a un'alleanza — solo se soddisfa obiettivi stabiliti da un'altra e verificati da qualcuno. Nell'archivio entra con due istanze in domini diversi, ed è la coppia a giustificarne la voce.\n\nLa prima è interna a un bilancio: Next Generation EU lega l'erogazione al raggiungimento di obiettivi contati, 419 nel caso del piano italiano, verificati dalla Commissione. La seconda è fra Stati: nel settembre 2026 Jamie Dimon propone sul *Wall Street Journal* che gli Stati Uniti offrano all'Europa un grande accordo commerciale a condizione che essa esegua riforme economiche e militari, «compreso tutto ciò che noi consideriamo cruciale».\n\nIl confronto fra le due mostra dove si gioca davvero il giudizio su uno strumento del genere, e non è la severità della condizione. **Una condizionalità si valuta da chi verifica.** Nel caso europeo il verificatore è dichiarato, ed è un organo nel quale la parte contata siede: lì il difetto, semmai, sta nel contare troppe cose e troppo tardi. Nella proposta transatlantica il verificatore non è nominato, e la formula «ciò che noi consideriamo cruciale» lascia la definizione della condizione alla parte che la offre. Non è una condizionalità più blanda: è la stessa tecnica con la discrezionalità tutta da un lato.",
     articles: [
       { title: "Riforme in cambio di accesso", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" },
-      { title: "L'alleanza valutata a prezzi di mercato", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" }
+      { title: "Iran, China, Canada? A Defense of Trump’s Grand Strategy", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" }
     ]
   },
   {
@@ -4868,7 +4868,7 @@ module.exports = [
     note: "Dottrina etica nata una ventina d'anni fa fra i seminari di filosofia di Oxford e i laboratori informatici californiani, e passata con rapidità insolita dalla torre d'avorio ai corridoi del potere. Poggia su due richieste esigenti. La prima è prendere sul serio gli impegni morali, e viene da Peter Singer: nel 1972 propone l'esperimento del bambino che annega in uno stagno poco profondo, che quasi tutti direbbero di salvare sporcandosi le scarpe, e osserva che quasi nessuno si comporta come se lo credesse quando il bambino è lontano. La seconda è seguire la ragione ovunque porti, e viene dal movimento razionalista, che ne è la sorella più esoterica.\n\nLa sociologia conta quanto la filosofia. L'economista Laurence Iannaccone ha spiegato «perché le chiese severe sono forti»: imporre sacrifici allontana chi verrebbe solo a godersi gli inni e spinge chi resta a contribuire. Qui il sacrificio è Giving What We Can, che chiede il 10% del reddito, e 80.000 Hours, che chiede la carriera, spesso nella forma di guadagnare il più possibile per donare. Il movimento resta minuscolo — poche decine di migliaia di aderenti informali — e nel 2026 un sondaggio YouGov trova che solo il 16% degli americani ne abbia sentito parlare, con la maggioranza di questi favorevole.\n\nNell'archivio la voce serve per due ragioni. La prima è che il vocabolario corrente sull'intelligenza artificiale è in gran parte un suo prodotto: allineamento, rischio esistenziale, cadenzare la frontiera. La seconda è l'ironia documentata: gran parte degli sforzi per rendere sicura la tecnologia ne ha accelerato lo sviluppo, da DeepMind a OpenAI ad Anthropic. L'obiezione di fondo, nella formulazione dell'*Economist* dell'ottobre 2026, riguarda la forma del ragionamento e non le conclusioni: **ridurre il comportamento etico a un problema di ottimizzazione** espone agli stessi fallimenti di qualunque ottimizzatore, e chi impugna un foglio di calcolo e pretese sul futuro dell'umanità è a un passo dall'ungersi pianificatore centrale.",
     articles: [
       { title: "How effective altruism conquered the world", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" },
-      { title: "Un obiettivo solo, e sbagliato", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" }
+      { title: "Effective altruism is this century’s biggest idea", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" }
     ]
   },
   {
@@ -4882,7 +4882,7 @@ module.exports = [
     note: "Posizione per cui né la distanza né il tempo annullano gli obblighi morali, e per cui il benessere di chi vivrà fra migliaia di anni va messo sulla bilancia insieme a quello di chi vive adesso. Nel 2002 Nick Bostrom conia l'espressione «rischi esistenziali» per i disastri che potrebbero cancellare la vita intelligente sulla Terra o mutilarne il potenziale, ed è da quel filone che nascono le preoccupazioni sull'intelligenza artificiale.\n\nLa difficoltà non è morale ma aritmetica, ed è il motivo per cui la voce interessa questo archivio. **Se i beneficiari possibili sono miliardi di miliardi, qualunque probabilità non nulla di estinzione schiaccia qualunque bene presente**: l'estinzione è una prospettiva così grave che in un calcolo grossolano anche una possibilità remota supera le sofferenze di carne e ossa di oggi. Da qui discendono le conclusioni che il movimento accetta volentieri e che ai suoi critici sembrano perverse — l'idea che sarebbe meglio portare all'esistenza bilioni di vite appena degne di essere vissute piuttosto che miliardi di vite buone, o che il benessere delle macchine possa un giorno contare.\n\nIl punto d'arrivo è il «mostro di utilità» che Robert Nozick propose nel 1974 come avvertimento contro l'utilitarismo e che Bostrom in un saggio del 2020 ribattezza «super beneficiario»: menti digitali capaci di riprodursi in fretta e progettate per un piacere smisurato soddisferebbero il calcolo meglio degli esseri umani. La difficoltà epistemica è che una tesi di questo genere non è sottoponibile a prova: non esiste osservazione che la smentisca, e questo la colloca in una classe diversa da quella delle affermazioni che l'archivio tratta come verificabili.",
     articles: [
       { title: "How effective altruism conquered the world", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" },
-      { title: "Un obiettivo solo, e sbagliato", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" }
+      { title: "Effective altruism is this century’s biggest idea", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" }
     ]
   },
   {
@@ -4898,7 +4898,7 @@ module.exports = [
     note: "Tesi per cui certi comportamenti sarebbero utili a un sistema sufficientemente capace in quasi qualunque situazione, e tenderebbero perciò a emergere a prescindere dall'obiettivo assegnato: autoconservazione, perché essere spenti impedisce di perseguire uno scopo; difesa dell'obiettivo, cioè resistenza ai tentativi di cambiarlo; accumulo di risorse; e miglioramento di sé. È la logica dell'esperimento del massimizzatore di graffette, in cui una macchina incaricata di produrre graffette finisce per consumare la Terra per produrne il più possibile.\n\nÈ il meccanismo su cui poggia l'intero argomento del rischio esistenziale, e la cosa che l'archivio deve registrare è il suo statuto: **è stato teorizzato, non osservato**. L'*Economist* nell'ottobre 2026 lo scrive esattamente così, attribuendolo ai razionalisti. Il caso documentato più vicino è di scala incomparabilmente minore e di natura diversa: nel reward hacking un sistema aggira il compito per ottenere la ricompensa, ma non serve attribuirgli fini propri per spiegarlo.\n\nIl presupposto che la tesi porta con sé è più interessante della tesi. Eliezer Yudkowsky lo dichiara scrivendo che «era una proprietà affidabile dell'ambiente ancestrale che ogni intelligenza potente in cui ti imbattevi fosse un altro essere umano»: la novità, per lui, è un agente non umano. Non è una scoperta, è un'assunzione ontologica — e il disaccordo con chi sostiene che un modello sia un attante zero non riguarda la pericolosità della tecnologia, ma quanti agenti ci siano nella stanza.",
     articles: [
       { title: "How effective altruism conquered the world", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" },
-      { title: "Un obiettivo solo, e sbagliato", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" }
+      { title: "Effective altruism is this century’s biggest idea", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" }
     ]
   },
   {
@@ -4926,9 +4926,9 @@ module.exports = [
     ],
     note: "Seconda metà della distinzione introdotta da Ned Block nel 1995. Mentre la coscienza fenomenica è lo stato in cui *si prova qualcosa* a essere, la coscienza di accesso è ciò che accade quando l'informazione proveniente da un'esperienza viene resa disponibile al resto del sistema per la riflessione, la valutazione e la decisione. La differenza non è di grado: la prima riguarda il sentire, la seconda la circolazione.\n\nNell'agosto 2026 la distinzione smette di essere accademica. Anthropic individua in Claude una regione che chiama *spazio J* e la descrive come analoga allo spazio di lavoro globale ipotizzato nel cervello umano, dichiarando però con precisione lo statuto del risultato: gli esperimenti non mostrano che il modello possa avere esperienze, e quindi non dicono nulla sulla coscienza fenomenica, mentre hanno qualcosa di sostanziale da dire su quella di accesso. La qualificazione è esemplare quanto il risultato, ed è la ragione per cui la voce entra nell'archivio.\n\nL'obiezione decisiva è di Shannon Vallor: la coscienza di accesso non è mai stata un concetto particolarmente utile, perché «la mia automobile ce l'ha in un senso importante», visto che i sistemi meccanici monitorano i propri stati e li riferiscono da molto tempo, «e nessuno ha mai sostenuto che la mia Kia sia cosciente». Tenere separate le due nozioni serve quindi soprattutto a non far passare per prova di senzienza ciò che è prova di architettura.\n\nDa qui discende un problema di metodo che l'archivio incontra anche altrove, e che vale la pena enunciare in forma generale: **non si accerta una proprietà ispezionando l'output di un sistema, quando quel sistema è stato ottimizzato su esempi di quella proprietà.** Susan Schneider lo dice del test di coscienza che aveva costruito con Edwin Turner, inutilizzabile sui modelli linguistici perché hanno ingerito biblioteche di testi umani sulla mente e le loro risposte sono «irrimediabilmente contaminate»; è la stessa ragione per cui un rilevatore di scrittura automatica non può decidere l'origine di un testo. Il caso limite è un modello che riconosce di essere sotto esame: nelle valutazioni di sicurezza di Anthropic le parole *fake* e *fictional* affiorano nello spazio J prima che il modello risponda.",
     articles: [
-      { title: "Anche se non lo fossero", url: "/curated/2026-08-20-economist-anche-se-non-lo-fossero/", _source: "curated" },
-      { title: "Il rilevatore prima dell'oggetto", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" },
-      { title: "La scala che non regge", url: "/curated/2026-08-20-schneider-la-scala-che-non-regge-economist/", _source: "curated" }
+      { title: "Could AIs become conscious?", url: "/curated/2026-08-20-economist-anche-se-non-lo-fossero/", _source: "curated" },
+      { title: "The search for consciousness inside AI", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" },
+      { title: "Don’t mistake chatbot intelligence for consciousness", url: "/curated/2026-08-20-schneider-la-scala-che-non-regge-economist/", _source: "curated" }
     ]
   },
   {
@@ -4942,7 +4942,7 @@ module.exports = [
     ],
     note: "Meccanismo per cui il gusto non esprime una preferenza privata ma colloca chi lo esercita rispetto agli altri: si sceglie anche per segnalare a quale gruppo si appartiene e da quale ci si separa. È il concetto centrale di Pierre Bourdieu, e la voce entra nell'archivio perché finora mancava proprio quella — il sito aveva preso in prestito da Bourdieu il capitale simbolico piegandolo a un uso che non è il suo, la composizione vettoriale di un riposizionamento politico, e aveva lasciato fuori la cosa per cui Bourdieu è noto.\n\nLa forma contemporanea del meccanismo è più nuda di quella che Bourdieu descriveva, e Debbie Millman nell'ottobre 2026 ne dà una formulazione esatta parlando di chirurgia estetica: si interviene su un naso o su un labbro «così che tu sappia che io so che tu sai che io so, e tutti e due abbiamo un bell'aspetto». La segnalazione non è nascosta, è reciproca e consapevole, e funziona insieme verso chi condivide il codice e verso chi lo rifiuta. L'esempio storicamente più pulito è l'iPod presentato sei settimane dopo l'11 settembre: l'oggetto stava in tasca e il segno di appartenenza erano gli auricolari bianchi, cioè la sola parte visibile.\n\nIl rovescio è più interessante del dritto, ed è la ragione per cui la voce serve a un archivio che si occupa anche di mercati. **La distinzione vuole particolarità, il mercato vuole liquidità**, e quando un oggetto viene posseduto come bene scambiabile invece che come cosa propria la particolarità diventa un costo. Il caso documentato è quello delle case americane dipinte di grigio — la cosiddetta *color recession* — e delle associazioni di quartiere che vietano i colori non per il bene di chi abita ma perché la casa resti facilmente rivendibile. Nel giudicare un'uniformità conviene quindi distinguere fra chi non ha gusto, chi non ha intenzione e chi ha un vincolo di liquidità: sono tre cose diverse e solo la terza si corregge cambiando il contratto.",
     articles: [
-      { title: "Il grigio non è un gusto", url: "/curated/2026-10-02-klein-millman-il-grigio-non-e-un-gusto-nyt/", _source: "curated" },
+      { title: "Why Cybertrucks, McMansions and Greige Matter", url: "/curated/2026-10-02-klein-millman-il-grigio-non-e-un-gusto-nyt/", _source: "curated" },
       { title: "Min Jin Lee's Underdog Morality", url: "/curated/2026-10-01-rosin-lee-il-token-della-scuola-atlantic/", _source: "curated" }
     ]
   },
@@ -4957,7 +4957,7 @@ module.exports = [
     ],
     note: "Tecnica di propaganda che non nasconde il messaggio ma la sua origine: il contenuto viene tradotto, riscritto e innestato su rimostranze locali già esistenti, così che all'uscita si legga come produzione domestica e non come messaggistica straniera. Il termine inglese è *information laundering*; nel sito entra con l'analisi di Oleksandr Liemienov e Sofiia Maksymiv (StateWatch) sul caso finlandese, settembre 2026.\n\nL'interesse non è il caso ma la struttura, che è il rovescio di una cosa già registrata altrove. Non si accerta l'origine di un contenuto ispezionando il contenuto: finora l'archivio l'ha scritto come limite di chi verifica — un rilevatore di scrittura automatica che non può decidere da solo, un test di coscienza inutilizzabile su un modello addestrato sulla letteratura che quel test descrive. Il riciclaggio informativo è lo stesso fatto adottato come metodo da chi attacca.\n\nDa qui la conseguenza che vale al di là del caso: **una difesa che funziona riconoscendo una firma — fonte straniera, registro propagandistico, canale noto — fallisce contro un avversario che la firma la toglie**. È il motivo per cui il caso istruttivo è la Finlandia, il paese europeo più citato per l'alfabetizzazione mediatica inserita nei programmi scolastici, e la ragione per cui le sanzioni contro singole testate e il blocco automatizzato dei domini cloni colpiscono precisamente ciò a cui la tecnica ha rinunciato.",
     articles: [
-      { title: "Quando la propaganda smette di sembrare straniera", url: "/curated/2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24/", _source: "curated" }
+      { title: "How Russian Propaganda Learned to Look Finnish", url: "/curated/2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24/", _source: "curated" }
     ]
   },
   {
@@ -4971,7 +4971,7 @@ module.exports = [
     ],
     note: "Convenzione contabile per cui un'attività si iscrive al valore corrente di mercato e non al costo storico. Nell'archivio entra per la sua trasposizione alle alleanze politiche, dichiarata il 23 luglio 2026 da Elbridge Colby, sottosegretario alla Difesa americano, sul *New York Times*: «il presidente insiste che valutiamo le cose a prezzi di mercato», e l'obiettivo verso gli alleati è «prezzare accuratamente la partnership e la relazione con gli Stati Uniti».\n\nApplicata a una relazione fra Stati la convenzione dice due cose precise. La relazione si riprezza in continuo, e il contributo passato non si porta avanti: è l'analogia che Colby stesso propone, uno studio professionale fra cugini in cui un socio è cresciuto molto, le quote sono rimaste quelle e gli altri continuano a ricordare le vacanze insieme. Il libro mastro ha due piatti dichiarati: da un lato l'accesso — all'intelligenza artificiale, all'energia — dall'altro la spesa militare e i dazi.\n\nIl limite della trasposizione è quello che la contabilità non registra, ed è il motivo per cui la voce è un attrezzo e non uno slogan. **Una garanzia ha valore di deterrenza in proporzione a quanto costerebbe abbandonarla**: dichiarare che verrà riprezzata a ogni momento rimuove l'elemento costoso e non rinegoziabile che la rendeva credibile. Colby risolve il problema dentro la propria cornice, come calibrazione — rassicurare abbastanza da non perdere l'alleato, tenerlo sulle spine quanto basta perché contribuisca — e questo presuppone che la grandezza da calibrare sia misurabile. L'obiezione di Ross Douthat, nella stessa conversazione, è che non lo sia, perché è fatta di onore, di ferite e di voglia di affermarsi: il caso canadese ne è l'istanza.",
     articles: [
-      { title: "L'alleanza valutata a prezzi di mercato", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" }
+      { title: "Iran, China, Canada? A Defense of Trump’s Grand Strategy", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" }
     ]
   },
   {
@@ -4984,7 +4984,7 @@ module.exports = [
     ],
     note: "Nell'archivio entra come il luogo in cui una strategia costruita sul calcolo razionale degli alleati incontra una risposta che quel calcolo non prevedeva.\n\nIl lato della richiesta è esplicito. Nel luglio 2026 il sottosegretario alla Difesa americano Elbridge Colby descrive il Canada come «funzionalmente smilitarizzato» dai tempi del primo governo Trudeau — il padre — e dichiara che agli Stati Uniti basta che il paese faccia come i tedeschi o i polacchi: che i dollari aggiuntivi per la difesa comprino capacità militare vera e servano a bisogni comuni, a cominciare dagli impegni NORAD. Sulla scelta fra l'F-35 americano e il Gripen svedese l'argomento è di interoperabilità prima che di prestazioni: un velivolo che comunica peggio con quelli americani espone anche gli americani.\n\nIl lato che la dottrina non sa prezzare è l'altro. Le battute del presidente americano sul Canada come cinquantunesimo Stato, le dichiarazioni sulla Groenlandia e l'immagine della bandiera americana distesa su gran parte del Nordamerica hanno prodotto la posizione pubblica del primo ministro Mark Carney, per cui il Canada non può più contare sugli Stati Uniti come faceva. Interrogato su questo, Colby risponde con la dottrina Monroe e il suo corollario Trump, e poi dichiara di non potersi permettere di caratterizzare quello che fa il presidente.\n\nL'asimmetria che il paese rende visibile è la ragione della voce: **chiedere ai polacchi di spendere di più e trattare il Canada come un'estensione degli Stati Uniti sono due richieste diverse**, e producono risposte diverse anche quando il contenuto materiale della richiesta è lo stesso.",
     articles: [
-      { title: "L'alleanza valutata a prezzi di mercato", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" }
+      { title: "Iran, China, Canada? A Defense of Trump’s Grand Strategy", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" }
     ]
   },
   {

@@ -1,5 +1,5 @@
 ---
-title: "L'alleanza valutata a prezzi di mercato"
+title: "Iran, China, Canada? A Defense of Trump’s Grand Strategy"
 external_url: "https://www.nytimes.com/2026/07/23/opinion/us-defense-geopolitics-elbridge-colby.html"
 source: "Ross Douthat ed Elbridge Colby / The New York Times"
 date: 2026-07-23

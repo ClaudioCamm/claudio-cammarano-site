@@ -1,5 +1,5 @@
 ---
-title: "Il rilevatore prima dell'oggetto"
+title: "The search for consciousness inside AI"
 external_url: "https://www.economist.com/interactive/briefing/2026/08/20/the-search-for-consciousness-inside-llms"
 source: "The Economist"
 date: 2026-08-20

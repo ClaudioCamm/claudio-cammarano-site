@@ -1,5 +1,5 @@
 ---
-title: "Il grigio non è un gusto"
+title: "Why Cybertrucks, McMansions and Greige Matter"
 external_url: "https://www.nytimes.com/2026/10/02/opinion/ezra-klein-podcast-debbie-millman.html"
 source: "Ezra Klein e Debbie Millman / The New York Times"
 date: 2026-10-02

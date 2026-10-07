@@ -1,5 +1,5 @@
 ---
-title: "Un obiettivo solo, e sbagliato"
+title: "Effective altruism is this century’s biggest idea"
 external_url: "https://www.economist.com/leaders/2026/10/01/effective-altruism-is-this-centurys-biggest-idea"
 source: "The Economist"
 date: 2026-10-01
