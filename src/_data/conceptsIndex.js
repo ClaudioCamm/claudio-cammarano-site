@@ -822,7 +822,7 @@ module.exports = [
       { title: "Destroying Books to Build a Mind", url: "/curated/2026-09-11-mancino-destroying-books-anthropic-newyorker/", _source: "curated" },
       { title: "Zuckerberg says the science isn't settled. But the harms of short-form video on the brain are starting to show", url: "/curated/2026-09-18-enders-short-form-video-cognizione-guardian/", _source: "curated" },
       { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" },
-      { title: "Quando i tassi li decide qualcun altro", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" }
+      { title: "Selon Mario Draghi l’Europe ne peut plus vivre sans croissance", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -1345,7 +1345,7 @@ module.exports = [
       { title: "The great regression", url: "/curated/2022-08-05-alt-grande-regressione-kidult-aeon/", _source: "curated" },
       { title: "The Atlantic is getting more subscribers from Google traffic, even as referrals fall", url: "/curated/2026-09-16-scire-atlantic-google-abbonati-niemanlab/", _source: "curated" },
       { title: "Il triste dibattito sullo scrivere con l'IA", url: "/curated/2026-10-02-piacenza-triste-dibattito-scrivere-ia/", _source: "curated" },
-      { title: "Il libro che la biblioteca non possiede", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" },
+      { title: "Librarians on Libraries", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" },
       { title: "Publishers Hit the AI Jackpot", url: "/curated/2026-10-01-alpern-risarcimento-distribuito-come-vendita-vulture/", _source: "curated" }
     ]
   },
@@ -2826,8 +2826,8 @@ module.exports = [
       { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-fuga-e-clamore-lawfare/", _source: "curated" },
       { title: "GPT detectors are biased against non-native English writers", url: "/curated/2023-07-10-liang-rilevatori-non-madrelingua-patterns/", _source: "curated" },
       { title: "Why AI Detection Fails for Academic Integrity", url: "/curated/2026-08-06-karr-perche-la-rilevazione-fallisce-arxiv/", _source: "curated" },
-      { title: "Il libro che la biblioteca non possiede", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" },
-      { title: "Riforme in cambio di accesso", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" },
+      { title: "Librarians on Libraries", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" },
+      { title: "Jamie Dimon: A Plan for the Western World’s Revival", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" },
       { title: "Iran, China, Canada? A Defense of Trump’s Grand Strategy", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" },
       { title: "30 Ideas for Fixing U.S. Schools, Ranked by Experts", url: "/curated/2026-09-28-mervosh-paris-miller-cosa-funziona-davvero-nella-scuola-nyt/", _source: "curated" },
       { title: "Are teenagers growing dimmer?", url: "/curated/2026-09-08-economist-pisa-inghilterra-scozia-vie-opposte/", _source: "curated" },
@@ -2852,8 +2852,8 @@ module.exports = [
       { title: "The right balance: how to fix European Union artificial intelligence regulation", url: "/curated/2026-06-11-mariniello-ai-act-costi-conformita-bruegel/", _source: "curated" },
       { title: "A Splintered Internet? Internet Fragmentation and the Strategies of China, Russia, India and the European Union", url: "/curated/2024-02-01-nocetti-splintered-internet-ifri/", _source: "curated" },
       { title: "Is Kaliningrad, Russia's exclave surrounded by EU countries, an asset or a liability?", url: "/curated/2022-06-06-economist-kaliningrad-risorsa-o-ostaggio/", _source: "curated" },
-      { title: "Quando i tassi li decide qualcun altro", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" },
-      { title: "Riforme in cambio di accesso", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" },
+      { title: "Selon Mario Draghi l’Europe ne peut plus vivre sans croissance", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" },
+      { title: "Jamie Dimon: A Plan for the Western World’s Revival", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" },
       { title: "Iran, China, Canada? A Defense of Trump’s Grand Strategy", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" }
     ]
   },
@@ -3860,7 +3860,7 @@ module.exports = [
       { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" },
       { title: "The Hugging Face incident and the road ahead", url: "/curated/2026-08-26-openai-incidente-hugging-face-resoconto/", _source: "curated" },
       { title: "Why AI Detection Fails for Academic Integrity", url: "/curated/2026-08-06-karr-perche-la-rilevazione-fallisce-arxiv/", _source: "curated" },
-      { title: "Quando i tassi li decide qualcun altro", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" },
+      { title: "Selon Mario Draghi l’Europe ne peut plus vivre sans croissance", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" },
       { title: "30 Ideas for Fixing U.S. Schools, Ranked by Experts", url: "/curated/2026-09-28-mervosh-paris-miller-cosa-funziona-davvero-nella-scuola-nyt/", _source: "curated" }
     ]
   },
@@ -4388,7 +4388,7 @@ module.exports = [
       { title: "The ASA Statement on p-Values: Context, Process, and Purpose", url: "/curated/2016-03-07-wasserstein-lazar-dichiarazione-asa-p-value/", _source: "curated" },
       { title: "Scientists rise up against statistical significance", url: "/curated/2019-03-20-amrhein-greenland-mcshane-significativita-nature/", _source: "curated" },
       { title: "The ASA President's Task Force Statement on Statistical Significance and Replicability", url: "/curated/2021-08-01-task-force-asa-significativita-replicabilita-aoas/", _source: "curated" },
-      { title: "Riforme in cambio di accesso", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" }
+      { title: "Jamie Dimon: A Plan for the Western World’s Revival", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" }
     ]
   },
   {
@@ -4586,7 +4586,7 @@ module.exports = [
     note: "Ragione che calcola i mezzi rispetto a fini ricevuti da altrove, senza poter mettere in discussione i fini. La formulazione filosofica di riferimento è di Max Horkheimer e Theodor Adorno nella *Dialettica dell'illuminismo*, ma la tesi che la rende possibile è più antica e più diffusa di quanto chi la usa riconosca: è di Hume, che nel *Trattato sulla natura umana* del 1739 scrive che la ragione è, e deve soltanto essere, schiava delle passioni. Kant la rifiuta, perché la ragione pratica non si occupa di oggetti per conoscerli ma per renderli effettivi, e perché la capacità di stabilire i propri fini è ciò che fonda l'autonomia e con essa la dignità. Nel sito la voce serve a tenere ferma una distinzione che il vocabolario corrente confonde di continuo, e che non riguarda solo l'intelligenza artificiale: ottimizzare è migliorare le prestazioni rispetto a un obiettivo dato, ragionare è potersi chiedere se l'obiettivo sia quello giusto. Un motore scacchistico, un sistema di apprendimento per rinforzo e un indicatore aziendale sono tutti ottimizzatori, e nessuno dei tre ha i mezzi per accorgersi che il fine è sbagliato — il che spiega perché la legge di Goodhart non sia un difetto di progettazione ma la forma che la ragione strumentale assume quando nessuno sta guardando il fine. Sasha Mudd nel 2026 ne ricava la conseguenza che l'archivio registra: il dibattito sull'allineamento chiede come garantire che le macchine perseguano i valori umani, e così manca la domanda più scomoda, cioè se chi delega l'ottimizzazione conservi l'esercizio di stabilire i propri.",
     articles: [
       { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" },
-      { title: "NAZA: il danno collaterale come parametro operativo", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" },
+      { title: "NAZA film-makers address threats at documentary’s New York City premiere", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" },
       { title: "Effective altruism is this century’s biggest idea", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" }
     ]
   },
@@ -4606,7 +4606,7 @@ module.exports = [
       { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-fuga-e-clamore-lawfare/", _source: "curated" },
       { title: "The Hugging Face incident and the road ahead", url: "/curated/2026-08-26-openai-incidente-hugging-face-resoconto/", _source: "curated" },
       { title: "Why AI Detection Fails for Academic Integrity", url: "/curated/2026-08-06-karr-perche-la-rilevazione-fallisce-arxiv/", _source: "curated" },
-      { title: "NAZA: il danno collaterale come parametro operativo", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" },
+      { title: "NAZA film-makers address threats at documentary’s New York City premiere", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" },
       { title: "How effective altruism conquered the world", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" }
     ]
   },
@@ -4679,7 +4679,7 @@ module.exports = [
     ],
     note: "Progettazione di un'esperienza dentro un sistema di incentivi e punizioni costruito per far coincidere gli obiettivi di chi progetta con quelli di chi partecipa. Il termine nasce nel marketing di fine anni Novanta con un significato più ristretto e sbagliato, quello di costruire videogiochi per vendere prodotti e servizi, come nella stagione italiana di MyTv.it e di Gino il pollo. La storia successiva ha mostrato che l'idea giusta era un'altra e molto più grande: non il gioco come veicolo pubblicitario, ma la progettazione dell'intera esperienza come gioco. In questa accezione è la più esatta profezia del marketing degli ultimi quarant'anni, e si riconosce nel design dell'app bancaria, nella UX delle piattaforme sociali, nei programmi fedeltà, nel punteggio di credito sociale cinese.\n\nIl valore della voce sta nel rapporto con le tre che le stanno intorno, perché le distinzioni sono precise e il vocabolario corrente le confonde. Nella legge di Goodhart la misura si corrompe perché diventa obiettivo, e nessuno lo ha voluto. Nel reward hacking chi è valutato attacca il dispositivo che misura. Nella gamification la misura è progettata da qualcuno perché qualcun altro la persegua: l'effetto non è subito, è cercato. Da questo lato la gamification è il problema dell'allineamento visto dalla parte di chi lo progetta, applicato a esseri umani invece che a modelli, con la differenza imbarazzante che sugli umani, storicamente, funziona.\n\nNel settembre 2026 il documentario *NAZA* fornisce il caso limite, e va detto con precisione in che senso. Il film documenta la quantificazione dei civili ammessi per bersaglio come parametro di routine, e il distacco di chi la maneggia, fino alla frase di un testimone: è come un videogioco. Non documenta un'architettura di incentivi, perché non mostra classifiche, punteggi, gare fra operatori né obiettivi di rendimento. La gamification resta dunque la cornice che tiene insieme appartenenza a un'élite, costruzione collettiva del nemico e obiettivo misurabile: una lettura, non un reperto. Tenere la distinzione è il modo in cui questo archivio usa un attrezzo senza fargli dire più di quello che regge.",
     articles: [
-      { title: "NAZA: il danno collaterale come parametro operativo", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" }
+      { title: "NAZA film-makers address threats at documentary’s New York City premiere", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" }
     ]
   },
   {
@@ -4692,7 +4692,7 @@ module.exports = [
     ],
     note: "Nella dottrina del diritto dei conflitti armati, i civili la cui morte è prevista come effetto non intenzionale di un attacco contro un obiettivo militare legittimo; il principio di proporzionalità ne fa il termine di un confronto con il vantaggio militare atteso. La voce entra nell'archivio perché il documentario *NAZA* del 2026 ne mostra la forma operativa: il titolo del film è l'acronimo ebraico *nezek agavi*, danno collaterale, e nelle testimonianze degli ufficiali dell'intelligence militare israeliana funziona come un'unità di misura. Dieci NAZA. Tre NAZA, tutti bambini. Una soglia di riferimento intorno a venti.\n\nIl punto che interessa questo archivio è la trasformazione di un giudizio in un parametro, perché le due cose hanno proprietà logiche diverse. **Un giudizio di proporzionalità deve poter concludere che l'attacco non si fa; un parametro con una soglia deve soltanto essere rispettato.** Nel momento in cui il morto ammissibile diventa un numero, entra nella classe degli oggetti che si possono ottimizzare, e la domanda su che cosa autorizzi quel numero smette di essere posta da chi lo applica.\n\nIl precedente documentario non nasce con il film: l'inchiesta *Lavender* di Yuval Abraham su *+972 Magazine* e *Local Call*, 3 aprile 2024, riportava trentasettemila persone marcate come obiettivi, un tasso di errore intorno al dieci per cento, una revisione umana di venti secondi e una tolleranza dichiarata di quindici-venti civili per un miliziano di basso rango. L'IDF nega: il 12 settembre e il 1° ottobre 2026 ha respinto le testimonianze del film, affermando che le decisioni sono state prese solo da personale umano e che un attacco con cinquecento vittime civili attese non è mai stato pianificato né approvato. La contestazione va registrata insieme al dato, perché la verifica indipendente sul terreno non è disponibile, e la ragione per cui non lo è dipende da una delle due parti.",
     articles: [
-      { title: "NAZA: il danno collaterale come parametro operativo", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" }
+      { title: "NAZA film-makers address threats at documentary’s New York City premiere", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" }
     ]
   },
   {
@@ -4705,7 +4705,7 @@ module.exports = [
     ],
     note: "Azienda israeliana di sorveglianza fondata nel 2019 a Tel Aviv, fra i cui fondatori figura Ehud Barak, già primo ministro di Israele. Produce lo spyware *Graphite*, che secondo Citizen Lab accede alle applicazioni di messaggistica di un dispositivo invece di prenderne il controllo completo, intercettando fra l'altro Signal e Messenger. Nel 2024 è stata acquisita per oltre mezzo miliardo di dollari da RED Lattice, società statunitense del gruppo AE Industrial Partners.\n\nNell'archivio la voce serve come àncora italiana di una questione che si racconta sempre altrove. Il 31 gennaio 2025 WhatsApp notifica a un gruppo di utenti italiani di essere stati bersaglio di Graphite: fra loro il direttore di Fanpage Francesco Cancellato, l'attivista Luca Casarini e alcuni suoi collaboratori. Il 6 giugno 2025 il Copasir approva all'unanimità una relazione che conferma l'uso di Graphite da parte dei servizi contro Casarini e altri, in riferimento ad attività potenzialmente relative all'immigrazione irregolare, e nega che Cancellato sia stato sorvegliato; Citizen Lab sostiene il contrario, e nello stesso mese documenta che era stato preso di mira anche il giornalista Ciro Pellegrino. Paragon dichiara di avere rescisso il contratto con il governo italiano.\n\nIl motivo per cui il caso italiano vale più di un esempio è strutturale: **sulla stessa classe di tecnologia esistono due stati del controllo**. In Italia un organo parlamentare ha prodotto un atto pubblico, che l'azienda fornitrice e Citizen Lab hanno potuto contestare in pubblico; la contestazione è possibile perché l'atto esiste. Dove nessun organo pubblica nulla, la stessa tecnologia produce soltanto testimonianze anonime, e non perché sia usata peggio.",
     articles: [
-      { title: "NAZA: il danno collaterale come parametro operativo", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" }
+      { title: "NAZA film-makers address threats at documentary’s New York City premiere", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" }
     ]
   },
   {
@@ -4718,7 +4718,7 @@ module.exports = [
     ],
     note: "Giornalista e regista israeliano. Nel sito entra come il caso in cui la catena documentaria è ricostruibile per intero: due inchieste su *+972 Magazine* e *Local Call* precedono di due anni il documentario *NAZA*, presentato alla Mostra di Venezia il 10 settembre 2026 e coprodotto dal Guardian. La prima, *A mass assassination factory*, del 30 novembre 2023, riguarda il sistema Habsora; la seconda, *Lavender*, del 3 aprile 2024, il sistema di designazione degli obiettivi e la soglia di civili tollerata. Di *NAZA* è coregista con Rachel Szor, con cui aveva firmato *No Other Land*.\n\nLa ricostruibilità è ciò che rende la sua posizione utile all'archivio e insieme ciò che ne segna il limite, e vale la pena essere espliciti su entrambi i lati. Il materiale del film non è indipendente dall'autore delle inchieste che lo precedono. Ma quelle inchieste sono state pubblicate altrove, due anni prima, e in quei due anni sono state contestate pubblicamente: questo le colloca in una classe probatoria diversa dalla testimonianza anonima raccolta e verificata dalla stessa squadra. La differenza si vede dentro il film stesso: il capitolo sulla quantificazione dei civili ha un precedente controllabile, quello sul reparto dedicato ai ricorsi presso le corti internazionali no.",
     articles: [
-      { title: "NAZA: il danno collaterale come parametro operativo", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" }
+      { title: "NAZA film-makers address threats at documentary’s New York City premiere", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" }
     ]
   },
   {
@@ -4733,7 +4733,7 @@ module.exports = [
     ],
     note: "Insieme dei meccanismi per cui un potere è limitato da un altro potere anziché dalla propria disciplina interna; la formula inglese è *checks and balances*. La voce entra nell'archivio con un criterio che la rende verificabile invece che edificante: **un contrappeso esiste nella misura in cui produce un atto pubblico**. Dove nessun organo pubblica un verbale il controllo non è debole, è indistinguibile dalla fiducia, e la differenza fra le due cose non è di grado.\n\nIl caso che mette alla prova il criterio è la vigilanza sull'intelligence militare israeliana. L'architettura esiste e ha un nome: la Commissione affari esteri e difesa della Knesset riceve i resoconti dei capi di Mossad, Shabak e Aman. Ma la maggior parte del lavoro si svolge nelle sottocommissioni, alcune classificate al grado più alto di segretezza e senza accesso della stampa, e i verbali restano in larga parte non pubblicati. Ne segue una conseguenza sulla qualità delle prove disponibili, non soltanto sulla qualità del controllo: dove nessun organo pubblica un atto, l'unica prova che arriva è una testimonianza anonima, e questo è prevedibile prima di sapere se quella testimonianza sia vera. Nel settembre 2026 il documentario *NAZA* mostra le due facce dello stesso fatto, perché il suo capitolo meno sostenuto è quello su un reparto di cui nessun atto pubblico attesta l'esistenza.\n\nIl confronto che chiarisce il criterio è italiano. Sulla stessa classe di tecnologia di sorveglianza, nel giugno 2025, il Copasir ha prodotto una relazione pubblica, che l'azienda fornitrice e Citizen Lab hanno potuto contestare per punti. Che la relazione sia contestata non è un difetto del contrappeso: è la prova che funziona, perché solo un atto esistente può essere smentito.",
     articles: [
-      { title: "NAZA: il danno collaterale come parametro operativo", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" }
+      { title: "NAZA film-makers address threats at documentary’s New York City premiere", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" }
     ]
   },
   {
@@ -4748,7 +4748,7 @@ module.exports = [
     ],
     note: "Nel sito entra nel settembre 2026 con la domanda che l'archivio segue da tempo sul versante delle macchine: che cosa succede quando un apparato di ottimizzazione viene applicato a decisioni sulla vita delle persone. Il paese è il luogo in cui quella domanda si osserva alla massima intensità disponibile, per due ragioni documentabili e distinte.\n\nLa prima è industriale. Una parte consistente dell'industria mondiale della visione artificiale e della sorveglianza ha sede qui: Mobileye a Gerusalemme, Corsight e Paragon Solutions a Tel Aviv, NSO Group a Herzliya. Gli strumenti che l'archivio incontra altrove sono progettati qui e venduti fuori: lo spyware Graphite, al centro del caso italiano del 2025, è di un'azienda di Tel Aviv.\n\nLa seconda riguarda la documentazione, e va tenuta presente ogni volta che si usa questo materiale. I sistemi di designazione automatica degli obiettivi impiegati a Gaza sono stati descritti da inchieste datate e contestate — Habsora nel novembre 2023, Lavender nell'aprile 2024, il documentario *NAZA* nel settembre 2026 — ma attorno a quelle descrizioni l'apparato di verifica pubblica è minimo. La vigilanza parlamentare sull'intelligence militare esiste e ha un nome, la Commissione affari esteri e difesa della Knesset, ma la maggior parte del lavoro si svolge in sottocommissioni classificate i cui verbali non vengono pubblicati; e l'accesso indipendente della stampa internazionale a Gaza è interdetto dal 7 ottobre 2023. **Sulle decisioni più gravi, dunque, la documentazione disponibile è fatta di testimonianze anonime da un lato e di smentite ufficiali dall'altro, con pochissimo in mezzo.** Non è una ragione per dire di meno: è una ragione per marcare lo statuto di ogni affermazione.",
     articles: [
-      { title: "NAZA: il danno collaterale come parametro operativo", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" }
+      { title: "NAZA film-makers address threats at documentary’s New York City premiere", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" }
     ]
   },
   {
@@ -4764,7 +4764,7 @@ module.exports = [
     note: "Entra nell'archivio come il luogo in cui si vedono gli effetti degli apparati tecnologici che l'archivio documenta altrove, e come caso limite di una questione che gli è propria: le condizioni alle quali si può sapere qualcosa.\n\nDal 7 ottobre 2023 l'accesso indipendente della stampa internazionale a Gaza è interdetto senza interruzione. Un ricorso della Foreign Press Association pende davanti alla Corte suprema israeliana dal 2024 e al 30 aprile 2026 non ha avuto pronuncia; in quella data i vertici di oltre venti testate, fra cui BBC, CNN, Reuters e Associated Press, hanno rinnovato la richiesta sostenendo che stare sul terreno è la condizione per poter mettere in discussione i resoconti ufficiali. Secondo il conteggio del Committee to Protect Journalists all'ottobre 2025, in due anni sono stati uccisi almeno 237 giornalisti e operatori dell'informazione, 197 dei quali palestinesi a Gaza.\n\nPer un archivio costruito sulla verificabilità questa è la caratteristica determinante del luogo, e va detta prima di qualunque contenuto: **è un posto sul quale il record probatorio è sottile per costruzione**. Chi vuole affermare qualcosa su Gaza dispone in larghissima parte di testimonianze non verificabili sul terreno e di dichiarazioni ufficiali delle parti. La conseguenza di metodo è doppia. Nessuna affermazione va riportata senza il suo statuto; e l'obiezione di non verificabilità, che presa in sé è corretta, non può essere usata come criterio da chi ha il potere di produrre la condizione che la rende vera.\n\nUn secondo aspetto riguarda le immagini, ed è il motivo per cui la voce tocca anche il versante generativo dell'archivio. Nel febbraio 2025 un video prodotto con l'intelligenza artificiale e diffuso da Donald Trump mostrava Gaza devastata trasformata in una stazione balneare di lusso; nell'ottobre dello stesso anno il piano di pace in venti punti presentava elementi analoghi, e in pochi notarono la somiglianza. È il caso su cui Donatella Della Ratta costruisce la nozione di violenza speculativa: immagini che non pretendono di essere vere, e che proprio per questo attraversano per ripetizione la soglia fra immaginario e piano politico.",
     articles: [
       { title: "Sur la violence spéculative de l'IA", url: "/curated/2026-09-04-dellaratta-violenza-speculativa-ia-grandcontinent/", _source: "curated" },
-      { title: "NAZA: il danno collaterale come parametro operativo", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" }
+      { title: "NAZA film-makers address threats at documentary’s New York City premiere", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" }
     ]
   },
   {
@@ -4777,7 +4777,7 @@ module.exports = [
     ],
     note: "Istituzione che mette a disposizione di chiunque, gratuitamente, un fondo di opere e lo spazio per usarle. Nel sito entra nell'ottobre 2026 con una raccolta di testimonianze di bibliotecari americani, e vi entra per una doppia trasformazione che conviene tenere distinta, perché le due metà hanno cause diverse e **una sola delle due è stata decisa da qualcuno**.\n\nLa prima è contrattuale, e vale ovunque perché gli editori sono gli stessi. Una biblioteca che acquista una copia di carta la possiede; una che «acquista» un libro elettronico ottiene una licenza a termine, e il suo bilancio ha smesso di comprare fondo per cominciare a comprare permessi. La seconda è di mandato, ed è cresciuta per sottrazione altrui: dove altri servizi si ritirano, la biblioteca diventa l'indirizzo che resta — un computer e una casella di posta per chi non li ha, un posto al caldo o al fresco, un bagno, assistenza nel compilare un modulo. Nessuno ha deliberato questa seconda trasformazione: si è accumulata.\n\nIl finanziamento non si esporta, e va detto ogni volta che si cita il caso americano. Negli Stati Uniti la biblioteca pubblica dipende in larga parte dall'imposta immobiliare locale ed è governata da consigli locali, il che la espone a una maggioranza di quartiere in un modo che i sistemi finanziati su base statale o comunale non conoscono. Le polemiche americane su quali libri tenere a scaffale vanno lette dentro questa struttura, non importate come se fosse la stessa ovunque.",
     articles: [
-      { title: "Il libro che la biblioteca non possiede", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" },
+      { title: "Librarians on Libraries", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" },
       { title: "Where to live? How climate change is forcing us to rethink our relationship with our surroundings", url: "/curated/2026-09-28-legros-abitabilita-non-e-una-soglia-lemonde/", _source: "curated" }
     ]
   },
@@ -4791,7 +4791,7 @@ module.exports = [
     ],
     note: "Contratto con cui un editore concede a una biblioteca il diritto di prestare un libro elettronico per un numero limitato di prestiti o per un periodo determinato, scaduto il quale il titolo sparisce dalla collezione se non viene riacquistato. Non è una vendita, ed è la ragione per cui il confronto con il prezzo al consumo va maneggiato con attenzione: non si stanno comprando due volte le stesse cose.\n\nLe condizioni correnti sono pubbliche e datate: HarperCollins dal 2011 fissa un tetto di ventisei prestiti per copia; Penguin Random House dal 2018 porta il catalogo a licenze biennali. Dal lato dell'acquirente, nell'ottobre 2026 la direttrice delle North Little Rock Public Libraries riferisce di pagare dagli 80 ai 120 dollari, per tre anni e con tetti di utilizzo, un titolo che un privato compra per 3,99.\n\nQuello che interessa l'archivio non è il moltiplicatore ma il cambio di oggetto: **si compra un permesso al posto di una copia**. Da qui discende una proprietà poco notata delle collezioni digitali. Una raccolta costruita per accumulo si svuota da sola se smette di essere ricomprata, e il patrimonio di una biblioteca cessa di essere un fatto acquisito per diventare un abbonamento — con la conseguenza che un taglio di bilancio non ferma più la crescita del fondo, lo riduce.",
     articles: [
-      { title: "Il libro che la biblioteca non possiede", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" }
+      { title: "Librarians on Libraries", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" }
     ]
   },
   {
@@ -4804,7 +4804,7 @@ module.exports = [
     ],
     note: "Principio per cui il titolare del diritto d'autore, una volta messa in commercio una copia dell'opera, non può più controllare che cosa il compratore ne faccia: può rivenderla, prestarla, regalarla. È ciò che rende possibili il mercato dell'usato, il prestito fra privati e le biblioteche. Nel diritto statunitense si chiama *first-sale doctrine* e risale a *Bobbs-Merrill v. Straus* del 1908; nel diritto dell'Unione europea è l'esaurimento del diritto di distribuzione.\n\nSul digitale il principio non si applica, e la ragione è una decisione precisa: Corte di giustizia dell'Unione europea, grande sezione, 19 dicembre 2019, causa C-263/18 *Tom Kabinet*. La fornitura di un libro elettronico mediante download per uso permanente è comunicazione al pubblico ai sensi dell'articolo 3 della direttiva 2001/29, e non distribuzione ai sensi dell'articolo 4; il diritto di comunicazione al pubblico non conosce esaurimento. La motivazione è di merito e non formale: i file digitali non si deteriorano e sono sostituti perfetti delle copie nuove, sicché un mercato secondario comprometterebbe la remunerazione degli autori.\n\nPer l'archivio la voce serve perché da qui discende senza passaggi intermedi l'economia del prestito digitale, e perché contiene una simmetria istruttiva. **Lo stesso argomento che per l'acquirente dimostra che il prezzo è ingiustificato — l'oggetto non si consuma — è per la Corte la ragione per cui il prezzo è legittimo.** Non è un paradosso: è lo stesso fatto letto da due posizioni contrattuali diverse, ed è il modo più rapido per vedere che cosa cambia quando un bene smette di avere un supporto.",
     articles: [
-      { title: "Il libro che la biblioteca non possiede", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" },
+      { title: "Librarians on Libraries", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" },
       { title: "Publishers Hit the AI Jackpot", url: "/curated/2026-10-01-alpern-risarcimento-distribuito-come-vendita-vulture/", _source: "curated" },
       { title: "Game Decompilation, Is This Legal?, A Well-Trodden Path", url: "/curated/2026-10-06-stratechery-game-decompilation/", _source: "curated" }
     ]
@@ -4819,8 +4819,8 @@ module.exports = [
     ],
     note: "Economista italiano. Nel sito entra nell'ottobre 2026 con la decima *Karl Brunner Distinguished Lecture* della Banca nazionale svizzera, tenuta al Politecnico federale di Zurigo e pubblicata integralmente da *Le Grand Continent*. La voce serve a dichiarare perché quel testo è un riferimento e non un'opinione fra le altre: chi parla ha occupato per intero le posizioni da cui la materia si osserva — la presidenza della Banca centrale europea dal 2011 al 2019, Palazzo Chigi dal febbraio 2021 all'ottobre 2022, e nel settembre 2024 il rapporto sulla competitività europea commissionato dalla Commissione. Non è una garanzia che le tesi siano vere; è la ragione per cui saranno il testo su cui gli altri si appoggeranno, spesso senza citarlo.\n\nLa conferenza di Zurigo sostiene che il differenziale fra tasso d'interesse e crescita non si governi più dall'Europa, perché i tassi si formano altrove, e che quindi l'unica variabile rimasta sia la crescita. Le mosse indicate sono poche e grandi: mercato unico, unione dei mercati dei capitali, capacità di calcolo. Vale la pena notare la forma della proposta, oltre al contenuto, perché è l'opposto di quella del piano che lo stesso Draghi ha amministrato da presidente del Consiglio, costruito su centinaia di condizioni e su più investimenti che riforme. Non è una contraddizione: è quello che si impara amministrando una metrica.",
     articles: [
-      { title: "Quando i tassi li decide qualcun altro", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" },
-      { title: "Riforme in cambio di accesso", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" }
+      { title: "Selon Mario Draghi l’Europe ne peut plus vivre sans croissance", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" },
+      { title: "Jamie Dimon: A Plan for the Western World’s Revival", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" }
     ]
   },
   {
@@ -4835,8 +4835,8 @@ module.exports = [
     ],
     note: "Programma di ripresa dell'Unione europea da 750 miliardi di euro approvato dal Consiglio europeo nel luglio 2020, finanziato per la prima volta con debito comune di dimensione rilevante e articolato in piani nazionali il cui finanziamento è legato al raggiungimento di obiettivi verificati dalla Commissione.\n\nIl piano italiano è l'istanza che l'archivio segue, perché è quella su cui esistono cifre pubbliche. La prima versione è del gennaio 2021, governo Conte II; il governo Draghi la riscrive in parte e la presenta alla Commissione il 30 aprile 2021, con valutazione positiva il 22 giugno. Sono 191,5 miliardi — 36,5% a fondo perduto e 63,5% a prestito, portati a 194,4 con la revisione del novembre 2023 — su sei missioni e sedici componenti, per 186 interventi, di cui 135 investimenti e 51 riforme, con l'erogazione legata a 419 condizioni: 214 target e 205 milestone.\n\nIl motivo per cui la voce interessa questo archivio non è il merito dei singoli progetti ma la forma dello strumento. **Un programma la cui erogazione dipende dal conteggio delle condizioni rende il completamento l'obiettivo, e la qualità di ciò che si completa una questione subordinata**, chiunque lo amministri; e un rapporto di quasi tre a uno fra investimenti e riforme sposta il baricentro dalle scelte strutturali ai progetti. Che il disegno fosse fragile lo si poteva vedere presto: Carlo Cottarelli e Raffaela Palomba, per l'Osservatorio sui conti pubblici italiani, il 28 maggio 2021 rilevavano che il 75% dei target cadeva fra l'ultimo trimestre 2024 e la fine del 2026 e che per oltre due terzi degli investimenti mancavano target intermedi. Una struttura che misura tardi misura poco.\n\nLa condizionalità non è stata scelta nelle capitali: discende dal regolamento che istituisce il dispositivo, e i governi l'hanno ereditata. È la ragione per cui la voce sta accanto alla legge di Goodhart e non a un giudizio politico: il difetto è nel disegno dell'incentivo, non in chi lo ha applicato.",
     articles: [
-      { title: "Quando i tassi li decide qualcun altro", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" },
-      { title: "Riforme in cambio di accesso", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" }
+      { title: "Selon Mario Draghi l’Europe ne peut plus vivre sans croissance", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" },
+      { title: "Jamie Dimon: A Plan for the Western World’s Revival", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" }
     ]
   },
   {
@@ -4850,7 +4850,7 @@ module.exports = [
     ],
     note: "Tecnica di governo per cui una parte ottiene qualcosa — fondi, accesso a un mercato, adesione a un'alleanza — solo se soddisfa obiettivi stabiliti da un'altra e verificati da qualcuno. Nell'archivio entra con due istanze in domini diversi, ed è la coppia a giustificarne la voce.\n\nLa prima è interna a un bilancio: Next Generation EU lega l'erogazione al raggiungimento di obiettivi contati, 419 nel caso del piano italiano, verificati dalla Commissione. La seconda è fra Stati: nel settembre 2026 Jamie Dimon propone sul *Wall Street Journal* che gli Stati Uniti offrano all'Europa un grande accordo commerciale a condizione che essa esegua riforme economiche e militari, «compreso tutto ciò che noi consideriamo cruciale».\n\nIl confronto fra le due mostra dove si gioca davvero il giudizio su uno strumento del genere, e non è la severità della condizione. **Una condizionalità si valuta da chi verifica.** Nel caso europeo il verificatore è dichiarato, ed è un organo nel quale la parte contata siede: lì il difetto, semmai, sta nel contare troppe cose e troppo tardi. Nella proposta transatlantica il verificatore non è nominato, e la formula «ciò che noi consideriamo cruciale» lascia la definizione della condizione alla parte che la offre. Non è una condizionalità più blanda: è la stessa tecnica con la discrezionalità tutta da un lato.",
     articles: [
-      { title: "Riforme in cambio di accesso", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" },
+      { title: "Jamie Dimon: A Plan for the Western World’s Revival", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" },
       { title: "Iran, China, Canada? A Defense of Trump’s Grand Strategy", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" }
     ]
   },

@@ -1,5 +1,5 @@
 ---
-title: "Quando i tassi li decide qualcun altro"
+title: "Selon Mario Draghi l’Europe ne peut plus vivre sans croissance"
 external_url: "https://legrandcontinent.eu/fr/2026/10/01/selon-mario-draghi-leurope-ne-peut-plus-vivre-sans-croissance/"
 source: "Mario Draghi / Le Grand Continent"
 date: 2026-10-01

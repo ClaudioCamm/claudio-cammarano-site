@@ -1,5 +1,5 @@
 ---
-title: "Il libro che la biblioteca non possiede"
+title: "Librarians on Libraries"
 external_url: "https://www.nytimes.com/interactive/2026/10/01/books/state-of-libraries-librarians.html"
 source: "Elisabeth Egan e John Maher / The New York Times"
 date: 2026-10-01

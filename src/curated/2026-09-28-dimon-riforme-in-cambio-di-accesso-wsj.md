@@ -1,5 +1,5 @@
 ---
-title: "Riforme in cambio di accesso"
+title: "Jamie Dimon: A Plan for the Western World’s Revival"
 external_url: "https://www.wsj.com/opinion/jamie-dimon-a-plan-for-the-western-worlds-revival-5fb12cc2"
 source: "Jamie Dimon / The Wall Street Journal"
 date: 2026-09-28

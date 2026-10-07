@@ -1,5 +1,5 @@
 ---
-title: "NAZA: il danno collaterale come parametro operativo"
+title: "NAZA film-makers address threats at documentary’s New York City premiere"
 external_url: "https://www.theguardian.com/film/2026/sep/27/naza-film-new-york-city-premiere"
 source: "The Guardian"
 date: 2026-09-27
