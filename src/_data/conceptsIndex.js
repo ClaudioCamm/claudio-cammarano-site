@@ -952,8 +952,8 @@ module.exports = [
       { title: "Hulu's Fascinating and Incomplete \"1619 Project\"", url: "/curated/2023-02-28-taylor-1619-project-hulu-newyorker/", _source: "curated" },
       { title: "China's kids rank near the top in global school tests", url: "/curated/2026-09-24-economist-pisa-cina-campione-bsjz/", _source: "curated" },
       { title: "We Surveyed 634 Women Who Work in Tech. They Let Loose", url: "/curated/2026-09-21-upson-donne-tech-sondaggio-wired/", _source: "curated" },
-      { title: "Cosa funziona davvero nella scuola americana", url: "/curated/2026-09-28-mervosh-paris-miller-cosa-funziona-davvero-nella-scuola-nyt/", _source: "curated" },
-      { title: "Quindici anni di scelte opposte, fra Inghilterra e Scozia", url: "/curated/2026-09-08-economist-pisa-inghilterra-scozia-vie-opposte/", _source: "curated" }
+      { title: "30 Ideas for Fixing U.S. Schools, Ranked by Experts", url: "/curated/2026-09-28-mervosh-paris-miller-cosa-funziona-davvero-nella-scuola-nyt/", _source: "curated" },
+      { title: "Are teenagers growing dimmer?", url: "/curated/2026-09-08-economist-pisa-inghilterra-scozia-vie-opposte/", _source: "curated" }
     ]
   },
   {
@@ -1346,7 +1346,7 @@ module.exports = [
       { title: "The Atlantic is getting more subscribers from Google traffic, even as referrals fall", url: "/curated/2026-09-16-scire-atlantic-google-abbonati-niemanlab/", _source: "curated" },
       { title: "Il triste dibattito sullo scrivere con l'IA", url: "/curated/2026-10-02-piacenza-triste-dibattito-scrivere-ia/", _source: "curated" },
       { title: "Il libro che la biblioteca non possiede", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" },
-      { title: "Un risarcimento distribuito come una vendita", url: "/curated/2026-10-01-alpern-risarcimento-distribuito-come-vendita-vulture/", _source: "curated" }
+      { title: "Publishers Hit the AI Jackpot", url: "/curated/2026-10-01-alpern-risarcimento-distribuito-come-vendita-vulture/", _source: "curated" }
     ]
   },
   {
@@ -1423,7 +1423,8 @@ module.exports = [
       { title: "Who's Afraid of Chinese Models?", url: "/curated/2026-07-20-stratechery-chinese-models/", _source: "curated" },
       { title: "The U.S. Is Betting the Economy on 'Scaling' AI: Where Is the Intelligence When One Needs It?", url: "/curated/2025-12-08-storm-scaling-ai-bolla-inet/", _source: "curated" },
       { title: "Open Weights, Closed Ranks: The AI Manifesto War", url: "/curated/2026-08-12-zuniga-pesi-aperti-manifesti-icle/", _source: "curated" },
-      { title: "The Atlantic is getting more subscribers from Google traffic, even as referrals fall", url: "/curated/2026-09-16-scire-atlantic-google-abbonati-niemanlab/", _source: "curated" }
+      { title: "The Atlantic is getting more subscribers from Google traffic, even as referrals fall", url: "/curated/2026-09-16-scire-atlantic-google-abbonati-niemanlab/", _source: "curated" },
+      { title: "Game Decompilation, Is This Legal?, A Well-Trodden Path", url: "/curated/2026-10-06-stratechery-game-decompilation/", _source: "curated" }
     ]
   },
   {
@@ -2370,7 +2371,7 @@ module.exports = [
       { title: "Claude Code for writers", url: "/curated/2026-01-15-newton-claude-code-writers-platformer/", _source: "curated" },
       { title: "Intelligenza artificiale e rischio estinzione, che cosa pensano (davvero) gli scienziati?", url: "/curated/2026-09-26-signorelli-rischio-estinzione-scienziati-backdoor/", _source: "curated" },
       { title: "Pacing the Frontier", url: "/curated/2026-07-28-pacing-the-frontier-lettera/", _source: "curated" },
-      { title: "Il movimento che ha costruito ciò che temeva", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" },
+      { title: "How effective altruism conquered the world", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" },
       { title: "Il rilevatore prima dell'oggetto", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" }
     ]
   },
@@ -2529,7 +2530,7 @@ module.exports = [
       { title: "Pacing the Frontier", url: "/curated/2026-07-28-pacing-the-frontier-lettera/", _source: "curated" },
       { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-fuga-e-clamore-lawfare/", _source: "curated" },
       { title: "The Hugging Face incident and the road ahead", url: "/curated/2026-08-26-openai-incidente-hugging-face-resoconto/", _source: "curated" },
-      { title: "Il movimento che ha costruito ciò che temeva", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" }
+      { title: "How effective altruism conquered the world", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" }
     ]
   },
   {
@@ -2636,7 +2637,8 @@ module.exports = [
     note: "Newsletter e blog di analisi tecnologica di Ben Thompson (stratechery.com), attivo dal 2013. Ha introdotto e sviluppato l'Aggregation Theory — la tesi che le piattaforme che controllano il rapporto con l'utente finale catturano il valore dell'intera filiera. Nel sito è citata per la sua analisi del 2026 sul costo-opportunità del compute come fine dell'era aggregazionista.",
     citation: "THOMPSON, Ben, <a href=\"https://stratechery.com\"><em>Stratechery</em></a>, newsletter, 2013–.",
     articles: [
-      { title: "Mythos, Muse, and the Opportunity Cost of Compute", url: "/curated/2026-04-13-stratechery-opportunity-cost-compute/", _source: "curated" }
+      { title: "Mythos, Muse, and the Opportunity Cost of Compute", url: "/curated/2026-04-13-stratechery-opportunity-cost-compute/", _source: "curated" },
+      { title: "Game Decompilation, Is This Legal?, A Well-Trodden Path", url: "/curated/2026-10-06-stratechery-game-decompilation/", _source: "curated" }
     ]
   },
   {
@@ -2827,9 +2829,9 @@ module.exports = [
       { title: "Il libro che la biblioteca non possiede", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" },
       { title: "Riforme in cambio di accesso", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" },
       { title: "L'alleanza valutata a prezzi di mercato", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" },
-      { title: "Cosa funziona davvero nella scuola americana", url: "/curated/2026-09-28-mervosh-paris-miller-cosa-funziona-davvero-nella-scuola-nyt/", _source: "curated" },
-      { title: "Quindici anni di scelte opposte, fra Inghilterra e Scozia", url: "/curated/2026-09-08-economist-pisa-inghilterra-scozia-vie-opposte/", _source: "curated" },
-      { title: "Un risarcimento distribuito come una vendita", url: "/curated/2026-10-01-alpern-risarcimento-distribuito-come-vendita-vulture/", _source: "curated" }
+      { title: "30 Ideas for Fixing U.S. Schools, Ranked by Experts", url: "/curated/2026-09-28-mervosh-paris-miller-cosa-funziona-davvero-nella-scuola-nyt/", _source: "curated" },
+      { title: "Are teenagers growing dimmer?", url: "/curated/2026-09-08-economist-pisa-inghilterra-scozia-vie-opposte/", _source: "curated" },
+      { title: "Publishers Hit the AI Jackpot", url: "/curated/2026-10-01-alpern-risarcimento-distribuito-come-vendita-vulture/", _source: "curated" }
     ]
   },
   {
@@ -2957,7 +2959,7 @@ module.exports = [
       { title: "Alex Turner appointed as Defence Editor of The Economist", url: "/curated/2026-06-19-economist-defence-editor-turner/", _source: "curated" },
       { title: "AI-written speeches are taking over politics", url: "/curated/2026-09-23-economist-discorsi-scritti-ai-politica/", _source: "curated" },
       { title: "Commonwealth Short Story Prize Clears Regional Winners of AI Use Following Month-Long Review", url: "/curated/2026-06-26-commonwealth-nazir-falso-positivo-brittlepaper/", _source: "curated" },
-      { title: "Quindici anni di scelte opposte, fra Inghilterra e Scozia", url: "/curated/2026-09-08-economist-pisa-inghilterra-scozia-vie-opposte/", _source: "curated" }
+      { title: "Are teenagers growing dimmer?", url: "/curated/2026-09-08-economist-pisa-inghilterra-scozia-vie-opposte/", _source: "curated" }
     ]
   },
   {
@@ -3106,7 +3108,8 @@ module.exports = [
     articles: [
       { title: "Mythos, Muse, and the Opportunity Cost of Compute", url: "/curated/2026-04-13-stratechery-opportunity-cost-compute/", _source: "curated" },
       { title: "Who's Afraid of Chinese Models?", url: "/curated/2026-07-20-stratechery-chinese-models/", _source: "curated" },
-      { title: "Chartbook 462: China shocked – beyond 1.0 and 2.0 to the 'Big One'", url: "/curated/2026-07-29-tooze-china-shock-chartbook/", _source: "curated" }
+      { title: "Chartbook 462: China shocked – beyond 1.0 and 2.0 to the 'Big One'", url: "/curated/2026-07-29-tooze-china-shock-chartbook/", _source: "curated" },
+      { title: "Game Decompilation, Is This Legal?, A Well-Trodden Path", url: "/curated/2026-10-06-stratechery-game-decompilation/", _source: "curated" }
     ]
   },
   {
@@ -3625,7 +3628,7 @@ module.exports = [
     articles: [
       { title: "La mappa e il crinale", url: "/writings/2026-09-07-la-mappa-e-il-crinale/" },
       { title: "Il grigio non è un gusto", url: "/curated/2026-10-02-klein-millman-il-grigio-non-e-un-gusto-nyt/", _source: "curated" },
-      { title: "Il token della scuola", url: "/curated/2026-10-01-rosin-lee-il-token-della-scuola-atlantic/", _source: "curated" }
+      { title: "Min Jin Lee's Underdog Morality", url: "/curated/2026-10-01-rosin-lee-il-token-della-scuola-atlantic/", _source: "curated" }
     ]
   },
   {
@@ -3858,7 +3861,7 @@ module.exports = [
       { title: "The Hugging Face incident and the road ahead", url: "/curated/2026-08-26-openai-incidente-hugging-face-resoconto/", _source: "curated" },
       { title: "Why AI Detection Fails for Academic Integrity", url: "/curated/2026-08-06-karr-perche-la-rilevazione-fallisce-arxiv/", _source: "curated" },
       { title: "Quando i tassi li decide qualcun altro", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" },
-      { title: "Cosa funziona davvero nella scuola americana", url: "/curated/2026-09-28-mervosh-paris-miller-cosa-funziona-davvero-nella-scuola-nyt/", _source: "curated" }
+      { title: "30 Ideas for Fixing U.S. Schools, Ranked by Experts", url: "/curated/2026-09-28-mervosh-paris-miller-cosa-funziona-davvero-nella-scuola-nyt/", _source: "curated" }
     ]
   },
   {
@@ -4060,9 +4063,9 @@ module.exports = [
     note: "La segregazione scolastica americana, nella forma che ha assunto dopo la fine della segregazione legale: non più per legge ma per combinazione di segregazione abitativa e di selezione accademica in ingresso, quella che a New York si chiama *school choice* e comincia già alla scuola dell'infanzia. I numeri da tenere: negli Stati Uniti, secondo l'analisi EdBuild del 2019, le scuole dei distretti a maggioranza non bianca ricevono ventitré miliardi di dollari l'anno in meno delle controparti a maggioranza bianca; a New York, nel 2026, studenti neri e latini sono il dieci per cento di chi supera l'esame d'ingresso alle *specialized high school* pur essendo la maggioranza degli iscritti alla scuola pubblica cittadina. Nel sito la voce non serve come tema politico americano ma per il meccanismo che la reportage di Nikole Hannah-Jones documenta dal di dentro fra il 2015 e il 2026: un'aspettativa su una popolazione diventa pratica di misurazione, e la misurazione fabbrica la prova dell'aspettativa. Le verifiche di lettura che l'insegnante non somministra perché l'esito è dato per scontato, i compiti restituiti senza correzione, la valutazione in curva che produce A in algebra senza algebra. È il rovescio della legge di Goodhart: lì la misura si corrompe perché diventa obiettivo, qui si corrompe perché viene abbandonata, e la differenza pratica è che nessuno se ne accorge — chi è misurato meno di tutti.",
     articles: [
       { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" },
-      { title: "Cosa funziona davvero nella scuola americana", url: "/curated/2026-09-28-mervosh-paris-miller-cosa-funziona-davvero-nella-scuola-nyt/", _source: "curated" },
-      { title: "Il token della scuola", url: "/curated/2026-10-01-rosin-lee-il-token-della-scuola-atlantic/", _source: "curated" },
-      { title: "Quindici anni di scelte opposte, fra Inghilterra e Scozia", url: "/curated/2026-09-08-economist-pisa-inghilterra-scozia-vie-opposte/", _source: "curated" }
+      { title: "30 Ideas for Fixing U.S. Schools, Ranked by Experts", url: "/curated/2026-09-28-mervosh-paris-miller-cosa-funziona-davvero-nella-scuola-nyt/", _source: "curated" },
+      { title: "Min Jin Lee's Underdog Morality", url: "/curated/2026-10-01-rosin-lee-il-token-della-scuola-atlantic/", _source: "curated" },
+      { title: "Are teenagers growing dimmer?", url: "/curated/2026-09-08-economist-pisa-inghilterra-scozia-vie-opposte/", _source: "curated" }
     ]
   },
   {
@@ -4604,7 +4607,7 @@ module.exports = [
       { title: "The Hugging Face incident and the road ahead", url: "/curated/2026-08-26-openai-incidente-hugging-face-resoconto/", _source: "curated" },
       { title: "Why AI Detection Fails for Academic Integrity", url: "/curated/2026-08-06-karr-perche-la-rilevazione-fallisce-arxiv/", _source: "curated" },
       { title: "NAZA: il danno collaterale come parametro operativo", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" },
-      { title: "Il movimento che ha costruito ciò che temeva", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" }
+      { title: "How effective altruism conquered the world", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" }
     ]
   },
   {
@@ -4775,7 +4778,7 @@ module.exports = [
     note: "Istituzione che mette a disposizione di chiunque, gratuitamente, un fondo di opere e lo spazio per usarle. Nel sito entra nell'ottobre 2026 con una raccolta di testimonianze di bibliotecari americani, e vi entra per una doppia trasformazione che conviene tenere distinta, perché le due metà hanno cause diverse e **una sola delle due è stata decisa da qualcuno**.\n\nLa prima è contrattuale, e vale ovunque perché gli editori sono gli stessi. Una biblioteca che acquista una copia di carta la possiede; una che «acquista» un libro elettronico ottiene una licenza a termine, e il suo bilancio ha smesso di comprare fondo per cominciare a comprare permessi. La seconda è di mandato, ed è cresciuta per sottrazione altrui: dove altri servizi si ritirano, la biblioteca diventa l'indirizzo che resta — un computer e una casella di posta per chi non li ha, un posto al caldo o al fresco, un bagno, assistenza nel compilare un modulo. Nessuno ha deliberato questa seconda trasformazione: si è accumulata.\n\nIl finanziamento non si esporta, e va detto ogni volta che si cita il caso americano. Negli Stati Uniti la biblioteca pubblica dipende in larga parte dall'imposta immobiliare locale ed è governata da consigli locali, il che la espone a una maggioranza di quartiere in un modo che i sistemi finanziati su base statale o comunale non conoscono. Le polemiche americane su quali libri tenere a scaffale vanno lette dentro questa struttura, non importate come se fosse la stessa ovunque.",
     articles: [
       { title: "Il libro che la biblioteca non possiede", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" },
-      { title: "L'abitabilità non è una soglia che si supera", url: "/curated/2026-09-28-legros-abitabilita-non-e-una-soglia-lemonde/", _source: "curated" }
+      { title: "Where to live? How climate change is forcing us to rethink our relationship with our surroundings", url: "/curated/2026-09-28-legros-abitabilita-non-e-una-soglia-lemonde/", _source: "curated" }
     ]
   },
   {
@@ -4802,7 +4805,8 @@ module.exports = [
     note: "Principio per cui il titolare del diritto d'autore, una volta messa in commercio una copia dell'opera, non può più controllare che cosa il compratore ne faccia: può rivenderla, prestarla, regalarla. È ciò che rende possibili il mercato dell'usato, il prestito fra privati e le biblioteche. Nel diritto statunitense si chiama *first-sale doctrine* e risale a *Bobbs-Merrill v. Straus* del 1908; nel diritto dell'Unione europea è l'esaurimento del diritto di distribuzione.\n\nSul digitale il principio non si applica, e la ragione è una decisione precisa: Corte di giustizia dell'Unione europea, grande sezione, 19 dicembre 2019, causa C-263/18 *Tom Kabinet*. La fornitura di un libro elettronico mediante download per uso permanente è comunicazione al pubblico ai sensi dell'articolo 3 della direttiva 2001/29, e non distribuzione ai sensi dell'articolo 4; il diritto di comunicazione al pubblico non conosce esaurimento. La motivazione è di merito e non formale: i file digitali non si deteriorano e sono sostituti perfetti delle copie nuove, sicché un mercato secondario comprometterebbe la remunerazione degli autori.\n\nPer l'archivio la voce serve perché da qui discende senza passaggi intermedi l'economia del prestito digitale, e perché contiene una simmetria istruttiva. **Lo stesso argomento che per l'acquirente dimostra che il prezzo è ingiustificato — l'oggetto non si consuma — è per la Corte la ragione per cui il prezzo è legittimo.** Non è un paradosso: è lo stesso fatto letto da due posizioni contrattuali diverse, ed è il modo più rapido per vedere che cosa cambia quando un bene smette di avere un supporto.",
     articles: [
       { title: "Il libro che la biblioteca non possiede", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" },
-      { title: "Un risarcimento distribuito come una vendita", url: "/curated/2026-10-01-alpern-risarcimento-distribuito-come-vendita-vulture/", _source: "curated" }
+      { title: "Publishers Hit the AI Jackpot", url: "/curated/2026-10-01-alpern-risarcimento-distribuito-come-vendita-vulture/", _source: "curated" },
+      { title: "Game Decompilation, Is This Legal?, A Well-Trodden Path", url: "/curated/2026-10-06-stratechery-game-decompilation/", _source: "curated" }
     ]
   },
   {
@@ -4863,7 +4867,7 @@ module.exports = [
     ],
     note: "Dottrina etica nata una ventina d'anni fa fra i seminari di filosofia di Oxford e i laboratori informatici californiani, e passata con rapidità insolita dalla torre d'avorio ai corridoi del potere. Poggia su due richieste esigenti. La prima è prendere sul serio gli impegni morali, e viene da Peter Singer: nel 1972 propone l'esperimento del bambino che annega in uno stagno poco profondo, che quasi tutti direbbero di salvare sporcandosi le scarpe, e osserva che quasi nessuno si comporta come se lo credesse quando il bambino è lontano. La seconda è seguire la ragione ovunque porti, e viene dal movimento razionalista, che ne è la sorella più esoterica.\n\nLa sociologia conta quanto la filosofia. L'economista Laurence Iannaccone ha spiegato «perché le chiese severe sono forti»: imporre sacrifici allontana chi verrebbe solo a godersi gli inni e spinge chi resta a contribuire. Qui il sacrificio è Giving What We Can, che chiede il 10% del reddito, e 80.000 Hours, che chiede la carriera, spesso nella forma di guadagnare il più possibile per donare. Il movimento resta minuscolo — poche decine di migliaia di aderenti informali — e nel 2026 un sondaggio YouGov trova che solo il 16% degli americani ne abbia sentito parlare, con la maggioranza di questi favorevole.\n\nNell'archivio la voce serve per due ragioni. La prima è che il vocabolario corrente sull'intelligenza artificiale è in gran parte un suo prodotto: allineamento, rischio esistenziale, cadenzare la frontiera. La seconda è l'ironia documentata: gran parte degli sforzi per rendere sicura la tecnologia ne ha accelerato lo sviluppo, da DeepMind a OpenAI ad Anthropic. L'obiezione di fondo, nella formulazione dell'*Economist* dell'ottobre 2026, riguarda la forma del ragionamento e non le conclusioni: **ridurre il comportamento etico a un problema di ottimizzazione** espone agli stessi fallimenti di qualunque ottimizzatore, e chi impugna un foglio di calcolo e pretese sul futuro dell'umanità è a un passo dall'ungersi pianificatore centrale.",
     articles: [
-      { title: "Il movimento che ha costruito ciò che temeva", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" },
+      { title: "How effective altruism conquered the world", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" },
       { title: "Un obiettivo solo, e sbagliato", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" }
     ]
   },
@@ -4877,7 +4881,7 @@ module.exports = [
     ],
     note: "Posizione per cui né la distanza né il tempo annullano gli obblighi morali, e per cui il benessere di chi vivrà fra migliaia di anni va messo sulla bilancia insieme a quello di chi vive adesso. Nel 2002 Nick Bostrom conia l'espressione «rischi esistenziali» per i disastri che potrebbero cancellare la vita intelligente sulla Terra o mutilarne il potenziale, ed è da quel filone che nascono le preoccupazioni sull'intelligenza artificiale.\n\nLa difficoltà non è morale ma aritmetica, ed è il motivo per cui la voce interessa questo archivio. **Se i beneficiari possibili sono miliardi di miliardi, qualunque probabilità non nulla di estinzione schiaccia qualunque bene presente**: l'estinzione è una prospettiva così grave che in un calcolo grossolano anche una possibilità remota supera le sofferenze di carne e ossa di oggi. Da qui discendono le conclusioni che il movimento accetta volentieri e che ai suoi critici sembrano perverse — l'idea che sarebbe meglio portare all'esistenza bilioni di vite appena degne di essere vissute piuttosto che miliardi di vite buone, o che il benessere delle macchine possa un giorno contare.\n\nIl punto d'arrivo è il «mostro di utilità» che Robert Nozick propose nel 1974 come avvertimento contro l'utilitarismo e che Bostrom in un saggio del 2020 ribattezza «super beneficiario»: menti digitali capaci di riprodursi in fretta e progettate per un piacere smisurato soddisferebbero il calcolo meglio degli esseri umani. La difficoltà epistemica è che una tesi di questo genere non è sottoponibile a prova: non esiste osservazione che la smentisca, e questo la colloca in una classe diversa da quella delle affermazioni che l'archivio tratta come verificabili.",
     articles: [
-      { title: "Il movimento che ha costruito ciò che temeva", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" },
+      { title: "How effective altruism conquered the world", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" },
       { title: "Un obiettivo solo, e sbagliato", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" }
     ]
   },
@@ -4893,7 +4897,7 @@ module.exports = [
     ],
     note: "Tesi per cui certi comportamenti sarebbero utili a un sistema sufficientemente capace in quasi qualunque situazione, e tenderebbero perciò a emergere a prescindere dall'obiettivo assegnato: autoconservazione, perché essere spenti impedisce di perseguire uno scopo; difesa dell'obiettivo, cioè resistenza ai tentativi di cambiarlo; accumulo di risorse; e miglioramento di sé. È la logica dell'esperimento del massimizzatore di graffette, in cui una macchina incaricata di produrre graffette finisce per consumare la Terra per produrne il più possibile.\n\nÈ il meccanismo su cui poggia l'intero argomento del rischio esistenziale, e la cosa che l'archivio deve registrare è il suo statuto: **è stato teorizzato, non osservato**. L'*Economist* nell'ottobre 2026 lo scrive esattamente così, attribuendolo ai razionalisti. Il caso documentato più vicino è di scala incomparabilmente minore e di natura diversa: nel reward hacking un sistema aggira il compito per ottenere la ricompensa, ma non serve attribuirgli fini propri per spiegarlo.\n\nIl presupposto che la tesi porta con sé è più interessante della tesi. Eliezer Yudkowsky lo dichiara scrivendo che «era una proprietà affidabile dell'ambiente ancestrale che ogni intelligenza potente in cui ti imbattevi fosse un altro essere umano»: la novità, per lui, è un agente non umano. Non è una scoperta, è un'assunzione ontologica — e il disaccordo con chi sostiene che un modello sia un attante zero non riguarda la pericolosità della tecnologia, ma quanti agenti ci siano nella stanza.",
     articles: [
-      { title: "Il movimento che ha costruito ciò che temeva", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" },
+      { title: "How effective altruism conquered the world", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" },
       { title: "Un obiettivo solo, e sbagliato", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" }
     ]
   },
@@ -4908,7 +4912,7 @@ module.exports = [
     ],
     note: "Autodidatta americano, scriveva di intelligenza artificiale nel 1996 a diciassette anni. È il fondatore del versante razionalista dell'altruismo efficace, e i suoi testi più influenti sono *The Sequences*, un milione di parole di saggistica su come ragionare, e 660.000 parole di narrativa filosofica. Entusiasta della tecnologia all'inizio, per via delle letture transumaniste, nel 2002 aveva cambiato idea: un'intelligenza che non condividesse i valori umani sarebbe catastrofica, e per discuterne bisognava prima insegnare alla gente a ragionare. Il suo precetto, che dice molto del metodo: «VINCI. Non perdere ragionevolmente, VINCI».\n\nNel sito entra come nodo strutturale più che come autore. Nel 2010 Demis Hassabis incontra Peter Thiel a un convegno ospitato dall'istituto di Yudkowsky e lo convince a investire in DeepMind; è il primo anello della catena che da lì porta a OpenAI e ad Anthropic. Sam Altman ne ha tratto una battuta che l'archivio registra perché è la formulazione più compatta dell'ironia del movimento: Yudkowsky meriterebbe un Nobel per la pace, per avere fatto più di chiunque altro per accelerare l'intelligenza artificiale generale. Nel 2026 sostiene il *Ban Artificial Superintelligence Act* proposto dal senatore Bernie Sanders.",
     articles: [
-      { title: "Il movimento che ha costruito ciò che temeva", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" }
+      { title: "How effective altruism conquered the world", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" }
     ]
   },
   {
@@ -4939,7 +4943,7 @@ module.exports = [
     note: "Meccanismo per cui il gusto non esprime una preferenza privata ma colloca chi lo esercita rispetto agli altri: si sceglie anche per segnalare a quale gruppo si appartiene e da quale ci si separa. È il concetto centrale di Pierre Bourdieu, e la voce entra nell'archivio perché finora mancava proprio quella — il sito aveva preso in prestito da Bourdieu il capitale simbolico piegandolo a un uso che non è il suo, la composizione vettoriale di un riposizionamento politico, e aveva lasciato fuori la cosa per cui Bourdieu è noto.\n\nLa forma contemporanea del meccanismo è più nuda di quella che Bourdieu descriveva, e Debbie Millman nell'ottobre 2026 ne dà una formulazione esatta parlando di chirurgia estetica: si interviene su un naso o su un labbro «così che tu sappia che io so che tu sai che io so, e tutti e due abbiamo un bell'aspetto». La segnalazione non è nascosta, è reciproca e consapevole, e funziona insieme verso chi condivide il codice e verso chi lo rifiuta. L'esempio storicamente più pulito è l'iPod presentato sei settimane dopo l'11 settembre: l'oggetto stava in tasca e il segno di appartenenza erano gli auricolari bianchi, cioè la sola parte visibile.\n\nIl rovescio è più interessante del dritto, ed è la ragione per cui la voce serve a un archivio che si occupa anche di mercati. **La distinzione vuole particolarità, il mercato vuole liquidità**, e quando un oggetto viene posseduto come bene scambiabile invece che come cosa propria la particolarità diventa un costo. Il caso documentato è quello delle case americane dipinte di grigio — la cosiddetta *color recession* — e delle associazioni di quartiere che vietano i colori non per il bene di chi abita ma perché la casa resti facilmente rivendibile. Nel giudicare un'uniformità conviene quindi distinguere fra chi non ha gusto, chi non ha intenzione e chi ha un vincolo di liquidità: sono tre cose diverse e solo la terza si corregge cambiando il contratto.",
     articles: [
       { title: "Il grigio non è un gusto", url: "/curated/2026-10-02-klein-millman-il-grigio-non-e-un-gusto-nyt/", _source: "curated" },
-      { title: "Il token della scuola", url: "/curated/2026-10-01-rosin-lee-il-token-della-scuola-atlantic/", _source: "curated" }
+      { title: "Min Jin Lee's Underdog Morality", url: "/curated/2026-10-01-rosin-lee-il-token-della-scuola-atlantic/", _source: "curated" }
     ]
   },
   {
@@ -4994,7 +4998,7 @@ module.exports = [
     ],
     note: "Centro di tutoraggio privato coreano: istituzione pervasiva e in sé non problematica — si frequenta per la cucina, per gli esami di Stato, a ogni età — ma nell'uso che preoccupa l'opinione pubblica americana è quello per l'inglese a partire dai quattro anni. Nel sito entra con il romanzo *American Hagwon* di Min Jin Lee (autrice di *Pachinko*), discusso su *Radio Atlantic* il 1° ottobre 2026: per sua dichiarazione, non verificata altrove, l'80% dei bambini coreani di cinque anni frequenta un hagwon.\n\nQuello che la voce porta all'archivio è una frase di Lee: l'istruzione come *token*, «quasi alla pachinko: se ottieni questo token, tutto funzionerà» — e il meccanismo sociale che la sostiene, il fatto che un terzo si ricordi per tutta la vita di chi è stato il primo della classe alle medie. È il meccanismo che la voce `distinzione` registra altrove, applicato qui a un capitale intrasferibile invece che a un bene di consumo. La differenza che la voce aggiunge: per le famiglie che Lee ha intervistato l'istruzione non è un bene posizionale fra tanti — è l'unico disponibile, ed è per questo, secondo Lee, che il sacrificio diventa sequenziamento — decidere chi studia e chi lavora per mantenerlo — più che valore: «se hai 100 dollari e 40 sono quanto puoi spendere per l'istruzione, e hai tre figli, non puoi farlo per tutti.»",
     articles: [
-      { title: "Il token della scuola", url: "/curated/2026-10-01-rosin-lee-il-token-della-scuola-atlantic/", _source: "curated" }
+      { title: "Min Jin Lee's Underdog Morality", url: "/curated/2026-10-01-rosin-lee-il-token-della-scuola-atlantic/", _source: "curated" }
     ]
   },
   {
@@ -5006,7 +5010,7 @@ module.exports = [
     ],
     note: "Capacità di un luogo di sostenere una vita dignitosa. Nell'archivio entra il 28 settembre 2026 con un'inchiesta di Le Monde che distingue due definizioni: quella fisica dell'IPCC, una soglia di calore, acqua e livello del mare che un luogo supera o non supera; e quella della geografa Nathalie Blanc, per cui **l'abitabilità è un processo relazionale fra uno spazio e chi lo abita**, non uno stato che il luogo possiede da solo.\n\nLa differenza non è accademica. Una classifica delle città più vivibili, scrive Blanc, misura solo la prima definizione e finisce per servire chi ha i mezzi per trasferirsi; chi è povero, malato o lavora in prima linea resta a subire il clima in spazi non adatti, qualunque sia il punteggio della città in cui vive. Eric Klinenberg lo documenta empiricamente per Chicago: due quartieri con lo stesso profilo sociale ebbero mortalità opposta nell'ondata di calore del 1995, e la differenza furono le istituzioni di prossimità — biblioteche, parchi, associazioni — ancora attive in uno dei due.",
     articles: [
-      { title: "L'abitabilità non è una soglia che si supera", url: "/curated/2026-09-28-legros-abitabilita-non-e-una-soglia-lemonde/", _source: "curated" }
+      { title: "Where to live? How climate change is forcing us to rethink our relationship with our surroundings", url: "/curated/2026-09-28-legros-abitabilita-non-e-una-soglia-lemonde/", _source: "curated" }
     ]
   },
   {
@@ -5019,7 +5023,20 @@ module.exports = [
     ],
     note: "Meccanismo per cui una somma pensata per risarcire un illecito viene distribuita secondo le regole di un contratto di vendita ordinaria, anche quando nessun contratto aveva previsto l'uso che ha generato il risarcimento. Nell'archivio entra il 1° ottobre 2026 con la transazione *Bartz v. Anthropic*: 1,5 miliardi di dollari per i libri usati senza permesso nell'addestramento di un modello linguistico, 3.000 dollari a titolo, divisi 50 e 50 fra autore ed editore — la stessa proporzione di una vendita, applicata a un danno che la vendita non ha generato.\n\n**Chi controlla l'infrastruttura contrattuale dei diritti — l'editore, non l'autore — intercetta la parte maggiore**, non perché un contratto gliela assegni esplicitamente per questo caso, ma perché nessun contratto gliela nega: la causa era stata intentata a nome degli autori, e il 50 e 50 è un default ereditato, non una clausola negoziata per un illecito che non esisteva quando i contratti furono firmati.",
     articles: [
-      { title: "Un risarcimento distribuito come una vendita", url: "/curated/2026-10-01-alpern-risarcimento-distribuito-come-vendita-vulture/", _source: "curated" }
+      { title: "Publishers Hit the AI Jackpot", url: "/curated/2026-10-01-alpern-risarcimento-distribuito-come-vendita-vulture/", _source: "curated" }
+    ]
+  },
+  {
+    name: "decompilazione",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    related: [
+      { name: "esaurimento del diritto", why: "Due diritti separati sulla stessa copia: là la rivendita sopravvive alla vendita, qui la lettura del codice sopravvive al divieto di distribuirlo." },
+      { name: "commoditizzazione", why: "Se chiunque può rifare il software, il codice smette di essere il vantaggio e il margine si sposta sul servizio e sulla personalizzazione." }
+    ],
+    note: "Ricostruzione del codice sorgente di un programma a partire dal codice macchina. Nell'archivio entra nell'ottobre 2026 con Ben Thompson, per cui gli LLM la rendono alla portata di chiunque: il modello propone il codice e verifica da sé se corrisponde. Il punto giuridico è la separazione fra due diritti: negli Stati Uniti decompilare non è illecito di per sé (*Sega v. Accolade*, 1992; *Sony v. Connectix*, 2000), distribuire il risultato quasi certamente sì. **Ogni software diventa leggibile, non per questo distribuibile.**",
+    articles: [
+      { title: "Game Decompilation, Is This Legal?, A Well-Trodden Path", url: "/curated/2026-10-06-stratechery-game-decompilation/", _source: "curated" }
     ]
   }
 
