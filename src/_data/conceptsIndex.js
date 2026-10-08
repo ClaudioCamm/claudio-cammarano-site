@@ -2676,7 +2676,8 @@ module.exports = [
     geo: { modo: "diretta", paesi: ["Libano"] },
     note: "Nel sito è il laboratorio storico del caos indotto: il paese più democratico del mondo arabo, distrutto dall'interferenza esterna in un sistema in equilibrio delicato. Nassim Taleb, libanese di Amioun, ne fa uso teorico costante. Il Libano è il caso ante litteram di ciò che oggi si fa su scala globale con le democrazie occidentali.",
     articles: [
-      { title: "Il rumore a Beirut", url: "/writings/2026-04-09-il-rumore-a-beirut/" }
+      { title: "Il rumore a Beirut", url: "/writings/2026-04-09-il-rumore-a-beirut/" },
+      { title: "The New Old Middle East", url: "/curated/2026-07-30-gause-new-old-middle-east-foreignaffairs/", _source: "curated" }
     ]
   },
   {
@@ -2838,7 +2839,8 @@ module.exports = [
       { title: "Are teenagers growing dimmer?", url: "/curated/2026-09-08-economist-pisa-inghilterra-scozia-vie-opposte/", _source: "curated" },
       { title: "Publishers Hit the AI Jackpot", url: "/curated/2026-10-01-alpern-risarcimento-distribuito-come-vendita-vulture/", _source: "curated" },
       { title: "China’s Long Twilight", url: "/curated/2026-10-05-minzner-chinas-long-twilight-foreignaffairs/", _source: "curated" },
-      { title: "The New Red Sea Wars", url: "/curated/2026-10-06-boswell-new-red-sea-wars-foreignaffairs/", _source: "curated" }
+      { title: "The New Red Sea Wars", url: "/curated/2026-10-06-boswell-new-red-sea-wars-foreignaffairs/", _source: "curated" },
+      { title: "The New Old Middle East", url: "/curated/2026-07-30-gause-new-old-middle-east-foreignaffairs/", _source: "curated" }
     ]
   },
   {
@@ -2917,7 +2919,8 @@ module.exports = [
       { title: "Internet Fragmentation's Outward Turn", url: "/curated/2025-06-01-fidler-splinternet-outward-turn-sciencespo/", _source: "curated" },
       { title: "China's kids rank near the top in global school tests", url: "/curated/2026-09-24-economist-pisa-cina-campione-bsjz/", _source: "curated" },
       { title: "Iran, China, Canada? A Defense of Trump’s Grand Strategy", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" },
-      { title: "China’s Long Twilight", url: "/curated/2026-10-05-minzner-chinas-long-twilight-foreignaffairs/", _source: "curated" }
+      { title: "China’s Long Twilight", url: "/curated/2026-10-05-minzner-chinas-long-twilight-foreignaffairs/", _source: "curated" },
+      { title: "The Impossible Middle East", url: "/curated/2026-08-27-esfandiary-wasser-daoud-impossible-middle-east-foreignaffairs/", _source: "curated" }
     ]
   },
   {
@@ -2941,7 +2944,9 @@ module.exports = [
       { title: "Fareed Zakaria on the Moral Cost of Trump's War", url: "/curated/2026-04-10-zakaria-trump-iran-war-nyt/", _source: "curated" },
       { title: "Our Military Is Built for the Wrong Century", url: "/curated/2026-05-28-brose-anduril-military-drones-nyt/", _source: "curated" },
       { title: "Dentro le decisioni di Trump sull'Iran", url: "/curated/2026-04-09-trump-iran-war/", _source: "curated" },
-      { title: "The New Red Sea Wars", url: "/curated/2026-10-06-boswell-new-red-sea-wars-foreignaffairs/", _source: "curated" }
+      { title: "The New Red Sea Wars", url: "/curated/2026-10-06-boswell-new-red-sea-wars-foreignaffairs/", _source: "curated" },
+      { title: "The New Old Middle East", url: "/curated/2026-07-30-gause-new-old-middle-east-foreignaffairs/", _source: "curated" },
+      { title: "The Impossible Middle East", url: "/curated/2026-08-27-esfandiary-wasser-daoud-impossible-middle-east-foreignaffairs/", _source: "curated" }
     ]
   },
   {
@@ -4762,7 +4767,8 @@ module.exports = [
     note: "Nel sito entra nel settembre 2026 con la domanda che l'archivio segue da tempo sul versante delle macchine: che cosa succede quando un apparato di ottimizzazione viene applicato a decisioni sulla vita delle persone. Il paese è il luogo in cui quella domanda si osserva alla massima intensità disponibile, per due ragioni documentabili e distinte.\n\nLa prima è industriale. Una parte consistente dell'industria mondiale della visione artificiale e della sorveglianza ha sede qui: Mobileye a Gerusalemme, Corsight e Paragon Solutions a Tel Aviv, NSO Group a Herzliya. Gli strumenti che l'archivio incontra altrove sono progettati qui e venduti fuori: lo spyware Graphite, al centro del caso italiano del 2025, è di un'azienda di Tel Aviv.\n\nLa seconda riguarda la documentazione, e va tenuta presente ogni volta che si usa questo materiale. I sistemi di designazione automatica degli obiettivi impiegati a Gaza sono stati descritti da inchieste datate e contestate — Habsora nel novembre 2023, Lavender nell'aprile 2024, il documentario *NAZA* nel settembre 2026 — ma attorno a quelle descrizioni l'apparato di verifica pubblica è minimo. La vigilanza parlamentare sull'intelligence militare esiste e ha un nome, la Commissione affari esteri e difesa della Knesset, ma la maggior parte del lavoro si svolge in sottocommissioni classificate i cui verbali non vengono pubblicati; e l'accesso indipendente della stampa internazionale a Gaza è interdetto dal 7 ottobre 2023. **Sulle decisioni più gravi, dunque, la documentazione disponibile è fatta di testimonianze anonime da un lato e di smentite ufficiali dall'altro, con pochissimo in mezzo.** Non è una ragione per dire di meno: è una ragione per marcare lo statuto di ogni affermazione.",
     articles: [
       { title: "NAZA film-makers address threats at documentary’s New York City premiere", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" },
-      { title: "The New Red Sea Wars", url: "/curated/2026-10-06-boswell-new-red-sea-wars-foreignaffairs/", _source: "curated" }
+      { title: "The New Red Sea Wars", url: "/curated/2026-10-06-boswell-new-red-sea-wars-foreignaffairs/", _source: "curated" },
+      { title: "The New Old Middle East", url: "/curated/2026-07-30-gause-new-old-middle-east-foreignaffairs/", _source: "curated" }
     ]
   },
   {
@@ -4778,7 +4784,8 @@ module.exports = [
     note: "Entra nell'archivio come il luogo in cui si vedono gli effetti degli apparati tecnologici che l'archivio documenta altrove, e come caso limite di una questione che gli è propria: le condizioni alle quali si può sapere qualcosa.\n\nDal 7 ottobre 2023 l'accesso indipendente della stampa internazionale a Gaza è interdetto senza interruzione. Un ricorso della Foreign Press Association pende davanti alla Corte suprema israeliana dal 2024 e al 30 aprile 2026 non ha avuto pronuncia; in quella data i vertici di oltre venti testate, fra cui BBC, CNN, Reuters e Associated Press, hanno rinnovato la richiesta sostenendo che stare sul terreno è la condizione per poter mettere in discussione i resoconti ufficiali. Secondo il conteggio del Committee to Protect Journalists all'ottobre 2025, in due anni sono stati uccisi almeno 237 giornalisti e operatori dell'informazione, 197 dei quali palestinesi a Gaza.\n\nPer un archivio costruito sulla verificabilità questa è la caratteristica determinante del luogo, e va detta prima di qualunque contenuto: **è un posto sul quale il record probatorio è sottile per costruzione**. Chi vuole affermare qualcosa su Gaza dispone in larghissima parte di testimonianze non verificabili sul terreno e di dichiarazioni ufficiali delle parti. La conseguenza di metodo è doppia. Nessuna affermazione va riportata senza il suo statuto; e l'obiezione di non verificabilità, che presa in sé è corretta, non può essere usata come criterio da chi ha il potere di produrre la condizione che la rende vera.\n\nUn secondo aspetto riguarda le immagini, ed è il motivo per cui la voce tocca anche il versante generativo dell'archivio. Nel febbraio 2025 un video prodotto con l'intelligenza artificiale e diffuso da Donald Trump mostrava Gaza devastata trasformata in una stazione balneare di lusso; nell'ottobre dello stesso anno il piano di pace in venti punti presentava elementi analoghi, e in pochi notarono la somiglianza. È il caso su cui Donatella Della Ratta costruisce la nozione di violenza speculativa: immagini che non pretendono di essere vere, e che proprio per questo attraversano per ripetizione la soglia fra immaginario e piano politico.",
     articles: [
       { title: "Sur la violence spéculative de l'IA", url: "/curated/2026-09-04-dellaratta-violenza-speculativa-ia-grandcontinent/", _source: "curated" },
-      { title: "NAZA film-makers address threats at documentary’s New York City premiere", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" }
+      { title: "NAZA film-makers address threats at documentary’s New York City premiere", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" },
+      { title: "The New Old Middle East", url: "/curated/2026-07-30-gause-new-old-middle-east-foreignaffairs/", _source: "curated" }
     ]
   },
   {
@@ -5063,7 +5070,8 @@ module.exports = [
     ],
     note: "Nell'archivio entra nell'ottobre 2026 con l'analisi di Alan Boswell sul Mar Rosso. Dopo la rottura con gli Emirati in Yemen, nel dicembre 2025, e la guerra di febbraio 2026 fra Stati Uniti, Israele e Iran, Riyad si fida meno della protezione americana e vuole controllare la sicurezza del Mar Rosso: con Hormuz strozzato, la maggior parte del suo petrolio passa da Bab el-Mandeb. Si allinea con Egitto, Turchia e Pakistan, ha firmato un accordo di difesa con la Somalia ed è diventata il principale alleato dell'esercito sudanese.",
     articles: [
-      { title: "The New Red Sea Wars", url: "/curated/2026-10-06-boswell-new-red-sea-wars-foreignaffairs/", _source: "curated" }
+      { title: "The New Red Sea Wars", url: "/curated/2026-10-06-boswell-new-red-sea-wars-foreignaffairs/", _source: "curated" },
+      { title: "The Impossible Middle East", url: "/curated/2026-08-27-esfandiary-wasser-daoud-impossible-middle-east-foreignaffairs/", _source: "curated" }
     ]
   },
   {
@@ -5074,7 +5082,8 @@ module.exports = [
     related: [],
     note: "Nell'archivio entrano nell'ottobre 2026 con Alan Boswell come l'attore esterno più aggressivo nel Corno d'Africa dell'ultimo decennio: una base sulla costa eritrea, il porto di Berbera in Somaliland e quello di Bosaso nel Puntland, tre miliardi a sostegno di Abiy Ahmed in Etiopia dal 2018, il patrocinio delle Forze di supporto rapido in Sudan, che Abu Dhabi nega formalmente. Dopo la guerra all'Iran hanno rafforzato i legami di sicurezza con Stati Uniti e Israele, mentre Riyad cercava alleati altrove.",
     articles: [
-      { title: "The New Red Sea Wars", url: "/curated/2026-10-06-boswell-new-red-sea-wars-foreignaffairs/", _source: "curated" }
+      { title: "The New Red Sea Wars", url: "/curated/2026-10-06-boswell-new-red-sea-wars-foreignaffairs/", _source: "curated" },
+      { title: "The Impossible Middle East", url: "/curated/2026-08-27-esfandiary-wasser-daoud-impossible-middle-east-foreignaffairs/", _source: "curated" }
     ]
   },
   {
@@ -5089,6 +5098,20 @@ module.exports = [
     note: "Calo stabile della popolazione dovuto a una fecondità sotto il livello di sostituzione, con l'invecchiamento che ne segue. Nell'archivio entra nell'ottobre 2026 con Carl Minzner sulla Cina: popolazione al massimo nel 2021, poi in calo di tre o quattro milioni l'anno; matrimoni giù del 55 per cento fra il 2013 e il 2024. La voce tiene la tesi della sua chiusa: **la crisi demografica non è un destino, è l'accumulo di scelte** — sostenere le famiglie o dettare loro come vivere, accogliere gli immigrati o respingerli, proteggere i giovani o i privilegi acquisiti.",
     articles: [
       { title: "China’s Long Twilight", url: "/curated/2026-10-05-minzner-chinas-long-twilight-foreignaffairs/", _source: "curated" }
+    ]
+  },
+  {
+    name: "dilemma dell'alleanza",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "Tucidide", why: "Nel dialogo dei Meli gli Ateniesi lo dicono per primi: Sparta non rischierà per un'isola che non le serve. È l'abbandono visto dal forte." },
+      { name: "mark to market", why: "Un'alleanza riprezzata in continuo è il rischio di abbandono messo per iscritto: il partner debole non sa più quanto vale la garanzia." }
+    ],
+    note: "Situazione del partner più debole di un'alleanza asimmetrica, che teme insieme di essere trascinato nelle guerre del più forte e di esserne abbandonato davanti al nemico comune: ridurre un rischio aumenta l'altro. La formulazione classica è di Glenn H. Snyder, «The Security Dilemma in Alliance Politics», *World Politics*, 1984; la versione più antica è nel dialogo dei Meli di Tucidide, dove i Meli contano su Sparta e gli Ateniesi rispondono che Sparta non rischierà per loro.\n\nNell'archivio entra con F. Gregory Gause, che ne fa il caso da manuale dei paesi del Golfo nella guerra del 2026 fra Stati Uniti, Israele e Iran: prima irritati di trovarsi nel mirino iraniano per una scelta americana, poi timorosi che il memorandum di giugno li lasciasse soli. Lo stesso nodo attraversa la dottrina di Elbridge Colby e il caso canadese. **Più un alleato dichiara condizionata la propria protezione, più il partner debole oscilla fra le due paure, e meno la garanzia scoraggia il nemico.**",
+    articles: [
+      { title: "Iran, China, Canada? A Defense of Trump’s Grand Strategy", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" },
+      { title: "The New Old Middle East", url: "/curated/2026-07-30-gause-new-old-middle-east-foreignaffairs/", _source: "curated" }
     ]
   }
 

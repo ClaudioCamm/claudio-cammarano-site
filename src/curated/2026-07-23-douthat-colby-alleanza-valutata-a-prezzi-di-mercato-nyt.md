@@ -24,5 +24,5 @@ description: |
 
   La chiusa è l'immagine che divide le due posizioni meglio di qualunque argomento. Colby racconta di avere rappresentato gli Stati Uniti alla cerimonia internazionale del D-Day, fra le spiagge di Sword e Juno, e di avere risposto a un addetto militare belga che moraleggiava sull'isolazionismo americano: britannici e canadesi hanno combattuto quattro e sei anni, gli americani sono arrivati tardi, e saranno in condizione di fare prediche quando spenderanno quanto spendono gli americani. «È la salutare durezza di un amico.» Il disaccordo che l'archivio registra, e non risolve, è se un'alleanza sia un'amicizia con un libro mastro o un libro mastro con un tono amichevole.
 tags: [curated, geopolitica, economia]
-concepts: ["mark to market", "condizionalità", "Canada", "Stati Uniti", "Cina", "Unione Europea", "segnale costoso"]
+concepts: ["mark to market", "condizionalità", "Canada", "Stati Uniti", "Cina", "Unione Europea", "segnale costoso", "dilemma dell'alleanza"]
 ---
