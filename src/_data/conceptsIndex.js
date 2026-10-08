@@ -5057,6 +5057,7 @@ module.exports = [
     name: "Arabia Saudita",
     type: "paese",
     geo: { modo: "diretta", paesi: ["Arabia Saudita"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q851", "https://it.wikipedia.org/wiki/Arabia_Saudita"],
     related: [
       { name: "Emirati Arabi Uniti", why: "La rottura fra le due monarchie, dallo Yemen al Sudan, è il motore delle guerre del Mar Rosso descritte da Boswell nel 2026." }
     ],
@@ -5069,6 +5070,7 @@ module.exports = [
     name: "Emirati Arabi Uniti",
     type: "paese",
     geo: { modo: "diretta", paesi: ["Emirati Arabi Uniti"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q878", "https://it.wikipedia.org/wiki/Emirati_Arabi_Uniti"],
     related: [],
     note: "Nell'archivio entrano nell'ottobre 2026 con Alan Boswell come l'attore esterno più aggressivo nel Corno d'Africa dell'ultimo decennio: una base sulla costa eritrea, il porto di Berbera in Somaliland e quello di Bosaso nel Puntland, tre miliardi a sostegno di Abiy Ahmed in Etiopia dal 2018, il patrocinio delle Forze di supporto rapido in Sudan, che Abu Dhabi nega formalmente. Dopo la guerra all'Iran hanno rafforzato i legami di sicurezza con Stati Uniti e Israele, mentre Riyad cercava alleati altrove.",
     articles: [
@@ -5079,6 +5081,7 @@ module.exports = [
     name: "declino demografico",
     type: "teoria",
     geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q284137", "https://en.wikipedia.org/wiki/Population_decline"],
     related: [
       { name: "istituzioni inclusive vs. estrattive", why: "Minzner: le riforme contro il declino si fermano davanti ai privilegi di chi sta vicino al potere, come sotto i Ming." },
       { name: "hagwon", why: "In Corea il costo dell'istruzione privata è una delle ragioni che Min Jin Lee lega alla bassa natalità." }
