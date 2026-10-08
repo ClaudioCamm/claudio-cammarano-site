@@ -5124,6 +5124,7 @@ module.exports = [
     name: "Illouz, Eva",
     type: "persona",
     geo: { modo: "diretta", paesi: ["Israele", "Francia"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q48868", "https://en.wikipedia.org/wiki/Eva_Illouz"],
     related: [
       { name: "ragione comunicativa", why: "Illouz parte da Mouffe contro Habermas: la patologia non è l'assenza di consenso ma un disaccordo che nessuna prova può più decidere." }
     ],
