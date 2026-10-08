@@ -1208,7 +1208,8 @@ module.exports = [
     note: "Concetto di Habermas: ogni volta che argomentiamo presupponiamo già norme condivise — la struttura pragmatica dell'argomentazione richiede che la migliore argomentazione possa prevalere sulla forza. Nel sito è l'universale minimo che il relativismo non può abolire senza autocontraddirsi: argomentare contro l'argomentazione è già argomentare.",
     articles: [
       { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" },
-      { title: "La colonizzazione del giudizio", url: "/curated/2026-06-12-corriere-colonizzazione-giudizio/", _source: "curated" }
+      { title: "La colonizzazione del giudizio", url: "/curated/2026-06-12-corriere-colonizzazione-giudizio/", _source: "curated" },
+      { title: "Après l’épreuve de la preuve", url: "/curated/2026-10-07-illouz-apres-lepreuve-de-la-preuve-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -2004,7 +2005,8 @@ module.exports = [
       { title: "We're living through an explainer epidemic", url: "/curated/2026-09-10-pitcher-epidemia-explainer-dazed/", _source: "curated" },
       { title: "The Atlantic is getting more subscribers from Google traffic, even as referrals fall", url: "/curated/2026-09-16-scire-atlantic-google-abbonati-niemanlab/", _source: "curated" },
       { title: "I'm a College Professor. Writing Isn't as Important as We Think.", url: "/curated/2026-09-29-cruz-scrittura-pensiero-nyt/", _source: "curated" },
-      { title: "AI co-scientists are revolutionizing how research is done", url: "/curated/2026-09-21-dolgin-ai-co-scientists-nature/", _source: "curated" }
+      { title: "AI co-scientists are revolutionizing how research is done", url: "/curated/2026-09-21-dolgin-ai-co-scientists-nature/", _source: "curated" },
+      { title: "Claude-shaped science", url: "/curated/2026-10-01-schwartz-claude-shaped-science-anthropic/", _source: "curated" }
     ]
   },
   {
@@ -2376,7 +2378,8 @@ module.exports = [
       { title: "Pacing the Frontier", url: "/curated/2026-07-28-pacing-the-frontier-lettera/", _source: "curated" },
       { title: "How effective altruism conquered the world", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" },
       { title: "The search for consciousness inside AI", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" },
-      { title: "AI’s Real Gift to Science", url: "/curated/2026-10-04-kiros-ai-real-gift-science-atlantic/", _source: "curated" }
+      { title: "AI’s Real Gift to Science", url: "/curated/2026-10-04-kiros-ai-real-gift-science-atlantic/", _source: "curated" },
+      { title: "Claude-shaped science", url: "/curated/2026-10-01-schwartz-claude-shaped-science-anthropic/", _source: "curated" }
     ]
   },
   {
@@ -4710,7 +4713,8 @@ module.exports = [
     ],
     note: "Nella dottrina del diritto dei conflitti armati, i civili la cui morte è prevista come effetto non intenzionale di un attacco contro un obiettivo militare legittimo; il principio di proporzionalità ne fa il termine di un confronto con il vantaggio militare atteso. La voce entra nell'archivio perché il documentario *NAZA* del 2026 ne mostra la forma operativa: il titolo del film è l'acronimo ebraico *nezek agavi*, danno collaterale, e nelle testimonianze degli ufficiali dell'intelligence militare israeliana funziona come un'unità di misura. Dieci NAZA. Tre NAZA, tutti bambini. Una soglia di riferimento intorno a venti.\n\nIl punto che interessa questo archivio è la trasformazione di un giudizio in un parametro, perché le due cose hanno proprietà logiche diverse. **Un giudizio di proporzionalità deve poter concludere che l'attacco non si fa; un parametro con una soglia deve soltanto essere rispettato.** Nel momento in cui il morto ammissibile diventa un numero, entra nella classe degli oggetti che si possono ottimizzare, e la domanda su che cosa autorizzi quel numero smette di essere posta da chi lo applica.\n\nIl precedente documentario non nasce con il film: l'inchiesta *Lavender* di Yuval Abraham su *+972 Magazine* e *Local Call*, 3 aprile 2024, riportava trentasettemila persone marcate come obiettivi, un tasso di errore intorno al dieci per cento, una revisione umana di venti secondi e una tolleranza dichiarata di quindici-venti civili per un miliziano di basso rango. L'IDF nega: il 12 settembre e il 1° ottobre 2026 ha respinto le testimonianze del film, affermando che le decisioni sono state prese solo da personale umano e che un attacco con cinquecento vittime civili attese non è mai stato pianificato né approvato. La contestazione va registrata insieme al dato, perché la verifica indipendente sul terreno non è disponibile, e la ragione per cui non lo è dipende da una delle due parti.",
     articles: [
-      { title: "NAZA film-makers address threats at documentary’s New York City premiere", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" }
+      { title: "NAZA film-makers address threats at documentary’s New York City premiere", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" },
+      { title: "Après l’épreuve de la preuve", url: "/curated/2026-10-07-illouz-apres-lepreuve-de-la-preuve-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -4768,7 +4772,8 @@ module.exports = [
     articles: [
       { title: "NAZA film-makers address threats at documentary’s New York City premiere", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" },
       { title: "The New Red Sea Wars", url: "/curated/2026-10-06-boswell-new-red-sea-wars-foreignaffairs/", _source: "curated" },
-      { title: "The New Old Middle East", url: "/curated/2026-07-30-gause-new-old-middle-east-foreignaffairs/", _source: "curated" }
+      { title: "The New Old Middle East", url: "/curated/2026-07-30-gause-new-old-middle-east-foreignaffairs/", _source: "curated" },
+      { title: "Après l’épreuve de la preuve", url: "/curated/2026-10-07-illouz-apres-lepreuve-de-la-preuve-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -4785,7 +4790,8 @@ module.exports = [
     articles: [
       { title: "Sur la violence spéculative de l'IA", url: "/curated/2026-09-04-dellaratta-violenza-speculativa-ia-grandcontinent/", _source: "curated" },
       { title: "NAZA film-makers address threats at documentary’s New York City premiere", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" },
-      { title: "The New Old Middle East", url: "/curated/2026-07-30-gause-new-old-middle-east-foreignaffairs/", _source: "curated" }
+      { title: "The New Old Middle East", url: "/curated/2026-07-30-gause-new-old-middle-east-foreignaffairs/", _source: "curated" },
+      { title: "Après l’épreuve de la preuve", url: "/curated/2026-10-07-illouz-apres-lepreuve-de-la-preuve-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -5112,6 +5118,18 @@ module.exports = [
     articles: [
       { title: "Iran, China, Canada? A Defense of Trump’s Grand Strategy", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" },
       { title: "The New Old Middle East", url: "/curated/2026-07-30-gause-new-old-middle-east-foreignaffairs/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Illouz, Eva",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Israele", "Francia"] },
+    related: [
+      { name: "ragione comunicativa", why: "Illouz parte da Mouffe contro Habermas: la patologia non è l'assenza di consenso ma un disaccordo che nessuna prova può più decidere." }
+    ],
+    note: "Sociologa (1961), nata a Fès, insegna all'Università Ebraica di Gerusalemme e all'EHESS di Parigi. È nota per gli studi sul capitalismo emotivo, cioè sul modo in cui mercato e terapia hanno riscritto la vita affettiva. Nell'archivio entra nell'ottobre 2026 con un saggio su *Le Grand Continent* che confronta l'affare Dreyfus e la disputa sulla qualificazione di genocidio per la guerra di Gaza, e ne ricava una diagnosi dello spazio pubblico: **una controversia resta razionale finché verte su un fatto che una prova può decidere, e oggi è proprio quel fatto a mancare.** La sua conclusione su Gaza, sospendere il giudizio in attesa dei tribunali, è contestata da molti specialisti che lei stessa discute per nome.",
+    articles: [
+      { title: "Après l’épreuve de la preuve", url: "/curated/2026-10-07-illouz-apres-lepreuve-de-la-preuve-grandcontinent/", _source: "curated" }
     ]
   }
 
