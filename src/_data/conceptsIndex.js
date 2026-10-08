@@ -1235,7 +1235,8 @@ module.exports = [
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
       { title: "Naomi Klein: 'Extreme wealth has a deranging effect. It turns you into a supremacist'", url: "/curated/2026-09-18-klein-end-times-fascism-guardian/", _source: "curated" },
       { title: "以贡献为导向深化高校分类评价改革", url: "/curated/2026-03-24-xia-valutazione-differenziata-universita-cina/", _source: "curated" },
-      { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" }
+      { title: "In Fighting for Every Black Child, Did I Betray My Own?", url: "/curated/2026-09-20-hannah-jones-segregazione-scolastica-nyt/", _source: "curated" },
+      { title: "China’s Long Twilight", url: "/curated/2026-10-05-minzner-chinas-long-twilight-foreignaffairs/", _source: "curated" }
     ]
   },
   {
@@ -2684,7 +2685,8 @@ module.exports = [
     geo: { modo: "diretta", paesi: ["Italia"] },
     note: "Nel sito è il tema di Cartolina dal paese più bello del mondo: l'Italia vive sul Mediterraneo ma lo vede solo come emergenza (naufragio, sbarco, tempesta), mai come sistema di relazioni da abitare. «Chi abita il mare controlla le connessioni. Chi lo teme consegna le connessioni ad altri.» Il Mediterraneo settentrionale attende ancora un paese capace di abitarlo.",
     articles: [
-      { title: "Cartolina dal paese più bello del mondo", url: "/writings/2026-04-24-cartolina-dal-paese-piu-bello-del-mondo/" }
+      { title: "Cartolina dal paese più bello del mondo", url: "/writings/2026-04-24-cartolina-dal-paese-piu-bello-del-mondo/" },
+      { title: "The New Red Sea Wars", url: "/curated/2026-10-06-boswell-new-red-sea-wars-foreignaffairs/", _source: "curated" }
     ]
   },
   {
@@ -2834,7 +2836,9 @@ module.exports = [
       { title: "Iran, China, Canada? A Defense of Trump’s Grand Strategy", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" },
       { title: "30 Ideas for Fixing U.S. Schools, Ranked by Experts", url: "/curated/2026-09-28-mervosh-paris-miller-cosa-funziona-davvero-nella-scuola-nyt/", _source: "curated" },
       { title: "Are teenagers growing dimmer?", url: "/curated/2026-09-08-economist-pisa-inghilterra-scozia-vie-opposte/", _source: "curated" },
-      { title: "Publishers Hit the AI Jackpot", url: "/curated/2026-10-01-alpern-risarcimento-distribuito-come-vendita-vulture/", _source: "curated" }
+      { title: "Publishers Hit the AI Jackpot", url: "/curated/2026-10-01-alpern-risarcimento-distribuito-come-vendita-vulture/", _source: "curated" },
+      { title: "China’s Long Twilight", url: "/curated/2026-10-05-minzner-chinas-long-twilight-foreignaffairs/", _source: "curated" },
+      { title: "The New Red Sea Wars", url: "/curated/2026-10-06-boswell-new-red-sea-wars-foreignaffairs/", _source: "curated" }
     ]
   },
   {
@@ -2912,7 +2916,8 @@ module.exports = [
       { title: "A Splintered Internet? Internet Fragmentation and the Strategies of China, Russia, India and the European Union", url: "/curated/2024-02-01-nocetti-splintered-internet-ifri/", _source: "curated" },
       { title: "Internet Fragmentation's Outward Turn", url: "/curated/2025-06-01-fidler-splinternet-outward-turn-sciencespo/", _source: "curated" },
       { title: "China's kids rank near the top in global school tests", url: "/curated/2026-09-24-economist-pisa-cina-campione-bsjz/", _source: "curated" },
-      { title: "Iran, China, Canada? A Defense of Trump’s Grand Strategy", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" }
+      { title: "Iran, China, Canada? A Defense of Trump’s Grand Strategy", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" },
+      { title: "China’s Long Twilight", url: "/curated/2026-10-05-minzner-chinas-long-twilight-foreignaffairs/", _source: "curated" }
     ]
   },
   {
@@ -2935,7 +2940,8 @@ module.exports = [
       { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" },
       { title: "Fareed Zakaria on the Moral Cost of Trump's War", url: "/curated/2026-04-10-zakaria-trump-iran-war-nyt/", _source: "curated" },
       { title: "Our Military Is Built for the Wrong Century", url: "/curated/2026-05-28-brose-anduril-military-drones-nyt/", _source: "curated" },
-      { title: "Dentro le decisioni di Trump sull'Iran", url: "/curated/2026-04-09-trump-iran-war/", _source: "curated" }
+      { title: "Dentro le decisioni di Trump sull'Iran", url: "/curated/2026-04-09-trump-iran-war/", _source: "curated" },
+      { title: "The New Red Sea Wars", url: "/curated/2026-10-06-boswell-new-red-sea-wars-foreignaffairs/", _source: "curated" }
     ]
   },
   {
@@ -3066,7 +3072,8 @@ module.exports = [
     note: "Presidente cinese (1953). Nel sito è analizzato come caso di accentramento del potere (dal 2012) che ha compresso il win-set domestico: abolizione del limite ai mandati, campagna anticorruzione strumentale, irrigidimento ideologico del Partito. Fattore di sconto δ probabilmente alto, ma il ρ relazionale che lui stesso ha costruito è altissimo.",
     articles: [
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
-      { title: "Who's Afraid of Chinese Models?", url: "/curated/2026-07-20-stratechery-chinese-models/", _source: "curated" }
+      { title: "Who's Afraid of Chinese Models?", url: "/curated/2026-07-20-stratechery-chinese-models/", _source: "curated" },
+      { title: "China’s Long Twilight", url: "/curated/2026-10-05-minzner-chinas-long-twilight-foreignaffairs/", _source: "curated" }
     ]
   },
   {
@@ -4754,7 +4761,8 @@ module.exports = [
     ],
     note: "Nel sito entra nel settembre 2026 con la domanda che l'archivio segue da tempo sul versante delle macchine: che cosa succede quando un apparato di ottimizzazione viene applicato a decisioni sulla vita delle persone. Il paese è il luogo in cui quella domanda si osserva alla massima intensità disponibile, per due ragioni documentabili e distinte.\n\nLa prima è industriale. Una parte consistente dell'industria mondiale della visione artificiale e della sorveglianza ha sede qui: Mobileye a Gerusalemme, Corsight e Paragon Solutions a Tel Aviv, NSO Group a Herzliya. Gli strumenti che l'archivio incontra altrove sono progettati qui e venduti fuori: lo spyware Graphite, al centro del caso italiano del 2025, è di un'azienda di Tel Aviv.\n\nLa seconda riguarda la documentazione, e va tenuta presente ogni volta che si usa questo materiale. I sistemi di designazione automatica degli obiettivi impiegati a Gaza sono stati descritti da inchieste datate e contestate — Habsora nel novembre 2023, Lavender nell'aprile 2024, il documentario *NAZA* nel settembre 2026 — ma attorno a quelle descrizioni l'apparato di verifica pubblica è minimo. La vigilanza parlamentare sull'intelligence militare esiste e ha un nome, la Commissione affari esteri e difesa della Knesset, ma la maggior parte del lavoro si svolge in sottocommissioni classificate i cui verbali non vengono pubblicati; e l'accesso indipendente della stampa internazionale a Gaza è interdetto dal 7 ottobre 2023. **Sulle decisioni più gravi, dunque, la documentazione disponibile è fatta di testimonianze anonime da un lato e di smentite ufficiali dall'altro, con pochissimo in mezzo.** Non è una ragione per dire di meno: è una ragione per marcare lo statuto di ogni affermazione.",
     articles: [
-      { title: "NAZA film-makers address threats at documentary’s New York City premiere", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" }
+      { title: "NAZA film-makers address threats at documentary’s New York City premiere", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" },
+      { title: "The New Red Sea Wars", url: "/curated/2026-10-06-boswell-new-red-sea-wars-foreignaffairs/", _source: "curated" }
     ]
   },
   {
@@ -5043,6 +5051,41 @@ module.exports = [
     note: "Ricostruzione del codice sorgente di un programma a partire dal codice macchina. Nell'archivio entra nell'ottobre 2026 con Ben Thompson, per cui gli LLM la rendono alla portata di chiunque: il modello propone il codice e verifica da sé se corrisponde. Il punto giuridico è la separazione fra due diritti: negli Stati Uniti decompilare non è illecito di per sé (*Sega v. Accolade*, 1992; *Sony v. Connectix*, 2000), distribuire il risultato quasi certamente sì. **Ogni software diventa leggibile, non per questo distribuibile.**",
     articles: [
       { title: "Game Decompilation, Is This Legal?, A Well-Trodden Path", url: "/curated/2026-10-06-stratechery-game-decompilation/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Arabia Saudita",
+    type: "paese",
+    geo: { modo: "diretta", paesi: ["Arabia Saudita"] },
+    related: [
+      { name: "Emirati Arabi Uniti", why: "La rottura fra le due monarchie, dallo Yemen al Sudan, è il motore delle guerre del Mar Rosso descritte da Boswell nel 2026." }
+    ],
+    note: "Nell'archivio entra nell'ottobre 2026 con l'analisi di Alan Boswell sul Mar Rosso. Dopo la rottura con gli Emirati in Yemen, nel dicembre 2025, e la guerra di febbraio 2026 fra Stati Uniti, Israele e Iran, Riyad si fida meno della protezione americana e vuole controllare la sicurezza del Mar Rosso: con Hormuz strozzato, la maggior parte del suo petrolio passa da Bab el-Mandeb. Si allinea con Egitto, Turchia e Pakistan, ha firmato un accordo di difesa con la Somalia ed è diventata il principale alleato dell'esercito sudanese.",
+    articles: [
+      { title: "The New Red Sea Wars", url: "/curated/2026-10-06-boswell-new-red-sea-wars-foreignaffairs/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Emirati Arabi Uniti",
+    type: "paese",
+    geo: { modo: "diretta", paesi: ["Emirati Arabi Uniti"] },
+    related: [],
+    note: "Nell'archivio entrano nell'ottobre 2026 con Alan Boswell come l'attore esterno più aggressivo nel Corno d'Africa dell'ultimo decennio: una base sulla costa eritrea, il porto di Berbera in Somaliland e quello di Bosaso nel Puntland, tre miliardi a sostegno di Abiy Ahmed in Etiopia dal 2018, il patrocinio delle Forze di supporto rapido in Sudan, che Abu Dhabi nega formalmente. Dopo la guerra all'Iran hanno rafforzato i legami di sicurezza con Stati Uniti e Israele, mentre Riyad cercava alleati altrove.",
+    articles: [
+      { title: "The New Red Sea Wars", url: "/curated/2026-10-06-boswell-new-red-sea-wars-foreignaffairs/", _source: "curated" }
+    ]
+  },
+  {
+    name: "declino demografico",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    related: [
+      { name: "istituzioni inclusive vs. estrattive", why: "Minzner: le riforme contro il declino si fermano davanti ai privilegi di chi sta vicino al potere, come sotto i Ming." },
+      { name: "hagwon", why: "In Corea il costo dell'istruzione privata è una delle ragioni che Min Jin Lee lega alla bassa natalità." }
+    ],
+    note: "Calo stabile della popolazione dovuto a una fecondità sotto il livello di sostituzione, con l'invecchiamento che ne segue. Nell'archivio entra nell'ottobre 2026 con Carl Minzner sulla Cina: popolazione al massimo nel 2021, poi in calo di tre o quattro milioni l'anno; matrimoni giù del 55 per cento fra il 2013 e il 2024. La voce tiene la tesi della sua chiusa: **la crisi demografica non è un destino, è l'accumulo di scelte** — sostenere le famiglie o dettare loro come vivere, accogliere gli immigrati o respingerli, proteggere i giovani o i privilegi acquisiti.",
+    articles: [
+      { title: "China’s Long Twilight", url: "/curated/2026-10-05-minzner-chinas-long-twilight-foreignaffairs/", _source: "curated" }
     ]
   }
 
