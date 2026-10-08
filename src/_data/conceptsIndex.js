@@ -487,7 +487,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q13522475", "https://en.wikipedia.org/wiki/Miranda_Fricker"],
     note: "Filosofa, docente alla NYU. Nel sito è citata per il suo lavoro sull'ingiustizia epistemica: chi viene ascoltato e chi no, e come questa asimmetria sia essa stessa una forma di potere che la filosofia politica tradizionale ha per lo più ignorato.",
     articles: [
-      { title: "Non più un affare da uomini. Ora il pensiero che guida è donna", url: "/curated/2026-06-21-origgi-filosofia-donne-parigi/", _source: "curated" }
+      { title: "Non più un affare da uomini. Ora il pensiero che guida è donna", url: "/curated/2026-06-21-origgi-filosofia-donne-parigi/", _source: "curated" },
+      { title: "Epistemic assholes", url: "/curated/2026-10-01-boult-epistemic-assholes-synthese/", _source: "curated" }
     ]
   },
   {
@@ -5132,9 +5133,19 @@ module.exports = [
     articles: [
       { title: "Après l’épreuve de la preuve", url: "/curated/2026-10-07-illouz-apres-lepreuve-de-la-preuve-grandcontinent/", _source: "curated" }
     ]
+  },
+  {
+    name: "epistemic asshole",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Canada"] },
+    related: [
+      { name: "Fricker, Miranda", why: "Boult ne riprende il modello causale: come l'ingiustizia testimoniale, la stronzaggine epistemica precede e alimenta il torto morale." },
+      { name: "Illouz, Eva", why: "Illouz descrive il collasso della prova come standard condiviso; Boult nomina chi se ne esonera per diritto acquisito." }
+    ],
+    note: "Concetto proposto da Cameron Boult su *Synthese* (2026), che estende all'epistemologia la teoria di Aaron James. **È chi si concede vantaggi sistematici nelle relazioni epistemiche, per un senso di diritto che lo rende immune alla critica.** I vantaggi tipici: libertà dall'indagine, comfort doxastico, libertà di criticare senza essere criticato, pretesa di prove sempre ulteriori. Non coincide con l'arroganza intellettuale né con altri vizi epistemici: è un guasto della relazione, non soltanto del carattere.",
+    articles: [
+      { title: "Epistemic assholes", url: "/curated/2026-10-01-boult-epistemic-assholes-synthese/", _source: "curated" }
+    ]
   }
 
 ];
-
-
-
