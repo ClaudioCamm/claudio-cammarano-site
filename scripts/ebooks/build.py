@@ -24,7 +24,19 @@ AI = json.loads(subprocess.run(
     cwd=ROOT, capture_output=True, text=True, check=True).stdout)
 SITE = "https://claudiocammarano.com"
 MAINFONT = os.environ.get("EBOOK_MAINFONT", "Source Serif 4")
-TOOLCHAIN = "v2"  # v2: notazione AI e licenza CC BY-NC-ND 4.0 in coda  # cambiare per forzare la rigenerazione di tutto
+TOOLCHAIN = "v3"  # v3: via del ritorno in coda (serie, iscrizione, feed)  # cambiare per forzare la rigenerazione di tutto
+
+ACCENTI = str.maketrans("àáâãäåèéêëìíîïòóôõöùúûü", "aaaaaaeeeeiiiiooooouuuu")
+
+def slugify(s):
+    s = s.lower().translate(ACCENTI)
+    s = re.sub(r"\s+", "-", s)
+    s = re.sub(r"[^a-z0-9-]", "", s)
+    s = re.sub(r"-+", "-", s)
+    return s.strip("-")
+
+def serie_base(s):
+    return re.sub(r",\s+[IVXLCDM]+$", "", s, flags=re.I).strip()
 
 def split_front(text):
     m = re.match(r"^---\n(.*?)\n---\n(.*)$", text, re.S)
@@ -85,6 +97,16 @@ def main():
                  "e senza modifiche.\n\n"
                  f"Versione originale e aggiornata: <{url}>. "
                  "Le parti interattive del saggio sono disponibili solo online.\n")
+        # La via del ritorno: questo file viaggia da solo, chi lo riceve
+        # inoltrato non e' passato dal sito e deve poterci tornare.
+        serm = re.search(r'^series:\s*"?(.*?)"?\s*$', front, re.M)
+        if serm:
+            base = serie_base(serm.group(1))
+            coda += (f"\nQuesto saggio fa parte della serie *{base}*: "
+                     f"<{SITE}/serie/{slugify(base)}/>.\n")
+        coda += ("\nScrivo anche *The Abstract*, in inglese, una volta al mese, "
+                 f"sull'economia dei contenuti: <{SITE}/newsletter/>. "
+                 f"C'è anche il feed: <{SITE}/feed.xml>.\n")
         tmp.write_text(body + coda, encoding="utf-8")
         common = [
             "pandoc", str(tmp),
