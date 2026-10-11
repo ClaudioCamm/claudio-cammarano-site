@@ -9,7 +9,9 @@
     "prebuild": "node scripts/sync-concepts.js && node scripts/validate-concepts.js && node scripts/check-tags.js && node scripts/validate-geo.js && node scripts/validate-catene.js",
     "build": "eleventy && (npx pagefind --site _site || true)",
     "index": "npx pagefind --site _site",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "curatela": "node scripts/curatela.js",
+    "deposito": "node scripts/entia-deposito.js"
   },
   "keywords": [],
   "author": "",

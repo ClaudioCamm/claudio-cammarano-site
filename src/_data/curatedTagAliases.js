@@ -20,6 +20,7 @@ module.exports = {
   // Accorpamenti in Argomenti già esistenti (sinonimi tematici)
   "storie": "Geopolitica",
   "educazione": "Formazione",
+  "istruzione": "Formazione",
 
   // Nuovi Argomenti — Geopolitica & potere
   "guerra": "Guerra",
@@ -88,5 +89,9 @@ module.exports = {
 
   // Statistica: entra dalla filosofia della statistica (Mayo), quindi
   // appartiene a Epistemologia & AI e non e' un Argomento a se'.
-  "statistica": "Statistica"
+  "statistica": "Statistica",
+
+  // Nove curated cadevano nel decorativo per un alias mancante:
+  // l'Argomento canonico esisteva gia' in "Italia & istituzioni".
+  "istituzioni": "Istituzioni"
 };

@@ -21,6 +21,6 @@ description: |
   Un ultimo dato, isolato e non forzato in una tesi: fra le trenta idee sottoposte al panel, «consentire l'uso dell'intelligenza artificiale» ottiene il punteggio di efficacia più basso di tutti, 2,2 su 7 — peggio di «niente laptop personali» (2,9) e di «eliminare il tracking per livello» (2,5). Il testo non argomenta il perché; lo registra come dato, in attesa di un pezzo che lo spieghi.
 
   La conclusione del pezzo è di metodo più che di contenuto, e vale la pena di riportarla perché disinnesca la lettura a lista della spesa: nessun singolo intervento basta da solo, e il modo in cui viene eseguito conta più di quale si scelga. Citano il caso di Mississippi e Louisiana, in risalita nelle classifiche nazionali con combinazioni di più strategie fra quelle giudicate efficaci. Marguerite Roza (Georgetown): «nella pratica, fare semplicemente qualcosa bene può contare più di qualunque intervento specifico. L'esecuzione è tutto.»
-tags: [curated, educazione, dato]
+tags: [curated, educazione, dati]
 concepts: ["segregazione scolastica", "legge di Goodhart", "Stati Uniti", "disuguaglianze"]
 ---

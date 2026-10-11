@@ -1,0 +1,453 @@
+---
+layout: layouts/base.njk
+title: "ENTIA — la notazione dell'archivio"
+description: "La specifica della notazione editoriale usata su claudiocammarano.com: cinque strati, sei funzioni di lettura, le regole di assegnazione e i limiti dichiarati. Versionata, con licenza CC BY 4.0."
+permalink: /entia/
+---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://claudiocammarano.com/entia/#spec",
+  "name": "ENTIA — Epistemic Notation for Texts In Archives",
+  "headline": "ENTIA — specifica della notazione editoriale",
+  "version": "{{ entia.spec }}",
+  "dateModified": "{{ entia.rilievi.data }}",
+  "inLanguage": "it",
+  "license": "{{ entia.licenza.url }}",
+  "url": "https://claudiocammarano.com/entia/",
+  "author": {
+    "@type": "Person",
+    "@id": "https://claudiocammarano.com/#person",
+    "name": "Claudio Cammarano",
+    "url": "https://claudiocammarano.com",
+    "sameAs": ["https://orcid.org/0009-0006-3690-7466"]
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/json",
+    "contentUrl": "https://claudiocammarano.com/entia.json"
+  }
+}
+</script>
+
+<style>
+.entia-tab{width:100%;overflow-x:auto}
+.entia-tab table{border-collapse:collapse;width:100%;min-width:560px;font-size:.92em}
+.entia-tab th,.entia-tab td{text-align:left;padding:.55em .9em .55em 0;border-bottom:1px solid var(--color-border);vertical-align:top}
+.entia-tab th{font-size:.72em;letter-spacing:.08em;text-transform:uppercase;color:var(--color-text-light)}
+.entia-tab td.n{text-align:right;padding-right:0;font-variant-numeric:tabular-nums}
+.entia-fn{margin:0 0 1.6em;padding-left:1em;border-left:3px solid var(--color-primary)}
+.entia-fn h3{margin:0 0 .2em;font-size:1.05em}
+.entia-fn .ord{font-size:.72em;letter-spacing:.08em;text-transform:uppercase;color:var(--color-text-light)}
+.entia-fn .prova{font-style:italic;margin:.4em 0 .3em}
+.entia-regola{margin:0 0 1.1em}
+.entia-regola b{display:block}
+.entia-grad text{font-family:inherit}
+.entia-nota{font-size:.9em;color:var(--color-text-light)}
+
+/* --- mappa a strati: tinte categoriali dei cinque temi, validate per
+   separazione in daltonismo e contrasto in chiaro e in scuro --- */
+:root{--e0:#4C7FE0;--e1:#C0304A;--e2:#009E73;--e3:#9A35A8;--e4:#C9A227}
+@media (prefers-color-scheme: dark){
+  :root{--e0:#5A89E6;--e1:#CC3A54;--e2:#0CA87C;--e3:#A840B6;--e4:#AE8C28}
+}
+.entia-mappa{margin:1.4em 0 0}
+.em-barra{display:flex;flex-wrap:wrap;gap:.6em 1.4em;align-items:flex-end;margin:0 0 .8em}
+.em-gruppo{display:flex;flex-direction:column;gap:.3em}
+.em-etich{font-size:.66em;letter-spacing:.1em;text-transform:uppercase;color:var(--color-text-light)}
+.em-pill{display:flex;flex-wrap:wrap;gap:2px;background:var(--color-bg-alt);padding:3px;border-radius:7px}
+.em-pill button{font:inherit;font-size:.82em;border:0;background:transparent;color:var(--color-text-light);
+  padding:.3em .7em;border-radius:5px;cursor:pointer;white-space:nowrap}
+.em-pill button[aria-pressed="true"]{background:var(--color-bg);color:var(--color-text);font-weight:600}
+.em-briciole{display:flex;flex-wrap:wrap;align-items:center;gap:.3em;font-size:.86em;min-height:1.7em;margin:0 0 .4em}
+.em-briciole button{font:inherit;border:0;background:transparent;color:var(--color-primary);cursor:pointer;
+  padding:.1em .2em;text-decoration:underline;text-underline-offset:2px}
+.em-briciole .sep{color:var(--color-text-light)}
+.em-briciole .qui{font-weight:600}
+.em-livello{font-size:.66em;letter-spacing:.1em;text-transform:uppercase;color:var(--color-text-light);margin-left:auto}
+#em-tela{position:relative;width:100%;height:clamp(360px,58vh,560px);border:1px solid var(--color-border);
+  border-radius:8px;overflow:hidden;background:var(--color-bg-alt)}
+.em-tess{position:absolute;overflow:hidden;cursor:pointer;border-radius:3px;outline:2px solid transparent;
+  transition:filter .12s ease,outline-color .12s ease}
+.em-tess:hover,.em-tess:focus-visible{filter:brightness(1.07);outline-color:var(--color-text);z-index:3}
+.em-tess.foglia{cursor:default}
+.em-nome{position:absolute;left:6px;top:4px;right:6px;font-size:.74em;font-weight:600;line-height:1.2;
+  color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.45);pointer-events:none;overflow:hidden}
+.em-nome .q{display:block;font-weight:400;font-size:.9em;opacity:.88;margin-top:1px;font-variant-numeric:tabular-nums}
+.em-sotto{position:absolute;border-radius:2px;pointer-events:none;background:rgba(255,255,255,.17);
+  border:1px solid rgba(255,255,255,.3)}
+.em-vuoto{display:flex;align-items:center;justify-content:center;height:100%;color:var(--color-text-light);
+  font-size:.95em;padding:1.2em;text-align:center}
+.em-legenda{display:flex;flex-wrap:wrap;gap:.3em 1em;margin:.6em 0 0;font-size:.8em;color:var(--color-text-light)}
+.em-legenda .voce{display:flex;align-items:center;gap:.4em}
+.em-legenda .chip{width:11px;height:11px;border-radius:3px;flex:none}
+#em-lettura{margin:.9em 0 0;padding:.8em 1em;border:1px solid var(--color-border);border-radius:8px;min-height:5em}
+#em-lettura h3{margin:0 0 .2em;font-size:1.02em}
+#em-lettura .meta{font-size:.78em;color:var(--color-text-light);display:flex;flex-wrap:wrap;gap:.2em .9em;
+  font-variant-numeric:tabular-nums}
+#em-lettura .corpo{font-size:.92em;margin:.5em 0 0;color:var(--color-text-light)}
+.em-tabella{margin:.8em 0 0}
+.em-tabella summary{font-size:.85em;color:var(--color-text-light);cursor:pointer}
+@media (prefers-reduced-motion: reduce){.em-tess{transition:none}}
+.entia-scaduto{border-left:3px solid var(--color-irene,#800020);padding:.5em 0 .5em .9em;font-size:.9em;color:var(--color-text-light);margin:.8em 0 0}
+</style>
+
+<div class="notazione-page">
+
+  <header class="tag-page-header">
+    <nav class="breadcrumb" aria-label="Navigazione">
+      <a href="/">Home</a>
+      <span class="breadcrumb-sep" aria-hidden="true">·</span>
+      <a href="/colophon/">Colophon</a>
+      <span class="breadcrumb-sep" aria-hidden="true">·</span>
+      <span class="breadcrumb-current">ENTIA</span>
+    </nav>
+    <p class="tag-page-label">Specifica · versione {{ entia.spec }}</p>
+    <h1 class="tag-page-title">ENTIA</h1>
+    <p class="tag-page-intro"><em>{{ entia.sciolto }}</em> — una notazione editoriale aperta, applicata qui su {{ entia.corpus.pezzi }} pezzi e riusabile altrove. Questa pagina è la specifica, e in fondo è navigabile: la <a href="#mappa">mappa</a> apre i cinque strati uno dentro l'altro.</p>
+  </header>
+
+  <div class="article-body">
+
+    <dl class="notazione-meta">
+      <div><dt>Versione</dt><dd>{{ entia.spec }}</dd></div>
+      <div><dt>Rilievi al</dt><dd>{{ entia.rilievi.data }}</dd></div>
+      <div><dt>Licenza</dt><dd><a href="{{ entia.licenza.url }}" rel="license">{{ entia.licenza.nome }}</a></dd></div>
+      <div><dt>Dati</dt><dd><a href="/entia.json">entia.json</a></dd></div>
+      <div><dt>Corpus</dt><dd>{{ entia.corpus.pezzi }} pezzi · {{ entia.corpus.concetti }} concetti</dd></div>
+    </dl>
+
+    <h2 id="cose">Che cos'è</h2>
+    <p>Un modo di dichiarare, per ogni testo che entra in un archivio, <strong>che funzione svolge per chi lo tiene</strong>. Non se è bello o importante: che cosa fa. Se porta uno strumento di pensiero riusabile altrove, se corregge un dato che si credeva fermo, se descrive come funziona economicamente un settore, se mostra il modo in cui qualcuno lavora. Quella dichiarazione è una badge, ed è visibile su ogni scheda del sito.</p>
+    <p>Intorno alla funzione stanno altri quattro strati: di che cosa il pezzo parla, dove si colloca nei temi della casa, a quali concetti lavorati si aggancia, e quanto pesa nel conto generale. Cinque strati in tutto, su {{ entia.corpus.pezzi }} pezzi e {{ entia.corpus.concetti }} concetti.</p>
+
+    <h2 id="perche">Perché esiste</h2>
+    <p>Un archivio che cresce diventa un mucchio, a meno che ogni pezzo non dica perché è dentro. Una lista di link non si interroga: un corpus con le funzioni dichiarate sì — si può chiedere che cosa l'archivio sappia correggere, dove non abbia strumenti, quando abbia smesso di guardare i mercati.</p>
+    <p>E una pratica che resta in testa a una persona non si può insegnare, concedere in licenza né difendere dalla copia. Per questo la specifica è <strong>pubblica, versionata e rilasciata con licenza {{ entia.licenza.nome }}</strong>, e viene depositata insieme al corpus su cui è stata ricavata: chi vuole può prendere le assegnazioni e provare a smentirle. Il precedente è <a href="https://www.gradeworkinggroup.org/" rel="noopener">GRADE</a>, in medicina: il manuale è gratuito, e quello che si paga è saperlo applicare.</p>
+
+    <h2 id="chi">A chi serve</h2>
+    <p><strong>A chi legge questo sito</strong>, per pesare un rimando prima di seguirlo: una badge dice in due parole perché quel testo è stato tenuto.</p>
+    <p><strong>A chi cura un altro archivio</strong> — una redazione, un osservatorio, una biblioteca d'impresa, un gruppo di ricerca. Il protocollo è aperto e non è legato a questi contenuti: le sei funzioni valgono per qualunque corpus in cui qualcuno decida che cosa entra. Altre ENTIA sono possibili su altri mondi.</p>
+    <p><strong>A chi vuole verificarlo.</strong> Insieme alla regola sono pubblicati il corpus con le assegnazioni, le date in cui sono state fatte, e <a href="#limiti">la portata dichiarata del modello</a>.</p>
+
+    <h2 id="nome">Il nome</h2>
+    <p>{{ entia.radice | safe }}</p>
+
+    <h2 id="strati">I cinque strati</h2>
+    <p>La notazione non è una tassonomia di argomenti: è una scala di impegno. Ogni strato dice la stessa cosa di un testo con un grado diverso di esposizione all'errore, e si definisce per quello che <em>non</em> può fare.</p>
+
+    <div class="entia-tab">
+      <table>
+        <thead><tr><th>Strato</th><th class="n">Quanti</th><th>Che cosa lo lega</th><th>Che cosa afferma</th><th>Che cosa non può</th></tr></thead>
+        <tbody>
+        {%- for s in entia.strati %}
+          <tr>
+            <td><strong>{{ s.nome }}</strong></td>
+            <td class="n">{{ s.quanti }}</td>
+            <td>{{ s.lega }}</td>
+            <td>{{ s.afferma }}</td>
+            <td>{{ s.nonPuo }}</td>
+          </tr>
+        {%- endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    {%- for s in entia.strati %}
+    <p class="entia-nota"><strong>{{ s.nome }}.</strong> {{ s.nota }}</p>
+    {%- endfor %}
+
+    <h2 id="funzioni">Le sei funzioni</h2>
+    <p>Ogni scheda dichiara una sola funzione: che cosa quella lettura ha fatto per questo archivio. Quando due si applicano entrambe, <strong>vince la più specifica</strong>, nell'ordine qui sotto.</p>
+
+    {%- for f in entia.funzioni %}
+    <div class="entia-fn" id="{{ f.slug }}">
+      <p class="ord">Precedenza {{ f.precedenza }} · {{ f.schede }} schede</p>
+      <h3>{{ f.label }}</h3>
+      <p>{{ f.estesa }}</p>
+      <p class="prova">Prova: {{ f.prova }}</p>
+    </div>
+    {%- endfor %}
+
+    <h2 id="regole">Le regole</h2>
+    {%- for r in entia.regole %}
+    <div class="entia-regola"><b>{{ r.nome }}</b>{{ r.testo }}</div>
+    {%- endfor %}
+
+    <h2 id="gradiente">Quanto ciascuna funzione sta nel testo</h2>
+    <p>{{ entia.rilievi.lettura }}</p>
+
+    {%- set W = 560 %}
+    <div class="entia-tab">
+      <svg class="entia-grad" viewBox="0 0 {{ W }} 190" width="100%" height="190" role="img"
+           aria-label="Quota di etichette ricostruibili per funzione, contro una linea di riferimento del 47 per cento">
+        {%- for r in entia.rilievi.ricostruibilita %}
+        {%- set y = loop.index0 * 29 + 10 %}
+        <rect x="150" y="{{ y }}" width="{{ (r.quota * (W - 190)) | round }}" height="17" rx="3" fill="var(--color-primary)" opacity="{{ 1 - (loop.index0 * 0.11) }}"></rect>
+        <text x="142" y="{{ y + 13 }}" text-anchor="end" font-size="12" fill="currentColor">{{ r.criterio }}</text>
+        <text x="{{ (r.quota * (W - 190)) | round + 156 }}" y="{{ y + 13 }}" font-size="12" fill="currentColor" opacity=".7">{{ (r.quota * 100) | round }}% · su {{ r.su }}</text>
+        {%- endfor %}
+        <line x1="{{ (entia.rilievi.baseline * (W - 190)) | round + 150 }}" y1="4" x2="{{ (entia.rilievi.baseline * (W - 190)) | round + 150 }}" y2="186" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3" opacity=".5"></line>
+      </svg>
+    </div>
+    <p class="entia-nota">La linea tratteggiata è il caso: {{ (entia.rilievi.baseline * 100) | round }} per cento, cioè la quota che si otterrebbe assegnando sempre la funzione più frequente. {{ entia.rilievi.cautela }}</p>
+    <p class="entia-nota"><strong>Metodo.</strong> {{ entia.rilievi.metodo }}</p>
+    {%- if entia.rilievi.scaduto %}
+    <p class="entia-scaduto"><strong>Questo rilievo è da rifare.</strong> È stato fatto su {{ entia.rilievi.schedeAlRilievo }} schede; oggi l'archivio ne ha {{ entia.rilievi.schedeOggi }}. Le misure descrittive di questa pagina si aggiornano a ogni build, il gradiente no: è un esperimento, e un risultato che cambia senza che nessuno lo rifaccia non è un risultato.</p>
+    {%- endif %}
+
+    <h2 id="mappa">La mappa</h2>
+    <p>I cinque strati, uno dentro l'altro. L'area di ogni rettangolo è il <strong>peso</strong> del pezzo che lo genera: un saggio o una catena valgono 1,5, una scheda 1, più 0,25 per ogni catena che la cita fra le fonti. Tocca un rettangolo per scendere di un livello; le briciole in alto riportano indietro.</p>
+
+    <div class="entia-mappa">
+      <div class="em-barra">
+        <div class="em-gruppo">
+          <span class="em-etich">Mese di curatela</span>
+          <div class="em-pill" id="em-filtro" role="group" aria-label="Mese di curatela"></div>
+        </div>
+        <div class="em-gruppo">
+          <span class="em-etich">Misura</span>
+          <div class="em-pill" id="em-misura" role="group" aria-label="Misura dell'area">
+            <button type="button" data-m="peso" aria-pressed="true">Peso</button>
+            <button type="button" data-m="conta" aria-pressed="false">Numero di pezzi</button>
+          </div>
+        </div>
+      </div>
+      <div class="em-briciole" id="em-briciole"></div>
+      <div id="em-tela" role="application" aria-label="Mappa a strati dell'archivio"></div>
+      <div class="em-legenda" id="em-legenda"></div>
+      <div id="em-lettura" aria-live="polite"></div>
+      <details class="em-tabella">
+        <summary>Gli stessi dati in tabella</summary>
+        <div class="entia-tab"><table>
+          <thead><tr><th>Voce</th><th class="n">Peso</th><th class="n">Pezzi</th><th class="n">Quota</th></tr></thead>
+          <tbody id="em-corpotab"></tbody>
+        </table></div>
+      </details>
+      <p class="entia-nota">Un pezzo con più argomenti distribuisce il proprio peso in parti uguali fra loro, e lo stesso fa fra i propri concetti: la somma di ogni livello resta il peso dell'archivio e nessun pezzo è contato due volte. Il filtro temporale usa la <em>data di curatela</em> — il giorno in cui il pezzo è entrato nell’archivio, ricavato dai commit del repository — e non la data della fonte: la prima dice come è cresciuto l’archivio, la seconda quanto sono vecchi i materiali. I mesi sono mesi di calendario, non fasi: se c’è una discontinuità si vede dai volumi, non da un’etichetta.{%- if entia.corpus.senzaCuratela %} Di {{ entia.corpus.senzaCuratela }} pezzi la data di curatela non è nota: compaiono sotto «Tutto» e in nessun mese.{%- endif %}</p>
+    </div>
+
+<script>
+const EM_DATI = {{ entia.mappa | dump | safe }};
+{% raw %}
+(function(){
+  const LIV = ["Tema","Argomento","Funzione","Pezzo","Concetto"];
+  const argTema = {};
+  Object.entries(EM_DATI.temi).forEach(([t,as])=>as.forEach(a=>argTema[a]=t));
+  const ordineTemi = Object.keys(EM_DATI.temi);
+  const tinta = t => { const i = ordineTemi.indexOf(t); return i<0 ? "var(--color-border)" : "var(--e"+(i%5)+")"; };
+
+  const MESI = ["gen","feb","mar","apr","mag","giu","lug","ago","set","ott","nov","dic"];
+  const dc = p => p.dc || p.d || "";
+  const chiaviMese = [...new Set(EM_DATI.pezzi.map(p=>dc(p).slice(0,7)).filter(Boolean))].sort();
+  const unSoloAnno = new Set(chiaviMese.map(k=>k.slice(0,4))).size <= 1;
+  const etichMese = k => MESI[+k.slice(5,7)-1] + (unSoloAnno ? "" : " ’"+k.slice(2,4));
+  const PERIODI = [{k:"tutto",e:"Tutto"}].concat(chiaviMese.map(k=>({k, e:etichMese(k)})));
+  let stato = {periodo:"tutto", misura:"peso", via:[]};
+  const E = id => document.getElementById(id);
+  const fmt = v => stato.misura==="peso" ? v.toFixed(v<10?1:0) : Math.round(v);
+
+  function costruisci(){
+    const sel = EM_DATI.pezzi.filter(p=> stato.periodo==="tutto" || dc(p).slice(0,7)===stato.periodo);
+    const radice = {nome:"Archivio", figli:new Map(), v:0, n:0, tema:null};
+    const entra = (nodo,nome,tema)=>{
+      if(!nodo.figli.has(nome)) nodo.figli.set(nome,{nome,figli:new Map(),v:0,n:0,tema});
+      return nodo.figli.get(nome);
+    };
+    for(const p of sel){
+      const args = p.a.length ? p.a : ["— senza argomento"];
+      const conc = p.c.length ? p.c : ["— senza concetti"];
+      for(const a of args){
+        const tema = argTema[a] || "Fuori tema";
+        const qa = (stato.misura==="peso" ? p.p : 1) / args.length;
+        const n1 = entra(radice,tema,tema), n2 = entra(n1,a,tema),
+              n3 = entra(n2,p.f,tema), n4 = entra(n3,p.t,tema);
+        n4.pezzo = p;
+        for(const c of conc){ const n5 = entra(n4,c,tema); n5.v += qa/conc.length; n5.n += 1/(args.length*conc.length); }
+        [radice,n1,n2,n3,n4].forEach(x=>{ x.v += qa; x.n += 1/args.length; });
+      }
+    }
+    return radice;
+  }
+
+  function squarify(voci,x,y,w,h){
+    const out=[]; let i=0;
+    const items = voci.filter(v=>v.v>0).sort((a,b)=>b.v-a.v);
+    while(i<items.length && w>.5 && h>.5){
+      const oriz = w>=h, lato = oriz?h:w, lungo = oriz?w:h;
+      const resto = items.slice(i).reduce((a,b)=>a+b.v,0);
+      if(resto<=0) break;
+      let riga=[], somma=0, meglio=Infinity, j=i;
+      while(j<items.length){
+        const s2 = somma + items[j].v, len = (s2/resto)*lungo;
+        let peggio=0;
+        for(const it of riga.concat([items[j]])){
+          const sp = (it.v/s2)*lato;
+          if(sp<=0||len<=0){ peggio=Infinity; break; }
+          peggio = Math.max(peggio, Math.max(len/sp, sp/len));
+        }
+        if(riga.length && peggio>meglio) break;
+        riga.push(items[j]); somma=s2; meglio=peggio; j++;
+      }
+      const len = (somma/resto)*lungo; let off=0;
+      for(const it of riga){
+        const sp = (it.v/somma)*lato;
+        out.push(Object.assign({},it, oriz ? {x:x,y:y+off,w:len,h:sp} : {x:x+off,y:y,w:sp,h:len}));
+        off += sp;
+      }
+      if(oriz){ x+=len; w-=len; } else { y+=len; h-=len; }
+      i=j;
+    }
+    return out;
+  }
+
+  function disegna(){
+    const radice = costruisci();
+    let nodo = radice;
+    for(const passo of stato.via){ const g = nodo.figli.get(passo); if(!g){ stato.via=[]; nodo=radice; break; } nodo=g; }
+    const tela = E("em-tela"); tela.textContent="";
+    const W = tela.clientWidth, H = tela.clientHeight;
+    const figli = [...nodo.figli.values()];
+    if(!figli.length){
+      const d=document.createElement("div"); d.className="em-vuoto";
+      d.textContent = nodo.pezzo ? "Questo pezzo non dichiara concetti." : "Nessun pezzo curato in questo mese.";
+      tela.appendChild(d); testa(nodo,[]); return;
+    }
+    const piast = squarify(figli,1,1,W-2,H-2);
+    piast.forEach((p,idx)=>{
+      const el = document.createElement("div");
+      el.className = "em-tess" + (p.figli.size ? "" : " foglia");
+      el.style.cssText = "left:"+p.x+"px;top:"+p.y+"px;width:"+Math.max(0,p.w-2)+"px;height:"+Math.max(0,p.h-2)+"px";
+      const quota = piast.length<=1 ? 0 : Math.round(38*idx/(piast.length-1));
+      el.style.backgroundColor = "color-mix(in oklab, "+tinta(p.tema)+", var(--color-bg) "+quota+"%)";
+      el.tabIndex = 0; el.setAttribute("role","button");
+      el.setAttribute("aria-label", p.nome+", "+fmt(p.v));
+      if(p.w>52 && p.h>26){
+        const t=document.createElement("span"); t.className="em-nome"; t.textContent=p.nome;
+        if(p.h>42){ const q=document.createElement("span"); q.className="q";
+          q.textContent = fmt(p.v)+(stato.misura==="peso"?"":" pz"); t.appendChild(q); }
+        el.appendChild(t);
+      }
+      if(p.figli.size && p.w>74 && p.h>50){
+        squarify([...p.figli.values()],0,0,p.w-10,p.h-26).slice(0,14).forEach(s=>{
+          const sd=document.createElement("div"); sd.className="em-sotto";
+          sd.style.cssText = "left:"+(s.x+5)+"px;top:"+(s.y+21)+"px;width:"+Math.max(0,s.w-2)+"px;height:"+Math.max(0,s.h-2)+"px";
+          el.appendChild(sd);
+        });
+      }
+      const apri = ()=>{ if(p.figli.size){ stato.via = stato.via.concat([p.nome]); disegna(); } };
+      el.addEventListener("click", apri);
+      el.addEventListener("keydown", e=>{ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); apri(); } });
+      el.addEventListener("mouseenter", ()=>leggi(p));
+      el.addEventListener("focus", ()=>leggi(p));
+      tela.appendChild(el);
+    });
+    testa(nodo,piast); leggi(nodo===radice?null:nodo, nodo, radice);
+  }
+
+  function testa(nodo,piast){
+    const b = E("em-briciole"); b.textContent="";
+    const passi = [["Archivio",-1]].concat(stato.via.map((s,i)=>[s,i]));
+    passi.forEach(([nome,i],k)=>{
+      if(k){ const s=document.createElement("span"); s.className="sep"; s.textContent="›"; b.appendChild(s); }
+      if(k===passi.length-1){ const s=document.createElement("span"); s.className="qui"; s.textContent=nome; b.appendChild(s); }
+      else { const bt=document.createElement("button"); bt.type="button"; bt.textContent=nome;
+        bt.addEventListener("click",()=>{ stato.via = stato.via.slice(0,i+1); disegna(); }); b.appendChild(bt); }
+    });
+    const l=document.createElement("span"); l.className="em-livello";
+    l.textContent = (LIV[stato.via.length]||"Concetto")+" · livello "+Math.min(5,stato.via.length+1)+" di 5";
+    b.appendChild(l);
+
+    const lg = E("em-legenda"); lg.textContent="";
+    if(stato.via.length===0){
+      ordineTemi.forEach(t=>{
+        const v=document.createElement("span"); v.className="voce";
+        const c=document.createElement("span"); c.className="chip"; c.style.background=tinta(t);
+        v.appendChild(c); v.appendChild(document.createTextNode(t)); lg.appendChild(v);
+      });
+    }
+    const tb = E("em-corpotab"); tb.textContent="";
+    const tot = piast.reduce((a,p)=>a+p.v,0) || 1;
+    piast.slice().sort((a,b)=>b.v-a.v).forEach(p=>{
+      const tr=document.createElement("tr");
+      [[p.nome,""],[p.v.toFixed(1),"n"],[Math.round(p.n),"n"],[Math.round(100*p.v/tot)+"%","n"]]
+        .forEach(([t,c])=>{ const td=document.createElement("td"); if(c) td.className=c; td.textContent=t; tr.appendChild(td); });
+      tb.appendChild(tr);
+    });
+  }
+
+  function leggi(p,nodo,radice){
+    const el = E("em-lettura"); const b = p || nodo || radice; if(!b) return;
+    const liv = p ? (LIV[stato.via.length]||"Concetto") : (stato.via.length ? LIV[stato.via.length-1] : "Archivio");
+    el.textContent="";
+    const h=document.createElement("h3"); h.textContent=b.nome; el.appendChild(h);
+    const m=document.createElement("div"); m.className="meta";
+    let voci = [liv, "peso "+b.v.toFixed(1), Math.round(b.n)+" pezzi"];
+    if(b.pezzo) voci = [b.pezzo.f, (dc(b.pezzo) ? "curata il "+dc(b.pezzo) : "senza data di curatela"), b.pezzo.c.length+" concetti", "peso "+b.pezzo.p.toFixed(2)];
+    voci.forEach(t=>{ const s=document.createElement("span"); s.textContent=t; m.appendChild(s); });
+    el.appendChild(m);
+    const c=document.createElement("p"); c.className="corpo";
+    if(b.pezzo) c.textContent = "Argomenti: "+(b.pezzo.a.join(" · ")||"nessuno")+".";
+    else if(b.figli && b.figli.size){
+      const g=[...b.figli.values()].sort((x,y)=>y.v-x.v).slice(0,5).map(x=>x.nome);
+      c.textContent = "Contiene "+b.figli.size+" voci. Le maggiori: "+g.join(" · ")+".";
+    } else c.textContent = "Foglia dell'albero.";
+    el.appendChild(c);
+  }
+
+  const pf = E("em-filtro");
+  PERIODI.forEach(p=>{
+    const b=document.createElement("button"); b.type="button"; b.textContent=p.e;
+    b.setAttribute("aria-pressed", String(stato.periodo===p.k));
+    b.addEventListener("click",()=>{ stato.periodo=p.k; stato.via=[];
+      [...pf.children].forEach(x=>x.setAttribute("aria-pressed","false"));
+      b.setAttribute("aria-pressed","true"); disegna(); });
+    pf.appendChild(b);
+  });
+  E("em-misura").addEventListener("click", e=>{
+    const b = e.target.closest("button"); if(!b) return;
+    stato.misura = b.dataset.m;
+    [...e.currentTarget.children].forEach(x=>x.setAttribute("aria-pressed", String(x===b)));
+    disegna();
+  });
+  addEventListener("resize", (()=>{ let t; return ()=>{ clearTimeout(t); t=setTimeout(disegna,140); }; })());
+  disegna();
+})();
+{% endraw %}
+</script>
+
+    <h2 id="limiti">Che cosa il modello si propone</h2>
+    <p>{{ entia.limiti.premessa | safe }}</p>
+    <dl class="entia-limiti">
+      {%- for l in entia.limiti.voci %}
+      <dt>{{ l.titolo }}</dt>
+      <dd>{{ l.testo | safe }}</dd>
+      {%- endfor %}
+    </dl>
+
+    <h2 id="conformita">{{ entia.conformita.titolo }}</h2>
+    <p>{{ entia.conformita.licenzaVsUso | safe }}</p>
+
+    <h3>{{ entia.conformita.struttura.titolo }}</h3>
+    <p>{{ entia.conformita.struttura.fisso | safe }}</p>
+    <p>{{ entia.conformita.struttura.locale | safe }}</p>
+
+    <h3>{{ entia.conformita.peso.titolo }}</h3>
+    <p>{{ entia.conformita.peso.testo | safe }}</p>
+    <p>{{ entia.conformita.peso.soglia | safe }}</p>
+
+    <h3>Le quattro condizioni</h3>
+    <p>{{ entia.conformita.premessa }}</p>
+    <ol>
+      {%- for r in entia.conformita.requisiti %}
+      <li>{{ r }}</li>
+      {%- endfor %}
+    </ol>
+
+    <h2 id="licenza">Licenza</h2>
+    <p><a href="{{ entia.licenza.url }}" rel="license">{{ entia.licenza.nome }}</a>. {{ entia.licenzaNota }}</p>
+
+  </div>
+</div>

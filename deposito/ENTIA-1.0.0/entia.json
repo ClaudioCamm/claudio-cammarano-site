@@ -1,0 +1,4045 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "@vocab": "https://claudiocammarano.com/entia/ns#"
+  },
+  "@id": "https://claudiocammarano.com/entia/",
+  "@type": "skos:ConceptScheme",
+  "dct:title": "ENTIA — Epistemic Notation for Texts In Archives",
+  "dct:description": "Notazione editoriale a cinque strati per archivi curati: che cosa un pezzo è per chi lo tiene, dichiarato pezzo per pezzo.",
+  "dct:creator": {
+    "@id": "https://orcid.org/0009-0006-3690-7466",
+    "name": "Claudio Cammarano"
+  },
+  "dct:license": "https://creativecommons.org/licenses/by/4.0/deed.it",
+  "dct:hasVersion": "1.0.0",
+  "dct:modified": "2026-10-11",
+  "dct:language": "it",
+  "strati": [
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#strato/tag-libero",
+      "ordine": 1,
+      "nome": "Tag libero",
+      "cardinalita": 43,
+      "lega": "niente",
+      "afferma": "niente",
+      "nonPuo": "generare una pagina",
+      "nota": "Semantica spontanea senza conseguenze. È la valvola: perché esiste un posto dove l'impulso non costa nulla, gli Argomenti possono restare pochi."
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#strato/argomento",
+      "ordine": 2,
+      "nome": "Argomento",
+      "cardinalita": 59,
+      "lega": "l'appartenenza a clusters.js",
+      "afferma": "un raggruppamento",
+      "nonPuo": "avere una nota",
+      "nota": "Semantica normalizzata. Raggruppa, non afferma: se un termine regge una nota non ovvia, non è un Argomento."
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#strato/tema",
+      "ordine": 3,
+      "nome": "Tema",
+      "cardinalita": 5,
+      "lega": "nulla: si deriva dagli Argomenti",
+      "afferma": "una posizione",
+      "nonPuo": "essere assegnato a un pezzo",
+      "nota": "Connotazione. È lo strato che afferma di più e che nessun programma può verificare: una connotazione verificabile sarebbe una denotazione."
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#strato/concetto",
+      "ordine": 4,
+      "nome": "Concetto",
+      "cardinalita": 362,
+      "lega": "un validatore che fa cadere il build",
+      "afferma": "una proposizione sul mondo",
+      "nonPuo": "esistere senza una nota e dei legami",
+      "nota": "Semantica lavorata. È l'unico strato alto sia nell'affermare sia nel lasciarsi controllare: il centro, e tutto il resto esiste per proteggerlo."
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#strato/geometria",
+      "ordine": 5,
+      "nome": "Geometria",
+      "cardinalita": 3,
+      "lega": "una formula pubblicata",
+      "afferma": "niente sul mondo",
+      "nonPuo": "essere scelta",
+      "nota": "Il tasso di cambio: l'unico posto dove un saggio, una scheda e una citazione in catena diventano la stessa unità di misura. Pesi 1,5 / 1 / +0,25."
+    }
+  ],
+  "funzioni": [
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#funzione/riferimento-tecnico",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/funzioni"
+      },
+      "skos:prefLabel": "Riferimento tecnico",
+      "skos:definition": "Risorsa fondativa del tema.",
+      "estesa": "La risorsa che bisogna aver letto — o visto — per trattare il tema con cognizione di causa: il testo su cui gli altri, spesso senza dirlo, si appoggiano. Quando il sito affronta l'argomento, costruisce a partire da qui.",
+      "prova": "Se sparisse questa fonte, l'informazione non esisterebbe altrove in forma primaria?",
+      "precedenza": 1,
+      "schede": 16
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#funzione/dato-che-corregge",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/funzioni"
+      },
+      "skos:prefLabel": "Dato che corregge",
+      "skos:definition": "Evidenza — numero, trend o caso — che smentisce un consenso.",
+      "estesa": "Un numero, un trend o un caso documentato che smentisce un'idea diffusa — a volte una che avevo anch'io. Entra proprio perché costringe a correggere.",
+      "prova": "So nominare la credenza diffusa che questo pezzo smentisce? Se non so dirla, non è questo criterio.",
+      "precedenza": 2,
+      "schede": 36
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#funzione/metodo-di-lavoro",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/funzioni"
+      },
+      "skos:prefLabel": "Metodo di lavoro",
+      "skos:definition": "Cosa cambia nel processo o nell'organizzazione del lavoro.",
+      "estesa": "Il pezzo descrive un cambiamento nel modo di lavorare — processi editoriali, organizzazione dei team, strumenti — che vale la pena portare nella pratica, mia o delle organizzazioni di cui scrivo.",
+      "prova": "Descrive una sequenza di operazioni che potrei adottare domani?",
+      "precedenza": 3,
+      "schede": 14
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#funzione/lettura-di-mercato",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/funzioni"
+      },
+      "skos:prefLabel": "Lettura di mercato",
+      "skos:definition": "Mappa la struttura economica di un settore.",
+      "estesa": "Il pezzo fa capire come funziona economicamente un settore: chi paga, chi guadagna, dove si sposta il valore. Entra quando aggiorna la comprensione della struttura di un mercato — editoriale o no.",
+      "prova": "C'è una struttura economica, con qualcuno che paga e qualcuno che incassa?",
+      "precedenza": 4,
+      "schede": 24
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#funzione/strumento-concettuale",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/funzioni"
+      },
+      "skos:prefLabel": "Strumento concettuale",
+      "skos:definition": "Tesi o categoria da portare su altri terreni.",
+      "estesa": "Il pezzo fornisce una tesi o una categoria che funziona anche fuori dal contesto in cui è nata: un attrezzo da portare su altri terreni. Si segnala l'utensile, non l'argomento.",
+      "prova": "Posso applicare questa cornice a un oggetto diverso da quello di cui il pezzo parla?",
+      "precedenza": 5,
+      "schede": 101
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#funzione/elementi-di-scenario",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/funzioni"
+      },
+      "skos:prefLabel": "Elementi di scenario",
+      "skos:definition": "Aggiorna il quadro su un fronte che il sito segue.",
+      "estesa": "Il pezzo aggiorna il quadro su uno dei fronti che il sito segue nel tempo — AI, editoria, geopolitica dei contenuti — e tiene la mappa al passo.",
+      "prova": "Dice dove stanno le cose, senza dare né una cornice né una correzione. Ultima scelta.",
+      "precedenza": 6,
+      "schede": 24
+    }
+  ],
+  "temi": [
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#tema/epistemologia-ai",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/temi"
+      },
+      "skos:prefLabel": "Epistemologia & AI",
+      "skos:narrower": [
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/filosofia"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/epistemologia"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/ai"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/scrittura"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/vibe-coding"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/claude"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/ricerca"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/sicurezza"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/scienza"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/agenti"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/interpretabilita"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/statistica"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/semiconduttori"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/google"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/futuro"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/lingua"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/genere"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/sorveglianza"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/tecnologia"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/etica"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/cognizione"
+        }
+      ]
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#tema/geopolitica-potere",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/temi"
+      },
+      "skos:prefLabel": "Geopolitica & potere",
+      "skos:narrower": [
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/geopolitica"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/teoria-dei-giochi"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/regimi-politici"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/democrazia"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/mediterraneo"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/medio-oriente"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/scenario-planning"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/difesa"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/europa"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/storia"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/strategia"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/autoritarismo"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/decisioni"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/transizione-energetica"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/guerra"
+        }
+      ]
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#tema/editoria-comunicazione",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/temi"
+      },
+      "skos:prefLabel": "Editoria & comunicazione",
+      "skos:narrower": [
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/comunicazione"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/dual-use"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/scienze-della-comunicazione"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/formazione"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/media"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/giornalismo"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/cultura"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/editoria"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/marketing"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/imprenditoria"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/pubblicita"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/videogiochi"
+        }
+      ]
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#tema/italia-istituzioni",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/temi"
+      },
+      "skos:prefLabel": "Italia & istituzioni",
+      "skos:narrower": [
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/italia"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/bologna"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/humanities"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/istituzioni"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/politica"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/femminismo"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/geometria-politica"
+        }
+      ]
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#tema/economia-lavoro",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/temi"
+      },
+      "skos:prefLabel": "Economia & lavoro",
+      "skos:narrower": [
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/economia"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/lavoro"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/e-commerce"
+        },
+        {
+          "@id": "https://claudiocammarano.com/entia/ns#argomento/startup"
+        }
+      ]
+    }
+  ],
+  "argomenti": [
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/filosofia",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Filosofia",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/epistemologia-ai"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/epistemologia",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Epistemologia",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/epistemologia-ai"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/ai",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "AI",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/epistemologia-ai"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/scrittura",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Scrittura",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/epistemologia-ai"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/vibe-coding",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Vibe Coding",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/epistemologia-ai"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/claude",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Claude",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/epistemologia-ai"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/ricerca",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Ricerca",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/epistemologia-ai"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/sicurezza",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Sicurezza",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/epistemologia-ai"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/scienza",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Scienza",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/epistemologia-ai"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/agenti",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Agenti",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/epistemologia-ai"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/interpretabilita",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Interpretabilità",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/epistemologia-ai"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/statistica",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Statistica",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/epistemologia-ai"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/semiconduttori",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Semiconduttori",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/epistemologia-ai"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/google",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Google",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/epistemologia-ai"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/futuro",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Futuro",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/epistemologia-ai"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/lingua",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Lingua",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/epistemologia-ai"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/genere",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Genere",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/epistemologia-ai"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/sorveglianza",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Sorveglianza",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/epistemologia-ai"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/tecnologia",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Tecnologia",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/epistemologia-ai"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/etica",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Etica",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/epistemologia-ai"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/cognizione",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Cognizione",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/epistemologia-ai"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/geopolitica",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Geopolitica",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/geopolitica-potere"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/teoria-dei-giochi",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Teoria dei giochi",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/geopolitica-potere"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/regimi-politici",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Regimi politici",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/geopolitica-potere"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/democrazia",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Democrazia",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/geopolitica-potere"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/mediterraneo",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Mediterraneo",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/geopolitica-potere"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/medio-oriente",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Medio Oriente",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/geopolitica-potere"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/scenario-planning",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Scenario Planning",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/geopolitica-potere"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/difesa",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Difesa",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/geopolitica-potere"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/europa",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Europa",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/geopolitica-potere"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/storia",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Storia",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/geopolitica-potere"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/strategia",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Strategia",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/geopolitica-potere"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/autoritarismo",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Autoritarismo",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/geopolitica-potere"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/decisioni",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Decisioni",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/geopolitica-potere"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/transizione-energetica",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Transizione energetica",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/geopolitica-potere"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/guerra",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Guerra",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/geopolitica-potere"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/comunicazione",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Comunicazione",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/editoria-comunicazione"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/dual-use",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Dual Use",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/editoria-comunicazione"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/scienze-della-comunicazione",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Scienze della Comunicazione",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/editoria-comunicazione"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/formazione",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Formazione",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/editoria-comunicazione"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/media",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Media",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/editoria-comunicazione"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/giornalismo",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Giornalismo",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/editoria-comunicazione"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/cultura",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Cultura",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/editoria-comunicazione"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/editoria",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Editoria",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/editoria-comunicazione"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/marketing",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Marketing",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/editoria-comunicazione"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/imprenditoria",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Imprenditoria",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/editoria-comunicazione"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/pubblicita",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Pubblicità",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/editoria-comunicazione"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/videogiochi",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Videogiochi",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/editoria-comunicazione"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/italia",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Italia",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/italia-istituzioni"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/bologna",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Bologna",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/italia-istituzioni"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/humanities",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Humanities",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/italia-istituzioni"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/istituzioni",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Istituzioni",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/italia-istituzioni"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/politica",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Politica",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/italia-istituzioni"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/femminismo",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Femminismo",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/italia-istituzioni"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/geometria-politica",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Geometria politica",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/italia-istituzioni"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/economia",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Economia",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/economia-lavoro"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/lavoro",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Lavoro",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/economia-lavoro"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/e-commerce",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "E-commerce",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/economia-lavoro"
+      }
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#argomento/startup",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/argomenti"
+      },
+      "skos:prefLabel": "Startup",
+      "skos:broader": {
+        "@id": "https://claudiocammarano.com/entia/ns#tema/economia-lavoro"
+      }
+    }
+  ],
+  "concetti": [
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/1619-project",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "1619 Project"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/77-brigade",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "77 Brigade"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/a-mathematical-theory-of-communication",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "A Mathematical Theory of Communication"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/abitabilita",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "abitabilità"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/abraham-yuval",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Abraham, Yuval"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/acemoglu-daron",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Acemoglu, Daron"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/afd",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "AfD"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/aiuto-allo-sviluppo",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "aiuto allo sviluppo"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/allineamento-ai",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "allineamento AI"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/altruismo-efficace",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "altruismo efficace"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/ambasciata-dei-dati",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "ambasciata dei dati"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/amodei-dario",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Amodei, Dario"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/anduril",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Anduril"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/anthropic",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Anthropic"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/antifragile",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Antifragile"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/antifragilita",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "antifragilità"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/arabia-saudita",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Arabia Saudita"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/arendt-hannah",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Arendt, Hannah"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/aresu-alessandro",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Aresu, Alessandro"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/aristotele",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Aristotele"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/armi-autonome",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "armi autonome"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/ashby-w-ross",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Ashby, W. Ross"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/askell-amanda",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Askell, Amanda"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/atti-illocutori",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "atti illocutori"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/austin-john-l",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Austin, John L."
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/averroe",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Averroè"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/axelrod-robert",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Axelrod, Robert"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/azhar-azeem",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Azhar, Azeem"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/babylm",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "BabyLM"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/bayne-tim",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Bayne, Tim"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/bending-spoons",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Bending Spoons"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/bergamo-val-brembana",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Bergamo / Val Brembana"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/biblioteca-pubblica",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "biblioteca pubblica"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/boccia-artieri-giovanni",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Boccia Artieri, Giovanni"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/bologna",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Bologna"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/bores-alex",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Bores, Alex"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/bourdieu-pierre",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Bourdieu, Pierre"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/braudel-fernand",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Braudel, Fernand"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/brooks-david",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Brooks, David"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/brose-christian",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Brose, Christian"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/brown-v-board-of-education",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Brown v. Board of Education"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/canada",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Canada"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/cannes-lions",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Cannes Lions"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/canone",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "canone"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/capitale-semantico",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "capitale semantico"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/capitale-simbolico",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "capitale simbolico"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/casey-newton",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Casey Newton"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/cattura-regolatoria",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "cattura regolatoria"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/chan-kyle",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Chan, Kyle"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/chomsky-noam",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Chomsky, Noam"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/cigni-neri",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "cigni neri"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/cina",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Cina"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/clark-andy",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Clark, Andy"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/co-azione",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "co-azione"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/cognitive-offloading",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "cognitive offloading"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/columbro-donata",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Columbro, Donata"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/commoditizzazione",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "commoditizzazione"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/comte-auguste",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Comte, Auguste"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/condizionalita",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "condizionalità"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/conflitto-di-interessi-intellettuale",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "conflitto di interessi intellettuale"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/contrappesi-istituzionali",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "contrappesi istituzionali"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/controllo-riflessivo",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "controllo riflessivo"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/convergenza-strumentale",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "convergenza strumentale"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/copenhagen",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Copenhagen"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/cordelli-chiara",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Cordelli, Chiara"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/coscienza-di-accesso",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "coscienza di accesso"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/coscienza-fenomenica",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "coscienza fenomenica"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/cosmotecnica",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "cosmotecnica"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/costruttivismo",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "costruttivismo"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/crisi-della-replicazione",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "crisi della replicazione"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/criti-hype",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "criti-hype"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/danno-collaterale",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "danno collaterale"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/darpa",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "DARPA"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/data-journalism",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "data journalism"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/dati-come-beni-comuni",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "dati come beni comuni"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/declino-demografico",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "declino demografico"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/decompilazione",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "decompilazione"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/delega-epistemica",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "delega epistemica"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/deleuze-gilles",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Deleuze, Gilles"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/democrazia-di-guerra",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "democrazia di guerra"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/derrida-jacques",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Derrida, Jacques"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/descartes-rene",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Descartes, René"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/dialektik-der-aufklarung",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Dialektik der Aufklärung"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/diegoli-gianluca",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Diegoli, Gianluca"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/dieta-mediatica",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "dieta mediatica"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/digital-news-report",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Digital News Report"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/dilemma-del-prigioniero-iterato",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "dilemma del prigioniero iterato"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/dilemma-dell-alleanza",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "dilemma dell'alleanza"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/dilemma-di-collingridge",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "dilemma di Collingridge"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/discours-de-la-methode",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Discours de la méthode"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/disputa-sugli-universali",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "disputa sugli universali"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/distinzione",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "distinzione"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/disuguaglianze",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "disuguaglianze"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/divario-di-efficienza-dei-dati",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "divario di efficienza dei dati"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/divergenza-di-kullback-leibler",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "divergenza di Kullback-Leibler"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/dondi-ilaria-maria",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Dondi, Ilaria Maria"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/dostoevskij-fedor",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Dostoevskij, Fëdor"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/dottrina-gerasimov",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "dottrina Gerasimov"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/draghi-mario",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Draghi, Mario"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/dragon-restaurant-diplomacy",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "dragon-restaurant diplomacy"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/droga-david",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Droga, David"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/drone-democracy",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "drone democracy"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/dual-use",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "dual use"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/e-commerce",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "e-commerce"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/eco-umberto",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Eco, Umberto"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/ecologia-dei-media",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "ecologia dei media"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/economia",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "economia"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/editoria",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "editoria"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/educazione-estetica",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "educazione estetica"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/embodied-mind",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "embodied mind"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/emirati-arabi-uniti",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Emirati Arabi Uniti"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/enciclopedia-einaudi",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Enciclopedia Einaudi"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/epistemia",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "epistemia"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/epistemic-asshole",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "epistemic asshole"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/ermeneutica-del-sospetto",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "ermeneutica del sospetto"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/error-and-the-growth-of-experimental-knowledge",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Error and the Growth of Experimental Knowledge"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/esaurimento-del-diritto",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "esaurimento del diritto"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/estonia",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Estonia"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/etica-della-virtu",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "etica della virtù"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/europa",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Europa"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/extended-mind",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "extended mind"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/fattore-di-sconto",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "fattore di sconto δ"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/femminicidio",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "femminicidio"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/femminismo",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "femminismo"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/ferraris-maurizio",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Ferraris, Maurizio"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/fisher-ronald-aylmer",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Fisher, Ronald Aylmer"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/floridi-luciano",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Floridi, Luciano"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/foucault-michel",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Foucault, Michel"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/francia",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Francia"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/frayn-michael",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Frayn, Michael"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/free-energy-principle",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "free-energy principle"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/frey-jennifer",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Frey, Jennifer"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/fricker-miranda",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Fricker, Miranda"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/friston-karl",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Friston, Karl"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/fukuyama-francis",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Fukuyama, Francis"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/gamification",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "gamification"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/gelman-andrew",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Gelman, Andrew"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/general-purpose-technologies",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "general purpose technologies"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/geo",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "GEO"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/gerasimov-valery",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Gerasimov, Valery"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/germania",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Germania"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/gharbzadegi",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "gharbzadegi"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/ghostwriting",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "ghostwriting"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/giappone",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Giappone"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/giardino-dei-sentieri-che-si-biforcano",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "giardino dei sentieri che si biforcano"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/gopnik-alison",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Gopnik, Alison"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/gs1",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "GS1"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/gs1-web-vocabulary",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "GS1 Web Vocabulary"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/guadagno-epistemico",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "guadagno epistemico"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/guerra-asimmetrica",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "guerra asimmetrica"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/guerre-della-statistica",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "guerre della statistica"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/gumenyuk-nataliya",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Gumenyuk, Nataliya"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/habermas-jurgen",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Habermas, Jürgen"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/hagwon",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "hagwon"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/hannah-jones-nikole",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Hannah-Jones, Nikole"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/harbaugh-ken",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Harbaugh, Ken"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/harris-leslie-m",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Harris, Leslie M."
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/hayles-katherine",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Hayles, Katherine"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/hegseth-pete",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Hegseth, Pete"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/hesse-hermann",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Hesse, Hermann"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/hobsbawm-eric",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Hobsbawm, Eric"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/huang-jensen",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Huang, Jensen"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/hui-yuk",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Hui, Yuk"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/hunhu-ubuntu",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Hunhu/Ubuntu"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/huntington-samuel",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Huntington, Samuel"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/idea-di-occidente",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "idea di Occidente"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/illouz-eva",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Illouz, Eva"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/incredulita-verso-le-metanarrazioni",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "incredulità verso le metanarrazioni"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/indennizzo-trattato-da-vendita",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "indennizzo trattato da vendita"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/industria-dell-animazione",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "industria dell'animazione"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/industrie-creative",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "industrie creative"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/inemendabilita-della-realta",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "inemendabilità della realtà"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/inferenza-bayesiana",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "inferenza bayesiana"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/ioannidis-john",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Ioannidis, John"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/iperattenzione",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "iperattenzione"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/iperoggetti",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "iperoggetti"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/iran",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Iran"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/iran-1978-79",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Iran 1978–79"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/israele",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Israele"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/istituzioni-inclusive-vs-estrattive",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "istituzioni inclusive vs. estrattive"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/jaynes-edwin-thompson",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Jaynes, Edwin Thompson"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/joyce-james",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Joyce, James"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/kahneman-daniel",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Kahneman, Daniel"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/kaliningrad",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Kaliningrad"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/karp-alexander",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Karp, Alexander"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/karpathy-andrej",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Karpathy, Andrej"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/kelly-kevin",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Kelly, Kevin"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/klein-ezra",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Klein, Ezra"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/kojeve-alexandre",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Kojève, Alexandre"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/l-alba-di-tutto",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "L'alba di tutto"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/la-condition-postmoderne",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "La condition postmoderne"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/landauer-rolf",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Landauer, Rolf"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/landemore-helene",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Landemore, Hélène"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/latour-bruno",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Latour, Bruno"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/lavoro-invisibile",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "lavoro invisibile"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/le-fake-news-e-il-marketing-del-vero",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Le Fake News e il Marketing del Vero"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/legge-bacchelli",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "legge Bacchelli"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/legge-della-varieta-richiesta",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "legge della varietà richiesta"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/legge-di-goodhart",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "legge di Goodhart"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/lepore-jill",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Lepore, Jill"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/libano-beirut",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Libano / Beirut"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/liberalismo",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "liberalismo"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/licenza-di-prestito-digitale",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "licenza di prestito digitale"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/llm-come-attante-zero",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "LLM come attante zero"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/lungotermismo",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "lungotermismo"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/lyotard-jean-francois",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Lyotard, Jean-François"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/macroeconomia",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "macroeconomia"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/magnifica-humanitas",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Magnifica Humanitas"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/mark-to-market",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "mark to market"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/marketing",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "marketing"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/marketing-valoriale",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "marketing valoriale"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/mavi-vatan",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Mavi Vatan"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/mayo-deborah",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Mayo, Deborah"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/mcluhan-marshall",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "McLuhan, Marshall"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/meaney-thomas",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Meaney, Thomas"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/mediterraneo-come-spazio-strategico",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Mediterraneo come spazio strategico"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/melandri-lea",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Melandri, Lea"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/meloni-giorgia",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Meloni, Giorgia"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/memoria-storica",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "memoria storica"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/menand-louis",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Menand, Louis"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/mengzi",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Mengzi"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/metamodernismo",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "metamodernismo"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/metodo-scientifico",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "metodo scientifico"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/mezza-attenzione",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "mezza attenzione"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/miyazaki-hayao",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Miyazaki, Hayao"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/modelli-a-pesi-aperti",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "modelli a pesi aperti"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/monitorabilita",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "monitorabilità"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/monocausalita",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "monocausalità"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/moral-deskilling",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "moral deskilling"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/morte-dell-autore",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "morte dell'autore"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/morton-timothy",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Morton, Timothy"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/musk-elon",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Musk, Elon"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/narrazione-interattiva",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "narrazione interattiva"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/need-for-cognition",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "need for cognition"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/neghentropia",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "neghentropia"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/nelson-ted",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Nelson, Ted"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/netanyahu-benjamin",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Netanyahu, Benjamin"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/netcomm-forum",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Netcomm Forum"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/new-york-times",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "New York Times"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/news-avoidance",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "news avoidance"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/next-generation-eu",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Next Generation EU"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/not-even-wrong",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "not even wrong"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/nsdap",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "NSDAP"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/nussbaum-martha",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Nussbaum, Martha"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/nvidia",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Nvidia"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/ontologia-sociale",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "ontologia sociale"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/openai",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "OpenAI"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/orban-viktor",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Orbán, Viktor"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/origgi-gloria",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Origgi, Gloria"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/ottaviani-jacopo",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Ottaviani, Jacopo"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/p-value",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "p-value"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/paideia",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "paideia"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/palantir",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Palantir"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/palestina",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Palestina"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/paradigma-tecnocratico",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "paradigma tecnocratico"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/paragon-solutions",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Paragon Solutions"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/patto-di-trasparenza",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "patto di trasparenza"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/patto-sociale",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "patto sociale"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/peirce-charles-sanders",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Peirce, Charles Sanders"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/piano-dei-regimi",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "piano dei regimi"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/piccola-impresa",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "piccola impresa"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/pieranni-simone",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Pieranni, Simone"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/platformer",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Platformer"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/platone",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Platone"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/polanyi-karl",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Polanyi, Karl"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/polarizzazione-cognitiva",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "polarizzazione cognitiva"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/popper-karl",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Popper, Karl"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/post-cognition",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "post-cognition"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/postman-neil",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Postman, Neil"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/poststrutturalismo",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "poststrutturalismo"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/poverta-dello-stimolo",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "povertà dello stimolo"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/preregistrazione",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "preregistrazione"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/principio-di-landauer",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "principio di Landauer"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/privilegio",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "privilegio"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/probability-theory-the-logic-of-science",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Probability Theory: The Logic of Science"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/propaganda",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "propaganda"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/pubblicita",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "pubblicità"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/putin-vladimir",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Putin, Vladimir"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/putnam-robert",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Putnam, Robert"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/ragione-comunicativa",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "ragione comunicativa"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/ragione-strumentale",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "ragione strumentale"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/regno-unito",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Regno Unito"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/revolut",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Revolut"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/reward-hacking",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "reward hacking"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/riciclaggio-informativo",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "riciclaggio informativo"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/rilevatori-di-testo-generato",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "rilevatori di testo generato"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/riserva-cognitiva",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "riserva cognitiva"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/rocket-internet",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Rocket Internet"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/russia",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Russia"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/scenario-planning",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "scenario planning"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/schema-org",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Schema.org"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/schmitt-carl",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Schmitt, Carl"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/scrittura",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "scrittura"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/segnale-costoso",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "segnale costoso"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/segregazione-scolastica",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "segregazione scolastica"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/sfiducia-sistemica",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "sfiducia sistemica"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/shadow-of-the-future",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "shadow of the future"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/shannon-claude-e",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Shannon, Claude E."
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/sorkin-aaron",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Sorkin, Aaron"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/sovranita-cognitiva",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "sovranità cognitiva"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/spinoza-baruch",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Spinoza, Baruch"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/splinternet",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "splinternet"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/stati-uniti",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Stati Uniti"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/statistica-dell-errore",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "statistica dell'errore"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/steinem-gloria",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Steinem, Gloria"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/stock-option",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "stock option"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/stratechery",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Stratechery"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/strutturalismo",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "strutturalismo"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/studio-ghibli",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Studio Ghibli"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/successione-aziendale",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "successione aziendale"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/taiwan",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Taiwan"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/taiwan-tsmc",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Taiwan / TSMC"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/taleb-nassim-nicholas",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Taleb, Nassim Nicholas"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/tassonomia-d1-d7",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "tassonomia D1–D7"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/taylor-keeanga-yamahtta",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Taylor, Keeanga-Yamahtta"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/test-severo",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "test severo"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/the-economist",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "The Economist"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/the-embodied-mind",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "The Embodied Mind"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/the-end-of-history-and-the-last-man",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "The End of History and the Last Man"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/the-evolution-of-cooperation",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "The Evolution of Cooperation"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/the-technium",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "The Technium"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/thiel-peter",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Thiel, Peter"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/thompson-ben",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Thompson, Ben"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/thompson-derek",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Thompson, Derek"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/thymos",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "thymos"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/tianxia",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "tianxia"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/tit-for-tat",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Tit-for-Tat"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/tolstoj-lev",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Tolstoj, Lev"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/tooze-adam",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Tooze, Adam"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/trasferimenti-monetari-diretti",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "trasferimenti monetari diretti"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/trump-donald",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Trump, Donald"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/tucidide",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Tucidide"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/turkle-sherry",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Turkle, Sherry"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/two-level-games",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "two-level games"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/two-pizza-team",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "two-pizza team"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/ucraina",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Ucraina"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/unione-europea",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Unione Europea"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/universita",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "università"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/van-middelaar-luuk",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "van Middelaar, Luuk"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/varela-francisco",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Varela, Francisco"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/verum-ipsum-factum",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "verum ipsum factum"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/vetocrazia",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "vetocrazia"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/vibe-coding",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "vibe coding"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/vico-giambattista",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Vico, Giambattista"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/violenza-speculativa",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "violenza speculativa"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/virtu-intellettuale",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "virtù intellettuale"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/vogels-werner",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Vogels, Werner"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/wack-pierre",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Wack, Pierre"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/washington-post",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Washington Post"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/watermarking",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "watermarking"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/web-semantico",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "web semantico"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/weird",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "WEIRD"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/why-nations-fail",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Why Nations Fail"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/win-set-domestico",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "win-set domestico"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/wittgenstein-ludwig",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Wittgenstein, Ludwig"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/xi-jinping",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Xi, Jinping"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/yarros-rebecca",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Yarros, Rebecca"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/ypi-lea",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Ypi, Lea"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/yudkowsky-eliezer",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Yudkowsky, Eliezer"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/zakaria-fareed",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Zakaria, Fareed"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/zalando",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Zalando"
+    },
+    {
+      "@id": "https://claudiocammarano.com/entia/ns#concetto/zelensky-volodymyr",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://claudiocammarano.com/entia/ns#scheme/concetti"
+      },
+      "skos:prefLabel": "Zelensky, Volodymyr"
+    }
+  ],
+  "regole": [
+    {
+      "nome": "Referente determinabile",
+      "testo": "Un termine sale ai Concetti quando il suo referente si può determinare. Lo strumento che lo determina è la nota, non il nome. Se la nota verrebbe una voce di dizionario, il termine resta un Argomento."
+    },
+    {
+      "nome": "Qualificazione del nome",
+      "testo": "Il nome di una voce si qualifica solo quando la determinazione non trova un'ancora esterna: Taiwan resta nuda, Taiwan / TSMC porta l'inquadratura editoriale. Sette voci-luogo su otto seguono la regola."
+    },
+    {
+      "nome": "I paesi stanno nei Concetti",
+      "testo": "Un paese non è mai un Argomento: quell'informazione vive nel campo concepts come Concetto-paese, dove ha nota, legami e peso sulla carta. L'Argomento di un pezzo sull'Ucraina è Geopolitica."
+    },
+    {
+      "nome": "Vince il criterio più specifico",
+      "testo": "Quando due funzioni si applicano entrambe, vince quella più stretta, nell'ordine dichiarato. Strumento concettuale è il più largo e perde ogni volta che se ne applica uno più preciso; elementi di scenario resta ultima scelta."
+    },
+    {
+      "nome": "Quantita'",
+      "testo": "Da due a quattro Argomenti per scheda, da tre a cinque Concetti. Sono le quantità che la pratica già rispetta, non soglie imposte."
+    },
+    {
+      "nome": "Il criterio è datato",
+      "testo": "Una badge dice che cosa quella lettura ha fatto per questo archivio in quella data. La funzione è relazionale, e le relazioni hanno una data: lo stesso testo può cambiare funzione quando cambia l'archivio."
+    }
+  ],
+  "conformita": {
+    "titolo": "Adottare ENTIA",
+    "licenzaVsUso": "La licenza chiede una cosa sola: citare la fonte. Copiare questa pagina, adattarla, portarla dentro un prodotto a pagamento è permesso. Dichiarare di <em>usare ENTIA</em> è un'altra cosa, e ha delle condizioni: come accade per i metodi di valutazione delle prove in medicina, dove il manuale è libero ma il diritto di scrivere «abbiamo seguito il metodo» è vincolato a requisiti espliciti. La distinzione serve a chi legge: senza di essa, l'etichetta non dice niente.",
+    "struttura": {
+      "titolo": "Che cosa si adotta, e che cosa si sostituisce",
+      "fisso": "<strong>La struttura è ENTIA, e non si cambia:</strong> i cinque strati e il loro ordine; le funzioni intese come posizioni in una precedenza (prima si guarda se il pezzo è un riferimento tecnico, per ultimo se è un elemento di scenario); l'obbligo di esporre il residuo, cioè i casi in cui la regola e il giudizio non sono andati d'accordo.",
+      "locale": "<strong>Il vocabolario e i parametri sono miei, e si sostituiscono:</strong> i temi, gli argomenti, i concetti, i nomi delle sei funzioni, i coefficienti del peso. Un archivio di storia dell'arte avrà altri temi e altre funzioni, e peserà i pezzi in un altro modo. È il senso del plurale nel nome: non si adotta la mia tassonomia, si adotta il modo di costruirne una e di tenerla onesta."
+    },
+    "peso": {
+      "titolo": "Il peso",
+      "testo": "La formula che dà un peso a ogni pezzo entra nel pacchetto <strong>nella sua forma, non nei suoi numeri</strong>. ENTIA chiede che una funzione di peso esista, sia pubblicata e sia versionata: senza di essa i profili di due archivi non sono confrontabili, e i numeri si possono accordare a cose fatte senza che si veda. Non chiede che i coefficienti siano i miei (un saggio 1,5; una scheda 1; più 0,25 per ogni catena che la cita; i pesi geografici 1, 0,5 e 0,25): quelli dipendono da che cosa un archivio produce.",
+      "soglia": "Quindi no: cambiare i coefficienti non produce un criterio diverso, produce <strong>un'altra configurazione dello stesso criterio</strong>, che va dichiarata — come si dichiara una soglia, non come si cambia una prova. Si smette di fare ENTIA quando si cambia il numero degli strati o il loro ordine, quando si trasforma la precedenza fra le funzioni in un calcolo automatico, o quando si smette di pubblicare il residuo."
+    },
+    "premessa": "Quattro condizioni, con una sola idea dietro: la conformità non è seguire la regola, è rendere visibile dove la regola non ha funzionato.",
+    "requisiti": [
+      "Pubblicare le assegnazioni, pezzo per pezzo, con la data in cui sono state fatte. Senza la data non si vede la deriva.",
+      "Pubblicare il profilo: come le funzioni si distribuiscono, e su quale periodo. È il numero che rende una copia confrontabile con l'originale.",
+      "Dichiarare i disaccordi noti fra la regola e il giudizio, invece di correggerli in silenzio. Sono l'unico punto da cui la notazione può imparare qualcosa.",
+      "Versionare la propria copia, dire da quale versione di ENTIA discende e quali parametri sono stati cambiati."
+    ]
+  },
+  "portata": {
+    "premessa": "Il modello serve a far <strong>intravedere pattern</strong> dentro un'infrastruttura progettata su più livelli. Gli strati non sono una classificazione ordinata per comodità: sono le condizioni perché qualcosa si possa vedere. Un archivio in cui ogni pezzo porta un solo tag non ha una forma da guardare.",
+    "voci": [
+      {
+        "titolo": "Il pattern, se emerge, non discende in modo ovvio e necessario dalle premesse.",
+        "testo": "È questo che lo rende informativo. Dove le conclusioni seguono deduttivamente dalle regole non si legge nulla che non fosse già nelle regole: la notazione restituirebbe l'archivio che le è stato dato. Qui le assegnazioni si fanno a mano, una per una, e il disegno si vede dopo — ENTIA è una notazione, non un motore deduttivo."
+      },
+      {
+        "titolo": "Quello che si vede vale per questo archivio e per il periodo in cui è osservato.",
+        "testo": "Le quote per funzione stanno su poche decine di casi, e la mappa si ridisegna a ogni pezzo che entra. Sono una forma, non una misura: la pagina dichiara sempre su quanti pezzi un rilievo è stato fatto, e il filtro temporale della mappa permette di vedere se quella forma cambia nel tempo."
+      }
+    ]
+  },
+  "rilievi": {
+    "data": "2026-10-11",
+    "schedeAlRilievo": 215,
+    "metodo": "Ricostruzione dell'etichetta da testata, Argomenti, tipi dei concetti e lessico del perché; classificatore naive Bayes con lisciatura, validazione leave-one-out su 215 schede.",
+    "baseline": 0.47,
+    "ricostruibilita": [
+      {
+        "criterio": "Lettura di mercato",
+        "quota": 0.62,
+        "su": 24
+      },
+      {
+        "criterio": "Elementi di scenario",
+        "quota": 0.58,
+        "su": 24
+      },
+      {
+        "criterio": "Riferimento tecnico",
+        "quota": 0.56,
+        "su": 16
+      },
+      {
+        "criterio": "Strumento concettuale",
+        "quota": 0.5,
+        "su": 101
+      },
+      {
+        "criterio": "Metodo di lavoro",
+        "quota": 0.36,
+        "su": 14
+      },
+      {
+        "criterio": "Dato che corregge",
+        "quota": 0.28,
+        "su": 36
+      }
+    ],
+    "lettura": "Non è una scala di qualità: misura dove sta il criterio. Lettura di mercato è quasi tutta nel testo, perché i soldi e le istituzioni lasciano tracce materiali. Dato che corregge è quasi tutta fuori: per dire che un pezzo corregge bisogna sapere che cosa si credeva prima, e quella credenza non sta nella scheda.",
+    "cautela": "I numeri per criterio stanno su 14-36 casi: è una forma, non una misura.",
+    "schedeOggi": 215,
+    "scarto": 0,
+    "scaduto": false
+  },
+  "corpus": {
+    "pezzi": 257,
+    "saggi": 16,
+    "catene": 26,
+    "schede": 215,
+    "datate": 215,
+    "concetti": 362,
+    "argomenti": 59,
+    "temi": 5,
+    "tagLiberi": 110,
+    "tagCanonici": 67,
+    "senzaCuratela": 0
+  }
+}

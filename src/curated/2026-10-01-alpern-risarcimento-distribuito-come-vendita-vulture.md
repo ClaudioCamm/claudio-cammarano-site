@@ -15,6 +15,6 @@ description: |
   Il disagio non è solo distributivo. La romanziera Alexandra Kleeman vede nel denaro "una scusa per dare meno soldi agli autori e intanto cambiare come vengono pagati"; altri autori si scoprono esclusi perché il loro editore non aveva registrato i libri in tempo, o trovano l'opera fuori catalogo riclassificata sotto la quota dell'editore anziché la propria — un problema che gli editori attribuiscono, in parte in buona fede, a decenni di tenuta dei registri inadeguata dopo ondate di fusioni. Non tutti condividono l'ansia esistenziale: la stessa Kleeman trova "esagerato" molto del dibattito, perché nessuno chiederebbe a un modello di scrivere un racconto nel proprio stile.
 
   Sullo sfondo resta la causa gemella *Authors Guild v. OpenAI*, ancora aperta, con documenti sigillati appena resi pubblici che includono autori come Jonathan Franzen e John Grisham; e il timore, esplicitato da un dipendente OpenAI dopo la morte dello scrittore George R. R. Martin, che un modello possa presto "autocompletare" la sua serie incompiuta.
-tags: [curated, editoria, intelligenza-artificiale]
+tags: [curated, editoria, ai]
 concepts: ["indennizzo trattato da vendita", "editoria", "esaurimento del diritto", "Stati Uniti"]
 ---
