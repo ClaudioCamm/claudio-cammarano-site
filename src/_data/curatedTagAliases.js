@@ -84,5 +84,9 @@ module.exports = {
   "lavoro": "Lavoro",
   "ecommerce": "E-commerce",
   "retail": "E-commerce",
-  "startup": "Startup"
+  "startup": "Startup",
+
+  // Statistica: entra dalla filosofia della statistica (Mayo), quindi
+  // appartiene a Epistemologia & AI e non e' un Argomento a se'.
+  "statistica": "Statistica"
 };
