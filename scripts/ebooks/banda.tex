@@ -1,0 +1,19 @@
+% Banda verticale al taglio destro del foglio, solo sulla prima pagina.
+% Elemento di riconoscibilita' a vista d'occhio: scelta fra quattro opzioni
+% provate su A4 (opzione B). Il blu e' --color-primary del sito.
+% Solo la prima pagina: in fronte-retro la banda cadrebbe sul lato sbagliato
+% del foglio, e sulle pagine interne costa inchiostro senza aggiungere nulla.
+\usepackage{eso-pic}
+\usepackage{xcolor}
+\definecolor{bandablu}{HTML}{1C0E80}
+\newlength{\bandalarghezza}
+\setlength{\bandalarghezza}{12mm}
+\AddToShipoutPictureBG{%
+  \ifnum\value{page}=1
+    \AtPageLowerLeft{%
+      \put(\LenToUnit{\dimexpr\paperwidth-\bandalarghezza\relax},0){%
+        \textcolor{bandablu}{\rule{\bandalarghezza}{\paperheight}}%
+      }%
+    }%
+  \fi
+}

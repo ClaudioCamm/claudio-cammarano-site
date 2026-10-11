@@ -15,6 +15,7 @@ OUT = ROOT / "src" / "downloads" / "saggi"
 MANIFEST = OUT / "manifest.json"
 FILTER = ROOT / "scripts" / "ebooks" / "filter.lua"
 CSS = ROOT / "scripts" / "ebooks" / "epub.css"
+BANDA = ROOT / "scripts" / "ebooks" / "banda.tex"
 MIN_WORDS = 3000
 LICENSE_LABEL = "CC BY-NC-ND 4.0"
 LICENSE_URL = "https://creativecommons.org/licenses/by-nc-nd/4.0/deed.it"
@@ -24,7 +25,7 @@ AI = json.loads(subprocess.run(
     cwd=ROOT, capture_output=True, text=True, check=True).stdout)
 SITE = "https://claudiocammarano.com"
 MAINFONT = os.environ.get("EBOOK_MAINFONT", "Source Serif 4")
-TOOLCHAIN = "v3"  # v3: via del ritorno in coda (serie, iscrizione, feed)  # cambiare per forzare la rigenerazione di tutto
+TOOLCHAIN = "v4"  # v4: banda verticale al taglio, solo prima pagina  # cambiare per forzare la rigenerazione di tutto
 
 ACCENTI = str.maketrans("àáâãäåèéêëìíîïòóôõöùúûü", "aaaaaaeeeeiiiiooooouuuu")
 
@@ -120,7 +121,7 @@ def main():
             "--resource-path", str(ROOT),
         ]
         subprocess.run(common + [
-            "-o", str(pdf), "--pdf-engine=xelatex",
+            "-o", str(pdf), "--pdf-engine=xelatex", "-H", str(BANDA),
             "-V", f"mainfont={MAINFONT}", "-V", "geometry:a4paper,margin=2.6cm",
             "-V", "fontsize=11pt", "-V", "linkcolor=blue", "-V", "urlcolor=blue",
             "-V", "colorlinks=true"], check=True, cwd=ROOT)
