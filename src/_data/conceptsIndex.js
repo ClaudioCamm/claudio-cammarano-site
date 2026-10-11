@@ -5161,6 +5161,7 @@ module.exports = [
     name: "Rubio, Marco",
     type: "persona",
     geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q324546", "https://en.wikipedia.org/wiki/Marco_Rubio"],
     related: [
       { name: "idea di Occidente", why: "Ad Atene ne dà la versione di potenza: un Occidente genealogico, da Leonida a Cortés, che si definisce per conquista e non per democrazia." },
       { name: "thymos", why: "Ne fa l'elogio dell'eccellenza e dell'accelerazione, più vicino a Fukuyama e alla hybris che alla misura greca." }
@@ -5174,6 +5175,7 @@ module.exports = [
     name: "TINA (there is no alternative)",
     type: "teoria",
     geo: { modo: "teorico", paesi: ["Regno Unito"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q438729", "https://en.wikipedia.org/wiki/There_is_no_alternative"],
     related: [
       { name: "poststrutturalismo", why: "Una struttura che ci rende tutti agiti dissolve la responsabilità: in bocca a chi governa, la critica del sistema diventa la sua scusa." },
       { name: "epistemic asshole", why: "Chi dichiara che non c'è alternativa si concede la libertà di non cercarla." }
