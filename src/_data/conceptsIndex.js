@@ -1684,7 +1684,8 @@ module.exports = [
     note: "Concetto platonico — la parte dell'anima responsabile dell'orgoglio, dell'indignazione e del desiderio di essere riconosciuti — rielaborato da Hegel e portato al centro dell'analisi politica da Francis Fukuyama in *The End of History and the Last Man* (1992). Il thymos è il bisogno umano di riconoscimento del proprio valore: non risorse, non sicurezza, ma rispetto. La democrazia liberale, per Fukuyama, è il sistema che soddisfa il thymos meglio di qualsiasi alternativa — dando riconoscimento eguale sotto la legge. Il problema è che soddisfarlo rimuove la lotta per ottenerlo, e quella lotta era anch'essa parte del bisogno. Questa irrequietezza thymotic — la noia dell'uomo che ha tutto tranne il rischio — è nel sito il meccanismo che spiega il populismo, i movimenti antidemocratici, la nostalgia per epoche premoderne: non sono irrazionali, rispondono a una domanda di riconoscimento gerarchico che l'uguaglianza eguale non può soddisfare.",
     articles: [
       { title: "Why the End of History Is So Miserable", url: "/curated/2026-09-09-beckerman-fukuyama-end-history-atlantic/", _source: "curated" },
-      { title: "Was Francis Fukuyama Right All Along?", url: "/curated/2026-09-18-ezra-klein-fukuyama-nyt/", _source: "curated" }
+      { title: "Was Francis Fukuyama Right All Along?", url: "/curated/2026-09-18-ezra-klein-fukuyama-nyt/", _source: "curated" },
+      { title: "Marco Rubio invente l'Occident de Trump", url: "/curated/2026-10-08-gressani-miranda-rubio-occidente-trump-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -2844,7 +2845,9 @@ module.exports = [
       { title: "Publishers Hit the AI Jackpot", url: "/curated/2026-10-01-alpern-risarcimento-distribuito-come-vendita-vulture/", _source: "curated" },
       { title: "China’s Long Twilight", url: "/curated/2026-10-05-minzner-chinas-long-twilight-foreignaffairs/", _source: "curated" },
       { title: "The New Red Sea Wars", url: "/curated/2026-10-06-boswell-new-red-sea-wars-foreignaffairs/", _source: "curated" },
-      { title: "The New Old Middle East", url: "/curated/2026-07-30-gause-new-old-middle-east-foreignaffairs/", _source: "curated" }
+      { title: "The New Old Middle East", url: "/curated/2026-07-30-gause-new-old-middle-east-foreignaffairs/", _source: "curated" },
+      { title: "Marco Rubio invente l'Occident de Trump", url: "/curated/2026-10-08-gressani-miranda-rubio-occidente-trump-grandcontinent/", _source: "curated" },
+      { title: "Populists Are Losing Their War on Globalization", url: "/curated/2026-10-09-donnan-populists-losing-war-globalization-bloomberg/", _source: "curated" }
     ]
   },
   {
@@ -2924,7 +2927,8 @@ module.exports = [
       { title: "China's kids rank near the top in global school tests", url: "/curated/2026-09-24-economist-pisa-cina-campione-bsjz/", _source: "curated" },
       { title: "Iran, China, Canada? A Defense of Trump’s Grand Strategy", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" },
       { title: "China’s Long Twilight", url: "/curated/2026-10-05-minzner-chinas-long-twilight-foreignaffairs/", _source: "curated" },
-      { title: "The Impossible Middle East", url: "/curated/2026-08-27-esfandiary-wasser-daoud-impossible-middle-east-foreignaffairs/", _source: "curated" }
+      { title: "The Impossible Middle East", url: "/curated/2026-08-27-esfandiary-wasser-daoud-impossible-middle-east-foreignaffairs/", _source: "curated" },
+      { title: "Populists Are Losing Their War on Globalization", url: "/curated/2026-10-09-donnan-populists-losing-war-globalization-bloomberg/", _source: "curated" }
     ]
   },
   {
@@ -2950,7 +2954,8 @@ module.exports = [
       { title: "Dentro le decisioni di Trump sull'Iran", url: "/curated/2026-04-09-trump-iran-war/", _source: "curated" },
       { title: "The New Red Sea Wars", url: "/curated/2026-10-06-boswell-new-red-sea-wars-foreignaffairs/", _source: "curated" },
       { title: "The New Old Middle East", url: "/curated/2026-07-30-gause-new-old-middle-east-foreignaffairs/", _source: "curated" },
-      { title: "The Impossible Middle East", url: "/curated/2026-08-27-esfandiary-wasser-daoud-impossible-middle-east-foreignaffairs/", _source: "curated" }
+      { title: "The Impossible Middle East", url: "/curated/2026-08-27-esfandiary-wasser-daoud-impossible-middle-east-foreignaffairs/", _source: "curated" },
+      { title: "She’s Been to Gaza. She Met With the Iranians. Now She Has a Warning.", url: "/curated/2026-10-10-garcia-navarro-spoljaric-croce-rossa-nyt/", _source: "curated" }
     ]
   },
   {
@@ -2977,7 +2982,8 @@ module.exports = [
       { title: "Alex Turner appointed as Defence Editor of The Economist", url: "/curated/2026-06-19-economist-defence-editor-turner/", _source: "curated" },
       { title: "AI-written speeches are taking over politics", url: "/curated/2026-09-23-economist-discorsi-scritti-ai-politica/", _source: "curated" },
       { title: "Commonwealth Short Story Prize Clears Regional Winners of AI Use Following Month-Long Review", url: "/curated/2026-06-26-commonwealth-nazir-falso-positivo-brittlepaper/", _source: "curated" },
-      { title: "Are teenagers growing dimmer?", url: "/curated/2026-09-08-economist-pisa-inghilterra-scozia-vie-opposte/", _source: "curated" }
+      { title: "Are teenagers growing dimmer?", url: "/curated/2026-09-08-economist-pisa-inghilterra-scozia-vie-opposte/", _source: "curated" },
+      { title: "Populists Are Losing Their War on Globalization", url: "/curated/2026-10-09-donnan-populists-losing-war-globalization-bloomberg/", _source: "curated" }
     ]
   },
   {
@@ -3015,7 +3021,8 @@ module.exports = [
       { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
       { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" },
       { title: "Il gioco sporco degli autocrati", url: "/curated/2026-04-09-sabatini-gioco-sporco-autocrati/", _source: "curated" },
-      { title: "Dentro le decisioni di Trump sull'Iran", url: "/curated/2026-04-09-trump-iran-war/", _source: "curated" }
+      { title: "Dentro le decisioni di Trump sull'Iran", url: "/curated/2026-04-09-trump-iran-war/", _source: "curated" },
+      { title: "Populists Are Losing Their War on Globalization", url: "/curated/2026-10-09-donnan-populists-losing-war-globalization-bloomberg/", _source: "curated" }
     ]
   },
   {
@@ -3959,7 +3966,8 @@ module.exports = [
     ],
     note: "L'Occidente come manufatto politico datato, non come dato geografico. Georgios Varouxakis (*The West: The History of an Idea*, Princeton 2025) ne fissa la nascita negli anni Quaranta dell'Ottocento a Parigi, nella *République occidentale* di Auguste Comte: una parola inventata per risolvere un problema di perimetro, tenere dentro la Gran Bretagna e i coloni europei delle Americhe e tagliare via l'Europa orientale, che «Europa» e «cristianità» non riuscivano a separare. I positivisti inglesi la traducono e la affilano contro la Russia — Richard Congreve, 1866: «L'eliminazione della Russia dal sistema è la prima grande rettifica» — e la guerra di Crimea ne è la scomunica. Nel sito il concetto serve a due cose. La prima è ricordare che il termine è sempre stato anche una graduatoria e non solo una geografia: nel 1853 Francis Lieber cerca un aggettivo per «l'intera porzione caucasica occidentale dell'umanità» e propone *Cis-Caucasian*, con il taglio che passa dentro l'Europa ed esclude slavi e «bianchi retrogradi» del sud e dell'est. La seconda è la categoria che Thomas Meaney ne ricava, ed è la parte esportabile: l'Occidente ha battuto i termini concorrenti perché elide la contraddizione — storicamente e geograficamente circoscritto e insieme eterno e universale, perimetro quando conviene difendersi e orizzonte quando conviene espandersi. Nella stessa forma funzionano il *tianxia* cinese e il civilizzazionismo russo, ed è per questo che il concetto va tenuto comparativo e non identitario.",
     articles: [
-      { title: "Ranks of Humanity", url: "/curated/2026-09-24-meaney-varouxakis-idea-occidente-lrb/", _source: "curated" }
+      { title: "Ranks of Humanity", url: "/curated/2026-09-24-meaney-varouxakis-idea-occidente-lrb/", _source: "curated" },
+      { title: "Marco Rubio invente l'Occident de Trump", url: "/curated/2026-10-08-gressani-miranda-rubio-occidente-trump-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -4774,7 +4782,8 @@ module.exports = [
       { title: "NAZA film-makers address threats at documentary’s New York City premiere", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" },
       { title: "The New Red Sea Wars", url: "/curated/2026-10-06-boswell-new-red-sea-wars-foreignaffairs/", _source: "curated" },
       { title: "The New Old Middle East", url: "/curated/2026-07-30-gause-new-old-middle-east-foreignaffairs/", _source: "curated" },
-      { title: "Après l’épreuve de la preuve", url: "/curated/2026-10-07-illouz-apres-lepreuve-de-la-preuve-grandcontinent/", _source: "curated" }
+      { title: "Après l’épreuve de la preuve", url: "/curated/2026-10-07-illouz-apres-lepreuve-de-la-preuve-grandcontinent/", _source: "curated" },
+      { title: "She’s Been to Gaza. She Met With the Iranians. Now She Has a Warning.", url: "/curated/2026-10-10-garcia-navarro-spoljaric-croce-rossa-nyt/", _source: "curated" }
     ]
   },
   {
@@ -4792,7 +4801,8 @@ module.exports = [
       { title: "Sur la violence spéculative de l'IA", url: "/curated/2026-09-04-dellaratta-violenza-speculativa-ia-grandcontinent/", _source: "curated" },
       { title: "NAZA film-makers address threats at documentary’s New York City premiere", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" },
       { title: "The New Old Middle East", url: "/curated/2026-07-30-gause-new-old-middle-east-foreignaffairs/", _source: "curated" },
-      { title: "Après l’épreuve de la preuve", url: "/curated/2026-10-07-illouz-apres-lepreuve-de-la-preuve-grandcontinent/", _source: "curated" }
+      { title: "Après l’épreuve de la preuve", url: "/curated/2026-10-07-illouz-apres-lepreuve-de-la-preuve-grandcontinent/", _source: "curated" },
+      { title: "She’s Been to Gaza. She Met With the Iranians. Now She Has a Warning.", url: "/curated/2026-10-10-garcia-navarro-spoljaric-croce-rossa-nyt/", _source: "curated" }
     ]
   },
   {
@@ -5145,6 +5155,32 @@ module.exports = [
     note: "Concetto proposto da Cameron Boult su *Synthese* (2026), che estende all'epistemologia la teoria di Aaron James. **È chi si concede vantaggi sistematici nelle relazioni epistemiche, per un senso di diritto che lo rende immune alla critica.** I vantaggi tipici: libertà dall'indagine, comfort doxastico, libertà di criticare senza essere criticato, pretesa di prove sempre ulteriori. Non coincide con l'arroganza intellettuale né con altri vizi epistemici: è un guasto della relazione, non soltanto del carattere.",
     articles: [
       { title: "Epistemic assholes", url: "/curated/2026-10-01-boult-epistemic-assholes-synthese/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Rubio, Marco",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "idea di Occidente", why: "Ad Atene ne dà la versione di potenza: un Occidente genealogico, da Leonida a Cortés, che si definisce per conquista e non per democrazia." },
+      { name: "thymos", why: "Ne fa l'elogio dell'eccellenza e dell'accelerazione, più vicino a Fukuyama e alla hybris che alla misura greca." }
+    ],
+    note: "Politico statunitense (1971), senatore della Florida e poi segretario di Stato nella seconda amministrazione Trump. Nell'archivio entra con il discorso pronunciato sulla Pnice di Atene il 7 ottobre 2026, tradotto e commentato da *Le Grand Continent*. **È il possibile testo fondativo di una dottrina occidentalista per il dopo Trump, in concorrenza con quella di J. D. Vance.**",
+    articles: [
+      { title: "Marco Rubio invente l'Occident de Trump", url: "/curated/2026-10-08-gressani-miranda-rubio-occidente-trump-grandcontinent/", _source: "curated" }
+    ]
+  },
+  {
+    name: "TINA (there is no alternative)",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Regno Unito"] },
+    related: [
+      { name: "poststrutturalismo", why: "Una struttura che ci rende tutti agiti dissolve la responsabilità: in bocca a chi governa, la critica del sistema diventa la sua scusa." },
+      { name: "epistemic asshole", why: "Chi dichiara che non c'è alternativa si concede la libertà di non cercarla." }
+    ],
+    note: "La formula associata a Margaret Thatcher, nata per dichiarare inevitabile il mercato. Nel sito serve come dispositivo di esonero. **Pronunciata da chi ha il potere di decidere, una diagnosi strutturale smette di descrivere e diventa una scusa che ha la forma di una critica del sistema.** Detta da un cittadino può essere la razionalizzazione dell'impotenza; detta da un leader è la rinuncia a un potere che ha. Il caso d'apertura è la presidente della Croce Rossa, a cui i potenti rispondono che non possono fare nulla.",
+    articles: [
+      { title: "She’s Been to Gaza. She Met With the Iranians. Now She Has a Warning.", url: "/curated/2026-10-10-garcia-navarro-spoljaric-croce-rossa-nyt/", _source: "curated" }
     ]
   }
 
