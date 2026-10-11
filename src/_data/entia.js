@@ -254,11 +254,25 @@ rilievi.schedeOggi = curated.length;
 rilievi.scarto = curated.length - rilievi.schedeAlRilievo;
 rilievi.scaduto = Math.abs(rilievi.scarto) >= Math.max(10, rilievi.schedeAlRilievo * 0.05);
 
+// Il deposito su Zenodo. Due DOI, e non sono intercambiabili: `doi` e' quello
+// CONCETTUALE, non cambia mai e risolve sempre all'ultima versione — e' quello
+// da citare e da mettere nelle pagine. `versionDoi` identifica la 1.0.0 e sola.
+// Alla versione nuova: «New version» sullo stesso record, si aggiorna solo
+// versionDoi, e si rilancia `npm run deposito -- --doi=<versionDoi>`.
+const deposito = {
+  doi: "10.5281/zenodo.23303451",
+  versionDoi: "10.5281/zenodo.23303452",
+  url: "https://doi.org/10.5281/zenodo.23303451",
+  depositato: "2026-10-11",
+  citazione: "Cammarano, C. (2026). ENTIA 1.0.0 \u2014 Epistemic Notation for Texts In Archives. Zenodo."
+};
+
 module.exports = {
   spec: SPEC,
   nome: "ENTIA",
   sciolto: "Epistemic Notation for Texts In Archives",
   radice: "Se le idee sono cose, ENTIA è uno strumento che serve a metterle nel loro cassetto: a classificarle dentro questo ecosistema editoriale. Altre ENTIA sono possibili e pensabili, su altri argomenti, dentro altri mondi mentali. Il plurale rimanda naturalmente a <em>entia non sunt multiplicanda praeter necessitatem</em> — che per un protocollo di selezione è un criterio sano.",
+  deposito,
   licenza: { nome: "CC BY 4.0", url: "https://creativecommons.org/licenses/by/4.0/deed.it" },
   licenzaNota: "Diversa da quella dei saggi, e deliberatamente: NC-ND su un protocollo impedirebbe l'adozione che lo rende utile, e ND vieterebbe le versioni derivate che sono il segno che un metodo è vivo.",
   strati,

@@ -40,6 +40,8 @@ module.exports = {
   "dct:description": "Notazione editoriale a cinque strati per archivi curati: che cosa un pezzo è per chi lo tiene, dichiarato pezzo per pezzo.",
   "dct:creator": { "@id": ORCID, name: "Claudio Cammarano" },
   "dct:license": entia.licenza.url,
+  "dct:identifier": "https://doi.org/" + entia.deposito.doi,
+  "dct:isVersionOf": "https://doi.org/" + entia.deposito.versionDoi,
   "dct:hasVersion": entia.spec,
   "dct:modified": entia.rilievi.data,
   "dct:language": "it",

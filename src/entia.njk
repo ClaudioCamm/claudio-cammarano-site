@@ -17,6 +17,8 @@ permalink: /entia/
   "inLanguage": "it",
   "license": "{{ entia.licenza.url }}",
   "url": "https://claudiocammarano.com/entia/",
+  "identifier": "https://doi.org/{{ entia.deposito.doi }}",
+  "sameAs": "https://doi.org/{{ entia.deposito.doi }}",
   "author": {
     "@type": "Person",
     "@id": "https://claudiocammarano.com/#person",
@@ -92,6 +94,7 @@ permalink: /entia/
 .em-tabella summary{font-size:.85em;color:var(--color-text-light);cursor:pointer}
 @media (prefers-reduced-motion: reduce){.em-tess{transition:none}}
 .entia-scaduto{border-left:3px solid var(--color-irene,#800020);padding:.5em 0 .5em .9em;font-size:.9em;color:var(--color-text-light);margin:.8em 0 0}
+.entia-citazione{border-left:3px solid var(--color-primary);padding-left:.9em;margin:1.2em 0;font-size:.95em}
 </style>
 
 <div class="notazione-page">
@@ -445,6 +448,11 @@ const EM_DATI = {{ entia.mappa | dump | safe }};
       <li>{{ r }}</li>
       {%- endfor %}
     </ol>
+
+    <h2 id="deposito">Il deposito, e come citarlo</h2>
+    <p>La specifica, il vocabolario in SKOS, il corpus con le assegnazioni e le due date, la mappa e le figure sono depositati su Zenodo con licenza {{ entia.licenza.nome }}: un archivio pubblico, indipendente da questo sito, che garantisce che la versione {{ entia.spec }} resti consultabile e immutata anche quando questa pagina sarà cambiata.</p>
+    <p class="entia-citazione">{{ entia.deposito.citazione }} <a href="{{ entia.deposito.url }}">{{ entia.deposito.doi }}</a></p>
+    <p class="entia-nota">Quel DOI è quello <em>concettuale</em>: punta sempre all’ultima versione. La {{ entia.spec }} ha anche un DOI proprio, <a href="https://doi.org/{{ entia.deposito.versionDoi }}">{{ entia.deposito.versionDoi }}</a>, da usare quando serve citare esattamente questa e non una successiva. Il dataset dei concetti è depositato a parte: <a href="{{ dataset.doi }}">{{ dataset.doi | replace("https://doi.org/", "") }}</a>. Per le macchine, la stessa specifica sta in <a href="/entia.json">/entia.json</a>.</p>
 
     <h2 id="licenza">Licenza</h2>
     <p><a href="{{ entia.licenza.url }}" rel="license">{{ entia.licenza.nome }}</a>. {{ entia.licenzaNota }}</p>
