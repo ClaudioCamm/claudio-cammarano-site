@@ -142,6 +142,12 @@ Quattro condizioni, con una sola idea dietro: la conformità non è seguire la r
 3. Dichiarare i disaccordi noti fra la regola e il giudizio, invece di correggerli in silenzio. Sono l'unico punto da cui la notazione può imparare qualcosa.
 4. Versionare la propria copia, dire da quale versione di ENTIA discende e quali parametri sono stati cambiati.
 
+## Come citare
+
+> Cammarano, C. (2026). *ENTIA 1.0.0 — Epistemic Notation for Texts In Archives*. Zenodo. https://doi.org/10.5281/zenodo.23303452
+
+Il dataset dei concetti sta a parte: https://doi.org/10.5281/zenodo.22843731
+
 ## Licenza
 
 CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/deed.it). Diversa da quella dei saggi, e deliberatamente: NC-ND su un protocollo impedirebbe l'adozione che lo rende utile, e ND vieterebbe le versioni derivate che sono il segno che un metodo è vivo.

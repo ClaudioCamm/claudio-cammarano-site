@@ -248,6 +248,10 @@ function specifica() {
   t += md(entia.conformita.peso.testo) + "\n\n" + md(entia.conformita.peso.soglia) + "\n\n";
   t += "### Le quattro condizioni\n\n" + md(entia.conformita.premessa) + "\n\n";
   entia.conformita.requisiti.forEach((x, i) => { t += (i + 1) + ". " + md(x) + "\n"; });
+  t += "\n## Come citare\n\n";
+  t += "> Cammarano, C. (2026). *ENTIA " + V + " \u2014 " + entia.sciolto + "*. Zenodo." +
+       (DOI ? " https://doi.org/" + DOI : "") + "\n\n";
+  t += "Il dataset dei concetti sta a parte: https://doi.org/" + DOI_CONCETTI + "\n";
   t += "\n## Licenza\n\n" + entia.licenza.nome + " (" + entia.licenza.url + "). " + md(entia.licenzaNota) + "\n";
   return t;
 }
