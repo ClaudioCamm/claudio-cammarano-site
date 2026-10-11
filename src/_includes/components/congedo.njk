@@ -1,0 +1,12 @@
+{#- Congedo di fine pezzo. Prosa in prima persona, non modulo: il nome della
+    newsletter sta dentro il testo, i link sono inline. Sopra i 25 minuti la
+    frase sul patto di lettura; sotto, il solo ringraziamento. -#}
+{%- set congedoMin = (content | readingTime | replace(" min", "")) | int -%}
+<aside class="congedo" data-pagefind-ignore>
+  {%- if congedoMin >= 25 %}
+  <p>Grazie di essere arrivato fin qui. {{ congedoMin | numeroInLettere | capitalize }} minuti sono una richiesta considerevole: chi accetta questo patto di lettura è il motivo per cui esiste questo sito.</p>
+  {%- else %}
+  <p>Grazie di essere arrivato fin qui.</p>
+  {%- endif %}
+  <p>Scrivo anche <em>The Abstract</em>, in inglese, una volta al mese, sull’economia dei contenuti: <a href="/newsletter/">le uscite e l’iscrizione</a>. C’è anche <a href="/feed.xml">il feed</a>, se preferisci non lasciare un indirizzo.</p>
+</aside>

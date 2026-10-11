@@ -279,11 +279,7 @@ try {
 </script>
 {% endif %}
 
-<div class="newsletter-cta" data-pagefind-ignore>
-  <p class="newsletter-cta-label">The Abstract</p>
-  <p class="newsletter-cta-text">Analisi su content industries, AI e media vista da una prospettiva europea. Esce su Substack.</p>
-  <a href="https://claudiocammarano.substack.com" target="_blank" rel="noopener" class="newsletter-cta-btn">Leggi e iscriviti →</a>
-</div>
+{% include "components/congedo.njk" %}
 
 {% set related = collections.writings | getRelatedPosts(page.url, category) %}
 {% if related.length %}
@@ -308,23 +304,4 @@ try {
 </section>
 {% endif %}
 
-{% set prevPost = collections.writings | getPrevPost(page.url) %}
-{% set nextPost = collections.writings | getNextPost(page.url) %}
-{% if prevPost or nextPost %}
-<nav class="article-nav" data-pagefind-ignore>
-  {% if prevPost %}
-  <a href="{{ prevPost.url }}" class="article-nav-item article-nav-prev">
-    <span class="article-nav-label">&#8592; Precedente</span>
-    <span class="article-nav-title">{{ prevPost.data.title }}</span>
-  </a>
-  {% else %}
-  <span></span>
-  {% endif %}
-  {% if nextPost %}
-  <a href="{{ nextPost.url }}" class="article-nav-item article-nav-next">
-    <span class="article-nav-label">Successivo &#8594;</span>
-    <span class="article-nav-title">{{ nextPost.data.title }}</span>
-  </a>
-  {% endif %}
-</nav>
-{% endif %}
+

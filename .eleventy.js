@@ -1118,6 +1118,35 @@ module.exports = function(eleventyConfig) {
     return minutes + ' min';
   });
 
+  // Numero cardinale in lettere (it). Serve al congedo di fine pezzo:
+  // "Quarantanove minuti sono una richiesta considerevole".
+  eleventyConfig.addFilter("numeroInLettere", function(n) {
+    n = parseInt(n, 10);
+    if (!Number.isFinite(n) || n < 0 || n > 999) return String(n);
+    const u = ['zero','uno','due','tre','quattro','cinque','sei','sette','otto','nove'];
+    const d = ['dieci','undici','dodici','tredici','quattordici','quindici','sedici',
+               'diciassette','diciotto','diciannove'];
+    const t = ['','','venti','trenta','quaranta','cinquanta','sessanta','settanta','ottanta','novanta'];
+    function sotto100(x) {
+      if (x < 10) return u[x];
+      if (x < 20) return d[x - 10];
+      const dec = Math.floor(x / 10), un = x % 10;
+      let base = t[dec];
+      if (un === 0) return base;
+      // le decine perdono la vocale davanti a uno e otto: ventuno, ventotto
+      if (un === 1 || un === 8) base = base.slice(0, -1);
+      // tre finale vuole l'accento: ventitre
+      return base + (un === 3 ? 'tr\u00e9' : u[un]);
+    }
+    if (n < 100) return sotto100(n);
+    const cent = Math.floor(n / 100), rest = n % 100;
+    let pre = (cent === 1 ? 'cento' : u[cent] + 'cento');
+    if (rest === 0) return pre;
+    // centotto, centottanta: cade la o davanti a otto e ottanta
+    if (rest === 8 || (rest >= 80 && rest <= 89)) pre = pre.slice(0, -1);
+    return pre + sotto100(rest);
+  });
+
   eleventyConfig.addFilter("limit", function(arr, count) {
     if (!arr) return [];
     return arr.slice(0, count);
