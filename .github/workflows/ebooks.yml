@@ -9,6 +9,7 @@ on:
     branches: [main]
     paths:
       - "src/writings/**"
+      - "src/curated/**"
       - "scripts/ebooks/**"
       - ".github/workflows/ebooks.yml"
   workflow_dispatch:
@@ -43,6 +44,16 @@ jobs:
           unzip -q -j /tmp/ss4.zip '*/OTF/*.otf' -d ~/.local/share/fonts
           fc-cache -f
           fc-list | grep -c "Source Serif 4"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      # build.py legge il frontmatter con gray-matter, lo stesso parser del
+      # sito: i PDF vedono esattamente quello che vede Eleventy.
+      - name: Dipendenze Node
+        run: npm ci
 
       - name: Genera PDF ed ePub
         run: python3 scripts/ebooks/build.py ${{ inputs.force && '--force' || '' }}

@@ -42,3 +42,36 @@ function RawInline(el)
 end
 
 function Image(img) return fix_image(img) end
+
+-- 4. Seconda passata: i blocchi della catena (tesi, scheda, controtesi) e le
+--    badge dei criteri. Sta in una passata a parte perche' l'HTML che produce
+--    non deve ripassare da RawBlock, che lo rileggerebbe come documento.
+local function inLatex() return target:match("latex") or target:match("pdf") end
+
+local function avvolgi(el, nome)
+  local out = {}
+  out[#out + 1] = inLatex() and pandoc.RawBlock("latex", "\\begin{" .. nome .. "}")
+                            or pandoc.RawBlock("html", '<aside class="cc-' .. nome .. '">')
+  for _, b in ipairs(el.content) do out[#out + 1] = b end
+  out[#out + 1] = inLatex() and pandoc.RawBlock("latex", "\\end{" .. nome .. "}")
+                            or pandoc.RawBlock("html", "</aside>")
+  return out
+end
+
+local blocchi = { tesi = true, scheda = true, controtesi = true }
+
+local catena = {
+  Div = function(el)
+    local n = el.classes[1]
+    if n and blocchi[n] then return avvolgi(el, n) end
+  end,
+  Span = function(el)
+    if el.classes[1] ~= "badge" then return nil end
+    if inLatex() then
+      return pandoc.RawInline("latex", "\\ccBadge{" .. pandoc.utils.stringify(el) .. "}")
+    end
+    return pandoc.Span(el.content, pandoc.Attr("", { "cc-badge" }))
+  end
+}
+
+return { { RawBlock = RawBlock, RawInline = RawInline, Image = Image }, catena }

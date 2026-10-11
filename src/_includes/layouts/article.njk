@@ -129,7 +129,7 @@ try {
   
   <div class="article-body">
     {{ content | safe }}
-    {% if ebook %}<p class="article-download article-download--end">Scarica il saggio: <a href="{{ ebook.pdf }}" download>PDF</a> · <a href="{{ ebook.epub }}" download>ePub</a></p>{% endif %}
+    {% if ebook %}<p class="article-download article-download--end">Scarica {% if fonti %}la catena{% else %}il saggio{% endif %}: <a href="{{ ebook.pdf }}" download>PDF</a> · <a href="{{ ebook.epub }}" download>ePub</a></p>{% endif %}
     {% set shareEnd = true %}{% include "components/share.njk" %}{% set shareEnd = false %}
     {% include "components/ai-notation.njk" %}
   </div>

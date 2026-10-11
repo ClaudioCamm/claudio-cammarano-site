@@ -1,0 +1,36 @@
+% Blocchi della catena nei PDF: la tesi in apertura, le schede delle fonti,
+% la controtesi. Nessun pacchetto in piu': filetti e rientri, perche' devono
+% reggere anche su una stampante casalinga.
+\providecommand{\ccBadge}[1]{}
+\renewcommand{\ccBadge}[1]{{\setlength{\fboxsep}{2pt}%
+  \fcolorbox{ccblu!35}{ccblu!7}{\scriptsize\strut\textcolor{ccblu}{\MakeUppercase{#1}}}}}
+
+% La tesi: l'affermazione di cui la catena risponde, in apertura.
+\newenvironment{tesi}{%
+  \par\addvspace{4pt}%
+  \noindent\textcolor{ccblu}{\rule{\linewidth}{0.7pt}}\par\addvspace{8pt}%
+  \begingroup\setlength{\parindent}{0pt}%
+  {\scriptsize\textcolor{ccblu}{TESI}\par}\addvspace{4pt}%
+}{%
+  \par\endgroup\addvspace{8pt}%
+  \noindent\textcolor{ccblu}{\rule{\linewidth}{0.7pt}}\par\addvspace{15pt}%
+}
+
+% Una fonte incastonata nel testo: rientrata, in corpo minore, fra due filetti.
+\newenvironment{scheda}{%
+  \par\addvspace{12pt}\begingroup
+  \leftskip=9mm\relax\setlength{\parindent}{0pt}\footnotesize\color{ccgrigio}%
+  \noindent\textcolor{ccblu!35}{\rule{\dimexpr\linewidth-9mm\relax}{0.4pt}}\par\addvspace{6pt}%
+}{%
+  \par\addvspace{6pt}%
+  \noindent\textcolor{ccblu!35}{\rule{\dimexpr\linewidth-9mm\relax}{0.4pt}}\par
+  \endgroup\addvspace{12pt}%
+}
+
+% La controtesi: rientrata come la scheda ma senza filetti, per distinguerla.
+\newenvironment{controtesi}{%
+  \par\addvspace{12pt}\begingroup
+  \leftskip=9mm\relax\setlength{\parindent}{0pt}\footnotesize\color{ccgrigio}%
+}{%
+  \par\endgroup\addvspace{12pt}%
+}
