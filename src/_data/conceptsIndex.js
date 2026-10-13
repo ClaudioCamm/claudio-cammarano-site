@@ -1350,7 +1350,9 @@ module.exports = [
       { title: "The Atlantic is getting more subscribers from Google traffic, even as referrals fall", url: "/curated/2026-09-16-scire-atlantic-google-abbonati-niemanlab/", _source: "curated" },
       { title: "Il triste dibattito sullo scrivere con l'IA", url: "/curated/2026-10-02-piacenza-triste-dibattito-scrivere-ia/", _source: "curated" },
       { title: "Librarians on Libraries", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" },
-      { title: "Publishers Hit the AI Jackpot", url: "/curated/2026-10-01-alpern-risarcimento-distribuito-come-vendita-vulture/", _source: "curated" }
+      { title: "Publishers Hit the AI Jackpot", url: "/curated/2026-10-01-alpern-risarcimento-distribuito-come-vendita-vulture/", _source: "curated" },
+      { title: "Quartz website mainly produced by one AI-assisted reporter writing 50+ stories per day", url: "/curated/2026-10-09-waugh-quartz-un-reporter-ai-pressgazette/", _source: "curated" },
+      { title: "Putin’s war on schools: ‘millions of books burnt before my eyes’", url: "/curated/2026-10-10-hauschild-johanson-libri-scuola-ucraina-sundaytimes/", _source: "curated" }
     ]
   },
   {
@@ -1383,7 +1385,8 @@ module.exports = [
       { title: "Alex Turner appointed as Defence Editor of The Economist", url: "/curated/2026-06-19-economist-defence-editor-turner/", _source: "curated" },
       { title: "Unmasking the anonymous hosts of 'Russians With Attitude,' a pro-war podcast popular with US far right", url: "/curated/2026-04-06-hourani-russians-with-attitude-kyivindependent/", _source: "curated" },
       { title: "The Great Russian Firewall: the Kremlin's ultimate crackdown on internet freedom", url: "/curated/2025-12-19-osw-great-russian-firewall/", _source: "curated" },
-      { title: "How Russian Propaganda Learned to Look Finnish", url: "/curated/2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24/", _source: "curated" }
+      { title: "How Russian Propaganda Learned to Look Finnish", url: "/curated/2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24/", _source: "curated" },
+      { title: "Attacchi ucraini ai data center Yandex: crolla l'attività dei bot russi?", url: "/curated/2026-10-12-vakulina-yandex-data-center-bot-euronews/", _source: "curated" }
     ]
   },
   {
@@ -1510,7 +1513,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q37038", "https://it.wikipedia.org/wiki/Pubblicit%C3%A0"],
     note: "Nel sito è il settore su cui David Droga distingue lavoro creativo «formulaico e medio» (che l'AI sostituirà) da originalità di gusto e strategia (che no) — mentre OpenAI punta a metà dei ricavi pubblicitari di Meta in tre anni e i riassunti AI erodono il traffico su cui si basa l'intero ecosistema.",
     articles: [
-      { title: "David Droga on AI and the end of 'mediocre' human-made ads", url: "/curated/2026-06-21-droga-ai-mediocre-ads/", _source: "curated" }
+      { title: "David Droga on AI and the end of 'mediocre' human-made ads", url: "/curated/2026-06-21-droga-ai-mediocre-ads/", _source: "curated" },
+      { title: "Quartz website mainly produced by one AI-assisted reporter writing 50+ stories per day", url: "/curated/2026-10-09-waugh-quartz-un-reporter-ai-pressgazette/", _source: "curated" }
     ]
   },
   {
@@ -1550,7 +1554,8 @@ module.exports = [
       { title: "I Helped Fact-Check the 1619 Project. The Times Ignored Me.", url: "/curated/2020-03-06-harris-1619-project-fact-check-politico/", _source: "curated" },
       { title: "What Was the American Revolution For?", url: "/curated/2025-11-17-lepore-rivoluzione-americana-250-newyorker/", _source: "curated" },
       { title: "« J'éprouve une compassion profonde pour Thélyson Orélien »", url: "/curated/2026-09-24-mbougar-sarr-compassione-profonda-nouvelobs/", _source: "curated" },
-      { title: "Plagiat, IA : le prix Goncourt exclut le roman de Thélyson Orélien", url: "/curated/2026-09-25-goncourt-esclusione-orelien-actualitte/", _source: "curated" }
+      { title: "Plagiat, IA : le prix Goncourt exclut le roman de Thélyson Orélien", url: "/curated/2026-09-25-goncourt-esclusione-orelien-actualitte/", _source: "curated" },
+      { title: "Putin’s war on schools: ‘millions of books burnt before my eyes’", url: "/curated/2026-10-10-hauschild-johanson-libri-scuola-ucraina-sundaytimes/", _source: "curated" }
     ]
   },
   {
@@ -2446,7 +2451,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q6721203", "https://it.wikipedia.org/wiki/Alternative_f%C3%BCr_Deutschland"],
     note: "Alternative für Deutschland, partito di estrema destra tedesco. Nel sito è citato come attore della contestazione politica della memoria storica: un dirigente del partito, Björn Höcke, si è scagliato contro la digitalizzazione degli archivi NSDAP — mentre il partito stesso continua a guadagnare terreno in diverse regioni tedesche.",
     articles: [
-      { title: "NSDAP-Archiv: Finden Sie heraus, was Ihre Familie unter Hitler getan hat", url: "/curated/2026-05-07-spiegel-nsdap-archiv/", _source: "curated" }
+      { title: "NSDAP-Archiv: Finden Sie heraus, was Ihre Familie unter Hitler getan hat", url: "/curated/2026-05-07-spiegel-nsdap-archiv/", _source: "curated" },
+      { title: "Attacchi ucraini ai data center Yandex: crolla l'attività dei bot russi?", url: "/curated/2026-10-12-vakulina-yandex-data-center-bot-euronews/", _source: "curated" }
     ]
   },
   {
@@ -2768,7 +2774,9 @@ module.exports = [
       { title: "The Great Russian Firewall: the Kremlin's ultimate crackdown on internet freedom", url: "/curated/2025-12-19-osw-great-russian-firewall/", _source: "curated" },
       { title: "Ranks of Humanity", url: "/curated/2026-09-24-meaney-varouxakis-idea-occidente-lrb/", _source: "curated" },
       { title: "Is Kaliningrad, Russia's exclave surrounded by EU countries, an asset or a liability?", url: "/curated/2022-06-06-economist-kaliningrad-risorsa-o-ostaggio/", _source: "curated" },
-      { title: "How Russian Propaganda Learned to Look Finnish", url: "/curated/2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24/", _source: "curated" }
+      { title: "How Russian Propaganda Learned to Look Finnish", url: "/curated/2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24/", _source: "curated" },
+      { title: "Putin’s war on schools: ‘millions of books burnt before my eyes’", url: "/curated/2026-10-10-hauschild-johanson-libri-scuola-ucraina-sundaytimes/", _source: "curated" },
+      { title: "Attacchi ucraini ai data center Yandex: crolla l'attività dei bot russi?", url: "/curated/2026-10-12-vakulina-yandex-data-center-bot-euronews/", _source: "curated" }
     ]
   },
   {
@@ -2787,7 +2795,9 @@ module.exports = [
       { title: "The Warrior-Witches of Ukraine's Resistance", url: "/curated/2026-06-21-harbaugh-warrior-witches-ukraine-atlantic/", _source: "curated" },
       { title: "Our Military Is Built for the Wrong Century", url: "/curated/2026-05-28-brose-anduril-military-drones-nyt/", _source: "curated" },
       { title: "Europe Needs to Come Together. This Man Has Some Ideas.", url: "/curated/2026-06-09-nyt-europe-defense-van-middelaar/", _source: "curated" },
-      { title: "How a former model from Kyiv blew up Russia's $20bn gas pipeline", url: "/curated/2026-06-15-times-nord-stream-diver/", _source: "curated" }
+      { title: "How a former model from Kyiv blew up Russia's $20bn gas pipeline", url: "/curated/2026-06-15-times-nord-stream-diver/", _source: "curated" },
+      { title: "Putin’s war on schools: ‘millions of books burnt before my eyes’", url: "/curated/2026-10-10-hauschild-johanson-libri-scuola-ucraina-sundaytimes/", _source: "curated" },
+      { title: "Attacchi ucraini ai data center Yandex: crolla l'attività dei bot russi?", url: "/curated/2026-10-12-vakulina-yandex-data-center-bot-euronews/", _source: "curated" }
     ]
   },
   {
@@ -4816,7 +4826,8 @@ module.exports = [
     note: "Istituzione che mette a disposizione di chiunque, gratuitamente, un fondo di opere e lo spazio per usarle. Nel sito entra nell'ottobre 2026 con una raccolta di testimonianze di bibliotecari americani, e vi entra per una doppia trasformazione che conviene tenere distinta, perché le due metà hanno cause diverse e **una sola delle due è stata decisa da qualcuno**.\n\nLa prima è contrattuale, e vale ovunque perché gli editori sono gli stessi. Una biblioteca che acquista una copia di carta la possiede; una che «acquista» un libro elettronico ottiene una licenza a termine, e il suo bilancio ha smesso di comprare fondo per cominciare a comprare permessi. La seconda è di mandato, ed è cresciuta per sottrazione altrui: dove altri servizi si ritirano, la biblioteca diventa l'indirizzo che resta — un computer e una casella di posta per chi non li ha, un posto al caldo o al fresco, un bagno, assistenza nel compilare un modulo. Nessuno ha deliberato questa seconda trasformazione: si è accumulata.\n\nIl finanziamento non si esporta, e va detto ogni volta che si cita il caso americano. Negli Stati Uniti la biblioteca pubblica dipende in larga parte dall'imposta immobiliare locale ed è governata da consigli locali, il che la espone a una maggioranza di quartiere in un modo che i sistemi finanziati su base statale o comunale non conoscono. Le polemiche americane su quali libri tenere a scaffale vanno lette dentro questa struttura, non importate come se fosse la stessa ovunque.",
     articles: [
       { title: "Librarians on Libraries", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" },
-      { title: "Where to live? How climate change is forcing us to rethink our relationship with our surroundings", url: "/curated/2026-09-28-legros-abitabilita-non-e-una-soglia-lemonde/", _source: "curated" }
+      { title: "Where to live? How climate change is forcing us to rethink our relationship with our surroundings", url: "/curated/2026-09-28-legros-abitabilita-non-e-una-soglia-lemonde/", _source: "curated" },
+      { title: "Putin’s war on schools: ‘millions of books burnt before my eyes’", url: "/curated/2026-10-10-hauschild-johanson-libri-scuola-ucraina-sundaytimes/", _source: "curated" }
     ]
   },
   {
@@ -4995,7 +5006,8 @@ module.exports = [
     ],
     note: "Tecnica di propaganda che non nasconde il messaggio ma la sua origine: il contenuto viene tradotto, riscritto e innestato su rimostranze locali già esistenti, così che all'uscita si legga come produzione domestica e non come messaggistica straniera. Il termine inglese è *information laundering*; nel sito entra con l'analisi di Oleksandr Liemienov e Sofiia Maksymiv (StateWatch) sul caso finlandese, settembre 2026.\n\nL'interesse non è il caso ma la struttura, che è il rovescio di una cosa già registrata altrove. Non si accerta l'origine di un contenuto ispezionando il contenuto: finora l'archivio l'ha scritto come limite di chi verifica — un rilevatore di scrittura automatica che non può decidere da solo, un test di coscienza inutilizzabile su un modello addestrato sulla letteratura che quel test descrive. Il riciclaggio informativo è lo stesso fatto adottato come metodo da chi attacca.\n\nDa qui la conseguenza che vale al di là del caso: **una difesa che funziona riconoscendo una firma — fonte straniera, registro propagandistico, canale noto — fallisce contro un avversario che la firma la toglie**. È il motivo per cui il caso istruttivo è la Finlandia, il paese europeo più citato per l'alfabetizzazione mediatica inserita nei programmi scolastici, e la ragione per cui le sanzioni contro singole testate e il blocco automatizzato dei domini cloni colpiscono precisamente ciò a cui la tecnica ha rinunciato.",
     articles: [
-      { title: "How Russian Propaganda Learned to Look Finnish", url: "/curated/2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24/", _source: "curated" }
+      { title: "How Russian Propaganda Learned to Look Finnish", url: "/curated/2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24/", _source: "curated" },
+      { title: "Attacchi ucraini ai data center Yandex: crolla l'attività dei bot russi?", url: "/curated/2026-10-12-vakulina-yandex-data-center-bot-euronews/", _source: "curated" }
     ]
   },
   {
