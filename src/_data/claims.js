@@ -44,14 +44,14 @@ const RELAZIONI = {
 const D1 = {
   "D1.1": "historical-factual",
   "D1.2": "empirical-quantitative",
-  "D1.3": "",
-  "D1.4": "",
-  "D1.5": "",
-  "D1.6": "",
-  "D1.7": "",
+  "D1.3": "logical-formal",
+  "D1.4": "mathematical-analytic",
+  "D1.5": "phenomenological-subjective",
+  "D1.6": "interpretive-hermeneutic",
+  "D1.7": "aesthetic-evaluative",
   "D1.8": "ethical-normative",
-  "D1.9": "",
-  "D1.10": "",
+  "D1.9": "procedural-instructional",
+  "D1.10": "prescriptive-policy",
   "D1.14": "metaphysical-ontological"
 };
 
@@ -71,7 +71,7 @@ const lessie = [
     d1Status: "proposed",
     stance: "assumed",
     relates: [
-      { to: "truth-conditions-do-not-transfer", how: "refines", why: "La seconda dice quale errore la prima previene, e lo dice con un caso." }
+      { to: "truth-conditions-do-not-transfer", how: "refines", why: "The second says which error the first prevents, and says it with a case." }
     ],
     usedIn: ["/lab/2026-02-03-the-seven-dimensional-taxonomy-v2/", "/lab/2026-07-21-what-counts-as-a-verdict/"]
   },
@@ -103,7 +103,7 @@ const lessie = [
     d1Status: "proposed",
     stance: "assumed",
     relates: [
-      { to: "ontology-precedes-epistemology", how: "extends", why: "Traduce il principio in un asse portante e sei modificatori." }
+      { to: "ontology-precedes-epistemology", how: "extends", why: "It turns the principle into one load-bearing axis and six modifiers." }
     ],
     usedIn: ["/lab/2026-02-03-the-seven-dimensional-taxonomy-v2/"]
   },
@@ -120,7 +120,7 @@ const lessie = [
     d1Status: "confirmed",
     stance: "assumed",
     relates: [
-      { to: "mode-a-needs-a-blind-recode", how: "uses-method-in", why: "Il numero regge solo se l'estrazione dei verdetti ha superato il controllo cieco." }
+      { to: "mode-a-needs-a-blind-recode", how: "uses-method-in", why: "The figure holds only if the verdict extraction passed the blind check." }
     ],
     usedIn: ["/lab/2026-02-28-vertical-validation-180-api-runs/", "/lab/2026-07-21-what-counts-as-a-verdict/"]
   },
@@ -170,7 +170,7 @@ const lessie = [
     d1Status: "proposed",
     stance: "used",
     relates: [
-      { to: "form-alone-cannot-yield-meaning", how: "presupposes", why: "Il dibattito che descrive ha fra i suoi poli la tesi di Bender e Koller." }
+      { to: "form-alone-cannot-yield-meaning", how: "presupposes", why: "The debate it describes has Bender and Koller's thesis as one of its poles." }
     ],
     usedIn: ["/lab/2026-07-21-what-counts-as-a-verdict/"]
   },
@@ -187,7 +187,7 @@ const lessie = [
     d1Status: "proposed",
     stance: "used",
     relates: [
-      { to: "mode-a-needs-a-blind-recode", how: "refines", why: "Sposta il problema: non quale correzione per il bias, ma quanti codificatori." }
+      { to: "mode-a-needs-a-blind-recode", how: "refines", why: "It moves the problem: not which correction for coder bias, but how many coders." }
     ],
     usedIn: ["/lab/2026-02-20-coding-manual-v2-the-annotation-protocol/"]
   },
@@ -219,7 +219,7 @@ const lessie = [
     d1Status: "proposed",
     stance: "contested",
     relates: [
-      { to: "form-alone-cannot-yield-meaning", how: "contests", why: "Se il modello inferisce rappresentazioni di intenzioni, la forma da sola non resta muta come sostiene Bender." }
+      { to: "form-alone-cannot-yield-meaning", how: "contests", why: "If the model infers representations of intentions, form alone does not stay mute, as Bender and Koller claim it must." }
     ],
     usedIn: ["/lab/2026-07-21-what-counts-as-a-verdict/"]
   },
@@ -326,7 +326,7 @@ const lessie = [
     d1Status: "confirmed",
     stance: "contested",
     relates: [
-      { to: "mode-a-needs-a-blind-recode", how: "contests", why: "Se un giudice automatico raggiunge l\u2019accordo fra umani, la ricodifica cieca umana non e\u2019 piu\u2019 l\u2019unico standard." }
+      { to: "mode-a-needs-a-blind-recode", how: "contests", why: "If an automatic judge reaches human-human agreement, blind human recoding is no longer the only standard." }
     ],
     usedIn: ["/lab/2026-07-21-what-counts-as-a-verdict/"]
   }
@@ -349,12 +349,50 @@ function peso(l) {
   return Math.round(p * 100) / 100;
 }
 
-module.exports = lessie.map(l => ({
-  ...l,
-  weight: peso(l),
-  fonte: perChiave[l.src] || null,
-  d1Label: D1[l.d1] || ""
-}));
+// Citazione breve: cognomi + anno. Serve alla pagina, non al dato.
+function breve(fonte) {
+  if (!fonte) return "Programme note";
+  const tutti = String(fonte.author || fonte.editor || "")
+    .split(" and ")
+    .map(a => a.split(",")[0].trim())
+    .filter(Boolean);
+  // BibTeX scrive "and others" per l'elenco troncato: diventa et al.
+  const troncato = tutti.some(a => /^others$/i.test(a));
+  const cognomi = tutti.filter(a => !/^others$/i.test(a));
+  const anno = fonte.year ? ` ${fonte.year}` : "";
+  if (troncato && cognomi.length) return `${cognomi[0]} et al.` + anno;
+  if (!cognomi.length) return (fonte.title || "").slice(0, 40) + anno;
+  if (cognomi.length === 1) return cognomi[0] + anno;
+  if (cognomi.length === 2) return `${cognomi[0]} & ${cognomi[1]}` + anno;
+  return `${cognomi[0]} et al.` + anno;
+}
+
+module.exports = lessie.map(l => {
+  const fonte = perChiave[l.src] || null;
+  return {
+    ...l,
+    weight: peso(l),
+    fonte,
+    cite: breve(fonte),
+    // Il claim spezzato sui tagli: parts[i] e cuts[i] si alternano, cosi'
+    // la pagina rimette le parole al loro posto senza manipolare stringhe.
+    parts: String(l.claim).split("[\u2026]"),
+    d1Label: D1[l.d1] || ""
+  };
+});
+
+// Aggregati per la pagina: non si ricontano a mano in un template.
+const _fn = {}, _d1 = {};
+module.exports.forEach(l => {
+  const f = _fn[l.fn] || (_fn[l.fn] = { key: l.fn, n: 0, w: 0 });
+  f.n++; f.w = Math.round((f.w + l.weight) * 100) / 100;
+  const d = _d1[l.d1] || (_d1[l.d1] = { key: l.d1, label: l.d1Label, n: 0, w: 0 });
+  d.n++; d.w = Math.round((d.w + l.weight) * 100) / 100;
+});
+module.exports.PESO = Math.round(module.exports.reduce((a, l) => a + l.weight, 0) * 100) / 100;
+module.exports.FONTI = new Set(module.exports.map(l => l.src)).size;
+module.exports.FN = Object.values(_fn).sort((a, b) => b.w - a.w);
+module.exports.D1N = Object.values(_d1).sort((a, b) => b.w - a.w);
 
 module.exports.D1 = D1;
 module.exports.RELAZIONI = RELAZIONI;

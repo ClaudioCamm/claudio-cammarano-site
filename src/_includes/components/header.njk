@@ -43,8 +43,14 @@
                 <li><a href="/en/"{% if page.url == "/en/" %} class="active"{% endif %}>The programme</a></li>
                 <li><a href="/en/start-here/"{% if page.url == "/en/start-here/" %} class="active"{% endif %}>Start here</a></li>
                 <li><a href="/lab/"{% if page.url.indexOf('/lab/') == 0 %} class="active"{% endif %}>Lab</a></li>
-                <li><a href="/en/deliverables/"{% if page.url == "/en/deliverables/" %} class="active"{% endif %}>Deliverables</a></li>
                 <li><a href="/en/about/"{% if page.url == "/en/about/" %} class="active"{% endif %}>About</a></li>
+                {# Gruppo "Explore" (13/10): specchio di Esplora sul lato italiano.
+                   Claims sta al primo livello subito dopo l'etichetta e Deliverables
+                   scende qui dentro: sono entrambi strumenti per attraversare il
+                   programma, non sezioni di contenuto. #}
+                <li class="nav-group-label" aria-hidden="true">Explore</li>
+                <li class="nav-explore"><a href="/en/claims/"{% if page.url == "/en/claims/" %} class="active"{% endif %}>Claims</a></li>
+                <li class="nav-explore"><a href="/en/deliverables/"{% if page.url == "/en/deliverables/" %} class="active"{% endif %}>Deliverables</a></li>
                 <li class="nav-abstract-item">
                     <a class="nav-abstract-pill" href="/en/#the-abstract" data-newsletter-cta data-position="nav_en">
                         <svg class="nav-abstract-glyph" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>

@@ -1,0 +1,165 @@
+---
+layout: layouts/base.njk
+title: Claims
+description: "The claims this research programme cites, kept verbatim and typed with the same notation used on the Italian half of the site: what each passage is for this archive, what kind of claim it is in itself, and what was cut from the quotation."
+permalink: /en/claims/
+lang: en
+og_card: /images/og/og-en-home.png
+---
+
+{# ===================================================================
+   /en/claims/ — il muro delle lessie.
+   Legge src/_data/claims.js e non contiene dati propri. Ogni unita' ha
+   tre stati: chiusa (l'affermazione piu' una riga di contesto sfumata),
+   aperta (il passaggio cresce INTORNO all'affermazione, che non si
+   muove), tagli in vista (le parole omesse tornano al posto di […]).
+   Senza JavaScript il contesto e i tagli sono tutti visibili: nessun
+   contenuto dipende dallo script.
+   Mancano ancora la matrice funzione x D1 e l'ego-network.
+   =================================================================== #}
+
+{% set gloss = {
+  "riferimento-tecnico": "technical reference",
+  "dato-che-corregge": "corrective datum",
+  "metodo-di-lavoro": "working method",
+  "strumento-concettuale": "conceptual tool",
+  "lettura-di-mercato": "market reading",
+  "elementi-di-scenario": "scenario element"
+} %}
+
+<style>
+.cl-intro{max-width:34em}
+.cl-rules{margin:2.2em 0;padding-left:1.2em;border-left:4px solid var(--color-primary);max-width:34em}
+.cl-rules p{margin:.5em 0;font-size:.95em}
+.cl-strip{font-size:.78em;letter-spacing:.06em;text-transform:uppercase;color:var(--color-text-light);margin:2.4em 0 .7em}
+.cl-filters{display:flex;flex-wrap:wrap;gap:.4em;margin:0 0 3em;padding:0;list-style:none}
+.cl-chip{font:inherit;font-size:.76em;letter-spacing:.05em;text-transform:uppercase;background:none;border:1px solid var(--color-border);color:var(--color-text-light);padding:.45em .8em;cursor:pointer;min-height:34px}
+.cl-chip[aria-pressed="true"]{background:var(--color-primary);border-color:var(--color-primary);color:#fff}
+.cl-chip b{font-weight:400;opacity:.65;margin-left:.4em}
+
+.lx{border-left:4px solid var(--color-border);padding-left:1.4em;margin:0 0 3.4em;transition:border-color .15s}
+.lx:hover,.lx.is-open{border-left-color:var(--color-primary)}
+.lx-head{font-size:.78em;letter-spacing:.04em;color:var(--color-text-light);margin:0 0 .8em}
+.lx-cite{font-style:normal;font-weight:600;color:var(--color-text)}
+.lx-cite a{color:inherit;text-decoration:none;border-bottom:1px solid var(--color-border)}
+.lx-locus:before{content:"\00a0\00b7\00a0"}
+.lx-ctx{font-family:Georgia,serif;font-size:1.05rem;line-height:1.65;color:#8f8f8f;margin:0;max-height:1.65em;overflow:hidden}
+.lx-before{-webkit-mask-image:linear-gradient(to bottom,transparent,#000);mask-image:linear-gradient(to bottom,transparent,#000)}
+.lx-after{-webkit-mask-image:linear-gradient(to top,transparent,#000);mask-image:linear-gradient(to top,transparent,#000)}
+.lx.is-open .lx-ctx{max-height:40em;color:#6e6e6e;-webkit-mask-image:none;mask-image:none}
+.lx-claim{font-family:Georgia,serif;font-size:1.5rem;line-height:1.45;margin:.4em 0;padding:0;border:0;color:var(--color-text);quotes:none}
+.lx-claim:before,.lx-claim:after{content:none}
+.lx-cut{display:none;color:#800020}
+.lx.is-cuts .lx-cut{display:inline}
+.lx.is-cuts .lx-ell{display:none}
+.lx-foot{display:flex;flex-wrap:wrap;align-items:center;gap:.5em;margin-top:1.1em;font-size:.74em;letter-spacing:.05em;text-transform:uppercase}
+.lx-fn{background:var(--color-primary);color:#fff;padding:.32em .62em}
+.lx-d1,.lx-stance,.lx-w{color:var(--color-text-light)}
+.lx-d1 abbr{text-decoration:none;cursor:help;color:var(--color-primary)}
+.lx-stance-contested{color:#800020;font-weight:600}
+.lx-w:before{content:"weight "}
+.lx-btn{font:inherit;font-size:1em;letter-spacing:.05em;text-transform:uppercase;background:none;border:1px solid var(--color-border);color:var(--color-text-light);padding:.4em .7em;cursor:pointer;min-height:34px}
+.lx-btn[aria-expanded="true"]{border-color:var(--color-primary);color:var(--color-primary)}
+.lx-rel{list-style:none;margin:1em 0 0;padding:0;font-size:.86em;color:var(--color-text-light);max-width:38em}
+.lx-rel li{margin:.3em 0}
+.lx-rel em{font-style:normal;font-size:.8em;letter-spacing:.06em;text-transform:uppercase;color:#800020}
+.lx-rel a{color:var(--color-primary)}
+.cl-todo{margin-top:4em;padding-top:1.4em;border-top:1px solid var(--color-border);font-size:.92em;color:var(--color-text-light);max-width:34em}
+@media (max-width:768px){
+  .lx{padding-left:1em;margin-bottom:2.8em}
+  .lx-claim{font-size:1.22rem;line-height:1.42}
+  .lx-ctx{font-size:.98rem}
+  .lx-btn{min-height:40px;flex:1 1 7em}
+  .cl-chip{min-height:40px;font-size:.68em;padding:.4em .6em}
+}
+</style>
+<noscript><style>
+.lx-ctx{max-height:none!important;-webkit-mask-image:none!important;mask-image:none!important}
+.lx-cut{display:inline}.lx-ell,.lx-btn,.cl-filters{display:none}
+</style></noscript>
+
+<h1>Claims</h1>
+
+<div class="cl-intro">
+<p>This is the research half of the site read through its sources. Each unit is one <strong>claim</strong>, kept in the words of the paper that makes it, and labelled twice: with the ENTIA function that says what the passage is <em>for this archive</em>, and with the D1 code that says what kind of claim it is <em>in itself</em>. The notation is the one used on the Italian half; nothing here is a second vocabulary.</p>
+</div>
+
+<div class="cl-rules">
+<p><strong>Verbatim.</strong> The claim, and the passage around it, are the source's own words. Where the quotation skips something, the gap is marked and the omitted words can be put back: a cut you cannot inspect is an argument you have to take on trust.</p>
+<p><strong>Running text only.</strong> Never the abstract, never the keywords, never a blurb. An abstract is the author's own restatement of a conclusion with the argument removed; quoting it means quoting the summary instead of the thing.</p>
+<p><strong>One paper, one claim.</strong> A book can hold several, one per chapter actually used. A claim exists here because something on this site uses it.</p>
+</div>
+
+<p class="cl-strip">{{ claims.length }} claims &middot; {{ claims.FONTI }} sources &middot; {{ claims.D1N.length }} of 11 D1 codes &middot; {{ claims.FN.length }} of 6 ENTIA functions</p>
+
+<ul class="cl-filters">
+  <li><button class="cl-chip" data-fn="*" aria-pressed="true">All</button></li>
+  {% for f in claims.FN %}
+  <li><button class="cl-chip" data-fn="{{ f.key }}" aria-pressed="false" title="{{ f.key }}">{{ gloss[f.key] }}<b>{{ f.n }}</b></button></li>
+  {% endfor %}
+</ul>
+
+<div id="cl-wall">
+{% for l in claims | sort(true, false, 'weight') %}
+  <article class="lx" id="{{ l.id }}" data-fn="{{ l.fn }}">
+    <p class="lx-head">
+      <cite class="lx-cite"{% if l.fonte %} title="{{ l.fonte.title }}"{% endif %}>{% if l.fonte and l.fonte.doi %}<a href="https://doi.org/{{ l.fonte.doi }}" rel="external">{{ l.cite }}</a>{% else %}{{ l.cite }}{% endif %}</cite>{% if l.locus %}<span class="lx-locus">{{ l.locus }}</span>{% endif %}
+    </p>
+    {% if l.before %}<p class="lx-ctx lx-before">{{ l.before }}</p>{% endif %}
+    <blockquote class="lx-claim"{% if l.fonte and l.fonte.doi %} cite="https://doi.org/{{ l.fonte.doi }}"{% endif %}>{% for part in l.parts %}{{ part }}{% if not loop.last %}<span class="lx-gap"><span class="lx-ell">[&hellip;]</span><span class="lx-cut">{{ l.cuts[loop.index0] }}</span></span>{% endif %}{% endfor %}</blockquote>
+    {% if l.after %}<p class="lx-ctx lx-after">{{ l.after }}</p>{% endif %}
+    <p class="lx-foot">
+      <span class="lx-fn" title="ENTIA function: {{ l.fn }}">{{ gloss[l.fn] }}</span>
+      <span class="lx-d1">{{ l.d1 }} {{ l.d1Label }}{% if l.d1Status == "proposed" %} <abbr title="Proposed, not yet confirmed by hand">?</abbr>{% endif %}</span>
+      <span class="lx-stance lx-stance-{{ l.stance }}">{{ l.stance }}</span>
+      <span class="lx-w">{{ l.weight }}</span>
+      <button class="lx-btn" type="button" data-act="ctx" aria-expanded="false" aria-controls="{{ l.id }}">Passage</button>
+      {% if l.cuts.length %}<button class="lx-btn" type="button" data-act="cuts" aria-expanded="false" aria-controls="{{ l.id }}">Cuts ({{ l.cuts.length }})</button>{% endif %}
+    </p>
+    {% if l.relates.length %}
+    <ul class="lx-rel">
+      {% for r in l.relates %}<li><em>{{ r.how }}</em> <a href="#{{ r.to }}">{{ r.to }}</a> &mdash; {{ r.why }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+  </article>
+{% endfor %}
+</div>
+
+<div class="cl-todo">
+<p>Two of ENTIA's six functions have no claims on this side of the site: <em>market reading</em> and <em>scenario element</em>. They are not missing, they are not used here. The same notation distributes differently over the two halves of the site, which is the point of extending it rather than inventing a second one.</p>
+<p>A question mark on a D1 code means the code is proposed and has not been confirmed by hand. The function matrix and the per-claim network are not built yet.</p>
+</div>
+
+<script>
+(function () {
+  var wall = document.getElementById('cl-wall');
+  if (!wall) return;
+  wall.addEventListener('click', function (e) {
+    var b = e.target.closest ? e.target.closest('.lx-btn') : null;
+    if (!b) return;
+    var art = b.closest('.lx');
+    var cls = b.getAttribute('data-act') === 'cuts' ? 'is-cuts' : 'is-open';
+    var on = !art.classList.contains(cls);
+    art.classList.toggle(cls, on);
+    b.setAttribute('aria-expanded', on ? 'true' : 'false');
+    // Mostrare i tagli senza il passaggio intorno sarebbe mostrare un
+    // ritaglio dentro un ritaglio: apre anche il contesto.
+    if (cls === 'is-cuts' && on) {
+      art.classList.add('is-open');
+      var o = art.querySelector('[data-act="ctx"]');
+      if (o) o.setAttribute('aria-expanded', 'true');
+    }
+  });
+  var chips = [].slice.call(document.querySelectorAll('.cl-chip'));
+  chips.forEach(function (c) {
+    c.addEventListener('click', function () {
+      chips.forEach(function (x) { x.setAttribute('aria-pressed', 'false'); });
+      c.setAttribute('aria-pressed', 'true');
+      var f = c.getAttribute('data-fn');
+      [].slice.call(wall.querySelectorAll('.lx')).forEach(function (a) {
+        a.hidden = !(f === '*' || a.getAttribute('data-fn') === f);
+      });
+    });
+  });
+})();
+</script>
