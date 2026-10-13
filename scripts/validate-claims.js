@@ -54,6 +54,11 @@ claims.forEach((l, i) => {
   // Una lessia assunta senza locus non e' verificabile: e' una parafrasi con le virgolette.
   if (l.stance === "assumed" && !String(l.locus || "").trim()) err("stance assumed senza locus");
 
+  // Mai dall'apparato: l'abstract e' una riscrittura dell'autore, non il suo testo.
+  // La lessia deve stare nel testo corrente, dove l'affermazione e' argomentata.
+  if (/^\s*(abstract|summary|sommario|keywords|parole chiave|blurb|back cover|quarta)/i.test(String(l.locus || "")))
+    err(`locus nell'apparato ("${l.locus}"): serve testo corrente`);
+
   (l.relates || []).forEach((r, k) => {
     if (!ids.has(r.to)) err(`relates[${k}] punta a "${r.to}", che non esiste`);
     if (r.to === l.id) err(`relates[${k}] punta a se stessa`);

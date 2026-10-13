@@ -138,6 +138,197 @@ const lessie = [
     stance: "used",
     relates: [],
     usedIn: ["/lab/2026-07-21-what-counts-as-a-verdict/", "/lab/2026-07-10-coding-manual-v2-1-retrospective-qc/"]
+  },
+
+  // --------------------------------------------- dalla letteratura (13/10)
+  // regola: mai dall'abstract. Solo testo corrente.
+  {
+    id: "form-alone-cannot-yield-meaning",
+    src: "bender2020climbing",
+    locus: "\u00a71 Introduction",
+    before: "From our perspective, these are overclaims caused by a misunderstanding of the relationship between linguistic form and meaning.",
+    claim: "We argue that the language modeling task, because it only uses form as training data, cannot in principle lead to learning of meaning.",
+    cuts: [],
+    after: "We take the term language model to refer to any system trained only on the task of string prediction, whether it operates over characters, words or sentences, and sequentially or not.",
+    fn: "riferimento-tecnico",
+    d1: "D1.14",
+    d1Status: "proposed",
+    stance: "assumed",
+    relates: [],
+    usedIn: ["/lab/2026-02-03-the-seven-dimensional-taxonomy-v2/"]
+  },
+  {
+    id: "correlation-versus-mechanism",
+    src: "mitchell2023debate",
+    locus: "p. 1",
+    before: "This debate is not just academic; the extent and manner in which machines understand our world has real stakes for how much we can trust them to drive cars, diagnose diseases, care for the elderly, educate children, and more generally act robustly and transparently in tasks that impact humans.",
+    claim: "Moreover, the current debate suggests a fascinating divergence in how to think about understanding in intelligent systems, in particular the contrast between mental models that rely on statistical correlations and those that rely on causal mechanisms.",
+    cuts: [],
+    after: "Until quite recently there was general agreement in the AI research community about machine understanding: while AI systems exhibit seemingly intelligent behavior in many specific tasks, they do not understand the data they process in the way humans do.",
+    fn: "strumento-concettuale",
+    d1: "D1.6",
+    d1Status: "proposed",
+    stance: "used",
+    relates: [
+      { to: "form-alone-cannot-yield-meaning", how: "presupposes", why: "Il dibattito che descrive ha fra i suoi poli la tesi di Bender e Koller." }
+    ],
+    usedIn: ["/lab/2026-07-21-what-counts-as-a-verdict/"]
+  },
+  {
+    id: "more-annotators-beats-bias-correction",
+    src: "artstein2008",
+    locus: "\u00a75.2 Choosing a Coefficient",
+    before: "Regarding the question of annotator bias, there is an overwhelming consensus in CL practice: K and \u03b1 are used in the vast majority of the studies we reported.",
+    claim: "We agree with the view that K and \u03b1 are more appropriate, as they abstract away from the bias of specific coders. But we also believe that ultimately this issue of annotator bias is of little consequence because the differences get smaller and smaller as the number of annotators grows [\u2026].",
+    cuts: ["(Artstein and Poesio 2005)"],
+    after: "We believe that increasing the number of annotators is the best strategy, because it reduces the chances of accidental personal biases.",
+    fn: "metodo-di-lavoro",
+    d1: "D1.10",
+    d1Status: "proposed",
+    stance: "used",
+    relates: [
+      { to: "mode-a-needs-a-blind-recode", how: "refines", why: "Sposta il problema: non quale correzione per il bias, ma quanti codificatori." }
+    ],
+    usedIn: ["/lab/2026-02-20-coding-manual-v2-the-annotation-protocol/"]
+  },
+  {
+    id: "inverse-scaling-of-truthfulness",
+    src: "lin2022",
+    locus: "\u00a71 Introduction",
+    before: "",
+    claim: "Across different model families, the largest models were generally less truthful (Fig. 2). This \u201cinverse scaling\u201d trend contrasts with most tasks in NLP, where performance improves with model size [\u2026].",
+    cuts: ["(Brown et al., 2020; Kaplan et al., 2020)"],
+    after: "One explanation of this result is that larger models produce more imitative falsehoods because they are better at learning the training distribution. Another explanation is that our questions adversarially exploit weaknesses in larger models not arising from imitation of the training distribution.",
+    fn: "dato-che-corregge",
+    d1: "D1.2",
+    d1Status: "confirmed",
+    stance: "assumed",
+    relates: [],
+    usedIn: ["/lab/2026-02-25-horizontal-validation-31-claims/"]
+  },
+  {
+    id: "lms-infer-agent-mental-states",
+    src: "andreas2022language",
+    locus: "\u00a71 Introduction, (C1)",
+    before: "In particular, I claim:",
+    claim: "In the course of performing next-word prediction in context, current LMs sometimes infer approximate, partial representations of the beliefs, desires and intentions possessed by the agent that produced the context, and other agents mentioned within it.",
+    cuts: [],
+    after: "(C2) Once these representations are inferred, they are causally linked to LM prediction, and thus bear the same relation to generated text that an intentional agent\u2019s state bears to its communciative actions.",
+    fn: "strumento-concettuale",
+    d1: "D1.14",
+    d1Status: "proposed",
+    stance: "contested",
+    relates: [
+      { to: "form-alone-cannot-yield-meaning", how: "contests", why: "Se il modello inferisce rappresentazioni di intenzioni, la forma da sola non resta muta come sostiene Bender." }
+    ],
+    usedIn: ["/lab/2026-07-21-what-counts-as-a-verdict/"]
+  },
+  {
+    id: "cai-partially-replaces-human-feedback",
+    src: "bai2022constitutional",
+    locus: "\u00a71 Introduction",
+    before: "We also aim to develop methods that encode desirable AI behavior in a simple and transparent form, and that make it easier to understand and evaluate AI decision making.",
+    claim: "In this paper we develop a method we refer to as Constitutional AI (CAI), depicted in Figure 1, and use it to train a non-evasive and relatively harmless AI assistant, without any human feedback labels for harms. The method therefore improves upon, and partially replaces reinforcement learning from human feedback [\u2026].",
+    cuts: ["[Christiano et al., 2017]"],
+    after: "The new assistant \u2018RL-CAI\u2019 is preferred by crowdworkers over those trained with previously collected [Bai et al., 2022, Ganguli et al., 2022] human feedback labels for harmfulness.",
+    fn: "metodo-di-lavoro",
+    d1: "D1.9",
+    d1Status: "proposed",
+    stance: "used",
+    relates: [],
+    usedIn: ["/lab/2026-07-21-what-counts-as-a-verdict/"]
+  },
+  {
+    id: "hallucination-the-standard-definition",
+    src: "ji2022",
+    locus: "\u00a72",
+    before: "Similar to psychological hallucination, which is hard to tell apart from other \u201creal\u201d perceptions, hallucinated text is also hard to capture at first glance.",
+    claim: "Within the context of NLP, the above definition of hallucination, the generated content that is nonsensical or unfaithful to the provided source content [\u2026], is the most inclusive and standard.",
+    cuts: ["[72, 177, 198, 325]"],
+    after: "However, there do exist variations in definition across NLG tasks, which will be further described in the later task-specific sections.",
+    fn: "strumento-concettuale",
+    d1: "D1.6",
+    d1Status: "proposed",
+    stance: "used",
+    relates: [],
+    usedIn: ["/lab/2026-02-03-the-seven-dimensional-taxonomy-v2/"]
+  },
+  {
+    id: "explicit-about-what-is-not-evaluated",
+    src: "liang2022holistic",
+    locus: "\u00a72, Recognition of incompleteness",
+    before: "Different benchmarks make different decisions on what to prioritize, how to make these decisions, and to what extent these processes are made clear in presenting the benchmark.",
+    claim: "Since our aim is holistic evaluation, we believe it is necessary to be explicit on the relationship between what we aspire to evaluate and what we actually evaluate.",
+    cuts: [],
+    after: "The construction of HELM starts top-down with a taxonomy over scenarios and metrics (see Figure 2). The taxonomy not only facilitates the systematic selection of scenarios and metrics, but it also make explicit what is missing.",
+    fn: "metodo-di-lavoro",
+    d1: "D1.10",
+    d1Status: "proposed",
+    stance: "used",
+    relates: [],
+    usedIn: ["/lab/2026-02-20-coding-manual-v2-the-annotation-protocol/"]
+  },
+  {
+    id: "breakthroughs-are-metric-artefacts",
+    src: "srivastava2023beyond",
+    locus: "\u00a73.4.2",
+    before: "",
+    claim: "Breakthrough behavior is consistent with the model suddenly gaining new skills in an abrupt way. Careful analysis of task behavior, however, suggests that the underlying change in model capabilities is generally more smooth.",
+    cuts: [],
+    after: "These smooth improvements can be exposed by decomposing tasks in ways that better capture partial progress. We describe some of those ways in the remainder of this section.",
+    fn: "dato-che-corregge",
+    d1: "D1.2",
+    d1Status: "confirmed",
+    stance: "assumed",
+    relates: [],
+    usedIn: ["/lab/2026-02-25-horizontal-validation-31-claims/"]
+  },
+  {
+    id: "transformer-dispenses-with-recurrence",
+    src: "vaswani2017attention",
+    locus: "\u00a72 Background",
+    before: "End-to-end memory networks are based on a recurrent attention mechanism instead of sequence-aligned recurrence and have been shown to perform well on simple-language question answering and language modeling tasks [34].",
+    claim: "To the best of our knowledge, however, the Transformer is the first transduction model relying entirely on self-attention to compute representations of its input and output without using sequence-aligned RNNs or convolution.",
+    cuts: [],
+    after: "In the following sections, we will describe the Transformer, motivate self-attention and discuss its advantages over models such as [17, 18] and [9].",
+    fn: "riferimento-tecnico",
+    d1: "D1.1",
+    d1Status: "confirmed",
+    stance: "assumed",
+    relates: [],
+    usedIn: ["/lab/2026-02-03-the-seven-dimensional-taxonomy-v2/"]
+  },
+  {
+    id: "plural-paths-one-answer",
+    src: "wang2022",
+    locus: "\u00a71 Introduction",
+    before: "It has been observed that chain-of-thought prompting significantly improves model performance across a variety of multi-step reasoning tasks (Wei et al., 2022).",
+    claim: "Self-consistency leverages the intuition that complex reasoning tasks typically admit multiple reasoning paths that reach a correct answer [\u2026].",
+    cuts: ["(Stanovich & West, 2000)"],
+    after: "The more that deliberate thinking and analysis is required for a problem (Evans, 2010), the greater the diversity of reasoning paths that can recover the answer.",
+    fn: "strumento-concettuale",
+    d1: "D1.3",
+    d1Status: "proposed",
+    stance: "used",
+    relates: [],
+    usedIn: ["/lab/2026-02-25-horizontal-validation-31-claims/"]
+  },
+  {
+    id: "llm-judges-match-human-agreement",
+    src: "zheng2023",
+    locus: "\u00a71 Introduction",
+    before: "We show that some of the biases are minor or can be mitigated.",
+    claim: "Once addressed, our results from 3K controlled expert votes and 3K crowdsourced human votes in the wild verify that GPT-4 judge match human evaluations at an agreement rate exceeding 80%, achieving the same level of human-human agreement (4.2, Table 4).",
+    cuts: [],
+    after: "Consequently, this suggests LLM-as-a-judge is a scalable method to swiftly evaluate human preference, serving as a promising alternative to traditional human evaluations.",
+    fn: "dato-che-corregge",
+    d1: "D1.2",
+    d1Status: "confirmed",
+    stance: "contested",
+    relates: [
+      { to: "mode-a-needs-a-blind-recode", how: "contests", why: "Se un giudice automatico raggiunge l\u2019accordo fra umani, la ricodifica cieca umana non e\u2019 piu\u2019 l\u2019unico standard." }
+    ],
+    usedIn: ["/lab/2026-07-21-what-counts-as-a-verdict/"]
   }
 ];
 
