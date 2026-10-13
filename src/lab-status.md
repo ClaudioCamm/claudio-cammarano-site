@@ -77,7 +77,7 @@ Where each part of v7 went. Sections not listed here carry over unchanged into t
 
 ## Where the papers are going
 
-The route is unchanged: an OSF deposit and pre-registration, then arXiv as a preprint under cs.AI or cs.CL, with *Synthese* and *Episteme* as journal targets at six to twelve months. The two lines travel it separately and at their own pace.
+The route is unchanged: an OSF deposit and pre-registration, then arXiv as a preprint under cs.AI or cs.CL, with peer-reviewed venues in philosophy of science and epistemology as targets at six to twelve months. The two lines travel it separately and at their own pace.
 
 The invitation stands. The Coding Manual, the thirty-one-claim corpus with full annotations, the system prompt, the extraction scripts and the blind packet are deposited openly and indexed on the [deliverables page](/en/deliverables/), and Phase 2 needs annotators. Researchers or graduate students with a background in epistemology, philosophy of language or computational linguistics willing to code a sub-corpus of twenty to thirty claims are invited to write.
 

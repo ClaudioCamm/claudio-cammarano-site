@@ -42,7 +42,7 @@ Eight sections drafted (Introduction through Conclusion), a 56-entry bibliograph
 
 ## Submission target
 
-arXiv (cs.AI / cs.CL) as an immediate preprint; Synthese and Episteme as journal targets at 6–12 months. arXiv endorsement is currently being sought.
+arXiv (cs.AI / cs.CL) as an immediate preprint; peer-reviewed venues in philosophy of science and epistemology as targets at 6–12 months. arXiv endorsement is currently being sought.
 
 ## Attachments
 
