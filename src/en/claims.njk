@@ -27,40 +27,55 @@ og_card: /images/og/og-en-home.png
 {% set G = claimLayers.graph %}
 
 <style>
+.cl-lede{max-width:34em;font-family:var(--font-serif);font-size:1.22rem;line-height:1.5;color:var(--color-text)}
 .cl-intro{max-width:34em}
+
+/* --- l'impaginazione: mappa a sinistra, lettura a destra -------------- */
+.cx{display:grid;grid-template-columns:1fr;gap:2.4rem;margin:2.2em 0 3em}
+@media (min-width:1000px){
+  .cx{grid-template-columns:372px minmax(0,1fr);gap:3.6rem;align-items:start}
+  .cx-map{position:sticky;top:1.4rem;max-height:calc(100vh - 3rem);overflow-y:auto;overflow-x:hidden}
+}
+.cx-h{font-size:.74em;letter-spacing:.12em;text-transform:uppercase;color:var(--color-text-light);margin:0 0 .3em;font-family:inherit;font-weight:600}
+.cx-hint{font-family:var(--font-sans);font-size:.84em;line-height:1.5;color:var(--color-text-light);margin:0 0 .6em;max-width:30em}
+.cx-all{font:inherit;font-size:.74em;letter-spacing:.06em;text-transform:uppercase;background:none;border:1px solid var(--color-border);color:var(--color-text-light);padding:.5em .9em;cursor:pointer;min-height:36px}
+.cx-all[aria-pressed="true"]{border-color:var(--color-primary);color:var(--color-primary)}
+.cx-read{min-width:0}
+.th{border-left:4px solid var(--color-border);padding-left:1.2em;margin:0 0 1.8em;max-width:36em}
+.th h3{font-family:var(--font-serif);font-size:1.3rem;margin:0 0 .2em;line-height:1.3}
+.th p{margin:0 0 .7em;color:var(--color-text-light);font-size:.95em;font-family:var(--font-sans)}
+.th-cs{display:flex;flex-wrap:wrap;gap:.35em}
+.cx-go{font:inherit;font-size:.76em;letter-spacing:.04em;background:none;border:1px solid var(--color-border);color:var(--color-primary);padding:.4em .7em;cursor:pointer;min-height:34px}
+.cx-go:hover{border-color:var(--color-primary)}
+.cx-go b{font-weight:400;color:var(--color-text-light);margin-left:.4em}
+.cx-back{margin:0 0 .8em}
+.cx-back button{font:inherit;font-size:.76em;letter-spacing:.06em;text-transform:uppercase;background:none;border:0;color:var(--color-text-light);cursor:pointer;padding:.3em 0}
+.cx-name{font-family:var(--font-serif);font-size:2rem;line-height:1.15;margin:0 0 .3em}
+.cx-prop{font-family:var(--font-serif);font-size:1.18rem;line-height:1.55;color:var(--color-text);margin:0 0 .9em;max-width:34em;border-left:4px solid #800020;padding-left:1em}
+.cx-links{font-size:.84em;color:var(--color-text-light);margin:0 0 2.4em;display:flex;flex-wrap:wrap;gap:.35em;align-items:center}
+.cx-links .k{font-size:.86em;letter-spacing:.09em;text-transform:uppercase;color:#aaa;margin-right:.2em}
 .cl-rules{margin:2.2em 0;padding-left:1.2em;border-left:4px solid var(--color-primary);max-width:34em}
 .cl-rules p{margin:.5em 0;font-size:.95em}
 
-/* --- i cinque strati ------------------------------------------------ */
-.cl-layers{list-style:none;margin:2.4em 0;padding:0;max-width:38em}
-.cl-layers li{padding:.8em 0 .8em 1.2em;border-left:4px solid var(--color-border);margin-bottom:.2em}
-.cl-layers li.on{border-left-color:var(--color-primary)}
-.cl-ly-n{font-family:Georgia,serif;font-size:1.12rem}
-.cl-ly-n b{font-weight:400;color:var(--color-text-light);font-size:.8rem;margin-left:.5em}
-.cl-ly-r{display:block;font-size:.72em;letter-spacing:.05em;text-transform:uppercase;color:var(--color-text-light);margin:.35em 0 .3em}
-.cl-ly-r i{font-style:normal}
-.cl-ly-r i+i:before{content:" \00b7 "}
-.cl-ly-d{font-size:.92em;color:var(--color-text-light);margin:0}
-
 /* --- la mappa dei concetti ------------------------------------------ */
-.cm{margin:1em 0 2.4em;padding:0}
-.cm svg{width:100%;max-width:560px;height:auto;display:block;overflow:visible}
+.cm{margin:.6em 0 1em;padding:0}
+.cm svg{width:100%;max-width:372px;height:auto;display:block;overflow:visible}
 .cm-arcs path{fill:none;stroke:var(--color-border);stroke-width:1}
 .cm-band{font-size:10px;letter-spacing:.1em;text-transform:uppercase;fill:#800020;stroke:#fff;stroke-width:3px;paint-order:stroke fill}
 .cm-n circle{fill:#fff;stroke:var(--color-primary);stroke-width:1.6}
-.cm-lab{font-family:Georgia,serif;font-size:14px;fill:var(--color-text)}
+.cm-lab{font-family:var(--font-serif);font-size:14px;fill:var(--color-text)}
 .cm-num{font-size:11px;fill:var(--color-text-light);letter-spacing:.06em}
 .cm-bar{fill:var(--color-primary);opacity:.35}
 .cm-hit{fill:transparent;cursor:pointer}
 .cm-n:hover circle,.cm-n:focus circle{fill:var(--color-primary)}
 .cm-n:focus{outline:none}
 .cm-n:focus .cm-lab{text-decoration:underline}
-.cm.sel .cm-n{opacity:.3}
+.cm.sel .cm-n{opacity:.45}
 .cm.sel .cm-n.on{opacity:1}
 .cm.sel .cm-n.on circle{fill:var(--color-primary)}
 .cm.sel .cm-arcs path{opacity:.25}
 .cm.sel .cm-arcs path.on{opacity:1;stroke:#800020;stroke-width:1.6}
-.cm-note{font-family:Georgia,serif;font-size:1.02rem;line-height:1.55;color:var(--color-text-light);margin:.6em 0 0;max-width:34em;min-height:3.1em}
+.cm-note{font-family:var(--font-sans);font-size:.8em;line-height:1.5;color:var(--color-text-light);margin:.4em 0 0;max-width:34em}
 .cm-note b{color:var(--color-text);font-weight:600}
 
 .cl-strip{font-size:.78em;letter-spacing:.06em;text-transform:uppercase;color:var(--color-text-light);margin:2.6em 0 .7em}
@@ -70,22 +85,25 @@ og_card: /images/og/og-en-home.png
 .cl-chip b{font-weight:400;opacity:.65;margin-left:.4em}
 
 /* --- l'unita' -------------------------------------------------------- */
-.lx{border-left:4px solid var(--color-border);padding-left:1.4em;margin:0 0 3.4em;transition:border-color .15s}
-.lx:hover,.lx.is-open{border-left-color:var(--color-primary)}
-.lx-head{font-size:.78em;letter-spacing:.04em;color:var(--color-text-light);margin:0 0 .8em}
+.lx{margin:0 0 3.6em;max-width:40em}
+.lx-gist{font-family:var(--font-sans);font-size:1rem;line-height:1.62;color:var(--color-text);margin:0 0 1.3em}
+.lx-rub{display:block;font-size:.66em;letter-spacing:.14em;text-transform:uppercase;color:#aaa;margin:0 0 .5em}
+.lx-src{border-left:4px solid var(--color-border);padding-left:1.3em;transition:border-color .15s}
+.lx:hover .lx-src,.lx.is-open .lx-src{border-left-color:var(--color-primary)}
+.lx-head{font-size:.78em;letter-spacing:.04em;color:var(--color-text-light);margin:.7em 0 0}
 .lx-cite{font-style:normal;font-weight:600;color:var(--color-text)}
 .lx-cite a{color:inherit;text-decoration:none;border-bottom:1px solid var(--color-border)}
 .lx-locus:before{content:"\00a0\00b7\00a0"}
-.lx-ctx{font-family:Georgia,serif;font-size:1.05rem;line-height:1.65;color:#8f8f8f;margin:0;max-height:1.65em;overflow:hidden}
+.lx-ctx{font-family:var(--font-serif);font-size:1.05rem;line-height:1.65;color:#8f8f8f;margin:0;max-height:1.65em;overflow:hidden}
 .lx-before{-webkit-mask-image:linear-gradient(to bottom,transparent,#000);mask-image:linear-gradient(to bottom,transparent,#000)}
 .lx-after{-webkit-mask-image:linear-gradient(to top,transparent,#000);mask-image:linear-gradient(to top,transparent,#000)}
 .lx.is-open .lx-ctx{max-height:40em;color:#6e6e6e;-webkit-mask-image:none;mask-image:none}
-.lx-claim{font-family:Georgia,serif;font-size:1.5rem;line-height:1.45;margin:.4em 0;padding:0;border:0;color:var(--color-text);quotes:none}
+.lx-claim{font-family:var(--font-serif);font-size:1.26rem;line-height:1.45;margin:.4em 0;padding:0;border:0;color:var(--color-text);quotes:none}
 .lx-claim:before,.lx-claim:after{content:none}
 .lx-cut{display:none;color:#800020}
 .lx.is-cuts .lx-cut{display:inline}
 .lx.is-cuts .lx-ell{display:none}
-.lx-layers{margin:1em 0 0;font-size:.8em;color:var(--color-text-light)}
+.lx-layers{margin:1.1em 0 0;font-size:.8em;color:var(--color-text-light)}
 .lx-layers a{color:var(--color-primary);text-decoration:none;border-bottom:1px solid var(--color-border)}
 .lx-layers .k{font-size:.86em;letter-spacing:.07em;text-transform:uppercase;color:#aaa}
 .lx-foot{display:flex;flex-wrap:wrap;align-items:center;gap:.5em;margin-top:.8em;font-size:.74em;letter-spacing:.05em;text-transform:uppercase}
@@ -100,11 +118,15 @@ og_card: /images/og/og-en-home.png
 .lx-rel li{margin:.3em 0}
 .lx-rel em{font-style:normal;font-size:.8em;letter-spacing:.06em;text-transform:uppercase;color:#800020}
 .lx-rel a{color:var(--color-primary)}
-.cl-empty{font-family:Georgia,serif;color:var(--color-text-light);display:none}
-.cl-todo{margin-top:4em;padding-top:1.4em;border-top:1px solid var(--color-border);font-size:.92em;color:var(--color-text-light);max-width:34em}
+.cl-empty{font-family:var(--font-serif);color:var(--color-text-light);display:none}
+.cl-more{font-size:.95em;color:var(--color-text-light);max-width:34em}
+.cl-todo{margin-top:3em;padding-top:1.4em;border-top:1px solid var(--color-border);font-size:.92em;color:var(--color-text-light);max-width:34em}
 @media (max-width:768px){
-  .lx{padding-left:1em;margin-bottom:2.8em}
-  .lx-claim{font-size:1.22rem;line-height:1.42}
+  .lx{margin-bottom:2.8em}
+  .lx-src{padding-left:1em}
+  .lx-claim{font-size:1.18rem;line-height:1.42}
+  .cx-name{font-size:1.6rem}
+  .cx-prop{font-size:1.08rem}
   .lx-ctx{font-size:.98rem}
   .lx-btn{min-height:40px;flex:1 1 7em}
   .cl-chip{min-height:40px;font-size:.68em;padding:.4em .6em}
@@ -116,192 +138,201 @@ og_card: /images/og/og-en-home.png
 .lx-ctx{max-height:none!important;-webkit-mask-image:none!important;mask-image:none!important}
 .lx-cut{display:inline}.lx-ell,.lx-btn,.cl-filters{display:none}
 .cm-hit{cursor:default}
+#cl-wall .lx[hidden]{display:block}
+#cx-intro{display:none}
 </style></noscript>
 
 <h1>Claims</h1>
 
-<div class="cl-intro">
-<p>This is the research half of the site read through its sources. Each unit is one <strong>claim</strong>, kept in the words of the paper that makes it, and placed in the same five layers used on the Italian half. Nothing here is a second notation: the vocabulary changes because the corpus changes, the rules do not.</p>
+<p class="cl-lede">A scientific claim is not a headline: it withholds itself until you have the context, and no two readers arrive with the same context. So this is not a list to scroll &mdash; it is twelve concepts, and the claims come through them.</p>
+
+<div class="cx">
+  <aside class="cx-map">
+    <h2 class="cx-h">The concepts</h2>
+    <p class="cx-hint">Twelve propositions about the world, {{ G.arcs.length }} declared links between them. The bar is the weight of the claims underneath; the arc is a link. Pick one.</p>
+    <figure class="cm" id="cm">
+    <svg viewBox="0 0 {{ G.W }} {{ G.height }}" role="img" aria-labelledby="cm-t">
+      <title id="cm-t">Concept map: {{ claimLayers.CONCEPTS.length }} concepts connected by {{ G.arcs.length }} declared links</title>
+      {% for b in G.bands %}<text class="cm-band" x="0" y="{{ b.y }}">{{ b.en }}<title>{{ b.position }}</title></text>{% endfor %}
+      <g class="cm-arcs">{% for a in G.arcs %}<path d="{{ a.d }}" data-a="{{ a.from }}" data-b="{{ a.to }}"></path>{% endfor %}</g>
+      {% for n in G.nodes %}
+      <g class="cm-n" data-concept="{{ n.key }}" data-theme="{{ n.theme }}" data-note="{{ n.note }}" data-en="{{ n.en }}" data-links="{{ n.links | join(' ') }}" tabindex="0" role="button" aria-pressed="false">
+        <rect class="cm-hit" x="0" y="{{ n.y - 19 }}" width="{{ G.W }}" height="38"></rect>
+        <circle cx="{{ G.NX }}" cy="{{ n.y }}" r="{{ n.r }}"></circle>
+        <text class="cm-lab" x="78" y="{{ n.y - 1 }}">{{ n.en }}</text>
+        <rect class="cm-bar" x="78" y="{{ n.y + 6 }}" width="{{ n.bar }}" height="3"></rect>
+        <text class="cm-num" x="{{ G.W - 4 }}" y="{{ n.y - 1 }}" text-anchor="end">{{ n.n }}</text>
+      </g>
+      {% endfor %}
+    </svg>
+    <p class="cm-note" id="cm-note">Every concept carries a proposition and at least one link to another concept: without both it cannot exist, and the build fails.</p>
+    </figure>
+    <button class="cx-all" type="button" id="cx-all" aria-pressed="false">Show all {{ claims.length }} claims</button>
+  </aside>
+
+  <section class="cx-read" id="cx-read">
+    <div id="cx-intro">
+      <h2>Three positions</h2>
+      <p class="cx-hint">The concepts sit under three themes, and a theme is not a folder: it is a position this archive takes, derived from the topics underneath and never assigned by hand. Start from the one you recognise.</p>
+      {% for t in claimLayers.THEMES %}
+      <div class="th">
+        <h3>{{ t.en }}</h3>
+        <p>{{ t.position }}</p>
+        <p class="th-cs">{% for c in t.concepts %}<button class="cx-go" type="button" data-go="{{ c.key }}">{{ c.en }}<b>{{ c.n }}</b></button>{% endfor %}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div id="cx-head" hidden aria-live="polite">
+      <p class="cx-back"><button type="button" id="cx-reset">&larr; All concepts</button></p>
+      <h2 class="cx-name" id="cx-name"></h2>
+      <p class="cx-prop" id="cx-prop"></p>
+      <p class="cx-links" id="cx-links"></p>
+    </div>
+
+    <div id="cl-wall">
+    {% for l in claims | sort(true, false, 'weight') %}
+      {% set L = claimLayers.byClaim[l.id] %}
+      <article class="lx" id="{{ l.id }}" data-fn="{{ l.fn }}" data-theme="{{ L.theme }}" data-concepts="{{ L.concepts | join(' ') }}" hidden>
+        <p class="lx-gist">{{ l.gist }}</p>
+        <div class="lx-src">
+          <span class="lx-rub">{% if l.fonte %}In their own words{% else %}From the research log{% endif %}</span>
+          {% if l.before %}<p class="lx-ctx lx-before">{{ l.before }}</p>{% endif %}
+          <blockquote class="lx-claim"{% if l.fonte and l.fonte.doi %} cite="https://doi.org/{{ l.fonte.doi }}"{% endif %}>{% for part in l.parts %}{{ part }}{% if not loop.last %}<span class="lx-gap"><span class="lx-ell">[&hellip;]</span><span class="lx-cut">{{ l.cuts[loop.index0] }}</span></span>{% endif %}{% endfor %}</blockquote>
+          {% if l.after %}<p class="lx-ctx lx-after">{{ l.after }}</p>{% endif %}
+          <p class="lx-head"><cite class="lx-cite"{% if l.fonte %} title="{{ l.fonte.title }}"{% endif %}>{% if l.fonte and l.fonte.doi %}<a href="https://doi.org/{{ l.fonte.doi }}" rel="external">{{ l.cite }}</a>{% elif l.fonte %}{{ l.cite }}{% else %}<a href="{{ l.src }}">Lab note</a>{% endif %}</cite>{% if l.locus %}<span class="lx-locus">{{ l.locus }}</span>{% endif %}</p>
+        </div>
+        <p class="lx-layers">
+          <span class="k">topic</span> {{ L.topicEn }}
+          &nbsp;<span class="k">concept</span> {% for k in L.concepts %}<a href="#cm" data-go="{{ k }}">{{ claimLayers.conceptByKey[k].en }}</a>{% if not loop.last %}, {% endif %}{% endfor %}
+        </p>
+        <p class="lx-foot">
+          <span class="lx-fn" title="ENTIA function: {{ l.fn }}">{{ gloss[l.fn] }}</span>
+          <span class="lx-d1">{{ l.d1 }} {{ l.d1Label }}{% if l.d1Status == "proposed" %} <abbr title="Proposed, not yet confirmed by hand">?</abbr>{% endif %}</span>
+          <span class="lx-stance lx-stance-{{ l.stance }}">{{ l.stance }}</span>
+          <span class="lx-w">{{ l.weight }}</span>
+          <button class="lx-btn" type="button" data-act="ctx" aria-expanded="false" aria-controls="{{ l.id }}">Passage</button>
+          {% if l.cuts.length %}<button class="lx-btn" type="button" data-act="cuts" aria-expanded="false" aria-controls="{{ l.id }}">Cuts ({{ l.cuts.length }})</button>{% endif %}
+        </p>
+        {% if l.relates.length %}
+        <ul class="lx-rel">
+          {% for r in l.relates %}<li><em>{{ r.how }}</em> <a href="#{{ r.to }}">{{ r.to }}</a> &mdash; {{ r.why }}</li>{% endfor %}
+        </ul>
+        {% endif %}
+      </article>
+    {% endfor %}
+    </div>
+  </section>
 </div>
 
+<h2 id="how">How to read a unit</h2>
 <div class="cl-rules">
-<p><strong>Verbatim.</strong> The claim, and the passage around it, are the source's own words. Where the quotation skips something, the gap is marked and the omitted words can be put back: a cut you cannot inspect is an argument you have to take on trust.</p>
-<p><strong>Running text only.</strong> Never the abstract, never the keywords, never a blurb. An abstract is the author's own restatement of a conclusion with the argument removed; quoting it means quoting the summary instead of the thing.</p>
-<p><strong>One paper, one claim.</strong> A book can hold several, one per chapter actually used. A claim exists here because something on this site uses it.</p>
+<p><strong>The paraphrase is mine.</strong> It opens each unit, in sans, and says what the claim holds and why it is here. It is not the source speaking.</p>
+<p><strong>The quotation is theirs.</strong> Everything inside the ruled block is verbatim. Where it skips something the gap is marked, and the omitted words can be put back: a cut you cannot inspect is an argument you have to take on trust.</p>
 </div>
-
-<h2 id="layers">The five layers</h2>
-<ul class="cl-layers">
-  <li>
-    <span class="cl-ly-n">Free tag<b>not used here</b></span>
-    <span class="cl-ly-r"><i>binds nothing</i><i>asserts nothing</i><i>cannot generate a page</i></span>
-    <p class="cl-ly-d">Spontaneous semantics with no consequences. The valve stays open and empty on this side: because there is a place where an impulse costs nothing, the topics can stay few.</p>
-  </li>
-  <li class="on">
-    <span class="cl-ly-n">Topic<b>{{ claimLayers.TOPICS.length }}</b></span>
-    <span class="cl-ly-r"><i>binds membership</i><i>asserts a grouping</i><i>cannot carry a note</i></span>
-    <p class="cl-ly-d">Normalised semantics. It groups, it does not assert: a term that can carry a non-obvious note is not a topic. One claim sits in one topic.</p>
-  </li>
-  <li class="on">
-    <span class="cl-ly-n">Theme<b>{{ claimLayers.THEMES.length }}</b></span>
-    <span class="cl-ly-r"><i>derived from topics</i><i>asserts a position</i><i>cannot be assigned to a claim</i></span>
-    <p class="cl-ly-d">Connotation. The layer that asserts most and that no program can check: a connotation you could verify would be a denotation. Assigning it by hand would make it a topic with pretensions.</p>
-  </li>
-  <li class="on">
-    <span class="cl-ly-n">Concept<b>{{ claimLayers.CONCEPTS.length }}</b></span>
-    <span class="cl-ly-r"><i>binds a validator that fails the build</i><i>asserts a proposition about the world</i><i>cannot exist without a note and links</i></span>
-    <p class="cl-ly-d">Worked semantics. The only layer that is high both in what it asserts and in how far it lets itself be checked. It is the centre, and the rest of the structure exists to protect it &mdash; and it is the layer where the ideas connect to each other.</p>
-  </li>
-  <li class="on">
-    <span class="cl-ly-n">Geometry<b>the weight</b></span>
-    <span class="cl-ly-r"><i>binds a published formula</i><i>asserts nothing about the world</i><i>cannot be chosen</i></span>
-    <p class="cl-ly-d">The exchange rate: the one place where a peer-reviewed paper, a conference paper and a programme note become the same unit of measure. <strong>1</strong> peer-reviewed &middot; <strong>0.75</strong> proceedings or preprint &middot; <strong>0.5</strong> grey &middot; <strong>+0.25</strong> for every note that cites it &middot; <strong>&times;1.5</strong> if the claim is held as contested, because weighting what contradicts you more heavily is a declared epistemic choice.</p>
-  </li>
-</ul>
-
-<h2 id="map">The concept map</h2>
-<p>Twelve concepts, {{ G.arcs.length }} links between them. The circle is the concept, the bar is the weight of the claims under it, the arc is a link it declares. Pick one to read its proposition and to narrow the wall below.</p>
-
-<figure class="cm" id="cm">
-<svg viewBox="0 0 {{ G.W }} {{ G.height }}" role="img" aria-labelledby="cm-t">
-  <title id="cm-t">Concept map: {{ claimLayers.CONCEPTS.length }} concepts connected by {{ G.arcs.length }} declared links</title>
-  {% for b in G.bands %}<text class="cm-band" x="0" y="{{ b.y }}">{{ b.en }}<title>{{ b.position }}</title></text>{% endfor %}
-  <g class="cm-arcs">{% for a in G.arcs %}<path d="{{ a.d }}" data-a="{{ a.from }}" data-b="{{ a.to }}"/>{% endfor %}</g>
-  {% for n in G.nodes %}
-  <g class="cm-n" data-concept="{{ n.key }}" data-theme="{{ n.theme }}" data-note="{{ n.note }}" data-en="{{ n.en }}" tabindex="0" role="button" aria-pressed="false">
-    <rect class="cm-hit" x="0" y="{{ n.y - 19 }}" width="{{ G.W }}" height="38"></rect>
-    <circle cx="{{ G.NX }}" cy="{{ n.y }}" r="{{ n.r }}"></circle>
-    <text class="cm-lab" x="78" y="{{ n.y - 1 }}">{{ n.en }}</text>
-    <rect class="cm-bar" x="78" y="{{ n.y + 6 }}" width="{{ n.bar }}" height="3"></rect>
-    <text class="cm-num" x="{{ G.W - 4 }}" y="{{ n.y - 1 }}" text-anchor="end">{{ n.n }}</text>
-  </g>
-  {% endfor %}
-</svg>
-<p class="cm-note" id="cm-note" aria-live="polite">Every concept carries a proposition about the world and at least one link to another concept: without both it cannot exist, and the build fails.</p>
-</figure>
-
-<p class="cl-strip">{{ claims.length }} claims &middot; {{ claims.FONTI }} sources &middot; {{ claims.D1N.length }} of 11 D1 codes &middot; {{ claims.FN.length }} of 6 ENTIA functions</p>
-
-<ul class="cl-filters">
-  <li><button class="cl-chip" data-th="*" aria-pressed="true">All</button></li>
-  {% for t in claimLayers.THEMES %}
-  <li><button class="cl-chip" data-th="{{ t.key }}" aria-pressed="false" title="{{ t.position }}">{{ t.en }}</button></li>
-  {% endfor %}
-</ul>
-
-<div id="cl-wall">
-{% for l in claims | sort(true, false, 'weight') %}
-  {% set L = claimLayers.byClaim[l.id] %}
-  <article class="lx" id="{{ l.id }}" data-fn="{{ l.fn }}" data-theme="{{ L.theme }}" data-concepts="{{ L.concepts | join(' ') }}">
-    <p class="lx-head">
-      <cite class="lx-cite"{% if l.fonte %} title="{{ l.fonte.title }}"{% endif %}>{% if l.fonte and l.fonte.doi %}<a href="https://doi.org/{{ l.fonte.doi }}" rel="external">{{ l.cite }}</a>{% else %}{{ l.cite }}{% endif %}</cite>{% if l.locus %}<span class="lx-locus">{{ l.locus }}</span>{% endif %}
-    </p>
-    {% if l.before %}<p class="lx-ctx lx-before">{{ l.before }}</p>{% endif %}
-    <blockquote class="lx-claim"{% if l.fonte and l.fonte.doi %} cite="https://doi.org/{{ l.fonte.doi }}"{% endif %}>{% for part in l.parts %}{{ part }}{% if not loop.last %}<span class="lx-gap"><span class="lx-ell">[&hellip;]</span><span class="lx-cut">{{ l.cuts[loop.index0] }}</span></span>{% endif %}{% endfor %}</blockquote>
-    {% if l.after %}<p class="lx-ctx lx-after">{{ l.after }}</p>{% endif %}
-    <p class="lx-layers">
-      <span class="k">topic</span> {{ L.topicEn }}
-      &nbsp;<span class="k">concept</span> {% for k in L.concepts %}<a href="#map" data-go="{{ k }}">{{ claimLayers.conceptByKey[k].en }}</a>{% if not loop.last %}, {% endif %}{% endfor %}
-    </p>
-    <p class="lx-foot">
-      <span class="lx-fn" title="ENTIA function: {{ l.fn }}">{{ gloss[l.fn] }}</span>
-      <span class="lx-d1">{{ l.d1 }} {{ l.d1Label }}{% if l.d1Status == "proposed" %} <abbr title="Proposed, not yet confirmed by hand">?</abbr>{% endif %}</span>
-      <span class="lx-stance lx-stance-{{ l.stance }}">{{ l.stance }}</span>
-      <span class="lx-w">{{ l.weight }}</span>
-      <button class="lx-btn" type="button" data-act="ctx" aria-expanded="false" aria-controls="{{ l.id }}">Passage</button>
-      {% if l.cuts.length %}<button class="lx-btn" type="button" data-act="cuts" aria-expanded="false" aria-controls="{{ l.id }}">Cuts ({{ l.cuts.length }})</button>{% endif %}
-    </p>
-    {% if l.relates.length %}
-    <ul class="lx-rel">
-      {% for r in l.relates %}<li><em>{{ r.how }}</em> <a href="#{{ r.to }}">{{ r.to }}</a> &mdash; {{ r.why }}</li>{% endfor %}
-    </ul>
-    {% endif %}
-  </article>
-{% endfor %}
-<p class="cl-empty" id="cl-empty">Nothing under this filter yet.</p>
-</div>
+<p class="cl-more">The five layers, the rule for choosing a claim and the weight formula are in the <a href="/en/colophon/#entia">colophon</a>.</p>
 
 <div class="cl-todo">
-<p>Two of ENTIA's six functions have no claims on this side of the site: <em>market reading</em> and <em>scenario element</em>. They are not missing, they are not used here. The same notation distributes differently over the two halves, which is the argument for extending it rather than inventing a second one.</p>
-<p>A question mark on a D1 code means the code is proposed and has not been confirmed by hand. The concept map is a first draft: the links are declared by hand, not inferred from co-occurrence.</p>
+<p>{{ claims.length }} claims from {{ claims.FONTI }} sources, {{ claims.D1N.length }} of 11 D1 codes, {{ claims.FN.length }} of 6 ENTIA functions. Two functions have no claims on this side of the site: <em>market reading</em> and <em>scenario element</em>. They are not missing, they are not used here.</p>
+<p>A question mark on a D1 code means the code is proposed and has not been confirmed by hand. The concept map is a first draft: its links are declared, not inferred from co-occurrence.</p>
 </div>
 
 <script>
 (function () {
   var wall = document.getElementById('cl-wall');
   var mappa = document.getElementById('cm');
-  if (!wall) return;
+  if (!wall || !mappa) return;
   var unita = [].slice.call(wall.querySelectorAll('.lx'));
-  var vuoto = document.getElementById('cl-empty');
+  var nodi = [].slice.call(mappa.querySelectorAll('.cm-n'));
+  var archi = [].slice.call(mappa.querySelectorAll('.cm-arcs path'));
+  var intro = document.getElementById('cx-intro');
+  var capo = document.getElementById('cx-head');
+  var nome = document.getElementById('cx-name');
+  var prop = document.getElementById('cx-prop');
+  var legami = document.getElementById('cx-links');
   var nota = document.getElementById('cm-note');
-  var notaIniziale = nota ? nota.innerHTML : '';
-  var nodi = mappa ? [].slice.call(mappa.querySelectorAll('.cm-n')) : [];
-  var archi = mappa ? [].slice.call(mappa.querySelectorAll('.cm-arcs path')) : [];
-  var chips = [].slice.call(document.querySelectorAll('.cl-chip'));
+  var notaIniziale = nota.innerHTML;
+  var tutti = document.getElementById('cx-all');
+  var lettura = document.getElementById('cx-read');
+  var nodoDi = {};
+  nodi.forEach(function (g) { nodoDi[g.getAttribute('data-concept')] = g; });
 
   function mostra(test) {
-    var n = 0;
-    unita.forEach(function (a) {
-      var ok = test(a);
-      a.hidden = !ok;
-      if (ok) n++;
-    });
-    if (vuoto) vuoto.style.display = n ? 'none' : 'block';
+    unita.forEach(function (a) { a.hidden = !test(a); });
   }
-
-  function azzeraMappa() {
-    mappa && mappa.classList.remove('sel');
+  function spegni() {
+    mappa.classList.remove('sel');
     nodi.forEach(function (g) { g.classList.remove('on'); g.setAttribute('aria-pressed', 'false'); });
     archi.forEach(function (p) { p.classList.remove('on'); });
-    if (nota) nota.innerHTML = notaIniziale;
+    nota.innerHTML = notaIniziale;
+    tutti.setAttribute('aria-pressed', 'false');
+  }
+  function aCapo() {
+    spegni(); capo.hidden = true; intro.hidden = false; mostra(function () { return false; });
+  }
+  // Su schermo stretto la colonna di lettura sta sotto la mappa: senza questo
+  // si clicca e non si vede succedere niente.
+  function portaInVista() {
+    if (window.innerWidth < 1000) lettura.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
-  // Concetto: evidenzia il nodo, i suoi archi e i suoi vicini, e stringe il muro.
+  function apri(k) {
+    var g = nodoDi[k];
+    if (!g) return;
+    spegni();
+    mappa.classList.add('sel');
+    g.classList.add('on');
+    g.setAttribute('aria-pressed', 'true');
+    archi.forEach(function (p) {
+      var a = p.getAttribute('data-a'), b = p.getAttribute('data-b');
+      if (a === k || b === k) {
+        p.classList.add('on');
+        var altro = a === k ? b : a;
+        if (nodoDi[altro]) nodoDi[altro].classList.add('on');
+      }
+    });
+    nome.textContent = g.getAttribute('data-en');
+    prop.textContent = g.getAttribute('data-note');
+    var vicini = (g.getAttribute('data-links') || '').split(' ').filter(Boolean);
+    legami.innerHTML = '<span class="k">connects to</span>' + vicini.map(function (v) {
+      return '<button class="cx-go" type="button" data-go="' + v + '">' + (nodoDi[v] ? nodoDi[v].getAttribute('data-en') : v) + '</button>';
+    }).join('');
+    intro.hidden = true; capo.hidden = false;
+    mostra(function (a) { return (' ' + a.getAttribute('data-concepts') + ' ').indexOf(' ' + k + ' ') > -1; });
+    portaInVista();
+  }
+
   nodi.forEach(function (g) {
-    function scegli() {
-      var k = g.getAttribute('data-concept');
-      var gia = g.classList.contains('on') && mappa.classList.contains('sel');
-      azzeraMappa();
-      chips.forEach(function (c) { c.setAttribute('aria-pressed', c.getAttribute('data-th') === '*' ? 'true' : 'false'); });
-      if (gia) { mostra(function () { return true; }); return; }
-      mappa.classList.add('sel');
-      g.classList.add('on');
-      g.setAttribute('aria-pressed', 'true');
-      archi.forEach(function (p) {
-        if (p.getAttribute('data-a') === k || p.getAttribute('data-b') === k) {
-          p.classList.add('on');
-          var altro = p.getAttribute('data-a') === k ? p.getAttribute('data-b') : p.getAttribute('data-a');
-          nodi.forEach(function (x) { if (x.getAttribute('data-concept') === altro) x.classList.add('on'); });
-        }
-      });
-      if (nota) nota.innerHTML = '<b>' + g.getAttribute('data-en') + '.</b> ' + g.getAttribute('data-note');
-      mostra(function (a) { return (' ' + a.getAttribute('data-concepts') + ' ').indexOf(' ' + k + ' ') > -1; });
-    }
-    g.addEventListener('click', scegli);
+    var k = g.getAttribute('data-concept');
+    g.addEventListener('click', function () {
+      if (g.classList.contains('on') && mappa.classList.contains('sel')) aCapo(); else apri(k);
+    });
     g.addEventListener('keydown', function (e) {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); scegli(); }
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); apri(k); }
     });
   });
 
-  // Tema: il taglio largo. Spegne la selezione sulla mappa.
-  chips.forEach(function (c) {
-    c.addEventListener('click', function () {
-      chips.forEach(function (x) { x.setAttribute('aria-pressed', 'false'); });
-      c.setAttribute('aria-pressed', 'true');
-      azzeraMappa();
-      var t = c.getAttribute('data-th');
-      mostra(function (a) { return t === '*' || a.getAttribute('data-theme') === t; });
-    });
-  });
-
-  // Dal footer di una lessia alla mappa: stesso gesto, da sotto.
-  wall.addEventListener('click', function (e) {
+  document.addEventListener('click', function (e) {
     var g = e.target.closest ? e.target.closest('[data-go]') : null;
-    if (g) {
-      var k = g.getAttribute('data-go');
-      nodi.forEach(function (x) { if (x.getAttribute('data-concept') === k) x.dispatchEvent(new Event('click')); });
-      return;
-    }
+    if (g) { e.preventDefault(); apri(g.getAttribute('data-go')); }
+  });
+
+  document.getElementById('cx-reset').addEventListener('click', aCapo);
+
+  tutti.addEventListener('click', function () {
+    var acceso = tutti.getAttribute('aria-pressed') === 'true';
+    if (acceso) { aCapo(); return; }
+    spegni();
+    tutti.setAttribute('aria-pressed', 'true');
+    intro.hidden = true; capo.hidden = false;
+    nome.textContent = 'All claims';
+    prop.textContent = 'Every claim in the archive, heaviest first. The weight is the Geometry layer: it makes a peer-reviewed paper, a conference paper and a programme note comparable.';
+    legami.innerHTML = '';
+    mostra(function () { return true; });
+    portaInVista();
+  });
+
+  wall.addEventListener('click', function (e) {
     var b = e.target.closest ? e.target.closest('.lx-btn') : null;
     if (!b) return;
     var art = b.closest('.lx');
@@ -317,5 +348,14 @@ og_card: /images/og/og-en-home.png
       if (o) o.setAttribute('aria-expanded', 'true');
     }
   });
+
+  // Un link diretto a una lessia la apre con il suo concetto intorno.
+  if (location.hash) {
+    var a = document.getElementById(location.hash.slice(1));
+    if (a && a.classList.contains('lx')) {
+      var primo = (a.getAttribute('data-concepts') || '').split(' ')[0];
+      if (primo) { apri(primo); a.scrollIntoView(); }
+    }
+  }
 })();
 </script>

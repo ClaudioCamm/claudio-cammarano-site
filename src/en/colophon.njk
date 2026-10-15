@@ -39,6 +39,69 @@ lang: en
   <p>The map on the home page is generated at every publication from the concept index. A concept can carry a geography: one or more countries or regions, and the way it concerns them. Geographic fields are assigned and validated by the author when a piece is published; there is no automatic extraction.</p>
   <p>For each concept with a geography, the linked pieces are counted and multiplied by <code>1</code> if the concept is a place or a country, <code>0.5</code> if it has a direct geography but is not a place, <code>0.25</code> if the link to that country is only theoretical. Values are summed country by country. The European Union has a weight of its own that also colours its member states; a member with references of its own adds the two. Regions give full weight to each country they include. The five colour classes are quantiles of the legend values. The figure next to each country is therefore a weight, not a count of mentions. The Italian side uses the same data under a different projection (Lambert azimuthal equal-area, centred on Bergamo).</p>
 
+<style>
+/* i cinque strati ENTIA, elenco: una tabella non regge a 390px */
+.cl-layers{list-style:none;margin:2.4em 0;padding:0;max-width:38em}
+.cl-layers li{padding:.8em 0 .8em 1.2em;border-left:4px solid var(--color-border);margin-bottom:.2em}
+.cl-layers li.on{border-left-color:var(--color-primary)}
+.cl-ly-n{font-family:var(--font-serif);font-size:1.12rem}
+.cl-ly-n b{font-weight:400;color:var(--color-text-light);font-size:.8rem;margin-left:.5em}
+.cl-ly-r{display:block;font-size:.72em;letter-spacing:.05em;text-transform:uppercase;color:var(--color-text-light);margin:.35em 0 .3em}
+.cl-ly-r i{font-style:normal}
+.cl-ly-r i+i:before{content:" \00b7 "}
+.cl-ly-d{font-size:.92em;color:var(--color-text-light);margin:0}
+.cl-layers{margin:1.4em 0 2em}
+.en-conf{border-left:4px solid var(--color-primary);padding-left:1.2em;max-width:38em;margin:1.6em 0}
+.en-cit{font-size:.92em;color:var(--color-text-light);border-left:4px solid var(--color-border);padding-left:1.1em;max-width:38em}
+</style>
+
+  <h2 id="entia">ENTIA, and this side of the site</h2>
+  <p>Both halves of this site are annotated with the same protocol: <strong>ENTIA {{ entia.spec }}</strong>, Epistemic Notation for Texts In Archives. It is published as a versioned specification under {{ entia.licenza.nome }} and deposited: <a href="{{ entia.deposito.url }}">{{ entia.deposito.doi }}</a>. The normative text is <a href="/entia/" lang="it" hreflang="it">in Italian</a> <span class="en-lang-flag">(a full English specification ships with ENTIA 1.1)</span>, and the machine-readable vocabulary is at <a href="/entia.json">entia.json</a>.</p>
+  <p class="en-cit">{{ entia.deposito.citazione }} <a href="{{ entia.deposito.url }}">{{ entia.deposito.url }}</a></p>
+
+  <p>The licence asks one thing: cite the source. Declaring that you <em>use ENTIA</em> is a different matter and carries conditions, as it does for the evidence-grading methods used in medicine, where the handbook is free but the right to write "we followed the method" is tied to explicit requirements. The distinction is for the reader: without it the label says nothing.</p>
+
+  <div class="en-conf">
+  <p><strong>What is fixed.</strong> The five layers and their order; the six functions understood as positions in a precedence, not as a menu; the obligation to expose the residue, meaning the cases where the rule and the judgement disagreed.</p>
+  <p><strong>What is local.</strong> The themes, the topics, the concepts, the names of the functions, the coefficients of the weight. The weight enters the package <em>in its form, not in its numbers</em>: a weighting function has to exist, be published and be versioned, otherwise two archives are not comparable and the numbers can be tuned after the fact without anyone seeing.</p>
+  </div>
+
+  <p><a href="/en/claims/">The claims page</a> is the second application of the protocol, and it is the test of that distinction: the structure is untouched, the vocabulary is entirely new.</p>
+
+  <ul class="cl-layers">
+    <li>
+      <span class="cl-ly-n">Free tag<b>not used on the research side</b></span>
+      <span class="cl-ly-r"><i>binds nothing</i><i>asserts nothing</i><i>cannot generate a page</i></span>
+      <p class="cl-ly-d">Spontaneous semantics with no consequences. Because there is a place where an impulse costs nothing, the topics can stay few.</p>
+    </li>
+    <li class="on">
+      <span class="cl-ly-n">Topic<b>{{ claimLayers.TOPICS.length }} here, 59 in Italian</b></span>
+      <span class="cl-ly-r"><i>binds membership</i><i>asserts a grouping</i><i>cannot carry a note</i></span>
+      <p class="cl-ly-d">Normalised semantics. It groups, it does not assert: a term that can carry a non-obvious note is not a topic. One claim sits in one topic.</p>
+    </li>
+    <li class="on">
+      <span class="cl-ly-n">Theme<b>{{ claimLayers.THEMES.length }} here, 5 in Italian</b></span>
+      <span class="cl-ly-r"><i>derived from topics</i><i>asserts a position</i><i>cannot be assigned to a piece</i></span>
+      <p class="cl-ly-d">Connotation. The layer that asserts most and that no program can check: a connotation you could verify would be a denotation. On the research side a concept inherits the theme that weighs most among its claims, and ties are broken by the declared order of the themes &mdash; the same kind of published precedence the functions use.</p>
+    </li>
+    <li class="on">
+      <span class="cl-ly-n">Concept<b>{{ claimLayers.CONCEPTS.length }} here, 364 in Italian</b></span>
+      <span class="cl-ly-r"><i>binds a validator that fails the build</i><i>asserts a proposition about the world</i><i>cannot exist without a note and links</i></span>
+      <p class="cl-ly-d">Worked semantics. The only layer that is high both in what it asserts and in how far it lets itself be checked. It is the centre, the rest of the structure exists to protect it, and on the research side it is also the way in: the claims are reached through the concepts.</p>
+    </li>
+    <li class="on">
+      <span class="cl-ly-n">Geometry<b>the weight</b></span>
+      <span class="cl-ly-r"><i>binds a published formula</i><i>asserts nothing about the world</i><i>cannot be chosen</i></span>
+      <p class="cl-ly-d">The exchange rate. On the research side: <strong>1</strong> peer-reviewed &middot; <strong>0.75</strong> proceedings or preprint &middot; <strong>0.5</strong> grey &middot; <strong>+0.25</strong> for every note that cites it &middot; <strong>&times;1.5</strong> if the claim is held as contested, because weighting what contradicts you more heavily is a declared epistemic choice. The Italian side uses 1.5 / 1 / +0.25 on a different unit. Same form, different numbers, both published.</p>
+    </li>
+  </ul>
+
+  <h3>Choosing a claim</h3>
+  <p><strong>Running text only</strong>, never the abstract and never the keywords: an abstract is the author's own restatement of a conclusion with the argument removed, so quoting it means quoting the summary instead of the thing. <strong>One paper, one claim</strong>; a book can hold several, one per chapter actually used. A claim exists there because something on this site uses it. The build fails if a claim has no paraphrase, if its locus is an abstract, or if the number of marked gaps does not match the number of declared cuts.</p>
+
+  <h3>The residue</h3>
+  <p>Two of the six functions have no claims on the research side: <em>market reading</em> and <em>scenario element</em>. They are not missing, they are not used there, and the same notation distributing differently over the two halves is the result, not a defect. D1 codes still waiting to be confirmed by hand are marked with a question mark where they appear.</p>
+
   <h2>Data</h2>
   <p>The concepts assigned to each piece form a dataset published as JSON-LD at <a href="/concetti.json">concetti.json</a>, with terms documented at <a href="/ns/">/ns/</a>, under CC BY 4.0 and deposited on Zenodo: <a href="{{ dataset.doi }}">{{ dataset.doi }}</a>.</p>
 

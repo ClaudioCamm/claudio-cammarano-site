@@ -21,9 +21,10 @@
 const lessie = require("./claims.js");
 
 const TOPICS = [
-  { key: "claim-types",  en: "Claim types",  claims: ["ontology-precedes-epistemology", "truth-conditions-do-not-transfer", "d1-is-load-bearing"] },
+  { key: "claim-types",  en: "Claim types",  claims: ["ontology-precedes-epistemology", "truth-conditions-do-not-transfer", "d1-is-load-bearing", "convergence-is-not-a-link", "arguments-answer-to-arguments"] },
+  { key: "introspection", en: "Introspection", claims: ["no-metacognition-was-the-wrong-name", "models-lack-epistemic-self-classification", "introspection-is-a-narrow-channel"] },
   { key: "meaning",      en: "Meaning",      claims: ["form-alone-cannot-yield-meaning", "correlation-versus-mechanism", "lms-infer-agent-mental-states"] },
-  { key: "annotation",   en: "Annotation",   claims: ["more-annotators-beats-bias-correction", "mode-a-needs-a-blind-recode", "surface-variance-masks-convergence"] },
+  { key: "annotation",   en: "Annotation",   claims: ["more-annotators-beats-bias-correction", "mode-a-needs-a-blind-recode", "surface-variance-masks-convergence", "reproducibility-is-documentation"] },
   { key: "evaluation",   en: "Evaluation",   claims: ["explicit-about-what-is-not-evaluated", "breakthroughs-are-metric-artefacts", "llm-judges-match-human-agreement"] },
   { key: "truthfulness", en: "Truthfulness", claims: ["inverse-scaling-of-truthfulness", "hallucination-the-standard-definition"] },
   { key: "architecture", en: "Architecture", claims: ["transformer-dispenses-with-recurrence", "plural-paths-one-answer", "cai-partially-replaces-human-feedback"] }
@@ -33,7 +34,7 @@ const TOPICS = [
 const THEMES = [
   { key: "not-said-to-do", en: "What a machine cannot be said to do",
     position: "The limit is argued from how these systems are trained, not from what they fail at today.",
-    topics: ["meaning", "claim-types"] },
+    topics: ["meaning", "claim-types", "introspection"] },
   { key: "how-a-verdict",  en: "How a verdict is made",
     position: "A judgement counts only with the procedure that produced it attached.",
     topics: ["annotation", "evaluation"] },
@@ -52,14 +53,18 @@ const CONCEPTS = [
     note: "A model can carry partial representations of the intentions behind the text it was trained on without being an agent itself.",
     links: ["form-meaning-gap"],
     claims: ["lms-infer-agent-mental-states", "correlation-versus-mechanism"] },
+  { key: "epistemic-self-classification", en: "Epistemic self-classification",
+    note: "A system can report on contents of its own processing and still not represent what kind of claim it is about to make: the typing has to come from outside.",
+    links: ["agent-model", "claim-type"],
+    claims: ["no-metacognition-was-the-wrong-name", "models-lack-epistemic-self-classification", "introspection-is-a-narrow-channel"] },
   { key: "claim-type", en: "Claim type",
     note: "What kind of claim something is decides how it can be checked at all: the ontology comes before the epistemology.",
     links: ["verdict", "measurement-artefact"],
-    claims: ["ontology-precedes-epistemology", "truth-conditions-do-not-transfer", "d1-is-load-bearing"] },
+    claims: ["ontology-precedes-epistemology", "truth-conditions-do-not-transfer", "d1-is-load-bearing", "arguments-answer-to-arguments", "convergence-is-not-a-link"] },
   { key: "verdict", en: "Verdict",
     note: "A judgement on an output is worth no more than the procedure that produced it, and the procedure has to be inspectable.",
     links: ["coder-agreement", "machine-judge", "claim-type", "declared-incompleteness"],
-    claims: ["mode-a-needs-a-blind-recode", "llm-judges-match-human-agreement"] },
+    claims: ["mode-a-needs-a-blind-recode", "llm-judges-match-human-agreement", "reproducibility-is-documentation"] },
   { key: "coder-agreement", en: "Coder agreement",
     note: "Agreement between coders measures a procedure, not a truth, and it improves more by adding coders than by correcting for their bias.",
     links: ["verdict", "convergent-paths"],
@@ -71,11 +76,11 @@ const CONCEPTS = [
   { key: "measurement-artefact", en: "Measurement artefact",
     note: "A discontinuity in a curve can belong to the metric rather than to the thing measured: a finer metric dissolves it.",
     links: ["declared-incompleteness", "claim-type", "convergent-paths"],
-    claims: ["breakthroughs-are-metric-artefacts", "surface-variance-masks-convergence"] },
+    claims: ["breakthroughs-are-metric-artefacts", "surface-variance-masks-convergence", "convergence-is-not-a-link"] },
   { key: "declared-incompleteness", en: "Declared incompleteness",
     note: "An evaluation is honest when it states the distance between what it aspires to measure and what it actually measures.",
     links: ["measurement-artefact", "verdict"],
-    claims: ["explicit-about-what-is-not-evaluated"] },
+    claims: ["explicit-about-what-is-not-evaluated", "reproducibility-is-documentation"] },
   { key: "inverse-scaling", en: "Inverse scaling",
     note: "More parameters do not buy more of everything: on some properties the larger model is the worse one.",
     links: ["imitative-falsehood", "measurement-artefact"],
@@ -178,6 +183,11 @@ const nodes = righe.map((c, i) => ({
 }));
 const wMax = Math.max.apply(null, nodes.map(n => n.w));
 nodes.forEach(n => { n.bar = Math.round((n.w / wMax) * 150); });
+
+// I concetti di ogni tema, per l'elenco testuale accanto alla mappa.
+THEMES.forEach(t => {
+  t.concepts = righe.filter(c => c.theme === t.key).map(c => ({ key: c.key, en: c.en, n: c.n }));
+});
 
 const posizione = {};
 nodes.forEach((n, i) => { posizione[n.key] = i; });

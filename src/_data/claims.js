@@ -60,8 +60,9 @@ const STANCE = ["assumed", "used", "contested", "superseded"];
 const lessie = [
   {
     id: "ontology-precedes-epistemology",
+    gist: "Before asking whether a statement is true, you have to settle what kind of statement it is: the test that fits a measurement does not fit a value judgement. The whole framework rests on taking that step first, and in the open.",
     src: "/lab/2026-02-03-the-seven-dimensional-taxonomy-v2/",
-    locus: "§ The governing principle",
+    locus: "\u00b64",
     before: "The governing principle, which became the paper's title, is this: ontology precedes epistemology.",
     claim: "You cannot determine whether a claim is true without first establishing what type of claim you are dealing with.",
     cuts: [],
@@ -77,8 +78,9 @@ const lessie = [
   },
   {
     id: "truth-conditions-do-not-transfer",
+    gist: "Two claims of different kinds share no standard of truth, so a procedure that works on one returns a meaningless verdict on the other. The failure is not getting the answer wrong; it is applying the wrong test and not noticing.",
     src: "/lab/2026-02-03-the-seven-dimensional-taxonomy-v2/",
-    locus: "§ The governing principle",
+    locus: "\u00b64",
     before: "You cannot determine whether a claim is true without first establishing what type of claim you are dealing with.",
     claim: "A statistical claim and a normative claim share nothing in their truth conditions — treating them as interchangeable is the error the framework is designed to prevent.",
     cuts: [],
@@ -92,8 +94,9 @@ const lessie = [
   },
   {
     id: "d1-is-load-bearing",
+    gist: "One dimension of the taxonomy decides what a claim is; the other six describe how it behaves once that is settled. Keeping a single axis load-bearing is what stops the scheme from flattening into a list of labels.",
     src: "/lab/2026-02-03-the-seven-dimensional-taxonomy-v2/",
-    locus: "§ Dimension D1",
+    locus: "\u00b63",
     before: "Dimension D1 — Content Type is the load-bearing axis. It currently includes eleven active categories (D1.1 through D1.10, plus D1.14), covering the full range from historical-factual and empirical-quantitative claims to ethical-normative and metaphysical-ontological ones.",
     claim: "The remaining dimensions […] operate as modifiers that describe how a given claim type behaves epistemically.",
     cuts: ["— D2 (temporality), D3 (epistemic certainty), D4 (causal structure), D5 (framework-dependency), D6 (verifiability mode), D7 (falsifiability) —"],
@@ -109,8 +112,9 @@ const lessie = [
   },
   {
     id: "surface-variance-masks-convergence",
+    gist: "Thirty differently worded answers to the same prompt are not thirty disagreements: they can be one conclusion reached thirty ways. Measuring the wording instead of the conclusion makes a model look far less stable than it is.",
     src: "/lab/2026-02-28-vertical-validation-180-api-runs/",
-    locus: "§ The gap",
+    locus: "\u00b611",
     before: "The gap is the finding.",
     claim: "Surface-level variance […] masks high semantic convergence.",
     cuts: ["— which looks like inconsistency —"],
@@ -126,8 +130,9 @@ const lessie = [
   },
   {
     id: "mode-a-needs-a-blind-recode",
+    gist: "A machine-produced verdict counts here only after a person has recoded a sample by hand, without seeing what the machine decided, and the two agree above ninety per cent. The threshold is what turns an output into evidence.",
     src: "/lab/2026-07-21-what-counts-as-a-verdict/",
-    locus: "§ Start with the trigger",
+    locus: "\u00b62",
     before: "This is Mode A of Coding Manual v2.1, and Mode A carries a mandatory check.",
     claim: "A human recodes a sample by hand, blind to the machine, and the two must agree above 90%.",
     cuts: [],
@@ -144,6 +149,7 @@ const lessie = [
   // regola: mai dall'abstract. Solo testo corrente.
   {
     id: "form-alone-cannot-yield-meaning",
+    gist: "A system trained only on the shape of language has nothing in its input that could tell it what the language is about. The argument is about what the training signal contains, not about how well the system performs today.",
     src: "bender2020climbing",
     locus: "\u00a71 Introduction",
     before: "From our perspective, these are overclaims caused by a misunderstanding of the relationship between linguistic form and meaning.",
@@ -159,6 +165,7 @@ const lessie = [
   },
   {
     id: "correlation-versus-mechanism",
+    gist: "The dispute over machine understanding is not one question but two pictures of what understanding is: tracking statistical regularities, or holding a causal model of how things work. Naming the split explains why the two camps talk past each other.",
     src: "mitchell2023debate",
     locus: "p. 1",
     before: "This debate is not just academic; the extent and manner in which machines understand our world has real stakes for how much we can trust them to drive cars, diagnose diseases, care for the elderly, educate children, and more generally act robustly and transparently in tasks that impact humans.",
@@ -176,6 +183,7 @@ const lessie = [
   },
   {
     id: "more-annotators-beats-bias-correction",
+    gist: "When measuring whether two people label things the same way, correcting for each coder's personal bias matters less than how many coders there are. For a coding protocol, that moves the effort from the statistics to the recruitment.",
     src: "artstein2008",
     locus: "\u00a75.2 Choosing a Coefficient",
     before: "Regarding the question of annotator bias, there is an overwhelming consensus in CL practice: K and \u03b1 are used in the vast majority of the studies we reported.",
@@ -193,6 +201,7 @@ const lessie = [
   },
   {
     id: "inverse-scaling-of-truthfulness",
+    gist: "On questions written to echo common misconceptions, the larger models answered falsely more often than the smaller ones, reversing the usual pattern. Scale is not a general-purpose fix, and on some properties it is the problem.",
     src: "lin2022",
     locus: "\u00a71 Introduction",
     before: "",
@@ -208,6 +217,7 @@ const lessie = [
   },
   {
     id: "lms-infer-agent-mental-states",
+    gist: "Predicting the next word can require the model to build a partial picture of what the writer believed and wanted. The claim is about representations inside the system, not about the system being someone.",
     src: "andreas2022language",
     locus: "\u00a71 Introduction, (C1)",
     before: "In particular, I claim:",
@@ -225,6 +235,7 @@ const lessie = [
   },
   {
     id: "cai-partially-replaces-human-feedback",
+    gist: "Harmlessness was trained by having the model criticise and revise its own answers against a written list of principles, instead of having people label every harmful output. Human judgement moves out of the labels and into the rules.",
     src: "bai2022constitutional",
     locus: "\u00a71 Introduction",
     before: "We also aim to develop methods that encode desirable AI behavior in a simple and transparent form, and that make it easier to understand and evaluate AI decision making.",
@@ -240,6 +251,7 @@ const lessie = [
   },
   {
     id: "hallucination-the-standard-definition",
+    gist: "Across the field, hallucination means generated content that is nonsensical or unfaithful to the source it was given: a definition about fidelity to the input, not about truth in the world. It is the broadest one in use and the one that travels best between tasks.",
     src: "ji2022",
     locus: "\u00a72",
     before: "Similar to psychological hallucination, which is hard to tell apart from other \u201creal\u201d perceptions, hallucinated text is also hard to capture at first glance.",
@@ -255,6 +267,7 @@ const lessie = [
   },
   {
     id: "explicit-about-what-is-not-evaluated",
+    gist: "An evaluation should publish the distance between what it set out to measure and what it actually measured. Stating what was left out counts as part of the result, not as an apology for it.",
     src: "liang2022holistic",
     locus: "\u00a72, Recognition of incompleteness",
     before: "Different benchmarks make different decisions on what to prioritize, how to make these decisions, and to what extent these processes are made clear in presenting the benchmark.",
@@ -270,6 +283,7 @@ const lessie = [
   },
   {
     id: "breakthroughs-are-metric-artefacts",
+    gist: "Abilities that look as though they switch on all at once with scale often improve smoothly underneath: the jump belongs to an all-or-nothing metric. Change the metric and the cliff turns back into a slope.",
     src: "srivastava2023beyond",
     locus: "\u00a73.4.2",
     before: "",
@@ -285,6 +299,7 @@ const lessie = [
   },
   {
     id: "transformer-dispenses-with-recurrence",
+    gist: "The architecture behind current language models dropped step-by-step processing of a sequence in favour of computing every relation between positions at once. It is the engineering fact the rest of the debate stands on.",
     src: "vaswani2017attention",
     locus: "\u00a72 Background",
     before: "End-to-end memory networks are based on a recurrent attention mechanism instead of sequence-aligned recurrence and have been shown to perform well on simple-language question answering and language modeling tasks [34].",
@@ -300,6 +315,7 @@ const lessie = [
   },
   {
     id: "plural-paths-one-answer",
+    gist: "When several different chains of reasoning arrive at the same answer, that agreement is itself evidence for the answer. The method samples many derivations and keeps the one they converge on.",
     src: "wang2022",
     locus: "\u00a71 Introduction",
     before: "It has been observed that chain-of-thought prompting significantly improves model performance across a variety of multi-step reasoning tasks (Wei et al., 2022).",
@@ -315,6 +331,7 @@ const lessie = [
   },
   {
     id: "llm-judges-match-human-agreement",
+    gist: "Asked to rank answers, a strong model agreed with human raters about as often as human raters agreed with each other, above eighty per cent. What was measured is a rate of agreement, which is not the same thing as competence to judge.",
     src: "zheng2023",
     locus: "\u00a71 Introduction",
     before: "We show that some of the biases are minor or can be mitigated.",
@@ -329,6 +346,117 @@ const lessie = [
       { to: "mode-a-needs-a-blind-recode", how: "contests", why: "If an automatic judge reaches human-human agreement, blind human recoding is no longer the only standard." }
     ],
     usedIn: ["/lab/2026-07-21-what-counts-as-a-verdict/"]
+  },
+
+  // ------------------------------------- dal diario di ricerca (15/10)
+  // I locus sono numeri di capoverso: le note non hanno titoletti, e un
+  // locus che nomina una sezione inesistente non e' controllabile.
+  {
+    id: "no-metacognition-was-the-wrong-name",
+    gist: "The programme used to assert flatly that the producing system performs no metacognition over its own outputs. A 2026 result on models reporting concepts implanted in their own activations withdrew that premise, and this is the withdrawal, kept in the archive rather than quietly edited out.",
+    src: "/lab/2026-07-28-what-counts-as-introspection/",
+    locus: "\u00b66",
+    before: "",
+    claim: "A model that reports a concept implanted in its own activations is doing something, and \u201cno metacognition\u201d is not an accurate name for it.",
+    cuts: [],
+    after: "So the flat version is gone. I am not interested in defending it.",
+    fn: "dato-che-corregge",
+    d1: "D1.14",
+    d1Status: "proposed",
+    stance: "assumed",
+    relates: [],
+    usedIn: []
+  },
+  {
+    id: "models-lack-epistemic-self-classification",
+    gist: "The premise the whole framework rests on, in its narrow form: a model may represent that a passage is in Spanish, or that it is being evaluated, without representing that the assertion it is about to make is causal rather than correlational. The typing of the claim is the one content the self-report does not carry.",
+    src: "/lab/2026-07-28-what-counts-as-introspection/",
+    locus: "\u00b68",
+    before: "The reportable representations carry contents. They do not carry a typing of the assertion those contents are about to become.",
+    claim: "So \u00a73.3 now reads: language models lack epistemic self-classification. It is a smaller claim, and it is better positioned than the one it replaces.",
+    cuts: [],
+    after: "The old premise was a claim about a capability, and capability claims are hostage to the next experiment. The new one is a claim about a representational content, which is what the framework was always about.",
+    fn: "strumento-concettuale",
+    d1: "D1.14",
+    d1Status: "proposed",
+    stance: "assumed",
+    relates: [
+      { to: "no-metacognition-was-the-wrong-name", how: "refines", why: "It is the narrower premise that replaced the flat one, and the only part of it the argument needs." },
+      { to: "lms-infer-agent-mental-states", how: "refines", why: "A model may represent what the writer wanted without representing what kind of claim it is about to make." }
+    ],
+    usedIn: []
+  },
+  {
+    id: "introspection-is-a-narrow-channel",
+    gist: "What a model reports about its own workings is not a log of them. The reportable part of a representation carries a small share of its variance, and the same information can drive the task while bypassing that part entirely, which is why a protocol cannot ask the model to certify its own output.",
+    src: "/lab/2026-07-28-what-counts-as-introspection/",
+    locus: "\u00b610",
+    before: "Alongside this, the reportable component of a concept\u2019s representation turns out to carry a median of six to seven per cent of that representation\u2019s variance, with the rest sitting outside it.",
+    claim: "What a model can say about its own processing is a narrow and selective channel onto that processing, not a transcript of it.",
+    cuts: [],
+    after: "Lindsey\u2019s own numbers point the same way from a different angle: introspective detection succeeds on a minority of trials even in the strongest models he tested, and models asked to describe the mechanics behind their own calculations often describe them wrongly.",
+    fn: "dato-che-corregge",
+    d1: "D1.2",
+    d1Status: "proposed",
+    stance: "assumed",
+    relates: [
+      { to: "models-lack-epistemic-self-classification", how: "confirms", why: "A channel this narrow is not one a protocol can route the typing of a claim through." }
+    ],
+    usedIn: []
+  },
+  {
+    id: "convergence-is-not-a-link",
+    gist: "Two independent findings pointing the same way is not evidence that they are connected. The rule is applied here against the programme's own interest, on a convergence it would have been convenient to claim.",
+    src: "/lab/2026-07-28-what-counts-as-introspection/",
+    locus: "\u00b611",
+    before: "It is a satisfying convergence and it is not a demonstration. I measured 180 outputs. They measured representations, in a different setting, for a different purpose.",
+    claim: "A convergence between two lines of evidence is not the same as a link between them, and writing it up as though it were would be the category collapse this project exists to catch.",
+    cuts: [],
+    after: "",
+    fn: "metodo-di-lavoro",
+    d1: "D1.10",
+    d1Status: "proposed",
+    stance: "used",
+    relates: [
+      { to: "surface-variance-masks-convergence", how: "refines", why: "It is the measured gap itself that must not be joined to a representation-level finding without an experiment." }
+    ],
+    usedIn: []
+  },
+  {
+    id: "reproducibility-is-documentation",
+    gist: "A number nobody else can recompute from the deposited materials is testimony, not evidence. A framework whose instrument is an epistemic responsibility check cannot exempt itself from that check, which is the reason the materials are deposited at all.",
+    src: "/lab/2026-07-10-coding-manual-v2-1-retrospective-qc/",
+    locus: "\u00b62",
+    before: "A framework whose central instrument is an Epistemic Responsibility Check cannot exempt itself from the responsibility it checks.",
+    claim: "Reproducibility is a property of documentation, not of results: if a third party cannot recompute AR-sem = 78.33% from the deposited materials, the number is testimony, not evidence.",
+    cuts: [],
+    after: "Hence this release.",
+    fn: "metodo-di-lavoro",
+    d1: "D1.10",
+    d1Status: "proposed",
+    stance: "used",
+    relates: [
+      { to: "mode-a-needs-a-blind-recode", how: "refines", why: "The blind recode counts only if a third party can repeat it from what was deposited." }
+    ],
+    usedIn: []
+  },
+  {
+    id: "arguments-answer-to-arguments",
+    gist: "A measurement, an experiment and an argument are accountable to different things, so they cannot be asked to share one document and one standard of proof. This is the taxonomy's own principle turned on the programme's publication plan, and it is what split the working paper in two.",
+    src: "/lab/2026-09-03-what-counts-as-one-paper/",
+    locus: "\u00b610",
+    before: "The third \u2014 that a model can report on its own internal states and still not classify the epistemic type of its own assertions, which is why the check has to come from outside \u2014 is an argument.",
+    claim: "Measurements and experiments are answerable to data and to a coding protocol. Arguments are answerable to other arguments.",
+    cuts: [],
+    after: "I had been asking one document to be accountable to both, and the seams were showing long before the second model made them visible.",
+    fn: "strumento-concettuale",
+    d1: "D1.3",
+    d1Status: "proposed",
+    stance: "used",
+    relates: [
+      { to: "ontology-precedes-epistemology", how: "extends", why: "The same principle applied one level up: not to the claim under test, but to the document that carries it." }
+    ],
+    usedIn: []
   }
 ];
 

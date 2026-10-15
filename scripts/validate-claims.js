@@ -11,6 +11,7 @@
  * editoriale, e se qualcuno ne aggiunge una di nascosto qui, il build lo dice.
  */
 const path = require("path");
+const fs = require("fs");
 const claims = require(path.join(__dirname, "..", "src/_data/claims.js"));
 const biblio = require(path.join(__dirname, "..", "src/_data/biblio.js"));
 const criteri = require(path.join(__dirname, "..", "src/_data/criteri.json"));
@@ -58,6 +59,32 @@ claims.forEach((l, i) => {
   // La lessia deve stare nel testo corrente, dove l'affermazione e' argomentata.
   if (/^\s*(abstract|summary|sommario|keywords|parole chiave|blurb|back cover|quarta)/i.test(String(l.locus || "")))
     err(`locus nell'apparato ("${l.locus}"): serve testo corrente`);
+
+  // La parafrasi non e' un lusso: senza, la pagina chiede al lettore di
+  // essere gia' dentro a quella letteratura. E non puo' essere la citazione
+  // con altre parole intorno, altrimenti non parafrasa niente.
+  const g = String(l.gist || "").trim();
+  if (!g) err("manca la parafrasi (gist)");
+  else if (g.length < 80) err(`parafrasi troppo corta (${g.length} caratteri): deve dire anche perche' conta`);
+  else if (String(l.claim).indexOf(g) > -1) err("la parafrasi e' un pezzo della citazione, non una parafrasi");
+
+  // Una lessia che viene dal diario di ricerca deve stare dove dice di stare.
+  // Se una nota viene riscritta, il capoverso si sposta e la build lo dice:
+  // e' lo stesso controllo che la pagina pretende dalle fonti altrui.
+  if (String(l.src || "").startsWith("/lab/")) {
+    const nota = path.join(__dirname, "..", "src/lab",
+      l.src.replace(/^\/lab\//, "").replace(/\/$/, "") + ".md");
+    if (!fs.existsSync(nota)) err(`la nota ${l.src} non esiste`);
+    else {
+      const par = fs.readFileSync(nota, "utf8").split(/\n---\n/).slice(1).join("\n---\n")
+        .trim().split(/\n\s*\n/);
+      const n = parseInt(String(l.locus).replace(/[^0-9]/g, ""), 10);
+      const ago = l.claim.split("[")[0].replace(/\s+/g, " ").trim().slice(0, 45);
+      const dentro = par[n - 1] &&
+        par[n - 1].replace(/\*\*/g, "").replace(/\s+/g, " ").indexOf(ago) > -1;
+      if (!dentro) err(`locus ${l.locus}: la citazione non e\' li\'. Lancia "node scripts/locus-lab.js"`);
+    }
+  }
 
   (l.relates || []).forEach((r, k) => {
     if (!ids.has(r.to)) err(`relates[${k}] punta a "${r.to}", che non esiste`);
