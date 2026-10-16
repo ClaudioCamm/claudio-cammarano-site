@@ -1366,7 +1366,8 @@ module.exports = [
       { title: "Librarians on Libraries", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" },
       { title: "Publishers Hit the AI Jackpot", url: "/curated/2026-10-01-alpern-risarcimento-distribuito-come-vendita-vulture/", _source: "curated" },
       { title: "Quartz website mainly produced by one AI-assisted reporter writing 50+ stories per day", url: "/curated/2026-10-09-waugh-quartz-un-reporter-ai-pressgazette/", _source: "curated" },
-      { title: "Putin’s war on schools: ‘millions of books burnt before my eyes’", url: "/curated/2026-10-10-hauschild-johanson-libri-scuola-ucraina-sundaytimes/", _source: "curated" }
+      { title: "Putin’s war on schools: ‘millions of books burnt before my eyes’", url: "/curated/2026-10-10-hauschild-johanson-libri-scuola-ucraina-sundaytimes/", _source: "curated" },
+      { title: "Can the News Exist Without Big Tech? The Atlas Says Yes", url: "/curated/2026-10-08-bell-chaplin-the-atlas-cjr/", _source: "curated" }
     ]
   },
   {
@@ -2055,7 +2056,8 @@ module.exports = [
       { title: "Internet Fragmentation's Outward Turn", url: "/curated/2025-06-01-fidler-splinternet-outward-turn-sciencespo/", _source: "curated" },
       { title: "The Great Russian Firewall: the Kremlin's ultimate crackdown on internet freedom", url: "/curated/2025-12-19-osw-great-russian-firewall/", _source: "curated" },
       { title: "Internet Governance in 2026: Sovereignty, Security, and the Limits of Multistakeholderism", url: "/curated/2026-01-04-kulesza-internet-governance-2026-circleid/", _source: "curated" },
-      { title: "Kids outlearn AI—and we still don't know why", url: "/curated/2026-08-24-cutts-divario-efficienza-dati-mit-techreview/", _source: "curated" }
+      { title: "Kids outlearn AI—and we still don't know why", url: "/curated/2026-08-24-cutts-divario-efficienza-dati-mit-techreview/", _source: "curated" },
+      { title: "Can the News Exist Without Big Tech? The Atlas Says Yes", url: "/curated/2026-10-08-bell-chaplin-the-atlas-cjr/", _source: "curated" }
     ]
   },
   {
