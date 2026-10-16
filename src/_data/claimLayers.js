@@ -207,7 +207,7 @@ THEMES.forEach(t => {
     // scienza fa da titolo da sempre, cioe' autore e anno.
     chips: c.claims.map(id => ({
       id, cite: perId[id].cite, shape: perId[id].shape,
-      voice: perId[id].voice, hollow: perId[id].hollow
+      voice: perId[id].voice, contested: perId[id].contested
     })).sort((a, b) => a.cite.localeCompare(b.cite))
   }));
 });

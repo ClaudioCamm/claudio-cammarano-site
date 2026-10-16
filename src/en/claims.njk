@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 title: Claims
-description: "The claims this research programme cites, kept verbatim and typed with the notation used on the Italian half of the site: five layers, from the topic that groups to the concept that asserts, with the weight that makes them comparable."
+description: "Not claims in general: the ones this research programme stands on, uses or has to answer to. Kept verbatim, reached through the question each one answers, and typed with the notation used on the Italian half of the site."
 permalink: /en/claims/
 lang: en
 og_card: /images/og/og-en-home.png
@@ -25,9 +25,11 @@ og_card: /images/og/og-en-home.png
   "elementi-di-scenario": "scenario element"
 } %}
 {% set G = claimLayers.graph %}
-{% macro glifo(c, s) %}<svg class="gl gl-{{ c.voice }}{% if c.hollow %} gl-v{% endif %}" width="{{ s }}" height="{{ s }}" viewBox="0 0 16 16" aria-hidden="true">{% if c.shape == "circle" %}<circle cx="8" cy="8" r="5"/>{% elif c.shape == "square" %}<rect x="3.3" y="3.3" width="9.4" height="9.4"/>{% elif c.shape == "diamond" %}<path d="M8 2.2 13.8 8 8 13.8 2.2 8Z"/>{% else %}<path d="M8 2.7 14.2 13.3 1.8 13.3Z"/>{% endif %}</svg>{% endmacro %}
+{% macro marca(c, s) %}<svg class="mk mk-{{ c.voice }}" width="{{ s }}" height="{{ s }}" viewBox="0 0 16 16" aria-hidden="true">{% if c.contested %}<circle class="mk-ring" cx="8" cy="8" r="7.1"/>{% endif %}<g{% if c.contested %} transform="translate(8,8) scale(.66) translate(-8,-8)"{% endif %}>{% if c.shape == "point" %}<circle class="f" cx="8" cy="8" r="3.4"/>{% elif c.shape == "therefore" %}<circle class="f" cx="8" cy="3.9" r="1.75"/><circle class="f" cx="4.3" cy="11.6" r="1.75"/><circle class="f" cx="11.7" cy="11.6" r="1.75"/>{% elif c.shape == "exists" %}<path class="s" d="M11.1 2.9v10.2M5 2.9h6.1M5 8h6.1M5 13.1h6.1"/>{% else %}<path class="s" d="M8 2.6v6.9"/><circle class="f" cx="8" cy="12.7" r="1.5"/>{% endif %}</g></svg>{% endmacro %}
 
 <style>
+.cl-scope{max-width:34em;font-family:var(--font-sans);font-size:.98rem;line-height:1.6;color:var(--color-text-light)}
+.cl-scope strong{color:var(--color-text)}
 .cl-lede{max-width:34em;font-family:var(--font-serif);font-size:1.22rem;line-height:1.5;color:var(--color-text)}
 .cl-intro{max-width:34em}
 
@@ -48,15 +50,19 @@ og_card: /images/og/og-en-home.png
 .cx-all{font:inherit;font-size:.74em;letter-spacing:.06em;text-transform:uppercase;background:none;border:1px solid var(--color-border);color:var(--color-text-light);padding:.5em .9em;cursor:pointer;min-height:36px}
 .cx-all[aria-pressed="true"]{border-color:var(--color-primary);color:var(--color-primary)}
 .cx-read{min-width:0}
-.gl{flex:none;vertical-align:-2px}
-.gl *{stroke-width:1.7}
-.gl-literature *{fill:var(--color-primary);stroke:var(--color-primary)}
-.gl-log *{fill:#800020;stroke:#800020}
-.gl-v *{fill:none}
-.cx-leg{margin:1.6em 0 0;font-family:var(--font-sans);font-size:.78em;line-height:1.5;color:var(--color-text-light)}
-.cx-leg b{display:block;font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:.9em;color:var(--color-text-light);margin-bottom:.5em}
-.cx-leg li{list-style:none;margin:.25em 0;display:flex;gap:.5em;align-items:baseline}
-.cx-leg ul{margin:0;padding:0}
+.mk{flex:none;vertical-align:-2px}
+.mk .f{fill:currentColor}
+.mk .s{fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round}
+.mk-ring{fill:none;stroke:currentColor;stroke-width:1;opacity:.55}
+.mk-literature{color:var(--color-primary)}
+.mk-log{color:#800020}
+.leg{margin:1.4em 0 2.4em;padding:1em 0 1.1em;border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border);font-family:var(--font-sans);max-width:38em}
+.leg h3{font-size:.7em;letter-spacing:.12em;text-transform:uppercase;color:var(--color-text-light);margin:0 0 .7em;font-weight:600;font-family:inherit}
+.leg ul{list-style:none;margin:0;padding:0;display:grid;gap:.5em}
+.leg li{display:flex;gap:.55em;align-items:baseline;font-size:.8em;line-height:1.35;color:var(--color-text)}
+.leg i{font-style:normal;color:var(--color-text-light)}
+.leg .leg-2{grid-column:1/-1;border-top:1px dotted var(--color-border);padding-top:.6em;margin-top:.15em;display:flex;flex-wrap:wrap;gap:.4em 1.4em}
+
 .qw{margin:0 0 2em;max-width:38em}
 .qw-th{font-family:var(--font-sans);font-size:.72em;letter-spacing:.11em;text-transform:uppercase;color:#800020;margin:2.2em 0 .9em}
 .qw-th:first-of-type{margin-top:0}
@@ -174,10 +180,12 @@ og_card: /images/og/og-en-home.png
 
 <p class="cl-lede">A scientific claim is not a headline: it withholds itself until you have the context, and no two readers arrive with the same context. So this is not a list to scroll &mdash; it is {{ claimLayers.CONCEPTS.length }} questions, and the claims come through them.</p>
 
+<p class="cl-scope"><strong>These are not claims in general.</strong> Every one of them is on file because this programme stands on it, borrows a method from it, or has to answer to it. Nothing is here for completeness, and the archive is not trying to cover a field: it is showing what its own work rests on, including the parts that push back.</p>
+
 <div class="cx">
   <aside class="cx-map">
     <h2 class="cx-h">How they connect</h2>
-    <p class="cx-hint">The questions, seen as the {{ claimLayers.CONCEPTS.length }} propositions they answer and the {{ G.arcs.length }} links declared between them. The bar is the weight of the claims underneath; the arc is a link.</p>
+    <p class="cx-hint">The same questions as propositions, with the {{ G.arcs.length }} links declared between them. The bar is weight, the arc is a link.</p>
     <figure class="cm" id="cm">
     <svg viewBox="0 0 {{ G.W }} {{ G.height }}" role="img" aria-labelledby="cm-t">
       <title id="cm-t">Concept map: {{ claimLayers.CONCEPTS.length }} concepts connected by {{ G.arcs.length }} declared links</title>
@@ -195,28 +203,34 @@ og_card: /images/og/og-en-home.png
     </svg>
     <p class="cm-note" id="cm-note">Every concept carries a proposition and at least one link to another concept: without both it cannot exist, and the build fails.</p>
     </figure>
-    <div class="cx-leg">
-      <b>Reading the marks</b>
-      <ul>
-        {% for f in claims.FAMIGLIE %}<li>{{ glifo({shape: f.forma, voice: "literature"}, 13) }} <span>{{ f.en }} &mdash; {{ f.d1 | join(", ") }}</span></li>{% endfor %}
-        <li>{{ glifo({shape: "circle", voice: "log"}, 13) }} <span>bordeaux: from the research log, not the literature</span></li>
-        <li>{{ glifo({shape: "circle", voice: "literature", hollow: true}, 13) }} <span>hollow: held as a counter-thesis, and weighted &times;1.5 for it</span></li>
-      </ul>
-    </div>
     <button class="cx-all" type="button" id="cx-all" aria-pressed="false">Show all {{ claims.length }} claims</button>
   </aside>
 
   <section class="cx-read" id="cx-read">
     <div id="cx-intro">
       <h2>The questions</h2>
-      <p class="cx-hint">A title tells you what a text is about before you read it. A claim has no title, and giving it one would mean deciding its meaning on your behalf. What it has instead is the question it answers: that is the anchor, and the marks beside it say what kind of claim it is, whose, and whether the archive holds it or holds it against itself.</p>
+      <p class="cx-hint">A claim has no title, and giving it one would decide its meaning on your behalf. What it has is the question it answers, and a mark for the kind of warrant it lives on.</p>
+
+      <div class="leg">
+        <h3>The marks</h3>
+        <ul>
+          {% for f in claims.FAMIGLIE %}
+          <li>{{ marca({shape: f.forma, voice: "literature"}, 15) }} <span>{{ f.en }} <i>&mdash; {{ f.sub }}</i></span></li>
+          {% endfor %}
+          <li class="leg-2">
+            <span>{{ marca({shape: "point", voice: "literature"}, 13) }} from the literature</span>
+            <span>{{ marca({shape: "point", voice: "log"}, 13) }} from the research log</span>
+            <span>{{ marca({shape: "point", voice: "literature", contested: true}, 13) }} held as a counter-thesis, weighted &times;1.5 for it</span>
+          </li>
+        </ul>
+      </div>
       <div class="qw">
       {% for t in claimLayers.THEMES %}
         <p class="qw-th">{{ t.en }}</p>
         {% for c in t.concepts %}
         <div class="q">
           <button class="q-t" type="button" data-go="{{ c.key }}">{{ c.question }}</button>
-          <p class="q-c">{% for ch in c.chips %}<button class="q-chip" type="button" data-go="{{ c.key }}" data-at="{{ ch.id }}">{{ glifo(ch, 13) }}{{ ch.cite }}</button>{% endfor %}</p>
+          <p class="q-c">{% for ch in c.chips %}<button class="q-chip" type="button" data-go="{{ c.key }}" data-at="{{ ch.id }}">{{ marca(ch, 13) }}{{ ch.cite }}</button>{% endfor %}</p>
         </div>
         {% endfor %}
       {% endfor %}
@@ -242,7 +256,7 @@ og_card: /images/og/og-en-home.png
           {% if l.before %}<p class="lx-ctx lx-before">{{ l.before }}</p>{% endif %}
           <blockquote class="lx-claim"{% if l.fonte and l.fonte.doi %} cite="https://doi.org/{{ l.fonte.doi }}"{% endif %}>{% for part in l.parts %}{{ part }}{% if not loop.last %}<span class="lx-gap"><span class="lx-ell">[&hellip;]</span><span class="lx-cut">{{ l.cuts[loop.index0] }}</span></span>{% endif %}{% endfor %}</blockquote>
           {% if l.after %}<p class="lx-ctx lx-after">{{ l.after }}</p>{% endif %}
-          <p class="lx-head">{{ glifo(l, 14) }} <cite class="lx-cite"{% if l.fonte %} title="{{ l.fonte.title }}"{% endif %}>{% if l.fonte and l.fonte.doi %}<a href="https://doi.org/{{ l.fonte.doi }}" rel="external">{{ l.cite }}</a>{% elif l.fonte %}{{ l.cite }}{% else %}<a href="{{ l.src }}">Lab note</a>{% endif %}</cite>{% if l.locus %}<span class="lx-locus">{{ l.locus }}</span>{% endif %}</p>
+          <p class="lx-head">{{ marca(l, 14) }} <cite class="lx-cite"{% if l.fonte %} title="{{ l.fonte.title }}"{% endif %}>{% if l.fonte and l.fonte.doi %}<a href="https://doi.org/{{ l.fonte.doi }}" rel="external">{{ l.cite }}</a>{% elif l.fonte %}{{ l.cite }}{% else %}<a href="{{ l.src }}">Lab note</a>{% endif %}</cite>{% if l.locus %}<span class="lx-locus">{{ l.locus }}</span>{% endif %}</p>
         </div>
         <p class="lx-layers">
           <span class="k">topic</span> {{ L.topicEn }}
