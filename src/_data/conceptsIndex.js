@@ -1236,7 +1236,8 @@ module.exports = [
     articles: [
       { title: "Was Francis Fukuyama Right All Along?", url: "/curated/2026-09-18-ezra-klein-fukuyama-nyt/", _source: "curated" },
       { title: "The right balance: how to fix European Union artificial intelligence regulation", url: "/curated/2026-06-11-mariniello-ai-act-costi-conformita-bruegel/", _source: "curated" },
-      { title: "Internet Governance in 2026: Sovereignty, Security, and the Limits of Multistakeholderism", url: "/curated/2026-01-04-kulesza-internet-governance-2026-circleid/", _source: "curated" }
+      { title: "Internet Governance in 2026: Sovereignty, Security, and the Limits of Multistakeholderism", url: "/curated/2026-01-04-kulesza-internet-governance-2026-circleid/", _source: "curated" },
+      { title: "We Know How to Fix Homelessness. Look at Denver.", url: "/curated/2026-10-13-lopez-denver-senzatetto-nyt/", _source: "curated" }
     ]
   },
   {
@@ -1727,7 +1728,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q6216", "https://it.wikipedia.org/wiki/Liberalismo"],
     note: "La tradizione filosofico-politica fondata sulla libertà individuale, i diritti, lo stato di diritto e i limiti al potere arbitrario. Nel sito è il valore identitario con cui The Economist costruisce la propria autorità editoriale — una strategia di marketing valoriale distinta dal «marketing della verità» di WaPo e NYT, più resistente alle crisi di credibilità legate all'assetto proprietario.",
     articles: [
-      { title: "The history of liberalism: a timeline", url: "/curated/2026-06-25-economist-liberalism-timeline/", _source: "curated" }
+      { title: "The history of liberalism: a timeline", url: "/curated/2026-06-25-economist-liberalism-timeline/", _source: "curated" },
+      { title: "We Know How to Fix Homelessness. Look at Denver.", url: "/curated/2026-10-13-lopez-denver-senzatetto-nyt/", _source: "curated" }
     ]
   },
   {
@@ -5254,7 +5256,8 @@ module.exports = [
     note: "La formula associata a Margaret Thatcher, nata per dichiarare inevitabile il mercato. Nel sito serve come dispositivo di esonero. **Pronunciata da chi ha il potere di decidere, una diagnosi strutturale smette di descrivere e diventa una scusa che ha la forma di una critica del sistema.** Detta da un cittadino può essere la razionalizzazione dell'impotenza; detta da un leader è la rinuncia a un potere che ha. Il contrasto utile è con la neutralità della Croce Rossa: un limite scelto e dichiarato, pagato in cambio dell'accesso alle vittime, di cui l'istituzione risponde pubblicamente. Il TINA dei potenti è un limite attribuito al sistema, e serve proprio a non rispondere di nulla. Il caso d'apertura è la presidente della Croce Rossa, a cui i potenti rispondono che non possono fare nulla.",
     articles: [
       { title: "She’s Been to Gaza. She Met With the Iranians. Now She Has a Warning.", url: "/curated/2026-10-10-garcia-navarro-spoljaric-croce-rossa-nyt/", _source: "curated" },
-      { title: "A.I. Companies Say They Aren’t Responsible for Their Unpredictable Products. Don’t Believe Them.", url: "/curated/2026-10-10-nyt-editorial-ai-responsabilita/", _source: "curated" }
+      { title: "A.I. Companies Say They Aren’t Responsible for Their Unpredictable Products. Don’t Believe Them.", url: "/curated/2026-10-10-nyt-editorial-ai-responsabilita/", _source: "curated" },
+      { title: "We Know How to Fix Homelessness. Look at Denver.", url: "/curated/2026-10-13-lopez-denver-senzatetto-nyt/", _source: "curated" }
     ]
   },
   {
