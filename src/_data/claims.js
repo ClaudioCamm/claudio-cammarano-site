@@ -1,14 +1,20 @@
 /**
- * Le lessie: le affermazioni che il programma di ricerca cita, tipizzate.
+ * I claim: le affermazioni che il programma di ricerca cita, tipizzate.
  *
- * Una lessia e' un ritaglio VERBATIM. Tre campi tengono il testo originale e
+ * Nome deciso il 16/10: non sono "lessie". Quelle di Barthes ricoprono il
+ * testo in sequenza e non sono necessariamente asserzioni; queste lo
+ * campionano e sono definite dall'esserlo. Con le lessie di Landow (il nodo
+ * indirizzabile di un ipertesto) c'e' invece parentela, ma fra i due usi del
+ * termine corre un'omonimia, non una sinonimia.
+ *
+ * Un claim e' un ritaglio VERBATIM. Tre campi tengono il testo originale e
  * non si parafrasano mai: `before`, `claim`, `after`. Dove il ritaglio salta
  * delle parole, nel claim compare […] e le parole saltate stanno in `cuts`,
  * nell'ordine: la pagina le rimette al loro posto quando il lettore chiede di
  * vedere i tagli. E' la regola ENTIA dell'esporre il residuo applicata alla
  * citazione.
  *
- * Due etichette per ogni lessia, e sono di natura diversa:
+ * Due etichette per ogni claim, e sono di natura diversa:
  *   - `fn`  = la funzione ENTIA, cioe' che cosa quel testo e' PER QUESTO
  *             archivio. Le sei sono quelle di criteri.json, le stesse della
  *             meta' editoriale: il protocollo non si duplica.
@@ -25,7 +31,7 @@
  * `src` e' una chiave di src/_data/biblio.js oppure un percorso del sito, per
  * le affermazioni del programma stesso. Le cinque qui sotto sono di questo
  * secondo tipo: sono il banco di prova dello schema, non ancora la
- * letteratura. Le lessie dai paper entrano quando i DOI sono a posto.
+ * letteratura. Le claims dai paper entrano quando i DOI sono a posto.
  */
 const fs = require("fs");
 const path = require("path");
@@ -59,7 +65,7 @@ const D1 = {
 
 const STANCE = ["assumed", "used", "contested", "superseded"];
 
-const lessie = [
+const claims = [
   {
     id: "ontology-precedes-epistemology",
     gist: "Before asking whether a statement is true, you have to settle what kind of statement it is: the test that fits a measurement does not fit a value judgement. The whole framework rests on taking that step first, and in the open.",
@@ -518,8 +524,8 @@ function breve(fonte) {
   return `${cognomi[0]} et al.` + anno;
 }
 
-// La maniglia di una lessia del diario: il titolo della nota, troncato
-// prima del trattino, piu' il capoverso. "Programme note" su undici lessie
+// La maniglia di un claim del diario: il titolo della nota, troncato
+// prima del trattino, piu' il capoverso. "Programme note" su undici claims
 // non e' un'ancora, e' un'etichetta che non distingue niente.
 function notaBreve(src, locus) {
   const f = path.join(__dirname, "..", "lab",
@@ -532,7 +538,7 @@ function notaBreve(src, locus) {
   return locus ? `${titolo} ${locus}` : titolo;
 }
 
-module.exports = lessie.map(l => {
+module.exports = claims.map(l => {
   const fonte = perChiave[l.src] || null;
   return {
     ...l,

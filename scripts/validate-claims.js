@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 /**
- * Controlla le lessie di src/_data/claims.js prima del build.
+ * Controlla le claims di src/_data/claims.js prima del build.
  *
  * Fa cadere il build sugli errori di struttura — un riferimento rotto, un
- * codice inventato, un taglio che non torna — perche' una lessia che punta a
- * niente e' peggio di una lessia che manca. Avvisa soltanto sulla lunghezza
+ * codice inventato, un taglio che non torna — perche' un claim che punta a
+ * niente e' peggio di un claim che manca. Avvisa soltanto sulla lunghezza
  * della citazione, che e' una soglia editoriale e non un fatto.
  *
  * Le sei funzioni si leggono da criteri.json: sono le stesse della meta'
@@ -32,7 +32,7 @@ const avvisi = [];
 const parole = s => String(s || "").trim().split(/\s+/).filter(Boolean).length;
 
 claims.forEach((l, i) => {
-  const dove = l.id || `lessia #${i + 1}`;
+  const dove = l.id || `claim #${i + 1}`;
   const err = m => errori.push(`${dove}: ${m}`);
 
   if (!l.id || !/^[a-z0-9][a-z0-9-]*$/.test(l.id)) err("id mancante o non in forma di slug");
@@ -52,11 +52,11 @@ claims.forEach((l, i) => {
   if (!["proposed", "confirmed"].includes(l.d1Status)) err("d1Status dev'essere proposed o confirmed");
   if (!STANCE.includes(l.stance)) err(`stance "${l.stance}" fuori lista`);
 
-  // Una lessia assunta senza locus non e' verificabile: e' una parafrasi con le virgolette.
+  // Un claim assunto senza locus non e' verificabile: e' una parafrasi con le virgolette.
   if (l.stance === "assumed" && !String(l.locus || "").trim()) err("stance assumed senza locus");
 
   // Mai dall'apparato: l'abstract e' una riscrittura dell'autore, non il suo testo.
-  // La lessia deve stare nel testo corrente, dove l'affermazione e' argomentata.
+  // Il claim deve stare nel testo corrente, dove l'affermazione e' argomentata.
   if (/^\s*(abstract|summary|sommario|keywords|parole chiave|blurb|back cover|quarta)/i.test(String(l.locus || "")))
     err(`locus nell'apparato ("${l.locus}"): serve testo corrente`);
 
@@ -68,7 +68,7 @@ claims.forEach((l, i) => {
   else if (g.length < 80) err(`parafrasi troppo corta (${g.length} caratteri): deve dire anche perche' conta`);
   else if (String(l.claim).indexOf(g) > -1) err("la parafrasi e' un pezzo della citazione, non una parafrasi");
 
-  // Una lessia che viene dal diario di ricerca deve stare dove dice di stare.
+  // Un claim che viene dal diario di ricerca deve stare dove dice di stare.
   // Se una nota viene riscritta, il capoverso si sposta e la build lo dice:
   // e' lo stesso controllo che la pagina pretende dalle fonti altrui.
   if (String(l.src || "").startsWith("/lab/")) {
@@ -114,10 +114,27 @@ claims.forEach(l => {
   perFn[l.fn] = (perFn[l.fn] || 0) + l.weight;
   perD1[l.d1] = (perD1[l.d1] || 0) + l.weight;
 });
-const dominanti = Object.entries(perD1).sort((a, b) => b[1] - a[1]);
-const totale = dominanti.reduce((n, [, p]) => n + p, 0) || 1;
-const quota3 = dominanti.slice(0, 3).reduce((n, [, p]) => n + p, 0) / totale;
+// Il profilo D1 dei due sotto-corpus, separati.
+//
+// Qui prima si stampava la quota dei primi tre codici sul totale, come prova
+// della previsione delle "3-4 categorie ricorrenti". Ritirata il 16/10: in un
+// corpus di prosa scientifica quella soglia e' soddisfatta dal genere — non ci
+// sono interiezioni, l'estetica e' rara, la fenomenologia in prima persona
+// quasi assente — quindi la conferma non poteva mancare e il numero non
+// distingueva niente. Cio' che puo' sorprendere e' lo SCARTO fra la
+// letteratura e il diario: generi vicini, ruoli diversi.
+function profilo(set) {
+  const m = {};
+  set.forEach(l => { m[l.d1] = (m[l.d1] || 0) + 1; });
+  const ord = Object.values(m).sort((a, b) => b - a);
+  const tot = set.length || 1;
+  return { codici: ord.length, n: set.length,
+           tre: Math.round(100 * ord.slice(0, 3).reduce((a, v) => a + v, 0) / tot) };
+}
+const lett = profilo(claims.filter(l => l.fonte));
+const diario = profilo(claims.filter(l => !l.fonte));
 
-console.log(`[claims] ${claims.length} lessie verificate — ${Object.keys(perFn).length} funzioni, ${dominanti.length} categorie D1`);
-console.log(`[claims] le prime tre D1 coprono il ${Math.round(quota3 * 100)}% del peso` +
-  (claims.length < 50 ? "  (sotto le 50 lessie la misura non decide niente)" : ""));
+console.log(`[claims] ${claims.length} claims verificate — ${Object.keys(perFn).length} funzioni, ${Object.keys(perD1).length} categorie D1`);
+console.log(`[claims] profilo D1 — letteratura: ${lett.codici} codici su ${lett.n} claim, prime tre ${lett.tre}%` +
+  `  ·  diario: ${diario.codici} codici su ${diario.n}, prime tre ${diario.tre}%` +
+  (claims.length < 60 ? "\n          (a queste dimensioni una voce vale otto punti: e' una direzione, non un risultato)" : ""));

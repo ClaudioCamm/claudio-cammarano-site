@@ -107,7 +107,12 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q333521", "https://it.wikipedia.org/wiki/Nassim_Nicholas_Taleb"],
     note: "Matematico e saggista libanese-americano (1960). Nel sito è presentato come uno dei pochi pensatori veramente nuovi degli ultimi venticinque anni: ex trader, ha costruito un'epistemologia del rischio basata su cigni neri, antifragilità e skin in the game. Libanese di Amioun, fa del Libano un uso teorico costante come laboratorio della complessità caotica.",
     articles: [
-      { title: "Il rumore a Beirut", url: "/writings/2026-04-09-il-rumore-a-beirut/" }
+      { title: "Il rumore a Beirut", url: "/writings/2026-04-09-il-rumore-a-beirut/" },
+      { title: "A Short Note on P-Value Hacking", url: "/curated/2016-03-24-taleb-p-value-hacking-arxiv/", _source: "curated" },
+      { title: "Election Predictions as Martingales: An Arbitrage Approach", url: "/curated/2017-03-18-taleb-election-predictions-martingales-arxiv/", _source: "curated" },
+      { title: "On the Statistical Differences between Binary Forecasts and Real World Payoffs", url: "/curated/2019-07-24-taleb-binary-forecasts-payoffs-arxiv/", _source: "curated" },
+      { title: "On Single Point Forecasts for Fat-Tailed Variables", url: "/curated/2020-07-31-taleb-single-point-forecasts-arxiv/", _source: "curated" },
+      { title: "The Probability Conflation: A Reply", url: "/curated/2023-01-26-taleb-probability-conflation-arxiv/", _source: "curated" }
     ]
   },
   {
@@ -724,7 +729,10 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q2074634"],
     note: "Concetto di Taleb: eventi rari, imprevedibili e di grande impatto che le statistiche tradizionali basate su distribuzioni gaussiane sistematicamente sottostimano. I fenomeni sociali ed economici hanno «code spesse». Nel sito è il presupposto epistemico per cui l'architettura antifragile è necessaria: il caos non è anomalia, è struttura.",
     articles: [
-      { title: "Il rumore a Beirut", url: "/writings/2026-04-09-il-rumore-a-beirut/" }
+      { title: "Il rumore a Beirut", url: "/writings/2026-04-09-il-rumore-a-beirut/" },
+      { title: "On the Statistical Differences between Binary Forecasts and Real World Payoffs", url: "/curated/2019-07-24-taleb-binary-forecasts-payoffs-arxiv/", _source: "curated" },
+      { title: "On Single Point Forecasts for Fat-Tailed Variables", url: "/curated/2020-07-31-taleb-single-point-forecasts-arxiv/", _source: "curated" },
+      { title: "The Probability Conflation: A Reply", url: "/curated/2023-01-26-taleb-probability-conflation-arxiv/", _source: "curated" }
     ]
   },
   {
@@ -1608,7 +1616,9 @@ module.exports = [
       { title: "Happy Birthday C.S. Peirce: Peircean Induction and the Error-Correcting Thesis", url: "/curated/2026-09-11-mayo-peirce-tesi-autocorrettiva-errorstatistics/", _source: "curated" },
       { title: "Philosophy of Statistics", url: "/curated/2025-10-01-romeijn-filosofia-della-statistica-sep/", _source: "curated" },
       { title: "Karl Popper", url: "/curated/2026-07-31-thornton-karl-popper-sep/", _source: "curated" },
-      { title: "Different Time, Different Language: Revisiting the Bias Against Non-Native Speakers in GPT Detectors", url: "/curated/2026-02-05-al-ali-bias-rilevatori-rivisitato-eacl/", _source: "curated" }
+      { title: "Different Time, Different Language: Revisiting the Bias Against Non-Native Speakers in GPT Detectors", url: "/curated/2026-02-05-al-ali-bias-rilevatori-rivisitato-eacl/", _source: "curated" },
+      { title: "A Short Note on P-Value Hacking", url: "/curated/2016-03-24-taleb-p-value-hacking-arxiv/", _source: "curated" },
+      { title: "On Single Point Forecasts for Fat-Tailed Variables", url: "/curated/2020-07-31-taleb-single-point-forecasts-arxiv/", _source: "curated" }
     ]
   },
   {
@@ -2292,6 +2302,18 @@ module.exports = [
     articles: [
       { title: "Il rumore a Beirut", url: "/writings/2026-04-09-il-rumore-a-beirut/" }
     ]
+  },
+  {
+    name: "Statistical Consequences of Fat Tails",
+    type: "testo",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "Taleb, Nassim Nicholas", why: "Il trattato in cui raccoglie vent'anni di lavoro sulle code spesse e ne ricava un'epistemologia." },
+      { name: "cigni neri", why: "Dà forma matematica a ciò che i cigni neri raccontavano in forma discorsiva." }
+    ],
+    note: "Trattato di Nassim Nicholas Taleb (2020), raccolta di capitoli tecnici depositata integralmente su arXiv prima che in libreria. Sostiene che sotto code spesse gran parte della statistica applicata smette di funzionare non per imprecisione ma per inapplicabilità: la media campionaria converge troppo lentamente per essere informativa, la correlazione perde significato, e metodi che in regime gaussiano sono prudenti diventano rischiosi. Nel sito è il versante tecnico dell'epistemologia del rischio che Antifragile e i cigni neri tengono sul lato discorsivo, e la fonte a cui tornano le schede sulla misura e sulle previsioni.",
+    citation: "TALEB, Nassim Nicholas, <a href=\"https://arxiv.org/abs/2001.10488\"><em>Statistical Consequences of Fat Tails: Real World Preasymptotics, Epistemology, and Applications</em></a>, STEM Academic Press, 2020.",
+    articles: []
   },
   {
     name: "La condition postmoderne",
@@ -4361,7 +4383,9 @@ module.exports = [
       { title: "Different Time, Different Language: Revisiting the Bias Against Non-Native Speakers in GPT Detectors", url: "/curated/2026-02-05-al-ali-bias-rilevatori-rivisitato-eacl/", _source: "curated" },
       { title: "Commonwealth Short Story Prize Clears Regional Winners of AI Use Following Month-Long Review", url: "/curated/2026-06-26-commonwealth-nazir-falso-positivo-brittlepaper/", _source: "curated" },
       { title: "The search for consciousness inside AI", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" },
-      { title: "AI co-scientists are revolutionizing how research is done", url: "/curated/2026-09-21-dolgin-ai-co-scientists-nature/", _source: "curated" }
+      { title: "AI co-scientists are revolutionizing how research is done", url: "/curated/2026-09-21-dolgin-ai-co-scientists-nature/", _source: "curated" },
+      { title: "A Short Note on P-Value Hacking", url: "/curated/2016-03-24-taleb-p-value-hacking-arxiv/", _source: "curated" },
+      { title: "Election Predictions as Martingales: An Arbitrage Approach", url: "/curated/2017-03-18-taleb-election-predictions-martingales-arxiv/", _source: "curated" }
     ]
   },
   {

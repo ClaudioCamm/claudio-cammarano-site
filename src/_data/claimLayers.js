@@ -18,7 +18,7 @@
  *              contestata).
  */
 
-const lessie = require("./claims.js");
+const claims = require("./claims.js");
 
 const TOPICS = [
   { key: "claim-types",  en: "Claim types",  claims: ["ontology-precedes-epistemology", "truth-conditions-do-not-transfer", "d1-is-load-bearing", "convergence-is-not-a-link", "arguments-answer-to-arguments"] },
@@ -114,7 +114,7 @@ const CONCEPTS = [
 
 // ---------------------------------------------------------------- indici
 const perLessia = {};
-lessie.forEach(l => { perLessia[l.id] = { topic: null, theme: null, concepts: [] }; });
+claims.forEach(l => { perLessia[l.id] = { topic: null, theme: null, concepts: [] }; });
 
 const temaDiTopic = {};
 THEMES.forEach(t => t.topics.forEach(k => { temaDiTopic[k] = t; }));
@@ -128,13 +128,13 @@ TOPICS.forEach(t => {
     v.topic = t.key;
     v.topicEn = t.en;
     v.theme = t.theme;
-    const l = lessie.find(x => x.id === id);
+    const l = claims.find(x => x.id === id);
     t.w = Math.round((t.w + l.weight) * 100) / 100; t.n++;
   });
 });
 
 const orfane = Object.keys(perLessia).filter(id => !perLessia[id].topic);
-if (orfane.length) throw new Error(`[claimLayers] lessie senza Topic: ${orfane.join(", ")}`);
+if (orfane.length) throw new Error(`[claimLayers] claims senza Topic: ${orfane.join(", ")}`);
 
 const perChiaveC = {};
 CONCEPTS.forEach(c => { perChiaveC[c.key] = c; });
@@ -148,12 +148,12 @@ CONCEPTS.forEach(c => {
     const v = perLessia[id];
     if (!v) throw new Error(`[claimLayers] Concept ${c.key}: lessia sconosciuta ${id}`);
     v.concepts.push(c.key);
-    const l = lessie.find(x => x.id === id);
+    const l = claims.find(x => x.id === id);
     c.w = Math.round((c.w + l.weight) * 100) / 100; c.n++;
     c.temi[v.theme] = (c.temi[v.theme] || 0) + l.weight;
   });
   // Il Tema del Concetto si deriva, non si assegna: vince il tema che pesa di
-  // piu' fra le lessie del concetto. A parita' decide l'ordine dichiarato in
+  // piu' fra le claims del concetto. A parita' decide l'ordine dichiarato in
   // THEMES, come la precedenza che ENTIA usa per le funzioni: una regola
   // pubblicata, non la prima chiave che capita.
   const ord = THEMES.map(t => t.key);
@@ -199,7 +199,7 @@ nodes.forEach(n => { n.bar = Math.round((n.w / wMax) * 150); });
 
 // I concetti di ogni tema, per l'elenco testuale accanto alla mappa.
 const perId = {};
-lessie.forEach(l => { perId[l.id] = l; });
+claims.forEach(l => { perId[l.id] = l; });
 THEMES.forEach(t => {
   t.concepts = righe.filter(c => c.theme === t.key).map(c => ({
     key: c.key, en: c.en, n: c.n, question: c.question,
