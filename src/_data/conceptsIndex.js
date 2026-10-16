@@ -47,7 +47,8 @@ module.exports = [
     note: "Filosofo francese (1926–1984). Nel sito appare come autore il cui post-strutturalismo è stato «appreso in modo deteriore» da Orbán, Trump e Putin: la tesi che tutto sia effetto di discorso viene usata dai populisti per negare la resistenza della realtà agli schemi mentali. Il sito ricorda anche il suo entusiasmo per la rivoluzione iraniana del 1978 — caso esemplare dei rischi dell'antiilluminismo.",
     articles: [
       { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-04-04-dieci-anni-senza-umberto-eco/" },
-      { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" }
+      { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" },
+      { title: "The power thinker", url: "/curated/2017-03-15-koopman-power-thinker-foucault-aeon/", _source: "curated" }
     ]
   },
   {
@@ -787,7 +788,8 @@ module.exports = [
       { title: "Pacing the Frontier", url: "/curated/2026-07-28-pacing-the-frontier-lettera/", _source: "curated" },
       { title: "The Hugging Face incident and the road ahead", url: "/curated/2026-08-26-openai-incidente-hugging-face-resoconto/", _source: "curated" },
       { title: "Effective altruism is this century’s biggest idea", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" },
-      { title: "Could AIs become conscious?", url: "/curated/2026-08-20-economist-anche-se-non-lo-fossero/", _source: "curated" }
+      { title: "Could AIs become conscious?", url: "/curated/2026-08-20-economist-anche-se-non-lo-fossero/", _source: "curated" },
+      { title: "A.I. Companies Say They Aren’t Responsible for Their Unpredictable Products. Don’t Believe Them.", url: "/curated/2026-10-10-nyt-editorial-ai-responsabilita/", _source: "curated" }
     ]
   },
   {
@@ -988,7 +990,8 @@ module.exports = [
       { title: "The mind does not exist", url: "/curated/2021-08-30-gough-no-mind-aeon/", _source: "curated" },
       { title: "Kids outlearn AI—and we still don't know why", url: "/curated/2026-08-24-cutts-divario-efficienza-dati-mit-techreview/", _source: "curated" },
       { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" },
-      { title: "What if 'consciousness' isn't real?", url: "/curated/2026-09-15-bayne-coscienza-non-reale-sciam/", _source: "curated" }
+      { title: "What if 'consciousness' isn't real?", url: "/curated/2026-09-15-bayne-coscienza-non-reale-sciam/", _source: "curated" },
+      { title: "Deskilling the body", url: "/curated/2026-10-13-challenger-deskilling-the-body-aeon/", _source: "curated" }
     ]
   },
   {
@@ -1152,7 +1155,9 @@ module.exports = [
     geo: { modo: "teorico", paesi: ["Italia"] },
     note: "Principio epistemologico di Vico (1725): conosciamo veramente solo ciò che abbiamo fatto. Le scienze naturali studiano un mondo non prodotto da noi; le humanities studiano istituzioni umane conoscibili dall'interno perché le abbiamo costruite. Nel sito è la base per difendere la rilevanza epistemologica irriducibile delle discipline umanistiche.",
     articles: [
-      { title: "Salveremo le humanities", url: "/writings/2026-03-15-salveremo-le-humanities/" }
+      { title: "Salveremo le humanities", url: "/writings/2026-03-15-salveremo-le-humanities/" },
+      { title: "Hannah Fry: How OpenAI has caused an existential crisis in mathematics", url: "/curated/2026-10-14-fry-openai-crisi-matematica-newscientist/", _source: "curated" },
+      { title: "The ladder of knowledge", url: "/curated/2026-10-15-gheorghiu-ladder-of-knowledge-aeon/", _source: "curated" }
     ]
   },
   {
@@ -1388,7 +1393,10 @@ module.exports = [
       { title: "The Great Russian Firewall: the Kremlin's ultimate crackdown on internet freedom", url: "/curated/2025-12-19-osw-great-russian-firewall/", _source: "curated" },
       { title: "How Russian Propaganda Learned to Look Finnish", url: "/curated/2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24/", _source: "curated" },
       { title: "Attacchi ucraini ai data center Yandex: crolla l'attività dei bot russi?", url: "/curated/2026-10-12-vakulina-yandex-data-center-bot-euronews/", _source: "curated" },
-      { title: "A Florida local newspaper ran an oped. It was an Iranian AI fake.", url: "/curated/2026-10-09-waldvogel-iran-articoli-ai-giornali-usa-washingtonpost/", _source: "curated" }
+      { title: "A Florida local newspaper ran an oped. It was an Iranian AI fake.", url: "/curated/2026-10-09-waldvogel-iran-articoli-ai-giornali-usa-washingtonpost/", _source: "curated" },
+      { title: "Pechino ha lanciato un modello di IA che parla tibetano (ma dà solo risposte che piacciono alla Cina)", url: "/curated/2026-05-29-miele-deepzang-ia-tibetano-avvenire/", _source: "curated" },
+      { title: "Could AI algorithms hold China’s solution for global narrative on Tibet?", url: "/curated/2026-06-17-liang-algoritmi-narrazione-tibet-scmp/", _source: "curated" },
+      { title: "People are rejoicing about the removal of Russian bots from social media – but the truth is far more complicated", url: "/curated/2026-10-13-griffin-bot-russi-yandex-independent/", _source: "curated" }
     ]
   },
   {
@@ -1751,7 +1759,8 @@ module.exports = [
     geo: { modo: "teorico", paesi: ["Stati Uniti"] },
     note: "Il rischio che la delega crescente di scelte etiche alle macchine eroda la capacità umana di fare ragionamento morale autonomo. Se i sistemi AI decidono sempre più spesso cosa è giusto fare — in contesti medici, legali, militari, quotidiani — gli esseri umani potrebbero perdere l'abitudine, e poi la competenza, di farlo da soli. Nel sito è il contrappeso al ottimismo sulla filosofia nelle AI labs: non basta mettere principi dentro i modelli se chi li usa smette di esercitare il proprio giudizio.",
     articles: [
-      { title: "Why Big AI Labs Are Hiring So Many Philosophers", url: "/curated/2026-06-24-economist-ai-labs-philosophers/", _source: "curated" }
+      { title: "Why Big AI Labs Are Hiring So Many Philosophers", url: "/curated/2026-06-24-economist-ai-labs-philosophers/", _source: "curated" },
+      { title: "Deskilling the body", url: "/curated/2026-10-13-challenger-deskilling-the-body-aeon/", _source: "curated" }
     ]
   },
   {
@@ -1867,7 +1876,8 @@ module.exports = [
       { title: "Shaping the Future of Learning: Education Readiness for the Age of AI", url: "/curated/2026-06-01-wef-education-readiness-ai/", _source: "curated" },
       { title: "Don't let AI kill the author", url: "/curated/2026-09-24-economist-dont-let-ai-kill-the-author/", _source: "curated" },
       { title: "We're living through an explainer epidemic", url: "/curated/2026-09-10-pitcher-epidemia-explainer-dazed/", _source: "curated" },
-      { title: "I'm a College Professor. Writing Isn't as Important as We Think.", url: "/curated/2026-09-29-cruz-scrittura-pensiero-nyt/", _source: "curated" }
+      { title: "I'm a College Professor. Writing Isn't as Important as We Think.", url: "/curated/2026-09-29-cruz-scrittura-pensiero-nyt/", _source: "curated" },
+      { title: "Deskilling the body", url: "/curated/2026-10-13-challenger-deskilling-the-body-aeon/", _source: "curated" }
     ]
   },
   {
@@ -2016,7 +2026,8 @@ module.exports = [
       { title: "The Atlantic is getting more subscribers from Google traffic, even as referrals fall", url: "/curated/2026-09-16-scire-atlantic-google-abbonati-niemanlab/", _source: "curated" },
       { title: "I'm a College Professor. Writing Isn't as Important as We Think.", url: "/curated/2026-09-29-cruz-scrittura-pensiero-nyt/", _source: "curated" },
       { title: "AI co-scientists are revolutionizing how research is done", url: "/curated/2026-09-21-dolgin-ai-co-scientists-nature/", _source: "curated" },
-      { title: "Claude-shaped science", url: "/curated/2026-10-01-schwartz-claude-shaped-science-anthropic/", _source: "curated" }
+      { title: "Claude-shaped science", url: "/curated/2026-10-01-schwartz-claude-shaped-science-anthropic/", _source: "curated" },
+      { title: "Hannah Fry: How OpenAI has caused an existential crisis in mathematics", url: "/curated/2026-10-14-fry-openai-crisi-matematica-newscientist/", _source: "curated" }
     ]
   },
   {
@@ -2062,7 +2073,8 @@ module.exports = [
     ],
     note: "L'insieme dei consumi mediali di una persona considerato come regime complessivo — proporzioni, ritmi, orari, alternanza fra formati — invece che come somma di contenuti singoli. Nel sito nasce da un'asimmetria osservata in nutrizione e trasferita qui: gli studi sul singolo alimento producono da decenni risultati piccoli e contraddittori, quelli sui regimi alimentari reggono, e non perché il singolo alimento sia innocuo ma perché non è il livello a cui il fenomeno esiste. La stessa cosa si osserva nella ricerca sui media: la domanda se un formato faccia danno è quasi irrispondibile, mentre l'induzione che certe diete mediatiche nel loro complesso siano nocive è largamente condivisa, anche da chi le pratica. È una critica dell'unità di analisi più che dell'oggetto, e spiega retrospettivamente perché quarant'anni di ricerca sulla televisione abbiano concluso poco. Ha una conseguenza pratica sulla regolazione: gli interventi che le piattaforme accettano quando sono obbligate — tetti orari, blocchi notturni, interruzioni — sono interventi sul regime, non sul contenuto.",
     articles: [
-      { title: "Zuckerberg says the science isn't settled. But the harms of short-form video on the brain are starting to show", url: "/curated/2026-09-18-enders-short-form-video-cognizione-guardian/", _source: "curated" }
+      { title: "Zuckerberg says the science isn't settled. But the harms of short-form video on the brain are starting to show", url: "/curated/2026-09-18-enders-short-form-video-cognizione-guardian/", _source: "curated" },
+      { title: "Deskilling the body", url: "/curated/2026-10-13-challenger-deskilling-the-body-aeon/", _source: "curated" }
     ]
   },
   {
@@ -2389,7 +2401,8 @@ module.exports = [
       { title: "How effective altruism conquered the world", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" },
       { title: "The search for consciousness inside AI", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" },
       { title: "AI’s Real Gift to Science", url: "/curated/2026-10-04-kiros-ai-real-gift-science-atlantic/", _source: "curated" },
-      { title: "Claude-shaped science", url: "/curated/2026-10-01-schwartz-claude-shaped-science-anthropic/", _source: "curated" }
+      { title: "Claude-shaped science", url: "/curated/2026-10-01-schwartz-claude-shaped-science-anthropic/", _source: "curated" },
+      { title: "A.I. Companies Say They Aren’t Responsible for Their Unpredictable Products. Don’t Believe Them.", url: "/curated/2026-10-10-nyt-editorial-ai-responsabilita/", _source: "curated" }
     ]
   },
   {
@@ -2549,7 +2562,9 @@ module.exports = [
       { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-fuga-e-clamore-lawfare/", _source: "curated" },
       { title: "The Hugging Face incident and the road ahead", url: "/curated/2026-08-26-openai-incidente-hugging-face-resoconto/", _source: "curated" },
       { title: "How effective altruism conquered the world", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" },
-      { title: "A Florida local newspaper ran an oped. It was an Iranian AI fake.", url: "/curated/2026-10-09-waldvogel-iran-articoli-ai-giornali-usa-washingtonpost/", _source: "curated" }
+      { title: "A Florida local newspaper ran an oped. It was an Iranian AI fake.", url: "/curated/2026-10-09-waldvogel-iran-articoli-ai-giornali-usa-washingtonpost/", _source: "curated" },
+      { title: "A.I. Companies Say They Aren’t Responsible for Their Unpredictable Products. Don’t Believe Them.", url: "/curated/2026-10-10-nyt-editorial-ai-responsabilita/", _source: "curated" },
+      { title: "Hannah Fry: How OpenAI has caused an existential crisis in mathematics", url: "/curated/2026-10-14-fry-openai-crisi-matematica-newscientist/", _source: "curated" }
     ]
   },
   {
@@ -2780,7 +2795,8 @@ module.exports = [
       { title: "Is Kaliningrad, Russia's exclave surrounded by EU countries, an asset or a liability?", url: "/curated/2022-06-06-economist-kaliningrad-risorsa-o-ostaggio/", _source: "curated" },
       { title: "How Russian Propaganda Learned to Look Finnish", url: "/curated/2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24/", _source: "curated" },
       { title: "Putin’s war on schools: ‘millions of books burnt before my eyes’", url: "/curated/2026-10-10-hauschild-johanson-libri-scuola-ucraina-sundaytimes/", _source: "curated" },
-      { title: "Attacchi ucraini ai data center Yandex: crolla l'attività dei bot russi?", url: "/curated/2026-10-12-vakulina-yandex-data-center-bot-euronews/", _source: "curated" }
+      { title: "Attacchi ucraini ai data center Yandex: crolla l'attività dei bot russi?", url: "/curated/2026-10-12-vakulina-yandex-data-center-bot-euronews/", _source: "curated" },
+      { title: "People are rejoicing about the removal of Russian bots from social media – but the truth is far more complicated", url: "/curated/2026-10-13-griffin-bot-russi-yandex-independent/", _source: "curated" }
     ]
   },
   {
@@ -2801,7 +2817,8 @@ module.exports = [
       { title: "Europe Needs to Come Together. This Man Has Some Ideas.", url: "/curated/2026-06-09-nyt-europe-defense-van-middelaar/", _source: "curated" },
       { title: "How a former model from Kyiv blew up Russia's $20bn gas pipeline", url: "/curated/2026-06-15-times-nord-stream-diver/", _source: "curated" },
       { title: "Putin’s war on schools: ‘millions of books burnt before my eyes’", url: "/curated/2026-10-10-hauschild-johanson-libri-scuola-ucraina-sundaytimes/", _source: "curated" },
-      { title: "Attacchi ucraini ai data center Yandex: crolla l'attività dei bot russi?", url: "/curated/2026-10-12-vakulina-yandex-data-center-bot-euronews/", _source: "curated" }
+      { title: "Attacchi ucraini ai data center Yandex: crolla l'attività dei bot russi?", url: "/curated/2026-10-12-vakulina-yandex-data-center-bot-euronews/", _source: "curated" },
+      { title: "People are rejoicing about the removal of Russian bots from social media – but the truth is far more complicated", url: "/curated/2026-10-13-griffin-bot-russi-yandex-independent/", _source: "curated" }
     ]
   },
   {
@@ -2942,7 +2959,9 @@ module.exports = [
       { title: "Iran, China, Canada? A Defense of Trump’s Grand Strategy", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" },
       { title: "China’s Long Twilight", url: "/curated/2026-10-05-minzner-chinas-long-twilight-foreignaffairs/", _source: "curated" },
       { title: "The Impossible Middle East", url: "/curated/2026-08-27-esfandiary-wasser-daoud-impossible-middle-east-foreignaffairs/", _source: "curated" },
-      { title: "Populists Are Losing Their War on Globalization", url: "/curated/2026-10-09-donnan-populists-losing-war-globalization-bloomberg/", _source: "curated" }
+      { title: "Populists Are Losing Their War on Globalization", url: "/curated/2026-10-09-donnan-populists-losing-war-globalization-bloomberg/", _source: "curated" },
+      { title: "Pechino ha lanciato un modello di IA che parla tibetano (ma dà solo risposte che piacciono alla Cina)", url: "/curated/2026-05-29-miele-deepzang-ia-tibetano-avvenire/", _source: "curated" },
+      { title: "Could AI algorithms hold China’s solution for global narrative on Tibet?", url: "/curated/2026-06-17-liang-algoritmi-narrazione-tibet-scmp/", _source: "curated" },
     ]
   },
   {
@@ -3732,7 +3751,8 @@ module.exports = [
     note: "La corrente che, da Foucault e Derrida in poi, legge ogni enunciato di verità come effetto di discorso e quindi di potere. Nel sito ha due facce. Lascia un'acquisizione buona: ogni pensiero è situato. Ma la sua lezione è stata appresa in modo deteriore da leader come Orbán, Trump e Putin, che la usano per negare che la realtà resista agli schemi: non è l'illuminismo che si è rovesciato su se stesso, è la sua critica. Maurizio Ferraris ne ha percorso la strada a ritroso fino al nuovo realismo.",
     articles: [
       { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-04-04-dieci-anni-senza-umberto-eco/" },
-      { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" }
+      { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" },
+      { title: "The power thinker", url: "/curated/2017-03-15-koopman-power-thinker-foucault-aeon/", _source: "curated" }
     ]
   },
   {
@@ -5202,7 +5222,86 @@ module.exports = [
     ],
     note: "La formula associata a Margaret Thatcher, nata per dichiarare inevitabile il mercato. Nel sito serve come dispositivo di esonero. **Pronunciata da chi ha il potere di decidere, una diagnosi strutturale smette di descrivere e diventa una scusa che ha la forma di una critica del sistema.** Detta da un cittadino può essere la razionalizzazione dell'impotenza; detta da un leader è la rinuncia a un potere che ha. Il contrasto utile è con la neutralità della Croce Rossa: un limite scelto e dichiarato, pagato in cambio dell'accesso alle vittime, di cui l'istituzione risponde pubblicamente. Il TINA dei potenti è un limite attribuito al sistema, e serve proprio a non rispondere di nulla. Il caso d'apertura è la presidente della Croce Rossa, a cui i potenti rispondono che non possono fare nulla.",
     articles: [
-      { title: "She’s Been to Gaza. She Met With the Iranians. Now She Has a Warning.", url: "/curated/2026-10-10-garcia-navarro-spoljaric-croce-rossa-nyt/", _source: "curated" }
+      { title: "She’s Been to Gaza. She Met With the Iranians. Now She Has a Warning.", url: "/curated/2026-10-10-garcia-navarro-spoljaric-croce-rossa-nyt/", _source: "curated" },
+      { title: "A.I. Companies Say They Aren’t Responsible for Their Unpredictable Products. Don’t Believe Them.", url: "/curated/2026-10-10-nyt-editorial-ai-responsabilita/", _source: "curated" }
+    ]
+  },
+  {
+    name: "responsabilità oggettiva",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Stati Uniti"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q705497", "https://en.wikipedia.org/wiki/Strict_liability"],
+    related: [
+      { name: "TINA (there is no alternative)", why: "È la risposta del diritto all'esonero per sistema: chi crea un prodotto pericoloso ne risponde, anche se lo chiama agente." }
+    ],
+    note: "La regola per cui chi svolge un'attività pericolosa risponde del danno anche senza colpa e senza averlo previsto: la si applica alle sostanze tossiche, alle centrali nucleari e, alle origini, all'aviazione. **Se tieni una tigre e morde il vicino, non conta quanto fosse addestrata.** Nel sito entra con l'editoriale del New York Times che la propone per l'intelligenza artificiale, contro le aziende che descrivono i propri modelli come autonomi per declinarne la responsabilità.",
+    articles: [
+      { title: "A.I. Companies Say They Aren’t Responsible for Their Unpredictable Products. Don’t Believe Them.", url: "/curated/2026-10-10-nyt-editorial-ai-responsabilita/", _source: "curated" }
+    ]
+  },
+  {
+    name: "teoremi di incompletezza",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Austria"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q200787", "https://it.wikipedia.org/wiki/Teoremi_di_incompletezza_di_G%C3%B6del"],
+    related: [
+      { name: "verum ipsum factum", why: "Letti con Dummett e Sandqvist, dicono che la verità arriva fin dove abbiamo costruito le pratiche: conosciamo ciò che facciamo." }
+    ],
+    note: "I due teoremi pubblicati da Kurt Gödel a Vienna nel 1931: in ogni sistema formale abbastanza potente da contenere l'aritmetica esistono enunciati veri che il sistema non dimostra, e il sistema non può dimostrare la propria coerenza. La lettura corrente ne fa un limite assoluto della conoscenza. **Nel sito entrano con la lettura opposta di Alexander Gheorghiu: limitano una particolare edizione di un sistema, e ogni estensione fedele ne apre un'altra.**",
+    articles: [
+      { title: "The ladder of knowledge", url: "/curated/2026-10-15-gheorghiu-ladder-of-knowledge-aeon/", _source: "curated" }
+    ]
+  },
+  {
+    name: "autopoiesi",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Cile"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q599967", "https://it.wikipedia.org/wiki/Autopoiesi"],
+    related: [
+      { name: "The Embodied Mind", why: "Varela porta l'autopoiesi dalla biologia alla mente: la cognizione nasce dall'organizzazione del vivente, non da un modello astratto." }
+    ],
+    note: "Il concetto con cui Humberto Maturana e Francisco Varela, nel Cile dei primi anni Settanta, definiscono il vivente: un sistema che produce e mantiene da sé i componenti che lo costituiscono. **Nel sito entra con Melanie Challenger, per cui l'intelligenza è un'organizzazione del corpo e si perde quando la tecnologia sostituisce le azioni che la formano.**",
+    articles: [
+      { title: "Deskilling the body", url: "/curated/2026-10-13-challenger-deskilling-the-body-aeon/", _source: "curated" }
+    ]
+  },
+  {
+    name: "biopotere",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Francia"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q864171", "https://it.wikipedia.org/wiki/Biopotere"],
+    related: [
+      { name: "Foucault, Michel", why: "È la forma di potere che Foucault affianca a sovranità e disciplina: non punisce, regola la vita, la salute e la riproduzione." }
+    ],
+    note: "Il potere che si esercita sulla vita biologica delle popolazioni, regolando sessualità, riproduzione e salute, accanto alla sovranità che uccide e alla disciplina che addestra i corpi. **Per Foucault il potere non ha una forma sola, e il biopotere è quella che non vieta ma gestisce.** Nel sito entra con la difesa di Foucault di Colin Koopman.",
+    articles: [
+      { title: "The power thinker", url: "/curated/2017-03-15-koopman-power-thinker-foucault-aeon/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Tibet",
+    type: "luogo",
+    geo: { modo: "diretta", paesi: ["Cina"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q17252", "https://it.wikipedia.org/wiki/Tibet"],
+    related: [
+      { name: "Cina", why: "Pechino ne governa la lingua e la narrazione: un'AI che risponde in tibetano con la linea del Partito, e la propaganda adattata agli algoritmi occidentali." }
+    ],
+    note: "Il Tibet culturale e linguistico dell'altopiano, più ampio della Regione autonoma: le varietà di Ü-Tsang, Kham e Amdo si parlano anche nelle province vicine. **Nel sito è il caso in cui l'intelligenza artificiale non censura una lingua, la usa per restituire ai suoi parlanti la versione ufficiale della loro storia.**",
+    articles: [
+      { title: "Pechino ha lanciato un modello di IA che parla tibetano (ma dà solo risposte che piacciono alla Cina)", url: "/curated/2026-05-29-miele-deepzang-ia-tibetano-avvenire/", _source: "curated" },
+      { title: "Could AI algorithms hold China’s solution for global narrative on Tibet?", url: "/curated/2026-06-17-liang-algoritmi-narrazione-tibet-scmp/", _source: "curated" }
+    ]
+  },
+  {
+    name: "estrattivismo cognitivo",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "OpenAI", why: "Per Hannah Fry OpenAI ha puntato sulla matematica perché il prestigio di una disciplina era un'altra risorsa da estrarre." }
+    ],
+    note: "Estensione al lavoro intellettuale dell'estrattivismo, il modello economico che preleva risorse naturali per esportarle lasciando poco ai luoghi da cui provengono. **Le aziende dell'AI prendono da una disciplina i problemi, le dimostrazioni e il prestigio, e le lasciano risultati che nessuno capisce né deve spiegare.** L'espressione è del sito; l'immagine dell'«engine of extraction» è di Hannah Fry.",
+    articles: [
+      { title: "Hannah Fry: How OpenAI has caused an existential crisis in mathematics", url: "/curated/2026-10-14-fry-openai-crisi-matematica-newscientist/", _source: "curated" }
     ]
   }
 
