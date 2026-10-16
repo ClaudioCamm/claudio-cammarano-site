@@ -3955,7 +3955,8 @@ module.exports = [
       { title: "The Hugging Face incident and the road ahead", url: "/curated/2026-08-26-openai-incidente-hugging-face-resoconto/", _source: "curated" },
       { title: "Why AI Detection Fails for Academic Integrity", url: "/curated/2026-08-06-karr-perche-la-rilevazione-fallisce-arxiv/", _source: "curated" },
       { title: "Selon Mario Draghi l’Europe ne peut plus vivre sans croissance", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" },
-      { title: "30 Ideas for Fixing U.S. Schools, Ranked by Experts", url: "/curated/2026-09-28-mervosh-paris-miller-cosa-funziona-davvero-nella-scuola-nyt/", _source: "curated" }
+      { title: "30 Ideas for Fixing U.S. Schools, Ranked by Experts", url: "/curated/2026-09-28-mervosh-paris-miller-cosa-funziona-davvero-nella-scuola-nyt/", _source: "curated" },
+      { title: "He Wants AI Benchmarking To Be a Science, Not a Dark Art", url: "/curated/2026-10-16-pavlus-hardt-benchmark-quanta/", _source: "curated" }
     ]
   },
   {
@@ -4389,7 +4390,8 @@ module.exports = [
       { title: "The search for consciousness inside AI", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" },
       { title: "AI co-scientists are revolutionizing how research is done", url: "/curated/2026-09-21-dolgin-ai-co-scientists-nature/", _source: "curated" },
       { title: "A Short Note on P-Value Hacking", url: "/curated/2016-03-24-taleb-p-value-hacking-arxiv/", _source: "curated" },
-      { title: "Election Predictions as Martingales: An Arbitrage Approach", url: "/curated/2017-03-18-taleb-election-predictions-martingales-arxiv/", _source: "curated" }
+      { title: "Election Predictions as Martingales: An Arbitrage Approach", url: "/curated/2017-03-18-taleb-election-predictions-martingales-arxiv/", _source: "curated" },
+      { title: "He Wants AI Benchmarking To Be a Science, Not a Dark Art", url: "/curated/2026-10-16-pavlus-hardt-benchmark-quanta/", _source: "curated" }
     ]
   },
   {
@@ -4572,7 +4574,8 @@ module.exports = [
       { title: "Justify your alpha", url: "/curated/2018-02-26-lakens-justify-your-alpha-nhb/", _source: "curated" },
       { title: "Scientists rise up against statistical significance", url: "/curated/2019-03-20-amrhein-greenland-mcshane-significativita-nature/", _source: "curated" },
       { title: "The ASA President's Task Force Statement on Statistical Significance and Replicability", url: "/curated/2021-08-01-task-force-asa-significativita-replicabilita-aoas/", _source: "curated" },
-      { title: "AI co-scientists are revolutionizing how research is done", url: "/curated/2026-09-21-dolgin-ai-co-scientists-nature/", _source: "curated" }
+      { title: "AI co-scientists are revolutionizing how research is done", url: "/curated/2026-09-21-dolgin-ai-co-scientists-nature/", _source: "curated" },
+      { title: "He Wants AI Benchmarking To Be a Science, Not a Dark Art", url: "/curated/2026-10-16-pavlus-hardt-benchmark-quanta/", _source: "curated" }
     ]
   },
   {
