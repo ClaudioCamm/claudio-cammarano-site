@@ -16,5 +16,5 @@ description: |
 
   Per l'archivio c'è un ritorno diretto. La voce dedica una sottosezione, la 3.3.2, a *Error statistics and severe testing*, e vi si legge la definizione che questo sito ha adottato, formulata da terzi e non da Mayo: «Nella definizione di Mayo, un'ipotesi supera un test severo a due condizioni: l'ipotesi deve concordare con i dati, e con alta probabilità, se l'ipotesi fosse in effetti falsa, non concorderebbe con i dati.» Vale come conferma indipendente, e vale come misura di quanto la posizione sia riconosciuta: Romeijn nota che Mayo e Spanos «hanno fatto molto per riportare l'agenda della statistica classica nella filosofia della scienza, che era diventata dominata dalla statistica bayesiana».
 tags: [curated, epistemologia, filosofia, scienza]
-concepts: ["guerre della statistica", "inferenza bayesiana", "statistica dell'errore", "p-value", "test severo", "Fisher, Ronald Aylmer", "metodo scientifico"]
+concepts: ["guerre della statistica", "inferenza bayesiana", "statistica dell'errore", "p-value", "test severo", "Fisher, Ronald Aylmer", "metodo scientifico", "Error and the Growth of Experimental Knowledge", "Probability Theory: The Logic of Science"]
 ---

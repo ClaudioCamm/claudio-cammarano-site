@@ -999,7 +999,8 @@ module.exports = [
       { title: "Kids outlearn AI—and we still don't know why", url: "/curated/2026-08-24-cutts-divario-efficienza-dati-mit-techreview/", _source: "curated" },
       { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" },
       { title: "What if 'consciousness' isn't real?", url: "/curated/2026-09-15-bayne-coscienza-non-reale-sciam/", _source: "curated" },
-      { title: "Deskilling the body", url: "/curated/2026-10-13-challenger-deskilling-the-body-aeon/", _source: "curated" }
+      { title: "Deskilling the body", url: "/curated/2026-10-13-challenger-deskilling-the-body-aeon/", _source: "curated" },
+      { title: "Is ‘Attention’ the Essence of Intelligence?", url: "/curated/2026-10-12-wolchover-attention-intelligenza-quanta/", _source: "curated" }
     ]
   },
   {
@@ -1116,7 +1117,8 @@ module.exports = [
       { title: "What if 'consciousness' isn't real?", url: "/curated/2026-09-15-bayne-coscienza-non-reale-sciam/", _source: "curated" },
       { title: "Effective altruism is this century’s biggest idea", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" },
       { title: "Could AIs become conscious?", url: "/curated/2026-08-20-economist-anche-se-non-lo-fossero/", _source: "curated" },
-      { title: "The search for consciousness inside AI", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" }
+      { title: "The search for consciousness inside AI", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" },
+      { title: "Is ‘Attention’ the Essence of Intelligence?", url: "/curated/2026-10-12-wolchover-attention-intelligenza-quanta/", _source: "curated" }
     ]
   },
   {
@@ -2270,6 +2272,7 @@ module.exports = [
     note: "Articolo di Claude E. Shannon (1948), atto di nascita della teoria dell’informazione. Nel sito fornisce il formalismo con cui si misura l’effetto di un testo su chi legge, e insieme disinnesca un equivoco ricorrente: nel formalismo shannoniano convivono due oggetti omonimi — l’entropia di una sorgente, che misura quanta informazione essa può emettere, e l’entropia di uno stato, che misura quanto quello stato sia indifferenziato. Ciò che il linguaggio comune chiama informazione ha in Shannon un nome esatto: è la ridondanza.",
     citation: "SHANNON, Claude E., <a href=\"https://doi.org/10.1002/j.1538-7305.1948.tb01338.x\">\u201cA Mathematical Theory of Communication\u201d</a>, <em>The Bell System Technical Journal</em>, vol. 27, 1948, pp. 379-423 e 623-656.",
     articles: [
+      { title: "La forza della scrittura e la sua direzione", url: "/writings/2026-08-26-la-forza-della-scrittura/" },
       { title: "La formula dell’autenticità", url: "/writings/2026-08-23-la-formula-dellautenticita/" }
     ]
   },
@@ -2304,6 +2307,7 @@ module.exports = [
     note: "Libro di Nassim Taleb (2012), terzo volume della pentalogia Incerto. Formalizza la distinzione tra sistemi fragili, robusti e antifragili attraverso la disuguaglianza di Jensen. Nel sito è citato sia per il nucleo matematico (risposta convessa vs. concava ai disturbi) sia per le implicazioni politiche: il modello cinese come esempio di fragilità mascherata da efficienza.",
     citation: "TALEB, Nassim Nicholas, <a href=\"https://archive.org/details/antifragilething0000tale\"><em>Antifragile: Things That Gain from Disorder</em></a>, New York, Random House, 2012.",
     articles: [
+      { title: "La mappa e il crinale", url: "/writings/2026-09-07-la-mappa-e-il-crinale/" },
       { title: "Il rumore a Beirut", url: "/writings/2026-04-09-il-rumore-a-beirut/" }
     ]
   },
@@ -2317,7 +2321,12 @@ module.exports = [
     ],
     note: "Trattato di Nassim Nicholas Taleb (2020), raccolta di capitoli tecnici depositata integralmente su arXiv prima che in libreria. Sostiene che sotto code spesse gran parte della statistica applicata smette di funzionare non per imprecisione ma per inapplicabilità: la media campionaria converge troppo lentamente per essere informativa, la correlazione perde significato, e metodi che in regime gaussiano sono prudenti diventano rischiosi. Nel sito è il versante tecnico dell'epistemologia del rischio che Antifragile e i cigni neri tengono sul lato discorsivo, e la fonte a cui tornano le schede sulla misura e sulle previsioni.",
     citation: "TALEB, Nassim Nicholas, <a href=\"https://arxiv.org/abs/2001.10488\"><em>Statistical Consequences of Fat Tails: Real World Preasymptotics, Epistemology, and Applications</em></a>, STEM Academic Press, 2020.",
-    articles: []
+    articles: [
+      { title: "Il rumore a Beirut. Taleb, l'architettura del caos e le democrazie sotto assedio", url: "/writings/2026-04-09-il-rumore-a-beirut/" },
+      { title: "On the Statistical Differences between Binary Forecasts and Real World Payoffs", url: "/curated/2019-07-24-taleb-binary-forecasts-payoffs-arxiv/", _source: "curated" },
+      { title: "On Single Point Forecasts for Fat-Tailed Variables", url: "/curated/2020-07-31-taleb-single-point-forecasts-arxiv/", _source: "curated" },
+      { title: "The Probability Conflation: A Reply", url: "/curated/2023-01-26-taleb-probability-conflation-arxiv/", _source: "curated" }
+    ]
   },
   {
     name: "La condition postmoderne",
@@ -2338,7 +2347,8 @@ module.exports = [
     note: "Opera di Adorno e Horkheimer (1947). La tesi: l'illuminismo porta in sé i germi del proprio rovesciamento — la ragione strumentale, separata da fondamenti normativi, diventa dominio. Nel sito il capovolgimento è letto diversamente: non è l'illuminismo che si è rovesciato su se stesso, è la sua critica che si è rovesciata.",
     citation: "ADORNO, Theodor W. e Max Horkheimer, <a href=\"https://openlibrary.org/books/OL5516420M/Dialektik_der_Aufkla%CC%88rung.\"><em>Dialektik der Aufklärung</em></a>, Amsterdam, Querido, 1947 (trad. it. <em>Dialettica dell'Illuminismo</em>, Torino, Einaudi, 1966).",
     articles: [
-      { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" }
+      { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" },
+      { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" }
     ]
   },
   {
@@ -2375,7 +2385,8 @@ module.exports = [
     note: "Libro di Francisco Varela, Evan Thompson ed Eleanor Rosch (1991). Propone la cognizione come radicata nel corpo e nell'esperienza vissuta, contro il cognitivismo classico. Nel sito è il testo che «cambia statuto» davanti a un LLM: da posizione tra altre diventa criterio di distinzione tra mente biologica e macchina.",
     citation: "VARELA, Francisco J., Evan Thompson e Eleanor Rosch, <a href=\"https://openlibrary.org/books/OL26933223M/The_embodied_mind\"><em>The Embodied Mind: Cognitive Science and Human Experience</em></a>, Cambridge (MA), MIT Press, 1991.",
     articles: [
-      { title: "La differenza fra Claude e le mie gatte", url: "/writings/2026-04-30-la-differenza-fra-claude-e-le-mie-gatte/" }
+      { title: "La differenza fra Claude e le mie gatte", url: "/writings/2026-04-30-la-differenza-fra-claude-e-le-mie-gatte/" },
+      { title: "Deskilling the body", url: "/curated/2026-10-13-challenger-deskilling-the-body-aeon/", _source: "curated" }
     ]
   },
   {
@@ -2386,6 +2397,7 @@ module.exports = [
     note: "Opera di René Descartes (1637). Propone il metodo del dubbio sistematico come fondamento della conoscenza certa, e la «morale provvisoria» come strategia conservatrice durante la demolizione delle vecchie certezze. Nel sito è usato come analogia del programma illuminista: ricostruire le fondamenta richiede un alloggio provvisorio.",
     citation: "DESCARTES, René, <a href=\"https://openlibrary.org/books/OL18269385M/Discours_de_la_m%C3%A9thode\"><em>Discours de la méthode</em></a>, Leida, Jan Maire, 1637 (trad. it. <em>Discorso sul metodo</em>, Milano, Bompiani, 2002).",
     articles: [
+      { title: "La differenza fra Claude e le mie gatte", url: "/writings/2026-04-30-la-differenza-fra-claude-e-le-mie-gatte/" },
       { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" }
     ]
   },
@@ -2686,6 +2698,8 @@ module.exports = [
     note: "Blog di Kevin Kelly (kk.org/thetechnium), attivo dal 2003. Il titolo è anche il nome del concetto centrale di Kelly: la tecnosfera come sistema vivente con proprie tendenze evolutive. Nel sito è la fonte del saggio del 2006 sulle speculazioni sul metodo scientifico, ripubblicato nel 2026 con un'introduzione aggiornata.",
     citation: "KELLY, Kevin, <a href=\"https://kk.org/thetechnium\"><em>The Technium</em></a>, blog personale, 2003–.",
     articles: [
+      { title: "Possiamo fidarci di una macchina?", url: "/writings/2026-09-28-possiamo-fidarci-di-una-macchina/" },
+      { title: "Non è nemmeno sbagliato", url: "/writings/2026-09-29-non-e-nemmeno-sbagliato/" },
       { title: "Speculations on the Future of the Scientific Method", url: "/curated/2026-05-04-kevin-kelly-future-scientific-method/", _source: "curated" }
     ]
   },
@@ -2713,7 +2727,10 @@ module.exports = [
     note: "Ricerca annuale del Reuters Institute for the Study of Journalism (Università di Oxford): la più ampia indagine comparativa al mondo sui comportamenti dei lettori di notizie, condotta in oltre 40 paesi. La sezione italiana è curata da Alessio Cornia (Dublin City University). Nel sito è la fonte primaria dell'analisi longitudinale di Andrea Nelson Mauro sull'informazione in Italia 2021–2026.",
     citation: "REUTERS INSTITUTE FOR THE STUDY OF JOURNALISM, <a href=\"https://reutersinstitute.politics.ox.ac.uk/digital-news-report/\"><em>Digital News Report</em></a>, Oxford, Università di Oxford, 2012–.",
     articles: [
-      { title: "Com'è cambiata l'informazione in Italia negli ultimi 6 anni", url: "/curated/2026-06-19-mauro-informazione-italia-digital-news-report/", _source: "curated" }
+      { title: "Dopo il link", url: "/writings/2026-09-28-dopo-il-link/" },
+      { title: "La fiducia prima dell'attacco", url: "/writings/2026-10-13-la-fiducia-prima-dell-attacco/" },
+      { title: "Com'è cambiata l'informazione in Italia negli ultimi 6 anni", url: "/curated/2026-06-19-mauro-informazione-italia-digital-news-report/", _source: "curated" },
+      { title: "Europe's public broadcasters go from prime time to hard-to-find", url: "/curated/2026-07-09-economist-psb-europe-hard-to-find/", _source: "curated" }
     ]
   },
   {
@@ -2724,6 +2741,7 @@ module.exports = [
     note: "Newsletter di giornalismo tecnologico fondata nel 2021 da Casey Newton e Zoe Schiffer (platformer.news). Copre l'industria tech con un focus su governance, moderazione dei contenuti, cultura interna delle grandi aziende e impatto sociale delle piattaforme. Tra le poche testate ad aver costruito un modello economico autonomo sul giornalismo tech specializzato.",
     citation: "NEWTON, Casey; SCHIFFER, Zoe, <a href=\"https://platformer.news\"><em>Platformer</em></a>, newsletter, 2021–.",
     articles: [
+      { title: "La firma e il segnale", url: "/writings/2026-09-28-la-firma-e-il-segnale/" },
       { title: "Claude Code for writers", url: "/curated/2026-01-15-newton-claude-code-writers-platformer/", _source: "curated" }
     ]
   },
@@ -4511,7 +4529,11 @@ module.exports = [
       { name: "Error and the Growth of Experimental Knowledge", why: "I due libri che si fronteggiano: la probabilità come logica dell'inferenza contro la probabilità come frequenza d'errore della procedura." }
     ],
     note: "Opera maggiore di Edwin Thompson Jaynes, rimasta incompiuta alla sua morte nel 1998 e pubblicata da Cambridge University Press nel 2003 a cura di G. Larry Bretthorst, dopo anni di circolazione come manoscritto. La tesi è nel titolo e non è una metafora: la teoria della probabilità non è un ramo della matematica applicata ma la logica stessa, estesa dal caso in cui si sa tutto al caso in cui si sa qualcosa. L'argomento poggia sui teoremi di Cox — poste alcune condizioni minime di coerenza su come un ragionamento plausibile deve comportarsi, le regole che ne risultano sono le regole della probabilità, e sono uniche — e viene condotto attraverso la finzione di un *robot* che ragiona solo secondo quei criteri, così che ogni conclusione sia controllabile. Nel sito la voce esiste come uno dei due poli dell'apparato che l'archivio usa per valutare le prove, l'altro essendo il libro di Mayo del 1996: non un manuale fra altri, ma l'enunciato più ambizioso della posizione secondo cui non c'è scelta da fare fra metodi statistici, perché uno solo è coerente. È anche un libro polemico e talvolta ingiusto verso la parte avversa, e vale leggerlo sapendolo.",
-    articles: []
+    articles: [
+      { title: "Il p-value e le sue guerre", url: "/writings/2026-09-30-il-p-value-e-le-sue-guerre/" },
+      { title: "Philosophy of Statistics", url: "/curated/2025-10-01-romeijn-filosofia-della-statistica-sep/", _source: "curated" },
+      { title: "Jaynes — Guida alla lettura (Probability Theory: The Logic of Science)", url: "/learning/2026-03-13-jaynes-guida-lettura/", _source: "learning" }
+    ]
   },
   {
     name: "Error and the Growth of Experimental Knowledge",
@@ -4522,7 +4544,12 @@ module.exports = [
       { name: "Popper, Karl", why: "Il libro nasce dal suo problema e gli dà quello che gli mancava: non il criterio di falsificabilità, ma una misura di quanto un test sia severo." }
     ],
     note: "Libro di Deborah Mayo pubblicato dalla University of Chicago Press nel 1996, premio Lakatos 1998, e il testo in cui la severità passa da auspicio a misura. L'impianto è una risposta a Popper: il criterio di falsificabilità è giusto e resta inerte finché non si dice che cosa renda un test un buon test, e la proposta di Mayo è che lo renda buono la probabilità che quel test avrebbe segnalato l'errore se l'errore ci fosse stato. Da lì derivano le due tesi che il libro porta oltre la statistica. La prima è il carattere frammentario della verifica: non si mettono alla prova grandi teorie in blocco, si mettono alla prova singoli errori possibili, uno per volta, e questo è anche il modo di disinnescare il problema di Duhem e Quine — se un'ipotesi non si può testare isolatamente, si testa ciò che si può isolare. La seconda è il *ragionare dall'errore*: si conclude qualcosa su un'ipotesi non perché i dati le somiglino, ma perché un errore specifico, se ci fosse stato, si sarebbe visto e non si è visto. Nel sito è uno dei due poli dell'apparato di valutazione delle prove, di fronte al libro di Jaynes del 2003, e i due sono utili insieme proprio perché non sono conciliabili.",
-    articles: []
+    articles: [
+      { title: "Il test severo", url: "/writings/2026-09-30-il-test-severo/" },
+      { title: "Il p-value e le sue guerre", url: "/writings/2026-09-30-il-p-value-e-le-sue-guerre/" },
+      { title: "Philosophy of Statistics", url: "/curated/2025-10-01-romeijn-filosofia-della-statistica-sep/", _source: "curated" },
+      { title: "Happy Birthday C.S. Peirce: Peircean Induction and the Error-Correcting Thesis", url: "/curated/2026-09-11-mayo-peirce-tesi-autocorrettiva-errorstatistics/", _source: "curated" }
+    ]
   },
   {
     name: "p-value",
@@ -5286,7 +5313,8 @@ module.exports = [
     ],
     note: "I due teoremi pubblicati da Kurt Gödel a Vienna nel 1931: in ogni sistema formale abbastanza potente da contenere l'aritmetica esistono enunciati veri che il sistema non dimostra, e il sistema non può dimostrare la propria coerenza. La lettura corrente ne fa un limite assoluto della conoscenza. **Nel sito entrano con la lettura opposta di Alexander Gheorghiu: limitano una particolare edizione di un sistema, e ogni estensione fedele ne apre un'altra.**",
     articles: [
-      { title: "The ladder of knowledge", url: "/curated/2026-10-15-gheorghiu-ladder-of-knowledge-aeon/", _source: "curated" }
+      { title: "The ladder of knowledge", url: "/curated/2026-10-15-gheorghiu-ladder-of-knowledge-aeon/", _source: "curated" },
+      { title: "Is ‘Attention’ the Essence of Intelligence?", url: "/curated/2026-10-12-wolchover-attention-intelligenza-quanta/", _source: "curated" }
     ]
   },
   {
@@ -5339,6 +5367,38 @@ module.exports = [
     note: "Estensione al lavoro intellettuale dell'estrattivismo, il modello economico che preleva risorse naturali per esportarle lasciando poco ai luoghi da cui provengono. **Le aziende dell'AI prendono da una disciplina i problemi, le dimostrazioni e il prestigio, e le lasciano risultati che nessuno capisce né deve spiegare.** L'espressione è del sito; l'immagine dell'«engine of extraction» è di Hannah Fry.",
     articles: [
       { title: "Hannah Fry: How OpenAI has caused an existential crisis in mathematics", url: "/curated/2026-10-14-fry-openai-crisi-matematica-newscientist/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Gödel, Escher, Bach",
+    type: "testo",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "teoremi di incompletezza", why: "Hofstadter ne fa il modello dell'autoriferimento: l'io come anello strano di un sistema che parla di sé." }
+    ],
+    note: "Libro di Douglas Hofstadter (1979, premio Pulitzer). Intreccia la logica di Gödel, le figure di Escher e i canoni di Bach intorno a un'idea sola, l'anello strano: un sistema che, salendo di livello, si ritrova al punto di partenza e parla di sé. **Per Hofstadter la coscienza è proprio un anello di questo tipo, e una definizione di intelligenza non si dà dall'esterno del sistema che la produce.** Nel sito è il riferimento per le domande sulla coscienza delle macchine e sui limiti delle definizioni di intelligenza.",
+    citation: "HOFSTADTER, Douglas R., <em>Gödel, Escher, Bach: An Eternal Golden Braid</em>, New York, Basic Books, 1979.",
+    articles: [
+      { title: "Could AIs become conscious?", url: "/curated/2026-08-20-economist-anche-se-non-lo-fossero/", _source: "curated" },
+      { title: "The search for consciousness inside AI", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" },
+      { title: "Is ‘Attention’ the Essence of Intelligence?", url: "/curated/2026-10-12-wolchover-attention-intelligenza-quanta/", _source: "curated" },
+      { title: "The ladder of knowledge", url: "/curated/2026-10-15-gheorghiu-ladder-of-knowledge-aeon/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Metaphors We Live By",
+    type: "testo",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "The Embodied Mind", why: "Per Lakoff e Johnson le metafore che organizzano il pensiero nascono dall'esperienza del corpo, la stessa tesi della cognizione incarnata." }
+    ],
+    note: "Libro di George Lakoff e Mark Johnson (1980). Sostiene che la metafora non è un ornamento del linguaggio ma la struttura stessa del pensiero: capiamo una cosa nei termini di un'altra, e quelle mappature orientano ciò che vediamo e ciò che facciamo. **Nel sito è il testo di riferimento per le metafore con cui raccontiamo la mente, dalla tavoletta di cera al computer all'attenzione dei transformer, e per quelle che orientano l'azione pubblica.**",
+    citation: "LAKOFF, George e Mark Johnson, <em>Metaphors We Live By</em>, Chicago, University of Chicago Press, 1980.",
+    articles: [
+      { title: "La differenza fra Claude e le mie gatte", url: "/writings/2026-04-30-la-differenza-fra-claude-e-le-mie-gatte/" },
+      { title: "What If We Can Never Trust A.I.?", url: "/curated/2026-08-01-rothman-trust-ai-newyorker/", _source: "curated" },
+      { title: "The Climate Crisis Is Bigger Than Your Footprint", url: "/curated/2026-08-31-stokes-carbon-footprint-bp-mitpress/", _source: "curated" },
+      { title: "Is ‘Attention’ the Essence of Intelligence?", url: "/curated/2026-10-12-wolchover-attention-intelligenza-quanta/", _source: "curated" }
     ]
   }
 

@@ -7,6 +7,7 @@ license: "CC BY-NC-SA 4.0"
 date: 2026-03-13
 tags: [learning, statistica, epistemologia, AI]
 lang: "it"
+concepts: ["Probability Theory: The Logic of Science"]
 ---
 
 Accompagna la lettura del testo di Jaynes con cinque figure esplicative e una mappa concettuale del libro, organizzata in tre fasi: fondamenti logici, costruzione del sistema, applicazioni avanzate e critica frequentista.

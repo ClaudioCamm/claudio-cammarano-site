@@ -12,5 +12,5 @@ description: |
 
   Gheorghiu fa parte del gruppo dell'UCL che ha sviluppato quel quadro, e il saggio ne è anche la presentazione. Letto accanto alla crisi dei matematici davanti alle dimostrazioni prodotte dall'AI, pone la domanda che il saggio non fa: se i pioli li costruisce una macchina e nessuno ci sale, di chi è quella verità?
 tags: [curated, filosofia, epistemologia, scienza]
-concepts: ["teoremi di incompletezza", "verum ipsum factum"]
+concepts: ["teoremi di incompletezza", "verum ipsum factum", "Gödel, Escher, Bach"]
 ---

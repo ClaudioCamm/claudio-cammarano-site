@@ -26,5 +26,5 @@ description: |
 
   La chiusa è di David Chalmers, che al problema difficile ha dato il nome: «E se da qualche parte lungo la strada, senza rendercene conto, avessimo in qualche modo introdotto la coscienza in questi sistemi?» Un utente potrebbe generare decine di agenti in un progetto senza sapere di creare esseri capaci di soffrire. «Sarebbe una catastrofe morale.» Il dubbio che l'archivio tiene accanto a questo, e che arriva un mese dopo, è di altro tipo e più radicale: prima di costruire il rilevatore converrebbe stabilire se ci sia qualcosa da rilevare.
 tags: [curated, ai, filosofia, scienza]
-concepts: ["coscienza di accesso", "coscienza fenomenica", "Bayne, Tim", "rilevatori di testo generato", "test severo", "LLM come attante zero", "Anthropic"]
+concepts: ["coscienza di accesso", "coscienza fenomenica", "Bayne, Tim", "rilevatori di testo generato", "test severo", "LLM come attante zero", "Anthropic", "Gödel, Escher, Bach"]
 ---

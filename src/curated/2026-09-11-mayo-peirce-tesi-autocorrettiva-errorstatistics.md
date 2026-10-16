@@ -20,5 +20,5 @@ description: |
 
   Resta un ultimo passaggio, il più radicale, e Peirce lo affida a una parentesi del 1878 (3.575): l'induzione corregge perfino le proprie premesse. Non solo le conclusioni. Mayo ne dà due casi pratici, entrambi di rilevazione e nessuno di convergenza — la media di misure astronomiche che rivela la struttura dei propri errori, e la tavola di mortalità in cui la distribuzione delle età dichiarate denuncia che le età sono state dichiarate male. In entrambi lo strumento che avrebbe dovuto solo stimare finisce per informare su se stesso, ed è quello, per Peirce, il tratto che spetta «essenzialmente, intrinsecamente e inevitabilmente soltanto al tipo più alto di ragionamento, che è l'induzione» (5.579).
 tags: [curated, epistemologia, filosofia, scienza]
-concepts: ["Peirce, Charles Sanders", "Mayo, Deborah", "test severo", "not even wrong", "metodo scientifico", "Stati Uniti"]
+concepts: ["Peirce, Charles Sanders", "Mayo, Deborah", "test severo", "not even wrong", "metodo scientifico", "Stati Uniti", "Error and the Growth of Experimental Knowledge"]
 ---

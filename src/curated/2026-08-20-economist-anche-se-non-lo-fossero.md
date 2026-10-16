@@ -22,5 +22,5 @@ description: |
 
   La seconda riguarda la frase con cui il pezzo si chiude, perché è più precisa di quanto sembri: «ci sono due modi perché le macchine siano sicure, essere affidabili o essere controllabili. *H. sapiens* non dovrebbe cedere il controllo alla leggera». Sono le due domande che l'archivio ha già separato — che cosa vorrà la macchina, e chi la controlla — e la seconda è la forma che la questione assume istituzionalmente fuori dall'Occidente. Che qui la Cina compaia nel dettaglio dei bot resi meno umani per limitare la dipendenza emotiva non è un aneddoto: è la stessa domanda sul controllo, applicata alla psicologia degli utenti invece che alla sicurezza dei modelli.
 tags: [curated, ai, filosofia]
-concepts: ["coscienza fenomenica", "coscienza di accesso", "LLM come attante zero", "allineamento AI"]
+concepts: ["coscienza fenomenica", "coscienza di accesso", "LLM come attante zero", "allineamento AI", "Gödel, Escher, Bach"]
 ---
