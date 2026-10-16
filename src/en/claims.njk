@@ -25,6 +25,7 @@ og_card: /images/og/og-en-home.png
   "elementi-di-scenario": "scenario element"
 } %}
 {% set G = claimLayers.graph %}
+{% macro glifo(c, s) %}<svg class="gl gl-{{ c.voice }}{% if c.hollow %} gl-v{% endif %}" width="{{ s }}" height="{{ s }}" viewBox="0 0 16 16" aria-hidden="true">{% if c.shape == "circle" %}<circle cx="8" cy="8" r="5"/>{% elif c.shape == "square" %}<rect x="3.3" y="3.3" width="9.4" height="9.4"/>{% elif c.shape == "diamond" %}<path d="M8 2.2 13.8 8 8 13.8 2.2 8Z"/>{% else %}<path d="M8 2.7 14.2 13.3 1.8 13.3Z"/>{% endif %}</svg>{% endmacro %}
 
 <style>
 .cl-lede{max-width:34em;font-family:var(--font-serif);font-size:1.22rem;line-height:1.5;color:var(--color-text)}
@@ -32,8 +33,14 @@ og_card: /images/og/og-en-home.png
 
 /* --- l'impaginazione: mappa a sinistra, lettura a destra -------------- */
 .cx{display:grid;grid-template-columns:1fr;gap:2.4rem;margin:2.2em 0 3em}
+/* Su schermo stretto le domande vengono prima: la rete e' la vista
+   di secondo giro, non la porta d'ingresso. */
+.cx-map{order:2}
+.cx-read{order:1}
 @media (min-width:1000px){
   .cx{grid-template-columns:372px minmax(0,1fr);gap:3.6rem;align-items:start}
+  .cx-map{order:1}
+  .cx-read{order:2}
   .cx-map{position:sticky;top:1.4rem;max-height:calc(100vh - 3rem);overflow-y:auto;overflow-x:hidden}
 }
 .cx-h{font-size:.74em;letter-spacing:.12em;text-transform:uppercase;color:var(--color-text-light);margin:0 0 .3em;font-family:inherit;font-weight:600}
@@ -41,6 +48,27 @@ og_card: /images/og/og-en-home.png
 .cx-all{font:inherit;font-size:.74em;letter-spacing:.06em;text-transform:uppercase;background:none;border:1px solid var(--color-border);color:var(--color-text-light);padding:.5em .9em;cursor:pointer;min-height:36px}
 .cx-all[aria-pressed="true"]{border-color:var(--color-primary);color:var(--color-primary)}
 .cx-read{min-width:0}
+.gl{flex:none;vertical-align:-2px}
+.gl *{stroke-width:1.7}
+.gl-literature *{fill:var(--color-primary);stroke:var(--color-primary)}
+.gl-log *{fill:#800020;stroke:#800020}
+.gl-v *{fill:none}
+.cx-leg{margin:1.6em 0 0;font-family:var(--font-sans);font-size:.78em;line-height:1.5;color:var(--color-text-light)}
+.cx-leg b{display:block;font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:.9em;color:var(--color-text-light);margin-bottom:.5em}
+.cx-leg li{list-style:none;margin:.25em 0;display:flex;gap:.5em;align-items:baseline}
+.cx-leg ul{margin:0;padding:0}
+.qw{margin:0 0 2em;max-width:38em}
+.qw-th{font-family:var(--font-sans);font-size:.72em;letter-spacing:.11em;text-transform:uppercase;color:#800020;margin:2.2em 0 .9em}
+.qw-th:first-of-type{margin-top:0}
+.q{border-left:4px solid var(--color-border);padding-left:1.2em;margin:0 0 1.5em}
+.q:hover{border-left-color:var(--color-primary)}
+.q-t{font-family:var(--font-serif);font-size:1.16rem;line-height:1.4;margin:0;background:none;border:0;padding:0;text-align:left;color:var(--color-text);cursor:pointer;display:block}
+.q:hover .q-t{color:var(--color-primary)}
+.q-c{display:flex;flex-wrap:wrap;gap:.3em .9em;margin:.5em 0 0}
+.q-chip{font-family:var(--font-sans);font-size:.78em;color:var(--color-text-light);background:none;border:0;padding:.15em 0;cursor:pointer;display:inline-flex;gap:.4em;align-items:center}
+.q-chip:hover{color:var(--color-primary)}
+.cx-kicker{font-family:var(--font-sans);font-size:.72em;letter-spacing:.11em;text-transform:uppercase;color:var(--color-text-light);margin:0 0 .3em}
+.cx-ans{font-family:var(--font-sans);font-size:.68em;letter-spacing:.12em;text-transform:uppercase;color:#aaa;margin:0 0 .4em}
 .th{border-left:4px solid var(--color-border);padding-left:1.2em;margin:0 0 1.8em;max-width:36em}
 .th h3{font-family:var(--font-serif);font-size:1.3rem;margin:0 0 .2em;line-height:1.3}
 .th p{margin:0 0 .7em;color:var(--color-text-light);font-size:.95em;font-family:var(--font-sans)}
@@ -144,19 +172,19 @@ og_card: /images/og/og-en-home.png
 
 <h1>Claims</h1>
 
-<p class="cl-lede">A scientific claim is not a headline: it withholds itself until you have the context, and no two readers arrive with the same context. So this is not a list to scroll &mdash; it is twelve concepts, and the claims come through them.</p>
+<p class="cl-lede">A scientific claim is not a headline: it withholds itself until you have the context, and no two readers arrive with the same context. So this is not a list to scroll &mdash; it is {{ claimLayers.CONCEPTS.length }} questions, and the claims come through them.</p>
 
 <div class="cx">
   <aside class="cx-map">
-    <h2 class="cx-h">The concepts</h2>
-    <p class="cx-hint">Twelve propositions about the world, {{ G.arcs.length }} declared links between them. The bar is the weight of the claims underneath; the arc is a link. Pick one.</p>
+    <h2 class="cx-h">How they connect</h2>
+    <p class="cx-hint">The questions, seen as the {{ claimLayers.CONCEPTS.length }} propositions they answer and the {{ G.arcs.length }} links declared between them. The bar is the weight of the claims underneath; the arc is a link.</p>
     <figure class="cm" id="cm">
     <svg viewBox="0 0 {{ G.W }} {{ G.height }}" role="img" aria-labelledby="cm-t">
       <title id="cm-t">Concept map: {{ claimLayers.CONCEPTS.length }} concepts connected by {{ G.arcs.length }} declared links</title>
       {% for b in G.bands %}<text class="cm-band" x="0" y="{{ b.y }}">{{ b.en }}<title>{{ b.position }}</title></text>{% endfor %}
       <g class="cm-arcs">{% for a in G.arcs %}<path d="{{ a.d }}" data-a="{{ a.from }}" data-b="{{ a.to }}"></path>{% endfor %}</g>
       {% for n in G.nodes %}
-      <g class="cm-n" data-concept="{{ n.key }}" data-theme="{{ n.theme }}" data-note="{{ n.note }}" data-en="{{ n.en }}" data-links="{{ n.links | join(' ') }}" tabindex="0" role="button" aria-pressed="false">
+      <g class="cm-n" data-concept="{{ n.key }}" data-theme="{{ n.theme }}" data-note="{{ n.note }}" data-q="{{ n.question }}" data-en="{{ n.en }}" data-links="{{ n.links | join(' ') }}" tabindex="0" role="button" aria-pressed="false">
         <rect class="cm-hit" x="0" y="{{ n.y - 19 }}" width="{{ G.W }}" height="38"></rect>
         <circle cx="{{ G.NX }}" cy="{{ n.y }}" r="{{ n.r }}"></circle>
         <text class="cm-lab" x="78" y="{{ n.y - 1 }}">{{ n.en }}</text>
@@ -167,25 +195,39 @@ og_card: /images/og/og-en-home.png
     </svg>
     <p class="cm-note" id="cm-note">Every concept carries a proposition and at least one link to another concept: without both it cannot exist, and the build fails.</p>
     </figure>
+    <div class="cx-leg">
+      <b>Reading the marks</b>
+      <ul>
+        {% for f in claims.FAMIGLIE %}<li>{{ glifo({shape: f.forma, voice: "literature"}, 13) }} <span>{{ f.en }} &mdash; {{ f.d1 | join(", ") }}</span></li>{% endfor %}
+        <li>{{ glifo({shape: "circle", voice: "log"}, 13) }} <span>bordeaux: from the research log, not the literature</span></li>
+        <li>{{ glifo({shape: "circle", voice: "literature", hollow: true}, 13) }} <span>hollow: held as a counter-thesis, and weighted &times;1.5 for it</span></li>
+      </ul>
+    </div>
     <button class="cx-all" type="button" id="cx-all" aria-pressed="false">Show all {{ claims.length }} claims</button>
   </aside>
 
   <section class="cx-read" id="cx-read">
     <div id="cx-intro">
-      <h2>Three positions</h2>
-      <p class="cx-hint">The concepts sit under three themes, and a theme is not a folder: it is a position this archive takes, derived from the topics underneath and never assigned by hand. Start from the one you recognise.</p>
+      <h2>The questions</h2>
+      <p class="cx-hint">A title tells you what a text is about before you read it. A claim has no title, and giving it one would mean deciding its meaning on your behalf. What it has instead is the question it answers: that is the anchor, and the marks beside it say what kind of claim it is, whose, and whether the archive holds it or holds it against itself.</p>
+      <div class="qw">
       {% for t in claimLayers.THEMES %}
-      <div class="th">
-        <h3>{{ t.en }}</h3>
-        <p>{{ t.position }}</p>
-        <p class="th-cs">{% for c in t.concepts %}<button class="cx-go" type="button" data-go="{{ c.key }}">{{ c.en }}<b>{{ c.n }}</b></button>{% endfor %}</p>
-      </div>
+        <p class="qw-th">{{ t.en }}</p>
+        {% for c in t.concepts %}
+        <div class="q">
+          <button class="q-t" type="button" data-go="{{ c.key }}">{{ c.question }}</button>
+          <p class="q-c">{% for ch in c.chips %}<button class="q-chip" type="button" data-go="{{ c.key }}" data-at="{{ ch.id }}">{{ glifo(ch, 13) }}{{ ch.cite }}</button>{% endfor %}</p>
+        </div>
+        {% endfor %}
       {% endfor %}
+      </div>
     </div>
 
     <div id="cx-head" hidden aria-live="polite">
-      <p class="cx-back"><button type="button" id="cx-reset">&larr; All concepts</button></p>
+      <p class="cx-back"><button type="button" id="cx-reset">&larr; All questions</button></p>
+      <p class="cx-kicker" id="cx-kicker"></p>
       <h2 class="cx-name" id="cx-name"></h2>
+      <p class="cx-ans" id="cx-ans">What this archive answers</p>
       <p class="cx-prop" id="cx-prop"></p>
       <p class="cx-links" id="cx-links"></p>
     </div>
@@ -200,7 +242,7 @@ og_card: /images/og/og-en-home.png
           {% if l.before %}<p class="lx-ctx lx-before">{{ l.before }}</p>{% endif %}
           <blockquote class="lx-claim"{% if l.fonte and l.fonte.doi %} cite="https://doi.org/{{ l.fonte.doi }}"{% endif %}>{% for part in l.parts %}{{ part }}{% if not loop.last %}<span class="lx-gap"><span class="lx-ell">[&hellip;]</span><span class="lx-cut">{{ l.cuts[loop.index0] }}</span></span>{% endif %}{% endfor %}</blockquote>
           {% if l.after %}<p class="lx-ctx lx-after">{{ l.after }}</p>{% endif %}
-          <p class="lx-head"><cite class="lx-cite"{% if l.fonte %} title="{{ l.fonte.title }}"{% endif %}>{% if l.fonte and l.fonte.doi %}<a href="https://doi.org/{{ l.fonte.doi }}" rel="external">{{ l.cite }}</a>{% elif l.fonte %}{{ l.cite }}{% else %}<a href="{{ l.src }}">Lab note</a>{% endif %}</cite>{% if l.locus %}<span class="lx-locus">{{ l.locus }}</span>{% endif %}</p>
+          <p class="lx-head">{{ glifo(l, 14) }} <cite class="lx-cite"{% if l.fonte %} title="{{ l.fonte.title }}"{% endif %}>{% if l.fonte and l.fonte.doi %}<a href="https://doi.org/{{ l.fonte.doi }}" rel="external">{{ l.cite }}</a>{% elif l.fonte %}{{ l.cite }}{% else %}<a href="{{ l.src }}">Lab note</a>{% endif %}</cite>{% if l.locus %}<span class="lx-locus">{{ l.locus }}</span>{% endif %}</p>
         </div>
         <p class="lx-layers">
           <span class="k">topic</span> {{ L.topicEn }}
@@ -248,6 +290,7 @@ og_card: /images/og/og-en-home.png
   var intro = document.getElementById('cx-intro');
   var capo = document.getElementById('cx-head');
   var nome = document.getElementById('cx-name');
+  var occhiello = document.getElementById('cx-kicker');
   var prop = document.getElementById('cx-prop');
   var legami = document.getElementById('cx-links');
   var nota = document.getElementById('cm-note');
@@ -291,7 +334,10 @@ og_card: /images/og/og-en-home.png
         if (nodoDi[altro]) nodoDi[altro].classList.add('on');
       }
     });
-    nome.textContent = g.getAttribute('data-en');
+    // La domanda e' il titolo che il claim non ha; il concetto e' la
+    // risposta che l'archivio da'. In quest'ordine, non al contrario.
+    occhiello.textContent = 'Concept \u00b7 ' + g.getAttribute('data-en');
+    nome.textContent = g.getAttribute('data-q');
     prop.textContent = g.getAttribute('data-note');
     var vicini = (g.getAttribute('data-links') || '').split(' ').filter(Boolean);
     legami.innerHTML = '<span class="k">connects to</span>' + vicini.map(function (v) {
@@ -314,7 +360,15 @@ og_card: /images/og/og-en-home.png
 
   document.addEventListener('click', function (e) {
     var g = e.target.closest ? e.target.closest('[data-go]') : null;
-    if (g) { e.preventDefault(); apri(g.getAttribute('data-go')); }
+    if (g) {
+      e.preventDefault();
+      apri(g.getAttribute('data-go'));
+      var at = g.getAttribute('data-at');
+      if (at) {
+        var u = document.getElementById(at);
+        if (u) setTimeout(function () { u.scrollIntoView({ behavior: 'smooth', block: 'center' }); }, 80);
+      }
+    }
   });
 
   document.getElementById('cx-reset').addEventListener('click', aCapo);
@@ -325,6 +379,7 @@ og_card: /images/og/og-en-home.png
     spegni();
     tutti.setAttribute('aria-pressed', 'true');
     intro.hidden = true; capo.hidden = false;
+    occhiello.textContent = '';
     nome.textContent = 'All claims';
     prop.textContent = 'Every claim in the archive, heaviest first. The weight is the Geometry layer: it makes a peer-reviewed paper, a conference paper and a programme note comparable.';
     legami.innerHTML = '';

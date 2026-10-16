@@ -27,6 +27,8 @@
  * secondo tipo: sono il banco di prova dello schema, non ancora la
  * letteratura. Le lessie dai paper entrano quando i DOI sono a posto.
  */
+const fs = require("fs");
+const path = require("path");
 const biblio = require("./biblio.js");
 
 const RELAZIONI = {
@@ -477,6 +479,23 @@ function peso(l) {
   return Math.round(p * 100) / 100;
 }
 
+// La grammatica visiva: quattro famiglie di forma sui codici D1.
+// Serve a dare al claim l'ancoraggio che un titolo darebbe e che un claim
+// non ha: prima di leggere una parola si vede che tipo di cosa e', di chi
+// e', quanto pesa e se l'archivio la tiene per vera o per controtesi.
+const FORMA = {
+  "D1.1": "circle", "D1.2": "circle",                                  // cio' che e' stato osservato
+  "D1.3": "triangle", "D1.4": "triangle",                              // cio' che segue
+  "D1.5": "diamond", "D1.6": "diamond", "D1.14": "diamond",            // cio' che c'e'
+  "D1.7": "square", "D1.8": "square", "D1.9": "square", "D1.10": "square" // cio' che si deve fare
+};
+const FAMIGLIE = [
+  { forma: "circle",   en: "what was observed",   d1: ["D1.1", "D1.2"] },
+  { forma: "triangle", en: "what follows",        d1: ["D1.3", "D1.4"] },
+  { forma: "diamond",  en: "what there is",       d1: ["D1.5", "D1.6", "D1.14"] },
+  { forma: "square",   en: "what should be done", d1: ["D1.7", "D1.8", "D1.9", "D1.10"] }
+];
+
 // Citazione breve: cognomi + anno. Serve alla pagina, non al dato.
 function breve(fonte) {
   if (!fonte) return "Programme note";
@@ -495,13 +514,30 @@ function breve(fonte) {
   return `${cognomi[0]} et al.` + anno;
 }
 
+// La maniglia di una lessia del diario: il titolo della nota, troncato
+// prima del trattino, piu' il capoverso. "Programme note" su undici lessie
+// non e' un'ancora, e' un'etichetta che non distingue niente.
+function notaBreve(src, locus) {
+  const f = path.join(__dirname, "..", "lab",
+    String(src).replace(/^\/lab\//, "").replace(/\/$/, "") + ".md");
+  let titolo = "Research log";
+  if (fs.existsSync(f)) {
+    const m = fs.readFileSync(f, "utf8").match(/^title:\s*"?(.*?)"?\s*$/m);
+    if (m) titolo = m[1].split(/\s[\u2014-]\s/)[0].replace(/^"|"$/g, "").trim();
+  }
+  return locus ? `${titolo} ${locus}` : titolo;
+}
+
 module.exports = lessie.map(l => {
   const fonte = perChiave[l.src] || null;
   return {
     ...l,
     weight: peso(l),
     fonte,
-    cite: breve(fonte),
+    cite: fonte ? breve(fonte) : notaBreve(l.src, l.locus),
+    shape: FORMA[l.d1] || "circle",
+    voice: fonte ? "literature" : "log",
+    hollow: l.stance === "contested",
     // Il claim spezzato sui tagli: parts[i] e cuts[i] si alternano, cosi'
     // la pagina rimette le parole al loro posto senza manipolare stringhe.
     parts: String(l.claim).split("[\u2026]"),
@@ -522,6 +558,7 @@ module.exports.FONTI = new Set(module.exports.map(l => l.src)).size;
 module.exports.FN = Object.values(_fn).sort((a, b) => b.w - a.w);
 module.exports.D1N = Object.values(_d1).sort((a, b) => b.w - a.w);
 
+module.exports.FAMIGLIE = FAMIGLIE;
 module.exports.D1 = D1;
 module.exports.RELAZIONI = RELAZIONI;
 module.exports.STANCE = STANCE;

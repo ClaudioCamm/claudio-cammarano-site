@@ -46,54 +46,67 @@ const THEMES = [
 // Il Concetto: una proposizione sul mondo, una nota, dei legami. Il centro.
 const CONCEPTS = [
   { key: "form-meaning-gap", en: "Form–meaning gap",
+    question: "Can a system trained only on form learn what the language is about?",
     note: "Training on form alone leaves meaning out of reach: what reads as understanding is a property of the text, not of the system.",
     links: ["agent-model", "imitative-falsehood", "sequence-without-recurrence"],
     claims: ["form-alone-cannot-yield-meaning", "correlation-versus-mechanism"] },
   { key: "agent-model", en: "Agent model",
+    question: "Does predicting text require representing the mind that wrote it?",
     note: "A model can carry partial representations of the intentions behind the text it was trained on without being an agent itself.",
     links: ["form-meaning-gap"],
     claims: ["lms-infer-agent-mental-states", "correlation-versus-mechanism"] },
   { key: "epistemic-self-classification", en: "Epistemic self-classification",
+    question: "Can a model report what kind of claim it is about to make?",
     note: "A system can report on contents of its own processing and still not represent what kind of claim it is about to make: the typing has to come from outside.",
     links: ["agent-model", "claim-type"],
     claims: ["no-metacognition-was-the-wrong-name", "models-lack-epistemic-self-classification", "introspection-is-a-narrow-channel"] },
   { key: "claim-type", en: "Claim type",
+    question: "Does the kind of a claim decide how it can be checked?",
     note: "What kind of claim something is decides how it can be checked at all: the ontology comes before the epistemology.",
     links: ["verdict", "measurement-artefact"],
     claims: ["ontology-precedes-epistemology", "truth-conditions-do-not-transfer", "d1-is-load-bearing", "arguments-answer-to-arguments", "convergence-is-not-a-link"] },
   { key: "verdict", en: "Verdict",
+    question: "What has to hold before a judgement on an output counts?",
     note: "A judgement on an output is worth no more than the procedure that produced it, and the procedure has to be inspectable.",
     links: ["coder-agreement", "machine-judge", "claim-type", "declared-incompleteness"],
     claims: ["mode-a-needs-a-blind-recode", "llm-judges-match-human-agreement", "reproducibility-is-documentation"] },
   { key: "coder-agreement", en: "Coder agreement",
+    question: "What does agreement between coders actually measure?",
     note: "Agreement between coders measures a procedure, not a truth, and it improves more by adding coders than by correcting for their bias.",
     links: ["verdict", "convergent-paths"],
     claims: ["more-annotators-beats-bias-correction", "mode-a-needs-a-blind-recode", "surface-variance-masks-convergence"] },
   { key: "machine-judge", en: "Machine judge",
+    question: "Can a model stand in for a human rater?",
     note: "A model can stand in for a human rater at a measurable rate of agreement; the rate is the claim, not the competence.",
     links: ["verdict", "inverse-scaling"],
     claims: ["llm-judges-match-human-agreement", "cai-partially-replaces-human-feedback"] },
   { key: "measurement-artefact", en: "Measurement artefact",
+    question: "When does a jump in a curve belong to the metric rather than to the thing measured?",
     note: "A discontinuity in a curve can belong to the metric rather than to the thing measured: a finer metric dissolves it.",
     links: ["declared-incompleteness", "claim-type", "convergent-paths"],
     claims: ["breakthroughs-are-metric-artefacts", "surface-variance-masks-convergence", "convergence-is-not-a-link"] },
   { key: "declared-incompleteness", en: "Declared incompleteness",
+    question: "Does an evaluation have to publish what it did not measure?",
     note: "An evaluation is honest when it states the distance between what it aspires to measure and what it actually measures.",
     links: ["measurement-artefact", "verdict"],
     claims: ["explicit-about-what-is-not-evaluated", "reproducibility-is-documentation"] },
   { key: "inverse-scaling", en: "Inverse scaling",
+    question: "Does a larger model get better at everything?",
     note: "More parameters do not buy more of everything: on some properties the larger model is the worse one.",
     links: ["imitative-falsehood", "measurement-artefact"],
     claims: ["inverse-scaling-of-truthfulness", "breakthroughs-are-metric-artefacts"] },
   { key: "imitative-falsehood", en: "Imitative falsehood",
+    question: "Can a model be wrong because it learned its training data well?",
     note: "A model can be wrong because it learned the training distribution well, not because it learned it badly.",
     links: ["inverse-scaling", "form-meaning-gap"],
     claims: ["inverse-scaling-of-truthfulness", "hallucination-the-standard-definition"] },
   { key: "convergent-paths", en: "Convergent paths",
+    question: "Is agreement between different derivations evidence about the answer?",
     note: "Several different derivations arriving at the same answer is evidence about the answer, not noise to be averaged away.",
     links: ["coder-agreement", "measurement-artefact"],
     claims: ["plural-paths-one-answer", "surface-variance-masks-convergence"] },
   { key: "sequence-without-recurrence", en: "Sequence without recurrence",
+    question: "What changed when processing a sequence stopped being step by step?",
     note: "Relations between positions in a sequence can be computed all at once instead of step by step, which is what made the scale possible.",
     links: ["form-meaning-gap"],
     claims: ["transformer-dispenses-with-recurrence"] }
@@ -174,7 +187,7 @@ const yDi = righe.map((c, i) => {
 });
 
 const nodes = righe.map((c, i) => ({
-  key: c.key, en: c.en, note: c.note, theme: c.theme, w: c.w, n: c.n,
+  key: c.key, en: c.en, note: c.note, question: c.question, theme: c.theme, w: c.w, n: c.n,
   claims: c.claims, links: c.links,
   y: yDi[i],
   r: Math.round((3.2 + 2.1 * Math.sqrt(c.w)) * 10) / 10,
@@ -185,8 +198,18 @@ const wMax = Math.max.apply(null, nodes.map(n => n.w));
 nodes.forEach(n => { n.bar = Math.round((n.w / wMax) * 150); });
 
 // I concetti di ogni tema, per l'elenco testuale accanto alla mappa.
+const perId = {};
+lessie.forEach(l => { perId[l.id] = l; });
 THEMES.forEach(t => {
-  t.concepts = righe.filter(c => c.theme === t.key).map(c => ({ key: c.key, en: c.en, n: c.n }));
+  t.concepts = righe.filter(c => c.theme === t.key).map(c => ({
+    key: c.key, en: c.en, n: c.n, question: c.question,
+    // Le pasticche sotto la domanda: il segno piu' la maniglia che in
+    // scienza fa da titolo da sempre, cioe' autore e anno.
+    chips: c.claims.map(id => ({
+      id, cite: perId[id].cite, shape: perId[id].shape,
+      voice: perId[id].voice, hollow: perId[id].hollow
+    })).sort((a, b) => a.cite.localeCompare(b.cite))
+  }));
 });
 
 const posizione = {};
