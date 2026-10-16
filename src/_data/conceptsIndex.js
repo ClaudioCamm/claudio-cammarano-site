@@ -5373,6 +5373,7 @@ module.exports = [
     name: "Gödel, Escher, Bach",
     type: "testo",
     geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q831517", "https://it.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach:_un%27eterna_ghirlanda_brillante"],
     related: [
       { name: "teoremi di incompletezza", why: "Hofstadter ne fa il modello dell'autoriferimento: l'io come anello strano di un sistema che parla di sé." }
     ],
@@ -5389,6 +5390,7 @@ module.exports = [
     name: "Metaphors We Live By",
     type: "testo",
     geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q31067292", "https://en.wikipedia.org/wiki/Metaphors_We_Live_By"],
     related: [
       { name: "The Embodied Mind", why: "Per Lakoff e Johnson le metafore che organizzano il pensiero nascono dall'esperienza del corpo, la stessa tesi della cognizione incarnata." }
     ],
