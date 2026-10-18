@@ -1,0 +1,157 @@
+---
+layout: layouts/base.njk
+title: "ENTIA — the archive's notation"
+description: "The normative specification, in English, of the editorial notation used on claudiocammarano.com: five layers, six reading functions, the assignment rules, the conformance conditions and the declared scope. Versioned, CC BY 4.0."
+permalink: /en/entia/
+lang: en
+---
+
+{# /en/entia/ — la specifica normativa inglese (R14).
+   Non e' la traduzione di /entia/: tiene il normativo e lascia alla pagina
+   italiana il racconto d'origine, le misure su questo archivio e la mappa.
+   L'argomento e' la conformita' stessa: struttura fissa, vocabolario e
+   parametri locali. Le distribuzioni di Claudio sono la prova che ENTIA e'
+   usata qui, non una parte di cio' che un altro deve implementare.
+   Testi: src/_data/entiaEn.js. Dati strutturali: src/_data/entia.js. #}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://claudiocammarano.com/en/entia/#spec",
+  "name": "ENTIA — {{ entia.sciolto }}",
+  "headline": "ENTIA — normative specification",
+  "version": "{{ entia.spec }}",
+  "dateModified": "{{ entia.rilievi.data }}",
+  "inLanguage": "en",
+  "license": "{{ entia.licenza.url }}",
+  "url": "https://claudiocammarano.com/en/entia/",
+  "identifier": "https://doi.org/{{ entia.deposito.doi }}",
+  "isBasedOn": "https://claudiocammarano.com/entia/",
+  "author": { "@type": "Person", "name": "Claudio Cammarano", "@id": "https://orcid.org/0009-0006-3690-7466" }
+}
+</script>
+
+{% include "components/entia-style.njk" %}
+
+<div class="notazione-page">
+
+  <header class="tag-page-header">
+    <nav class="breadcrumb" aria-label="Navigation">
+      <a href="/en/">Home</a>
+      <span class="breadcrumb-sep" aria-hidden="true">·</span>
+      <a href="/en/colophon/">Colophon</a>
+      <span class="breadcrumb-sep" aria-hidden="true">·</span>
+      <span class="breadcrumb-current">ENTIA</span>
+    </nav>
+    <p class="tag-page-label">Specification · version {{ entia.spec }}</p>
+    <h1 class="tag-page-title">ENTIA</h1>
+    <p class="tag-page-intro"><em>{{ entia.sciolto }}</em> — an open editorial notation for curated archives. {{ entiaEn.orientamento.normativo }}</p>
+  </header>
+
+  <div class="article-body">
+
+    <dl class="notazione-meta">
+      <div><dt>Version</dt><dd>{{ entia.spec }}</dd></div>
+      <div><dt>Deposited</dt><dd><a href="{{ entia.deposito.url }}">{{ entia.deposito.doi }}</a></dd></div>
+      <div><dt>Licence</dt><dd><a href="{{ entia.licenza.url }}" rel="license">{{ entia.licenza.nome }}</a></dd></div>
+      <div><dt>Data</dt><dd><a href="/entia.json">entia.json</a></dd></div>
+      <div><dt>Italian text</dt><dd><a href="/entia/" lang="it" hreflang="it">/entia/</a></dd></div>
+    </dl>
+
+    <h2 id="what">What it is</h2>
+    {%- for p in entiaEn.orientamento.cose %}
+    <p>{{ p | safe }}</p>
+    {%- endfor %}
+
+    <h2 id="who">Who it is for</h2>
+    {%- for p in entiaEn.orientamento.chi %}
+    <p>{{ p | safe }}</p>
+    {%- endfor %}
+
+    <h2 id="name">The name</h2>
+    <p>{{ entiaEn.orientamento.nome | safe }}</p>
+
+    <h2 id="layers">The five layers</h2>
+    <p>The notation is not a taxonomy of subjects: it is a scale of commitment. Each layer says the same thing about a text with a different degree of exposure to error, and is defined by what it <em>cannot</em> do.</p>
+
+    <div class="entia-tab">
+      <table>
+        <thead><tr><th>Layer</th><th>What binds it</th><th>What it asserts</th><th>What it cannot do</th></tr></thead>
+        <tbody>
+        {%- for s in entia.strati %}
+          {%- set t = entiaEn.stratiTesti[s.nome] %}
+          <tr>
+            <td><strong>{{ entiaEn.strati[s.nome] }}</strong></td>
+            <td>{{ t.lega }}</td>
+            <td>{{ t.afferma }}</td>
+            <td>{{ t.nonPuo }}</td>
+          </tr>
+        {%- endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    {%- for s in entia.strati %}
+    <p class="entia-nota"><strong>{{ entiaEn.strati[s.nome] }}.</strong> {{ entiaEn.stratiTesti[s.nome].nota }}</p>
+    {%- endfor %}
+
+    <p class="entia-nota">The counts per layer are a property of this archive, not of the notation, and they are on the <a href="/entia/#strati" lang="it" hreflang="it">Italian page</a> with the date they were taken.</p>
+
+    <h2 id="functions">The six functions</h2>
+    <p>Every card declares one function only: what that reading did for this archive. When two both apply, <strong>the more specific one wins</strong>, in the order below. The order is normative; the names are not — see <a href="#conformance">Adopting ENTIA</a>.</p>
+
+    {%- for f in entia.funzioni %}
+    {%- set t = entiaEn.funzioniTesti[f.slug] %}
+    <div class="entia-fn" id="{{ f.slug }}">
+      <p class="ord">Precedence {{ f.precedenza }}</p>
+      <h3>{{ entiaEn.funzioni[f.slug] }}</h3>
+      <p>{{ t.estesa }}</p>
+      <p class="prova">Test: {{ t.prova }}</p>
+    </div>
+    {%- endfor %}
+
+    <h2 id="rules">The rules</h2>
+    {%- for r in entia.regole %}
+    {%- set rt = entiaEn.regole[r.nome] %}
+    <div class="entia-regola"><b>{{ rt.nome }}</b>{{ rt.testo }}</div>
+    {%- endfor %}
+
+    <h2 id="scope">What the model is for</h2>
+    <p>{{ entiaEn.limiti.premessa | safe }}</p>
+    <dl class="entia-limiti">
+      {%- for l in entiaEn.limiti.voci %}
+      <dt>{{ l.titolo }}</dt>
+      <dd>{{ l.testo | safe }}</dd>
+      {%- endfor %}
+    </dl>
+
+    <h2 id="conformance">{{ entiaEn.conformita.titolo }}</h2>
+    <p>{{ entiaEn.conformita.licenzaVsUso | safe }}</p>
+
+    <h3>{{ entiaEn.conformita.struttura.titolo }}</h3>
+    <p>{{ entiaEn.conformita.struttura.fisso | safe }}</p>
+    <p>{{ entiaEn.conformita.struttura.locale | safe }}</p>
+
+    <h3>{{ entiaEn.conformita.peso.titolo }}</h3>
+    <p>{{ entiaEn.conformita.peso.testo | safe }}</p>
+    <p>{{ entiaEn.conformita.peso.soglia | safe }}</p>
+
+    <h3>The four conditions</h3>
+    <p>{{ entiaEn.conformita.premessa }}</p>
+    <ol>
+      {%- for r in entiaEn.conformita.requisiti %}
+      <li>{{ r }}</li>
+      {%- endfor %}
+    </ol>
+
+    <h2 id="deposit">The deposit, and how to cite it</h2>
+    <p>The specification, the vocabulary in SKOS, the corpus with its assignments and its two dates, the map and the figures are deposited on Zenodo under {{ entia.licenza.nome }}: a public archive, independent of this site, which guarantees that version {{ entia.spec }} stays readable and unchanged even once this page has moved on.</p>
+    <p class="entia-citazione">{{ entia.deposito.citazione }} <a href="{{ entia.deposito.url }}">{{ entia.deposito.doi }}</a></p>
+    <p class="entia-nota">That DOI is the <em>concept</em> DOI: it always resolves to the latest version. Version {{ entia.spec }} also has a DOI of its own, <a href="https://doi.org/{{ entia.deposito.versionDoi }}">{{ entia.deposito.versionDoi }}</a>, for when you need to cite exactly this one and not a later one. For machines, the same specification is in <a href="/entia.json">/entia.json</a>, where the labels of the layers, the functions and the themes carry both languages. One caveat if you follow the DOI: the package deposited as {{ entia.spec }} carries the specification in Italian only. This English text and the bilingual vocabulary ship with the deposit of 1.1.</p>
+
+    <h2 id="licence">Licence</h2>
+    <p><a href="{{ entia.licenza.url }}" rel="license">{{ entia.licenza.nome }}</a>. Deliberately not the licence of the essays: NC-ND on a protocol would block the adoption that makes it useful, and ND would forbid the derived versions that are the sign a method is alive.</p>
+
+  </div>
+</div>

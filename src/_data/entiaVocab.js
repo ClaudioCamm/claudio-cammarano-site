@@ -37,7 +37,8 @@ Object.entries(clusters).forEach(([t, as]) => as.forEach(a => { temaDi[a] = t; }
 const concetti = [...new Set(indice.map(nomeDi).filter(Boolean))].sort((a, b) => a.localeCompare(b, "it"));
 
 // Se il vocabolario italiano cresce e le etichette inglesi no, qui si ferma.
-EN.manca(entia.strati.map(s => s.nome), entia.funzioni.map(f => f.slug), Object.keys(clusters));
+EN.manca(entia.strati.map(s => s.nome), entia.funzioni.map(f => f.slug),
+         Object.keys(clusters), entia.regole.map(r => r.nome), entia.limiti.voci.length);
 
 module.exports = {
   "@context": {
@@ -74,7 +75,7 @@ module.exports = {
     "@type": "skos:Concept",
     "skos:inScheme": { "@id": NS + "scheme/funzioni" },
     "skos:prefLabel": bilingue(f.label, EN.funzioni[f.slug]),
-    "skos:definition": f.descrizione,
+    "skos:definition": bilingue(f.descrizione, EN.funzioniTesti[f.slug].descrizione),
     estesa: f.estesa,
     prova: f.prova,
     precedenza: f.precedenza,
