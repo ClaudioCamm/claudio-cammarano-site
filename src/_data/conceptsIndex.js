@@ -1454,7 +1454,8 @@ module.exports = [
       { title: "Open Weights, Closed Ranks: The AI Manifesto War", url: "/curated/2026-08-12-zuniga-pesi-aperti-manifesti-icle/", _source: "curated" },
       { title: "The Atlantic is getting more subscribers from Google traffic, even as referrals fall", url: "/curated/2026-09-16-scire-atlantic-google-abbonati-niemanlab/", _source: "curated" },
       { title: "Game Decompilation, Is This Legal?, A Well-Trodden Path", url: "/curated/2026-10-06-stratechery-game-decompilation/", _source: "curated" },
-      { title: "A Conversation With Ari Emanuel About Entertainment and AI", url: "/curated/2026-10-15-stratechery-ari-emanuel-entertainment-ai/", _source: "curated" }
+      { title: "A Conversation With Ari Emanuel About Entertainment and AI", url: "/curated/2026-10-15-stratechery-ari-emanuel-entertainment-ai/", _source: "curated" },
+      { title: "The Disruption Machine", url: "/curated/2014-06-16-lepore-disruption-machine-newyorker/", _source: "curated" }
     ]
   },
   {
@@ -2675,7 +2676,8 @@ module.exports = [
     note: "Quotidiano americano. Nel sito è citato insieme al Washington Post come testata che ha imbastito un «marketing della verità» al primo insediamento di Trump nel 2016 — una strategia di posizionamento diversa da quella valoriale adottata dall'Economist, e più vulnerabile alle crisi di credibilità legate alle scelte proprietarie. Nel sito compare anche in un secondo registro, organizzativo e non reputazionale: la redazione che si dà un metodo formale per adottare strumenti nuovi — proposta scritta, pilota su perimetro ristretto, misura a posteriori — descritto dall'interno da Eric Athas.",
     articles: [
       { title: "The history of liberalism: a timeline", url: "/curated/2026-06-25-economist-liberalism-timeline/", _source: "curated" },
-      { title: "New York Times training editor: Take these four steps before you roll out new things", url: "/curated/2026-09-18-athas-rollout-redazione-niemanlab/", _source: "curated" }
+      { title: "New York Times training editor: Take these four steps before you roll out new things", url: "/curated/2026-09-18-athas-rollout-redazione-niemanlab/", _source: "curated" },
+      { title: "The Disruption Machine", url: "/curated/2014-06-16-lepore-disruption-machine-newyorker/", _source: "curated" }
     ]
   },
 
@@ -3254,7 +3256,8 @@ module.exports = [
       { title: "What the Pope Said About A.I.", url: "/curated/2026-05-27-lepore-pope-leo-ai-newyorker/", _source: "curated" },
       { title: "I Helped Fact-Check the 1619 Project. The Times Ignored Me.", url: "/curated/2020-03-06-harris-1619-project-fact-check-politico/", _source: "curated" },
       { title: "America's Next Story", url: "/curated/2026-04-09-lepore-americas-next-story/", _source: "curated" },
-      { title: "What Was the American Revolution For?", url: "/curated/2025-11-17-lepore-rivoluzione-americana-250-newyorker/", _source: "curated" }
+      { title: "What Was the American Revolution For?", url: "/curated/2025-11-17-lepore-rivoluzione-americana-250-newyorker/", _source: "curated" },
+      { title: "The Disruption Machine", url: "/curated/2014-06-16-lepore-disruption-machine-newyorker/", _source: "curated" }
     ]
   },
   {
@@ -5401,6 +5404,31 @@ module.exports = [
       { title: "What If We Can Never Trust A.I.?", url: "/curated/2026-08-01-rothman-trust-ai-newyorker/", _source: "curated" },
       { title: "The Climate Crisis Is Bigger Than Your Footprint", url: "/curated/2026-08-31-stokes-carbon-footprint-bp-mitpress/", _source: "curated" },
       { title: "Is ‘Attention’ the Essence of Intelligence?", url: "/curated/2026-10-12-wolchover-attention-intelligenza-quanta/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Christensen, Clayton",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "Thompson, Ben", why: "È il suo nume tutelare: la teoria dell'aggregazione di Stratechery nasce dalla lettura di Christensen sull'integrazione e la modularità." }
+    ],
+    note: "Economista della Harvard Business School (1952–2020), autore di *The Innovator's Dilemma* (1997). Ha dato al management uno dei suoi concetti più influenti: le aziende migliori possono fallire proprio perché fanno tutto bene, ascoltando i clienti più redditizi e trascurando i mercati marginali da cui arrivano i concorrenti. **Il suo merito è aver spostato la domanda da come le imprese vincono a perché falliscono, e aver dato un nome a un meccanismo che manager e studiosi riconoscono ancora.** Nel sito entra anche attraverso la critica di Jill Lepore, che ne contesta i casi e l'estensione a istituzioni che non sono imprese: è una critica che vale come verifica, non come liquidazione.",
+    articles: [
+      { title: "The Disruption Machine", url: "/curated/2014-06-16-lepore-disruption-machine-newyorker/", _source: "curated" }
+    ]
+  },
+  {
+    name: "disruptive innovation",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "Christensen, Clayton", why: "È la sua teoria: l'entrante che parte dal basso, con un prodotto peggiore e più economico, e scalza chi serve i clienti migliori." },
+      { name: "commoditizzazione", why: "La disruption descrive il momento in cui un prodotto di fascia alta diventa abbastanza buono da costare poco." }
+    ],
+    note: "La teoria con cui Clayton Christensen spiega come entranti con prodotti più semplici ed economici scalzano le aziende consolidate, salendo dal basso del mercato. Ha orientato strategie industriali e scelte di investimento per vent'anni, e nel linguaggio comune è diventata sinonimo di qualsiasi cambiamento tecnologico. **È uno strumento utile quando il meccanismo c'è davvero, ma diventa ideologia quando lo si applica ovunque, comprese le istituzioni che hanno obblighi fuori dal bilancio.**",
+    articles: [
+      { title: "The Disruption Machine", url: "/curated/2014-06-16-lepore-disruption-machine-newyorker/", _source: "curated" }
     ]
   }
 
