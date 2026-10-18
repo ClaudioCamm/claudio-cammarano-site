@@ -2046,7 +2046,8 @@ module.exports = [
       { title: "I'm a College Professor. Writing Isn't as Important as We Think.", url: "/curated/2026-09-29-cruz-scrittura-pensiero-nyt/", _source: "curated" },
       { title: "AI co-scientists are revolutionizing how research is done", url: "/curated/2026-09-21-dolgin-ai-co-scientists-nature/", _source: "curated" },
       { title: "Claude-shaped science", url: "/curated/2026-10-01-schwartz-claude-shaped-science-anthropic/", _source: "curated" },
-      { title: "Hannah Fry: How OpenAI has caused an existential crisis in mathematics", url: "/curated/2026-10-14-fry-openai-crisi-matematica-newscientist/", _source: "curated" }
+      { title: "Hannah Fry: How OpenAI has caused an existential crisis in mathematics", url: "/curated/2026-10-14-fry-openai-crisi-matematica-newscientist/", _source: "curated" },
+      { title: "How to assemble science", url: "/curated/2026-10-06-pearson-how-to-assemble-science-aeon/", _source: "curated" }
     ]
   },
   {
@@ -3977,7 +3978,8 @@ module.exports = [
       { title: "Why AI Detection Fails for Academic Integrity", url: "/curated/2026-08-06-karr-perche-la-rilevazione-fallisce-arxiv/", _source: "curated" },
       { title: "Selon Mario Draghi l’Europe ne peut plus vivre sans croissance", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" },
       { title: "30 Ideas for Fixing U.S. Schools, Ranked by Experts", url: "/curated/2026-09-28-mervosh-paris-miller-cosa-funziona-davvero-nella-scuola-nyt/", _source: "curated" },
-      { title: "He Wants AI Benchmarking To Be a Science, Not a Dark Art", url: "/curated/2026-10-16-pavlus-hardt-benchmark-quanta/", _source: "curated" }
+      { title: "He Wants AI Benchmarking To Be a Science, Not a Dark Art", url: "/curated/2026-10-16-pavlus-hardt-benchmark-quanta/", _source: "curated" },
+      { title: "Could AI help scientists with their paperwork?", url: "/curated/2026-10-14-economist-ai-burocrazia-scienza/", _source: "curated" }
     ]
   },
   {
@@ -4605,7 +4607,9 @@ module.exports = [
       { title: "Scientists rise up against statistical significance", url: "/curated/2019-03-20-amrhein-greenland-mcshane-significativita-nature/", _source: "curated" },
       { title: "The ASA President's Task Force Statement on Statistical Significance and Replicability", url: "/curated/2021-08-01-task-force-asa-significativita-replicabilita-aoas/", _source: "curated" },
       { title: "AI co-scientists are revolutionizing how research is done", url: "/curated/2026-09-21-dolgin-ai-co-scientists-nature/", _source: "curated" },
-      { title: "He Wants AI Benchmarking To Be a Science, Not a Dark Art", url: "/curated/2026-10-16-pavlus-hardt-benchmark-quanta/", _source: "curated" }
+      { title: "He Wants AI Benchmarking To Be a Science, Not a Dark Art", url: "/curated/2026-10-16-pavlus-hardt-benchmark-quanta/", _source: "curated" },
+      { title: "How to assemble science", url: "/curated/2026-10-06-pearson-how-to-assemble-science-aeon/", _source: "curated" },
+      { title: "Could AI help scientists with their paperwork?", url: "/curated/2026-10-14-economist-ai-burocrazia-scienza/", _source: "curated" }
     ]
   },
   {
@@ -5100,7 +5104,8 @@ module.exports = [
     articles: [
       { title: "How Russian Propaganda Learned to Look Finnish", url: "/curated/2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24/", _source: "curated" },
       { title: "Attacchi ucraini ai data center Yandex: crolla l'attività dei bot russi?", url: "/curated/2026-10-12-vakulina-yandex-data-center-bot-euronews/", _source: "curated" },
-      { title: "A Florida local newspaper ran an oped. It was an Iranian AI fake.", url: "/curated/2026-10-09-waldvogel-iran-articoli-ai-giornali-usa-washingtonpost/", _source: "curated" }
+      { title: "A Florida local newspaper ran an oped. It was an Iranian AI fake.", url: "/curated/2026-10-09-waldvogel-iran-articoli-ai-giornali-usa-washingtonpost/", _source: "curated" },
+      { title: "Could AI help scientists with their paperwork?", url: "/curated/2026-10-14-economist-ai-burocrazia-scienza/", _source: "curated" }
     ]
   },
   {
@@ -5410,6 +5415,7 @@ module.exports = [
     name: "Christensen, Clayton",
     type: "persona",
     geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q5130292", "https://en.wikipedia.org/wiki/Clayton_Christensen"],
     related: [
       { name: "Thompson, Ben", why: "È il suo nume tutelare: la teoria dell'aggregazione di Stratechery nasce dalla lettura di Christensen sull'integrazione e la modularità." }
     ],
@@ -5422,6 +5428,7 @@ module.exports = [
     name: "disruptive innovation",
     type: "teoria",
     geo: { modo: "teorico", paesi: ["Stati Uniti"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q1192297", "https://en.wikipedia.org/wiki/Disruptive_innovation"],
     related: [
       { name: "Christensen, Clayton", why: "È la sua teoria: l'entrante che parte dal basso, con un prodotto peggiore e più economico, e scalza chi serve i clienti migliori." },
       { name: "commoditizzazione", why: "La disruption descrive il momento in cui un prodotto di fascia alta diventa abbastanza buono da costare poco." }
@@ -5429,6 +5436,19 @@ module.exports = [
     note: "La teoria con cui Clayton Christensen spiega come entranti con prodotti più semplici ed economici scalzano le aziende consolidate, salendo dal basso del mercato. Ha orientato strategie industriali e scelte di investimento per vent'anni, e nel linguaggio comune è diventata sinonimo di qualsiasi cambiamento tecnologico. **È uno strumento utile quando il meccanismo c'è davvero, ma diventa ideologia quando lo si applica ovunque, comprese le istituzioni che hanno obblighi fuori dal bilancio.**",
     articles: [
       { title: "The Disruption Machine", url: "/curated/2014-06-16-lepore-disruption-machine-newyorker/", _source: "curated" }
+    ]
+  },
+  {
+    name: "metanalisi",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Stati Uniti"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q815382", "https://it.wikipedia.org/wiki/Meta-analisi"],
+    related: [
+      { name: "crisi della replicazione", why: "È lo strumento che pesa gli studi invece di contarli: un risultato isolato vale poco finché non lo si misura contro tutti gli altri." }
+    ],
+    note: "Il metodo statistico che combina i risultati di molti studi sulla stessa domanda, presentato da Gene Glass nel 1976 contro le rassegne che contavano gli studi a favore e contro come voti. È la base delle revisioni sistematiche che oggi orientano la medicina. **Nel sito è il rimedio al culto dello studio singolo: la conoscenza nasce dalla sintesi, non dalla notizia.**",
+    articles: [
+      { title: "How to assemble science", url: "/curated/2026-10-06-pearson-how-to-assemble-science-aeon/", _source: "curated" }
     ]
   }
 
