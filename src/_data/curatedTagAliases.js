@@ -91,6 +91,11 @@ module.exports = {
   // appartiene a Epistemologia & AI e non e' un Argomento a se'.
   "statistica": "Statistica",
 
+  // "dati" non era un tema: dei quattro pezzi che lo portavano, tre parlano di
+  // scuola misurata e uno di data journalism. Raggruppare per "contiene numeri"
+  // e' raggruppare per superficie, quindi confluisce in Statistica (18/10).
+  "dati": "Statistica",
+
   // Nove curated cadevano nel decorativo per un alias mancante:
   // l'Argomento canonico esisteva gia' in "Italia & istituzioni".
   "istituzioni": "Istituzioni"
