@@ -29,7 +29,7 @@ let curatela = {};
 try { curatela = require("./curatela.json"); } catch (e) {}
 
 const ROOT = path.join(__dirname, "..", "..");
-const SPEC = "1.0.0";
+const SPEC = "1.1.0";
 const RILEVATO = "2026-10-11";
 
 function leggi(dir) {

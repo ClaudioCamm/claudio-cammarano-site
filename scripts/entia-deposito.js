@@ -19,6 +19,7 @@ const entia = require(path.join(ROOT, "src/_data/entia.js"));
 const vocab = require(path.join(ROOT, "src/_data/entiaVocab.js"));
 const criteri = require(path.join(ROOT, "src/_data/criteri.json"));
 const clusters = require(path.join(ROOT, "src/_data/clusters.js"));
+const EN = require(path.join(ROOT, "src/_data/entiaEn.js"));
 const alias = require(path.join(ROOT, "src/_data/curatedTagAliases.js"));
 let curatela = {};
 try { curatela = require(path.join(ROOT, "src/_data/curatela.json")); } catch (e) {}
@@ -257,6 +258,54 @@ function specifica() {
 }
 
 // ------------------------------------------------------------------ i testi
+// La specifica in inglese: lo stesso normativo di /en/entia/, e per la stessa
+// ragione. Le misure su questo archivio — i conteggi per strato, le schede per
+// funzione, il rilievo — restano nel documento italiano e in entia-corpus.csv:
+// sono la prova che ENTIA e' usata qui, non una parte di cio' che un altro deve
+// implementare. Testi: src/_data/entiaEn.js, la stessa fonte della pagina.
+function specificaEn() {
+  let t = "";
+  t += "## What it is\n\n";
+  EN.orientamento.cose.forEach(x => { t += md(x) + "\n\n"; });
+  t += "## Who it is for\n\n";
+  EN.orientamento.chi.forEach(x => { t += md(x) + "\n\n"; });
+  t += "## The name\n\n" + md(EN.orientamento.nome) + "\n\n";
+  t += "## The five layers\n\n";
+  t += "The notation is not a taxonomy of subjects: it is a scale of commitment. Each layer declares what binds it, what it asserts and what it is unable to do. The order is not a hierarchy of value: it is a gradient of exposure to error.\n\n";
+  entia.strati.forEach((s2, i) => {
+    const e = EN.stratiTesti[s2.nome];
+    t += "**" + (i + 1) + ". " + EN.strati[s2.nome] + "** — *Binds:* " + md(e.lega) +
+         ". *Asserts:* " + md(e.afferma) + ". *Cannot:* " + md(e.nonPuo) + ".\n\n";
+    t += md(e.nota) + "\n\n";
+  });
+  t += "## The six functions\n\n";
+  t += "Not categories but positions in a precedence: you look at the first, and go down only if it does not hold.\n\n";
+  funzOrd.forEach(f => {
+    const e = EN.funzioniTesti[f.slug];
+    t += "### " + f.precedenza + ". " + EN.funzioni[f.slug] + "\n\n";
+    t += md(e.estesa) + "\n\n";
+    t += "*Test:* " + md(e.prova) + "\n\n";
+  });
+  t += "## The rules\n\n";
+  entia.regole.forEach(g => { const e = EN.regole[g.nome]; t += "**" + e.nome + ".** " + md(e.testo) + "\n\n"; });
+  t += "## What the model is for\n\n" + md(EN.limiti.premessa) + "\n\n";
+  EN.limiti.voci.forEach(v => { t += "**" + md(v.titolo) + "** " + md(v.testo) + "\n\n"; });
+  t += "## " + EN.conformita.titolo + "\n\n" + md(EN.conformita.licenzaVsUso) + "\n\n";
+  t += "### " + EN.conformita.struttura.titolo + "\n\n";
+  t += md(EN.conformita.struttura.fisso) + "\n\n" + md(EN.conformita.struttura.locale) + "\n\n";
+  t += "### " + EN.conformita.peso.titolo + "\n\n";
+  t += md(EN.conformita.peso.testo) + "\n\n" + md(EN.conformita.peso.soglia) + "\n\n";
+  t += "### The four conditions\n\n" + md(EN.conformita.premessa) + "\n\n";
+  EN.conformita.requisiti.forEach((x, i) => { t += (i + 1) + ". " + md(x) + "\n"; });
+  t += "\n## The measurements are elsewhere\n\n";
+  t += "This document carries the normative text only. The counts per layer, the cards per function and the reconstructibility measurement are properties of the archive this version was derived from, not of the notation: they are in `ENTIA-" + V + ".md` and in `entia-corpus.csv`, each with the date it was taken.\n\n";
+  t += "## How to cite\n\n";
+  t += "> Cammarano, C. (2026). *ENTIA " + V + " — " + entia.sciolto + "*. Zenodo." +
+       (DOI ? " https://doi.org/" + DOI : "") + "\n\n";
+  t += "The concept dataset is deposited separately: https://doi.org/" + DOI_CONCETTI + "\n";
+  return t;
+}
+
 const README = `# ENTIA ${V}
 
 **Epistemic Notation for Texts In Archives** — notazione editoriale a cinque
@@ -274,6 +323,8 @@ Rilievo: ${entia.rilievi.data}, su ${entia.rilievi.schedeAlRilievo} schede.
 |---|---|
 | \`ENTIA-${V}.pdf\` | la specifica, in forma leggibile |
 | \`ENTIA-${V}.md\` | la stessa specifica in markdown, da cui è composto il PDF |
+| \`ENTIA-${V}-en.pdf\` | la parte normativa in inglese |
+| \`ENTIA-${V}-en.md\` | la stessa, in markdown. Non traduce il documento italiano: tiene il normativo e lascia a quello le misure su questo archivio |
 | \`entia.json\` | il vocabolario in JSON-LD/SKOS: strati, funzioni, temi, argomenti, concetti, regole, condizioni d'uso |
 | \`criteri.json\` | le sei funzioni come le usa il sito: la fonte da cui nascono le badge |
 | \`entia-corpus.csv\` | ${entia.corpus.pezzi} pezzi con le loro assegnazioni, e **due date**: quella della fonte e quella di curatela |
@@ -360,6 +411,7 @@ scrivi("entia.json", JSON.stringify(vocab, null, 2) + "\n");
 scrivi("criteri.json", JSON.stringify(criteri, null, 2) + "\n");
 scrivi("entia-corpus.csv", righe.join("\n") + "\n");
 scrivi("ENTIA-" + V + ".md", specifica());
+scrivi("ENTIA-" + V + "-en.md", specificaEn());
 scrivi("figure/deriva-funzioni.svg", derivaSvg());
 scrivi("figure/ricostruibilita.svg", ricostruibilitaSvg());
 try {
