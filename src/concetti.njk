@@ -6,8 +6,14 @@ pagination:
 permalink: "/concetti/{{ concept.name | slugify }}/"
 layout: layouts/base.njk
 eleventyComputed:
-  title: "{{ concept.name | displayName(concept.type) | safe }}"
-  description: "{% if concept.note %}{{ concept.note | stripMd | truncate(155) | safe }}{% else %}Articoli collegati a {{ concept.name | displayName(concept.type) | safe }} — indice concettuale di claudiocammarano.com{% endif %}"
+  # Titolo e descrizione qui sotto sono ciò che Google mostra nella riga
+  # dei risultati, non ciò che la pagina stampa: l’H1 resta il nome nudo.
+  # La riga in SERP era il solo nome, e le pagine concetto prendevano
+  # impression senza clic (baseline traffico 19/10/2026). Promettono solo
+  # ciò che c’è: la definizione se la nota esiste, gli articoli se ci sono.
+  # Una persona o un libro non hanno una definizione: hanno una scheda.
+  title: "{{ concept.name | displayName(concept.type) | safe }}{% set voce = 'scheda' if concept.type in ['persona', 'testo', 'istituzione', 'luogo', 'paese'] else 'definizione' %}{% if concept.note and concept.articles.length %} — {{ voce }} e articoli{% elif concept.note %} — {{ voce }}{% elif concept.articles.length %} — articoli collegati{% endif %}"
+  description: "{% if concept.note %}{{ concept.note | stripMd | truncate(155) | safe }}{% elif concept.articles.length %}{{ concept.articles.length }} articoli di claudiocammarano.com collegati a {{ concept.name | displayName(concept.type) | safe }}.{% else %}Voce dell’indice concettuale di claudiocammarano.com: {{ concept.name | displayName(concept.type) | safe }}.{% endif %}"
 ---
 
 <script type="application/ld+json">
