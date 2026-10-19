@@ -1,0 +1,43 @@
+{
+  "ACCESS": [
+    { "uri": "http://bartoc.org/en/Access/Free" }
+  ],
+  "API": [],
+  "CONTACT": "claudio@claudiocammarano.com",
+  "FORMAT": [
+    { "uri": "http://bartoc.org/en/Format/SKOS" },
+    { "uri": "http://bartoc.org/en/Format/JSON-LD" },
+    { "uri": "http://bartoc.org/en/Format/HTML" }
+  ],
+  "definition": {
+    "en": [
+      "ENTIA (Epistemic Notation for Texts In Archives) is a five-layer editorial notation for curated archives. For each item it declares what that item is for whoever keeps it: not what the item is about, but what function it performs in the archive that holds it. The five layers are a scale of commitment, each defined by what it cannot do: free tag, topic, theme, concept, geometry. Around them sit six reading functions, understood as positions in a precedence rather than as categories. ENTIA is an open protocol: the structure is fixed, while the vocabulary and the weighting parameters are replaced locally. Conformance requires publishing the assignments with their dates, publishing the distribution profile, declaring known disagreements between the rule and the judgement, and versioning the derived copy. The specification, the SKOS vocabulary and the corpus it was derived from are deposited under CC BY 4.0."
+    ]
+  },
+  "extent": "446 concepts (2026-10): 6 functions, 5 themes, 59 topics, 376 concepts",
+  "identifier": [
+    "https://doi.org/10.5281/zenodo.23303451",
+    "https://claudiocammarano.com/entia/ns#"
+  ],
+  "languages": ["it", "en"],
+  "license": [
+    { "uri": "http://creativecommons.org/licenses/by/4.0/" }
+  ],
+  "notation": ["ENTIA"],
+  "prefLabel": {
+    "en": "ENTIA — Epistemic Notation for Texts In Archives"
+  },
+  "publisher": [
+    {
+      "prefLabel": { "en": "Claudio Cammarano" },
+      "uri": "https://orcid.org/0009-0006-3690-7466"
+    }
+  ],
+  "startDate": "2026",
+  "type": [
+    "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+    "http://w3id.org/nkos/nkostype#taxonomy"
+  ],
+  "url": "https://claudiocammarano.com/en/entia/",
+  "version": "1.1.0"
+}
