@@ -6,6 +6,7 @@ chi lo tiene.
 
 Autore: Claudio Cammarano (ORCID [0009-0006-3690-7466](https://orcid.org/0009-0006-3690-7466))
 Licenza: CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/deed.it
+DOI di questa versione: https://doi.org/10.5281/zenodo.23457580
 Versione viva della specifica: <https://claudiocammarano.com/entia/>
 Rilievo: 2026-10-11, su 215 schede.
 
@@ -35,7 +36,7 @@ mappa usano la seconda.
 
 ## Come citare
 
-> Cammarano, C. (2026). *ENTIA 1.1.0 — Epistemic Notation for Texts In Archives*. Zenodo.
+> Cammarano, C. (2026). *ENTIA 1.1.0 — Epistemic Notation for Texts In Archives*. Zenodo. https://doi.org/10.5281/zenodo.23457580
 
 Il dataset dei concetti sta a parte: [10.5281/zenodo.22843731](https://doi.org/10.5281/zenodo.22843731).
 

@@ -133,6 +133,6 @@ This document carries the normative text only. The counts per layer, the cards p
 
 ## How to cite
 
-> Cammarano, C. (2026). *ENTIA 1.1.0 — Epistemic Notation for Texts In Archives*. Zenodo.
+> Cammarano, C. (2026). *ENTIA 1.1.0 — Epistemic Notation for Texts In Archives*. Zenodo. https://doi.org/10.5281/zenodo.23457580
 
 The concept dataset is deposited separately: https://doi.org/10.5281/zenodo.22843731

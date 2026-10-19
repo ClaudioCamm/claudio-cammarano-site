@@ -144,7 +144,7 @@ Quattro condizioni, con una sola idea dietro: la conformità non è seguire la r
 
 ## Come citare
 
-> Cammarano, C. (2026). *ENTIA 1.1.0 — Epistemic Notation for Texts In Archives*. Zenodo.
+> Cammarano, C. (2026). *ENTIA 1.1.0 — Epistemic Notation for Texts In Archives*. Zenodo. https://doi.org/10.5281/zenodo.23457580
 
 Il dataset dei concetti sta a parte: https://doi.org/10.5281/zenodo.22843731
 

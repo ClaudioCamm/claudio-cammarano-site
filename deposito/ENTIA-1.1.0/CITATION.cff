@@ -4,6 +4,7 @@ title: "ENTIA — Epistemic Notation for Texts In Archives"
 abstract: "Notazione editoriale a cinque strati per archivi curati: dichiara, pezzo per pezzo, che cosa quel pezzo è per chi lo tiene. Protocollo aperto, versionato, con il corpus su cui è stato ricavato."
 version: "1.1.0"
 date-released: "2026-10-11"
+doi: "10.5281/zenodo.23457580"
 license: CC-BY-4.0
 type: dataset
 url: "https://claudiocammarano.com/entia/"

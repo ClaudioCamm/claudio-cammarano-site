@@ -261,10 +261,10 @@ rilievi.scaduto = Math.abs(rilievi.scarto) >= Math.max(10, rilievi.schedeAlRilie
 // versionDoi, e si rilancia `npm run deposito -- --doi=<versionDoi>`.
 const deposito = {
   doi: "10.5281/zenodo.23303451",
-  versionDoi: "10.5281/zenodo.23303452",
+  versionDoi: "10.5281/zenodo.23457580",
   url: "https://doi.org/10.5281/zenodo.23303451",
-  depositato: "2026-10-11",
-  citazione: "Cammarano, C. (2026). ENTIA 1.0.0 \u2014 Epistemic Notation for Texts In Archives. Zenodo."
+  depositato: "2026-10-19",
+  citazione: "Cammarano, C. (2026). ENTIA " + SPEC + " \u2014 Epistemic Notation for Texts In Archives. Zenodo."
 };
 
 module.exports = {
