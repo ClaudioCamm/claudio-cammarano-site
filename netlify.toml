@@ -168,3 +168,19 @@
   from = "/dopo-la-globalizzazione-*"
   to = "/writings/"
   status = 301
+
+# ------------------------------------------------------------------
+# ENTIA in maiuscolo: l'acronimo circola scritto cosi' (deposito, carta
+# stampata, citazioni), e Netlify distingue le maiuscole. Rilevato come
+# 404 nei landing GA4 di ottobre 2026.
+# ------------------------------------------------------------------
+
+[[redirects]]
+  from = "/ENTIA"
+  to = "/entia/"
+  status = 301
+
+[[redirects]]
+  from = "/ENTIA/"
+  to = "/entia/"
+  status = 301
