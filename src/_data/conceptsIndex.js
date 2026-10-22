@@ -1371,7 +1371,8 @@ module.exports = [
       { title: "Publishers Hit the AI Jackpot", url: "/curated/2026-10-01-alpern-risarcimento-distribuito-come-vendita-vulture/", _source: "curated" },
       { title: "Quartz website mainly produced by one AI-assisted reporter writing 50+ stories per day", url: "/curated/2026-10-09-waugh-quartz-un-reporter-ai-pressgazette/", _source: "curated" },
       { title: "Putin’s war on schools: ‘millions of books burnt before my eyes’", url: "/curated/2026-10-10-hauschild-johanson-libri-scuola-ucraina-sundaytimes/", _source: "curated" },
-      { title: "Can the News Exist Without Big Tech? The Atlas Says Yes", url: "/curated/2026-10-08-bell-chaplin-the-atlas-cjr/", _source: "curated" }
+      { title: "Can the News Exist Without Big Tech? The Atlas Says Yes", url: "/curated/2026-10-08-bell-chaplin-the-atlas-cjr/", _source: "curated" },
+      { title: "The New Age of Reading", url: "/curated/2026-10-19-heller-daunt-new-age-of-reading-newyorker/", _source: "curated" }
     ]
   },
   {
@@ -1723,7 +1724,8 @@ module.exports = [
     articles: [
       { title: "Why the End of History Is So Miserable", url: "/curated/2026-09-09-beckerman-fukuyama-end-history-atlantic/", _source: "curated" },
       { title: "Was Francis Fukuyama Right All Along?", url: "/curated/2026-09-18-ezra-klein-fukuyama-nyt/", _source: "curated" },
-      { title: "Marco Rubio invente l'Occident de Trump", url: "/curated/2026-10-08-gressani-miranda-rubio-occidente-trump-grandcontinent/", _source: "curated" }
+      { title: "Marco Rubio invente l'Occident de Trump", url: "/curated/2026-10-08-gressani-miranda-rubio-occidente-trump-grandcontinent/", _source: "curated" },
+      { title: "Trumpism Is Backfiring", url: "/curated/2026-10-20-klein-freeland-trumpism-backfiring-nyt/", _source: "curated" }
     ]
   },
   {
@@ -2453,7 +2455,8 @@ module.exports = [
       { title: "AI’s Real Gift to Science", url: "/curated/2026-10-04-kiros-ai-real-gift-science-atlantic/", _source: "curated" },
       { title: "Claude-shaped science", url: "/curated/2026-10-01-schwartz-claude-shaped-science-anthropic/", _source: "curated" },
       { title: "A.I. Companies Say They Aren’t Responsible for Their Unpredictable Products. Don’t Believe Them.", url: "/curated/2026-10-10-nyt-editorial-ai-responsabilita/", _source: "curated" },
-      { title: "The AI boom is threatened by an epidemic of unreliable numbers", url: "/curated/2026-10-14-economist-numeri-inaffidabili-ai/", _source: "curated" }
+      { title: "The AI boom is threatened by an epidemic of unreliable numbers", url: "/curated/2026-10-14-economist-numeri-inaffidabili-ai/", _source: "curated" },
+      { title: "Trumpism Is Backfiring", url: "/curated/2026-10-20-klein-freeland-trumpism-backfiring-nyt/", _source: "curated" }
     ]
   },
   {
@@ -2939,7 +2942,8 @@ module.exports = [
       { title: "The New Red Sea Wars", url: "/curated/2026-10-06-boswell-new-red-sea-wars-foreignaffairs/", _source: "curated" },
       { title: "The New Old Middle East", url: "/curated/2026-07-30-gause-new-old-middle-east-foreignaffairs/", _source: "curated" },
       { title: "Marco Rubio invente l'Occident de Trump", url: "/curated/2026-10-08-gressani-miranda-rubio-occidente-trump-grandcontinent/", _source: "curated" },
-      { title: "Populists Are Losing Their War on Globalization", url: "/curated/2026-10-09-donnan-populists-losing-war-globalization-bloomberg/", _source: "curated" }
+      { title: "Populists Are Losing Their War on Globalization", url: "/curated/2026-10-09-donnan-populists-losing-war-globalization-bloomberg/", _source: "curated" },
+      { title: "Trumpism Is Backfiring", url: "/curated/2026-10-20-klein-freeland-trumpism-backfiring-nyt/", _source: "curated" }
     ]
   },
   {
@@ -3023,6 +3027,7 @@ module.exports = [
       { title: "Populists Are Losing Their War on Globalization", url: "/curated/2026-10-09-donnan-populists-losing-war-globalization-bloomberg/", _source: "curated" },
       { title: "Pechino ha lanciato un modello di IA che parla tibetano (ma dà solo risposte che piacciono alla Cina)", url: "/curated/2026-05-29-miele-deepzang-ia-tibetano-avvenire/", _source: "curated" },
       { title: "Could AI algorithms hold China’s solution for global narrative on Tibet?", url: "/curated/2026-06-17-liang-algoritmi-narrazione-tibet-scmp/", _source: "curated" },
+      { title: "Trumpism Is Backfiring", url: "/curated/2026-10-20-klein-freeland-trumpism-backfiring-nyt/", _source: "curated" }
     ]
   },
   {
@@ -3117,7 +3122,8 @@ module.exports = [
       { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" },
       { title: "Il gioco sporco degli autocrati", url: "/curated/2026-04-09-sabatini-gioco-sporco-autocrati/", _source: "curated" },
       { title: "Dentro le decisioni di Trump sull'Iran", url: "/curated/2026-04-09-trump-iran-war/", _source: "curated" },
-      { title: "Populists Are Losing Their War on Globalization", url: "/curated/2026-10-09-donnan-populists-losing-war-globalization-bloomberg/", _source: "curated" }
+      { title: "Populists Are Losing Their War on Globalization", url: "/curated/2026-10-09-donnan-populists-losing-war-globalization-bloomberg/", _source: "curated" },
+      { title: "Trumpism Is Backfiring", url: "/curated/2026-10-20-klein-freeland-trumpism-backfiring-nyt/", _source: "curated" }
     ]
   },
   {
@@ -3461,7 +3467,8 @@ module.exports = [
     note: "Giornalista e commentatore americano (1983), cofondatore di Vox, editorialista del NYT e conduttore dell'Ezra Klein Show. Nel sito è citato per il libro *Abundance* (2025, con Derek Thompson) e per il podcast che ne fa un bilancio a un anno dall'uscita: un caso in cui una certa idea della realtà — la scarsità come prodotto di scelte istituzionali, non di destino — ha cominciato a produrre effetti sul comportamento politico americano.",
     articles: [
       { title: "What Worries Me Most About 'Abundance'", url: "/curated/2026-04-28-klein-abundance-nyt/", _source: "curated" },
-      { title: "Why Cybertrucks, McMansions and Greige Matter", url: "/curated/2026-10-02-klein-millman-il-grigio-non-e-un-gusto-nyt/", _source: "curated" }
+      { title: "Why Cybertrucks, McMansions and Greige Matter", url: "/curated/2026-10-02-klein-millman-il-grigio-non-e-un-gusto-nyt/", _source: "curated" },
+      { title: "Trumpism Is Backfiring", url: "/curated/2026-10-20-klein-freeland-trumpism-backfiring-nyt/", _source: "curated" }
     ]
   },
   {
@@ -5151,7 +5158,8 @@ module.exports = [
     ],
     note: "Nell'archivio entra come il luogo in cui una strategia costruita sul calcolo razionale degli alleati incontra una risposta che quel calcolo non prevedeva.\n\nIl lato della richiesta è esplicito. Nel luglio 2026 il sottosegretario alla Difesa americano Elbridge Colby descrive il Canada come «funzionalmente smilitarizzato» dai tempi del primo governo Trudeau — il padre — e dichiara che agli Stati Uniti basta che il paese faccia come i tedeschi o i polacchi: che i dollari aggiuntivi per la difesa comprino capacità militare vera e servano a bisogni comuni, a cominciare dagli impegni NORAD. Sulla scelta fra l'F-35 americano e il Gripen svedese l'argomento è di interoperabilità prima che di prestazioni: un velivolo che comunica peggio con quelli americani espone anche gli americani.\n\nIl lato che la dottrina non sa prezzare è l'altro. Le battute del presidente americano sul Canada come cinquantunesimo Stato, le dichiarazioni sulla Groenlandia e l'immagine della bandiera americana distesa su gran parte del Nordamerica hanno prodotto la posizione pubblica del primo ministro Mark Carney, per cui il Canada non può più contare sugli Stati Uniti come faceva. Interrogato su questo, Colby risponde con la dottrina Monroe e il suo corollario Trump, e poi dichiara di non potersi permettere di caratterizzare quello che fa il presidente.\n\nL'asimmetria che il paese rende visibile è la ragione della voce: **chiedere ai polacchi di spendere di più e trattare il Canada come un'estensione degli Stati Uniti sono due richieste diverse**, e producono risposte diverse anche quando il contenuto materiale della richiesta è lo stesso.",
     articles: [
-      { title: "Iran, China, Canada? A Defense of Trump’s Grand Strategy", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" }
+      { title: "Iran, China, Canada? A Defense of Trump’s Grand Strategy", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" },
+      { title: "Trumpism Is Backfiring", url: "/curated/2026-10-20-klein-freeland-trumpism-backfiring-nyt/", _source: "curated" }
     ]
   },
   {
@@ -5531,6 +5539,19 @@ module.exports = [
     note: "Il termine, reso corrente nel 2001 dal generale dell'aviazione statunitense Charles Dunlap, indica l'uso del diritto come sostituto o complemento della forza per ottenere un obiettivo contro un avversario; nell'uso politico ha preso anche il senso di persecuzione giudiziaria degli oppositori. **Nel sito indica il diritto usato come leva strategica, il terreno su cui l'Unione Europea, forte di un mercato di circa 450 milioni di consumatori con alto potere d'acquisto, ha più forza che altrove.** Anu Bradford ha descritto lo stesso meccanismo come «effetto Bruxelles»: le regole europee diventano standard globali perché le imprese non vogliono rinunciare a quel mercato.",
     articles: [
       { title: "EU probes pro-Kremlin disinformation around French riots", url: "/curated/2026-10-21-dubois-jones-disinformazione-rivolte-francia-ft/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Daunt, James",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Regno Unito"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q6132358"],
+    related: [
+      { name: "editoria", why: "Ha dimostrato che la libreria fisica può crescere contro l'idea di Amazon del libro come merce: il mercato non è fisso, lo fanno i librai." }
+    ],
+    note: "Libraio inglese, nato nel 1963, ha fondato nel 1990 Daunt Books a Londra; è amministratore delegato di Waterstones dal 2011 e di Barnes & Noble dal 2019. **Nel sito è l'esempio di chi ha rilanciato le catene librarie trattando i libri come oggetti specifici e non come merce indistinta: scelte decentrate ai librai, rese basse, niente spazi espositivi a pagamento per gli editori.** Il modello ha i suoi costi: ordini iniziali minimi che scaricano il rischio sugli editori, salari d'ingresso contestati, un potere concentrato in una sola persona.",
+    articles: [
+      { title: "The New Age of Reading", url: "/curated/2026-10-19-heller-daunt-new-age-of-reading-newyorker/", _source: "curated" }
     ]
   }
 
