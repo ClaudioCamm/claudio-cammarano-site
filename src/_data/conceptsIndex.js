@@ -834,7 +834,8 @@ module.exports = [
       { title: "Destroying Books to Build a Mind", url: "/curated/2026-09-11-mancino-destroying-books-anthropic-newyorker/", _source: "curated" },
       { title: "Zuckerberg says the science isn't settled. But the harms of short-form video on the brain are starting to show", url: "/curated/2026-09-18-enders-short-form-video-cognizione-guardian/", _source: "curated" },
       { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" },
-      { title: "Selon Mario Draghi l’Europe ne peut plus vivre sans croissance", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" }
+      { title: "Selon Mario Draghi l’Europe ne peut plus vivre sans croissance", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" },
+      { title: "Le piège italien de la politique française", url: "/curated/2026-10-20-castellani-piege-italien-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -1408,7 +1409,11 @@ module.exports = [
       { title: "A Florida local newspaper ran an oped. It was an Iranian AI fake.", url: "/curated/2026-10-09-waldvogel-iran-articoli-ai-giornali-usa-washingtonpost/", _source: "curated" },
       { title: "Pechino ha lanciato un modello di IA che parla tibetano (ma dà solo risposte che piacciono alla Cina)", url: "/curated/2026-05-29-miele-deepzang-ia-tibetano-avvenire/", _source: "curated" },
       { title: "Could AI algorithms hold China’s solution for global narrative on Tibet?", url: "/curated/2026-06-17-liang-algoritmi-narrazione-tibet-scmp/", _source: "curated" },
-      { title: "People are rejoicing about the removal of Russian bots from social media – but the truth is far more complicated", url: "/curated/2026-10-13-griffin-bot-russi-yandex-independent/", _source: "curated" }
+      { title: "People are rejoicing about the removal of Russian bots from social media – but the truth is far more complicated", url: "/curated/2026-10-13-griffin-bot-russi-yandex-independent/", _source: "curated" },
+      { title: "When hackers become sources: Inside the new craft of reporting on hacked data", url: "/curated/2026-10-20-disalvo-hacker-fonti-niemanlab/", _source: "curated" },
+      { title: "Milano, i racconti degli scontri: «C'era una chat come esca, ci hanno detto: venite, noi spacchiamo le vetrine e voi avrete felpe e scarpe»", url: "/curated/2026-10-21-andreis-santucci-milano-chat-esca-corriere/", _source: "curated" },
+      { title: "Cercasi mandante", url: "/curated/2026-10-21-laportella-cercasi-mandante-substack/", _source: "curated" },
+      { title: "EU probes pro-Kremlin disinformation around French riots", url: "/curated/2026-10-21-dubois-jones-disinformazione-rivolte-francia-ft/", _source: "curated" }
     ]
   },
   {
@@ -2047,7 +2052,8 @@ module.exports = [
       { title: "AI co-scientists are revolutionizing how research is done", url: "/curated/2026-09-21-dolgin-ai-co-scientists-nature/", _source: "curated" },
       { title: "Claude-shaped science", url: "/curated/2026-10-01-schwartz-claude-shaped-science-anthropic/", _source: "curated" },
       { title: "Hannah Fry: How OpenAI has caused an existential crisis in mathematics", url: "/curated/2026-10-14-fry-openai-crisi-matematica-newscientist/", _source: "curated" },
-      { title: "How to assemble science", url: "/curated/2026-10-06-pearson-how-to-assemble-science-aeon/", _source: "curated" }
+      { title: "How to assemble science", url: "/curated/2026-10-06-pearson-how-to-assemble-science-aeon/", _source: "curated" },
+      { title: "It Looked Like a New Species. The Trouble Was, It Didn’t Exist.", url: "/curated/2026-10-16-boodman-citizen-science-slop-nyt/", _source: "curated" }
     ]
   },
   {
@@ -2095,7 +2101,8 @@ module.exports = [
     note: "L'insieme dei consumi mediali di una persona considerato come regime complessivo — proporzioni, ritmi, orari, alternanza fra formati — invece che come somma di contenuti singoli. Nel sito nasce da un'asimmetria osservata in nutrizione e trasferita qui: gli studi sul singolo alimento producono da decenni risultati piccoli e contraddittori, quelli sui regimi alimentari reggono, e non perché il singolo alimento sia innocuo ma perché non è il livello a cui il fenomeno esiste. La stessa cosa si osserva nella ricerca sui media: la domanda se un formato faccia danno è quasi irrispondibile, mentre l'induzione che certe diete mediatiche nel loro complesso siano nocive è largamente condivisa, anche da chi le pratica. È una critica dell'unità di analisi più che dell'oggetto, e spiega retrospettivamente perché quarant'anni di ricerca sulla televisione abbiano concluso poco. Ha una conseguenza pratica sulla regolazione: gli interventi che le piattaforme accettano quando sono obbligate — tetti orari, blocchi notturni, interruzioni — sono interventi sul regime, non sul contenuto.",
     articles: [
       { title: "Zuckerberg says the science isn't settled. But the harms of short-form video on the brain are starting to show", url: "/curated/2026-09-18-enders-short-form-video-cognizione-guardian/", _source: "curated" },
-      { title: "Deskilling the body", url: "/curated/2026-10-13-challenger-deskilling-the-body-aeon/", _source: "curated" }
+      { title: "Deskilling the body", url: "/curated/2026-10-13-challenger-deskilling-the-body-aeon/", _source: "curated" },
+      { title: "Milano, i racconti degli scontri: «C'era una chat come esca, ci hanno detto: venite, noi spacchiamo le vetrine e voi avrete felpe e scarpe»", url: "/curated/2026-10-21-andreis-santucci-milano-chat-esca-corriere/", _source: "curated" }
     ]
   },
   {
@@ -2849,7 +2856,8 @@ module.exports = [
       { title: "How Russian Propaganda Learned to Look Finnish", url: "/curated/2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24/", _source: "curated" },
       { title: "Putin’s war on schools: ‘millions of books burnt before my eyes’", url: "/curated/2026-10-10-hauschild-johanson-libri-scuola-ucraina-sundaytimes/", _source: "curated" },
       { title: "Attacchi ucraini ai data center Yandex: crolla l'attività dei bot russi?", url: "/curated/2026-10-12-vakulina-yandex-data-center-bot-euronews/", _source: "curated" },
-      { title: "People are rejoicing about the removal of Russian bots from social media – but the truth is far more complicated", url: "/curated/2026-10-13-griffin-bot-russi-yandex-independent/", _source: "curated" }
+      { title: "People are rejoicing about the removal of Russian bots from social media – but the truth is far more complicated", url: "/curated/2026-10-13-griffin-bot-russi-yandex-independent/", _source: "curated" },
+      { title: "EU probes pro-Kremlin disinformation around French riots", url: "/curated/2026-10-21-dubois-jones-disinformazione-rivolte-francia-ft/", _source: "curated" }
     ]
   },
   {
@@ -3334,7 +3342,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q235470", "https://it.wikipedia.org/wiki/Martha_Nussbaum"],
     note: "Filosofa americana (1947), docente a Chicago. Neo-aristoteliana, autrice di The Fragility of Goodness (1986), Upheavals of Thought (2001), Creating Capabilities (2011). Il suo approccio sulle capacità dovrebbe essere centrale nella teorizzazione del lavoro culturale, ma apparentemente così non è. Nel sito è il pretesto per una lettura dell'etica della virtù come ontologia etica radicale: le virtù non sono proprietà positive determinate, ma soluzioni virtuali a problemi che esistono per primi.",
     articles: [
-      { title: "A Problem-Based Reading of Nussbaum's Virtue Ethics", url: "/curated/2018-09-04-brady-nussbaum-virtue-ethics-epochemagazine/", _source: "curated" }
+      { title: "A Problem-Based Reading of Nussbaum's Virtue Ethics", url: "/curated/2018-09-04-brady-nussbaum-virtue-ethics-epochemagazine/", _source: "curated" },
+      { title: "I Teach at a Business School. It’s Time to Shut Them Down.", url: "/curated/2026-10-18-marquis-business-school-nyt/", _source: "curated" }
     ]
   },
   {
@@ -3866,7 +3875,8 @@ module.exports = [
       { title: "The End of the Foundation Model Era: Open-Weight Models, Sovereign AI, and Inference as Infrastructure", url: "/curated/2026-03-09-grogan-pesi-aperti-sovranita-ai/", _source: "curated" },
       { title: "We Surveyed 634 Women Who Work in Tech. They Let Loose", url: "/curated/2026-09-21-upson-donne-tech-sondaggio-wired/", _source: "curated" },
       { title: "Logitech CEO Scouring the Globe to Beat Chip Shortage", url: "/curated/2026-09-30-cutter-faber-logitech-chip-wsj/", _source: "curated" },
-      { title: "The AI boom is threatened by an epidemic of unreliable numbers", url: "/curated/2026-10-14-economist-numeri-inaffidabili-ai/", _source: "curated" }
+      { title: "The AI boom is threatened by an epidemic of unreliable numbers", url: "/curated/2026-10-14-economist-numeri-inaffidabili-ai/", _source: "curated" },
+      { title: "Someone Has to Take the AI Risk", url: "/curated/2026-10-20-levine-someone-has-to-take-ai-risk-bloomberg/", _source: "curated" }
     ]
   },
   {
@@ -4762,7 +4772,9 @@ module.exports = [
     articles: [
       { title: "« J'éprouve une compassion profonde pour Thélyson Orélien »", url: "/curated/2026-09-24-mbougar-sarr-compassione-profonda-nouvelobs/", _source: "curated" },
       { title: "Plagiat, IA : le prix Goncourt exclut le roman de Thélyson Orélien", url: "/curated/2026-09-25-goncourt-esclusione-orelien-actualitte/", _source: "curated" },
-      { title: "Il triste dibattito sullo scrivere con l'IA", url: "/curated/2026-10-02-piacenza-triste-dibattito-scrivere-ia/", _source: "curated" }
+      { title: "Il triste dibattito sullo scrivere con l'IA", url: "/curated/2026-10-02-piacenza-triste-dibattito-scrivere-ia/", _source: "curated" },
+      { title: "Le piège italien de la politique française", url: "/curated/2026-10-20-castellani-piege-italien-grandcontinent/", _source: "curated" },
+      { title: "EU probes pro-Kremlin disinformation around French riots", url: "/curated/2026-10-21-dubois-jones-disinformazione-rivolte-francia-ft/", _source: "curated" }
     ]
   },
   {
@@ -5109,7 +5121,10 @@ module.exports = [
       { title: "How Russian Propaganda Learned to Look Finnish", url: "/curated/2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24/", _source: "curated" },
       { title: "Attacchi ucraini ai data center Yandex: crolla l'attività dei bot russi?", url: "/curated/2026-10-12-vakulina-yandex-data-center-bot-euronews/", _source: "curated" },
       { title: "A Florida local newspaper ran an oped. It was an Iranian AI fake.", url: "/curated/2026-10-09-waldvogel-iran-articoli-ai-giornali-usa-washingtonpost/", _source: "curated" },
-      { title: "Could AI help scientists with their paperwork?", url: "/curated/2026-10-14-economist-ai-burocrazia-scienza/", _source: "curated" }
+      { title: "Could AI help scientists with their paperwork?", url: "/curated/2026-10-14-economist-ai-burocrazia-scienza/", _source: "curated" },
+      { title: "It Looked Like a New Species. The Trouble Was, It Didn’t Exist.", url: "/curated/2026-10-16-boodman-citizen-science-slop-nyt/", _source: "curated" },
+      { title: "When hackers become sources: Inside the new craft of reporting on hacked data", url: "/curated/2026-10-20-disalvo-hacker-fonti-niemanlab/", _source: "curated" },
+      { title: "EU probes pro-Kremlin disinformation around French riots", url: "/curated/2026-10-21-dubois-jones-disinformazione-rivolte-francia-ft/", _source: "curated" }
     ]
   },
   {
@@ -5299,7 +5314,8 @@ module.exports = [
     articles: [
       { title: "She’s Been to Gaza. She Met With the Iranians. Now She Has a Warning.", url: "/curated/2026-10-10-garcia-navarro-spoljaric-croce-rossa-nyt/", _source: "curated" },
       { title: "A.I. Companies Say They Aren’t Responsible for Their Unpredictable Products. Don’t Believe Them.", url: "/curated/2026-10-10-nyt-editorial-ai-responsabilita/", _source: "curated" },
-      { title: "We Know How to Fix Homelessness. Look at Denver.", url: "/curated/2026-10-13-lopez-denver-senzatetto-nyt/", _source: "curated" }
+      { title: "We Know How to Fix Homelessness. Look at Denver.", url: "/curated/2026-10-13-lopez-denver-senzatetto-nyt/", _source: "curated" },
+      { title: "Cercasi mandante", url: "/curated/2026-10-21-laportella-cercasi-mandante-substack/", _source: "curated" }
     ]
   },
   {
@@ -5439,7 +5455,8 @@ module.exports = [
     ],
     note: "La teoria con cui Clayton Christensen spiega come entranti con prodotti più semplici ed economici scalzano le aziende consolidate, salendo dal basso del mercato. Ha orientato strategie industriali e scelte di investimento per vent'anni, e nel linguaggio comune è diventata sinonimo di qualsiasi cambiamento tecnologico. **È uno strumento utile quando il meccanismo c'è davvero, ma diventa ideologia quando lo si applica ovunque, comprese le istituzioni che hanno obblighi fuori dal bilancio.**",
     articles: [
-      { title: "The Disruption Machine", url: "/curated/2014-06-16-lepore-disruption-machine-newyorker/", _source: "curated" }
+      { title: "The Disruption Machine", url: "/curated/2014-06-16-lepore-disruption-machine-newyorker/", _source: "curated" },
+      { title: "I Teach at a Business School. It’s Time to Shut Them Down.", url: "/curated/2026-10-18-marquis-business-school-nyt/", _source: "curated" }
     ]
   },
   {
@@ -5453,6 +5470,67 @@ module.exports = [
     note: "Il metodo statistico che combina i risultati di molti studi sulla stessa domanda, presentato da Gene Glass nel 1976 contro le rassegne che contavano gli studi a favore e contro come voti. È la base delle revisioni sistematiche che oggi orientano la medicina. **Nel sito è il rimedio al culto dello studio singolo: la conoscenza nasce dalla sintesi, non dalla notizia.**",
     articles: [
       { title: "How to assemble science", url: "/curated/2026-10-06-pearson-how-to-assemble-science-aeon/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Serbia",
+    type: "luogo",
+    geo: { modo: "diretta", paesi: ["Serbia"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q403"],
+    note: "Il paese dei Balcani governato da quattordici anni da Aleksandar Vučić, in equilibrio fra Unione europea, Stati Uniti, Russia e Cina. **Nel sito entra con il movimento studentesco nato nel novembre 2024 dal crollo della pensilina di Novi Sad: un'opposizione senza leader che porta la democrazia diretta dentro un'elezione.**",
+    articles: [
+      { title: "Something Astonishing Is Happening in My Country. The World Should Take Note.", url: "/curated/2026-10-21-balunovic-serbia-studenti-nyt/", _source: "curated" }
+    ]
+  },
+  {
+    name: "vincolo esterno",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Italia"] },
+    related: [
+      { name: "paradigma tecnocratico", why: "Il tecnico garantisce gli impegni europei quando il sistema rappresentativo non sembra in grado di farlo: è la forma italiana del governo per competenza." }
+    ],
+    note: "La formula con cui la storiografia e la politica italiana descrivono il peso degli impegni internazionali sulle scelte interne, dalla relazione della Banca d'Italia del 1953 a Guido Carli, da Maastricht al PNRR. **Non è solo una sovranità ceduta ma una scelta delle classi dirigenti, che si legano le mani all'esterno per ottenere la disciplina che la politica interna non garantisce, a costo di svuotare il voto.** Nel sito entra con Lorenzo Castellani, che ne fa una lezione per la Francia.",
+    articles: [
+      { title: "Le piège italien de la politique française", url: "/curated/2026-10-20-castellani-piege-italien-grandcontinent/", _source: "curated" }
+    ]
+  },
+  {
+    name: "rischio sistematico",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Stati Uniti"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q1975416"],
+    related: [
+      { name: "Nvidia", why: "Il debito dei data center dipende tutto dalla stessa scommessa sulla domanda di chip: se cala, cala per tutti insieme." }
+    ],
+    note: "Il rischio che non si elimina diversificando, perché colpisce tutto il mercato o un intero settore insieme, a differenza del rischio specifico di una singola impresa. **Nel sito è la chiave per leggere il boom dei data center: il loro debito va bene tutto insieme o male tutto insieme, e chi dovrebbe assicurarlo è già esposto allo stesso rischio.**",
+    articles: [
+      { title: "Someone Has to Take the AI Risk", url: "/curated/2026-10-20-levine-someone-has-to-take-ai-risk-bloomberg/", _source: "curated" }
+    ]
+  },
+  {
+    name: "capability approach",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Stati Uniti", "India"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q430460"],
+    related: [
+      { name: "Nussbaum, Martha", why: "Ne ha fatto una teoria della giustizia: una società si giudica da ciò che permette alle persone di essere e di fare, e le humanities sono fra quelle capacità." }
+    ],
+    note: "L'approccio delle capacità, elaborato da Amartya Sen negli anni Ottanta e sviluppato da Martha Nussbaum, misura il benessere non dal reddito o dalle risorse ma da ciò che le persone sono effettivamente in grado di essere e di fare. **Nel sito è l'argomento per cui le humanities non sono un lusso: coltivano capacità, come immaginare, giudicare, deliberare, senza le quali la libertà formale resta vuota.**",
+    articles: [
+      { title: "I Teach at a Business School. It’s Time to Shut Them Down.", url: "/curated/2026-10-18-marquis-business-school-nyt/", _source: "curated" }
+    ]
+  },
+  {
+    name: "lawfare",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Stati Uniti"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q6503597"],
+    related: [
+      { name: "Unione Europea", why: "Le regole su piattaforme e dati sono la leva che l'Unione usa dove non ha forza militare: il mercato interno come strumento di potenza." }
+    ],
+    note: "Il termine, reso corrente nel 2001 dal generale dell'aviazione statunitense Charles Dunlap, indica l'uso del diritto come sostituto o complemento della forza per ottenere un obiettivo contro un avversario; nell'uso politico ha preso anche il senso di persecuzione giudiziaria degli oppositori. **Nel sito indica il diritto usato come leva strategica, il terreno su cui l'Unione Europea, forte di un mercato di circa 450 milioni di consumatori con alto potere d'acquisto, ha più forza che altrove.** Anu Bradford ha descritto lo stesso meccanismo come «effetto Bruxelles»: le regole europee diventano standard globali perché le imprese non vogliono rinunciare a quel mercato.",
+    articles: [
+      { title: "EU probes pro-Kremlin disinformation around French riots", url: "/curated/2026-10-21-dubois-jones-disinformazione-rivolte-francia-ft/", _source: "curated" }
     ]
   }
 

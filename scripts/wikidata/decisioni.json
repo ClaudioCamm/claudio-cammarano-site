@@ -109,7 +109,11 @@
     "Metaphors We Live By": "Q31067292",
     "Christensen, Clayton": "Q5130292",
     "disruptive innovation": "Q1192297",
-    "metanalisi": "Q815382"
+    "metanalisi": "Q815382",
+    "Serbia": "Q403",
+    "rischio sistematico": "Q1975416",
+    "capability approach": "Q430460",
+    "lawfare": "Q6503597"
   },
   "nessun_qid": {
     "cosmotecnica": "Solo il libro di Yuk Hui ha un elemento: il concetto eredita la geografia dal teorico.",
@@ -900,7 +904,8 @@
     "conflitto di interessi intellettuale",
     "licenza di prestito digitale",
     "dieta mediatica",
-    "estrattivismo cognitivo"
+    "estrattivismo cognitivo",
+    "vincolo esterno"
   ],
   "cittadinanze_multiple": "si tengono tutte (approvato 25/9)"
 }

@@ -50,7 +50,9 @@
     "Taiwan": "158",
     "Turchia": "792",
     "Ucraina": "804",
-    "Ungheria": "348"
+    "Ungheria": "348",
+    "Serbia": "688",
+    "India": "356"
   },
   "regioni": {
     "UE": {
@@ -191,6 +193,8 @@
     "Turchia": "Turkey",
     "UE": "European Union",
     "Ucraina": "Ukraine",
-    "Ungheria": "Hungary"
+    "Ungheria": "Hungary",
+    "Serbia": "Serbia",
+    "India": "India"
   }
 }
