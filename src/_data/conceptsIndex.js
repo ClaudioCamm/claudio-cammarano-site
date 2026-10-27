@@ -5589,6 +5589,7 @@ module.exports = [
     name: "Andreessen, Marc",
     type: "persona",
     geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q62882"],
     related: [
       { name: "disruptive innovation", why: "Ne è stato uno dei difensori più rumorosi: dopo il saggio di Lepore la attaccò su Twitter con una serie di messaggi oggi non più reperibili." }
     ],
@@ -5601,6 +5602,7 @@ module.exports = [
     name: "guerra giusta",
     type: "teoria",
     geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q847198"],
     note: "La tradizione, di origine cristiana e poi codificata nel diritto internazionale, che distingue la giustizia del ricorso alla guerra (*jus ad bellum*) da quella della condotta in guerra (*jus in bello*). **Nel sito interessa il punto in cui le due dimensioni non si lasciano più separare: quando il modo di combattere arriva a negare la causa per cui si combatte.** La sua formulazione moderna più influente è *Just and Unjust Wars* di Michael Walzer (1977).",
     articles: [
       { title: "A Philosopher of War Changes His Mind", url: "/curated/2026-10-22-graupera-walzer-guerra-giusta-newyorker/", _source: "curated" }
@@ -5610,6 +5612,7 @@ module.exports = [
     name: "Walzer, Michael",
     type: "persona",
     geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q445511"],
     related: [
       { name: "guerra giusta", why: "Ne ha dato la formulazione moderna più influente, e a novant'anni ne ha messo in discussione il fondamento." }
     ],
