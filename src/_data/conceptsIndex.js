@@ -48,7 +48,8 @@ module.exports = [
     articles: [
       { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-04-04-dieci-anni-senza-umberto-eco/" },
       { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" },
-      { title: "The power thinker", url: "/curated/2017-03-15-koopman-power-thinker-foucault-aeon/", _source: "curated" }
+      { title: "The power thinker", url: "/curated/2017-03-15-koopman-power-thinker-foucault-aeon/", _source: "curated" },
+      { title: "Le tenebre non sono il nostro destino. Intervista ad Asma Mhalla", url: "/curated/2026-10-21-molteni-mhalla-pandora/", _source: "curated" }
     ]
   },
   {
@@ -1027,7 +1028,8 @@ module.exports = [
       { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" },
       { title: "I'm a College Professor. Writing Isn't as Important as We Think.", url: "/curated/2026-09-29-cruz-scrittura-pensiero-nyt/", _source: "curated" },
       { title: "Japanese author Rie Kudan wins prestigious Akutagawa Prize for novel partly written by ChatGPT", url: "/curated/2024-01-17-kudan-akutagawa-cinque-per-cento-cnn/", _source: "curated" },
-      { title: "Il triste dibattito sullo scrivere con l'IA", url: "/curated/2026-10-02-piacenza-triste-dibattito-scrivere-ia/", _source: "curated" }
+      { title: "Il triste dibattito sullo scrivere con l'IA", url: "/curated/2026-10-02-piacenza-triste-dibattito-scrivere-ia/", _source: "curated" },
+      { title: "Don't let robots write your first draft", url: "/curated/2026-10-22-getty-cooper-prima-bozza-ideo/", _source: "curated" }
     ]
   },
   {
@@ -1202,7 +1204,8 @@ module.exports = [
     note: "Concetto del nuovo realismo di Ferraris: la realtà resiste agli schemi concettuali che le applichiamo. Non possiamo interpretarla arbitrariamente perché essa oppone resistenza. Nel sito è il limite esterno del processo interpretativo: senza questo vincolo non rimane libertà di interpretare, ma solo il potere di imporre la propria narrazione.",
     articles: [
       { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" },
-      { title: "The Meaning of Commitment", url: "/curated/2026-07-29-ypi-meaning-of-commitment-tribune/", _source: "curated" }
+      { title: "The Meaning of Commitment", url: "/curated/2026-07-29-ypi-meaning-of-commitment-tribune/", _source: "curated" },
+      { title: "Wilfrid Sellars, sensory experience and the ‘Myth of the Given’", url: "/curated/2021-03-17-sheff-sellars-mito-del-dato-psyche/", _source: "curated" }
     ]
   },
   {
@@ -1414,7 +1417,8 @@ module.exports = [
       { title: "When hackers become sources: Inside the new craft of reporting on hacked data", url: "/curated/2026-10-20-disalvo-hacker-fonti-niemanlab/", _source: "curated" },
       { title: "Milano, i racconti degli scontri: «C'era una chat come esca, ci hanno detto: venite, noi spacchiamo le vetrine e voi avrete felpe e scarpe»", url: "/curated/2026-10-21-andreis-santucci-milano-chat-esca-corriere/", _source: "curated" },
       { title: "Cercasi mandante", url: "/curated/2026-10-21-laportella-cercasi-mandante-substack/", _source: "curated" },
-      { title: "EU probes pro-Kremlin disinformation around French riots", url: "/curated/2026-10-21-dubois-jones-disinformazione-rivolte-francia-ft/", _source: "curated" }
+      { title: "EU probes pro-Kremlin disinformation around French riots", url: "/curated/2026-10-21-dubois-jones-disinformazione-rivolte-francia-ft/", _source: "curated" },
+      { title: "Giordano: “L’Ucraina deve essere difesa, anche dalle false verità”", url: "/curated/2026-10-21-cuzzocrea-giordano-ucraina-repubblica/", _source: "curated" }
     ]
   },
   {
@@ -1613,7 +1617,8 @@ module.exports = [
       { title: "Western philosophy is racist", url: "/curated/2017-10-31-vannorden-canone-filosofico-aeon/", _source: "curated" },
       { title: "以贡献为导向深化高校分类评价改革", url: "/curated/2026-03-24-xia-valutazione-differenziata-universita-cina/", _source: "curated" },
       { title: "I'm a College Professor. Writing Isn't as Important as We Think.", url: "/curated/2026-09-29-cruz-scrittura-pensiero-nyt/", _source: "curated" },
-      { title: "Why AI Detection Fails for Academic Integrity", url: "/curated/2026-08-06-karr-perche-la-rilevazione-fallisce-arxiv/", _source: "curated" }
+      { title: "Why AI Detection Fails for Academic Integrity", url: "/curated/2026-08-06-karr-perche-la-rilevazione-fallisce-arxiv/", _source: "curated" },
+      { title: "China’s universities are rich. But they're getting squeezed", url: "/curated/2026-10-20-economist-universita-cinesi/", _source: "curated" }
     ]
   },
   {
@@ -1889,7 +1894,9 @@ module.exports = [
     note: "Scenario descritto da David Brooks nell'era dell'AI: chi ha alta NFC userà l'AI per pensare di più e diventare più produttivo; chi ha bassa o media NFC la userà per pensare di meno, perdendo progressivamente capacità critica e autonomia di giudizio. Brooks sostiene che questa polarizzazione potrebbe essere più grave di quella economica o politica, dividendo la società in qualcosa che comincia ad assomigliare a due specie diverse. Dialoga con il moral deskilling già presente nel sito.",
     articles: [
       { title: "The People Who Will Thrive in the AI Age", url: "/curated/2026-06-28-brooks-people-thrive-ai-age-atlantic/", _source: "curated" },
-      { title: "Europe's public broadcasters go from prime time to hard-to-find", url: "/curated/2026-07-09-economist-psb-europe-hard-to-find/", _source: "curated" }
+      { title: "Europe's public broadcasters go from prime time to hard-to-find", url: "/curated/2026-07-09-economist-psb-europe-hard-to-find/", _source: "curated" },
+      { title: "Mamdani Is the Centrist We’ve Been Waiting For", url: "/curated/2026-10-19-chait-mamdani-centrista-atlantic/", _source: "curated" },
+      { title: "Giordano: “L’Ucraina deve essere difesa, anche dalle false verità”", url: "/curated/2026-10-21-cuzzocrea-giordano-ucraina-repubblica/", _source: "curated" }
     ]
   },
   {
@@ -2071,7 +2078,8 @@ module.exports = [
       { title: "The Great Russian Firewall: the Kremlin's ultimate crackdown on internet freedom", url: "/curated/2025-12-19-osw-great-russian-firewall/", _source: "curated" },
       { title: "Internet Governance in 2026: Sovereignty, Security, and the Limits of Multistakeholderism", url: "/curated/2026-01-04-kulesza-internet-governance-2026-circleid/", _source: "curated" },
       { title: "Kids outlearn AI—and we still don't know why", url: "/curated/2026-08-24-cutts-divario-efficienza-dati-mit-techreview/", _source: "curated" },
-      { title: "Can the News Exist Without Big Tech? The Atlas Says Yes", url: "/curated/2026-10-08-bell-chaplin-the-atlas-cjr/", _source: "curated" }
+      { title: "Can the News Exist Without Big Tech? The Atlas Says Yes", url: "/curated/2026-10-08-bell-chaplin-the-atlas-cjr/", _source: "curated" },
+      { title: "Le tenebre non sono il nostro destino. Intervista ad Asma Mhalla", url: "/curated/2026-10-21-molteni-mhalla-pandora/", _source: "curated" }
     ]
   },
   {
@@ -2619,7 +2627,8 @@ module.exports = [
       { title: "A Florida local newspaper ran an oped. It was an Iranian AI fake.", url: "/curated/2026-10-09-waldvogel-iran-articoli-ai-giornali-usa-washingtonpost/", _source: "curated" },
       { title: "A.I. Companies Say They Aren’t Responsible for Their Unpredictable Products. Don’t Believe Them.", url: "/curated/2026-10-10-nyt-editorial-ai-responsabilita/", _source: "curated" },
       { title: "Hannah Fry: How OpenAI has caused an existential crisis in mathematics", url: "/curated/2026-10-14-fry-openai-crisi-matematica-newscientist/", _source: "curated" },
-      { title: "The AI boom is threatened by an epidemic of unreliable numbers", url: "/curated/2026-10-14-economist-numeri-inaffidabili-ai/", _source: "curated" }
+      { title: "The AI boom is threatened by an epidemic of unreliable numbers", url: "/curated/2026-10-14-economist-numeri-inaffidabili-ai/", _source: "curated" },
+      { title: "From Kenya to Japan, Rush to Fix Security Flaw Takes Sites Briefly Offline", url: "/curated/2026-10-22-chutel-nierenberg-otieno-php-nyt/", _source: "curated" }
     ]
   },
   {
@@ -2882,7 +2891,8 @@ module.exports = [
       { title: "How a former model from Kyiv blew up Russia's $20bn gas pipeline", url: "/curated/2026-06-15-times-nord-stream-diver/", _source: "curated" },
       { title: "Putin’s war on schools: ‘millions of books burnt before my eyes’", url: "/curated/2026-10-10-hauschild-johanson-libri-scuola-ucraina-sundaytimes/", _source: "curated" },
       { title: "Attacchi ucraini ai data center Yandex: crolla l'attività dei bot russi?", url: "/curated/2026-10-12-vakulina-yandex-data-center-bot-euronews/", _source: "curated" },
-      { title: "People are rejoicing about the removal of Russian bots from social media – but the truth is far more complicated", url: "/curated/2026-10-13-griffin-bot-russi-yandex-independent/", _source: "curated" }
+      { title: "People are rejoicing about the removal of Russian bots from social media – but the truth is far more complicated", url: "/curated/2026-10-13-griffin-bot-russi-yandex-independent/", _source: "curated" },
+      { title: "Giordano: “L’Ucraina deve essere difesa, anche dalle false verità”", url: "/curated/2026-10-21-cuzzocrea-giordano-ucraina-repubblica/", _source: "curated" }
     ]
   },
   {
@@ -2943,7 +2953,9 @@ module.exports = [
       { title: "The New Old Middle East", url: "/curated/2026-07-30-gause-new-old-middle-east-foreignaffairs/", _source: "curated" },
       { title: "Marco Rubio invente l'Occident de Trump", url: "/curated/2026-10-08-gressani-miranda-rubio-occidente-trump-grandcontinent/", _source: "curated" },
       { title: "Populists Are Losing Their War on Globalization", url: "/curated/2026-10-09-donnan-populists-losing-war-globalization-bloomberg/", _source: "curated" },
-      { title: "Trumpism Is Backfiring", url: "/curated/2026-10-20-klein-freeland-trumpism-backfiring-nyt/", _source: "curated" }
+      { title: "Trumpism Is Backfiring", url: "/curated/2026-10-20-klein-freeland-trumpism-backfiring-nyt/", _source: "curated" },
+      { title: "Why Is Tech Billionaire Marc Andreessen So Mad?", url: "/curated/2026-10-15-carr-andreessen-bloomberg/", _source: "curated" },
+      { title: "Mamdani Is the Centrist We’ve Been Waiting For", url: "/curated/2026-10-19-chait-mamdani-centrista-atlantic/", _source: "curated" }
     ]
   },
   {
@@ -3027,7 +3039,8 @@ module.exports = [
       { title: "Populists Are Losing Their War on Globalization", url: "/curated/2026-10-09-donnan-populists-losing-war-globalization-bloomberg/", _source: "curated" },
       { title: "Pechino ha lanciato un modello di IA che parla tibetano (ma dà solo risposte che piacciono alla Cina)", url: "/curated/2026-05-29-miele-deepzang-ia-tibetano-avvenire/", _source: "curated" },
       { title: "Could AI algorithms hold China’s solution for global narrative on Tibet?", url: "/curated/2026-06-17-liang-algoritmi-narrazione-tibet-scmp/", _source: "curated" },
-      { title: "Trumpism Is Backfiring", url: "/curated/2026-10-20-klein-freeland-trumpism-backfiring-nyt/", _source: "curated" }
+      { title: "Trumpism Is Backfiring", url: "/curated/2026-10-20-klein-freeland-trumpism-backfiring-nyt/", _source: "curated" },
+      { title: "China’s universities are rich. But they're getting squeezed", url: "/curated/2026-10-20-economist-universita-cinesi/", _source: "curated" }
     ]
   },
   {
@@ -3123,7 +3136,8 @@ module.exports = [
       { title: "Il gioco sporco degli autocrati", url: "/curated/2026-04-09-sabatini-gioco-sporco-autocrati/", _source: "curated" },
       { title: "Dentro le decisioni di Trump sull'Iran", url: "/curated/2026-04-09-trump-iran-war/", _source: "curated" },
       { title: "Populists Are Losing Their War on Globalization", url: "/curated/2026-10-09-donnan-populists-losing-war-globalization-bloomberg/", _source: "curated" },
-      { title: "Trumpism Is Backfiring", url: "/curated/2026-10-20-klein-freeland-trumpism-backfiring-nyt/", _source: "curated" }
+      { title: "Trumpism Is Backfiring", url: "/curated/2026-10-20-klein-freeland-trumpism-backfiring-nyt/", _source: "curated" },
+      { title: "Why Is Tech Billionaire Marc Andreessen So Mad?", url: "/curated/2026-10-15-carr-andreessen-bloomberg/", _source: "curated" }
     ]
   },
   {
@@ -3286,7 +3300,8 @@ module.exports = [
     articles: [
       { title: "La colonizzazione del giudizio", url: "/curated/2026-06-12-corriere-colonizzazione-giudizio/", _source: "curated" },
       { title: "What the Pope Said About A.I.", url: "/curated/2026-05-27-lepore-pope-leo-ai-newyorker/", _source: "curated" },
-      { title: "Is Kaliningrad, Russia's exclave surrounded by EU countries, an asset or a liability?", url: "/curated/2022-06-06-economist-kaliningrad-risorsa-o-ostaggio/", _source: "curated" }
+      { title: "Is Kaliningrad, Russia's exclave surrounded by EU countries, an asset or a liability?", url: "/curated/2022-06-06-economist-kaliningrad-risorsa-o-ostaggio/", _source: "curated" },
+      { title: "Le tenebre non sono il nostro destino. Intervista ad Asma Mhalla", url: "/curated/2026-10-21-molteni-mhalla-pandora/", _source: "curated" }
     ]
   },
   {
@@ -4000,7 +4015,8 @@ module.exports = [
       { title: "30 Ideas for Fixing U.S. Schools, Ranked by Experts", url: "/curated/2026-09-28-mervosh-paris-miller-cosa-funziona-davvero-nella-scuola-nyt/", _source: "curated" },
       { title: "He Wants AI Benchmarking To Be a Science, Not a Dark Art", url: "/curated/2026-10-16-pavlus-hardt-benchmark-quanta/", _source: "curated" },
       { title: "Could AI help scientists with their paperwork?", url: "/curated/2026-10-14-economist-ai-burocrazia-scienza/", _source: "curated" },
-      { title: "The AI boom is threatened by an epidemic of unreliable numbers", url: "/curated/2026-10-14-economist-numeri-inaffidabili-ai/", _source: "curated" }
+      { title: "The AI boom is threatened by an epidemic of unreliable numbers", url: "/curated/2026-10-14-economist-numeri-inaffidabili-ai/", _source: "curated" },
+      { title: "China’s universities are rich. But they're getting squeezed", url: "/curated/2026-10-20-economist-universita-cinesi/", _source: "curated" }
     ]
   },
   {
@@ -4380,7 +4396,8 @@ module.exports = [
     ],
     note: "Filosofo, logico e matematico statunitense (1839–1914), nato a Cambridge, Massachusetts. Non ha mai tenuto una cattedra stabile: per trent'anni ha lavorato allo United States Coast Survey facendo misure di gravità, ha pubblicato su riviste e ha lasciato migliaia di pagine manoscritte, raccolte solo dopo la morte nei *Collected Papers* (Harvard, 1931–1958) — che si citano per volume e paragrafo, ed è la ragione per cui nel sito compare come 5.145 o 2.748 invece che con un titolo. Coniò «pragmatismo» e poi lo ribattezzò «pragmaticismo» perché la prima parola gli era stata portata altrove, scegliendo un termine «abbastanza brutto da essere al sicuro dai rapitori»: la distanza fra quel pragmatismo e ciò che oggi in italiano chiamiamo pragmatico è tutta da percorrere, e va percorsa prima di leggerlo. Nel sito è il nodo che mancava, perché tiene insieme le due metà dell'archivio che fin qui non avevano un antenato comune. Da un lato la metà semiotica e strutturale: il segno di Peirce è triadico, non diadico — un rappresentante, un oggetto e un interpretante — e significa soltanto attraverso il terzo termine, che a sua volta diventa segno, e così via senza termine. È il bivio che si apre alla radice del Novecento: la linguistica di Saussure prende la strada del segno a due posti, Peirce quella del segno che ha bisogno di qualcuno che lo legga, e il canale italiano di questa seconda via è Umberto Eco, il cui Trattato del 1975 vi è costruito sopra e il cui lettore modello è un interpretante con un nome proprio. Un indice di concetti legati da relazioni, come quello di questo sito, è un oggetto strutturalista; ma il fatto che qualcuno lo legga, e che leggendolo produca il senso che nessuna delle voci contiene da sola, è il terzo termine di Peirce. Dall'altro lato la metà epistemica. A Peirce si deve il nome della terza inferenza accanto a deduzione e induzione, l'abduzione: la mossa che inventa l'ipotesi invece di dedurla o generalizzarla, l'unica delle tre che produce qualcosa di nuovo e l'unica che può sbagliare nel modo che conta. E si deve la tesi autocorrettiva, che Deborah Mayo difende nel 2026 contro la lettura corrente: l'induzione merita il nome di metodo non perché migliori accumulando dati, ma perché contiene il modo di rilevare il proprio errore — fino al punto, dice Peirce nel 1878 (3.575), di correggere perfino le proprie premesse. Le due metà sono la stessa mossa vista da due lati: nessun segno significa da solo, nessuna misura si giudica da sola. Il fallibilismo che ne deriva — ogni credenza è tenuta con riserva di revisione — non è scetticismo, ed è la posizione che il sito riconosce come propria: la realtà resiste ai nostri schemi, e il modo di scoprirlo è costruire procedimenti che possano accorgersene.",
     articles: [
-      { title: "Happy Birthday C.S. Peirce: Peircean Induction and the Error-Correcting Thesis", url: "/curated/2026-09-11-mayo-peirce-tesi-autocorrettiva-errorstatistics/", _source: "curated" }
+      { title: "Happy Birthday C.S. Peirce: Peircean Induction and the Error-Correcting Thesis", url: "/curated/2026-09-11-mayo-peirce-tesi-autocorrettiva-errorstatistics/", _source: "curated" },
+      { title: "Wilfrid Sellars, sensory experience and the ‘Myth of the Given’", url: "/curated/2021-03-17-sheff-sellars-mito-del-dato-psyche/", _source: "curated" }
     ]
   },
   {
@@ -4912,7 +4929,8 @@ module.exports = [
       { title: "The New Red Sea Wars", url: "/curated/2026-10-06-boswell-new-red-sea-wars-foreignaffairs/", _source: "curated" },
       { title: "The New Old Middle East", url: "/curated/2026-07-30-gause-new-old-middle-east-foreignaffairs/", _source: "curated" },
       { title: "Après l’épreuve de la preuve", url: "/curated/2026-10-07-illouz-apres-lepreuve-de-la-preuve-grandcontinent/", _source: "curated" },
-      { title: "She’s Been to Gaza. She Met With the Iranians. Now She Has a Warning.", url: "/curated/2026-10-10-garcia-navarro-spoljaric-croce-rossa-nyt/", _source: "curated" }
+      { title: "She’s Been to Gaza. She Met With the Iranians. Now She Has a Warning.", url: "/curated/2026-10-10-garcia-navarro-spoljaric-croce-rossa-nyt/", _source: "curated" },
+      { title: "A Philosopher of War Changes His Mind", url: "/curated/2026-10-22-graupera-walzer-guerra-giusta-newyorker/", _source: "curated" }
     ]
   },
   {
@@ -5538,7 +5556,8 @@ module.exports = [
     ],
     note: "Il termine, reso corrente nel 2001 dal generale dell'aviazione statunitense Charles Dunlap, indica l'uso del diritto come sostituto o complemento della forza per ottenere un obiettivo contro un avversario; nell'uso politico ha preso anche il senso di persecuzione giudiziaria degli oppositori. **Nel sito indica il diritto usato come leva strategica, il terreno su cui l'Unione Europea, forte di un mercato di circa 450 milioni di consumatori con alto potere d'acquisto, ha più forza che altrove.** Anu Bradford ha descritto lo stesso meccanismo come «effetto Bruxelles»: le regole europee diventano standard globali perché le imprese non vogliono rinunciare a quel mercato.",
     articles: [
-      { title: "EU probes pro-Kremlin disinformation around French riots", url: "/curated/2026-10-21-dubois-jones-disinformazione-rivolte-francia-ft/", _source: "curated" }
+      { title: "EU probes pro-Kremlin disinformation around French riots", url: "/curated/2026-10-21-dubois-jones-disinformazione-rivolte-francia-ft/", _source: "curated" },
+      { title: "Le tenebre non sono il nostro destino. Intervista ad Asma Mhalla", url: "/curated/2026-10-21-molteni-mhalla-pandora/", _source: "curated" }
     ]
   },
   {
@@ -5552,6 +5571,51 @@ module.exports = [
     note: "Libraio inglese, nato nel 1963, ha fondato nel 1990 Daunt Books a Londra; è amministratore delegato di Waterstones dal 2011 e di Barnes & Noble dal 2019. **Nel sito è l'esempio di chi ha rilanciato le catene librarie trattando i libri come oggetti specifici e non come merce indistinta: scelte decentrate ai librai, rese basse, niente spazi espositivi a pagamento per gli editori.** Il modello ha i suoi costi: ordini iniziali minimi che scaricano il rischio sugli editori, salari d'ingresso contestati, un potere concentrato in una sola persona.",
     articles: [
       { title: "The New Age of Reading", url: "/curated/2026-10-19-heller-daunt-new-age-of-reading-newyorker/", _source: "curated" }
+    ]
+  },
+  {
+    name: "mito del dato",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "Peirce, Charles Sanders", why: "Nel 1868 nega l'esistenza di conoscenze intuitive: ogni cognizione è determinata da una precedente, ed è già l'argomento contro il dato." }
+    ],
+    note: "L'espressione con cui Wilfrid Sellars, in *Empiricism and the Philosophy of Mind* (1956), designa l'idea che l'esperienza sensibile fornisca da sola una base di conoscenza, senza mediazione concettuale. **Nel sito indica la distinzione fra ciò che causa una percezione e ciò che la giustifica come sapere: il mondo resiste come causa, la conoscenza si costruisce secondo regole.** Peirce aveva anticipato l'obiezione nel 1868, negando che esistano intuizioni non determinate da conoscenze precedenti.",
+    articles: [
+      { title: "Wilfrid Sellars, sensory experience and the ‘Myth of the Given’", url: "/curated/2021-03-17-sheff-sellars-mito-del-dato-psyche/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Andreessen, Marc",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "disruptive innovation", why: "Ne è stato uno dei difensori più rumorosi: dopo il saggio di Lepore la attaccò su Twitter con una serie di messaggi oggi non più reperibili." }
+    ],
+    note: "Imprenditore e investitore statunitense, nato nel 1971, coautore del browser Mosaic e cofondatore di Netscape e del fondo Andreessen Horowitz. **Nel sito compare come esempio del potere politico del capitale di rischio e di un'abitudine documentata a raccontare gli incontri in una versione che i presenti smentiscono.** Ha attaccato pubblicamente Jill Lepore dopo la sua critica alla disruptive innovation.",
+    articles: [
+      { title: "Why Is Tech Billionaire Marc Andreessen So Mad?", url: "/curated/2026-10-15-carr-andreessen-bloomberg/", _source: "curated" }
+    ]
+  },
+  {
+    name: "guerra giusta",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    note: "La tradizione, di origine cristiana e poi codificata nel diritto internazionale, che distingue la giustizia del ricorso alla guerra (*jus ad bellum*) da quella della condotta in guerra (*jus in bello*). **Nel sito interessa il punto in cui le due dimensioni non si lasciano più separare: quando il modo di combattere arriva a negare la causa per cui si combatte.** La sua formulazione moderna più influente è *Just and Unjust Wars* di Michael Walzer (1977).",
+    articles: [
+      { title: "A Philosopher of War Changes His Mind", url: "/curated/2026-10-22-graupera-walzer-guerra-giusta-newyorker/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Walzer, Michael",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "guerra giusta", why: "Ne ha dato la formulazione moderna più influente, e a novant'anni ne ha messo in discussione il fondamento." }
+    ],
+    note: "Filosofo politico statunitense, nato nel 1935, professore emerito all'Institute for Advanced Study di Princeton e a lungo condirettore di «Dissent». **Nel sito è il teorico della guerra giusta che, davanti a Gaza, ammette che la condotta di una guerra può annullarne la giustizia.** È anche l'autore di *Thick and Thin*, sul rapporto fra i valori delle comunità e quelli universali.",
+    articles: [
+      { title: "A Philosopher of War Changes His Mind", url: "/curated/2026-10-22-graupera-walzer-guerra-giusta-newyorker/", _source: "curated" }
     ]
   }
 
