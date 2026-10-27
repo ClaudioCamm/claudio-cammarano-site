@@ -2,7 +2,7 @@
 layout: layouts/catena.njk
 title: "Non è nemmeno sbagliato"
 date: 2026-09-29T15:25:00Z
-description: "Pauli liquidava così le tesi che non si potevano mettere alla prova. Delle ventiquattro previsioni pubbliche sull'AGI fatte dal 1950 a oggi, diciannove meritano lo stesso giudizio. Dieci schede su come si prevede il futuro dell'intelligenza artificiale, e su quali previsioni si lasciano controllare."
+description: "Pauli liquidava così le tesi che non si potevano mettere alla prova. Delle ventiquattro previsioni pubbliche sull'AGI fatte dal 1950 a oggi, diciannove meritano lo stesso giudizio. Undici schede su come si prevede il futuro dell'intelligenza artificiale, e su quali previsioni si lasciano controllare."
 tesi: "Le previsioni sull'intelligenza artificiale sono quasi sempre infalsificabili, perché legano una data a uno stato che nessuno ha definito o perché nascondono metodo e dati; una previsione vale qualcosa solo se dichiara in che modo potrebbe risultare sbagliata."
 category: ["AI", "Epistemologia", "Scenario Planning"]
 lang: "🇮🇹 Italiano"
@@ -20,6 +20,7 @@ fonti:
   - 2025-12-08-storm-scaling-ai-bolla-inet
   - 2026-07-09-economist-dementia-defeated
   - 2026-05-04-kevin-kelly-future-scientific-method
+  - 2026-10-14-economist-numeri-inaffidabili-ai
 controtesi: 2026-05-04-kevin-kelly-future-scientific-method
 ---
 
@@ -44,6 +45,8 @@ Il primo capitolo della serie di Floridi verifica ventisei previsioni sull'impat
 ## Le previsioni che si lasciano controllare
 
 Esistono anche previsioni di un altro tipo, e l'archivio ne conserva alcune. Il *New York Times* racconta gli agenti che bruciano quantità crescenti di token per compiti in apparenza semplici, un fenomeno che mette alla prova l'economia del modello attuale.{% rif "2026-04-09-tokenmaxxing-ai-agents" %} Doug O'Laughlin, all'inizio del 2025, aveva scritto che con i modelli di ragionamento i costi marginali sarebbero tornati a esistere nell'economia della tecnologia, rompendo una delle assunzioni su cui si reggeva il modello delle grandi piattaforme: una tesi datata e precisa, che Ben Thompson ha ripreso un anno dopo come cornice per leggere le mosse dei laboratori.{% rif "2025-01-01-fabricated-knowledge-ai-semiconductor-outlook" %} Servaas Storm, a dicembre, ha previsto lo sgonfiamento della bolla dello *scaling* con quattro ragioni ordinate e verificabili, dai ricavi al debito sulle GPU, dalla rete elettrica ai tempi di consegna: potrà risultare sbagliata, ed è per questo che vale la pena leggerla.{% rif "2025-12-08-storm-scaling-ai-bolla-inet" %} E l'*Economist* ricorda quanto le proiezioni catastrofiche possano essere smentite dai dati, riportando l'incidenza della demenza scesa del 13% a ogni decennio contro le previsioni su cui si pianificava la sanità.{% rif "2026-07-09-economist-dementia-defeated" %}
+
+Lo stesso difetto riguarda i numeri del presente, non solo le previsioni. L'*Economist* osserva che i ricavi dei laboratori sono ricavi ricorrenti annualizzati calcolati in modi diversi, Anthropic contando le vendite fatte attraverso i fornitori cloud e OpenAI solo dopo averne tolto la quota, e che le grandi aziende quotate hanno 2.400 miliardi di dollari di impegni fuori bilancio, misurati con indicatori che restano scatole nere.{% rif "2026-10-14-economist-numeri-inaffidabili-ai" %} Un numero calcolato con un metodo che non si dichiara non si può confrontare, e un numero che non si può confrontare non si lascia smentire.
 
 {% controtesi "2026-05-04-kevin-kelly-future-scientific-method" %}
 Si può anche indovinare, e con largo anticipo. Kevin Kelly ha ripubblicato quattordici speculazioni sul futuro del metodo scientifico scritte nel gennaio 2006, rimaste quasi invariate, e molte si leggono oggi come descrizioni del presente: la scoperta di regolarità senza una teoria previa, le dimostrazioni verificate dalle macchine, la scienza scritta da migliaia di collaboratori.{% rif "2026-05-04-kevin-kelly-future-scientific-method" %} Nessuna di quelle speculazioni dichiarava una data o un criterio di smentita, eppure vent'anni dopo le riconosciamo vere.

@@ -2,7 +2,7 @@
 layout: layouts/catena.njk
 title: "Marketing per le macchine"
 date: 2026-09-28T21:05:00Z
-description: "Un italiano su tre sceglie cosa comprare chiedendolo a un assistente, e molti marchi bloccano senza saperlo i programmi che dovrebbero leggerli. Otto schede su un marketing che deve farsi capire dalle macchine e farsi amare dalle persone, mentre il mezzo sparisce."
+description: "Un italiano su tre sceglie cosa comprare chiedendolo a un assistente, e molti marchi bloccano senza saperlo i programmi che dovrebbero leggerli. Nove schede su un marketing che deve farsi capire dalle macchine e farsi amare dalle persone, mentre il mezzo sparisce."
 tesi: "Un marchio deve ormai parlare a due lettori, le macchine che scelgono per conto dei clienti e le persone che scelgono di appartenergli; la fascia intermedia, fatta di contenuti e strategie medie, sparisce perché le macchine la producono gratis."
 category: ["Marketing", "AI", "Editoria"]
 series: "La misura e il bersaglio, I"
@@ -20,6 +20,7 @@ fonti:
   - 2025-11-10-tarchetti-love-brand-editoria-nonhocapito
   - 2026-06-25-economist-liberalism-timeline
   - 2026-07-18-stapleton-voice-of-google-newyorker
+  - 2026-10-15-stratechery-ari-emanuel-entertainment-ai
 controtesi: 2026-07-18-stapleton-voice-of-google-newyorker
 ---
 
@@ -44,6 +45,8 @@ David Droga, fondatore di Droga5, ha detto a *Semafor* senza giri di parole che 
 Resta la persona, e con lei una forma di valore che la macchina non produce. Francesco Tarchetti combina il *brand love* di Carroll e Ahuvia con la coda lunga di Chris Anderson e ne ricava una tesi che vale per ogni editore: sull'utilità non si compete più, perché l'informazione è ovunque e gratuita, e si sopravvive costruendo un'appartenenza.{% rif "2025-11-10-tarchetti-love-brand-editoria-nonhocapito" %} L'*Economist* ne offre un esempio, con la cronologia interattiva del liberalismo in cui il giornale racconta la propria identità attraverso la storia di un'idea; nella scheda la leggevo come un esercizio di marketing valoriale, con la sua dose di agiografia e con il merito di scegliere una posizione.{% rif "2026-06-25-economist-liberalism-timeline" %} Un marchio che ha una posizione dà alla persona qualcosa a cui appartenere, e alla macchina qualcosa di riconoscibile da citare.
 
 {% scheda "2025-11-10-tarchetti-love-brand-editoria-nonhocapito" %}
+
+Ben Thompson, in conversazione con Ari Emanuel, porta il ragionamento sulla spesa pubblicitaria.{% rif "2026-10-15-stratechery-ari-emanuel-entertainment-ai" %} La minaccia per i modelli costruiti sulla ricerca non viene dai chatbot, che lasciano l'umano nel ciclo, ma dagli agenti: quando a cercare e a comprare è una macchina, la pubblicità legata alla ricerca perde valore, e se la spesa resta una quota stabile del PIL si sposta dove l'umano resta, i social e il dal vivo. Il primo lettore non si persuade, si informa; il secondo è l'unico a cui abbia ancora senso vendere un desiderio. Emanuel, che ha appena fondato una società di eventi dal vivo, ha un interesse diretto nella tesi.
 
 {% controtesi "2026-07-18-stapleton-voice-of-google-newyorker" %}
 L'amore, però, non si progetta. Claire Stapleton racconta sul *New Yorker* di aver costruito la voce di Google, le mail settimanali diventate folklore aziendale, metà liturgia e metà parodia, e di aver visto il divario fra retorica e realtà diventare intollerabile, fino alla chiusura di Google Reader, l'unica cosa davvero sociale che l'azienda avesse costruito.{% rif "2026-07-18-stapleton-voice-of-google-newyorker" %} A YouTube scopre che l'algoritmo ha già preso il posto della cura editoriale, e che il suo ruolo di responsabile della curatela è in gran parte ornamentale. La voce di un marchio si incrina appena smette di corrispondere a ciò che il marchio fa, e intanto il lettore-macchina ha già deciso.

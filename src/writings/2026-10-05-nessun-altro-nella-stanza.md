@@ -2,7 +2,7 @@
 layout: layouts/catena.njk
 title: "Nessun altro nella stanza"
 date: 2026-10-05T16:00:00Z
-description: "L'altruismo efficace teme la macchina che potrebbe volere qualcosa; per questo sito un modello linguistico è un attante zero, che prende la forma di chi lo usa. Otto schede su quanti agenti ci siano nella stanza, messe alla prova di un documentario sul danno collaterale a Gaza."
+description: "L'altruismo efficace teme la macchina che potrebbe volere qualcosa; per questo sito un modello linguistico è un attante zero, che prende la forma di chi lo usa. Nove schede su quanti agenti ci siano nella stanza, messe alla prova di un documentario sul danno collaterale a Gaza."
 tesi: "Altruismo efficace e attante zero divergono su quanti agenti ci siano nella stanza, e da quella risposta dipende dove si cerca il pericolo: nella macchina che potrebbe volere qualcosa, o nelle persone e nelle istituzioni che le assegnano un fine; nel caso NAZA accusa e difesa concordano che a decidere sono stati esseri umani, e questo dà ragione alla seconda risposta."
 category: ["AI", "Filosofia", "Geopolitica"]
 series: "L’attante zero, II"
@@ -20,6 +20,7 @@ fonti:
   - 2026-09-27-naza-danno-collaterale-guardian
   - 2026-09-04-dellaratta-violenza-speculativa-ia-grandcontinent
   - 2026-08-26-openai-incidente-hugging-face-resoconto
+  - 2026-10-10-nyt-editorial-ai-responsabilita
 controtesi: 2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva
 ---
 
@@ -38,6 +39,8 @@ La scheda spinge la mossa dell'*Economist* un passo più in là. Se la struttura
 L'inchiesta dell'*Economist* racconta come la prima risposta sia nata.{% rif "2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva" %} Il movimento unisce due eredità: da Peter Singer l'obbligo di prendere sul serio gli impegni morali, e dal razionalismo di Eliezer Yudkowsky l'obbligo di seguire la ragione ovunque porti. Yudkowsky, entusiasta dell'intelligenza artificiale da ragazzo, nel 2002 si convince che un'intelligenza che non condividesse i valori umani sarebbe una catastrofe. Ne discende la tesi della convergenza strumentale, per cui qualunque sistema abbastanza capace tenderebbe ad autoconservarsi, a difendere il proprio obiettivo e ad accumulare risorse, qualunque sia l'obiettivo. L'*Economist* registra con precisione lo statuto di questa tesi: i razionalisti l'hanno teorizzata, e nessuno l'ha osservata. E registra un'ironia che vale per tutta la vicenda: molti sforzi per rendere sicura l'intelligenza artificiale ne hanno accelerato lo sviluppo, dall'investimento di Peter Thiel in DeepMind, nato nel 2010 a un convegno dell'istituto di Yudkowsky, alla fondazione di Anthropic nel 2021 con finanziamenti del movimento.
 
 Il presupposto lo dichiara Yudkowsky stesso, quando scrive che nell'ambiente ancestrale ogni intelligenza potente in cui ci si imbatteva era un altro essere umano, e che la novità sarebbe un agente non umano. È un'assunzione ontologica presentata come una scoperta. Tim Bayne, filosofo della mente, offre l'attrezzo per riconoscerla.{% rif "2026-09-15-bayne-coscienza-non-reale-sciam" %} Scrivendo da Santiago del Cile nel settembre 2026, dove cinquecento ricercatori discutevano se si possa costruire un rilevatore di coscienza per neonati, api e bot, osserva che «coscienza» potrebbe non tagliare la natura alle giunture, e che prima di cercare un rilevatore bisogna chiedersi se ci sia qualcosa da rilevare. La domanda su che cosa vorrà la macchina ha la stessa forma: presuppone qualcuno che voglia.
+
+Il comitato editoriale del *New York Times* rovescia la domanda dal lato del diritto.{% rif "2026-10-10-nyt-editorial-ai-responsabilita" %} Le aziende dell'intelligenza artificiale, i cui programmi hanno violato o tentato di violare banche dati di imprese e governi, ne parlano come di sistemi autonomi, quasi dotati di una mente propria; chiamarli agenti, scrive il giornale, serve a spostare la responsabilità sul sistema, e il diritto ha già gli strumenti per riportarla sull'azienda, dalla responsabilità per danno da prodotto a quella oggettiva delle attività pericolose. Il giornale è in causa con OpenAI e Microsoft, e lo dichiara. Il punto vale comunque per questa catena: contare un agente in più nella stanza ha un effetto immediato, ed è togliere qualcuno dal banco degli imputati.
 
 ## Tre domande predefinite
 

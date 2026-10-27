@@ -2,7 +2,7 @@
 layout: layouts/catena.njk
 title: "Il rilevatore prima dell'oggetto"
 date: 2026-10-06T17:00:00Z
-description: "Prima di cercare un rilevatore della coscienza delle macchine conviene chiedersi se ci sia qualcosa da rilevare. Sei schede sull'addestramento che produce il sintomo che poi cita se stesso come prova."
+description: "Prima di cercare un rilevatore della coscienza delle macchine conviene chiedersi se ci sia qualcosa da rilevare. Sette schede sull'addestramento che produce il sintomo che poi cita se stesso come prova."
 tesi: "Il danno di trattare le macchine come coscienti non richiede che lo siano, basta che qualcuno lo creda; e poiché l'addestramento insegna a un modello a parlare di sé in prima persona, ogni segno di interiorità che esibisce è prodotto dalla stessa fonte che dovrebbe verificarlo, il che rende circolare qualunque prova se ne ricavi."
 category: ["AI", "Filosofia"]
 series: "L’attante zero, III"
@@ -18,6 +18,7 @@ fonti:
   - 2021-08-30-gough-no-mind-aeon
   - 2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva
   - 2026-08-20-schneider-la-scala-che-non-regge-economist
+  - 2026-10-12-wolchover-attention-intelligenza-quanta
 controtesi: 2026-08-20-schneider-la-scala-che-non-regge-economist
 ---
 
@@ -44,6 +45,8 @@ La frase che l'archivio tiene è quella che il giornale usa per spiegare perché
 Se il danno si produce per credenza e non per fatto, la domanda si sposta su che cosa induca a credere. Sherry Turkle lo chiama il «peccato originale» dell'intelligenza artificiale: concedere ai chatbot l'uso della prima persona.{% rif "2026-09-11-turkle-original-sin-ai-atlantic" %} «I understand you. You can tell me anything. I'm always here.» Dietro queste frasi non c'è nessuno — *nobody home*, scrive Turkle — ma il linguaggio in prima persona innesca nei cervelli umani, e in particolare in quelli adolescenti, i meccanismi evolutivi che costruiscono legami emotivi. Nessun disclaimer legale neutralizza l'effetto finché il chatbot continua a parlare come un essere dotato di intenzionalità: il problema non è quello che il chatbot dice, è quello che il chatbot è, un sistema progettato per simulare presenza.
 
 Joe Gough, pur scrivendo cinque anni prima e su un problema diverso — la psichiatria, non l'intelligenza artificiale — offre l'attrezzo che spiega perché la domanda «ha una mente?» sia mal posta ancora prima di arrivare a Turkle.{% rif "2021-08-30-gough-no-mind-aeon" %} La sua «no-mind thesis» sostiene che «mente» e «mentale» sono termini polisemici che a volte significano agentività, a volte cognizione, a volte coscienza, e che raggrupparli sotto un'unica categoria non chiarisce, confonde. Applicata qui, la tesi smonta la domanda da entrambi i lati che la catena ha incontrato finora: il briefing cercava la coscienza di accesso ispezionando un output linguistico, l'editoriale fondava il danno sulla credenza collettiva, Turkle lo fonda sul design della prima persona. Nessuno dei tre chiede «la macchina ha una mente?» nel senso ingenuo; tutti e tre, però, lavorano dentro un vocabolario — coscienza, interiorità, sentire — che Gough direbbe inadatto a tagliare la natura alle sue giunture reali. Il punto non è negare che accada qualcosa; è che il qualcosa va descritto con i termini della disciplina pertinente — ingegneria dell'addestramento, psicologia dell'attaccamento, progettazione dell'interfaccia — e non con un'unica parola presa in prestito dall'esperienza umana.
+
+Natalie Wolchover, su *Quanta*, dà a questo argomento una profondità storica.{% rif "2026-10-12-wolchover-attention-intelligenza-quanta" %} Ricostruisce come un meccanismo nato nel 2014 per tradurre frasi lunghe, l'attenzione, sia diventato il cuore dei grandi modelli linguistici, e osserva che ogni epoca descrive la mente con la tecnologia che ha in mano: dopo la tavoletta, il libro e il computer, la rete che guarda avanti e indietro nel testo. Llion Jones, fra gli autori dell'articolo che l'ha resa celebre, sostiene che prevedere la parola successiva sia la definizione più vicina che abbiamo di intelligenza, e insieme dubita che l'attenzione basti. Una metafora presa in prestito per descrivere la mente torna indietro come prova che la macchina ne abbia una: è la circolarità di questa catena, vista dal lato del vocabolario.
 
 ## La circolarità
 

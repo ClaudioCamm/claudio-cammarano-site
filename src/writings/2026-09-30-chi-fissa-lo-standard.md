@@ -6,7 +6,7 @@ description: "Chi decide la regola con cui gli altri saranno giudicati ha un int
 tesi: "Chi ha il potere di fissare uno standard di prova ha un interesse intellettuale nello standard, che nessuna dichiarazione registra; il rimedio sta nel separare chi scrive la regola da chi ne sarà giudicato e nel dichiarare la regola prima del risultato, e distribuire quel potere fra molti non basta a neutralizzarlo."
 category: ["Epistemologia", "Istituzioni", "AI"]
 series: "Lo standard di prova, III"
-serie_totale_prevista: 3
+serie_totale_prevista: 4
 lang: "🇮🇹 Italiano"
 ai_prose: WR
 tags: [writings]

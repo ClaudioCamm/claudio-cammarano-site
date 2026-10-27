@@ -6,7 +6,7 @@ description: "Un settimanale della Florida, la Finlandia, i servizi pubblici eur
 tesi: "Contro un'offesa che toglie la firma e passa per la fiducia transitiva, la difesa che regge non è riconoscere il falso ma possedere un capitale di fiducia accumulato prima dell'attacco, fatto di un'agenda comune, di lettori legati da un'appartenenza e di regole della prova condivise; quel capitale oggi si consuma per ragioni di mercato più che per l'azione del nemico, e il suo sostituto autoritario, la rete chiusa, protegge chi governa e non chi legge."
 category: ["Geopolitica", "Giornalismo", "Media"]
 series: "Il fronte dell’informazione, II"
-serie_totale_prevista: 2
+serie_totale_prevista: 3
 lang: "🇮🇹 Italiano"
 ai_prose: WR
 tags: [writings]

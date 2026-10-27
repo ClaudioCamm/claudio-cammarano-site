@@ -2,7 +2,7 @@
 layout: layouts/catena.njk
 title: "Dopo il link"
 date: 2026-09-28T20:50:00Z
-description: "Il collegamento ipertestuale ha una genealogia che parte da Locke, e forse sta per chiudersi con le risposte generate dai motori di ricerca. Otto schede su che cosa succede all'informazione quando il lettore non ha più bisogno di cliccare."
+description: "Il collegamento ipertestuale ha una genealogia che parte da Locke, e forse sta per chiudersi con le risposte generate dai motori di ricerca. Nove schede su che cosa succede all'informazione quando il lettore non ha più bisogno di cliccare."
 tesi: "Il link era la moneta dell'informazione in rete e la forma del suo dibattito; le risposte generate lo rendono superfluo, e per le testate la via d'uscita è istituzionale, fatta di fiducia e di regole, più che di traffico."
 category: ["Giornalismo", "Media", "AI"]
 lang: "🇮🇹 Italiano"
@@ -18,6 +18,7 @@ fonti:
   - 2026-08-25-norden-chatbot-election-lies-wapo
   - 2026-09-18-athas-rollout-redazione-niemanlab
   - 2026-06-26-ottaviani-data-journalism-ai-reuters
+  - 2026-10-08-bell-chaplin-the-atlas-cjr
 controtesi: 2026-06-26-ottaviani-data-journalism-ai-reuters
 ---
 
@@ -38,6 +39,8 @@ Andrea Nelson Mauro ha rielaborato sei anni di Digital News Report sulla sola pa
 {% scheda "2026-06-19-mauro-informazione-italia-digital-news-report" %}
 
 Il problema, peraltro, è economico prima che epistemico. Lo studio del Brennan Center che Lawrence Norden presenta sul *Washington Post* ha sottoposto i principali chatbot alle teorie del complotto sul voto, alla vigilia delle prime elezioni americane in cui un elettore su quattro li usa ogni giorno, e sul testo i modelli hanno per lo più resistito, riconoscendo la preoccupazione senza amplificare i fatti falsi.{% rif "2026-08-25-norden-chatbot-election-lies-wapo" %} Una risposta generata può essere più prudente di molti post; resta che non manda nessuno alla fonte, e la fonte, senza lettori, non ha di che vivere.
+
+Il caso estremo, quello di chi rinuncia del tutto al traffico, lo raccontano Emily Bell e Heather Chaplin sulla *Columbia Journalism Review*: *The Atlas*, il mensile di Coda Story e di *The Continent*, è un PDF mandato ai lettori via Signal per aggirare la censura «autoritaria e algoritmica».{% rif "2026-10-08-bell-chaplin-the-atlas-cjr" %} La tesi di Simon Allison è che ogni scommessa costruita sulla piattaforma di una grande azienda tecnologica sia destinata a fallire, e che un giornale che vuole durare debba possedere il proprio canale. Mancano numeri su lettori e ricavi, e il modello resta un'ipotesi; ma è la via d'uscita che questa catena indica, l'istituzione al posto del traffico, portata al suo estremo.
 
 ## Il metodo
 

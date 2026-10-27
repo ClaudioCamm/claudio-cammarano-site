@@ -2,11 +2,11 @@
 layout: layouts/catena.njk
 title: "Il contenuto come munizione"
 date: 2026-10-13T08:00:00Z
-description: "Un magazzino di manuali a Kharkiv, tre data center russi, i cavi sottomarini, Electronic Arts, un blockbuster cinese, il calcolatore dell'impronta di BP: undici schede sull'offesa informativa che colpisce il canale prima del messaggio."
+description: "Un magazzino di manuali a Kharkiv, tre data center russi, i cavi sottomarini, Electronic Arts, un blockbuster cinese, il calcolatore dell'impronta di BP: quindici schede sull'offesa informativa che colpisce il canale prima del messaggio."
 tesi: "L'offesa informativa e culturale lavora sempre più sul canale che sul messaggio: si colpisce, si degrada, si compra o si occupa l'infrastruttura da cui un pubblico riceve canone, notizie, svago e connessione, e chi controlla il canale non ha bisogno di convincere nessuno; proprio per questo l'effetto è il dato più debole di tutta la catena, e chi lo dichiara è quasi sempre una parte."
 category: ["Geopolitica", "Media", "Cultura"]
 series: "Il fronte dell’informazione, I"
-serie_totale_prevista: 2
+serie_totale_prevista: 3
 lang: "🇮🇹 Italiano"
 ai_prose: WR
 tags: [writings]
@@ -23,10 +23,14 @@ fonti:
   - 2026-08-31-stokes-carbon-footprint-bp-mitpress
   - 2026-06-19-economist-defence-editor-turner
   - 2026-10-09-donnan-populists-losing-war-globalization-bloomberg
+  - 2026-10-13-griffin-bot-russi-yandex-independent
+  - 2026-10-20-levine-someone-has-to-take-ai-risk-bloomberg
+  - 2026-05-29-miele-deepzang-ia-tibetano-avvenire
+  - 2026-06-17-liang-algoritmi-narrazione-tibet-scmp
 controtesi: 2026-10-09-donnan-populists-losing-war-globalization-bloomberg
 ---
 
-Il 1° agosto 2026 due droni russi, a sette minuti l'uno dall'altro, colpiscono a Kharkiv il magazzino di uno dei maggiori editori ucraini. Due mesi dopo droni ucraini colpiscono tre data center di Yandex. Sono due attacchi a infrastrutture di contenuti, uno per parte, e nessuno dei due mira a un messaggio: il primo brucia i libri da cui una generazione dovrebbe imparare, il secondo spegne le macchine da cui partono, si sostiene, i bot che lavorano il consenso nei paesi alleati. Questa catena mette in fila undici schede che vedono la stessa mossa da lati diversi. L'offesa informativa e culturale si sposta dal messaggio al canale: lo colpisce, lo degrada, lo compra, oppure ne occupa la cornice. E lungo tutta la catena il dato che manca è sempre lo stesso, l'effetto.
+Il 1° agosto 2026 due droni russi, a sette minuti l'uno dall'altro, colpiscono a Kharkiv il magazzino di uno dei maggiori editori ucraini. Due mesi dopo droni ucraini colpiscono tre data center di Yandex. Sono due attacchi a infrastrutture di contenuti, uno per parte, e nessuno dei due mira a un messaggio: il primo brucia i libri da cui una generazione dovrebbe imparare, il secondo spegne le macchine da cui partono, si sostiene, i bot che lavorano il consenso nei paesi alleati. Questa catena mette in fila quindici schede che vedono la stessa mossa da lati diversi. L'offesa informativa e culturale si sposta dal messaggio al canale: lo colpisce, lo degrada, lo compra, oppure ne occupa la cornice. E lungo tutta la catena il dato che manca è sempre lo stesso, l'effetto.
 
 ## Il canone come bersaglio
 
@@ -44,6 +48,8 @@ L'attacco speculare arriva in ottobre. Sasha Vakulina, per *Euronews*, elenca i 
 
 Il pezzo vale per quello che si rifiuta di concludere. Il dato di Cloudflare comprende anche i crawler legittimi e non isola i bot politici; il calo coincide con gli attacchi, ma il nesso non è dimostrato; le affermazioni su AfD e Reform UK non sono state verificate da nessuno in modo indipendente; e Zelensky, per cui «è diventato un po' più facile respirare», è una parte in guerra. Resta la forma della mossa, che è la stessa del magazzino di Kharkiv vista dall'altra parte: se l'effetto venisse confermato, un paese avrebbe colpito in territorio nemico per difendere la formazione del consenso nei paesi che lo sostengono. Il contenuto è trattato come munizione, e il data center come il deposito che la custodisce.
 
+Un giorno dopo il pezzo di *Euronews*, Andrew Griffin, sull'*Independent*, fa il controllo che mancava.{% rif "2026-10-13-griffin-bot-russi-yandex-independent" %} Il dato di Cloudflare misura i bot nel senso tecnico, cioè tutto il traffico non umano, compresi i crawler dei motori di ricerca e quelli che raccolgono dati per addestrare i modelli: dice che Yandex è stata colpita, non che i bot dei social tacciono. Il «bot test» diffuso su X, pubblicare un'opinione e contare le risposte automatiche, è il rovescio della stessa fretta, un esperimento fatto da chi sa già che cosa vuole trovare.
+
 ## Degradare la rete altrui
 
 Mailyn Fidler, per la cattedra su digitale e sovranità di Sciences Po, aveva dato a questa mossa un nome generale un anno prima.{% rif "2025-06-01-fidler-splinternet-outward-turn-sciencespo" %} La frammentazione classica di internet è rivolta all'interno: uno Stato allinea la rete alle proprie esigenze, come fanno il Great Firewall e il RuNet. Quella che Fidler osserva dal 2024 è rivolta all'esterno, e serve a degradare la rete altrui. Ne distingue quattro forme: i controlli all'esportazione su semiconduttori e componenti, il sabotaggio dei cavi sottomarini, con un precedente che risale alla guerra ispano-americana del 1898, i deserti di connettività prodotti da dove il capitale ha deciso di posare l'infrastruttura, con il Senegal a sei cavi e la Guinea a uno, e la concorrenza fra cinque convenzioni regionali sul cybercrime.
@@ -51,6 +57,8 @@ Mailyn Fidler, per la cattedra su digitale e sovranità di Sciences Po, aveva da
 {% scheda "2025-06-01-fidler-splinternet-outward-turn-sciencespo" %}
 
 La sua conclusione è che questa frammentazione «sfuma dal protezionismo all'aggressione». Evan Osnos, sul *New Yorker*, fornisce lo sfondo in cui la frase smette di sembrare un'iperbole.{% rif "2026-08-03-osnos-future-made-china-newyorker" %} Il successore dell'ordine americano, nelle parole di Mark Leonard che Osnos riporta, non è un ordine cinese ma un «un-order», una giungla in cui ogni paese si arma, sussidia, accumula e cerca *chokepoint*. Il magazzino di Ranok e il supercomputer di Sasovo sono chokepoint dei contenuti: punti di passaggio obbligato dove un colpo solo vale quanto mille messaggi.
+
+Matt Levine, su *Bloomberg*, aggiunge il lato finanziario del chokepoint.{% rif "2026-10-20-levine-someone-has-to-take-ai-risk-bloomberg" %} I data center si costruiscono con prestiti enormi, da ripagare con gli affitti delle aziende dell'intelligenza artificiale, e il loro rischio è quasi tutto sistematico: o vanno bene tutti, o vanno male tutti, e chi dovrebbe assicurarli ha già in portafoglio gli stessi titoli. Un rischio concentrato non si diversifica, si sposta da un bilancio all'altro; e un'infrastruttura che concentra il valore concentra anche il bersaglio.
 
 ## Comprare il canale
 
@@ -69,6 +77,8 @@ Il messaggio, comunque, non scompare: cambia registro. L'*Economist* legge un bl
 {% scheda "2026-08-31-economist-china-dragon-restaurant-diplomacy" %}
 
 Il giornale nota l'eccezione che rivela il resto: la neutralità vale per tutti tranne che per il Giappone, accusato da Xi di revivalismo militarista. **Nella diplomazia del ristorante del drago è Pechino a decidere quali verità servire a tavola**, e un menu è un messaggio che non si presenta come tale. All'estremo opposto sta il messaggio dichiarato. Il 7 ottobre Marco Rubio parla sulla Pnice di Atene, e Gilles Gressani e Arnaud Miranda, su *Le Grand Continent*, traducono e commentano il discorso riga per riga.{% rif "2026-10-08-gressani-miranda-rubio-occidente-trump-grandcontinent" %} La genealogia va da Leonida e Achille a Cortés, e la scelta è fra la potenza nazionale perseguita «senza scuse» e un avvenire di «atrofia, servitù e declino». Per gli autori è il possibile testo fondativo di un occidentalismo americano dopo Trump, e la loro critica è filologica: Salamina, letta con Erodoto, insegna il contrario di ciò che Rubio celebra, e il Partenone fu pagato in parte con il tesoro della Lega di Delo. Un discorso di dottrina resta un'arma del vecchio tipo, ma il suo primo bersaglio è interno: è anche una mossa nella concorrenza con J. D. Vance per il dopo Trump.
+
+Pechino, del resto, lavora su entrambi i registri. A marzo 2026 ha lanciato DeepZang, presentato come la prima app di intelligenza artificiale in lingua tibetana: secondo *Avvenire*, alla parola «Tibet» risponde che è parte della Cina fin dall'antichità e che il nome giusto è Xizang, e sul Dalai Lama riporta la posizione del Partito.{% rif "2026-05-29-miele-deepzang-ia-tibetano-avvenire" %} Il salto rispetto alla censura classica è che il sistema non blocca i contenuti, li produce, nella lingua di chi dovrebbe metterli in dubbio. Fuori dai confini il problema è opposto, e il *South China Morning Post* lo registra a una conferenza di Lhasa: per Zachary Lundquist, legato al gruppo statale della comunicazione estera, l'ostacolo non sono i governi occidentali ma i sistemi di raccomandazione della Silicon Valley, a cui Pechino deve smettere di opporsi per cominciare ad adattarsi.{% rif "2026-06-17-liang-algoritmi-narrazione-tibet-scmp" %} Le valutazioni su DeepZang vengono da attivisti e fonti anonime, e il pezzo su Lhasa riporta una linea di pensiero, non un piano. Messi insieme, dicono che il menu si scrive dentro e si fa raccomandare fuori.
 
 ## Chi scrive la cornice
 

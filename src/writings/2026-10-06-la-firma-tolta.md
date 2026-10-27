@@ -2,7 +2,7 @@
 layout: layouts/catena.njk
 title: "La firma tolta"
 date: 2026-10-06T17:05:00Z
-description: "Propaganda e rilevazione di testo generato condividono lo stesso punto debole: riconoscono una firma — lo stile, l'accento, l'origine — e falliscono contro chi quella firma la toglie. Sei schede dalla Finlandia alla Casa Bianca."
+description: "Propaganda e rilevazione di testo generato condividono lo stesso punto debole: riconoscono una firma — lo stile, l'accento, l'origine — e falliscono contro chi quella firma la toglie. Otto schede dalla Finlandia alla Casa Bianca."
 tesi: "Ogni difesa che funziona riconoscendo una firma — lo stile di una prosa, l'accento di una voce, la nazionalità di una fonte — smette di funzionare contro chi quella firma la rimuove deliberatamente; e l'asimmetria fra testo e immagine nelle elezioni americane del 2026 mostra dove la rimozione riesce meglio, cioè dove nessun rilevatore sa ancora cosa cercare."
 category: ["AI", "Geopolitica", "Giornalismo"]
 series: "La misura e il bersaglio, IV"
@@ -18,6 +18,8 @@ fonti:
   - 2026-04-06-hourani-russians-with-attitude-kyivindependent
   - 2026-08-25-norden-chatbot-election-lies-wapo
   - 2026-02-05-al-ali-bias-rilevatori-rivisitato-eacl
+  - 2026-10-21-dubois-jones-disinformazione-rivolte-francia-ft
+  - 2026-10-20-disalvo-hacker-fonti-niemanlab
 controtesi: 2026-02-05-al-ali-bias-rilevatori-rivisitato-eacl
 ---
 
@@ -30,6 +32,8 @@ MV-lehti, portale finlandese fondato nel 2014 da Ilja Janitskin e da tempo class
 {% scheda "2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24" %}
 
 Il punto non è che la Finlandia abbia smesso di difendersi bene; è che la difesa su cui ha costruito la propria reputazione — riconoscere una firma — vale solo finché l'avversario non impara a toglierla. È la stessa struttura, spostata dalla geopolitica alla prosa, che l'archivio incontra nei rilevatori di testo generato: funzionano riconoscendo uno stile, e uno stile riconosciuto è uno stile che si può imparare a non avere più.
+
+Il caso francese dell'ottobre 2026 mostra il rovescio della stessa difficoltà. Dopo violenze e saccheggi in Francia, in Italia e in Belgio, Laura Dubois e Sam Jones, sul *Financial Times*, raccolgono gli indizi: account filorussi e di estrema destra che rilanciano video violenti, uno dei quali, visto quasi sei milioni di volte su X, veniva in realtà dalle proteste di Tbilisi del 2024.{% rif "2026-10-21-dubois-jones-disinformazione-rivolte-francia-ft" %} Le fonti di intelligence però sono nette: gli attori stranieri amplificano una rabbia autentica, non la creano. Quando l'operazione si innesta su una rimostranza locale, non c'è una firma da togliere, perché il contenuto non l'ha mai avuta.
 
 ## Lo stile come firma
 
@@ -44,6 +48,8 @@ Linda Hourani, per il *Kyiv Independent*, smaschera con metodologia OSINT i due 
 {% scheda "2026-04-06-hourani-russians-with-attitude-kyivindependent" %}
 
 L'architettura che Hourani rivela è la versione più pulita del problema di questa catena: due voci russe, monetizzate su piattaforme americane, che raccolgono fondi per unità paramilitari sanzionate senza mai esibire un tratto che un rilevatore automatico possa marcare come straniero. Non c'è un accento da sentire né uno stile da classificare, perché il contenuto è in inglese idiomatico, prodotto da chi quella lingua la parla davvero. La firma che manca non è linguistica; è istituzionale, ed è per questo che a toglierla il lavoro giornalistico, non il software.
+
+Lo stesso vale per le fonti. Philip Di Salvo, su *Nieman Lab*, ha intervistato dieci giornalisti che lavorano su dati sottratti, dai documenti delle istituzioni russe agli archivi pubblicati dai gruppi ransomware, e trova un mestiere ancora senza regole comuni, in cui la verifica non basta: bisogna dichiarare che cosa non si sa della fonte, perché dietro un hacktivista può esserci uno Stato.{% rif "2026-10-20-disalvo-hacker-fonti-niemanlab" %} «Non sappiamo chi sia la fonte, potrebbe essere il GRU», dice uno di loro. È la firma tolta nella forma più pura, e la risposta che le redazioni stanno trovando non è un rilevatore ma una dichiarazione d'incertezza.
 
 ## Dove la firma ancora regge
 

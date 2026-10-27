@@ -2,7 +2,7 @@
 layout: layouts/catena.njk
 title: "L'ombra del futuro, in pratica"
 date: 2026-09-29T15:45:00Z
-description: "L'egemone americano che forniva beni pubblici globali in cambio di influenza futura si comporta ora da predatore. Dieci schede sull'ombra del futuro nelle decisioni vere, da Hormuz a Taiwan, e sull'Europa che deve imparare a giocare."
+description: "L'egemone americano che forniva beni pubblici globali in cambio di influenza futura si comporta ora da predatore. Undici schede sull'ombra del futuro nelle decisioni vere, da Hormuz a Taiwan, e sull'Europa che deve imparare a giocare."
 tesi: "La cooperazione internazionale si reggeva su un'ombra del futuro lunga; oggi le potenze principali scontano pesantemente il domani, per predazione o per necessità, e l'Europa, abituata alla politica delle regole, deve imparare quella degli eventi."
 category: ["Geopolitica", "Teoria dei giochi"]
 series: "Teoria dei giochi e ordine internazionale, III"
@@ -21,6 +21,7 @@ fonti:
   - 2026-06-19-economist-defence-editor-turner
   - 2026-06-15-times-nord-stream-diver
   - 2026-04-09-trump-iran-war
+  - 2026-10-20-klein-freeland-trumpism-backfiring-nyt
 controtesi: 2026-04-09-trump-iran-war
 ---
 
@@ -35,6 +36,8 @@ La tesi è che **le potenze principali stanno scontando pesantemente il futuro**
 David Polansky e Daniel Schillinger, su *Aeon*, partono dal discorso con cui Mark Carney ha citato a Davos il dialogo dei Meli contro Trump, e smontano tre autoinganni tucididei, a cominciare da quello dei Meli, convinti che la giustizia della propria causa bastasse a proteggerli.{% rif "2026-08-03-polansky-schillinger-thucydides-aeon" %} Le potenze medie che si appellano alle regole rischiano lo stesso errore. Dall'altra parte, l'*Economist* descrive un Putin che non sconta il futuro per scelta: il suo sistema tollera la violenza e non la percezione del fallimento, e a un regime che teme di essere impiccato dai propri complici il domani non offre alternative.{% rif "2026-08-30-economist-putin-escalation-orca" %} Nella scheda lo riconducevo al meccanismo tucidideo della necessità, *anankē*. Lo stesso settimanale, su Taiwan, mostra il caso opposto: una democrazia che resiste perché i suoi cittadini hanno un futuro da difendere, e che per questo è il deterrente più solido contro una capitolazione senza guerra.{% rif "2026-08-11-economist-taiwan-democracy-hostage" %}
 
 {% scheda "2026-08-30-economist-putin-escalation-orca" %}
+
+La stessa svalutazione del domani si vede fra alleati. Chrystia Freeland, che con la prima amministrazione Trump ha negoziato da ministra canadese, racconta a Ezra Klein come gli alleati si stiano coprendo: cercano alternative a Starlink e agli F-35, stringono accordi con altri, e il Canada parla di un'adesione associata all'Unione Europea.{% rif "2026-10-20-klein-freeland-trumpism-backfiring-nyt" %} Una relazione trattata come una transazione dopo l'altra insegna all'altra parte a fare lo stesso, e l'ombra del futuro si accorcia da entrambi i lati del tavolo.
 
 ## I due tavoli
 

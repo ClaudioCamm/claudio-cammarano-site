@@ -2,11 +2,11 @@
 layout: layouts/catena.njk
 title: "Il p-value e le sue guerre"
 date: 2026-09-30T14:20:00Z
-description: "Un numero che quasi tutti usano e pochi sanno definire ha diviso la statistica per vent'anni. Tredici schede dell'archivio, da Popper alla task force dell'American Statistical Association, con una tabella delle scuole e le sei letture sbagliate del p-value: una catena pensata come strumento di lavoro."
+description: "Un numero che quasi tutti usano e pochi sanno definire ha diviso la statistica per vent'anni. Quattordici schede dell'archivio, da Popper alla task force dell'American Statistical Association, con una tabella delle scuole e le sei letture sbagliate del p-value: una catena pensata come strumento di lavoro."
 tesi: "Il p-value misura quanto i dati sarebbero sorprendenti se l'ipotesi nulla fosse vera; le guerre della statistica sono nate dall'averlo letto come la probabilità che un'ipotesi sia vera o come un verdetto automatico, e le scuole in lotta rispondono a domande diverse più spesso di quanto diano risposte diverse alla stessa domanda."
 category: ["Epistemologia", "Scienza", "Statistica"]
 series: "Lo standard di prova, I"
-serie_totale_prevista: 3
+serie_totale_prevista: 4
 lang: "🇮🇹 Italiano"
 ai_prose: WR
 tags: [writings]
@@ -25,6 +25,7 @@ fonti:
   - 2021-08-01-task-force-asa-significativita-replicabilita-aoas
   - 2021-12-06-mayo-conflitti-interesse-intellettuali-conbio
   - 2014-02-12-nuzzo-errori-statistici-nature
+  - 2016-03-24-taleb-p-value-hacking-arxiv
 controtesi: 2014-02-12-nuzzo-errori-statistici-nature
 ---
 
@@ -78,6 +79,8 @@ La definizione da tenere è quella dell'American Statistical Association, nella 
 <li><strong>«Il p vale qualunque cosa si sia fatto prima di calcolarlo.»</strong> Se ciò che si riporta è stato scelto guardando i risultati, o se le decisioni di analisi sono state prese dopo aver visto i dati, il p nominale sopravvaluta la prova (quarto principio; il giardino di Gelman e Loken; il conto dei venti fattori di Mayo).{% rif "2014-11-01-gelman-loken-giardino-sentieri-biforcano-americanscientist" %}</li>
 </ol>
 </aside>
+
+Nassim Nicholas Taleb aggiunge una ragione che non dipende da chi legge il numero.{% rif "2016-03-24-taleb-p-value-hacking-arxiv" %} In un paper del 2016 tratta il p-hacking come un fatto di distribuzioni prima che di disonestà, e mostra che la distribuzione del p-value è così asimmetrica che un singolo valore resta volatile a prescindere dalla dimensione del campione. Il sesto principio dell'ASA, per cui un p vicino a 0,05 preso da solo offre soltanto evidenza debole, ne esce rafforzato: il numero dice poco, e per di più è instabile.
 
 ## La crisi
 

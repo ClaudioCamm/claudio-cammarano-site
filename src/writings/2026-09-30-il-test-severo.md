@@ -6,7 +6,7 @@ description: "Una tesi che non si lascia smentire non è nemmeno sbagliata, e un
 tesi: "Una conferma vale quanto la probabilità che la prova aveva di smentire; la domanda, nata per giudicare gli esperimenti, si applica ai numeri del giornalismo, alle scoperte dei modelli e alle affermazioni di questo archivio."
 category: ["Epistemologia", "Scienza", "AI"]
 series: "Lo standard di prova, II"
-serie_totale_prevista: 3
+serie_totale_prevista: 4
 lang: "🇮🇹 Italiano"
 ai_prose: WR
 tags: [writings]

@@ -2,7 +2,7 @@
 layout: layouts/catena.njk
 title: "La mente che si scarica"
 date: 2026-09-28T20:40:00Z
-description: "Ventisettemila studenti cinesi seguiti per due anni e mezzo: con l'AI i compiti migliorano e gli esami peggiorano, tranne per chi le dedica lo stesso tempo di prima. Dieci schede su che cosa ci toglie la macchina quando pensa al nostro posto, e su chi paga il conto."
+description: "Ventisettemila studenti cinesi seguiti per due anni e mezzo: con l'AI i compiti migliorano e gli esami peggiorano, tranne per chi le dedica lo stesso tempo di prima. Undici schede su che cosa ci toglie la macchina quando pensa al nostro posto, e su chi paga il conto."
 tesi: "Il danno cognitivo dell'intelligenza artificiale non viene dallo strumento ma dal tempo e dallo sforzo che sostituisce; per questo separa chi ha bisogno di pensare da chi non ce l'ha, e l'unità di misura giusta è la dieta, non il singolo alimento."
 category: ["Cognizione", "Formazione", "Media"]
 lang: "🇮🇹 Italiano"
@@ -20,6 +20,7 @@ fonti:
   - 2026-07-13-tarchetti-media-ecology-non-ho-capito
   - 2026-06-11-machera-adventure-game-linkideeperlatv
   - 2026-07-09-economist-dementia-defeated
+  - 2026-10-13-challenger-deskilling-the-body-aeon
 controtesi: 2026-07-09-economist-dementia-defeated
 ---
 
@@ -36,6 +37,8 @@ Il rapporto del World Economic Forum sull'educazione, sotto la superficie istitu
 {% scheda "2026-06-28-brooks-people-thrive-ai-age-atlantic" %}
 
 Boyd Taylor Coolman, medievalista del Boston College, spiega perché la scuola sia così esposta: l'abbiamo costruita su un'idea utilitaria dell'intelligenza, si studia per diventare buoni lavoratori e buoni risolutori di problemi, e su quel terreno la macchina vince per costruzione.{% rif "2026-08-17-coolman-medieval-intelligence-ai-america" %} La sua proposta è recuperare la virtù intellettuale medievale, per cui leggere, pensare e discutere sono attività buone in sé; dove l'eccellenza sta nell'attività e non nel prodotto, la macchina non ha niente da sostituire.
+
+Melanie Challenger, su *Aeon*, sposta la stessa tesi dalla mente al corpo.{% rif "2026-10-13-challenger-deskilling-the-body-aeon" %} L'intelligenza si forma nelle azioni, orientarsi, ricordare, camminare, prestare attenzione, e le capacità si perdono per sostituzione ripetuta, non per contatto: in uno studio su tredici utenti del GPS seguiti per tre anni la memoria spaziale cala più in fretta che nei gruppi di controllo, e copiare un testo scritto dall'AI invece di stenderlo riduce la fiducia nel rifare il lavoro da soli. I dati sono pochi e su campioni piccoli; l'attrezzo regge comunque, ed è quello di questa catena: il danno non passa per lo strumento, passa per il tempo che gli cediamo.
 
 ## Il ritmo
 

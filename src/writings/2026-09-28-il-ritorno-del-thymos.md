@@ -2,7 +2,7 @@
 layout: layouts/catena.njk
 title: "Il ritorno del thymos"
 date: 2026-09-28T20:55:00Z
-description: "Fukuyama aveva scritto nel 1989 che la fine della storia sarebbe stata un tempo molto triste, e quasi nessuno l'aveva letto fino in fondo. Dieci schede su una democrazia liberale a cui non mancano gli argomenti ma il riconoscimento, e su chi ha imparato a raccoglierlo."
+description: "Fukuyama aveva scritto nel 1989 che la fine della storia sarebbe stata un tempo molto triste, e quasi nessuno l'aveva letto fino in fondo. Dodici schede su una democrazia liberale a cui non mancano gli argomenti ma il riconoscimento, e su chi ha imparato a raccoglierlo."
 tesi: "Alla democrazia liberale non mancano gli argomenti ma la capacità di offrire riconoscimento; autocrati e populisti lo raccolgono con strumenti formalmente democratici, e le risposte liberali rischiano di diventare tradizioni inventate."
 category: ["Democrazia", "Politica", "Italia"]
 lang: "🇮🇹 Italiano"
@@ -20,6 +20,8 @@ fonti:
   - 2026-08-21-cohen-meloni-nyt
   - 2026-04-09-italy-acts-as-if-small
   - 2026-04-09-sabatini-orban-ha-perso
+  - 2026-10-21-balunovic-serbia-studenti-nyt
+  - 2026-10-20-klein-freeland-trumpism-backfiring-nyt
 controtesi: 2026-04-09-sabatini-orban-ha-perso
 ---
 
@@ -32,6 +34,10 @@ La tesi di questa catena è che **alla democrazia liberale non mancano gli argom
 ## Chi raccoglie
 
 Fabio Sabatini mappa le tattiche con cui i regimi autoritari di oggi usano elezioni, media e giustizia per consolidare il potere e neutralizzare l'opposizione.{% rif "2026-04-09-sabatini-gioco-sporco-autocrati" %} La loro forza sta nel lasciare in piedi le forme della democrazia e nel riempirle di un'offerta di riconoscimento, fatta di nazione, identità e nemici, che il liberalismo non sa fare con la stessa immediatezza.
+
+Il caso serbo mostra una risposta che non passa per un racconto concorrente. Filip Balunović, sul *New York Times*, segue gli studenti che protestano da quasi due anni, dopo il crollo della pensilina della stazione di Novi Sad e i suoi sedici morti, e che ora si presentano alle elezioni contro Aleksandar Vučić con una lista di 250 candidati scelti dalle facoltà e dalle assemblee.{% rif "2026-10-21-balunovic-serbia-studenti-nyt" %} Il movimento ha messo in difficoltà un regime abituato a neutralizzare gli oppositori proprio perché non ha un capo da colpire. Balunović è vicino al movimento e scrive prima del voto; il dato strutturale regge comunque: qui il riconoscimento lo offre un'identità collettiva senza figura di riferimento.
+
+Il riconoscimento negato funziona anche fra Stati. Ezra Klein, parlando con Chrystia Freeland, già ministra degli Esteri del Canada, parte da due sondaggi: il 41 per cento dei canadesi considera gli Stati Uniti un paese nemico, e più canadesi hanno un'opinione favorevole della Cina che degli Stati Uniti.{% rif "2026-10-20-klein-freeland-trumpism-backfiring-nyt" %} La tesi di Klein è che una politica estera transazionale fallisca quando le persone non reagiscono in modo transazionale: minacciare la sovranità di un alleato lo unisce contro chi minaccia invece di piegarlo. È il thymos visto dall'esterno, l'orgoglio nazionale che si mobilita quando lo si tratta come una voce di bilancio.
 
 ## Le storie liberali
 

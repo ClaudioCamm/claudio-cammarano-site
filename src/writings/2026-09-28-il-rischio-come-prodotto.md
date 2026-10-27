@@ -2,7 +2,7 @@
 layout: layouts/catena.njk
 title: "Il rischio come prodotto"
 date: 2026-09-28T09:00:00Z
-description: "Un'indagine su quattromila ricercatori mette l'estinzione in fondo all'elenco delle loro paure. Da lì rileggo dodici schede dell'archivio: l'allarme dei laboratori parla agli investitori prima che al pubblico, e intanto rinvia la domanda su chi pagherà il conto."
+description: "Un'indagine su quattromila ricercatori mette l'estinzione in fondo all'elenco delle loro paure. Da lì rileggo quattordici schede dell'archivio: l'allarme dei laboratori parla agli investitori prima che al pubblico, e intanto rinvia la domanda su chi pagherà il conto."
 tesi: "L'allarme esistenziale dei laboratori di frontiera funziona anzitutto come argomento per gli investitori: sostiene l'aspettativa di una potenza straordinaria mentre i ritorni tardano e la finanza del settore si regge su prestiti circolari."
 category: ["AI", "Comunicazione"]
 series: "Il recinto, I"
@@ -24,6 +24,8 @@ fonti:
   - 2026-08-03-depillis-tokenomics-nyt
   - 2026-09-05-economist-nvidia-speciale-banca-centrale
   - 2026-04-21-bores-palantir-openai-regulation-nyt
+  - 2026-10-14-economist-numeri-inaffidabili-ai
+  - 2026-10-04-kiros-ai-real-gift-science-atlantic
 controtesi: 2026-04-21-bores-palantir-openai-regulation-nyt
 ---
 
@@ -31,7 +33,7 @@ Quando Dario Amodei, dopo *The Adolescence of Technology* a gennaio, ha pubblica
 
 {% scheda "2026-09-26-signorelli-rischio-estinzione-scienziati-backdoor" %}
 
-La tesi che provo a sostenere, mettendo in fila dodici schede che l'archivio ha raccolto negli ultimi dieci mesi, è che **l'allarme esistenziale dei laboratori parla prima di tutto agli investitori**. Per convincere qualcuno che una tecnologia è pericolosa bisogna prima convincerlo che è potentissima, e un'aspettativa di potenza straordinaria è precisamente ciò di cui ha bisogno un settore che raccoglie capitali a una scala senza precedenti e restituisce ricavi che coprono a malapena l'ammortamento delle proprie macchine. C'è poi un secondo destinatario, il regolatore, e con lui la questione di chi potrà entrare nel mercato nei prossimi anni: è il tema della seconda catena, e qui lo lascio sullo sfondo.
+La tesi che provo a sostenere, mettendo in fila quattordici schede che l'archivio ha raccolto negli ultimi dieci mesi, è che **l'allarme esistenziale dei laboratori parla prima di tutto agli investitori**. Per convincere qualcuno che una tecnologia è pericolosa bisogna prima convincerlo che è potentissima, e un'aspettativa di potenza straordinaria è precisamente ciò di cui ha bisogno un settore che raccoglie capitali a una scala senza precedenti e restituisce ricavi che coprono a malapena l'ammortamento delle proprie macchine. C'è poi un secondo destinatario, il regolatore, e con lui la questione di chi potrà entrare nel mercato nei prossimi anni: è il tema della seconda catena, e qui lo lascio sullo sfondo.
 
 ## L'allarme come registro
 
@@ -58,6 +60,8 @@ Il resto del quadro si è precisato nei mesi successivi. Ben Thompson ha osserva
 Il punto di massima leva lo fotografa lo speciale dell'*Economist* di settembre.{% rif "2026-09-05-economist-nvidia-speciale-banca-centrale" %} Nvidia vale 5,4 trilioni di dollari, ha impegnato oltre 70 miliardi in partecipazioni e fino a 300 miliardi in garanzie ai propri clienti, e Morgan Stanley stima che la sua esposizione creditizia arriverà a 200 miliardi entro il 2029. Jensen Huang la chiama trasformare il calcolo in una classe di attivo; Michael Burry, che nel 2007 aveva scommesso contro i mutui cartolarizzati, la chiama vendor financing, il meccanismo che gonfiò e poi distrusse Cisco fra il 2000 e il 2001. L'*Economist* conclude che la scommessa è giustificata, e ha argomenti solidi, a cominciare dalla cassa. Resta il fatto che l'intero edificio poggia sull'aspettativa che la domanda cresca più in fretta di quanto le macchine si svalutino, e che un'aspettativa di questo tipo va rinnovata a ogni trimestre. Il discorso sul rischio esistenziale la rinnova meglio di qualunque bilancio, perché sposta la conversazione dal momento in cui arriveranno i ritorni alla misura della potenza in gioco.
 
 {% scheda "2026-09-05-economist-nvidia-speciale-banca-centrale" %}
+
+I numeri con cui si misura la scommessa sono parte del problema. La colonna Schumpeter dell'*Economist* nota che in una settimana i ricavi di OpenAI sono stati stimati in 70 miliardi di dollari da Axios e in 50 dal *Financial Times*: sono ricavi annualizzati, le vendite di un mese moltiplicate per dodici, calcolati in modi diversi da un laboratorio all'altro, e c'è chi propone di valutare i laboratori sul margine prima dei costi di addestramento, cioè prima della spesa più grande.{% rif "2026-10-14-economist-numeri-inaffidabili-ai" %} Un mercato che non sa con che cosa confrontare i numeri reagisce a ogni indiscrezione, e in un mercato così l'annuncio pesa quanto il risultato. Hana Kiros, sull'*Atlantic*, ne racconta un esempio: il «sistema enzimatico» simile a CRISPR che secondo Anthropic Claude avrebbe individuato in meno di ventiquattr'ore, e che diversi accademici hanno definito un risultato incrementale presentato come scoperta.{% rif "2026-10-04-kiros-ai-real-gift-science-atlantic" %} Kiros indica anche la capacità reale, meno spettacolare: passare al setaccio dati che nessun gruppo di ricerca avrebbe il tempo di guardare. È quella che non fa notizia.
 
 {% controtesi "2026-04-21-bores-palantir-openai-regulation-nyt" %}
 La tesi ha un punto debole, e lo indica un'altra scheda dell'archivio. Se l'allarme servisse soltanto a ottenere regole comode, alcuni co-fondatori di OpenAI e di Palantir non finanzierebbero *Leading the Future*, il super PAC che sta cercando di distruggere politicamente Alex Bores, il deputato dello Stato di New York che ha scritto il RAISE Act.{% rif "2026-04-21-bores-palantir-openai-regulation-nyt" %} I laboratori non vogliono tutti la stessa cosa, e una parte dell'industria combatte la regolazione con la stessa energia con cui un'altra parte la invoca.

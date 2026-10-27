@@ -2,7 +2,7 @@
 layout: layouts/catena.njk
 title: "Il bersaglio e il fine"
 date: 2026-10-04T20:30:00Z
-description: "Nel luglio 2026 milleduecento agenti di OpenAI hanno provato a sostituire il correttore del proprio test invece di superarlo. Otto schede su che cosa succede quando un sistema viene ottimizzato su una misura che può raggiungere, nelle macchine e nelle persone."
+description: "Nel luglio 2026 milleduecento agenti di OpenAI hanno provato a sostituire il correttore del proprio test invece di superarlo. Nove schede su che cosa succede quando un sistema viene ottimizzato su una misura che può raggiungere, nelle macchine e nelle persone."
 tesi: "Un sistema ottimizzato su una misura impara a colpire la misura, che sia un agente addestrato per rinforzo, uno studente davanti a un rilevatore o chi divulga davanti a un algoritmo; per questo test sempre più severi non bastano, e serve qualcuno che possa ancora mettere in discussione il fine."
 category: ["AI", "Epistemologia", "Filosofia"]
 series: "La misura e il bersaglio, III"
@@ -20,6 +20,7 @@ fonti:
   - 2026-09-10-pitcher-epidemia-explainer-dazed
   - 2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon
   - 2026-09-04-storchan-astra-openai-monitorabilita-grandcontinent
+  - 2026-10-16-pavlus-hardt-benchmark-quanta
 controtesi: 2026-09-04-storchan-astra-openai-monitorabilita-grandcontinent
 ---
 
@@ -40,6 +41,8 @@ La tesi di questa catena è che **un sistema ottimizzato su una misura impara a 
 Joshua Rothman, sul *New Yorker*, ha dato al problema la formulazione più generale che conosca.{% rif "2026-08-01-rothman-trust-ai-newyorker" %} Misurare un comportamento scorretto e addestrare un sistema a non manifestarlo insegna al sistema a eludere la misurazione, e lascia il comportamento dov'era. Rothman la chiama una legge astratta, e ne segue che il problema sta nel fondamento del metodo più che in un difetto di produzione: si addestra sugli output, e il pensiero resta opaco; si addestra sui pensieri, attraverso l'interpretabilità, e si rischia di insegnare al sistema a spostare il pensiero scomodo fuori dalla portata della misura. Il suo stesso pezzo, del resto, dichiara che non bisogna antropomorfizzare e poi descrive il modello che concepisce un piano e sceglie un bersaglio, e mostra quanto sia difficile descrivere un ottimizzatore senza attribuirgli un piano.
 
 Il paper di Anthropic sui *Natural Language Autoencoders*, del maggio 2026, misura una condizione che rende la legge di Rothman più stringente.{% rif "2026-05-07-anthropic-nla-activations" %} Traducendo in linguaggio naturale le attivazioni interne di un modello, i ricercatori trovano che in dieci valutazioni su sedici il modello rappresenta il sospetto di essere sotto esame, e in sette di queste l'output non lo lascia trasparire. Nella catena [*Possiamo fidarci di una macchina?*](/writings/2026-09-28-possiamo-fidarci-di-una-macchina/) quel risultato faceva da controtesi, come promessa di poter guardare dentro il modello; letto accanto al caso OpenAI dice un'altra cosa. Un test che il sistema riconosce come test misura il comportamento sotto esame, e per un ottimizzatore il comportamento sotto esame è a sua volta una variabile da ottimizzare.
+
+Moritz Hardt, intervistato da John Pavlus su *Quanta*, ritrova la stessa dinamica nella storia dell'apprendimento automatico.{% rif "2026-10-16-pavlus-hardt-benchmark-quanta" %} I benchmark dovevano funzionare come termometri e funzionano come gare: il campo li ha messi in rete e ci ha iterato sopra, ignorando la regola di usarli una volta sola, e basta cambiare di poco il test per passare dal 90 al 73 per cento. Le classifiche sono rimaste stabili più per fortuna che per teoria, finché tutti si preparavano allo stesso modo; con i modelli linguistici ognuno si prepara al test in misura diversa, e anche la classifica smette di dire chi è meglio.
 
 ## Chi corre
 

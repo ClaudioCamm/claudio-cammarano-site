@@ -2,7 +2,7 @@
 layout: layouts/catena.njk
 title: "Quando la misura diventa bersaglio"
 date: 2026-09-29T15:30:00Z
-description: "A New York per anni non si sono somministrate le verifiche di lettura, perché l'esito si dava per scontato; il PISA cinese viene da quattro sole aree ricche, e stimandone la distorsione la Cina resta quarta al mondo. Dieci schede su che cosa succede quando un indicatore diventa l'obiettivo."
+description: "A New York per anni non si sono somministrate le verifiche di lettura, perché l'esito si dava per scontato; il PISA cinese viene da quattro sole aree ricche, e stimandone la distorsione la Cina resta quarta al mondo. Undici schede su che cosa succede quando un indicatore diventa l'obiettivo."
 tesi: "Una misura trasformata in obiettivo smette di misurare, e a volte fabbrica la prova di ciò che si aspettava; il rimedio è misurare dichiarando la distorsione, perché una distorsione misurata è un'informazione e una distorsione soltanto invocata è un pretesto."
 category: ["Epistemologia", "Formazione", "Decisioni"]
 series: "La misura e il bersaglio, II"
@@ -22,6 +22,7 @@ fonti:
   - 2026-06-15-pinillos-humanists-humanities-chronicle
   - 2026-05-21-frey-liberal-arts-ai-nyt
   - 2026-09-24-economist-pisa-cina-campione-bsjz
+  - 2026-10-20-economist-universita-cinesi
 controtesi: 2026-09-24-economist-pisa-cina-campione-bsjz
 ---
 
@@ -34,6 +35,8 @@ L'economista Charles Goodhart ha dato il nome al fenomeno generale: quando una m
 ## L'indicatore e la cosa
 
 Il *China Science Daily*, il quotidiano dell'Accademia cinese delle scienze, dà conto della riforma con cui Pechino sta sostituendo la graduatoria unica delle università con una valutazione differenziata, tipi diversi di atenei misurati su scale diverse e orientati al contributo effettivo.{% rif "2026-03-24-xia-valutazione-differenziata-universita-cina" %} È una risposta esplicita a Goodhart: un sistema che misurava tutti con lo stesso metro aveva spinto tutti a inseguire lo stesso metro. Lo studio sui ventisettemila studenti cinesi che usano l'intelligenza artificiale, riportato dall'*Economist*, mostra la stessa divergenza nel singolo studente: i voti dei compiti salgono del 18%, quelli degli esami scendono del 20%, e l'indicatore che la scuola osserva ogni giorno si allontana dalla cosa che dovrebbe misurare.{% rif "2026-08-18-economist-ai-learning-penalty-children" %} Il *Grand Continent*, a proposito della sicurezza dell'intelligenza artificiale in Cina e negli Stati Uniti, indica la versione più insidiosa del problema: senza valutatori indipendenti, meno incidenti segnalati non significa meno incidenti, e il numeratore si conosce mentre il denominatore resta ignoto.{% rif "2026-09-25-grandcontinent-sicurezza-ai-cina-stati-uniti" %}
+
+L'*Economist* trova la legge applicata a un intero sistema accademico.{% rif "2026-10-20-economist-universita-cinesi" %} Nelle università cinesi le domande al principale fondo per la ricerca sono cresciute dell'80 per cento a fronte di un 3 per cento di fondi in più, il tasso di successo è sceso dal 22 al 12 per cento, e intorno alle quote richieste per la promozione è nato un mercato: fabbriche di articoli che si pubblicizzano su Taobao, ricercatori che pagano aziende perché finanzino i loro progetti. Quando il numero di pubblicazioni e di finanziamenti diventa il requisito per avanzare, smette di misurare la qualità della ricerca e comincia a fabbricarne la prova.
 
 ## Misurare bene
 

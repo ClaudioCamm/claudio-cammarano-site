@@ -2,7 +2,7 @@
 layout: layouts/catena.njk
 title: "Le persone non sono dischi rigidi"
 date: 2026-10-19T15:30:00Z
-description: "Jill Lepore contro Clayton Christensen, e dodici schede che fanno a teorie di business, di economia e di storia le stesse domande di uno storico: che fine hanno fatto i casi, da quando vale l'assunzione, che cosa resta dell'idea quando diventa un'etichetta."
+description: "Jill Lepore contro Clayton Christensen, e quattordici schede che fanno a teorie di business, di economia e di storia le stesse domande di uno storico: che fine hanno fatto i casi, da quando vale l'assunzione, che cosa resta dell'idea quando diventa un'etichetta."
 tesi: "Una teoria del business diventa trasformativa quando smette di essere letta come ipotesi e comincia a essere usata come dato: i suoi casi diventano canone, le sue assunzioni perdono la data e il suo ambito si allarga a scuole, giornali e ospedali. La sensibilità storica, che chiede che cosa sia successo davvero ai casi, in quale periodo valesse l'assunzione e che cosa la categoria abbia lasciato fuori, non è un'obiezione esterna: è la manutenzione di cui ha bisogno proprio la teoria migliore, e tanto più quanto più è stata trasformativa."
 category: ["Economia", "Epistemologia", "Giornalismo"]
 lang: "🇮🇹 Italiano"
@@ -23,6 +23,8 @@ fonti:
   - 2026-05-27-lepore-pope-leo-ai-newyorker
   - 2026-08-11-graff-jurassic-park-ai-doomsdayscenario
   - 2026-10-15-stratechery-ari-emanuel-entertainment-ai
+  - 2026-10-15-carr-andreessen-bloomberg
+  - 2026-10-18-marquis-business-school-nyt
 controtesi: 2026-10-15-stratechery-ari-emanuel-entertainment-ai
 ---
 
@@ -36,6 +38,8 @@ Nel 1997, in *The Innovator's Dilemma*, Christensen spiega perché le aziende co
 
 Il pezzo provocò reazioni durissime, da Christensen stesso a Marc Andreessen, e alcune letture di Lepore sono state contestate a loro volta: il confronto resta aperto, e la scheda lo registra come tale. Quello che non è in discussione è il metodo. Lepore non oppone a Christensen un'altra teoria. Gli chiede che fine abbiano fatto i suoi casi, e scopre che nelle business school la teoria era diventata un punto fermo, citata più come un dato che come un'ipotesi. **Una teoria che ha smesso di essere controllata sui propri casi non è più forte di prima: è soltanto più citata.**
 
+Il metodo vale anche per i protagonisti, non solo per le teorie. Austin Carr, su *Bloomberg Businessweek*, mette a confronto il racconto con cui Marc Andreessen, lo stesso che attaccò Lepore, spiega la sua conversione a Trump con la versione di chi era nella stanza: secondo Ben Buchanan, allora consigliere di Biden per l'intelligenza artificiale, il piano per vietare le startup che Andreessen dice di aver sentito annunciare è «semplicemente falso».{% rif "2026-10-15-carr-andreessen-bloomberg" %} E lo schema si ripete, dal forum del Senato del 2023 all'incontro con Microsoft ai tempi di Netscape: la versione di Andreessen, smentita da tutti gli altri presenti. È il lavoro di Lepore sui dischi rigidi applicato a un testimone.
+
 ## Contare i casi come voti
 
 La critica dei casi scelti a mano ha una storia propria, e Helen Pearson, su *Aeon*, la racconta dal lato della scienza.{% rif "2026-10-06-pearson-how-to-assemble-science-aeon" %} Negli anni Settanta Hans Eysenck faceva rassegne sulla psicoterapia contando gli studi a favore e contro come se fossero voti; nel 1976 lo statistico Gene Glass gli rispose inventando la metanalisi, e da lì vennero la Cochrane Collaboration e le revisioni sistematiche che oggi orientano la medicina. Il caso con cui Pearson apre è del settembre 2025: un'avvertenza sul paracetamolo in gravidanza, annunciata scegliendo pochi studi e ignorando i più solidi, smentita due mesi dopo da una revisione quando il danno era fatto.
@@ -43,6 +47,8 @@ La critica dei casi scelti a mano ha una storia propria, e Helen Pearson, su *Ae
 {% scheda "2026-10-06-pearson-how-to-assemble-science-aeon" %}
 
 Il confronto con Christensen non riguarda la medicina, riguarda la forma della prova. Un libro di management costruito su casi esemplari è una rassegna alla Eysenck, e la sua forza retorica sta proprio nell'esempio che colpisce. Pearson dice che lo studio singolo fa notizia e la sintesi fa conoscenza; la ricerca sul business, dove il rigore è raro e molte idee nascono, come nota la scheda su Lepore, per produrre rendite di consulenza e di reputazione, ha prodotto molte notizie e poche sintesi.
+
+Christopher Marquis, che insegna da vent'anni nelle business school di Harvard, Cornell e Cambridge, porta la stessa critica dentro il metodo del caso.{% rif "2026-10-18-marquis-business-school-nyt" %} I casi, scrive, sono racconti aziendali rivisti dagli uffici legali e dalle relazioni pubbliche, e prima del crollo almeno cinque casi di Harvard presentavano Enron con ammirazione. Marquis ne ricava una richiesta radicale, abolire le business school; per questa catena basta la premessa. Un caso scritto con l'approvazione dell'azienda che descrive è una fonte, e come ogni fonte va letto da storico.
 
 ## Il caso che non torna
 

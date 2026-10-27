@@ -2,7 +2,7 @@
 layout: layouts/catena.njk
 title: "Il permesso e la proprietà"
 date: 2026-10-06T17:10:00Z
-description: "Una biblioteca che affitta un ebook, un'Europa che non decide più i propri tassi, alleati a cui si chiede una riforma in cambio di accesso, modelli d'intelligenza artificiale chiusi: nove schede su un solo meccanismo, chi concede l'accesso fissa le condizioni."
+description: "Una biblioteca che affitta un ebook, un'Europa che non decide più i propri tassi, alleati a cui si chiede una riforma in cambio di accesso, modelli d'intelligenza artificiale chiusi: dodici schede su un solo meccanismo, chi concede l'accesso fissa le condizioni."
 tesi: "Da un ebook di biblioteca a un modello linguistico chiuso, «comprare» ha smesso di significare possedere e ha cominciato a significare affittare un accesso a termine; e in ognuno di questi mercati è chi concede l'accesso, non chi lo acquista, a fissare il prezzo e le condizioni — compresa la condizione di poterlo revocare."
 category: ["Economia", "Geopolitica", "Editoria"]
 lang: "🇮🇹 Italiano"
@@ -19,6 +19,9 @@ fonti:
   - 2026-09-16-scire-atlantic-google-abbonati-niemanlab
   - 2026-07-29-tooze-china-shock-chartbook
   - 2026-10-02-klein-millman-il-grigio-non-e-un-gusto-nyt
+  - 2026-10-01-alpern-risarcimento-distribuito-come-vendita-vulture
+  - 2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt
+  - 2026-10-06-stratechery-game-decompilation
 controtesi: 2026-07-29-tooze-china-shock-chartbook
 ---
 
@@ -31,6 +34,8 @@ Elisabeth Egan e John Maher, sul *New York Times*, hanno intervistato quasi cinq
 {% scheda "2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt" %}
 
 Il bilancio di una biblioteca, nella testimonianza raccolta da Egan e Maher, non compra più fondo: compra permessi, rinegoziabili alla scadenza, al prezzo che l'editore deciderà a quella data. È il caso più semplice del meccanismo, perché l'asimmetria è visibile a occhio: una parte fissa il prodotto, il prezzo e la durata; l'altra firma o rimane senza libro.
+
+Lo stesso rovesciamento si vede quando il permesso non è stato chiesto affatto. Nel settembre 2026 Anthropic ha accettato di pagare 1,5 miliardi di dollari per chiudere la causa collettiva sui libri piratati e usati per l'addestramento, 3.000 dollari a titolo, ed Emma Alpern, su *Vulture*, racconta come la somma venga divisa: 50 e 50 fra autore ed editore, con la regola di una vendita ordinaria, per un uso che nessun contratto editoriale aveva previsto.{% rif "2026-10-01-alpern-risarcimento-distribuito-come-vendita-vulture" %} Chi controlla il catalogo incassa come se avesse venduto un diritto; chi ha scritto il libro riceve, nella migliore delle ipotesi, qualche migliaio di dollari.
 
 ## I tassi, decisi altrove
 
@@ -48,6 +53,8 @@ Tre giorni prima della lezione di Draghi, Jamie Dimon pubblica sul *Wall Street 
 
 C'è però una differenza che la proposta di Dimon rende visibile meglio di qualunque editoriale: nella condizionalità di un bilancio pubblico, chi stabilisce l'obiettivo e chi lo misura rispondono entrambi a un terzo — un parlamento, un trattato. Qui la condizionalità viene proposta da una sola delle due parti, che è anche quella che controlla la risorsa scambiata. A contare è una parte sola, e non è affatto detto chi altro avrà voce nel fissare la soglia.
 
+Due mesi prima la stessa logica l'aveva enunciata, dal lato del governo, Elbridge Colby, sottosegretario alla Difesa per la politica, intervistato da Ross Douthat: l'obiettivo verso gli alleati è «prezzare accuratamente» la relazione con gli Stati Uniti, l'accesso all'intelligenza artificiale o all'energia da un lato, la ripartizione degli oneri e i dazi dall'altro, perché, dice citando il presidente, le cose vanno valutate «a prezzi di mercato».{% rif "2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt" %} È la difesa della dottrina fatta da chi la scrive, non una valutazione dei risultati; come documento, però, dice con esattezza chi fissa il prezzo dell'accesso.
+
 ## Chi possiede i pesi
 
 Il meccanismo riappare, più nitido, nell'intelligenza artificiale. Jared James Grogan sostiene, in un preprint non ancora sottoposto a revisione fra pari ma argomentato con cura, che l'era dei *foundation model* chiusi finisce non perché i modelli smettano di migliorare, ma perché il costo dominante si sposta dal pre-addestramento, che si commoditizza, all'inferenza, che diventa infrastruttura ricorrente.{% rif "2026-03-09-grogan-pesi-aperti-sovranita-ai" %} Chi possiede i pesi di un modello esercita quella capacità a condizioni proprie; chi compra l'accesso a un modello chiuso dipende dalla politica commerciale del fornitore, dalla sua solvibilità, dal governo che lo ospita — di nuovo un affitto, rinegoziabile alla scadenza che il proprietario stabilisce.
@@ -57,6 +64,8 @@ Il meccanismo riappare, più nitido, nell'intelligenza artificiale. Jared James 
 Chiara Crescenzi, su *Guerre di Rete*, descrive lo strumento giuridico con cui un piccolo Stato tenta di uscire da questa dipendenza senza possedere la capacità di calcolo: l'ambasciata dei dati, un archivio ospitato all'estero con l'immunità di una sede diplomatica, le cui chiavi di cifratura restano in mano al solo paese d'origine.{% rif "2026-09-27-crescenzi-ambasciate-dati-guerredirete" %} L'Estonia ne ha aperta una in Lussemburgo nel 2017, e la proprietà che ne deriva è reale: la sovranità su un'informazione non dipende dal luogo in cui questa risiede, ma dal regime giuridico che vi si applica. Il limite, però, è quello che la scheda stessa dichiara: protegge un archivio fermo, non una capacità di calcolo. Un'ambasciata dei dati tutela un catasto; non tutela l'accesso a un modello che qualcun altro ospita e aggiorna.
 
 Mario Mariniello aggiunge perché anche la regolazione, quando è pensata male, finisce dalla parte di chi concede piuttosto che aiutare chi riceve. Il suo Policy Brief per Bruegel stima il costo di conformità all'AI Act europeo fra 14.623 e 29.277 euro per sistema, fra il 9 e il 17 per cento del costo totale di sviluppo.{% rif "2026-06-11-mariniello-ai-act-costi-conformita-bruegel" %} È un costo fisso, e un costo fisso pesa in proporzione inversa alla taglia di chi lo sostiene: al GDPR è associata una concentrazione di mercato documentata, e la stessa dinamica applicata all'intelligenza artificiale lascerebbe in piedi proprio le aziende già grandi abbastanza da possedere i propri pesi, con tutti gli altri a noleggiare l'accesso.
+
+Ben Thompson, su *Stratechery*, segnala il punto in cui il meccanismo si incrina.{% rif "2026-10-06-stratechery-game-decompilation" %} Con i modelli linguistici decompilare un gioco, cioè risalire dal codice macchina a un sorgente leggibile, non chiede più anni di lavoro, e il diritto americano tiene distinte le due cose: decompilare non è illecito di per sé, distribuire il codice ricavato quasi certamente sì. Ne viene la formula che Thompson consegna, per cui tutto il software diventerà aperto nel senso che se ne potrà leggere il codice, non nel senso della licenza. Il permesso si sposta dalla lettura alla distribuzione, e chi concede l'accesso conserva il controllo sull'unica cosa che si vende.
 
 ## Chi resta fuori, chi rientra
 
