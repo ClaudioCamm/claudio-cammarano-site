@@ -5625,6 +5625,16 @@ module.exports = [
     articles: [
       { title: "A Philosopher of War Changes His Mind", url: "/curated/2026-10-22-graupera-walzer-guerra-giusta-newyorker/", _source: "curated" }
     ]
+  },
+  {
+    name: "link rot",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q1193907"],
+    note: "L'espressione indica il deterioramento progressivo dei collegamenti ipertestuali: pagine rimosse, spostate o modificate, per cui un link porta a un errore o a un contenuto diverso da quello citato. **Nel sito è il limite materiale della verificabilità in rete: una fonte che non si può più raggiungere smette di garantire ciò che le si fa dire.**",
+    articles: [
+      { title: "Please Let the Internet Die", url: "/curated/2026-10-28-klee-let-the-internet-die-wired/", _source: "curated" }
+    ]
   }
 
 ];
