@@ -868,7 +868,8 @@ module.exports = [
     ],
     note: "Concetto introdotto da Nataliya Gumenyuk (Foreign Affairs, 2026) per descrivere il sistema di difesa ucraino: l'innovazione militare emerge dalla cooperazione bottom-up tra soldati, ingegneri, aziende tech, volontari e civili, bypassando la procurement istituzionale tradizionale. Questo genera un doppio effetto: adattabilità operativa superiore sul campo e una forma inedita di accountability politica dal basso — le proteste per il licenziamento del ministro Fedorov ne sono la prova empirica. L'implicazione più profonda è tolstojana: la guerra si protrae perché il popolo ucraino non cede e ha i mezzi tecnologici per esprimere questa intenzione distribuita. I leader diventano accessori. Questo ridimensiona sia il peso della delega politica sia l'efficacia delle decisioni individuali ai tavoli diplomatici. Dialoga per contrasto con il caso Taiwan, dove la drone democracy è bloccata dall'alto per conflitti di interesse strutturali.",
     articles: [
-      { title: "The Future of Ukraine's Drone Democracy", url: "/curated/2026-08-26-gumenyuk-ukraine-drone-democracy-foreignaffairs/", _source: "curated" }
+      { title: "The Future of Ukraine's Drone Democracy", url: "/curated/2026-08-26-gumenyuk-ukraine-drone-democracy-foreignaffairs/", _source: "curated" },
+      { title: "When Will This War End? The Question Is Meaningless.", url: "/curated/2026-02-15-gumenyuk-quando-finira-guerra-nyt/", _source: "curated" }
     ]
   },
   {
@@ -1418,7 +1419,8 @@ module.exports = [
       { title: "Milano, i racconti degli scontri: «C'era una chat come esca, ci hanno detto: venite, noi spacchiamo le vetrine e voi avrete felpe e scarpe»", url: "/curated/2026-10-21-andreis-santucci-milano-chat-esca-corriere/", _source: "curated" },
       { title: "Cercasi mandante", url: "/curated/2026-10-21-laportella-cercasi-mandante-substack/", _source: "curated" },
       { title: "EU probes pro-Kremlin disinformation around French riots", url: "/curated/2026-10-21-dubois-jones-disinformazione-rivolte-francia-ft/", _source: "curated" },
-      { title: "Giordano: “L’Ucraina deve essere difesa, anche dalle false verità”", url: "/curated/2026-10-21-cuzzocrea-giordano-ucraina-repubblica/", _source: "curated" }
+      { title: "Giordano: “L’Ucraina deve essere difesa, anche dalle false verità”", url: "/curated/2026-10-21-cuzzocrea-giordano-ucraina-repubblica/", _source: "curated" },
+      { title: "L'Ucraina chiusa in un guscio di noce: «Ora lo sappiamo, nessuno ci salverà»", url: "/curated/2026-02-22-giordano-guscio-di-noce-corriere/", _source: "curated" }
     ]
   },
   {
@@ -2892,7 +2894,9 @@ module.exports = [
       { title: "Putin’s war on schools: ‘millions of books burnt before my eyes’", url: "/curated/2026-10-10-hauschild-johanson-libri-scuola-ucraina-sundaytimes/", _source: "curated" },
       { title: "Attacchi ucraini ai data center Yandex: crolla l'attività dei bot russi?", url: "/curated/2026-10-12-vakulina-yandex-data-center-bot-euronews/", _source: "curated" },
       { title: "People are rejoicing about the removal of Russian bots from social media – but the truth is far more complicated", url: "/curated/2026-10-13-griffin-bot-russi-yandex-independent/", _source: "curated" },
-      { title: "Giordano: “L’Ucraina deve essere difesa, anche dalle false verità”", url: "/curated/2026-10-21-cuzzocrea-giordano-ucraina-repubblica/", _source: "curated" }
+      { title: "Giordano: “L’Ucraina deve essere difesa, anche dalle false verità”", url: "/curated/2026-10-21-cuzzocrea-giordano-ucraina-repubblica/", _source: "curated" },
+      { title: "When Will This War End? The Question Is Meaningless.", url: "/curated/2026-02-15-gumenyuk-quando-finira-guerra-nyt/", _source: "curated" },
+      { title: "L'Ucraina chiusa in un guscio di noce: «Ora lo sappiamo, nessuno ci salverà»", url: "/curated/2026-02-22-giordano-guscio-di-noce-corriere/", _source: "curated" }
     ]
   },
   {
@@ -3643,7 +3647,8 @@ module.exports = [
     note: "Giornalista e ricercatrice ucraina, CEO del Public Interest Journalism Lab (PIJL). Nel sito compare come autrice di due pezzi complementari sulla democrazia ucraina in tempo di guerra: il concetto di 'drone democracy' (Foreign Affairs, 2026) — l'innovazione militare bottom-up che genera accountability politica dal basso — e il rapporto PIJL 'Ukraine's Dual Struggle' (con Chatham House, 2026), ricerca primaria sul campo sulla tenuta democratica sotto legge marziale. I due pezzi mostrano la stessa energia civica distribuita nelle sue due facce: costruttiva (tecnologia militare) e protettiva (proteste contro lo smantellamento degli organi anticorruzione).",
     articles: [
       { title: "The Future of Ukraine's Drone Democracy", url: "/curated/2026-08-26-gumenyuk-ukraine-drone-democracy-foreignaffairs/", _source: "curated" },
-      { title: "Ukraine's Dual Struggle", url: "/curated/2026-04-01-pijl-gumenyuk-ukraine-dual-struggle/", _source: "curated" }
+      { title: "Ukraine's Dual Struggle", url: "/curated/2026-04-01-pijl-gumenyuk-ukraine-dual-struggle/", _source: "curated" },
+      { title: "When Will This War End? The Question Is Meaningless.", url: "/curated/2026-02-15-gumenyuk-quando-finira-guerra-nyt/", _source: "curated" }
     ]
   },
   {
