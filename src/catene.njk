@@ -4,36 +4,61 @@ title: Catene
 description: "Saggi costruiti sulle schede dei Curated: letture già archiviate, messe in fila attorno a una tesi e discusse."
 permalink: /catene/
 ---
-{# Pagina delle catene (28/9). Raggiungibile da Esplora, dal fondo di ogni
-   catena e dai Curated; non sta nel menu di primo livello. Gruppi per serie,
-   dalla serie aggiornata piu' di recente; in coda le catene fuori serie. #}
+{# Pagina delle catene — revisione "Tavole" (ott 2026).
+   Prima: gruppi per serie ordinati dall'ultimo aggiornamento, quindi l'ordine
+   cambiava a ogni uscita, e le catene fuori serie (quasi la meta') stavano in
+   coda. Ora due sezioni dichiarate: le LINEE (serie, parti in ordine di
+   lettura, l'ultima uscita segnata sulla linea) e le catene FUORI SERIE in
+   ordine di data, per mese. Vedi lib/tavole.js. #}
 {% set catene = collections.writings | soloCatene %}
-{% set gruppi = catene | catenePerSerie %}
+{% set linee = collections.writings | lineeSerie %}
+{% set sciolte = catene | catenePerMese %}
+{% set nSciolte = 0 %}{% for g in sciolte %}{% set nSciolte = nSciolte + g.catene.length %}{% endfor %}
 <div class="catene-page">
   <h1>Catene</h1>
   <p class="catene-standfirst">Saggi costruiti sulle schede dei Curated: letture già archiviate, messe in fila attorno a una tesi e discusse. Ogni brano resta di chi l’ha scritto; il montaggio e la tesi sono miei, e ne rispondo.</p>
   <p class="catene-come"><a href="/colophon/#catene">Come si legge una catena, e da dove viene il nome &#8594;</a></p>
 
-  {% if gruppi.length > 1 %}
-  <nav class="catene-filtri" aria-label="Serie">
-    <a class="on" href="#catene-tutte">Tutte · {{ catene.length }}</a>
-    {% for g in gruppi %}<a href="#serie-{{ g.nome | slugify }}">{{ g.nome }} · {{ g.catene.length }}</a>{% endfor %}
+  <nav class="catene-filtri" aria-label="Sezioni">
+    <a href="#linee">Le linee · {{ linee.length }} serie</a>
+    <a href="#fuori-serie">Fuori serie · {{ nSciolte }} catene</a>
   </nav>
-  {% endif %}
 
-  <div id="catene-tutte">
-  {% for g in gruppi %}
-  <section class="catene-gruppo" id="serie-{{ g.nome | slugify }}">
-    <h2>{% if g.serie %}<a href="/serie/{{ g.nome | slugify }}/"><b>{{ g.nome }}</b></a>{% else %}<b>{{ g.nome }}</b>{% endif %} · {{ g.catene.length }} {{ "catena" if g.catene.length == 1 else "catene" }}</h2>
-    {% for c in g.catene %}
-    <article class="catena-voce">
-      <p class="k"><b>Catena</b>{% if c.data.series %} · {{ c.data.series }}{% endif %} · {{ c.data.fonti.length }} fonti · {{ c.date | formatDate }}</p>
-      <h3><a href="{{ c.url }}">{{ c.data.title }}</a></h3>
-      <p class="t">{{ (c.data.tesi or c.data.description) | mdInline | safe }}</p>
-      <p class="f">{{ c.data.fonti | catenaTestate | join(" · ") }}</p>
+  <section class="cl-sez" id="linee">
+    <h2>Le linee</h2>
+    <p>Una serie si legge dalla parte I, qualunque sia la parte uscita per ultima. Le linee sono ordinate dalla più aggiornata.</p>
+    <p class="cl-legenda"><span><span class="tv-pallino"></span>catena</span><span class="is-saggio"><span class="tv-pallino" style="background:var(--color-primary)"></span>saggio</span><span><span class="tv-pallino" style="background:#fff;border-color:var(--color-irene)"></span>ultima uscita della linea</span></p>
+    {% for l in linee %}
+    <article class="cl-linea">
+      <header class="cl-linea-testa">
+        <h3><a href="/serie/{{ l.nome | slugify }}/">{{ l.nome }}</a></h3>
+        <span>{% if l.saggi %}{{ l.saggi }} {{ "saggio" if l.saggi == 1 else "saggi" }} · {% endif %}{{ l.catene }} {{ "catena" if l.catene == 1 else "catene" }} · aggiornata il {{ l.aggiornata | formatDate }}</span>
+      </header>
+      <ol class="cl-fermate">
+        {% for v in l.parti %}
+        <li class="is-{{ v.tipo }}{% if v.nuova %} is-nuova{% endif %}">
+          <span class="tv-pallino" aria-hidden="true"></span>
+          <p class="cl-k"><b>{{ v.romano }}</b>{{ "Catena" if v.tipo == "catena" else "Saggio" }}{% if v.fonti %} · {{ v.fonti }} fonti{% endif %} · {{ v.data | formatDate }}{% if v.nuova %} · <span class="tv-ult">ultima uscita</span>{% endif %}</p>
+          <h4><a href="{{ v.url }}">{{ v.titolo }}</a></h4>
+          {% if v.tesi %}<p class="t">{{ v.tesi | firstSentence | mdInline | safe }}</p>{% endif %}
+        </li>
+        {% endfor %}
+      </ol>
     </article>
     {% endfor %}
   </section>
-  {% endfor %}
-  </div>
+
+  <section class="cl-sez" id="fuori-serie">
+    <h2>Fuori serie</h2>
+    <p>Catene che stanno da sole, dalla più recente.</p>
+    {% for g in sciolte %}
+    <p class="cl-mese">{{ g.mese }}</p>
+    {% for c in g.catene %}
+    <article class="cl-sciolta">
+      <p class="cl-k">{{ c.data | formatDate }}<br>{{ c.fonti }} fonti</p>
+      <div><h4><a href="{{ c.url }}">{{ c.titolo }}</a></h4>{% if c.tesi %}<p>{{ c.tesi | firstSentence | mdInline | safe }}</p>{% endif %}</div>
+    </article>
+    {% endfor %}
+    {% endfor %}
+  </section>
 </div>

@@ -49,6 +49,7 @@ eleventyComputed:
     <p class="tag-page-intro">{{ seriesDescriptions[serie] }}</p>
     {% endif %}
   </header>
+  {% set lineaNome = serie %}{% set lineaQui = "" %}{% include "components/linea.njk" %}
 
   <div class="tag-page-posts">
     {% for post in seriePosts %}

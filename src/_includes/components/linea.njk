@@ -1,0 +1,11 @@
+{# La linea di una serie (revisione "Tavole"): le parti in ordine di lettura,
+   la parte corrente evidenziata, l'ultima uscita segnata. Variabili:
+   lineaNome (nome base della serie), lineaQui (url della pagina, facoltativo). #}
+{% for l in collections.writings | lineeSerie(false) %}{% if l.nome == lineaNome %}
+<nav class="tv-linea-box" aria-label="La serie {{ l.nome }}">
+  <p class="tv-meta"><b>La linea</b> · <a href="/serie/{{ l.nome | slugify }}/">{{ l.nome }}</a> · {{ l.parti.length }} parti, da leggere in ordine</p>
+  <ol class="tv-fermate">
+    {% for v in l.parti %}<li class="is-{{ v.tipo }}{% if v.nuova %} is-nuova{% endif %}{% if v.url == lineaQui %} is-qui{% endif %}"><a href="{{ v.url }}"{% if v.url == lineaQui %} aria-current="page"{% endif %}><span class="tv-pallino" aria-hidden="true"></span><span class="tv-num">{{ v.romano }}</span><span class="tv-tit">{{ v.titolo }}</span>{% if v.url == lineaQui %}<span class="tv-ult tv-qui">sei qui</span>{% elif v.nuova %}<span class="tv-ult">ultima uscita</span>{% endif %}</a></li>{% endfor %}
+  </ol>
+</nav>
+{% endif %}{% endfor %}

@@ -20,6 +20,7 @@ module.exports = function(eleventyConfig) {
 
   // Formato "Catena": shortcode, filtri e rimandi (vedi lib/catene.js)
   require("./lib/catene.js")(eleventyConfig, md, conceptsIndexData);
+  require("./lib/tavole.js")(eleventyConfig);
 
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/images");
@@ -459,8 +460,8 @@ module.exports = function(eleventyConfig) {
       const t = k && info[iso] ? '<title>' + esc(info[iso].titolo) + '</title>' : '';
       const href = k ? linkIso(iso) : null;
       function wrap(el) { return href ? '<a href="' + href + '" class="carta-link">' + el + '</a>' : el; }
-      if (c.d) svg += wrap('<path class="carta-p carta-c' + k + '" d="' + c.d + '">' + t + '</path>');
-      if (k && c.area < (bergamo ? 20 : 40) && diretti[iso]) punti.push(wrap('<circle class="carta-punto carta-c' + k + '" cx="' + c.cx + '" cy="' + c.cy + '" r="4">' + t + '</circle>'));
+      if (c.d) svg += wrap('<path class="carta-p carta-c' + k + '" data-iso="' + iso + '" d="' + c.d + '">' + t + '</path>');
+      if (k && c.area < (bergamo ? 20 : 40) && diretti[iso]) punti.push(wrap('<circle class="carta-punto carta-c' + k + '" data-iso="' + iso + '" cx="' + c.cx + '" cy="' + c.cy + '" r="4">' + t + '</circle>'));
     });
     svg += '</g>';
     if (geom.anelli) svg += '<path class="carta-anello" d="' + geom.anelli + '"/>';

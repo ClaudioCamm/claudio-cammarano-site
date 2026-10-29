@@ -7,6 +7,7 @@ bodyClass: catena
    blocco CATENE). La prosa arriva in `content`; le schede nel testo le mettono
    gli shortcode {% raw %}{% scheda %}, {% rif %}, {% controtesi %}{% endraw %}. #}
 {% set catenaLista = fonti | catenaFonti %}
+{% if series %}{% set lineaNome = series | seriesBaseName %}{% set lineaQui = page.url %}{% include "components/linea.njk" %}{% endif %}
 <section class="catena-striscia" aria-label="Le fonti della catena in ordine di data">
   <p class="catena-striscia-head"><span class="catena-kicker">Catena</span> {{ catenaLista.length }} fonti · {{ fonti | catenaPeriodo }} · <span class="catena-striscia-nota">in ordine di data, il numero è l'ordine di lettura</span></p>
   <ol class="catena-striscia-lista">

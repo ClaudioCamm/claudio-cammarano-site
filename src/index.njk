@@ -41,270 +41,202 @@ bodyClass: home
 {# Definizione canonica della Person: un solo nodo #person in tutto il sito #}
 {% include "components/person-jsonld.njk" %}
 
+
 {# ===================================================================
-   HOME v3 — impianto a fasce.
-   Ogni sezione e' una fascia orizzontale a piena larghezza che si
-   chiude da sola: niente piu' due colonne parallele di altezza
-   diversa, quindi niente code disallineate.
-   Ordine: apertura, in evidenza, Lab, Writings, Curated, The
-   Abstract, Sommario ragionato (mappa del sito, quindi in coda).
+   HOME — revisione "Tavole" (ott 2026).
+   La pagina e' una sequenza di tavole numerate: ogni tavola mostra una
+   parte dell'apparato invece di descriverla. Ordine: la tesi con la carta,
+   i numeri del corpus, le catene per linee, i saggi, il Lab, le schede,
+   gli strati di ENTIA, il sommario; le richieste solo in fondo.
    =================================================================== #}
+{% set writingsSaggi = collections.writings | senzaCatene %}
+{% set catenePubblicate = collections.writings | soloCatene %}
+{% set featured = writingsSaggi[0] %}
+{% set catenaHome = catenePubblicate | catenaInEvidenza %}
+{% set linee = collections.writings | lineeSerie %}
+{% set carta = collections.mergedConceptsIndex | cartaGeo({ geom: "bergamo" }) %}
 
-{# === 1 · APERTURA: tesi, credenziali, due porte di lettura === #}
-<section class="home-hero" aria-label="Apertura">
-  <h1 class="home-title"><span class="home-title-line">Le idee sono cose reali.</span> <span class="home-title-line">Il mercato è dove si incontrano.</span></h1>
-  <p class="home-positioning">Le idee esistono: come i sassi, i fiori, i bambini. Una tesi ontologica presa sul serio, e un'industria che la mette alla prova ogni giorno. Editoria, epistemologia, geopolitica dei contenuti.</p>
-  <p class="home-hero-why"><a href="/writings/2026-04-30-la-differenza-fra-claude-e-le-mie-gatte/">Perché lo penso davvero &#8594;</a></p>
-
-  <div class="home-hero-foot">
+{# === APERTURA: la tesi e la carta === #}
+<section class="tv-hero" aria-label="Apertura">
+  <div class="tv-hero-testo">
+    <p class="tv-k">La tesi</p>
+    <h1 class="home-title"><span class="home-title-line">Le idee sono cose reali.</span> <span class="home-title-line">Il mercato è dove si incontrano.</span></h1>
+    <p class="home-positioning">Le idee esistono: come i sassi, i fiori, i bambini. Una tesi ontologica presa sul serio, e un'industria che la mette alla prova ogni giorno. Editoria, epistemologia, geopolitica dei contenuti.</p>
     <p class="home-credentials">Vent'anni di marketing editoriale, oggi in De Agostini Libri. Prima Mondadori, Rizzoli, RCS, GEDI. Insegno all'Università Cattolica, a Parma e anche altrove. Autore di <cite>Il mercato del libro</cite> (Solferino).</p>
-
     <div class="home-cta-row">
       <a class="btn-about home-cta-primary" href="/writings/">Comincia a leggere</a>
       <a class="home-cta-secondary" href="/da-qui/">Oppure: da qui &#8594;</a>
+      <a class="home-cta-secondary tv-why" href="/writings/2026-04-30-la-differenza-fra-claude-e-le-mie-gatte/">Perché lo penso davvero &#8594;</a>
     </div>
-
-    <p class="home-service"><a href="/about/">Chi sono</a></p>
   </div>
-  {# Parere 27/9, sez. 5: in testata nessuna richiesta. Servizi, contatti
-     e newsletter stanno in coda, a chi e' arrivato (fascia "home-band--lavoro"). #}
-</section>
-
-{# === CARTA "Dove guarda questo sito" (audit 2026, L9/B2; L10). Generata al
-       build da conceptsIndex (campo geo) e cartaGeometriaBergamo.json:
-       Lambert azimutale equivalente centrata su Bergamo. Nessun
-       JavaScript, la legenda e' testo vero con i link alle voci. === #}
-{% set carta = collections.mergedConceptsIndex | cartaGeo({ geom: "bergamo" }) %}
-{% if carta.legenda.length %}
-<section class="home-band home-band--carta" aria-labelledby="carta-h">
-  <div class="home-sec-head">
-    <h2 class="home-sec-title" id="carta-h">Dove guarda questo sito</h2>
-  </div>
-  <div class="carta">
+  {% if carta.legenda.length %}
+  <div class="tv-hero-carta home-carta">
     <figure class="carta-figura">
       {{ carta.svg | safe }}
-      <figcaption class="carta-didascalia"><span class="carta-payoff">La struttura viene prima del gesto di collocarsi: studiarla è geografia del pensiero. È la lezione dello <a href="/concetti/strutturalismo/">strutturalismo</a>.</span> Proiezione azimutale equivalente, centrata su dove scrivo. I cerchi tratteggiati sono le distanze dal centro: ogni 30° di arco sono circa 3.300 km.</figcaption>
+      <figcaption class="carta-didascalia"><b>Dove guarda questo sito.</b> Proiezione azimutale equivalente, centrata su dove scrivo: ogni 30° di arco sono circa 3.300 km. <span class="tv-gira">Trascina il globo per vedere l'altra faccia: torna da solo.</span></figcaption>
     </figure>
-    <div class="carta-legenda">
-      <div class="carta-scala" aria-hidden="true">{% for k in [1,2,3,4,5] %}<span class="carta-c{{ k }}"></span>{% endfor %}</div>
-      <p class="carta-scala-etichette" aria-hidden="true"><span>meno</span><span>più</span></p>
-      <ul class="carta-voci">
-        {% for v in carta.legenda %}
-        <li><span class="carta-sw carta-c{{ v.classe }}" aria-hidden="true"></span><a href="{{ v.url }}">{{ v.nome }}</a><span class="carta-peso">{{ v.peso }}</span></li>
-        {% endfor %}
-      </ul>
-      <p class="carta-nota">I paesi dell'Unione europea prendono anche il colore dell'Unione.</p>
-      <p class="carta-metodo">Il numero è un peso, non un conteggio di menzioni: un saggio o una catena valgono 1,5 e un curated 1, più 0,25 per ogni catena che lo cita, il tutto moltiplicato per quanto il riferimento geografico è diretto. Le geografie le assegno e le valido io alla pubblicazione; la carta si aggiorna a ogni uscita. <a href="/colophon/#carta">Il metodo &#8594;</a></p>
-      {% if carta.altri %}<p class="carta-altri"><a href="/indice/#paesi">Altri {{ carta.altri }} paesi nell'indice &#8594;</a></p>{% endif %}
+    <ol class="tv-carta-voci">
+      {% for v in carta.legenda | limit(8) %}<li><span class="carta-sw carta-c{{ v.classe }}" aria-hidden="true"></span><a href="{{ v.url }}">{{ v.nome }}</a> <b>{{ v.peso }}</b></li>{% endfor %}
+    </ol>
+    <p class="tv-carta-metodo">Il numero è un peso, non un conteggio. <a href="/colophon/#carta">Il metodo &#8594;</a>{% if carta.altri %} · <a href="/indice/#paesi">Altri {{ carta.altri }} paesi &#8594;</a>{% endif %}</p>
+  </div>
+  {% endif %}
+</section>
+
+{# === I NUMERI DEL CORPUS === #}
+<section class="tv-numeri" aria-label="Il corpus">
+  <a href="/writings/"><b>{{ writingsSaggi.length }}</b><span>Saggi</span></a>
+  <a href="/catene/" class="c-catena"><b>{{ catenePubblicate.length }}</b><span>Catene</span></a>
+  <a href="/curated/" class="c-scheda"><b>{{ collections.curated.length }}</b><span>Schede curated</span></a>
+  <a href="/indice/" class="c-serie"><b>{{ collections.mergedConceptsIndex.length }}</b><span>Concetti</span></a>
+  <a href="/entia/" class="tv-entia"><b>ENTIA</b><span>Metodo {{ entia.spec }} · DOI {{ entia.deposito.doi }}</span></a>
+</section>
+
+{# === TAV. I · LE CATENE, PER LINEE ===
+   Le serie sono linee con le parti in ordine di lettura; il cerchio vuoto
+   e' l'ultima uscita. Nessuna parte compare da sola (vedi lib/tavole.js). #}
+{% if catenaHome %}
+<section class="tv-tav tv-tav--catene" aria-labelledby="tav-catene">
+  <header class="tv-th"><p class="tv-n">I</p><div><h2 id="tav-catene">Le catene</h2><p>Saggi montati sulle schede attorno a una tesi. Le serie si leggono per linee, in ordine di parte e non di uscita: il cerchio vuoto è l’ultima uscita.</p></div><a class="tv-tutte" href="/catene/">Tutte le catene &#8594;</a></header>
+
+  <div class="tv-catena-ev">
+    <div>
+      <p class="tv-meta"><b>Ultima catena</b>{% if catenaHome.data.series %} · {{ catenaHome.data.series | seriesBaseName }}, {{ catenaHome.data.series | parteDi(collections.writings) }}{% endif %} · {{ catenaHome.date | formatDate }}</p>
+      <h3><a href="{{ catenaHome.url }}">{{ catenaHome.data.title }}</a></h3>
+      <p class="tv-tesi">{{ (catenaHome.data.tesi or catenaHome.data.description) | mdInline | safe }}</p>
+      <p class="tv-go"><a href="{{ catenaHome.url }}">Leggi la catena &#8594;</a></p>
+    </div>
+    <div>
+      <p class="tv-perle" aria-hidden="true">{% for f in catenaHome.data.fonti %}<i></i>{% endfor %}</p>
+      <ol class="tv-fonti">
+        {% for f in catenaHome.data.fonti | catenaFonti %}<li><span>{{ f.testata }}</span><a href="{{ f.url }}">{{ f.title }}</a></li>{% endfor %}
+      </ol>
     </div>
   </div>
-</section>
-{% endif %}
 
-{# === 2 · LE SERIE (audit 2026, L4/B1): porte d'ingresso al corpus subito
-       dopo il claim. Ordinate dalla serie aggiornata piu' di recente. === #}
-{% if collections.seriesCards.length %}
-<section class="home-band home-band--series" aria-label="Le serie">
-  <div class="home-sec-head">
-    <h2 class="home-sec-title">Le serie</h2>
-    <a class="home-sec-link" href="/serie/">Tutte &#8594;</a>
-  </div>
-  <div class="home-series">
-    {% for serie in collections.seriesCards | serieHome(collections.writings) %}
-    {% set serieComp = serie.comp %}
-    <a class="home-serie home-serie--{{ serieComp.tipo }}" href="/serie/{{ serie.name | slugify }}/">
-      <span class="home-serie-name">{{ serie.name }}</span>
-      {% if seriesDescriptions[serie.name] %}<span class="home-serie-desc">{{ seriesDescriptions[serie.name] | firstSentence }}</span>{% endif %}
-      <span class="home-serie-count">{{ serieComp.label }} &#8594;</span>
-    </a>
+  <div class="tv-linee">
+    {% for l in linee | limit(6) %}
+    <div class="tv-linea">
+      <p class="tv-linea-nome"><a href="/serie/{{ l.nome | slugify }}/">{{ l.nome }}</a><span>{% if l.saggi %}{{ l.saggi }} {{ "saggio" if l.saggi == 1 else "saggi" }}{% endif %}{% if l.saggi and l.catene %} · {% endif %}{% if l.catene %}{{ l.catene }} {{ "catena" if l.catene == 1 else "catene" }}{% endif %} · agg. {{ l.aggiornata | formatDate }}</span></p>
+      <ol class="tv-fermate">
+        {% for v in l.parti %}<li class="is-{{ v.tipo }}{% if v.nuova %} is-nuova{% endif %}"><a href="{{ v.url }}"><span class="tv-pallino" aria-hidden="true"></span><span class="tv-num">{{ v.romano }}</span><span class="tv-tit">{{ v.titolo }}</span>{% if v.nuova %}<span class="tv-ult">ultima uscita</span>{% endif %}</a></li>{% endfor %}
+      </ol>
+    </div>
     {% endfor %}
   </div>
-</section>
-{% endif %}
-
-
-{# === 2b · ULTIMO SAGGIO (L10, 25/9): torna l'anteprima estesa; senza
-       estratto l'ingresso perdeva la ragione per entrare. L'elenco Writings
-       sotto parte gia' dal secondo saggio. === #}
-{# Le Catene (layout catena.njk) stanno nel flusso Writings ma non prendono
-   mai il posto dell'ultimo saggio: l'ultima ha una fascia propria, sotto. #}
-{% set writingsSaggi = collections.writings | senzaCatene %}
-{% set featured = writingsSaggi[0] %}
-{% set catenePubblicate = collections.writings | soloCatene %}
-{% set catenaHome = catenePubblicate | catenaInEvidenza %}
-{% if featured %}
-<section class="home-band home-band--featured" aria-label="Ultimo saggio">
-  <div class="home-featured">
-    <div class="home-featured-rail">
-      {% if featured.data.series %}<div class="article-series-card-label"><a href="/serie/{{ featured.data.series | seriesBaseName | slugify }}/">{{ featured.data.series }}</a></div>{% endif %}
-      <div class="article-meta">
-        <span class="article-date">{{ featured.date | formatDate }}</span>
-        {% if featured.templateContent %}<span class="reading-time">{{ featured.templateContent | readingTime }}</span>{% endif %}
-        {% if featured.data.category %}
-          {% if featured.data.category.length %}
-            {% for cat in featured.data.category %}<a class="article-tag" href="/tag/{{ cat | slugify }}/">{{ cat }}</a>{% endfor %}
-          {% else %}
-            <a class="article-tag" href="/tag/{{ featured.data.category | slugify }}/">{{ featured.data.category }}</a>
-          {% endif %}
-        {% endif %}
-      </div>
-    </div>
-    <article class="article-card article-card--featured">
-      <h2><a href="{{ featured.url }}">{{ featured.data.title }}</a></h2>
-      {% if featured.data.description %}<p class="featured-description">{{ featured.data.description | mdInline | safe }}</p>{% endif %}
-      {% if featured.templateContent %}
-      <p class="article-excerpt">{{ featured.templateContent | excerpt(700) }}</p>
-      <p class="featured-continua"><a href="{{ featured.url }}">Continua a leggere &#8594;</a></p>
-      {% endif %}
-    </article>
-  </div>
-</section>
-{% endif %}
-
-{# === 2c · ULTIMA CATENA: rassegna ragionata di curated gia' pubblicati.
-       Fascia propria, piu' bassa dell'ultimo saggio; la catena in fascia
-       non si ripete nella griglia Writings. === #}
-
-{# === 4 · WRITINGS: griglia, estratti troncati, meta allineate in fondo === #}
-<section class="home-band home-band--writings" aria-label="Writings">
-  <div class="home-sec-head">
-    <h2 class="home-sec-title">Writings</h2>
-    <a class="home-sec-link" href="/writings/">Tutti &#8594;</a>
-  </div>
-  <div class="writings-compact">
-    {% for post in writingsSaggi | escludiUrl([featured.url]) | limit(6) %}{% if post %}
-    <article class="article-card article-card--compact{% if post.data.layout == "layouts/catena.njk" %} is-catena{% endif %}">
-      {% if post.data.layout == "layouts/catena.njk" %}<span class="catena-badge">Catena</span>{% endif %}
-      {% if post.data.series %}<div class="article-series-card-label"><a href="/serie/{{ post.data.series | seriesBaseName | slugify }}/">{{ post.data.series }}</a></div>{% endif %}
-      <h3 class="article-card-compact-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
-      {% if post.data.description %}<p class="article-card-subtitle">{{ post.data.description | mdInline | safe }}</p>{% endif %}
-      <div class="article-meta">
-        <span class="article-date">{{ post.date | formatDate }}</span>
-        {% if post.data.category %}
-          {% if post.data.category.length %}
-            {# In home massimo 2 tag; tutti sulla pagina Writings #}
-            {% for cat in post.data.category %}{% if loop.index0 < 2 %}<a class="article-tag" href="/tag/{{ cat | slugify }}/">{{ cat }}</a>{% endif %}{% endfor %}
-          {% else %}
-            <a class="article-tag" href="/tag/{{ post.data.category | slugify }}/">{{ post.data.category }}</a>
-          {% endif %}
-        {% endif %}
-        {% if post.templateContent %}<span class="reading-time">{{ post.templateContent | readingTime }}</span>{% endif %}
-      </div>
-    </article>
-    {% endif %}{% endfor %}
-  </div>
-</section>
-
-{# === CATENE (28/9): fascia propria tra saggi e schede; i Writings in home sono solo saggi. === #}
-{% if catenaHome %}
-<section class="home-band home-band--catena home-band--catene" aria-label="Catene">
-  <div class="home-sec-head">
-    <h2 class="home-sec-title">Catene</h2>
-    <a class="home-sec-link" href="/catene/">Tutte le catene &#8594;</a>
-  </div>
-  <div class="home-catena">
-    <div>
-      <p class="home-catena-kicker"><b>Catena</b>{% if catenaHome.data.series %} · {{ catenaHome.data.series }}{% endif %} · {{ catenaHome.data.fonti.length }} fonti</p>
-      <h2 class="home-catena-titolo"><a href="{{ catenaHome.url }}">{{ catenaHome.data.title }}</a></h2>
-      <p class="home-catena-tesi">{{ (catenaHome.data.tesi or catenaHome.data.description) | mdInline | safe }}</p>
-      <p class="home-catena-go"><a href="{{ catenaHome.url }}">Leggi la catena &#8594;</a></p>
-    </div>
-    <ol class="home-catena-fonti">
-      {% for f in catenaHome.data.fonti | catenaFonti %}<li><span class="catena-num">{{ f.n }}</span><span><span class="home-catena-testata">{{ f.testata }}</span> — <a href="{{ f.url }}">{{ f.title }}</a></span></li>{% endfor %}
-    </ol>
-  </div>
-  {% set catenePrecedenti = catenePubblicate | escludiUrl([catenaHome.url]) | limit(4) %}
-  {% if catenePrecedenti.length %}
-  <ol class="home-catene-altre">
-    {% for c in catenePrecedenti %}{% if c %}
-    <li><span class="k">{% if c.data.series %}{{ c.data.series }} · {% endif %}{{ c.date | formatDate }} · {{ c.data.fonti.length }} fonti</span><a href="{{ c.url }}">{{ c.data.title }}</a><span class="t">{{ (c.data.tesi or c.data.description) | firstSentence }}</span></li>
-    {% endif %}{% endfor %}
-  </ol>
+  {% set sciolte = catenePubblicate | catenePerMese %}
+  {% if sciolte.length %}
+  <p class="tv-sciolte"><b>Fuori serie</b>{% for g in sciolte | limit(1) %}{% for c in g.catene | limit(4) %} · <a href="{{ c.url }}">{{ c.titolo }}</a>{% endfor %}{% endfor %} · <a href="/catene/#fuori-serie">tutte &#8594;</a></p>
   {% endif %}
 </section>
 {% endif %}
 
-{# === 5 · CURATED: fascia a piena larghezza, le glosse hanno respiro === #}
-<section class="home-band home-band--tinted home-band--curated" aria-label="Curated">
-  <div class="home-sec-head">
-    <h2 class="home-sec-title">Curated</h2>
-    <a class="home-sec-link" href="/curated/">Tutti &#8594;</a>
-  </div>
-  <p class="curated-framing">Letture da altre testate, schedate per l'uso: il badge dice che cosa ho trovato in ogni pezzo, la riga sotto perché è qui.</p>
+{# === TAV. II · SAGGI === #}
+{% if featured %}
+<section class="tv-tav tv-tav--saggi" aria-labelledby="tav-saggi">
+  <header class="tv-th"><p class="tv-n">II</p><div><h2 id="tav-saggi">Saggi lunghi, misurati in minuti</h2><p>Ogni saggio esce anche in PDF ed ePub, con bibliografia e posizione nella serie.</p></div><a class="tv-tutte" href="/writings/">Tutti &#8594;</a></header>
+  <article class="tv-saggio-ev">
+    <p class="tv-meta">{% if featured.data.series %}<a href="/serie/{{ featured.data.series | seriesBaseName | slugify }}/">{{ featured.data.series }}</a> · {% endif %}{{ featured.date | formatDate }}{% if featured.data.category %}{% for cat in featured.data.category %} · <a href="/tag/{{ cat | slugify }}/">{{ cat }}</a>{% endfor %}{% endif %}</p>
+    <h3><a href="{{ featured.url }}">{{ featured.data.title }}</a></h3>
+    {% if featured.data.description %}<p class="tv-tesi">{{ featured.data.description | mdInline | safe }}</p>{% endif %}
+    <div class="tv-saggio-corpo">
+      <p class="article-excerpt">{{ featured.templateContent | excerpt(520) }}</p>
+      <p class="tv-min"><b>{{ featured.templateContent | minuti }}′</b><span>di lettura</span><a href="{{ featured.url }}">Continua a leggere &#8594;</a></p>
+    </div>
+  </article>
+  {% set listaSaggi = writingsSaggi | escludiUrl([featured.url]) | limit(5) %}
+  {% set maxMin = 60 %}
+  <ol class="tv-saggi">
+    {% for post in listaSaggi %}{% if post %}
+    <li>
+      <p class="tv-serie-lbl">{% if post.data.series %}<a href="/serie/{{ post.data.series | seriesBaseName | slugify }}/">{{ post.data.series }}</a>{% else %}Saggio{% endif %}</p>
+      <div><h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>{% if post.data.description %}<p>{{ post.data.description | mdInline | safe }}</p>{% endif %}</div>
+      {% set m = post.templateContent | minuti %}
+      <p class="tv-barra"><i style="width: {{ (m / maxMin * 100) if m < maxMin else 100 }}%"></i><b>{{ m }}′</b><span>{{ post.date | formatDate }}</span></p>
+    </li>
+    {% endif %}{% endfor %}
+  </ol>
+</section>
+{% endif %}
+
+{# === LAB: campitura verde, in inglese e lo dice === #}
+{% if collections.lab.length %}
+{% set labFeature = collections.lab[0] %}
+<section class="tv-lab" aria-label="Lab">
+  <p class="tv-lab-k"><a href="/lab/">Lab</a> · note di ricerca in corso, in inglese · {{ labFeature.data.date | formatDate }}{% if labFeature.data.stage %} · <span lang="en">{{ labFeature.data.stage }}</span>{% endif %}</p>
+  <h2 lang="en"><a href="{{ labFeature.url }}">{{ labFeature.data.title }}</a></h2>
+  {% if labFeature.data.description %}<p lang="en">{{ labFeature.data.description | excerpt(260) }}</p>{% endif %}
+  <p class="tv-lab-go"><a href="{{ labFeature.url }}">Leggi la nota, in inglese &#8594;</a> <a href="/lab/">Tutte le note &#8594;</a> <a href="/en/">Research EN &#8594;</a></p>
+</section>
+{% endif %}
+
+{# === TAV. III · SCHEDE CURATED === #}
+<section class="tv-tav tv-tav--curated" aria-labelledby="tav-curated">
+  <header class="tv-th"><p class="tv-n">III</p><div><h2 id="tav-curated">Le schede</h2><p>Letture da altre testate, schedate per l’uso: il badge dice che cosa ho trovato in ogni pezzo, la riga sotto perché è qui.</p></div><a class="tv-tutte" href="/curated/">Tutte &#8594;</a></header>
   <div class="home-curated">
     {% for post in collections.curated | limit(3) %}
     <article class="article-card article-card--curated article-card--curated-compact">
       <div class="article-meta">
-        <span class="curated-badge">Curated</span>
-        {% if post.data.source %}
-        <span class="curated-source-label">· <a href="{{ post.data.external_url }}" target="_blank" rel="noopener noreferrer">{{ post.data.source }} ↗</a></span>
-        {% endif %}
+        {% if post.data.source %}<span class="curated-source-label"><a href="{{ post.data.external_url }}" target="_blank" rel="noopener noreferrer">{{ post.data.source }} ↗</a></span>{% endif %}
       </div>
       <h3 class="curated-compact-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
       {% set criterioSlug = post.data.criterio %}{% set criterioPerche = post.data.perche %}{% set linguaFonte = post.data.lingua_fonte %}{% include "components/criterio-badge.njk" %}
     </article>
     {% endfor %}
   </div>
-  <p class="curated-all"><a href="/curated/">Tutte le segnalazioni &#8594;</a></p>
 </section>
 
-{# === LAB (audit 2026, L4/A6; L10 25/9): piccola anteprima dell'ultima
-       nota, come per l'ultimo saggio. Le note sono in inglese e lo dice. === #}
-{% if collections.lab.length %}
-{% set labFeature = collections.lab[0] %}
-<section class="home-band home-band--lab-line" aria-label="Lab">
-  <div class="home-lab-preview">
-    <p class="home-lab-preview-head"><a class="home-lab-line-label" href="/lab/">Lab</a> <span class="home-lab-line-text">Note di ricerca in corso, in inglese &middot; {{ labFeature.data.date | formatDate }}{% if labFeature.data.stage %} &middot; <span lang="en">{{ labFeature.data.stage }}</span>{% endif %}</span></p>
-    <h3 class="home-lab-preview-title" lang="en"><a href="{{ labFeature.url }}">{{ labFeature.data.title }}</a></h3>
-    {% if labFeature.data.description %}<p class="home-lab-preview-abstract" lang="en">{{ labFeature.data.description | excerpt(260) }}</p>{% endif %}
-    <p class="home-lab-preview-go"><a href="{{ labFeature.url }}">Leggi la nota, in inglese &#8594;</a> <span aria-hidden="true">&middot;</span> <a href="/lab/">Tutte le note &#8594;</a></p>
+{# === TAV. IV · GLI STRATI (ENTIA) === #}
+<section class="tv-tav tv-tav--strati" aria-labelledby="tav-strati">
+  <header class="tv-th"><p class="tv-n">IV</p><div><h2 id="tav-strati">Gli strati</h2><p>Il metodo con cui il sito classifica sé stesso, depositato come protocollo aperto: cinque strati, dal meno al più esposto all’errore.</p></div><a class="tv-tutte" href="/entia/">La specifica &#8594;</a></header>
+  <div class="tv-strati">
+    <div class="tv-epigrafe">
+      <p class="tv-latino">Entia non sunt multiplicanda praeter necessitatem.</p>
+      <p>ENTIA, <span lang="en">Epistemic Notation for Texts In Archives</span>, dichiara pezzo per pezzo a che cosa serve nell’archivio, non di che cosa parla.</p>
+      <p class="tv-meta">ENTIA {{ entia.spec }} · {{ entia.licenza.nome }} · <a href="{{ entia.deposito.url }}">DOI {{ entia.deposito.doi }}</a></p>
+    </div>
+    <ol class="tv-strato-lista">
+      {% for s in entia.strati %}<li class="tv-strato tv-strato--{{ loop.index }}"><span class="tv-sn">{{ s.nome }}</span><b>{{ s.quanti }}</b><span class="tv-sd">Afferma {{ s.afferma }}. Lo tiene {{ s.lega }}.</span></li>{% endfor %}
+    </ol>
   </div>
 </section>
-{% endif %}
 
-{# === 6 · THE ABSTRACT: fascia orizzontale a tre voci === #}
-{% if abstract.posts and abstract.posts.length > 0 %}
-<section class="home-band home-band--abstract" aria-label="From The Abstract">
-  <div class="abstract-block">
-    <div class="home-abstract-head">
-      <span class="abstract-block-label">From The Abstract</span>
-      <p class="abstract-block-tagline">Reading the Content Economy from Europe</p>
+{# === TAV. V · SOMMARIO RAGIONATO (treemap dei temi) === #}
+{% set sfTotArgomenti = 0 %}{% for cName, cTags in clusters %}{% set sfTotArgomenti = sfTotArgomenti + cTags.length %}{% endfor %}
+<section class="tv-tav tv-tav--sommario" aria-labelledby="tav-sommario">
+  <header class="tv-th"><p class="tv-n">V</p><div><h2 id="tav-sommario">Sommario ragionato</h2><p>{{ clusters | length }} temi · {{ sfTotArgomenti }} argomenti · {{ collections.mergedConceptsIndex.length }} concetti. L’area di ogni tema è proporzionale ai suoi argomenti.</p></div><a class="tv-tutte" href="/mappa/">Esplora la mappa &#8594;</a></header>
+  <div class="tv-treemap">
+    {% for t in clusters | treemapTemi(sistemaFigurato.rami) %}
+    <div class="tv-tema{% if loop.first %} is-primo{% endif %}{% if t.h < 45 %} is-basso{% endif %}" style="left:{{ t.x }}%;top:{{ t.y }}%;width:{{ t.w }}%;height:{{ t.h }}%;--c:var(--graph-cluster-{{ t.colore }})">
+      <a href="/temi/#{{ t.nome | slugify }}"><b>{{ t.n }}</b><span class="tv-tema-nome">{{ t.nome }}</span></a>
+      <p>{% for tag in t.argomenti | limit(5 if loop.first else 3) %}<a href="/tag/{{ tag | slugify }}/">{{ tag }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>
     </div>
-    <div class="home-abstract-posts">
-      {% for post in abstract.posts | limit(3) %}
-      <article class="abstract-block-post">
-        <div class="article-meta">
-          {% if post.date %}<span class="article-date">{{ post.date }}</span>{% endif %}
-        </div>
-        <h3 class="abstract-block-post-title">
-          <a href="{{ post.url }}" target="_blank" rel="noopener">{{ post.title }} ↗</a>
-        </h3>
-        {% if post.excerpt %}
-        <p class="abstract-block-post-excerpt">{{ post.excerpt }}</p>
-        {% elif post.subtitle %}
-        <p class="abstract-block-post-excerpt">{{ post.subtitle }}</p>
-        {% endif %}
-      </article>
-      {% endfor %}
-    </div>
-    <p class="abstract-block-cta">
-      <a href="https://claudiocammarano.substack.com" target="_blank" rel="noopener">Read more on Substack →</a>
-    </p>
+    {% endfor %}
+  </div>
+  <p class="tv-firma"><a href="/indice/">Indice &#8594;</a> · <a href="/serie/">Le serie &#8594;</a> · Carta, concetti e indici a cura di <a class="home-service-irene" href="/irene-media/">Irene Media</a></p>
+</section>
+
+{# === FINE: le richieste, in coda (parere 27/9) === #}
+<section class="tv-fine" aria-label="Lavorare con me">
+  <p class="tv-n">Fine</p>
+  <div class="tv-fine-b tv-fine-b--abstract">
+    <p class="tv-meta">The Abstract</p>
+    <h3>Un saggio al mese, in inglese, dall’Europa.</h3>
+    {% if abstract.posts and abstract.posts.length > 0 %}<ul>{% for post in abstract.posts | limit(3) %}<li><a href="{{ post.url }}" target="_blank" rel="noopener">{{ post.title }} ↗</a></li>{% endfor %}</ul>{% endif %}
+    <a class="tv-cta" href="/newsletter/" data-newsletter-cta data-position="home_coda">Le uscite e l’iscrizione &#8594;</a>
+  </div>
+  <div class="tv-fine-b tv-fine-b--lavoro">
+    <p class="tv-meta">Lavorare con me</p>
+    <h3>Irene Media · Episteme Advisory</h3>
+    <p>Chi costruisce l’apparato, e chi lo valida.</p>
+    <a class="tv-cta" href="/irene-media/">Irene Media &#8594;</a> <a class="tv-cta" href="/episteme-advisory/">Episteme Advisory &#8594;</a>
+  </div>
+  <div class="tv-fine-b">
+    <p class="tv-meta">Contatti</p>
+    <h3>Scrivimi</h3>
+    <p>Per letture, insegnamento, collaborazioni.</p>
+    <a class="tv-cta" href="mailto:claudio@claudiocammarano.com">claudio@claudiocammarano.com</a>
   </div>
 </section>
-{% endif %}
 
-
-
-{# === 7 · SOMMARIO RAGIONATO: mappa del sito, in coda === #}
-<section class="home-band home-band--tinted home-band--sommario" aria-label="Sommario ragionato">
-  {% include "components/sistema-figurato.njk" %}
-  <p class="home-service sf-firma">Carta, concetti e indici a cura di <a class="home-service-irene" href="/irene-media/">Irene Media</a></p>
-</section>
-
-{# === 6b · LE RICHIESTE, IN CODA (parere 27/9): newsletter, servizi,
-       contatti. In chiusura, sotto il sommario (28/9). === #}
-<section class="home-band home-band--lavoro" aria-label="Lavorare con me">
-  <p class="home-abstract-hint"><a href="/newsletter/" data-newsletter-cta data-position="home_coda">The Abstract &#8212; la newsletter in inglese, un saggio al mese sull'economia dei contenuti &#8594;</a></p>
-  <p class="home-service">Lavorare con me: <a class="home-service-irene" href="/irene-media/">Irene Media</a> <span aria-hidden="true">·</span> <a class="home-service-episteme" href="/episteme-advisory/">Episteme Advisory</a> <span aria-hidden="true">·</span> <a href="mailto:claudio@claudiocammarano.com">Contatti</a></p>
-</section>
+<script src="/js/globo.js" defer></script>
