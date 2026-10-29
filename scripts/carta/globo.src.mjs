@@ -74,13 +74,17 @@ function init(svg) {
   svg.addEventListener("pointerdown", e => {
     if (e.button !== undefined && e.button !== 0) return;
     cancelAnimationFrame(anim);
-    drag = { x: e.clientX, y: e.clientY, r: proj.rotate().slice(), moved: false, id: e.pointerId };
+    drag = { x: e.clientX, y: e.clientY, r: proj.rotate().slice(), moved: false, id: e.pointerId, touch: e.pointerType !== "mouse" };
     load();
   });
   svg.addEventListener("pointermove", e => {
     if (!drag || e.pointerId !== drag.id) return;
     const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
     if (!drag.moved && Math.hypot(dx, dy) < 6) return;      // un tocco resta un tocco: i link dei paesi funzionano
+    // Sul touch decide il primo movimento: in verticale la pagina scorre
+    // (touch-action: pan-y), in orizzontale il globo si prende il gesto e da
+    // li' in poi gira in tutte le direzioni.
+    if (!drag.moved && drag.touch && Math.abs(dy) > Math.abs(dx)) { drag = null; return; }
     if (!drag.moved) { drag.moved = true; svg.setPointerCapture(e.pointerId); fig.classList.add("is-ruotato"); }
     const k = 180 / svg.getBoundingClientRect().width;      // mezzo giro per larghezza della carta
     const lat = Math.max(-89, Math.min(89, drag.r[1] - dy * k));
@@ -96,6 +100,22 @@ function init(svg) {
   svg.addEventListener("pointercancel", end);
   // Dopo un trascinamento, il click che segue non deve aprire il paese.
   svg.addEventListener("click", e => { if (fig.classList.contains("is-ruotato")) e.preventDefault(); }, true);
+  // Tastiera: le frecce ruotano di 15 gradi, Esc o un secondo e mezzo senza
+  // tasti riportano su Bergamo.
+  let kt = 0;
+  svg.setAttribute("tabindex", "0");
+  svg.addEventListener("keydown", e => {
+    const step = { ArrowLeft: [15, 0], ArrowRight: [-15, 0], ArrowUp: [0, -15], ArrowDown: [0, 15] }[e.key];
+    if (e.key === "Escape") { clearTimeout(kt); load().then(back); return; }
+    if (!step) return;
+    e.preventDefault(); cancelAnimationFrame(anim);
+    load().then(() => {
+      const r = proj.rotate();
+      fig.classList.add("is-ruotato");
+      setRot([r[0] + step[0], Math.max(-89, Math.min(89, r[1] + step[1])), 0]);
+      clearTimeout(kt); kt = setTimeout(back, 1500);
+    });
+  });
   fig.classList.add("is-roteabile");
   // Per la verifica visiva: window.globoRuota([lon, lat]) mostra il globo ruotato.
   window.globoRuota = r => load().then(() => { fig.classList.add("is-ruotato"); proj.rotate([-r[0], -r[1], 0]); draw(); });

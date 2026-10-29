@@ -16,29 +16,41 @@ description: "Link curati su media, marketing e content industries — selezione
   <p class="ai-notation-declaration-link"><a href="/colophon/#notazione">La notazione completa è nel Colophon →</a></p>
 </div>
 
+{# Revisione "Tavole": schede compatte (prima frase della descrizione), filtro
+   per criterio e "mostra altre". Senza JavaScript si vedono tutte. #}
+<nav class="cu-filtri" aria-label="Filtra per criterio" hidden>
+  <button type="button" class="on" data-crit="">Tutte <b>{{ collections.curated.length }}</b></button>
+  {% for slug, c in criteri %}{% set n = 0 %}{% for it in collections.curated %}{% if it.data.criterio == slug %}{% set n = n + 1 %}{% endif %}{% endfor %}{% if n %}<button type="button" data-crit="{{ slug }}">{{ c.label }} <b>{{ n }}</b></button>{% endif %}{% endfor %}
+</nav>
+<ol class="cu-lista">
 {% for item in collections.curated %}
-<article class="article-card article-card--curated">
-    <div class="article-meta">
-        <span class="article-date">{{ item.data.date | formatDate }}</span>
-        {% if item.data.source %}
-        <span class="curated-source-label">· <a href="{{ item.data.external_url }}" target="_blank" rel="noopener noreferrer">{{ item.data.source }} ↗</a></span>
-        {% endif %}
-        {% if item.data.tags %}
-          {% for tag in item.data.tags %}{% if tag != 'curated' %}{% set canonical = curatedTagAliases[tag | lower] %}{% if canonical %}<a class="article-tag" href="/tag/{{ canonical | slugify }}/">{{ canonical }}</a>{% endif %}{% endif %}{% endfor %}
-        {% endif %}
-    </div>
-    <h2><a href="{{ item.url }}">{{ item.data.title }}</a></h2>
-    {% set criterioSlug = item.data.criterio %}{% set criterioPerche = item.data.perche %}{% set linguaFonte = item.data.lingua_fonte %}{% include "components/criterio-badge.njk" %}
-    {% if item.data.description %}
-    <p class="curated-preview">{{ item.data.description | mdInline | safe }}</p>
-    <p class="curated-continua"><a href="{{ item.url }}">Continua a leggere →</a></p>
-    {% endif %}
-    {% if item.data.concepts and item.data.concepts.length %}
-    <div class="concetto-chips curated-concepts">
-      {% for cname in item.data.concepts %}
-      <a href="/concetti/{{ cname | slugify }}/" class="concetto-chip">{{ cname | displayName }}</a>
-      {% endfor %}
-    </div>
-    {% endif %}
-</article>
+<li class="cu-voce" data-crit="{{ item.data.criterio or '' }}">
+  <p class="cu-meta"><span>{{ item.data.date | formatDate }}</span>{% if item.data.source %} · <a href="{{ item.data.external_url }}" target="_blank" rel="noopener noreferrer">{{ item.data.source }} ↗</a>{% endif %}</p>
+  <h2><a href="{{ item.url }}">{{ item.data.title }}</a></h2>
+  {% set criterioSlug = item.data.criterio %}{% set criterioPerche = item.data.perche %}{% set linguaFonte = item.data.lingua_fonte %}{% include "components/criterio-badge.njk" %}
+  {% if item.data.description %}<p class="cu-desc">{{ item.data.description | firstSentence | mdInline | safe }} <a href="{{ item.url }}">La scheda &#8594;</a></p>{% endif %}
+</li>
 {% endfor %}
+</ol>
+<p class="cu-altre" hidden><button type="button">Mostra altre 30</button></p>
+<script>
+(function () {
+  var voci = Array.prototype.slice.call(document.querySelectorAll(".cu-voce"));
+  var nav = document.querySelector(".cu-filtri"), more = document.querySelector(".cu-altre");
+  var crit = "", visibili = 30;
+  function render() {
+    var match = voci.filter(function (v) { return !crit || v.dataset.crit === crit; });
+    voci.forEach(function (v) { v.hidden = true; });
+    match.slice(0, visibili).forEach(function (v) { v.hidden = false; });
+    more.hidden = match.length <= visibili;
+  }
+  nav.hidden = false;
+  nav.addEventListener("click", function (e) {
+    var b = e.target.closest("button"); if (!b) return;
+    nav.querySelectorAll("button").forEach(function (x) { x.classList.toggle("on", x === b); });
+    crit = b.dataset.crit; visibili = 30; render();
+  });
+  more.querySelector("button").addEventListener("click", function () { visibili += 30; render(); });
+  render();
+})();
+</script>

@@ -385,3 +385,38 @@ main > h1{border-top:var(--tv-rule);padding-top:22px;font-size:clamp(48px,7vw,96
 .en-claim-line{font-family:var(--font-display);font-size:22px;line-height:1.25}
 .home-lab-feature .home-lab-item-title,.home-lab-item-title{font-size:30px}
 @media (max-width:900px){.home .home-sec-title::before{font-size:52px}}
+
+/* =====================================================================
+   Seconda passata UX (29 ott)
+   ===================================================================== */
+/* Testata larga solo in home; nelle pagine di lettura torna alla colonna */
+body:not(.home) .site-header .container{max-width:800px}
+/* Globo: su touch la pagina scorre in verticale, il globo prende i gesti orizzontali */
+.tv-hero-carta .carta-svg{touch-action:pan-y}
+.tv-hero-carta .carta-svg:focus-visible{outline:3px solid var(--color-primary);outline-offset:6px;border-radius:50%}
+.tv-altre-linee{display:none}
+@media (max-width:900px){
+  .tv-linea.is-extra{display:none}
+  .tv-altre-linee{display:block;margin:14px 0 0;font-family:var(--font-sans);font-stretch:74%;font-weight:600;font-size:14px;text-transform:uppercase;letter-spacing:.07em}
+  .tv-altre-linee a{color:var(--color-primary);text-decoration:none;border-bottom:2px solid currentColor}
+  .tv-saggi li:nth-child(n+4){display:none}
+}
+/* Curated: schede compatte, filtro per criterio */
+.cu-filtri{display:flex;flex-wrap:wrap;gap:8px 18px;margin:28px 0 8px;padding:14px 0;border-top:var(--tv-rule);border-bottom:1px solid var(--tv-ink)}
+.cu-filtri button{background:none;border:0;padding:2px 0;cursor:pointer;font-family:var(--font-sans);font-stretch:74%;font-weight:600;font-size:13.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--color-text-light)}
+.cu-filtri button b{font-weight:400;color:var(--color-text-hint);margin-left:3px}
+.cu-filtri button.on{color:var(--tv-ink);border-bottom:2px solid var(--tv-ink)}
+.cu-lista{list-style:none;padding:0;margin:0}
+.cu-voce{padding:20px 0;border-bottom:1px solid #e3e3e3}
+.cu-meta{margin:0 0 4px;font-family:var(--font-sans);font-stretch:80%;font-size:13px;color:var(--color-text-light)}
+.cu-meta a{color:inherit}
+.cu-voce h2{font-size:26px;line-height:1.15;margin:0 0 8px}
+.cu-voce h2 a{color:var(--tv-ink);text-decoration:none}
+.cu-desc{margin:8px 0 0;font-size:16px;line-height:1.5;color:#3a3a3a}
+.cu-desc a{font-family:var(--font-sans);font-stretch:74%;font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--color-primary-medium);text-decoration:none;white-space:nowrap}
+.cu-altre{margin:28px 0}
+.cu-altre button{background:var(--tv-ink);color:#fff;border:0;padding:14px 24px;font-family:var(--font-sans);font-stretch:74%;font-weight:600;font-size:14px;text-transform:uppercase;letter-spacing:.08em;cursor:pointer}
+/* La linea in coda alla catena */
+.catena .tv-linea-box{margin:48px 0 0}
+/* Pagine con la colonna "Letture pertinenti": la testata segue la griglia allargata */
+@media (min-width:1200px){html:not(.rail-closed) body:has(.curated-rail) .site-header .container{max-width:1120px}}

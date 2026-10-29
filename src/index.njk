@@ -73,7 +73,7 @@ bodyClass: home
   <div class="tv-hero-carta home-carta">
     <figure class="carta-figura">
       {{ carta.svg | safe }}
-      <figcaption class="carta-didascalia"><b>Dove guarda questo sito.</b> Proiezione azimutale equivalente, centrata su dove scrivo: ogni 30° di arco sono circa 3.300 km. <span class="tv-gira">Trascina il globo per vedere l'altra faccia: torna da solo.</span></figcaption>
+      <figcaption class="carta-didascalia"><b>Dove guarda questo sito.</b> Proiezione azimutale equivalente, centrata su dove scrivo: ogni 30° di arco sono circa 3.300 km. <span class="tv-gira">Trascinalo, o usa le frecce, per vedere l’altra faccia: torna da solo.</span></figcaption>
     </figure>
     <ol class="tv-carta-voci">
       {% for v in carta.legenda | limit(8) %}<li><span class="carta-sw carta-c{{ v.classe }}" aria-hidden="true"></span><a href="{{ v.url }}">{{ v.nome }}</a> <b>{{ v.peso }}</b></li>{% endfor %}
@@ -116,7 +116,7 @@ bodyClass: home
 
   <div class="tv-linee">
     {% for l in linee | limit(6) %}
-    <div class="tv-linea">
+    <div class="tv-linea{% if loop.index > 3 %} is-extra{% endif %}">
       <p class="tv-linea-nome"><a href="/serie/{{ l.nome | slugify }}/">{{ l.nome }}</a><span>{% if l.saggi %}{{ l.saggi }} {{ "saggio" if l.saggi == 1 else "saggi" }}{% endif %}{% if l.saggi and l.catene %} · {% endif %}{% if l.catene %}{{ l.catene }} {{ "catena" if l.catene == 1 else "catene" }}{% endif %} · agg. {{ l.aggiornata | formatDate }}</span></p>
       <ol class="tv-fermate">
         {% for v in l.parti %}<li class="is-{{ v.tipo }}{% if v.nuova %} is-nuova{% endif %}"><a href="{{ v.url }}"><span class="tv-pallino" aria-hidden="true"></span><span class="tv-num">{{ v.romano }}</span><span class="tv-tit">{{ v.titolo }}</span>{% if v.nuova %}<span class="tv-ult">ultima uscita</span>{% endif %}</a></li>{% endfor %}
@@ -124,6 +124,7 @@ bodyClass: home
     </div>
     {% endfor %}
   </div>
+  {% if linee.length > 3 %}<p class="tv-altre-linee"><a href="/catene/#linee">Altre {{ (linee.length if linee.length < 6 else 6) - 3 }} linee &#8594;</a></p>{% endif %}
   {% set sciolte = catenePubblicate | catenePerMese %}
   {% if sciolte.length %}
   <p class="tv-sciolte"><b>Fuori serie</b>{% for g in sciolte | limit(1) %}{% for c in g.catene | limit(4) %} · <a href="{{ c.url }}">{{ c.titolo }}</a>{% endfor %}{% endfor %} · <a href="/catene/#fuori-serie">tutte &#8594;</a></p>
