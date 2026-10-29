@@ -4,11 +4,13 @@ title: "Ideas are real things. Somebody has to check them."
 description: "A research programme on the post-cognitive validation of language model outputs, built from inside the content industry. Two lines of work — one ontological, one empirical — an open research log, and an interactive simulator."
 permalink: /en/
 lang: en
-bodyClass: home
+bodyClass: home home-en
 ---
 
 {# ===================================================================
    HOME INGLESE — cinque fasce, ordine vincolante (brief, lotto 2).
+   Revisione "Tavole" (29/10): stessa grammatica della home italiana,
+   etichetta "Plate", accento verde; testi invariati alla lettera.
    Gerarchia diversa da quella italiana: qui il lettore non esplora un
    archivio, decide in un minuto se l'autore e' un interlocutore.
    1 hero · 2 il paper · 3 Lab · 4 The Abstract · 5 chi e' l'autore.
@@ -49,7 +51,9 @@ bodyClass: home
        Il primo verso e' la traduzione letterale del claim italiano:
        e' il ponte mnemonico fra le due home e non va parallelizzato.
        Due sole call to action. === #}
-<section class="home-hero home-hero--en" aria-label="Opening">
+<section class="tv-hero tv-hero--en home-hero--en" aria-label="Opening">
+  <div class="tv-hero-testo">
+  <p class="tv-k">The programme</p>
   <h1 class="home-title"><span class="home-title-line">Ideas are real things.</span> <span class="home-title-line">Somebody has to check them.</span></h1>
   <p class="home-positioning">How do you check what a machine claims, after it has claimed it? A research programme on the post-cognitive validation of language model outputs, built from inside the content industry — where the outputs are already shipping.</p>
 
@@ -69,37 +73,16 @@ bodyClass: home
        fa il percorso nei due sensi trova le stesse parole. #}
     <p class="home-bridge">Two projects run on this site. This one asks whether a machine&rsquo;s claims can be checked, and how. The other &mdash; <a href="/en/visualizations/measuring-bench/">the measuring bench</a> &mdash; asks what a text does to the reader who reads it, measured in bits. They share a premise, not an apparatus.</p>
   </div>
+  </div>
 </section>
 
 {# === 2 · IL PAPER. La fascia per cui la pagina esiste: stato
        dichiarato, tre affermazioni falsificabili, ultimo aggiornamento. === #}
-<section class="home-band en-paper" id="the-paper" aria-label="The papers">
-  <div class="home-sec-head">
-    <h2 class="home-sec-title">The papers</h2>
-    <a class="home-sec-link" href="/lab/">Research log &#8594;</a>
-  </div>
-
-  <p class="en-paper-status">
-    {% if collections.labStatus.length %}<span class="en-paper-updated">Current figures and open questions: <a href="/lab/status/">Project status</a>, updated {{ collections.labStatus[0].date | formatDateEN }}</span>{% endif %}
-  </p>
+<section class="tv-tav tv-tav--en en-paper" id="the-paper" aria-labelledby="plate-papers">
+  <header class="tv-th"><p class="tv-n">I</p><div><h2 id="plate-papers">The papers</h2>{% if collections.labStatus.length %}<p>Current figures and open questions: <a href="/lab/status/">Project status</a>, updated {{ collections.labStatus[0].date | formatDateEN }}</p>{% endif %}</div><a class="tv-tutte" href="/lab/">Research log &#8594;</a></header>
+  <div class="tv-en-corpo">
 
   <p class="en-paper-abstract">Language models produce assertions without classifying what kind of assertion they are producing. They can report on some of their own internal states; nothing indicates that content type is among them. The programme builds <em>post-cognition</em>: an external, auditable procedure that first fixes what kind of claim is on the table &mdash; historical-factual, empirical-quantitative, ethical-normative, metaphysical-ontological, and seven more &mdash; and only then asks whether it is true. Ontology precedes epistemology. From September 2026 the programme publishes on two lines, an ontological one and an empirical one, which advance at different speeds.</p>
-
-  {# Due fasce, due stati diversi visibili insieme: un fronte pronto e uno
-     aperto. L'asimmetria e' il punto, non un difetto di allineamento. #}
-  <div class="en-lines">
-    <article class="en-line">
-      <p class="en-line-head"><span class="en-paper-stage en-paper-stage--line">&alpha;1 &middot; Writing &amp; submission</span></p>
-      <h3 class="en-line-title">The ontological line</h3>
-      <p class="en-line-body">It carries the principle that gives the programme its name, the seven-dimensional taxonomy with its coding manual, the asymmetric procedure for causal claims, and the argument that a validation protocol is a configuration of rules, model and researcher rather than an instrument one applies to the other. Its corpus is thirty-one claims annotated across ten of the eleven active categories &mdash; illustration of what the taxonomy does, not validation of whether it holds. It is close to finished, and it is answerable to other arguments.</p>
-    </article>
-
-    <article class="en-line">
-      <p class="en-line-head"><span class="en-paper-stage en-paper-stage--open en-paper-stage--line">&beta;1 &middot; In data collection</span></p>
-      <h3 class="en-line-title">The empirical line</h3>
-      <p class="en-line-body">It carries the vertical validation across 180 runs and the multi-model control of 31 August, and two things that are still outstanding: the blind coding, on which two per-claim proportions and the second arm&rsquo;s semantic agreement rate depend, and the uplift experiment, pre-registered and not yet executed. It is not close to finished, and it is answerable to data.</p>
-    </article>
-  </div>
 
   <p class="en-paper-claims-head">Three claims that can be shown to be wrong</p>
   <ol class="en-paper-claims">
@@ -117,6 +100,23 @@ bodyClass: home
     </li>
   </ol>
 
+  {# Due fasce, due stati diversi visibili insieme: un fronte pronto e uno
+     aperto. L'asimmetria e' il punto, non un difetto di allineamento. #}
+  <div class="en-lines">
+    <article class="en-line">
+      <p class="en-line-head"><span class="en-paper-stage en-paper-stage--line">&alpha;1 &middot; Writing &amp; submission</span></p>
+      <h3 class="en-line-title">The ontological line</h3>
+      <p class="en-line-body">It carries the principle that gives the programme its name, the seven-dimensional taxonomy with its coding manual, the asymmetric procedure for causal claims, and the argument that a validation protocol is a configuration of rules, model and researcher rather than an instrument one applies to the other. Its corpus is thirty-one claims annotated across ten of the eleven active categories &mdash; illustration of what the taxonomy does, not validation of whether it holds. It is close to finished, and it is answerable to other arguments.</p>
+    </article>
+
+    <article class="en-line">
+      <p class="en-line-head"><span class="en-paper-stage en-paper-stage--open en-paper-stage--line">&beta;1 &middot; In data collection</span></p>
+      <h3 class="en-line-title">The empirical line</h3>
+      <p class="en-line-body">It carries the vertical validation across 180 runs and the multi-model control of 31 August, and two things that are still outstanding: the blind coding, on which two per-claim proportions and the second arm&rsquo;s semantic agreement rate depend, and the uplift experiment, pre-registered and not yet executed. It is not close to finished, and it is answerable to data.</p>
+    </article>
+  </div>
+
+
   <div class="en-archive">
     <p class="en-archive-head">Unified working paper, v1&ndash;v7 &mdash; closed</p>
     <p class="en-paper-links">
@@ -126,6 +126,7 @@ bodyClass: home
     </p>
     <p class="en-archive-note">The previous draft stays where it was: <a href="/downloads/cammarano-post-cognitive-validation-v6.pdf">working paper, v6</a> <span class="en-lang-flag">superseded by v7</span>. Every version, together with the corpus, the scripts and the raw outputs: <a href="/en/deliverables/">all deposited materials &#8594;</a></p>
   </div>
+  </div>
 </section>
 
 {# === 3 · LAB come changelog del programma. Trattamento autonomo:
@@ -133,7 +134,7 @@ bodyClass: home
        con anteprima reale. === #}
 {% if collections.lab.length %}
 {% set labFeature = collections.lab[0] %}
-<section class="home-band home-band--lab" aria-label="Lab">
+<section class="tv-lab tv-lab--en home-band--lab" aria-label="Lab">
   <div class="home-lab-head">
     <div>
       <span class="home-lab-label">Lab · Independent research</span>
@@ -174,12 +175,8 @@ bodyClass: home
        italiane dei concetti e lo dichiarano con (IT). === #}
 {% set carta = collections.mergedConceptsIndex | cartaGeo({ geom: "goode", lang: "en" }) %}
 {% if carta.legenda.length %}
-<section class="home-band home-band--carta" aria-labelledby="carta-h" lang="en">
-  <div class="home-sec-head">
-    <h2 class="home-sec-title" id="carta-h">Where the Italian essays look</h2>
-    <a class="home-sec-link" href="/writings/" hreflang="it">The essays, in Italian &#8594;</a>
-  </div>
-  <p class="en-carta-intro">Most of this site is in Italian: essays on publishing, epistemology and the geopolitics of content, indexed concept by concept. This is where they look.</p>
+<section class="tv-tav tv-tav--en tv-tav--carta-en home-band--carta" aria-labelledby="carta-h" lang="en">
+  <header class="tv-th"><p class="tv-n">II</p><div><h2 id="carta-h">Where the Italian essays look</h2><p>Most of this site is in Italian: essays on publishing, epistemology and the geopolitics of content, indexed concept by concept. This is where they look.</p></div><a class="tv-tutte" href="/writings/" hreflang="it">The essays, in Italian &#8594;</a></header>
   <div class="carta">
     <figure class="carta-figura">
       {{ carta.svg | safe }}
@@ -202,12 +199,9 @@ bodyClass: home
 
 {# === 4 · THE ABSTRACT: seconda voce editoriale, ultime uscite e
        iscrizione. Il feed e' gia' in inglese. === #}
-<section class="home-band home-band--abstract" aria-label="The Abstract">
+<section class="tv-tav tv-tav--en home-band--abstract" aria-labelledby="the-abstract">
+  <header class="tv-th"><p class="tv-n">III</p><div><h2 id="the-abstract">The Abstract</h2><p>Reading the Content Economy from Europe — one essay a month</p></div></header>
   <div class="abstract-block">
-    <div class="home-abstract-head" id="the-abstract">
-      <span class="abstract-block-label">The Abstract</span>
-      <p class="abstract-block-tagline">Reading the Content Economy from Europe — one essay a month</p>
-    </div>
     {% if abstract.posts and abstract.posts.length > 0 %}
     <div class="home-abstract-posts">
       {% for post in abstract.posts | limit(3) %}
@@ -236,13 +230,12 @@ bodyClass: home
 {# === 5 · CHI E' L'AUTORE. Tre righe. Su questa superficie la
        credenziale editoriale italiana e' contesto, non argomento.
        Unica menzione di Episteme Advisory, in coda. === #}
-<section class="home-band en-author" aria-label="The author">
-  <div class="home-sec-head">
-    <h2 class="home-sec-title">Who is doing this</h2>
-    <a class="home-sec-link" href="/en/about/">About &#8594;</a>
-  </div>
+<section class="tv-tav tv-tav--en en-author" aria-labelledby="plate-author">
+  <header class="tv-th"><p class="tv-n">IV</p><div><h2 id="plate-author">Who is doing this</h2></div><a class="tv-tutte" href="/en/about/">About &#8594;</a></header>
+  <div class="tv-en-corpo">
   <p class="en-author-bio">Claudio Cammarano leads marketing at De Agostini Libri and teaches at three Italian universities. Twenty years in publishing — Mondadori, Rizzoli, RCS, GEDI — and an academic background in semiotics and philosophy of language. He wrote <cite>Il mercato del libro</cite> (Solferino).</p>
   <p class="en-author-note">The point of the day job is not the credential. It is that the outputs this programme is about are already being shipped, at scale, in the industry he works in.</p>
   <p class="en-author-contact">If you work on validation, epistemics or the economics of content, and any of this is near what you do, write: <a href="mailto:claudio@claudiocammarano.com">claudio@claudiocammarano.com</a>.</p>
   <p class="en-author-episteme"><a href="/en/episteme-advisory/">Episteme Advisory</a> is the consulting practice that applies the method. The research is independent of it: conducted in his own name, published in full in the Lab, and accountable to no client.</p>
+  </div>
 </section>

@@ -439,3 +439,81 @@ body:not(.home) .site-header .container{max-width:800px}
   .tv-strato .tv-sd{grid-column:1/-1;font-size:14px}
   .tv-sl{display:block;font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;opacity:.7;margin-bottom:1px}
 }
+
+/* =====================================================================
+   Home inglese a tavole (29/10). Stessa grammatica della home italiana:
+   etichetta "Plate", numerali e accenti in verde Lab, testi invariati.
+   ===================================================================== */
+.home-en .tv-n{color:var(--color-lab)}
+.home-en .tv-n::before{content:"Plate"}
+.home-en .tv-tutte{color:var(--color-lab)}
+.home-en .tv-k{color:var(--color-lab)}
+.home-en .home-band{border-top:0;margin-top:0;padding-top:0!important}
+.tv-hero--en{grid-template-columns:minmax(0,1fr)}
+.tv-hero--en .home-title-line + .home-title-line{color:var(--color-lab)}
+.tv-hero--en .home-positioning{max-width:760px}
+.tv-hero--en .en-hero-status{font-family:var(--font-sans);font-stretch:80%;font-size:15px;margin:0 0 6px}
+.tv-hero--en .home-hero-foot{max-width:760px}
+.tv-hero--en .home-cta-primary{background:var(--color-lab)}
+.tv-hero--en .home-bridge{font-family:var(--font-sans);font-stretch:88%;font-size:15px;line-height:1.6;color:var(--color-text-light);margin-top:24px}
+.tv-en-corpo{margin-left:232px}
+.tv-th p a{color:inherit}
+.en-paper-abstract{font-size:19px;line-height:1.6;max-width:860px;margin:0 0 40px}
+/* Le tre affermazioni falsificabili: il centro della pagina */
+.en-paper-claims-head{font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.1em;border-top:var(--tv-rule);padding-top:14px;margin:0 0 18px}
+.en-paper-claims{list-style:none;counter-reset:cl;padding:0;margin:0 0 48px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.en-paper-claims li{counter-increment:cl;border-top:6px solid var(--color-lab);padding-top:14px}
+.en-paper-claims li::before{content:"0" counter(cl);display:block;font-family:var(--font-display);font-size:64px;line-height:.9;color:var(--color-lab);margin-bottom:12px}
+.en-claim{font-family:var(--font-display);font-size:22px;line-height:1.25;margin:0 0 14px}
+.en-claim .en-claim-line{display:inline-block;font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:13px;color:#fff;background:var(--color-lab);padding:1px 7px;margin-right:6px;vertical-align:3px}
+.en-claim-falsifier{font-size:15px;line-height:1.5;color:#444;border-top:1px solid #e3e3e3;padding-top:10px;margin:0}
+.en-lines{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-bottom:36px}
+.en-line{border:0!important;border-top:4px solid var(--tv-ink)!important;padding:14px 0 0!important;background:none!important}
+.en-line-title{font-size:30px!important;line-height:1.1;margin:8px 0 10px}
+.en-line-body{font-size:16px;line-height:1.55}
+.en-paper-stage{font-family:var(--font-sans);font-stretch:74%;font-weight:700;text-transform:uppercase;letter-spacing:.07em;font-size:12.5px;color:var(--color-lab);background:none!important;border:0!important;padding:0!important}
+.en-paper-stage--open{color:var(--color-irene)}
+.en-archive{border-top:1px solid var(--tv-ink);padding-top:14px}
+.en-archive-head{font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.08em;margin:0 0 8px}
+.en-paper-links{display:flex;flex-wrap:wrap;gap:6px 24px;font-family:var(--font-sans);font-stretch:80%;font-size:15px}
+.en-archive-note{font-size:14.5px;color:var(--color-text-light)}
+/* Lab in campitura verde, come in italiano */
+.tv-lab--en{padding:48px 56px}
+.tv-lab--en .home-lab-label{font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.09em;color:#fff;opacity:.85}
+.tv-lab--en .home-lab-intro{font-style:italic;font-size:18px;color:#fff;opacity:.92;max-width:720px;margin:6px 0 0}
+.tv-lab--en .home-lab-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:28px;border-bottom:1px solid rgba(255,255,255,.35);padding-bottom:18px}
+.tv-lab--en .home-lab{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:48px;background:none!important;border:0!important;padding:0!important}
+.tv-lab--en .home-lab-feature h3{font-size:clamp(32px,4vw,52px);line-height:1;letter-spacing:-.025em;margin:10px 0 14px}
+.tv-lab--en *{color:#fff!important;border-color:rgba(255,255,255,.35)!important;background:transparent!important}
+.tv-lab--en .article-tag,.tv-lab--en .article-meta,.tv-lab--en .home-lab-stage{opacity:.85}
+.tv-lab--en .home-lab-item{display:block;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.3);text-decoration:none}
+.tv-lab--en .home-lab-item-title{display:block;font-family:var(--font-display);font-size:22px;line-height:1.15;margin:3px 0}
+.tv-lab--en .home-lab-item-meta,.tv-lab--en .home-lab-more-title{font-family:var(--font-sans);font-stretch:74%;font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.07em;opacity:.8}
+.tv-lab--en .home-lab-item-abstract{display:block;font-size:14.5px;line-height:1.45;opacity:.88}
+.tv-lab--en .home-lab-go,.tv-lab--en .home-lab-all a{font-family:var(--font-sans);font-stretch:74%;font-weight:600;font-size:14px;text-transform:uppercase;letter-spacing:.08em;text-decoration:none;border-bottom:2px solid rgba(255,255,255,.6)}
+/* Carta e The Abstract dentro la griglia delle tavole */
+.tv-tav--carta-en .carta,.tv-tav--en .abstract-block{margin-left:232px}
+.tv-tav--en .abstract-block{background:none!important;border:0!important;padding:0!important}
+.tv-tav--en .home-abstract-posts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.tv-tav--en .abstract-block-post{border-top:4px solid var(--color-primary);padding-top:14px}
+.tv-tav--en .abstract-block-post-title{font-size:24px;line-height:1.15;margin:6px 0 8px}
+.tv-tav--en .abstract-block-post-title a{color:var(--tv-ink);text-decoration:none}
+.tv-tav--en .abstract-block-cta a{font-family:var(--font-sans);font-stretch:74%;font-weight:600;font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--color-primary);text-decoration:none;border-bottom:2px solid currentColor}
+.en-author-bio{font-family:var(--font-display);font-size:28px;line-height:1.25;max-width:900px}
+.en-author-note{font-style:italic;font-size:19px;max-width:820px}
+.en-author-contact,.en-author-episteme{font-size:16px;max-width:820px}
+@media (max-width:900px){
+  .tv-en-corpo,.tv-tav--carta-en .carta,.tv-tav--en .abstract-block{margin-left:0}
+  .en-paper-claims,.en-lines,.tv-tav--en .home-abstract-posts,.tv-lab--en .home-lab{grid-template-columns:1fr;gap:24px}
+  .en-paper-claims li::before{font-size:48px}
+  .en-claim{font-size:20px}
+  .tv-lab--en{padding:36px 0}
+  .tv-lab--en .home-lab-head{flex-direction:column;align-items:flex-start}
+  .en-author-bio{font-size:22px}
+}
+/* Neutralizza i numeri a pallino della versione precedente */
+.en-paper-claims > li{padding-left:0!important;position:relative}
+.en-paper-claims > li::before{content:"0" counter(cl);position:static;width:auto;height:auto;border:0;border-radius:0;display:block;font-family:var(--font-display);font-size:64px;font-weight:400;line-height:.9;color:var(--color-lab);margin-bottom:12px}
+.en-claim-falsifier{border-left:0!important;padding-left:0!important}
+.en-claim .en-claim-line{border:0;border-radius:0}
+@media (max-width:900px){.en-paper-claims > li::before{font-size:48px}}
