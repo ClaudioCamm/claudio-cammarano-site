@@ -393,6 +393,7 @@ main > h1{border-top:var(--tv-rule);padding-top:22px;font-size:clamp(48px,7vw,96
 body:not(.home) .site-header .container{max-width:800px}
 /* Globo: su touch la pagina scorre in verticale, il globo prende i gesti orizzontali */
 .tv-hero-carta .carta-svg{touch-action:pan-y}
+.tv-hero-carta .carta-svg:focus{outline:none}
 .tv-hero-carta .carta-svg:focus-visible{outline:3px solid var(--color-primary);outline-offset:6px;border-radius:50%}
 .tv-altre-linee{display:none}
 @media (max-width:900px){

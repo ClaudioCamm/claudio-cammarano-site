@@ -53,17 +53,18 @@ function init(svg) {
   function schedule() { if (!raf) raf = requestAnimationFrame(draw); }
   function setRot(r) { proj.rotate(r); schedule(); }
 
-  // Ritorno: molla smorzata sulle due componenti della rotazione.
+  // Ritorno: una curva secca senza rimbalzo (ease-out quartica, 650 ms).
+  // La versione con l'oscillazione sembrava gelatina: il globo deve
+  // comportarsi come un oggetto rigido che torna in sede, non come una molla.
   function back() {
     cancelAnimationFrame(anim);
     if (reduce) { setRot(home); fig.classList.remove("is-ruotato"); return; }
     const from = proj.rotate().slice();
-    // prendi la via breve in longitudine
-    let dl = ((from[0] - home[0] + 540) % 360) - 180;
-    const start = performance.now(), T = 1100;
+    const dl = ((from[0] - home[0] + 540) % 360) - 180;   // la via breve in longitudine
+    const start = performance.now(), T = 650;
     (function step(now) {
       const t = Math.min(1, (now - start) / T);
-      const k = 1 - Math.exp(-6 * t) * Math.cos(9 * t);   // 0 -> 1 con un rimbalzo breve
+      const k = 1 - Math.pow(1 - t, 4);
       setRot([home[0] + dl * (1 - k), from[1] + (home[1] - from[1]) * k, 0]);
       if (t < 1) anim = requestAnimationFrame(step);
       else { setRot(home); fig.classList.remove("is-ruotato"); }
@@ -104,6 +105,7 @@ function init(svg) {
   // tasti riportano su Bergamo.
   let kt = 0;
   svg.setAttribute("tabindex", "0");
+  svg.addEventListener("mousedown", e => e.preventDefault());
   svg.addEventListener("keydown", e => {
     const step = { ArrowLeft: [15, 0], ArrowRight: [-15, 0], ArrowUp: [0, -15], ArrowDown: [0, 15] }[e.key];
     if (e.key === "Escape") { clearTimeout(kt); load().then(back); return; }
