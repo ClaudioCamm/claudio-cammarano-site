@@ -3044,7 +3044,8 @@ module.exports = [
       { title: "Pechino ha lanciato un modello di IA che parla tibetano (ma dà solo risposte che piacciono alla Cina)", url: "/curated/2026-05-29-miele-deepzang-ia-tibetano-avvenire/", _source: "curated" },
       { title: "Could AI algorithms hold China’s solution for global narrative on Tibet?", url: "/curated/2026-06-17-liang-algoritmi-narrazione-tibet-scmp/", _source: "curated" },
       { title: "Trumpism Is Backfiring", url: "/curated/2026-10-20-klein-freeland-trumpism-backfiring-nyt/", _source: "curated" },
-      { title: "China’s universities are rich. But they're getting squeezed", url: "/curated/2026-10-20-economist-universita-cinesi/", _source: "curated" }
+      { title: "China’s universities are rich. But they're getting squeezed", url: "/curated/2026-10-20-economist-universita-cinesi/", _source: "curated" },
+      { title: "Nvidia Chief, Jensen Huang, Is Seen as Target of Chinese Spy Plot", url: "/curated/2026-10-29-swan-haberman-huang-spionaggio-nyt/", _source: "curated" }
     ]
   },
   {
@@ -3141,7 +3142,8 @@ module.exports = [
       { title: "Dentro le decisioni di Trump sull'Iran", url: "/curated/2026-04-09-trump-iran-war/", _source: "curated" },
       { title: "Populists Are Losing Their War on Globalization", url: "/curated/2026-10-09-donnan-populists-losing-war-globalization-bloomberg/", _source: "curated" },
       { title: "Trumpism Is Backfiring", url: "/curated/2026-10-20-klein-freeland-trumpism-backfiring-nyt/", _source: "curated" },
-      { title: "Why Is Tech Billionaire Marc Andreessen So Mad?", url: "/curated/2026-10-15-carr-andreessen-bloomberg/", _source: "curated" }
+      { title: "Why Is Tech Billionaire Marc Andreessen So Mad?", url: "/curated/2026-10-15-carr-andreessen-bloomberg/", _source: "curated" },
+      { title: "Nvidia Chief, Jensen Huang, Is Seen as Target of Chinese Spy Plot", url: "/curated/2026-10-29-swan-haberman-huang-spionaggio-nyt/", _source: "curated" }
     ]
   },
   {
@@ -3884,7 +3886,8 @@ module.exports = [
     ],
     note: "Ingegnere e imprenditore americano nato a Taiwan (1963), fondatore e amministratore delegato di Nvidia dal 1993. Nel sito è la figura che tiene insieme i due registri con cui l'archivio legge il boom dell'AI: il meccanismo finanziario — il compute trasformato in classe di attivo, le garanzie ai clienti, i cento miliardi l'anno di investimenti nell'ecosistema — e la dottrina che lo giustifica. La sua posizione ha una struttura riconoscibile: riclassificare l'AI come software ordinario, e quindi come materia già coperta da responsabilità di prodotto e ingegneria della verifica, invece che come tecnologia di specie nuova che richiederebbe istituzioni inedite. Da qui la formula che è la sua eredità più portabile — la sicurezza come espansione di capacità, non come freno, sul modello del rapporto 20/80 fra progettazione e verifica che governa l'industria dei semiconduttori. Va letto sapendo che nessuno ha un interesse economico maggiore a che la corsa non rallenti: il che non falsifica gli argomenti tecnici, ma impone di distinguerli dalle conclusioni istituzionali che ne ricava.",
     articles: [
-      { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" }
+      { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" },
+      { title: "Nvidia Chief, Jensen Huang, Is Seen as Target of Chinese Spy Plot", url: "/curated/2026-10-29-swan-haberman-huang-spionaggio-nyt/", _source: "curated" }
     ]
   },
   {
@@ -3903,7 +3906,8 @@ module.exports = [
       { title: "We Surveyed 634 Women Who Work in Tech. They Let Loose", url: "/curated/2026-09-21-upson-donne-tech-sondaggio-wired/", _source: "curated" },
       { title: "Logitech CEO Scouring the Globe to Beat Chip Shortage", url: "/curated/2026-09-30-cutter-faber-logitech-chip-wsj/", _source: "curated" },
       { title: "The AI boom is threatened by an epidemic of unreliable numbers", url: "/curated/2026-10-14-economist-numeri-inaffidabili-ai/", _source: "curated" },
-      { title: "Someone Has to Take the AI Risk", url: "/curated/2026-10-20-levine-someone-has-to-take-ai-risk-bloomberg/", _source: "curated" }
+      { title: "Someone Has to Take the AI Risk", url: "/curated/2026-10-20-levine-someone-has-to-take-ai-risk-bloomberg/", _source: "curated" },
+      { title: "Nvidia Chief, Jensen Huang, Is Seen as Target of Chinese Spy Plot", url: "/curated/2026-10-29-swan-haberman-huang-spionaggio-nyt/", _source: "curated" }
     ]
   },
   {
@@ -4915,7 +4919,8 @@ module.exports = [
     ],
     note: "Insieme dei meccanismi per cui un potere è limitato da un altro potere anziché dalla propria disciplina interna; la formula inglese è *checks and balances*. La voce entra nell'archivio con un criterio che la rende verificabile invece che edificante: **un contrappeso esiste nella misura in cui produce un atto pubblico**. Dove nessun organo pubblica un verbale il controllo non è debole, è indistinguibile dalla fiducia, e la differenza fra le due cose non è di grado.\n\nIl caso che mette alla prova il criterio è la vigilanza sull'intelligence militare israeliana. L'architettura esiste e ha un nome: la Commissione affari esteri e difesa della Knesset riceve i resoconti dei capi di Mossad, Shabak e Aman. Ma la maggior parte del lavoro si svolge nelle sottocommissioni, alcune classificate al grado più alto di segretezza e senza accesso della stampa, e i verbali restano in larga parte non pubblicati. Ne segue una conseguenza sulla qualità delle prove disponibili, non soltanto sulla qualità del controllo: dove nessun organo pubblica un atto, l'unica prova che arriva è una testimonianza anonima, e questo è prevedibile prima di sapere se quella testimonianza sia vera. Nel settembre 2026 il documentario *NAZA* mostra le due facce dello stesso fatto, perché il suo capitolo meno sostenuto è quello su un reparto di cui nessun atto pubblico attesta l'esistenza.\n\nIl confronto che chiarisce il criterio è italiano. Sulla stessa classe di tecnologia di sorveglianza, nel giugno 2025, il Copasir ha prodotto una relazione pubblica, che l'azienda fornitrice e Citizen Lab hanno potuto contestare per punti. Che la relazione sia contestata non è un difetto del contrappeso: è la prova che funziona, perché solo un atto esistente può essere smentito.",
     articles: [
-      { title: "NAZA film-makers address threats at documentary’s New York City premiere", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" }
+      { title: "NAZA film-makers address threats at documentary’s New York City premiere", url: "/curated/2026-09-27-naza-danno-collaterale-guardian/", _source: "curated" },
+      { title: "Nvidia Chief, Jensen Huang, Is Seen as Target of Chinese Spy Plot", url: "/curated/2026-10-29-swan-haberman-huang-spionaggio-nyt/", _source: "curated" }
     ]
   },
   {
@@ -5535,7 +5540,8 @@ module.exports = [
     ],
     note: "Il rischio che non si elimina diversificando, perché colpisce tutto il mercato o un intero settore insieme, a differenza del rischio specifico di una singola impresa. **Nel sito è la chiave per leggere il boom dei data center: il loro debito va bene tutto insieme o male tutto insieme, e chi dovrebbe assicurarlo è già esposto allo stesso rischio.**",
     articles: [
-      { title: "Someone Has to Take the AI Risk", url: "/curated/2026-10-20-levine-someone-has-to-take-ai-risk-bloomberg/", _source: "curated" }
+      { title: "Someone Has to Take the AI Risk", url: "/curated/2026-10-20-levine-someone-has-to-take-ai-risk-bloomberg/", _source: "curated" },
+      { title: "Nvidia Chief, Jensen Huang, Is Seen as Target of Chinese Spy Plot", url: "/curated/2026-10-29-swan-haberman-huang-spionaggio-nyt/", _source: "curated" }
     ]
   },
   {
