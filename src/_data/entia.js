@@ -50,6 +50,8 @@ const tagUsati = [...new Set(curated.flatMap(c => (c.dati.tags || []).filter(t =
 const strati = [
   {
     nome: "Tag libero",
+    // Testo breve per la tavola degli strati in home (29/10).
+    breve: "Non afferma nulla e non ha vincoli: è lo spazio libero, quello che non costa niente.",
     quanti: tagUsati.filter(t => !alias[t]).length,
     lega: "niente",
     afferma: "niente",
@@ -58,6 +60,8 @@ const strati = [
   },
   {
     nome: "Argomento",
+    // Testo breve per la tavola degli strati in home (29/10).
+    breve: "Dichiara un raggruppamento, scelto da un elenco chiuso.",
     quanti: argomenti.length,
     lega: "l'appartenenza a clusters.js",
     afferma: "un raggruppamento",
@@ -66,6 +70,8 @@ const strati = [
   },
   {
     nome: "Tema",
+    // Testo breve per la tavola degli strati in home (29/10).
+    breve: "Deriva dagli argomenti e li riunisce in un raggruppamento superiore. Nessun programma può verificarlo.",
     quanti: Object.keys(clusters).length,
     lega: "nulla: si deriva dagli Argomenti",
     afferma: "una posizione",
@@ -74,6 +80,8 @@ const strati = [
   },
   {
     nome: "Concetto",
+    // Testo breve per la tavola degli strati in home (29/10).
+    breve: "Afferma qualcosa sul mondo, con una nota e dei legami. Un validatore lo controlla: se fallisce, il sito non si pubblica.",
     quanti: indice.length,
     lega: "un validatore che fa cadere il build",
     afferma: "una proposizione sul mondo",
@@ -82,6 +90,8 @@ const strati = [
   },
   {
     nome: "Geometria",
+    // Testo breve per la tavola degli strati in home (29/10).
+    breve: "Assegna un peso alle altre etichette con una formula pubblicata, e ne ricava una gerarchia.",
     quanti: 3,
     lega: "una formula pubblicata",
     afferma: "niente sul mondo",

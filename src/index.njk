@@ -197,7 +197,7 @@ bodyClass: home
       <p class="tv-meta">ENTIA {{ entia.spec }} · {{ entia.licenza.nome }} · <a href="{{ entia.deposito.url }}">DOI {{ entia.deposito.doi }}</a></p>
     </div>
     <ol class="tv-strato-lista">
-      {% for s in entia.strati %}<li class="tv-strato tv-strato--{{ loop.index }}"><span class="tv-sn">{{ s.nome }}</span><b>{{ s.quanti }}</b><span class="tv-sd">Afferma {{ s.afferma }}. Lo tiene {{ s.lega }}.</span></li>{% endfor %}
+      {% for s in entia.strati %}<li class="tv-strato tv-strato--{{ loop.index }}"><span class="tv-sn">{{ s.nome }}</span><b>{{ s.quanti }}</b><span class="tv-sd">{{ s.breve }}</span></li>{% endfor %}
     </ol>
   </div>
 </section>
