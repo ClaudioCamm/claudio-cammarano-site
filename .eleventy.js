@@ -500,7 +500,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("ogHome", function(index, lang) {
     const en = lang === "en";
     return ogReg("home", en ? "en" : "it", {
-      kind: "carta", geom: en ? "goode" : "bergamo",
+      kind: "carta", tipo: en ? "home-en" : "home-it", geom: en ? "goode" : "bergamo",
       kicker: en ? "Claudio Cammarano · Research" : "Claudio Cammarano",
       titolo: en ? "Ideas are real things. Somebody has to check them." : "Le idee sono cose reali. Il mercato è dove si incontrano.",
       sottotitolo: en ? "" : "Dove guarda questo sito",
@@ -517,12 +517,12 @@ module.exports = function(eleventyConfig) {
     if (concept.type === "persona" && /^[^,]+, [^,]+$/.test(nome)) nome = nome.split(", ").reverse().join(" ");
     const n = (concept.articles || []).length;
     return ogReg("c", eleventyConfig.getFilter("slugify")(concept.name), {
-      kind: "carta", geom: "bergamo", marca: g.modo !== "nessuna" && g.paesi.length > 0, kicker: "Indice dei concetti", titolo: nome,
+      kind: "carta", tipo: "concetto", geom: "bergamo", marca: g.modo !== "nessuna" && g.paesi.length > 0, kicker: "Indice dei concetti", titolo: nome,
       sottotitolo: (ogTipo[concept.type] || "Concetto") + (n ? " · " + n + (n === 1 ? " testo" : " testi") : ""),
       classi: classi
     });
   });
-  eleventyConfig.addFilter("ogCurated", function(title, source, concepts, index, url) {
+  eleventyConfig.addFilter("ogCurated", function(title, source, concepts, index, url, criterio) {
     const perNome = {};
     (index || []).forEach(function(c) { perNome[c.name] = c; });
     const nomi = [];
@@ -531,12 +531,28 @@ module.exports = function(eleventyConfig) {
     if (!nomi.length) classi = ogCartaSito(index, "it");
     else { classi = {}; ogIso(nomi).forEach(function(i) { classi[i] = 5; }); }
     const slug = String(url || title).split("/").filter(Boolean).pop();
-    return ogReg("cur", slug, { kind: "carta", geom: "bergamo", marca: nomi.length > 0, kicker: "Curated" + (source ? " · " + source : ""), titolo: title, sottotitolo: "", classi: classi });
+    const criteri = require("./src/_data/criteri.json");
+    return ogReg("cur", slug, { kind: "carta", tipo: "curated", geom: "bergamo", marca: nomi.length > 0, kicker: "Curated" + (source ? " · " + source : ""),
+      fonte: String(source || "Curated").replace(/\s*\/\s*/g, " · "), criterio: (criterio && criteri[criterio] && criteri[criterio].label) || "",
+      titolo: title, sottotitolo: "", classi: classi });
   });
-  eleventyConfig.addFilter("ogFoto", function(src) {
-    if (!src || /\.(jpe?g|png)$/i.test(src)) return src;
+  // Saggio con foto (revisione "Tavole"): sempre una scheda composta, titolo
+  // a sinistra e foto a destra, anche quando la foto e' gia' un JPG.
+  eleventyConfig.addFilter("ogFoto", function(src, titolo, series, data) {
+    if (!src) return src;
     const base = require("path").basename(src).replace(/\.[^.]+$/, "");
-    return ogReg("w", base, { kind: "foto", src: src });
+    const quando = data ? eleventyConfig.getFilter("formatDate")(data) : "";
+    return ogReg("w", base, { kind: "foto", tipo: "foto", src: src, titolo: titolo || "", serie: [series || "Saggio", quando].filter(Boolean).join(" · ") });
+  });
+  // Catena (revisione "Tavole"): finora usava la scheda della home.
+  eleventyConfig.addFilter("ogCatena", function(titolo, series, tesi, data, testate, writings) {
+    const base = series ? eleventyConfig.getFilter("seriesBaseName")(series) : "";
+    const parte = series ? eleventyConfig.getFilter("parteDi")(series, writings) : "";
+    const slug = eleventyConfig.getFilter("slugify")(titolo);
+    return ogReg("cat", slug, { kind: "carta", tipo: "catena", titolo: titolo,
+      serie: base ? base + (parte ? " · " + parte : "") : "Catena · fuori serie",
+      tesi: eleventyConfig.getFilter("firstSentence")(String(tesi || "").replace(/[*_]/g, "")),
+      data: data ? eleventyConfig.getFilter("formatDate")(data) : "", fonti: testate || [] });
   });
   eleventyConfig.on("eleventy.after", async function(arg) {
     if ((arg && arg.runMode) !== "build" && !process.env.OG) return;

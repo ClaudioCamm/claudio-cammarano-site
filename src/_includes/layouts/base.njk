@@ -36,9 +36,10 @@
        carta dei paesi del curated; altrimenti la carta della home nella
        lingua della pagina. Le schede automatiche sono generate in build. #}
     {% if og_card %}{% set ogImg = og_card %}{% set ogAlt = title %}
-    {% elif og_image %}{% set ogImg = og_image | ogFoto %}{% set ogAlt = title %}
+    {% elif fonti and fonti.length %}{% set ogImg = title | ogCatena(series, tesi or description, page.date, fonti | catenaTestate, collections.writings) %}{% set ogAlt = title %}
+    {% elif og_image %}{% set ogImg = og_image | ogFoto(title, series, page.date) %}{% set ogAlt = title %}
     {% elif concept and concept.name %}{% set ogImg = concept | ogConcept(collections.mergedConceptsIndex) %}{% set ogAlt = "Carta dei paesi collegati a " + concept.name %}
-    {% elif external_url %}{% set ogImg = title | ogCurated(source, concepts, collections.mergedConceptsIndex, page.url) %}{% set ogAlt = "Carta dei paesi di cui parla la segnalazione" %}
+    {% elif external_url %}{% set ogImg = title | ogCurated(source, concepts, collections.mergedConceptsIndex, page.url, criterio) %}{% set ogAlt = "Carta dei paesi di cui parla la segnalazione" %}
     {% else %}{% set ogImg = collections.mergedConceptsIndex | ogHome(lang or 'it') %}{% if isEN %}{% set ogAlt = "Map: where the Italian essays look" %}{% else %}{% set ogAlt = "Carta: dove guarda questo sito" %}{% endif %}
     {% endif %}
     <meta property="og:image" content="https://claudiocammarano.com{{ ogImg }}">
