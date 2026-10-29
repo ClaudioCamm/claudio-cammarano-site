@@ -421,3 +421,21 @@ body:not(.home) .site-header .container{max-width:800px}
 .catena .tv-linea-box{margin:48px 0 0}
 /* Pagine con la colonna "Letture pertinenti": la testata segue la griglia allargata */
 @media (min-width:1200px){html:not(.rail-closed) body:has(.curated-rail) .site-header .container{max-width:1120px}}
+
+/* Tavola degli strati a due colonne (29/10): che cosa fa, chi lo controlla.
+   Colonne a larghezza fissa, cosi' restano allineate anche sulle barre a scalare. */
+.tv-strati{grid-template-columns:300px minmax(0,1fr);gap:44px}
+.tv-epigrafe .tv-latino{font-size:34px;line-height:1.12}
+.tv-strato,.tv-strato-testa{grid-template-columns:150px 64px 200px minmax(0,1fr);gap:16px}
+.tv-strato-testa{display:grid;margin:0 0 6px;padding:0 24px;font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--color-text-light)}
+.tv-strato .tv-sd{font-size:15px;line-height:1.3}
+.tv-sl{display:none}
+.tv-strato--1{width:88%}.tv-strato--2{width:91%}.tv-strato--3{width:94%}.tv-strato--4{width:97%}.tv-strato--5{width:100%}
+@media (max-width:900px){
+  .tv-strati{grid-template-columns:1fr;gap:24px}
+  .tv-epigrafe .tv-latino{font-size:28px}
+  .tv-strato-testa{display:none}
+  .tv-strato{grid-template-columns:1fr auto;width:100%!important;padding:12px 16px 14px;row-gap:6px}
+  .tv-strato .tv-sd{grid-column:1/-1;font-size:14px}
+  .tv-sl{display:block;font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;opacity:.7;margin-bottom:1px}
+}

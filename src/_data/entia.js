@@ -50,8 +50,9 @@ const tagUsati = [...new Set(curated.flatMap(c => (c.dati.tags || []).filter(t =
 const strati = [
   {
     nome: "Tag libero",
-    // Testo breve per la tavola degli strati in home (29/10).
-    breve: "Non afferma nulla e non ha vincoli: è lo spazio libero, quello che non costa niente.",
+    // Tavola degli strati in home (29/10): che cosa fa, chi lo controlla.
+    fa: "Etichetta liberamente",
+    controllo: "Nessuno",
     quanti: tagUsati.filter(t => !alias[t]).length,
     lega: "niente",
     afferma: "niente",
@@ -60,8 +61,9 @@ const strati = [
   },
   {
     nome: "Argomento",
-    // Testo breve per la tavola degli strati in home (29/10).
-    breve: "Dichiara un raggruppamento, scelto da un elenco chiuso.",
+    // Tavola degli strati in home (29/10): che cosa fa, chi lo controlla.
+    fa: "Raggruppa i pezzi",
+    controllo: "Un elenco chiuso",
     quanti: argomenti.length,
     lega: "l'appartenenza a clusters.js",
     afferma: "un raggruppamento",
@@ -70,8 +72,9 @@ const strati = [
   },
   {
     nome: "Tema",
-    // Testo breve per la tavola degli strati in home (29/10).
-    breve: "Deriva dagli argomenti e li riunisce in un raggruppamento superiore. Nessun programma può verificarlo.",
+    // Tavola degli strati in home (29/10): che cosa fa, chi lo controlla.
+    fa: "Raggruppa gli argomenti",
+    controllo: "Nessun programma: è un giudizio",
     quanti: Object.keys(clusters).length,
     lega: "nulla: si deriva dagli Argomenti",
     afferma: "una posizione",
@@ -80,8 +83,9 @@ const strati = [
   },
   {
     nome: "Concetto",
-    // Testo breve per la tavola degli strati in home (29/10).
-    breve: "Afferma qualcosa sul mondo, con una nota e dei legami. Un validatore lo controlla: se fallisce, il sito non si pubblica.",
+    // Tavola degli strati in home (29/10): che cosa fa, chi lo controlla.
+    fa: "Afferma qualcosa sul mondo",
+    controllo: "Un validatore: se fallisce, il sito non si pubblica",
     quanti: indice.length,
     lega: "un validatore che fa cadere il build",
     afferma: "una proposizione sul mondo",
@@ -90,8 +94,9 @@ const strati = [
   },
   {
     nome: "Geometria",
-    // Testo breve per la tavola degli strati in home (29/10).
-    breve: "Assegna un peso alle altre etichette con una formula pubblicata attraverso 3 coefficienti, e ne ricava una gerarchia.",
+    // Tavola degli strati in home (29/10): che cosa fa, chi lo controlla.
+    fa: "Pesa e ordina le etichette",
+    controllo: "Una formula pubblicata, a 3 coefficienti",
     quanti: 3,
     lega: "una formula pubblicata",
     afferma: "niente sul mondo",
