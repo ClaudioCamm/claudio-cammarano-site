@@ -91,7 +91,7 @@ const strati = [
   {
     nome: "Geometria",
     // Testo breve per la tavola degli strati in home (29/10).
-    breve: "Assegna un peso alle altre etichette con una formula pubblicata, e ne ricava una gerarchia.",
+    breve: "Assegna un peso alle altre etichette con una formula pubblicata attraverso 3 coefficienti, e ne ricava una gerarchia.",
     quanti: 3,
     lega: "una formula pubblicata",
     afferma: "niente sul mondo",
