@@ -942,7 +942,9 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q579471", "https://it.wikipedia.org/wiki/Riserva_cognitiva"],
     note: "Concetto delle neuroscienze: la salute cognitiva non è un dato biologico fisso ma una risorsa accumulata nel corso della vita attraverso istruzione, stimolazione mentale, attività fisica e reti sociali. Determina quanto a lungo il cervello riesce a compensare il danno neurodegenerativo prima che la demenza si manifesti. Nel sito è la chiave per leggere le disuguaglianze cognitive come disuguaglianze strutturali: chi non ha potuto accumulare riserva non è «meno fortunato», è stato sistematicamente escluso dalle condizioni che la rendono possibile.",
     articles: [
-      { title: "How dementia is being defeated", url: "/curated/2026-07-09-economist-dementia-defeated/", _source: "curated" }
+      { title: "How dementia is being defeated", url: "/curated/2026-07-09-economist-dementia-defeated/", _source: "curated" },
+      { title: "Your brain’s unexpected ability to regenerate and how to harness it", url: "/curated/2026-10-26-ducharme-neurogenesi-newscientist/", _source: "curated" },
+      { title: "Hannah Fry: I lost my dad to Alzheimer's. New research into its origins is amazing", url: "/curated/2026-10-28-fry-alzheimer-naso-newscientist/", _source: "curated" }
     ]
   },
   {
@@ -969,7 +971,10 @@ module.exports = [
       { title: "China's kids rank near the top in global school tests", url: "/curated/2026-09-24-economist-pisa-cina-campione-bsjz/", _source: "curated" },
       { title: "We Surveyed 634 Women Who Work in Tech. They Let Loose", url: "/curated/2026-09-21-upson-donne-tech-sondaggio-wired/", _source: "curated" },
       { title: "30 Ideas for Fixing U.S. Schools, Ranked by Experts", url: "/curated/2026-09-28-mervosh-paris-miller-cosa-funziona-davvero-nella-scuola-nyt/", _source: "curated" },
-      { title: "Are teenagers growing dimmer?", url: "/curated/2026-09-08-economist-pisa-inghilterra-scozia-vie-opposte/", _source: "curated" }
+      { title: "Are teenagers growing dimmer?", url: "/curated/2026-09-08-economist-pisa-inghilterra-scozia-vie-opposte/", _source: "curated" },
+      { title: "Your brain’s unexpected ability to regenerate and how to harness it", url: "/curated/2026-10-26-ducharme-neurogenesi-newscientist/", _source: "curated" },
+      { title: "Hannah Fry: I lost my dad to Alzheimer's. New research into its origins is amazing", url: "/curated/2026-10-28-fry-alzheimer-naso-newscientist/", _source: "curated" },
+      { title: "Comment le communisme a fait de la Chine une superpuissance capitaliste", url: "/curated/2026-10-29-ruskola-classe-operaia-cinese-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -1912,7 +1917,8 @@ module.exports = [
       { title: "Don't let AI kill the author", url: "/curated/2026-09-24-economist-dont-let-ai-kill-the-author/", _source: "curated" },
       { title: "We're living through an explainer epidemic", url: "/curated/2026-09-10-pitcher-epidemia-explainer-dazed/", _source: "curated" },
       { title: "I'm a College Professor. Writing Isn't as Important as We Think.", url: "/curated/2026-09-29-cruz-scrittura-pensiero-nyt/", _source: "curated" },
-      { title: "Deskilling the body", url: "/curated/2026-10-13-challenger-deskilling-the-body-aeon/", _source: "curated" }
+      { title: "Deskilling the body", url: "/curated/2026-10-13-challenger-deskilling-the-body-aeon/", _source: "curated" },
+      { title: "An Interview with Palantir CTO Shyam Sankar About the AI Religious War", url: "/curated/2026-10-29-thompson-sankar-palantir-stratechery/", _source: "curated" }
     ]
   },
   {
@@ -2466,7 +2472,8 @@ module.exports = [
       { title: "Claude-shaped science", url: "/curated/2026-10-01-schwartz-claude-shaped-science-anthropic/", _source: "curated" },
       { title: "A.I. Companies Say They Aren’t Responsible for Their Unpredictable Products. Don’t Believe Them.", url: "/curated/2026-10-10-nyt-editorial-ai-responsabilita/", _source: "curated" },
       { title: "The AI boom is threatened by an epidemic of unreliable numbers", url: "/curated/2026-10-14-economist-numeri-inaffidabili-ai/", _source: "curated" },
-      { title: "Trumpism Is Backfiring", url: "/curated/2026-10-20-klein-freeland-trumpism-backfiring-nyt/", _source: "curated" }
+      { title: "Trumpism Is Backfiring", url: "/curated/2026-10-20-klein-freeland-trumpism-backfiring-nyt/", _source: "curated" },
+      { title: "An Interview with Palantir CTO Shyam Sankar About the AI Religious War", url: "/curated/2026-10-29-thompson-sankar-palantir-stratechery/", _source: "curated" }
     ]
   },
   {
@@ -2495,7 +2502,8 @@ module.exports = [
       { title: "Nessuna tecnologia è innocua", url: "/writings/2026-05-20-nessuna-tecnologia-e-innocua/" },
       { title: "Why Are Palantir and OpenAI Scared of Alex Bores?", url: "/curated/2026-04-21-bores-palantir-openai-regulation-nyt/", _source: "curated" },
       { title: "The End of the Future", url: "/curated/2026-06-15-fp-end-of-the-future/", _source: "curated" },
-      { title: "Ranks of Humanity", url: "/curated/2026-09-24-meaney-varouxakis-idea-occidente-lrb/", _source: "curated" }
+      { title: "Ranks of Humanity", url: "/curated/2026-09-24-meaney-varouxakis-idea-occidente-lrb/", _source: "curated" },
+      { title: "An Interview with Palantir CTO Shyam Sankar About the AI Religious War", url: "/curated/2026-10-29-thompson-sankar-palantir-stratechery/", _source: "curated" }
     ]
   },
   {
@@ -3045,7 +3053,8 @@ module.exports = [
       { title: "Could AI algorithms hold China’s solution for global narrative on Tibet?", url: "/curated/2026-06-17-liang-algoritmi-narrazione-tibet-scmp/", _source: "curated" },
       { title: "Trumpism Is Backfiring", url: "/curated/2026-10-20-klein-freeland-trumpism-backfiring-nyt/", _source: "curated" },
       { title: "China’s universities are rich. But they're getting squeezed", url: "/curated/2026-10-20-economist-universita-cinesi/", _source: "curated" },
-      { title: "Nvidia Chief, Jensen Huang, Is Seen as Target of Chinese Spy Plot", url: "/curated/2026-10-29-swan-haberman-huang-spionaggio-nyt/", _source: "curated" }
+      { title: "Nvidia Chief, Jensen Huang, Is Seen as Target of Chinese Spy Plot", url: "/curated/2026-10-29-swan-haberman-huang-spionaggio-nyt/", _source: "curated" },
+      { title: "Comment le communisme a fait de la Chine une superpuissance capitaliste", url: "/curated/2026-10-29-ruskola-classe-operaia-cinese-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -3257,7 +3266,8 @@ module.exports = [
       { title: "Who's Afraid of Chinese Models?", url: "/curated/2026-07-20-stratechery-chinese-models/", _source: "curated" },
       { title: "Chartbook 462: China shocked – beyond 1.0 and 2.0 to the 'Big One'", url: "/curated/2026-07-29-tooze-china-shock-chartbook/", _source: "curated" },
       { title: "Game Decompilation, Is This Legal?, A Well-Trodden Path", url: "/curated/2026-10-06-stratechery-game-decompilation/", _source: "curated" },
-      { title: "A Conversation With Ari Emanuel About Entertainment and AI", url: "/curated/2026-10-15-stratechery-ari-emanuel-entertainment-ai/", _source: "curated" }
+      { title: "A Conversation With Ari Emanuel About Entertainment and AI", url: "/curated/2026-10-15-stratechery-ari-emanuel-entertainment-ai/", _source: "curated" },
+      { title: "An Interview with Palantir CTO Shyam Sankar About the AI Religious War", url: "/curated/2026-10-29-thompson-sankar-palantir-stratechery/", _source: "curated" }
     ]
   },
   {
@@ -3608,7 +3618,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q78906087", "https://en.wikipedia.org/wiki/Casey_Newton"],
     note: "Giornalista tecnologico americano, co-fondatore con Zoe Schiffer di Platformer (2021). In precedenza ha scritto di tech per The Verge. Nel sito è l'autore di riferimento per il giornalismo sulle piattaforme e sulla governance tech: cultura interna delle grandi aziende, moderazione dei contenuti, rapporto tra piattaforme e democrazia.",
     articles: [
-      { title: "Claude Code for writers", url: "/curated/2026-01-15-newton-claude-code-writers-platformer/", _source: "curated" }
+      { title: "Claude Code for writers", url: "/curated/2026-01-15-newton-claude-code-writers-platformer/", _source: "curated" },
+      { title: "What Google and Reddit's bad days have in common", url: "/curated/2026-10-29-newton-google-reddit-platformer/", _source: "curated" }
     ]
   },
   {
@@ -5064,7 +5075,8 @@ module.exports = [
     note: "Dottrina etica nata una ventina d'anni fa fra i seminari di filosofia di Oxford e i laboratori informatici californiani, e passata con rapidità insolita dalla torre d'avorio ai corridoi del potere. Poggia su due richieste esigenti. La prima è prendere sul serio gli impegni morali, e viene da Peter Singer: nel 1972 propone l'esperimento del bambino che annega in uno stagno poco profondo, che quasi tutti direbbero di salvare sporcandosi le scarpe, e osserva che quasi nessuno si comporta come se lo credesse quando il bambino è lontano. La seconda è seguire la ragione ovunque porti, e viene dal movimento razionalista, che ne è la sorella più esoterica.\n\nLa sociologia conta quanto la filosofia. L'economista Laurence Iannaccone ha spiegato «perché le chiese severe sono forti»: imporre sacrifici allontana chi verrebbe solo a godersi gli inni e spinge chi resta a contribuire. Qui il sacrificio è Giving What We Can, che chiede il 10% del reddito, e 80.000 Hours, che chiede la carriera, spesso nella forma di guadagnare il più possibile per donare. Il movimento resta minuscolo — poche decine di migliaia di aderenti informali — e nel 2026 un sondaggio YouGov trova che solo il 16% degli americani ne abbia sentito parlare, con la maggioranza di questi favorevole.\n\nNell'archivio la voce serve per due ragioni. La prima è che il vocabolario corrente sull'intelligenza artificiale è in gran parte un suo prodotto: allineamento, rischio esistenziale, cadenzare la frontiera. La seconda è l'ironia documentata: gran parte degli sforzi per rendere sicura la tecnologia ne ha accelerato lo sviluppo, da DeepMind a OpenAI ad Anthropic. L'obiezione di fondo, nella formulazione dell'*Economist* dell'ottobre 2026, riguarda la forma del ragionamento e non le conclusioni: **ridurre il comportamento etico a un problema di ottimizzazione** espone agli stessi fallimenti di qualunque ottimizzatore, e chi impugna un foglio di calcolo e pretese sul futuro dell'umanità è a un passo dall'ungersi pianificatore centrale.",
     articles: [
       { title: "How effective altruism conquered the world", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" },
-      { title: "Effective altruism is this century’s biggest idea", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" }
+      { title: "Effective altruism is this century’s biggest idea", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" },
+      { title: "An Interview with Palantir CTO Shyam Sankar About the AI Religious War", url: "/curated/2026-10-29-thompson-sankar-palantir-stratechery/", _source: "curated" }
     ]
   },
   {
@@ -5554,7 +5566,8 @@ module.exports = [
     ],
     note: "L'approccio delle capacità, elaborato da Amartya Sen negli anni Ottanta e sviluppato da Martha Nussbaum, misura il benessere non dal reddito o dalle risorse ma da ciò che le persone sono effettivamente in grado di essere e di fare. **Nel sito è l'argomento per cui le humanities non sono un lusso: coltivano capacità, come immaginare, giudicare, deliberare, senza le quali la libertà formale resta vuota.**",
     articles: [
-      { title: "I Teach at a Business School. It’s Time to Shut Them Down.", url: "/curated/2026-10-18-marquis-business-school-nyt/", _source: "curated" }
+      { title: "I Teach at a Business School. It’s Time to Shut Them Down.", url: "/curated/2026-10-18-marquis-business-school-nyt/", _source: "curated" },
+      { title: "Your brain’s unexpected ability to regenerate and how to harness it", url: "/curated/2026-10-26-ducharme-neurogenesi-newscientist/", _source: "curated" }
     ]
   },
   {
