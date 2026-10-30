@@ -73,7 +73,7 @@ bodyClass: home
   <div class="tv-hero-carta home-carta">
     <figure class="carta-figura">
       {{ carta.svg | safe }}
-      <figcaption class="carta-didascalia"><b>Dove guarda questo sito.</b> Proiezione azimutale equivalente, centrata su dove scrivo: ogni 30° di arco sono circa 3.300 km. <span class="tv-gira">Trascinalo per vedere l’altra faccia; toccalo di nuovo per fare il giro completo e tornare qui.</span></figcaption>
+      <figcaption class="carta-didascalia"><b>Dove guarda questo sito.</b> Proiezione azimutale equivalente, centrata su dove scrivo: ogni 30° di arco sono circa 3.300 km.</figcaption>
     </figure>
     <ol class="tv-carta-voci">
       {% for v in carta.legenda | limit(8) %}<li><span class="carta-sw carta-c{{ v.classe }}" aria-hidden="true"></span><a href="{{ v.url }}">{{ v.nome }}</a> <b>{{ v.peso }}</b></li>{% endfor %}
