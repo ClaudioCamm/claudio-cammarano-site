@@ -55,7 +55,7 @@ CONCETTI = json.loads(subprocess.run(
      "console.log(JSON.stringify(m))"],
     cwd=ROOT, capture_output=True, text=True, check=True).stdout)
 MAINFONT = os.environ.get("EBOOK_MAINFONT", "Source Serif 4")
-TOOLCHAIN = "v6"  # v6: PDF ed ePub anche per le catene  # cambiare per forzare la rigenerazione di tutto
+TOOLCHAIN = "v7"  # v7: tipografia "Tavole" (Bodoni, Archivo); v6: PDF ed ePub anche per le catene  # cambiare per forzare la rigenerazione di tutto
 
 ACCENTI = str.maketrans("àáâãäåèéêëìíîïòóôõöùúûü", "aaaaaaeeeeiiiiooooouuuu")
 

@@ -10,6 +10,25 @@
 \usepackage{xcolor}
 \definecolor{ccblu}{HTML}{1C0E80}
 \definecolor{ccgrigio}{HTML}{454545}
+\definecolor{ccink}{HTML}{1A1A1A}
+
+% Caratteri del sito (revisione "Tavole", 30/10/2026): titoli in Bodoni,
+% etichette in Archivo stretto, testo in Source Serif 4 come prima. Sono le
+% stesse istanze statiche delle anteprime social (scripts/og/fonts, SIL OFL);
+% il percorso e' relativo alla radice del repo, da cui build.py lancia pandoc.
+\newfontfamily\ccBodoni{BodoniModa-Display.ttf}[Path=scripts/og/fonts/,ItalicFont=BodoniModa-DisplayItalic.ttf]
+\newfontfamily\ccBodoniTesto{BodoniModa-Text.ttf}[Path=scripts/og/fonts/,ItalicFont=BodoniModa-DisplayItalic.ttf]
+\newfontfamily\ccArchivo{Archivo-CondBold.ttf}[Path=scripts/og/fonts/,LetterSpace=8]
+\newfontfamily\ccArchivoM{Archivo-CondMedium.ttf}[Path=scripts/og/fonts/,LetterSpace=4]
+
+% Titoli di sezione nel testo: Bodoni, senza grassetto, come sul sito.
+\AtBeginDocument{\frenchspacing}
+\usepackage{titlesec}
+\titleformat{\section}{\ccBodoniTesto\fontsize{17}{21}\selectfont\RaggedRight}{}{0pt}{}
+\titleformat{\subsection}{\ccBodoniTesto\fontsize{13.5}{17}\selectfont\RaggedRight}{}{0pt}{}
+\titleformat{\subsubsection}{\ccArchivo\footnotesize\MakeUppercase}{}{0pt}{}
+\titlespacing*{\section}{0pt}{20pt}{8pt}
+\titlespacing*{\subsection}{0pt}{14pt}{6pt}
 
 \providecommand{\ccSito}{claudiocammarano.com}
 \providecommand{\ccAutore}{Claudio Cammarano}
@@ -26,7 +45,7 @@
 \newcommand{\ccVoce}[2]{%
   \par\noindent\footnotesize
   \begin{minipage}[t]{\ccEtichetta}%
-    \strut\scriptsize\color{ccblu}\MakeUppercase{#1}%
+    \strut{\ccArchivo\scriptsize\color{ccblu}\MakeUppercase{#1}}%
   \end{minipage}%
   \begin{minipage}[t]{\dimexpr\linewidth-\ccEtichetta\relax}%
     \strut\color{ccgrigio}\RaggedRight #2%
@@ -37,19 +56,19 @@
   \thispagestyle{ccprima}%
   \begingroup
   \setlength{\parindent}{0pt}%
-  {\scriptsize\color{ccblu}\MakeUppercase{\ccSito}\hfill
-   \ifx\ccSerie\empty\else\textit{\ccSerie}\fi\par}%
-  \vspace{3pt}\noindent\textcolor{ccblu}{\rule{\linewidth}{0.9pt}}\par
+  {\ccArchivo\scriptsize\color{ccblu}\MakeUppercase{\ccSito}\hfill
+   \ifx\ccSerie\empty\else{\ccBodoni\itshape\small\ccSerie}\fi\par}%
+  \vspace{4pt}\noindent\textcolor{ccink}{\rule{\linewidth}{2.2pt}}\par
   \vspace{20pt}
-  {\fontsize{23}{27}\selectfont\RaggedRight\ccTitolo\par}%
+  {\ccBodoni\fontsize{31}{34}\selectfont\RaggedRight\ccTitolo\par}%
   \ifx\ccSottotitolo\empty\else
-    \vspace{8pt}{\fontsize{14.5}{19}\selectfont\color{ccgrigio}\RaggedRight\ccSottotitolo\par}%
+    \vspace{10pt}{\itshape\fontsize{14.5}{19}\selectfont\color{ccgrigio}\RaggedRight\ccSottotitolo\par}%
   \fi
   \ifx\ccSommario\empty\else
     \vspace{15pt}\noindent\parbox{0.84\linewidth}{\itshape\RaggedRight\ccSommario}\par
   \fi
   \vspace{15pt}
-  {\footnotesize\ccAutore\ifx\ccData\empty\else\quad\textcolor{ccgrigio}{\ccData}\fi\par}%
+  {\ccArchivoM\footnotesize\MakeUppercase{\ccAutore}\ifx\ccData\empty\else\quad\textcolor{ccgrigio}{\MakeUppercase{\ccData}}\fi\par}%
   \vspace{11pt}\noindent\textcolor{ccblu!30}{\rule{\linewidth}{0.4pt}}\par
   \vspace{9pt}
   \ccApparato
@@ -62,7 +81,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{\scriptsize\textcolor{ccgrigio}{\textit{\ccTitoloBreve}}}
-\fancyhead[R]{\scriptsize\textcolor{ccgrigio}{\ccSito}}
+\fancyhead[R]{\ccArchivoM\scriptsize\textcolor{ccgrigio}{\MakeUppercase{\ccSito}}}
 \fancyfoot[C]{\small\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0pt}

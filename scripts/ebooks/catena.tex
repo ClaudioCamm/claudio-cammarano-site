@@ -2,15 +2,15 @@
 % la controtesi. Nessun pacchetto in piu': filetti e rientri, perche' devono
 % reggere anche su una stampante casalinga.
 \providecommand{\ccBadge}[1]{}
-\renewcommand{\ccBadge}[1]{{\setlength{\fboxsep}{2pt}%
-  \fcolorbox{ccblu!35}{ccblu!7}{\scriptsize\strut\textcolor{ccblu}{\MakeUppercase{#1}}}}}
+% Come sul sito: testo maiuscolo in Archivo stretto, non una pillola.
+\renewcommand{\ccBadge}[1]{{\ccArchivo\scriptsize\strut\textcolor{ccblu}{\MakeUppercase{#1}}}}
 
 % La tesi: l'affermazione di cui la catena risponde, in apertura.
 \newenvironment{tesi}{%
   \par\addvspace{4pt}%
   \noindent\textcolor{ccblu}{\rule{\linewidth}{0.7pt}}\par\addvspace{8pt}%
   \begingroup\setlength{\parindent}{0pt}%
-  {\scriptsize\textcolor{ccblu}{TESI}\par}\addvspace{4pt}%
+  {\ccArchivo\scriptsize\textcolor{ccblu}{TESI}\par}\addvspace{4pt}%
 }{%
   \par\endgroup\addvspace{8pt}%
   \noindent\textcolor{ccblu}{\rule{\linewidth}{0.7pt}}\par\addvspace{15pt}%

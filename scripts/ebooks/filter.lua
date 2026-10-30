@@ -8,6 +8,11 @@ local target = FORMAT
 
 local function fix_image(img)
   local src = img.src
+  if src:sub(1, 5) == "data:" then
+    -- SVG in linea: l'ePub lo tiene, LaTeX non sa includerlo
+    if target:match("latex") or target:match("pdf") then return {} end
+    return img
+  end
   if src:sub(1, 1) == "/" then img.src = "src" .. src end
   local ext = (img.src:match("%.([%w]+)$") or ""):lower()
   if target:match("latex") or target:match("pdf") then
@@ -33,8 +38,15 @@ function RawBlock(el)
     el.text = cleaned
   end
   local ok, doc = pcall(pandoc.read, el.text, "html")
-  if ok then return doc.blocks end
-  return {}
+  if not ok then return {} end
+  doc = doc:walk({ Image = fix_image })
+  -- una figura rimasta senza immagine (formato escluso) non lascia la didascalia vuota
+  doc = doc:walk({ Figure = function(f)
+    local ha = false
+    f:walk({ Image = function() ha = true end })
+    if not ha then return {} end
+  end })
+  return doc.blocks
 end
 
 function RawInline(el)

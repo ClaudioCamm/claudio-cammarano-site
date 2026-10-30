@@ -559,3 +559,31 @@ body:not(.home) .site-header .container{max-width:800px}
 .globo-etichetta.is-visibile{opacity:1;pointer-events:auto}
 .globo-etichetta[href]:hover{background:var(--color-text);color:var(--color-bg)}
 .globo-etichetta[href]:hover span,.globo-etichetta[href]:hover i{color:inherit}
+
+/* =====================================================================
+   La voce della ricerca (30/10): carattere a spaziatura fissa per date,
+   stati, numeri delle affermazioni e condizioni di smentita. Omaggio
+   all'umanesimo industriale di Olivetti (vedi Colophon). IBM Plex Mono,
+   SIL OFL 1.1, latin + latin-ext; le lettere greche cadono sul mono di sistema.
+   ===================================================================== */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-display:swap;font-weight:400;src:url(/fonts/ibm-plex-mono-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-display:swap;font-weight:400;src:url(/fonts/ibm-plex-mono-latin-ext-400-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-display:swap;font-weight:500;src:url(/fonts/ibm-plex-mono-latin-500-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-display:swap;font-weight:500;src:url(/fonts/ibm-plex-mono-latin-ext-500-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-display:swap;font-weight:600;src:url(/fonts/ibm-plex-mono-latin-600-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-display:swap;font-weight:600;src:url(/fonts/ibm-plex-mono-latin-ext-600-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+:root{--font-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace}
+.tv-lab-k,.tv-lab-go a,.tv-lab .home-lab-stage,
+.en-paper-claims > li::before,.en-claim .en-claim-line,.en-paper-stage,.en-archive-head,.en-paper-links,
+.tv-tav--en .tv-th p:not(.tv-n),.en-hero-status,.tv-lab--en .home-lab-item-meta,.tv-lab--en .article-meta,.tv-lab--en .home-lab-stage,
+.tv-lab--en .home-lab-go,.tv-lab--en .home-lab-all a,.tv-lab--en .home-lab-label,
+.tv-numeri .tv-entia span,.tv-epigrafe .tv-meta,.en-claim-falsifier{
+  font-family:var(--font-mono)!important;font-stretch:100%!important;font-style:normal!important;text-transform:none!important;letter-spacing:0!important}
+.en-paper-claims > li::before{font-size:46px!important;font-weight:500!important;letter-spacing:-.04em!important}
+.en-claim-falsifier{font-size:13.5px!important;line-height:1.55!important}
+.en-claim-falsifier::before{content:"falsifier: ";color:var(--color-lab-text,var(--color-lab));font-weight:600}
+.en-claim .en-claim-line{font-size:12px!important}
+.tv-lab-k,.tv-lab--en .home-lab-item-meta,.tv-lab--en .article-meta{font-size:13px!important}
+.tv-lab-k::before,.tv-lab--en .home-lab-item-meta::before{content:"$ ";opacity:.6}
+.en-paper-stage,.tv-lab .home-lab-stage{font-size:12.5px!important}
+.tv-lab-go a,.tv-lab--en .home-lab-go,.tv-lab--en .home-lab-all a{font-size:13.5px!important}
