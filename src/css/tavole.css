@@ -545,3 +545,17 @@ body:not(.home) .site-header .container{max-width:800px}
   .tv-hero-carta .carta-sfera{stroke:var(--color-border)}
   .tv-strato--3{background:#1d4f86}
 }
+
+/* Globo: paese puntato ed etichetta (30/10) */
+.home-carta .carta-link .carta-p{transition:fill-opacity .15s}
+.home-carta .carta-link:hover .carta-p,.home-carta .carta-link:hover .carta-punto{stroke:var(--color-text);stroke-width:1.2;fill-opacity:1}
+.home-carta .is-puntato{stroke:var(--color-irene)!important;stroke-width:2.2!important;fill-opacity:1}
+.globo-etichetta{position:absolute;z-index:2;transform:translate(-50%,calc(-100% - 18px));opacity:0;pointer-events:none;transition:opacity .2s;
+  background:var(--color-bg);color:var(--color-text);border:2px solid var(--color-text);padding:7px 12px;white-space:nowrap;text-decoration:none;
+  font-family:var(--font-sans);font-stretch:80%;font-size:15px;line-height:1.2;box-shadow:0 4px 14px rgba(0,0,0,.15)}
+.globo-etichetta b{font-family:var(--font-display);font-weight:500;font-size:20px}
+.globo-etichetta span{color:var(--color-text-light);margin-left:4px}
+.globo-etichetta i{font-style:normal;color:var(--color-irene);margin-left:6px;font-weight:700}
+.globo-etichetta.is-visibile{opacity:1;pointer-events:auto}
+.globo-etichetta[href]:hover{background:var(--color-text);color:var(--color-bg)}
+.globo-etichetta[href]:hover span,.globo-etichetta[href]:hover i{color:inherit}

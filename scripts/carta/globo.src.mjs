@@ -12,6 +12,10 @@
 //   chiudere il giro e posarsi di nuovo su Bergamo;
 // - trascinamento: il giro parte subito nella direzione del gesto, a
 //   velocita' di crociera, senza soste, e si chiude su Bergamo;
+//   Se il punto e' un paese con dati, durante la sosta il paese si evidenzia
+//   e compare un'etichetta con nome e peso: se ha una pagina, l'etichetta e'
+//   il link per aprirla. Su desktop il paese si evidenzia gia' al passaggio
+//   del mouse, e Cmd/Ctrl+clic apre direttamente la pagina;
 // - un tocco mentre il globo gira lo riporta indietro su Bergamo (reset);
 // - frecce sinistra/destra: tenute premute fanno girare il globo sul suo asse
 //   naturale; lasciate, dopo un momento il globo rientra. Esc: reset.
@@ -29,6 +33,7 @@ const RAD = Math.PI / 180, DEG = 180 / Math.PI;
 const CROCIERA = 0.055;   // gradi al millisecondo: un giro completo in circa 7 secondi
 const RAMPA = 700;        // ms per accelerare da fermo alla velocita' di crociera
 const PAUSA = 700;        // ms di sosta sul punto toccato
+const PAUSA_PAESE = 1500; // sosta piu' lunga quando il punto e' un paese con una pagina
 
 // --- algebra minima: vettori sulla sfera e matrici 3x3 ---
 const cart = ([l, p]) => { l *= RAD; p *= RAD; return [Math.cos(p) * Math.cos(l), Math.cos(p) * Math.sin(l), Math.sin(p)]; };
@@ -107,10 +112,45 @@ function init(svg) {
     if (ring) ring.setAttribute("d", anelli.map(a => path(a)).join(""));
     if (centro) { const xy = proj(BG); centro.setAttribute("cx", xy[0].toFixed(1)); centro.setAttribute("cy", xy[1].toFixed(1)); }
   }
+  // Etichetta del paese puntato, sopra la carta (fuori dall'SVG, cosi' il
+  // tocco sull'etichetta non viene preso dal globo).
+  fig.style.position = "relative";
+  const et = document.createElement("a");
+  et.className = "globo-etichetta";
+  et.setAttribute("aria-live", "polite");
+  fig.appendChild(et);
+  let puntati = [];
+  function mostra(info) {
+    if (!info) return;
+    et.innerHTML = "<b></b> <span></span>" + (info.href ? " <i>&#8594;</i>" : "");
+    et.querySelector("b").textContent = info.nome;
+    et.querySelector("span").textContent = info.peso || "";
+    if (info.href) et.setAttribute("href", info.href); else et.removeAttribute("href");
+    const r = svg.getBoundingClientRect(), f = fig.getBoundingClientRect();
+    et.style.left = (r.left - f.left + r.width / 2) + "px";
+    et.style.top = (r.top - f.top + r.height / 2) + "px";
+    puntati = Array.from(svg.querySelectorAll('[data-iso="' + info.iso + '"]'));
+    puntati.forEach(el => el.classList.add("is-puntato"));
+    et.classList.add("is-visibile");
+  }
+  function nascondi() {
+    et.classList.remove("is-visibile");
+    puntati.forEach(el => el.classList.remove("is-puntato")); puntati = [];
+  }
+  // Dati del paese sotto il dito: nome e peso dal <title>, pagina dal link.
+  function paese(target) {
+    const el = target && target.closest && target.closest("[data-iso]");
+    if (!el) return null;
+    const t = el.querySelector("title"), a = el.closest("a");
+    if (!t) return null;
+    const testo = t.textContent, m = testo.match(/peso (\d+)/);
+    return { iso: el.dataset.iso, nome: testo.split(" · ")[0], peso: m ? m[1] : "", href: a ? a.getAttribute("href") : "" };
+  }
+
   function schedule() { if (!raf) raf = requestAnimationFrame(draw); }
   function setRot(r) { proj.rotate(r); schedule(); }
   function fine() { inMoto = false; setRot(home); fig.classList.remove("is-ruotato"); }
-  function stop() { cancelAnimationFrame(anim); inMoto = false; }
+  function stop() { cancelAnimationFrame(anim); inMoto = false; nascondi(); }
 
   // Reset: il rientro di sempre, secco e senza rimbalzo (ease-out quartica),
   // lungo l'arco piu' breve fra l'orientamento attuale e quello di casa.
@@ -134,7 +174,7 @@ function init(svg) {
   // Giro lungo il cerchio massimo da Bergamo verso D: il centro della carta
   // percorre l'intero cerchio. Se `sosta` e' un angolo, il globo si ferma
   // li' per PAUSA ms e riparte alla stessa velocita'.
-  function giro(D, sosta) {
+  function giro(D, sosta, info) {
     stop();
     if (reduce) return fine();
     let n = croce(B, cart(D));
@@ -142,13 +182,15 @@ function init(svg) {
     n = norma(n);
     const at = s => setRot(adAngoli(mul(M0, asse(n, -s * RAD))));   // al centro c'e' B ruotato di s attorno a n
     const segm = sosta ? [tratto(sosta), null, tratto(360 - sosta)] : [tratto(360)];
-    const durate = segm.map(x => x ? x.T : PAUSA), offs = sosta ? [0, sosta, sosta] : [0];
+    const durate = segm.map(x => x ? x.T : (info && info.href ? PAUSA_PAESE : PAUSA)), offs = sosta ? [0, sosta, sosta] : [0];
+    let fase = 0;
     const start = performance.now();
     inMoto = true; fig.classList.add("is-ruotato");
     (function step(now) {
       let t = now - start, i = 0;
       while (i < segm.length - 1 && t > durate[i]) { t -= durate[i]; i++; }
       const x = segm[i];
+      if (i !== fase) { fase = i; if (i === 1) mostra(info); else nascondi(); }
       at(offs[i] + (x ? x.pos(Math.min(t, x.T)) : 0));
       if (i < segm.length - 1 || t < durate[i]) anim = requestAnimationFrame(step); else fine();
     })(start);
@@ -161,7 +203,8 @@ function init(svg) {
   svg.addEventListener("pointerdown", e => {
     if (e.button !== undefined && e.button !== 0) return;
     if (inMoto) { gesto = { reset: true }; e.preventDefault(); load().then(() => back()); return; }   // reset
-    gesto = { x: e.clientX, y: e.clientY, p: inSvg(e), touch: e.pointerType !== "mouse", id: e.pointerId };
+    if (e.metaKey || e.ctrlKey) { gesto = null; return; }   // Cmd/Ctrl+clic: si apre il paese
+    gesto = { x: e.clientX, y: e.clientY, p: inSvg(e), touch: e.pointerType !== "mouse", id: e.pointerId, info: paese(e.target) };
     load();
   });
   svg.addEventListener("pointermove", e => {
@@ -184,12 +227,12 @@ function init(svg) {
     const P = proj.invert([x, y]);
     if (!P) return;
     const d = Math.acos(Math.max(-1, Math.min(1, dot(B, cart(P))))) * DEG;
-    load().then(() => giro(P, d > 2 ? d : 0));                 // vicino a Bergamo: giro senza sosta
+    load().then(() => giro(P, d > 2 ? d : 0, g.info));          // vicino a Bergamo: giro senza sosta
   };
   svg.addEventListener("pointerup", end);
   svg.addEventListener("pointercancel", end);
   // Sul globo il tocco e' un comando: i link dei paesi restano nella legenda.
-  svg.addEventListener("click", e => e.preventDefault(), true);
+  svg.addEventListener("click", e => { if (!(e.metaKey || e.ctrlKey)) e.preventDefault(); }, true);
 
   // Frecce sinistra/destra: rotazione uniforme attorno all'asse terrestre
   // finche' il tasto resta premuto; lasciato, un momento e poi il rientro.
