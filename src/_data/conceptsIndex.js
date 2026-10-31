@@ -5674,6 +5674,7 @@ module.exports = [
     name: "Etiopia",
     type: "luogo",
     geo: { modo: "diretta", paesi: ["Etiopia"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q115"],
     note: "Stato del Corno d'Africa, governato dal 2018 da Abiy Ahmed, primo capo di governo oromo. **Nel sito entra con la musica come forma di dissenso: gli arresti per l'ascolto di «Das Tal» di Teddy Afro e l'assassinio del cantante oromo Hachalu Hundessa nel 2020.**",
     articles: [
       { title: "To understand African politics, just listen to the music", url: "/curated/2026-10-29-economist-musica-politica-africa/", _source: "curated" }
@@ -5683,6 +5684,7 @@ module.exports = [
     name: "Nigeria",
     type: "luogo",
     geo: { modo: "diretta", paesi: ["Nigeria"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q1033"],
     note: "Il paese più popoloso dell'Africa, patria dell'afrobeat di Fela Kuti, più volte incarcerato dalle giunte militari. **Nel sito è l'esempio di una musica passata dalla politica all'intrattenimento: gli Afrobeats di oggi, con concerti i cui biglietti costano più di un salario medio mensile.**",
     articles: [
       { title: "To understand African politics, just listen to the music", url: "/curated/2026-10-29-economist-musica-politica-africa/", _source: "curated" }
@@ -5692,6 +5694,7 @@ module.exports = [
     name: "Sudafrica",
     type: "luogo",
     geo: { modo: "diretta", paesi: ["Sudafrica"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q258"],
     note: "Stato dell'Africa australe uscito dall'apartheid nel 1994. **Nel sito entra con una musica un tempo di lotta, da Miriam Makeba a Hugh Masekela, oggi associata alla nuova borghesia nera e all'amapiano.**",
     articles: [
       { title: "To understand African politics, just listen to the music", url: "/curated/2026-10-29-economist-musica-politica-africa/", _source: "curated" }
@@ -5701,6 +5704,7 @@ module.exports = [
     name: "Uganda",
     type: "luogo",
     geo: { modo: "diretta", paesi: ["Uganda"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q1036"],
     note: "Stato dell'Africa orientale governato da Yoweri Museveni da quarant'anni. **Nel sito è il paese di Bobi Wine, il cantante dei quartieri poveri di Kampala diventato il principale sfidante del presidente e poi costretto all'esilio.**",
     articles: [
       { title: "To understand African politics, just listen to the music", url: "/curated/2026-10-29-economist-musica-politica-africa/", _source: "curated" }
@@ -5710,6 +5714,7 @@ module.exports = [
     name: "Mozambico",
     type: "luogo",
     geo: { modo: "diretta", paesi: ["Mozambico"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q1029"],
     note: "Stato dell'Africa sudorientale, indipendente dal Portogallo dal 1975. **Nel sito entra con il funerale del rapper Azagaia, nel 2023, che si trasformò in protesta contro le élite e aprì la rivolta dell'anno successivo.**",
     articles: [
       { title: "To understand African politics, just listen to the music", url: "/curated/2026-10-29-economist-musica-politica-africa/", _source: "curated" }
@@ -5719,6 +5724,7 @@ module.exports = [
     name: "Senegal",
     type: "luogo",
     geo: { modo: "diretta", paesi: ["Senegal"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q1041"],
     note: "Stato dell'Africa occidentale. **Nel sito entra con Y'en a Marre, il gruppo fondato da rapper a cui si attribuisce un ruolo nell'uscita di scena del presidente nel 2012.**",
     articles: [
       { title: "To understand African politics, just listen to the music", url: "/curated/2026-10-29-economist-musica-politica-africa/", _source: "curated" }
@@ -5728,6 +5734,7 @@ module.exports = [
     name: "Repubblica del Congo",
     type: "luogo",
     geo: { modo: "diretta", paesi: ["Repubblica del Congo"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q971"],
     note: "Stato dell'Africa centrale, con capitale Brazzaville, governato da Denis Sassou-Nguesso. **Nel sito entra con le proteste organizzate nel 2015 dal rapper Martial Pa'nucci contro la modifica della costituzione.**",
     articles: [
       { title: "To understand African politics, just listen to the music", url: "/curated/2026-10-29-economist-musica-politica-africa/", _source: "curated" }
@@ -5737,6 +5744,7 @@ module.exports = [
     name: "Zambia",
     type: "luogo",
     geo: { modo: "diretta", paesi: ["Zambia"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q953"],
     note: "Stato dell'Africa australe, fra i maggiori produttori di rame. **Nel sito entra con il rapper Pilato, che nel 2017 guidò una marcia contro la corruzione davanti al parlamento, e fra i pochi paesi che incassano dalla corsa americana e cinese ai minerali critici.**",
     articles: [
       { title: "The countries making a fortune from the US-China rivalry", url: "/curated/2026-10-29-economist-minerali-critici-rivalita/", _source: "curated" },
@@ -5747,6 +5755,7 @@ module.exports = [
     name: "Zimbabwe",
     type: "luogo",
     geo: { modo: "diretta", paesi: ["Zimbabwe"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q954"],
     note: "Stato dell'Africa australe governato dalla Zanu-Pf. **Nel sito entra con Winky D, cantante dancehall accusato dal partito di governo di promuovere un «cambio di regime».**",
     articles: [
       { title: "To understand African politics, just listen to the music", url: "/curated/2026-10-29-economist-musica-politica-africa/", _source: "curated" }
@@ -5756,6 +5765,7 @@ module.exports = [
     name: "Kenya",
     type: "luogo",
     geo: { modo: "diretta", paesi: ["Kenya"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q114"],
     note: "Stato dell'Africa orientale, presieduto da William Ruto. **Nel sito entra con la rivolta fiscale del 2024, quando una canzone da discoteca e i video sul «Kasongo» divennero strumenti di protesta.**",
     articles: [
       { title: "To understand African politics, just listen to the music", url: "/curated/2026-10-29-economist-musica-politica-africa/", _source: "curated" }
@@ -5765,6 +5775,7 @@ module.exports = [
     name: "Angola",
     type: "luogo",
     geo: { modo: "diretta", paesi: ["Angola"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q916"],
     note: "Stato dell'Africa australe, il cui PIL quasi raddoppiò con il petrolio fra il 2002 e il 2008. **Nel sito entra con il rapper Luaty Beirão, incarcerato nel 2016 con l'accusa di preparare una ribellione.**",
     articles: [
       { title: "To understand African politics, just listen to the music", url: "/curated/2026-10-29-economist-musica-politica-africa/", _source: "curated" }
@@ -5774,6 +5785,7 @@ module.exports = [
     name: "Ruanda",
     type: "luogo",
     geo: { modo: "diretta", paesi: ["Ruanda"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q1037"],
     note: "Stato dell'Africa centro-orientale. **Nel sito entra con Kizito Mihigo, cantante gospel critico del governo, arrestato nel 2020 e trovato morto in cella pochi giorni dopo.**",
     articles: [
       { title: "To understand African politics, just listen to the music", url: "/curated/2026-10-29-economist-musica-politica-africa/", _source: "curated" }
@@ -5783,6 +5795,7 @@ module.exports = [
     name: "Lesotho",
     type: "luogo",
     geo: { modo: "diretta", paesi: ["Lesotho"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q1013"],
     note: "Piccolo Stato interamente circondato dal Sudafrica. **Nel sito entra con il famo, genere di fisarmonica i cui musicisti sono spesso legati a bande criminali con influenza sui partiti e sullo Stato.**",
     articles: [
       { title: "To understand African politics, just listen to the music", url: "/curated/2026-10-29-economist-musica-politica-africa/", _source: "curated" }
@@ -5792,6 +5805,7 @@ module.exports = [
     name: "Mali",
     type: "luogo",
     geo: { modo: "diretta", paesi: ["Mali"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q912"],
     note: "Stato del Sahel. **Nel sito entra con i Tinariwen, gruppo tuareg i cui membri combatterono per i separatisti, e con Iyad ag Ghali, a cui sono attribuite alcune loro canzoni prima che diventasse capo del principale gruppo jihadista dell'Africa occidentale.**",
     articles: [
       { title: "To understand African politics, just listen to the music", url: "/curated/2026-10-29-economist-musica-politica-africa/", _source: "curated" }
@@ -5801,6 +5815,7 @@ module.exports = [
     name: "Sudan",
     type: "luogo",
     geo: { modo: "diretta", paesi: ["Sudan"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q1049"],
     note: "Stato dell'Africa nordorientale, in guerra civile dal 2023. **Nel sito entra con la musica jihadista prodotta dal conflitto, che celebra le milizie islamiste alleate dell'esercito e chiama nuove reclute.**",
     articles: [
       { title: "To understand African politics, just listen to the music", url: "/curated/2026-10-29-economist-musica-politica-africa/", _source: "curated" }
@@ -5810,6 +5825,7 @@ module.exports = [
     name: "Eritrea",
     type: "luogo",
     geo: { modo: "diretta", paesi: ["Eritrea"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q986"],
     note: "Stato del Corno d'Africa, indipendente dall'Etiopia dal 1993. **Nel sito entra con la canzone etiope che celebra l'ambizione di Abiy Ahmed di riconquistare un porto eritreo sul Mar Rosso.**",
     articles: [
       { title: "To understand African politics, just listen to the music", url: "/curated/2026-10-29-economist-musica-politica-africa/", _source: "curated" }
