@@ -798,7 +798,8 @@ module.exports = [
       { title: "The Hugging Face incident and the road ahead", url: "/curated/2026-08-26-openai-incidente-hugging-face-resoconto/", _source: "curated" },
       { title: "Effective altruism is this century’s biggest idea", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" },
       { title: "Could AIs become conscious?", url: "/curated/2026-08-20-economist-anche-se-non-lo-fossero/", _source: "curated" },
-      { title: "A.I. Companies Say They Aren’t Responsible for Their Unpredictable Products. Don’t Believe Them.", url: "/curated/2026-10-10-nyt-editorial-ai-responsabilita/", _source: "curated" }
+      { title: "A.I. Companies Say They Aren’t Responsible for Their Unpredictable Products. Don’t Believe Them.", url: "/curated/2026-10-10-nyt-editorial-ai-responsabilita/", _source: "curated" },
+      { title: "AI is a technological version of the Homeric songs", url: "/curated/2026-10-28-farrell-shalizi-canti-omerici-economist/", _source: "curated" }
     ]
   },
   {
@@ -974,7 +975,8 @@ module.exports = [
       { title: "Are teenagers growing dimmer?", url: "/curated/2026-09-08-economist-pisa-inghilterra-scozia-vie-opposte/", _source: "curated" },
       { title: "Your brain’s unexpected ability to regenerate and how to harness it", url: "/curated/2026-10-26-ducharme-neurogenesi-newscientist/", _source: "curated" },
       { title: "Hannah Fry: I lost my dad to Alzheimer's. New research into its origins is amazing", url: "/curated/2026-10-28-fry-alzheimer-naso-newscientist/", _source: "curated" },
-      { title: "Comment le communisme a fait de la Chine une superpuissance capitaliste", url: "/curated/2026-10-29-ruskola-classe-operaia-cinese-grandcontinent/", _source: "curated" }
+      { title: "Comment le communisme a fait de la Chine une superpuissance capitaliste", url: "/curated/2026-10-29-ruskola-classe-operaia-cinese-grandcontinent/", _source: "curated" },
+      { title: "To understand African politics, just listen to the music", url: "/curated/2026-10-29-economist-musica-politica-africa/", _source: "curated" }
     ]
   },
   {
@@ -1425,7 +1427,8 @@ module.exports = [
       { title: "Cercasi mandante", url: "/curated/2026-10-21-laportella-cercasi-mandante-substack/", _source: "curated" },
       { title: "EU probes pro-Kremlin disinformation around French riots", url: "/curated/2026-10-21-dubois-jones-disinformazione-rivolte-francia-ft/", _source: "curated" },
       { title: "Giordano: “L’Ucraina deve essere difesa, anche dalle false verità”", url: "/curated/2026-10-21-cuzzocrea-giordano-ucraina-repubblica/", _source: "curated" },
-      { title: "L'Ucraina chiusa in un guscio di noce: «Ora lo sappiamo, nessuno ci salverà»", url: "/curated/2026-02-22-giordano-guscio-di-noce-corriere/", _source: "curated" }
+      { title: "L'Ucraina chiusa in un guscio di noce: «Ora lo sappiamo, nessuno ci salverà»", url: "/curated/2026-02-22-giordano-guscio-di-noce-corriere/", _source: "curated" },
+      { title: "The Kremlin is shutting down Russia’s last free newspaper", url: "/curated/2026-10-29-economist-novaya-gazeta-chiude/", _source: "curated" }
     ]
   },
   {
@@ -1903,7 +1906,8 @@ module.exports = [
       { title: "The People Who Will Thrive in the AI Age", url: "/curated/2026-06-28-brooks-people-thrive-ai-age-atlantic/", _source: "curated" },
       { title: "Europe's public broadcasters go from prime time to hard-to-find", url: "/curated/2026-07-09-economist-psb-europe-hard-to-find/", _source: "curated" },
       { title: "Mamdani Is the Centrist We’ve Been Waiting For", url: "/curated/2026-10-19-chait-mamdani-centrista-atlantic/", _source: "curated" },
-      { title: "Giordano: “L’Ucraina deve essere difesa, anche dalle false verità”", url: "/curated/2026-10-21-cuzzocrea-giordano-ucraina-repubblica/", _source: "curated" }
+      { title: "Giordano: “L’Ucraina deve essere difesa, anche dalle false verità”", url: "/curated/2026-10-21-cuzzocrea-giordano-ucraina-repubblica/", _source: "curated" },
+      { title: "Democrats are rediscovering what an appealing politics of progress looks like", url: "/curated/2026-10-29-economist-lexington-democratici/", _source: "curated" }
     ]
   },
   {
@@ -2473,7 +2477,8 @@ module.exports = [
       { title: "A.I. Companies Say They Aren’t Responsible for Their Unpredictable Products. Don’t Believe Them.", url: "/curated/2026-10-10-nyt-editorial-ai-responsabilita/", _source: "curated" },
       { title: "The AI boom is threatened by an epidemic of unreliable numbers", url: "/curated/2026-10-14-economist-numeri-inaffidabili-ai/", _source: "curated" },
       { title: "Trumpism Is Backfiring", url: "/curated/2026-10-20-klein-freeland-trumpism-backfiring-nyt/", _source: "curated" },
-      { title: "An Interview with Palantir CTO Shyam Sankar About the AI Religious War", url: "/curated/2026-10-29-thompson-sankar-palantir-stratechery/", _source: "curated" }
+      { title: "An Interview with Palantir CTO Shyam Sankar About the AI Religious War", url: "/curated/2026-10-29-thompson-sankar-palantir-stratechery/", _source: "curated" },
+      { title: "Veteran investor Howard Marks on AI debt", url: "/curated/2026-10-29-economist-howard-marks-debito-ai/", _source: "curated" }
     ]
   },
   {
@@ -2879,7 +2884,8 @@ module.exports = [
       { title: "Putin’s war on schools: ‘millions of books burnt before my eyes’", url: "/curated/2026-10-10-hauschild-johanson-libri-scuola-ucraina-sundaytimes/", _source: "curated" },
       { title: "Attacchi ucraini ai data center Yandex: crolla l'attività dei bot russi?", url: "/curated/2026-10-12-vakulina-yandex-data-center-bot-euronews/", _source: "curated" },
       { title: "People are rejoicing about the removal of Russian bots from social media – but the truth is far more complicated", url: "/curated/2026-10-13-griffin-bot-russi-yandex-independent/", _source: "curated" },
-      { title: "EU probes pro-Kremlin disinformation around French riots", url: "/curated/2026-10-21-dubois-jones-disinformazione-rivolte-francia-ft/", _source: "curated" }
+      { title: "EU probes pro-Kremlin disinformation around French riots", url: "/curated/2026-10-21-dubois-jones-disinformazione-rivolte-francia-ft/", _source: "curated" },
+      { title: "The Kremlin is shutting down Russia’s last free newspaper", url: "/curated/2026-10-29-economist-novaya-gazeta-chiude/", _source: "curated" }
     ]
   },
   {
@@ -2967,7 +2973,9 @@ module.exports = [
       { title: "Populists Are Losing Their War on Globalization", url: "/curated/2026-10-09-donnan-populists-losing-war-globalization-bloomberg/", _source: "curated" },
       { title: "Trumpism Is Backfiring", url: "/curated/2026-10-20-klein-freeland-trumpism-backfiring-nyt/", _source: "curated" },
       { title: "Why Is Tech Billionaire Marc Andreessen So Mad?", url: "/curated/2026-10-15-carr-andreessen-bloomberg/", _source: "curated" },
-      { title: "Mamdani Is the Centrist We’ve Been Waiting For", url: "/curated/2026-10-19-chait-mamdani-centrista-atlantic/", _source: "curated" }
+      { title: "Mamdani Is the Centrist We’ve Been Waiting For", url: "/curated/2026-10-19-chait-mamdani-centrista-atlantic/", _source: "curated" },
+      { title: "Democrats are rediscovering what an appealing politics of progress looks like", url: "/curated/2026-10-29-economist-lexington-democratici/", _source: "curated" },
+      { title: "The countries making a fortune from the US-China rivalry", url: "/curated/2026-10-29-economist-minerali-critici-rivalita/", _source: "curated" }
     ]
   },
   {
@@ -3054,7 +3062,8 @@ module.exports = [
       { title: "Trumpism Is Backfiring", url: "/curated/2026-10-20-klein-freeland-trumpism-backfiring-nyt/", _source: "curated" },
       { title: "China’s universities are rich. But they're getting squeezed", url: "/curated/2026-10-20-economist-universita-cinesi/", _source: "curated" },
       { title: "Nvidia Chief, Jensen Huang, Is Seen as Target of Chinese Spy Plot", url: "/curated/2026-10-29-swan-haberman-huang-spionaggio-nyt/", _source: "curated" },
-      { title: "Comment le communisme a fait de la Chine une superpuissance capitaliste", url: "/curated/2026-10-29-ruskola-classe-operaia-cinese-grandcontinent/", _source: "curated" }
+      { title: "Comment le communisme a fait de la Chine une superpuissance capitaliste", url: "/curated/2026-10-29-ruskola-classe-operaia-cinese-grandcontinent/", _source: "curated" },
+      { title: "The countries making a fortune from the US-China rivalry", url: "/curated/2026-10-29-economist-minerali-critici-rivalita/", _source: "curated" }
     ]
   },
   {
@@ -3082,7 +3091,8 @@ module.exports = [
       { title: "The New Old Middle East", url: "/curated/2026-07-30-gause-new-old-middle-east-foreignaffairs/", _source: "curated" },
       { title: "The Impossible Middle East", url: "/curated/2026-08-27-esfandiary-wasser-daoud-impossible-middle-east-foreignaffairs/", _source: "curated" },
       { title: "She’s Been to Gaza. She Met With the Iranians. Now She Has a Warning.", url: "/curated/2026-10-10-garcia-navarro-spoljaric-croce-rossa-nyt/", _source: "curated" },
-      { title: "A Florida local newspaper ran an oped. It was an Iranian AI fake.", url: "/curated/2026-10-09-waldvogel-iran-articoli-ai-giornali-usa-washingtonpost/", _source: "curated" }
+      { title: "A Florida local newspaper ran an oped. It was an Iranian AI fake.", url: "/curated/2026-10-09-waldvogel-iran-articoli-ai-giornali-usa-washingtonpost/", _source: "curated" },
+      { title: "Everything is going wrong for Muhammad bin Salman", url: "/curated/2026-10-19-economist-bin-salman-anno-orribile/", _source: "curated" }
     ]
   },
   {
@@ -3152,7 +3162,8 @@ module.exports = [
       { title: "Populists Are Losing Their War on Globalization", url: "/curated/2026-10-09-donnan-populists-losing-war-globalization-bloomberg/", _source: "curated" },
       { title: "Trumpism Is Backfiring", url: "/curated/2026-10-20-klein-freeland-trumpism-backfiring-nyt/", _source: "curated" },
       { title: "Why Is Tech Billionaire Marc Andreessen So Mad?", url: "/curated/2026-10-15-carr-andreessen-bloomberg/", _source: "curated" },
-      { title: "Nvidia Chief, Jensen Huang, Is Seen as Target of Chinese Spy Plot", url: "/curated/2026-10-29-swan-haberman-huang-spionaggio-nyt/", _source: "curated" }
+      { title: "Nvidia Chief, Jensen Huang, Is Seen as Target of Chinese Spy Plot", url: "/curated/2026-10-29-swan-haberman-huang-spionaggio-nyt/", _source: "curated" },
+      { title: "Everything is going wrong for Muhammad bin Salman", url: "/curated/2026-10-19-economist-bin-salman-anno-orribile/", _source: "curated" }
     ]
   },
   {
@@ -5265,7 +5276,8 @@ module.exports = [
     note: "Nell'archivio entra nell'ottobre 2026 con l'analisi di Alan Boswell sul Mar Rosso. Dopo la rottura con gli Emirati in Yemen, nel dicembre 2025, e la guerra di febbraio 2026 fra Stati Uniti, Israele e Iran, Riyad si fida meno della protezione americana e vuole controllare la sicurezza del Mar Rosso: con Hormuz strozzato, la maggior parte del suo petrolio passa da Bab el-Mandeb. Si allinea con Egitto, Turchia e Pakistan, ha firmato un accordo di difesa con la Somalia ed è diventata il principale alleato dell'esercito sudanese.",
     articles: [
       { title: "The New Red Sea Wars", url: "/curated/2026-10-06-boswell-new-red-sea-wars-foreignaffairs/", _source: "curated" },
-      { title: "The Impossible Middle East", url: "/curated/2026-08-27-esfandiary-wasser-daoud-impossible-middle-east-foreignaffairs/", _source: "curated" }
+      { title: "The Impossible Middle East", url: "/curated/2026-08-27-esfandiary-wasser-daoud-impossible-middle-east-foreignaffairs/", _source: "curated" },
+      { title: "Everything is going wrong for Muhammad bin Salman", url: "/curated/2026-10-19-economist-bin-salman-anno-orribile/", _source: "curated" }
     ]
   },
   {
@@ -5442,7 +5454,8 @@ module.exports = [
     ],
     note: "Estensione al lavoro intellettuale dell'estrattivismo, il modello economico che preleva risorse naturali per esportarle lasciando poco ai luoghi da cui provengono. **Le aziende dell'AI prendono da una disciplina i problemi, le dimostrazioni e il prestigio, e le lasciano risultati che nessuno capisce né deve spiegare.** L'espressione è del sito; l'immagine dell'«engine of extraction» è di Hannah Fry.",
     articles: [
-      { title: "Hannah Fry: How OpenAI has caused an existential crisis in mathematics", url: "/curated/2026-10-14-fry-openai-crisi-matematica-newscientist/", _source: "curated" }
+      { title: "Hannah Fry: How OpenAI has caused an existential crisis in mathematics", url: "/curated/2026-10-14-fry-openai-crisi-matematica-newscientist/", _source: "curated" },
+      { title: "Humans will never again create a project quite like Wikipedia", url: "/curated/2026-10-29-economist-wikipedia-25-anni/", _source: "curated" }
     ]
   },
   {
@@ -5553,7 +5566,8 @@ module.exports = [
     note: "Il rischio che non si elimina diversificando, perché colpisce tutto il mercato o un intero settore insieme, a differenza del rischio specifico di una singola impresa. **Nel sito è la chiave per leggere il boom dei data center: il loro debito va bene tutto insieme o male tutto insieme, e chi dovrebbe assicurarlo è già esposto allo stesso rischio.**",
     articles: [
       { title: "Someone Has to Take the AI Risk", url: "/curated/2026-10-20-levine-someone-has-to-take-ai-risk-bloomberg/", _source: "curated" },
-      { title: "Nvidia Chief, Jensen Huang, Is Seen as Target of Chinese Spy Plot", url: "/curated/2026-10-29-swan-haberman-huang-spionaggio-nyt/", _source: "curated" }
+      { title: "Nvidia Chief, Jensen Huang, Is Seen as Target of Chinese Spy Plot", url: "/curated/2026-10-29-swan-haberman-huang-spionaggio-nyt/", _source: "curated" },
+      { title: "Veteran investor Howard Marks on AI debt", url: "/curated/2026-10-29-economist-howard-marks-debito-ai/", _source: "curated" }
     ]
   },
   {
@@ -5652,7 +5666,178 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q1193907"],
     note: "L'espressione indica il deterioramento progressivo dei collegamenti ipertestuali: pagine rimosse, spostate o modificate, per cui un link porta a un errore o a un contenuto diverso da quello citato. **Nel sito è il limite materiale della verificabilità in rete: una fonte che non si può più raggiungere smette di garantire ciò che le si fa dire.**",
     articles: [
-      { title: "Please Let the Internet Die", url: "/curated/2026-10-28-klee-let-the-internet-die-wired/", _source: "curated" }
+      { title: "Please Let the Internet Die", url: "/curated/2026-10-28-klee-let-the-internet-die-wired/", _source: "curated" },
+      { title: "Humans will never again create a project quite like Wikipedia", url: "/curated/2026-10-29-economist-wikipedia-25-anni/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Etiopia",
+    type: "luogo",
+    geo: { modo: "diretta", paesi: ["Etiopia"] },
+    note: "Stato del Corno d'Africa, governato dal 2018 da Abiy Ahmed, primo capo di governo oromo. **Nel sito entra con la musica come forma di dissenso: gli arresti per l'ascolto di «Das Tal» di Teddy Afro e l'assassinio del cantante oromo Hachalu Hundessa nel 2020.**",
+    articles: [
+      { title: "To understand African politics, just listen to the music", url: "/curated/2026-10-29-economist-musica-politica-africa/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Nigeria",
+    type: "luogo",
+    geo: { modo: "diretta", paesi: ["Nigeria"] },
+    note: "Il paese più popoloso dell'Africa, patria dell'afrobeat di Fela Kuti, più volte incarcerato dalle giunte militari. **Nel sito è l'esempio di una musica passata dalla politica all'intrattenimento: gli Afrobeats di oggi, con concerti i cui biglietti costano più di un salario medio mensile.**",
+    articles: [
+      { title: "To understand African politics, just listen to the music", url: "/curated/2026-10-29-economist-musica-politica-africa/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Sudafrica",
+    type: "luogo",
+    geo: { modo: "diretta", paesi: ["Sudafrica"] },
+    note: "Stato dell'Africa australe uscito dall'apartheid nel 1994. **Nel sito entra con una musica un tempo di lotta, da Miriam Makeba a Hugh Masekela, oggi associata alla nuova borghesia nera e all'amapiano.**",
+    articles: [
+      { title: "To understand African politics, just listen to the music", url: "/curated/2026-10-29-economist-musica-politica-africa/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Uganda",
+    type: "luogo",
+    geo: { modo: "diretta", paesi: ["Uganda"] },
+    note: "Stato dell'Africa orientale governato da Yoweri Museveni da quarant'anni. **Nel sito è il paese di Bobi Wine, il cantante dei quartieri poveri di Kampala diventato il principale sfidante del presidente e poi costretto all'esilio.**",
+    articles: [
+      { title: "To understand African politics, just listen to the music", url: "/curated/2026-10-29-economist-musica-politica-africa/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Mozambico",
+    type: "luogo",
+    geo: { modo: "diretta", paesi: ["Mozambico"] },
+    note: "Stato dell'Africa sudorientale, indipendente dal Portogallo dal 1975. **Nel sito entra con il funerale del rapper Azagaia, nel 2023, che si trasformò in protesta contro le élite e aprì la rivolta dell'anno successivo.**",
+    articles: [
+      { title: "To understand African politics, just listen to the music", url: "/curated/2026-10-29-economist-musica-politica-africa/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Senegal",
+    type: "luogo",
+    geo: { modo: "diretta", paesi: ["Senegal"] },
+    note: "Stato dell'Africa occidentale. **Nel sito entra con Y'en a Marre, il gruppo fondato da rapper a cui si attribuisce un ruolo nell'uscita di scena del presidente nel 2012.**",
+    articles: [
+      { title: "To understand African politics, just listen to the music", url: "/curated/2026-10-29-economist-musica-politica-africa/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Repubblica del Congo",
+    type: "luogo",
+    geo: { modo: "diretta", paesi: ["Repubblica del Congo"] },
+    note: "Stato dell'Africa centrale, con capitale Brazzaville, governato da Denis Sassou-Nguesso. **Nel sito entra con le proteste organizzate nel 2015 dal rapper Martial Pa'nucci contro la modifica della costituzione.**",
+    articles: [
+      { title: "To understand African politics, just listen to the music", url: "/curated/2026-10-29-economist-musica-politica-africa/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Zambia",
+    type: "luogo",
+    geo: { modo: "diretta", paesi: ["Zambia"] },
+    note: "Stato dell'Africa australe, fra i maggiori produttori di rame. **Nel sito entra con il rapper Pilato, che nel 2017 guidò una marcia contro la corruzione davanti al parlamento, e fra i pochi paesi che incassano dalla corsa americana e cinese ai minerali critici.**",
+    articles: [
+      { title: "The countries making a fortune from the US-China rivalry", url: "/curated/2026-10-29-economist-minerali-critici-rivalita/", _source: "curated" },
+      { title: "To understand African politics, just listen to the music", url: "/curated/2026-10-29-economist-musica-politica-africa/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Zimbabwe",
+    type: "luogo",
+    geo: { modo: "diretta", paesi: ["Zimbabwe"] },
+    note: "Stato dell'Africa australe governato dalla Zanu-Pf. **Nel sito entra con Winky D, cantante dancehall accusato dal partito di governo di promuovere un «cambio di regime».**",
+    articles: [
+      { title: "To understand African politics, just listen to the music", url: "/curated/2026-10-29-economist-musica-politica-africa/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Kenya",
+    type: "luogo",
+    geo: { modo: "diretta", paesi: ["Kenya"] },
+    note: "Stato dell'Africa orientale, presieduto da William Ruto. **Nel sito entra con la rivolta fiscale del 2024, quando una canzone da discoteca e i video sul «Kasongo» divennero strumenti di protesta.**",
+    articles: [
+      { title: "To understand African politics, just listen to the music", url: "/curated/2026-10-29-economist-musica-politica-africa/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Angola",
+    type: "luogo",
+    geo: { modo: "diretta", paesi: ["Angola"] },
+    note: "Stato dell'Africa australe, il cui PIL quasi raddoppiò con il petrolio fra il 2002 e il 2008. **Nel sito entra con il rapper Luaty Beirão, incarcerato nel 2016 con l'accusa di preparare una ribellione.**",
+    articles: [
+      { title: "To understand African politics, just listen to the music", url: "/curated/2026-10-29-economist-musica-politica-africa/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Ruanda",
+    type: "luogo",
+    geo: { modo: "diretta", paesi: ["Ruanda"] },
+    note: "Stato dell'Africa centro-orientale. **Nel sito entra con Kizito Mihigo, cantante gospel critico del governo, arrestato nel 2020 e trovato morto in cella pochi giorni dopo.**",
+    articles: [
+      { title: "To understand African politics, just listen to the music", url: "/curated/2026-10-29-economist-musica-politica-africa/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Lesotho",
+    type: "luogo",
+    geo: { modo: "diretta", paesi: ["Lesotho"] },
+    note: "Piccolo Stato interamente circondato dal Sudafrica. **Nel sito entra con il famo, genere di fisarmonica i cui musicisti sono spesso legati a bande criminali con influenza sui partiti e sullo Stato.**",
+    articles: [
+      { title: "To understand African politics, just listen to the music", url: "/curated/2026-10-29-economist-musica-politica-africa/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Mali",
+    type: "luogo",
+    geo: { modo: "diretta", paesi: ["Mali"] },
+    note: "Stato del Sahel. **Nel sito entra con i Tinariwen, gruppo tuareg i cui membri combatterono per i separatisti, e con Iyad ag Ghali, a cui sono attribuite alcune loro canzoni prima che diventasse capo del principale gruppo jihadista dell'Africa occidentale.**",
+    articles: [
+      { title: "To understand African politics, just listen to the music", url: "/curated/2026-10-29-economist-musica-politica-africa/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Sudan",
+    type: "luogo",
+    geo: { modo: "diretta", paesi: ["Sudan"] },
+    note: "Stato dell'Africa nordorientale, in guerra civile dal 2023. **Nel sito entra con la musica jihadista prodotta dal conflitto, che celebra le milizie islamiste alleate dell'esercito e chiama nuove reclute.**",
+    articles: [
+      { title: "To understand African politics, just listen to the music", url: "/curated/2026-10-29-economist-musica-politica-africa/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Eritrea",
+    type: "luogo",
+    geo: { modo: "diretta", paesi: ["Eritrea"] },
+    note: "Stato del Corno d'Africa, indipendente dall'Etiopia dal 1993. **Nel sito entra con la canzone etiope che celebra l'ambizione di Abiy Ahmed di riconquistare un porto eritreo sul Mar Rosso.**",
+    articles: [
+      { title: "To understand African politics, just listen to the music", url: "/curated/2026-10-29-economist-musica-politica-africa/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Wikipedia",
+    type: "organizzazione",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q52"],
+    related: [
+      { name: "estrattivismo cognitivo", why: "I modelli ne hanno assorbito il lavoro volontario e ora ne riducono le visite, i donatori e i nuovi redattori." }
+    ],
+    note: "L'enciclopedia collaborativa online fondata nel 2001 da Jimmy Wales e Larry Sanger, gestita senza scopo di lucro dalla Wikimedia Foundation e scritta da volontari in oltre 300 lingue. **Nel sito è il caso esemplare di un bene comune della conoscenza che l'intelligenza artificiale usa come materia prima e insieme svuota: più letta che mai attraverso i modelli, sempre meno visitata e sempre meno scritta.**",
+    articles: [
+      { title: "Humans will never again create a project quite like Wikipedia", url: "/curated/2026-10-29-economist-wikipedia-25-anni/", _source: "curated" }
+    ]
+  },
+  {
+    name: "tecnologia culturale",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "post-cognition", why: "Se il modello è cultura compressa, il problema diventa come ci si rapporta a un sapere che risponde senza un autore." }
+    ],
+    note: "Espressione con cui Henry Farrell, Alison Gopnik, Cosma Shalizi e James Evans descrivono i grandi modelli linguistici: tecnologie che, come la scrittura, la stampa o le biblioteche, rendono accessibile e ricombinabile il sapere accumulato da altri, più che menti artificiali. **Nel sito è l'alternativa alle due letture simmetriche dell'intelligenza artificiale, il pappagallo stocastico e il dio macchina: un modello è la cultura scritta compressa e messa in grado di agire.**",
+    articles: [
+      { title: "AI is a technological version of the Homeric songs", url: "/curated/2026-10-28-farrell-shalizi-canti-omerici-economist/", _source: "curated" }
     ]
   }
 

@@ -52,7 +52,22 @@
     "Ucraina": "804",
     "Ungheria": "348",
     "Serbia": "688",
-    "India": "356"
+    "India": "356",
+    "Etiopia": "231",
+    "Nigeria": "566",
+    "Uganda": "800",
+    "Mozambico": "508",
+    "Senegal": "686",
+    "Repubblica del Congo": "178",
+    "Zambia": "894",
+    "Zimbabwe": "716",
+    "Kenya": "404",
+    "Angola": "024",
+    "Ruanda": "646",
+    "Lesotho": "426",
+    "Mali": "466",
+    "Sudan": "729",
+    "Eritrea": "232"
   },
   "regioni": {
     "UE": {
@@ -195,6 +210,21 @@
     "Ucraina": "Ukraine",
     "Ungheria": "Hungary",
     "Serbia": "Serbia",
-    "India": "India"
+    "India": "India",
+    "Etiopia": "Ethiopia",
+    "Nigeria": "Nigeria",
+    "Uganda": "Uganda",
+    "Mozambico": "Mozambique",
+    "Senegal": "Senegal",
+    "Repubblica del Congo": "Congo",
+    "Zambia": "Zambia",
+    "Zimbabwe": "Zimbabwe",
+    "Kenya": "Kenya",
+    "Angola": "Angola",
+    "Ruanda": "Rwanda",
+    "Lesotho": "Lesotho",
+    "Mali": "Mali",
+    "Sudan": "Sudan",
+    "Eritrea": "Eritrea"
   }
 }
