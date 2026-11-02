@@ -33,7 +33,8 @@ module.exports = [
     note: "Filosofo e matematico francese (1596–1650), fondatore del dualismo mente/corpo (res cogitans / res extensa). Nel sito compare come punto di partenza per la critica embodied — senza corpo non c'è mente nel senso pieno — e come autore del Discours de la méthode, modello del pensatore che demolisce le fondamenta del sapere adottando una «morale provvisoria» conservatrice nel frattempo.",
     articles: [
       { title: "La differenza fra Claude e le mie gatte", url: "/writings/2026-04-30-la-differenza-fra-claude-e-le-mie-gatte/" },
-      { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" }
+      { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" },
+      { title: "L’intelligence artificielle nous oblige-t-elle à repenser notre animalité ?", url: "/curated/2026-10-31-descola-ia-animalita-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -2009,7 +2010,8 @@ module.exports = [
     note: "Intervento esterno strutturato sugli output dei modelli linguistici per ricostruire gli impegni ontologici impliciti che il modello stesso non è in grado di rendere espliciti. Il termine, coniato nell'ambito del progetto <em>Validating AI</em>, designa un'operazione epistemica che precede la valutazione della verità: prima di chiedersi se una claim è vera o falsa, occorre stabilire di che tipo di claim si tratti.",
     articles: [
       { title: "Validating AI — note di ricerca", url: "/lab/", _source: "lab" },
-      { title: "What if 'consciousness' isn't real?", url: "/curated/2026-09-15-bayne-coscienza-non-reale-sciam/", _source: "curated" }
+      { title: "What if 'consciousness' isn't real?", url: "/curated/2026-09-15-bayne-coscienza-non-reale-sciam/", _source: "curated" },
+      { title: "L’intelligence artificielle nous oblige-t-elle à repenser notre animalité ?", url: "/curated/2026-10-31-descola-ia-animalita-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -3880,7 +3882,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q9391", "https://it.wikipedia.org/wiki/Ludwig_Wittgenstein"],
     note: "Filosofo austriaco (1889–1951), attivo soprattutto a Cambridge. Nel sito compare per la terapia del linguaggio: Eco come «terapista wittgensteiniano del discorso pubblico», che corregge la domanda prima di rispondere. È anche il ponte fra logica e struttura: il Tractatus (1921) descrive il mondo come totalità dei fatti e la proposizione come immagine di uno stato di cose, una teoria della raffigurazione che si lascia leggere come teoria della mappa.",
     articles: [
-      { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-04-04-dieci-anni-senza-umberto-eco/" }
+      { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-04-04-dieci-anni-senza-umberto-eco/" },
+      { title: "L’intelligence artificielle nous oblige-t-elle à repenser notre animalité ?", url: "/curated/2026-10-31-descola-ia-animalita-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -5854,6 +5857,19 @@ module.exports = [
     note: "Espressione con cui Henry Farrell, Alison Gopnik, Cosma Shalizi e James Evans descrivono i grandi modelli linguistici: tecnologie che, come la scrittura, la stampa o le biblioteche, rendono accessibile e ricombinabile il sapere accumulato da altri, più che menti artificiali. **Nel sito è l'alternativa alle due letture simmetriche dell'intelligenza artificiale, il pappagallo stocastico e il dio macchina: un modello è la cultura scritta compressa e messa in grado di agire.**",
     articles: [
       { title: "AI is a technological version of the Homeric songs", url: "/curated/2026-10-28-farrell-shalizi-canti-omerici-economist/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Descola, Philippe",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Francia"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q1197333"],
+    related: [
+      { name: "Descartes, René", why: "Il naturalismo nasce con la sua contraddizione: tutto è materia soggetta alle stesse leggi, ma solo gli umani hanno un'anima." }
+    ],
+    note: "Antropologo francese, nato nel 1949, allievo di Claude Lévi-Strauss, ha tenuto al Collège de France la cattedra di antropologia della natura; è autore di *Oltre natura e cultura* (2005). Distingue quattro ontologie, cioè quattro modi di stabilire continuità e discontinuità fra umani e altri esseri: animismo, totemismo, analogismo e naturalismo. **Nel sito è la chiave per leggere l'intelligenza artificiale come prodotto di un'ontologia particolare, quella naturalista dei Moderni, e non come prova universale su che cosa sia una mente.**",
+    articles: [
+      { title: "L’intelligence artificielle nous oblige-t-elle à repenser notre animalité ?", url: "/curated/2026-10-31-descola-ia-animalita-grandcontinent/", _source: "curated" }
     ]
   }
 
