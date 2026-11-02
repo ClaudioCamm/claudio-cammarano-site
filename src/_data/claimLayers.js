@@ -27,6 +27,7 @@ const TOPICS = [
   { key: "annotation",   en: "Annotation",   claims: ["more-annotators-beats-bias-correction", "mode-a-needs-a-blind-recode", "surface-variance-masks-convergence", "reproducibility-is-documentation"] },
   { key: "evaluation",   en: "Evaluation",   claims: ["explicit-about-what-is-not-evaluated", "breakthroughs-are-metric-artefacts", "llm-judges-match-human-agreement"] },
   { key: "truthfulness", en: "Truthfulness", claims: ["inverse-scaling-of-truthfulness", "hallucination-the-standard-definition"] },
+  { key: "severity",     en: "Severity",     claims: ["mayo-severity-weak", "mayo-severity-strong", "mayo-lift-off", "mayo-arguing-from-error", "mayo-forward-looking-methods", "mayo-severity-meta-methodology"] },
   { key: "architecture", en: "Architecture", claims: ["transformer-dispenses-with-recurrence", "plural-paths-one-answer", "cai-partially-replaces-human-feedback"] }
 ];
 
@@ -37,7 +38,7 @@ const THEMES = [
     topics: ["meaning", "claim-types", "introspection"] },
   { key: "how-a-verdict",  en: "How a verdict is made",
     position: "A judgement counts only with the procedure that produced it attached.",
-    topics: ["annotation", "evaluation"] },
+    topics: ["annotation", "evaluation", "severity"] },
   { key: "scale-buys",     en: "What scale does not buy",
     position: "Size improves many things monotonically and some things not at all.",
     topics: ["truthfulness", "architecture"] }

@@ -465,6 +465,108 @@ const claims = [
       { to: "ontology-precedes-epistemology", how: "extends", why: "The same principle applied one level up: not to the claim under test, but to the document that carries it." }
     ],
     usedIn: []
+  },
+  {
+    id: "mayo-severity-weak",
+    gist: "Agreement between data and a claim is not evidence when the method could not have found the claim false. This is the negative, minimal criterion the programme uses to tell a validation that tested something from one that only confirmed what it presupposed.",
+    src: "mayo2018statistical",
+    locus: "p. 5, Excursion 1, Tour I, §1.1",
+    before: "I call this the severity requirement. In its weakest form it supplies a minimal requirement for evidence: Severity Requirement (weak):",
+    claim: "One does not have evidence for a claim if nothing has been done to rule out ways the claim may be false. If data x agree with a claim C but the method used is practically guaranteed to find such agreement, and had little or no capability of finding flaws with C even if they exist, then we have bad evidence, no test (BENT).",
+    cuts: [],
+    after: "The “practically guaranteed” acknowledges that even if the method had some slim chance of producing a disagreement when C is false, we still regard the evidence as lousy.",
+    fn: "strumento-concettuale",
+    d1: "D1.8",
+    d1Status: "confirmed",
+    stance: "assumed",
+    relates: [],
+    usedIn: []
+  },
+  {
+    id: "mayo-severity-strong",
+    gist: "The positive counterpart of the weak requirement: evidence is graded by how capable the test was of finding flaws. It matters because it turns severity from a veto into a measure, which is what a validation protocol needs to rank results rather than just reject them.",
+    src: "mayo2018statistical",
+    locus: "p. 14, Excursion 1, Tour I, §1.2",
+    before: "I also advocate the positive counterpart: Severity (strong):",
+    claim: "We have evidence for a claim C just to the extent it survives a stringent scrutiny. If C passes a test that was highly capable of finding flaws or discrepancies from C, and yet none or few are found, then the passing result, x, is evidence for C.",
+    cuts: [],
+    after: "One way this can be achieved is by an argument from coincidence.",
+    fn: "strumento-concettuale",
+    d1: "D1.8",
+    d1Status: "confirmed",
+    stance: "assumed",
+    relates: [
+      { to: "mayo-severity-weak", how: "extends", why: "Moves from a negative veto (no test, no evidence) to a positive, graded criterion." }
+    ],
+    usedIn: []
+  },
+  {
+    id: "mayo-lift-off",
+    gist: "Convergent, independent checks can warrant a conclusion more strongly than any single one of them. This is the epistemic ground for aggregating multiple fallible runs or judges instead of demanding a single infallible one.",
+    src: "mayo2018statistical",
+    locus: "p. 15, Excursion 1, Tour I, §1.2",
+    before: "First, there’s the idea I call lift-off. Lift-off:",
+    claim: "An overall inference can be more reliable and precise than its premises individually.",
+    cuts: [],
+    after: "Each scale, by itself, has some possibility of error, and limited precision.",
+    fn: "strumento-concettuale",
+    d1: "D1.3",
+    d1Status: "proposed",
+    stance: "used",
+    relates: [],
+    usedIn: []
+  },
+  {
+    id: "mayo-arguing-from-error",
+    gist: "Absence of a detected error counts only if the procedure would have signalled that error had it been there. It is the operational form of severity, and the test any judge-based validation has to pass before its silence can be read as a result.",
+    src: "mayo2018statistical",
+    locus: "p. 16, Excursion 1, Tour I, §1.2",
+    before: "The argument to “weight gain” is an example of an argument from coincidence to the absence of an error, what I call: Arguing from Error:",
+    claim: "There is evidence an error is absent to the extent that a procedure with a very high capability of signaling the error, if and only if it is present, nevertheless detects no error.",
+    cuts: [],
+    after: "I am using “signaling” and “detecting” synonymously:",
+    fn: "metodo-di-lavoro",
+    d1: "D1.3",
+    d1Status: "proposed",
+    stance: "assumed",
+    relates: [
+      { to: "mayo-severity-strong", how: "refines", why: "Specifies severity as a property of the error-detecting procedure, conditional on the error being present." }
+    ],
+    usedIn: []
+  },
+  {
+    id: "mayo-forward-looking-methods",
+    gist: "Mayo treats inferential methods as instruments for finding things out and for grading others' work, not as after-the-fact justifications. The programme reads validation protocols the same way: as probes that can fail, not as rationalisations of verdicts already reached.",
+    src: "mayo2018statistical",
+    locus: "p. 8, Excursion 1, Tour I",
+    before: "I’m interested in the problem of how we get the kind of knowledge we do manage to obtain – and how we can get more of it.",
+    claim: "Statistical methods should not be seen as tools for what philosophers call “rational reconstruction” of a piece of reasoning. Rather, they are forward-looking tools to find something out faster and more efficiently, and to discriminate how good or poor a job others have done.",
+    cuts: [],
+    after: "The job of the philosopher is to clarify but also to provoke reflection and scrutiny precisely in those areas that go unchallenged in ordinary practice.",
+    fn: "metodo-di-lavoro",
+    d1: "D1.8",
+    d1Status: "proposed",
+    stance: "used",
+    relates: [],
+    usedIn: []
+  },
+  {
+    id: "mayo-severity-meta-methodology",
+    gist: "Severity is applied one level up, to methods rather than to claims: a method is judged by its capacity to catch erroneous interpretations. This is the move the programme makes when it treats severity as a meta-level property of validation procedures.",
+    src: "mayo2018statistical",
+    locus: "p. 9, Excursion 1, Tour I, Methodology and Meta-methodology",
+    before: "Borrowing a term from philosophy of science, we may call it our meta-methodology – it’s one level removed. To put my cards on the table:",
+    claim: "A severity scrutiny is going to be a key method of our meta-methodology. It is fairly obvious that we want to scrutinize how capable a statistical method is at detecting and avoiding erroneous interpretations of data.",
+    cuts: [],
+    after: "So when it comes to the role of probability as a pedagogical tool for our purposes, severity – its assessment and control – will be at the center.",
+    fn: "metodo-di-lavoro",
+    d1: "D1.9",
+    d1Status: "proposed",
+    stance: "assumed",
+    relates: [
+      { to: "mayo-severity-strong", how: "presupposes", why: "Applying severity to methods presupposes the graded criterion it applies to claims." }
+    ],
+    usedIn: []
   }
 ];
 

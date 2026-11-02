@@ -945,6 +945,25 @@ module.exports = [
     "from": "v6"
   },
   {
+    "key": "mayo2018statistical",
+    "altKeys": [
+      "mayo2018"
+    ],
+    "type": "book",
+    "author": "Mayo, Deborah G.",
+    "editor": "",
+    "title": "Statistical Inference as Severe Testing: How to Get Beyond the Statistics Wars",
+    "year": "2018",
+    "publisher": "Cambridge University Press",
+    "journal": "",
+    "booktitle": "",
+    "volume": "",
+    "pages": "",
+    "doi": "10.1017/9781107286184",
+    "note": "Excursion 1, Tour I: severity requirement (weak/strong), BENT, lift-off vs drag-down, arguing from error, severity come meta-metodologia.",
+    "from": "definitiva"
+  },
+  {
     "key": "marcus2019rebooting",
     "altKeys": [
       "marcus2019"
