@@ -6,7 +6,7 @@ description: "Un numero che quasi tutti usano e pochi sanno definire ha diviso l
 tesi: "Il p-value misura quanto i dati sarebbero sorprendenti se l'ipotesi nulla fosse vera; le guerre della statistica sono nate dall'averlo letto come la probabilità che un'ipotesi sia vera o come un verdetto automatico, e le scuole in lotta rispondono a domande diverse più spesso di quanto diano risposte diverse alla stessa domanda."
 category: ["Epistemologia", "Scienza", "Statistica"]
 series: "Lo standard di prova, I"
-serie_totale_prevista: 4
+serie_totale_prevista: 5
 lang: "🇮🇹 Italiano"
 ai_prose: WR
 tags: [writings]

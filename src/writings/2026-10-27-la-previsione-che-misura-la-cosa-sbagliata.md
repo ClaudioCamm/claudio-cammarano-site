@@ -6,7 +6,7 @@ description: "Cinque paper di Taleb, i benchmark dei modelli, i ricavi annualizz
 tesi: "Una previsione o un indicatore possono essere perfettamente verificabili e misurare comunque la cosa sbagliata: la frequenza con cui si indovina al posto di quanto costa sbagliare, la posizione in una gara al posto del valore, il ricavo di un mese moltiplicato per dodici al posto del ricavo. Il controllo che conta va fatto prima dell'esito, e chiede che cosa il numero misuri davvero."
 category: ["Epistemologia", "Scienza", "Economia"]
 series: "Lo standard di prova, IV"
-serie_totale_prevista: 4
+serie_totale_prevista: 5
 lang: "🇮🇹 Italiano"
 ai_prose: WR
 tags: [writings]
