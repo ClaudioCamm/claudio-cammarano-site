@@ -114,7 +114,8 @@ module.exports = [
       { title: "Election Predictions as Martingales: An Arbitrage Approach", url: "/curated/2017-03-18-taleb-election-predictions-martingales-arxiv/", _source: "curated" },
       { title: "On the Statistical Differences between Binary Forecasts and Real World Payoffs", url: "/curated/2019-07-24-taleb-binary-forecasts-payoffs-arxiv/", _source: "curated" },
       { title: "On Single Point Forecasts for Fat-Tailed Variables", url: "/curated/2020-07-31-taleb-single-point-forecasts-arxiv/", _source: "curated" },
-      { title: "The Probability Conflation: A Reply", url: "/curated/2023-01-26-taleb-probability-conflation-arxiv/", _source: "curated" }
+      { title: "The Probability Conflation: A Reply", url: "/curated/2023-01-26-taleb-probability-conflation-arxiv/", _source: "curated" },
+      { title: "Nassim Taleb’s Case Against Nate Silver Is Bad Math", url: "/curated/2019-04-07-clayton-taleb-silver-nautilus/", _source: "curated" }
     ]
   },
   {
@@ -4531,7 +4532,9 @@ module.exports = [
       { title: "Why Most Published Research Findings Are False", url: "/curated/2005-08-30-ioannidis-most-published-findings-false-plosmed/", _source: "curated" },
       { title: "Scientific method: Statistical errors", url: "/curated/2014-02-12-nuzzo-errori-statistici-nature/", _source: "curated" },
       { title: "Redefine statistical significance", url: "/curated/2017-09-01-benjamin-redefine-statistical-significance-nhb/", _source: "curated" },
-      { title: "Philosophy of Statistics", url: "/curated/2025-10-01-romeijn-filosofia-della-statistica-sep/", _source: "curated" }
+      { title: "Philosophy of Statistics", url: "/curated/2025-10-01-romeijn-filosofia-della-statistica-sep/", _source: "curated" },
+      { title: "Nassim Taleb’s Case Against Nate Silver Is Bad Math", url: "/curated/2019-04-07-clayton-taleb-silver-nautilus/", _source: "curated" },
+      { title: "Information, incentives, and goals in election forecasts", url: "/curated/2020-09-01-gelman-hullman-wlezien-morris-previsioni-elettorali-jdm/", _source: "curated" }
     ]
   },
   {
@@ -4745,7 +4748,9 @@ module.exports = [
     ],
     note: "Statistico statunitense, professore di statistica e scienze politiche alla Columbia, autore con Eric Loken della formula del giardino dei sentieri che si biforcano (2013–2014). Nel sito ha un ruolo particolare, perché occupa la posizione che rende la disputa fra bayesiani e frequentisti più interessante di uno scontro fra scuole: è bayesiano dichiarato, e insieme il più insistente sul fatto che un modello vada messo alla prova con controlli che potrebbero farlo fallire. Il suo *workflow* bayesiano prescrive controlli predittivi a posteriori — confrontare i dati che il modello prevede con quelli che si hanno — e nello spirito sono controlli d'errore, cioè esattamente la mossa che la statistica dell'errore rivendica come propria e che il bayesianismo ortodosso considera superflua. Il contributo che l'archivio usa più spesso è però la diagnosi del 2014, e la sua forza sta nel non accusare nessuno: il p-value pubblicato può essere invalido anche quando il ricercatore ha condotto una sola analisi in perfetta buona fede, perché ciò che conta non è quante analisi abbia fatto ma quante avrebbero potuto essere fatte con dati diversi. È anche uno dei pochi in questo dibattito ad ammettere pubblicamente il limite della propria proposta: sulla preregistrazione scrive che per la maggior parte dei suoi progetti applicati sembra difficilmente praticabile, perché guardando i dati si impara molto.",
     articles: [
-      { title: "The Statistical Crisis in Science", url: "/curated/2014-11-01-gelman-loken-giardino-sentieri-biforcano-americanscientist/", _source: "curated" }
+      { title: "The Statistical Crisis in Science", url: "/curated/2014-11-01-gelman-loken-giardino-sentieri-biforcano-americanscientist/", _source: "curated" },
+      { title: "Disentangling Bias and Variance in Election Polls", url: "/curated/2018-06-01-shirani-mehr-gelman-errore-sondaggi-jasa/", _source: "curated" },
+      { title: "Information, incentives, and goals in election forecasts", url: "/curated/2020-09-01-gelman-hullman-wlezien-morris-previsioni-elettorali-jdm/", _source: "curated" }
     ]
   },
   {
@@ -5870,6 +5875,44 @@ module.exports = [
     note: "Antropologo francese, nato nel 1949, allievo di Claude Lévi-Strauss, ha tenuto al Collège de France la cattedra di antropologia della natura; è autore di *Oltre natura e cultura* (2005). Distingue quattro ontologie, cioè quattro modi di stabilire continuità e discontinuità fra umani e altri esseri: animismo, totemismo, analogismo e naturalismo. **Nel sito è la chiave per leggere l'intelligenza artificiale come prodotto di un'ontologia particolare, quella naturalista dei Moderni, e non come prova universale su che cosa sia una mente.**",
     articles: [
       { title: "L’intelligence artificielle nous oblige-t-elle à repenser notre animalité ?", url: "/curated/2026-10-31-descola-ia-animalita-grandcontinent/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Silver, Nate",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q562521"],
+    related: [
+      { name: "Taleb, Nassim Nicholas", why: "Lo ha accusato di pubblicare probabilità che oscillano troppo per essere probabilità; lo scontro è finito in insulti, la questione è rimasta aperta." }
+    ],
+    note: "Statistico e giornalista statunitense, nato nel 1978, fondatore di FiveThirtyEight, dove dal 2008 ha pubblicato previsioni elettorali probabilistiche, e autore di *The Signal and the Noise* (2012). **Nel sito è la voce della difesa delle previsioni probabilistiche: un modello si giudica dalla calibrazione su molti casi, non dal singolo esito.**",
+    articles: [
+      { title: "When We Say 70 Percent, It Really Means 70 Percent", url: "/curated/2019-04-04-silver-70-per-cento-fivethirtyeight/", _source: "curated" },
+      { title: "Nassim Taleb’s Case Against Nate Silver Is Bad Math", url: "/curated/2019-04-07-clayton-taleb-silver-nautilus/", _source: "curated" }
+    ]
+  },
+  {
+    name: "calibrazione",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    note: "Proprietà di un sistema di previsioni probabilistiche: un previsore è calibrato se gli eventi a cui assegna il 70 per cento di probabilità accadono circa sette volte su dieci. **Nel sito è il criterio minimo per giudicare una previsione che non dice chi vincerà ma con quale probabilità: necessario, perché senza di esso i numeri non significano nulla, e insufficiente, perché si può essere calibrati senza saper distinguere un caso dall'altro.**",
+    articles: [
+      { title: "When We Say 70 Percent, It Really Means 70 Percent", url: "/curated/2019-04-04-silver-70-per-cento-fivethirtyeight/", _source: "curated" },
+      { title: "Information, incentives, and goals in election forecasts", url: "/curated/2020-09-01-gelman-hullman-wlezien-morris-previsioni-elettorali-jdm/", _source: "curated" }
+    ]
+  },
+  {
+    name: "errore totale d'indagine",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q7828148"],
+    note: "L'insieme degli errori che separano la stima di un'indagine dal valore reale: oltre all'errore di campionamento, l'unico misurato dal margine d'errore dichiarato, quelli dovuti a chi non viene raggiunto, a chi non risponde, alla formulazione delle domande e alla ponderazione. **Nel sito è la ragione per cui un sondaggio va letto come una misura imperfetta e non come un fatto: l'errore reale dei sondaggi elettorali è circa il doppio di quello stampato.**",
+    articles: [
+      { title: "An Evaluation of 2016 Election Polls in the U.S.", url: "/curated/2017-05-04-aapor-valutazione-sondaggi-2016/", _source: "curated" },
+      { title: "Disentangling Bias and Variance in Election Polls", url: "/curated/2018-06-01-shirani-mehr-gelman-errore-sondaggi-jasa/", _source: "curated" },
+      { title: "Task Force on 2020 Pre-Election Polling: An Evaluation of the 2020 General Election Polls", url: "/curated/2021-07-19-aapor-task-force-sondaggi-2020/", _source: "curated" },
+      { title: "‘Fake’ pollsters hit US midterms", url: "/curated/2026-10-23-afp-falsi-istituti-sondaggio/", _source: "curated" },
+      { title: "Can You Trust the Midterm Polls? Three Times Journalists Talk It Out.", url: "/curated/2026-10-28-healy-cohn-davis-sondaggi-midterm-nyt/", _source: "curated" }
     ]
   }
 
