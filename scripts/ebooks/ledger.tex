@@ -1,0 +1,32 @@
+% The Claims Ledger (ledger.py): la testata dei saggi, con il verde della
+% ricerca al posto del blu. Si include dopo testata.tex e banda.tex: ridefinire
+% i colori qui li cambia ovunque, banda della prima pagina compresa.
+\definecolor{ccblu}{HTML}{0F6E56}
+\definecolor{bandablu}{HTML}{0F6E56}
+\AtBeginDocument{\hypersetup{linkcolor=ccblu,urlcolor=ccblu}}
+
+% Le parti si aprono in Bodoni grande, i concetti come gli intertitoli dei saggi.
+\titleformat{\section}{\ccBodoni\fontsize{24}{27}\selectfont\RaggedRight}{}{0pt}{}
+\titlespacing*{\section}{0pt}{0pt}{10pt}
+
+% Una voce come in un registro: a sinistra la colonna del numero, a destra il
+% corpo. La citazione con il contesto in grigio, la parafrasi in corsivo con
+% un filetto verde, poi le righe dell'apparato con l'etichetta a sporgere.
+\newlength{\ccColonna}\setlength{\ccColonna}{17mm}
+\newlength{\ccEtic}\setlength{\ccEtic}{19mm}
+\newcommand{\ccNo}[1]{\leavevmode\llap{\makebox[\ccColonna][l]{\ccArchivo\small\textcolor{ccblu}{#1}}}}
+\newcommand{\ccCtx}[1]{\textcolor{ccgrigio!70}{#1}}
+\newcommand{\ccGist}[1]{%
+  \setbox0\vbox{\hsize=\dimexpr\linewidth-\ccColonna-4.6mm\relax\itshape\color{ccgrigio}\RaggedRight\strut#1\strut}%
+  \noindent{\color{ccblu}\vrule width 1.4pt}\hspace{3.2mm}\box0}
+\newcommand{\ccK}[1]{%
+  \hangindent=\ccEtic\hangafter=1\noindent
+  \makebox[\ccEtic][l]{\ccArchivo\scriptsize\textcolor{ccgrigio}{\MakeUppercase{#1}}}}
+\newenvironment{voce}{%
+  \par\addvspace{12pt}\begingroup
+  \setlength{\parindent}{0pt}\setlength{\parskip}{5pt}\leftskip=\ccColonna\relax
+  \noindent\hspace*{-\ccColonna}\textcolor{ccink}{\rule{\dimexpr\linewidth+\ccColonna\relax}{0.6pt}}\par
+  \nopagebreak\addvspace{4pt}\small
+}{%
+  \par\endgroup\addvspace{6pt}%
+}

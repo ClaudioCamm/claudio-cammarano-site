@@ -62,15 +62,26 @@ local function inLatex() return target:match("latex") or target:match("pdf") end
 
 local function avvolgi(el, nome)
   local out = {}
-  out[#out + 1] = inLatex() and pandoc.RawBlock("latex", "\\begin{" .. nome .. "}")
-                            or pandoc.RawBlock("html", '<aside class="cc-' .. nome .. '">')
+  local id = el.identifier or ""
+  if inLatex() then
+    -- l'ancora prima del blocco: i rimandi interni (#c012) devono arrivarci
+    out[#out + 1] = pandoc.RawBlock("latex", (id ~= "" and ("\\hypertarget{" .. id .. "}{}") or "")
+                                    .. "\\begin{" .. nome .. "}")
+  else
+    out[#out + 1] = pandoc.RawBlock("html", '<aside class="cc-' .. nome .. '"'
+                                    .. (id ~= "" and (' id="' .. id .. '"') or "") .. '>')
+  end
   for _, b in ipairs(el.content) do out[#out + 1] = b end
   out[#out + 1] = inLatex() and pandoc.RawBlock("latex", "\\end{" .. nome .. "}")
                             or pandoc.RawBlock("html", "</aside>")
   return out
 end
 
-local blocchi = { tesi = true, scheda = true, controtesi = true }
+-- voce: una voce del Claims Ledger (ledger.py).
+local blocchi = { tesi = true, scheda = true, controtesi = true, voce = true }
+
+-- Le etichette del Ledger: numero del claim, etichetta in Archivo, contesto in grigio.
+local segni = { no = "ccNo", k = "ccK", ctx = "ccCtx", gist = "ccGist" }
 
 local catena = {
   Div = function(el)
@@ -78,7 +89,17 @@ local catena = {
     if n and blocchi[n] then return avvolgi(el, n) end
   end,
   Span = function(el)
-    if el.classes[1] ~= "badge" then return nil end
+    local c = el.classes[1]
+    if c and segni[c] then
+      if inLatex() then
+        local out = { pandoc.RawInline("latex", "\\" .. segni[c] .. "{") }
+        for _, x in ipairs(el.content) do out[#out + 1] = x end
+        out[#out + 1] = pandoc.RawInline("latex", "}")
+        return out
+      end
+      return pandoc.Span(el.content, pandoc.Attr("", { "cc-" .. c }))
+    end
+    if c ~= "badge" then return nil end
     if inLatex() then
       return pandoc.RawInline("latex", "\\ccBadge{" .. pandoc.utils.stringify(el) .. "}")
     end

@@ -1,0 +1,10 @@
+body { font-family: serif; line-height: 1.55; }
+h1, h2, h3 { font-family: serif; line-height: 1.2; }
+img { max-width: 100%; height: auto; }
+a { color: #0F6E56; }
+.cc-voce { border-top: 1px solid #1a1a1a; margin: 1.2em 0; padding-top: 0.5em; font-size: 0.95em; }
+.cc-no { color: #0F6E56; font-weight: bold; letter-spacing: 0.05em; }
+.cc-k { color: #0F6E56; text-transform: uppercase; font-size: 0.75em; letter-spacing: 0.08em; }
+.cc-ctx { color: #777; }
+.cc-gist { display: block; font-style: italic; color: #555; border-left: 2px solid #0F6E56; padding-left: 0.7em; }
+.cc-no { display: block; }
