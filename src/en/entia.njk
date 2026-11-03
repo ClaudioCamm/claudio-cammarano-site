@@ -120,6 +120,22 @@ translation:
     <div class="entia-regola"><b>{{ rt.nome }}</b>{{ rt.testo }}</div>
     {%- endfor %}
 
+    <h2 id="claims">On the claims</h2>
+    <p>On the research side the same five layers classify <a href="/en/claims/">claims</a>, verbatim cuts of statements from the literature and from the research log. These are the decisions that apply there, in force as of November 3, 2026.</p>
+    <div class="entia-tab">
+      <table>
+        <thead><tr><th>Layer</th><th>The decision</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Free tag</strong></td><td>Up to two surnames per claim, given by hand: the name an idea travels with, not the author list of the source. A name helps to find a claim and vouches for nothing, so it is checked for form only and never enters the weight. The name Cammarano goes only to concepts that can be attributed to him and are shared by no one, judged on the concept in its context rather than on the phrase.</td></tr>
+          <tr><td><strong>Topic</strong></td><td>One per claim, from a closed list.</td></tr>
+          <tr><td><strong>Theme</strong></td><td>Never assigned: derived from the topics.</td></tr>
+          <tr><td><strong>Concept</strong></td><td>Each concept needs a note and a link, or the build stops.</td></tr>
+          <tr><td><strong>Geometry</strong></td><td>Weight = source (peer-reviewed 1, proceedings or preprint 0.75, grey literature 0.5, a page of this site counting as grey) + 0.25 for each place the claim is used, × 1.5 if the programme contests it.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="entia-nota">Two rules hold for every claim. Quotations are cut from the running text, never from an abstract or other apparatus. Claim numbers (C001, C002…) are permanent: a number once given is never reassigned, and it is the one used in <a href="/en/claims/#ledger">The Claims Ledger</a>.</p>
+
     <h2 id="scope">What the model is for</h2>
     <p>{{ entiaEn.limiti.premessa | safe }}</p>
     <dl class="entia-limiti">

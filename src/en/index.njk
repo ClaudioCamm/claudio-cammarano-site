@@ -169,6 +169,39 @@ bodyClass: home home-en
 </section>
 {% endif %}
 
+{# === 3a · TAVOLA II, GLI STRATI SUI CLAIM (3/11). ENTIA usato sulla
+       ricerca: i cinque strati con i numeri presi dai dati, poi la geometria
+       (strato 5) resa come asse del peso. Chiude il blocco della ricerca
+       (tavola I, Lab) prima di allargare ai saggi italiani. === #}
+{% set st = geometria.strati %}
+<section class="tv-tav tv-tav--en tv-tav--strati tv-tav--geo" id="layers" aria-labelledby="plate-layers">
+  <header class="tv-th"><p class="tv-n">II</p><div><h2 id="plate-layers">The layers, turned on the claims</h2><p>The notation the Italian archive uses on itself, applied to this programme: five layers, from the least to the most exposed to error.</p></div><a class="tv-tutte" href="/en/entia/#claims">The notation &#8594;</a></header>
+  <div class="tv-strati">
+    <div class="tv-epigrafe">
+      <p class="tv-latino">Entia non sunt multiplicanda praeter necessitatem.</p>
+      <p>In the Italian archive ENTIA says what each piece is for. Here it does the same for claims: what this programme stands on, uses, or has to answer to.</p>
+      <p class="tv-meta">{{ geometria.claims }} claims · {{ geometria.papers }} papers · {{ geometria.notes }} lab notes · <a href="/en/claims/">All the claims</a></p>
+    </div>
+    <div>
+      <p class="tv-strato-testa" aria-hidden="true"><span></span><span></span><span>What it does</span><span>Who checks it</span></p>
+      <ol class="tv-strato-lista">
+        <li class="tv-strato tv-strato--1"><span class="tv-sn">Free tag</span><b>{{ st.names }}</b><span class="tv-sd"><span class="tv-sl">What it does</span>Names the people an idea travels with</span><span class="tv-sd"><span class="tv-sl">Who checks it</span>Nobody: a name finds, it does not vouch</span></li>
+        <li class="tv-strato tv-strato--2"><span class="tv-sn">Topic</span><b>{{ st.topics }}</b><span class="tv-sd"><span class="tv-sl">What it does</span>Groups the claims</span><span class="tv-sd"><span class="tv-sl">Who checks it</span>A closed list: one topic per claim</span></li>
+        <li class="tv-strato tv-strato--3"><span class="tv-sn">Theme</span><b>{{ st.themes }}</b><span class="tv-sd"><span class="tv-sl">What it does</span>Takes a position</span><span class="tv-sd"><span class="tv-sl">Who checks it</span>Derived from the topics, never assigned</span></li>
+        <li class="tv-strato tv-strato--4"><span class="tv-sn">Concept</span><b>{{ st.concepts }}</b><span class="tv-sd"><span class="tv-sl">What it does</span>Asserts something about the world</span><span class="tv-sd"><span class="tv-sl">Who checks it</span>A validator: no note or link, no build</span></li>
+        <li class="tv-strato tv-strato--5"><span class="tv-sn">Geometry</span><b>{{ st.factors }}</b><span class="tv-sd"><span class="tv-sl">What it does</span>Weighs and orders the claims</span><span class="tv-sd"><span class="tv-sl">Who checks it</span>A published formula: source, use, dissent</span></li>
+      </ol>
+    </div>
+  </div>
+  <div class="geo" id="geo">
+    <p class="geo-k">Layer 5 · Where the weight falls</p>
+    <svg id="geo-sv" viewBox="0 0 900 330" role="group" aria-label="Claims on one axis of weight"></svg>
+    <div class="geo-rd" id="geo-rd" aria-live="polite"></div>
+  </div>
+  <script type="application/json" id="geo-dati">{{ geometria.punti | dump | safe }}</script>
+  <script src="/js/geometria.js" defer></script>
+</section>
+
 {# === 3b · I SAGGI ITALIANI (L10, 25/9). Il grosso del sito e' in
        italiano: per il ricercatore e' una ragione in piu' anche se non li
        leggera'. La carta e' Goode, senza centro; i link portano alle pagine
@@ -176,7 +209,7 @@ bodyClass: home home-en
 {% set carta = collections.mergedConceptsIndex | cartaGeo({ geom: "goode", lang: "en" }) %}
 {% if carta.legenda.length %}
 <section class="tv-tav tv-tav--en tv-tav--carta-en home-band--carta" aria-labelledby="carta-h" lang="en">
-  <header class="tv-th"><p class="tv-n">II</p><div><h2 id="carta-h">Where the Italian essays look</h2><p>Most of this site is in Italian: essays on publishing, epistemology and the geopolitics of content, indexed concept by concept. This is where they look.</p></div><a class="tv-tutte" href="/writings/" hreflang="it">The essays, in Italian &#8594;</a></header>
+  <header class="tv-th"><p class="tv-n">III</p><div><h2 id="carta-h">Where the Italian essays look</h2><p>Most of this site is in Italian: essays on publishing, epistemology and the geopolitics of content, indexed concept by concept. This is where they look.</p></div><a class="tv-tutte" href="/writings/" hreflang="it">The essays, in Italian &#8594;</a></header>
   <div class="carta">
     <figure class="carta-figura">
       {{ carta.svg | safe }}
@@ -200,7 +233,7 @@ bodyClass: home home-en
 {# === 4 · THE ABSTRACT: seconda voce editoriale, ultime uscite e
        iscrizione. Il feed e' gia' in inglese. === #}
 <section class="tv-tav tv-tav--en home-band--abstract" aria-labelledby="the-abstract">
-  <header class="tv-th"><p class="tv-n">III</p><div><h2 id="the-abstract">The Abstract</h2><p>Reading the Content Economy from Europe — one essay a month</p></div></header>
+  <header class="tv-th"><p class="tv-n">IV</p><div><h2 id="the-abstract">The Abstract</h2><p>Reading the Content Economy from Europe — one essay a month</p></div></header>
   <div class="abstract-block">
     {% if abstract.posts and abstract.posts.length > 0 %}
     <div class="home-abstract-posts">
@@ -231,7 +264,7 @@ bodyClass: home home-en
        credenziale editoriale italiana e' contesto, non argomento.
        Unica menzione di Episteme Advisory, in coda. === #}
 <section class="tv-tav tv-tav--en en-author" aria-labelledby="plate-author">
-  <header class="tv-th"><p class="tv-n">IV</p><div><h2 id="plate-author">Who is doing this</h2></div><a class="tv-tutte" href="/en/about/">About &#8594;</a></header>
+  <header class="tv-th"><p class="tv-n">V</p><div><h2 id="plate-author">Who is doing this</h2></div><a class="tv-tutte" href="/en/about/">About &#8594;</a></header>
   <div class="tv-en-corpo">
   <p class="en-author-bio">Claudio Cammarano leads marketing at De Agostini Libri and teaches at three Italian universities. Twenty years in publishing — Mondadori, Rizzoli, RCS, GEDI — and an academic background in semiotics and philosophy of language. He wrote <cite>Il mercato del libro</cite> (Solferino).</p>
   <p class="en-author-note">The point of the day job is not the credential. It is that the outputs this programme is about are already being shipped, at scale, in the industry he works in.</p>
