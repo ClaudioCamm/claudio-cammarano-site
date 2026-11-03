@@ -2,7 +2,7 @@
 layout: layouts/catena.njk
 title: "Il permesso e la proprietà"
 date: 2026-10-06T17:10:00Z
-description: "Una biblioteca che affitta un ebook, un'Europa che non decide più i propri tassi, alleati a cui si chiede una riforma in cambio di accesso, modelli d'intelligenza artificiale chiusi: dodici schede su un solo meccanismo, chi concede l'accesso fissa le condizioni."
+description: "Una biblioteca che affitta un ebook, un'Europa che non decide più i propri tassi, alleati a cui si chiede una riforma in cambio di accesso, modelli d'intelligenza artificiale chiusi: quattordici schede su un solo meccanismo, chi concede l'accesso fissa le condizioni."
 tesi: "Da un ebook di biblioteca a un modello linguistico chiuso, «comprare» ha smesso di significare possedere e ha cominciato a significare affittare un accesso a termine; e in ognuno di questi mercati è chi concede l'accesso, non chi lo acquista, a fissare il prezzo e le condizioni — compresa la condizione di poterlo revocare."
 category: ["Economia", "Geopolitica", "Editoria"]
 lang: "🇮🇹 Italiano"
@@ -22,6 +22,8 @@ fonti:
   - 2026-10-01-alpern-risarcimento-distribuito-come-vendita-vulture
   - 2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt
   - 2026-10-06-stratechery-game-decompilation
+  - 2026-10-28-gans-permesso-di-imparare-networklawreview
+  - 2026-10-26-tameez-meta-scraping-robots-niemanlab
 controtesi: 2026-07-29-tooze-china-shock-chartbook
 ---
 
@@ -66,6 +68,10 @@ Chiara Crescenzi, su *Guerre di Rete*, descrive lo strumento giuridico con cui u
 Mario Mariniello aggiunge perché anche la regolazione, quando è pensata male, finisce dalla parte di chi concede piuttosto che aiutare chi riceve. Il suo Policy Brief per Bruegel stima il costo di conformità all'AI Act europeo fra 14.623 e 29.277 euro per sistema, fra il 9 e il 17 per cento del costo totale di sviluppo.{% rif "2026-06-11-mariniello-ai-act-costi-conformita-bruegel" %} È un costo fisso, e un costo fisso pesa in proporzione inversa alla taglia di chi lo sostiene: al GDPR è associata una concentrazione di mercato documentata, e la stessa dinamica applicata all'intelligenza artificiale lascerebbe in piedi proprio le aziende già grandi abbastanza da possedere i propri pesi, con tutti gli altri a noleggiare l'accesso.
 
 Ben Thompson, su *Stratechery*, segnala il punto in cui il meccanismo si incrina.{% rif "2026-10-06-stratechery-game-decompilation" %} Con i modelli linguistici decompilare un gioco, cioè risalire dal codice macchina a un sorgente leggibile, non chiede più anni di lavoro, e il diritto americano tiene distinte le due cose: decompilare non è illecito di per sé, distribuire il codice ricavato quasi certamente sì. Ne viene la formula che Thompson consegna, per cui tutto il software diventerà aperto nel senso che se ne potrà leggere il codice, non nel senso della licenza. Il permesso si sposta dalla lettura alla distribuzione, e chi concede l'accesso conserva il controllo sull'unica cosa che si vende.
+
+Joshua Gans, economista dell'innovazione a Toronto, propone sulla *Network Law Review* di rovesciare il meccanismo per l'addestramento dei modelli.{% rif "2026-10-28-gans-permesso-di-imparare-networklawreview" %} Il permesso preventivo, scrive, non si può negoziare: milioni di titolari da rintracciare, il contributo minimo di ogni opera a un corpus immenso, un danno che nessuno conosce prima che il modello esca. Sulla distinzione di Calabresi e Melamed fra regole di proprietà e regole di responsabilità, suggerisce di lasciar addestrare senza permesso e di risarcire dopo, sopra una soglia, chi viene davvero sostituito nella propria espressione protetta; ed è scettico sull'opt-out europeo, che dove i permessi costano produce meno addestramento più che royalty e favorisce chi può permettersi accordi e cause. Gans ha depositato un parere come amicus curiae nella causa contro OpenAI, e la proposta va letta sapendolo. Per questa catena conta perché mostra che il permesso è una forma possibile del rapporto fra chi possiede e chi usa, e non l'unica: una regola di responsabilità toglie a chi controlla la risorsa il potere di fissare le condizioni prima, e glielo restituisce come diritto a un indennizzo dopo.
+
+Hanaa' Tameez, su *Nieman Lab*, mostra il permesso dal lato opposto, quando a raccogliere è la piattaforma.{% rif "2026-10-26-tameez-meta-scraping-robots-niemanlab" %} A metà ottobre Meta ha aggiornato le condizioni per gli account aziendali su Facebook, Instagram, WhatsApp e Threads in modo da poter raccogliere automaticamente i contenuti dei siti associati, cioè di quasi ogni testata, senza possibilità di sottrarsi; dopo le proteste ha tolto la parola «addestrare», ha limitato l'uso a prodotti pubblicitari e commerciali e ha rinviato l'entrata in vigore al 20 novembre. Gli editori potranno ancora bloccare i crawler con il robots.txt, assicura l'azienda, ma nessuna versione delle condizioni lo scrive. Il permesso qui non lo concede il titolare del contenuto: lo concede, con una dichiarazione alla stampa, chi lo raccoglie, e a farlo valere restano le autorità della concorrenza.
 
 ## Chi resta fuori, chi rientra
 

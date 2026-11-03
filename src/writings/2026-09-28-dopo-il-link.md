@@ -2,7 +2,7 @@
 layout: layouts/catena.njk
 title: "Dopo il link"
 date: 2026-09-28T20:50:00Z
-description: "Il collegamento ipertestuale ha una genealogia che parte da Locke, e forse sta per chiudersi con le risposte generate dai motori di ricerca. Nove schede su che cosa succede all'informazione quando il lettore non ha più bisogno di cliccare."
+description: "Il collegamento ipertestuale ha una genealogia che parte da Locke, e forse sta per chiudersi con le risposte generate dai motori di ricerca. Dodici schede su che cosa succede all'informazione quando il lettore non ha più bisogno di cliccare."
 tesi: "Il link era la moneta dell'informazione in rete e la forma del suo dibattito; le risposte generate lo rendono superfluo, e per le testate la via d'uscita è istituzionale, fatta di fiducia e di regole, più che di traffico."
 category: ["Giornalismo", "Media", "AI"]
 lang: "🇮🇹 Italiano"
@@ -19,6 +19,9 @@ fonti:
   - 2026-09-18-athas-rollout-redazione-niemanlab
   - 2026-06-26-ottaviani-data-journalism-ai-reuters
   - 2026-10-08-bell-chaplin-the-atlas-cjr
+  - 2026-10-29-economist-wikipedia-25-anni
+  - 2026-10-28-gans-permesso-di-imparare-networklawreview
+  - 2026-10-26-tameez-meta-scraping-robots-niemanlab
 controtesi: 2026-06-26-ottaviani-data-journalism-ai-reuters
 ---
 
@@ -40,7 +43,11 @@ Andrea Nelson Mauro ha rielaborato sei anni di Digital News Report sulla sola pa
 
 Il problema, peraltro, è economico prima che epistemico. Lo studio del Brennan Center che Lawrence Norden presenta sul *Washington Post* ha sottoposto i principali chatbot alle teorie del complotto sul voto, alla vigilia delle prime elezioni americane in cui un elettore su quattro li usa ogni giorno, e sul testo i modelli hanno per lo più resistito, riconoscendo la preoccupazione senza amplificare i fatti falsi.{% rif "2026-08-25-norden-chatbot-election-lies-wapo" %} Una risposta generata può essere più prudente di molti post; resta che non manda nessuno alla fonte, e la fonte, senza lettori, non ha di che vivere.
 
+Il caso che lo mostra meglio non riguarda un giornale. L'*Economist*, recensendo il libro di Richard Cooke sui venticinque anni di Wikipedia, riporta che quando un motore di ricerca suggerisce una voce dell'enciclopedia quasi un utente su dieci la apre, mentre quando la cita un modello linguistico la apre lo 0,33 per cento, e che dal 2022 il sito ha perso quasi un quarto dei lettori.{% rif "2026-10-29-economist-wikipedia-25-anni" %} Wikipedia è forse il corpus più importante nella storia dell'addestramento dei modelli, e attraverso le loro risposte è più letta che mai; intanto è sempre meno visitata, finanziata e scritta, con i redattori scesi di un terzo dal picco del 2007. Un link che nessuno clicca più toglie lettori, e con i lettori i volontari e le donazioni che tengono in piedi la fonte.
+
 Il caso estremo, quello di chi rinuncia del tutto al traffico, lo raccontano Emily Bell e Heather Chaplin sulla *Columbia Journalism Review*: *The Atlas*, il mensile di Coda Story e di *The Continent*, è un PDF mandato ai lettori via Signal per aggirare la censura «autoritaria e algoritmica».{% rif "2026-10-08-bell-chaplin-the-atlas-cjr" %} La tesi di Simon Allison è che ogni scommessa costruita sulla piattaforma di una grande azienda tecnologica sia destinata a fallire, e che un giornale che vuole durare debba possedere il proprio canale. Mancano numeri su lettori e ricavi, e il modello resta un'ipotesi; ma è la via d'uscita che questa catena indica, l'istituzione al posto del traffico, portata al suo estremo.
+
+Fra la piattaforma e il PDF via Signal c'è la strada delle regole, ed è quella su cui si discute adesso. Joshua Gans, sulla *Network Law Review*, propone per l'addestramento generale dei modelli di lasciar procedere senza permesso e risarcire dopo chi viene davvero sostituito, e fa un'eccezione che riguarda direttamente le testate: il recupero di articoli freschi per rispondere a domande di attualità, dove editori e articoli sono identificabili e una licenza ha senso economico.{% rif "2026-10-28-gans-permesso-di-imparare-networklawreview" %} È il punto in cui le risposte generate hanno ancora bisogno della fonte, e in cui la fonte può farsi pagare; Gans, che ha depositato un parere come amicus curiae nella causa contro OpenAI, va letto sapendolo. Quanto sia fragile quella leva lo mostra Hanaa' Tameez, su *Nieman Lab*: Meta assicura che gli editori potranno continuare a bloccare i suoi crawler con il robots.txt, ma non lo scrive in nessuna versione delle nuove condizioni per gli account aziendali.{% rif "2026-10-26-tameez-meta-scraping-robots-niemanlab" %} A far valere il permesso degli editori, per ora, sono la Commissione europea e l'autorità britannica della concorrenza, cioè proprio le regole su cui questa catena conta più che sul mercato.
 
 ## Il metodo
 
