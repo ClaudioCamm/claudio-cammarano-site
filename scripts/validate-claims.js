@@ -38,6 +38,11 @@ claims.forEach((l, i) => {
   if (!l.id || !/^[a-z0-9][a-z0-9-]*$/.test(l.id)) err("id mancante o non in forma di slug");
   if (claims.filter(x => x.id === l.id).length > 1) err("id ripetuto");
 
+  // names: il tag libero. Si controlla solo la forma, mai il contenuto:
+  // il nome serve a individuare un'idea, non a garantirla.
+  if (l.names !== undefined && (!Array.isArray(l.names) || l.names.length > 2 ||
+      l.names.some(n => typeof n !== "string" || !n.trim())))
+    err("names: da 0 a 2 cognomi, stringhe non vuote");
   if (!l.src) err("src mancante");
   else if (!l.src.startsWith("/") && !chiavi.has(l.src)) err(`src "${l.src}" non e' ne' una chiave di biblio.js ne' un percorso del sito`);
 

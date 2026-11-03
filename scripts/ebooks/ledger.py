@@ -175,6 +175,8 @@ def main():
                 meta = [f"[Source]{{.k}} {source(c)}" + (f", {md(c['locus'])}" if c.get("locus") else ""),
                         f"[Marks]{{.k}} {md(fn)} · {md(d1)} · {md(c.get('stance', ''))}"
                         + (" · contested" if c.get("contested") else "")]
+                if c.get("names"):
+                    meta.insert(1, f"[Names]{{.k}} {md(' · '.join(c['names']))}")
                 rel = [f"{r['how']} → [{N(r['to'])}](#{N(r['to']).lower()})"
                        for r in c.get("relates", []) if r["to"] in claims]
                 if rel:

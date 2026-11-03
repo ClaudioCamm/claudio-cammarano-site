@@ -5,8 +5,12 @@
  * cosa ciascuno lega, cosa afferma e cosa non puo' fare. Quello che cambia e'
  * il vocabolario, perche' cambia il corpus.
  *
- *   Free tag   semantica spontanea, non ancora usata qui: la valvola resta
- *              aperta ma vuota finche' non serve.
+ *   Free tag   i nomi (campo `names` in claims.js): da 0 a 2 cognomi per
+ *              claim, il nome con cui l'idea circola, messi a mano. Liberi
+ *              per definizione: il principio di autorita' non ha valore
+ *              scientifico, il nome serve a individuare. Il validator ne
+ *              controlla solo la forma. "Cammarano" solo per i concetti che
+ *              nessun altro condivide.
  *   Topic      raggruppa, non afferma. Una lessia sta in un Topic solo.
  *   Theme      connota. Si deriva dai Topic e non si assegna a una lessia:
  *              se lo assegnassi a mano sarebbe un Topic con le pretese.
@@ -237,8 +241,14 @@ CONCEPTS.forEach(c => c.links.forEach(k => {
   });
 }));
 
+// Lo strato del tag libero: i nomi distinti, con i claim che li portano.
+const NAMES = Object.values(claims.reduce((m, c) => {
+  (c.names || []).forEach(n => { (m[n] = m[n] || { name: n, claims: [] }).claims.push(c.id); });
+  return m;
+}, {})).sort((a, b) => b.claims.length - a.claims.length || a.name.localeCompare(b.name));
+
 module.exports = {
-  TOPICS, THEMES, CONCEPTS,
+  TOPICS, THEMES, CONCEPTS, NAMES,
   byClaim: perLessia,
   conceptByKey: perChiaveC,
   graph: { nodes, arcs, bands, NX, W, height: TOP + righe.length * RIGA + offset + 14 }

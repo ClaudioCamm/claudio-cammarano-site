@@ -281,7 +281,8 @@ og_card: /images/og/og-en-home.png
           <p class="lx-head">{{ marca(l, 14) }} <cite class="lx-cite"{% if l.fonte %} title="{{ l.fonte.title }}"{% endif %}>{% if l.fonte and l.fonte.doi %}<a href="https://doi.org/{{ l.fonte.doi }}" rel="external">{{ l.cite }}</a>{% elif l.fonte %}{{ l.cite }}{% else %}<a href="{{ l.src }}">Lab note</a>{% endif %}</cite>{% if l.locus %}<span class="lx-locus">{{ l.locus }}</span>{% endif %}</p>
         </div>
         <p class="lx-layers">
-          <span class="k">topic</span> {{ L.topicEn }}
+          {% if l.names and l.names.length %}<span class="k">names</span> {{ l.names | join(" · ") }}
+          &nbsp;{% endif %}<span class="k">topic</span> {{ L.topicEn }}
           &nbsp;<span class="k">concept</span> {% for k in L.concepts %}<a href="#cm" data-go="{{ k }}">{{ claimLayers.conceptByKey[k].en }}</a>{% if not loop.last %}, {% endif %}{% endfor %}
         </p>
         <p class="lx-foot">

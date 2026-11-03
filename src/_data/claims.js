@@ -68,6 +68,7 @@ const STANCE = ["assumed", "used", "contested", "superseded"];
 const claims = [
   {
     id: "ontology-precedes-epistemology",
+    names: ["Cammarano"],
     gist: "Before asking whether a statement is true, you have to settle what kind of statement it is: the test that fits a measurement does not fit a value judgement. The whole framework rests on taking that step first, and in the open.",
     src: "/lab/2026-02-03-the-seven-dimensional-taxonomy-v2/",
     locus: "\u00b64",
@@ -102,6 +103,7 @@ const claims = [
   },
   {
     id: "d1-is-load-bearing",
+    names: ["Cammarano"],
     gist: "One dimension of the taxonomy decides what a claim is; the other six describe how it behaves once that is settled. Keeping a single axis load-bearing is what stops the scheme from flattening into a list of labels.",
     src: "/lab/2026-02-03-the-seven-dimensional-taxonomy-v2/",
     locus: "\u00b63",
@@ -157,6 +159,7 @@ const claims = [
   // regola: mai dall'abstract. Solo testo corrente.
   {
     id: "form-alone-cannot-yield-meaning",
+    names: ["Bender", "Koller"],
     gist: "A system trained only on the shape of language has nothing in its input that could tell it what the language is about. The argument is about what the training signal contains, not about how well the system performs today.",
     src: "bender2020climbing",
     locus: "\u00a71 Introduction",
@@ -173,6 +176,7 @@ const claims = [
   },
   {
     id: "correlation-versus-mechanism",
+    names: ["Mitchell", "Krakauer"],
     gist: "The dispute over machine understanding is not one question but two pictures of what understanding is: tracking statistical regularities, or holding a causal model of how things work. Naming the split explains why the two camps talk past each other.",
     src: "mitchell2023debate",
     locus: "p. 1",
@@ -191,6 +195,7 @@ const claims = [
   },
   {
     id: "more-annotators-beats-bias-correction",
+    names: ["Artstein", "Poesio"],
     gist: "When measuring whether two people label things the same way, correcting for each coder's personal bias matters less than how many coders there are. For a coding protocol, that moves the effort from the statistics to the recruitment.",
     src: "artstein2008",
     locus: "\u00a75.2 Choosing a Coefficient",
@@ -225,6 +230,7 @@ const claims = [
   },
   {
     id: "lms-infer-agent-mental-states",
+    names: ["Andreas"],
     gist: "Predicting the next word can require the model to build a partial picture of what the writer believed and wanted. The claim is about representations inside the system, not about the system being someone.",
     src: "andreas2022language",
     locus: "\u00a71 Introduction, (C1)",
@@ -243,6 +249,7 @@ const claims = [
   },
   {
     id: "cai-partially-replaces-human-feedback",
+    names: ["Bai"],
     gist: "Harmlessness was trained by having the model criticise and revise its own answers against a written list of principles, instead of having people label every harmful output. Human judgement moves out of the labels and into the rules.",
     src: "bai2022constitutional",
     locus: "\u00a71 Introduction",
@@ -275,6 +282,7 @@ const claims = [
   },
   {
     id: "explicit-about-what-is-not-evaluated",
+    names: ["Liang"],
     gist: "An evaluation should publish the distance between what it set out to measure and what it actually measured. Stating what was left out counts as part of the result, not as an apology for it.",
     src: "liang2022holistic",
     locus: "\u00a72, Recognition of incompleteness",
@@ -291,6 +299,7 @@ const claims = [
   },
   {
     id: "breakthroughs-are-metric-artefacts",
+    names: ["Srivastava"],
     gist: "Abilities that look as though they switch on all at once with scale often improve smoothly underneath: the jump belongs to an all-or-nothing metric. Change the metric and the cliff turns back into a slope.",
     src: "srivastava2023beyond",
     locus: "\u00a73.4.2",
@@ -307,6 +316,7 @@ const claims = [
   },
   {
     id: "transformer-dispenses-with-recurrence",
+    names: ["Vaswani"],
     gist: "The architecture behind current language models dropped step-by-step processing of a sequence in favour of computing every relation between positions at once. It is the engineering fact the rest of the debate stands on.",
     src: "vaswani2017attention",
     locus: "\u00a72 Background",
@@ -377,6 +387,7 @@ const claims = [
   },
   {
     id: "models-lack-epistemic-self-classification",
+    names: ["Cammarano"],
     gist: "The premise the whole framework rests on, in its narrow form: a model may represent that a passage is in Spanish, or that it is being evaluated, without representing that the assertion it is about to make is causal rather than correlational. The typing of the claim is the one content the self-report does not carry.",
     src: "/lab/2026-07-28-what-counts-as-introspection/",
     locus: "\u00b68",
@@ -468,6 +479,7 @@ const claims = [
   },
   {
     id: "mayo-severity-weak",
+    names: ["Mayo"],
     gist: "Agreement between data and a claim is not evidence when the method could not have found the claim false. This is the negative, minimal criterion the programme uses to tell a validation that tested something from one that only confirmed what it presupposed.",
     src: "mayo2018statistical",
     locus: "p. 5, Excursion 1, Tour I, §1.1",
@@ -484,6 +496,7 @@ const claims = [
   },
   {
     id: "mayo-severity-strong",
+    names: ["Mayo"],
     gist: "The positive counterpart of the weak requirement: evidence is graded by how capable the test was of finding flaws. It matters because it turns severity from a veto into a measure, which is what a validation protocol needs to rank results rather than just reject them.",
     src: "mayo2018statistical",
     locus: "p. 14, Excursion 1, Tour I, §1.2",
@@ -502,6 +515,7 @@ const claims = [
   },
   {
     id: "mayo-lift-off",
+    names: ["Mayo"],
     gist: "Convergent, independent checks can warrant a conclusion more strongly than any single one of them. This is the epistemic ground for aggregating multiple fallible runs or judges instead of demanding a single infallible one.",
     src: "mayo2018statistical",
     locus: "p. 15, Excursion 1, Tour I, §1.2",
@@ -518,6 +532,7 @@ const claims = [
   },
   {
     id: "mayo-arguing-from-error",
+    names: ["Mayo"],
     gist: "Absence of a detected error counts only if the procedure would have signalled that error had it been there. It is the operational form of severity, and the test any judge-based validation has to pass before its silence can be read as a result.",
     src: "mayo2018statistical",
     locus: "p. 16, Excursion 1, Tour I, §1.2",
@@ -536,6 +551,7 @@ const claims = [
   },
   {
     id: "mayo-forward-looking-methods",
+    names: ["Mayo"],
     gist: "Mayo treats inferential methods as instruments for finding things out and for grading others' work, not as after-the-fact justifications. The programme reads validation protocols the same way: as probes that can fail, not as rationalisations of verdicts already reached.",
     src: "mayo2018statistical",
     locus: "p. 8, Excursion 1, Tour I",
@@ -552,6 +568,7 @@ const claims = [
   },
   {
     id: "mayo-severity-meta-methodology",
+    names: ["Mayo"],
     gist: "Severity is applied one level up, to methods rather than to claims: a method is judged by its capacity to catch erroneous interpretations. This is the move the programme makes when it treats severity as a meta-level property of validation procedures.",
     src: "mayo2018statistical",
     locus: "p. 9, Excursion 1, Tour I, Methodology and Meta-methodology",
