@@ -3001,7 +3001,8 @@ module.exports = [
       { title: "Is Kaliningrad, Russia's exclave surrounded by EU countries, an asset or a liability?", url: "/curated/2022-06-06-economist-kaliningrad-risorsa-o-ostaggio/", _source: "curated" },
       { title: "Selon Mario Draghi l’Europe ne peut plus vivre sans croissance", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" },
       { title: "Jamie Dimon: A Plan for the Western World’s Revival", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" },
-      { title: "Iran, China, Canada? A Defense of Trump’s Grand Strategy", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" }
+      { title: "Iran, China, Canada? A Defense of Trump’s Grand Strategy", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" },
+      { title: "Meta delays rollout of terms that would allow broad scraping of news sites. Legal experts are still skeptical.", url: "/curated/2026-10-26-tameez-meta-scraping-robots-niemanlab/", _source: "curated" }
     ]
   },
   {
@@ -3700,7 +3701,8 @@ module.exports = [
     articles: [
       { title: "An interview with Elon Musk", url: "/curated/2026-07-24-musk-economist-interview-beddoes/", _source: "curated" },
       { title: "Naomi Klein: 'Extreme wealth has a deranging effect. It turns you into a supremacist'", url: "/curated/2026-09-18-klein-end-times-fascism-guardian/", _source: "curated" },
-      { title: "Intelligenza artificiale e rischio estinzione, che cosa pensano (davvero) gli scienziati?", url: "/curated/2026-09-26-signorelli-rischio-estinzione-scienziati-backdoor/", _source: "curated" }
+      { title: "Intelligenza artificiale e rischio estinzione, che cosa pensano (davvero) gli scienziati?", url: "/curated/2026-09-26-signorelli-rischio-estinzione-scienziati-backdoor/", _source: "curated" },
+      { title: "Elon Musk’s Grokipedia is littered with mistakes. But Wikipedia could still learn some things from it.", url: "/curated/2026-11-02-adair-grokipedia-errori-niemanlab/", _source: "curated" }
     ]
   },
   {
@@ -5032,7 +5034,8 @@ module.exports = [
     articles: [
       { title: "Librarians on Libraries", url: "/curated/2026-10-01-egan-maher-libro-che-biblioteca-non-possiede-nyt/", _source: "curated" },
       { title: "Publishers Hit the AI Jackpot", url: "/curated/2026-10-01-alpern-risarcimento-distribuito-come-vendita-vulture/", _source: "curated" },
-      { title: "Game Decompilation, Is This Legal?, A Well-Trodden Path", url: "/curated/2026-10-06-stratechery-game-decompilation/", _source: "curated" }
+      { title: "Game Decompilation, Is This Legal?, A Well-Trodden Path", url: "/curated/2026-10-06-stratechery-game-decompilation/", _source: "curated" },
+      { title: "Permission to Learn: An Economic Approach to AI Copyright", url: "/curated/2026-10-28-gans-permesso-di-imparare-networklawreview/", _source: "curated" }
     ]
   },
   {
@@ -5603,7 +5606,8 @@ module.exports = [
     note: "Il termine, reso corrente nel 2001 dal generale dell'aviazione statunitense Charles Dunlap, indica l'uso del diritto come sostituto o complemento della forza per ottenere un obiettivo contro un avversario; nell'uso politico ha preso anche il senso di persecuzione giudiziaria degli oppositori. **Nel sito indica il diritto usato come leva strategica, il terreno su cui l'Unione Europea, forte di un mercato di circa 450 milioni di consumatori con alto potere d'acquisto, ha più forza che altrove.** Anu Bradford ha descritto lo stesso meccanismo come «effetto Bruxelles»: le regole europee diventano standard globali perché le imprese non vogliono rinunciare a quel mercato.",
     articles: [
       { title: "EU probes pro-Kremlin disinformation around French riots", url: "/curated/2026-10-21-dubois-jones-disinformazione-rivolte-francia-ft/", _source: "curated" },
-      { title: "Le tenebre non sono il nostro destino. Intervista ad Asma Mhalla", url: "/curated/2026-10-21-molteni-mhalla-pandora/", _source: "curated" }
+      { title: "Le tenebre non sono il nostro destino. Intervista ad Asma Mhalla", url: "/curated/2026-10-21-molteni-mhalla-pandora/", _source: "curated" },
+      { title: "Meta delays rollout of terms that would allow broad scraping of news sites. Legal experts are still skeptical.", url: "/curated/2026-10-26-tameez-meta-scraping-robots-niemanlab/", _source: "curated" }
     ]
   },
   {
@@ -5849,7 +5853,8 @@ module.exports = [
     ],
     note: "L'enciclopedia collaborativa online fondata nel 2001 da Jimmy Wales e Larry Sanger, gestita senza scopo di lucro dalla Wikimedia Foundation e scritta da volontari in oltre 300 lingue. **Nel sito è il caso esemplare di un bene comune della conoscenza che l'intelligenza artificiale usa come materia prima e insieme svuota: più letta che mai attraverso i modelli, sempre meno visitata e sempre meno scritta.**",
     articles: [
-      { title: "Humans will never again create a project quite like Wikipedia", url: "/curated/2026-10-29-economist-wikipedia-25-anni/", _source: "curated" }
+      { title: "Humans will never again create a project quite like Wikipedia", url: "/curated/2026-10-29-economist-wikipedia-25-anni/", _source: "curated" },
+      { title: "Elon Musk’s Grokipedia is littered with mistakes. But Wikipedia could still learn some things from it.", url: "/curated/2026-11-02-adair-grokipedia-errori-niemanlab/", _source: "curated" }
     ]
   },
   {
@@ -5913,6 +5918,29 @@ module.exports = [
       { title: "Task Force on 2020 Pre-Election Polling: An Evaluation of the 2020 General Election Polls", url: "/curated/2021-07-19-aapor-task-force-sondaggi-2020/", _source: "curated" },
       { title: "‘Fake’ pollsters hit US midterms", url: "/curated/2026-10-23-afp-falsi-istituti-sondaggio/", _source: "curated" },
       { title: "Can You Trust the Midterm Polls? Three Times Journalists Talk It Out.", url: "/curated/2026-10-28-healy-cohn-davis-sondaggi-midterm-nyt/", _source: "curated" }
+    ]
+  },
+  {
+    name: "regole di proprietà e di responsabilità",
+    type: "teoria",
+    geo: { modo: "teorico", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "esaurimento del diritto", why: "Due modi di decidere fin dove arriva il controllo del titolare dopo che l'opera è entrata in circolazione." }
+    ],
+    note: "La distinzione proposta nel 1972 da Guido Calabresi e A. Douglas Melamed: una regola di proprietà protegge un diritto chiedendo il consenso del titolare prima dell'uso, una regola di responsabilità consente l'uso e impone di risarcire il danno dopo. **Nel sito è lo strumento per discutere il diritto d'autore nell'addestramento dei modelli: quando il permesso preventivo non si può negoziare, la tutela passa dal veto al risarcimento.**",
+    articles: [
+      { title: "Meta delays rollout of terms that would allow broad scraping of news sites. Legal experts are still skeptical.", url: "/curated/2026-10-26-tameez-meta-scraping-robots-niemanlab/", _source: "curated" },
+      { title: "Permission to Learn: An Economic Approach to AI Copyright", url: "/curated/2026-10-28-gans-permesso-di-imparare-networklawreview/", _source: "curated" }
+    ]
+  },
+  {
+    name: "effetti di rete",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q649124"],
+    note: "Si ha un effetto di rete quando il valore di un prodotto cresce con il numero di chi lo usa, come per il telefono o per un social network; è la ragione per cui i mercati digitali tendono a concentrarsi su un solo vincitore. **Nel sito interessa la distinzione fra l'effetto che resta dentro un prodotto e quello che arricchisce un intero ecosistema, perché spinge una piattaforma in direzioni opposte verso i concorrenti che ospita.**",
+    articles: [
+      { title: "Not All Network Effects Are Red Flags: A Simple Screen for Digital Vertical Mergers", url: "/curated/2026-10-13-johnen-shekhar-effetti-di-rete-networklawreview/", _source: "curated" }
     ]
   }
 
