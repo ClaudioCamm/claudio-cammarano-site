@@ -2,6 +2,7 @@
   "the-claims-ledger": {
     "claims": 29,
     "digest": "9031e21670d635bb371760f7b14d7795456d82afd506d5fe6e52fb68f2ced184",
-    "edition": "2026-11-02"
+    "edition": "2026-11-02",
+    "pages": 18
   }
 }

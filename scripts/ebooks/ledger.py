@@ -251,7 +251,13 @@ def main():
                    check=True, cwd=ROOT)
     for p in (tmp, defs, svg, mappdf):
         p.unlink()
-    manifest[SLUG] = {"digest": digest, "edition": today.isoformat(), "claims": len(claims)}
+    pages = None
+    try:  # le pagine, per la riga dell'edizione in /en/claims/ (src/_data/ledger.js)
+        info = subprocess.run(["pdfinfo", str(pdf)], capture_output=True, text=True).stdout
+        pages = int(re.search(r"^Pages:\s+(\d+)", info, re.M).group(1))
+    except Exception:
+        pass
+    manifest[SLUG] = {"digest": digest, "edition": today.isoformat(), "claims": len(claims), "pages": pages}
     MANIFEST.write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n")
     print(f"ok  {SLUG}  ({len(claims)} claims, {edition})")
 

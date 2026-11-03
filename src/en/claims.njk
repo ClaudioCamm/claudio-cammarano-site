@@ -167,6 +167,20 @@ og_card: /images/og/og-en-home.png
   .cm-lab{font-size:15px}
   .cm-num{font-size:12px}
 }
+/* The Claims Ledger: il download come una tavola, e il richiamo sotto la mappa */
+.ld{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 28px;align-items:end;border-top:6px solid var(--tv-ink);border-bottom:1px solid var(--tv-line);padding:16px 0 18px;margin:28px 0 36px}
+.ld-k{grid-column:1/-1;margin:0;font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--color-lab-text)}
+.ld-t{margin:0;font-family:var(--font-display);font-weight:400;font-size:clamp(30px,4vw,44px);line-height:1;letter-spacing:-.02em}
+.ld-t em{color:var(--color-lab-text)}
+.ld-d{margin:8px 0 0;font-style:italic;color:var(--tv-soft);max-width:560px}
+.ld-l{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.ld-l a{font-family:var(--font-sans);font-stretch:74%;font-weight:600;font-size:15px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:#fff;background:var(--color-lab);padding:10px 18px;min-height:44px;box-sizing:border-box;display:inline-flex;align-items:center}
+.ld-l a+a{background:none;color:var(--color-lab-text);border:1.5px solid currentColor}
+.ld-m{grid-column:1/-1;margin:6px 0 0;font-family:var(--font-mono);font-size:13px;color:var(--color-text-light)}
+.ld-side{margin-top:14px;border-top:1px solid var(--tv-line);padding-top:10px;font-family:var(--font-sans);font-stretch:74%;font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.ld-side b{display:block;font-family:var(--font-display);font-weight:400;font-style:italic;text-transform:none;letter-spacing:0;font-size:18px;margin-bottom:4px;color:var(--color-lab-text)}
+.ld-side a{color:var(--color-lab-text)}
+@media (max-width:700px){.ld{grid-template-columns:1fr}.ld-l a{flex:1;justify-content:center}}
 </style>
 <noscript><style>
 .lx-ctx{max-height:none!important;-webkit-mask-image:none!important;mask-image:none!important}
@@ -182,7 +196,12 @@ og_card: /images/og/og-en-home.png
 
 <p class="cl-scope"><strong>These are not claims in general.</strong> Every one of them is on file because this programme stands on it, borrows a method from it, or has to answer to it. Nothing is here for completeness, and the archive is not trying to cover a field: it is showing what its own work rests on, including the parts that push back.</p>
 
-<p class="article-download">The whole set as one document, arranged as the map, every claim with a permanent number: <em>The Claims Ledger</em>, <a href="/downloads/ricerca/the-claims-ledger.pdf" download>PDF</a> · <a href="/downloads/ricerca/the-claims-ledger.epub" download>ePub</a>. It is compiled from the same data as this page and rebuilt when the data change.</p>
+{% if ledger %}<aside class="ld" aria-label="Download">
+<p class="ld-k">Download · the whole set as one document</p>
+<div><h2 class="ld-t">The Claims <em>Ledger</em></h2><p class="ld-d">Every claim arranged as the map, each with a permanent number, its context and its links.</p></div>
+<div class="ld-l"><a href="{{ ledger.pdf }}" download>PDF</a><a href="{{ ledger.epub }}" download>ePub</a></div>
+<p class="ld-m">$ edition {{ ledger.edition }} · {{ ledger.claims }} claims{% if ledger.pages %} · {{ ledger.pages }} pp.{% endif %} · rebuilt when the data change</p>
+</aside>{% endif %}
 
 <div class="cx">
   <aside class="cx-map">
@@ -206,6 +225,7 @@ og_card: /images/og/og-en-home.png
     <p class="cm-note" id="cm-note">Every concept carries a proposition and at least one link to another concept: without both it cannot exist, and the build fails.</p>
     </figure>
     <button class="cx-all" type="button" id="cx-all" aria-pressed="false">Show all {{ claims.length }} claims</button>
+    {% if ledger %}<p class="ld-side"><b>The Claims Ledger</b><a href="{{ ledger.pdf }}" download>PDF</a> · <a href="{{ ledger.epub }}" download>ePub</a></p>{% endif %}
   </aside>
 
   <section class="cx-read" id="cx-read">
