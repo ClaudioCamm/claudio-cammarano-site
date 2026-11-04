@@ -801,7 +801,8 @@ module.exports = [
       { title: "Effective altruism is this century’s biggest idea", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" },
       { title: "Could AIs become conscious?", url: "/curated/2026-08-20-economist-anche-se-non-lo-fossero/", _source: "curated" },
       { title: "A.I. Companies Say They Aren’t Responsible for Their Unpredictable Products. Don’t Believe Them.", url: "/curated/2026-10-10-nyt-editorial-ai-responsabilita/", _source: "curated" },
-      { title: "AI is a technological version of the Homeric songs", url: "/curated/2026-10-28-farrell-shalizi-canti-omerici-economist/", _source: "curated" }
+      { title: "AI is a technological version of the Homeric songs", url: "/curated/2026-10-28-farrell-shalizi-canti-omerici-economist/", _source: "curated" },
+      { title: "Elias in the Lighthouse, Again? Diagnosing Low Diversity in LLM Stories", url: "/curated/2026-05-26-hamilton-mimno-elias-faro-storie-llm-arxiv/", _source: "curated" }
     ]
   },
   {
@@ -1039,7 +1040,8 @@ module.exports = [
       { title: "I'm a College Professor. Writing Isn't as Important as We Think.", url: "/curated/2026-09-29-cruz-scrittura-pensiero-nyt/", _source: "curated" },
       { title: "Japanese author Rie Kudan wins prestigious Akutagawa Prize for novel partly written by ChatGPT", url: "/curated/2024-01-17-kudan-akutagawa-cinque-per-cento-cnn/", _source: "curated" },
       { title: "Il triste dibattito sullo scrivere con l'IA", url: "/curated/2026-10-02-piacenza-triste-dibattito-scrivere-ia/", _source: "curated" },
-      { title: "Don't let robots write your first draft", url: "/curated/2026-10-22-getty-cooper-prima-bozza-ideo/", _source: "curated" }
+      { title: "Don't let robots write your first draft", url: "/curated/2026-10-22-getty-cooper-prima-bozza-ideo/", _source: "curated" },
+      { title: "Elias in the Lighthouse, Again? Diagnosing Low Diversity in LLM Stories", url: "/curated/2026-05-26-hamilton-mimno-elias-faro-storie-llm-arxiv/", _source: "curated" }
     ]
   },
   {
@@ -1451,7 +1453,8 @@ module.exports = [
     note: "Filo tematico ricorrente nei curated del sito, in due varianti distinte: come dibattito sugli strumenti di riduzione della povertà estrema (i trasferimenti monetari diretti contro l'architettura assistenziale tradizionale) e come lente con cui leggere la sostenibilità di filiere produttive — dalla cultura all'animazione — che crescono senza remunerare chi ci lavora.",
     articles: [
       { title: "One neat trick to end extreme poverty", url: "/curated/2026-04-09-end-extreme-poverty/", _source: "curated" },
-      { title: "The U.S. Is Betting the Economy on 'Scaling' AI: Where Is the Intelligence When One Needs It?", url: "/curated/2025-12-08-storm-scaling-ai-bolla-inet/", _source: "curated" }
+      { title: "The U.S. Is Betting the Economy on 'Scaling' AI: Where Is the Intelligence When One Needs It?", url: "/curated/2025-12-08-storm-scaling-ai-bolla-inet/", _source: "curated" },
+      { title: "La bulle et le contrôle", url: "/curated/2026-11-03-durand-valenti-bolla-controllo-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -2978,7 +2981,8 @@ module.exports = [
       { title: "Why Is Tech Billionaire Marc Andreessen So Mad?", url: "/curated/2026-10-15-carr-andreessen-bloomberg/", _source: "curated" },
       { title: "Mamdani Is the Centrist We’ve Been Waiting For", url: "/curated/2026-10-19-chait-mamdani-centrista-atlantic/", _source: "curated" },
       { title: "Democrats are rediscovering what an appealing politics of progress looks like", url: "/curated/2026-10-29-economist-lexington-democratici/", _source: "curated" },
-      { title: "The countries making a fortune from the US-China rivalry", url: "/curated/2026-10-29-economist-minerali-critici-rivalita/", _source: "curated" }
+      { title: "The countries making a fortune from the US-China rivalry", url: "/curated/2026-10-29-economist-minerali-critici-rivalita/", _source: "curated" },
+      { title: "La bulle et le contrôle", url: "/curated/2026-11-03-durand-valenti-bolla-controllo-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -3935,7 +3939,8 @@ module.exports = [
       { title: "Logitech CEO Scouring the Globe to Beat Chip Shortage", url: "/curated/2026-09-30-cutter-faber-logitech-chip-wsj/", _source: "curated" },
       { title: "The AI boom is threatened by an epidemic of unreliable numbers", url: "/curated/2026-10-14-economist-numeri-inaffidabili-ai/", _source: "curated" },
       { title: "Someone Has to Take the AI Risk", url: "/curated/2026-10-20-levine-someone-has-to-take-ai-risk-bloomberg/", _source: "curated" },
-      { title: "Nvidia Chief, Jensen Huang, Is Seen as Target of Chinese Spy Plot", url: "/curated/2026-10-29-swan-haberman-huang-spionaggio-nyt/", _source: "curated" }
+      { title: "Nvidia Chief, Jensen Huang, Is Seen as Target of Chinese Spy Plot", url: "/curated/2026-10-29-swan-haberman-huang-spionaggio-nyt/", _source: "curated" },
+      { title: "La bulle et le contrôle", url: "/curated/2026-11-03-durand-valenti-bolla-controllo-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -5941,6 +5946,49 @@ module.exports = [
     note: "Si ha un effetto di rete quando il valore di un prodotto cresce con il numero di chi lo usa, come per il telefono o per un social network; è la ragione per cui i mercati digitali tendono a concentrarsi su un solo vincitore. **Nel sito interessa la distinzione fra l'effetto che resta dentro un prodotto e quello che arricchisce un intero ecosistema, perché spinge una piattaforma in direzioni opposte verso i concorrenti che ospita.**",
     articles: [
       { title: "Not All Network Effects Are Red Flags: A Simple Screen for Digital Vertical Mergers", url: "/curated/2026-10-13-johnen-shekhar-effetti-di-rete-networklawreview/", _source: "curated" }
+    ]
+  },
+  {
+    name: "collasso modale",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    related: [
+      { name: "allineamento AI", why: "Il prezzo meno visibile dell'allineamento: premiare poche risposte preferite restringe ciò che il modello sa ancora produrre." },
+      { name: "scrittura", why: "Quando la scrittura passa per lo stesso modello converge sugli stessi nomi, luoghi e mestieri." }
+    ],
+    note: "Tendenza di un modello generativo a concentrare ciò che produce su un insieme ristretto di risposte, osservata nei modelli linguistici dopo l'introduzione dell'addestramento supervisionato e del rinforzo da preferenze umane. **Nel sito è il nome tecnico dell'omologazione della scrittura assistita: quando i modelli convergono sugli stessi nomi, luoghi e giri di frase, convergono anche i testi di chi li usa.**",
+    articles: [
+      { title: "Elias in the Lighthouse, Again? Diagnosing Low Diversity in LLM Stories", url: "/curated/2026-05-26-hamilton-mimno-elias-faro-storie-llm-arxiv/", _source: "curated" }
+    ]
+  },
+  {
+    name: "bolla speculativa",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    related: [
+      { name: "Nvidia", why: "Il fornitore che finanzia i propri clienti: la circolarità che Durand e Valenti indicano come prima crepa della bolla." }
+    ],
+    note: "Fase in cui il prezzo di un'attività o il volume degli investimenti in un settore si stacca dai rendimenti che ci si può ragionevolmente attendere, sostenuto dall'aspettativa che altri continueranno a comprare. **Nel sito serve a leggere il boom dell'AI: la domanda non è soltanto se la bolla scoppierà, ma chi ne sopporterà il costo e quale potere avrà accumulato chi l'ha gonfiata.**",
+    articles: [
+      { title: "La bulle et le contrôle", url: "/curated/2026-11-03-durand-valenti-bolla-controllo-grandcontinent/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Kalecki, Michał",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Polonia"] },
+    note: "Economista polacco, scrive nel 1943 «Aspetti politici della piena occupazione», dove spiega l'ostilità degli imprenditori verso la piena occupazione con ragioni di potere e non di profitto. **Nel sito è la chiave per leggere investimenti che non rendono come scelte di controllo sul lavoro e non come errori di calcolo.**",
+    articles: [
+      { title: "La bulle et le contrôle", url: "/curated/2026-11-03-durand-valenti-bolla-controllo-grandcontinent/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Durand, Cédric",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Francia"] },
+    note: "Economista francese, autore di *Techno-féodalisme* (2020), sostiene che il capitalismo digitale tenda alla rendita e alla dipendenza più che alla concorrenza. **Nel sito è la voce che legge la bolla dell'AI come progetto politico di controllo prima che come promessa di profitto.**",
+    articles: [
+      { title: "La bulle et le contrôle", url: "/curated/2026-11-03-durand-valenti-bolla-controllo-grandcontinent/", _source: "curated" }
     ]
   }
 
