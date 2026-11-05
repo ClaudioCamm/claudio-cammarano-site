@@ -541,7 +541,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q938475", "https://en.wikipedia.org/wiki/David_Brooks_(commentator)"],
     note: "Giornalista e saggista americano (1961), columnist del New York Times e staff writer del The Atlantic. Nel sito è citato per la tesi che nell'era dell'AI la discriminante non sia l'intelligenza ma il *need for cognition* — l'attitudine psicologica allo sforzo mentale. La sua tassonomia in tre gruppi (Productive Passengers, Reluctant Optimizers, Mental Marathoners) è uno strumento utile per leggere come le persone si rapporteranno all'AI nel lungo periodo.",
     articles: [
-      { title: "The People Who Will Thrive in the AI Age", url: "/curated/2026-06-28-brooks-people-thrive-ai-age-atlantic/", _source: "curated" }
+      { title: "The People Who Will Thrive in the AI Age", url: "/curated/2026-06-28-brooks-people-thrive-ai-age-atlantic/", _source: "curated" },
+      { title: "Hit podcasts reveal the angst of China's youth", url: "/curated/2026-11-01-economist-podcast-giovani-cina/", _source: "curated" }
     ]
   },
   {
@@ -1965,7 +1966,8 @@ module.exports = [
     articles: [
       { title: "I podcast lunghi nell'era della mezza attenzione", url: "/curated/2026-06-29-diegoli-podcast-lunghi-mezza-attenzione-linkideeperlatv/", _source: "curated" },
       { title: "The bombarding of childhood", url: "/curated/2026-09-18-kucirkova-hectic-media-bambini-aeon/", _source: "curated" },
-      { title: "Zuckerberg says the science isn't settled. But the harms of short-form video on the brain are starting to show", url: "/curated/2026-09-18-enders-short-form-video-cognizione-guardian/", _source: "curated" }
+      { title: "Zuckerberg says the science isn't settled. But the harms of short-form video on the brain are starting to show", url: "/curated/2026-09-18-enders-short-form-video-cognizione-guardian/", _source: "curated" },
+      { title: "Hit podcasts reveal the angst of China's youth", url: "/curated/2026-11-01-economist-podcast-giovani-cina/", _source: "curated" }
     ]
   },
   {
@@ -2118,7 +2120,8 @@ module.exports = [
       { title: "La legge Bacchelli per Lea Melandri", url: "/curated/2026-06-06-internazionale-lea-melandri-bacchelli/", _source: "curated" },
       { title: "The Warrior-Witches of Ukraine's Resistance", url: "/curated/2026-06-21-harbaugh-warrior-witches-ukraine-atlantic/", _source: "curated" },
       { title: "Non usiamo i media, ci cresciamo dentro", url: "/curated/2026-07-13-tarchetti-media-ecology-non-ho-capito/", _source: "curated" },
-      { title: "Gloria Steinem's Final Essay", url: "/curated/2026-09-03-steinem-final-essay-newyorker/", _source: "curated" }
+      { title: "Gloria Steinem's Final Essay", url: "/curated/2026-09-03-steinem-final-essay-newyorker/", _source: "curated" },
+      { title: "Hit podcasts reveal the angst of China's youth", url: "/curated/2026-11-01-economist-podcast-giovani-cina/", _source: "curated" }
     ]
   },
   {
@@ -3075,7 +3078,8 @@ module.exports = [
       { title: "China’s universities are rich. But they're getting squeezed", url: "/curated/2026-10-20-economist-universita-cinesi/", _source: "curated" },
       { title: "Nvidia Chief, Jensen Huang, Is Seen as Target of Chinese Spy Plot", url: "/curated/2026-10-29-swan-haberman-huang-spionaggio-nyt/", _source: "curated" },
       { title: "Comment le communisme a fait de la Chine une superpuissance capitaliste", url: "/curated/2026-10-29-ruskola-classe-operaia-cinese-grandcontinent/", _source: "curated" },
-      { title: "The countries making a fortune from the US-China rivalry", url: "/curated/2026-10-29-economist-minerali-critici-rivalita/", _source: "curated" }
+      { title: "The countries making a fortune from the US-China rivalry", url: "/curated/2026-10-29-economist-minerali-critici-rivalita/", _source: "curated" },
+      { title: "Hit podcasts reveal the angst of China's youth", url: "/curated/2026-11-01-economist-podcast-giovani-cina/", _source: "curated" }
     ]
   },
   {
@@ -6050,6 +6054,19 @@ module.exports = [
     note: "Espressione di Daron Acemoglu e Pascual Restrepo per l'automazione che sostituisce i lavoratori pur rendendo appena più di loro: il costo sociale della perdita di reddito è alto, il guadagno di produttività minimo. **Nel sito è il criterio per distinguere l'automazione che crea compiti nuovi da quella che si limita a tagliare il costo del lavoro.**",
     articles: [
       { title: "How Employment is Changing at Anthropic", url: "/curated/2026-10-16-wilmers-lavoro-anthropic-institute/", _source: "curated" }
+    ]
+  },
+  {
+    name: "censura",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q543"],
+    related: [
+      { name: "Cina", why: "In Cina i podcast sfuggono in parte alla censura perché sono lunghi, e chi li ascolta per un'ora raramente li denuncia." }
+    ],
+    note: "Controllo preventivo o successivo di ciò che può essere detto, pubblicato o trasmesso, esercitato da un potere pubblico o delegato alle piattaforme. **Nel sito interessa per il rapporto con la forma: ciò che un regime riesce a sorvegliare dipende anche dalla durata e dal formato dei testi che circolano.**",
+    articles: [
+      { title: "Hit podcasts reveal the angst of China's youth", url: "/curated/2026-11-01-economist-podcast-giovani-cina/", _source: "curated" }
     ]
   }
 
