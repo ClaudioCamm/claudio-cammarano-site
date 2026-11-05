@@ -5952,6 +5952,7 @@ module.exports = [
     name: "collasso modale",
     type: "teoria",
     geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q132181328"],
     related: [
       { name: "allineamento AI", why: "Il prezzo meno visibile dell'allineamento: premiare poche risposte preferite restringe ciò che il modello sa ancora produrre." },
       { name: "scrittura", why: "Quando la scrittura passa per lo stesso modello converge sugli stessi nomi, luoghi e mestieri." }
@@ -5965,6 +5966,7 @@ module.exports = [
     name: "bolla speculativa",
     type: "teoria",
     geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q207781"],
     related: [
       { name: "Nvidia", why: "Il fornitore che finanzia i propri clienti: la circolarità che Durand e Valenti indicano come prima crepa della bolla." }
     ],
@@ -5977,6 +5979,7 @@ module.exports = [
     name: "Kalecki, Michał",
     type: "persona",
     geo: { modo: "diretta", paesi: ["Polonia"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q436745"],
     note: "Economista polacco, scrive nel 1943 «Aspetti politici della piena occupazione», dove spiega l'ostilità degli imprenditori verso la piena occupazione con ragioni di potere e non di profitto. **Nel sito è la chiave per leggere investimenti che non rendono come scelte di controllo sul lavoro e non come errori di calcolo.**",
     articles: [
       { title: "La bulle et le contrôle", url: "/curated/2026-11-03-durand-valenti-bolla-controllo-grandcontinent/", _source: "curated" }
@@ -5986,6 +5989,7 @@ module.exports = [
     name: "Durand, Cédric",
     type: "persona",
     geo: { modo: "diretta", paesi: ["Francia"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q60894795"],
     note: "Economista francese, autore di *Techno-féodalisme* (2020), sostiene che il capitalismo digitale tenda alla rendita e alla dipendenza più che alla concorrenza. **Nel sito è la voce che legge la bolla dell'AI come progetto politico di controllo prima che come promessa di profitto.**",
     articles: [
       { title: "La bulle et le contrôle", url: "/curated/2026-11-03-durand-valenti-bolla-controllo-grandcontinent/", _source: "curated" }
