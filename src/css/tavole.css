@@ -910,3 +910,12 @@ body.profilo .profilo-role p{font-size:17px;line-height:1.65;max-width:64ch}
 .error-recent-post{display:grid;grid-template-columns:150px minmax(0,1fr);gap:16px;align-items:baseline;padding:12px 0;border-bottom:1px solid var(--tv-line,var(--color-border))}
 .error-recent-post .article-date{font-family:var(--font-mono);font-size:12px}
 .error-recent-post a{font-family:var(--font-display);font-size:21px;color:var(--tv-ink);text-decoration:none}
+
+/* === Ritocchi dopo il controllo (5/11) === */
+/* Learning log: «Dal Lab» e' un titolo di sezione, non un titoletto */
+.learning-section-title{font-family:var(--font-display);font-weight:400;font-size:36px;line-height:1.05;letter-spacing:-.01em;margin:88px 0 12px;color:var(--tv-ink)}
+/* Chi stiamo cercando: il titolo si allinea al percorso e al testo */
+.episteme-collabora h1{margin-left:0}
+/* Piede: i link vanno a capo fra una voce e l'altra, mai dentro una voce */
+.footer-social{flex-wrap:wrap;row-gap:8px}
+.footer-social a{white-space:nowrap}
