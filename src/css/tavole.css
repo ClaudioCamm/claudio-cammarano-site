@@ -393,7 +393,7 @@ main > h1{border-top:var(--tv-rule);padding-top:22px;font-size:clamp(48px,7vw,96
    Seconda passata UX (29 ott)
    ===================================================================== */
 /* Testata larga solo in home; nelle pagine di lettura torna alla colonna */
-body:not(.home) .site-header .container{max-width:800px}
+body:not(.home):not(.irene-page):not(.episteme-page) .site-header .container{max-width:800px}
 /* Globo: su touch la pagina scorre in verticale, il globo prende i gesti orizzontali */
 .tv-hero-carta .carta-svg{touch-action:pan-y}
 .tv-hero-carta .carta-svg:focus{outline:none}
@@ -621,3 +621,81 @@ body:not(.home) .site-header .container{max-width:800px}
 .geo{--geo-bo:#800020}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .geo{--geo-bo:#E07A8F}}
 :root[data-theme="dark"] .geo{--geo-bo:#E07A8F}
+
+/* === Pagine Projects: Irene Media e Episteme Advisory in grammatica Tavole (5/11) ===
+   Niente piu' fasce colorate e riquadri arrotondati: testata tipografica,
+   sezioni come tavole numerate (numerale romano nella colonna di 232px,
+   filetto da 6px), perimetri e servizi come righe di registro. Il colore
+   della casa resta l'accento: bordeaux per Irene, verde Lab per Episteme. */
+body.irene-page{--pj:var(--color-irene)}
+body.episteme-page{--pj:var(--color-lab-text)}
+body.irene-page > .container,body.episteme-page > .container{max-width:1344px}
+
+.irene-hero,.episteme-hero{background:none;margin:0;padding:56px 0 48px;border-bottom:var(--tv-rule)}
+.irene-label,.episteme-label{font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--pj);margin:0 0 22px}
+.irene-title,.episteme-hero h1{font-family:var(--font-display);font-weight:400;font-size:clamp(44px,6.4vw,92px);line-height:.95;letter-spacing:-.03em;color:var(--tv-ink);max-width:none;margin:0 0 28px}
+.irene-title-line{display:block;text-wrap:balance}
+.irene-title-line:last-child{font-style:italic;color:var(--pj);margin-top:.06em}
+.episteme-hero h1{max-width:15ch}
+.irene-subtitle,.episteme-subtitle{font-family:var(--font-serif);font-size:21px;line-height:1.5;color:var(--tv-soft,var(--color-text-light));max-width:44ch;margin:0}
+
+.irene-content,.episteme-content{max-width:none;margin:0;padding:48px 0 0 232px;counter-reset:tav}
+.irene-content p,.episteme-content p{max-width:66ch}
+.irene-lead{font-size:23px;line-height:1.5;max-width:40ch;margin:0 0 8px}
+
+/* la sezione come tavola */
+.irene-block{border-top:none;padding-top:0;margin:88px 0 0;background:none}
+.irene-block-title,.episteme-content > h2,.episteme-reading > h2{counter-increment:tav;position:relative;margin:88px 0 28px -232px;padding:18px 0 0 232px;border-top:var(--tv-rule);font-family:var(--font-display);font-weight:400;font-size:clamp(30px,3.4vw,44px);line-height:1.05;letter-spacing:-.02em;text-transform:none;color:var(--tv-ink)}
+.irene-block > .irene-block-title{margin-top:0}
+.irene-block-title::before,.episteme-content > h2::before,.episteme-reading > h2::before{content:counter(tav,upper-roman);position:absolute;left:0;top:18px;font-family:var(--font-display);font-size:72px;line-height:.82;color:var(--pj)}
+
+/* perimetro e servizi: righe di registro */
+.irene-service,.episteme-service{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:6px 32px;align-items:baseline;padding:18px 0;margin:0;border:0;border-top:1px solid var(--tv-line,var(--color-border));border-radius:0;background:none}
+.irene-service:last-of-type,.episteme-service:last-of-type{border-bottom:1px solid var(--tv-line,var(--color-border))}
+.irene-service h3,.episteme-service h3{font-family:var(--font-display);font-weight:400;font-size:26px;line-height:1.15;margin:0}
+.episteme-service-header{margin:0;padding:0;border:0;display:block}
+.irene-service .irene-deliverable{font-family:var(--font-mono);font-size:13px;line-height:1.6;color:var(--tv-ink)}
+.episteme-service p{font-size:16px;line-height:1.6;margin:0;color:var(--tv-ink)}
+.irene-note{margin-top:22px}
+
+.irene-block--proof{border:0;padding:0;border-radius:0;background:none}
+.irene-block--proof a{color:var(--pj)}
+
+.episteme-hook{background:none;border:0;border-left:6px solid var(--pj);border-radius:0;padding:4px 0 4px 24px;margin:0}
+.episteme-hook p{font-size:19px;line-height:1.55}
+.episteme-hook-link a{color:var(--pj);font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border-bottom:2px solid var(--pj)}
+.episteme-reading{margin:0;padding:0;background:none;border:0}
+
+/* chiusa */
+.irene-cta-block,.episteme-cta{margin:104px 0 0 -232px;padding:22px 0 0 232px;border-top:var(--tv-rule)}
+.irene-cta-line,.episteme-cta-line{font-family:var(--font-display);font-style:italic;font-size:clamp(28px,3vw,40px);line-height:1.15;max-width:28ch!important;margin:0 0 26px}
+.btn-irene-contact,.btn-episteme,.episteme-lab-cta{display:inline-flex;gap:14px;align-items:center;justify-content:flex-start;width:auto;background:var(--pj);color:#fff;border-radius:0;padding:14px 22px;font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:15px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none}
+.btn-irene-contact:hover,.btn-episteme:hover,.episteme-lab-cta:hover{background:var(--tv-ink);color:var(--color-bg)}
+.episteme-lab-cta{background:none;color:var(--pj);padding:0 0 4px;border-bottom:2px solid var(--pj);margin-top:6px}
+.episteme-lab-cta:hover{background:none;color:var(--tv-ink);border-color:var(--tv-ink)}
+.episteme-footnote{margin:40px 0 0;font-family:var(--font-sans);font-size:14px}
+
+/* collabora: ruoli come righe */
+.episteme-collabora h1{font-family:var(--font-display);font-weight:400;font-size:clamp(40px,5vw,72px);line-height:1;letter-spacing:-.03em;margin:0 0 24px -232px;padding-top:48px}
+.episteme-role{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:6px 32px;background:none;border:0;border-top:1px solid var(--tv-line,var(--color-border));border-radius:0;padding:18px 0;margin:0}
+.episteme-role:last-of-type{border-bottom:1px solid var(--tv-line,var(--color-border))}
+.episteme-role h2{font-family:var(--font-display);font-weight:400!important;font-size:26px!important;margin:0!important;padding:0;border:0}
+.episteme-role h2::before{content:none}
+
+@media (max-width:968px){
+  .irene-content,.episteme-content{padding-left:0}
+  .irene-block-title,.episteme-content > h2,.episteme-reading > h2{margin-left:0;padding-left:0}
+  .irene-block-title::before,.episteme-content > h2::before,.episteme-reading > h2::before{position:static;display:block;font-size:52px;margin-bottom:12px}
+  .irene-cta-block,.episteme-cta{margin-left:0;padding-left:0}
+  .episteme-collabora h1{margin-left:0}
+}
+@media (max-width:640px){
+  .irene-service,.episteme-service,.episteme-role{grid-template-columns:1fr}
+  .irene-hero,.episteme-hero{padding:32px 0 32px}
+  .irene-subtitle,.episteme-subtitle{font-size:18px}
+  .irene-lead{font-size:20px}
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) body.irene-page{--pj:#E07A8F}}
+:root[data-theme="dark"] body.irene-page{--pj:#E07A8F}
+.episteme-content p.episteme-cta-line,.irene-content p.irene-cta-line{font-family:var(--font-display);font-style:italic;font-size:clamp(28px,3vw,40px);line-height:1.15;color:var(--tv-ink);max-width:28ch}
+.btn-irene-contact,.btn-episteme{color:var(--color-bg)}
