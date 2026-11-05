@@ -393,7 +393,7 @@ main > h1{border-top:var(--tv-rule);padding-top:22px;font-size:clamp(48px,7vw,96
    Seconda passata UX (29 ott)
    ===================================================================== */
 /* Testata larga solo in home; nelle pagine di lettura torna alla colonna */
-body:not(.home):not(.irene-page):not(.episteme-page):not(.projects-page):not(.bench):not(.about-page) .site-header .container{max-width:800px}
+body:not(.home):not(.irene-page):not(.episteme-page):not(.projects-page):not(.bench):not(.about-page):not(.profilo) .site-header .container{max-width:800px}
 /* Globo: su touch la pagina scorre in verticale, il globo prende i gesti orizzontali */
 .tv-hero-carta .carta-svg{touch-action:pan-y}
 .tv-hero-carta .carta-svg:focus{outline:none}
@@ -837,3 +837,76 @@ body.about-page .about-photo{border-radius:0;overflow:hidden;border:0}
 body.about-page .about-cta{flex-direction:row;align-items:flex-start}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) body.about-page .about-logo-item .about-logo-img:not(.about-logo-img--dark){background:#f5f5f0;padding:8px;box-sizing:content-box}}
 :root[data-theme="dark"] body.about-page .about-logo-item .about-logo-img:not(.about-logo-img--dark){background:#f5f5f0;padding:8px;box-sizing:content-box}
+
+/* === Profilo in grammatica Tavole (5/11): il CV come registro. Pagina
+   pensata per l'indicizzazione, allineata per coerenza. === */
+body.profilo > .container,body.profilo .site-header .container{max-width:1344px}
+body.profilo .profilo-logo-item{border-radius:0;box-shadow:none;border:1px solid var(--tv-line,var(--color-border))}
+body.profilo .profilo-page{max-width:none;padding:0 0 0 232px}
+body.profilo .profilo-header{margin:0 0 0 -232px;padding:56px 0 0;border:0}
+body.profilo .profilo-header h1{font-family:var(--font-display);font-weight:400;font-size:clamp(56px,8vw,120px);line-height:.88;letter-spacing:-.04em;margin:0 0 22px}
+body.profilo .profilo-headline{font-family:var(--font-serif);font-size:23px;line-height:1.4;color:var(--tv-ink);margin:0 0 8px}
+body.profilo .profilo-location{font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--color-primary)}
+body.profilo .profilo-section{position:relative;margin:64px 0 0 -232px;padding:18px 0 0 232px;border-top:var(--tv-rule)}
+body.profilo .profilo-section > h2{position:absolute;left:0;top:18px;width:200px;margin:0;padding:0;border:0;font-family:var(--font-display);font-weight:400;font-size:28px;line-height:1.05;letter-spacing:-.01em;text-transform:none;color:var(--tv-ink)}
+body.profilo .profilo-section > p{font-size:18px;line-height:1.7;max-width:64ch}
+body.profilo .profilo-role{padding:18px 0 20px;margin:0;border:0;border-bottom:1px solid var(--tv-line,var(--color-border))}
+body.profilo .profilo-role:first-of-type{padding-top:2px}
+body.profilo .profilo-role-header{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:baseline}
+body.profilo .profilo-org{font-family:var(--font-display);font-weight:400;font-size:26px;line-height:1.15}
+body.profilo .profilo-period{font-family:var(--font-mono);font-size:13px;color:var(--tv-soft,var(--color-text-light))}
+body.profilo .profilo-role-title{font-family:var(--font-sans);font-stretch:88%;font-size:15px;font-style:normal;color:var(--tv-soft,var(--color-text-light));margin:4px 0 8px}
+body.profilo .profilo-role p{font-size:17px;line-height:1.65;max-width:64ch}
+@media (max-width:968px){
+  body.profilo .profilo-page{padding-left:0}
+  body.profilo .profilo-header,body.profilo .profilo-section{margin-left:0;padding-left:0}
+  body.profilo .profilo-section > h2{position:static;width:auto;margin:0 0 18px}
+}
+@media (max-width:640px){
+  body.profilo .profilo-headline{font-size:20px}
+  body.profilo .profilo-role-header{grid-template-columns:1fr;gap:4px}
+}
+
+/* === Learning log, The Abstract, 404 (5/11): restano a 800px come le
+   altre pagine indice, ma perdono schede, riquadri e pulsanti arrotondati.
+   In The Abstract i link a Substack (iscrizione, ultima uscita, saggi
+   recenti) restano come sono, per scelta. Nel Learning log resta il codice
+   colore: blu per i materiali dei corsi, verde per i documenti del Lab. === */
+.btn-download{border-radius:0;font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;padding:11px 18px}
+.learning-standfirst{font-family:var(--font-serif);font-size:21px;line-height:1.5}
+.learning-grid{display:block;margin:40px 0 0;border-top:var(--tv-rule)}
+.resource-card{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 28px;align-items:start;padding:22px 0 24px;margin:0;border:0;border-bottom:1px solid var(--tv-line,var(--color-border));border-radius:0;background:none;box-shadow:none}
+.resource-card > *{grid-column:1}
+.resource-card h2{font-family:var(--font-display);font-weight:400;font-size:28px;line-height:1.1;letter-spacing:-.01em;margin:0}
+.resource-card h2 a{color:var(--tv-ink);text-decoration:none}
+.resource-card h2 a:hover{color:var(--color-primary)}
+.resource-card p{font-size:16px;line-height:1.6;margin:4px 0 0;max-width:60ch}
+.resource-card .btn-download{grid-column:2;grid-row:1 / span 3;align-self:start;margin:4px 0 0}
+.resource-card .resource-more,.resource-card .resource-source-link{font-family:var(--font-sans);font-stretch:88%;font-size:14px}
+.resource-license,.resource-version{font-family:var(--font-mono);font-size:12px;color:var(--tv-soft,var(--color-text-light))}
+.resource-lab-badge{font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:#0F6E56;padding:3px 8px;border:0;border-radius:0;justify-self:start}
+.learning-grid{border-top-color:var(--color-primary)}
+.learning-grid:has(.resource-card--lab){border-top-color:#0F6E56}
+.resource-card--lab h2{color:var(--tv-ink)}
+.resource-card--lab .resource-source-link{color:var(--color-lab-text)}
+.resource-card--lab .btn-download{background:#0F6E56;color:#fff}
+.resource-card--lab .btn-download:hover{background:#0b5342}
+@media (max-width:640px){.resource-card{grid-template-columns:1fr}.resource-card .btn-download{grid-column:1;grid-row:auto;justify-self:start;margin-top:12px}}
+
+.newsletter-content h1{font-family:var(--font-display);font-weight:400;font-size:clamp(56px,8vw,104px);line-height:.9;letter-spacing:-.035em;margin:24px 0 18px}
+.abstract-tagline{font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--color-primary);font-style:normal;margin:0 0 32px}
+.newsletter-signup{background:none;border:0;border-top:var(--tv-rule);border-bottom:1px solid var(--tv-line,var(--color-border));padding:20px 0 22px;border-radius:0}
+.substack-embed-fallback{font-size:15px;color:var(--tv-soft,var(--color-text-light))}
+.newsletter-content > p{font-size:18px;line-height:1.7}
+.newsletter-content > h2{font-family:var(--font-display);font-weight:400;font-size:36px;margin:72px 0 12px;padding-top:18px;border-top:var(--tv-rule)}
+
+.error-page{padding-top:24px}
+.error-code{font-family:var(--font-display);font-weight:400;font-size:clamp(120px,22vw,240px);line-height:.8;letter-spacing:-.05em;color:var(--color-primary);margin:0 0 18px;opacity:1}
+.error-title{font-family:var(--font-display);font-weight:400;font-size:44px;line-height:1;margin:0 0 16px;padding-top:18px;border-top:var(--tv-rule)}
+.error-message{font-family:var(--font-serif);font-size:20px;line-height:1.5}
+.error-btn{border-radius:0!important;font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;padding:13px 20px}
+.error-recent{border-top:var(--tv-rule);padding-top:18px;margin-top:64px}
+.error-recent-label{font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--color-primary)}
+.error-recent-post{display:grid;grid-template-columns:150px minmax(0,1fr);gap:16px;align-items:baseline;padding:12px 0;border-bottom:1px solid var(--tv-line,var(--color-border))}
+.error-recent-post .article-date{font-family:var(--font-mono);font-size:12px}
+.error-recent-post a{font-family:var(--font-display);font-size:21px;color:var(--tv-ink);text-decoration:none}
