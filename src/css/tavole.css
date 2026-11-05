@@ -393,7 +393,7 @@ main > h1{border-top:var(--tv-rule);padding-top:22px;font-size:clamp(48px,7vw,96
    Seconda passata UX (29 ott)
    ===================================================================== */
 /* Testata larga solo in home; nelle pagine di lettura torna alla colonna */
-body:not(.home):not(.irene-page):not(.episteme-page) .site-header .container{max-width:800px}
+body:not(.home):not(.irene-page):not(.episteme-page):not(.projects-page):not(.bench) .site-header .container{max-width:800px}
 /* Globo: su touch la pagina scorre in verticale, il globo prende i gesti orizzontali */
 .tv-hero-carta .carta-svg{touch-action:pan-y}
 .tv-hero-carta .carta-svg:focus{outline:none}
@@ -699,3 +699,86 @@ body.irene-page > .container,body.episteme-page > .container{max-width:1344px}
 :root[data-theme="dark"] body.irene-page{--pj:#E07A8F}
 .episteme-content p.episteme-cta-line,.irene-content p.irene-cta-line{font-family:var(--font-display);font-style:italic;font-size:clamp(28px,3vw,40px);line-height:1.15;color:var(--tv-ink);max-width:28ch}
 .btn-irene-contact,.btn-episteme{color:var(--color-bg)}
+
+/* === Pagina Projects in grammatica Tavole (5/11): ogni progetto una tavola
+   numerata, il numerale nel colore della casa; il Lab resta dentro Episteme,
+   rientrato, con le note come righe di registro. === */
+body.projects-page > .container{max-width:1344px}
+.projects-hero{padding:56px 0 48px;margin:0;border-bottom:var(--tv-rule)}
+.projects-title{font-family:var(--font-display);font-weight:400;font-size:clamp(56px,8vw,120px);line-height:.9;letter-spacing:-.035em;margin:0 0 28px}
+.projects-standfirst{font-family:var(--font-serif);font-size:21px;line-height:1.55;max-width:60ch;margin:0}
+.projects-grid{display:block;counter-reset:tav;margin:0;padding:0}
+.project-card{--pj:var(--color-primary);counter-increment:tav;position:relative;margin:88px 0 0;padding:18px 0 0 232px;border:0;border-top:var(--tv-rule);border-radius:0;background:none}
+.project-card--irene{--pj:var(--color-irene)}
+.project-card--episteme{--pj:var(--color-lab-text)}
+.project-card::before{content:counter(tav,upper-roman);position:absolute;left:0;top:18px;font-family:var(--font-display);font-size:96px;line-height:.82;color:var(--pj)}
+.project-kicker{font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--pj);margin:0 0 12px}
+.project-name{font-family:var(--font-display);font-weight:400;font-size:clamp(36px,4.2vw,56px);line-height:1;letter-spacing:-.025em;margin:0 0 18px}
+.project-name a{color:var(--tv-ink);text-decoration:none}
+.project-card .project-name a:hover{color:var(--pj)}
+.project-line{font-family:var(--font-serif);font-size:22px;line-height:1.45;max-width:46ch;margin:0 0 16px;color:var(--tv-ink)}
+.project-body{font-size:17px;line-height:1.65;max-width:62ch;color:var(--tv-soft,var(--color-text-light))}
+.project-body a{color:var(--pj)}
+.project-go{margin:22px 0 0}
+.project-card .project-go a{font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--pj);text-decoration:none;border-bottom:2px solid var(--pj);padding-bottom:3px}
+.project-card .project-go a:hover{color:var(--tv-ink);border-color:var(--tv-ink)}
+.project-sub{--pj:var(--color-lab-text);margin:48px 0 0;padding:16px 0 0;border:0;border-top:2px solid var(--tv-ink);border-radius:0;background:none;max-width:860px}
+.project-sub-kicker{font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--pj);margin:0 0 8px}
+.project-sub-name{font-family:var(--font-display);font-weight:400;font-size:34px;line-height:1;margin:0 0 12px}
+.project-sub-name a{color:var(--tv-ink);text-decoration:none}
+.project-sub-body{font-size:16px;line-height:1.6;max-width:62ch;color:var(--tv-soft,var(--color-text-light))}
+.project-sub-list{list-style:none;margin:18px 0 0;padding:0}
+.project-sub-list li{display:grid;grid-template-columns:170px minmax(0,1fr);gap:16px;align-items:baseline;padding:12px 0;margin:0;border-top:1px solid var(--tv-line,var(--color-border))}
+.project-sub-list li:last-child{border-bottom:1px solid var(--tv-line,var(--color-border))}
+.project-sub-date{font-family:var(--font-mono);font-size:13px;color:var(--tv-soft,var(--color-text-light))}
+.project-sub-list a{font-family:var(--font-display);font-size:21px;line-height:1.2;color:var(--tv-ink);text-decoration:none;border:0}
+.project-sub-list a:hover{color:var(--pj)}
+.projects-foot{margin:104px 0 0;padding-top:18px;border-top:var(--tv-rule);font-size:17px}
+@media (max-width:968px){
+  .project-card{padding-left:0}
+  .project-card::before{position:static;display:block;font-size:60px;margin-bottom:14px}
+}
+@media (max-width:640px){
+  .projects-standfirst,.project-line{font-size:19px}
+  .project-sub-list li{grid-template-columns:1fr;gap:4px}
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .project-card--irene{--pj:#E07A8F}:root:not([data-theme="light"]) .project-card--notazione{--pj:#8B7EF8}}
+:root[data-theme="dark"] .project-card--irene{--pj:#E07A8F}
+:root[data-theme="dark"] .project-card--notazione{--pj:#8B7EF8}
+
+/* === Banco di misura (IT/EN) in grammatica Tavole (5/11). Solo veste:
+   la logica e i colori semantici dello strumento (blu, rosso, ocra, verde)
+   restano com'erano. Vale anche dentro l'iframe del saggio. === */
+body.bench .bm{--sans:var(--font-sans);--serif:var(--font-serif);font-size:17px}
+body.bench .bm .eyebrow,body.bench .bm .legend-h,body.bench .bm details.editor > summary,body.bench .bm .preset-cap,body.bench .bm .srow span,body.bench .bm .cell .k,body.bench .bm .total .k{font-family:var(--font-sans);font-stretch:74%;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+body.bench .bm .eyebrow{font-size:14px;color:var(--color-primary);margin-bottom:22px}
+body.bench .bm h1{font-family:var(--font-display);font-weight:400;font-size:clamp(40px,5.6vw,84px);line-height:.95;letter-spacing:-.03em;margin-bottom:24px;max-width:18ch}
+body.bench .bm .standfirst{font-size:19px;line-height:1.55;max-width:60ch}
+body.bench .bm .tabs{margin-top:40px;border-top:var(--tv-rule);border-bottom:1px solid var(--border);gap:0}
+body.bench .bm .tab{font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;border-radius:0;padding:16px 22px 14px 0;margin-right:22px;border-bottom:3px solid transparent;min-height:52px}
+body.bench .bm .tab:hover{background:none}
+body.bench .bm .tab .n{font-family:var(--font-display);font-size:24px;font-weight:400;letter-spacing:0;margin-right:10px;vertical-align:-3px}
+body.bench .bm .tab[aria-selected=true]{color:var(--text);border-bottom-color:var(--primary)}
+body.bench .bm .panel{padding-top:28px}
+body.bench .bm .panel-note{font-size:17px;max-width:66ch}
+body.bench .bm .legend-h,body.bench .bm details.editor > summary{font-size:12px;color:var(--text);border-bottom:2px solid var(--text)}
+body.bench .bm .preset-cap{font-size:12px}
+body.bench .bm button.p{font-family:var(--font-sans);font-stretch:88%;font-size:14px;border-radius:0;padding:7px 12px}
+body.bench .bm .variant-note{font-size:13px}
+body.bench .bm .qtitle{font-family:var(--font-display);font-size:22px;color:var(--text)}
+body.bench .bm .scen-name{font-family:var(--font-display);font-size:20px}
+body.bench .bm .scen-num,body.bench .bm .keys,body.bench .bm .ctrl output,body.bench .bm .wf .n,body.bench .bm .ident,body.bench .bm .eqn,body.bench .bm .axcap{font-family:var(--font-mono)}
+body.bench .bm .readout{border-radius:0;border:0;border-top:var(--tv-rule);background:var(--border)}
+body.bench .bm .cell{padding:14px 14px 16px}
+body.bench .bm .cell .k{font-size:11px;letter-spacing:.08em;text-transform:none}
+body.bench .bm .cell .v{font-family:var(--font-serif);font-weight:400;font-size:36px;letter-spacing:-.02em}
+body.bench .bm .cell .u{font-family:var(--font-mono);font-size:11px}
+body.bench .bm .cell .d{font-size:13px}
+body.bench .bm .verdict{border:0;border-left:6px solid var(--primary);border-radius:0;padding:4px 0 4px 20px;margin:4px 0 22px}
+body.bench .bm .verdict .t{font-family:var(--font-display);font-weight:400;font-size:30px;line-height:1.1;margin-bottom:8px}
+body.bench .bm .verdict .s{font-size:16px}
+body.bench .bm canvas,body.bench .bm .eqn,body.bench .bm .switch,body.bench .bm .trk,body.bench .bm .bar{border-radius:0}
+body.bench .bm .total .v{font-family:var(--font-serif);font-weight:400;font-size:36px}
+body.bench .bm .ctrl .nm,body.bench .bm .wf{font-size:15px}
+body.bench .bm .caveat{font-family:var(--font-serif);font-size:15px;border-left-width:6px}
+body.bench .bm footer{border-top:var(--tv-rule);font-family:var(--font-sans);font-stretch:88%;font-size:13px}
