@@ -393,7 +393,7 @@ main > h1{border-top:var(--tv-rule);padding-top:22px;font-size:clamp(48px,7vw,96
    Seconda passata UX (29 ott)
    ===================================================================== */
 /* Testata larga solo in home; nelle pagine di lettura torna alla colonna */
-body:not(.home):not(.irene-page):not(.episteme-page):not(.projects-page):not(.bench) .site-header .container{max-width:800px}
+body:not(.home):not(.irene-page):not(.episteme-page):not(.projects-page):not(.bench):not(.about-page) .site-header .container{max-width:800px}
 /* Globo: su touch la pagina scorre in verticale, il globo prende i gesti orizzontali */
 .tv-hero-carta .carta-svg{touch-action:pan-y}
 .tv-hero-carta .carta-svg:focus{outline:none}
@@ -782,3 +782,58 @@ body.bench .bm .total .v{font-family:var(--font-serif);font-weight:400;font-size
 body.bench .bm .ctrl .nm,body.bench .bm .wf{font-size:15px}
 body.bench .bm .caveat{font-family:var(--font-serif);font-size:15px;border-left-width:6px}
 body.bench .bm footer{border-top:var(--tv-rule);font-family:var(--font-sans);font-stretch:88%;font-size:13px}
+
+/* === About (IT/EN) in grammatica Tavole (5/11) ===
+   Via il riquadro blu pieno della biografia; le sezioni delle credenziali
+   diventano righe con l'etichetta nella colonna di 232px; loghi senza
+   cornici arrotondate; pulsanti ad angolo vivo. Testi invariati. */
+body.about-page > .container{max-width:1344px}
+body.about-page .site-header .container{max-width:1344px}
+body.about-page .about-content{max-width:none;margin:0}
+body.about-page .about-main{max-width:none;padding:0 0 0 232px}
+body.about-page .about-header{display:grid;grid-template-columns:auto minmax(0,1fr);gap:32px;align-items:end;margin:0 0 0 -232px;padding:56px 0 40px;border-bottom:var(--tv-rule)}
+body.about-page .about-photo{width:200px;height:200px;margin:0}
+body.about-page .about-photo img{width:200px;height:200px;border-radius:0;object-fit:cover}
+body.about-page .about-header h1{font-family:var(--font-display);font-weight:400;font-size:clamp(64px,9vw,136px);line-height:.85;letter-spacing:-.04em;margin:0 0 18px}
+body.about-page .about-roles{font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--color-primary);margin:0}
+body.about-page .about-roles .sc{font-variant:normal}
+body.about-page .article-lang-link{margin:22px 0 0;font-family:var(--font-sans);font-size:14px}
+body.about-page .about-bio-tile{background:none;color:var(--tv-ink);padding:0;margin:40px 0 0;border:0;border-radius:0;max-width:none}
+body.about-page .about-bio-tile-text{font-family:var(--font-serif);font-size:23px;line-height:1.5;color:var(--tv-ink);max-width:44ch;margin:0}
+body.about-page .about-main > p{font-size:18px;line-height:1.7;max-width:64ch}
+body.about-page .about-accent,body.about-page .about-main > p strong{color:var(--tv-ink);font-weight:600}
+body.about-page .about-companies,body.about-page .about-teaching,body.about-page .about-publication{display:block;position:relative;margin:72px 0 40px -232px;padding:18px 0 0 232px;border-top:var(--tv-rule)}
+body.about-page .about-credentials-title{position:absolute;left:0;top:18px;width:200px;margin:0;font-family:var(--font-display);font-weight:400;font-size:28px;line-height:1.05;letter-spacing:-.01em;text-transform:none;color:var(--tv-ink)}
+body.about-page .about-logos{gap:0;border-top:0}
+body.about-page .profilo-logo-item,body.about-page .about-logo-item{border-radius:0;box-shadow:none;border:1px solid var(--tv-line,var(--color-border))}
+body.about-page .about-logos:not(.about-logos--companies):not(.about-logos--edu){display:block}
+body.about-page .about-logos:not(.about-logos--companies):not(.about-logos--edu) .about-logo-item{display:grid;grid-template-columns:150px minmax(0,1fr);gap:28px;align-items:center;padding:16px 0;border:0;border-bottom:1px solid var(--tv-line,var(--color-border));background:none;text-align:left;width:auto;max-width:none}
+body.about-page .about-logos:not(.about-logos--companies):not(.about-logos--edu) .about-logo-item:first-child{padding-top:4px}
+body.about-page .about-logo-item .about-logo-img{max-width:150px;max-height:56px;margin:0}
+body.about-page .about-logo-item .about-logo-caption{font-family:var(--font-serif);font-size:17px;line-height:1.5;color:var(--tv-ink);text-align:left;max-width:60ch}
+body.about-page .about-book-card{border:0;border-radius:0;box-shadow:none;background:none;padding:0;gap:28px;max-width:none}
+body.about-page .about-book-cover img{border-radius:0}
+body.about-page .about-book-series{font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:13px;letter-spacing:.12em;color:var(--color-irene)}
+body.about-page .about-book-title{font-family:var(--font-display);font-weight:400;font-size:44px;line-height:1;letter-spacing:-.02em}
+body.about-page .about-book-subtitle{font-family:var(--font-display);font-style:italic;font-size:24px}
+body.about-page .about-book-cta{font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;border-bottom:2px solid currentColor;align-self:flex-start}
+body.about-page .about-invite{font-family:var(--font-serif);font-size:18px;max-width:60ch}
+body.about-page .about-cta{display:flex;flex-wrap:wrap;gap:12px;margin:72px 0 0 -232px;padding:22px 0 0 232px;border-top:var(--tv-rule)}
+body.about-page .btn-about{border-radius:0;font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:15px;letter-spacing:.1em;padding:14px 22px;margin:0;width:auto}
+
+@media (max-width:968px){
+  body.about-page .about-main{padding-left:0}
+  body.about-page .about-header,body.about-page .about-companies,body.about-page .about-teaching,body.about-page .about-publication,body.about-page .about-cta{margin-left:0;padding-left:0}
+  body.about-page .about-credentials-title{position:static;width:auto;margin:0 0 18px}
+  body.about-page .about-photo,body.about-page .about-photo img{width:120px;height:120px}
+}
+@media (max-width:640px){
+  body.about-page .about-header{grid-template-columns:1fr;gap:20px}
+  body.about-page .about-bio-tile-text{font-size:20px}
+  body.about-page .about-logos:not(.about-logos--companies):not(.about-logos--edu) .about-logo-item{grid-template-columns:1fr;gap:10px}
+}
+body.about-page .about-bio-tile-text *{color:var(--tv-ink)}
+body.about-page .about-photo{border-radius:0;overflow:hidden;border:0}
+body.about-page .about-cta{flex-direction:row;align-items:flex-start}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) body.about-page .about-logo-item .about-logo-img:not(.about-logo-img--dark){background:#f5f5f0;padding:8px;box-sizing:content-box}}
+:root[data-theme="dark"] body.about-page .about-logo-item .about-logo-img:not(.about-logo-img--dark){background:#f5f5f0;padding:8px;box-sizing:content-box}
