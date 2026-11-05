@@ -1480,7 +1480,8 @@ module.exports = [
       { title: "The Atlantic is getting more subscribers from Google traffic, even as referrals fall", url: "/curated/2026-09-16-scire-atlantic-google-abbonati-niemanlab/", _source: "curated" },
       { title: "Game Decompilation, Is This Legal?, A Well-Trodden Path", url: "/curated/2026-10-06-stratechery-game-decompilation/", _source: "curated" },
       { title: "A Conversation With Ari Emanuel About Entertainment and AI", url: "/curated/2026-10-15-stratechery-ari-emanuel-entertainment-ai/", _source: "curated" },
-      { title: "The Disruption Machine", url: "/curated/2014-06-16-lepore-disruption-machine-newyorker/", _source: "curated" }
+      { title: "The Disruption Machine", url: "/curated/2014-06-16-lepore-disruption-machine-newyorker/", _source: "curated" },
+      { title: "AI on the Ballot", url: "/curated/2026-11-04-thompson-ai-on-the-ballot-stratechery/", _source: "curated" }
     ]
   },
   {
@@ -2982,7 +2983,8 @@ module.exports = [
       { title: "Mamdani Is the Centrist We’ve Been Waiting For", url: "/curated/2026-10-19-chait-mamdani-centrista-atlantic/", _source: "curated" },
       { title: "Democrats are rediscovering what an appealing politics of progress looks like", url: "/curated/2026-10-29-economist-lexington-democratici/", _source: "curated" },
       { title: "The countries making a fortune from the US-China rivalry", url: "/curated/2026-10-29-economist-minerali-critici-rivalita/", _source: "curated" },
-      { title: "La bulle et le contrôle", url: "/curated/2026-11-03-durand-valenti-bolla-controllo-grandcontinent/", _source: "curated" }
+      { title: "La bulle et le contrôle", url: "/curated/2026-11-03-durand-valenti-bolla-controllo-grandcontinent/", _source: "curated" },
+      { title: "AI on the Ballot", url: "/curated/2026-11-04-thompson-ai-on-the-ballot-stratechery/", _source: "curated" }
     ]
   },
   {
@@ -3286,7 +3288,8 @@ module.exports = [
       { title: "Chartbook 462: China shocked – beyond 1.0 and 2.0 to the 'Big One'", url: "/curated/2026-07-29-tooze-china-shock-chartbook/", _source: "curated" },
       { title: "Game Decompilation, Is This Legal?, A Well-Trodden Path", url: "/curated/2026-10-06-stratechery-game-decompilation/", _source: "curated" },
       { title: "A Conversation With Ari Emanuel About Entertainment and AI", url: "/curated/2026-10-15-stratechery-ari-emanuel-entertainment-ai/", _source: "curated" },
-      { title: "An Interview with Palantir CTO Shyam Sankar About the AI Religious War", url: "/curated/2026-10-29-thompson-sankar-palantir-stratechery/", _source: "curated" }
+      { title: "An Interview with Palantir CTO Shyam Sankar About the AI Religious War", url: "/curated/2026-10-29-thompson-sankar-palantir-stratechery/", _source: "curated" },
+      { title: "AI on the Ballot", url: "/curated/2026-11-04-thompson-ai-on-the-ballot-stratechery/", _source: "curated" }
     ]
   },
   {
@@ -3940,7 +3943,8 @@ module.exports = [
       { title: "The AI boom is threatened by an epidemic of unreliable numbers", url: "/curated/2026-10-14-economist-numeri-inaffidabili-ai/", _source: "curated" },
       { title: "Someone Has to Take the AI Risk", url: "/curated/2026-10-20-levine-someone-has-to-take-ai-risk-bloomberg/", _source: "curated" },
       { title: "Nvidia Chief, Jensen Huang, Is Seen as Target of Chinese Spy Plot", url: "/curated/2026-10-29-swan-haberman-huang-spionaggio-nyt/", _source: "curated" },
-      { title: "La bulle et le contrôle", url: "/curated/2026-11-03-durand-valenti-bolla-controllo-grandcontinent/", _source: "curated" }
+      { title: "La bulle et le contrôle", url: "/curated/2026-11-03-durand-valenti-bolla-controllo-grandcontinent/", _source: "curated" },
+      { title: "AI on the Ballot", url: "/curated/2026-11-04-thompson-ai-on-the-ballot-stratechery/", _source: "curated" }
     ]
   },
   {
@@ -5898,7 +5902,8 @@ module.exports = [
     note: "Statistico e giornalista statunitense, nato nel 1978, fondatore di FiveThirtyEight, dove dal 2008 ha pubblicato previsioni elettorali probabilistiche, e autore di *The Signal and the Noise* (2012). **Nel sito è la voce della difesa delle previsioni probabilistiche: un modello si giudica dalla calibrazione su molti casi, non dal singolo esito.**",
     articles: [
       { title: "When We Say 70 Percent, It Really Means 70 Percent", url: "/curated/2019-04-04-silver-70-per-cento-fivethirtyeight/", _source: "curated" },
-      { title: "Nassim Taleb’s Case Against Nate Silver Is Bad Math", url: "/curated/2019-04-07-clayton-taleb-silver-nautilus/", _source: "curated" }
+      { title: "Nassim Taleb’s Case Against Nate Silver Is Bad Math", url: "/curated/2019-04-07-clayton-taleb-silver-nautilus/", _source: "curated" },
+      { title: "The Midterm Predictions Were Good", url: "/curated/2026-11-04-levine-previsioni-midterm-bloomberg/", _source: "curated" }
     ]
   },
   {
@@ -5908,7 +5913,8 @@ module.exports = [
     note: "Proprietà di un sistema di previsioni probabilistiche: un previsore è calibrato se gli eventi a cui assegna il 70 per cento di probabilità accadono circa sette volte su dieci. **Nel sito è il criterio minimo per giudicare una previsione che non dice chi vincerà ma con quale probabilità: necessario, perché senza di esso i numeri non significano nulla, e insufficiente, perché si può essere calibrati senza saper distinguere un caso dall'altro.**",
     articles: [
       { title: "When We Say 70 Percent, It Really Means 70 Percent", url: "/curated/2019-04-04-silver-70-per-cento-fivethirtyeight/", _source: "curated" },
-      { title: "Information, incentives, and goals in election forecasts", url: "/curated/2020-09-01-gelman-hullman-wlezien-morris-previsioni-elettorali-jdm/", _source: "curated" }
+      { title: "Information, incentives, and goals in election forecasts", url: "/curated/2020-09-01-gelman-hullman-wlezien-morris-previsioni-elettorali-jdm/", _source: "curated" },
+      { title: "The Midterm Predictions Were Good", url: "/curated/2026-11-04-levine-previsioni-midterm-bloomberg/", _source: "curated" }
     ]
   },
   {
@@ -5993,6 +5999,43 @@ module.exports = [
     note: "Economista francese, autore di *Techno-féodalisme* (2020), sostiene che il capitalismo digitale tenda alla rendita e alla dipendenza più che alla concorrenza. **Nel sito è la voce che legge la bolla dell'AI come progetto politico di controllo prima che come promessa di profitto.**",
     articles: [
       { title: "La bulle et le contrôle", url: "/curated/2026-11-03-durand-valenti-bolla-controllo-grandcontinent/", _source: "curated" }
+    ]
+  },
+  {
+    name: "licenza sociale a operare",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q102210740"],
+    related: [
+      { name: "commoditizzazione", why: "Se il consenso manca, il calcolo resta scarso e l'intelligenza non diventa la merce a basso costo che molte teorie sull'AI davano per scontata." }
+    ],
+    note: "Consenso delle comunità locali di cui un'impresa ha bisogno per insediarsi e lavorare, distinto dai permessi formali e revocabile anche quando questi sono in regola. **Nel sito è la scarsità che Thompson indica come ultimo vincolo all'AI: il calcolo, la memoria e l'energia si producono, il consenso no.**",
+    articles: [
+      { title: "AI on the Ballot", url: "/curated/2026-11-04-thompson-ai-on-the-ballot-stratechery/", _source: "curated" }
+    ]
+  },
+  {
+    name: "mercati predittivi",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q282283"],
+    related: [
+      { name: "calibrazione", why: "Kalshi rivendica di essere calibrata: è il criterio con cui un mercato predittivo si giudica come qualunque altro previsore." },
+      { name: "Silver, Nate", why: "Levine lo indica come l'alternativa umana al mercato, frenata da una reputazione professionale che i trader non hanno da difendere." }
+    ],
+    note: "Mercati in cui si comprano e vendono contratti che pagano se un evento accade, così che il prezzo si legge come la probabilità attribuita dall'insieme dei partecipanti. **Nel sito interessano per il problema che pongono a chi li gestisce: producono un'informazione utile a tutti, ma la producono come sottoprodotto di una scommessa che non può arricchire tutti gli scommettitori.**",
+    articles: [
+      { title: "The Midterm Predictions Were Good", url: "/curated/2026-11-04-levine-previsioni-midterm-bloomberg/", _source: "curated" }
+    ]
+  },
+  {
+    name: "esternalità",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q275372"],
+    note: "Effetto di un'attività su chi non partecipa allo scambio, e quindi non lo paga né ne viene compensato. **Nel sito serve a capire perché certi beni informativi, dai prezzi dei mercati predittivi alle notizie, sono preziosi e insieme difficili da far pagare.**",
+    articles: [
+      { title: "The Midterm Predictions Were Good", url: "/curated/2026-11-04-levine-previsioni-midterm-bloomberg/", _source: "curated" }
     ]
   }
 
