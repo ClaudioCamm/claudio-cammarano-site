@@ -317,7 +317,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q718581", "https://it.wikipedia.org/wiki/Daron_Acemo%C4%9Flu"],
     note: "Economista turco-americano, Premio Nobel 2024 (1967). Nel sito è citato per Why Nations Fail (con Robinson): la distinzione tra istituzioni inclusive (che distribuiscono potere) e estrattive (che lo concentrano) come chiave per spiegare le traiettorie degli stati. Anche per la struttura del win-set domestico nelle negoziazioni internazionali.",
     articles: [
-      { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" }
+      { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
+      { title: "How Employment is Changing at Anthropic", url: "/curated/2026-10-16-wilmers-lavoro-anthropic-institute/", _source: "curated" }
     ]
   },
   {
@@ -2485,7 +2486,8 @@ module.exports = [
       { title: "The AI boom is threatened by an epidemic of unreliable numbers", url: "/curated/2026-10-14-economist-numeri-inaffidabili-ai/", _source: "curated" },
       { title: "Trumpism Is Backfiring", url: "/curated/2026-10-20-klein-freeland-trumpism-backfiring-nyt/", _source: "curated" },
       { title: "An Interview with Palantir CTO Shyam Sankar About the AI Religious War", url: "/curated/2026-10-29-thompson-sankar-palantir-stratechery/", _source: "curated" },
-      { title: "Veteran investor Howard Marks on AI debt", url: "/curated/2026-10-29-economist-howard-marks-debito-ai/", _source: "curated" }
+      { title: "Veteran investor Howard Marks on AI debt", url: "/curated/2026-10-29-economist-howard-marks-debito-ai/", _source: "curated" },
+      { title: "How Employment is Changing at Anthropic", url: "/curated/2026-10-16-wilmers-lavoro-anthropic-institute/", _source: "curated" }
     ]
   },
   {
@@ -6036,6 +6038,18 @@ module.exports = [
     note: "Effetto di un'attività su chi non partecipa allo scambio, e quindi non lo paga né ne viene compensato. **Nel sito serve a capire perché certi beni informativi, dai prezzi dei mercati predittivi alle notizie, sono preziosi e insieme difficili da far pagare.**",
     articles: [
       { title: "The Midterm Predictions Were Good", url: "/curated/2026-11-04-levine-previsioni-midterm-bloomberg/", _source: "curated" }
+    ]
+  },
+  {
+    name: "automazione così così",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    related: [
+      { name: "Acemoglu, Daron", why: "Il concetto è suo e di Restrepo: l'automazione si giudica dai compiti nuovi che crea, non solo da quelli che toglie." }
+    ],
+    note: "Espressione di Daron Acemoglu e Pascual Restrepo per l'automazione che sostituisce i lavoratori pur rendendo appena più di loro: il costo sociale della perdita di reddito è alto, il guadagno di produttività minimo. **Nel sito è il criterio per distinguere l'automazione che crea compiti nuovi da quella che si limita a tagliare il costo del lavoro.**",
+    articles: [
+      { title: "How Employment is Changing at Anthropic", url: "/curated/2026-10-16-wilmers-lavoro-anthropic-institute/", _source: "curated" }
     ]
   }
 
