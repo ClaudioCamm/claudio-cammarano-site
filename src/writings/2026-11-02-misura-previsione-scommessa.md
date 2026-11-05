@@ -2,7 +2,7 @@
 layout: layouts/catena.njk
 title: "Misura, previsione, scommessa"
 date: 2026-11-02T21:30:00Z
-description: "Il sondaggio Times/Siena, i rapporti dell'AAPOR sul 2016 e sul 2020, quattromila sondaggi statali, Silver contro Taleb, il modello dell'Economist e un istituto inventato: dieci schede su tre cose che il dibattito elettorale chiama con un nome solo."
+description: "Il sondaggio Times/Siena, i rapporti dell'AAPOR sul 2016 e sul 2020, quattromila sondaggi statali, Silver contro Taleb, il modello dell'Economist e un istituto inventato: undici schede su tre cose che il dibattito elettorale chiama con un nome solo."
 tesi: "Un sondaggio è una misura, una previsione è un modello, una probabilità è una scommessa; quasi tutti gli errori sul tema, del pubblico e degli esperti, nascono dallo scambiare l'una per l'altra, e ciascuna va giudicata con il proprio criterio: la misura contro il risultato, con un errore reale doppio di quello dichiarato; il modello sulla quota di voto che stima; la probabilità sulla calibrazione e sulla coerenza nel tempo."
 category: ["Epistemologia", "Politica", "Giornalismo"]
 series: "Lo standard di prova, V"
@@ -21,11 +21,12 @@ fonti:
   - 2017-03-18-taleb-election-predictions-martingales-arxiv
   - 2019-07-24-taleb-binary-forecasts-payoffs-arxiv
   - 2026-10-23-afp-falsi-istituti-sondaggio
+  - 2026-11-04-levine-previsioni-midterm-bloomberg
   - 2019-04-07-clayton-taleb-silver-nautilus
 controtesi: 2019-04-07-clayton-taleb-silver-nautilus
 ---
 
-A pochi giorni dalle elezioni di metà mandato del novembre 2026 i sondaggi danno i Democratici in vantaggio, perfino in Texas, e Patrick Healy, responsabile degli standard del *New York Times*, chiede a Nate Cohn e William P. Davis, che curano il sondaggio Times/Siena, se ci si possa fidare.{% rif "2026-10-28-healy-cohn-davis-sondaggi-midterm-nyt" %} Cohn risponde distinguendo due significati della parola fiducia: aspettarsi che vinca chi è in testa no, usare i sondaggi come la migliore informazione disponibile sull'elettorato sì. In quella distinzione c'è già la tesi di questa catena. Il discorso pubblico sulle elezioni usa la stessa parola, «i sondaggi», per tre oggetti diversi: la rilevazione di un campione, il modello che ne ricava una stima dell'esito, e la probabilità che il modello pubblica. Ciascuno dice una cosa diversa, sbaglia in modo diverso e va giudicato con un criterio diverso, e le dieci schede che seguono mostrano quasi tutte un errore nato dall'averne usato uno al posto di un altro.
+A pochi giorni dalle elezioni di metà mandato del novembre 2026 i sondaggi danno i Democratici in vantaggio, perfino in Texas, e Patrick Healy, responsabile degli standard del *New York Times*, chiede a Nate Cohn e William P. Davis, che curano il sondaggio Times/Siena, se ci si possa fidare.{% rif "2026-10-28-healy-cohn-davis-sondaggi-midterm-nyt" %} Cohn risponde distinguendo due significati della parola fiducia: aspettarsi che vinca chi è in testa no, usare i sondaggi come la migliore informazione disponibile sull'elettorato sì. In quella distinzione c'è già la tesi di questa catena. Il discorso pubblico sulle elezioni usa la stessa parola, «i sondaggi», per tre oggetti diversi: la rilevazione di un campione, il modello che ne ricava una stima dell'esito, e la probabilità che il modello pubblica. Ciascuno dice una cosa diversa, sbaglia in modo diverso e va giudicato con un criterio diverso, e le undici schede che seguono mostrano quasi tutte un errore nato dall'averne usato uno al posto di un altro.
 
 ## La misura
 
@@ -67,6 +68,8 @@ Dall'altra parte c'è Nassim Nicholas Taleb, che giudica la probabilità come un
 
 La polemica, del resto, è stata anche personale. Dopo le elezioni di metà mandato del 2018 Taleb accusò Silver di non sapere come funziona la matematica, e Silver gli rispose con l'espressione che Taleb stesso aveva coniato, «intellettuale idiota».{% rif "2019-04-07-clayton-taleb-silver-nautilus" %} Sotto gli insulti c'è un disaccordo preciso: Silver giudica la probabilità come l'uscita di un modello, da confrontare con le frequenze su molti casi; Taleb la giudica come la quota di una scommessa, da confrontare con ciò che un mercato coerente consentirebbe.
 
+Una settimana dopo l'intervista di Healy, la sera del voto, la scommessa è uscita dalla metafora. Matt Levine, su *Bloomberg*, racconta di aver tenuto aperta la pagina di Kalshi invece di inseguire i commenti: alle 20.30 i prezzi davano ai Democratici il 98 per cento di probabilità di controllare il Senato, ore prima che le televisioni annunciassero qualcosa, e lui è andato a dormire.{% rif "2026-11-04-levine-previsioni-midterm-bloomberg" %} La differenza, scrive, è di incentivi: il giornalista ha buone ragioni per non estrapolare dai primi dati, lo scommettitore ha buone ragioni per farlo. Secondo Kalshi i candidati favoriti alle cinque del pomeriggio hanno vinto nel 98 per cento delle sfide già assegnate, un dato che viene dalla piattaforma stessa. Qui la probabilità è letteralmente una quota, e il criterio di Taleb, la coerenza dei prezzi in un mercato, è finalmente quello pertinente. Levine aggiunge che l'informazione prodotta da un mercato predittivo è un'esternalità: chi la produce, nel complesso, non guadagna nulla al netto delle commissioni, e chi la usa non la paga; circa tre quarti degli utenti di Kalshi, dice la società, guardano i prezzi senza aver mai depositato un dollaro. La scommessa vera, insomma, informa soprattutto chi non scommette.
+
 ## Chi produce la misura
 
 Tutti questi criteri presuppongono che la misura esista. Nell'ottobre 2026 Wedgewood Polls, presentatasi come istituto di sondaggi americano, ha ammesso che la maggior parte dei suoi dati era inventata, e ha detto di aver voluto verificare quanto facilmente un istituto del tutto falso potesse essere preso sul serio.{% rif "2026-10-23-afp-falsi-istituti-sondaggio" %} L'ha scoperta l'aggregatore FiftyPlusOne; il *New York Times* aveva incluso quindici suoi sondaggi nel proprio tracker fra giugno e ottobre e li ha tolti con una nota, e in agosto un'altra società, Median Strategies, aveva ammesso di aver fabbricato risultati come «esperimento sociale». Mallory McMorrow, candidata democratica al Senato in Michigan, dice che un sondaggio di Wedgewood che la dava a una cifra le fece perdere donazioni e volontari.
@@ -83,7 +86,7 @@ Secondo FiftyPlusOne fare sondaggi di bassa qualità, o falsificarli del tutto, 
 <tbody>
 <tr><td>Sondaggio (misura)</td><td>L’opinione di un campione in un momento dato</td><td>Campionamento, distorsione condivisa, mancata risposta; istituti falsi</td><td>Contro il risultato, sapendo che l’errore reale è circa il doppio del margine dichiarato</td><td>Cohn e Davis, Shirani-Mehr e altri, AAPOR 2016 e 2020, AFP</td></tr>
 <tr><td>Previsione (modello)</td><td>Una stima dell’esito, costruita dai sondaggi e da assunzioni</td><td>Assunzioni sulla correlazione fra gli Stati e sugli eventi imprevisti; incentivi di chi pubblica</td><td>Sulla quota di voto prevista più che sul vincitore</td><td>Gelman, Hullman, Wlezien e Morris</td></tr>
-<tr><td>Probabilità (scommessa)</td><td>Quanto conviene scommettere che un esito accada</td><td>Letta come certezza o come pronostico secco; oscillazioni incoerenti</td><td>Sulla calibrazione in molti casi e sulla coerenza nel tempo</td><td>Silver, Taleb, Clayton</td></tr>
+<tr><td>Probabilità (scommessa)</td><td>Quanto conviene scommettere che un esito accada</td><td>Letta come certezza o come pronostico secco; oscillazioni incoerenti</td><td>Sulla calibrazione in molti casi e sulla coerenza nel tempo</td><td>Silver, Taleb, Levine, Clayton</td></tr>
 </tbody>
 </table>
 </div>
