@@ -2993,7 +2993,8 @@ module.exports = [
       { title: "La bulle et le contrôle", url: "/curated/2026-11-03-durand-valenti-bolla-controllo-grandcontinent/", _source: "curated" },
       { title: "AI on the Ballot", url: "/curated/2026-11-04-thompson-ai-on-the-ballot-stratechery/", _source: "curated" },
       { title: "Le crociate delle culture wars non tirano più", url: "/curated/2026-11-05-mazzonis-culture-wars-midterm/", _source: "curated" },
-      { title: "The Kids May Not Be All Right, but They're Getting Better", url: "/curated/2026-11-05-wallace-wells-salute-mentale-adolescenti-nyt/", _source: "curated" }
+      { title: "The Kids May Not Be All Right, but They're Getting Better", url: "/curated/2026-11-05-wallace-wells-salute-mentale-adolescenti-nyt/", _source: "curated" },
+      { title: "The Coup We Are Not Talking About", url: "/curated/2021-01-29-zuboff-colpo-epistemico-nyt/", _source: "curated" }
     ]
   },
   {
@@ -3017,7 +3018,8 @@ module.exports = [
       { title: "Selon Mario Draghi l’Europe ne peut plus vivre sans croissance", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" },
       { title: "Jamie Dimon: A Plan for the Western World’s Revival", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" },
       { title: "Iran, China, Canada? A Defense of Trump’s Grand Strategy", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" },
-      { title: "Meta delays rollout of terms that would allow broad scraping of news sites. Legal experts are still skeptical.", url: "/curated/2026-10-26-tameez-meta-scraping-robots-niemanlab/", _source: "curated" }
+      { title: "Meta delays rollout of terms that would allow broad scraping of news sites. Legal experts are still skeptical.", url: "/curated/2026-10-26-tameez-meta-scraping-robots-niemanlab/", _source: "curated" },
+      { title: "The EU has fired the starting gun in the fightback against Big Tech", url: "/curated/2022-05-02-zuboff-dsa-ft/", _source: "curated" }
     ]
   },
   {
@@ -3184,7 +3186,8 @@ module.exports = [
       { title: "Why Is Tech Billionaire Marc Andreessen So Mad?", url: "/curated/2026-10-15-carr-andreessen-bloomberg/", _source: "curated" },
       { title: "Nvidia Chief, Jensen Huang, Is Seen as Target of Chinese Spy Plot", url: "/curated/2026-10-29-swan-haberman-huang-spionaggio-nyt/", _source: "curated" },
       { title: "Everything is going wrong for Muhammad bin Salman", url: "/curated/2026-10-19-economist-bin-salman-anno-orribile/", _source: "curated" },
-      { title: "Le crociate delle culture wars non tirano più", url: "/curated/2026-11-05-mazzonis-culture-wars-midterm/", _source: "curated" }
+      { title: "Le crociate delle culture wars non tirano più", url: "/curated/2026-11-05-mazzonis-culture-wars-midterm/", _source: "curated" },
+      { title: "The Coup We Are Not Talking About", url: "/curated/2021-01-29-zuboff-colpo-epistemico-nyt/", _source: "curated" }
     ]
   },
   {
@@ -6107,6 +6110,50 @@ module.exports = [
     note: "Conflitti politici combattuti su temi morali e identitari, come aborto, religione, genere e immigrazione, più che su interessi economici; l'espressione si diffonde negli Stati Uniti all'inizio degli anni Novanta. **Nel sito interessa il loro rapporto con l'economia: secondo Mazzonis funzionano quando danno un nome a un disagio materiale, e perdono presa quando quel disagio trova parole proprie.**",
     articles: [
       { title: "Le crociate delle culture wars non tirano più", url: "/curated/2026-11-05-mazzonis-culture-wars-midterm/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Zuboff, Shoshana",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q15953956"],
+    note: "Studiosa americana, professoressa emerita alla Harvard Business School, autrice di *The Age of Surveillance Capitalism* (2019), dove dà nome al modello economico che trasforma l'esperienza umana in dati comportamentali e i dati in previsioni vendute ad altri. È ben documentata e, letta oggi, in larga parte anticipatrice; il tono è da pamphlet. **Nel sito la si legge con una riserva: la tecnologia è un attore multiplo, fatto di una soluzione tecnica, di un apparato normativo e di una volontà umana, e una critica che non dice quale dei tre colpisce rischia di sostituire il determinismo tecnologico con quello economico.**",
+    articles: [
+      { title: "The real reason why Facebook and Google won't change", url: "/curated/2019-02-22-zuboff-facebook-google-fastcompany/", _source: "curated" },
+      { title: "The Coup We Are Not Talking About", url: "/curated/2021-01-29-zuboff-colpo-epistemico-nyt/", _source: "curated" },
+      { title: "You Are the Object of a Secret Extraction Operation", url: "/curated/2021-11-12-zuboff-estrazione-segreta-nyt/", _source: "curated" },
+      { title: "The EU has fired the starting gun in the fightback against Big Tech", url: "/curated/2022-05-02-zuboff-dsa-ft/", _source: "curated" }
+    ]
+  },
+  {
+    name: "capitalismo della sorveglianza",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q29096967"],
+    related: [
+      { name: "estrattivismo cognitivo", why: "Lo stesso gesto estrattivo, spostato dai dati del comportamento al lavoro cognitivo." },
+      { name: "Unione Europea", why: "Per Zuboff il Digital Services Act è il primo atto con cui una democrazia rivendica gli spazi digitali come beni della società." }
+    ],
+    note: "Modello economico, così chiamato da Shoshana Zuboff, che tratta l'esperienza umana come materia prima gratuita: ne estrae dati comportamentali, li trasforma in previsioni e le vende a clienti terzi. Nasce in Google nei primi anni Duemila e si estende a Facebook e ad altri settori. **Nel sito è il nome di una logica economica e non di una tecnologia: la distinzione serve a sapere che cosa si critica quando si critica una piattaforma.**",
+    articles: [
+      { title: "The real reason why Facebook and Google won't change", url: "/curated/2019-02-22-zuboff-facebook-google-fastcompany/", _source: "curated" },
+      { title: "The Coup We Are Not Talking About", url: "/curated/2021-01-29-zuboff-colpo-epistemico-nyt/", _source: "curated" },
+      { title: "You Are the Object of a Secret Extraction Operation", url: "/curated/2021-11-12-zuboff-estrazione-segreta-nyt/", _source: "curated" },
+      { title: "The EU has fired the starting gun in the fightback against Big Tech", url: "/curated/2022-05-02-zuboff-dsa-ft/", _source: "curated" }
+    ]
+  },
+  {
+    name: "determinismo tecnologico",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q605434"],
+    related: [
+      { name: "capitalismo della sorveglianza", why: "Zuboff lo rifiuta esplicitamente: la storia delle piattaforme, scrive, è una storia di potere e non di determinismo tecnologico." }
+    ],
+    note: "Tesi secondo cui la tecnica si sviluppa secondo una logica propria e determina da sola le forme della società. **Nel sito è l'errore da cui la critica tecnologica deve guardarsi: dietro ogni «tecnologia» ci sono una soluzione tecnica, un apparato normativo e una volontà umana, e va detto ogni volta quale dei tre si sta criticando.**",
+    articles: [
+      { title: "You Are the Object of a Secret Extraction Operation", url: "/curated/2021-11-12-zuboff-estrazione-segreta-nyt/", _source: "curated" },
+      { title: "The EU has fired the starting gun in the fightback against Big Tech", url: "/curated/2022-05-02-zuboff-dsa-ft/", _source: "curated" }
     ]
   }
 
