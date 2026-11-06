@@ -290,7 +290,8 @@ module.exports = [
       { title: "Quando Dario Amodei ha detto no al Pentagono", url: "/writings/2026-03-09-quando-dario-amodei-ha-detto-no-al-pentagono/" },
       { title: "When AI builds itself", url: "/curated/2026-06-19-anthropic-recursive-self-improvement/", _source: "curated" },
       { title: "Intelligenza artificiale e rischio estinzione, che cosa pensano (davvero) gli scienziati?", url: "/curated/2026-09-26-signorelli-rischio-estinzione-scienziati-backdoor/", _source: "curated" },
-      { title: "AI’s Real Gift to Science", url: "/curated/2026-10-04-kiros-ai-real-gift-science-atlantic/", _source: "curated" }
+      { title: "AI’s Real Gift to Science", url: "/curated/2026-10-04-kiros-ai-real-gift-science-atlantic/", _source: "curated" },
+      { title: "Financial Predictionization", url: "/curated/2026-11-05-levine-pacing-frontier-cartello-bloomberg/", _source: "curated" }
     ]
   },
   {
@@ -2490,7 +2491,8 @@ module.exports = [
       { title: "Trumpism Is Backfiring", url: "/curated/2026-10-20-klein-freeland-trumpism-backfiring-nyt/", _source: "curated" },
       { title: "An Interview with Palantir CTO Shyam Sankar About the AI Religious War", url: "/curated/2026-10-29-thompson-sankar-palantir-stratechery/", _source: "curated" },
       { title: "Veteran investor Howard Marks on AI debt", url: "/curated/2026-10-29-economist-howard-marks-debito-ai/", _source: "curated" },
-      { title: "How Employment is Changing at Anthropic", url: "/curated/2026-10-16-wilmers-lavoro-anthropic-institute/", _source: "curated" }
+      { title: "How Employment is Changing at Anthropic", url: "/curated/2026-10-16-wilmers-lavoro-anthropic-institute/", _source: "curated" },
+      { title: "Financial Predictionization", url: "/curated/2026-11-05-levine-pacing-frontier-cartello-bloomberg/", _source: "curated" }
     ]
   },
   {
@@ -2989,7 +2991,9 @@ module.exports = [
       { title: "Democrats are rediscovering what an appealing politics of progress looks like", url: "/curated/2026-10-29-economist-lexington-democratici/", _source: "curated" },
       { title: "The countries making a fortune from the US-China rivalry", url: "/curated/2026-10-29-economist-minerali-critici-rivalita/", _source: "curated" },
       { title: "La bulle et le contrôle", url: "/curated/2026-11-03-durand-valenti-bolla-controllo-grandcontinent/", _source: "curated" },
-      { title: "AI on the Ballot", url: "/curated/2026-11-04-thompson-ai-on-the-ballot-stratechery/", _source: "curated" }
+      { title: "AI on the Ballot", url: "/curated/2026-11-04-thompson-ai-on-the-ballot-stratechery/", _source: "curated" },
+      { title: "Le crociate delle culture wars non tirano più", url: "/curated/2026-11-05-mazzonis-culture-wars-midterm/", _source: "curated" },
+      { title: "The Kids May Not Be All Right, but They're Getting Better", url: "/curated/2026-11-05-wallace-wells-salute-mentale-adolescenti-nyt/", _source: "curated" }
     ]
   },
   {
@@ -3179,7 +3183,8 @@ module.exports = [
       { title: "Trumpism Is Backfiring", url: "/curated/2026-10-20-klein-freeland-trumpism-backfiring-nyt/", _source: "curated" },
       { title: "Why Is Tech Billionaire Marc Andreessen So Mad?", url: "/curated/2026-10-15-carr-andreessen-bloomberg/", _source: "curated" },
       { title: "Nvidia Chief, Jensen Huang, Is Seen as Target of Chinese Spy Plot", url: "/curated/2026-10-29-swan-haberman-huang-spionaggio-nyt/", _source: "curated" },
-      { title: "Everything is going wrong for Muhammad bin Salman", url: "/curated/2026-10-19-economist-bin-salman-anno-orribile/", _source: "curated" }
+      { title: "Everything is going wrong for Muhammad bin Salman", url: "/curated/2026-10-19-economist-bin-salman-anno-orribile/", _source: "curated" },
+      { title: "Le crociate delle culture wars non tirano più", url: "/curated/2026-11-05-mazzonis-culture-wars-midterm/", _source: "curated" }
     ]
   },
   {
@@ -3950,7 +3955,8 @@ module.exports = [
       { title: "Someone Has to Take the AI Risk", url: "/curated/2026-10-20-levine-someone-has-to-take-ai-risk-bloomberg/", _source: "curated" },
       { title: "Nvidia Chief, Jensen Huang, Is Seen as Target of Chinese Spy Plot", url: "/curated/2026-10-29-swan-haberman-huang-spionaggio-nyt/", _source: "curated" },
       { title: "La bulle et le contrôle", url: "/curated/2026-11-03-durand-valenti-bolla-controllo-grandcontinent/", _source: "curated" },
-      { title: "AI on the Ballot", url: "/curated/2026-11-04-thompson-ai-on-the-ballot-stratechery/", _source: "curated" }
+      { title: "AI on the Ballot", url: "/curated/2026-11-04-thompson-ai-on-the-ballot-stratechery/", _source: "curated" },
+      { title: "Financial Predictionization", url: "/curated/2026-11-05-levine-pacing-frontier-cartello-bloomberg/", _source: "curated" }
     ]
   },
   {
@@ -6031,7 +6037,8 @@ module.exports = [
     ],
     note: "Mercati in cui si comprano e vendono contratti che pagano se un evento accade, così che il prezzo si legge come la probabilità attribuita dall'insieme dei partecipanti. **Nel sito interessano per il problema che pongono a chi li gestisce: producono un'informazione utile a tutti, ma la producono come sottoprodotto di una scommessa che non può arricchire tutti gli scommettitori.**",
     articles: [
-      { title: "The Midterm Predictions Were Good", url: "/curated/2026-11-04-levine-previsioni-midterm-bloomberg/", _source: "curated" }
+      { title: "The Midterm Predictions Were Good", url: "/curated/2026-11-04-levine-previsioni-midterm-bloomberg/", _source: "curated" },
+      { title: "Financial Predictionization", url: "/curated/2026-11-05-levine-pacing-frontier-cartello-bloomberg/", _source: "curated" }
     ]
   },
   {
@@ -6067,6 +6074,39 @@ module.exports = [
     note: "Controllo preventivo o successivo di ciò che può essere detto, pubblicato o trasmesso, esercitato da un potere pubblico o delegato alle piattaforme. **Nel sito interessa per il rapporto con la forma: ciò che un regime riesce a sorvegliare dipende anche dalla durata e dal formato dei testi che circolano.**",
     articles: [
       { title: "Hit podcasts reveal the angst of China's youth", url: "/curated/2026-11-01-economist-podcast-giovani-cina/", _source: "curated" }
+    ]
+  },
+  {
+    name: "cattura del regolatore",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q2408462"],
+    related: [
+      { name: "Amodei, Dario", why: "Il suo appello a regolare il passo dei laboratori è il caso su cui Levine mette alla prova la teoria del cartello reso legale." }
+    ],
+    note: "Situazione in cui un'autorità di regolazione finisce per servire gli interessi delle imprese che dovrebbe controllare; la teoria economica si deve soprattutto a George Stigler (1971). **Nel sito serve a leggere le richieste di regolazione che vengono dalle imprese stesse: una regola che vale per tutti può proteggere il pubblico e insieme i margini di chi la chiede.**",
+    articles: [
+      { title: "Financial Predictionization", url: "/curated/2026-11-05-levine-pacing-frontier-cartello-bloomberg/", _source: "curated" }
+    ]
+  },
+  {
+    name: "concept creep",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q59492538"],
+    note: "Espressione dello psicologo Nick Haslam (2016) per l'allargamento progressivo di concetti come trauma, abuso, dipendenza o pregiudizio, applicati a casi sempre meno gravi e sempre più lontani dal loro nucleo. La deriva procede per due tappe: prima la polisemia, perché la stessa parola copre fenomeni diversi e chi la usa non intende più la stessa cosa; poi una forma socializzata di a-semia, in cui la parola circola ovunque e non distingue più niente. **Nel sito è una cautela di metodo: prima di spiegare un aumento, chiedersi se è cambiato il fenomeno o il significato della parola con cui lo si conta.**",
+    articles: [
+      { title: "The Kids May Not Be All Right, but They're Getting Better", url: "/curated/2026-11-05-wallace-wells-salute-mentale-adolescenti-nyt/", _source: "curated" }
+    ]
+  },
+  {
+    name: "guerre culturali",
+    type: "teoria",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q3480226"],
+    note: "Conflitti politici combattuti su temi morali e identitari, come aborto, religione, genere e immigrazione, più che su interessi economici; l'espressione si diffonde negli Stati Uniti all'inizio degli anni Novanta. **Nel sito interessa il loro rapporto con l'economia: secondo Mazzonis funzionano quando danno un nome a un disagio materiale, e perdono presa quando quel disagio trova parole proprie.**",
+    articles: [
+      { title: "Le crociate delle culture wars non tirano più", url: "/curated/2026-11-05-mazzonis-culture-wars-midterm/", _source: "curated" }
     ]
   }
 
