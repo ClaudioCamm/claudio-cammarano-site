@@ -919,3 +919,15 @@ body.profilo .profilo-role p{font-size:17px;line-height:1.65;max-width:64ch}
 /* Piede: i link vanno a capo fra una voce e l'altra, mai dentro una voce */
 .footer-social{flex-wrap:wrap;row-gap:8px}
 .footer-social a{white-space:nowrap}
+
+/* === Gli strati fra 901 e 1280px (iPad in orizzontale, 6/11) ===
+   Con epigrafe e lista affiancate dentro la colonna di 232px, alla lista
+   restavano meno di 400px: la quarta colonna («chi lo controlla») andava a
+   una parola per riga e usciva dalle fasce. Qui l'epigrafe sale sopra e la
+   lista prende tutta la larghezza. */
+@media (min-width:901px) and (max-width:1280px){
+  .tv-strati{grid-template-columns:1fr;gap:32px;margin-left:0}
+  .tv-epigrafe{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:40px;align-items:start}
+  .tv-epigrafe .tv-latino{grid-row:1 / span 3}
+  .tv-strato,.tv-strato-testa{grid-template-columns:140px 64px 250px minmax(0,1fr);gap:16px}
+}
