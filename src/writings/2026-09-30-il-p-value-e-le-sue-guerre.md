@@ -2,6 +2,7 @@
 layout: layouts/catena.njk
 title: "Il p-value e le sue guerre"
 date: 2026-09-30T14:20:00Z
+updated: 2026-10-27
 description: "Un numero che quasi tutti usano e pochi sanno definire ha diviso la statistica per vent'anni. Quattordici schede dell'archivio, da Popper alla task force dell'American Statistical Association, con una tabella delle scuole e le sei letture sbagliate del p-value: una catena pensata come strumento di lavoro."
 tesi: "Il p-value misura quanto i dati sarebbero sorprendenti se l'ipotesi nulla fosse vera; le guerre della statistica sono nate dall'averlo letto come la probabilità che un'ipotesi sia vera o come un verdetto automatico, e le scuole in lotta rispondono a domande diverse più spesso di quanto diano risposte diverse alla stessa domanda."
 category: ["Epistemologia", "Scienza", "Statistica"]

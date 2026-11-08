@@ -2,6 +2,7 @@
 layout: layouts/catena.njk
 title: "La firma tolta"
 date: 2026-10-06T17:05:00Z
+updated: 2026-10-27
 description: "Propaganda e rilevazione di testo generato condividono lo stesso punto debole: riconoscono una firma — lo stile, l'accento, l'origine — e falliscono contro chi quella firma la toglie. Otto schede dalla Finlandia alla Casa Bianca."
 tesi: "Ogni difesa che funziona riconoscendo una firma — lo stile di una prosa, l'accento di una voce, la nazionalità di una fonte — smette di funzionare contro chi quella firma la rimuove deliberatamente; e l'asimmetria fra testo e immagine nelle elezioni americane del 2026 mostra dove la rimozione riesce meglio, cioè dove nessun rilevatore sa ancora cosa cercare."
 category: ["AI", "Geopolitica", "Giornalismo"]

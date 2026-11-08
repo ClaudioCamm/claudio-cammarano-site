@@ -2,6 +2,7 @@
 layout: layouts/catena.njk
 title: "Il ritorno del thymos"
 date: 2026-09-28T20:55:00Z
+updated: 2026-10-27
 description: "Fukuyama aveva scritto nel 1989 che la fine della storia sarebbe stata un tempo molto triste, e quasi nessuno l'aveva letto fino in fondo. Dodici schede su una democrazia liberale a cui non mancano gli argomenti ma il riconoscimento, e su chi ha imparato a raccoglierlo."
 tesi: "Alla democrazia liberale non mancano gli argomenti ma la capacità di offrire riconoscimento; autocrati e populisti lo raccolgono con strumenti formalmente democratici, e le risposte liberali rischiano di diventare tradizioni inventate."
 category: ["Democrazia", "Politica", "Italia"]

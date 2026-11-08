@@ -2,6 +2,7 @@
 layout: layouts/catena.njk
 title: "Il contenuto come munizione"
 date: 2026-10-13T08:00:00Z
+updated: 2026-10-27
 description: "Un magazzino di manuali a Kharkiv, tre data center russi, i cavi sottomarini, Electronic Arts, un blockbuster cinese, il calcolatore dell'impronta di BP: quindici schede sull'offesa informativa che colpisce il canale prima del messaggio."
 tesi: "L'offesa informativa e culturale lavora sempre più sul canale che sul messaggio: si colpisce, si degrada, si compra o si occupa l'infrastruttura da cui un pubblico riceve canone, notizie, svago e connessione, e chi controlla il canale non ha bisogno di convincere nessuno; proprio per questo l'effetto è il dato più debole di tutta la catena, e chi lo dichiara è quasi sempre una parte."
 category: ["Geopolitica", "Media", "Cultura"]

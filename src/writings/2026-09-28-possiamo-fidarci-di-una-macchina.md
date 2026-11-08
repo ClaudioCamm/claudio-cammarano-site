@@ -2,6 +2,7 @@
 layout: layouts/catena.njk
 title: "Possiamo fidarci di una macchina?"
 date: 2026-09-28T20:25:00Z
+updated: 2026-09-29
 description: "Una versione di Claude ha migliorato un risultato sulla funzione zeta di Riemann, e lo sappiamo perché un sistema formale e quattro matematici l'hanno controllato. Dieci schede su che cosa voglia dire fidarsi di una macchina, e su dove vada cercata la verifica."
 tesi: "Le capacità dei modelli crescono più in fretta della possibilità di verificarle dall'interno; la fiducia può poggiare solo su una verifica esterna dei risultati, fatta con strumenti che non dipendono dal modello."
 category: ["AI", "Epistemologia"]

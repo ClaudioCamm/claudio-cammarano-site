@@ -2,6 +2,7 @@
 layout: layouts/catena.njk
 title: "L'ombra del futuro, in pratica"
 date: 2026-09-29T15:45:00Z
+updated: 2026-10-27
 description: "L'egemone americano che forniva beni pubblici globali in cambio di influenza futura si comporta ora da predatore. Undici schede sull'ombra del futuro nelle decisioni vere, da Hormuz a Taiwan, e sull'Europa che deve imparare a giocare."
 tesi: "La cooperazione internazionale si reggeva su un'ombra del futuro lunga; oggi le potenze principali scontano pesantemente il domani, per predazione o per necessità, e l'Europa, abituata alla politica delle regole, deve imparare quella degli eventi."
 category: ["Geopolitica", "Teoria dei giochi"]

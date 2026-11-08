@@ -2,6 +2,7 @@
 layout: layouts/catena.njk
 title: "La firma e il segnale"
 date: 2026-09-28T20:20:00Z
+updated: 2026-09-29
 description: "Un decimo delle parole pronunciate a Westminster è scritto da un modello. Dodici schede dell'archivio su che cosa resta del valore di un testo quando scriverlo non costa più nulla, e sul perché riconoscere la macchina dallo stile è una strada chiusa."
 tesi: "Quando produrre un testo non costa più nulla, il suo valore si sposta sul segnale costoso che lo accompagna: chi lo firma, e come dichiara il lavoro che c'è dietro."
 category: ["Scrittura", "AI"]

@@ -2,6 +2,7 @@
 layout: layouts/catena.njk
 title: "Marketing per le macchine"
 date: 2026-09-28T21:05:00Z
+updated: 2026-10-27
 description: "Un italiano su tre sceglie cosa comprare chiedendolo a un assistente, e molti marchi bloccano senza saperlo i programmi che dovrebbero leggerli. Nove schede su un marketing che deve farsi capire dalle macchine e farsi amare dalle persone, mentre il mezzo sparisce."
 tesi: "Un marchio deve ormai parlare a due lettori, le macchine che scelgono per conto dei clienti e le persone che scelgono di appartenergli; la fascia intermedia, fatta di contenuti e strategie medie, sparisce perché le macchine la producono gratis."
 category: ["Marketing", "AI", "Editoria"]

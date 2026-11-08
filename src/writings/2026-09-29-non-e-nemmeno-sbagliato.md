@@ -2,6 +2,7 @@
 layout: layouts/catena.njk
 title: "Non è nemmeno sbagliato"
 date: 2026-09-29T15:25:00Z
+updated: 2026-10-27
 description: "Pauli liquidava così le tesi che non si potevano mettere alla prova. Delle ventiquattro previsioni pubbliche sull'AGI fatte dal 1950 a oggi, diciannove meritano lo stesso giudizio. Undici schede su come si prevede il futuro dell'intelligenza artificiale, e su quali previsioni si lasciano controllare."
 tesi: "Le previsioni sull'intelligenza artificiale sono quasi sempre infalsificabili, perché legano una data a uno stato che nessuno ha definito o perché nascondono metodo e dati; una previsione vale qualcosa solo se dichiara in che modo potrebbe risultare sbagliata."
 category: ["AI", "Epistemologia", "Scenario Planning"]

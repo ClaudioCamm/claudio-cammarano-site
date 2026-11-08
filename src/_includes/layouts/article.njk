@@ -101,6 +101,7 @@ try {
     </nav>
     <div class="article-meta">
       <span class="article-date">{{ date | formatDate }}</span>
+      {% if updated %}<span class="article-date article-updated">· {% if bodyClass == "catena" %}aggiornata{% else %}aggiornato{% endif %} il {{ updated | formatDate }}</span>{% endif %}
       {% if category %}
         {% if category.length %}
           {% for cat in category %}

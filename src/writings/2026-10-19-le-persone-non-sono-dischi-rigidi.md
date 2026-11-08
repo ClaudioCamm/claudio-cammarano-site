@@ -2,6 +2,7 @@
 layout: layouts/catena.njk
 title: "Le persone non sono dischi rigidi"
 date: 2026-10-19T15:30:00Z
+updated: 2026-10-27
 description: "Jill Lepore contro Clayton Christensen, e quattordici schede che fanno a teorie di business, di economia e di storia le stesse domande di uno storico: che fine hanno fatto i casi, da quando vale l'assunzione, che cosa resta dell'idea quando diventa un'etichetta."
 tesi: "Una teoria del business diventa trasformativa quando smette di essere letta come ipotesi e comincia a essere usata come dato: i suoi casi diventano canone, le sue assunzioni perdono la data e il suo ambito si allarga a scuole, giornali e ospedali. La sensibilità storica, che chiede che cosa sia successo davvero ai casi, in quale periodo valesse l'assunzione e che cosa la categoria abbia lasciato fuori, non è un'obiezione esterna: è la manutenzione di cui ha bisogno proprio la teoria migliore, e tanto più quanto più è stata trasformativa."
 category: ["Economia", "Epistemologia", "Giornalismo"]

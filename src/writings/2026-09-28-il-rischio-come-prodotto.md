@@ -2,6 +2,7 @@
 layout: layouts/catena.njk
 title: "Il rischio come prodotto"
 date: 2026-09-28T09:00:00Z
+updated: 2026-10-27
 description: "Un'indagine su quattromila ricercatori mette l'estinzione in fondo all'elenco delle loro paure. Da lì rileggo quattordici schede dell'archivio: l'allarme dei laboratori parla agli investitori prima che al pubblico, e intanto rinvia la domanda su chi pagherà il conto."
 tesi: "L'allarme esistenziale dei laboratori di frontiera funziona anzitutto come argomento per gli investitori: sostiene l'aspettativa di una potenza straordinaria mentre i ritorni tardano e la finanza del settore si regge su prestiti circolari."
 category: ["AI", "Comunicazione"]

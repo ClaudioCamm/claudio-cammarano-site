@@ -2,6 +2,7 @@
 layout: layouts/catena.njk
 title: "Il permesso e la proprietà"
 date: 2026-10-06T17:10:00Z
+updated: 2026-11-03
 description: "Una biblioteca che affitta un ebook, un'Europa che non decide più i propri tassi, alleati a cui si chiede una riforma in cambio di accesso, modelli d'intelligenza artificiale chiusi: quattordici schede su un solo meccanismo, chi concede l'accesso fissa le condizioni."
 tesi: "Da un ebook di biblioteca a un modello linguistico chiuso, «comprare» ha smesso di significare possedere e ha cominciato a significare affittare un accesso a termine; e in ognuno di questi mercati è chi concede l'accesso, non chi lo acquista, a fissare il prezzo e le condizioni — compresa la condizione di poterlo revocare."
 category: ["Economia", "Geopolitica", "Editoria"]

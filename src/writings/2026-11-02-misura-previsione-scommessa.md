@@ -2,6 +2,7 @@
 layout: layouts/catena.njk
 title: "Misura, previsione, scommessa"
 date: 2026-11-02T21:30:00Z
+updated: 2026-11-05
 description: "Il sondaggio Times/Siena, i rapporti dell'AAPOR sul 2016 e sul 2020, quattromila sondaggi statali, Silver contro Taleb, il modello dell'Economist e un istituto inventato: undici schede su tre cose che il dibattito elettorale chiama con un nome solo."
 tesi: "Un sondaggio è una misura, una previsione è un modello, una probabilità è una scommessa; quasi tutti gli errori sul tema, del pubblico e degli esperti, nascono dallo scambiare l'una per l'altra, e ciascuna va giudicata con il proprio criterio: la misura contro il risultato, con un errore reale doppio di quello dichiarato; il modello sulla quota di voto che stima; la probabilità sulla calibrazione e sulla coerenza nel tempo."
 category: ["Epistemologia", "Politica", "Giornalismo"]

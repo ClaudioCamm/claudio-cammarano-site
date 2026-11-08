@@ -2,6 +2,7 @@
 layout: layouts/catena.njk
 title: "Il rilevatore prima dell'oggetto"
 date: 2026-10-06T17:00:00Z
+updated: 2026-10-27
 description: "Prima di cercare un rilevatore della coscienza delle macchine conviene chiedersi se ci sia qualcosa da rilevare. Sette schede sull'addestramento che produce il sintomo che poi cita se stesso come prova."
 tesi: "Il danno di trattare le macchine come coscienti non richiede che lo siano, basta che qualcuno lo creda; e poiché l'addestramento insegna a un modello a parlare di sé in prima persona, ogni segno di interiorità che esibisce è prodotto dalla stessa fonte che dovrebbe verificarlo, il che rende circolare qualunque prova se ne ricavi."
 category: ["AI", "Filosofia"]

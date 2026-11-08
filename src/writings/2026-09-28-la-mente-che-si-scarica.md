@@ -2,6 +2,7 @@
 layout: layouts/catena.njk
 title: "La mente che si scarica"
 date: 2026-09-28T20:40:00Z
+updated: 2026-10-27
 description: "Ventisettemila studenti cinesi seguiti per due anni e mezzo: con l'AI i compiti migliorano e gli esami peggiorano, tranne per chi le dedica lo stesso tempo di prima. Undici schede su che cosa ci toglie la macchina quando pensa al nostro posto, e su chi paga il conto."
 tesi: "Il danno cognitivo dell'intelligenza artificiale non viene dallo strumento ma dal tempo e dallo sforzo che sostituisce; per questo separa chi ha bisogno di pensare da chi non ce l'ha, e l'unità di misura giusta è la dieta, non il singolo alimento."
 category: ["Cognizione", "Formazione", "Media"]
