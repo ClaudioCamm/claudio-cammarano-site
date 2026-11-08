@@ -1484,7 +1484,8 @@ module.exports = [
       { title: "Game Decompilation, Is This Legal?, A Well-Trodden Path", url: "/curated/2026-10-06-stratechery-game-decompilation/", _source: "curated" },
       { title: "A Conversation With Ari Emanuel About Entertainment and AI", url: "/curated/2026-10-15-stratechery-ari-emanuel-entertainment-ai/", _source: "curated" },
       { title: "The Disruption Machine", url: "/curated/2014-06-16-lepore-disruption-machine-newyorker/", _source: "curated" },
-      { title: "AI on the Ballot", url: "/curated/2026-11-04-thompson-ai-on-the-ballot-stratechery/", _source: "curated" }
+      { title: "AI on the Ballot", url: "/curated/2026-11-04-thompson-ai-on-the-ballot-stratechery/", _source: "curated" },
+      { title: "China's AI stock-market struggles are a warning", url: "/curated/2026-11-03-economist-borsa-cina-ai/", _source: "curated" }
     ]
   },
   {
@@ -1749,7 +1750,8 @@ module.exports = [
       { title: "Why the End of History Is So Miserable", url: "/curated/2026-09-09-beckerman-fukuyama-end-history-atlantic/", _source: "curated" },
       { title: "Was Francis Fukuyama Right All Along?", url: "/curated/2026-09-18-ezra-klein-fukuyama-nyt/", _source: "curated" },
       { title: "Marco Rubio invente l'Occident de Trump", url: "/curated/2026-10-08-gressani-miranda-rubio-occidente-trump-grandcontinent/", _source: "curated" },
-      { title: "Trumpism Is Backfiring", url: "/curated/2026-10-20-klein-freeland-trumpism-backfiring-nyt/", _source: "curated" }
+      { title: "Trumpism Is Backfiring", url: "/curated/2026-10-20-klein-freeland-trumpism-backfiring-nyt/", _source: "curated" },
+      { title: "No one has a plan for American decline", url: "/curated/2026-10-29-danforth-declino-americano-foreignpolicy/", _source: "curated" }
     ]
   },
   {
@@ -2492,7 +2494,8 @@ module.exports = [
       { title: "An Interview with Palantir CTO Shyam Sankar About the AI Religious War", url: "/curated/2026-10-29-thompson-sankar-palantir-stratechery/", _source: "curated" },
       { title: "Veteran investor Howard Marks on AI debt", url: "/curated/2026-10-29-economist-howard-marks-debito-ai/", _source: "curated" },
       { title: "How Employment is Changing at Anthropic", url: "/curated/2026-10-16-wilmers-lavoro-anthropic-institute/", _source: "curated" },
-      { title: "Financial Predictionization", url: "/curated/2026-11-05-levine-pacing-frontier-cartello-bloomberg/", _source: "curated" }
+      { title: "Financial Predictionization", url: "/curated/2026-11-05-levine-pacing-frontier-cartello-bloomberg/", _source: "curated" },
+      { title: "China's AI stock-market struggles are a warning", url: "/curated/2026-11-03-economist-borsa-cina-ai/", _source: "curated" }
     ]
   },
   {
@@ -2994,7 +2997,10 @@ module.exports = [
       { title: "AI on the Ballot", url: "/curated/2026-11-04-thompson-ai-on-the-ballot-stratechery/", _source: "curated" },
       { title: "Le crociate delle culture wars non tirano più", url: "/curated/2026-11-05-mazzonis-culture-wars-midterm/", _source: "curated" },
       { title: "The Kids May Not Be All Right, but They're Getting Better", url: "/curated/2026-11-05-wallace-wells-salute-mentale-adolescenti-nyt/", _source: "curated" },
-      { title: "The Coup We Are Not Talking About", url: "/curated/2021-01-29-zuboff-colpo-epistemico-nyt/", _source: "curated" }
+      { title: "The Coup We Are Not Talking About", url: "/curated/2021-01-29-zuboff-colpo-epistemico-nyt/", _source: "curated" },
+      { title: "The Fall of Scientific American", url: "/curated/2026-10-22-fraizer-scientific-american-thenation/", _source: "curated" },
+      { title: "No one has a plan for American decline", url: "/curated/2026-10-29-danforth-declino-americano-foreignpolicy/", _source: "curated" },
+      { title: "Stocks Plunge as Midterm Results Renew A.I. Anxiety", url: "/curated/2026-11-05-rennison-borsa-midterm-ai-nyt/", _source: "curated" }
     ]
   },
   {
@@ -3085,7 +3091,8 @@ module.exports = [
       { title: "Nvidia Chief, Jensen Huang, Is Seen as Target of Chinese Spy Plot", url: "/curated/2026-10-29-swan-haberman-huang-spionaggio-nyt/", _source: "curated" },
       { title: "Comment le communisme a fait de la Chine une superpuissance capitaliste", url: "/curated/2026-10-29-ruskola-classe-operaia-cinese-grandcontinent/", _source: "curated" },
       { title: "The countries making a fortune from the US-China rivalry", url: "/curated/2026-10-29-economist-minerali-critici-rivalita/", _source: "curated" },
-      { title: "Hit podcasts reveal the angst of China's youth", url: "/curated/2026-11-01-economist-podcast-giovani-cina/", _source: "curated" }
+      { title: "Hit podcasts reveal the angst of China's youth", url: "/curated/2026-11-01-economist-podcast-giovani-cina/", _source: "curated" },
+      { title: "China's AI stock-market struggles are a warning", url: "/curated/2026-11-03-economist-borsa-cina-ai/", _source: "curated" }
     ]
   },
   {
@@ -3187,7 +3194,9 @@ module.exports = [
       { title: "Nvidia Chief, Jensen Huang, Is Seen as Target of Chinese Spy Plot", url: "/curated/2026-10-29-swan-haberman-huang-spionaggio-nyt/", _source: "curated" },
       { title: "Everything is going wrong for Muhammad bin Salman", url: "/curated/2026-10-19-economist-bin-salman-anno-orribile/", _source: "curated" },
       { title: "Le crociate delle culture wars non tirano più", url: "/curated/2026-11-05-mazzonis-culture-wars-midterm/", _source: "curated" },
-      { title: "The Coup We Are Not Talking About", url: "/curated/2021-01-29-zuboff-colpo-epistemico-nyt/", _source: "curated" }
+      { title: "The Coup We Are Not Talking About", url: "/curated/2021-01-29-zuboff-colpo-epistemico-nyt/", _source: "curated" },
+      { title: "The Fall of Scientific American", url: "/curated/2026-10-22-fraizer-scientific-american-thenation/", _source: "curated" },
+      { title: "No one has a plan for American decline", url: "/curated/2026-10-29-danforth-declino-americano-foreignpolicy/", _source: "curated" }
     ]
   },
   {
@@ -3959,7 +3968,8 @@ module.exports = [
       { title: "Nvidia Chief, Jensen Huang, Is Seen as Target of Chinese Spy Plot", url: "/curated/2026-10-29-swan-haberman-huang-spionaggio-nyt/", _source: "curated" },
       { title: "La bulle et le contrôle", url: "/curated/2026-11-03-durand-valenti-bolla-controllo-grandcontinent/", _source: "curated" },
       { title: "AI on the Ballot", url: "/curated/2026-11-04-thompson-ai-on-the-ballot-stratechery/", _source: "curated" },
-      { title: "Financial Predictionization", url: "/curated/2026-11-05-levine-pacing-frontier-cartello-bloomberg/", _source: "curated" }
+      { title: "Financial Predictionization", url: "/curated/2026-11-05-levine-pacing-frontier-cartello-bloomberg/", _source: "curated" },
+      { title: "Stocks Plunge as Midterm Results Renew A.I. Anxiety", url: "/curated/2026-11-05-rennison-borsa-midterm-ai-nyt/", _source: "curated" }
     ]
   },
   {
@@ -4021,7 +4031,8 @@ module.exports = [
       { title: "Who's Afraid of Chinese Models?", url: "/curated/2026-07-20-stratechery-chinese-models/", _source: "curated" },
       { title: "Why open-weight models are crucial for American AI leadership", url: "/curated/2026-08-10-villasenor-pesi-aperti-leadership-brookings/", _source: "curated" },
       { title: "Open Weights, Closed Ranks: The AI Manifesto War", url: "/curated/2026-08-12-zuniga-pesi-aperti-manifesti-icle/", _source: "curated" },
-      { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" }
+      { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" },
+      { title: "China's AI stock-market struggles are a warning", url: "/curated/2026-11-03-economist-borsa-cina-ai/", _source: "curated" }
     ]
   },
   {
@@ -5993,7 +6004,8 @@ module.exports = [
     ],
     note: "Fase in cui il prezzo di un'attività o il volume degli investimenti in un settore si stacca dai rendimenti che ci si può ragionevolmente attendere, sostenuto dall'aspettativa che altri continueranno a comprare. **Nel sito serve a leggere il boom dell'AI: la domanda non è soltanto se la bolla scoppierà, ma chi ne sopporterà il costo e quale potere avrà accumulato chi l'ha gonfiata.**",
     articles: [
-      { title: "La bulle et le contrôle", url: "/curated/2026-11-03-durand-valenti-bolla-controllo-grandcontinent/", _source: "curated" }
+      { title: "La bulle et le contrôle", url: "/curated/2026-11-03-durand-valenti-bolla-controllo-grandcontinent/", _source: "curated" },
+      { title: "Stocks Plunge as Midterm Results Renew A.I. Anxiety", url: "/curated/2026-11-05-rennison-borsa-midterm-ai-nyt/", _source: "curated" }
     ]
   },
   {
@@ -6076,7 +6088,8 @@ module.exports = [
     ],
     note: "Controllo preventivo o successivo di ciò che può essere detto, pubblicato o trasmesso, esercitato da un potere pubblico o delegato alle piattaforme. **Nel sito interessa per il rapporto con la forma: ciò che un regime riesce a sorvegliare dipende anche dalla durata e dal formato dei testi che circolano.**",
     articles: [
-      { title: "Hit podcasts reveal the angst of China's youth", url: "/curated/2026-11-01-economist-podcast-giovani-cina/", _source: "curated" }
+      { title: "Hit podcasts reveal the angst of China's youth", url: "/curated/2026-11-01-economist-podcast-giovani-cina/", _source: "curated" },
+      { title: "The Fall of Scientific American", url: "/curated/2026-10-22-fraizer-scientific-american-thenation/", _source: "curated" }
     ]
   },
   {
@@ -6154,6 +6167,32 @@ module.exports = [
     articles: [
       { title: "You Are the Object of a Secret Extraction Operation", url: "/curated/2021-11-12-zuboff-estrazione-segreta-nyt/", _source: "curated" },
       { title: "The EU has fired the starting gun in the fightback against Big Tech", url: "/curated/2022-05-02-zuboff-dsa-ft/", _source: "curated" }
+    ]
+  },
+  {
+    name: "egemonia",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q182034"],
+    related: [
+      { name: "thymos", why: "Danforth lo descrive senza nominarlo: l'egemonia nutriva il bisogno di riconoscimento dei cittadini, e Trump ha promesso di restituirlo agli esclusi." }
+    ],
+    note: "Supremazia di una potenza sulle altre, fondata insieme sulla forza e sul consenso, che le permette di fissare le regole dell'ordine internazionale. **Nel sito interessa per ciò che rende a chi la esercita: non solo ricchezza e sicurezza, ma prestigio, e quando il prestigio viene meno chiede di essere risarcito.**",
+    articles: [
+      { title: "No one has a plan for American decline", url: "/curated/2026-10-29-danforth-declino-americano-foreignpolicy/", _source: "curated" }
+    ]
+  },
+  {
+    name: "indipendenza editoriale",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q3150645"],
+    related: [
+      { name: "censura", why: "Il caso di Scientific American mostra la censura che passa per la proprietà, senza bisogno di un divieto pubblico." }
+    ],
+    note: "Autonomia di una redazione nel decidere che cosa pubblicare, rispetto alla proprietà, agli inserzionisti e al potere politico. **Nel sito interessa il punto in cui si rompe: raramente per un ordine, più spesso quando chi possiede la testata ha da perdere altrove.**",
+    articles: [
+      { title: "The Fall of Scientific American", url: "/curated/2026-10-22-fraizer-scientific-american-thenation/", _source: "curated" }
     ]
   }
 
