@@ -1668,7 +1668,8 @@ module.exports = [
     note: "La pratica di scrivere testi firmati da altri. Nel sito è il termine chiave del pezzo di Dondi: il ghostwriting ha sempre reso invisibile il lavoro di supporto alle figure di potere senza che questo fosse considerato imbroglio. L'AI ne è una versione più economica e accessibile — e l'indignazione che suscita rivela che il privilegio viene contestato solo quando smette di essere esclusivo.",
     articles: [
       { title: "Se uso l'AI sono meno professionista?", url: "/curated/2026-06-21-dondi-ai-professionalita-ghostwriting/", _source: "curated" },
-      { title: "AI-written speeches are taking over politics", url: "/curated/2026-09-23-economist-discorsi-scritti-ai-politica/", _source: "curated" }
+      { title: "AI-written speeches are taking over politics", url: "/curated/2026-09-23-economist-discorsi-scritti-ai-politica/", _source: "curated" },
+      { title: "Anti-Waymo campaign relied on op-eds written with AI", url: "/curated/2026-11-08-tani-waymo-editoriali-ai-semafor/", _source: "curated" }
     ]
   },
   {
@@ -1751,7 +1752,8 @@ module.exports = [
       { title: "Was Francis Fukuyama Right All Along?", url: "/curated/2026-09-18-ezra-klein-fukuyama-nyt/", _source: "curated" },
       { title: "Marco Rubio invente l'Occident de Trump", url: "/curated/2026-10-08-gressani-miranda-rubio-occidente-trump-grandcontinent/", _source: "curated" },
       { title: "Trumpism Is Backfiring", url: "/curated/2026-10-20-klein-freeland-trumpism-backfiring-nyt/", _source: "curated" },
-      { title: "No one has a plan for American decline", url: "/curated/2026-10-29-danforth-declino-americano-foreignpolicy/", _source: "curated" }
+      { title: "No one has a plan for American decline", url: "/curated/2026-10-29-danforth-declino-americano-foreignpolicy/", _source: "curated" },
+      { title: "Et si l'extrême droite allemande devait son succès à l'écologie ?", url: "/curated/2026-11-08-heddesheimer-hilbig-voeten-afd-ecologia-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -2562,7 +2564,8 @@ module.exports = [
     note: "Alternative für Deutschland, partito di estrema destra tedesco. Nel sito è citato come attore della contestazione politica della memoria storica: un dirigente del partito, Björn Höcke, si è scagliato contro la digitalizzazione degli archivi NSDAP — mentre il partito stesso continua a guadagnare terreno in diverse regioni tedesche.",
     articles: [
       { title: "NSDAP-Archiv: Finden Sie heraus, was Ihre Familie unter Hitler getan hat", url: "/curated/2026-05-07-spiegel-nsdap-archiv/", _source: "curated" },
-      { title: "Attacchi ucraini ai data center Yandex: crolla l'attività dei bot russi?", url: "/curated/2026-10-12-vakulina-yandex-data-center-bot-euronews/", _source: "curated" }
+      { title: "Attacchi ucraini ai data center Yandex: crolla l'attività dei bot russi?", url: "/curated/2026-10-12-vakulina-yandex-data-center-bot-euronews/", _source: "curated" },
+      { title: "Et si l'extrême droite allemande devait son succès à l'écologie ?", url: "/curated/2026-11-08-heddesheimer-hilbig-voeten-afd-ecologia-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -3000,7 +3003,9 @@ module.exports = [
       { title: "The Coup We Are Not Talking About", url: "/curated/2021-01-29-zuboff-colpo-epistemico-nyt/", _source: "curated" },
       { title: "The Fall of Scientific American", url: "/curated/2026-10-22-fraizer-scientific-american-thenation/", _source: "curated" },
       { title: "No one has a plan for American decline", url: "/curated/2026-10-29-danforth-declino-americano-foreignpolicy/", _source: "curated" },
-      { title: "Stocks Plunge as Midterm Results Renew A.I. Anxiety", url: "/curated/2026-11-05-rennison-borsa-midterm-ai-nyt/", _source: "curated" }
+      { title: "Stocks Plunge as Midterm Results Renew A.I. Anxiety", url: "/curated/2026-11-05-rennison-borsa-midterm-ai-nyt/", _source: "curated" },
+      { title: "With an eye on America, China is beefing up its AI-controlled labs", url: "/curated/2026-11-04-economist-laboratori-autonomi-cina/", _source: "curated" },
+      { title: "An Underrated Reason Boys Are Reading Less", url: "/curated/2026-11-05-nguyen-ragazzi-lettura-protagonisti-atlantic/", _source: "curated" }
     ]
   },
   {
@@ -3092,7 +3097,8 @@ module.exports = [
       { title: "Comment le communisme a fait de la Chine une superpuissance capitaliste", url: "/curated/2026-10-29-ruskola-classe-operaia-cinese-grandcontinent/", _source: "curated" },
       { title: "The countries making a fortune from the US-China rivalry", url: "/curated/2026-10-29-economist-minerali-critici-rivalita/", _source: "curated" },
       { title: "Hit podcasts reveal the angst of China's youth", url: "/curated/2026-11-01-economist-podcast-giovani-cina/", _source: "curated" },
-      { title: "China's AI stock-market struggles are a warning", url: "/curated/2026-11-03-economist-borsa-cina-ai/", _source: "curated" }
+      { title: "China's AI stock-market struggles are a warning", url: "/curated/2026-11-03-economist-borsa-cina-ai/", _source: "curated" },
+      { title: "With an eye on America, China is beefing up its AI-controlled labs", url: "/curated/2026-11-04-economist-laboratori-autonomi-cina/", _source: "curated" }
     ]
   },
   {
@@ -3132,7 +3138,8 @@ module.exports = [
     note: "Nel sito è il contesto della digitalizzazione degli archivi NSDAP da parte di Der Spiegel e dell'avanzata dell'AfD in diverse regioni: il caso in cui la cultura della memoria storica diventa esplicitamente terreno di scontro politico contemporaneo.",
     articles: [
       { title: "NSDAP-Archiv: Finden Sie heraus, was Ihre Familie unter Hitler getan hat", url: "/curated/2026-05-07-spiegel-nsdap-archiv/", _source: "curated" },
-      { title: "Ranks of Humanity", url: "/curated/2026-09-24-meaney-varouxakis-idea-occidente-lrb/", _source: "curated" }
+      { title: "Ranks of Humanity", url: "/curated/2026-09-24-meaney-varouxakis-idea-occidente-lrb/", _source: "curated" },
+      { title: "Et si l'extrême droite allemande devait son succès à l'écologie ?", url: "/curated/2026-11-08-heddesheimer-hilbig-voeten-afd-ecologia-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -4897,7 +4904,8 @@ module.exports = [
       { title: "Il triste dibattito sullo scrivere con l'IA", url: "/curated/2026-10-02-piacenza-triste-dibattito-scrivere-ia/", _source: "curated" },
       { title: "The search for consciousness inside AI", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" },
       { title: "Don’t mistake chatbot intelligence for consciousness", url: "/curated/2026-08-20-schneider-la-scala-che-non-regge-economist/", _source: "curated" },
-      { title: "How Russian Propaganda Learned to Look Finnish", url: "/curated/2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24/", _source: "curated" }
+      { title: "How Russian Propaganda Learned to Look Finnish", url: "/curated/2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24/", _source: "curated" },
+      { title: "Anti-Waymo campaign relied on op-eds written with AI", url: "/curated/2026-11-08-tani-waymo-editoriali-ai-semafor/", _source: "curated" }
     ]
   },
   {
@@ -4914,7 +4922,8 @@ module.exports = [
       { title: "Japanese author Rie Kudan wins prestigious Akutagawa Prize for novel partly written by ChatGPT", url: "/curated/2024-01-17-kudan-akutagawa-cinque-per-cento-cnn/", _source: "curated" },
       { title: "Commonwealth Short Story Prize Clears Regional Winners of AI Use Following Month-Long Review", url: "/curated/2026-06-26-commonwealth-nazir-falso-positivo-brittlepaper/", _source: "curated" },
       { title: "Plagiat, IA : le prix Goncourt exclut le roman de Thélyson Orélien", url: "/curated/2026-09-25-goncourt-esclusione-orelien-actualitte/", _source: "curated" },
-      { title: "Il triste dibattito sullo scrivere con l'IA", url: "/curated/2026-10-02-piacenza-triste-dibattito-scrivere-ia/", _source: "curated" }
+      { title: "Il triste dibattito sullo scrivere con l'IA", url: "/curated/2026-10-02-piacenza-triste-dibattito-scrivere-ia/", _source: "curated" },
+      { title: "Anti-Waymo campaign relied on op-eds written with AI", url: "/curated/2026-11-08-tani-waymo-editoriali-ai-semafor/", _source: "curated" }
     ]
   },
   {
@@ -6112,7 +6121,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q59492538"],
     note: "Espressione dello psicologo Nick Haslam (2016) per l'allargamento progressivo di concetti come trauma, abuso, dipendenza o pregiudizio, applicati a casi sempre meno gravi e sempre più lontani dal loro nucleo. La deriva procede per due tappe: prima la polisemia, perché la stessa parola copre fenomeni diversi e chi la usa non intende più la stessa cosa; poi una forma socializzata di a-semia, in cui la parola circola ovunque e non distingue più niente. **Nel sito è una cautela di metodo: prima di spiegare un aumento, chiedersi se è cambiato il fenomeno o il significato della parola con cui lo si conta.**",
     articles: [
-      { title: "The Kids May Not Be All Right, but They're Getting Better", url: "/curated/2026-11-05-wallace-wells-salute-mentale-adolescenti-nyt/", _source: "curated" }
+      { title: "The Kids May Not Be All Right, but They're Getting Better", url: "/curated/2026-11-05-wallace-wells-salute-mentale-adolescenti-nyt/", _source: "curated" },
+      { title: "Equality talk", url: "/curated/2026-11-09-bejan-uguaglianza-aeon/", _source: "curated" }
     ]
   },
   {
@@ -6193,6 +6203,62 @@ module.exports = [
     note: "Autonomia di una redazione nel decidere che cosa pubblicare, rispetto alla proprietà, agli inserzionisti e al potere politico. **Nel sito interessa il punto in cui si rompe: raramente per un ordine, più spesso quando chi possiede la testata ha da perdere altrove.**",
     articles: [
       { title: "The Fall of Scientific American", url: "/curated/2026-10-22-fraizer-scientific-american-thenation/", _source: "curated" }
+    ]
+  },
+  {
+    name: "laboratorio autonomo",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q125724514"],
+    note: "Laboratorio in cui un sistema di intelligenza artificiale formula ipotesi, fa eseguire gli esperimenti a robot e usa i risultati per scegliere i successivi, con un intervento umano minimo. **Nel sito interessa come punto in cui l'automazione arriva al lavoro scientifico: non solo a scrivere i risultati, ma a produrli.**",
+    articles: [
+      { title: "With an eye on America, China is beefing up its AI-controlled labs", url: "/curated/2026-11-04-economist-laboratori-autonomi-cina/", _source: "curated" }
+    ]
+  },
+  {
+    name: "letteratura per ragazzi",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q131539"],
+    note: "Libri scritti e pubblicati per lettori dall'infanzia all'adolescenza, che l'industria divide per fasce d'età. **Nel sito interessa come il punto in cui si formano, o si perdono, i lettori adulti: ciò che l'editoria pubblica per i ragazzi decide chi leggerà domani.**",
+    articles: [
+      { title: "An Underrated Reason Boys Are Reading Less", url: "/curated/2026-11-05-nguyen-ragazzi-lettura-protagonisti-atlantic/", _source: "curated" }
+    ]
+  },
+  {
+    name: "uguaglianza",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q773009"],
+    related: [
+      { name: "concept creep", why: "Il caso inverso: un concetto ambiguo che deve la sua forza all'ambiguità, finché una pratica sociale lo tiene ancorato." }
+    ],
+    note: "Principio secondo cui le persone, pur diverse, contano allo stesso modo nei rapporti morali, politici e sociali, e ogni disuguaglianza durevole richiede una giustificazione. **Nel sito interessa la tesi di Bejan: l'uguaglianza vive prima nelle pratiche, come la giuria, e solo dopo nelle definizioni.**",
+    articles: [
+      { title: "Equality talk", url: "/curated/2026-11-09-bejan-uguaglianza-aeon/", _source: "curated" }
+    ]
+  },
+  {
+    name: "ottimizzazione per i motori di ricerca",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q180711"],
+    note: "Insieme delle tecniche con cui un sito cerca di comparire più in alto e più spesso nei risultati dei motori di ricerca. **Nel sito interessa il suo spostamento: con le risposte generate dall'AI non conta più solo essere trovati, ma essere citati come fonte.**",
+    articles: [
+      { title: "We Opted Out of Google AI Search - Here's What Happened", url: "/curated/2026-11-05-shepard-uscita-ai-google-zyppy/", _source: "curated" }
+    ]
+  },
+  {
+    name: "transizione giusta",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q6316391"],
+    related: [
+      { name: "thymos", why: "Lo status perduto dei lavoratori «bruni» è una ferita di riconoscimento prima che di reddito, e l'estrema destra la intercetta." }
+    ],
+    note: "Principio secondo cui la riconversione verso un'economia a basse emissioni deve proteggere i lavoratori e le comunità che dipendono dalle industrie da chiudere o trasformare. **Nel sito interessa la sua parte meno materiale: oltre al reddito, va garantito il riconoscimento di chi faceva quel lavoro.**",
+    articles: [
+      { title: "Et si l'extrême droite allemande devait son succès à l'écologie ?", url: "/curated/2026-11-08-heddesheimer-hilbig-voeten-afd-ecologia-grandcontinent/", _source: "curated" }
     ]
   }
 
