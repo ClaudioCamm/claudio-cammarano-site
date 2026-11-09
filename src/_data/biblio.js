@@ -945,6 +945,44 @@ module.exports = [
     "from": "v6"
   },
   {
+    "key": "mayo1996error",
+    "altKeys": [
+      "mayo1996"
+    ],
+    "type": "book",
+    "author": "Mayo, Deborah G.",
+    "editor": "",
+    "title": "Error and the Growth of Experimental Knowledge",
+    "year": "1996",
+    "publisher": "University of Chicago Press",
+    "journal": "",
+    "booktitle": "",
+    "volume": "",
+    "pages": "",
+    "doi": "",
+    "note": "Cap. 1: arguing from error, severe error probe, critica a Popper (severity di Popper vs. severity di Mayo).",
+    "from": "definitiva"
+  },
+  {
+    "key": "mayo2005peircean",
+    "altKeys": [
+      "mayo2005"
+    ],
+    "type": "article",
+    "author": "Mayo, Deborah G.",
+    "editor": "",
+    "title": "Peircean Induction and the Error-Correcting Thesis",
+    "year": "2005",
+    "publisher": "",
+    "journal": "Transactions of the Charles S. Peirce Society",
+    "booktitle": "",
+    "volume": "41",
+    "pages": "299--319",
+    "doi": "",
+    "note": "Tesi autocorrettiva di Peirce (SCT) come fondamento della statistica dell'errore.",
+    "from": "definitiva"
+  },
+  {
     "key": "mayo2018statistical",
     "altKeys": [
       "mayo2018"

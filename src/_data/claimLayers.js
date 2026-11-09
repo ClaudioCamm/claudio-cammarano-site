@@ -31,7 +31,7 @@ const TOPICS = [
   { key: "annotation",   en: "Annotation",   claims: ["more-annotators-beats-bias-correction", "mode-a-needs-a-blind-recode", "surface-variance-masks-convergence", "reproducibility-is-documentation"] },
   { key: "evaluation",   en: "Evaluation",   claims: ["explicit-about-what-is-not-evaluated", "breakthroughs-are-metric-artefacts", "llm-judges-match-human-agreement"] },
   { key: "truthfulness", en: "Truthfulness", claims: ["inverse-scaling-of-truthfulness", "hallucination-the-standard-definition"] },
-  { key: "severity",     en: "Severity",     claims: ["mayo-severity-weak", "mayo-severity-strong", "mayo-lift-off", "mayo-arguing-from-error", "mayo-forward-looking-methods", "mayo-severity-meta-methodology"] },
+  { key: "severity",     en: "Severity",     claims: ["mayo-severity-weak", "mayo-severity-strong", "mayo-lift-off", "mayo-arguing-from-error", "mayo-forward-looking-methods", "mayo-severity-meta-methodology", "mayo-neither-probabilism-nor-performance", "mayo-severity-from-popper", "mayo-p-values-selection", "mayo1996-severe-error-probe", "mayo1996-popper-lacks-positive", "mayo1996-popper-severity-not-mine", "mayo-severity-applies-to-any-method", "mayo2005-self-correcting-thesis"] },
   { key: "architecture", en: "Architecture", claims: ["transformer-dispenses-with-recurrence", "plural-paths-one-answer", "cai-partially-replaces-human-feedback"] }
 ];
 
@@ -109,7 +109,7 @@ const CONCEPTS = [
     question: "When does passing a test count as evidence?",
     note: "A result counts as evidence only if the procedure that produced it could have caught the error: agreement a method was bound to find shows nothing.",
     links: ["verdict", "convergent-paths"],
-    claims: ["mayo-severity-weak", "mayo-severity-strong", "mayo-lift-off", "mayo-arguing-from-error", "mayo-forward-looking-methods", "mayo-severity-meta-methodology"] },
+    claims: ["mayo-severity-weak", "mayo-severity-strong", "mayo-lift-off", "mayo-arguing-from-error", "mayo-forward-looking-methods", "mayo-severity-meta-methodology", "mayo-neither-probabilism-nor-performance", "mayo-severity-from-popper", "mayo-p-values-selection", "mayo1996-severe-error-probe", "mayo1996-popper-lacks-positive", "mayo1996-popper-severity-not-mine", "mayo-severity-applies-to-any-method", "mayo2005-self-correcting-thesis"] },
   { key: "convergent-paths", en: "Convergent paths",
     question: "Is agreement between different derivations evidence about the answer?",
     note: "Several different derivations arriving at the same answer is evidence about the answer, not noise to be averaged away.",

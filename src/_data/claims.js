@@ -584,6 +584,146 @@ const claims = [
       { to: "mayo-severity-strong", how: "presupposes", why: "Applying severity to methods presupposes the graded criterion it applies to claims." }
     ],
     usedIn: []
+  },
+  {
+    id: "mayo-neither-probabilism-nor-performance",
+    gist: "Neither of the two dominant philosophies of statistics, assigning degrees of belief or securing long-run error rates, asks whether a test could have caught the error. That gap is why the programme cannot borrow its validation criterion from either school and has to state severity on its own.",
+    src: "mayo2018statistical",
+    locus: "p. 13, Excursion 1, Tour I",
+    before: "others strive to say H0 is less believable given data x than before, and offer a quantitative report of the difference.",
+    claim: "What happened to the goal of scrutinizing BENT science by the severity criterion? Neither “probabilism” nor “performance” directly captures that demand.",
+    cuts: [],
+    after: "To take these goals at face value, it’s easy to see why they come up short.",
+    fn: "strumento-concettuale",
+    d1: "D1.6",
+    d1Status: "proposed",
+    stance: "assumed",
+    relates: [
+      { to: "mayo-severity-weak", how: "presupposes", why: "Measures the two schools against the BENT requirement and finds both short of it." }
+    ],
+    usedIn: []
+  },
+  {
+    id: "mayo-severity-from-popper",
+    gist: "Severity comes from Popper but arrived without a working definition and without a place in any statistical method. Mayo's contribution, and the programme's starting point, is that operational definition: the word is old, the criterion is not.",
+    src: "mayo2018statistical",
+    locus: "p. 9, Excursion 1, Tour I, Methodology and Meta-methodology",
+    before: "So when it comes to the role of probability as a pedagogical tool for our purposes, severity – its assessment and control – will be at the center.",
+    claim: "The term “severity” is Popper’s, though he never adequately defined it. It’s not part of any statistical methodology as of yet.",
+    cuts: [],
+    after: "Viewing statistical inference as severe testing lets us stand one level removed from existing accounts, where the air is a bit clearer.",
+    fn: "riferimento-tecnico",
+    d1: "D1.1",
+    d1Status: "proposed",
+    stance: "used",
+    relates: [
+      { to: "mayo-severity-meta-methodology", how: "refines", why: "Gives the term's provenance: Popper's word, first given a statistical definition here." }
+    ],
+    usedIn: []
+  },
+  {
+    id: "mayo-p-values-selection",
+    gist: "A significance level is valid only relative to how data and hypotheses were selected; selective reporting makes a hard result look easy to explain away as chance. For the programme this is the warning attached to any choice of which outputs or cases enter a validation set.",
+    src: "mayo2018statistical",
+    locus: "p. 17, Excursion 1, Tour I",
+    before: "We want to tell what’s true about statistical inference. Among the most notable of these truths is:",
+    claim: "P-values can be readily invalidated due to how the data (or hypotheses!) are generated or selected for testing.",
+    cuts: [],
+    after: "If you fool around with the results afterwards, reporting only successful guesses, your report will be invalid.",
+    fn: "dato-che-corregge",
+    d1: "D1.4",
+    d1Status: "proposed",
+    stance: "used",
+    relates: [],
+    usedIn: []
+  },
+  {
+    id: "mayo1996-severe-error-probe",
+    gist: "A severe test is built from prior knowledge of specific mistakes: a probe that would reveal a given error if present, and stay silent otherwise. This is the original formulation of the idea, and it ties severity to an error repertoire rather than to probability in a hypothesis.",
+    src: "mayo1996error",
+    locus: "p. 7, ch. 1, §8",
+    before: "The same kind of reasoning is at the heart of experimental testing. I shall call it arguing from error.",
+    claim: "After learning enough about certain types of mistakes, we may construct (often from other tests) a testing procedure with an overwhelmingly good chance of revealing the presence of a specific error, if it exists-but not otherwise. Such a testing procedure may be called a severe (or reliable) test, or a severe error probe.",
+    cuts: [],
+    after: "If a hypothesized error is not detected by a test that has an overwhelmingly high chance of detecting it, if instead the test yields a result that accords well with no error, then there are grounds for the claim that the error is absent.",
+    fn: "metodo-di-lavoro",
+    d1: "D1.9",
+    d1Status: "proposed",
+    stance: "assumed",
+    relates: [
+      { to: "mayo-arguing-from-error", how: "confirms", why: "The same argument from error, stated twenty-two years earlier." }
+    ],
+    usedIn: []
+  },
+  {
+    id: "mayo1996-popper-lacks-positive",
+    gist: "Falsificationism explains why failing a test counts against a hypothesis, but not why passing one counts for it. The programme needs the positive half, which is why it uses Mayo's severity rather than Popper's corroboration.",
+    src: "mayo1996error",
+    locus: "p. 8, ch. 1",
+    before: "It seems incumbent upon anyone mounting such an approach to dispel the ghosts of Popper's negativism right away, or at least sketch how they will be dispelled.",
+    claim: "The most devastating criticism of Popper's approach is this: having rejected the notion that learning is a matter of building up probability in a hypothesis, Popper seems to lack any meaningful way of saying why passing severe tests counts in favor of a hypothesis.",
+    cuts: [],
+    after: "Popper's account seems utterly incapable of saying anything positive.",
+    fn: "strumento-concettuale",
+    d1: "D1.6",
+    d1Status: "proposed",
+    stance: "used",
+    relates: [
+      { to: "mayo-severity-from-popper", how: "refines", why: "Says what Popper's severity lacked: a reason why passing counts in favour." }
+    ],
+    usedIn: []
+  },
+  {
+    id: "mayo1996-popper-severity-not-mine",
+    gist: "Beating rivals is not passing a severe test: the test has to probe the ways this particular hypothesis could be wrong. For validation this means comparing models or judges against each other is not a substitute for probing each one's own failure modes.",
+    src: "mayo1996error",
+    locus: "p. 9, ch. 1",
+    before: "These test criteria will be based on the idea of severity sketched above.",
+    claim: "A hypothesis H that passes the test failed by rival hypothesis H' (and by other alternative hypotheses considered) has passed a severe test for Popper-but not for me. Why not? Because for H to pass a severe test in my sense, it must have passed a test that is highly capable of probing the ways in which H can err.",
+    cuts: [],
+    after: "And the test that alternative hypothesis H' failed need not be probative in the least so far as the errors of H go.",
+    fn: "strumento-concettuale",
+    d1: "D1.6",
+    d1Status: "proposed",
+    stance: "assumed",
+    relates: [
+      { to: "mayo1996-popper-lacks-positive", how: "extends", why: "From what Popper lacks to the criterion that replaces his." }
+    ],
+    usedIn: []
+  },
+  {
+    id: "mayo-severity-applies-to-any-method",
+    gist: "Severity is not tied to one statistical school: any inference can be judged by whether it withstood severe testing. That generality is what licenses the programme to apply it to LLM validation, a domain Mayo did not consider.",
+    src: "mayo2018statistical",
+    locus: "p. 27, Excursion 1, Tour I",
+    before: "In particular, Bayesian model checking, they say, uses statistics to satisfy Popperian criteria for severe tests.",
+    claim: "The idea of error statistical foundations for Bayesian tools is not as preposterous as it may seem. The concept of severe testing is sufficiently general to apply to any of the methods now in use.",
+    cuts: [],
+    after: "On the face of it, any inference, whether to the adequacy of a model or to a posterior probability, can be said to be warranted just to the extent that it has withstood severe testing.",
+    fn: "strumento-concettuale",
+    d1: "D1.6",
+    d1Status: "proposed",
+    stance: "assumed",
+    relates: [
+      { to: "mayo-severity-meta-methodology", how: "extends", why: "Extends severity from a meta-method for statistics to a criterion for any inference." }
+    ],
+    usedIn: []
+  },
+  {
+    id: "mayo2005-self-correcting-thesis",
+    gist: "Peirce justified induction not by the truth of its conclusions but by the method's capacity to correct its own errors over time. It is the older root of error statistics, and the ground for treating a validation protocol as justified by what it would catch, not by what it has found so far.",
+    src: "mayo2005peircean",
+    locus: "p. 299",
+    before: "Inductive methods - understood as methods of experimental testing - are justified to the extent that they are error-correcting methods. We may call this Peirce's error-correcting or self-correcting thesis (SCT): Self-Correcting Thesis SCT:",
+    claim: "methods for inductive inference in science are error correcting; the justification for inductive methods of experimental testing in science is that they are self-correcting.",
+    cuts: [],
+    after: "Peirce's SCT has been a source of fascination and frustration.",
+    fn: "strumento-concettuale",
+    d1: "D1.6",
+    d1Status: "proposed",
+    stance: "used",
+    relates: [],
+    usedIn: []
   }
 ];
 
