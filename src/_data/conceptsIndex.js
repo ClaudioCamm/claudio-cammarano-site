@@ -1500,7 +1500,8 @@ module.exports = [
       { title: "David Droga on AI and the end of 'mediocre' human-made ads", url: "/curated/2026-06-21-droga-ai-mediocre-ads/", _source: "curated" },
       { title: "GS1 Web Vocabulary: il dizionario universale che dà voce ai prodotti nel web 3.0", url: "/curated/2026-02-05-giulieri-gs1-web-vocabulary/", _source: "curated" },
       { title: "The 'Manosphere' Isn't a Movement. It's a Multibillion-Dollar Grievance Industry", url: "/curated/2026-08-07-klee-manosphere-grift-economy-wired/", _source: "curated" },
-      { title: "The Voice of Google", url: "/curated/2026-07-18-stapleton-voice-of-google-newyorker/", _source: "curated" }
+      { title: "The Voice of Google", url: "/curated/2026-07-18-stapleton-voice-of-google-newyorker/", _source: "curated" },
+      { title: "Large Language Models and Creative Content Design: a case study of email marketing at Wine Access", url: "/curated/2026-01-01-dube-xu-email-marketing-llm-qme/", _source: "curated" }
     ]
   },
   {
@@ -2497,7 +2498,8 @@ module.exports = [
       { title: "Veteran investor Howard Marks on AI debt", url: "/curated/2026-10-29-economist-howard-marks-debito-ai/", _source: "curated" },
       { title: "How Employment is Changing at Anthropic", url: "/curated/2026-10-16-wilmers-lavoro-anthropic-institute/", _source: "curated" },
       { title: "Financial Predictionization", url: "/curated/2026-11-05-levine-pacing-frontier-cartello-bloomberg/", _source: "curated" },
-      { title: "China's AI stock-market struggles are a warning", url: "/curated/2026-11-03-economist-borsa-cina-ai/", _source: "curated" }
+      { title: "China's AI stock-market struggles are a warning", url: "/curated/2026-11-03-economist-borsa-cina-ai/", _source: "curated" },
+      { title: "Aaronson-Ambainis Conjecture proved! (By AI, of course)", url: "/curated/2026-11-08-aaronson-congettura-dimostrata-ai-shtetl/", _source: "curated" }
     ]
   },
   {
@@ -3005,7 +3007,9 @@ module.exports = [
       { title: "No one has a plan for American decline", url: "/curated/2026-10-29-danforth-declino-americano-foreignpolicy/", _source: "curated" },
       { title: "Stocks Plunge as Midterm Results Renew A.I. Anxiety", url: "/curated/2026-11-05-rennison-borsa-midterm-ai-nyt/", _source: "curated" },
       { title: "With an eye on America, China is beefing up its AI-controlled labs", url: "/curated/2026-11-04-economist-laboratori-autonomi-cina/", _source: "curated" },
-      { title: "An Underrated Reason Boys Are Reading Less", url: "/curated/2026-11-05-nguyen-ragazzi-lettura-protagonisti-atlantic/", _source: "curated" }
+      { title: "An Underrated Reason Boys Are Reading Less", url: "/curated/2026-11-05-nguyen-ragazzi-lettura-protagonisti-atlantic/", _source: "curated" },
+      { title: "AI is turning protectionists into free traders", url: "/curated/2026-11-05-economist-ai-protezionisti-libero-scambio/", _source: "curated" },
+      { title: "Student journalists are reporting more local news for real audiences. Their professors are exhausted.", url: "/curated/2026-11-09-benton-studenti-giornalismo-locale-niemanlab/", _source: "curated" }
     ]
   },
   {
@@ -3203,7 +3207,8 @@ module.exports = [
       { title: "Le crociate delle culture wars non tirano più", url: "/curated/2026-11-05-mazzonis-culture-wars-midterm/", _source: "curated" },
       { title: "The Coup We Are Not Talking About", url: "/curated/2021-01-29-zuboff-colpo-epistemico-nyt/", _source: "curated" },
       { title: "The Fall of Scientific American", url: "/curated/2026-10-22-fraizer-scientific-american-thenation/", _source: "curated" },
-      { title: "No one has a plan for American decline", url: "/curated/2026-10-29-danforth-declino-americano-foreignpolicy/", _source: "curated" }
+      { title: "No one has a plan for American decline", url: "/curated/2026-10-29-danforth-declino-americano-foreignpolicy/", _source: "curated" },
+      { title: "AI is turning protectionists into free traders", url: "/curated/2026-11-05-economist-ai-protezionisti-libero-scambio/", _source: "curated" }
     ]
   },
   {
@@ -3952,7 +3957,8 @@ module.exports = [
     note: "Ingegnere e imprenditore americano nato a Taiwan (1963), fondatore e amministratore delegato di Nvidia dal 1993. Nel sito è la figura che tiene insieme i due registri con cui l'archivio legge il boom dell'AI: il meccanismo finanziario — il compute trasformato in classe di attivo, le garanzie ai clienti, i cento miliardi l'anno di investimenti nell'ecosistema — e la dottrina che lo giustifica. La sua posizione ha una struttura riconoscibile: riclassificare l'AI come software ordinario, e quindi come materia già coperta da responsabilità di prodotto e ingegneria della verifica, invece che come tecnologia di specie nuova che richiederebbe istituzioni inedite. Da qui la formula che è la sua eredità più portabile — la sicurezza come espansione di capacità, non come freno, sul modello del rapporto 20/80 fra progettazione e verifica che governa l'industria dei semiconduttori. Va letto sapendo che nessuno ha un interesse economico maggiore a che la corsa non rallenti: il che non falsifica gli argomenti tecnici, ma impone di distinguerli dalle conclusioni istituzionali che ne ricava.",
     articles: [
       { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" },
-      { title: "Nvidia Chief, Jensen Huang, Is Seen as Target of Chinese Spy Plot", url: "/curated/2026-10-29-swan-haberman-huang-spionaggio-nyt/", _source: "curated" }
+      { title: "Nvidia Chief, Jensen Huang, Is Seen as Target of Chinese Spy Plot", url: "/curated/2026-10-29-swan-haberman-huang-spionaggio-nyt/", _source: "curated" },
+      { title: "Is the Nvidia Affair Securities Fraud?", url: "/curated/2026-11-09-levine-nvidia-flussi-di-cassa-ai-bloomberg/", _source: "curated" }
     ]
   },
   {
@@ -3976,7 +3982,8 @@ module.exports = [
       { title: "La bulle et le contrôle", url: "/curated/2026-11-03-durand-valenti-bolla-controllo-grandcontinent/", _source: "curated" },
       { title: "AI on the Ballot", url: "/curated/2026-11-04-thompson-ai-on-the-ballot-stratechery/", _source: "curated" },
       { title: "Financial Predictionization", url: "/curated/2026-11-05-levine-pacing-frontier-cartello-bloomberg/", _source: "curated" },
-      { title: "Stocks Plunge as Midterm Results Renew A.I. Anxiety", url: "/curated/2026-11-05-rennison-borsa-midterm-ai-nyt/", _source: "curated" }
+      { title: "Stocks Plunge as Midterm Results Renew A.I. Anxiety", url: "/curated/2026-11-05-rennison-borsa-midterm-ai-nyt/", _source: "curated" },
+      { title: "Is the Nvidia Affair Securities Fraud?", url: "/curated/2026-11-09-levine-nvidia-flussi-di-cassa-ai-bloomberg/", _source: "curated" }
     ]
   },
   {
@@ -4120,7 +4127,8 @@ module.exports = [
       { title: "The AI That Hacked Its Way Out and the Hype That Followed It", url: "/curated/2026-07-29-klonick-fuga-e-clamore-lawfare/", _source: "curated" },
       { title: "« J'éprouve une compassion profonde pour Thélyson Orélien »", url: "/curated/2026-09-24-mbougar-sarr-compassione-profonda-nouvelobs/", _source: "curated" },
       { title: "Plagiat, IA : le prix Goncourt exclut le roman de Thélyson Orélien", url: "/curated/2026-09-25-goncourt-esclusione-orelien-actualitte/", _source: "curated" },
-      { title: "Iran, China, Canada? A Defense of Trump’s Grand Strategy", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" }
+      { title: "Iran, China, Canada? A Defense of Trump’s Grand Strategy", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" },
+      { title: "AI Is Causing Signal Collapse Everywhere All at Once", url: "/curated/2026-11-05-kastner-collasso-dei-segnali-substack/", _source: "curated" }
     ]
   },
   {
@@ -6014,7 +6022,8 @@ module.exports = [
     note: "Fase in cui il prezzo di un'attività o il volume degli investimenti in un settore si stacca dai rendimenti che ci si può ragionevolmente attendere, sostenuto dall'aspettativa che altri continueranno a comprare. **Nel sito serve a leggere il boom dell'AI: la domanda non è soltanto se la bolla scoppierà, ma chi ne sopporterà il costo e quale potere avrà accumulato chi l'ha gonfiata.**",
     articles: [
       { title: "La bulle et le contrôle", url: "/curated/2026-11-03-durand-valenti-bolla-controllo-grandcontinent/", _source: "curated" },
-      { title: "Stocks Plunge as Midterm Results Renew A.I. Anxiety", url: "/curated/2026-11-05-rennison-borsa-midterm-ai-nyt/", _source: "curated" }
+      { title: "Stocks Plunge as Midterm Results Renew A.I. Anxiety", url: "/curated/2026-11-05-rennison-borsa-midterm-ai-nyt/", _source: "curated" },
+      { title: "Is the Nvidia Affair Securities Fraud?", url: "/curated/2026-11-09-levine-nvidia-flussi-di-cassa-ai-bloomberg/", _source: "curated" }
     ]
   },
   {
@@ -6084,7 +6093,8 @@ module.exports = [
     ],
     note: "Espressione di Daron Acemoglu e Pascual Restrepo per l'automazione che sostituisce i lavoratori pur rendendo appena più di loro: il costo sociale della perdita di reddito è alto, il guadagno di produttività minimo. **Nel sito è il criterio per distinguere l'automazione che crea compiti nuovi da quella che si limita a tagliare il costo del lavoro.**",
     articles: [
-      { title: "How Employment is Changing at Anthropic", url: "/curated/2026-10-16-wilmers-lavoro-anthropic-institute/", _source: "curated" }
+      { title: "How Employment is Changing at Anthropic", url: "/curated/2026-10-16-wilmers-lavoro-anthropic-institute/", _source: "curated" },
+      { title: "Large Language Models and Creative Content Design: a case study of email marketing at Wine Access", url: "/curated/2026-01-01-dube-xu-email-marketing-llm-qme/", _source: "curated" }
     ]
   },
   {
@@ -6202,7 +6212,8 @@ module.exports = [
     ],
     note: "Autonomia di una redazione nel decidere che cosa pubblicare, rispetto alla proprietà, agli inserzionisti e al potere politico. **Nel sito interessa il punto in cui si rompe: raramente per un ordine, più spesso quando chi possiede la testata ha da perdere altrove.**",
     articles: [
-      { title: "The Fall of Scientific American", url: "/curated/2026-10-22-fraizer-scientific-american-thenation/", _source: "curated" }
+      { title: "The Fall of Scientific American", url: "/curated/2026-10-22-fraizer-scientific-american-thenation/", _source: "curated" },
+      { title: "Giornali, dopo i nuovi editori la sfida dei ricavi", url: "/curated/2026-10-24-gambaro-quotidiani-ricavi-mediatrends/", _source: "curated" }
     ]
   },
   {
@@ -6245,7 +6256,9 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q180711"],
     note: "Insieme delle tecniche con cui un sito cerca di comparire più in alto e più spesso nei risultati dei motori di ricerca. **Nel sito interessa il suo spostamento: con le risposte generate dall'AI non conta più solo essere trovati, ma essere citati come fonte.**",
     articles: [
-      { title: "We Opted Out of Google AI Search - Here's What Happened", url: "/curated/2026-11-05-shepard-uscita-ai-google-zyppy/", _source: "curated" }
+      { title: "We Opted Out of Google AI Search - Here's What Happened", url: "/curated/2026-11-05-shepard-uscita-ai-google-zyppy/", _source: "curated" },
+      { title: "The Death of Search", url: "/curated/2024-11-08-wong-morte-della-ricerca-atlantic/", _source: "curated" },
+      { title: "Generative AI and News Report 2026: From Standalone Tools to Information Infrastructure", url: "/curated/2026-10-30-simon-nielsen-fletcher-ai-generativa-notizie-reuters/", _source: "curated" }
     ]
   },
   {
@@ -6259,6 +6272,67 @@ module.exports = [
     note: "Principio secondo cui la riconversione verso un'economia a basse emissioni deve proteggere i lavoratori e le comunità che dipendono dalle industrie da chiudere o trasformare. **Nel sito interessa la sua parte meno materiale: oltre al reddito, va garantito il riconoscimento di chi faceva quel lavoro.**",
     articles: [
       { title: "Et si l'extrême droite allemande devait son succès à l'écologie ?", url: "/curated/2026-11-08-heddesheimer-hilbig-voeten-afd-ecologia-grandcontinent/", _source: "curated" }
+    ]
+  },
+  {
+    name: "serendipità",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q166039"],
+    note: "Capacità di trovare per caso qualcosa di prezioso che non si stava cercando. **Nel sito interessa come effetto collaterale degli strumenti inefficienti: la biblioteca a scaffale aperto e la catena dei link la producevano, la risposta diretta la riduce.**",
+    articles: [
+      { title: "The Death of Search", url: "/curated/2024-11-08-wong-morte-della-ricerca-atlantic/", _source: "curated" }
+    ]
+  },
+  {
+    name: "protezionismo",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q179073"],
+    note: "Politica che protegge la produzione nazionale dalla concorrenza estera con dazi, quote e altre barriere. **Nel sito interessa la sua selettività: chi lo pratica esenta ciò che teme di non saper produrre da sé, e le eccezioni dicono più delle regole.**",
+    articles: [
+      { title: "AI is turning protectionists into free traders", url: "/curated/2026-11-05-economist-ai-protezionisti-libero-scambio/", _source: "curated" }
+    ]
+  },
+  {
+    name: "mercato dei limoni",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    related: [
+      { name: "segnale costoso", why: "Il segnale costoso tiene lontano il mercato dei limoni finché falsificarlo costa più che produrre la qualità vera." }
+    ],
+    note: "Mercato in cui il venditore conosce la qualità della merce e il compratore no, così che i prodotti cattivi scacciano i buoni; il modello è di George Akerlof (1970). **Nel sito interessa come esito dei segnali che non distinguono più: quando la qualità non si riconosce, chi la produce smette di offrirla.**",
+    articles: [
+      { title: "AI Is Causing Signal Collapse Everywhere All at Once", url: "/curated/2026-11-05-kastner-collasso-dei-segnali-substack/", _source: "curated" }
+    ]
+  },
+  {
+    name: "dimostrazione assistita dal calcolatore",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q1150675"],
+    note: "Dimostrazione matematica in cui una parte del lavoro, la ricerca della prova o la sua verifica, è svolta da un calcolatore; con i verificatori formali come Lean ogni passaggio può essere controllato meccanicamente. **Nel sito interessa la fiducia che sposta: si può credere vera una prova che nessuno ha ancora capito, perché una macchina e pochi esperti l'hanno controllata.**",
+    articles: [
+      { title: "Aaronson-Ambainis Conjecture proved! (By AI, of course)", url: "/curated/2026-11-08-aaronson-congettura-dimostrata-ai-shtetl/", _source: "curated" }
+    ]
+  },
+  {
+    name: "rischio della persona chiave",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    note: "Rischio che il valore di un'impresa dipenda da una sola persona, tanto che la sua perdita o il suo discredito ne riducono le prospettive. **Nel sito interessa quando la persona chiave regge non solo un'azienda ma un settore: allora il rischio individuale diventa sistemico.**",
+    articles: [
+      { title: "Is the Nvidia Affair Securities Fraud?", url: "/curated/2026-11-09-levine-nvidia-flussi-di-cassa-ai-bloomberg/", _source: "curated" }
+    ]
+  },
+  {
+    name: "giornalismo locale",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q6664469"],
+    note: "Informazione su un comune, una provincia o una comunità, prodotta da testate che vivono del rapporto con quel territorio. **Nel sito interessa la sua fragilità economica: dove il mercato non lo regge, lo sostituiscono supplenti, dalle università alle fondazioni, con risorse che non durano.**",
+    articles: [
+      { title: "Student journalists are reporting more local news for real audiences. Their professors are exhausted.", url: "/curated/2026-11-09-benton-studenti-giornalismo-locale-niemanlab/", _source: "curated" }
     ]
   }
 

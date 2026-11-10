@@ -160,7 +160,11 @@
     "letteratura per ragazzi": "Q131539",
     "uguaglianza": "Q773009",
     "ottimizzazione per i motori di ricerca": "Q180711",
-    "transizione giusta": "Q6316391"
+    "transizione giusta": "Q6316391",
+    "serendipità": "Q166039",
+    "protezionismo": "Q179073",
+    "dimostrazione assistita dal calcolatore": "Q1150675",
+    "giornalismo locale": "Q6664469"
   },
   "nessun_qid": {
     "cosmotecnica": "Solo il libro di Yuk Hui ha un elemento: il concetto eredita la geografia dal teorico.",
@@ -210,7 +214,9 @@
     "tecnologia culturale": "Unico candidato Q5193415, sistema di marketing sudcoreano: nessun elemento per il concetto di Farrell, Gopnik, Shalizi ed Evans (31/10/2026)",
     "calibrazione": "Nessun elemento per il concetto statistico (cercati probability calibration, calibration (statistics)), 02/11/2026",
     "regole di proprietà e di responsabilità": "Esiste l'elemento del saggio del 1972 (Q7250223), non del concetto; la voce non lo usa come sameAs (03/11/2026)",
-    "automazione così così": "Concetto di Acemoglu e Restrepo (2019) senza elemento proprio su Wikidata (05/11/2026)"
+    "automazione così così": "Concetto di Acemoglu e Restrepo (2019) senza elemento proprio su Wikidata (05/11/2026)",
+    "mercato dei limoni": "Esiste l'elemento del saggio di Akerlof del 1970 (Q555438), non del concetto; la voce non lo usa come sameAs (10/11/2026)",
+    "rischio della persona chiave": "Nessun elemento del concetto; affine Q6398174 (key person insurance), non usato come sameAs (10/11/2026)"
   },
   "da_verificare": {},
   "geo": {
