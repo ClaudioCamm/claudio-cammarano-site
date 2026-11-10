@@ -45,6 +45,14 @@
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+    # Audit sicurezza 2026-11: HTTPS obbligatorio per un anno (niente preload,
+    # che e' difficile da revocare), funzioni del browser non usate spente.
+    Strict-Transport-Security = "max-age=31536000"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=(), browsing-topics=()"
+    # CSP in sola osservazione: non blocca nulla, segnala in console le
+    # violazioni. Dopo qualche settimana senza avvisi si rinomina in
+    # Content-Security-Policy. 'wasm-unsafe-eval' serve a Pagefind.
+    Content-Security-Policy-Report-Only = "default-src 'self'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://*.google-analytics.com https://www.googletagmanager.com; font-src 'self' data:; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; frame-src 'self' https://claudiocammarano.substack.com https://substack.com; form-action 'self' https://claudiocammarano.substack.com; object-src 'none'; base-uri 'self'; frame-ancestors 'self'; upgrade-insecure-requests"
 
 # ------------------------------------------------------------------
 # Redirect 301 — vecchi permalink Medium (dominio custom dell'epoca)
