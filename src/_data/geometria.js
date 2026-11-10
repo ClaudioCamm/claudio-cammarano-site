@@ -20,7 +20,7 @@ const punti = claims.map(c => {
     concept: con ? (con.en || con.label || con.name || k[0]) : "",
     gist: c.gist.split(/(?<=[.])\s/)[0],
     src: c.voice === "log" ? "Lab note" : c.cite,
-    href: "/en/claims/#" + c.id
+    href: "/en/claims/" + (numeri[c.id] ? "c" + String(numeri[c.id]).padStart(3, "0") : "") + "/"
   };
 });
 

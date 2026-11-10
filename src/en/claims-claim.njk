@@ -1,0 +1,76 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: claimPages.claims
+  size: 1
+  alias: c
+permalink: "/en/claims/{{ c.slug }}/"
+lang: en
+bodyClass: claims-page
+eleventyComputed:
+  title: "{{ c.n }} · {{ c.cite }} · Claims"
+  description: "{{ c.gist }}"
+---
+{# Una pagina per claim, all'indirizzo del suo numero permanente (C013 →
+   /en/claims/c013/): lo stesso del Claims Ledger, quindi citabile. La
+   citazione per intero con il contesto, la parafrasi, la fotografia dei
+   cinque strati e la carota ritagliata dal carotaggio, le relazioni. #}
+<link rel="stylesheet" href="/css/carota.css">
+
+<p class="cp-k"><a href="/en/claims/">Claims</a> › {% for k in c.conceptsEn %}<a href="{{ k.url }}">{{ k.en }}</a>{% if not loop.last %} + {% endif %}{% endfor %} › {{ c.n }}</p>
+
+<div class="ch">
+  <h1 class="big">{{ c.n }}</h1>
+  <div>
+    <p class="cp-k" style="color:var(--tv-soft,var(--color-text-light))">{% if c.voice == "literature" %}In their own words{% else %}From the research log{% endif %} · {% if c.doi %}<a href="https://doi.org/{{ c.doi }}" rel="external">{{ c.cite }}</a>{% elif c.voice == "log" %}<a href="{{ c.src }}">{{ c.cite }}</a>{% else %}{{ c.cite }}{% endif %}{% if c.locus %} · {{ c.locus }}{% endif %} · {{ c.stance }}</p>
+    {% if c.before %}<p class="ctx">&hellip;{{ c.before }}</p>{% endif %}
+    <blockquote{% if c.doi %} cite="https://doi.org/{{ c.doi }}"{% endif %}>&ldquo;{% for part in c.parts %}{{ part }}{% if not loop.last %} <span class="gap" title="{{ c.cuts[loop.index0] }}">[&hellip;]</span> {% endif %}{% endfor %}&rdquo;</blockquote>
+    {% if c.after %}<p class="ctx ctx-a">{{ c.after }}&hellip;</p>{% endif %}
+    <p class="gist">{{ c.gist }}</p>
+  </div>
+</div>
+
+<section class="cp-sec" aria-labelledby="five">
+  <p class="cp-k" id="five">The five layers, for this claim</p>
+  <div class="ph">
+    <div class="st">
+      <div class="s1"><b>1 Free tag</b><span>{{ c.names | join(" · ") if c.names.length else "—" }}</span><i>a name finds, it does not vouch</i></div>
+      <div class="s2"><b>2 Topic</b><span>{{ c.topicEn }}</span><i>closed list</i></div>
+      <div class="s3"><b>3 Theme</b><span>{{ c.themeEn }}</span><i>derived from the topic</i></div>
+      <div class="s4"><b>4 Concept</b><span>{% for k in c.conceptsEn %}<a href="{{ k.url }}">{{ k.en }}</a>{% if not loop.last %} + {% endif %}{% endfor %}</span><i>a note and links</i></div>
+      <div class="s5"><b>5 Geometry</b><span class="mono">{{ c.w }}</span><i>{{ c.geo.base }} {{ c.geo.tier }}{% if c.geo.uses %} + {{ c.geo.uses }} × 0.25{% endif %}{% if c.geo.contested %} × 1.5 contested{% endif %}</i></div>
+    </div>
+    <div class="cc-wrap">
+      {{ c.svg | safe }}
+      <p class="cap">The same core in <a href="/en/claims/#cores">the infographic</a>, with the claims it touches.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cp-sec" aria-labelledby="rel">
+  <p class="cp-k" id="rel">Relations</p>
+  {% if c.out.length or c.in.length %}
+  <ul class="rl">
+    {% for r in c.out %}<li><span class="how">{{ r.how }} →</span><a href="{{ r.url }}"><b>{{ r.n }}</b>{{ r.lead }}</a><em>{{ r.why }}</em></li>{% endfor %}
+    {% for r in c.in %}<li><span class="how">← {{ r.how }}</span><a href="{{ r.url }}"><b>{{ r.n }}</b>{{ r.lead }}</a><em>{{ r.why }}</em></li>{% endfor %}
+  </ul>
+  {% else %}<p class="cr-hint">No relation to another claim has been declared yet.</p>{% endif %}
+</section>
+
+<section class="cp-sec" aria-labelledby="notation">
+  <p class="cp-k" id="notation">Notation</p>
+  <dl class="md">
+    <dt>Claim type</dt><dd>{{ c.d1 }}{% if c.d1Label %} · {{ c.d1Label }}{% endif %}{% if c.d1Status != "confirmed" %} <span class="mono">(proposed)</span>{% endif %}</dd>
+    <dt>Function</dt><dd>{{ c.fn }}</dd>
+    <dt>Stance</dt><dd>{{ c.stance }}</dd>
+    {% if c.usedIn.length %}<dt>Used in</dt><dd>{% for u in c.usedIn %}<a href="{{ u }}">{{ u }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</dd>{% endif %}
+    <dt>Cite this</dt><dd class="mono">claudiocammarano.com/en/claims/{{ c.slug }}/</dd>
+  </dl>
+</section>
+
+{% set prev = pagination.page.previous %}{% set next = pagination.page.next %}
+<nav class="pn" aria-label="Neighbouring claims">
+  <span>{% if prev %}<a href="{{ prev.url }}">&#8592; {{ prev.n }}</a>{% endif %}</span>
+  <a href="/en/claims/all/#{{ c.id }}">In the full list</a>
+  <span>{% if next %}<a href="{{ next.url }}">{{ next.n }} &#8594;</a>{% endif %}</span>
+</nav>

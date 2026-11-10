@@ -1,0 +1,57 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: claimPages.concepts
+  size: 1
+  alias: k
+permalink: "/en/claims/{{ k.key }}/"
+lang: en
+bodyClass: claims-page
+eleventyComputed:
+  title: "{{ k.en }} · Claims"
+  description: "{{ k.question }} {{ k.note }}"
+---
+{# Una pagina per concetto (strato 4). Il concetto ha la sua domanda e la
+   sua nota; la pila dei cinque strati dice dove sta; il carotaggio ridotto
+   ai suoi claim mostra come si appoggiano l'uno all'altro. #}
+<link rel="stylesheet" href="/css/carota.css">
+
+<p class="cp-k"><a href="/en/claims/">Claims</a> › Concept · {{ k.themeEn }}</p>
+<h1 class="cp-h1">{{ k.en }}</h1>
+<p class="cq">{{ k.question }}</p>
+<p class="cn">{{ k.note }}</p>
+{% if k.related.length %}<p class="cl-links">Linked concepts: {% for l in k.related %}<a href="{{ l.url }}">{{ l.en }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>{% endif %}
+
+<section class="cp-sec" aria-labelledby="sits">
+  <p class="cp-k" id="sits">Where it sits</p>
+  <div class="st">
+    <div class="s1"><b>1 Free tag</b><span>{{ k.names | join(" · ") if k.names.length else "—" }}</span><i>a name finds, it does not vouch</i></div>
+    <div class="s2"><b>2 Topic</b><span>{{ k.topics | join(" · ") }}</span><i>closed list, one per claim</i></div>
+    <div class="s3"><b>3 Theme</b><span>{{ k.themeEn }}</span><i>derived from the topics</i></div>
+    <div class="s4"><b>4 Concept</b><span>{{ k.en }} · {{ k.claims.length }} claim{% if k.claims.length != 1 %}s{% endif %}</span><i>a note and links, or no build</i></div>
+    <div class="s5"><b>5 Geometry</b><span class="mono">{{ k.weights | join("  ") }}</span><i>source, use, dissent</i></div>
+  </div>
+</section>
+
+<section class="cp-sec cc-wrap" aria-labelledby="lean">
+  <p class="cp-k" id="lean">How its claims lean on each other</p>
+  {{ k.svg | safe }}
+</section>
+
+<section class="cp-sec" aria-labelledby="its">
+  <p class="cp-k" id="its">The claims</p>
+  <ol class="cu">
+    {% for c in k.claims %}
+    <li id="{{ c.slug }}">
+      <p class="num"><a href="{{ c.url }}">{{ c.n }}</a></p>
+      <div>
+        <blockquote>&ldquo;{% for part in c.parts %}{{ part }}{% if not loop.last %} [&hellip;] {% endif %}{% endfor %}&rdquo;</blockquote>
+        <p class="g">{{ c.gist }}</p>
+        <p class="m">{% if c.doi %}<a href="https://doi.org/{{ c.doi }}" rel="external">{{ c.cite }}</a>{% else %}{{ c.cite }}{% endif %}{% if c.locus %} · {{ c.locus }}{% endif %} · {{ c.stance }} · weight {{ c.w }}{% for r in c.out %} · {{ r.how }} <a href="{{ r.url }}">{{ r.n }}</a>{% endfor %} · <a href="{{ c.url }}">open {{ c.n }}</a></p>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+
+<p class="cp-more"><a href="/en/claims/#concepts">All {{ claimPages.counts.concepts }} concepts &#8594;</a><a href="/en/claims/all/">All the claims, one by one &#8594;</a></p>

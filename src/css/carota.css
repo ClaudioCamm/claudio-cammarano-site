@@ -1,0 +1,180 @@
+/* =====================================================================
+   Le pagine dei claim (10/11): /en/claims/, /en/claims/<concetto>/,
+   /en/claims/c013/. Il carotaggio, il pannello di lettura, l'indice dei
+   concetti, la vista per il telefono. Scala verde degli strati come la
+   tavola II della home inglese; bordeaux per la Geometry e per le voci
+   del diario di ricerca.
+   ===================================================================== */
+:root{--cc1:#E4EBE7;--cc2:#C9E0D6;--cc3:#5FA88E;--cc4:#0F6E56;--cc5:#800020;--cc5t:#f6eef0;--cc-lit:#0F6E56;--cc-log:#800020;--cc-line:#d9d9d9;--cc-soft:#6b6b6b}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--cc1:#2b302d;--cc2:#33463d;--cc3:#3f7f69;--cc4:#1f7a62;--cc5:#c4566f;--cc5t:#2a1c20;--cc-lit:#57B79E;--cc-log:#E07A8F;--cc-line:#3a3a36;--cc-soft:#9a968f}}
+:root[data-theme="dark"]{--cc1:#2b302d;--cc2:#33463d;--cc3:#3f7f69;--cc4:#1f7a62;--cc5:#c4566f;--cc5t:#2a1c20;--cc-lit:#57B79E;--cc-log:#E07A8F;--cc-line:#3a3a36;--cc-soft:#9a968f}
+
+body.claims-page > .container,body.claims-page .site-header .container{max-width:1344px}
+.cp-k{font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--color-lab-text);margin:0 0 10px}
+.cp-k a{color:inherit;text-decoration:none;border-bottom:1px solid currentColor}
+.cp-h1{font-family:var(--font-display);font-weight:400;font-size:clamp(56px,8vw,120px);line-height:.9;letter-spacing:-.035em;margin:24px 0 26px}
+.cp-lede{font-family:var(--font-serif);font-size:22px;line-height:1.5;max-width:46ch;margin:0 0 16px}
+.cp-scope{font-size:17px;line-height:1.65;max-width:62ch;color:var(--tv-soft,var(--color-text-light))}
+.cp-sec{margin:88px 0 0;border-top:var(--tv-rule);padding-top:18px}
+.cp-sec > h2{font-family:var(--font-display);font-weight:400;font-size:clamp(30px,3.4vw,44px);line-height:1.05;letter-spacing:-.02em;margin:0 0 10px}
+.cp-sec > .cp-sub{font-family:var(--font-serif);font-style:italic;font-size:17px;color:var(--tv-soft,var(--color-text-light));max-width:64ch;margin:0 0 28px}
+.cp-more{margin:28px 0 0;font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase}
+.cp-more a{color:var(--color-lab-text);text-decoration:none;border-bottom:2px solid currentColor;padding-bottom:3px;margin-right:24px}
+
+/* il Ledger, come in /en/claims/all/ */
+.ld{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 28px;align-items:end;border-top:6px solid var(--tv-ink);border-bottom:1px solid var(--tv-line);padding:16px 0 18px;margin:40px 0 0}
+.ld-k{grid-column:1/-1;margin:0;font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--color-lab-text)}
+.ld-t{margin:0;font-family:var(--font-display);font-weight:400;font-size:clamp(30px,4vw,44px);line-height:1;letter-spacing:-.02em}
+.ld-t em{color:var(--color-lab-text)}
+.ld-d{margin:8px 0 0;font-style:italic;color:var(--tv-soft);max-width:560px}
+.ld-l{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.ld-l a{font-family:var(--font-sans);font-stretch:74%;font-weight:600;font-size:15px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:#fff;background:var(--color-lab);padding:10px 18px;min-height:44px;box-sizing:border-box;display:inline-flex;align-items:center}
+.ld-l a+a{background:none;color:var(--color-lab-text);border:1.5px solid currentColor}
+.ld-m{grid-column:1/-1;margin:6px 0 0;font-family:var(--font-mono);font-size:13px;color:var(--color-text-light)}
+@media (max-width:700px){.ld{grid-template-columns:1fr}.ld-l a{flex:1;justify-content:center}}
+
+/* ------------------------------------------------ il carotaggio (SVG) */
+.cc{display:block;width:100%;height:auto;overflow:visible}
+.cc text{font-family:var(--font-sans)}
+.cc-ln{font-stretch:74%;font-weight:700;font-size:11px;letter-spacing:.1em;text-transform:uppercase;fill:var(--tv-ink)}
+.cc-lsub{font-family:var(--font-mono)!important;font-size:11px;fill:var(--cc-soft)}
+.cc-band{opacity:.3}.cc-b1{fill:var(--cc1)}.cc-b2{fill:var(--cc2)}.cc-b3{fill:var(--cc3)}.cc-b4{fill:var(--cc4)}.cc-b5{fill:var(--cc5t);opacity:1}
+.cc-s1{fill:var(--cc1)}.cc-s2{fill:var(--cc2)}.cc-s3{fill:var(--cc3)}.cc-s4{fill:var(--cc4)}
+.cc-t1,.cc-t2,.cc-t3,.cc-t4{text-anchor:middle;font-family:var(--font-serif)!important;font-size:13px}
+.cc-t1{font-size:12px!important;fill:var(--tv-ink)}.cc-t2{fill:var(--tv-ink)}.cc-t3,.cc-t4{fill:#fff}
+.cc-k4:hover rect{filter:brightness(1.12)}
+.cc-core{stroke:var(--cc-line);stroke-width:.8}
+.cc-core.cc-on{stroke:var(--tv-ink);stroke-width:1.6}
+.cc-extra{fill:#fff;opacity:.9}
+.cc-w{fill:var(--cc5);opacity:.4}
+.cc-x15{fill:var(--cc5);font-size:10px;text-anchor:middle}
+.cc-claim .cc-hit{fill:transparent}
+.cc-claim .f{stroke:none}.cc-claim .s{fill:none;stroke-width:1.6}
+.cc-literature.f{fill:var(--cc-lit)}.cc-literature.s{stroke:var(--cc-lit)}
+.cc-log.f{fill:var(--cc-log)}.cc-log.s{stroke:var(--cc-log)}
+.cc-ring{fill:none;stroke:var(--cc-log);stroke-width:1.3}
+.cc-n{font-family:var(--font-mono)!important;font-size:10.5px;fill:var(--cc-soft)}
+.cc-arc{fill:none;stroke:#a3a3a3;stroke-width:1}
+.cc-ahp{fill:#a3a3a3}
+.cc-contests{stroke:var(--cc-log);stroke-dasharray:4 3}
+.cc-dim{opacity:.28}
+.cc-arc.cc-on{stroke:var(--tv-ink);stroke-width:1.8}
+.cc-claim.cc-on .cc-n{fill:var(--tv-ink);font-weight:600}
+.cc-claim.cc-on .cc-w,.cc-w.cc-on{opacity:1}
+/* stato di lettura, comandato dal JS: una colonna accesa, il resto in sordina */
+.cc.cc-reading .cc-w,.cc.cc-reading .cc-claim,.cc.cc-reading .cc-arc{opacity:.22}
+.cc.cc-reading .cc-w.cc-sel,.cc.cc-reading .cc-claim.cc-sel,.cc.cc-reading .cc-claim.cc-nb,.cc.cc-reading .cc-arc.cc-sel{opacity:1}
+.cc.cc-reading .cc-arc.cc-sel{stroke:var(--tv-ink);stroke-width:1.8}
+.cc.cc-reading .cc-core.cc-sel{stroke:var(--tv-ink);stroke-width:1.6}
+.cc-claim{cursor:pointer}
+.cc-claim:focus{outline:none}.cc-claim:focus-visible .cc-hit{fill:rgba(15,110,86,.1)}
+
+/* il pannello di lettura */
+.cr{border-top:2px solid var(--tv-ink);margin-top:10px;padding-top:12px;min-height:150px}
+.cr .cp-k{margin-bottom:6px}
+.cr h3{font-family:var(--font-display);font-weight:400;font-size:28px;line-height:1.15;margin:0 0 14px;max-width:44ch}
+.cr h3 a{color:inherit;text-decoration:none}
+.cr-g{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px}
+.cr dl{display:grid;grid-template-columns:110px 1fr;gap:5px 14px;margin:0;font-size:15px}
+.cr dt{font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--color-lab-text);padding-top:3px}
+.cr dd{margin:0}
+.cr ul{list-style:none;margin:0;padding:0;font-size:15px}
+.cr li{padding:6px 0;border-bottom:1px solid var(--tv-line,var(--color-border))}
+.cr .how{font-family:var(--font-mono);font-size:13px;color:var(--color-lab-text)}
+.cr .go{font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--color-lab-text);text-decoration:none;border-bottom:2px solid currentColor;display:inline-block;margin-top:14px}
+.cr-hint{font-family:var(--font-sans);font-size:14px;color:var(--tv-soft,var(--color-text-light));max-width:70ch}
+.cr-hint b{font-weight:400;font-family:var(--font-display);font-size:17px;color:var(--tv-ink)}
+
+/* ---------------------------------------------- telefono: le carote coricate */
+.cm{display:none}
+@media (max-width:760px){
+  .cc-wrap .cc-main,.cc-wrap .cr{display:none}
+  .cm{display:block}
+}
+.cm-th{font-family:var(--font-display);font-size:24px;line-height:1.1;margin:28px 0 4px;padding:10px 12px;background:var(--cc3);color:#fff}
+.cm-to{font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;padding:8px 12px;background:var(--cc2);color:var(--tv-ink);margin:3px 0 0}
+.cm ol{list-style:none;margin:0;padding:0}
+.cm li a{display:grid;grid-template-columns:48px minmax(0,1fr) 54px;gap:8px;align-items:center;padding:10px 0;border-bottom:1px solid var(--tv-line,var(--color-border));color:var(--tv-ink);text-decoration:none}
+.cm .n{font-family:var(--font-mono);font-size:12px;color:var(--color-lab-text)}
+.cm .c{font-size:15px;line-height:1.3}
+.cm .c small{display:block;font-family:var(--font-sans);font-stretch:88%;font-size:12px;color:var(--tv-soft,var(--color-text-light));margin-top:2px}
+.cm .c i{font-style:normal;display:inline-block;background:var(--cc4);color:#fff;font-family:var(--font-sans);font-stretch:88%;font-size:11.5px;padding:1px 6px;margin-right:6px}
+.cm .w{display:block;height:10px;background:var(--cc5t);position:relative}
+.cm .w b{position:absolute;inset:0 auto 0 0;background:var(--cc5)}
+
+/* ------------------------------------------------ indice dei concetti */
+.ci-th{margin:40px 0 0}
+.ci-th > h3{font-family:var(--font-display);font-weight:400;font-size:28px;margin:0 0 4px}
+.ci-th > p{font-style:italic;color:var(--tv-soft,var(--color-text-light));margin:0 0 12px;max-width:64ch}
+.ci{list-style:none;margin:0;padding:0;border-top:2px solid var(--tv-ink)}
+.ci li a{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.4fr) 110px;gap:24px;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--tv-line,var(--color-border));text-decoration:none;color:var(--tv-ink)}
+.ci .nm{font-family:var(--font-display);font-size:24px;line-height:1.1}
+.ci .q{font-family:var(--font-serif);font-style:italic;font-size:16px;color:var(--tv-soft,var(--color-text-light))}
+.ci .ct{font-family:var(--font-mono);font-size:13px;text-align:right;color:var(--color-lab-text)}
+.ci li a:hover .nm{color:var(--color-lab-text)}
+@media (max-width:760px){.ci li a{grid-template-columns:1fr auto;gap:4px 12px}.ci .q{grid-column:1/-1;grid-row:2}}
+
+/* ------------------------------------------------ la pila dei cinque strati */
+.st > div{display:grid;grid-template-columns:130px minmax(0,1fr) auto;gap:14px;align-items:baseline;padding:13px 18px;margin-bottom:3px;font-size:16px}
+.st b{font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+.st i{font-size:13px;opacity:.8}
+.st a{color:inherit}
+.st .s1{background:var(--cc1);width:84%}.st .s2{background:var(--cc2);width:88%}.st .s3{background:var(--cc3);color:#fff;width:92%}.st .s4{background:var(--cc4);color:#fff;width:96%}.st .s5{background:var(--cc5);color:#fff;width:100%}
+@media (max-width:760px){.st > div{grid-template-columns:1fr;gap:2px;width:100%!important}.st i{display:none}}
+
+/* ------------------------------------------------ pagina concetto */
+.cq{font-family:var(--font-display);font-style:italic;font-size:clamp(24px,2.6vw,32px);line-height:1.2;color:var(--color-lab-text);margin:0 0 14px;max-width:34ch}
+.cn{font-size:20px;line-height:1.55;max-width:58ch}
+.cl-links{font-family:var(--font-sans);font-size:15px;margin-top:16px}
+.cl-links a{color:var(--color-lab-text)}
+.cu{list-style:none;margin:0;padding:0}
+.cu > li{display:grid;grid-template-columns:110px minmax(0,1fr);gap:24px;padding:24px 0;border-bottom:1px solid var(--tv-line,var(--color-border))}
+.cu .num{font-family:var(--font-mono);font-size:15px;padding-top:6px}
+.cu .num a{color:var(--color-lab-text)}
+.cu blockquote{font-family:var(--font-display);font-size:22px;line-height:1.3;margin:0 0 10px;max-width:56ch;padding:0;border:0}
+.cu .g{font-style:italic;color:var(--tv-soft,var(--color-text-light));max-width:62ch;margin:0 0 8px}
+.cu .m{font-family:var(--font-mono);font-size:12.5px;color:var(--color-text-light);margin:0}
+.cu .m a{color:var(--color-lab-text)}
+@media (max-width:760px){.cu > li{grid-template-columns:1fr;gap:6px}}
+
+/* ------------------------------------------------ pagina claim */
+.ch{display:grid;grid-template-columns:232px minmax(0,1fr);border-top:var(--tv-rule);padding-top:18px;margin-top:10px}
+.ch .big{font-family:var(--font-display);font-size:clamp(56px,7vw,96px);line-height:.85;letter-spacing:-.03em;color:var(--color-lab-text);margin:0}
+.ch blockquote{font-family:var(--font-display);font-size:clamp(24px,2.6vw,34px);line-height:1.25;margin:4px 0 18px;max-width:32ch;padding:0;border:0}
+.ch .ctx{font-family:var(--font-serif);font-size:16px;color:var(--tv-soft,var(--color-text-light));max-width:62ch;margin:0 0 10px}
+.ch .ctx-a{margin-top:-6px}
+.ch .gist{font-style:italic;font-size:19px;line-height:1.55;max-width:58ch;margin:18px 0 0}
+.ch .gap{color:var(--color-lab-text)}
+.ph{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:40px;align-items:start}
+.ph .cap{font-family:var(--font-serif);font-style:italic;font-size:14px;color:var(--tv-soft,var(--color-text-light));margin:6px 0 0}
+.rl{list-style:none;margin:0;padding:0}
+.rl li{display:grid;grid-template-columns:170px minmax(0,1fr);gap:4px 20px;padding:14px 0;border-bottom:1px solid var(--tv-line,var(--color-border))}
+.rl .how{font-family:var(--font-mono);font-size:13px;color:var(--color-lab-text);padding-top:4px}
+.rl a{font-family:var(--font-display);font-size:20px;line-height:1.3;color:var(--tv-ink);text-decoration:none}
+.rl a b{font-family:var(--font-mono);font-weight:500;font-size:15px;color:var(--color-lab-text);margin-right:6px}
+.rl em{grid-column:2;font-size:14px;color:var(--tv-soft,var(--color-text-light))}
+.md{display:grid;grid-template-columns:150px minmax(0,1fr);gap:8px 20px;font-size:16px;margin:0}
+.md dt{font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--color-lab-text);padding-top:3px}
+.md dd{margin:0}
+.pn{display:flex;justify-content:space-between;gap:20px;margin-top:56px;border-top:1px solid var(--tv-line,var(--color-border));padding-top:14px;font-family:var(--font-sans);font-size:15px}
+.pn a{color:var(--color-lab-text);text-decoration:none}
+@media (max-width:968px){.ch{grid-template-columns:1fr}.ch .big{margin-bottom:14px}.ph{grid-template-columns:1fr}}
+@media (max-width:760px){.rl li,.md{grid-template-columns:1fr}.rl em{grid-column:1}}
+
+/* ------------------------------------------------ la matrice alla Bertin (in /en/claims/all/) */
+.cc-mx .cc-mxl{font-family:var(--font-sans);font-size:11.5px;fill:var(--tv-ink)}
+.cc-mx a:hover .cc-mxl{fill:var(--color-lab-text)}
+.cc-mx .cc-mxh{fill:var(--color-lab-text)}
+.cc-mxr{stroke:var(--tv-ink);stroke-width:1.5}
+.cc-mxg{stroke:var(--cc-line);stroke-width:.6;opacity:.6}
+.cc-mx .cc-s1{fill:#9DB8AC}
+.cc-mx .cc-mxw{opacity:.75}
+.cc-mx .cc-n{font-size:9.5px}
+.mx-wrap{margin:88px 0 0;border-top:var(--tv-rule);padding-top:18px}
+.mx-wrap > h2{font-family:var(--font-display);font-weight:400;font-size:clamp(30px,3.4vw,44px);line-height:1.05;margin:0 0 10px}
+.mx-wrap > p{font-family:var(--font-serif);font-style:italic;color:var(--tv-soft,var(--color-text-light));max-width:64ch;margin:0 0 28px}
+@media (max-width:760px){.mx-wrap{overflow-x:auto}.mx-wrap .cc-mx{min-width:900px}}
+.mx-wrap{width:min(1248px,calc(100vw - 48px));position:relative;left:50%;transform:translateX(-50%)}
+@media (max-width:760px){.mx-wrap{width:calc(100vw - 32px)}}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .cc-mx .cc-s2{fill:#557a6a}}
+:root[data-theme="dark"] .cc-mx .cc-s2{fill:#557a6a}

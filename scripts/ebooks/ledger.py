@@ -23,7 +23,7 @@ SITE = "https://claudiocammarano.com"
 PAGE = f"{SITE}/en/claims/"
 LICENSE_LABEL = "CC BY-NC-ND 4.0"
 LICENSE_URL = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
-TOOLCHAIN = "ledger-v2"  # v2: voci a due colonne, come nel mock-up  # cambiare per forzare la rigenerazione
+TOOLCHAIN = "ledger-v3"  # v2: voci a due colonne, come nel mock-up  # cambiare per forzare la rigenerazione
 
 # Le stesse etichette della pagina /en/claims/ (gloss in claims.njk).
 GLOSS = {
@@ -181,6 +181,9 @@ def main():
                        for r in c.get("relates", []) if r["to"] in claims]
                 if rel:
                     meta.append("[Relations]{.k} " + " · ".join(rel))
+                # l'indirizzo permanente della pagina del claim (10/11)
+                url = f"{SITE}/en/claims/{N(cid).lower()}/"
+                meta.append(f"[Online]{{.k}} <{url}>")
                 L += ["\n\n".join(meta), "", ":::", ""]
 
     # Indice delle fonti.

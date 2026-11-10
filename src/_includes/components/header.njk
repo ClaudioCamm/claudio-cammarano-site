@@ -49,7 +49,7 @@
                    scende qui dentro: sono entrambi strumenti per attraversare il
                    programma, non sezioni di contenuto. #}
                 <li class="nav-group-label" aria-hidden="true">Explore</li>
-                <li class="nav-explore"><a href="/en/claims/"{% if page.url == "/en/claims/" %} class="active"{% endif %}>Claims</a></li>
+                <li class="nav-explore"><a href="/en/claims/"{% if page.url and page.url.startsWith("/en/claims/") %} class="active"{% endif %}>Claims</a></li>
                 <li class="nav-explore"><a href="/en/deliverables/"{% if page.url == "/en/deliverables/" %} class="active"{% endif %}>Deliverables</a></li>
                 <li class="nav-explore"><a href="/en/entia/"{% if page.url == "/en/entia/" %} class="active"{% endif %}>ENTIA</a></li>
                 <li class="nav-abstract-item">

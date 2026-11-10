@@ -88,6 +88,25 @@ eleventyExcludeFromCollections: true
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://claudiocammarano.com/en/claims/all/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  {% for k in claimPages.concepts %}
+  <url>
+    <loc>https://claudiocammarano.com{{ k.url }}</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  {% endfor %}
+  {% for c in claimPages.claims %}
+  <url>
+    <loc>https://claudiocammarano.com{{ c.url }}</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  {% endfor %}
+  <url>
     <loc>https://claudiocammarano.com/visualizations/banco-di-misura/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

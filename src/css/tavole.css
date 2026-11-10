@@ -393,7 +393,7 @@ main > h1{border-top:var(--tv-rule);padding-top:22px;font-size:clamp(48px,7vw,96
    Seconda passata UX (29 ott)
    ===================================================================== */
 /* Testata larga solo in home; nelle pagine di lettura torna alla colonna */
-body:not(.home):not(.irene-page):not(.episteme-page):not(.projects-page):not(.bench):not(.about-page):not(.profilo) .site-header .container{max-width:800px}
+body:not(.home):not(.irene-page):not(.episteme-page):not(.projects-page):not(.bench):not(.about-page):not(.profilo):not(.claims-page) .site-header .container{max-width:800px}
 /* Globo: su touch la pagina scorre in verticale, il globo prende i gesti orizzontali */
 .tv-hero-carta .carta-svg{touch-action:pan-y}
 .tv-hero-carta .carta-svg:focus{outline:none}

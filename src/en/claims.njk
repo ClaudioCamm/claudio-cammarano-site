@@ -4,197 +4,24 @@ title: Claims
 description: "Not claims in general: the ones this research programme stands on, uses or has to answer to. Kept verbatim, reached through the question each one answers, and typed with the notation this site publishes."
 permalink: /en/claims/
 lang: en
+bodyClass: claims-page
 og_card: /images/og/og-en-home.png
 ---
-
 {# ===================================================================
-   /en/claims/ — il muro delle lessie e la mappa dei concetti.
-   Dati: src/_data/claims.js (le lessie) e src/_data/claimLayers.js (i
-   cinque strati, piu' il layout del diagramma ad archi, calcolato a
-   build time). Questa pagina non fa matematica e non carica librerie.
-   Tre stati per unita': chiusa, passaggio aperto, tagli in vista.
-   Senza JavaScript: contesto e tagli visibili, filtri nascosti.
+   /en/claims/ — il carotaggio (10/11). Ogni claim e' una colonna che
+   attraversa i cinque strati ENTIA; sotto, l'indice dei concetti. Ogni
+   concetto e ogni claim hanno una pagina propria (claims-concept.njk,
+   claims-claim.njk). L'elenco completo con le unita' di citazione sta in
+   /en/claims/all/ (claims-all.njk). Dati: src/_data/claimPages.js.
    =================================================================== #}
+{% set P = claimPages %}
+<link rel="stylesheet" href="/css/carota.css">
 
-{% set gloss = {
-  "riferimento-tecnico": "technical reference",
-  "dato-che-corregge": "corrective datum",
-  "metodo-di-lavoro": "working method",
-  "strumento-concettuale": "conceptual tool",
-  "lettura-di-mercato": "market reading",
-  "elementi-di-scenario": "scenario element"
-} %}
-{% set G = claimLayers.graph %}
-{% macro marca(c, s) %}<svg class="mk mk-{{ c.voice }}" width="{{ s }}" height="{{ s }}" viewBox="0 0 16 16" aria-hidden="true">{% if c.contested %}<circle class="mk-ring" cx="8" cy="8" r="7.1"/>{% endif %}<g{% if c.contested %} transform="translate(8,8) scale(.66) translate(-8,-8)"{% endif %}>{% if c.shape == "point" %}<circle class="f" cx="8" cy="8" r="3.4"/>{% elif c.shape == "therefore" %}<circle class="f" cx="8" cy="3.9" r="1.75"/><circle class="f" cx="4.3" cy="11.6" r="1.75"/><circle class="f" cx="11.7" cy="11.6" r="1.75"/>{% elif c.shape == "exists" %}<path class="s" d="M11.1 2.9v10.2M5 2.9h6.1M5 8h6.1M5 13.1h6.1"/>{% else %}<path class="s" d="M8 2.6v6.9"/><circle class="f" cx="8" cy="12.7" r="1.5"/>{% endif %}</g></svg>{% endmacro %}
+<h1 class="cp-h1">Claims</h1>
 
-<style>
-.cl-scope{max-width:34em;font-family:var(--font-sans);font-size:.98rem;line-height:1.6;color:var(--color-text-light)}
-.cl-scope strong{color:var(--color-text)}
-.cl-lede{max-width:34em;font-family:var(--font-serif);font-size:1.22rem;line-height:1.5;color:var(--color-text)}
-.cl-intro{max-width:34em}
+<p class="cp-lede">A scientific claim is not a headline: it withholds itself until you have the context, and no two readers arrive with the same context. So this is not a list to scroll &mdash; it is {{ P.counts.concepts }} questions, and the claims come through them.</p>
 
-/* --- l'impaginazione: mappa a sinistra, lettura a destra -------------- */
-.cx{display:grid;grid-template-columns:1fr;gap:2.4rem;margin:2.2em 0 3em}
-/* Su schermo stretto le domande vengono prima: la rete e' la vista
-   di secondo giro, non la porta d'ingresso. */
-.cx-map{order:2}
-.cx-read{order:1}
-@media (min-width:1000px){
-  .cx{grid-template-columns:372px minmax(0,1fr);gap:3.6rem;align-items:start}
-  .cx-map{order:1}
-  .cx-read{order:2}
-  .cx-map{position:sticky;top:1.4rem;max-height:calc(100vh - 3rem);overflow-y:auto;overflow-x:hidden}
-}
-.cx-h{font-size:.74em;letter-spacing:.12em;text-transform:uppercase;color:var(--color-text-light);margin:0 0 .3em;font-family:inherit;font-weight:600}
-.cx-hint{font-family:var(--font-sans);font-size:.84em;line-height:1.5;color:var(--color-text-light);margin:0 0 .6em;max-width:30em}
-.cx-all{font:inherit;font-size:.74em;letter-spacing:.06em;text-transform:uppercase;background:none;border:1px solid var(--color-border);color:var(--color-text-light);padding:.5em .9em;cursor:pointer;min-height:36px}
-.cx-all[aria-pressed="true"]{border-color:var(--color-primary);color:var(--color-primary)}
-.cx-read{min-width:0}
-.mk{flex:none;vertical-align:-2px}
-.mk .f{fill:currentColor}
-.mk .s{fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round}
-.mk-ring{fill:none;stroke:currentColor;stroke-width:1;opacity:.55}
-.mk-literature{color:var(--color-primary)}
-.mk-log{color:#800020}
-.leg{margin:1.4em 0 2.4em;padding:1em 0 1.1em;border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border);font-family:var(--font-sans);max-width:38em}
-.leg h3{font-size:.7em;letter-spacing:.12em;text-transform:uppercase;color:var(--color-text-light);margin:0 0 .7em;font-weight:600;font-family:inherit}
-.leg ul{list-style:none;margin:0;padding:0;display:grid;gap:.5em}
-.leg li{display:flex;gap:.55em;align-items:baseline;font-size:.8em;line-height:1.35;color:var(--color-text)}
-.leg i{font-style:normal;color:var(--color-text-light)}
-.leg .leg-2{grid-column:1/-1;border-top:1px dotted var(--color-border);padding-top:.6em;margin-top:.15em;display:flex;flex-wrap:wrap;gap:.4em 1.4em}
-
-.qw{margin:0 0 2em;max-width:38em}
-.qw-th{font-family:var(--font-sans);font-size:.72em;letter-spacing:.11em;text-transform:uppercase;color:#800020;margin:2.2em 0 .9em}
-.qw-th:first-of-type{margin-top:0}
-.q{border-left:4px solid var(--color-border);padding-left:1.2em;margin:0 0 1.5em}
-.q:hover{border-left-color:var(--color-primary)}
-.q-t{font-family:var(--font-serif);font-size:1.16rem;line-height:1.4;margin:0;background:none;border:0;padding:0;text-align:left;color:var(--color-text);cursor:pointer;display:block}
-.q:hover .q-t{color:var(--color-primary)}
-.q-c{display:flex;flex-wrap:wrap;gap:.3em .9em;margin:.5em 0 0}
-.q-chip{font-family:var(--font-sans);font-size:.78em;color:var(--color-text-light);background:none;border:0;padding:.15em 0;cursor:pointer;display:inline-flex;gap:.4em;align-items:center}
-.q-chip:hover{color:var(--color-primary)}
-.cx-kicker{font-family:var(--font-sans);font-size:.72em;letter-spacing:.11em;text-transform:uppercase;color:var(--color-text-light);margin:0 0 .3em}
-.cx-ans{font-family:var(--font-sans);font-size:.68em;letter-spacing:.12em;text-transform:uppercase;color:#aaa;margin:0 0 .4em}
-.th{border-left:4px solid var(--color-border);padding-left:1.2em;margin:0 0 1.8em;max-width:36em}
-.th h3{font-family:var(--font-serif);font-size:1.3rem;margin:0 0 .2em;line-height:1.3}
-.th p{margin:0 0 .7em;color:var(--color-text-light);font-size:.95em;font-family:var(--font-sans)}
-.th-cs{display:flex;flex-wrap:wrap;gap:.35em}
-.cx-go{font:inherit;font-size:.76em;letter-spacing:.04em;background:none;border:1px solid var(--color-border);color:var(--color-primary);padding:.4em .7em;cursor:pointer;min-height:34px}
-.cx-go:hover{border-color:var(--color-primary)}
-.cx-go b{font-weight:400;color:var(--color-text-light);margin-left:.4em}
-.cx-back{margin:0 0 .8em}
-.cx-back button{font:inherit;font-size:.76em;letter-spacing:.06em;text-transform:uppercase;background:none;border:0;color:var(--color-text-light);cursor:pointer;padding:.3em 0}
-.cx-name{font-family:var(--font-serif);font-size:2rem;line-height:1.15;margin:0 0 .3em}
-.cx-prop{font-family:var(--font-serif);font-size:1.18rem;line-height:1.55;color:var(--color-text);margin:0 0 .9em;max-width:34em;border-left:4px solid #800020;padding-left:1em}
-.cx-links{font-size:.84em;color:var(--color-text-light);margin:0 0 2.4em;display:flex;flex-wrap:wrap;gap:.35em;align-items:center}
-.cx-links .k{font-size:.86em;letter-spacing:.09em;text-transform:uppercase;color:#aaa;margin-right:.2em}
-.cl-rules{margin:2.2em 0;padding-left:1.2em;border-left:4px solid var(--color-primary);max-width:34em}
-.cl-rules p{margin:.5em 0;font-size:.95em}
-
-/* --- la mappa dei concetti ------------------------------------------ */
-.cm{margin:.6em 0 1em;padding:0}
-.cm svg{width:100%;max-width:372px;height:auto;display:block;overflow:visible}
-.cm-arcs path{fill:none;stroke:var(--color-border);stroke-width:1}
-.cm-band{font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:11px;letter-spacing:.1em;text-transform:uppercase;fill:var(--tv-bord,#800020);stroke:var(--color-bg,#fff);stroke-width:4px;stroke-linejoin:round;paint-order:stroke fill}
-.cm-n circle{fill:#fff;stroke:var(--color-primary);stroke-width:1.6}
-.cm-lab{font-family:var(--font-serif);font-size:14px;fill:var(--color-text)}
-.cm-num{font-size:11px;fill:var(--color-text-light);letter-spacing:.06em}
-.cm-bar{fill:var(--color-primary);opacity:.35}
-.cm-hit{fill:transparent;cursor:pointer}
-.cm-n:hover circle,.cm-n:focus circle{fill:var(--color-primary)}
-.cm-n:focus{outline:none}
-.cm-n:focus .cm-lab{text-decoration:underline}
-.cm.sel .cm-n{opacity:.45}
-.cm.sel .cm-n.on{opacity:1}
-.cm.sel .cm-n.on circle{fill:var(--color-primary)}
-.cm.sel .cm-arcs path{opacity:.25}
-.cm.sel .cm-arcs path.on{opacity:1;stroke:#800020;stroke-width:1.6}
-.cm-note{font-family:var(--font-sans);font-size:.8em;line-height:1.5;color:var(--color-text-light);margin:.4em 0 0;max-width:34em}
-.cm-note b{color:var(--color-text);font-weight:600}
-
-.cl-strip{font-size:.78em;letter-spacing:.06em;text-transform:uppercase;color:var(--color-text-light);margin:2.6em 0 .7em}
-.cl-filters{display:flex;flex-wrap:wrap;gap:.4em;margin:0 0 2.6em;padding:0;list-style:none}
-.cl-chip{font:inherit;font-size:.74em;letter-spacing:.05em;text-transform:uppercase;background:none;border:1px solid var(--color-border);color:var(--color-text-light);padding:.45em .8em;cursor:pointer;min-height:34px}
-.cl-chip[aria-pressed="true"]{background:var(--color-primary);border-color:var(--color-primary);color:#fff}
-.cl-chip b{font-weight:400;opacity:.65;margin-left:.4em}
-
-/* --- l'unita' -------------------------------------------------------- */
-.lx{margin:0 0 3.6em;max-width:40em}
-.lx-gist{font-family:var(--font-sans);font-size:1rem;line-height:1.62;color:var(--color-text);margin:0 0 1.3em}
-.lx-rub{display:block;font-size:.66em;letter-spacing:.14em;text-transform:uppercase;color:#aaa;margin:0 0 .5em}
-.lx-src{border-left:4px solid var(--color-border);padding-left:1.3em;transition:border-color .15s}
-.lx:hover .lx-src,.lx.is-open .lx-src{border-left-color:var(--color-primary)}
-.lx-head{font-size:.78em;letter-spacing:.04em;color:var(--color-text-light);margin:.7em 0 0}
-.lx-cite{font-style:normal;font-weight:600;color:var(--color-text)}
-.lx-cite a{color:inherit;text-decoration:none;border-bottom:1px solid var(--color-border)}
-.lx-locus:before{content:"\00a0\00b7\00a0"}
-.lx-ctx{font-family:var(--font-serif);font-size:1.05rem;line-height:1.65;color:#8f8f8f;margin:0;max-height:1.65em;overflow:hidden}
-.lx-before{-webkit-mask-image:linear-gradient(to bottom,transparent,#000);mask-image:linear-gradient(to bottom,transparent,#000)}
-.lx-after{-webkit-mask-image:linear-gradient(to top,transparent,#000);mask-image:linear-gradient(to top,transparent,#000)}
-.lx.is-open .lx-ctx{max-height:40em;color:#6e6e6e;-webkit-mask-image:none;mask-image:none}
-.lx-claim{font-family:var(--font-serif);font-size:1.26rem;line-height:1.45;margin:.4em 0;padding:0;border:0;color:var(--color-text);quotes:none}
-.lx-claim:before,.lx-claim:after{content:none}
-.lx-cut{display:none;color:#800020}
-.lx.is-cuts .lx-cut{display:inline}
-.lx.is-cuts .lx-ell{display:none}
-.lx-layers{margin:1.1em 0 0;font-size:.8em;color:var(--color-text-light)}
-.lx-layers a{color:var(--color-primary);text-decoration:none;border-bottom:1px solid var(--color-border)}
-.lx-layers .k{font-size:.86em;letter-spacing:.07em;text-transform:uppercase;color:#aaa}
-.lx-foot{display:flex;flex-wrap:wrap;align-items:center;gap:.5em;margin-top:.8em;font-size:.74em;letter-spacing:.05em;text-transform:uppercase}
-.lx-fn{background:var(--color-primary);color:#fff;padding:.32em .62em}
-.lx-d1,.lx-stance,.lx-w{color:var(--color-text-light)}
-.lx-d1 abbr{text-decoration:none;cursor:help;color:var(--color-primary)}
-.lx-stance-contested{color:#800020;font-weight:600}
-.lx-w:before{content:"weight "}
-.lx-btn{font:inherit;font-size:1em;letter-spacing:.05em;text-transform:uppercase;background:none;border:1px solid var(--color-border);color:var(--color-text-light);padding:.4em .7em;cursor:pointer;min-height:34px}
-.lx-btn[aria-expanded="true"]{border-color:var(--color-primary);color:var(--color-primary)}
-.lx-rel{list-style:none;margin:1em 0 0;padding:0;font-size:.86em;color:var(--color-text-light);max-width:38em}
-.lx-rel li{margin:.3em 0}
-.lx-rel em{font-style:normal;font-size:.8em;letter-spacing:.06em;text-transform:uppercase;color:#800020}
-.lx-rel a{color:var(--color-primary)}
-.cl-empty{font-family:var(--font-serif);color:var(--color-text-light);display:none}
-.cl-more{font-size:.95em;color:var(--color-text-light);max-width:34em}
-.cl-todo{margin-top:3em;padding-top:1.4em;border-top:1px solid var(--color-border);font-size:.92em;color:var(--color-text-light);max-width:34em}
-@media (max-width:768px){
-  .lx{margin-bottom:2.8em}
-  .lx-src{padding-left:1em}
-  .lx-claim{font-size:1.18rem;line-height:1.42}
-  .cx-name{font-size:1.6rem}
-  .cx-prop{font-size:1.08rem}
-  .lx-ctx{font-size:.98rem}
-  .lx-btn{min-height:40px;flex:1 1 7em}
-  .cl-chip{min-height:40px;font-size:.68em;padding:.4em .6em}
-  .cm-lab{font-size:15px}
-  .cm-num{font-size:12px}
-}
-/* The Claims Ledger: il download come una tavola, e il richiamo sotto la mappa */
-.ld{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 28px;align-items:end;border-top:6px solid var(--tv-ink);border-bottom:1px solid var(--tv-line);padding:16px 0 18px;margin:28px 0 36px}
-.ld-k{grid-column:1/-1;margin:0;font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--color-lab-text)}
-.ld-t{margin:0;font-family:var(--font-display);font-weight:400;font-size:clamp(30px,4vw,44px);line-height:1;letter-spacing:-.02em}
-.ld-t em{color:var(--color-lab-text)}
-.ld-d{margin:8px 0 0;font-style:italic;color:var(--tv-soft);max-width:560px}
-.ld-l{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-.ld-l a{font-family:var(--font-sans);font-stretch:74%;font-weight:600;font-size:15px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:#fff;background:var(--color-lab);padding:10px 18px;min-height:44px;box-sizing:border-box;display:inline-flex;align-items:center}
-.ld-l a+a{background:none;color:var(--color-lab-text);border:1.5px solid currentColor}
-.ld-m{grid-column:1/-1;margin:6px 0 0;font-family:var(--font-mono);font-size:13px;color:var(--color-text-light)}
-.ld-side{margin-top:14px;border-top:1px solid var(--tv-line);padding-top:10px;font-family:var(--font-sans);font-stretch:74%;font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
-.ld-side b{display:block;font-family:var(--font-display);font-weight:400;font-style:italic;text-transform:none;letter-spacing:0;font-size:18px;margin-bottom:4px;color:var(--color-lab-text)}
-.ld-side a{color:var(--color-lab-text)}
-@media (max-width:700px){.ld{grid-template-columns:1fr}.ld-l a{flex:1;justify-content:center}}
-</style>
-<noscript><style>
-.lx-ctx{max-height:none!important;-webkit-mask-image:none!important;mask-image:none!important}
-.lx-cut{display:inline}.lx-ell,.lx-btn,.cl-filters{display:none}
-.cm-hit{cursor:default}
-#cl-wall .lx[hidden]{display:block}
-#cx-intro{display:none}
-</style></noscript>
-
-<h1>Claims</h1>
-
-<p class="cl-lede">A scientific claim is not a headline: it withholds itself until you have the context, and no two readers arrive with the same context. So this is not a list to scroll &mdash; it is {{ claimLayers.CONCEPTS.length }} questions, and the claims come through them.</p>
-
-<p class="cl-scope"><strong>These are not claims in general.</strong> Every one of them is on file because this programme stands on it, borrows a method from it, or has to answer to it. Nothing is here for completeness, and the archive is not trying to cover a field: it is showing what its own work rests on, including the parts that push back.</p>
+<p class="cp-scope"><strong>These are not claims in general.</strong> Every one of them is on file because this programme stands on it, borrows a method from it, or has to answer to it. Nothing is here for completeness, and the archive is not trying to cover a field: it is showing what its own work rests on, including the parts that push back.</p>
 
 {% if ledger %}<aside class="ld" id="ledger" aria-label="Download">
 <p class="ld-k">Download · the whole set as one document</p>
@@ -203,251 +30,47 @@ og_card: /images/og/og-en-home.png
 <p class="ld-m">$ edition {{ ledger.edition }} · {{ ledger.claims }} claims{% if ledger.pages %} · {{ ledger.pages }} pp.{% endif %} · rebuilt when the data change</p>
 </aside>{% endif %}
 
-<div class="cx">
-  <aside class="cx-map">
-    <h2 class="cx-h">How they connect</h2>
-    <p class="cx-hint">The same questions as propositions, with the {{ G.arcs.length }} links declared between them. The bar is weight, the arc is a link.</p>
-    <figure class="cm" id="cm">
-    <svg viewBox="0 0 {{ G.W }} {{ G.height }}" role="img" aria-labelledby="cm-t">
-      <title id="cm-t">Concept map: {{ claimLayers.CONCEPTS.length }} concepts connected by {{ G.arcs.length }} declared links</title>
-      {% for b in G.bands %}<text class="cm-band" x="0" y="{{ b.y }}">{{ b.en }}<title>{{ b.position }}</title></text>{% endfor %}
-      <g class="cm-arcs">{% for a in G.arcs %}<path d="{{ a.d }}" data-a="{{ a.from }}" data-b="{{ a.to }}"></path>{% endfor %}</g>
-      {% for n in G.nodes %}
-      <g class="cm-n" data-concept="{{ n.key }}" data-theme="{{ n.theme }}" data-note="{{ n.note }}" data-q="{{ n.question }}" data-en="{{ n.en }}" data-links="{{ n.links | join(' ') }}" tabindex="0" role="button" aria-pressed="false">
-        <rect class="cm-hit" x="0" y="{{ n.y - 19 }}" width="{{ G.W }}" height="38"></rect>
-        <circle cx="{{ G.NX }}" cy="{{ n.y }}" r="{{ n.r }}"></circle>
-        <text class="cm-lab" x="78" y="{{ n.y - 1 }}">{{ n.en }}</text>
-        <rect class="cm-bar" x="78" y="{{ n.y + 6 }}" width="{{ n.bar }}" height="3"></rect>
-        <text class="cm-num" x="{{ G.W - 4 }}" y="{{ n.y - 1 }}" text-anchor="end">{{ n.n }}</text>
-      </g>
+<section class="cp-sec cc-wrap" id="cores" aria-labelledby="cores-h">
+  <h2 id="cores-h">The claims, cored</h2>
+  <p class="cp-sub">Every claim is a core drilled through the five layers of <a href="/en/entia/#claims">ENTIA</a>, from the least to the most exposed to error. Read down a column for one claim, across a band for one layer; the arcs underneath are the relations between claims.</p>
+  {{ P.svg | safe }}
+  <div class="cr" id="cc-read" aria-live="polite">
+    <p class="cp-k">Read it</p>
+    <p class="cr-hint">Point at a column, or tap it, to read one claim through its five layers. Each mark says what kind of warrant the claim lives on: <b>•</b> observed, <b>∴</b> derived, <b>∃</b> what there is, <b>!</b> what should be done. Green comes from the literature, bordeaux from the research log; a ring means the programme contests it.</p>
+  </div>
+  <script type="application/json" id="cc-dati">{{ P.reader | dump | safe }}</script>
+
+  {# sul telefono le carote si coricano: una riga per claim, sotto il Theme e il Topic che le contengono #}
+  <div class="cm">
+    {% for t in P.themes %}
+    <h3 class="cm-th">{{ t.en }}</h3>
+    {% for tp in t.topics %}
+    <p class="cm-to">{{ tp.en }}</p>
+    <ol>
+      {% for c in tp.claims %}
+      <li><a href="{{ c.url }}"><span class="n">{{ c.n }}</span><span class="c">{% for k in c.conceptsEn %}<i>{{ k.en }}</i>{% endfor %}{{ c.lead }}<small>{{ c.cite }}{% if c.names.length %} · {{ c.names | join(" · ") }}{% endif %}</small></span><span class="w" title="weight {{ c.w }}"><b style="width:{{ (c.w / 2 * 100) | round }}%"></b></span></a></li>
       {% endfor %}
-    </svg>
-    <p class="cm-note" id="cm-note">Every concept carries a proposition and at least one link to another concept: without both it cannot exist, and the build fails.</p>
-    </figure>
-    <button class="cx-all" type="button" id="cx-all" aria-pressed="false">Show all {{ claims.length }} claims</button>
-    {% if ledger %}<p class="ld-side"><b>The Claims Ledger</b><a href="{{ ledger.pdf }}" download>PDF</a> · <a href="{{ ledger.epub }}" download>ePub</a></p>{% endif %}
-  </aside>
-
-  <section class="cx-read" id="cx-read">
-    <div id="cx-intro">
-      <h2>The questions</h2>
-      <p class="cx-hint">A claim has no title, and giving it one would decide its meaning on your behalf. What it has is the question it answers, and a mark for the kind of warrant it lives on.</p>
-
-      <div class="leg">
-        <h3>The marks</h3>
-        <ul>
-          {% for f in claims.FAMIGLIE %}
-          <li>{{ marca({shape: f.forma, voice: "literature"}, 15) }} <span>{{ f.en }} <i>&mdash; {{ f.sub }}</i></span></li>
-          {% endfor %}
-          <li class="leg-2">
-            <span>{{ marca({shape: "point", voice: "literature"}, 13) }} from the literature</span>
-            <span>{{ marca({shape: "point", voice: "log"}, 13) }} from the research log</span>
-            <span>{{ marca({shape: "point", voice: "literature", contested: true}, 13) }} held as a counter-thesis, weighted &times;1.5 for it</span>
-          </li>
-        </ul>
-      </div>
-      <div class="qw">
-      {% for t in claimLayers.THEMES %}
-        <p class="qw-th">{{ t.en }}</p>
-        {% for c in t.concepts %}
-        <div class="q">
-          <button class="q-t" type="button" data-go="{{ c.key }}">{{ c.question }}</button>
-          <p class="q-c">{% for ch in c.chips %}<button class="q-chip" type="button" data-go="{{ c.key }}" data-at="{{ ch.id }}">{{ marca(ch, 13) }}{{ ch.cite }}</button>{% endfor %}</p>
-        </div>
-        {% endfor %}
-      {% endfor %}
-      </div>
-    </div>
-
-    <div id="cx-head" hidden aria-live="polite">
-      <p class="cx-back"><button type="button" id="cx-reset">&larr; All questions</button></p>
-      <p class="cx-kicker" id="cx-kicker"></p>
-      <h2 class="cx-name" id="cx-name"></h2>
-      <p class="cx-ans" id="cx-ans">What this archive answers</p>
-      <p class="cx-prop" id="cx-prop"></p>
-      <p class="cx-links" id="cx-links"></p>
-    </div>
-
-    <div id="cl-wall">
-    {% for l in claims | sort(true, false, 'weight') %}
-      {% set L = claimLayers.byClaim[l.id] %}
-      <article class="lx" id="{{ l.id }}" data-fn="{{ l.fn }}" data-theme="{{ L.theme }}" data-concepts="{{ L.concepts | join(' ') }}" hidden>
-        <p class="lx-gist">{{ l.gist }}</p>
-        <div class="lx-src">
-          <span class="lx-rub">{% if l.fonte %}In their own words{% else %}From the research log{% endif %}</span>
-          {% if l.before %}<p class="lx-ctx lx-before">{{ l.before }}</p>{% endif %}
-          <blockquote class="lx-claim"{% if l.fonte and l.fonte.doi %} cite="https://doi.org/{{ l.fonte.doi }}"{% endif %}>{% for part in l.parts %}{{ part }}{% if not loop.last %}<span class="lx-gap"><span class="lx-ell">[&hellip;]</span><span class="lx-cut">{{ l.cuts[loop.index0] }}</span></span>{% endif %}{% endfor %}</blockquote>
-          {% if l.after %}<p class="lx-ctx lx-after">{{ l.after }}</p>{% endif %}
-          <p class="lx-head">{{ marca(l, 14) }} <cite class="lx-cite"{% if l.fonte %} title="{{ l.fonte.title }}"{% endif %}>{% if l.fonte and l.fonte.doi %}<a href="https://doi.org/{{ l.fonte.doi }}" rel="external">{{ l.cite }}</a>{% elif l.fonte %}{{ l.cite }}{% else %}<a href="{{ l.src }}">Lab note</a>{% endif %}</cite>{% if l.locus %}<span class="lx-locus">{{ l.locus }}</span>{% endif %}</p>
-        </div>
-        <p class="lx-layers">
-          {% if l.names and l.names.length %}<span class="k">names</span> {{ l.names | join(" · ") }}
-          &nbsp;{% endif %}<span class="k">topic</span> {{ L.topicEn }}
-          &nbsp;<span class="k">concept</span> {% for k in L.concepts %}<a href="#cm" data-go="{{ k }}">{{ claimLayers.conceptByKey[k].en }}</a>{% if not loop.last %}, {% endif %}{% endfor %}
-        </p>
-        <p class="lx-foot">
-          <span class="lx-fn" title="ENTIA function: {{ l.fn }}">{{ gloss[l.fn] }}</span>
-          <span class="lx-d1">{{ l.d1 }} {{ l.d1Label }}{% if l.d1Status == "proposed" %} <abbr title="Proposed, not yet confirmed by hand">?</abbr>{% endif %}</span>
-          <span class="lx-stance lx-stance-{{ l.stance }}">{{ l.stance }}</span>
-          <span class="lx-w">{{ l.weight }}</span>
-          <button class="lx-btn" type="button" data-act="ctx" aria-expanded="false" aria-controls="{{ l.id }}">Passage</button>
-          {% if l.cuts.length %}<button class="lx-btn" type="button" data-act="cuts" aria-expanded="false" aria-controls="{{ l.id }}">Cuts ({{ l.cuts.length }})</button>{% endif %}
-        </p>
-        {% if l.relates.length %}
-        <ul class="lx-rel">
-          {% for r in l.relates %}<li><em>{{ r.how }}</em> <a href="#{{ r.to }}">{{ r.to }}</a> &mdash; {{ r.why }}</li>{% endfor %}
-        </ul>
-        {% endif %}
-      </article>
+    </ol>
     {% endfor %}
-    </div>
-  </section>
-</div>
+    {% endfor %}
+  </div>
+</section>
 
-<h2 id="how">How to read a unit</h2>
-<div class="cl-rules">
-<p><strong>The paraphrase is mine.</strong> It opens each unit, in sans, and says what the claim holds and why it is here. It is not the source speaking.</p>
-<p><strong>The quotation is theirs.</strong> Everything inside the ruled block is verbatim. Where it skips something the gap is marked, and the omitted words can be put back: a cut you cannot inspect is an argument you have to take on trust.</p>
-</div>
-<p class="cl-more">The five layers, the rule for choosing a claim and the weight formula are in the <a href="/en/colophon/#entia">colophon</a>.</p>
+<section class="cp-sec" id="concepts" aria-labelledby="concepts-h">
+  <h2 id="concepts-h">The {{ P.counts.concepts }} concepts</h2>
+  <p class="cp-sub">Layer 4 is where ideas are asserted and linked. Each concept has a page of its own: the question it answers, where it sits in the other layers, and its claims.</p>
+  {% for t in P.themes %}
+  <div class="ci-th">
+    <h3>{{ t.en }}</h3>
+    <p>{{ t.position }}</p>
+    <ul class="ci">
+      {% for c in t.concepts %}
+      <li><a href="{{ c.url }}"><span class="nm">{{ c.en }}</span><span class="q">{{ c.question }}</span><span class="ct">{{ c.claims.length }} claim{% if c.claims.length != 1 %}s{% endif %}</span></a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+  <p class="cp-more"><a href="/en/claims/all/">All the claims, one by one &#8594;</a><a href="/en/entia/#claims">How they are classified &#8594;</a></p>
+</section>
 
-<div class="cl-todo">
-<p>{{ claims.length }} claims from {{ claims.FONTI }} sources, {{ claims.D1N.length }} of 11 D1 codes, {{ claims.FN.length }} of 6 <a href="/en/entia/#functions">ENTIA functions</a>. Two functions have no claims on this side of the site: <em>market reading</em> and <em>scenario element</em>. They are not missing, they are not used here.</p>
-<p>A question mark on a D1 code means the code is proposed and has not been confirmed by hand. The concept map is a first draft: its links are declared, not inferred from co-occurrence.</p>
-</div>
-
-<script>
-(function () {
-  var wall = document.getElementById('cl-wall');
-  var mappa = document.getElementById('cm');
-  if (!wall || !mappa) return;
-  var unita = [].slice.call(wall.querySelectorAll('.lx'));
-  var nodi = [].slice.call(mappa.querySelectorAll('.cm-n'));
-  var archi = [].slice.call(mappa.querySelectorAll('.cm-arcs path'));
-  var intro = document.getElementById('cx-intro');
-  var capo = document.getElementById('cx-head');
-  var nome = document.getElementById('cx-name');
-  var occhiello = document.getElementById('cx-kicker');
-  var prop = document.getElementById('cx-prop');
-  var legami = document.getElementById('cx-links');
-  var nota = document.getElementById('cm-note');
-  var notaIniziale = nota.innerHTML;
-  var tutti = document.getElementById('cx-all');
-  var lettura = document.getElementById('cx-read');
-  var nodoDi = {};
-  nodi.forEach(function (g) { nodoDi[g.getAttribute('data-concept')] = g; });
-
-  function mostra(test) {
-    unita.forEach(function (a) { a.hidden = !test(a); });
-  }
-  function spegni() {
-    mappa.classList.remove('sel');
-    nodi.forEach(function (g) { g.classList.remove('on'); g.setAttribute('aria-pressed', 'false'); });
-    archi.forEach(function (p) { p.classList.remove('on'); });
-    nota.innerHTML = notaIniziale;
-    tutti.setAttribute('aria-pressed', 'false');
-  }
-  function aCapo() {
-    spegni(); capo.hidden = true; intro.hidden = false; mostra(function () { return false; });
-  }
-  // Su schermo stretto la colonna di lettura sta sotto la mappa: senza questo
-  // si clicca e non si vede succedere niente.
-  function portaInVista() {
-    if (window.innerWidth < 1000) lettura.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
-
-  function apri(k) {
-    var g = nodoDi[k];
-    if (!g) return;
-    spegni();
-    mappa.classList.add('sel');
-    g.classList.add('on');
-    g.setAttribute('aria-pressed', 'true');
-    archi.forEach(function (p) {
-      var a = p.getAttribute('data-a'), b = p.getAttribute('data-b');
-      if (a === k || b === k) {
-        p.classList.add('on');
-        var altro = a === k ? b : a;
-        if (nodoDi[altro]) nodoDi[altro].classList.add('on');
-      }
-    });
-    // La domanda e' il titolo che il claim non ha; il concetto e' la
-    // risposta che l'archivio da'. In quest'ordine, non al contrario.
-    occhiello.textContent = 'Concept \u00b7 ' + g.getAttribute('data-en');
-    nome.textContent = g.getAttribute('data-q');
-    prop.textContent = g.getAttribute('data-note');
-    var vicini = (g.getAttribute('data-links') || '').split(' ').filter(Boolean);
-    legami.innerHTML = '<span class="k">connects to</span>' + vicini.map(function (v) {
-      return '<button class="cx-go" type="button" data-go="' + v + '">' + (nodoDi[v] ? nodoDi[v].getAttribute('data-en') : v) + '</button>';
-    }).join('');
-    intro.hidden = true; capo.hidden = false;
-    mostra(function (a) { return (' ' + a.getAttribute('data-concepts') + ' ').indexOf(' ' + k + ' ') > -1; });
-    portaInVista();
-  }
-
-  nodi.forEach(function (g) {
-    var k = g.getAttribute('data-concept');
-    g.addEventListener('click', function () {
-      if (g.classList.contains('on') && mappa.classList.contains('sel')) aCapo(); else apri(k);
-    });
-    g.addEventListener('keydown', function (e) {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); apri(k); }
-    });
-  });
-
-  document.addEventListener('click', function (e) {
-    var g = e.target.closest ? e.target.closest('[data-go]') : null;
-    if (g) {
-      e.preventDefault();
-      apri(g.getAttribute('data-go'));
-      var at = g.getAttribute('data-at');
-      if (at) {
-        var u = document.getElementById(at);
-        if (u) setTimeout(function () { u.scrollIntoView({ behavior: 'smooth', block: 'center' }); }, 80);
-      }
-    }
-  });
-
-  document.getElementById('cx-reset').addEventListener('click', aCapo);
-
-  tutti.addEventListener('click', function () {
-    var acceso = tutti.getAttribute('aria-pressed') === 'true';
-    if (acceso) { aCapo(); return; }
-    spegni();
-    tutti.setAttribute('aria-pressed', 'true');
-    intro.hidden = true; capo.hidden = false;
-    occhiello.textContent = '';
-    nome.textContent = 'All claims';
-    prop.textContent = 'Every claim in the archive, heaviest first. The weight is the Geometry layer: it makes a peer-reviewed paper, a conference paper and a programme note comparable.';
-    legami.innerHTML = '';
-    mostra(function () { return true; });
-    portaInVista();
-  });
-
-  wall.addEventListener('click', function (e) {
-    var b = e.target.closest ? e.target.closest('.lx-btn') : null;
-    if (!b) return;
-    var art = b.closest('.lx');
-    var cls = b.getAttribute('data-act') === 'cuts' ? 'is-cuts' : 'is-open';
-    var on = !art.classList.contains(cls);
-    art.classList.toggle(cls, on);
-    b.setAttribute('aria-expanded', on ? 'true' : 'false');
-    // Mostrare i tagli senza il passaggio intorno sarebbe un ritaglio dentro
-    // un ritaglio: apre anche il contesto.
-    if (cls === 'is-cuts' && on) {
-      art.classList.add('is-open');
-      var o = art.querySelector('[data-act="ctx"]');
-      if (o) o.setAttribute('aria-expanded', 'true');
-    }
-  });
-
-  // Un link diretto a una lessia la apre con il suo concetto intorno.
-  if (location.hash) {
-    var a = document.getElementById(location.hash.slice(1));
-    if (a && a.classList.contains('lx')) {
-      var primo = (a.getAttribute('data-concepts') || '').split(' ')[0];
-      if (primo) { apri(primo); a.scrollIntoView(); }
-    }
-  }
-})();
-</script>
+<script src="/js/carota.js" defer></script>
