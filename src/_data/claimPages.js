@@ -31,7 +31,10 @@ const oTh = L.THEMES.map(t => t.key), oTo = L.TOPICS.map(t => t.key), oCo = L.CO
 const FN = { "riferimento-tecnico": "technical reference", "dato-che-corregge": "corrective datum", "metodo-di-lavoro": "working method", "strumento-concettuale": "conceptual tool", "lettura-di-mercato": "market reading", "elementi-di-scenario": "scenario element" };
 const BASE = { article: 1, incollection: 1, book: 1, inproceedings: 0.75, misc: 0.5 };
 const TIER = { 1: "peer-reviewed", 0.75: "proceedings or preprint", 0.5: "grey literature" };
-const num = id => "C" + String(NUM[id]).padStart(3, "0");
+// Un claim nuovo prende il numero alla prima rigenerazione del Ledger. Finche'
+// non ce l'ha, la pagina sta all'indirizzo del suo id, e il numero e' "C—".
+const num = id => (NUM[id] ? "C" + String(NUM[id]).padStart(3, "0") : "C—");
+const slugOf = id => (NUM[id] ? "c" + String(NUM[id]).padStart(3, "0") : id);
 const esc = s => String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const first = g => { const m = String(g).match(/^.*?[.!?](\s|$)/); return (m ? m[0] : g).trim(); };
 const r2 = x => Math.round(x * 100) / 100;
@@ -44,7 +47,7 @@ const rows = claims.map(c => {
   const base = c.fonte ? (BASE[c.fonte.type] || 0.5) : 0.5;
   const uses = (c.usedIn || []).length, contested = c.stance === "contested";
   const r = {
-    id: c.id, n: num(c.id), slug: num(c.id).toLowerCase(), url: "/en/claims/" + num(c.id).toLowerCase() + "/",
+    id: c.id, n: num(c.id), slug: slugOf(c.id), url: "/en/claims/" + slugOf(c.id) + "/",
     gist: c.gist, lead: first(c.gist), parts: c.parts, cuts: c.cuts || [], before: c.before, after: c.after,
     cite: c.cite, locus: c.locus, doi: c.fonte && c.fonte.doi, src: c.src, voice: c.voice, shape: c.shape,
     stance: c.stance, contested, d1: c.d1, d1Label: c.d1Label, d1Status: c.d1Status, fn: FN[c.fn] || c.fn,
