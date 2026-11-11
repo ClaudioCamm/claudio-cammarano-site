@@ -2665,7 +2665,8 @@ module.exports = [
       { title: "A.I. Companies Say They Aren’t Responsible for Their Unpredictable Products. Don’t Believe Them.", url: "/curated/2026-10-10-nyt-editorial-ai-responsabilita/", _source: "curated" },
       { title: "Hannah Fry: How OpenAI has caused an existential crisis in mathematics", url: "/curated/2026-10-14-fry-openai-crisi-matematica-newscientist/", _source: "curated" },
       { title: "The AI boom is threatened by an epidemic of unreliable numbers", url: "/curated/2026-10-14-economist-numeri-inaffidabili-ai/", _source: "curated" },
-      { title: "From Kenya to Japan, Rush to Fix Security Flaw Takes Sites Briefly Offline", url: "/curated/2026-10-22-chutel-nierenberg-otieno-php-nyt/", _source: "curated" }
+      { title: "From Kenya to Japan, Rush to Fix Security Flaw Takes Sites Briefly Offline", url: "/curated/2026-10-22-chutel-nierenberg-otieno-php-nyt/", _source: "curated" },
+      { title: "What does ChatGPT say about the election? Depends on who's asking!", url: "/curated/2026-11-09-princeton-chatgpt-elezioni-memoria-citp/", _source: "curated" }
     ]
   },
   {
@@ -3102,7 +3103,8 @@ module.exports = [
       { title: "The countries making a fortune from the US-China rivalry", url: "/curated/2026-10-29-economist-minerali-critici-rivalita/", _source: "curated" },
       { title: "Hit podcasts reveal the angst of China's youth", url: "/curated/2026-11-01-economist-podcast-giovani-cina/", _source: "curated" },
       { title: "China's AI stock-market struggles are a warning", url: "/curated/2026-11-03-economist-borsa-cina-ai/", _source: "curated" },
-      { title: "With an eye on America, China is beefing up its AI-controlled labs", url: "/curated/2026-11-04-economist-laboratori-autonomi-cina/", _source: "curated" }
+      { title: "With an eye on America, China is beefing up its AI-controlled labs", url: "/curated/2026-11-04-economist-laboratori-autonomi-cina/", _source: "curated" },
+      { title: "Jensen Huang's Affair, The Culper Report, Huang's Righteousness", url: "/curated/2026-11-09-thompson-huang-culper-presunzione-stratechery/", _source: "curated" }
     ]
   },
   {
@@ -3958,7 +3960,9 @@ module.exports = [
     articles: [
       { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" },
       { title: "Nvidia Chief, Jensen Huang, Is Seen as Target of Chinese Spy Plot", url: "/curated/2026-10-29-swan-haberman-huang-spionaggio-nyt/", _source: "curated" },
-      { title: "Is the Nvidia Affair Securities Fraud?", url: "/curated/2026-11-09-levine-nvidia-flussi-di-cassa-ai-bloomberg/", _source: "curated" }
+      { title: "Is the Nvidia Affair Securities Fraud?", url: "/curated/2026-11-09-levine-nvidia-flussi-di-cassa-ai-bloomberg/", _source: "curated" },
+      { title: "Jensen Huang's Affair, The Culper Report, Huang's Righteousness", url: "/curated/2026-11-09-thompson-huang-culper-presunzione-stratechery/", _source: "curated" },
+      { title: "The Jensen Huang Story Gets Worse, Washington vs. New York, Silicon Valley", url: "/curated/2026-11-10-thompson-huang-tre-citta-stratechery/", _source: "curated" }
     ]
   },
   {
@@ -3983,7 +3987,9 @@ module.exports = [
       { title: "AI on the Ballot", url: "/curated/2026-11-04-thompson-ai-on-the-ballot-stratechery/", _source: "curated" },
       { title: "Financial Predictionization", url: "/curated/2026-11-05-levine-pacing-frontier-cartello-bloomberg/", _source: "curated" },
       { title: "Stocks Plunge as Midterm Results Renew A.I. Anxiety", url: "/curated/2026-11-05-rennison-borsa-midterm-ai-nyt/", _source: "curated" },
-      { title: "Is the Nvidia Affair Securities Fraud?", url: "/curated/2026-11-09-levine-nvidia-flussi-di-cassa-ai-bloomberg/", _source: "curated" }
+      { title: "Is the Nvidia Affair Securities Fraud?", url: "/curated/2026-11-09-levine-nvidia-flussi-di-cassa-ai-bloomberg/", _source: "curated" },
+      { title: "Jensen Huang's Affair, The Culper Report, Huang's Righteousness", url: "/curated/2026-11-09-thompson-huang-culper-presunzione-stratechery/", _source: "curated" },
+      { title: "The Jensen Huang Story Gets Worse, Washington vs. New York, Silicon Valley", url: "/curated/2026-11-10-thompson-huang-tre-citta-stratechery/", _source: "curated" }
     ]
   },
   {
@@ -4046,7 +4052,8 @@ module.exports = [
       { title: "Why open-weight models are crucial for American AI leadership", url: "/curated/2026-08-10-villasenor-pesi-aperti-leadership-brookings/", _source: "curated" },
       { title: "Open Weights, Closed Ranks: The AI Manifesto War", url: "/curated/2026-08-12-zuniga-pesi-aperti-manifesti-icle/", _source: "curated" },
       { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" },
-      { title: "China's AI stock-market struggles are a warning", url: "/curated/2026-11-03-economist-borsa-cina-ai/", _source: "curated" }
+      { title: "China's AI stock-market struggles are a warning", url: "/curated/2026-11-03-economist-borsa-cina-ai/", _source: "curated" },
+      { title: "The Jensen Huang Story Gets Worse, Washington vs. New York, Silicon Valley", url: "/curated/2026-11-10-thompson-huang-tre-citta-stratechery/", _source: "curated" }
     ]
   },
   {
@@ -6258,7 +6265,8 @@ module.exports = [
     articles: [
       { title: "We Opted Out of Google AI Search - Here's What Happened", url: "/curated/2026-11-05-shepard-uscita-ai-google-zyppy/", _source: "curated" },
       { title: "The Death of Search", url: "/curated/2024-11-08-wong-morte-della-ricerca-atlantic/", _source: "curated" },
-      { title: "Generative AI and News Report 2026: From Standalone Tools to Information Infrastructure", url: "/curated/2026-10-30-simon-nielsen-fletcher-ai-generativa-notizie-reuters/", _source: "curated" }
+      { title: "Generative AI and News Report 2026: From Standalone Tools to Information Infrastructure", url: "/curated/2026-10-30-simon-nielsen-fletcher-ai-generativa-notizie-reuters/", _source: "curated" },
+      { title: "Most major UK news publishers saw Google search visibility fall in 2026", url: "/curated/2026-11-10-tobitt-visibilita-google-editori-uk-pressgazette/", _source: "curated" }
     ]
   },
   {
@@ -6322,7 +6330,8 @@ module.exports = [
     geo: { modo: "nessuna", paesi: [] },
     note: "Rischio che il valore di un'impresa dipenda da una sola persona, tanto che la sua perdita o il suo discredito ne riducono le prospettive. **Nel sito interessa quando la persona chiave regge non solo un'azienda ma un settore: allora il rischio individuale diventa sistemico.**",
     articles: [
-      { title: "Is the Nvidia Affair Securities Fraud?", url: "/curated/2026-11-09-levine-nvidia-flussi-di-cassa-ai-bloomberg/", _source: "curated" }
+      { title: "Is the Nvidia Affair Securities Fraud?", url: "/curated/2026-11-09-levine-nvidia-flussi-di-cassa-ai-bloomberg/", _source: "curated" },
+      { title: "The Jensen Huang Story Gets Worse, Washington vs. New York, Silicon Valley", url: "/curated/2026-11-10-thompson-huang-tre-citta-stratechery/", _source: "curated" }
     ]
   },
   {
@@ -6333,6 +6342,26 @@ module.exports = [
     note: "Informazione su un comune, una provincia o una comunità, prodotta da testate che vivono del rapporto con quel territorio. **Nel sito interessa la sua fragilità economica: dove il mercato non lo regge, lo sostituiscono supplenti, dalle università alle fondazioni, con risorse che non durano.**",
     articles: [
       { title: "Student journalists are reporting more local news for real audiences. Their professors are exhausted.", url: "/curated/2026-11-09-benton-studenti-giornalismo-locale-niemanlab/", _source: "curated" }
+    ]
+  },
+  {
+    name: "echo chamber",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q3334446"],
+    note: "Ambiente informativo in cui una persona incontra soprattutto opinioni simili alle proprie, rafforzate dalla ripetizione. **Nel sito interessa la sua forma più discreta: non l'esclusione delle voci contrarie, ma una scelta di accenti che si adatta a chi chiede.**",
+    articles: [
+      { title: "What does ChatGPT say about the election? Depends on who's asking!", url: "/curated/2026-11-09-princeton-chatgpt-elezioni-memoria-citp/", _source: "curated" }
+    ]
+  },
+  {
+    name: "hybris",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q735766"],
+    note: "Nella tragedia greca, la tracotanza di chi oltrepassa il limite assegnato agli uomini e ne viene punito; oggi indica la fiducia eccessiva in sé che porta a ignorare regole e avvertimenti. **Nel sito interessa la sua forma moderna: la sicurezza di avere ragione che autorizza a disattendere la legge che si giudica sbagliata.**",
+    articles: [
+      { title: "Jensen Huang's Affair, The Culper Report, Huang's Righteousness", url: "/curated/2026-11-09-thompson-huang-culper-presunzione-stratechery/", _source: "curated" }
     ]
   }
 
