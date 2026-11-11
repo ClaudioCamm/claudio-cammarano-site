@@ -2529,7 +2529,8 @@ module.exports = [
       { title: "Why Are Palantir and OpenAI Scared of Alex Bores?", url: "/curated/2026-04-21-bores-palantir-openai-regulation-nyt/", _source: "curated" },
       { title: "The End of the Future", url: "/curated/2026-06-15-fp-end-of-the-future/", _source: "curated" },
       { title: "Ranks of Humanity", url: "/curated/2026-09-24-meaney-varouxakis-idea-occidente-lrb/", _source: "curated" },
-      { title: "An Interview with Palantir CTO Shyam Sankar About the AI Religious War", url: "/curated/2026-10-29-thompson-sankar-palantir-stratechery/", _source: "curated" }
+      { title: "An Interview with Palantir CTO Shyam Sankar About the AI Religious War", url: "/curated/2026-10-29-thompson-sankar-palantir-stratechery/", _source: "curated" },
+      { title: "What It Took to Dismantle the Most Powerful Company in the World", url: "/curated/2026-08-28-dalrymple-compagnia-indie-big-tech-nyt/", _source: "curated" }
     ]
   },
   {
@@ -3746,7 +3747,8 @@ module.exports = [
       { title: "An interview with Elon Musk", url: "/curated/2026-07-24-musk-economist-interview-beddoes/", _source: "curated" },
       { title: "Naomi Klein: 'Extreme wealth has a deranging effect. It turns you into a supremacist'", url: "/curated/2026-09-18-klein-end-times-fascism-guardian/", _source: "curated" },
       { title: "Intelligenza artificiale e rischio estinzione, che cosa pensano (davvero) gli scienziati?", url: "/curated/2026-09-26-signorelli-rischio-estinzione-scienziati-backdoor/", _source: "curated" },
-      { title: "Elon Musk’s Grokipedia is littered with mistakes. But Wikipedia could still learn some things from it.", url: "/curated/2026-11-02-adair-grokipedia-errori-niemanlab/", _source: "curated" }
+      { title: "Elon Musk’s Grokipedia is littered with mistakes. But Wikipedia could still learn some things from it.", url: "/curated/2026-11-02-adair-grokipedia-errori-niemanlab/", _source: "curated" },
+      { title: "What It Took to Dismantle the Most Powerful Company in the World", url: "/curated/2026-08-28-dalrymple-compagnia-indie-big-tech-nyt/", _source: "curated" }
     ]
   },
   {
@@ -6128,7 +6130,9 @@ module.exports = [
     ],
     note: "Situazione in cui un'autorità di regolazione finisce per servire gli interessi delle imprese che dovrebbe controllare; la teoria economica si deve soprattutto a George Stigler (1971). **Nel sito serve a leggere le richieste di regolazione che vengono dalle imprese stesse: una regola che vale per tutti può proteggere il pubblico e insieme i margini di chi la chiede.**",
     articles: [
-      { title: "Financial Predictionization", url: "/curated/2026-11-05-levine-pacing-frontier-cartello-bloomberg/", _source: "curated" }
+      { title: "Financial Predictionization", url: "/curated/2026-11-05-levine-pacing-frontier-cartello-bloomberg/", _source: "curated" },
+      { title: "The Original Evil Corporation", url: "/curated/2019-09-04-dalrymple-compagnia-indie-prototipo-nyt/", _source: "curated" },
+      { title: "What It Took to Dismantle the Most Powerful Company in the World", url: "/curated/2026-08-28-dalrymple-compagnia-indie-big-tech-nyt/", _source: "curated" }
     ]
   },
   {
@@ -6179,7 +6183,8 @@ module.exports = [
       { title: "The real reason why Facebook and Google won't change", url: "/curated/2019-02-22-zuboff-facebook-google-fastcompany/", _source: "curated" },
       { title: "The Coup We Are Not Talking About", url: "/curated/2021-01-29-zuboff-colpo-epistemico-nyt/", _source: "curated" },
       { title: "You Are the Object of a Secret Extraction Operation", url: "/curated/2021-11-12-zuboff-estrazione-segreta-nyt/", _source: "curated" },
-      { title: "The EU has fired the starting gun in the fightback against Big Tech", url: "/curated/2022-05-02-zuboff-dsa-ft/", _source: "curated" }
+      { title: "The EU has fired the starting gun in the fightback against Big Tech", url: "/curated/2022-05-02-zuboff-dsa-ft/", _source: "curated" },
+      { title: "The Original Evil Corporation", url: "/curated/2019-09-04-dalrymple-compagnia-indie-prototipo-nyt/", _source: "curated" }
     ]
   },
   {
@@ -6362,6 +6367,31 @@ module.exports = [
     note: "Nella tragedia greca, la tracotanza di chi oltrepassa il limite assegnato agli uomini e ne viene punito; oggi indica la fiducia eccessiva in sé che porta a ignorare regole e avvertimenti. **Nel sito interessa la sua forma moderna: la sicurezza di avere ragione che autorizza a disattendere la legge che si giudica sbagliata.**",
     articles: [
       { title: "Jensen Huang's Affair, The Culper Report, Huang's Righteousness", url: "/curated/2026-11-09-thompson-huang-culper-presunzione-stratechery/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Compagnia britannica delle Indie Orientali",
+    type: "istituzione",
+    geo: { modo: "diretta", paesi: ["Regno Unito", "India"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q83164"],
+    related: [
+      { name: "cattura del regolatore", why: "Nel 1693 la Compagnia fu scoperta a pagare i deputati con le proprie azioni: il primo scandalo di lobbying della storia." }
+    ],
+    note: "Società commerciale inglese fondata nel 1600 con il monopolio del commercio con l'Oriente, che con un esercito privato conquistò gran parte dell'India e la governò fino al 1858, quando i suoi possedimenti passarono alla Corona. **Nel sito è il precedente storico di un'impresa che acquista gli attributi di uno Stato, e del prezzo che paga il paese che l'ha generata.**",
+    articles: [
+      { title: "The Original Evil Corporation", url: "/curated/2019-09-04-dalrymple-compagnia-indie-prototipo-nyt/", _source: "curated" },
+      { title: "What It Took to Dismantle the Most Powerful Company in the World", url: "/curated/2026-08-28-dalrymple-compagnia-indie-big-tech-nyt/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Dalrymple, William",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Regno Unito"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q955334"],
+    note: "Storico e scrittore scozzese, autore di *The Anarchy* (2019) e di altri libri sulla Compagnia britannica delle Indie Orientali e sull'India moghul. **Nel sito è la voce che usa la storia della Compagnia per misurare il potere politico delle grandi aziende tecnologiche.**",
+    articles: [
+      { title: "The Original Evil Corporation", url: "/curated/2019-09-04-dalrymple-compagnia-indie-prototipo-nyt/", _source: "curated" },
+      { title: "What It Took to Dismantle the Most Powerful Company in the World", url: "/curated/2026-08-28-dalrymple-compagnia-indie-big-tech-nyt/", _source: "curated" }
     ]
   }
 
