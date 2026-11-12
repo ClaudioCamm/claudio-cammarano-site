@@ -1087,7 +1087,8 @@ module.exports = [
     type: "persona",
     note: "Sociologo e filosofo francese (1947–2022), fra i fondatori dell'Actor-Network Theory con Michel Callon e John Law. La sua mossa decisiva è il principio di simmetria: nel descrivere un'azione non si accorda privilegio a priori agli esseri umani, perché ciò che produce un effetto — una persona, uno strumento, una norma, un microbo — entra nella rete allo stesso titolo, come attante. È una scelta metodologica e deliberatamente priva di una teoria del bene: l'ANT descrive reti, non dice come starci dentro. Nel sito è il riferimento fondativo del concetto di LLM come attante zero, e il termine di paragone con cui si misurano le ontologie relazionali non occidentali, che distribuiscono l'agency allo stesso modo ma vi aggiungono una norma dell'agire.",
     articles: [
-      { title: "We are interwoven beings", url: "/curated/2022-11-25-valmisa-co-azione-aeon/", _source: "curated" }
+      { title: "We are interwoven beings", url: "/curated/2022-11-25-valmisa-co-azione-aeon/", _source: "curated" },
+      { title: "La grande illusion de la modernité", url: "/curated/2026-11-11-denis-descola-latour-grand-partage-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -1435,7 +1436,8 @@ module.exports = [
       { title: "EU probes pro-Kremlin disinformation around French riots", url: "/curated/2026-10-21-dubois-jones-disinformazione-rivolte-francia-ft/", _source: "curated" },
       { title: "Giordano: “L’Ucraina deve essere difesa, anche dalle false verità”", url: "/curated/2026-10-21-cuzzocrea-giordano-ucraina-repubblica/", _source: "curated" },
       { title: "L'Ucraina chiusa in un guscio di noce: «Ora lo sappiamo, nessuno ci salverà»", url: "/curated/2026-02-22-giordano-guscio-di-noce-corriere/", _source: "curated" },
-      { title: "The Kremlin is shutting down Russia’s last free newspaper", url: "/curated/2026-10-29-economist-novaya-gazeta-chiude/", _source: "curated" }
+      { title: "The Kremlin is shutting down Russia’s last free newspaper", url: "/curated/2026-10-29-economist-novaya-gazeta-chiude/", _source: "curated" },
+      { title: "A New Kind of Foreign Agent", url: "/curated/2026-11-11-feldman-agenti-stranieri-ai-cinese-foreignaffairs/", _source: "curated" }
     ]
   },
   {
@@ -2853,7 +2855,8 @@ module.exports = [
       { title: "Quando Dario Amodei ha detto no al Pentagono", url: "/writings/2026-03-09-quando-dario-amodei-ha-detto-no-al-pentagono/" },
       { title: "L'ombra del passato", url: "/writings/2026-05-04-lombra-del-passato/" },
       { title: "China's Not the Problem. We Are.", url: "/curated/2026-05-14-chan-china-ai-nyt/", _source: "curated" },
-      { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" }
+      { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" },
+      { title: "L'Europe détient la clef de la course à l'IA", url: "/curated/2026-11-11-leicht-europa-asml-eurofab-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -3036,7 +3039,8 @@ module.exports = [
       { title: "Jamie Dimon: A Plan for the Western World’s Revival", url: "/curated/2026-09-28-dimon-riforme-in-cambio-di-accesso-wsj/", _source: "curated" },
       { title: "Iran, China, Canada? A Defense of Trump’s Grand Strategy", url: "/curated/2026-07-23-douthat-colby-alleanza-valutata-a-prezzi-di-mercato-nyt/", _source: "curated" },
       { title: "Meta delays rollout of terms that would allow broad scraping of news sites. Legal experts are still skeptical.", url: "/curated/2026-10-26-tameez-meta-scraping-robots-niemanlab/", _source: "curated" },
-      { title: "The EU has fired the starting gun in the fightback against Big Tech", url: "/curated/2022-05-02-zuboff-dsa-ft/", _source: "curated" }
+      { title: "The EU has fired the starting gun in the fightback against Big Tech", url: "/curated/2022-05-02-zuboff-dsa-ft/", _source: "curated" },
+      { title: "L'Europe détient la clef de la course à l'IA", url: "/curated/2026-11-11-leicht-europa-asml-eurofab-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -3105,7 +3109,8 @@ module.exports = [
       { title: "Hit podcasts reveal the angst of China's youth", url: "/curated/2026-11-01-economist-podcast-giovani-cina/", _source: "curated" },
       { title: "China's AI stock-market struggles are a warning", url: "/curated/2026-11-03-economist-borsa-cina-ai/", _source: "curated" },
       { title: "With an eye on America, China is beefing up its AI-controlled labs", url: "/curated/2026-11-04-economist-laboratori-autonomi-cina/", _source: "curated" },
-      { title: "Jensen Huang's Affair, The Culper Report, Huang's Righteousness", url: "/curated/2026-11-09-thompson-huang-culper-presunzione-stratechery/", _source: "curated" }
+      { title: "Jensen Huang's Affair, The Culper Report, Huang's Righteousness", url: "/curated/2026-11-09-thompson-huang-culper-presunzione-stratechery/", _source: "curated" },
+      { title: "A New Kind of Foreign Agent", url: "/curated/2026-11-11-feldman-agenti-stranieri-ai-cinese-foreignaffairs/", _source: "curated" }
     ]
   },
   {
@@ -4055,7 +4060,8 @@ module.exports = [
       { title: "Open Weights, Closed Ranks: The AI Manifesto War", url: "/curated/2026-08-12-zuniga-pesi-aperti-manifesti-icle/", _source: "curated" },
       { title: "Jensen Huang Thinks A.I. Alarmism Has Gone Too Far", url: "/curated/2026-09-23-klein-huang-alarmismo-ai-nyt/", _source: "curated" },
       { title: "China's AI stock-market struggles are a warning", url: "/curated/2026-11-03-economist-borsa-cina-ai/", _source: "curated" },
-      { title: "The Jensen Huang Story Gets Worse, Washington vs. New York, Silicon Valley", url: "/curated/2026-11-10-thompson-huang-tre-citta-stratechery/", _source: "curated" }
+      { title: "The Jensen Huang Story Gets Worse, Washington vs. New York, Silicon Valley", url: "/curated/2026-11-10-thompson-huang-tre-citta-stratechery/", _source: "curated" },
+      { title: "A New Kind of Foreign Agent", url: "/curated/2026-11-11-feldman-agenti-stranieri-ai-cinese-foreignaffairs/", _source: "curated" }
     ]
   },
   {
@@ -4940,7 +4946,8 @@ module.exports = [
       { title: "Commonwealth Short Story Prize Clears Regional Winners of AI Use Following Month-Long Review", url: "/curated/2026-06-26-commonwealth-nazir-falso-positivo-brittlepaper/", _source: "curated" },
       { title: "Plagiat, IA : le prix Goncourt exclut le roman de Thélyson Orélien", url: "/curated/2026-09-25-goncourt-esclusione-orelien-actualitte/", _source: "curated" },
       { title: "Il triste dibattito sullo scrivere con l'IA", url: "/curated/2026-10-02-piacenza-triste-dibattito-scrivere-ia/", _source: "curated" },
-      { title: "Anti-Waymo campaign relied on op-eds written with AI", url: "/curated/2026-11-08-tani-waymo-editoriali-ai-semafor/", _source: "curated" }
+      { title: "Anti-Waymo campaign relied on op-eds written with AI", url: "/curated/2026-11-08-tani-waymo-editoriali-ai-semafor/", _source: "curated" },
+      { title: "A New Kind of Foreign Agent", url: "/curated/2026-11-11-feldman-agenti-stranieri-ai-cinese-foreignaffairs/", _source: "curated" }
     ]
   },
   {
@@ -5940,7 +5947,8 @@ module.exports = [
     ],
     note: "Antropologo francese, nato nel 1949, allievo di Claude Lévi-Strauss, ha tenuto al Collège de France la cattedra di antropologia della natura; è autore di *Oltre natura e cultura* (2005). Distingue quattro ontologie, cioè quattro modi di stabilire continuità e discontinuità fra umani e altri esseri: animismo, totemismo, analogismo e naturalismo. **Nel sito è la chiave per leggere l'intelligenza artificiale come prodotto di un'ontologia particolare, quella naturalista dei Moderni, e non come prova universale su che cosa sia una mente.**",
     articles: [
-      { title: "L’intelligence artificielle nous oblige-t-elle à repenser notre animalité ?", url: "/curated/2026-10-31-descola-ia-animalita-grandcontinent/", _source: "curated" }
+      { title: "L’intelligence artificielle nous oblige-t-elle à repenser notre animalité ?", url: "/curated/2026-10-31-descola-ia-animalita-grandcontinent/", _source: "curated" },
+      { title: "La grande illusion de la modernité", url: "/curated/2026-11-11-denis-descola-latour-grand-partage-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -6392,6 +6400,55 @@ module.exports = [
     articles: [
       { title: "The Original Evil Corporation", url: "/curated/2019-09-04-dalrymple-compagnia-indie-prototipo-nyt/", _source: "curated" },
       { title: "What It Took to Dismantle the Most Powerful Company in the World", url: "/curated/2026-08-28-dalrymple-compagnia-indie-big-tech-nyt/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Foreign Agents Registration Act",
+    type: "testo",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q1263070"],
+    related: [
+      { name: "patto di trasparenza", why: "La stessa logica della dichiarazione d'uso dell'AI: non si vieta il testo, si dichiara chi l'ha prodotto e per chi." }
+    ],
+    note: "Legge americana del 1938 che non vieta la propaganda per conto di governi stranieri, ma obbliga chi la fa a registrarsi, dichiarare il committente e i finanziamenti, ed etichettare ciò che diffonde. **Nel sito interessa come modello di regolazione per trasparenza: si lascia circolare il messaggio, ma si rende visibile chi parla e per conto di chi.**",
+    articles: [
+      { title: "A New Kind of Foreign Agent", url: "/curated/2026-11-11-feldman-agenti-stranieri-ai-cinese-foreignaffairs/", _source: "curated" }
+    ]
+  },
+  {
+    name: "ASML",
+    type: "istituzione",
+    geo: { modo: "diretta", paesi: ["Paesi Bassi"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q297879"],
+    note: "Azienda olandese che produce le macchine per la litografia a ultravioletto estremo, indispensabili per fabbricare i chip più avanzati, e ne è l'unico produttore al mondo. **Nel sito è il caso di un collo di bottiglia europeo nella catena dell'AI che l'Europa non ha ancora imparato a usare come leva.**",
+    articles: [
+      { title: "L'Europe détient la clef de la course à l'IA", url: "/curated/2026-11-11-leicht-europa-asml-eurofab-grandcontinent/", _source: "curated" }
+    ]
+  },
+  {
+    name: "interdipendenza armata",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q137393000"],
+    related: [
+      { name: "ASML", why: "Leicht propone di usare il monopolio di ASML non per chiudersi ma per rendere l'Europa insostituibile nella catena dell'AI." }
+    ],
+    note: "Uso dei nodi centrali delle reti economiche globali, come la finanza, i cavi, i componenti critici, per esercitare pressione su altri Stati; il concetto è di Henry Farrell e Abraham Newman (2019). **Nel sito interessa il suo rovescio difensivo: diventare indispensabili è una protezione più solida che diventare autosufficienti.**",
+    articles: [
+      { title: "L'Europe détient la clef de la course à l'IA", url: "/curated/2026-11-11-leicht-europa-asml-eurofab-grandcontinent/", _source: "curated" }
+    ]
+  },
+  {
+    name: "grande partage",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q6980998"],
+    related: [
+      { name: "Descola, Philippe", why: "Per Descola il grande partage definisce l'ontologia naturalista; per Latour è un'autodescrizione che le pratiche dei moderni smentiscono." }
+    ],
+    note: "Espressione, presa da Jack Goody e rielaborata da Bruno Latour, per la separazione fra natura e società che la modernità occidentale si attribuisce, e che proietta all'esterno come distinzione fra «noi», che conosciamo la natura, e «loro». **Nel sito interessa la domanda che apre: se la separazione sia una pratica effettiva dei moderni o soltanto il racconto che fanno di sé.**",
+    articles: [
+      { title: "La grande illusion de la modernité", url: "/curated/2026-11-11-denis-descola-latour-grand-partage-grandcontinent/", _source: "curated" }
     ]
   }
 
