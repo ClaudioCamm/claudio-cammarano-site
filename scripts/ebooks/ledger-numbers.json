@@ -35,5 +35,11 @@
   "mayo1996-popper-lacks-positive": 34,
   "mayo1996-popper-severity-not-mine": 35,
   "mayo-severity-applies-to-any-method": 36,
-  "mayo2005-self-correcting-thesis": 37
+  "mayo2005-self-correcting-thesis": 37,
+  "peirce-induction-self-correcting": 38,
+  "peirce-frequency-not-probability-of-hypotheses": 39,
+  "peirce-test-improbable-consequences": 40,
+  "peirce-persist-in-the-method": 41,
+  "peirce-different-selections-converge": 42,
+  "peirce-self-correction-detects-bias": 43
 }

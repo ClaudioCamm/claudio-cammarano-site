@@ -274,7 +274,7 @@ og_card: /images/og/og-en-home.png
           {% if l.before %}<p class="lx-ctx lx-before">{{ l.before }}</p>{% endif %}
           <blockquote class="lx-claim"{% if l.fonte and l.fonte.doi %} cite="https://doi.org/{{ l.fonte.doi }}"{% endif %}>{% for part in l.parts %}{{ part }}{% if not loop.last %}<span class="lx-gap"><span class="lx-ell">[&hellip;]</span><span class="lx-cut">{{ l.cuts[loop.index0] }}</span></span>{% endif %}{% endfor %}</blockquote>
           {% if l.after %}<p class="lx-ctx lx-after">{{ l.after }}</p>{% endif %}
-          <p class="lx-head">{{ marca(l, 14) }} <cite class="lx-cite"{% if l.fonte %} title="{{ l.fonte.title }}"{% endif %}>{% if l.fonte and l.fonte.doi %}<a href="https://doi.org/{{ l.fonte.doi }}" rel="external">{{ l.cite }}</a>{% elif l.fonte %}{{ l.cite }}{% else %}<a href="{{ l.src }}">Lab note</a>{% endif %}</cite>{% if l.locus %}<span class="lx-locus">{{ l.locus }}</span>{% endif %}</p>
+          <p class="lx-head">{{ marca(l, 14) }} <cite class="lx-cite"{% if l.fonte %} title="{{ l.fonte.title }}"{% endif %}>{% if l.fonte and l.fonte.doi %}<a href="https://doi.org/{{ l.fonte.doi }}" rel="external">{{ l.cite }}</a>{% elif l.fonte %}{{ l.cite }}{% else %}<a href="{{ l.src }}">Lab note</a>{% endif %}</cite>{% if l.locus %}<span class="lx-locus">{{ l.locus }}</span>{% endif %}{% if l.viaCite %}<span class="lx-locus">{{ l.viaCite }}</span>{% endif %}</p>
         </div>
         {% set P = claimPages.byId[l.id] %}
         <p class="lx-layers">

@@ -172,7 +172,8 @@ def main():
                 d1 = " ".join(x for x in [c.get("d1", ""), c.get("d1Label", "")] if x)
                 if c.get("d1Status") and c["d1Status"] != "confirmed":
                     d1 += f" ({c['d1Status']})"
-                meta = [f"[Source]{{.k}} {source(c)}" + (f", {md(c['locus'])}" if c.get("locus") else ""),
+                meta = [f"[Source]{{.k}} {source(c)}" + (f", {md(c['locus'])}" if c.get("locus") else "")
+                + (f"; {md(c['viaCite'])}" if c.get("viaCite") else ""),
                         f"[Marks]{{.k}} {md(fn)} · {md(d1)} · {md(c.get('stance', ''))}"
                         + (" · contested" if c.get("contested") else "")]
                 if c.get("names"):

@@ -47,7 +47,7 @@ eleventyComputed:
       <div>
         <blockquote>&ldquo;{% for part in c.parts %}{{ part }}{% if not loop.last %} [&hellip;] {% endif %}{% endfor %}&rdquo;</blockquote>
         <p class="g">{{ c.gist }}</p>
-        <p class="m">{% if c.doi %}<a href="https://doi.org/{{ c.doi }}" rel="external">{{ c.cite }}</a>{% else %}{{ c.cite }}{% endif %}{% if c.locus %} · {{ c.locus }}{% endif %} · {{ c.stance }} · weight {{ c.w }}{% for r in c.out %} · {{ r.how }} <a href="{{ r.url }}">{{ r.n }}</a>{% endfor %} · <a href="{{ c.url }}">open {{ c.n }}</a></p>
+        <p class="m">{% if c.doi %}<a href="https://doi.org/{{ c.doi }}" rel="external">{{ c.cite }}</a>{% else %}{{ c.cite }}{% endif %}{% if c.locus %} · {{ c.locus }}{% endif %}{% if c.viaCite %} · {{ c.viaCite }}{% endif %} · {{ c.stance }} · weight {{ c.w }}{% for r in c.out %} · {{ r.how }} <a href="{{ r.url }}">{{ r.n }}</a>{% endfor %} · <a href="{{ c.url }}">open {{ c.n }}</a></p>
       </div>
     </li>
     {% endfor %}

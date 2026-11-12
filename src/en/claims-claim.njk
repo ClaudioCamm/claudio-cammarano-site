@@ -22,7 +22,7 @@ eleventyComputed:
 <div class="ch">
   <h1 class="big">{{ c.n }}</h1>
   <div>
-    <p class="cp-k" style="color:var(--tv-soft,var(--color-text-light))">{% if c.voice == "literature" %}In their own words{% else %}From the research log{% endif %} · {% if c.doi %}<a href="https://doi.org/{{ c.doi }}" rel="external">{{ c.cite }}</a>{% elif c.voice == "log" %}<a href="{{ c.src }}">{{ c.cite }}</a>{% else %}{{ c.cite }}{% endif %}{% if c.locus %} · {{ c.locus }}{% endif %} · {{ c.stance }}</p>
+    <p class="cp-k" style="color:var(--tv-soft,var(--color-text-light))">{% if c.voice == "literature" %}In their own words{% else %}From the research log{% endif %} · {% if c.doi %}<a href="https://doi.org/{{ c.doi }}" rel="external">{{ c.cite }}</a>{% elif c.voice == "log" %}<a href="{{ c.src }}">{{ c.cite }}</a>{% else %}{{ c.cite }}{% endif %}{% if c.locus %} · {{ c.locus }}{% endif %}{% if c.viaCite %} · {{ c.viaCite }}{% endif %} · {{ c.stance }}</p>
     {% if c.before %}<p class="ctx">&hellip;{{ c.before }}</p>{% endif %}
     <blockquote{% if c.doi %} cite="https://doi.org/{{ c.doi }}"{% endif %}>&ldquo;{% for part in c.parts %}{{ part }}{% if not loop.last %} <span class="gap" title="{{ c.cuts[loop.index0] }}">[&hellip;]</span> {% endif %}{% endfor %}&rdquo;</blockquote>
     {% if c.after %}<p class="ctx ctx-a">{{ c.after }}&hellip;</p>{% endif %}

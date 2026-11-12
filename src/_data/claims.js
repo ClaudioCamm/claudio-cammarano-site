@@ -722,6 +722,116 @@ const claims = [
     d1: "D1.6",
     d1Status: "proposed",
     stance: "used",
+    relates: [
+      { to: "peirce-induction-self-correcting", how: "presupposes", why: "Mayo's formulation of the thesis rests on Peirce's own statement of it (CP 5.145)." }
+    ],
+    usedIn: []
+  },
+  {
+    id: "peirce-induction-self-correcting",
+    gist: "Induction is justified by the method, not by any single conclusion: persisting in it corrects whatever error a stage contains. It is the original of the self-correcting thesis that Mayo turns into the basis of error statistics.",
+    src: "peirce1931collected",
+    locus: "CP 5.145",
+    via: { src: "mayo2005peircean", locus: "p. 299" },
+    before: "Peirce's philosophy of inductive inference in science is based on the idea that what permits us to make progress in science, what allows our knowledge to grow, is the fact that science uses methods that are self-correcting or error correcting:",
+    claim: "Induction is the experimental testing of a theory. The justification of it is that, although the conclusion at any stage of the investigation may be more or less erroneous, yet the further application of the same method must correct the error.",
+    cuts: [],
+    after: "Inductive methods - understood as methods of experimental testing - are justified to the extent that they are error-correcting methods.",
+    fn: "strumento-concettuale",
+    d1: "D1.6",
+    d1Status: "proposed",
+    stance: "used",
+    relates: [],
+    usedIn: []
+  },
+  {
+    id: "peirce-frequency-not-probability-of-hypotheses",
+    gist: "Probability attaches to the method's track record, not to the hypothesis. The programme inherits the split: a validation reports how often a procedure gets it right, never how probable a given verdict is.",
+    src: "peirce1931collected",
+    locus: "CP 2.748",
+    via: { src: "mayo2005peircean", locus: "p. 300" },
+    before: "In describing his theory of inference, Peirce could be describing that of the error-statistician:",
+    claim: "The theory here proposed does not assign any probability to the inductive or hypothetic conclusion, in the sense of undertaking to say how frequently that conclusion would be found true. […] The theory here presented only says how frequently, in this universe, the special form of induction or hypothesis would lead us right.",
+    cuts: ["It does not propose to look through all the possible universes, and say in what proportion of them a certain uniformity occurs; such a proceeding, were it possible, would be quite idle."],
+    after: "The probability given by this theory is in every way different - in meaning, numerical value, and form - from that of those who would apply to ampliative inference the doctrine of inverse chances.",
+    fn: "strumento-concettuale",
+    d1: "D1.14",
+    d1Status: "proposed",
+    stance: "assumed",
+    relates: [],
+    usedIn: []
+  },
+  {
+    id: "peirce-test-improbable-consequences",
+    gist: "A test does not collect agreement; it looks for consequences that would be surprising if the hypothesis were false. This is severity before the word, a century before Mayo, and the reason fit with the data is never enough on its own.",
+    src: "peirce1931collected",
+    locus: "CP 7.231",
+    via: { src: "mayo2005peircean", locus: "p. 304" },
+    before: "For starters, induction, for Peirce, is a matter of subjecting hypotheses to \"the test of experiment\" (7.182).",
+    claim: "The process of testing it will consist, not in examining the facts, in order to see how well they accord with the hypothesis, but on the contrary in examining such of the probable consequences of the hypothesis . . . which would be very unlikely or surprising in case the hypothesis were not true.",
+    cuts: [],
+    after: "When, however, we find that prediction after prediction, notwithstanding a preference for putting the most unlikely ones to the test, is verified by experiment, ... we begin to accord to the hypothesis a standing among scientific results.",
+    fn: "strumento-concettuale",
+    d1: "D1.9",
+    d1Status: "proposed",
+    stance: "assumed",
+    relates: [
+      { to: "mayo-severity-strong", how: "confirms", why: "The same demand, a test highly capable of finding the claim false, stated before severity had a name." }
+    ],
+    usedIn: []
+  },
+  {
+    id: "peirce-persist-in-the-method",
+    gist: "A lucky agreement is exposed by persisting with the same method: replication is the correction. For validation, a single passing run is not a result until the procedure has been run again.",
+    src: "peirce1931collected",
+    locus: "CP 7.115",
+    via: { src: "mayo2005peircean", locus: "p. 309" },
+    before: "In particular, if we are wrong to reject Ho (and Ho is actually true), we would find we were rarely able to get so statistically significant a result to recur, and in this way we would discover our original error.",
+    claim: "It is true that the observed conformity of the facts to the requirements of the hypothesis may have been fortuitous. But if so, we have only to persist in this same method of research and we shall gradually be brought around to the truth.",
+    cuts: [],
+    after: "The correction is not a matter of getting higher and higher probabilities, it is a matter of finding out whether the agreement is fortuitous; whether it is generated about as often as would be expected were the agreement of the chance variety.",
+    fn: "metodo-di-lavoro",
+    d1: "D1.9",
+    d1Status: "proposed",
+    stance: "used",
+    relates: [
+      { to: "peirce-induction-self-correcting", how: "refines", why: "Says how the correction happens: by rerunning the same method until a fortuitous agreement fails to recur." }
+    ],
+    usedIn: []
+  },
+  {
+    id: "peirce-different-selections-converge",
+    gist: "Two selections made by different methods err in different ways, so their agreement is evidence about the truth. It is the convergence argument the programme uses when independent runs or coders reach the same verdict.",
+    src: "peirce1931collected",
+    locus: "CP 2.729",
+    via: { src: "mayo2005peircean", locus: "p. 315" },
+    before: "Yet a further safeguard is at hand:",
+    claim: "Nor must we lose sight of the constant tendency of the inductive process to correct itself. This is of its essence. This is the marvel of it. ...even though doubts may be entertained whether one selection of instances is a random one, yet a different selection, made by a different method, will be likely to vary from the normal in a different way, and if the ratios derived from such different selections are nearly equal, they may be presumed to be near the truth.",
+    cuts: [],
+    after: "Here, the marvel is an inductive method's ability to correct the attempt at random sampling.",
+    fn: "strumento-concettuale",
+    d1: "D1.6",
+    d1Status: "proposed",
+    stance: "assumed",
+    relates: [
+      { to: "mayo-lift-off", how: "confirms", why: "Convergence of differently flawed selections is the same lift-off: the whole more reliable than its parts." }
+    ],
+    usedIn: []
+  },
+  {
+    id: "peirce-self-correction-detects-bias",
+    gist: "Induction needs no uniformity of nature, only the absence of an overwhelming hidden bias, and lesser biases are themselves detectable by the method. A validation does not have to assume a clean world, only one where its errors are not engineered against it.",
+    src: "peirce1931collected",
+    locus: "CP 2.749",
+    via: { src: "mayo2005peircean", locus: "p. 316" },
+    before: "But this is very different from the uniformity of nature assumption.",
+    claim: "...the negative fact supposed by me [no mysterious force interferes with the action of chance] is merely the denial of any major premise from which the falsity of the inductive conclusion could be deduced. Actually so long as the influence of this mysterious source not be overwhelming, the wonderful self-correcting nature of the ampliative inference would enable us, even so, to detect and make allowance for them.",
+    cuts: [],
+    after: "Not only do we not need the uniformity of nature assumption, Peirce declares",
+    fn: "strumento-concettuale",
+    d1: "D1.14",
+    d1Status: "proposed",
+    stance: "used",
     relates: [],
     usedIn: []
   }
@@ -775,7 +885,7 @@ function breve(fonte) {
   // BibTeX scrive "and others" per l'elenco troncato: diventa et al.
   const troncato = tutti.some(a => /^others$/i.test(a));
   const cognomi = tutti.filter(a => !/^others$/i.test(a));
-  const anno = fonte.year ? ` ${fonte.year}` : "";
+  const anno = fonte.year ? ` ${String(fonte.year).replace(/--/g, "\u2013")}` : "";
   if (troncato && cognomi.length) return `${cognomi[0]} et al.` + anno;
   if (!cognomi.length) return (fonte.title || "").slice(0, 40) + anno;
   if (cognomi.length === 1) return cognomi[0] + anno;
@@ -804,6 +914,10 @@ module.exports = claims.map(l => {
     weight: peso(l),
     fonte,
     cite: fonte ? breve(fonte) : notaBreve(l.src, l.locus),
+    // Fonte intermedia: solo per i passi di seconda mano (deroga per i corpora
+    // canonici e dispersi, es. Peirce dai Collected Papers). Vuota = non si mostra.
+    viaCite: l.via && perChiave[l.via.src]
+      ? `quoted in ${breve(perChiave[l.via.src])}${l.via.locus ? ", " + l.via.locus : ""}` : "",
     shape: FORMA[l.d1] || "circle",
     voice: fonte ? "literature" : "log",
     contested: l.stance === "contested",

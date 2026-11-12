@@ -46,6 +46,19 @@ claims.forEach((l, i) => {
   if (!l.src) err("src mancante");
   else if (!l.src.startsWith("/") && !chiavi.has(l.src)) err(`src "${l.src}" non e' ne' una chiave di biblio.js ne' un percorso del sito`);
 
+  // via: la fonte intermedia di un passo di seconda mano. Il src resta l'autore
+  // originale (con il suo locus canonico); before/after sono quelli della fonte
+  // intermedia, che va quindi dichiarata con chiave e pagina.
+  if (l.via !== undefined) {
+    if (!l.via || typeof l.via !== "object") err("via: dev'essere { src, locus }");
+    else {
+      if (!chiavi.has(l.via.src)) err(`via.src "${l.via.src}" non e' una chiave di biblio.js`);
+      if (!String(l.via.locus || "").trim()) err("via.locus mancante: la pagina della fonte intermedia");
+      if (String(l.src || "").startsWith("/")) err("via su un claim del diario: non ha senso");
+      if (!String(l.locus || "").trim()) err("via senza locus nella fonte originaria");
+    }
+  }
+
   if (!l.claim || !l.claim.trim()) err("claim vuoto");
   const buchi = (String(l.claim).match(/\[…\]/g) || []).length;
   const tagli = (l.cuts || []).length;

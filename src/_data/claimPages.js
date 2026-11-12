@@ -49,7 +49,7 @@ const rows = claims.map(c => {
   const r = {
     id: c.id, n: num(c.id), slug: slugOf(c.id), url: "/en/claims/" + slugOf(c.id) + "/",
     gist: c.gist, lead: first(c.gist), parts: c.parts, cuts: c.cuts || [], before: c.before, after: c.after,
-    cite: c.cite, locus: c.locus, doi: c.fonte && c.fonte.doi, src: c.src, voice: c.voice, shape: c.shape,
+    cite: c.cite, locus: c.locus, viaCite: c.viaCite, doi: c.fonte && c.fonte.doi, src: c.src, voice: c.voice, shape: c.shape,
     stance: c.stance, contested, d1: c.d1, d1Label: c.d1Label, d1Status: c.d1Status, fn: FN[c.fn] || c.fn,
     names: c.names || [], usedIn: c.usedIn || [], w: c.weight,
     geo: { base, tier: TIER[base], uses, contested },
