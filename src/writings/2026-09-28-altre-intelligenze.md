@@ -6,7 +6,7 @@ description: "Un'utente di Harare chiede a un modello se accettare una promozion
 tesi: "L'allineamento dei modelli codifica un'etica occidentale e individualista presentata come universale; le tradizioni relazionali offrono un'altra idea di buon comportamento, a condizione di non trasformarle a loro volta in miti identitari."
 category: ["Filosofia", "AI", "Etica"]
 series: "L’attante zero, I"
-serie_totale_prevista: 3
+serie_totale_prevista: 4
 lang: "🇮🇹 Italiano"
 ai_prose: WR
 tags: [writings]

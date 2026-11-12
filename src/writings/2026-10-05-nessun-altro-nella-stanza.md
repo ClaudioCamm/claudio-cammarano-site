@@ -7,7 +7,7 @@ description: "L'altruismo efficace teme la macchina che potrebbe volere qualcosa
 tesi: "Altruismo efficace e attante zero divergono su quanti agenti ci siano nella stanza, e da quella risposta dipende dove si cerca il pericolo: nella macchina che potrebbe volere qualcosa, o nelle persone e nelle istituzioni che le assegnano un fine; nel caso NAZA accusa e difesa concordano che a decidere sono stati esseri umani, e questo dà ragione alla seconda risposta."
 category: ["AI", "Filosofia", "Geopolitica"]
 series: "L’attante zero, II"
-serie_totale_prevista: 3
+serie_totale_prevista: 4
 lang: "🇮🇹 Italiano"
 ai_prose: WR
 tags: [writings]

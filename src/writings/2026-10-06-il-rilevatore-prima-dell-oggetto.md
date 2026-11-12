@@ -7,7 +7,7 @@ description: "Prima di cercare un rilevatore della coscienza delle macchine conv
 tesi: "Il danno di trattare le macchine come coscienti non richiede che lo siano, basta che qualcuno lo creda; e poiché l'addestramento insegna a un modello a parlare di sé in prima persona, ogni segno di interiorità che esibisce è prodotto dalla stessa fonte che dovrebbe verificarlo, il che rende circolare qualunque prova se ne ricavi."
 category: ["AI", "Filosofia"]
 series: "L’attante zero, III"
-serie_totale_prevista: 3
+serie_totale_prevista: 4
 lang: "🇮🇹 Italiano"
 ai_prose: WR
 tags: [writings]
