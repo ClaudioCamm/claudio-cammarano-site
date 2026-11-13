@@ -208,3 +208,16 @@
   from = "/writings/2026%E2%80%9110%E2%80%9119%E2%80%91le%E2%80%91persone%E2%80%91non%E2%80%91sono%E2%80%91dischi%E2%80%91rigidi/"
   to = "/writings/2026-10-19-le-persone-non-sono-dischi-rigidi/"
   status = 301
+
+# Stesse due regole con i caratteri U+2011 letterali: la forma codificata
+# da sola non viene riconosciuta (verificato dopo il deploy del 13 nov 2026).
+
+[[redirects]]
+  from = "/writings/2026‑10‑19‑le‑persone‑non‑sono‑dischi‑rigidi"
+  to = "/writings/2026-10-19-le-persone-non-sono-dischi-rigidi/"
+  status = 301
+
+[[redirects]]
+  from = "/writings/2026‑10‑19‑le‑persone‑non‑sono‑dischi‑rigidi/"
+  to = "/writings/2026-10-19-le-persone-non-sono-dischi-rigidi/"
+  status = 301
