@@ -100,7 +100,7 @@
   function makeModel(data) {
     var N = data.nodes.map(function (n) {
       return { n: displayName(n.name, n.type), sort: n.name, s: n.slug,
-               t: n.type || 'altro', c: n.cluster || null, k: n.count || 1,
+               t: TYPE_ORDER.indexOf(n.type) >= 0 ? n.type : 'altro', c: n.cluster || null, k: n.count || 1,
                p: n.peso || n.count || 1 };
     });
     // [sorgente, destinazione, peso, asserito] — il quarto posto distingue un

@@ -6011,7 +6011,7 @@ module.exports = [
   },
   {
     name: "Wikipedia",
-    type: "organizzazione",
+    type: "istituzione",
     geo: { modo: "diretta", paesi: ["Stati Uniti"] },
     sameAs: ["https://www.wikidata.org/wiki/Q52"],
     related: [

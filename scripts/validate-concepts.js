@@ -36,7 +36,13 @@ const errors = [];
 const byName = new Map(index.map(c => [c.name, c]));
 const declared = new Map(); // "A|B" ordinato -> nome che l'ha dichiarato
 
+const TIPI = ['persona', 'teoria', 'testo', 'istituzione', 'luogo', 'paese'];
+
 for (const c of index) {
+  // ── type ── (un tipo fuori elenco rompe /mappa/ e le finestre dei concetti)
+  if (!TIPI.includes(c.type)) {
+    errors.push(`"${c.name}": type "${c.type}" non ammesso (${TIPI.join(', ')})`);
+  }
   // ── sameAs ──────────────────────────────────────────────────────────────
   if (c.sameAs !== undefined) {
     if (!Array.isArray(c.sameAs) || !c.sameAs.length) {
