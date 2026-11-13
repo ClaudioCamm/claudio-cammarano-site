@@ -8,7 +8,7 @@
    cornice, e lo switch di lingua li' propone l'italiano. #}
 {%- set isENSurface = page.url.indexOf('/en/') == 0 or page.url.indexOf('/lab/') == 0 -%}
 <!DOCTYPE html>
-<html lang="{{ lang or 'it' }}">
+<html lang="{{ lang | langcode }}">
 <head>
     <meta charset="UTF-8">
     {# Rilevamento dell'incorporamento: il banco di misura gira anche
@@ -20,9 +20,9 @@
     <title>{% if title %}{{ title }} - {% endif %}Claudio Cammarano</title>
     <meta name="description" content="{{ (description or 'Libri, mercati, idee') | stripMd }}">
     <link rel="canonical" href="https://claudiocammarano.com{{ page.url }}">
-    <link rel="alternate" hreflang="{{ lang or 'it' }}" href="https://claudiocammarano.com{{ page.url }}">
+    <link rel="alternate" hreflang="{{ lang | langcode }}" href="https://claudiocammarano.com{{ page.url }}">
     {% if translation %}<link rel="alternate" hreflang="{{ translation.lang }}" href="https://claudiocammarano.com{{ translation.url }}">
-    <link rel="alternate" hreflang="x-default" href="https://claudiocammarano.com{% if (lang or 'it') == 'it' %}{{ page.url }}{% else %}{{ translation.url }}{% endif %}">
+    <link rel="alternate" hreflang="x-default" href="https://claudiocammarano.com{% if (lang | langcode) == 'it' %}{{ page.url }}{% else %}{{ translation.url }}{% endif %}">
     {% endif %}{# Senza traduzione nessun x-default: le due superfici sono opere distinte (audit 2026, Dec2). #}
     <!-- Open Graph -->
     {# og_title: quando il titolo della scheda social deve dire piu' del

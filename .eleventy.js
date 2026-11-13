@@ -977,6 +977,16 @@ module.exports = function(eleventyConfig) {
   });
 
   // Usato solo dalla sezione /lab/, che è in sola lingua inglese
+  // La lingua della pagina come codice. Il frontmatter dei saggi scrive
+  // lang: "🇮🇹 Italiano" (la bandierina si mostra nei metadati): passata cosi'
+  // com'e' a <html lang>, a hreflang e a inLanguage era un codice non valido,
+  // e Pagefind ne faceva una terza lingua con un indice che la ricerca non
+  // leggeva (50 saggi fuori dalla ricerca fino al 13/11/2026).
+  eleventyConfig.addFilter("langcode", function(v) {
+    const s = String(v || "it").toLowerCase();
+    return (s.startsWith("en") || s.includes("english") || s.includes("🇬🇧")) ? "en" : "it";
+  });
+
   eleventyConfig.addFilter("formatDateEN", function(date) {
     return new Intl.DateTimeFormat('en-US', {
       year: 'numeric',

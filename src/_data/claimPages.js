@@ -121,7 +121,7 @@ function core(cols, { W = 1248, label = true, focus = null, numbers = true, arcs
   const at = {}; cols.forEach((c, i) => { at[c.id] = i; });
   const dim = c => (focus && c.id !== focus ? " cc-dim" : "");
   const o = [];
-  o.push(`<svg class="cc${cls ? " " + cls : ""}" viewBox="0 0 ${W} ${r2(H)}" role="img" aria-label="The claims cored through the five layers of ENTIA">`);
+  o.push(`<svg data-pagefind-ignore class="cc${cls ? " " + cls : ""}" viewBox="0 0 ${W} ${r2(H)}" role="img" aria-label="The claims cored through the five layers of ENTIA">`);
   o.push(`<defs><marker id="cc-ah" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0,0L7,3.5L0,7z" class="cc-ahp"/></marker></defs>`);
   // fasce di fondo
   for (let k = 1; k <= 4; k++) {
@@ -203,7 +203,7 @@ function matrix(cols, W = 1248) {
     gy[k + ":" + key] = y; y += rh;
   });
   const geoY = y + 26, H = geoY + 118;
-  const o = [`<svg class="cc cc-mx" viewBox="0 0 ${W} ${r2(H)}" role="img" aria-label="The claims as a matrix: one column per claim, one row per value of each layer">`];
+  const o = [`<svg data-pagefind-ignore class="cc cc-mx" viewBox="0 0 ${W} ${r2(H)}" role="img" aria-label="The claims as a matrix: one column per claim, one row per value of each layer">`];
   // archi sopra la riga dei claim
   EDGES.forEach(e => {
     if (at[e.a] == null || at[e.b] == null) return;

@@ -20,7 +20,7 @@ eleventyComputed:
 <p class="cp-k"><a href="/en/claims/">Claims</a> › {% for k in c.conceptsEn %}<a href="{{ k.url }}">{{ k.en }}</a>{% if not loop.last %} + {% endif %}{% endfor %} › {{ c.n }}</p>
 
 <div class="ch">
-  <h1 class="big">{{ c.n }}</h1>
+  <h1 class="big" data-pagefind-meta="title:{{ c.n }} · {{ c.lead }}">{{ c.n }}</h1>
   <div>
     <p class="cp-k" style="color:var(--tv-soft,var(--color-text-light))">{% if c.voice == "literature" %}In their own words{% else %}From the research log{% endif %} · {% if c.doi %}<a href="https://doi.org/{{ c.doi }}" rel="external">{{ c.cite }}</a>{% elif c.voice == "log" %}<a href="{{ c.src }}">{{ c.cite }}</a>{% else %}{{ c.cite }}{% endif %}{% if c.locus %} · {{ c.locus }}{% endif %}{% if c.viaCite %} · {{ c.viaCite }}{% endif %} · {{ c.stance }}</p>
     {% if c.before %}<p class="ctx">&hellip;{{ c.before }}</p>{% endif %}
@@ -34,11 +34,11 @@ eleventyComputed:
   <p class="cp-k" id="five">The five layers, for this claim</p>
   <div class="ph">
     <div class="st">
-      <div class="s1"><b>1 Free tag</b><span>{{ c.names | join(" · ") if c.names.length else "—" }}</span><i>a name finds, it does not vouch</i></div>
-      <div class="s2"><b>2 Topic</b><span>{{ c.topicEn }}</span><i>closed list</i></div>
-      <div class="s3"><b>3 Theme</b><span>{{ c.themeEn }}</span><i>derived from the topic</i></div>
-      <div class="s4"><b>4 Concept</b><span>{% for k in c.conceptsEn %}<a href="{{ k.url }}">{{ k.en }}</a>{% if not loop.last %} + {% endif %}{% endfor %}</span><i>a note and links</i></div>
-      <div class="s5"><b>5 Geometry</b><span class="mono">{{ c.w }}</span><i>{{ c.geo.base }} {{ c.geo.tier }}{% if c.geo.uses %} + {{ c.geo.uses }} × 0.25{% endif %}{% if c.geo.contested %} × 1.5 contested{% endif %}</i></div>
+      <div class="s1"><b>1 Free tag</b> <span>{{ c.names | join(" · ") if c.names.length else "—" }}</span> <i data-pagefind-ignore>a name finds, it does not vouch</i></div>
+      <div class="s2"><b>2 Topic</b> <span>{{ c.topicEn }}</span> <i data-pagefind-ignore>closed list</i></div>
+      <div class="s3"><b>3 Theme</b> <span>{{ c.themeEn }}</span> <i data-pagefind-ignore>derived from the topic</i></div>
+      <div class="s4"><b>4 Concept</b> <span>{% for k in c.conceptsEn %}<a href="{{ k.url }}">{{ k.en }}</a>{% if not loop.last %} + {% endif %}{% endfor %}</span> <i data-pagefind-ignore>a note and links</i></div>
+      <div class="s5"><b>5 Geometry</b> <span class="mono">{{ c.w }}</span> <i data-pagefind-ignore>{{ c.geo.base }} {{ c.geo.tier }}{% if c.geo.uses %} + {{ c.geo.uses }} × 0.25{% endif %}{% if c.geo.contested %} × 1.5 contested{% endif %}</i></div>
     </div>
     <div class="cc-wrap">
       {{ c.svg | safe }}
@@ -51,8 +51,8 @@ eleventyComputed:
   <p class="cp-k" id="rel">Relations</p>
   {% if c.out.length or c.in.length %}
   <ul class="rl">
-    {% for r in c.out %}<li><span class="how">{{ r.how }} →</span><a href="{{ r.url }}"><b>{{ r.n }}</b>{{ r.lead }}</a><em>{{ r.why }}</em></li>{% endfor %}
-    {% for r in c.in %}<li><span class="how">← {{ r.how }}</span><a href="{{ r.url }}"><b>{{ r.n }}</b>{{ r.lead }}</a><em>{{ r.why }}</em></li>{% endfor %}
+    {% for r in c.out %}<li><span class="how">{{ r.how }} →</span> <a href="{{ r.url }}"><b>{{ r.n }}</b> {{ r.lead }}</a> <em>{{ r.why }}</em></li>{% endfor %}
+    {% for r in c.in %}<li><span class="how">← {{ r.how }}</span> <a href="{{ r.url }}"><b>{{ r.n }}</b> {{ r.lead }}</a> <em>{{ r.why }}</em></li>{% endfor %}
   </ul>
   {% else %}<p class="cr-hint">No relation to another claim has been declared yet.</p>{% endif %}
 </section>

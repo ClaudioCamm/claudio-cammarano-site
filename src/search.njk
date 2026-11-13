@@ -7,29 +7,19 @@ eleventyExcludeFromCollections: true
 pagefind: false
 ---
 
-<div class="search-page">
-  <header class="tag-page-header">
-    <p class="tag-page-label">Ricerca</p>
-    <h1 class="tag-page-title">Cerca</h1>
-  </header>
-  <div id="search"></div>
+{# La ricerca (13/11/2026): Pagefind per il testo pieno, italiano e inglese
+   insieme, piu' le parole simili dal lessico del sito (scripts/lessico.js).
+   Interfaccia propria in src/js/cerca.js: tipi come filtri, qualita' della
+   corrispondenza su ogni risultato. Il parametro ?q= apre una ricerca. #}
+<div class="cerca" id="cerca" data-lang="it">
+  <p class="cerca-k">Ricerca · italiano e inglese</p>
+  <h1 class="cerca-h">Cerca</h1>
+  <input id="cerca-q" type="search" placeholder="Saggi, schede, concetti, claim…" autocomplete="off" aria-label="Cerca nel sito" autofocus>
+  <p class="cerca-nota">Cerca in tutto il sito, anche nella parte inglese: Lab, claim, concetti della ricerca. Se una parola è scritta male, o il sito usa una forma vicina, i risultati arrivano lo stesso, più in basso e segnati come «simili».</p>
+  <div id="cerca-forse"></div>
+  <div id="cerca-tipi"></div>
+  <p id="cerca-stato" aria-live="polite"></p>
+  <ol id="cerca-out"></ol>
+  <noscript><p>La ricerca ha bisogno di JavaScript. Senza, l’<a href="/indice/">indice analitico</a> porta a ogni concetto del sito.</p></noscript>
 </div>
-
-<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
-<script src="/pagefind/pagefind-ui.js"></script>
-<script>
-  window.addEventListener('DOMContentLoaded', function() {
-    new PagefindUI({
-      element: '#search',
-      showImages: false,
-      translations: {
-        placeholder: 'Cerca negli articoli…',
-        zero_results: 'Nessun risultato per [SEARCH_TERM]',
-        many_results: '[COUNT] risultati per [SEARCH_TERM]',
-        one_result: '[COUNT] risultato per [SEARCH_TERM]',
-        load_more: 'Carica altri risultati',
-        searching: 'Ricerca in corso…'
-      }
-    });
-  });
-</script>
+<script src="/js/cerca.js" defer></script>

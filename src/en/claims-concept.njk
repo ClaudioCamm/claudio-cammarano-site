@@ -25,11 +25,11 @@ eleventyComputed:
 <section class="cp-sec" aria-labelledby="sits">
   <p class="cp-k" id="sits">Where it sits</p>
   <div class="st">
-    <div class="s1"><b>1 Free tag</b><span>{{ k.names | join(" · ") if k.names.length else "—" }}</span><i>a name finds, it does not vouch</i></div>
-    <div class="s2"><b>2 Topic</b><span>{{ k.topics | join(" · ") }}</span><i>closed list, one per claim</i></div>
-    <div class="s3"><b>3 Theme</b><span>{{ k.themeEn }}</span><i>derived from the topics</i></div>
-    <div class="s4"><b>4 Concept</b><span>{{ k.en }} · {{ k.claims.length }} claim{% if k.claims.length != 1 %}s{% endif %}</span><i>a note and links, or no build</i></div>
-    <div class="s5"><b>5 Geometry</b><span class="mono">{{ k.weights | join("  ") }}</span><i>source, use, dissent</i></div>
+    <div class="s1"><b>1 Free tag</b> <span>{{ k.names | join(" · ") if k.names.length else "—" }}</span> <i data-pagefind-ignore>a name finds, it does not vouch</i></div>
+    <div class="s2"><b>2 Topic</b> <span>{{ k.topics | join(" · ") }}</span> <i data-pagefind-ignore>closed list, one per claim</i></div>
+    <div class="s3"><b>3 Theme</b> <span>{{ k.themeEn }}</span> <i data-pagefind-ignore>derived from the topics</i></div>
+    <div class="s4"><b>4 Concept</b> <span>{{ k.en }} · {{ k.claims.length }} claim{% if k.claims.length != 1 %}s{% endif %}</span> <i data-pagefind-ignore>a note and links, or no build</i></div>
+    <div class="s5"><b>5 Geometry</b> <span class="mono">{{ k.weights | join("  ") }}</span> <i data-pagefind-ignore>source, use, dissent</i></div>
   </div>
 </section>
 

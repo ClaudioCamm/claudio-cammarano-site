@@ -15,7 +15,7 @@ og_type: article
   "name": "{{ title | jsonEscape | safe }}",
   "description": "{{ description | stripMd | jsonEscape | safe }}",
   "datePublished": "{{ date | isoDate }}",
-  "inLanguage": "{{ lang or 'it' }}",
+  "inLanguage": "{{ lang | langcode }}",
   "url": "https://claudiocammarano.com{{ page.url }}",
   "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
   "learningResourceType": "Dispensa",
