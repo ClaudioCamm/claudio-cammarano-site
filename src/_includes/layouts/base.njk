@@ -186,7 +186,7 @@
           var a = e.target.closest('a[href]');
           if (!a) return;
           var href = a.getAttribute('href') || '';
-          var abs = a.href || href;
+          var abs = (typeof a.href === 'string' ? a.href : '') || href;
           var params = { link_url: abs, page_path: location.pathname };
           if (a.hasAttribute('data-newsletter-cta')) {
             params.link_position = a.getAttribute('data-position') || 'unknown';

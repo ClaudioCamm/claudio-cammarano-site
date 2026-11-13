@@ -69,8 +69,8 @@ rows.forEach((r, i) => { r.i = i; });
 const EDGES = [];
 rows.forEach(r => r.relates.forEach(x => { if (byId[x.to]) EDGES.push({ a: r.id, b: x.to, how: x.how, why: x.why }); }));
 rows.forEach(r => {
-  r.out = EDGES.filter(e => e.a === r.id).map(e => ({ how: e.how, why: e.why, n: byId[e.b].n, url: byId[e.b].url, lead: byId[e.b].lead }));
-  r.in = EDGES.filter(e => e.b === r.id).map(e => ({ how: e.how, why: e.why, n: byId[e.a].n, url: byId[e.a].url, lead: byId[e.a].lead }));
+  r.out = EDGES.filter(e => e.a === r.id).map(e => ({ how: e.how, why: e.why, id: e.b, n: byId[e.b].n, url: byId[e.b].url, lead: byId[e.b].lead }));
+  r.in = EDGES.filter(e => e.b === r.id).map(e => ({ how: e.how, why: e.why, id: e.a, n: byId[e.a].n, url: byId[e.a].url, lead: byId[e.a].lead }));
   r.conceptsEn = r.concepts.map(k => ({ key: k, en: CO[k].en, url: "/en/claims/" + k + "/" }));
   r.neighbours = [r.id, ...EDGES.filter(e => e.a === r.id).map(e => e.b), ...EDGES.filter(e => e.b === r.id).map(e => e.a)];
 });
@@ -210,13 +210,15 @@ function matrix(cols, W = 1248) {
     const xa = X(at[e.a]), xb = X(at[e.b]), r = Math.abs(xb - xa) / 2;
     o.push(`<path class="cc-arc cc-${e.how}" d="M${r2(xa)},${arcH} A${r2(r)},${r2(Math.min(r, arcH - 10))} 0 0 ${xb > xa ? 1 : 0} ${r2(xb)},${arcH}"><title>${byId[e.a].n} ${e.how} ${byId[e.b].n}</title></path>`);
   });
-  cols.forEach((c, i) => o.push(`<a class="cc-claim" href="${c.url}">${glyph(c.shape, X(i), arcH + 10, Math.min(cw * 0.7, 16), "cc-" + c.voice, c.contested)}<title>${c.n} · ${esc(c.lead)}</title></a>`));
+  // una colonna intera e' un link al claim (nella pagina dell'elenco porta all'unita')
+  cols.forEach((c, i) => o.push(`<a class="mx-col" href="${c.url}" data-id="${c.id}"><rect class="mx-hit" x="${r2(lx + i * cw)}" y="${arcH - 6}" width="${r2(cw)}" height="${r2(H - arcH)}"/><title>${c.n} · ${esc(c.lead)}</title></a>`));
+  cols.forEach((c, i) => o.push(`<a class="cc-claim" href="${c.url}" data-id="${c.id}">${glyph(c.shape, X(i), arcH + 10, Math.min(cw * 0.7, 16), "cc-" + c.voice, c.contested)}<title>${c.n} · ${esc(c.lead)}</title></a>`));
   heads.forEach(([k, yy]) => {
     o.push(`<text class="cc-ln cc-mxh" x="0" y="${yy}">${k} · ${LAYER[k].en}</text><line class="cc-mxr" x1="0" x2="${W}" y1="${yy + 4}" y2="${yy + 4}"/>`);
   });
   rows.forEach(([k, key, lab]) => {
     const yy = gy[k + ":" + key];
-    const txt = k === 4 ? `<a href="/en/claims/${key}/"><text class="cc-mxl" x="10" y="${yy + 11.5}">${esc(lab)}</text></a>` : `<text class="cc-mxl" x="10" y="${yy + 11.5}">${esc(lab)}</text>`;
+    const txt = k === 4 ? `<a href="/en/claims/${key}/" data-concept="${key}"><text class="cc-mxl" x="10" y="${yy + 11.5}">${esc(lab)}</text></a>` : `<text class="cc-mxl" x="10" y="${yy + 11.5}">${esc(lab)}</text>`;
     o.push(txt + `<line class="cc-mxg" x1="${lx}" x2="${W}" y1="${yy + rh}" y2="${yy + rh}"/>`);
   });
   cols.forEach((c, i) => {
@@ -279,5 +281,5 @@ module.exports = {
   claims: rows, byId, concepts, themes, reader, layers: LAYER,
   svg: core(rows, { W: 1248, cls: "cc-main" }),
   matrix: matrix(rows),
-  counts: { claims: rows.length, concepts: concepts.length, relations: EDGES.length, names: L.NAMES.length, topics: L.TOPICS.length, themes: L.THEMES.length }
+  counts: { claims: rows.length, concepts: concepts.length, relations: EDGES.length, names: L.NAMES.length, topics: L.TOPICS.length, themes: L.THEMES.length, shapes: rows.reduce((o, r) => (o[r.shape] = (o[r.shape] || 0) + 1, o), {}) }
 };
