@@ -1487,7 +1487,8 @@ module.exports = [
       { title: "A Conversation With Ari Emanuel About Entertainment and AI", url: "/curated/2026-10-15-stratechery-ari-emanuel-entertainment-ai/", _source: "curated" },
       { title: "The Disruption Machine", url: "/curated/2014-06-16-lepore-disruption-machine-newyorker/", _source: "curated" },
       { title: "AI on the Ballot", url: "/curated/2026-11-04-thompson-ai-on-the-ballot-stratechery/", _source: "curated" },
-      { title: "China's AI stock-market struggles are a warning", url: "/curated/2026-11-03-economist-borsa-cina-ai/", _source: "curated" }
+      { title: "China's AI stock-market struggles are a warning", url: "/curated/2026-11-03-economist-borsa-cina-ai/", _source: "curated" },
+      { title: "Can the AI boom make enough money to sustain itself?", url: "/curated/2026-11-12-economist-ricavi-boom-ai/", _source: "curated" }
     ]
   },
   {
@@ -2501,7 +2502,8 @@ module.exports = [
       { title: "How Employment is Changing at Anthropic", url: "/curated/2026-10-16-wilmers-lavoro-anthropic-institute/", _source: "curated" },
       { title: "Financial Predictionization", url: "/curated/2026-11-05-levine-pacing-frontier-cartello-bloomberg/", _source: "curated" },
       { title: "China's AI stock-market struggles are a warning", url: "/curated/2026-11-03-economist-borsa-cina-ai/", _source: "curated" },
-      { title: "Aaronson-Ambainis Conjecture proved! (By AI, of course)", url: "/curated/2026-11-08-aaronson-congettura-dimostrata-ai-shtetl/", _source: "curated" }
+      { title: "Aaronson-Ambainis Conjecture proved! (By AI, of course)", url: "/curated/2026-11-08-aaronson-congettura-dimostrata-ai-shtetl/", _source: "curated" },
+      { title: "Can the AI boom make enough money to sustain itself?", url: "/curated/2026-11-12-economist-ricavi-boom-ai/", _source: "curated" }
     ]
   },
   {
@@ -3332,7 +3334,8 @@ module.exports = [
       { title: "Game Decompilation, Is This Legal?, A Well-Trodden Path", url: "/curated/2026-10-06-stratechery-game-decompilation/", _source: "curated" },
       { title: "A Conversation With Ari Emanuel About Entertainment and AI", url: "/curated/2026-10-15-stratechery-ari-emanuel-entertainment-ai/", _source: "curated" },
       { title: "An Interview with Palantir CTO Shyam Sankar About the AI Religious War", url: "/curated/2026-10-29-thompson-sankar-palantir-stratechery/", _source: "curated" },
-      { title: "AI on the Ballot", url: "/curated/2026-11-04-thompson-ai-on-the-ballot-stratechery/", _source: "curated" }
+      { title: "AI on the Ballot", url: "/curated/2026-11-04-thompson-ai-on-the-ballot-stratechery/", _source: "curated" },
+      { title: "An Interview With Roblox CEO David Baszucki About Aggregating Play", url: "/curated/2026-11-12-thompson-baszucki-roblox-stratechery/", _source: "curated" }
     ]
   },
   {
@@ -3397,7 +3400,8 @@ module.exports = [
     articles: [
       { title: "La colonizzazione del giudizio", url: "/curated/2026-06-12-corriere-colonizzazione-giudizio/", _source: "curated" },
       { title: "The End of the Future", url: "/curated/2026-06-15-fp-end-of-the-future/", _source: "curated" },
-      { title: "Naomi Klein: 'Extreme wealth has a deranging effect. It turns you into a supremacist'", url: "/curated/2026-09-18-klein-end-times-fascism-guardian/", _source: "curated" }
+      { title: "Naomi Klein: 'Extreme wealth has a deranging effect. It turns you into a supremacist'", url: "/curated/2026-09-18-klein-end-times-fascism-guardian/", _source: "curated" },
+      { title: "I profeti del codice", url: "/curated/2026-10-20-garcia-carbajo-profeti-del-codice-sole24ore/", _source: "curated" }
     ]
   },
   {
@@ -3753,7 +3757,8 @@ module.exports = [
       { title: "Naomi Klein: 'Extreme wealth has a deranging effect. It turns you into a supremacist'", url: "/curated/2026-09-18-klein-end-times-fascism-guardian/", _source: "curated" },
       { title: "Intelligenza artificiale e rischio estinzione, che cosa pensano (davvero) gli scienziati?", url: "/curated/2026-09-26-signorelli-rischio-estinzione-scienziati-backdoor/", _source: "curated" },
       { title: "Elon Musk’s Grokipedia is littered with mistakes. But Wikipedia could still learn some things from it.", url: "/curated/2026-11-02-adair-grokipedia-errori-niemanlab/", _source: "curated" },
-      { title: "What It Took to Dismantle the Most Powerful Company in the World", url: "/curated/2026-08-28-dalrymple-compagnia-indie-big-tech-nyt/", _source: "curated" }
+      { title: "What It Took to Dismantle the Most Powerful Company in the World", url: "/curated/2026-08-28-dalrymple-compagnia-indie-big-tech-nyt/", _source: "curated" },
+      { title: "I profeti del codice", url: "/curated/2026-10-20-garcia-carbajo-profeti-del-codice-sole24ore/", _source: "curated" }
     ]
   },
   {
@@ -3969,7 +3974,9 @@ module.exports = [
       { title: "Nvidia Chief, Jensen Huang, Is Seen as Target of Chinese Spy Plot", url: "/curated/2026-10-29-swan-haberman-huang-spionaggio-nyt/", _source: "curated" },
       { title: "Is the Nvidia Affair Securities Fraud?", url: "/curated/2026-11-09-levine-nvidia-flussi-di-cassa-ai-bloomberg/", _source: "curated" },
       { title: "Jensen Huang's Affair, The Culper Report, Huang's Righteousness", url: "/curated/2026-11-09-thompson-huang-culper-presunzione-stratechery/", _source: "curated" },
-      { title: "The Jensen Huang Story Gets Worse, Washington vs. New York, Silicon Valley", url: "/curated/2026-11-10-thompson-huang-tre-citta-stratechery/", _source: "curated" }
+      { title: "The Jensen Huang Story Gets Worse, Washington vs. New York, Silicon Valley", url: "/curated/2026-11-10-thompson-huang-tre-citta-stratechery/", _source: "curated" },
+      { title: "I profeti del codice", url: "/curated/2026-10-20-garcia-carbajo-profeti-del-codice-sole24ore/", _source: "curated" },
+      { title: "Jensen Huang and the end of the 'lol nothing matters' era of American politics", url: "/curated/2026-11-12-newton-huang-culto-fondatore-platformer/", _source: "curated" }
     ]
   },
   {
@@ -3996,7 +4003,8 @@ module.exports = [
       { title: "Stocks Plunge as Midterm Results Renew A.I. Anxiety", url: "/curated/2026-11-05-rennison-borsa-midterm-ai-nyt/", _source: "curated" },
       { title: "Is the Nvidia Affair Securities Fraud?", url: "/curated/2026-11-09-levine-nvidia-flussi-di-cassa-ai-bloomberg/", _source: "curated" },
       { title: "Jensen Huang's Affair, The Culper Report, Huang's Righteousness", url: "/curated/2026-11-09-thompson-huang-culper-presunzione-stratechery/", _source: "curated" },
-      { title: "The Jensen Huang Story Gets Worse, Washington vs. New York, Silicon Valley", url: "/curated/2026-11-10-thompson-huang-tre-citta-stratechery/", _source: "curated" }
+      { title: "The Jensen Huang Story Gets Worse, Washington vs. New York, Silicon Valley", url: "/curated/2026-11-10-thompson-huang-tre-citta-stratechery/", _source: "curated" },
+      { title: "Jensen Huang and the end of the 'lol nothing matters' era of American politics", url: "/curated/2026-11-12-newton-huang-culto-fondatore-platformer/", _source: "curated" }
     ]
   },
   {
@@ -4928,7 +4936,8 @@ module.exports = [
       { title: "The search for consciousness inside AI", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" },
       { title: "Don’t mistake chatbot intelligence for consciousness", url: "/curated/2026-08-20-schneider-la-scala-che-non-regge-economist/", _source: "curated" },
       { title: "How Russian Propaganda Learned to Look Finnish", url: "/curated/2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24/", _source: "curated" },
-      { title: "Anti-Waymo campaign relied on op-eds written with AI", url: "/curated/2026-11-08-tani-waymo-editoriali-ai-semafor/", _source: "curated" }
+      { title: "Anti-Waymo campaign relied on op-eds written with AI", url: "/curated/2026-11-08-tani-waymo-editoriali-ai-semafor/", _source: "curated" },
+      { title: "Are AI bots running these Philadelphia and New Jersey news sites?", url: "/curated/2026-11-11-billypenn-siti-zombie-notizie-locali/", _source: "curated" }
     ]
   },
   {
@@ -6001,7 +6010,8 @@ module.exports = [
     note: "La distinzione proposta nel 1972 da Guido Calabresi e A. Douglas Melamed: una regola di proprietà protegge un diritto chiedendo il consenso del titolare prima dell'uso, una regola di responsabilità consente l'uso e impone di risarcire il danno dopo. **Nel sito è lo strumento per discutere il diritto d'autore nell'addestramento dei modelli: quando il permesso preventivo non si può negoziare, la tutela passa dal veto al risarcimento.**",
     articles: [
       { title: "Meta delays rollout of terms that would allow broad scraping of news sites. Legal experts are still skeptical.", url: "/curated/2026-10-26-tameez-meta-scraping-robots-niemanlab/", _source: "curated" },
-      { title: "Permission to Learn: An Economic Approach to AI Copyright", url: "/curated/2026-10-28-gans-permesso-di-imparare-networklawreview/", _source: "curated" }
+      { title: "Permission to Learn: An Economic Approach to AI Copyright", url: "/curated/2026-10-28-gans-permesso-di-imparare-networklawreview/", _source: "curated" },
+      { title: "Yahoo becomes first licensee of 'Spotify-like' collective AI content licensing model", url: "/curated/2026-11-12-guaglione-licenza-collettiva-yahoo-digiday/", _source: "curated" }
     ]
   },
   {
@@ -6011,7 +6021,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q649124"],
     note: "Si ha un effetto di rete quando il valore di un prodotto cresce con il numero di chi lo usa, come per il telefono o per un social network; è la ragione per cui i mercati digitali tendono a concentrarsi su un solo vincitore. **Nel sito interessa la distinzione fra l'effetto che resta dentro un prodotto e quello che arricchisce un intero ecosistema, perché spinge una piattaforma in direzioni opposte verso i concorrenti che ospita.**",
     articles: [
-      { title: "Not All Network Effects Are Red Flags: A Simple Screen for Digital Vertical Mergers", url: "/curated/2026-10-13-johnen-shekhar-effetti-di-rete-networklawreview/", _source: "curated" }
+      { title: "Not All Network Effects Are Red Flags: A Simple Screen for Digital Vertical Mergers", url: "/curated/2026-10-13-johnen-shekhar-effetti-di-rete-networklawreview/", _source: "curated" },
+      { title: "Can the AI boom make enough money to sustain itself?", url: "/curated/2026-11-12-economist-ricavi-boom-ai/", _source: "curated" }
     ]
   },
   {
@@ -6040,7 +6051,8 @@ module.exports = [
     articles: [
       { title: "La bulle et le contrôle", url: "/curated/2026-11-03-durand-valenti-bolla-controllo-grandcontinent/", _source: "curated" },
       { title: "Stocks Plunge as Midterm Results Renew A.I. Anxiety", url: "/curated/2026-11-05-rennison-borsa-midterm-ai-nyt/", _source: "curated" },
-      { title: "Is the Nvidia Affair Securities Fraud?", url: "/curated/2026-11-09-levine-nvidia-flussi-di-cassa-ai-bloomberg/", _source: "curated" }
+      { title: "Is the Nvidia Affair Securities Fraud?", url: "/curated/2026-11-09-levine-nvidia-flussi-di-cassa-ai-bloomberg/", _source: "curated" },
+      { title: "Can the AI boom make enough money to sustain itself?", url: "/curated/2026-11-12-economist-ricavi-boom-ai/", _source: "curated" }
     ]
   },
   {
@@ -6344,7 +6356,8 @@ module.exports = [
     note: "Rischio che il valore di un'impresa dipenda da una sola persona, tanto che la sua perdita o il suo discredito ne riducono le prospettive. **Nel sito interessa quando la persona chiave regge non solo un'azienda ma un settore: allora il rischio individuale diventa sistemico.**",
     articles: [
       { title: "Is the Nvidia Affair Securities Fraud?", url: "/curated/2026-11-09-levine-nvidia-flussi-di-cassa-ai-bloomberg/", _source: "curated" },
-      { title: "The Jensen Huang Story Gets Worse, Washington vs. New York, Silicon Valley", url: "/curated/2026-11-10-thompson-huang-tre-citta-stratechery/", _source: "curated" }
+      { title: "The Jensen Huang Story Gets Worse, Washington vs. New York, Silicon Valley", url: "/curated/2026-11-10-thompson-huang-tre-citta-stratechery/", _source: "curated" },
+      { title: "Jensen Huang and the end of the 'lol nothing matters' era of American politics", url: "/curated/2026-11-12-newton-huang-culto-fondatore-platformer/", _source: "curated" }
     ]
   },
   {
@@ -6354,7 +6367,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q6664469"],
     note: "Informazione su un comune, una provincia o una comunità, prodotta da testate che vivono del rapporto con quel territorio. **Nel sito interessa la sua fragilità economica: dove il mercato non lo regge, lo sostituiscono supplenti, dalle università alle fondazioni, con risorse che non durano.**",
     articles: [
-      { title: "Student journalists are reporting more local news for real audiences. Their professors are exhausted.", url: "/curated/2026-11-09-benton-studenti-giornalismo-locale-niemanlab/", _source: "curated" }
+      { title: "Student journalists are reporting more local news for real audiences. Their professors are exhausted.", url: "/curated/2026-11-09-benton-studenti-giornalismo-locale-niemanlab/", _source: "curated" },
+      { title: "Are AI bots running these Philadelphia and New Jersey news sites?", url: "/curated/2026-11-11-billypenn-siti-zombie-notizie-locali/", _source: "curated" }
     ]
   },
   {
@@ -6374,7 +6388,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q735766"],
     note: "Nella tragedia greca, la tracotanza di chi oltrepassa il limite assegnato agli uomini e ne viene punito; oggi indica la fiducia eccessiva in sé che porta a ignorare regole e avvertimenti. **Nel sito interessa la sua forma moderna: la sicurezza di avere ragione che autorizza a disattendere la legge che si giudica sbagliata.**",
     articles: [
-      { title: "Jensen Huang's Affair, The Culper Report, Huang's Righteousness", url: "/curated/2026-11-09-thompson-huang-culper-presunzione-stratechery/", _source: "curated" }
+      { title: "Jensen Huang's Affair, The Culper Report, Huang's Righteousness", url: "/curated/2026-11-09-thompson-huang-culper-presunzione-stratechery/", _source: "curated" },
+      { title: "Jensen Huang and the end of the 'lol nothing matters' era of American politics", url: "/curated/2026-11-12-newton-huang-culto-fondatore-platformer/", _source: "curated" }
     ]
   },
   {
@@ -6449,6 +6464,73 @@ module.exports = [
     note: "Espressione, presa da Jack Goody e rielaborata da Bruno Latour, per la separazione fra natura e società che la modernità occidentale si attribuisce, e che proietta all'esterno come distinzione fra «noi», che conosciamo la natura, e «loro». **Nel sito interessa la domanda che apre: se la separazione sia una pratica effettiva dei moderni o soltanto il racconto che fanno di sé.**",
     articles: [
       { title: "La grande illusion de la modernité", url: "/curated/2026-11-11-denis-descola-latour-grand-partage-grandcontinent/", _source: "curated" }
+    ]
+  },
+  {
+    name: "siti zombie",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    note: "Siti di notizie che conservano il nome, il dominio e l'archivio di una testata reale ma pubblicano contenuti di scarsa qualità, spesso generati automaticamente, per sfruttarne il posizionamento nei motori di ricerca. **Nel sito interessano come forma estrema di sfruttamento della reputazione: la firma sopravvive al giornalista e alla redazione che la garantivano.**",
+    articles: [
+      { title: "Are AI bots running these Philadelphia and New Jersey news sites?", url: "/curated/2026-11-11-billypenn-siti-zombie-notizie-locali/", _source: "curated" }
+    ]
+  },
+  {
+    name: "gestione collettiva dei diritti",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q12283360"],
+    related: [
+      { name: "regole di proprietà e di responsabilità", why: "La licenza collettiva è una via di mezzo: non vieta l'uso, ma ne fissa un prezzo pagato a tutti secondo regole comuni." }
+    ],
+    note: "Sistema in cui un ente raccoglie i diritti di molti autori o editori, concede licenze agli utilizzatori e ripartisce i compensi secondo regole comuni, come avviene da tempo per la musica. **Nel sito interessa come risposta alla sproporzione fra il singolo editore e la grande azienda di AI: da soli si negozia poco, insieme si fissa un prezzo.**",
+    articles: [
+      { title: "Yahoo becomes first licensee of 'Spotify-like' collective AI content licensing model", url: "/curated/2026-11-12-guaglione-licenza-collettiva-yahoo-digiday/", _source: "curated" }
+    ]
+  },
+  {
+    name: "diversificazione",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q731453"],
+    note: "Distribuzione dei risparmi fra molti investimenti diversi, così da ridurre il rischio senza ridurre il rendimento atteso. Per questo i fondi indice sono la scelta raccomandata ai piccoli investitori. **Nel sito interessa come banco di prova dei consigli dell'AI: un caso in cui adattare la risposta a chi chiede corregge un errore invece di assecondarlo.**",
+    articles: [
+      { title: "Generative AI and Retail Investment", url: "/curated/2026-11-08-baldinger-ai-investitori-al-dettaglio-nyu/", _source: "curated" }
+    ]
+  },
+  {
+    name: "teoria dell'aggregazione",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    note: "Tesi di Ben Thompson secondo cui su internet, dove distribuire non costa nulla, il potere passa da chi controlla l'offerta a chi controlla la domanda: le piattaforme che aggregano gli utenti e li indirizzano verso i contenuti. **Nel sito interessa per ciò che succede quando l'AI rende abbondante anche la produzione: se tutti possono creare, vale chi fa trovare.**",
+    articles: [
+      { title: "An Interview With Roblox CEO David Baszucki About Aggregating Play", url: "/curated/2026-11-12-thompson-baszucki-roblox-stratechery/", _source: "curated" }
+    ]
+  },
+  {
+    name: "culto del fondatore",
+    type: "teoria",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    related: [
+      { name: "rischio della persona chiave", why: "Il culto del fondatore produce il rischio della persona chiave e insieme impedisce di gestirlo." }
+    ],
+    note: "Convinzione, diffusa nel capitale di rischio della Silicon Valley, che i fondatori debbano guidare le proprie aziende senza essere sottoposti al controllo ordinario di investitori e consigli di amministrazione. **Nel sito interessa il suo costo: protegge le scommesse lunghe, ma concentra in una persona sola il potere e il rischio.**",
+    articles: [
+      { title: "I profeti del codice", url: "/curated/2026-10-20-garcia-carbajo-profeti-del-codice-sole24ore/", _source: "curated" },
+      { title: "Jensen Huang and the end of the 'lol nothing matters' era of American politics", url: "/curated/2026-11-12-newton-huang-culto-fondatore-platformer/", _source: "curated" }
+    ]
+  },
+  {
+    name: "archetipo",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q785653"],
+    related: [
+      { name: "culto del fondatore", why: "Il culto del fondatore ha bisogno di un mito: l'archetipo glielo fornisce, e lo sottrae al giudizio ordinario." }
+    ],
+    note: "Nella psicologia di Carl Gustav Jung, figura primordiale e ricorrente dell'immaginario collettivo, come il sovrano, il mago o l'eroe, che dà forma a racconti e comportamenti. **Nel sito interessa come chiave del racconto pubblico dei miliardari della tecnologia: li leggiamo come archetipi, e gli archetipi stanno a un passo dagli dei.**",
+    articles: [
+      { title: "I profeti del codice", url: "/curated/2026-10-20-garcia-carbajo-profeti-del-codice-sole24ore/", _source: "curated" }
     ]
   }
 

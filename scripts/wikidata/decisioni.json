@@ -172,7 +172,10 @@
     "Foreign Agents Registration Act": "Q1263070",
     "ASML": "Q297879",
     "interdipendenza armata": "Q137393000",
-    "grande partage": "Q6980998"
+    "grande partage": "Q6980998",
+    "gestione collettiva dei diritti": "Q12283360",
+    "diversificazione": "Q731453",
+    "archetipo": "Q785653"
   },
   "nessun_qid": {
     "cosmotecnica": "Solo il libro di Yuk Hui ha un elemento: il concetto eredita la geografia dal teorico.",
@@ -224,7 +227,10 @@
     "regole di proprietà e di responsabilità": "Esiste l'elemento del saggio del 1972 (Q7250223), non del concetto; la voce non lo usa come sameAs (03/11/2026)",
     "automazione così così": "Concetto di Acemoglu e Restrepo (2019) senza elemento proprio su Wikidata (05/11/2026)",
     "mercato dei limoni": "Esiste l'elemento del saggio di Akerlof del 1970 (Q555438), non del concetto; la voce non lo usa come sameAs (10/11/2026)",
-    "rischio della persona chiave": "Nessun elemento del concetto; affine Q6398174 (key person insurance), non usato come sameAs (10/11/2026)"
+    "rischio della persona chiave": "Nessun elemento del concetto; affine Q6398174 (key person insurance), non usato come sameAs (10/11/2026)",
+    "siti zombie": "Nessun elemento del concetto; affine Q109561781 (pink-slime journalism), diverso perché riguarda siti di propaganda finanziati, non domini storici rivenduti (13/11/2026)",
+    "teoria dell'aggregazione": "Nessun elemento del concetto; esiste solo un articolo omonimo (Q131147885) (13/11/2026)",
+    "culto del fondatore": "Nessun elemento del concetto; affine Q131742854 (founder mode, Paul Graham), più stretto (13/11/2026)"
   },
   "da_verificare": {},
   "geo": {
