@@ -1,0 +1,223 @@
+{
+  "nota": "Base dell'ultima revisione validata delle descrizioni di argomenti e temi; la usa scripts/check-schede.js. Le note dei concetti hanno la base nel campo revisione di conceptsIndex.js.",
+  "argomenti": {
+    "AI": {
+      "data": "2026-11-13",
+      "pezzi": 185,
+      "writings": 8,
+      "catene": 20
+    },
+    "Geopolitica": {
+      "data": "2026-11-13",
+      "pezzi": 76,
+      "writings": 7,
+      "catene": 10
+    },
+    "Economia": {
+      "data": "2026-11-13",
+      "pezzi": 73,
+      "writings": 0,
+      "catene": 5
+    },
+    "Media": {
+      "data": "2026-11-13",
+      "pezzi": 69,
+      "writings": 0,
+      "catene": 6
+    },
+    "Politica": {
+      "data": "2026-11-13",
+      "pezzi": 68,
+      "writings": 2,
+      "catene": 3
+    },
+    "Cultura": {
+      "data": "2026-11-13",
+      "pezzi": 56,
+      "writings": 0,
+      "catene": 3
+    },
+    "Epistemologia": {
+      "data": "2026-11-13",
+      "pezzi": 58,
+      "writings": 5,
+      "catene": 12
+    },
+    "Filosofia": {
+      "data": "2026-11-13",
+      "pezzi": 57,
+      "writings": 3,
+      "catene": 6
+    },
+    "Editoria": {
+      "data": "2026-11-13",
+      "pezzi": 42,
+      "writings": 0,
+      "catene": 5
+    },
+    "Scienza": {
+      "data": "2026-11-13",
+      "pezzi": 41,
+      "writings": 0,
+      "catene": 4
+    },
+    "Tecnologia": {
+      "data": "2026-11-13",
+      "pezzi": 65,
+      "writings": 0,
+      "catene": 0
+    },
+    "Giornalismo": {
+      "data": "2026-11-13",
+      "pezzi": 29,
+      "writings": 0,
+      "catene": 5
+    },
+    "Formazione": {
+      "data": "2026-11-13",
+      "pezzi": 24,
+      "writings": 1,
+      "catene": 2
+    },
+    "Democrazia": {
+      "data": "2026-11-13",
+      "pezzi": 24,
+      "writings": 2,
+      "catene": 3
+    },
+    "Scrittura": {
+      "data": "2026-11-13",
+      "pezzi": 20,
+      "writings": 3,
+      "catene": 2
+    },
+    "Storia": {
+      "data": "2026-11-13",
+      "pezzi": 21,
+      "writings": 0,
+      "catene": 1
+    },
+    "Sicurezza": {
+      "data": "2026-11-13",
+      "pezzi": 19,
+      "writings": 0,
+      "catene": 0
+    },
+    "Europa": {
+      "data": "2026-11-13",
+      "pezzi": 17,
+      "writings": 0,
+      "catene": 0
+    },
+    "Lavoro": {
+      "data": "2026-11-13",
+      "pezzi": 16,
+      "writings": 0,
+      "catene": 1
+    },
+    "Ricerca": {
+      "data": "2026-11-13",
+      "pezzi": 16,
+      "writings": 0,
+      "catene": 0
+    },
+    "Istituzioni": {
+      "data": "2026-11-13",
+      "pezzi": 14,
+      "writings": 1,
+      "catene": 1
+    },
+    "Comunicazione": {
+      "data": "2026-11-13",
+      "pezzi": 12,
+      "writings": 1,
+      "catene": 1
+    },
+    "Guerra": {
+      "data": "2026-11-13",
+      "pezzi": 19,
+      "writings": 0,
+      "catene": 1
+    },
+    "Marketing": {
+      "data": "2026-11-13",
+      "pezzi": 11,
+      "writings": 0,
+      "catene": 1
+    },
+    "Decisioni": {
+      "data": "2026-11-13",
+      "pezzi": 9,
+      "writings": 0,
+      "catene": 1
+    },
+    "Humanities": {
+      "data": "2026-11-13",
+      "pezzi": 8,
+      "writings": 1,
+      "catene": 0
+    },
+    "Semiconduttori": {
+      "data": "2026-11-13",
+      "pezzi": 8,
+      "writings": 0,
+      "catene": 0
+    },
+    "Cognizione": {
+      "data": "2026-11-13",
+      "pezzi": 12,
+      "writings": 0,
+      "catene": 1
+    },
+    "Italia": {
+      "data": "2026-11-13",
+      "pezzi": 8,
+      "writings": 1,
+      "catene": 1
+    },
+    "Autoritarismo": {
+      "data": "2026-11-13",
+      "pezzi": 6,
+      "writings": 0,
+      "catene": 0
+    },
+    "Femminismo": {
+      "data": "2026-11-13",
+      "pezzi": 7,
+      "writings": 0,
+      "catene": 1
+    },
+    "Claude": {
+      "data": "2026-11-13",
+      "pezzi": 1,
+      "writings": 1,
+      "catene": 0
+    },
+    "Statistica": {
+      "data": "2026-11-13",
+      "pezzi": 21,
+      "writings": 0,
+      "catene": 1
+    }
+  },
+  "temi": {
+    "Epistemologia & AI": {
+      "data": "2026-11-13"
+    },
+    "Geopolitica & potere": {
+      "data": "2026-11-13"
+    },
+    "Editoria & comunicazione": {
+      "data": "2026-11-13"
+    },
+    "Italia & istituzioni": {
+      "data": "2026-11-13"
+    },
+    "Economia & lavoro": {
+      "data": "2026-11-13"
+    },
+    "_introduzione": {
+      "data": "2026-11-13"
+    }
+  }
+}
