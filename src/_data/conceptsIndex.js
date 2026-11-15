@@ -6669,6 +6669,7 @@ module.exports = [
     name: "Duminil-Copin, Hugo",
     type: "persona",
     geo: { modo: "diretta", paesi: ["Francia"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q15461028"],
     related: [
       { name: "dimostrazione assistita dal calcolatore", why: "Per lui una prova verificata in Lean non basta: se nessuno la capisce e la riscrive, resta un albero caduto nella foresta." }
     ],
