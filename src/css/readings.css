@@ -46,7 +46,11 @@ a.rr:hover{background:rgba(242,201,76,.18)}
 .bib{display:grid;grid-template-columns:232px minmax(0,1fr);gap:0 40px;border-top:var(--tv-rule);padding-top:16px;margin-top:36px}
 .bib dl{margin:0;display:grid;grid-template-columns:96px 1fr;gap:6px 14px;font-size:14px;align-content:start}
 .bib dt{font-family:var(--font-sans);font-stretch:74%;font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--cc-soft)}
+<<<<<<< Updated upstream
 .bib dd{margin:0;font-family:var(--font-mono);font-size:13px}
+=======
+.bib dd{margin:0;font-family:var(--font-mono);font-size:13px;overflow-wrap:anywhere;min-width:0}
+>>>>>>> Stashed changes
 .why{font-family:var(--font-serif);font-size:19px;line-height:1.55;margin:0;max-width:58ch}
 .why b{font-family:var(--font-sans);font-stretch:74%;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--color-lab-text);display:block;margin-bottom:6px}
 .ru{margin-top:40px}
@@ -109,3 +113,10 @@ a.rr:hover{background:rgba(242,201,76,.18)}
  .px-r{grid-template-columns:44px 1fr;gap:4px 10px}.px-r > b{grid-row:span 3;font-size:26px}.px-f{font-size:18px}
  .sv{padding:0}.sv-l{height:auto;display:grid;gap:10px;margin-top:10px}.sv-l span{position:static;width:auto}.sv-l span.r{transform:none;text-align:left}.ex-big{font-size:28px}
 }
+<<<<<<< Updated upstream
+=======
+/* titoli non inglesi: l'edizione inglese di riferimento, in piccolo, fra quadre */
+.t-en{font-size:.52em;letter-spacing:0;font-style:normal;color:var(--cc-soft);white-space:normal}
+.rd-h1 .t-en{display:block;font-family:var(--font-serif);font-size:.3em;line-height:1.3;margin-top:.35em}
+.off li .t-en,.rr .ti .t-en{font-size:.82em}
+>>>>>>> Stashed changes

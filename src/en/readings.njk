@@ -25,12 +25,20 @@ og_card: /images/og/og-en-home.png
   {% for w in g.active %}{% set s = R.stages.indexOf(w.status) + 1 %}
   {% if w.url %}<a class="rr" href="{{ w.url }}">{% else %}<div class="rr">{% endif %}
     <span class="au">{{ w.short }}<small>{{ w.year }}</small></span>
+<<<<<<< Updated upstream
     <span class="ti">{{ w.display }}<em>{{ w.underlinings }} underlinings{% if w.rulerZones.length > 1 %} · {{ w.rulerZones.length }} copies{% endif %}{% if w.also_in.length %} · also in {{ w.also_in | join(", ") }}{% endif %}{% if w.extracts.length %} · {{ w.extracts.length }} extract{% endif %}</em></span>
+=======
+    <span class="ti">{{ w.displayHtml | safe }}<em>{{ w.underlinings }} underlinings{% if w.rulerZones.length > 1 %} · {{ w.rulerZones.length }} copies{% endif %}{% if w.also_in.length %} · also in {{ w.also_in | join(", ") }}{% endif %}{% if w.extracts.length %} · {{ w.extracts.length }} extract{% endif %}</em></span>
+>>>>>>> Stashed changes
     <span><span class="st">{% for i in [1,2,3,4,5] %}<i class="{{ 'on' if i <= s }}"></i>{% endfor %}</span><b>{{ SL[w.status] }}{% if w.changed %} · changed{% endif %}</b></span>
     <span class="cl">{% if w.card and w.card.claimsCount %}{{ w.card.claimsCount }} claims{% endif %}</span>
   {% if w.url %}</a>{% else %}</div>{% endif %}
   {% endfor %}
+<<<<<<< Updated upstream
   {% if g.shelf.length %}<details class="off"{% if not g.active.length %} open{% endif %}><summary>On file · {{ g.shelf.length }}</summary><ul>{% for w in g.shelf %}<li><b>{{ w.short }}</b> {{ w.year }} · {{ w.display }}{% if w.also_in.length %} <small>(also in {{ w.also_in | join(", ") }})</small>{% endif %}</li>{% endfor %}</ul></details>{% endif %}
+=======
+  {% if g.shelf.length %}<details class="off"{% if not g.active.length %} open{% endif %}><summary>On file · {{ g.shelf.length }}</summary><ul>{% for w in g.shelf %}<li><b>{{ w.short }}</b> {{ w.year }} · {{ w.displayHtml | safe }}{% if w.also_in.length %} <small>(also in {{ w.also_in | join(", ") }})</small>{% endif %}</li>{% endfor %}</ul></details>{% endif %}
+>>>>>>> Stashed changes
 </section>
 {% endfor %}
 <p class="lic">Paraphrases CC BY-NC 4.0, Claudio Cammarano. Titles stay in their original language, with the English in square brackets. Quoted passages belong to their authors and are kept short; the texts themselves are not distributed.</p>

@@ -249,7 +249,11 @@
      "isbn": "9780521216449",
      "doi": "10.1017/cbo9780511621123",
      "type": "book",
+<<<<<<< Updated upstream
      "status": "underlined",
+=======
+     "status": "drafted",
+>>>>>>> Stashed changes
      "underlinings": 65,
      "last_read": "2026-11-15",
      "changed": false,
@@ -260,32 +264,136 @@
        "collection": "Reading Batch #1",
        "marks": [
         {
+<<<<<<< Updated upstream
          "page": "25",
+=======
+         "page": "19",
+>>>>>>> Stashed changes
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
+<<<<<<< Updated upstream
          "page": "25",
+=======
+         "page": "19",
+>>>>>>> Stashed changes
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
+<<<<<<< Updated upstream
          "page": "25",
+=======
+         "page": "19",
+>>>>>>> Stashed changes
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
+<<<<<<< Updated upstream
+=======
+         "page": "19",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "20",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "20",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "20",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "21",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "21",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "21",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "22",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "22",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "22",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "22",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "22",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "23",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "23",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+>>>>>>> Stashed changes
          "page": "25",
          "role": "structure",
          "heading": "",
          "extract": false
         },
         {
+<<<<<<< Updated upstream
          "page": "26",
          "role": "structure",
+=======
+         "page": "25",
+         "role": "key",
+>>>>>>> Stashed changes
          "heading": "",
          "extract": false
         },
@@ -302,12 +410,17 @@
          "extract": false
         },
         {
+<<<<<<< Updated upstream
          "page": "27",
+=======
+         "page": "26",
+>>>>>>> Stashed changes
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
+<<<<<<< Updated upstream
          "page": "27",
          "role": "key",
          "heading": "",
@@ -327,6 +440,9 @@
         },
         {
          "page": "28",
+=======
+         "page": "26",
+>>>>>>> Stashed changes
          "role": "structure",
          "heading": "",
          "extract": false
@@ -338,6 +454,7 @@
          "extract": false
         },
         {
+<<<<<<< Updated upstream
          "page": "28",
          "role": "key",
          "heading": "",
@@ -368,6 +485,8 @@
          "extract": false
         },
         {
+=======
+>>>>>>> Stashed changes
          "page": "31",
          "role": "key",
          "heading": "",
@@ -380,19 +499,37 @@
          "extract": false
         },
         {
+<<<<<<< Updated upstream
          "page": "32",
+=======
+         "page": "33",
+>>>>>>> Stashed changes
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
+<<<<<<< Updated upstream
          "page": "32",
+=======
+         "page": "33",
+>>>>>>> Stashed changes
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
+<<<<<<< Updated upstream
          "page": "32",
+=======
+         "page": "33",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "34",
+>>>>>>> Stashed changes
          "role": "structure",
          "heading": "",
          "extract": false
@@ -404,6 +541,7 @@
          "extract": false
         },
         {
+<<<<<<< Updated upstream
          "page": "37",
          "role": "key",
          "heading": "",
@@ -435,6 +573,9 @@
         },
         {
          "page": "40",
+=======
+         "page": "35",
+>>>>>>> Stashed changes
          "role": "structure",
          "heading": "",
          "extract": false
@@ -446,12 +587,17 @@
          "extract": false
         },
         {
+<<<<<<< Updated upstream
          "page": "41",
+=======
+         "page": "40",
+>>>>>>> Stashed changes
          "role": "structure",
          "heading": "",
          "extract": false
         },
         {
+<<<<<<< Updated upstream
          "page": "46",
          "role": "key",
          "heading": "",
@@ -465,6 +611,9 @@
         },
         {
          "page": "48",
+=======
+         "page": "42",
+>>>>>>> Stashed changes
          "role": "key",
          "heading": "",
          "extract": false
@@ -477,108 +626,284 @@
        "collection": "Reading Batch #1",
        "marks": [
         {
+<<<<<<< Updated upstream
          "page": "16",
+=======
+         "page": "8",
+>>>>>>> Stashed changes
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
+<<<<<<< Updated upstream
          "page": "16",
+=======
+         "page": "8",
+>>>>>>> Stashed changes
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
+<<<<<<< Updated upstream
          "page": "16",
+=======
+         "page": "8",
+>>>>>>> Stashed changes
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
+<<<<<<< Updated upstream
          "page": "16",
+=======
+         "page": "8",
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
-         "page": "17",
+         "page": "9",
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
-         "page": "17",
+         "page": "9",
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
-         "page": "18",
+         "page": "10",
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
-         "page": "18",
+         "page": "10",
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
-         "page": "18",
+         "page": "10",
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
-         "page": "18",
+         "page": "10",
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
-         "page": "18",
+         "page": "10",
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
-         "page": "18",
+         "page": "10",
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
-         "page": "19",
+         "page": "11",
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
-         "page": "19",
+         "page": "11",
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
-         "page": "19",
+         "page": "11",
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
-         "page": "19",
+         "page": "11",
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
-         "page": "19",
+         "page": "11",
          "role": "structure",
          "heading": "",
          "extract": false
         },
         {
+         "page": "11",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "11",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "12",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "12",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "13",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "13",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "13",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "14",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "14",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "14",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "14",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "14",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "14",
+>>>>>>> Stashed changes
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "17",
+<<<<<<< Updated upstream
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "17",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "18",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "18",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "18",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "18",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "18",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "18",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "19",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "19",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "19",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "19",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "19",
+=======
+>>>>>>> Stashed changes
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+<<<<<<< Updated upstream
          "page": "19",
          "role": "key",
          "heading": "",
@@ -664,6 +989,9 @@
         },
         {
          "page": "26",
+=======
+         "page": "18",
+>>>>>>> Stashed changes
          "role": "key",
          "heading": "",
          "extract": false
@@ -697,7 +1025,11 @@
      "isbn": "9781107286184",
      "doi": "10.1017/9781107286184",
      "type": "book",
+<<<<<<< Updated upstream
      "status": "underlined",
+=======
+     "status": "drafted",
+>>>>>>> Stashed changes
      "underlinings": 41,
      "last_read": "2026-11-05",
      "changed": false,
@@ -708,43 +1040,167 @@
        "collection": "Reading Batch #1",
        "marks": [
         {
+<<<<<<< Updated upstream
          "page": "14",
+=======
+         "page": "7",
+>>>>>>> Stashed changes
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
+<<<<<<< Updated upstream
          "page": "14",
+=======
+         "page": "7",
+>>>>>>> Stashed changes
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
+<<<<<<< Updated upstream
          "page": "14",
+=======
+         "page": "7",
+>>>>>>> Stashed changes
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
+<<<<<<< Updated upstream
          "page": "14",
+=======
+         "page": "7",
+>>>>>>> Stashed changes
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
+<<<<<<< Updated upstream
          "page": "14",
+=======
+         "page": "7",
+>>>>>>> Stashed changes
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
+<<<<<<< Updated upstream
          "page": "14",
+=======
+         "page": "7",
+>>>>>>> Stashed changes
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
+<<<<<<< Updated upstream
          "page": "14",
+=======
+         "page": "7",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "8",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "8",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "9",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "9",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "9",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "9",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "10",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "10",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "10",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "11",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "11",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "13",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "13",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "13",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "13",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "13",
+>>>>>>> Stashed changes
          "role": "key",
          "heading": "",
          "extract": false
@@ -774,6 +1230,7 @@
          "extract": false
         },
         {
+<<<<<<< Updated upstream
          "page": "16",
          "role": "key",
          "heading": "",
@@ -786,31 +1243,49 @@
          "extract": false
         },
         {
+=======
+>>>>>>> Stashed changes
          "page": "17",
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
+<<<<<<< Updated upstream
          "page": "17",
+=======
+         "page": "19",
+>>>>>>> Stashed changes
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
+<<<<<<< Updated upstream
          "page": "17",
+=======
+         "page": "19",
+>>>>>>> Stashed changes
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
+<<<<<<< Updated upstream
          "page": "18",
+=======
+         "page": "19",
+>>>>>>> Stashed changes
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
+<<<<<<< Updated upstream
          "page": "18",
+=======
+         "page": "19",
+>>>>>>> Stashed changes
          "role": "key",
          "heading": "",
          "extract": false
@@ -822,6 +1297,7 @@
          "extract": false
         },
         {
+<<<<<<< Updated upstream
          "page": "20",
          "role": "key",
          "heading": "",
@@ -846,13 +1322,19 @@
          "extract": false
         },
         {
+=======
+>>>>>>> Stashed changes
          "page": "22",
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
+<<<<<<< Updated upstream
          "page": "22",
+=======
+         "page": "23",
+>>>>>>> Stashed changes
          "role": "key",
          "heading": "",
          "extract": false
@@ -876,6 +1358,7 @@
          "extract": false
         },
         {
+<<<<<<< Updated upstream
          "page": "26",
          "role": "key",
          "heading": "",
@@ -895,6 +1378,9 @@
         },
         {
          "page": "26",
+=======
+         "page": "25",
+>>>>>>> Stashed changes
          "role": "key",
          "heading": "",
          "extract": false
@@ -906,6 +1392,7 @@
          "extract": false
         },
         {
+<<<<<<< Updated upstream
          "page": "29",
          "role": "key",
          "heading": "",
@@ -949,6 +1436,9 @@
         },
         {
          "page": "34",
+=======
+         "page": "27",
+>>>>>>> Stashed changes
          "role": "key",
          "heading": "",
          "extract": false
@@ -1151,6 +1641,65 @@
    "blurb": "",
    "works": [
     {
+<<<<<<< Updated upstream
+=======
+     "slug": "popper-1959",
+     "key": "9ZML8HC7",
+     "title": "The Logic of scientific discovery",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Popper",
+       "first": "Karl R."
+      }
+     ],
+     "year": "1959",
+     "publisher": "Routledge",
+     "isbn": "9780415278430",
+     "doi": "",
+     "type": "book",
+     "status": "drafted",
+     "underlinings": 3,
+     "last_read": "2026-11-15",
+     "changed": false,
+     "group": "Readings Batch #1.2 / Bibliography for Checks",
+     "rulers": [
+      {
+       "copy": "P29F49JV",
+       "collection": "Readings Batch #1.2 / Bibliography for Checks",
+       "marks": [
+        {
+         "page": "91",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "91",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "92",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        }
+       ],
+       "counted": 3
+      }
+     ],
+     "also_in": [
+      "AI Projects"
+     ],
+     "keys": [
+      "P29F49JV",
+      "9ZML8HC7"
+     ]
+    },
+    {
+>>>>>>> Stashed changes
      "slug": "staley-2004",
      "key": "3FRG2VW7",
      "title": "Robust Evidence and Secure Evidence Claims",
@@ -1540,7 +2089,11 @@
      "slug": "borges-1944",
      "key": "D4EZSUUY",
      "title": "Ficciones",
+<<<<<<< Updated upstream
      "title_en": "",
+=======
+     "title_en": "Fictions",
+>>>>>>> Stashed changes
      "authors": [
       {
        "last": "Borges",
@@ -1567,7 +2120,11 @@
      "slug": "calvino-1979",
      "key": "GD4WL6MF",
      "title": "Se una notte d'inverno un viaggiatore",
+<<<<<<< Updated upstream
      "title_en": "",
+=======
+     "title_en": "If on a Winter’s Night a Traveler",
+>>>>>>> Stashed changes
      "authors": [
       {
        "last": "Calvino",
@@ -1679,7 +2236,11 @@
      "slug": "eco-1977",
      "key": "6TB8UZ7U",
      "title": "Come si fa una tesi di laurea",
+<<<<<<< Updated upstream
      "title_en": "",
+=======
+     "title_en": "How to Write a Thesis",
+>>>>>>> Stashed changes
      "authors": [
       {
        "last": "Eco",
@@ -2317,6 +2878,7 @@
      ]
     },
     {
+<<<<<<< Updated upstream
      "slug": "popper-1959",
      "key": "9ZML8HC7",
      "title": "The Logic of Scientific Discovery",
@@ -2344,6 +2906,8 @@
      ]
     },
     {
+=======
+>>>>>>> Stashed changes
      "slug": "popper-1963",
      "key": "UQS9ML65",
      "title": "Conjectures and Refutations: The Growth of Scientific Knowledge",
@@ -2861,7 +3425,11 @@
      "slug": "aries-1977",
      "key": "XGQPIEGG",
      "title": "L'homme devant la mort",
+<<<<<<< Updated upstream
      "title_en": "",
+=======
+     "title_en": "The Hour of Our Death",
+>>>>>>> Stashed changes
      "authors": [
       {
        "last": "Ariès",
@@ -2919,7 +3487,11 @@
      "slug": "bergson-1889",
      "key": "2LEIJTFR",
      "title": "Essai sur les données immédiates de la conscience",
+<<<<<<< Updated upstream
      "title_en": "",
+=======
+     "title_en": "Time and Free Will",
+>>>>>>> Stashed changes
      "authors": [
       {
        "last": "Bergson",
@@ -2946,7 +3518,11 @@
      "slug": "bergson-1896",
      "key": "K7FZ7EVW",
      "title": "Matière et mémoire",
+<<<<<<< Updated upstream
      "title_en": "",
+=======
+     "title_en": "Matter and Memory",
+>>>>>>> Stashed changes
      "authors": [
       {
        "last": "Bergson",
@@ -3054,7 +3630,11 @@
      "slug": "durkheim-1895",
      "key": "K9UTLEV8",
      "title": "Les règles de la méthode sociologique",
+<<<<<<< Updated upstream
      "title_en": "",
+=======
+     "title_en": "The Rules of Sociological Method",
+>>>>>>> Stashed changes
      "authors": [
       {
        "last": "Durkheim",
@@ -3081,7 +3661,11 @@
      "slug": "gadamer-1960",
      "key": "I9TMXHVX",
      "title": "Wahrheit und Methode",
+<<<<<<< Updated upstream
      "title_en": "",
+=======
+     "title_en": "Truth and Method",
+>>>>>>> Stashed changes
      "authors": [
       {
        "last": "Gadamer",
@@ -3193,7 +3777,11 @@
      "slug": "heidegger-1927",
      "key": "BBWNYPC2",
      "title": "Sein und Zeit",
+<<<<<<< Updated upstream
      "title_en": "",
+=======
+     "title_en": "Being and Time",
+>>>>>>> Stashed changes
      "authors": [
       {
        "last": "Heidegger",
@@ -3220,7 +3808,11 @@
      "slug": "horkheimer-1947",
      "key": "U9U2LBUN",
      "title": "Dialektik der Aufklärung",
+<<<<<<< Updated upstream
      "title_en": "",
+=======
+     "title_en": "Dialectic of Enlightenment",
+>>>>>>> Stashed changes
      "authors": [
       {
        "last": "Horkheimer",
@@ -3251,7 +3843,11 @@
      "slug": "husserl-1966",
      "key": "3MM4S4IT",
      "title": "Zur Phänomenologie des inneren Zeitbewusstseins",
+<<<<<<< Updated upstream
      "title_en": "",
+=======
+     "title_en": "On the Phenomenology of the Consciousness of Internal Time",
+>>>>>>> Stashed changes
      "authors": [
       {
        "last": "Husserl",
@@ -3305,7 +3901,11 @@
      "slug": "merleau-ponty-1945",
      "key": "8LIVUP4X",
      "title": "Phénoménologie de la perception",
+<<<<<<< Updated upstream
      "title_en": "",
+=======
+     "title_en": "Phenomenology of Perception",
+>>>>>>> Stashed changes
      "authors": [
       {
        "last": "Merleau-Ponty",
@@ -3332,7 +3932,11 @@
      "slug": "merleau-ponty-1960",
      "key": "VV86FYRB",
      "title": "Signes",
+<<<<<<< Updated upstream
      "title_en": "",
+=======
+     "title_en": "Signs",
+>>>>>>> Stashed changes
      "authors": [
       {
        "last": "Merleau-Ponty",
@@ -3359,7 +3963,11 @@
      "slug": "merleau-ponty-1968",
      "key": "JHDJI5TG",
      "title": "Le visible et l'invisible",
+<<<<<<< Updated upstream
      "title_en": "",
+=======
+     "title_en": "The Visible and the Invisible",
+>>>>>>> Stashed changes
      "authors": [
       {
        "last": "Merleau-Ponty",
@@ -3386,7 +3994,11 @@
      "slug": "merleau-ponty-2001",
      "key": "RISGV6BD",
      "title": "Psychologie et pédagogie de l'enfant: Cours de Sorbonne 1949–1952",
+<<<<<<< Updated upstream
      "title_en": "",
+=======
+     "title_en": "Child Psychology and Pedagogy",
+>>>>>>> Stashed changes
      "authors": [
       {
        "last": "Merleau-Ponty",

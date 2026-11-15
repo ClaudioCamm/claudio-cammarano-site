@@ -69,9 +69,12 @@ def dirty_title(t, authors):
     words = set(re.findall(r"[a-z]+", ascii_(t).lower())) - {"and", "et", "al"}
     if names and words and words <= names | set(ascii_(" ".join(a["first"] for a in authors)).lower().split()):
         return "title is made of author names"
+<<<<<<< Updated upstream
     lasts = [a["last"] for a in authors if a["last"]]
     if len(lasts) != len(set(lasts)):
         return "the same author listed twice"
+=======
+>>>>>>> Stashed changes
     return ""
 
 
@@ -131,7 +134,12 @@ def build(c, cfg, slugs, cards_dir):
     bypath = {cpath(k): k for k in colls}
     keyid = {k: i for i, k in c.execute("select itemID, key from items")}
     offsets = cfg.get("offsets", {})
+<<<<<<< Updated upstream
     report = dict(skipped=[], withdrawn=[], changed=[])
+=======
+    report = dict(skipped=[], withdrawn=[], changed=[], notes=[])
+    notes = report["notes"]
+>>>>>>> Stashed changes
 
     def annotations(att, copy_key):
         out = []
@@ -166,6 +174,16 @@ def build(c, cfg, slugs, cards_dir):
                join creatorTypes ct using(creatorTypeID) where ic.itemID=? order by ic.orderIndex""", (i,))]
         # gli autori; curatori e traduttori solo se autori non ce ne sono
         au = [dict(last=l, first=f) for l, f, t in cr_all if t == "author"] or [dict(last=l, first=f) for l, f, t in cr_all]
+<<<<<<< Updated upstream
+=======
+        dedup = []
+        for x in au:                      # "Popper, Popper": lo stesso autore due volte
+            if x["last"] not in [y["last"] for y in dedup]:
+                dedup.append(x)
+        if len(dedup) < len(au):
+            notes.append((field(i, "title")[:70] + f" [{c.execute('select key from items where itemID=?', (i,)).fetchone()[0]}]", "the same author listed twice (fixed on the site)"))
+        au = dedup
+>>>>>>> Stashed changes
         tags = [t.lower() for t in tags_of(i)]
         atts = [r[0] for r in c.execute("select itemID from itemAttachments where parentItemID=?", (i,)) if r[0] not in deleted]
         if typ == "attachment":
@@ -309,7 +327,11 @@ def build(c, cfg, slugs, cards_dir):
                 report["changed"].append((slug, seen_n, n_ann))
         seen_keys.update(p["key"] for p in ps)
         w = dict(slug=slug, key=anchor, title=meta["title"], title_en=cfg.get("titles_en", {}).get(anchor, ""),
+<<<<<<< Updated upstream
                  authors=meta["authors"], year=meta["year"], publisher=meta["publisher"], isbn=meta["isbn"],
+=======
+                 authors=meta["authors"], year=min((p["year"] for p in ps if p["year"]), default=meta["year"]), publisher=meta["publisher"], isbn=meta["isbn"],
+>>>>>>> Stashed changes
                  doi=meta["doi"], type=meta["type"], status=status, underlinings=n_ann, last_read=last_read,
                  changed=bool(card) and n_ann > int(card.get("underlinings", "0") or 0),
                  group=home, rulers=rulers,
@@ -343,6 +365,12 @@ def render_report(data, r):
     if r["withdrawn"]:
         L.append("\nCards whose Zotero document is gone (still online):")
         L += [f"  {f} [{k}]" for f, k in r["withdrawn"]]
+<<<<<<< Updated upstream
+=======
+    if r["notes"]:
+        L.append("\nNotes (on the site already corrected, better fixed in Zotero):")
+        L += [f"  - {t}: {why}" for t, why in r["notes"]]
+>>>>>>> Stashed changes
     if r["skipped"]:
         L.append(f"\nLeft out ({len(r['skipped'])}), to fix in Zotero if wanted:")
         L += [f"  - {t}: {why}" for t, why in r["skipped"]]

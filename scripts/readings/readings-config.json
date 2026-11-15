@@ -40,7 +40,33 @@
  ],
  "same": [],
  "offsets": {
+<<<<<<< Updated upstream
   "GK3UCKC6": 17
  },
  "titles_en": {}
+=======
+  "GK3UCKC6": 17,
+  "E4VX3ZLR": 8,
+  "NER2CLBP": 6,
+  "DC65GENA": 7,
+  "P29F49JV": 29
+ },
+ "titles_en": {
+  "D4EZSUUY": "Fictions",
+  "GD4WL6MF": "If on a Winter’s Night a Traveler",
+  "6TB8UZ7U": "How to Write a Thesis",
+  "XGQPIEGG": "The Hour of Our Death",
+  "2LEIJTFR": "Time and Free Will",
+  "K7FZ7EVW": "Matter and Memory",
+  "K9UTLEV8": "The Rules of Sociological Method",
+  "I9TMXHVX": "Truth and Method",
+  "BBWNYPC2": "Being and Time",
+  "U9U2LBUN": "Dialectic of Enlightenment",
+  "3MM4S4IT": "On the Phenomenology of the Consciousness of Internal Time",
+  "8LIVUP4X": "Phenomenology of Perception",
+  "VV86FYRB": "Signs",
+  "JHDJI5TG": "The Visible and the Invisible",
+  "RISGV6BD": "Child Psychology and Pedagogy"
+ }
+>>>>>>> Stashed changes
 }

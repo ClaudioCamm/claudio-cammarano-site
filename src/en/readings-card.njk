@@ -16,7 +16,11 @@ eleventyComputed:
 <link rel="stylesheet" href="/css/carota.css"><link rel="stylesheet" href="/css/readings.css">
 {% set tab = "readings" %}{% include "components/claims-tabs.njk" %}
 <p class="rd-k" style="margin-top:22px"><a href="/en/claims/readings/">Readings</a> › <a href="/en/claims/readings/#{{ w.groupKey }}">{{ w.groupEn }}</a></p>
+<<<<<<< Updated upstream
 <h1 class="rd-h1 t">{{ w.display }}</h1>
+=======
+<h1 class="rd-h1 t">{{ w.displayHtml | safe }}</h1>
+>>>>>>> Stashed changes
 <p class="rd-lede">{{ w.authorLine }}, {{ w.year }}.{% if C.sections %} {% for s in C.sections %}§{{ s.n }}{% if not loop.last %}, {% endif %}{% endfor %}.{% endif %}</p>
 {% set s = R.stages.indexOf(w.status) + 1 %}
 <div class="st" style="max-width:420px">{% for i in [1,2,3,4,5] %}<i class="{{ 'on' if i <= s }}"></i>{% endfor %}</div>

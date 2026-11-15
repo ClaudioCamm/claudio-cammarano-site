@@ -34,8 +34,17 @@ function checkQuotes(where, o) {
   q.forEach(s => { const n = s.split(/\s+/).length; if (n > MAXW) throw new Error(`[readings] ${where}: a quotation of ${n} words, the limit is ${MAXW}`); });
 }
 
+<<<<<<< Updated upstream
 // titolo in lingua originale, l'inglese fra quadre se c'e'
 const fullTitle = (t, en) => (en ? `${t} [${en}]` : t);
+=======
+// Titoli non inglesi (regola del 15/11/2026): il titolo in lingua originale nel
+// trattamento normale, poi in piccolo, fra quadre, il titolo dell'edizione
+// inglese di riferimento. Testo semplice per <title> e meta, HTML per le pagine.
+const escH = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;");
+const fullTitle = (t, en) => (en ? `${t} [${en}]` : t);
+const titleHtml = (t, en) => (en ? `${escH(t)} <small class="t-en">[${escH(en)}]</small>` : escH(t));
+>>>>>>> Stashed changes
 const authorLine = a => a.map(x => x.last).join(", ");
 const short = a => (a.length > 2 ? `${a[0].last} et al.` : a.map(x => x.last).join(", "));
 
@@ -76,6 +85,10 @@ for (const g of Z.groups) {
     w.short = short(w.authors);
     w.authorLine = authorLine(w.authors);
     w.display = fullTitle(w.title, (card && card.title_en) || w.title_en);
+<<<<<<< Updated upstream
+=======
+    w.displayHtml = titleHtml(w.title, (card && card.title_en) || w.title_en);
+>>>>>>> Stashed changes
     w.card = card || null;
     if (card) w.status = card.status || "drafted";
     w.url = card ? BASE + w.slug + "/" : "";
@@ -89,7 +102,11 @@ for (const x of extracts) {
   x.claimList = claimsIn(x.claims || []);
   const w = byKey[x.zotero];
   if (!w) continue;
+<<<<<<< Updated upstream
   x.work = { slug: w.slug, url: w.url, display: w.display, short: w.short, year: w.year, authorLine: w.authorLine };
+=======
+  x.work = { slug: w.slug, url: w.url, display: w.display, displayHtml: w.displayHtml, short: w.short, year: w.year, authorLine: w.authorLine };
+>>>>>>> Stashed changes
   x.url = BASE + w.slug + "/" + x.slug + "/";
   // il righello dell'estratto: solo i segni delle sue pagine
   const [a, b] = x.book_range || [0, 0];
