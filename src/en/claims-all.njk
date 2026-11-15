@@ -19,10 +19,11 @@ og_card: /images/og/og-en-home.png
    vede tutto. Dati: src/_data/claimPages.js.
    =================================================================== #}
 {% set P = claimPages %}
-<link rel="stylesheet" href="/css/carota.css">
+<link rel="stylesheet" href="/css/carota.css"><link rel="stylesheet" href="/css/readings.css">
 {% set MARK = { point: "•", therefore: "∴", exists: "∃", directive: "!" } %}
 
-<p class="cp-k"><a href="/en/claims/">Claims</a> › All the claims</p>
+{% set tab = "all" %}{% include "components/claims-tabs.njk" %}
+
 <h1 class="cp-h1">All the claims</h1>
 <p class="cp-lede">Every claim on file, verbatim, with the context it was cut from and the five layers it is read through. The paraphrase is mine; the quotation is theirs.</p>
 <p class="al-meta">{{ P.counts.claims }} claims · {{ P.counts.concepts }} concepts · {{ P.counts.relations }} declared relations · in the order of the matrix: theme, topic, concept, weight</p>

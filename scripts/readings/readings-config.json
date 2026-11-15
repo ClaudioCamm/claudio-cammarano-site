@@ -1,0 +1,46 @@
+{
+ "groups": [
+  {
+   "zotero": "Reading Batch #1",
+   "en": "Reading Batch #1",
+   "blurb": ""
+  },
+  {
+   "zotero": "Readings Batch #1.2",
+   "en": "Reading Batch #1.2",
+   "blurb": ""
+  },
+  {
+   "zotero": "Readings Batch #1.2 / Bibliography for Checks",
+   "en": "Bibliography for Checks",
+   "blurb": ""
+  },
+  {
+   "zotero": "AI Projects",
+   "en": "AI Projects",
+   "blurb": ""
+  },
+  {
+   "zotero": "Matter and Memory",
+   "en": "Matter and Memory",
+   "blurb": ""
+  },
+  {
+   "zotero": "Fundaments",
+   "en": "Fundaments",
+   "blurb": ""
+  }
+ ],
+ "copies": [
+  {
+   "copy": "L5GHZDFX",
+   "reference": "CF6AJPCZ",
+   "note": "Peirce, Collected Papers: il testo in Fundaments, la voce in AI Projects"
+  }
+ ],
+ "same": [],
+ "offsets": {
+  "GK3UCKC6": 17
+ },
+ "titles_en": {}
+}

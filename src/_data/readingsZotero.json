@@ -1,0 +1,3687 @@
+{
+ "updated": "2026-11-15",
+ "groups": [
+  {
+   "key": "reading-batch-1",
+   "en": "Reading Batch #1",
+   "blurb": "",
+   "works": [
+    {
+     "slug": "mayo-1996",
+     "key": "GK3UCKC6",
+     "title": "Error and the growth of experimental knowledge",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Mayo",
+       "first": "Deborah G."
+      }
+     ],
+     "year": "1996",
+     "publisher": "University of Chicago Press",
+     "isbn": "9780226511979",
+     "doi": "",
+     "type": "book",
+     "status": "published",
+     "underlinings": 31,
+     "last_read": "2026-11-15",
+     "changed": false,
+     "group": "Reading Batch #1",
+     "rulers": [
+      {
+       "copy": "GK3UCKC6",
+       "collection": "Reading Batch #1",
+       "marks": [
+        {
+         "page": "4",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "4",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "4",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "5",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "5",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "5",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "6",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "6",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "6",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "7",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "8",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "8",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "8",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "9",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "10",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "11",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "11",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "11",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "178",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "178",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "179",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "179",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "180",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "180",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "180",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "180",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "180",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "180",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "181",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "181",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "181",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "182",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        }
+       ],
+       "counted": 32
+      }
+     ],
+     "also_in": [],
+     "keys": [
+      "GK3UCKC6"
+     ]
+    },
+    {
+     "slug": "lakatos-1978",
+     "key": "78L8DZRQ",
+     "title": "The Methodology of Scientific Research Programmes: Philosophical Papers",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Lakatos",
+       "first": "Imre"
+      }
+     ],
+     "year": "1978",
+     "publisher": "Cambridge University Press",
+     "isbn": "9780521216449",
+     "doi": "10.1017/cbo9780511621123",
+     "type": "book",
+     "status": "underlined",
+     "underlinings": 65,
+     "last_read": "2026-11-15",
+     "changed": false,
+     "group": "Reading Batch #1",
+     "rulers": [
+      {
+       "copy": "NER2CLBP",
+       "collection": "Reading Batch #1",
+       "marks": [
+        {
+         "page": "25",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "25",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "25",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "25",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "26",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "26",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "26",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "27",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "27",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "27",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "28",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "28",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "28",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "28",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "28",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "29",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "29",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "31",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "31",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "32",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "32",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "32",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "32",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "34",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "37",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "38",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "39",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "39",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "39",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "40",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "40",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "41",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "46",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "46",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "48",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        }
+       ],
+       "counted": 35
+      },
+      {
+       "copy": "E4VX3ZLR",
+       "collection": "Reading Batch #1",
+       "marks": [
+        {
+         "page": "16",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "16",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "16",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "16",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "17",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "17",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "18",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "18",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "18",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "18",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "18",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "18",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "19",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "19",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "19",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "19",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "19",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "19",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "19",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "20",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "20",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "21",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "21",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "21",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "22",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "22",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "22",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "22",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "22",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "22",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "25",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "26",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        }
+       ],
+       "counted": 32
+      }
+     ],
+     "also_in": [
+      "AI Projects"
+     ],
+     "keys": [
+      "NER2CLBP",
+      "E4VX3ZLR",
+      "78L8DZRQ"
+     ]
+    },
+    {
+     "slug": "mayo-2018",
+     "key": "DC65GENA",
+     "title": "Statistical Inference as Severe Testing: How to Get Beyond the Statistics Wars",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Mayo",
+       "first": "Deborah G."
+      }
+     ],
+     "year": "2018",
+     "publisher": "Cambridge University Press",
+     "isbn": "9781107286184",
+     "doi": "10.1017/9781107286184",
+     "type": "book",
+     "status": "underlined",
+     "underlinings": 41,
+     "last_read": "2026-11-05",
+     "changed": false,
+     "group": "Reading Batch #1",
+     "rulers": [
+      {
+       "copy": "DC65GENA",
+       "collection": "Reading Batch #1",
+       "marks": [
+        {
+         "page": "14",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "14",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "14",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "14",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "14",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "14",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "14",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "15",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "15",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "16",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "16",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "16",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "16",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "17",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "17",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "17",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "18",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "18",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "20",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "20",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "20",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "20",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "20",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "22",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "22",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "23",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "23",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "24",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "26",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "26",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "26",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "26",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "27",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "29",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "30",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "30",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "30",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "31",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "32",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "34",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "34",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        }
+       ],
+       "counted": 41
+      }
+     ],
+     "also_in": [],
+     "keys": [
+      "DC65GENA"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "reading-batch-1-2",
+   "en": "Reading Batch #1.2",
+   "blurb": "",
+   "works": [
+    {
+     "slug": "boudry-2011",
+     "key": "LJ4AKJXP",
+     "title": "Immunizing Strategies and Epistemic Defense Mechanisms",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Boudry",
+       "first": "Maarten"
+      },
+      {
+       "last": "Braeckman",
+       "first": "Johan"
+      }
+     ],
+     "year": "2011",
+     "publisher": "",
+     "isbn": "",
+     "doi": "10.1007/s11406-010-9254-9",
+     "type": "journalArticle",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Readings Batch #1.2",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "LJ4AKJXP"
+     ]
+    },
+    {
+     "slug": "jaynes-2003",
+     "key": "Y4F242U7",
+     "title": "Probability theory: the logic of science",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Jaynes",
+       "first": "E. T."
+      },
+      {
+       "last": "Bretthorst",
+       "first": "G. Larry"
+      }
+     ],
+     "year": "2003",
+     "publisher": "Cambridge University Press",
+     "isbn": "9780521592710",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Readings Batch #1.2",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "Y4F242U7"
+     ]
+    },
+    {
+     "slug": "mayo-1996-ducks",
+     "key": "9WIUJBNC",
+     "title": "Ducks, Rabbits, and Normal Science: Recasting the Kuhn's-eye View of Popper's Demarcation of Science",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Mayo",
+       "first": "Deborah G."
+      }
+     ],
+     "year": "1996",
+     "publisher": "",
+     "isbn": "",
+     "doi": "10.1093/bjps/47.2.271",
+     "type": "journalArticle",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Readings Batch #1.2",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "9WIUJBNC"
+     ]
+    },
+    {
+     "slug": "mayo-2006",
+     "key": "QF79AFTQ",
+     "title": "Severe Testing as a Basic Concept in a Neyman–Pearson Philosophy of Induction",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Mayo",
+       "first": "Deborah G."
+      },
+      {
+       "last": "Spanos",
+       "first": "Aris"
+      }
+     ],
+     "year": "2006",
+     "publisher": "",
+     "isbn": "",
+     "doi": "10.1093/bjps/axl003",
+     "type": "journalArticle",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Readings Batch #1.2",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "QF79AFTQ"
+     ]
+    },
+    {
+     "slug": "ryle-2009",
+     "key": "36IWQ86N",
+     "title": "The concept of mind",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Ryle",
+       "first": "Gilbert"
+      }
+     ],
+     "year": "2009",
+     "publisher": "Routledge",
+     "isbn": "9780415485470",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Readings Batch #1.2",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "36IWQ86N"
+     ]
+    },
+    {
+     "slug": "walton-2014",
+     "key": "JH9GVUX9",
+     "title": "Burden of Proof, Presumption and Argumentation",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Walton",
+       "first": "Douglas"
+      }
+     ],
+     "year": "2014",
+     "publisher": "Cambridge University Press",
+     "isbn": "9781107678828",
+     "doi": "10.1017/cbo9781107110311",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Readings Batch #1.2",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "JH9GVUX9"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "bibliography-for-checks",
+   "en": "Bibliography for Checks",
+   "blurb": "",
+   "works": [
+    {
+     "slug": "staley-2004",
+     "key": "3FRG2VW7",
+     "title": "Robust Evidence and Secure Evidence Claims",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Staley",
+       "first": "Kent W."
+      }
+     ],
+     "year": "2004",
+     "publisher": "",
+     "isbn": "",
+     "doi": "10.1086/423748",
+     "type": "journalArticle",
+     "status": "underlined",
+     "underlinings": 2,
+     "last_read": "2026-11-15",
+     "changed": false,
+     "group": "Readings Batch #1.2 / Bibliography for Checks",
+     "rulers": [
+      {
+       "copy": "3FRG2VW7",
+       "collection": "Readings Batch #1.2 / Bibliography for Checks",
+       "marks": [
+        {
+         "page": "1",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "3",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        }
+       ],
+       "counted": 2
+      }
+     ],
+     "also_in": [],
+     "keys": [
+      "3FRG2VW7"
+     ]
+    },
+    {
+     "slug": "boult-2026",
+     "key": "57B4UWTK",
+     "title": "Epistemic assholes",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Boult",
+       "first": "Cameron"
+      }
+     ],
+     "year": "2026",
+     "publisher": "",
+     "isbn": "",
+     "doi": "10.1007/s11229-026-05816-2",
+     "type": "journalArticle",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Readings Batch #1.2 / Bibliography for Checks",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "57B4UWTK"
+     ]
+    },
+    {
+     "slug": "latour-1986",
+     "key": "MY64WWR9",
+     "title": "Laboratory life: the construction of scientific facts",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Latour",
+       "first": "Bruno"
+      },
+      {
+       "last": "Woolgar",
+       "first": "Steve"
+      }
+     ],
+     "year": "1986",
+     "publisher": "Princeton University Press",
+     "isbn": "9780691028323",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Readings Batch #1.2 / Bibliography for Checks",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "MY64WWR9"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "ai-projects",
+   "en": "AI Projects",
+   "blurb": "",
+   "works": [
+    {
+     "slug": "andreas-2022",
+     "key": "BWFBBGKG",
+     "title": "Language Models as Agent Models",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Andreas",
+       "first": "Jacob"
+      }
+     ],
+     "year": "2022",
+     "publisher": "",
+     "isbn": "",
+     "doi": "",
+     "type": "conferencePaper",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "BWFBBGKG"
+     ]
+    },
+    {
+     "slug": "arendt-1967",
+     "key": "TLN54SV3",
+     "title": "Truth and Politics",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Arendt",
+       "first": "Hannah"
+      }
+     ],
+     "year": "1967",
+     "publisher": "",
+     "isbn": "",
+     "doi": "",
+     "type": "journalArticle",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "TLN54SV3"
+     ]
+    },
+    {
+     "slug": "austin-1962",
+     "key": "HJSYPK8S",
+     "title": "How to Do Things with Words",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Austin",
+       "first": "John L."
+      }
+     ],
+     "year": "1962",
+     "publisher": "Oxford University Press",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [
+      "Matter and Memory"
+     ],
+     "keys": [
+      "YMR9S5G4",
+      "HJSYPK8S"
+     ]
+    },
+    {
+     "slug": "bai-2022",
+     "key": "FD52NGZV",
+     "title": "Constitutional AI: Harmlessness from AI Feedback",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Bai",
+       "first": "Yuntao"
+      },
+      {
+       "last": "others",
+       "first": ""
+      }
+     ],
+     "year": "2022",
+     "publisher": "Anthropic",
+     "isbn": "",
+     "doi": "",
+     "type": "journalArticle",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "FD52NGZV"
+     ]
+    },
+    {
+     "slug": "becker-1986",
+     "key": "EJUUVFBY",
+     "title": "Writing for Social Scientists: How to Start and Finish Your Thesis, Book, or Article",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Becker",
+       "first": "Howard S."
+      }
+     ],
+     "year": "1986",
+     "publisher": "University of Chicago Press",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "EJUUVFBY"
+     ]
+    },
+    {
+     "slug": "bender-2020",
+     "key": "94R6YUQF",
+     "title": "Climbing towards NLU: On Meaning, Form, and Understanding in the Age of Data",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Bender",
+       "first": "Emily M."
+      },
+      {
+       "last": "Koller",
+       "first": "Alexander"
+      }
+     ],
+     "year": "2020",
+     "publisher": "ACL",
+     "isbn": "",
+     "doi": "",
+     "type": "conferencePaper",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "94R6YUQF"
+     ]
+    },
+    {
+     "slug": "bender-2021",
+     "key": "DL8FHZPP",
+     "title": "On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Bender",
+       "first": "Emily M."
+      },
+      {
+       "last": "Gebru",
+       "first": "Timnit"
+      },
+      {
+       "last": "McMillan-Major",
+       "first": "Angelina"
+      },
+      {
+       "last": "Shmitchell",
+       "first": "Shmargaret"
+      }
+     ],
+     "year": "2021",
+     "publisher": "ACM",
+     "isbn": "",
+     "doi": "",
+     "type": "conferencePaper",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "DL8FHZPP"
+     ]
+    },
+    {
+     "slug": "bommasani-2021",
+     "key": "MYFI73RY",
+     "title": "On the Opportunities and Risks of Foundation Models",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Bommasani",
+       "first": "Rishi"
+      },
+      {
+       "last": "others",
+       "first": ""
+      }
+     ],
+     "year": "2021",
+     "publisher": "",
+     "isbn": "",
+     "doi": "",
+     "type": "journalArticle",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "MYFI73RY"
+     ]
+    },
+    {
+     "slug": "bonjour-2003",
+     "key": "MRX7XMV9",
+     "title": "Epistemic Justification: Internalism vs. Externalism, Foundations vs. Virtues",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "BonJour",
+       "first": "Laurence"
+      },
+      {
+       "last": "Sosa",
+       "first": "Ernest"
+      }
+     ],
+     "year": "2003",
+     "publisher": "Blackwell",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "MRX7XMV9"
+     ]
+    },
+    {
+     "slug": "borges-1944",
+     "key": "D4EZSUUY",
+     "title": "Ficciones",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Borges",
+       "first": "Jorge Luis"
+      }
+     ],
+     "year": "1944",
+     "publisher": "Sur",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "D4EZSUUY"
+     ]
+    },
+    {
+     "slug": "calvino-1979",
+     "key": "GD4WL6MF",
+     "title": "Se una notte d'inverno un viaggiatore",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Calvino",
+       "first": "Italo"
+      }
+     ],
+     "year": "1979",
+     "publisher": "Einaudi",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "GD4WL6MF"
+     ]
+    },
+    {
+     "slug": "cartwright-1983",
+     "key": "479KIAZW",
+     "title": "How the Laws of Physics Lie",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Cartwright",
+       "first": "Nancy"
+      }
+     ],
+     "year": "1983",
+     "publisher": "Oxford University Press",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "479KIAZW"
+     ]
+    },
+    {
+     "slug": "chang-2024",
+     "key": "65DMUA2K",
+     "title": "Language Model Behavior: A Comprehensive Survey",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Chang",
+       "first": "Tyler A."
+      },
+      {
+       "last": "Bergen",
+       "first": "Benjamin K."
+      }
+     ],
+     "year": "2024",
+     "publisher": "",
+     "isbn": "",
+     "doi": "",
+     "type": "journalArticle",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "65DMUA2K"
+     ]
+    },
+    {
+     "slug": "coady-1992",
+     "key": "FQ7UG3CE",
+     "title": "Testimony: A Philosophical Study",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Coady",
+       "first": "C.A.J."
+      }
+     ],
+     "year": "1992",
+     "publisher": "Oxford University Press",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "FQ7UG3CE"
+     ]
+    },
+    {
+     "slug": "eco-1977",
+     "key": "6TB8UZ7U",
+     "title": "Come si fa una tesi di laurea",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Eco",
+       "first": "Umberto"
+      }
+     ],
+     "year": "1977",
+     "publisher": "Bompiani",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "6TB8UZ7U"
+     ]
+    },
+    {
+     "slug": "fann-1970",
+     "key": "AXX36J3B",
+     "title": "Peirce's Theory of Abduction",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Fann",
+       "first": "Kuang Tih"
+      }
+     ],
+     "year": "1970",
+     "publisher": "Martinus Nijhoff",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "AXX36J3B"
+     ]
+    },
+    {
+     "slug": "feyerabend-1975",
+     "key": "7SM4YU8I",
+     "title": "Against Method",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Feyerabend",
+       "first": "Paul K."
+      }
+     ],
+     "year": "1975",
+     "publisher": "New Left Books",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "7SM4YU8I"
+     ]
+    },
+    {
+     "slug": "floridi-2011",
+     "key": "BKHBK9TJ",
+     "title": "The Philosophy of Information",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Floridi",
+       "first": "Luciano"
+      }
+     ],
+     "year": "2011",
+     "publisher": "Oxford University Press",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "BKHBK9TJ"
+     ]
+    },
+    {
+     "slug": "floridi-2015",
+     "key": "R4AHLT6P",
+     "title": "Semantic Conceptions of Information",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Floridi",
+       "first": "Luciano"
+      }
+     ],
+     "year": "2015",
+     "publisher": "Metaphysics Research Lab, Stanford University",
+     "isbn": "",
+     "doi": "",
+     "type": "bookSection",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "R4AHLT6P"
+     ]
+    },
+    {
+     "slug": "foot-1972",
+     "key": "T63Q53P3",
+     "title": "Morality as a System of Hypothetical Imperatives",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Foot",
+       "first": "Philippa"
+      }
+     ],
+     "year": "1972",
+     "publisher": "",
+     "isbn": "",
+     "doi": "",
+     "type": "journalArticle",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "T63Q53P3"
+     ]
+    },
+    {
+     "slug": "frankfurt-2005",
+     "key": "M8V73PU3",
+     "title": "On Bullshit",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Frankfurt",
+       "first": "Harry G."
+      }
+     ],
+     "year": "2005",
+     "publisher": "Princeton University Press",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "M8V73PU3"
+     ]
+    },
+    {
+     "slug": "gibbard-2003",
+     "key": "FHRI4IPH",
+     "title": "Thinking How to Live",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Gibbard",
+       "first": "Allan"
+      }
+     ],
+     "year": "2003",
+     "publisher": "Harvard University Press",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "FHRI4IPH"
+     ]
+    },
+    {
+     "slug": "glanzberg-2018",
+     "key": "AR9FC748",
+     "title": "Truth",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Glanzberg",
+       "first": "Michael"
+      }
+     ],
+     "year": "2018",
+     "publisher": "Metaphysics Research Lab, Stanford University",
+     "isbn": "",
+     "doi": "",
+     "type": "bookSection",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "AR9FC748"
+     ]
+    },
+    {
+     "slug": "goldman-1999",
+     "key": "5S2LQRMV",
+     "title": "Knowledge in a Social World",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Goldman",
+       "first": "Alvin I."
+      }
+     ],
+     "year": "1999",
+     "publisher": "Oxford University Press",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "5S2LQRMV"
+     ]
+    },
+    {
+     "slug": "hacking-1965",
+     "key": "T7C28U3E",
+     "title": "Logic of Statistical Inference",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Hacking",
+       "first": "Ian"
+      }
+     ],
+     "year": "1965",
+     "publisher": "Cambridge University Press",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "T7C28U3E"
+     ]
+    },
+    {
+     "slug": "hacking-1983",
+     "key": "UC9UEKYP",
+     "title": "Representing and Intervening: Introductory Topics in the Philosophy of Natural Science",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Hacking",
+       "first": "Ian"
+      }
+     ],
+     "year": "1983",
+     "publisher": "Cambridge University Press",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "UC9UEKYP"
+     ]
+    },
+    {
+     "slug": "ichikawa-2018",
+     "key": "ICSBJPXG",
+     "title": "The Analysis of Knowledge",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Ichikawa",
+       "first": "Jonathan Jenkins"
+      },
+      {
+       "last": "Steup",
+       "first": "Matthias"
+      }
+     ],
+     "year": "2018",
+     "publisher": "Metaphysics Research Lab, Stanford University",
+     "isbn": "",
+     "doi": "",
+     "type": "bookSection",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "ICSBJPXG"
+     ]
+    },
+    {
+     "slug": "kitcher-1993",
+     "key": "MIU59R3R",
+     "title": "The Advancement of Science: Science without Legend, Objectivity without Illusions",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Kitcher",
+       "first": "Philip"
+      }
+     ],
+     "year": "1993",
+     "publisher": "Oxford University Press",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "MIU59R3R"
+     ]
+    },
+    {
+     "slug": "kuhn-1970",
+     "key": "IC7IFMVI",
+     "title": "The Structure of Scientific Revolutions",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Kuhn",
+       "first": "Thomas S."
+      }
+     ],
+     "year": "1970",
+     "publisher": "University of Chicago Press",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "IC7IFMVI"
+     ]
+    },
+    {
+     "slug": "kvanvig-2003",
+     "key": "L7QCQTZP",
+     "title": "The Value of Knowledge and the Pursuit of Understanding",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Kvanvig",
+       "first": "Jonathan L."
+      }
+     ],
+     "year": "2003",
+     "publisher": "Cambridge University Press",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "L7QCQTZP"
+     ]
+    },
+    {
+     "slug": "liang-2022",
+     "key": "Y8SDEKKR",
+     "title": "Holistic Evaluation of Language Models",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Liang",
+       "first": "Percy"
+      },
+      {
+       "last": "others",
+       "first": ""
+      }
+     ],
+     "year": "2022",
+     "publisher": "",
+     "isbn": "",
+     "doi": "",
+     "type": "journalArticle",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "Y8SDEKKR"
+     ]
+    },
+    {
+     "slug": "marcus-2019",
+     "key": "3P223TAN",
+     "title": "Rebooting AI: Building Artificial Intelligence We Can Trust",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Marcus",
+       "first": "Gary"
+      },
+      {
+       "last": "Davis",
+       "first": "Ernest"
+      }
+     ],
+     "year": "2019",
+     "publisher": "Pantheon Books",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "3P223TAN"
+     ]
+    },
+    {
+     "slug": "mitchell-2023",
+     "key": "MUBELFRZ",
+     "title": "The Debate Over Understanding in AI's Large Language Models",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Mitchell",
+       "first": "Melanie"
+      },
+      {
+       "last": "Krakauer",
+       "first": "David C."
+      }
+     ],
+     "year": "2023",
+     "publisher": "",
+     "isbn": "",
+     "doi": "",
+     "type": "journalArticle",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "MUBELFRZ"
+     ]
+    },
+    {
+     "slug": "openai-2023",
+     "key": "XINTTYDM",
+     "title": "GPT-4 Technical Report",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "OpenAI",
+       "first": ""
+      }
+     ],
+     "year": "2023",
+     "publisher": "",
+     "isbn": "",
+     "doi": "",
+     "type": "journalArticle",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "XINTTYDM"
+     ]
+    },
+    {
+     "slug": "pearl-2009",
+     "key": "QRY9RFAZ",
+     "title": "Causality: Models, Reasoning, and Inference",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Pearl",
+       "first": "Judea"
+      }
+     ],
+     "year": "2009",
+     "publisher": "Cambridge University Press",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "QRY9RFAZ"
+     ]
+    },
+    {
+     "slug": "peirce-1903",
+     "key": "IVMWM2N7",
+     "title": "Harvard Lectures on Pragmatism",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Peirce",
+       "first": "Charles Sanders"
+      }
+     ],
+     "year": "1903",
+     "publisher": "Harvard University",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "IVMWM2N7"
+     ]
+    },
+    {
+     "slug": "piantadosi-2022",
+     "key": "7KSC23DU",
+     "title": "Meaning without reference in large language models",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Piantadosi",
+       "first": "Steven T."
+      },
+      {
+       "last": "Hill",
+       "first": "Felix"
+      }
+     ],
+     "year": "2022",
+     "publisher": "",
+     "isbn": "",
+     "doi": "",
+     "type": "journalArticle",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "7KSC23DU"
+     ]
+    },
+    {
+     "slug": "popper-1959",
+     "key": "9ZML8HC7",
+     "title": "The Logic of Scientific Discovery",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Popper",
+       "first": "Karl R."
+      }
+     ],
+     "year": "1959",
+     "publisher": "Hutchinson",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "9ZML8HC7"
+     ]
+    },
+    {
+     "slug": "popper-1963",
+     "key": "UQS9ML65",
+     "title": "Conjectures and Refutations: The Growth of Scientific Knowledge",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Popper",
+       "first": "Karl R."
+      }
+     ],
+     "year": "1963",
+     "publisher": "Routledge",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "UQS9ML65"
+     ]
+    },
+    {
+     "slug": "quine-1969",
+     "key": "9PEV8ATW",
+     "title": "Epistemology Naturalized",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Quine",
+       "first": "Willard Van Orman"
+      }
+     ],
+     "year": "1969",
+     "publisher": "Columbia University Press",
+     "isbn": "",
+     "doi": "",
+     "type": "bookSection",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "9PEV8ATW"
+     ]
+    },
+    {
+     "slug": "reichenbach-1949",
+     "key": "Q5IZKLXP",
+     "title": "The Theory of Probability: An Inquiry into the Logical and Mathematical Foundations of the Calculus of Probability",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Reichenbach",
+       "first": "Hans"
+      }
+     ],
+     "year": "1949",
+     "publisher": "University of California Press",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "Q5IZKLXP"
+     ]
+    },
+    {
+     "slug": "shapiro-2000",
+     "key": "AIYHIYCM",
+     "title": "Thinking About Mathematics: The Philosophy of Mathematics",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Shapiro",
+       "first": "Stewart"
+      }
+     ],
+     "year": "2000",
+     "publisher": "Oxford University Press",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "AIYHIYCM"
+     ]
+    },
+    {
+     "slug": "srivastava-2023",
+     "key": "XCSH2Q5E",
+     "title": "Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Srivastava",
+       "first": "Aarohi"
+      },
+      {
+       "last": "others",
+       "first": ""
+      }
+     ],
+     "year": "2023",
+     "publisher": "",
+     "isbn": "",
+     "doi": "",
+     "type": "journalArticle",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "XCSH2Q5E"
+     ]
+    },
+    {
+     "slug": "steup-2020",
+     "key": "AJAC7BHM",
+     "title": "Epistemology",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Steup",
+       "first": "Matthias"
+      },
+      {
+       "last": "Neta",
+       "first": "Ram"
+      }
+     ],
+     "year": "2020",
+     "publisher": "Metaphysics Research Lab, Stanford University",
+     "isbn": "",
+     "doi": "",
+     "type": "bookSection",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "AJAC7BHM"
+     ]
+    },
+    {
+     "slug": "strunk-1999",
+     "key": "QUPHJXVM",
+     "title": "The Elements of Style",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Strunk",
+       "first": "William"
+      },
+      {
+       "last": "White",
+       "first": "E.B."
+      }
+     ],
+     "year": "1999",
+     "publisher": "Longman",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "QUPHJXVM"
+     ]
+    },
+    {
+     "slug": "vallor-2016",
+     "key": "RASDEJQZ",
+     "title": "Technology and the Virtues: A Philosophical Guide to a Future Worth Wanting",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Vallor",
+       "first": "Shannon"
+      }
+     ],
+     "year": "2016",
+     "publisher": "Oxford University Press",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "RASDEJQZ"
+     ]
+    },
+    {
+     "slug": "van-fraassen-1980",
+     "key": "PJ8CZ53T",
+     "title": "The Scientific Image",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "van Fraassen",
+       "first": "Bas C."
+      }
+     ],
+     "year": "1980",
+     "publisher": "Oxford University Press",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "PJ8CZ53T"
+     ]
+    },
+    {
+     "slug": "vaswani-2017",
+     "key": "HAKD2NLI",
+     "title": "Attention Is All You Need",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Vaswani",
+       "first": "Ashish"
+      },
+      {
+       "last": "Shazeer",
+       "first": "Noam"
+      },
+      {
+       "last": "Parmar",
+       "first": "Niki"
+      },
+      {
+       "last": "Uszkoreit",
+       "first": "Jakob"
+      },
+      {
+       "last": "Jones",
+       "first": "Llion"
+      },
+      {
+       "last": "Gomez",
+       "first": "Aidan N."
+      },
+      {
+       "last": "Kaiser",
+       "first": "Łukasz"
+      },
+      {
+       "last": "Polosukhin",
+       "first": "Illia"
+      }
+     ],
+     "year": "2017",
+     "publisher": "Curran Associates",
+     "isbn": "",
+     "doi": "",
+     "type": "conferencePaper",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "HAKD2NLI"
+     ]
+    },
+    {
+     "slug": "williamson-2007",
+     "key": "Z2595IZY",
+     "title": "The Philosophy of Philosophy",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Williamson",
+       "first": "Timothy"
+      }
+     ],
+     "year": "2007",
+     "publisher": "Blackwell",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "Z2595IZY"
+     ]
+    },
+    {
+     "slug": "wittgenstein-1953",
+     "key": "99ZACNVX",
+     "title": "Philosophical Investigations",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Wittgenstein",
+       "first": "Ludwig"
+      }
+     ],
+     "year": "1953",
+     "publisher": "Blackwell",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [
+      "Matter and Memory"
+     ],
+     "keys": [
+      "99ZACNVX",
+      "YYTVLDND"
+     ]
+    },
+    {
+     "slug": "woodward-2003",
+     "key": "6NE7DQZX",
+     "title": "Making Things Happen: A Theory of Causal Explanation",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Woodward",
+       "first": "James"
+      }
+     ],
+     "year": "2003",
+     "publisher": "Oxford University Press",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "6NE7DQZX"
+     ]
+    },
+    {
+     "slug": "yu-2024",
+     "key": "UTRRGWZ4",
+     "title": "Assessing the potential of LLM-assisted annotation for corpus-based pragmatics and discourse analysis: The case of apology",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Yu",
+       "first": "Danni"
+      },
+      {
+       "last": "Li",
+       "first": "Luyang"
+      },
+      {
+       "last": "Su",
+       "first": "Hang"
+      },
+      {
+       "last": "Fuoli",
+       "first": "Matteo"
+      }
+     ],
+     "year": "2024",
+     "publisher": "",
+     "isbn": "",
+     "doi": "10.1075/ijcl.23087.yu",
+     "type": "journalArticle",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "UTRRGWZ4"
+     ]
+    },
+    {
+     "slug": "zagzebski-2001",
+     "key": "QCFC77WS",
+     "title": "Recovering Understanding",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Zagzebski",
+       "first": "Linda"
+      }
+     ],
+     "year": "2001",
+     "publisher": "Oxford University Press",
+     "isbn": "",
+     "doi": "",
+     "type": "bookSection",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "QCFC77WS"
+     ]
+    },
+    {
+     "slug": "ziems-2024",
+     "key": "9RSYTBM6",
+     "title": "Can Large Language Models Transform Computational Social Science?",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Ziems",
+       "first": "Caleb"
+      },
+      {
+       "last": "Held",
+       "first": "William"
+      },
+      {
+       "last": "Shaikh",
+       "first": "Omar"
+      },
+      {
+       "last": "Chen",
+       "first": "Jiaao"
+      },
+      {
+       "last": "Zhang",
+       "first": "Zhehao"
+      },
+      {
+       "last": "Yang",
+       "first": "Diyi"
+      }
+     ],
+     "year": "2024",
+     "publisher": "",
+     "isbn": "",
+     "doi": "10.1162/coli_a_00502",
+     "type": "journalArticle",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "AI Projects",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "9RSYTBM6"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "matter-and-memory",
+   "en": "Matter and Memory",
+   "blurb": "",
+   "works": [
+    {
+     "slug": "aries-1977",
+     "key": "XGQPIEGG",
+     "title": "L'homme devant la mort",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Ariès",
+       "first": "Philippe"
+      }
+     ],
+     "year": "1977",
+     "publisher": "Éditions du Seuil",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Matter and Memory",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "XGQPIEGG"
+     ]
+    },
+    {
+     "slug": "berger-1966",
+     "key": "XIV5BJ9J",
+     "title": "The Social Construction of Reality",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Berger",
+       "first": "Peter L."
+      },
+      {
+       "last": "Luckmann",
+       "first": "Thomas"
+      }
+     ],
+     "year": "1966",
+     "publisher": "Doubleday",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Matter and Memory",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "XIV5BJ9J"
+     ]
+    },
+    {
+     "slug": "bergson-1889",
+     "key": "2LEIJTFR",
+     "title": "Essai sur les données immédiates de la conscience",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Bergson",
+       "first": "Henri"
+      }
+     ],
+     "year": "1889",
+     "publisher": "Félix Alcan",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Matter and Memory",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "2LEIJTFR"
+     ]
+    },
+    {
+     "slug": "bergson-1896",
+     "key": "K7FZ7EVW",
+     "title": "Matière et mémoire",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Bergson",
+       "first": "Henri"
+      }
+     ],
+     "year": "1896",
+     "publisher": "Félix Alcan",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Matter and Memory",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "K7FZ7EVW"
+     ]
+    },
+    {
+     "slug": "bloom-1984",
+     "key": "SLFYZF5C",
+     "title": "The 2 Sigma Problem: The Search for Methods of Group Instruction as Effective as One-to-One Tutoring",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Bloom",
+       "first": "Benjamin S."
+      }
+     ],
+     "year": "1984",
+     "publisher": "",
+     "isbn": "",
+     "doi": "",
+     "type": "journalArticle",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Matter and Memory",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "SLFYZF5C"
+     ]
+    },
+    {
+     "slug": "canales-2015",
+     "key": "77ARBL9R",
+     "title": "The Physicist and the Philosopher: Einstein, Bergson, and the Debate That Changed Our Understanding of Time",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Canales",
+       "first": "Jimena"
+      }
+     ],
+     "year": "2015",
+     "publisher": "Princeton University Press",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Matter and Memory",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "77ARBL9R"
+     ]
+    },
+    {
+     "slug": "dreyfus-1972",
+     "key": "Y4XR4AJ5",
+     "title": "What Computers Can't Do: A Critique of Artificial Reason",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Dreyfus",
+       "first": "Hubert L."
+      }
+     ],
+     "year": "1972",
+     "publisher": "Harper & Row",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Matter and Memory",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "Y4XR4AJ5"
+     ]
+    },
+    {
+     "slug": "durkheim-1895",
+     "key": "K9UTLEV8",
+     "title": "Les règles de la méthode sociologique",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Durkheim",
+       "first": "Émile"
+      }
+     ],
+     "year": "1895",
+     "publisher": "Félix Alcan",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Matter and Memory",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "K9UTLEV8"
+     ]
+    },
+    {
+     "slug": "gadamer-1960",
+     "key": "I9TMXHVX",
+     "title": "Wahrheit und Methode",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Gadamer",
+       "first": "Hans-Georg"
+      }
+     ],
+     "year": "1960",
+     "publisher": "J.C.B. Mohr",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Matter and Memory",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "I9TMXHVX"
+     ]
+    },
+    {
+     "slug": "gopnik-2009",
+     "key": "3YZAX93L",
+     "title": "The Philosophical Baby: What Children's Minds Tell Us About Truth, Love, and the Meaning of Life",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Gopnik",
+       "first": "Alison"
+      }
+     ],
+     "year": "2009",
+     "publisher": "Farrar, Straus and Giroux",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Matter and Memory",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "3YZAX93L"
+     ]
+    },
+    {
+     "slug": "graeber-2021",
+     "key": "Y47TZIRD",
+     "title": "The Dawn of Everything: A New History of Humanity",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Graeber",
+       "first": "David"
+      },
+      {
+       "last": "Wengrow",
+       "first": "David"
+      }
+     ],
+     "year": "2021",
+     "publisher": "Farrar, Straus and Giroux",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Matter and Memory",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "Y47TZIRD"
+     ]
+    },
+    {
+     "slug": "haraway-1988",
+     "key": "X4AIKRCW",
+     "title": "Situated Knowledges: The Science Question in Feminism and the Privilege of Partial Perspective",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Haraway",
+       "first": "Donna"
+      }
+     ],
+     "year": "1988",
+     "publisher": "",
+     "isbn": "",
+     "doi": "",
+     "type": "bookSection",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Matter and Memory",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "X4AIKRCW"
+     ]
+    },
+    {
+     "slug": "heidegger-1927",
+     "key": "BBWNYPC2",
+     "title": "Sein und Zeit",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Heidegger",
+       "first": "Martin"
+      }
+     ],
+     "year": "1927",
+     "publisher": "Max Niemeyer",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Matter and Memory",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "BBWNYPC2"
+     ]
+    },
+    {
+     "slug": "horkheimer-1947",
+     "key": "U9U2LBUN",
+     "title": "Dialektik der Aufklärung",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Horkheimer",
+       "first": "Max"
+      },
+      {
+       "last": "Adorno",
+       "first": "Theodor W."
+      }
+     ],
+     "year": "1947",
+     "publisher": "Querido",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Matter and Memory",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "U9U2LBUN"
+     ]
+    },
+    {
+     "slug": "husserl-1966",
+     "key": "3MM4S4IT",
+     "title": "Zur Phänomenologie des inneren Zeitbewusstseins",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Husserl",
+       "first": "Edmund"
+      }
+     ],
+     "year": "1966",
+     "publisher": "Martinus Nijhoff",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Matter and Memory",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "3MM4S4IT"
+     ]
+    },
+    {
+     "slug": "lahontan-1703",
+     "key": "7SRWT6HH",
+     "title": "Dialogues de Monsieur le baron de Lahontan et d'un sauvage dans l'Amérique",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Lahontan",
+       "first": "Louis-Armand de Lom d'Arce de"
+      }
+     ],
+     "year": "1703",
+     "publisher": "La Compagnie",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Matter and Memory",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "7SRWT6HH"
+     ]
+    },
+    {
+     "slug": "merleau-ponty-1945",
+     "key": "8LIVUP4X",
+     "title": "Phénoménologie de la perception",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Merleau-Ponty",
+       "first": "Maurice"
+      }
+     ],
+     "year": "1945",
+     "publisher": "Gallimard",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Matter and Memory",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "8LIVUP4X"
+     ]
+    },
+    {
+     "slug": "merleau-ponty-1960",
+     "key": "VV86FYRB",
+     "title": "Signes",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Merleau-Ponty",
+       "first": "Maurice"
+      }
+     ],
+     "year": "1960",
+     "publisher": "Gallimard",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Matter and Memory",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "VV86FYRB"
+     ]
+    },
+    {
+     "slug": "merleau-ponty-1968",
+     "key": "JHDJI5TG",
+     "title": "Le visible et l'invisible",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Merleau-Ponty",
+       "first": "Maurice"
+      }
+     ],
+     "year": "1968",
+     "publisher": "Gallimard",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Matter and Memory",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "JHDJI5TG"
+     ]
+    },
+    {
+     "slug": "merleau-ponty-2001",
+     "key": "RISGV6BD",
+     "title": "Psychologie et pédagogie de l'enfant: Cours de Sorbonne 1949–1952",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Merleau-Ponty",
+       "first": "Maurice"
+      }
+     ],
+     "year": "2001",
+     "publisher": "Verdier",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Matter and Memory",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "RISGV6BD"
+     ]
+    },
+    {
+     "slug": "nagel-1986",
+     "key": "Y5M6E2WQ",
+     "title": "The View from Nowhere",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Nagel",
+       "first": "Thomas"
+      }
+     ],
+     "year": "1986",
+     "publisher": "Oxford University Press",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Matter and Memory",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "Y5M6E2WQ"
+     ]
+    },
+    {
+     "slug": "polanyi-1966",
+     "key": "MVMRSZ5H",
+     "title": "The Tacit Dimension",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Polanyi",
+       "first": "Michael"
+      }
+     ],
+     "year": "1966",
+     "publisher": "Doubleday",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Matter and Memory",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "MVMRSZ5H"
+     ]
+    },
+    {
+     "slug": "russell-1905",
+     "key": "HV9FX2BS",
+     "title": "On Denoting",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Russell",
+       "first": "Bertrand"
+      }
+     ],
+     "year": "1905",
+     "publisher": "",
+     "isbn": "",
+     "doi": "",
+     "type": "journalArticle",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Matter and Memory",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "HV9FX2BS"
+     ]
+    },
+    {
+     "slug": "searle-1995",
+     "key": "9FMD74GF",
+     "title": "The Construction of Social Reality",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Searle",
+       "first": "John R."
+      }
+     ],
+     "year": "1995",
+     "publisher": "Free Press",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Matter and Memory",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "9FMD74GF"
+     ]
+    },
+    {
+     "slug": "turkle-2011",
+     "key": "2NRR65PK",
+     "title": "Alone Together: Why We Expect More from Technology and Less from Each Other",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Turkle",
+       "first": "Sherry"
+      }
+     ],
+     "year": "2011",
+     "publisher": "Basic Books",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Matter and Memory",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "2NRR65PK"
+     ]
+    },
+    {
+     "slug": "varela-1991",
+     "key": "CFM8AK3U",
+     "title": "The Embodied Mind: Cognitive Science and Human Experience",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Varela",
+       "first": "Francisco J."
+      },
+      {
+       "last": "Thompson",
+       "first": "Evan"
+      },
+      {
+       "last": "Rosch",
+       "first": "Eleanor"
+      }
+     ],
+     "year": "1991",
+     "publisher": "MIT Press",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Matter and Memory",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "CFM8AK3U"
+     ]
+    },
+    {
+     "slug": "vygotsky-1978",
+     "key": "GVZ4XJRC",
+     "title": "Mind in Society: The Development of Higher Psychological Processes",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Vygotsky",
+       "first": "Lev S."
+      }
+     ],
+     "year": "1978",
+     "publisher": "Harvard University Press",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Matter and Memory",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "GVZ4XJRC"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "fundaments",
+   "en": "Fundaments",
+   "blurb": "",
+   "works": [
+    {
+     "slug": "peirce-1931",
+     "key": "CF6AJPCZ",
+     "title": "Collected Papers of Charles Sanders Peirce",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Peirce",
+       "first": "Charles Sanders"
+      }
+     ],
+     "year": "1931",
+     "publisher": "Harvard University Press",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Fundaments",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "CF6AJPCZ",
+      "L5GHZDFX"
+     ]
+    },
+    {
+     "slug": "wittgenstein-2004",
+     "key": "EU5A7BHV",
+     "title": "Notebooks 1914 - 1916",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Wittgenstein",
+       "first": "Ludwig"
+      },
+      {
+       "last": "Wright",
+       "first": "Georg Henrik von"
+      },
+      {
+       "last": "Anscombe",
+       "first": "G. E. M."
+      },
+      {
+       "last": "Klemke",
+       "first": "E. D."
+      }
+     ],
+     "year": "2004",
+     "publisher": "Blackwell",
+     "isbn": "9780631124993",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Fundaments",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "EU5A7BHV"
+     ]
+    }
+   ]
+  }
+ ],
+ "withdrawn": []
+}

@@ -1,0 +1,53 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: readings.cards
+  size: 1
+  alias: w
+permalink: "/en/claims/readings/{{ w.slug }}/"
+lang: en
+bodyClass: claims-page
+eleventyComputed:
+  title: "{{ w.short }} {{ w.year }}: {{ w.title }}"
+  description: "Reading card: {{ w.display }} ({{ w.authorLine }}, {{ w.year }}), my paraphrase section by section, with the passages underlined and the claims drawn from it."
+---
+{# Card: una per opera (15/11/2026). Struttura dal file src/readings/cards/*.md, segni da Zotero. #}
+{% set C = w.card %}{% set R = readings %}
+<link rel="stylesheet" href="/css/carota.css"><link rel="stylesheet" href="/css/readings.css">
+{% set tab = "readings" %}{% include "components/claims-tabs.njk" %}
+<p class="rd-k" style="margin-top:22px"><a href="/en/claims/readings/">Readings</a> › <a href="/en/claims/readings/#{{ w.groupKey }}">{{ w.groupEn }}</a></p>
+<h1 class="rd-h1 t">{{ w.display }}</h1>
+<p class="rd-lede">{{ w.authorLine }}, {{ w.year }}.{% if C.sections %} {% for s in C.sections %}§{{ s.n }}{% if not loop.last %}, {% endif %}{% endfor %}.{% endif %}</p>
+{% set s = R.stages.indexOf(w.status) + 1 %}
+<div class="st" style="max-width:420px">{% for i in [1,2,3,4,5] %}<i class="{{ 'on' if i <= s }}"></i>{% endfor %}</div>
+<b class="rd-meta" style="display:block;margin-top:6px">Card {{ w.status }} · {{ w.underlinings }} underlinings · {{ C.claimsCount }} claims drawn{% if w.last_read %} · last read {{ w.last_read }}{% endif %}{% if w.changed %}<span class="flag">Underlinings changed since the card</span>{% endif %}</b>
+<div class="bib"><dl>
+  {% if w.publisher %}<dt>Publisher</dt><dd>{{ w.publisher }}</dd>{% endif %}
+  {% if w.isbn %}<dt>ISBN</dt><dd>{{ w.isbn }}</dd>{% endif %}
+  {% if w.doi %}<dt>DOI</dt><dd><a href="https://doi.org/{{ w.doi }}" rel="external">{{ w.doi }}</a></dd>{% endif %}
+  <dt>Shelf</dt><dd>{{ w.groupEn }}{% if w.also_in.length %}, also {{ w.also_in | join(", ") }}{% endif %}</dd>
+  {% if C.conceptList.length %}<dt>Concepts</dt><dd>{% for k in C.conceptList %}<a href="{{ k.url }}">{{ k.en }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</dd>{% endif %}
+</dl>
+{% if C.why %}<p class="why"><b>Why it is here</b>{{ C.why }}</p>{% endif %}</div>
+
+{% if w.rulerZones.length %}<div class="ru"><p class="rd-k">The underlinings across the pages</p>
+{% for rz in w.rulerZones %}{% if w.rulerZones.length > 1 %}<p class="ru-c">Copy {{ loop.index }} · {{ rz.total }} marks{% if rz.counted < rz.total %}, {{ rz.counted }} not already in another copy{% endif %}</p>{% endif %}{% include "components/ruler.njk" %}{% endfor %}
+<p class="ru-l"><i class="r"></i> structure (red in Zotero) <i class="y"></i> key passage (yellow) <span>book pages · pages not read are folded</span></p></div>{% endif %}
+
+{% for sec in C.sections %}
+{% if sec.extract %}{% set X = null %}{% for x in w.extracts %}{% if x.slug == sec.extract %}{% set X = x %}{% endif %}{% endfor %}
+<section class="sec"><h2>{{ sec.n }} {{ sec.title }}</h2><p class="sp">pp. {{ sec.pages }} · an extract with a card of its own</p>
+{% if X %}<p class="thesis">{{ X.statement | replace("*", "") }}</p><a class="go" href="{{ X.url }}">The extract: {{ X.title }} &#8594;</a>{% endif %}</section>
+{% else %}
+<section class="sec{% if sec.todo %} todo{% endif %}"><h2>{{ sec.n }} {{ sec.title }}</h2><p class="sp">pp. {{ sec.pages }}</p>
+{% if sec.thesis %}<p class="thesis">{{ sec.thesis }}</p>{% endif %}
+{% if sec.steps %}<ol class="fl">{% for st in sec.steps %}<li{% if st.key %} class="key"{% endif %}><b>{{ st.t }}</b> {{ st.d }}{% if st.quote %}<q><span>p. {{ st.page }}</span>“{{ st.quote }}”</q>{% endif %}{% if st.claims %}<span class="cx">{% for n in st.claims %}<a href="{{ R.claimByN[n].url }}">{{ n }} &#8594;</a>{% endfor %}</span>{% endif %}</li>{% endfor %}</ol>{% endif %}
+{% if sec.claims and not sec.steps %}<p class="cx">{% for n in sec.claims %}<a href="{{ R.claimByN[n].url }}">{{ n }} &#8594;</a>{% endfor %}</p>{% endif %}
+</section>
+{% endif %}
+{% endfor %}
+
+<section class="drawn"><p class="rd-k">Claims drawn from this card</p>
+{% for c in C.claimList %}<a href="{{ c.url }}"><b>{{ c.n }}</b><span>{{ c.lead }}<small>{{ c.concepts }} · {{ c.voice }} · w {{ c.w }}</small></span></a>{% else %}<p class="none">No claims drawn yet.</p>{% endfor %}
+</section>
+<p class="lic">Paraphrase CC BY-NC 4.0, Claudio Cammarano. Quoted passages belong to their author and are kept short; the text itself is not distributed. Notes from the Zotero library, updated weekly.</p>

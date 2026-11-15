@@ -1,0 +1,36 @@
+---
+layout: layouts/base.njk
+title: Readings
+description: "What I am reading for the research programme and how far each reading has got: a card for each work, with my paraphrase and the passages I underlined."
+permalink: /en/claims/readings/
+lang: en
+bodyClass: claims-page
+og_card: /images/og/og-en-home.png
+---
+{# Readings (15/11/2026). Dati: src/_data/readings.js (Zotero via scripts/readings/sync.py + schede in src/readings). #}
+{% set R = readings %}
+<link rel="stylesheet" href="/css/carota.css"><link rel="stylesheet" href="/css/readings.css">
+{% set tab = "readings" %}{% include "components/claims-tabs.njk" %}
+<h1 class="rd-h1">Readings</h1>
+<p class="rd-lede">What I am reading for the programme, and how far each reading has got. A card is my paraphrase of a work, section by section, with the passages I underlined; the claims are drawn from the cards.</p>
+<p class="rd-meta">{{ R.groups.length }} shelves · {{ R.total }} works · updated from Zotero {{ R.updated }} · weekly</p>
+{% set LBL = ["On file", "Reading", "Underlined", "Card drafted", "Published"] %}
+{% set SUB = ["on a selected shelf", "opened, under way", "highlights in Zotero", "paraphrase written", "approved, online"] %}
+<div class="pl">{% for n in R.funnel %}<div><b>{{ n }}</b><span>{{ LBL[loop.index0] }}</span><i>{{ SUB[loop.index0] }}</i></div>{% endfor %}</div>
+{% set SL = { "on file": "On file", "reading": "Reading", "underlined": "Underlined", "drafted": "Card drafted", "published": "Card published" } %}
+{% for g in R.groups %}
+<section class="fd" id="{{ g.key }}">
+  <h2>{{ g.en }}</h2>
+  <p>{{ g.count }} works · {{ g.active.length }} under way{% if g.blurb %} · {{ g.blurb }}{% endif %}</p>
+  {% for w in g.active %}{% set s = R.stages.indexOf(w.status) + 1 %}
+  {% if w.url %}<a class="rr" href="{{ w.url }}">{% else %}<div class="rr">{% endif %}
+    <span class="au">{{ w.short }}<small>{{ w.year }}</small></span>
+    <span class="ti">{{ w.display }}<em>{{ w.underlinings }} underlinings{% if w.rulerZones.length > 1 %} · {{ w.rulerZones.length }} copies{% endif %}{% if w.also_in.length %} · also in {{ w.also_in | join(", ") }}{% endif %}{% if w.extracts.length %} · {{ w.extracts.length }} extract{% endif %}</em></span>
+    <span><span class="st">{% for i in [1,2,3,4,5] %}<i class="{{ 'on' if i <= s }}"></i>{% endfor %}</span><b>{{ SL[w.status] }}{% if w.changed %} · changed{% endif %}</b></span>
+    <span class="cl">{% if w.card and w.card.claimsCount %}{{ w.card.claimsCount }} claims{% endif %}</span>
+  {% if w.url %}</a>{% else %}</div>{% endif %}
+  {% endfor %}
+  {% if g.shelf.length %}<details class="off"{% if not g.active.length %} open{% endif %}><summary>On file · {{ g.shelf.length }}</summary><ul>{% for w in g.shelf %}<li><b>{{ w.short }}</b> {{ w.year }} · {{ w.display }}{% if w.also_in.length %} <small>(also in {{ w.also_in | join(", ") }})</small>{% endif %}</li>{% endfor %}</ul></details>{% endif %}
+</section>
+{% endfor %}
+<p class="lic">Paraphrases CC BY-NC 4.0, Claudio Cammarano. Titles stay in their original language, with the English in square brackets. Quoted passages belong to their authors and are kept short; the texts themselves are not distributed.</p>

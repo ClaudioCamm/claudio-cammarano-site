@@ -1,0 +1,38 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: readings.extracts
+  size: 1
+  alias: x
+permalink: "{{ x.url }}"
+lang: en
+bodyClass: claims-page
+eleventyComputed:
+  title: "{{ x.title }} ({{ x.work.short }} {{ x.work.year }}, {{ x.where }})"
+  description: "Extract: {{ x.title }}, from {{ x.work.display }} ({{ x.work.authorLine }}, {{ x.work.year }}), {{ x.where }}. Restated line by line in my notation."
+---
+{# Extract: un testo autonomo dentro un'opera (15/11/2026). Dati da src/readings/extracts/*.md. #}
+{% set R = readings %}
+<link rel="stylesheet" href="/css/carota.css"><link rel="stylesheet" href="/css/readings.css">
+{% set tab = "readings" %}{% include "components/claims-tabs.njk" %}
+<p class="rd-k" style="margin-top:22px"><a href="/en/claims/readings/">Readings</a> › {% if x.work.url %}<a href="{{ x.work.url }}">{{ x.work.short }} {{ x.work.year }}</a>{% else %}{{ x.work.short }} {{ x.work.year }}{% endif %} › Extract</p>
+<p class="ex-kind">Extract · a self-contained text inside a work</p>
+<h1 class="rd-h1 t">{{ x.title }}</h1>
+<p class="rd-lede">{{ x.work.authorLine }}, {% if x.work.url %}<a href="{{ x.work.url }}"><em>{{ x.work.display }}</em></a>{% else %}<em>{{ x.work.display }}</em>{% endif %} ({{ x.work.year }}), {{ x.where }}, pp. {{ x.pages }}.</p>
+{% set s = R.stages.indexOf(x.status) + 1 %}
+<div class="st" style="max-width:420px">{% for i in [1,2,3,4,5] %}<i class="{{ 'on' if i <= s }}"></i>{% endfor %}</div>
+<b class="rd-meta" style="display:block;margin-top:6px">Extract {{ x.status }} · {{ x.claimList.length }} claims drawn</b>
+<section class="ex-st"><p class="rd-k">What it says, in one sentence</p><p class="ex-big">{{ x.statement | mdInline | safe }}</p></section>
+<section class="sec"><h2>The prospectus</h2><p class="sp">{{ x.notation | mdInline | safe }}</p>
+{% for g in x.groups %}<p class="px-g">{{ g.name }}</p>
+{% for r in g.rows %}<div class="px-r{% if r.key %} key{% endif %}"><b>{{ r.id }}</b><span class="px-n">{{ r.name }}</span><span class="px-f">{{ r.formula }}</span><p>{{ r.reading }}</p></div>{% endfor %}{% endfor %}
+</section>
+{% if x.scale %}<section class="sec"><h2>The scale</h2><p class="sp">{{ x.scale.caption }}</p>
+<div class="sv"><div class="sv-b">{% for p in x.scale.points %}<i style="left:{{ p.at * 100 }}%"></i>{% endfor %}<i style="left:100%"></i></div>
+<div class="sv-l">{% for p in x.scale.points %}<span style="left:{{ p.at * 100 }}%"{% if p.right %} class="r"{% endif %}><b>{{ p.label }}</b>{{ p.name }}<br>{{ p.note }}</span>{% endfor %}</div></div>
+{% if x.scale.note %}<p class="ex-note">{{ x.scale.note }}</p>{% endif %}</section>{% endif %}
+{% if x.rulers.length %}<div class="ru"><p class="rd-k">Where it sits in the work</p>{% for rz in x.rulers %}{% include "components/ruler.njk" %}{% endfor %}</div>{% endif %}
+<section class="drawn"><p class="rd-k">Claims drawn from this extract</p>
+{% for c in x.claimList %}<a href="{{ c.url }}"><b>{{ c.n }}</b><span>{{ c.lead }}<small>{{ c.concepts }} · {{ c.voice }} · w {{ c.w }}</small></span></a>{% else %}<p class="none">No claims drawn yet.</p>{% endfor %}
+</section>
+<p class="lic">Paraphrase and notation CC BY-NC 4.0, Claudio Cammarano. The formulations restate the author’s; they are not quotations.{% if x.work.url %} Back to the <a href="{{ x.work.url }}">card of the work</a>.{% endif %}</p>

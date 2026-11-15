@@ -15,8 +15,9 @@ og_card: /images/og/og-en-home.png
    /en/claims/all/ (claims-all.njk). Dati: src/_data/claimPages.js.
    =================================================================== #}
 {% set P = claimPages %}
-<link rel="stylesheet" href="/css/carota.css">
+<link rel="stylesheet" href="/css/carota.css"><link rel="stylesheet" href="/css/readings.css">
 
+{% set tab = "claims" %}{% include "components/claims-tabs.njk" %}
 <h1 class="cp-h1">Claims</h1>
 
 <p class="cp-lede">A scientific claim is not a headline: it withholds itself until you have the context, and no two readers arrive with the same context. So this is not a list to scroll &mdash; it is {{ P.counts.concepts }} questions, and the claims come through them.</p>

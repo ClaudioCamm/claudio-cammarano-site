@@ -1,0 +1,6 @@
+{# barra secondaria della sezione Claims (15/11/2026): imposta "tab" prima dell'include #}
+<nav class="cl-tabs" aria-label="Claims section">
+  <a href="/en/claims/"{% if tab == "claims" %} aria-current="page"{% endif %}>The claims</a>
+  <a href="/en/claims/all/"{% if tab == "all" %} aria-current="page"{% endif %}>All the claims</a>
+  <a href="/en/claims/readings/"{% if tab == "readings" %} aria-current="page"{% endif %}>Readings</a>
+</nav>
