@@ -107,6 +107,24 @@ eleventyExcludeFromCollections: true
   </url>
   {% endfor %}
   <url>
+    <loc>https://claudiocammarano.com/en/claims/readings/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  {% for w in readings.cards %}{% if w.status == "published" %}
+  <url>
+    <loc>https://claudiocammarano.com{{ w.url }}</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  {% endif %}{% for x in w.extracts %}{% if x.status == "published" %}
+  <url>
+    <loc>https://claudiocammarano.com{{ x.url }}</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  {% endif %}{% endfor %}{% endfor %}
+  <url>
     <loc>https://claudiocammarano.com/visualizations/banco-di-misura/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

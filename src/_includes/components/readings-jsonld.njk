@@ -1,0 +1,46 @@
+{# Dati strutturati di una scheda di Readings (15/11/2026): la scheda e' un
+   articolo di Claudio il cui argomento e' l'opera letta (identificata da ISBN
+   e DOI); l'Extract e' un articolo su una parte dell'opera. "rw" e' l'opera,
+   "rx" l'eventuale estratto. #}
+{% set bookUrl = ("https://doi.org/" + rw.doi) if rw.doi else "" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://claudiocammarano.com{{ page.url }}#article",
+      "headline": {{ (rx.title if rx else ("Reading notes: " + rw.display)) | dump | safe }},
+      "description": {{ description | dump | safe }},
+      "url": "https://claudiocammarano.com{{ page.url }}",
+      "inLanguage": "en",
+      "genre": {{ ("Extract: a line-by-line reading" if rx else "Reading card") | dump | safe }},
+      "author": { "@id": "https://claudiocammarano.com/#person" },
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "creativeWorkStatus": {{ ((rx.status if rx else rw.status) or "drafted") | dump | safe }},
+      "isPartOf": { "@type": "CollectionPage", "name": "Readings", "url": "https://claudiocammarano.com/en/claims/readings/" },
+      "about": {
+        "@type": {{ ("Book" if rw.type == "book" else "CreativeWork") | dump | safe }},
+        "name": {{ rw.title | dump | safe }},
+        {% if rw.title_en %}"alternateName": {{ rw.title_en | dump | safe }},{% endif %}
+        "author": [{% for a in rw.authors %}{ "@type": "Person", "name": {{ ((a.first + " " + a.last) | trim) | dump | safe }} }{% if not loop.last %}, {% endif %}{% endfor %}],
+        {% if rw.year %}"datePublished": "{{ rw.year }}",{% endif %}
+        {% if rw.publisher %}"publisher": { "@type": "Organization", "name": {{ rw.publisher | dump | safe }} },{% endif %}
+        {% if rw.isbn %}"isbn": "{{ rw.isbn }}",{% endif %}
+        {% if rw.doi %}"identifier": { "@type": "PropertyValue", "propertyID": "DOI", "value": "{{ rw.doi }}" }, "sameAs": "{{ bookUrl }}",{% endif %}
+        "@id": "https://claudiocammarano.com{{ rw.url or page.url }}#work"
+      }{% if rx %},
+      "mentions": { "@type": "CreativeWork", "name": {{ (rx.where + ", " + rx.title) | dump | safe }}, "isPartOf": { "@id": "https://claudiocammarano.com{{ rw.url }}#work" } }{% endif %}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Claims", "item": "https://claudiocammarano.com/en/claims/" },
+        { "@type": "ListItem", "position": 2, "name": "Readings", "item": "https://claudiocammarano.com/en/claims/readings/" },
+        { "@type": "ListItem", "position": 3, "name": {{ (rw.short + " " + rw.year) | dump | safe }}, "item": "https://claudiocammarano.com{{ rw.url }}" }{% if rx %},
+        { "@type": "ListItem", "position": 4, "name": {{ rx.title | dump | safe }}, "item": "https://claudiocammarano.com{{ rx.url }}" }{% endif %}
+      ]
+    }
+  ]
+}
+</script>

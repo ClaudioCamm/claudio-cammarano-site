@@ -8,15 +8,17 @@ permalink: "/en/claims/readings/{{ w.slug }}/"
 lang: en
 bodyClass: claims-page
 eleventyComputed:
-  title: "{{ w.short }} {{ w.year }}: {{ w.title }}"
-  description: "Reading card: {{ w.display }} ({{ w.authorLine }}, {{ w.year }}), my paraphrase section by section, with the passages underlined and the claims drawn from it."
+  title: "{{ w.display }} ({{ w.short }} {{ w.year }}): reading notes"
+  description: "Reading notes on {{ w.authorLine }}, {{ w.display }} ({{ w.year }}){% if w.isbn %}, ISBN {{ w.isbn }}{% endif %}: a paraphrase section by section{% if w.card.sections %} ({% for s in w.card.sections %}{{ s.title }}{% if not loop.last %}; {% endif %}{% endfor %}){% endif %}, with the passages underlined and the claims drawn from it."
+  noindex: "{{ 'true' if w.status != 'published' else '' }}"
 ---
 {# Card: una per opera (15/11/2026). Struttura dal file src/readings/cards/*.md, segni da Zotero. #}
 {% set C = w.card %}{% set R = readings %}
 <link rel="stylesheet" href="/css/carota.css"><link rel="stylesheet" href="/css/readings.css">
+{% set rw = w %}{% set rx = null %}{% include "components/readings-jsonld.njk" %}
 {% set tab = "readings" %}{% include "components/claims-tabs.njk" %}
 <p class="rd-k" style="margin-top:22px"><a href="/en/claims/readings/">Readings</a> › <a href="/en/claims/readings/#{{ w.groupKey }}">{{ w.groupEn }}</a></p>
-<h1 class="rd-h1 t">{{ w.displayHtml | safe }}</h1>
+<h1 class="rd-h1 t" data-pagefind-meta="title:{{ w.display }} ({{ w.short }} {{ w.year }})">{{ w.displayHtml | safe }}</h1>
 <p class="rd-lede">{{ w.authorLine }}, {{ w.year }}.{% if C.sections %} {% for s in C.sections %}§{{ s.n }}{% if not loop.last %}, {% endif %}{% endfor %}.{% endif %}</p>
 {% set s = R.stages.indexOf(w.status) + 1 %}
 <div class="st" style="max-width:420px">{% for i in [1,2,3,4,5] %}<i class="{{ 'on' if i <= s }}"></i>{% endfor %}</div>

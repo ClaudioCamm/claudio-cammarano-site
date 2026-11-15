@@ -96,6 +96,7 @@ for (const x of extracts) {
   if (!w) continue;
   x.work = { slug: w.slug, url: w.url, display: w.display, displayHtml: w.displayHtml, short: w.short, year: w.year, authorLine: w.authorLine };
   x.url = BASE + w.slug + "/" + x.slug + "/";
+  x.workFull = w;
   // il righello dell'estratto: solo i segni delle sue pagine
   const [a, b] = x.book_range || [0, 0];
   x.rulers = w.rulers.map(r => ({ ...r, marks: r.marks.filter(m => +m.page >= a && +m.page <= b) })).filter(r => r.marks.length).map(zone);
@@ -118,5 +119,11 @@ module.exports = {
   cards: works.filter(w => w.card),
   extracts: extracts.filter(x => x.url),
   claimByN,
+  // per i rimandi: claim -> scheda da cui e' tratto; concetto -> schede
+  cardByClaim: Object.fromEntries(works.filter(w => w.card).flatMap(w => [
+    ...w.card.claimList.map(c => [c.n, { url: w.url, display: w.display, short: w.short, year: w.year }]),
+    ...w.extracts.flatMap(x => x.claimList.map(c => [c.n, { url: x.url, display: x.title, short: w.short, year: w.year }])),
+  ])),
+  cardsByConcept: works.filter(w => w.card).reduce((o, w) => { (w.card.concepts || []).forEach(k => (o[k] = o[k] || []).push({ url: w.url, display: w.display, short: w.short, year: w.year, status: w.status })); return o; }, {}),
   total: works.length,
 };

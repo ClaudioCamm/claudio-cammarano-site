@@ -23,6 +23,9 @@
   const TIPI = [
     [/^\/en\/claims\/c\d{3}\//, 'Claim', 'claim'],
     [/^\/en\/claims\/(all\/)?$/, 'Claims', 'claim'],
+    [/^\/en\/claims\/readings\/[^/]+\/[^/]+\//, 'Extract', 'reading'],
+    [/^\/en\/claims\/readings\/[^/]+\//, 'Reading card', 'reading'],
+    [/^\/en\/claims\/readings\/$/, 'Readings', 'reading'],
     [/^\/en\/claims\/[^/]+\//, 'Concept (research)', 'claim'],
     [/^\/lab\//, 'Lab', 'lab'],
     [/^\/en\//, 'English', 'en'],

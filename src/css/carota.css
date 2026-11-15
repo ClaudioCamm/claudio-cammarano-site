@@ -265,3 +265,5 @@ body.claims-page > .container,body.claims-page .site-header .container{max-width
   .u blockquote{font-size:21px;padding-left:14px}
   .rg-th > h2{font-size:28px;padding:12px 14px 4px}.rg-th > p{padding:0 14px 12px;font-size:15px}.rg-to{padding:9px 14px}
 }
+/* schede di lettura su un concetto (Readings) */
+.rd-onc{list-style:none;margin:0;padding:0}.rd-onc li{border-top:1px solid var(--cc-line);padding:8px 0}.rd-onc a{text-decoration:none;color:inherit;font-family:var(--font-serif);font-size:17px}.rd-onc b{font-family:var(--font-sans);font-stretch:74%;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--cc-log);margin-right:8px}

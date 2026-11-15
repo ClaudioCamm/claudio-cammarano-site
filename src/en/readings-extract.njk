@@ -8,16 +8,18 @@ permalink: "{{ x.url }}"
 lang: en
 bodyClass: claims-page
 eleventyComputed:
-  title: "{{ x.title }} ({{ x.work.short }} {{ x.work.year }}, {{ x.where }})"
-  description: "Extract: {{ x.title }}, from {{ x.work.display }} ({{ x.work.authorLine }}, {{ x.work.year }}), {{ x.where }}. Restated line by line in my notation."
+  title: "{{ x.title }} ({{ x.work.short }} {{ x.work.year }}, {{ x.where }}): a line-by-line reading"
+  description: "{{ x.title }} in {{ x.work.authorLine }}, {{ x.work.display }} ({{ x.work.year }}), {{ x.where }}: what it says in one sentence, then each requirement and criterion restated line by line."
+  noindex: "{{ 'true' if x.status != 'published' else '' }}"
 ---
 {# Extract: un testo autonomo dentro un'opera (15/11/2026). Dati da src/readings/extracts/*.md. #}
 {% set R = readings %}
 <link rel="stylesheet" href="/css/carota.css"><link rel="stylesheet" href="/css/readings.css">
+{% set rw = x.workFull %}{% set rx = x %}{% include "components/readings-jsonld.njk" %}
 {% set tab = "readings" %}{% include "components/claims-tabs.njk" %}
 <p class="rd-k" style="margin-top:22px"><a href="/en/claims/readings/">Readings</a> › {% if x.work.url %}<a href="{{ x.work.url }}">{{ x.work.short }} {{ x.work.year }}</a>{% else %}{{ x.work.short }} {{ x.work.year }}{% endif %} › Extract</p>
 <p class="ex-kind">Extract · a self-contained text inside a work</p>
-<h1 class="rd-h1 t">{{ x.title }}</h1>
+<h1 class="rd-h1 t" data-pagefind-meta="title:{{ x.title }} ({{ x.work.short }} {{ x.work.year }}, {{ x.where }})">{{ x.title }}</h1>
 <p class="rd-lede">{{ x.work.authorLine }}, {% if x.work.url %}<a href="{{ x.work.url }}"><em>{{ x.work.displayHtml | safe }}</em></a>{% else %}<em>{{ x.work.displayHtml | safe }}</em>{% endif %} ({{ x.work.year }}), {{ x.where }}, pp. {{ x.pages }}.</p>
 {% set s = R.stages.indexOf(x.status) + 1 %}
 <div class="st" style="max-width:420px">{% for i in [1,2,3,4,5] %}<i class="{{ 'on' if i <= s }}"></i>{% endfor %}</div>

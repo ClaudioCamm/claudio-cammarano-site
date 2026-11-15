@@ -24,6 +24,8 @@
     {% if translation %}<link rel="alternate" hreflang="{{ translation.lang }}" href="https://claudiocammarano.com{{ translation.url }}">
     <link rel="alternate" hreflang="x-default" href="https://claudiocammarano.com{% if (lang | langcode) == 'it' %}{{ page.url }}{% else %}{{ translation.url }}{% endif %}">
     {% endif %}{# Senza traduzione nessun x-default: le due superfici sono opere distinte (audit 2026, Dec2). #}
+    {# noindex: pagine che restano cercabili nel sito ma non vanno nei motori (es. le bozze di Readings) #}
+    {% if noindex %}<meta name="robots" content="noindex,follow">{% endif %}
     <!-- Open Graph -->
     {# og_title: quando il titolo della scheda social deve dire piu' del
        titolo della pagina, senza allungare il <title>. #}

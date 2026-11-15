@@ -54,4 +54,6 @@ eleventyComputed:
   </ol>
 </section>
 
+{% set rcs = readings.cardsByConcept[k.key] %}{% if rcs and rcs.length %}<p class="cp-k" style="margin-top:28px">Reading cards on this concept</p>
+<ul class="rd-onc">{% for r in rcs %}<li><a href="{{ r.url }}"><b>{{ r.short }} {{ r.year }}</b> {{ r.display }}</a></li>{% endfor %}</ul>{% endif %}
 <p class="cp-more"><a href="/en/claims/#concepts">All {{ claimPages.counts.concepts }} concepts &#8594;</a><a href="/en/claims/all/">All the claims, one by one &#8594;</a></p>

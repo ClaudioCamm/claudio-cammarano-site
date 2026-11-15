@@ -27,6 +27,7 @@ eleventyComputed:
     <blockquote{% if c.doi %} cite="https://doi.org/{{ c.doi }}"{% endif %}>&ldquo;{% for part in c.parts %}{{ part }}{% if not loop.last %} <span class="gap" title="{{ c.cuts[loop.index0] }}">[&hellip;]</span> {% endif %}{% endfor %}&rdquo;</blockquote>
     {% if c.after %}<p class="ctx ctx-a">{{ c.after }}&hellip;</p>{% endif %}
     <p class="gist">{{ c.gist }}</p>
+    {% set rc = readings.cardByClaim[c.n] %}{% if rc %}<p class="cp-k" style="margin-top:14px"><a href="{{ rc.url }}">From the reading card: {{ rc.short }} {{ rc.year }}, {{ rc.display }} &#8594;</a></p>{% endif %}
   </div>
 </div>
 
