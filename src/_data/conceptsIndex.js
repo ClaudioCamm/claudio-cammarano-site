@@ -2994,7 +2994,8 @@ module.exports = [
       { title: "People are rejoicing about the removal of Russian bots from social media – but the truth is far more complicated", url: "/curated/2026-10-13-griffin-bot-russi-yandex-independent/", _source: "curated" },
       { title: "Giordano: “L’Ucraina deve essere difesa, anche dalle false verità”", url: "/curated/2026-10-21-cuzzocrea-giordano-ucraina-repubblica/", _source: "curated" },
       { title: "When Will This War End? The Question Is Meaningless.", url: "/curated/2026-02-15-gumenyuk-quando-finira-guerra-nyt/", _source: "curated" },
-      { title: "L'Ucraina chiusa in un guscio di noce: «Ora lo sappiamo, nessuno ci salverà»", url: "/curated/2026-02-22-giordano-guscio-di-noce-corriere/", _source: "curated" }
+      { title: "L'Ucraina chiusa in un guscio di noce: «Ora lo sappiamo, nessuno ci salverà»", url: "/curated/2026-02-22-giordano-guscio-di-noce-corriere/", _source: "curated" },
+      { title: "The World's Last Chance for Peace", url: "/curated/2026-11-13-sanchez-normalizzazione-guerra-foreignaffairs/", _source: "curated" }
     ]
   },
   {
@@ -3201,7 +3202,8 @@ module.exports = [
       { title: "The Impossible Middle East", url: "/curated/2026-08-27-esfandiary-wasser-daoud-impossible-middle-east-foreignaffairs/", _source: "curated" },
       { title: "She’s Been to Gaza. She Met With the Iranians. Now She Has a Warning.", url: "/curated/2026-10-10-garcia-navarro-spoljaric-croce-rossa-nyt/", _source: "curated" },
       { title: "A Florida local newspaper ran an oped. It was an Iranian AI fake.", url: "/curated/2026-10-09-waldvogel-iran-articoli-ai-giornali-usa-washingtonpost/", _source: "curated" },
-      { title: "Everything is going wrong for Muhammad bin Salman", url: "/curated/2026-10-19-economist-bin-salman-anno-orribile/", _source: "curated" }
+      { title: "Everything is going wrong for Muhammad bin Salman", url: "/curated/2026-10-19-economist-bin-salman-anno-orribile/", _source: "curated" },
+      { title: "The World's Last Chance for Peace", url: "/curated/2026-11-13-sanchez-normalizzazione-guerra-foreignaffairs/", _source: "curated" }
     ]
   },
   {
@@ -5134,7 +5136,8 @@ module.exports = [
       { title: "The New Old Middle East", url: "/curated/2026-07-30-gause-new-old-middle-east-foreignaffairs/", _source: "curated" },
       { title: "Après l’épreuve de la preuve", url: "/curated/2026-10-07-illouz-apres-lepreuve-de-la-preuve-grandcontinent/", _source: "curated" },
       { title: "She’s Been to Gaza. She Met With the Iranians. Now She Has a Warning.", url: "/curated/2026-10-10-garcia-navarro-spoljaric-croce-rossa-nyt/", _source: "curated" },
-      { title: "A Philosopher of War Changes His Mind", url: "/curated/2026-10-22-graupera-walzer-guerra-giusta-newyorker/", _source: "curated" }
+      { title: "A Philosopher of War Changes His Mind", url: "/curated/2026-10-22-graupera-walzer-guerra-giusta-newyorker/", _source: "curated" },
+      { title: "The World's Last Chance for Peace", url: "/curated/2026-11-13-sanchez-normalizzazione-guerra-foreignaffairs/", _source: "curated" }
     ]
   },
   {
@@ -6622,7 +6625,41 @@ module.exports = [
     ],
     note: "Nella psicologia di Carl Gustav Jung, figura primordiale e ricorrente dell'immaginario collettivo, come il sovrano, il mago o l'eroe, che dà forma a racconti e comportamenti. **Nel sito interessa come chiave del racconto pubblico dei miliardari della tecnologia: li leggiamo come archetipi, e gli archetipi stanno a un passo dagli dei.**",
     articles: [
-      { title: "I profeti del codice", url: "/curated/2026-10-20-garcia-carbajo-profeti-del-codice-sole24ore/", _source: "curated" }
+      { title: "I profeti del codice", url: "/curated/2026-10-20-garcia-carbajo-profeti-del-codice-sole24ore/", _source: "curated" },
+      { title: "“Ramayana”, India's biggest film, turns a Hindu god into a star", url: "/curated/2026-11-12-economist-ramayana-film-india/", _source: "curated" }
+    ]
+  },
+  {
+    name: "multilateralismo",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q1413574"],
+    note: "Cooperazione fra molti Stati attraverso regole e istituzioni comuni, come le Nazioni Unite dal 1945, contrapposta alle intese bilaterali e ai gruppi ristretti. L'archivio la incontra quando viene messa in discussione: nel 2026 Pedro Sánchez ne propone una versione estesa, il «maxilateralismo», come argine alla normalizzazione della guerra. **La domanda che la voce tiene aperta è se regole condivise possano ancora vincolare potenze che hanno smesso di riconoscerle.**",
+    articles: [
+      { title: "The World's Last Chance for Peace", url: "/curated/2026-11-13-sanchez-normalizzazione-guerra-foreignaffairs/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Ramayana",
+    type: "testo",
+    geo: { modo: "diretta", paesi: ["India"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q37293"],
+    related: [
+      { name: "archetipo", why: "Ram è l'archetipo del sovrano giusto; per un pubblico che non lo venera, un archetipo senza ombre diventa difficile da raccontare." }
+    ],
+    note: "Poema epico sanscrito attribuito a Valmiki, composto nell'arco di più secoli prima e dopo l'inizio dell'era volgare, che narra le imprese del dio-re Rama contro il demone Ravana. L'archivio lo incontra come materia di un'industria culturale: nel 2026 il cinema indiano ne fa il film più costoso della propria storia e il primo di una serie pensata per il mercato mondiale. **La tensione che la voce porta è quella fra il racconto sacro, che non tollera libertà, e il racconto commerciale, che ne ha bisogno.**",
+    articles: [
+      { title: "“Ramayana”, India's biggest film, turns a Hindu god into a star", url: "/curated/2026-11-12-economist-ramayana-film-india/", _source: "curated" }
+    ]
+  },
+  {
+    name: "soft power",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q1143951"],
+    note: "Espressione coniata da Joseph Nye nel 1990 per la capacità di uno Stato di ottenere ciò che vuole attraendo invece di costringere, attraverso cultura, valori e istituzioni. La variante che interessa è quella industriale: film, serie e videogiochi come veicoli d'influenza, e il limite che incontrano quando un racconto costruito per il pubblico di casa deve piacere al mondo. **Il soft power non si esporta per decisione: un'opera che deve restare fedele per non offendere in patria rischia di restare muta fuori.**",
+    articles: [
+      { title: "“Ramayana”, India's biggest film, turns a Hindu god into a star", url: "/curated/2026-11-12-economist-ramayana-film-india/", _source: "curated" }
     ]
   }
 
