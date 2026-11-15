@@ -4,7 +4,7 @@
 # pp. 19-42): stesso testo, pagine diverse; una scheda sola.
 zotero: NER2CLBP
 status: drafted
-underlinings: 65
+underlinings: 64
 title_en: ""
 concepts: [falsification, claim-type]
 why: "The programme answers to Popper through Lakatos: falsification survives only as a decision, and a decision has to say what is under test and what is taken for granted. That is where the typing of a claim begins."

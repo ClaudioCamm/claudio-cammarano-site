@@ -18,11 +18,7 @@ eleventyComputed:
 <p class="rd-k" style="margin-top:22px"><a href="/en/claims/readings/">Readings</a> › {% if x.work.url %}<a href="{{ x.work.url }}">{{ x.work.short }} {{ x.work.year }}</a>{% else %}{{ x.work.short }} {{ x.work.year }}{% endif %} › Extract</p>
 <p class="ex-kind">Extract · a self-contained text inside a work</p>
 <h1 class="rd-h1 t">{{ x.title }}</h1>
-<<<<<<< Updated upstream
-<p class="rd-lede">{{ x.work.authorLine }}, {% if x.work.url %}<a href="{{ x.work.url }}"><em>{{ x.work.display }}</em></a>{% else %}<em>{{ x.work.display }}</em>{% endif %} ({{ x.work.year }}), {{ x.where }}, pp. {{ x.pages }}.</p>
-=======
 <p class="rd-lede">{{ x.work.authorLine }}, {% if x.work.url %}<a href="{{ x.work.url }}"><em>{{ x.work.displayHtml | safe }}</em></a>{% else %}<em>{{ x.work.displayHtml | safe }}</em>{% endif %} ({{ x.work.year }}), {{ x.where }}, pp. {{ x.pages }}.</p>
->>>>>>> Stashed changes
 {% set s = R.stages.indexOf(x.status) + 1 %}
 <div class="st" style="max-width:420px">{% for i in [1,2,3,4,5] %}<i class="{{ 'on' if i <= s }}"></i>{% endfor %}</div>
 <b class="rd-meta" style="display:block;margin-top:6px">Extract {{ x.status }} · {{ x.claimList.length }} claims drawn</b>
