@@ -834,6 +834,194 @@ const claims = [
     stance: "used",
     relates: [],
     usedIn: []
+  },
+  {
+    id: "lakatos-all-theories-equally-improbable",
+    gist: "If every universal theory has zero probability on any evidence, probability cannot be what separates good theories from bad ones. It is the negative result that pushes the programme, like Peirce and Mayo, to grade procedures rather than hypotheses.",
+    src: "lakatos1978methodology",
+    locus: "p. 11, ch. 1",
+    before: "Of course, replacing proof by probability was a major retreat for justificationist thought. But even this retreat turned out to be insufficient.",
+    claim: "It was soon shown, mainly by Popper's persistent efforts, that under very general conditions all theories have zero probability, whatever the evidence; all theories are not only equally unprovable but also equally improbable.",
+    cuts: [],
+    after: "Many philosophers still argue that the failure to obtain at least a probabilistic solution of the problem of induction means that we \"throw over almost everything that is regarded as knowledge by science and common sense\".",
+    fn: "dato-che-corregge",
+    d1: "D1.4",
+    d1Status: "proposed",
+    stance: "used",
+    relates: [
+      { to: "peirce-frequency-not-probability-of-hypotheses", how: "confirms", why: "Popper's zero-probability result is a reason not to assign probabilities to hypotheses." }
+    ],
+    usedIn: []
+  },
+  {
+    id: "lakatos-dogmatic-falsificationism",
+    gist: "Dogmatic falsificationism treats the experimenter as Nature's neutral voice, delivering verdicts the theory cannot touch. Lakatos sets it up in order to take it apart, and so does the programme: a validator's verdict is itself a theory-laden procedure, not Nature speaking.",
+    src: "lakatos1978methodology",
+    locus: "p. 13, ch. 1",
+    before: "To (non-tautologous) unfalsifiable propositions the dogmatic falsificationist gives short shrift; he brands them 'metaphysical' and denies them scientific standing.",
+    claim: "Dogmatic falsificationists draw a sharp demarcation between the theoretician and the experimenter: the theoretician proposes, the experimenter - in the name of Nature - disposes.",
+    cuts: [],
+    after: "As Weyl put it: 'I wish to record my unbounded admiration for the work of the experimenter in his struggle to wrest interpretable facts from an unyielding Nature who knows so well how to meet our theories with a decisive No - or with an inaudible Yes.'",
+    fn: "strumento-concettuale",
+    d1: "D1.6",
+    d1Status: "proposed",
+    stance: "contested",
+    relates: [],
+    usedIn: []
+  },
+  {
+    id: "popper-decisions-settle-theories",
+    gist: "Every test bottoms out in basic statements that someone decides to accept; logic alone never forces the stop. For the programme this is the status of a coder's label: the verdict rests on a decision under rules, which is why the rules have to be published.",
+    src: "popper1959logic",
+    locus: "§30; Routledge Classics ed., p. 91",
+    before: "A theory is a tool which we test by applying it, and which we judge as to its fitness by the results of its applications.",
+    claim: "From a logical point of view, the testing of a theory depends upon basic statements whose acceptance or rejection, in its turn, depends upon our decisions. Thus it is decisions which settle the fate of theories.",
+    cuts: [],
+    after: "To this extent my answer to the question, ‘how do we select a theory?’ resembles that given by the conventionalist; and like him I say that this choice is in part determined by considerations of utility.",
+    fn: "strumento-concettuale",
+    d1: "D1.14",
+    d1Status: "proposed",
+    stance: "assumed",
+    relates: [],
+    usedIn: []
+  },
+  {
+    id: "popper-basic-statements-by-decision",
+    gist: "What is decided by agreement is the singular observation, not the theory, and no experience justifies it: it is accepted. It is the exact status of an annotation in a validation set, agreed on and therefore open to re-examination.",
+    src: "popper1959logic",
+    locus: "§30; Routledge Classics ed., p. 92",
+    before: "But for me the choice is decisively influenced by the application of the theory and the acceptance of the basic statements in connection with this application; whereas for the conventionalist, aesthetic motives are decisive.",
+    claim: "Thus I differ from the conventionalist in holding that the statements decided by agreement are not universal but singular. And I differ from the positivist in holding that basic statements are not justifiable by our immediate experiences, but are, from the logical point of view, accepted by an act, by a free decision.",
+    cuts: [],
+    after: "(From the psychological point of view this may perhaps be a purposeful and well-adapted reaction.)",
+    fn: "strumento-concettuale",
+    d1: "D1.14",
+    d1Status: "proposed",
+    stance: "assumed",
+    relates: [
+      { to: "popper-decisions-settle-theories", how: "refines", why: "Says which statements the decision falls on: singular ones, accepted by an act rather than justified by experience." }
+    ],
+    usedIn: []
+  },
+  {
+    id: "lakatos-ceteris-paribus-forbids",
+    gist: "A theory forbids an event only under a ceteris paribus clause, so a failed prediction never refutes it alone. For validation, a failed check indicts the whole test setup, not only the claim under test.",
+    src: "lakatos1978methodology",
+    locus: "p. 17, ch. 1",
+    before: "This story strongly suggests that even a most respected scientific theory, like Newton's dynamics and theory of gravitation, may fail to forbid any observable state of affairs.",
+    claim: "Indeed, some scientific theories forbid an event occurring in some specified finite spatio-temporal region (or briefly, a 'singular event') only on the condition that no other factor (possibly hidden in some distant and unspecified spatio-temporal corner of the universe) has any influence on it.",
+    cuts: [],
+    after: "But then such theories never alone contradict a 'basic' statement: they contradict at most a conjunction of a basic statement describing a spatio-temporally singular event and of a universal non-existence statement saying that no other relevant cause is at work anywhere in the universe.",
+    fn: "strumento-concettuale",
+    d1: "D1.3",
+    d1Status: "proposed",
+    stance: "used",
+    relates: [],
+    usedIn: []
+  },
+  {
+    id: "lakatos-equally-undisprovable",
+    gist: "Neither proof, nor probability, nor refutation can be read off the facts: all three fail together. It is the dead end that makes method, not data, the place where rationality has to be rebuilt.",
+    src: "lakatos1978methodology",
+    locus: "p. 19, ch. 1",
+    before: "If, however, still accepting the demarcation criterion of dogmatic falsificationism, we deny that facts can prove propositions, then we certainly end up in complete scepticism: then all science is undoubtedly irrational metaphysics and should be rejected.",
+    claim: "Scientific theories are not only equally unprovable, and equally improbable, but they are also equally undisprovable.",
+    cuts: [],
+    after: "But the recognition that not only the theoretical but all the propositions in science are fallible, means the total collapse of all forms of dogmatic justificationism as theories of scientific rationality.",
+    fn: "dato-che-corregge",
+    d1: "D1.3",
+    d1Status: "proposed",
+    stance: "used",
+    relates: [
+      { to: "lakatos-all-theories-equally-improbable", how: "extends", why: "Adds the third failure: after unprovable and improbable, theories are also undisprovable." }
+    ],
+    usedIn: []
+  },
+  {
+    id: "lakatos-tenacity-irrefutability",
+    gist: "Once ceteris paribus clauses are allowed, a theory that survives every challenge looks more scientific, not less: the reductio of dogmatic falsificationism. A claim that no check can touch is the warning sign, not the achievement.",
+    src: "lakatos1978methodology",
+    locus: "p. 19, ch. 1",
+    before: "Thus 'all swans are white' is either an oddity and easily disprovable or a scientific proposition with a ceteris paribus clause and therefore undisprovable.",
+    claim: "Tenacity of a theory against empirical evidence would then be an argument for rather than against regarding it as 'scientific'. 'Irrefutability' would become a hallmark of science.",
+    cuts: [],
+    after: "To sum up: classical justificationists only admitted proven theories; neoclassical justificationists probable ones; dogmatic falsificationists realized that in either case no theories are admissible.",
+    fn: "strumento-concettuale",
+    d1: "D1.3",
+    d1Status: "proposed",
+    stance: "contested",
+    relates: [
+      { to: "lakatos-ceteris-paribus-forbids", how: "presupposes", why: "The reductio works only once theories are read as carrying a ceteris paribus clause." }
+    ],
+    usedIn: []
+  },
+  {
+    id: "lakatos-prison-of-frameworks",
+    gist: "Conceptual frameworks are made, not given, and can be rebuilt critically. The programme's taxonomy is such a framework: a prison it built and has to be ready to demolish.",
+    src: "lakatos1978methodology",
+    locus: "p. 20, ch. 1",
+    before: "Now conservative 'activists' hold that we are born with our basic expectations; with them we turn the world into 'our world' but must then live for ever in the prison of our world.",
+    claim: "The idea that we live and die in the prison of our 'conceptual framework' was developed primarily by Kant: pessimistic Kantians thought that the real world is for ever unknowable because of this prison, while optimistic Kantians thought that God created our conceptual framework to fit the world. But revolutionary activists believe that conceptual frameworks can be developed and also replaced by new, better ones; it is we who create our 'prisons' and we can also, critically, demolish them.",
+    cuts: [],
+    after: "",
+    fn: "strumento-concettuale",
+    d1: "D1.14",
+    d1Status: "proposed",
+    stance: "assumed",
+    relates: [],
+    usedIn: []
+  },
+  {
+    id: "lakatos-basic-statements-by-fiat",
+    gist: "An observation counts as basic because a trained technique makes it decidable, not because it is given. It describes a coding manual exactly: what makes a label acceptable is that anyone trained on it would reach it.",
+    src: "lakatos1978methodology",
+    locus: "p. 22, ch. 1",
+    before: "The Duhemian conservative conventionalist (or 'methodological justificationist', if you wish) makes unfalsifiable by fiat some (spatiotemporally) universal theories, which are distinguished by their explanatory power, simplicity or beauty.",
+    claim: "Our Popperian revolutionary conventionalist (or 'methodological falsificationist') makes unfalsifiable by fiat some (spatio-temporally) singular statements which are distinguishable by the fact that there exists at the time a 'relevant technique' such that 'anyone who has learned it' will be able to decide that the statement is 'acceptable'. Such a statement may be called an 'observational' or 'basic' statement, but only in inverted commas.",
+    cuts: [],
+    after: "Indeed, the very selection of all such statements is a matter of a decision, which is not based on exclusively psychological considerations.",
+    fn: "metodo-di-lavoro",
+    d1: "D1.6",
+    d1Status: "proposed",
+    stance: "used",
+    relates: [
+      { to: "popper-basic-statements-by-decision", how: "refines", why: "Names what makes the decision non-arbitrary: a learnable technique that anyone trained in it can apply." }
+    ],
+    usedIn: []
+  },
+  {
+    id: "lakatos-background-knowledge-decision",
+    gist: "Every test decides what is under test and what is taken for granted, and that line is a decision, not a fact. In a validation, the judge model and the coding manual are the background knowledge, and the programme has to say so.",
+    src: "lakatos1978methodology",
+    locus: "p. 23, ch. 1",
+    before: "Calling these statements 'observational' is no more than a manner of saying that, in the context of his problem, that is, in testing our gravitational theory, the methodological falsificationist uses radio-optics uncritically, as 'background knowledge'.",
+    claim: "The need for decisions to demarcate the theory under test from unproblematic background knowledge is a characteristic feature of this brand of methodological falsificationism.",
+    cuts: [],
+    after: "(This situation does not really differ from Galileo's 'observation' of Jupiter's satellites: moreover, as some of Galileo's contemporaries rightly pointed out, he relied on a virtually non-existent optical theory - which then was less corroborated, and even less articulated, than present-day radio-optics.",
+    fn: "metodo-di-lavoro",
+    d1: "D1.9",
+    d1Status: "proposed",
+    stance: "used",
+    relates: [],
+    usedIn: []
+  },
+  {
+    id: "lakatos-criticism-with-fallibilism",
+    gist: "Methodological falsificationism keeps hard criticism while admitting every statement is fallible, by making the decisions explicit. It is the stance of a validation protocol: fallible verdicts, stated in advance, applied without prevarication.",
+    src: "lakatos1978methodology",
+    locus: "p. 28, ch. 1",
+    before: "To sum up:",
+    claim: "the methodological falsificationist offers an interesting solution to the problem of combining hard-hitting criticism with fallibilism. Not only does he offer a philosophical basis for falsification after fallibilism had pulled the carpet from under the feet of the dogmatic falsificationist, but he also widens the range of such criticism very considerably.",
+    cuts: [],
+    after: "By putting falsification in a new setting, he saves the attractive code of honour of the dogmatic falsificationist: that scientific honesty consists in specifying, in advance, an experiment such that, if the result contradicts the theory, the theory has to be given up.",
+    fn: "strumento-concettuale",
+    d1: "D1.6",
+    d1Status: "proposed",
+    stance: "used",
+    relates: [
+      { to: "lakatos-dogmatic-falsificationism", how: "contests", why: "Keeps the code of honour of dogmatic falsificationism while dropping the claim that Nature decides." }
+    ],
+    usedIn: []
   }
 ];
 

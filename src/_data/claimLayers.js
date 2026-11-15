@@ -25,13 +25,14 @@
 const claims = require("./claims.js");
 
 const TOPICS = [
-  { key: "claim-types",  en: "Claim types",  claims: ["ontology-precedes-epistemology", "truth-conditions-do-not-transfer", "d1-is-load-bearing", "convergence-is-not-a-link", "arguments-answer-to-arguments"] },
+  { key: "claim-types",  en: "Claim types",  claims: ["ontology-precedes-epistemology", "truth-conditions-do-not-transfer", "d1-is-load-bearing", "convergence-is-not-a-link", "arguments-answer-to-arguments", "lakatos-prison-of-frameworks"] },
   { key: "introspection", en: "Introspection", claims: ["no-metacognition-was-the-wrong-name", "models-lack-epistemic-self-classification", "introspection-is-a-narrow-channel"] },
   { key: "meaning",      en: "Meaning",      claims: ["form-alone-cannot-yield-meaning", "correlation-versus-mechanism", "lms-infer-agent-mental-states"] },
   { key: "annotation",   en: "Annotation",   claims: ["more-annotators-beats-bias-correction", "mode-a-needs-a-blind-recode", "surface-variance-masks-convergence", "reproducibility-is-documentation"] },
   { key: "evaluation",   en: "Evaluation",   claims: ["explicit-about-what-is-not-evaluated", "breakthroughs-are-metric-artefacts", "llm-judges-match-human-agreement"] },
   { key: "truthfulness", en: "Truthfulness", claims: ["inverse-scaling-of-truthfulness", "hallucination-the-standard-definition"] },
-  { key: "severity",     en: "Severity",     claims: ["mayo-severity-weak", "mayo-severity-strong", "mayo-lift-off", "mayo-arguing-from-error", "mayo-forward-looking-methods", "mayo-severity-meta-methodology", "mayo-neither-probabilism-nor-performance", "mayo-severity-from-popper", "mayo-p-values-selection", "mayo1996-severe-error-probe", "mayo1996-popper-lacks-positive", "mayo1996-popper-severity-not-mine", "mayo-severity-applies-to-any-method", "mayo2005-self-correcting-thesis", "peirce-induction-self-correcting", "peirce-frequency-not-probability-of-hypotheses", "peirce-test-improbable-consequences", "peirce-persist-in-the-method", "peirce-different-selections-converge", "peirce-self-correction-detects-bias"] },
+  { key: "severity",     en: "Severity",     claims: ["mayo-severity-weak", "mayo-severity-strong", "mayo-lift-off", "mayo-arguing-from-error", "mayo-forward-looking-methods", "mayo-severity-meta-methodology", "mayo-neither-probabilism-nor-performance", "mayo-severity-from-popper", "mayo-p-values-selection", "mayo1996-severe-error-probe", "mayo-severity-applies-to-any-method", "mayo2005-self-correcting-thesis", "peirce-induction-self-correcting", "peirce-frequency-not-probability-of-hypotheses", "peirce-test-improbable-consequences", "peirce-persist-in-the-method", "peirce-different-selections-converge", "peirce-self-correction-detects-bias"] },
+  { key: "falsification", en: "Falsification", claims: ["mayo1996-popper-lacks-positive", "mayo1996-popper-severity-not-mine", "lakatos-all-theories-equally-improbable", "lakatos-dogmatic-falsificationism", "popper-decisions-settle-theories", "popper-basic-statements-by-decision", "lakatos-ceteris-paribus-forbids", "lakatos-equally-undisprovable", "lakatos-tenacity-irrefutability", "lakatos-basic-statements-by-fiat", "lakatos-background-knowledge-decision", "lakatos-criticism-with-fallibilism"] },
   { key: "architecture", en: "Architecture", claims: ["transformer-dispenses-with-recurrence", "plural-paths-one-answer", "cai-partially-replaces-human-feedback"] }
 ];
 
@@ -42,7 +43,7 @@ const THEMES = [
     topics: ["meaning", "claim-types", "introspection"] },
   { key: "how-a-verdict",  en: "How a verdict is made",
     position: "A judgement counts only with the procedure that produced it attached.",
-    topics: ["annotation", "evaluation", "severity"] },
+    topics: ["annotation", "evaluation", "severity", "falsification"] },
   { key: "scale-buys",     en: "What scale does not buy",
     position: "Size improves many things monotonically and some things not at all.",
     topics: ["truthfulness", "architecture"] }
@@ -69,7 +70,7 @@ const CONCEPTS = [
     question: "Does the kind of a claim decide how it can be checked?",
     note: "What kind of claim something is decides how it can be checked at all: the ontology comes before the epistemology.",
     links: ["verdict", "measurement-artefact"],
-    claims: ["ontology-precedes-epistemology", "truth-conditions-do-not-transfer", "d1-is-load-bearing", "arguments-answer-to-arguments", "convergence-is-not-a-link"] },
+    claims: ["ontology-precedes-epistemology", "truth-conditions-do-not-transfer", "d1-is-load-bearing", "arguments-answer-to-arguments", "convergence-is-not-a-link", "lakatos-prison-of-frameworks"] },
   { key: "verdict", en: "Verdict",
     question: "What has to hold before a judgement on an output counts?",
     note: "A judgement on an output is worth no more than the procedure that produced it, and the procedure has to be inspectable.",
@@ -109,7 +110,12 @@ const CONCEPTS = [
     question: "When does passing a test count as evidence?",
     note: "A result counts as evidence only if the procedure that produced it could have caught the error: agreement a method was bound to find shows nothing.",
     links: ["verdict", "convergent-paths"],
-    claims: ["mayo-severity-weak", "mayo-severity-strong", "mayo-lift-off", "mayo-arguing-from-error", "mayo-forward-looking-methods", "mayo-severity-meta-methodology", "mayo-neither-probabilism-nor-performance", "mayo-severity-from-popper", "mayo-p-values-selection", "mayo1996-severe-error-probe", "mayo1996-popper-lacks-positive", "mayo1996-popper-severity-not-mine", "mayo-severity-applies-to-any-method", "mayo2005-self-correcting-thesis", "peirce-induction-self-correcting", "peirce-frequency-not-probability-of-hypotheses", "peirce-test-improbable-consequences", "peirce-persist-in-the-method", "peirce-different-selections-converge", "peirce-self-correction-detects-bias"] },
+    claims: ["mayo-severity-weak", "mayo-severity-strong", "mayo-lift-off", "mayo-arguing-from-error", "mayo-forward-looking-methods", "mayo-severity-meta-methodology", "mayo-neither-probabilism-nor-performance", "mayo-severity-from-popper", "mayo-p-values-selection", "mayo1996-severe-error-probe", "mayo-severity-applies-to-any-method", "mayo2005-self-correcting-thesis", "peirce-induction-self-correcting", "peirce-frequency-not-probability-of-hypotheses", "peirce-test-improbable-consequences", "peirce-persist-in-the-method", "peirce-different-selections-converge", "peirce-self-correction-detects-bias"] },
+  { key: "falsification", en: "Falsification",
+    question: "What does it take for a test to count against a theory?",
+    note: "A refutation is not Nature speaking: it is a verdict produced by a procedure, and it counts only as far as that procedure could have gone the other way.",
+    links: ["severity", "verdict"],
+    claims: ["mayo1996-popper-lacks-positive", "mayo1996-popper-severity-not-mine", "lakatos-all-theories-equally-improbable", "lakatos-dogmatic-falsificationism", "popper-decisions-settle-theories", "popper-basic-statements-by-decision", "lakatos-ceteris-paribus-forbids", "lakatos-equally-undisprovable", "lakatos-tenacity-irrefutability", "lakatos-basic-statements-by-fiat", "lakatos-background-knowledge-decision", "lakatos-criticism-with-fallibilism"] },
   { key: "convergent-paths", en: "Convergent paths",
     question: "Is agreement between different derivations evidence about the answer?",
     note: "Several different derivations arriving at the same answer is evidence about the answer, not noise to be averaged away.",

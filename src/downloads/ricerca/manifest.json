@@ -1,8 +1,8 @@
 {
   "the-claims-ledger": {
-    "claims": 43,
-    "digest": "b315f0f8826a1680a1924b0acf4d08aa5cfb5011f59320aec18ffe58669bd0cc",
-    "edition": "2026-11-12",
-    "pages": 24
+    "claims": 54,
+    "digest": "b4a4e1ac825a5fea5fd074c3ed0c6f0470d95c6c84dbc549fac7857c44ee8ba7",
+    "edition": "2026-11-15",
+    "pages": 28
   }
 }

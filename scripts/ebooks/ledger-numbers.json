@@ -41,5 +41,16 @@
   "peirce-test-improbable-consequences": 40,
   "peirce-persist-in-the-method": 41,
   "peirce-different-selections-converge": 42,
-  "peirce-self-correction-detects-bias": 43
+  "peirce-self-correction-detects-bias": 43,
+  "lakatos-all-theories-equally-improbable": 44,
+  "lakatos-dogmatic-falsificationism": 45,
+  "lakatos-prison-of-frameworks": 46,
+  "popper-decisions-settle-theories": 47,
+  "popper-basic-statements-by-decision": 48,
+  "lakatos-ceteris-paribus-forbids": 49,
+  "lakatos-equally-undisprovable": 50,
+  "lakatos-tenacity-irrefutability": 51,
+  "lakatos-basic-statements-by-fiat": 52,
+  "lakatos-background-knowledge-decision": 53,
+  "lakatos-criticism-with-fallibilism": 54
 }
