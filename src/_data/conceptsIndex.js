@@ -1977,7 +1977,8 @@ module.exports = [
       { title: "We're living through an explainer epidemic", url: "/curated/2026-09-10-pitcher-epidemia-explainer-dazed/", _source: "curated" },
       { title: "I'm a College Professor. Writing Isn't as Important as We Think.", url: "/curated/2026-09-29-cruz-scrittura-pensiero-nyt/", _source: "curated" },
       { title: "Deskilling the body", url: "/curated/2026-10-13-challenger-deskilling-the-body-aeon/", _source: "curated" },
-      { title: "An Interview with Palantir CTO Shyam Sankar About the AI Religious War", url: "/curated/2026-10-29-thompson-sankar-palantir-stratechery/", _source: "curated" }
+      { title: "An Interview with Palantir CTO Shyam Sankar About the AI Religious War", url: "/curated/2026-10-29-thompson-sankar-palantir-stratechery/", _source: "curated" },
+      { title: "Hugo Duminil-Copin, de l'autre côté de la machine", url: "/curated/2026-11-14-duminil-copin-matematica-macchina-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -6128,7 +6129,8 @@ module.exports = [
     ],
     note: "Tendenza di un modello generativo a concentrare ciò che produce su un insieme ristretto di risposte, osservata nei modelli linguistici dopo l'introduzione dell'addestramento supervisionato e del rinforzo da preferenze umane. **Nel sito è il nome tecnico dell'omologazione della scrittura assistita: quando i modelli convergono sugli stessi nomi, luoghi e giri di frase, convergono anche i testi di chi li usa.**",
     articles: [
-      { title: "Elias in the Lighthouse, Again? Diagnosing Low Diversity in LLM Stories", url: "/curated/2026-05-26-hamilton-mimno-elias-faro-storie-llm-arxiv/", _source: "curated" }
+      { title: "Elias in the Lighthouse, Again? Diagnosing Low Diversity in LLM Stories", url: "/curated/2026-05-26-hamilton-mimno-elias-faro-storie-llm-arxiv/", _source: "curated" },
+      { title: "Hugo Duminil-Copin, de l'autre côté de la machine", url: "/curated/2026-11-14-duminil-copin-matematica-macchina-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -6440,7 +6442,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q1150675"],
     note: "Dimostrazione matematica in cui una parte del lavoro, la ricerca della prova o la sua verifica, è svolta da un calcolatore; con i verificatori formali come Lean ogni passaggio può essere controllato meccanicamente. **Nel sito interessa la fiducia che sposta: si può credere vera una prova che nessuno ha ancora capito, perché una macchina e pochi esperti l'hanno controllata.**",
     articles: [
-      { title: "Aaronson-Ambainis Conjecture proved! (By AI, of course)", url: "/curated/2026-11-08-aaronson-congettura-dimostrata-ai-shtetl/", _source: "curated" }
+      { title: "Aaronson-Ambainis Conjecture proved! (By AI, of course)", url: "/curated/2026-11-08-aaronson-congettura-dimostrata-ai-shtetl/", _source: "curated" },
+      { title: "Hugo Duminil-Copin, de l'autre côté de la machine", url: "/curated/2026-11-14-duminil-copin-matematica-macchina-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -6660,6 +6663,18 @@ module.exports = [
     note: "Espressione coniata da Joseph Nye nel 1990 per la capacità di uno Stato di ottenere ciò che vuole attraendo invece di costringere, attraverso cultura, valori e istituzioni. La variante che interessa è quella industriale: film, serie e videogiochi come veicoli d'influenza, e il limite che incontrano quando un racconto costruito per il pubblico di casa deve piacere al mondo. **Il soft power non si esporta per decisione: un'opera che deve restare fedele per non offendere in patria rischia di restare muta fuori.**",
     articles: [
       { title: "“Ramayana”, India's biggest film, turns a Hindu god into a star", url: "/curated/2026-11-12-economist-ramayana-film-india/", _source: "curated" }
+    ]
+  },
+  {
+    name: "Duminil-Copin, Hugo",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Francia"] },
+    related: [
+      { name: "dimostrazione assistita dal calcolatore", why: "Per lui una prova verificata in Lean non basta: se nessuno la capisce e la riscrive, resta un albero caduto nella foresta." }
+    ],
+    note: "Matematico francese nato nel 1985, professore all'Institut des Hautes Études Scientifiques e all'Università di Ginevra, medaglia Fields nel 2022 per i lavori sulle transizioni di fase in fisica statistica; con Emmanuel Sander ha scritto *De l'autre côté du tableau noir*. L'archivio lo incontra come testimone della matematica nel momento in cui le macchine cominciano a dimostrare: nel 2026 descrive il passaggio dal cercare le prove al comprenderle e riscriverle. **La domanda che la voce porta è chi capirà le dimostrazioni che nessun essere umano ha trovato.**",
+    articles: [
+      { title: "Hugo Duminil-Copin, de l'autre côté de la machine", url: "/curated/2026-11-14-duminil-copin-matematica-macchina-grandcontinent/", _source: "curated" }
     ]
   }
 
