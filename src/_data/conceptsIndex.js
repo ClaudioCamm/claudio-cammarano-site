@@ -1416,7 +1416,8 @@ module.exports = [
       { title: "Quartz website mainly produced by one AI-assisted reporter writing 50+ stories per day", url: "/curated/2026-10-09-waugh-quartz-un-reporter-ai-pressgazette/", _source: "curated" },
       { title: "Putin’s war on schools: ‘millions of books burnt before my eyes’", url: "/curated/2026-10-10-hauschild-johanson-libri-scuola-ucraina-sundaytimes/", _source: "curated" },
       { title: "Can the News Exist Without Big Tech? The Atlas Says Yes", url: "/curated/2026-10-08-bell-chaplin-the-atlas-cjr/", _source: "curated" },
-      { title: "The New Age of Reading", url: "/curated/2026-10-19-heller-daunt-new-age-of-reading-newyorker/", _source: "curated" }
+      { title: "The New Age of Reading", url: "/curated/2026-10-19-heller-daunt-new-age-of-reading-newyorker/", _source: "curated" },
+      { title: "Generative AI floods and dilutes the market for books", url: "/curated/2026-08-03-chakrabarty-ginsburg-diluizione-mercato-libri-arxiv/", _source: "curated" }
     ]
   },
   {
@@ -3173,7 +3174,8 @@ module.exports = [
       { title: "China's AI stock-market struggles are a warning", url: "/curated/2026-11-03-economist-borsa-cina-ai/", _source: "curated" },
       { title: "With an eye on America, China is beefing up its AI-controlled labs", url: "/curated/2026-11-04-economist-laboratori-autonomi-cina/", _source: "curated" },
       { title: "Jensen Huang's Affair, The Culper Report, Huang's Righteousness", url: "/curated/2026-11-09-thompson-huang-culper-presunzione-stratechery/", _source: "curated" },
-      { title: "A New Kind of Foreign Agent", url: "/curated/2026-11-11-feldman-agenti-stranieri-ai-cinese-foreignaffairs/", _source: "curated" }
+      { title: "A New Kind of Foreign Agent", url: "/curated/2026-11-11-feldman-agenti-stranieri-ai-cinese-foreignaffairs/", _source: "curated" },
+      { title: "Xi Jinping's chief ideologue is worried", url: "/curated/2026-11-11-economist-wang-huning-ideologo/", _source: "curated" }
     ]
   },
   {
@@ -5023,7 +5025,8 @@ module.exports = [
       { title: "Don’t mistake chatbot intelligence for consciousness", url: "/curated/2026-08-20-schneider-la-scala-che-non-regge-economist/", _source: "curated" },
       { title: "How Russian Propaganda Learned to Look Finnish", url: "/curated/2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24/", _source: "curated" },
       { title: "Anti-Waymo campaign relied on op-eds written with AI", url: "/curated/2026-11-08-tani-waymo-editoriali-ai-semafor/", _source: "curated" },
-      { title: "Are AI bots running these Philadelphia and New Jersey news sites?", url: "/curated/2026-11-11-billypenn-siti-zombie-notizie-locali/", _source: "curated" }
+      { title: "Are AI bots running these Philadelphia and New Jersey news sites?", url: "/curated/2026-11-11-billypenn-siti-zombie-notizie-locali/", _source: "curated" },
+      { title: "Generative AI floods and dilutes the market for books", url: "/curated/2026-08-03-chakrabarty-ginsburg-diluizione-mercato-libri-arxiv/", _source: "curated" }
     ]
   },
   {
@@ -6420,7 +6423,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q179073"],
     note: "Politica che protegge la produzione nazionale dalla concorrenza estera con dazi, quote e altre barriere. **Nel sito interessa la sua selettività: chi lo pratica esenta ciò che teme di non saper produrre da sé, e le eccezioni dicono più delle regole.**",
     articles: [
-      { title: "AI is turning protectionists into free traders", url: "/curated/2026-11-05-economist-ai-protezionisti-libero-scambio/", _source: "curated" }
+      { title: "AI is turning protectionists into free traders", url: "/curated/2026-11-05-economist-ai-protezionisti-libero-scambio/", _source: "curated" },
+      { title: "Xi Jinping's chief ideologue is worried", url: "/curated/2026-11-11-economist-wang-huning-ideologo/", _source: "curated" }
     ]
   },
   {
@@ -6676,6 +6680,41 @@ module.exports = [
     note: "Matematico francese nato nel 1985, professore all'Institut des Hautes Études Scientifiques e all'Università di Ginevra, medaglia Fields nel 2022 per i lavori sulle transizioni di fase in fisica statistica; con Emmanuel Sander ha scritto *De l'autre côté du tableau noir*. L'archivio lo incontra come testimone della matematica nel momento in cui le macchine cominciano a dimostrare: nel 2026 descrive il passaggio dal cercare le prove al comprenderle e riscriverle. **La domanda che la voce porta è chi capirà le dimostrazioni che nessun essere umano ha trovato.**",
     articles: [
       { title: "Hugo Duminil-Copin, de l'autre côté de la machine", url: "/curated/2026-11-14-duminil-copin-matematica-macchina-grandcontinent/", _source: "curated" }
+    ]
+  },
+
+  {
+    name: "diluizione del mercato",
+    type: "teoria",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    related: [ { name: "fair use", why: "Il quarto fattore del fair use, l'effetto sul mercato, è il terreno su cui la diluizione chiede di essere riconosciuta." } ],
+    note: "Danno che un'opera subisce non perché viene copiata, ma perché il mercato si riempie di opere sostituibili prodotte a costo quasi nullo, che ne riducono vendite e attenzione. La teoria entra nel diritto d'autore americano nel 2025, con il rapporto del Copyright Office sull'addestramento dei modelli e con la sentenza Kadrey contro Meta. L'archivio la incontra nel mercato del libro, dove nel 2026 i romanzi di genere autopubblicati su Amazon la rendono visibile nei numeri: i titoli crescono più dei ricavi. **Il danno non richiede che il libro generato sia buono: basta che sia abbondante.**",
+    articles: [
+      { title: "Generative AI floods and dilutes the market for books", url: "/curated/2026-08-03-chakrabarty-ginsburg-diluizione-mercato-libri-arxiv/", _source: "curated" }
+    ]
+  },
+
+  {
+    name: "fair use",
+    type: "teoria",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q131562"],
+    related: [],
+    note: "Eccezione del diritto d'autore statunitense, codificata nel 1976, che consente di usare opere protette senza permesso a certe condizioni, valutate su quattro fattori, fra cui l'effetto sul mercato dell'opera originale. Il fattore che l'archivio segue è proprio l'ultimo: con l'addestramento dei modelli il danno di mercato non è più una copia che sostituisce l'originale, ma una massa di opere nuove che lo affollano. **La domanda che la voce tiene aperta è se una regola pensata per le copie possa misurare un danno prodotto dall'abbondanza.**",
+    articles: [
+      { title: "Generative AI floods and dilutes the market for books", url: "/curated/2026-08-03-chakrabarty-ginsburg-diluizione-mercato-libri-arxiv/", _source: "curated" }
+    ]
+  },
+
+  {
+    name: "Wang Huning",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Cina"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q64543"],
+    related: [],
+    note: "Politologo e dirigente cinese nato nel 1955, già professore all'Università Fudan di Shanghai, consigliere di tre leader del Partito comunista e membro del Comitato permanente del Politburo. L'archivio lo incontra nel 2026 come voce dell'inquietudine del partito davanti a cambiamenti che non controlla, dall'intelligenza artificiale al lavoro su piattaforma. **La sua risposta, più controllo e non più riforme, misura quanto il partito consideri l'AI una questione di ordine sociale prima che di crescita.**",
+    articles: [
+      { title: "Xi Jinping's chief ideologue is worried", url: "/curated/2026-11-11-economist-wang-huning-ideologo/", _source: "curated" }
     ]
   }
 
