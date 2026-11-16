@@ -115,3 +115,31 @@ a.rr:hover{background:rgba(242,201,76,.18)}
 .off li .t-en,.rr .ti .t-en{font-size:.82em}
 /* verde in Zotero = definizione (terzo colore pubblico, 15/11/2026) */
 .ru-b i.g,.ru-l i.g{background:var(--cc-lit)}
+/* ENTIA accanto ai claim (16/11/2026): funzione come badge (lo stesso del lato
+   italiano, .criterio-badge in style.css), stance, D1, relazioni CiTO. Le
+   funzioni prendono quattro toni del blu dell'identita'. */
+.ce-riferimento-tecnico{--fn:#1C0E80}.ce-metodo-di-lavoro{--fn:#4A3FA3}.ce-strumento-concettuale{--fn:#7B73C2}.ce-dato-che-corregge{--fn:#A9A3DA}.ce-lettura-di-mercato{--fn:#5d5d8a}.ce-elementi-di-scenario{--fn:#9a9ab5}
+.ce{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:center;margin:2px 0 0 106px;font-family:var(--font-mono);font-size:12px;color:var(--cc-soft)}
+.ce-fn{font-family:var(--font-sans);text-decoration:none;white-space:nowrap}
+a.ce-fn:hover{background:var(--color-primary);color:#fff;border-color:var(--color-primary)}
+.ce-st{font-family:var(--font-sans);font-stretch:74%;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--tv-ink,var(--color-text))}
+.ce-st.ce-con{color:var(--cc-log)}
+.ce-rel a{color:var(--cc-log)}
+.drawn .dc{border-bottom:1px solid var(--cc-line);padding:0 0 12px}
+.drawn .dc > a{border-bottom:0;padding-bottom:6px}
+.cx .ce-fn{margin:0 12px 0 -6px;font-size:10px;padding:0 6px;vertical-align:1px}
+.fd-line{font-style:normal!important;font-size:17px!important;padding-bottom:4px!important;opacity:.95}
+.rr .cl{display:flex;flex-direction:column;align-items:flex-end;gap:1px;text-align:right}
+.rr .cl b{font-family:var(--font-mono);font-weight:400;font-size:12px;color:var(--cc-log)}
+.rr .cl small{font-family:var(--font-sans);font-size:11.5px;color:var(--cc-soft)}
+.mix{display:flex;width:120px;height:10px;gap:1px;margin-bottom:4px}.mix i{display:block;background:var(--fn)}
+.mix-leg{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;margin:14px 0 0;font-family:var(--font-sans);font-size:13px;color:var(--cc-soft)}
+.mix-leg a{color:inherit;text-decoration:none;display:inline-flex;align-items:center;gap:6px}.mix-leg a:hover{color:var(--color-primary)}
+.mix-leg i{display:inline-block;width:14px;height:10px;background:var(--fn)}
+@media (min-width:761px){.rr{grid-template-columns:150px minmax(0,1fr) 260px 170px}}
+@media (max-width:760px){.ce{margin-left:0}.rr .cl{align-items:flex-start;text-align:left}.mix{width:100%}}
+/* i link dentro la riga ENTIA non prendono la griglia delle righe dei claim */
+.drawn .ce a{display:inline;padding:0;border-bottom:0;grid-template-columns:none;gap:0}
+.drawn a.ce-fn{display:inline-block;border:1px solid currentColor;padding:1px 8px}
+.fd .fd-line{margin:0}
+@media (max-width:760px){.rr{grid-template-areas:"au au" "ti ti" "st st" "cl cl"}.rr .cl{flex-direction:row;flex-wrap:wrap;gap:2px 10px;align-items:center}.rr .cl .mix{width:100%}}

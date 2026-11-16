@@ -17,20 +17,22 @@ og_card: /images/og/og-en-home.png
 {% set LBL = ["On file", "Reading", "Underlined", "Card drafted", "Published"] %}
 {% set SUB = ["on a selected shelf", "opened, under way", "highlights in Zotero", "paraphrase written", "approved, online"] %}
 <div class="pl">{% for n in R.funnel %}<div><b>{{ n }}</b><span>{{ LBL[loop.index0] }}</span><i>{{ SUB[loop.index0] }}</i></div>{% endfor %}</div>
+{% if R.fnLegend.length %}<p class="mix-leg"><span>Claims drawn, by ENTIA function:</span>{% for f in R.fnLegend %}<a href="/en/entia/#{{ f.key }}"><i class="ce-{{ f.key }}"></i>{{ f.en }}</a>{% endfor %}</p>{% endif %}
 {% set SL = { "on file": "On file", "reading": "Reading", "underlined": "Underlined", "drafted": "Card drafted", "published": "Card published" } %}
 {% for g in R.groups %}
 <section class="fd" id="{{ g.key }}">
   <h2>{{ g.en }}</h2>
-  <p>{{ g.count }} works · {{ g.active.length }} under way{% if g.blurb %} · {{ g.blurb }}{% endif %}</p>
+  {% if g.line %}<p class="fd-line">{{ g.line }}</p>{% endif %}
+  <p>{{ g.count }} works · {{ g.active.length }} under way</p>
   {% for w in g.active %}{% set s = R.stages.indexOf(w.status) + 1 %}
   {% if w.url %}<a class="rr" href="{{ w.url }}">{% else %}<div class="rr">{% endif %}
     <span class="au">{{ w.short }}<small>{{ w.year }}</small></span>
-    <span class="ti">{{ w.displayHtml | safe }}<em>{{ w.underlinings }} underlinings{% if w.rulerZones.length > 1 %} · {{ w.rulerZones.length }} copies{% endif %}{% if w.also_in.length %} · also in {{ w.also_in | join(", ") }}{% endif %}{% if w.extracts.length %} · {{ w.extracts.length }} extract{% endif %}</em></span>
+    <span class="ti">{{ w.displayHtml | safe }}<em>{{ w.underlinings }} underlinings{% if w.rulerZones.length > 1 %} · {{ w.rulerZones.length }} copies{% endif %}{% if w.alsoIn.length %} · also in {{ w.alsoIn | join(", ") }}{% endif %}{% if w.extracts.length %} · {{ w.extracts.length }} extract{% endif %}</em></span>
     <span><span class="st">{% for i in [1,2,3,4,5] %}<i class="{{ 'on' if i <= s }}"></i>{% endfor %}</span><b>{{ SL[w.status] }}{% if w.changed %} · changed{% endif %}</b></span>
-    <span class="cl">{% if w.card and w.card.claimsCount %}{{ w.card.claimsCount }} claims{% endif %}</span>
+    <span class="cl">{% if w.fnMix and w.fnMix.length %}<span class="mix" aria-hidden="true">{% for f in w.fnMix %}<i class="ce-{{ f.key }}" style="flex:{{ f.n }}"></i>{% endfor %}</span><b>{{ w.card.claimsCount }} claims</b>{% for f in w.fnMix %}<small>{{ f.n }} {{ f.en | lower }}</small>{% endfor %}{% endif %}</span>
   {% if w.url %}</a>{% else %}</div>{% endif %}
   {% endfor %}
-  {% if g.shelf.length %}<details class="off"{% if not g.active.length %} open{% endif %}><summary>On file · {{ g.shelf.length }}</summary><ul>{% for w in g.shelf %}<li><b>{{ w.short }}</b> {{ w.year }} · {{ w.displayHtml | safe }}{% if w.also_in.length %} <small>(also in {{ w.also_in | join(", ") }})</small>{% endif %}</li>{% endfor %}</ul></details>{% endif %}
+  {% if g.shelf.length %}<details class="off"{% if not g.active.length %} open{% endif %}><summary>On file · {{ g.shelf.length }}</summary><ul>{% for w in g.shelf %}<li><b>{{ w.short }}</b> {{ w.year }} · {{ w.displayHtml | safe }}{% if w.alsoIn.length %} <small>(also in {{ w.alsoIn | join(", ") }})</small>{% endif %}</li>{% endfor %}</ul></details>{% endif %}
 </section>
 {% endfor %}
 <p class="lic">Paraphrases CC BY-NC 4.0, Claudio Cammarano. Titles stay in their original language, with the English in square brackets. Quoted passages belong to their authors and are kept short; the texts themselves are not distributed.</p>

@@ -35,6 +35,6 @@ eleventyComputed:
 {% if x.scale.note %}<p class="ex-note">{{ x.scale.note }}</p>{% endif %}</section>{% endif %}
 {% if x.rulers.length %}<div class="ru"><p class="rd-k">Where it sits in the work</p>{% for rz in x.rulers %}{% include "components/ruler.njk" %}{% endfor %}</div>{% endif %}
 <section class="drawn"><p class="rd-k">Claims drawn from this extract</p>
-{% for c in x.claimList %}<a href="{{ c.url }}"><b>{{ c.n }}</b><span>{{ c.lead }}<small>{{ c.concepts }} · {{ c.voice }} · w {{ c.w }}</small></span></a>{% else %}<p class="none">No claims drawn yet.</p>{% endfor %}
+{% for c in x.claimList %}<div class="dc"><a href="{{ c.url }}"><b>{{ c.n }}</b><span>{{ c.lead }}<small>{{ c.concepts }} · {{ c.voice }}</small></span></a>{% include "components/claim-entia.njk" %}</div>{% else %}<p class="none">No claims drawn yet.</p>{% endfor %}
 </section>
 <p class="lic">Paraphrase and notation CC BY-NC 4.0, Claudio Cammarano. The formulations restate the author’s; they are not quotations.{% if x.work.url %} Back to the <a href="{{ x.work.url }}">card of the work</a>.{% endif %}</p>

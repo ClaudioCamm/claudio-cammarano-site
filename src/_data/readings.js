@@ -10,7 +10,21 @@ const matter = require("gray-matter");
 const DIR = path.join(__dirname, "..", "readings");
 const Z = require("./readingsZotero.json");
 const CP = require("./claimPages.js");
-const claimByN = Object.fromEntries(CP.claims.map(c => [c.n, { n: c.n, url: c.url, lead: c.lead, concepts: c.conceptsEn.map(k => k.en).join(" + "), voice: c.voice, w: c.w }]));
+const CL = require("./claims.js");
+const EN = require("./entiaEn.js");
+const SHELVES = require("./shelves.js");
+const CONFIG = require("../../scripts/readings/readings-config.json");
+// ENTIA accanto a ogni claim (16/11/2026): funzione (badge come sul lato
+// italiano, etichetta da entiaEn), stance, D1 (anche se solo proposto),
+// relazioni CiTO. Il peso resta sulla pagina del claim.
+const clById = Object.fromEntries(CL.map(l => [l.id, l]));
+const claimByN = Object.fromEntries(CP.claims.map(c => {
+  const l = clById[c.id] || {};
+  return [c.n, { n: c.n, url: c.url, lead: c.lead, concepts: c.conceptsEn.map(k => k.en).join(" + "), voice: c.voice,
+    fnKey: l.fn || "", fnEn: EN.funzioni[l.fn] || c.fn || "", stance: c.stance, contested: c.contested,
+    d1: c.d1, d1Label: c.d1Label, d1Proposed: c.d1Status !== "confirmed",
+    rel: (c.out || []).map(r => ({ how: r.how, n: r.n, url: r.url })) }];
+}));
 const conceptByKey = Object.fromEntries(CP.concepts.map(k => [k.key, { en: k.en, url: k.url }]));
 // tutti i C### citati in una scheda, nell'ordine in cui compaiono
 const claimsIn = o => [...new Set(JSON.stringify(o).match(/C\d{3}/g) || [])].filter(n => claimByN[n]).map(n => claimByN[n]);
@@ -105,16 +119,40 @@ for (const x of extracts) {
 
 const STAGES = ["on file", "reading", "underlined", "drafted", "published"];
 const funnel = STAGES.map((s, i) => works.filter(w => STAGES.indexOf(w.status) >= i).length);
+// scaffali: nome pubblico e riga da shelves.js (ordine suo); i non mappati
+// tengono il nome Zotero e vanno in coda
+const zoteroOf = Object.fromEntries(CONFIG.groups.map(g => [g.en, g.zotero]));
+const slugify = s => String(s).toLowerCase().normalize("NFKD").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 const groups = Z.groups.map(g => {
+  const zot = g.zotero || zoteroOf[g.en] || g.en;
+  const i = SHELVES.findIndex(s => s.zotero === zot);
+  const sh = SHELVES[i] || { en: zot.split(" / ").pop(), line: "" };
   const ws = works.filter(w => w.groupEn === g.en);
-  return { key: g.key, en: g.en, blurb: g.blurb, active: ws.filter(w => w.status !== "on file"), shelf: ws.filter(w => w.status === "on file"), count: ws.length };
-});
+  const key = slugify(sh.en);
+  ws.forEach(w => { w.shelfEn = sh.en; w.shelfKey = key; });
+  // distribuzione delle funzioni ENTIA dei claim tratti da ciascuna scheda
+  ws.filter(w => w.card).forEach(w => {
+    const d = {};
+    w.card.claimList.forEach(c => { if (c.fnKey) d[c.fnKey] = (d[c.fnKey] || 0) + 1; });
+    w.fnMix = Object.entries(d).sort((a, b) => b[1] - a[1]).map(([k, n]) => ({ key: k, en: EN.funzioni[k] || k, n }));
+  });
+  return { key, en: sh.en, line: sh.line, zotero: zot, order: i < 0 ? 999 : i,
+    active: ws.filter(w => w.status !== "on file"), shelf: ws.filter(w => w.status === "on file"), count: ws.length };
+}).sort((a, b) => a.order - b.order);
+// also_in: i nomi Zotero diventano nomi pubblici
+const pub = Object.fromEntries(groups.map(g => [g.zotero, g.en]));
+works.forEach(w => { w.alsoIn = (w.also_in || []).map(z => pub[z] || z); });
+// funzioni ENTIA per la legenda dell'indice, nell'ordine di entiaEn
+const fnUsed = [...new Set(works.flatMap(w => (w.fnMix || []).map(f => f.key)))];
+const fnLegend = Object.keys(EN.funzioni).filter(k => fnUsed.includes(k)).map(k => ({ key: k, en: EN.funzioni[k] }));
 
 module.exports = {
   updated: Z.updated,
   stages: STAGES,
   funnel,
   groups,
+  shelfCount: groups.length,
+  fnLegend,
   works,
   cards: works.filter(w => w.card),
   extracts: extracts.filter(x => x.url),

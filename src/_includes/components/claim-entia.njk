@@ -1,0 +1,7 @@
+{# La riga ENTIA di un claim nelle schede di lettura (16/11/2026): funzione
+   (badge come sul lato italiano), stance, D1 (con "proposed" se non
+   confermato), relazioni CiTO. "c" e' un elemento di readings.claimByN. #}
+<span class="ce">{% if c.fnKey %}<a class="criterio-badge ce-fn ce-{{ c.fnKey }}" href="/en/entia/#{{ c.fnKey }}" title="ENTIA function">{{ c.fnEn }}</a>{% endif %}
+<span class="ce-st{% if c.contested %} ce-con{% endif %}">{{ c.stance }}</span>
+<span class="ce-d1">{{ c.d1 }}{% if c.d1Label %} {{ c.d1Label }}{% endif %}{% if c.d1Proposed %} (proposed){% endif %}</span>
+{% for r in c.rel %}<span class="ce-rel">{{ r.how }} → <a href="{{ r.url }}">{{ r.n }}</a></span>{% endfor %}</span>
