@@ -8077,3 +8077,20 @@ a.home-path:hover {
    nella testata passano il contrasto minimo sul blu (da 3,1 e 4,05 a oltre 5:1). */
 .nav-group-label{color:rgba(255,255,255,.62)}
 .header-lang small{opacity:.85}
+
+/* accessibilita' del lato italiano (17/11/2026) ---------------------------
+   1. Link nel testo corrente: sottolineatura sottile (gia' sulle pagine inglesi,
+      vedi tavole.css), anche nel piede e nella barra del consenso.
+   2-3. Sul telefono piu' aria fra le voci dell'Indice e fra i tag dei saggi:
+      bersagli al tocco piu' alti, nessun cambiamento sul desktop.
+   4. Contrasti puntuali: la serie nelle schede dei saggi, la sigla di lingua. */
+main p:not(.mix-leg) a:not([class]),main dd a:not([class]),main figcaption a:not([class]),
+.entia-nota > a:not([class]),.entia-citazione > a:not([class]),.indice-dataset > a:not([class]),.colophon-link > a:not([class]),.concetto-legame > a:not([class]),
+.consent-bar-text a,.site-footer p a:not([class]),[id^="catena-fonte"] span > a:not([class]),.article-download > a{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.18em;text-decoration-color:color-mix(in srgb,currentColor 55%,transparent)}
+main p:not(.mix-leg) a:not([class]):hover,.consent-bar-text a:hover{text-decoration-color:currentColor}
+@media (max-width:768px){
+  .indice-article-link{display:inline-block;padding:5px 0}
+  .article-meta a.article-tag{display:inline-flex;align-items:center;min-height:28px;padding:0 9px}
+}
+.article-series-card-label a{opacity:1}
+.site-footer .en-lang-flag,.footer-abstract .en-lang-flag{color:#a8a8a8}

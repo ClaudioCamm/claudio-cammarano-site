@@ -287,3 +287,5 @@ body.claims-page > .container,body.claims-page .site-header .container{max-width
 .cm-th,.st .s3,.rg-th > h2,.rg-th > p,.u-st .s3,.al-st{color:var(--on3)}
 @media (max-width:760px){.u-st .s4 a{display:inline-block;padding:5px 0}.u-act a{display:inline-flex;align-items:center;min-height:32px}}
 .st .s3 > i{opacity:1}
+/* contrasto (17/11/2026): il contatore del filtro attivo resta pieno */
+.al-fn button[aria-pressed="true"] b{opacity:1}

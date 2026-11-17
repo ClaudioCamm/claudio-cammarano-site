@@ -288,6 +288,11 @@ const EM_DATI = {{ entia.mappa | dump | safe }};
       el.addEventListener("mouseenter", ()=>leggi(p));
       el.addEventListener("focus", ()=>leggi(p));
       tela.appendChild(el);
+      // contrasto (17/11/2026): su una tessera chiara il nome va in inchiostro
+      const nm = el.querySelector(".em-nome");
+      if(nm){ const cx=document.createElement("canvas").getContext("2d"); cx.fillStyle=getComputedStyle(el).backgroundColor; cx.fillRect(0,0,1,1);
+        const [r,g,b2]=cx.getImageData(0,0,1,1).data, f=c=>{c/=255;return c<=.03928?c/12.92:Math.pow((c+.055)/1.055,2.4)};
+        const L=.2126*f(r)+.7152*f(g)+.0722*f(b2); if((L+.05)/.0545 > 1.05/(L+.05)) nm.classList.add("em-chiaro"); }
     });
     testa(nodo,piast); leggi(nodo===radice?null:nodo, nodo, radice);
   }
