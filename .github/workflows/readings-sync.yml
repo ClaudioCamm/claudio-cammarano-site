@@ -1,0 +1,68 @@
+# Readings, aggiornamento settimanale (17/11/2026). Ogni lunedi' legge Zotero
+# dalla Web API (sola lettura) con scripts/readings/sync.py --api e, se i dati
+# delle letture sono cambiati, apre (o aggiorna) una pull request sul ramo
+# "readings-sync" con il rapporto nel testo. Niente entra in main senza che
+# Claudio accetti la PR. Si puo' lanciare anche a mano (Actions > Run workflow)
+# o dal Mac: python3 scripts/readings/sync.py --api (chiave in ~/.zotero_key).
+# Richiede: il secret ZOTERO_API_KEY (chiave in sola lettura basta) e, in
+# Settings > Actions > General, "Allow GitHub Actions to create and approve
+# pull requests".
+name: Readings da Zotero
+
+on:
+  schedule:
+    - cron: "41 5 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: readings-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - name: Sync dalla Web API
+        env:
+          ZOTERO_API_KEY: ${{ secrets.ZOTERO_API_KEY }}
+        run: python3 scripts/readings/sync.py --api --report report.txt
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: "22"
+      - name: I dati delle letture caricano
+        run: |
+          npm ci --no-audit --no-fund
+          node -e "require('./src/_data/readings.js')"
+      - name: E' cambiato qualcosa (oltre alla data)?
+        id: diff
+        run: |
+          git show HEAD:src/_data/readingsZotero.json | python3 -c "import json,sys;d=json.load(sys.stdin);d.pop('updated',None);print(json.dumps(d,sort_keys=True))" > old.json
+          python3 -c "import json;d=json.load(open('src/_data/readingsZotero.json'));d.pop('updated',None);print(json.dumps(d,sort_keys=True))" > new.json
+          if cmp -s old.json new.json && git diff --quiet -- scripts/readings/slugs.json; then
+            echo "changed=0" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=1" >> "$GITHUB_OUTPUT"
+          fi
+          rm old.json new.json
+      - name: Apri o aggiorna la pull request
+        if: steps.diff.outputs.changed == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "readings-sync"
+          git config user.email "readings-sync@users.noreply.github.com"
+          git checkout -B readings-sync
+          git add src/_data/readingsZotero.json scripts/readings/slugs.json
+          git commit -m "Readings: aggiornamento da Zotero del $(date -u +%F)"
+          git push --force origin readings-sync
+          { echo "Aggiornamento automatico da Zotero. Si pubblica solo accettando questa PR."; echo; echo '```'; cat report.txt; echo '```'; } > body.md
+          if gh pr view readings-sync --json state -q .state 2>/dev/null | grep -q OPEN; then
+            gh pr edit readings-sync --body-file body.md
+          else
+            gh pr create --head readings-sync --base main --title "Readings: aggiornamento da Zotero" --body-file body.md
+          fi
