@@ -3,7 +3,7 @@
 # Copia annotata: 3FRG2VW7 (Bibliography for Checks); pagine della rivista = pagina del PDF + 466.
 # Sottolineate solo le sezioni 1-2 (pp. 467-469): la scheda copre quelle.
 zotero: 3FRG2VW7
-status: drafted
+status: published
 underlinings: 2
 title_en: ""
 concepts: [severity, convergent-paths]
