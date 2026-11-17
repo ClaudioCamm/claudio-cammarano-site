@@ -28,7 +28,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/vendor");
   eleventyConfig.addPassthroughCopy("src/downloads");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
+  eleventyConfig.addPassthroughCopy("src/favicon.ico");
   eleventyConfig.addPassthroughCopy("src/visualizations");
+  // le visualizzazioni si copiano e basta: come template generavano doppioni /x/ (17/11/2026)
+  eleventyConfig.ignores.add("src/visualizations/**");
   eleventyConfig.addPassthroughCopy("src/js");
 
   // === TRANSFORMS ===

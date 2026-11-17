@@ -274,3 +274,16 @@ body.claims-page > .container,body.claims-page .site-header .container{max-width
 .gl:hover .gl-d,.gl:focus .gl-d,.gl:focus-within .gl-d{display:block}
 .gl:focus-visible{outline:2px solid var(--color-primary);outline-offset:2px}
 @media (max-width:760px){.gl-d{position:fixed;left:16px;right:16px;bottom:16px;top:auto;width:auto;max-width:none;font-size:15px;padding:12px 14px}}
+
+/* ---------------------------------------- accessibilita' (17/11/2026)
+   1. Contrasto: sul verde medio della scala (--cc3) il testo bianco stava a
+      2,8:1. In chiaro il testo diventa inchiostro (6,2:1), come su --cc1 e
+      --cc2; in notturna --cc3 e' gia' scuro e il bianco regge (4,7:1).
+   4. Bersagli al tocco: sul telefono i link della pila e delle azioni delle
+      unita' arrivano almeno a 32px di altezza. */
+:root{--on3:#1a1a1a}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--on3:#fff}}
+:root[data-theme="dark"]{--on3:#fff}
+.cm-th,.st .s3,.rg-th > h2,.rg-th > p,.u-st .s3,.al-st{color:var(--on3)}
+@media (max-width:760px){.u-st .s4 a{display:inline-block;padding:5px 0}.u-act a{display:inline-flex;align-items:center;min-height:32px}}
+.st .s3 > i{opacity:1}

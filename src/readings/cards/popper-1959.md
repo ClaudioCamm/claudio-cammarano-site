@@ -2,7 +2,7 @@
 # Card: una scheda per opera. Parafrasi di Claudio; citazioni max 3, max 25 parole.
 # Copia annotata: Routledge Classics (P29F49JV, Bibliography for Checks); voce in AI Projects.
 zotero: P29F49JV
-status: drafted
+status: published
 underlinings: 3
 title_en: ""
 concepts: [falsification]

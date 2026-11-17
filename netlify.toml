@@ -12,6 +12,12 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+# Font: i file non cambiano mai di contenuto a parita' di nome (17/11/2026)
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
 [[headers]]
   for = "/css/*"
   [headers.values]
@@ -220,4 +226,26 @@
 [[redirects]]
   from = "/writings/2026‑10‑19‑le‑persone‑non‑sono‑dischi‑rigidi/"
   to = "/writings/2026-10-19-le-persone-non-sono-dischi-rigidi/"
+  status = 301
+
+# Visualizzazioni del dual use (17/11/2026): restano i file .html che il saggio
+# incorpora; i vecchi doppioni /x/ generati per sbaglio portano li'.
+[[redirects]]
+  from = "/visualizations/dual-use-curves/"
+  to = "/visualizations/dual-use-curves.html"
+  status = 301
+
+[[redirects]]
+  from = "/visualizations/dual-use-framework/"
+  to = "/visualizations/dual-use-framework.html"
+  status = 301
+
+[[redirects]]
+  from = "/visualizations/dual-use-pyramid/"
+  to = "/visualizations/dual-use-pyramid.html"
+  status = 301
+
+[[redirects]]
+  from = "/visualizations/dual-use-quadrant/"
+  to = "/visualizations/dual-use-quadrant.html"
   status = 301

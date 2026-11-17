@@ -155,3 +155,5 @@ a.ce-fn:hover{background:var(--color-primary);color:#fff;border-color:var(--colo
    (dal piu' carico al piu' tenue), per restare leggibili sul fondo scuro */
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .ce-riferimento-tecnico{--fn:#B9B2F2}:root:not([data-theme="light"]) .ce-metodo-di-lavoro{--fn:#958CE6}:root:not([data-theme="light"]) .ce-strumento-concettuale{--fn:#7268C9}:root:not([data-theme="light"]) .ce-dato-che-corregge{--fn:#5248A3}}
 :root[data-theme="dark"] .ce-riferimento-tecnico{--fn:#B9B2F2}:root[data-theme="dark"] .ce-metodo-di-lavoro{--fn:#958CE6}:root[data-theme="dark"] .ce-strumento-concettuale{--fn:#7268C9}:root[data-theme="dark"] .ce-dato-che-corregge{--fn:#5248A3}
+/* accessibilita' (17/11/2026): testo inchiostro sul verde medio in chiaro (vedi carota.css, --on3) */
+.pl div:nth-child(3),.fd h2,.fd > p{color:var(--on3,#1a1a1a)}

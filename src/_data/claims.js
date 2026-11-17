@@ -78,7 +78,7 @@ const claims = [
     after: "A statistical claim and a normative claim share nothing in their truth conditions — treating them as interchangeable is the error the framework is designed to prevent.",
     fn: "strumento-concettuale",
     d1: "D1.14",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "assumed",
     relates: [
       { to: "truth-conditions-do-not-transfer", how: "refines", why: "The second says which error the first prevents, and says it with a case." }
@@ -96,7 +96,7 @@ const claims = [
     after: "",
     fn: "strumento-concettuale",
     d1: "D1.14",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "assumed",
     relates: [],
     usedIn: ["/lab/2026-02-03-the-seven-dimensional-taxonomy-v2/"]
@@ -113,7 +113,7 @@ const claims = [
     after: "",
     fn: "metodo-di-lavoro",
     d1: "D1.10",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "assumed",
     relates: [
       { to: "ontology-precedes-epistemology", how: "extends", why: "It turns the principle into one load-bearing axis and six modifiers." }
@@ -149,7 +149,7 @@ const claims = [
     after: "",
     fn: "metodo-di-lavoro",
     d1: "D1.10",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "used",
     relates: [],
     usedIn: ["/lab/2026-07-21-what-counts-as-a-verdict/", "/lab/2026-07-10-coding-manual-v2-1-retrospective-qc/"]
@@ -169,7 +169,7 @@ const claims = [
     after: "We take the term language model to refer to any system trained only on the task of string prediction, whether it operates over characters, words or sentences, and sequentially or not.",
     fn: "riferimento-tecnico",
     d1: "D1.14",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "assumed",
     relates: [],
     usedIn: ["/lab/2026-02-03-the-seven-dimensional-taxonomy-v2/"]
@@ -186,7 +186,7 @@ const claims = [
     after: "Until quite recently there was general agreement in the AI research community about machine understanding: while AI systems exhibit seemingly intelligent behavior in many specific tasks, they do not understand the data they process in the way humans do.",
     fn: "strumento-concettuale",
     d1: "D1.6",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "used",
     relates: [
       { to: "form-alone-cannot-yield-meaning", how: "presupposes", why: "The debate it describes has Bender and Koller's thesis as one of its poles." }
@@ -205,7 +205,7 @@ const claims = [
     after: "We believe that increasing the number of annotators is the best strategy, because it reduces the chances of accidental personal biases.",
     fn: "metodo-di-lavoro",
     d1: "D1.10",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "used",
     relates: [
       { to: "mode-a-needs-a-blind-recode", how: "refines", why: "It moves the problem: not which correction for coder bias, but how many coders." }
@@ -240,7 +240,7 @@ const claims = [
     after: "(C2) Once these representations are inferred, they are causally linked to LM prediction, and thus bear the same relation to generated text that an intentional agent\u2019s state bears to its communciative actions.",
     fn: "strumento-concettuale",
     d1: "D1.14",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "contested",
     relates: [
       { to: "form-alone-cannot-yield-meaning", how: "contests", why: "If the model infers representations of intentions, form alone does not stay mute, as Bender and Koller claim it must." }
@@ -259,7 +259,7 @@ const claims = [
     after: "The new assistant \u2018RL-CAI\u2019 is preferred by crowdworkers over those trained with previously collected [Bai et al., 2022, Ganguli et al., 2022] human feedback labels for harmfulness.",
     fn: "metodo-di-lavoro",
     d1: "D1.9",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "used",
     relates: [],
     usedIn: ["/lab/2026-07-21-what-counts-as-a-verdict/"]
@@ -275,7 +275,7 @@ const claims = [
     after: "However, there do exist variations in definition across NLG tasks, which will be further described in the later task-specific sections.",
     fn: "strumento-concettuale",
     d1: "D1.6",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "used",
     relates: [],
     usedIn: ["/lab/2026-02-03-the-seven-dimensional-taxonomy-v2/"]
@@ -292,7 +292,7 @@ const claims = [
     after: "The construction of HELM starts top-down with a taxonomy over scenarios and metrics (see Figure 2). The taxonomy not only facilitates the systematic selection of scenarios and metrics, but it also make explicit what is missing.",
     fn: "metodo-di-lavoro",
     d1: "D1.10",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "used",
     relates: [],
     usedIn: ["/lab/2026-02-20-coding-manual-v2-the-annotation-protocol/"]
@@ -342,7 +342,7 @@ const claims = [
     after: "The more that deliberate thinking and analysis is required for a problem (Evans, 2010), the greater the diversity of reasoning paths that can recover the answer.",
     fn: "strumento-concettuale",
     d1: "D1.3",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "used",
     relates: [],
     usedIn: ["/lab/2026-02-25-horizontal-validation-31-claims/"]
@@ -380,7 +380,7 @@ const claims = [
     after: "So the flat version is gone. I am not interested in defending it.",
     fn: "dato-che-corregge",
     d1: "D1.14",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "assumed",
     relates: [],
     usedIn: []
@@ -397,7 +397,7 @@ const claims = [
     after: "The old premise was a claim about a capability, and capability claims are hostage to the next experiment. The new one is a claim about a representational content, which is what the framework was always about.",
     fn: "strumento-concettuale",
     d1: "D1.14",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "assumed",
     relates: [
       { to: "no-metacognition-was-the-wrong-name", how: "refines", why: "It is the narrower premise that replaced the flat one, and the only part of it the argument needs." },
@@ -416,7 +416,7 @@ const claims = [
     after: "Lindsey\u2019s own numbers point the same way from a different angle: introspective detection succeeds on a minority of trials even in the strongest models he tested, and models asked to describe the mechanics behind their own calculations often describe them wrongly.",
     fn: "dato-che-corregge",
     d1: "D1.2",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "assumed",
     relates: [
       { to: "models-lack-epistemic-self-classification", how: "confirms", why: "A channel this narrow is not one a protocol can route the typing of a claim through." }
@@ -434,7 +434,7 @@ const claims = [
     after: "",
     fn: "metodo-di-lavoro",
     d1: "D1.10",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "used",
     relates: [
       { to: "surface-variance-masks-convergence", how: "refines", why: "It is the measured gap itself that must not be joined to a representation-level finding without an experiment." }
@@ -452,7 +452,7 @@ const claims = [
     after: "Hence this release.",
     fn: "metodo-di-lavoro",
     d1: "D1.10",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "used",
     relates: [
       { to: "mode-a-needs-a-blind-recode", how: "refines", why: "The blind recode counts only if a third party can repeat it from what was deposited." }
@@ -470,7 +470,7 @@ const claims = [
     after: "I had been asking one document to be accountable to both, and the seams were showing long before the second model made them visible.",
     fn: "strumento-concettuale",
     d1: "D1.3",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "used",
     relates: [
       { to: "ontology-precedes-epistemology", how: "extends", why: "The same principle applied one level up: not to the claim under test, but to the document that carries it." }
@@ -525,7 +525,7 @@ const claims = [
     after: "Each scale, by itself, has some possibility of error, and limited precision.",
     fn: "strumento-concettuale",
     d1: "D1.3",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "used",
     relates: [],
     usedIn: []
@@ -542,7 +542,7 @@ const claims = [
     after: "I am using “signaling” and “detecting” synonymously:",
     fn: "metodo-di-lavoro",
     d1: "D1.3",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "assumed",
     relates: [
       { to: "mayo-severity-strong", how: "refines", why: "Specifies severity as a property of the error-detecting procedure, conditional on the error being present." }
@@ -561,7 +561,7 @@ const claims = [
     after: "The job of the philosopher is to clarify but also to provoke reflection and scrutiny precisely in those areas that go unchallenged in ordinary practice.",
     fn: "metodo-di-lavoro",
     d1: "D1.8",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "used",
     relates: [],
     usedIn: []
@@ -578,7 +578,7 @@ const claims = [
     after: "So when it comes to the role of probability as a pedagogical tool for our purposes, severity – its assessment and control – will be at the center.",
     fn: "metodo-di-lavoro",
     d1: "D1.9",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "assumed",
     relates: [
       { to: "mayo-severity-strong", how: "presupposes", why: "Applying severity to methods presupposes the graded criterion it applies to claims." }
@@ -596,7 +596,7 @@ const claims = [
     after: "To take these goals at face value, it’s easy to see why they come up short.",
     fn: "strumento-concettuale",
     d1: "D1.6",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "assumed",
     relates: [
       { to: "mayo-severity-weak", how: "presupposes", why: "Measures the two schools against the BENT requirement and finds both short of it." }
@@ -614,7 +614,7 @@ const claims = [
     after: "Viewing statistical inference as severe testing lets us stand one level removed from existing accounts, where the air is a bit clearer.",
     fn: "riferimento-tecnico",
     d1: "D1.1",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "used",
     relates: [
       { to: "mayo-severity-meta-methodology", how: "refines", why: "Gives the term's provenance: Popper's word, first given a statistical definition here." }
@@ -632,7 +632,7 @@ const claims = [
     after: "If you fool around with the results afterwards, reporting only successful guesses, your report will be invalid.",
     fn: "dato-che-corregge",
     d1: "D1.4",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "used",
     relates: [],
     usedIn: []
@@ -648,7 +648,7 @@ const claims = [
     after: "If a hypothesized error is not detected by a test that has an overwhelmingly high chance of detecting it, if instead the test yields a result that accords well with no error, then there are grounds for the claim that the error is absent.",
     fn: "metodo-di-lavoro",
     d1: "D1.9",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "assumed",
     relates: [
       { to: "mayo-arguing-from-error", how: "confirms", why: "The same argument from error, stated twenty-two years earlier." }
@@ -666,7 +666,7 @@ const claims = [
     after: "Popper's account seems utterly incapable of saying anything positive.",
     fn: "strumento-concettuale",
     d1: "D1.6",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "used",
     relates: [
       { to: "mayo-severity-from-popper", how: "refines", why: "Says what Popper's severity lacked: a reason why passing counts in favour." }
@@ -684,7 +684,7 @@ const claims = [
     after: "And the test that alternative hypothesis H' failed need not be probative in the least so far as the errors of H go.",
     fn: "strumento-concettuale",
     d1: "D1.6",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "assumed",
     relates: [
       { to: "mayo1996-popper-lacks-positive", how: "extends", why: "From what Popper lacks to the criterion that replaces his." }
@@ -702,7 +702,7 @@ const claims = [
     after: "On the face of it, any inference, whether to the adequacy of a model or to a posterior probability, can be said to be warranted just to the extent that it has withstood severe testing.",
     fn: "strumento-concettuale",
     d1: "D1.6",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "assumed",
     relates: [
       { to: "mayo-severity-meta-methodology", how: "extends", why: "Extends severity from a meta-method for statistics to a criterion for any inference." }
@@ -720,7 +720,7 @@ const claims = [
     after: "Peirce's SCT has been a source of fascination and frustration.",
     fn: "strumento-concettuale",
     d1: "D1.6",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "used",
     relates: [
       { to: "peirce-induction-self-correcting", how: "presupposes", why: "Mayo's formulation of the thesis rests on Peirce's own statement of it (CP 5.145)." }
@@ -739,7 +739,7 @@ const claims = [
     after: "Inductive methods - understood as methods of experimental testing - are justified to the extent that they are error-correcting methods.",
     fn: "strumento-concettuale",
     d1: "D1.6",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "used",
     relates: [],
     usedIn: []
@@ -756,7 +756,7 @@ const claims = [
     after: "The probability given by this theory is in every way different - in meaning, numerical value, and form - from that of those who would apply to ampliative inference the doctrine of inverse chances.",
     fn: "strumento-concettuale",
     d1: "D1.14",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "assumed",
     relates: [],
     usedIn: []
@@ -773,7 +773,7 @@ const claims = [
     after: "When, however, we find that prediction after prediction, notwithstanding a preference for putting the most unlikely ones to the test, is verified by experiment, ... we begin to accord to the hypothesis a standing among scientific results.",
     fn: "strumento-concettuale",
     d1: "D1.9",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "assumed",
     relates: [
       { to: "mayo-severity-strong", how: "confirms", why: "The same demand, a test highly capable of finding the claim false, stated before severity had a name." }
@@ -792,7 +792,7 @@ const claims = [
     after: "The correction is not a matter of getting higher and higher probabilities, it is a matter of finding out whether the agreement is fortuitous; whether it is generated about as often as would be expected were the agreement of the chance variety.",
     fn: "metodo-di-lavoro",
     d1: "D1.9",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "used",
     relates: [
       { to: "peirce-induction-self-correcting", how: "refines", why: "Says how the correction happens: by rerunning the same method until a fortuitous agreement fails to recur." }
@@ -811,7 +811,7 @@ const claims = [
     after: "Here, the marvel is an inductive method's ability to correct the attempt at random sampling.",
     fn: "strumento-concettuale",
     d1: "D1.6",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "assumed",
     relates: [
       { to: "mayo-lift-off", how: "confirms", why: "Convergence of differently flawed selections is the same lift-off: the whole more reliable than its parts." }
@@ -830,7 +830,7 @@ const claims = [
     after: "Not only do we not need the uniformity of nature assumption, Peirce declares",
     fn: "strumento-concettuale",
     d1: "D1.14",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "used",
     relates: [],
     usedIn: []
@@ -846,7 +846,7 @@ const claims = [
     after: "Many philosophers still argue that the failure to obtain at least a probabilistic solution of the problem of induction means that we \"throw over almost everything that is regarded as knowledge by science and common sense\".",
     fn: "dato-che-corregge",
     d1: "D1.4",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "used",
     relates: [
       { to: "peirce-frequency-not-probability-of-hypotheses", how: "confirms", why: "Popper's zero-probability result is a reason not to assign probabilities to hypotheses." }
@@ -864,7 +864,7 @@ const claims = [
     after: "As Weyl put it: 'I wish to record my unbounded admiration for the work of the experimenter in his struggle to wrest interpretable facts from an unyielding Nature who knows so well how to meet our theories with a decisive No - or with an inaudible Yes.'",
     fn: "strumento-concettuale",
     d1: "D1.6",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "contested",
     relates: [],
     usedIn: []
@@ -880,7 +880,7 @@ const claims = [
     after: "To this extent my answer to the question, ‘how do we select a theory?’ resembles that given by the conventionalist; and like him I say that this choice is in part determined by considerations of utility.",
     fn: "strumento-concettuale",
     d1: "D1.14",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "assumed",
     relates: [],
     usedIn: []
@@ -896,7 +896,7 @@ const claims = [
     after: "(From the psychological point of view this may perhaps be a purposeful and well-adapted reaction.)",
     fn: "strumento-concettuale",
     d1: "D1.14",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "assumed",
     relates: [
       { to: "popper-decisions-settle-theories", how: "refines", why: "Says which statements the decision falls on: singular ones, accepted by an act rather than justified by experience." }
@@ -914,7 +914,7 @@ const claims = [
     after: "But then such theories never alone contradict a 'basic' statement: they contradict at most a conjunction of a basic statement describing a spatio-temporally singular event and of a universal non-existence statement saying that no other relevant cause is at work anywhere in the universe.",
     fn: "strumento-concettuale",
     d1: "D1.3",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "used",
     relates: [],
     usedIn: []
@@ -930,7 +930,7 @@ const claims = [
     after: "But the recognition that not only the theoretical but all the propositions in science are fallible, means the total collapse of all forms of dogmatic justificationism as theories of scientific rationality.",
     fn: "dato-che-corregge",
     d1: "D1.3",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "used",
     relates: [
       { to: "lakatos-all-theories-equally-improbable", how: "extends", why: "Adds the third failure: after unprovable and improbable, theories are also undisprovable." }
@@ -948,7 +948,7 @@ const claims = [
     after: "To sum up: classical justificationists only admitted proven theories; neoclassical justificationists probable ones; dogmatic falsificationists realized that in either case no theories are admissible.",
     fn: "strumento-concettuale",
     d1: "D1.3",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "contested",
     relates: [
       { to: "lakatos-ceteris-paribus-forbids", how: "presupposes", why: "The reductio works only once theories are read as carrying a ceteris paribus clause." }
@@ -966,7 +966,7 @@ const claims = [
     after: "",
     fn: "strumento-concettuale",
     d1: "D1.14",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "assumed",
     relates: [],
     usedIn: []
@@ -982,7 +982,7 @@ const claims = [
     after: "Indeed, the very selection of all such statements is a matter of a decision, which is not based on exclusively psychological considerations.",
     fn: "metodo-di-lavoro",
     d1: "D1.6",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "used",
     relates: [
       { to: "popper-basic-statements-by-decision", how: "refines", why: "Names what makes the decision non-arbitrary: a learnable technique that anyone trained in it can apply." }
@@ -1000,7 +1000,7 @@ const claims = [
     after: "(This situation does not really differ from Galileo's 'observation' of Jupiter's satellites: moreover, as some of Galileo's contemporaries rightly pointed out, he relied on a virtually non-existent optical theory - which then was less corroborated, and even less articulated, than present-day radio-optics.",
     fn: "metodo-di-lavoro",
     d1: "D1.9",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "used",
     relates: [],
     usedIn: []
@@ -1016,7 +1016,7 @@ const claims = [
     after: "By putting falsification in a new setting, he saves the attractive code of honour of the dogmatic falsificationist: that scientific honesty consists in specifying, in advance, an experiment such that, if the result contradicts the theory, the theory has to be given up.",
     fn: "strumento-concettuale",
     d1: "D1.6",
-    d1Status: "proposed",
+    d1Status: "confirmed",
     stance: "used",
     relates: [
       { to: "lakatos-dogmatic-falsificationism", how: "contests", why: "Keeps the code of honour of dogmatic falsificationism while dropping the claim that Nature decides." }

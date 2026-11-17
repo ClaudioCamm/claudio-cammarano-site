@@ -4,7 +4,7 @@
 kind: extract
 slug: severity-requirement
 zotero: GK3UCKC6
-status: drafted
+status: published
 title: "The severity requirement"
 where: "ch. 6, §6.2"
 pages: "178–183"

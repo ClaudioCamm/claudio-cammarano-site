@@ -964,3 +964,14 @@ body.profilo .profilo-role p{font-size:17px;line-height:1.65;max-width:64ch}
 /* fascia II della home inglese: i link della riga dei numeri si vedono come link (17/11/2026) */
 .tv-tav--en .tv-meta a.tv-meta-go{color:var(--color-lab-text);text-decoration:none;border-bottom:2px solid currentColor;white-space:nowrap}
 .tv-tav--en .tv-meta a.tv-meta-go:hover{color:var(--tv-ink)}
+/* accessibilita' (17/11/2026). 1. Il verde medio dello strato 3 nella fascia II
+   inglese: testo inchiostro in chiaro (6,2:1 invece di 2,8:1); in notturna resta
+   il bianco. Le etichette della fascia Lab inglese tornano a piena opacita'.
+   2. Link nel testo corrente delle pagine inglesi: sottolineatura sottile, cosi'
+   si riconoscono senza affidarsi al solo colore. Titoli, menu e bottoni no. */
+.tv-tav--geo .tv-strato--3{color:#1a1a1a}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .tv-tav--geo .tv-strato--3{color:#fff}}
+:root[data-theme="dark"] .tv-tav--geo .tv-strato--3{color:#fff}
+.tv-lab--en .article-tag,.tv-lab--en .article-meta,.tv-lab--en .home-lab-stage{opacity:1}
+html[lang="en"] main p:not(.mix-leg) a:not([class]),html[lang="en"] main dd a:not([class]){text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.18em;text-decoration-color:color-mix(in srgb,currentColor 55%,transparent)}
+html[lang="en"] main p a:not([class]):hover{text-decoration-color:currentColor}

@@ -3,7 +3,7 @@
 # Due copie in Zotero (l'anticipazione E4VX3ZLR, pp. 8-18; il volume NER2CLBP,
 # pp. 19-42): stesso testo, pagine diverse; una scheda sola.
 zotero: NER2CLBP
-status: drafted
+status: published
 underlinings: 64
 title_en: ""
 concepts: [falsification, claim-type]
