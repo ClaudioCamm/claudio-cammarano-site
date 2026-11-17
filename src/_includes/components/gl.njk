@@ -1,0 +1,4 @@
+{# Termine del glossario (17/11/2026): sottolineato a puntini, la definizione
+   compare al passaggio del mouse o al tocco (focus). Dati: _data/glossaryEn.js.
+   Da usare solo alla prima occorrenza del termine in una pagina. #}
+{% macro gl(key, label) %}{% set G = glossaryEn[key] %}{% if G %}<span class="gl" tabindex="0">{{ label or G.term }}<span class="gl-d" role="tooltip" data-pagefind-ignore>{{ G.def }}</span></span>{% else %}{{ label or key }}{% endif %}{% endmacro %}

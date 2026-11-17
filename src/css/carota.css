@@ -267,3 +267,10 @@ body.claims-page > .container,body.claims-page .site-header .container{max-width
 }
 /* schede di lettura su un concetto (Readings) */
 .rd-onc{list-style:none;margin:0;padding:0}.rd-onc li{border-top:1px solid var(--cc-line);padding:8px 0}.rd-onc a{text-decoration:none;color:inherit;font-family:var(--font-serif);font-size:17px}.rd-onc b{font-family:var(--font-sans);font-stretch:74%;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--cc-log);margin-right:8px}
+
+/* glossario (17/11/2026): sottolineato a puntini, definizione al passaggio o al tocco */
+.gl{position:relative;border-bottom:1px dotted currentColor;cursor:help;outline:none}
+.gl-d{display:none;position:absolute;left:0;top:calc(100% + 6px);z-index:20;width:max-content;max-width:300px;padding:9px 12px;background:var(--tv-ink,#1a1a1a);color:var(--color-bg,#fff);font-family:var(--font-sans);font-stretch:100%;font-size:13.5px;font-weight:400;font-style:normal;line-height:1.45;letter-spacing:0;text-transform:none;white-space:normal;box-shadow:0 4px 18px rgba(0,0,0,.18)}
+.gl:hover .gl-d,.gl:focus .gl-d,.gl:focus-within .gl-d{display:block}
+.gl:focus-visible{outline:2px solid var(--color-primary);outline-offset:2px}
+@media (max-width:760px){.gl-d{position:fixed;left:16px;right:16px;bottom:16px;top:auto;width:auto;max-width:none;font-size:15px;padding:12px 14px}}

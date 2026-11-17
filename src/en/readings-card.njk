@@ -49,7 +49,8 @@ eleventyComputed:
 {% endif %}
 {% endfor %}
 
-<section class="drawn"><p class="rd-k">Claims drawn from this card</p>
+{% from "components/gl.njk" import gl with context %}<section class="drawn"><p class="rd-k">Claims drawn from this card</p>
+<p class="ce-key">Each {{ gl("claim") }} shows its {{ gl("entia") }} {{ gl("function") }}; open <b>+</b> for its {{ gl("stance") }}, {{ gl("d1") }} and {{ gl("cito") }}.</p>
 {% for c in C.claimList %}<div class="dc"><a href="{{ c.url }}"><b>{{ c.n }}</b><span>{{ c.lead }}<small>{{ c.concepts }} · {{ c.voice }}</small></span></a>{% include "components/claim-entia.njk" %}</div>{% else %}<p class="none">No claims drawn yet.</p>{% endfor %}
 </section>
 <p class="lic">Paraphrase CC BY-NC 4.0, Claudio Cammarano. Quoted passages belong to their author and are kept short; the text itself is not distributed. Notes from the Zotero library, updated weekly.</p>

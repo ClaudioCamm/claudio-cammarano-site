@@ -961,3 +961,6 @@ body.profilo .profilo-role p{font-size:17px;line-height:1.65;max-width:64ch}
 @media (max-width:640px){#cerca-out li a{grid-template-columns:1fr}#cerca-out .cr-k{grid-row:auto;padding:0}#cerca-q{font-size:26px}}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) #cerca-out .cr-curated .cr-k,:root:not([data-theme="light"]) #cerca-out .cr-q-similar{color:#E07A8F}}
 :root[data-theme="dark"] #cerca-out .cr-curated .cr-k,:root[data-theme="dark"] #cerca-out .cr-q-similar{color:#E07A8F}
+/* fascia II della home inglese: i link della riga dei numeri si vedono come link (17/11/2026) */
+.tv-tav--en .tv-meta a.tv-meta-go{color:var(--color-lab-text);text-decoration:none;border-bottom:2px solid currentColor;white-space:nowrap}
+.tv-tav--en .tv-meta a.tv-meta-go:hover{color:var(--tv-ink)}

@@ -18,7 +18,7 @@ eleventyComputed:
 {% set rw = x.workFull %}{% set rx = x %}{% include "components/readings-jsonld.njk" %}
 {% set tab = "readings" %}{% include "components/claims-tabs.njk" %}
 <p class="rd-k" style="margin-top:22px"><a href="/en/claims/readings/">Readings</a> › {% if x.work.url %}<a href="{{ x.work.url }}">{{ x.work.short }} {{ x.work.year }}</a>{% else %}{{ x.work.short }} {{ x.work.year }}{% endif %} › Extract</p>
-<p class="ex-kind">Extract · a self-contained text inside a work</p>
+{% from "components/gl.njk" import gl with context %}<p class="ex-kind">Extract · a self-contained text inside a work</p>
 <h1 class="rd-h1 t" data-pagefind-meta="title:{{ x.title }} ({{ x.work.short }} {{ x.work.year }}, {{ x.where }})">{{ x.title }}</h1>
 <p class="rd-lede">{{ x.work.authorLine }}, {% if x.work.url %}<a href="{{ x.work.url }}"><em>{{ x.work.displayHtml | safe }}</em></a>{% else %}<em>{{ x.work.displayHtml | safe }}</em>{% endif %} ({{ x.work.year }}), {{ x.where }}, pp. {{ x.pages }}.</p>
 {% set s = R.stages.indexOf(x.status) + 1 %}
@@ -35,6 +35,7 @@ eleventyComputed:
 {% if x.scale.note %}<p class="ex-note">{{ x.scale.note }}</p>{% endif %}</section>{% endif %}
 {% if x.rulers.length %}<div class="ru"><p class="rd-k">Where it sits in the work</p>{% for rz in x.rulers %}{% include "components/ruler.njk" %}{% endfor %}</div>{% endif %}
 <section class="drawn"><p class="rd-k">Claims drawn from this extract</p>
+{% if x.claimList.length %}<p class="ce-key">Each {{ gl("claim") }} shows its {{ gl("entia") }} {{ gl("function") }}; open <b>+</b> for its {{ gl("stance") }}, {{ gl("d1") }} and {{ gl("cito") }}.</p>{% endif %}
 {% for c in x.claimList %}<div class="dc"><a href="{{ c.url }}"><b>{{ c.n }}</b><span>{{ c.lead }}<small>{{ c.concepts }} · {{ c.voice }}</small></span></a>{% include "components/claim-entia.njk" %}</div>{% else %}<p class="none">No claims drawn yet.</p>{% endfor %}
 </section>
 <p class="lic">Paraphrase and notation CC BY-NC 4.0, Claudio Cammarano. The formulations restate the author’s; they are not quotations.{% if x.work.url %} Back to the <a href="{{ x.work.url }}">card of the work</a>.{% endif %}</p>

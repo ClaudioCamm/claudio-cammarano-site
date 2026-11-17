@@ -58,12 +58,12 @@ eleventyComputed:
   {% else %}<p class="cr-hint">No relation to another claim has been declared yet.</p>{% endif %}
 </section>
 
-<section class="cp-sec" aria-labelledby="notation">
+{% from "components/gl.njk" import gl with context %}<section class="cp-sec" aria-labelledby="notation">
   <p class="cp-k" id="notation">Notation</p>
   <dl class="md">
-    <dt>Claim type</dt><dd>{{ c.d1 }}{% if c.d1Label %} · {{ c.d1Label }}{% endif %}{% if c.d1Status != "confirmed" %} <span class="mono">(proposed)</span>{% endif %}</dd>
-    <dt>Function</dt><dd>{{ c.fn }}</dd>
-    <dt>Stance</dt><dd>{{ c.stance }}</dd>
+    <dt>{{ gl("d1", "Claim type") }}</dt><dd>{{ c.d1 }}{% if c.d1Label %} · {{ c.d1Label }}{% endif %}{% if c.d1Status != "confirmed" %} <span class="mono">(proposed)</span>{% endif %}</dd>
+    <dt>{{ gl("function", "Function") }}</dt><dd>{{ c.fn }}</dd>
+    <dt>{{ gl("stance", "Stance") }}</dt><dd>{{ c.stance }}</dd>
     {% if c.usedIn.length %}<dt>Used in</dt><dd>{% for u in c.usedIn %}<a href="{{ u }}">{{ u }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</dd>{% endif %}
     <dt>Cite this</dt><dd class="mono">claudiocammarano.com/en/claims/{{ c.slug }}/</dd>
   </dl>
