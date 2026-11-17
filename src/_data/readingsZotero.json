@@ -1017,7 +1017,7 @@
      "isbn": "",
      "doi": "",
      "type": "journalArticle",
-     "status": "underlined",
+     "status": "drafted",
      "underlinings": 20,
      "last_read": "2026-11-12",
      "changed": false,
@@ -1029,121 +1029,121 @@
        "collection": "Reading Batch #1",
        "marks": [
         {
-         "page": "2",
+         "page": "299",
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
-         "page": "2",
+         "page": "299",
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
-         "page": "2",
+         "page": "299",
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
-         "page": "3",
+         "page": "300",
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
-         "page": "3",
+         "page": "300",
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
-         "page": "5",
+         "page": "302",
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
-         "page": "5",
+         "page": "302",
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
-         "page": "5",
+         "page": "302",
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
-         "page": "7",
+         "page": "304",
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
-         "page": "8",
+         "page": "305",
          "role": "structure",
          "heading": "",
          "extract": false
         },
         {
-         "page": "8",
+         "page": "305",
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
-         "page": "8",
+         "page": "305",
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
-         "page": "8",
+         "page": "305",
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
-         "page": "9",
+         "page": "306",
          "role": "structure",
          "heading": "",
          "extract": false
         },
         {
-         "page": "9",
+         "page": "306",
          "role": "structure",
          "heading": "",
          "extract": false
         },
         {
-         "page": "10",
+         "page": "307",
          "role": "structure",
          "heading": "",
          "extract": false
         },
         {
-         "page": "11",
+         "page": "308",
          "role": "structure",
          "heading": "",
          "extract": false
         },
         {
-         "page": "12",
+         "page": "309",
          "role": "structure",
          "heading": "",
          "extract": false
         },
         {
-         "page": "17",
+         "page": "314",
          "role": "key",
          "heading": "",
          "extract": false
         },
         {
-         "page": "19",
+         "page": "316",
          "role": "key",
          "heading": "",
          "extract": false
@@ -1499,7 +1499,7 @@
      "isbn": "",
      "doi": "10.1086/423748",
      "type": "journalArticle",
-     "status": "underlined",
+     "status": "drafted",
      "underlinings": 2,
      "last_read": "2026-11-15",
      "changed": false,
@@ -1511,13 +1511,13 @@
        "collection": "Bibliography for Checks",
        "marks": [
         {
-         "page": "1",
+         "page": "467",
          "role": "structure",
          "heading": "",
          "extract": false
         },
         {
-         "page": "3",
+         "page": "469",
          "role": "structure",
          "heading": "",
          "extract": false
