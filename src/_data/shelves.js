@@ -8,7 +8,7 @@ module.exports = [
     line: "Where the programme’s idea of evidence comes from: Mayo, Lakatos, Popper, Peirce." },
   { zotero: "Readings Batch #1.2", en: "Arguments under test",
     line: "How claims are defended, shielded from refutation, or made to carry the burden of proof." },
-  { zotero: "Readings Batch #1.2 / Bibliography for Checks", en: "For the checks",
+  { zotero: "Bibliography for Checks", en: "For the checks",
     line: "Sources the checks are run against: robust evidence, failed prophecies, laboratory life." },
   { zotero: "AI Projects", en: "Language models and knowledge",
     line: "What a language model can be said to know, and the philosophy of evidence and testimony used to ask." },

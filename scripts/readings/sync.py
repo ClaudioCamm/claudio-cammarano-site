@@ -5,6 +5,7 @@ del sito, src/_data/readingsZotero.json. Gira ogni settimana; a mano:
 
     python3 scripts/readings/sync.py            # Zotero in ~/Zotero
     python3 scripts/readings/sync.py --db PATH  # altra copia
+    python3 scripts/readings/sync.py --api      # dalla Web API (dal 17/11/2026)
 
 Zotero e' il quaderno e puo' essere in disordine; il sito vede solo OPERE.
 Norme di igiene (decise il 15/11/2026):
@@ -35,6 +36,15 @@ Norme di igiene (decise il 15/11/2026):
     marcata "changed".
 
 Il rapporto (stdout o --report) elenca scartati, ritirati, cambiati.
+
+Regole aggiunte il 17/11/2026:
+ - Scaffali: entrano tutte le cartelle di primo livello di Zotero tranne
+   quelle in "auto_groups.exclude" (Repository e le sue sottocartelle); il
+   config ne fissa ordine e nomi, le cartelle nuove si accodano da sole.
+ - Una voce puo' avere piu' PDF annotati: un righello per PDF, e lo scarto
+   delle pagine si cerca prima per PDF, poi per voce.
+ - Anno: se Extra porta "Original Date: AAAA", vale quello (edizione di
+   riferimento, norma 9).
 """
 import argparse, hashlib, json, os, re, shutil, sqlite3, sys, tempfile, unicodedata
 from datetime import date
@@ -81,6 +91,7 @@ def main():
     ap.add_argument("--cards", default=os.path.join(ROOT, "src", "readings"))
     ap.add_argument("--out", default=os.path.join(ROOT, "src", "_data", "readingsZotero.json"))
     ap.add_argument("--report", default="-")
+    ap.add_argument("--api", action="store_true", help="legge Zotero dalla Web API invece che dal database")
     a = ap.parse_args()
     cfg = json.load(open(a.config))
     slugs = json.load(open(a.slugs)) if os.path.exists(a.slugs) else {}
@@ -88,11 +99,16 @@ def main():
     tmp = tempfile.mkdtemp()
     try:
         db = os.path.join(tmp, "z.sqlite")
-        shutil.copy2(a.db, db)
-        for ext in ("-wal", "-shm"):          # Zotero scrive in WAL
-            if os.path.exists(a.db + ext):
-                shutil.copy2(a.db + ext, db + ext)
-        c = sqlite3.connect(f"file:{db}?mode=ro", uri=True)
+        if a.api:
+            sys.path.insert(0, HERE)
+            from zotero_api import build_db
+            c = build_db(os.environ.get("ZOTERO_USER_ID") or cfg["zotero_user"], db)
+        else:
+            shutil.copy2(a.db, db)
+            for ext in ("-wal", "-shm"):          # Zotero scrive in WAL
+                if os.path.exists(a.db + ext):
+                    shutil.copy2(a.db + ext, db + ext)
+            c = sqlite3.connect(f"file:{db}?mode=ro", uri=True)
         data, report = build(c, cfg, slugs, a.cards)
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
@@ -127,6 +143,14 @@ def build(c, cfg, slugs, cards_dir):
         return " / ".join(reversed(p))
 
     bypath = {cpath(k): k for k in colls}
+    # scaffali: quelli del config, piu' le cartelle di primo livello non escluse
+    auto = cfg.get("auto_groups")
+    if auto is not None:
+        listed = {g["zotero"] for g in cfg["groups"]}
+        excl = set(auto.get("exclude", []))
+        for cid, (n, p) in sorted(colls.items(), key=lambda kv: kv[1][0].lower()):
+            if p is None and n not in listed and n not in excl:
+                cfg["groups"].append(dict(zotero=n, en=n, blurb=""))
     keyid = {k: i for i, k in c.execute("select itemID, key from items")}
     offsets = cfg.get("offsets", {})
     report = dict(skipped=[], withdrawn=[], changed=[], notes=[])
@@ -134,7 +158,8 @@ def build(c, cfg, slugs, cards_dir):
 
     def annotations(att, copy_key):
         out = []
-        off = offsets.get(copy_key, 0)
+        att_key = c.execute("select key from items where itemID=?", (att,)).fetchone()[0]
+        off = offsets.get(att_key, offsets.get(copy_key, 0))
         for aid, atype, color, page, sidx, text, comment in c.execute(
                 """select itemID, type, color, pageLabel, sortIndex, text, comment
                    from itemAnnotations where parentItemID=? order by sortIndex""", (att,)):
@@ -156,7 +181,7 @@ def build(c, cfg, slugs, cards_dir):
                             heading="",  # nessun testo del libro nei dati pubblici
                             comment=(comment or "").strip() if "public" in atags else "",
                             date=mod, h=hashlib.sha1(norm_title(words).encode()).hexdigest()[:12],
-                            extract="extract" in atags))
+                            extract="extract" in atags, att=att_key))
         return out
 
     def part(i, collection):
@@ -179,7 +204,10 @@ def build(c, cfg, slugs, cards_dir):
         if typ == "attachment":
             atts = [i]
         anns = [x for att in atts for x in annotations(att, key)]
-        year = (field(i, "date") or "")[:4]
+        year = (re.search(r"\d{4}", field(i, "date") or "") or [""])[0]
+        od = re.search(r"^original date:\s*(\d{4})", field(i, "extra") or "", re.I | re.M)
+        if od:
+            year = od.group(1)
         return dict(key=key, type=typ, title=field(i, "title"), authors=au,
                     year=year if year.strip("0") else "", publisher=field(i, "publisher"),
                     isbn=re.sub(r"[^0-9X]", "", field(i, "ISBN").split(" ")[0].upper()), doi=field(i, "DOI").lower(),
@@ -293,13 +321,17 @@ def build(c, cfg, slugs, cards_dir):
             slugs[anchor] = cand
         slug = slugs[anchor]
         # 2. ogni passo una volta (vince la copia con piu' sottolineature)
-        seen_h, rulers = set(), []
+        seen_h, rulers, done_keys = set(), [], set()
         for p in ps:
-            mine = [x for x in p["annotations"] if x["h"] not in seen_h]
-            seen_h.update(x["h"] for x in p["annotations"])
-            if p["annotations"]:
-                rulers.append(dict(copy=p["key"], collection=p["collection"], marks=[
-                    dict(page=x["page"], role=x["role"], heading=x["heading"], extract=x["extract"]) for x in p["annotations"]],
+            if p["key"] in done_keys:     # la stessa voce in due cartelle: un righello solo
+                continue
+            done_keys.add(p["key"])
+            for att_key in dict.fromkeys(x["att"] for x in p["annotations"]):
+                anns = [x for x in p["annotations"] if x["att"] == att_key]
+                mine = [x for x in anns if x["h"] not in seen_h]
+                seen_h.update(x["h"] for x in anns)
+                rulers.append(dict(copy=p["key"], file=att_key, collection=p["collection"], marks=[
+                    dict(page=x["page"], role=x["role"], heading=x["heading"], extract=x["extract"]) for x in anns],
                     counted=len(mine)))
         n_ann = len(seen_h)
         groups_in = sorted({p["collection"] for p in ps}, key=order.index)

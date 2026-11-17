@@ -1,4 +1,11 @@
 {
+ "zotero_user": "19601631",
+ "auto_groups": {
+  "exclude": [
+   "Repository"
+  ],
+  "note": "Regola del 17/11/2026: entrano le cartelle di primo livello, tranne Repository e le sue sottocartelle"
+ },
  "groups": [
   {
    "zotero": "Reading Batch #1",
@@ -11,7 +18,7 @@
    "blurb": ""
   },
   {
-   "zotero": "Readings Batch #1.2 / Bibliography for Checks",
+   "zotero": "Bibliography for Checks",
    "en": "Bibliography for Checks",
    "blurb": ""
   },
@@ -41,10 +48,10 @@
  "same": [],
  "offsets": {
   "GK3UCKC6": 17,
-  "E4VX3ZLR": 8,
   "NER2CLBP": 6,
   "DC65GENA": 7,
-  "P29F49JV": 29
+  "P29F49JV": 29,
+  "C7EU98IN": 8
  },
  "titles_en": {
   "D4EZSUUY": "Fictions",

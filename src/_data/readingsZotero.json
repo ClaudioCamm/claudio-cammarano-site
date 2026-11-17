@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15",
+ "updated": "2026-11-17",
  "groups": [
   {
    "key": "reading-batch-1",
@@ -7,87 +7,34 @@
    "blurb": "",
    "works": [
     {
-     "slug": "mayo-1996",
-     "key": "GK3UCKC6",
-     "title": "Error and the growth of experimental knowledge",
+     "slug": "lakatos-1978",
+     "key": "NER2CLBP",
+     "title": "The Methodology of Scientific Research Programmes: Philosophical Papers",
      "title_en": "",
      "authors": [
       {
-       "last": "Mayo",
-       "first": "Deborah G."
+       "last": "Lakatos",
+       "first": "Imre"
       }
      ],
-     "year": "1996",
-     "publisher": "University of Chicago Press",
-     "isbn": "9780226511979",
-     "doi": "",
+     "year": "1978",
+     "publisher": "Cambridge University Press",
+     "isbn": "9780521216449",
+     "doi": "10.1017/cbo9780511621123",
      "type": "book",
      "status": "published",
-     "underlinings": 31,
+     "underlinings": 64,
      "last_read": "2026-11-15",
      "changed": false,
      "group": "Reading Batch #1",
      "rulers": [
       {
-       "copy": "GK3UCKC6",
+       "copy": "NER2CLBP",
+       "file": "C7EU98IN",
        "collection": "Reading Batch #1",
        "marks": [
         {
-         "page": "4",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "4",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "4",
-         "role": "structure",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "5",
-         "role": "structure",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "5",
-         "role": "structure",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "5",
-         "role": "structure",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "6",
-         "role": "structure",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "6",
-         "role": "structure",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "6",
-         "role": "structure",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "7",
+         "page": "8",
          "role": "key",
          "heading": "",
          "extract": false
@@ -117,6 +64,42 @@
          "extract": false
         },
         {
+         "page": "9",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "10",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "10",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "10",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "10",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "10",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
          "page": "10",
          "role": "key",
          "heading": "",
@@ -124,6 +107,30 @@
         },
         {
          "page": "11",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "11",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "11",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "11",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "11",
          "role": "structure",
          "heading": "",
          "extract": false
@@ -141,122 +148,77 @@
          "extract": false
         },
         {
-         "page": "178",
+         "page": "12",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "12",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "13",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "13",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "13",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "14",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "14",
          "role": "structure",
          "heading": "",
          "extract": false
         },
         {
-         "page": "178",
+         "page": "14",
          "role": "structure",
          "heading": "",
          "extract": false
         },
         {
-         "page": "179",
+         "page": "14",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "17",
          "role": "structure",
          "heading": "",
          "extract": false
         },
         {
-         "page": "179",
-         "role": "structure",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "180",
-         "role": "structure",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "180",
-         "role": "structure",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "180",
-         "role": "structure",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "180",
-         "role": "structure",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "180",
-         "role": "structure",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "180",
-         "role": "structure",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "181",
-         "role": "structure",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "181",
-         "role": "structure",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "181",
-         "role": "structure",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "182",
-         "role": "structure",
+         "page": "18",
+         "role": "key",
          "heading": "",
          "extract": false
         }
        ],
-       "counted": 32
-      }
-     ],
-     "also_in": [],
-     "keys": [
-      "GK3UCKC6"
-     ]
-    },
-    {
-     "slug": "lakatos-1978",
-     "key": "78L8DZRQ",
-     "title": "The Methodology of Scientific Research Programmes: Philosophical Papers",
-     "title_en": "",
-     "authors": [
-      {
-       "last": "Lakatos",
-       "first": "Imre"
-      }
-     ],
-     "year": "1978",
-     "publisher": "Cambridge University Press",
-     "isbn": "9780521216449",
-     "doi": "10.1017/cbo9780511621123",
-     "type": "book",
-     "status": "drafted",
-     "underlinings": 64,
-     "last_read": "2026-11-15",
-     "changed": false,
-     "group": "Reading Batch #1",
-     "rulers": [
+       "counted": 30
+      },
       {
        "copy": "NER2CLBP",
+       "file": "L9KVVHVC",
        "collection": "Reading Batch #1",
        "marks": [
         {
@@ -471,193 +433,6 @@
         }
        ],
        "counted": 35
-      },
-      {
-       "copy": "E4VX3ZLR",
-       "collection": "Reading Batch #1",
-       "marks": [
-        {
-         "page": "8",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "8",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "8",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "8",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "9",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "9",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "10",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "10",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "10",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "10",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "10",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "10",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "11",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "11",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "11",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "11",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "11",
-         "role": "structure",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "11",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "11",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "12",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "12",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "13",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "13",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "13",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "14",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "14",
-         "role": "structure",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "14",
-         "role": "structure",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "14",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "17",
-         "role": "structure",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "18",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        }
-       ],
-       "counted": 30
       }
      ],
      "also_in": [
@@ -665,8 +440,235 @@
      ],
      "keys": [
       "NER2CLBP",
-      "E4VX3ZLR",
-      "78L8DZRQ"
+      "NER2CLBP"
+     ]
+    },
+    {
+     "slug": "mayo-1996",
+     "key": "GK3UCKC6",
+     "title": "Error and the growth of experimental knowledge",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Mayo",
+       "first": "Deborah G."
+      }
+     ],
+     "year": "1996",
+     "publisher": "University of Chicago Press",
+     "isbn": "9780226511979",
+     "doi": "",
+     "type": "book",
+     "status": "published",
+     "underlinings": 31,
+     "last_read": "2026-11-15",
+     "changed": false,
+     "group": "Reading Batch #1",
+     "rulers": [
+      {
+       "copy": "GK3UCKC6",
+       "file": "T2Y576HS",
+       "collection": "Reading Batch #1",
+       "marks": [
+        {
+         "page": "4",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "4",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "4",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "5",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "5",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "5",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "6",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "6",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "6",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "7",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "8",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "8",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "8",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "9",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "10",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "11",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "11",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "11",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "178",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "178",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "179",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "179",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "180",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "180",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "180",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "180",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "180",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "180",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "181",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "181",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "181",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "182",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        }
+       ],
+       "counted": 32
+      }
+     ],
+     "also_in": [],
+     "keys": [
+      "GK3UCKC6"
      ]
     },
     {
@@ -685,7 +687,7 @@
      "isbn": "9781107286184",
      "doi": "10.1017/9781107286184",
      "type": "book",
-     "status": "drafted",
+     "status": "published",
      "underlinings": 47,
      "last_read": "2026-11-05",
      "changed": false,
@@ -693,6 +695,7 @@
      "rulers": [
       {
        "copy": "DC65GENA",
+       "file": "2DLPDRXI",
        "collection": "Reading Batch #1",
        "marks": [
         {
@@ -997,6 +1000,189 @@
      "keys": [
       "DC65GENA"
      ]
+    },
+    {
+     "slug": "mayo-2005",
+     "key": "NCVK7RGL",
+     "title": "Peircean Induction and the Error-Correcting Thesis",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Mayo",
+       "first": "Deborah G."
+      }
+     ],
+     "year": "2005",
+     "publisher": "",
+     "isbn": "",
+     "doi": "",
+     "type": "journalArticle",
+     "status": "underlined",
+     "underlinings": 20,
+     "last_read": "2026-11-12",
+     "changed": false,
+     "group": "Reading Batch #1",
+     "rulers": [
+      {
+       "copy": "NCVK7RGL",
+       "file": "RKXIE3LE",
+       "collection": "Reading Batch #1",
+       "marks": [
+        {
+         "page": "2",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "2",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "2",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "3",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "3",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "5",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "5",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "5",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "7",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "8",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "8",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "8",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "8",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "9",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "9",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "10",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "11",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "12",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "17",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "19",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        }
+       ],
+       "counted": 20
+      }
+     ],
+     "also_in": [],
+     "keys": [
+      "NCVK7RGL"
+     ]
+    },
+    {
+     "slug": "nozick-1981",
+     "key": "77MHJE28",
+     "title": "Philosophical Explanations",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Nozick",
+       "first": "Robert"
+      }
+     ],
+     "year": "1981",
+     "publisher": "Belknap Press of Harvard University Press",
+     "isbn": "0674664485",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Reading Batch #1",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "77MHJE28"
+     ]
     }
    ]
   },
@@ -1034,6 +1220,33 @@
      "also_in": [],
      "keys": [
       "LJ4AKJXP"
+     ]
+    },
+    {
+     "slug": "grice-1975",
+     "key": "BPVCWBZ6",
+     "title": "Logic and Conversation",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Grice",
+       "first": "H. Paul"
+      }
+     ],
+     "year": "1975",
+     "publisher": "Academic Press",
+     "isbn": "",
+     "doi": "10.1163/9789004368811_003",
+     "type": "bookSection",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Readings Batch #1.2",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "BPVCWBZ6"
      ]
     },
     {
@@ -1178,6 +1391,33 @@
      "keys": [
       "JH9GVUX9"
      ]
+    },
+    {
+     "slug": "wittgenstein-1966",
+     "key": "XD8GIRHU",
+     "title": "Lectures and Conversations on Aesthetics, Psychology and Religious Belief",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Wittgenstein",
+       "first": "Ludwig"
+      }
+     ],
+     "year": "1966",
+     "publisher": "University of California Press",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Readings Batch #1.2",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "XD8GIRHU"
+     ]
     }
    ]
   },
@@ -1188,7 +1428,7 @@
    "works": [
     {
      "slug": "popper-1959",
-     "key": "9ZML8HC7",
+     "key": "P29F49JV",
      "title": "The Logic of scientific discovery",
      "title_en": "",
      "authors": [
@@ -1202,15 +1442,16 @@
      "isbn": "9780415278430",
      "doi": "",
      "type": "book",
-     "status": "drafted",
+     "status": "published",
      "underlinings": 3,
      "last_read": "2026-11-15",
      "changed": false,
-     "group": "Readings Batch #1.2 / Bibliography for Checks",
+     "group": "Bibliography for Checks",
      "rulers": [
       {
        "copy": "P29F49JV",
-       "collection": "Readings Batch #1.2 / Bibliography for Checks",
+       "file": "4XTRVK7J",
+       "collection": "Bibliography for Checks",
        "marks": [
         {
          "page": "91",
@@ -1239,7 +1480,7 @@
      ],
      "keys": [
       "P29F49JV",
-      "9ZML8HC7"
+      "P29F49JV"
      ]
     },
     {
@@ -1262,11 +1503,12 @@
      "underlinings": 2,
      "last_read": "2026-11-15",
      "changed": false,
-     "group": "Readings Batch #1.2 / Bibliography for Checks",
+     "group": "Bibliography for Checks",
      "rulers": [
       {
        "copy": "3FRG2VW7",
-       "collection": "Readings Batch #1.2 / Bibliography for Checks",
+       "file": "AQNZCR5Y",
+       "collection": "Bibliography for Checks",
        "marks": [
         {
          "page": "1",
@@ -1290,6 +1532,33 @@
      ]
     },
     {
+     "slug": "ashley-montagu-1938",
+     "key": "SGYADNT6",
+     "title": "Witchcraft, Oracles and Magic among the Azande. E. E. Evans-Pritchard",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Ashley-Montagu",
+       "first": "M. F."
+      }
+     ],
+     "year": "1938",
+     "publisher": "",
+     "isbn": "",
+     "doi": "10.1086/347374",
+     "type": "journalArticle",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Bibliography for Checks",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "SGYADNT6"
+     ]
+    },
+    {
      "slug": "boult-2026",
      "key": "57B4UWTK",
      "title": "Epistemic assholes",
@@ -1309,11 +1578,65 @@
      "underlinings": 0,
      "last_read": "",
      "changed": false,
-     "group": "Readings Batch #1.2 / Bibliography for Checks",
+     "group": "Bibliography for Checks",
      "rulers": [],
      "also_in": [],
      "keys": [
       "57B4UWTK"
+     ]
+    },
+    {
+     "slug": "clayman-2001",
+     "key": "F4F63RH9",
+     "title": "Answers and Evasions",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Clayman",
+       "first": "Steven E."
+      }
+     ],
+     "year": "2001",
+     "publisher": "",
+     "isbn": "",
+     "doi": "10.1017/s0047404501003037",
+     "type": "journalArticle",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Bibliography for Checks",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "F4F63RH9"
+     ]
+    },
+    {
+     "slug": "lakatos-1987",
+     "key": "5CUUG4N3",
+     "title": "Falsification and the Methodology of Scientific Research Programmes",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Lakatos",
+       "first": "Imre"
+      }
+     ],
+     "year": "1987",
+     "publisher": "Wadsworth",
+     "isbn": "",
+     "doi": "",
+     "type": "bookSection",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Bibliography for Checks",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "5CUUG4N3"
      ]
     },
     {
@@ -1340,7 +1663,7 @@
      "underlinings": 0,
      "last_read": "",
      "changed": false,
-     "group": "Readings Batch #1.2 / Bibliography for Checks",
+     "group": "Bibliography for Checks",
      "rulers": [],
      "also_in": [],
      "keys": [
@@ -1368,7 +1691,7 @@
      "year": "2022",
      "publisher": "",
      "isbn": "",
-     "doi": "",
+     "doi": "10.18653/v1/2022.findings-emnlp.423",
      "type": "conferencePaper",
      "status": "on file",
      "underlinings": 0,
@@ -1434,7 +1757,7 @@
       "Matter and Memory"
      ],
      "keys": [
-      "YMR9S5G4",
+      "HJSYPK8S",
       "HJSYPK8S"
      ]
     },
@@ -1454,10 +1777,10 @@
       }
      ],
      "year": "2022",
-     "publisher": "Anthropic",
+     "publisher": "",
      "isbn": "",
-     "doi": "",
-     "type": "journalArticle",
+     "doi": "10.48550/arxiv.2212.08073",
+     "type": "preprint",
      "status": "on file",
      "underlinings": 0,
      "last_read": "",
@@ -1482,7 +1805,7 @@
      ],
      "year": "1986",
      "publisher": "University of Chicago Press",
-     "isbn": "",
+     "isbn": "0226041077",
      "doi": "",
      "type": "book",
      "status": "on file",
@@ -1514,7 +1837,7 @@
      "year": "2020",
      "publisher": "ACL",
      "isbn": "",
-     "doi": "",
+     "doi": "10.18653/v1/2020.acl-main.463",
      "type": "conferencePaper",
      "status": "on file",
      "underlinings": 0,
@@ -1553,7 +1876,7 @@
      "year": "2021",
      "publisher": "ACM",
      "isbn": "",
-     "doi": "",
+     "doi": "10.1145/3442188.3445922",
      "type": "conferencePaper",
      "status": "on file",
      "underlinings": 0,
@@ -1584,8 +1907,8 @@
      "year": "2021",
      "publisher": "",
      "isbn": "",
-     "doi": "",
-     "type": "journalArticle",
+     "doi": "10.48550/arxiv.2108.07258",
+     "type": "preprint",
      "status": "on file",
      "underlinings": 0,
      "last_read": "",
@@ -1614,7 +1937,7 @@
      ],
      "year": "2003",
      "publisher": "Blackwell",
-     "isbn": "",
+     "isbn": "9780631182832",
      "doi": "",
      "type": "book",
      "status": "on file",
@@ -1695,7 +2018,7 @@
      ],
      "year": "1983",
      "publisher": "Oxford University Press",
-     "isbn": "",
+     "isbn": "0198247001",
      "doi": "",
      "type": "book",
      "status": "on file",
@@ -1727,7 +2050,7 @@
      "year": "2024",
      "publisher": "",
      "isbn": "",
-     "doi": "",
+     "doi": "10.1162/coli_a_00492",
      "type": "journalArticle",
      "status": "on file",
      "underlinings": 0,
@@ -1753,7 +2076,7 @@
      ],
      "year": "1992",
      "publisher": "Oxford University Press",
-     "isbn": "",
+     "isbn": "0198247869",
      "doi": "",
      "type": "book",
      "status": "on file",
@@ -1861,7 +2184,7 @@
      ],
      "year": "2011",
      "publisher": "Oxford University Press",
-     "isbn": "",
+     "isbn": "9780199232383",
      "doi": "",
      "type": "book",
      "status": "on file",
@@ -1916,7 +2239,7 @@
      "year": "1972",
      "publisher": "",
      "isbn": "",
-     "doi": "",
+     "doi": "10.2307/2184328",
      "type": "journalArticle",
      "status": "on file",
      "underlinings": 0,
@@ -1942,7 +2265,7 @@
      ],
      "year": "2005",
      "publisher": "Princeton University Press",
-     "isbn": "",
+     "isbn": "9780691122946",
      "doi": "",
      "type": "book",
      "status": "on file",
@@ -1969,7 +2292,7 @@
      ],
      "year": "2003",
      "publisher": "Harvard University Press",
-     "isbn": "",
+     "isbn": "9780674011670",
      "doi": "",
      "type": "book",
      "status": "on file",
@@ -2023,7 +2346,7 @@
      ],
      "year": "1999",
      "publisher": "Oxford University Press",
-     "isbn": "",
+     "isbn": "0198237774",
      "doi": "",
      "type": "book",
      "status": "on file",
@@ -2050,7 +2373,7 @@
      ],
      "year": "1965",
      "publisher": "Cambridge University Press",
-     "isbn": "",
+     "isbn": "9780521051651",
      "doi": "",
      "type": "book",
      "status": "on file",
@@ -2077,7 +2400,7 @@
      ],
      "year": "1983",
      "publisher": "Cambridge University Press",
-     "isbn": "",
+     "isbn": "0521238293",
      "doi": "",
      "type": "book",
      "status": "on file",
@@ -2135,7 +2458,7 @@
      ],
      "year": "1993",
      "publisher": "Oxford University Press",
-     "isbn": "",
+     "isbn": "0195046285",
      "doi": "",
      "type": "book",
      "status": "on file",
@@ -2162,7 +2485,7 @@
      ],
      "year": "1970",
      "publisher": "University of Chicago Press",
-     "isbn": "",
+     "isbn": "0226458032",
      "doi": "",
      "type": "book",
      "status": "on file",
@@ -2189,7 +2512,7 @@
      ],
      "year": "2003",
      "publisher": "Cambridge University Press",
-     "isbn": "",
+     "isbn": "0521827132",
      "doi": "",
      "type": "book",
      "status": "on file",
@@ -2221,8 +2544,8 @@
      "year": "2022",
      "publisher": "",
      "isbn": "",
-     "doi": "",
-     "type": "journalArticle",
+     "doi": "10.48550/arxiv.2211.09110",
+     "type": "preprint",
      "status": "on file",
      "underlinings": 0,
      "last_read": "",
@@ -2251,7 +2574,7 @@
      ],
      "year": "2019",
      "publisher": "Pantheon Books",
-     "isbn": "",
+     "isbn": "9781524748258",
      "doi": "",
      "type": "book",
      "status": "on file",
@@ -2283,7 +2606,7 @@
      "year": "2023",
      "publisher": "",
      "isbn": "",
-     "doi": "",
+     "doi": "10.1073/pnas.2215907120",
      "type": "journalArticle",
      "status": "on file",
      "underlinings": 0,
@@ -2310,8 +2633,8 @@
      "year": "2023",
      "publisher": "",
      "isbn": "",
-     "doi": "",
-     "type": "journalArticle",
+     "doi": "10.48550/arxiv.2303.08774",
+     "type": "preprint",
      "status": "on file",
      "underlinings": 0,
      "last_read": "",
@@ -2395,8 +2718,8 @@
      "year": "2022",
      "publisher": "",
      "isbn": "",
-     "doi": "",
-     "type": "journalArticle",
+     "doi": "10.48550/arxiv.2208.02957",
+     "type": "preprint",
      "status": "on file",
      "underlinings": 0,
      "last_read": "",
@@ -2421,7 +2744,7 @@
      ],
      "year": "1963",
      "publisher": "Routledge",
-     "isbn": "",
+     "isbn": "9780710019660",
      "doi": "",
      "type": "book",
      "status": "on file",
@@ -2502,7 +2825,7 @@
      ],
      "year": "2000",
      "publisher": "Oxford University Press",
-     "isbn": "",
+     "isbn": "9780192893062",
      "doi": "",
      "type": "book",
      "status": "on file",
@@ -2622,7 +2945,7 @@
      ],
      "year": "2016",
      "publisher": "Oxford University Press",
-     "isbn": "",
+     "isbn": "9780190498511",
      "doi": "",
      "type": "book",
      "status": "on file",
@@ -2649,7 +2972,7 @@
      ],
      "year": "1980",
      "publisher": "Oxford University Press",
-     "isbn": "",
+     "isbn": "019824424X",
      "doi": "",
      "type": "book",
      "status": "on file",
@@ -2731,7 +3054,7 @@
      ],
      "year": "2007",
      "publisher": "Blackwell",
-     "isbn": "",
+     "isbn": "9781405133968",
      "doi": "",
      "type": "book",
      "status": "on file",
@@ -2747,7 +3070,7 @@
     },
     {
      "slug": "wittgenstein-1953",
-     "key": "99ZACNVX",
+     "key": "YYTVLDND",
      "title": "Philosophical Investigations",
      "title_en": "",
      "authors": [
@@ -2771,7 +3094,7 @@
       "Matter and Memory"
      ],
      "keys": [
-      "99ZACNVX",
+      "YYTVLDND",
       "YYTVLDND"
      ]
     },
@@ -2788,7 +3111,7 @@
      ],
      "year": "2003",
      "publisher": "Oxford University Press",
-     "isbn": "",
+     "isbn": "9780195155273",
      "doi": "",
      "type": "book",
      "status": "on file",
@@ -2855,7 +3178,7 @@
      "year": "2001",
      "publisher": "Oxford University Press",
      "isbn": "",
-     "doi": "",
+     "doi": "10.1093/0195128923.003.0015",
      "type": "bookSection",
      "status": "on file",
      "underlinings": 0,
@@ -2935,7 +3258,7 @@
      ],
      "year": "1977",
      "publisher": "Éditions du Seuil",
-     "isbn": "",
+     "isbn": "2020047314",
      "doi": "",
      "type": "book",
      "status": "on file",
@@ -3048,7 +3371,7 @@
      "year": "1984",
      "publisher": "",
      "isbn": "",
-     "doi": "",
+     "doi": "10.2307/1175554",
      "type": "journalArticle",
      "status": "on file",
      "underlinings": 0,
@@ -3182,7 +3505,7 @@
      ],
      "year": "2009",
      "publisher": "Farrar, Straus and Giroux",
-     "isbn": "",
+     "isbn": "9780374231965",
      "doi": "",
      "type": "book",
      "status": "on file",
@@ -3213,7 +3536,7 @@
      ],
      "year": "2021",
      "publisher": "Farrar, Straus and Giroux",
-     "isbn": "",
+     "isbn": "9780374157357",
      "doi": "",
      "type": "book",
      "status": "on file",
@@ -3241,8 +3564,8 @@
      "year": "1988",
      "publisher": "",
      "isbn": "",
-     "doi": "",
-     "type": "bookSection",
+     "doi": "10.2307/3178066",
+     "type": "journalArticle",
      "status": "on file",
      "underlinings": 0,
      "last_read": "",
@@ -3460,7 +3783,7 @@
      ],
      "year": "2001",
      "publisher": "Verdier",
-     "isbn": "",
+     "isbn": "9782864323440",
      "doi": "",
      "type": "book",
      "status": "on file",
@@ -3487,7 +3810,7 @@
      ],
      "year": "1986",
      "publisher": "Oxford University Press",
-     "isbn": "",
+     "isbn": "0195036689",
      "doi": "",
      "type": "book",
      "status": "on file",
@@ -3568,7 +3891,7 @@
      ],
      "year": "1995",
      "publisher": "Free Press",
-     "isbn": "",
+     "isbn": "0029280451",
      "doi": "",
      "type": "book",
      "status": "on file",
@@ -3595,7 +3918,7 @@
      ],
      "year": "2011",
      "publisher": "Basic Books",
-     "isbn": "",
+     "isbn": "9780465010219",
      "doi": "",
      "type": "book",
      "status": "on file",
@@ -3657,7 +3980,7 @@
      ],
      "year": "1978",
      "publisher": "Harvard University Press",
-     "isbn": "",
+     "isbn": "9780674576292",
      "doi": "",
      "type": "book",
      "status": "on file",
