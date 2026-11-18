@@ -4,7 +4,7 @@
 kind: extract
 slug: strength-and-security
 zotero: 3FRG2VW7
-status: drafted
+status: published
 title: "Strength of evidence and security of evidence claims"
 where: "§4"
 pages: "470–471"
