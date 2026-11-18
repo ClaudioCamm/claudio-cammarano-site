@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17",
+ "updated": "2026-11-19",
  "groups": [
   {
    "key": "reading-batch-1",
@@ -672,6 +672,162 @@
      ]
     },
     {
+     "slug": "mayo-2005",
+     "key": "NCVK7RGL",
+     "title": "Peircean Induction and the Error-Correcting Thesis",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Mayo",
+       "first": "Deborah G."
+      }
+     ],
+     "year": "2005",
+     "publisher": "",
+     "isbn": "",
+     "doi": "",
+     "type": "journalArticle",
+     "status": "published",
+     "underlinings": 20,
+     "last_read": "2026-11-12",
+     "changed": false,
+     "group": "Reading Batch #1",
+     "rulers": [
+      {
+       "copy": "NCVK7RGL",
+       "file": "RKXIE3LE",
+       "collection": "Reading Batch #1",
+       "marks": [
+        {
+         "page": "299",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "299",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "299",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "300",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "300",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "302",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "302",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "302",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "304",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "305",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "305",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "305",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "305",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "306",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "306",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "307",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "308",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "309",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "314",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "316",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        }
+       ],
+       "counted": 20
+      }
+     ],
+     "also_in": [],
+     "keys": [
+      "NCVK7RGL"
+     ]
+    },
+    {
      "slug": "mayo-2018",
      "key": "DC65GENA",
      "title": "Statistical Inference as Severe Testing: How to Get Beyond the Statistics Wars",
@@ -999,162 +1155,6 @@
      "also_in": [],
      "keys": [
       "DC65GENA"
-     ]
-    },
-    {
-     "slug": "mayo-2005",
-     "key": "NCVK7RGL",
-     "title": "Peircean Induction and the Error-Correcting Thesis",
-     "title_en": "",
-     "authors": [
-      {
-       "last": "Mayo",
-       "first": "Deborah G."
-      }
-     ],
-     "year": "2005",
-     "publisher": "",
-     "isbn": "",
-     "doi": "",
-     "type": "journalArticle",
-     "status": "published",
-     "underlinings": 20,
-     "last_read": "2026-11-12",
-     "changed": false,
-     "group": "Reading Batch #1",
-     "rulers": [
-      {
-       "copy": "NCVK7RGL",
-       "file": "RKXIE3LE",
-       "collection": "Reading Batch #1",
-       "marks": [
-        {
-         "page": "299",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "299",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "299",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "300",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "300",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "302",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "302",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "302",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "304",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "305",
-         "role": "structure",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "305",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "305",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "305",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "306",
-         "role": "structure",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "306",
-         "role": "structure",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "307",
-         "role": "structure",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "308",
-         "role": "structure",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "309",
-         "role": "structure",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "314",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        },
-        {
-         "page": "316",
-         "role": "key",
-         "heading": "",
-         "extract": false
-        }
-       ],
-       "counted": 20
-      }
-     ],
-     "also_in": [],
-     "keys": [
-      "NCVK7RGL"
      ]
     },
     {
@@ -1500,8 +1500,8 @@
      "doi": "10.1086/423748",
      "type": "journalArticle",
      "status": "published",
-     "underlinings": 2,
-     "last_read": "2026-11-15",
+     "underlinings": 11,
+     "last_read": "2026-11-18",
      "changed": false,
      "group": "Bibliography for Checks",
      "rulers": [
@@ -1521,9 +1521,63 @@
          "role": "structure",
          "heading": "",
          "extract": false
+        },
+        {
+         "page": "469",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "470",
+         "role": "structure",
+         "heading": "",
+         "extract": true
+        },
+        {
+         "page": "470",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "470",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "470",
+         "role": "structure",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "470",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "471",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "471",
+         "role": "key",
+         "heading": "",
+         "extract": false
+        },
+        {
+         "page": "471",
+         "role": "key",
+         "heading": "",
+         "extract": false
         }
        ],
-       "counted": 2
+       "counted": 11
       }
      ],
      "also_in": [],

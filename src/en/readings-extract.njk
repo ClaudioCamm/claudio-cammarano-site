@@ -25,7 +25,7 @@ eleventyComputed:
 <div class="st" style="max-width:420px">{% for i in [1,2,3,4,5] %}<i class="{{ 'on' if i <= s }}"></i>{% endfor %}</div>
 <b class="rd-meta" style="display:block;margin-top:6px">Extract {{ x.status }} · {{ x.claimList.length }} claims drawn</b>
 <section class="ex-st"><p class="rd-k">What it says, in one sentence</p><p class="ex-big">{{ x.statement | mdInline | safe }}</p></section>
-<section class="sec"><h2>The prospectus</h2><p class="sp">{{ x.notation | mdInline | safe }}</p>
+<section class="sec"><h2>{{ x.table_title or "The prospectus" }}</h2><p class="sp">{{ x.notation | mdInline | safe }}</p>
 {% for g in x.groups %}<p class="px-g">{{ g.name }}</p>
 {% for r in g.rows %}<div class="px-r{% if r.key %} key{% endif %}"><b>{{ r.id }}</b><span class="px-n">{{ r.name }}</span><span class="px-f">{{ r.formula }}</span><p>{{ r.reading }}</p></div>{% endfor %}{% endfor %}
 </section>

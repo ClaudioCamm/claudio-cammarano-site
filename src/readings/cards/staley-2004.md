@@ -1,10 +1,10 @@
 ---
 # Card: una scheda per opera. Parafrasi di Claudio; citazioni max 3, max 25 parole.
 # Copia annotata: 3FRG2VW7 (Bibliography for Checks); pagine della rivista = pagina del PDF + 466.
-# Sottolineate solo le sezioni 1-2 (pp. 467-469): la scheda copre quelle.
+# Sottolineate le sezioni 1-4 (pp. 467-471): la scheda copre quelle; la 4 ha un Extract.
 zotero: 3FRG2VW7
 status: published
-underlinings: 2
+underlinings: 11
 title_en: ""
 concepts: [severity, convergent-paths]
 why: "Robust results are what the programme counts on when independent runs or coders agree. Staley says what that agreement buys: not stronger evidence, but a more secure claim about the evidence."
@@ -29,4 +29,13 @@ sections:
       - t: "Discrimination, not fit"
         d: "Agreement with the hypothesis is not enough; the result must be one the alternatives would rarely produce."
         key: true
+  - n: "3"
+    title: "First- and Second-Order Evidence"
+    pages: "469–470"
+    thesis: "Since whether a fact is evidence is itself an empirical question, data can be evidence for a hypothesis or evidence that other data are evidence for it. The difference is one of role, not of kind: the same fact can play either part, depending on the hypothesis of interest."
+  - n: "4"
+    title: "Strength of Evidence and Security of Evidence Claims"
+    pages: "470–471"
+    thesis: "Strength is how strongly data indicate a hypothesis; security is how far the claim that they do survives the failure of an auxiliary assumption. Whether robustness adds strength stays open; that it can add security is what the paper sets out to show."
+    extract: strength-and-security
 ---
