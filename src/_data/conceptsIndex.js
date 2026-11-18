@@ -2554,7 +2554,8 @@ module.exports = [
       { title: "Financial Predictionization", url: "/curated/2026-11-05-levine-pacing-frontier-cartello-bloomberg/", _source: "curated" },
       { title: "China's AI stock-market struggles are a warning", url: "/curated/2026-11-03-economist-borsa-cina-ai/", _source: "curated" },
       { title: "Aaronson-Ambainis Conjecture proved! (By AI, of course)", url: "/curated/2026-11-08-aaronson-congettura-dimostrata-ai-shtetl/", _source: "curated" },
-      { title: "Can the AI boom make enough money to sustain itself?", url: "/curated/2026-11-12-economist-ricavi-boom-ai/", _source: "curated" }
+      { title: "Can the AI boom make enough money to sustain itself?", url: "/curated/2026-11-12-economist-ricavi-boom-ai/", _source: "curated" },
+      { title: "Anthropic and the Monetization of Paradise", url: "/curated/2026-11-18-lepore-anthropic-paradiso-newyorker/", _source: "curated" }
     ]
   },
   {
@@ -2724,7 +2725,8 @@ module.exports = [
       { title: "Hannah Fry: How OpenAI has caused an existential crisis in mathematics", url: "/curated/2026-10-14-fry-openai-crisi-matematica-newscientist/", _source: "curated" },
       { title: "The AI boom is threatened by an epidemic of unreliable numbers", url: "/curated/2026-10-14-economist-numeri-inaffidabili-ai/", _source: "curated" },
       { title: "From Kenya to Japan, Rush to Fix Security Flaw Takes Sites Briefly Offline", url: "/curated/2026-10-22-chutel-nierenberg-otieno-php-nyt/", _source: "curated" },
-      { title: "What does ChatGPT say about the election? Depends on who's asking!", url: "/curated/2026-11-09-princeton-chatgpt-elezioni-memoria-citp/", _source: "curated" }
+      { title: "What does ChatGPT say about the election? Depends on who's asking!", url: "/curated/2026-11-09-princeton-chatgpt-elezioni-memoria-citp/", _source: "curated" },
+      { title: "AI has proved that a theory underpinning fundamental physics is trustworthy", url: "/curated/2026-11-11-economist-yang-mills-dimostrazione-ai/", _source: "curated" }
     ]
   },
   {
@@ -3440,7 +3442,8 @@ module.exports = [
       { title: "I Helped Fact-Check the 1619 Project. The Times Ignored Me.", url: "/curated/2020-03-06-harris-1619-project-fact-check-politico/", _source: "curated" },
       { title: "America's Next Story", url: "/curated/2026-04-09-lepore-americas-next-story/", _source: "curated" },
       { title: "What Was the American Revolution For?", url: "/curated/2025-11-17-lepore-rivoluzione-americana-250-newyorker/", _source: "curated" },
-      { title: "The Disruption Machine", url: "/curated/2014-06-16-lepore-disruption-machine-newyorker/", _source: "curated" }
+      { title: "The Disruption Machine", url: "/curated/2014-06-16-lepore-disruption-machine-newyorker/", _source: "curated" },
+      { title: "Anthropic and the Monetization of Paradise", url: "/curated/2026-11-18-lepore-anthropic-paradiso-newyorker/", _source: "curated" }
     ]
   },
   {
@@ -6447,7 +6450,8 @@ module.exports = [
     note: "Dimostrazione matematica in cui una parte del lavoro, la ricerca della prova o la sua verifica, è svolta da un calcolatore; con i verificatori formali come Lean ogni passaggio può essere controllato meccanicamente. **Nel sito interessa la fiducia che sposta: si può credere vera una prova che nessuno ha ancora capito, perché una macchina e pochi esperti l'hanno controllata.**",
     articles: [
       { title: "Aaronson-Ambainis Conjecture proved! (By AI, of course)", url: "/curated/2026-11-08-aaronson-congettura-dimostrata-ai-shtetl/", _source: "curated" },
-      { title: "Hugo Duminil-Copin, de l'autre côté de la machine", url: "/curated/2026-11-14-duminil-copin-matematica-macchina-grandcontinent/", _source: "curated" }
+      { title: "Hugo Duminil-Copin, de l'autre côté de la machine", url: "/curated/2026-11-14-duminil-copin-matematica-macchina-grandcontinent/", _source: "curated" },
+      { title: "AI has proved that a theory underpinning fundamental physics is trustworthy", url: "/curated/2026-11-11-economist-yang-mills-dimostrazione-ai/", _source: "curated" }
     ]
   },
   {
@@ -6619,7 +6623,8 @@ module.exports = [
     note: "Convinzione, diffusa nel capitale di rischio della Silicon Valley, che i fondatori debbano guidare le proprie aziende senza essere sottoposti al controllo ordinario di investitori e consigli di amministrazione. **Nel sito interessa il suo costo: protegge le scommesse lunghe, ma concentra in una persona sola il potere e il rischio.**",
     articles: [
       { title: "I profeti del codice", url: "/curated/2026-10-20-garcia-carbajo-profeti-del-codice-sole24ore/", _source: "curated" },
-      { title: "Jensen Huang and the end of the 'lol nothing matters' era of American politics", url: "/curated/2026-11-12-newton-huang-culto-fondatore-platformer/", _source: "curated" }
+      { title: "Jensen Huang and the end of the 'lol nothing matters' era of American politics", url: "/curated/2026-11-12-newton-huang-culto-fondatore-platformer/", _source: "curated" },
+      { title: "Anthropic and the Monetization of Paradise", url: "/curated/2026-11-18-lepore-anthropic-paradiso-newyorker/", _source: "curated" }
     ]
   },
   {
@@ -6715,6 +6720,18 @@ module.exports = [
     note: "Politologo e dirigente cinese nato nel 1955, già professore all'Università Fudan di Shanghai, consigliere di tre leader del Partito comunista e membro del Comitato permanente del Politburo. L'archivio lo incontra nel 2026 come voce dell'inquietudine del partito davanti a cambiamenti che non controlla, dall'intelligenza artificiale al lavoro su piattaforma. **La sua risposta, più controllo e non più riforme, misura quanto il partito consideri l'AI una questione di ordine sociale prima che di crescita.**",
     articles: [
       { title: "Xi Jinping's chief ideologue is worried", url: "/curated/2026-11-11-economist-wang-huning-ideologo/", _source: "curated" }
+    ]
+  },
+
+  {
+    name: "utopia tecnologica",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q2892659"],
+    related: [ { name: "culto del fondatore", why: "Quando la promessa utopica diventa un'azienda, la definizione del bene comune finisce nelle mani dei fondatori." } ],
+    note: "Convinzione che il progresso delle macchine possa da solo liberare gli esseri umani dal lavoro e dal bisogno, e che la felicità segua dall'efficienza. Ha una lunga storia: nel 1833, a Pittsburgh, John Adolphus Etzler prometteva il paradiso in dieci anni con il vento, il sole e le macchine, e nel 1843 Thoreau gli rispondeva che la forza dell'amore non si misura in cavalli vapore. L'archivio la segue dove diventa un prodotto finanziario: nel 2026 la promessa di un mondo migliore entra nel prospetto di una quotazione in Borsa. **La domanda che la voce tiene aperta è chi stabilisca che cosa sia il paradiso promesso, e con quale mandato.**",
+    articles: [
+      { title: "Anthropic and the Monetization of Paradise", url: "/curated/2026-11-18-lepore-anthropic-paradiso-newyorker/", _source: "curated" }
     ]
   }
 

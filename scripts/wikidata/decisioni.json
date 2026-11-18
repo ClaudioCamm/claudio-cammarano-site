@@ -181,7 +181,8 @@
     "soft power": "Q1143951",
     "Duminil-Copin, Hugo": "Q15461028",
     "fair use": "Q131562",
-    "Wang Huning": "Q64543"
+    "Wang Huning": "Q64543",
+    "utopia tecnologica": "Q2892659"
   },
   "nessun_qid": {
     "cosmotecnica": "Solo il libro di Yuk Hui ha un elemento: il concetto eredita la geografia dal teorico.",
@@ -980,6 +981,10 @@
       "paesi": [
         "Cina"
       ]
+    },
+    "utopia tecnologica": {
+      "modo": "nessuna",
+      "paesi": []
     }
   },
   "conio": [
