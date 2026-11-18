@@ -182,7 +182,9 @@
     "Duminil-Copin, Hugo": "Q15461028",
     "fair use": "Q131562",
     "Wang Huning": "Q64543",
-    "utopia tecnologica": "Q2892659"
+    "utopia tecnologica": "Q2892659",
+    "verifica formale": "Q173326",
+    "sycophancy": "Q139915450"
   },
   "nessun_qid": {
     "cosmotecnica": "Solo il libro di Yuk Hui ha un elemento: il concetto eredita la geografia dal teorico.",
@@ -983,6 +985,14 @@
       ]
     },
     "utopia tecnologica": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "verifica formale": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "sycophancy": {
       "modo": "nessuna",
       "paesi": []
     }

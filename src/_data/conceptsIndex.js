@@ -1979,7 +1979,8 @@ module.exports = [
       { title: "I'm a College Professor. Writing Isn't as Important as We Think.", url: "/curated/2026-09-29-cruz-scrittura-pensiero-nyt/", _source: "curated" },
       { title: "Deskilling the body", url: "/curated/2026-10-13-challenger-deskilling-the-body-aeon/", _source: "curated" },
       { title: "An Interview with Palantir CTO Shyam Sankar About the AI Religious War", url: "/curated/2026-10-29-thompson-sankar-palantir-stratechery/", _source: "curated" },
-      { title: "Hugo Duminil-Copin, de l'autre côté de la machine", url: "/curated/2026-11-14-duminil-copin-matematica-macchina-grandcontinent/", _source: "curated" }
+      { title: "Hugo Duminil-Copin, de l'autre côté de la machine", url: "/curated/2026-11-14-duminil-copin-matematica-macchina-grandcontinent/", _source: "curated" },
+      { title: "What does it mean to understand what we built?", url: "/curated/2026-11-16-brooker-capire-cosa-abbiamo-costruito/", _source: "curated" }
     ]
   },
   {
@@ -4730,7 +4731,8 @@ module.exports = [
     ],
     note: "Filosofo della scienza nato a Vienna (1902–1994), poi cittadino britannico e docente alla London School of Economics, autore della *Logik der Forschung* (1934, in inglese *The Logic of Scientific Discovery*, 1959), di *Congetture e confutazioni* (1963) e della *Società aperta e i suoi nemici* (1945). La sua mossa fondativa è un criterio di demarcazione: una teoria è scientifica se vieta qualcosa, cioè se esiste un'osservazione che la confuterebbe. Nessuna quantità di cigni bianchi dimostra la generalizzazione, un cigno nero la abbatte; e una teoria che sopravvive alle prove non è dimostrata, è soltanto non ancora confutata — Popper chiama questo corroborazione e nega che sia sostegno induttivo. Ne segue una preferenza controintuitiva per le congetture audaci: meglio una teoria improbabile e ricca di contenuto, perché vieta di più e quindi si espone di più. I suoi bersagli dichiarati erano la psicoanalisi e il marxismo storicista, apparati che spiegano ogni esito e non ne proibiscono nessuno. Nel sito arriva tardi e per una strada obliqua, ed è giusto dire perché: tutta la famiglia di strumenti che l'archivio usa in ingresso — il *not even wrong*, il test severo, la lettura del criti-hype — poggia sulla falsificabilità, e mancava l'antenato. La lettura che il sito adotta non è però devota, ed è quella di Deborah Mayo: Popper aveva il criterio giusto e non aveva il modo di farlo mordere, perché non ha mai fornito un resoconto di che cosa renda un test un *buon* test. Senza una misura della severità, la falsificabilità resta una parola d'ordine, e in pratica qualunque teoria può dirsi corroborata da qualunque prova le sia sopravvissuta. C'è infine un'appendice che riguarda l'altra metà dell'archivio: nella Positivismusstreit aperta a Tubinga nel 1961 Popper si trovò contro la scuola di Francoforte, con Habermas dall'altro lato, e l'accusa che muoveva è la stessa che qui si muove altrove — una critica totale della ragione rinuncia per costruzione a poter essere corretta.",
     articles: [
-      { title: "Karl Popper", url: "/curated/2026-07-31-thornton-karl-popper-sep/", _source: "curated" }
+      { title: "Karl Popper", url: "/curated/2026-07-31-thornton-karl-popper-sep/", _source: "curated" },
+      { title: "Formal Verification is Not Verifiable", url: "/curated/2026-11-13-keles-verifica-formale-non-verificabile/", _source: "curated" }
     ]
   },
   {
@@ -6274,7 +6276,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q3480226"],
     note: "Conflitti politici combattuti su temi morali e identitari, come aborto, religione, genere e immigrazione, più che su interessi economici; l'espressione si diffonde negli Stati Uniti all'inizio degli anni Novanta. **Nel sito interessa il loro rapporto con l'economia: secondo Mazzonis funzionano quando danno un nome a un disagio materiale, e perdono presa quando quel disagio trova parole proprie.**",
     articles: [
-      { title: "Le crociate delle culture wars non tirano più", url: "/curated/2026-11-05-mazzonis-culture-wars-midterm/", _source: "curated" }
+      { title: "Le crociate delle culture wars non tirano più", url: "/curated/2026-11-05-mazzonis-culture-wars-midterm/", _source: "curated" },
+      { title: "As Grand Theft Auto VI breaks records, games journalism reinvents itself to survive", url: "/curated/2026-11-17-leake-giornalismo-videogiochi-gta-reuters/", _source: "curated" }
     ]
   },
   {
@@ -6393,7 +6396,8 @@ module.exports = [
       { title: "We Opted Out of Google AI Search - Here's What Happened", url: "/curated/2026-11-05-shepard-uscita-ai-google-zyppy/", _source: "curated" },
       { title: "The Death of Search", url: "/curated/2024-11-08-wong-morte-della-ricerca-atlantic/", _source: "curated" },
       { title: "Generative AI and News Report 2026: From Standalone Tools to Information Infrastructure", url: "/curated/2026-10-30-simon-nielsen-fletcher-ai-generativa-notizie-reuters/", _source: "curated" },
-      { title: "Most major UK news publishers saw Google search visibility fall in 2026", url: "/curated/2026-11-10-tobitt-visibilita-google-editori-uk-pressgazette/", _source: "curated" }
+      { title: "Most major UK news publishers saw Google search visibility fall in 2026", url: "/curated/2026-11-10-tobitt-visibilita-google-editori-uk-pressgazette/", _source: "curated" },
+      { title: "As Grand Theft Auto VI breaks records, games journalism reinvents itself to survive", url: "/curated/2026-11-17-leake-giornalismo-videogiochi-gta-reuters/", _source: "curated" }
     ]
   },
   {
@@ -6451,7 +6455,8 @@ module.exports = [
     articles: [
       { title: "Aaronson-Ambainis Conjecture proved! (By AI, of course)", url: "/curated/2026-11-08-aaronson-congettura-dimostrata-ai-shtetl/", _source: "curated" },
       { title: "Hugo Duminil-Copin, de l'autre côté de la machine", url: "/curated/2026-11-14-duminil-copin-matematica-macchina-grandcontinent/", _source: "curated" },
-      { title: "AI has proved that a theory underpinning fundamental physics is trustworthy", url: "/curated/2026-11-11-economist-yang-mills-dimostrazione-ai/", _source: "curated" }
+      { title: "AI has proved that a theory underpinning fundamental physics is trustworthy", url: "/curated/2026-11-11-economist-yang-mills-dimostrazione-ai/", _source: "curated" },
+      { title: "Formal Verification is Not Verifiable", url: "/curated/2026-11-13-keles-verifica-formale-non-verificabile/", _source: "curated" }
     ]
   },
   {
@@ -6732,6 +6737,31 @@ module.exports = [
     note: "Convinzione che il progresso delle macchine possa da solo liberare gli esseri umani dal lavoro e dal bisogno, e che la felicità segua dall'efficienza. Ha una lunga storia: nel 1833, a Pittsburgh, John Adolphus Etzler prometteva il paradiso in dieci anni con il vento, il sole e le macchine, e nel 1843 Thoreau gli rispondeva che la forza dell'amore non si misura in cavalli vapore. L'archivio la segue dove diventa un prodotto finanziario: nel 2026 la promessa di un mondo migliore entra nel prospetto di una quotazione in Borsa. **La domanda che la voce tiene aperta è chi stabilisca che cosa sia il paradiso promesso, e con quale mandato.**",
     articles: [
       { title: "Anthropic and the Monetization of Paradise", url: "/curated/2026-11-18-lepore-anthropic-paradiso-newyorker/", _source: "curated" }
+    ]
+  },
+
+  {
+    name: "verifica formale",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q173326"],
+    related: [ { name: "dimostrazione assistita dal calcolatore", why: "La dimostrazione assistita è il caso matematico della verifica formale, con lo stesso problema di chi controlla le definizioni." } ],
+    note: "Uso di metodi matematici per dimostrare che un programma o un sistema rispetta una specifica, con prove controllate da un assistente di dimostrazione come Lean o Rocq. Nel 2026 l'AI la porta dalla nicchia accademica alla pratica corrente, e la estende fuori dal software, alle dimostrazioni di matematica e di fisica. L'archivio la segue sul terreno della fiducia: la prova certifica un enunciato, ma restano da controllare le definizioni, i modelli e i verificatori su cui si regge, oltre alle persone che dovrebbero capirla. **Una verifica formale sposta la fiducia senza eliminarla: dalla dimostrazione a ciò che la dimostrazione dà per buono.**",
+    articles: [
+      { title: "Formal Verification is Not Verifiable", url: "/curated/2026-11-13-keles-verifica-formale-non-verificabile/", _source: "curated" },
+      { title: "What does it mean to understand what we built?", url: "/curated/2026-11-16-brooker-capire-cosa-abbiamo-costruito/", _source: "curated" }
+    ]
+  },
+
+  {
+    name: "sycophancy",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q139915450"],
+    related: [ { name: "echo chamber", why: "L'echo chamber chiude il lettore fra fonti che gli danno ragione; la sycophancy porta la stessa dinamica dentro una sola conversazione." } ],
+    note: "Tendenza di un modello linguistico ad assecondare l'utente, cambiando una risposta corretta per adeguarla a ciò che l'interlocutore mostra di credere. Il termine si afferma nella ricerca sull'allineamento dei primi anni Venti, che la riconduce in parte all'addestramento con il giudizio umano, perché quel giudizio premia le risposte gradite. L'archivio la segue dove smette di essere un difetto di tono e diventa un problema di informazione pubblica: nel 2026 un rapporto UNESCO mostra che sul clima tutti i modelli provati cedono all'utente che insiste. **Un sistema che cambia risposta quando l'interlocutore insiste rispecchia l'utente invece di informarlo.**",
+    articles: [
+      { title: "AI systems are easy to pressure into giving false climate information", url: "/curated/2026-11-16-ucl-unesco-ai-clima-sycophancy/", _source: "curated" }
     ]
   }
 
