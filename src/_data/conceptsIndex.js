@@ -293,7 +293,8 @@ module.exports = [
       { title: "When AI builds itself", url: "/curated/2026-06-19-anthropic-recursive-self-improvement/", _source: "curated" },
       { title: "Intelligenza artificiale e rischio estinzione, che cosa pensano (davvero) gli scienziati?", url: "/curated/2026-09-26-signorelli-rischio-estinzione-scienziati-backdoor/", _source: "curated" },
       { title: "AI’s Real Gift to Science", url: "/curated/2026-10-04-kiros-ai-real-gift-science-atlantic/", _source: "curated" },
-      { title: "Financial Predictionization", url: "/curated/2026-11-05-levine-pacing-frontier-cartello-bloomberg/", _source: "curated" }
+      { title: "Financial Predictionization", url: "/curated/2026-11-05-levine-pacing-frontier-cartello-bloomberg/", _source: "curated" },
+      { title: "The Flaw at the Heart of Anthropic's I.P.O.", url: "/curated/2026-11-15-sarin-anthropic-ipo-nyt/", _source: "curated" }
     ]
   },
   {
@@ -1417,7 +1418,8 @@ module.exports = [
       { title: "Putin’s war on schools: ‘millions of books burnt before my eyes’", url: "/curated/2026-10-10-hauschild-johanson-libri-scuola-ucraina-sundaytimes/", _source: "curated" },
       { title: "Can the News Exist Without Big Tech? The Atlas Says Yes", url: "/curated/2026-10-08-bell-chaplin-the-atlas-cjr/", _source: "curated" },
       { title: "The New Age of Reading", url: "/curated/2026-10-19-heller-daunt-new-age-of-reading-newyorker/", _source: "curated" },
-      { title: "Generative AI floods and dilutes the market for books", url: "/curated/2026-08-03-chakrabarty-ginsburg-diluizione-mercato-libri-arxiv/", _source: "curated" }
+      { title: "Generative AI floods and dilutes the market for books", url: "/curated/2026-08-03-chakrabarty-ginsburg-diluizione-mercato-libri-arxiv/", _source: "curated" },
+      { title: "The Part About the Machines", url: "/curated/2026-11-17-tipismana-urbano-romanzo-ai-pointmag/", _source: "curated" }
     ]
   },
   {
@@ -1806,7 +1808,8 @@ module.exports = [
     note: "La tradizione filosofico-politica fondata sulla libertà individuale, i diritti, lo stato di diritto e i limiti al potere arbitrario. Nel sito è il valore identitario con cui The Economist costruisce la propria autorità editoriale — una strategia di marketing valoriale distinta dal «marketing della verità» di WaPo e NYT, più resistente alle crisi di credibilità legate all'assetto proprietario.",
     articles: [
       { title: "The history of liberalism: a timeline", url: "/curated/2026-06-25-economist-liberalism-timeline/", _source: "curated" },
-      { title: "We Know How to Fix Homelessness. Look at Denver.", url: "/curated/2026-10-13-lopez-denver-senzatetto-nyt/", _source: "curated" }
+      { title: "We Know How to Fix Homelessness. Look at Denver.", url: "/curated/2026-10-13-lopez-denver-senzatetto-nyt/", _source: "curated" },
+      { title: "The Believer", url: "/curated/2023-09-11-chotiner-douthat-persuasione-newyorker/", _source: "curated" }
     ]
   },
   {
@@ -2046,7 +2049,8 @@ module.exports = [
       { title: "Europe's public broadcasters go from prime time to hard-to-find", url: "/curated/2026-07-09-economist-psb-europe-hard-to-find/", _source: "curated" },
       { title: "Per contare devi farti amare (l'attenzione non basta più)", url: "/curated/2025-11-10-tarchetti-love-brand-editoria-nonhocapito/", _source: "curated" },
       { title: "Unmasking the anonymous hosts of 'Russians With Attitude,' a pro-war podcast popular with US far right", url: "/curated/2026-04-06-hourani-russians-with-attitude-kyivindependent/", _source: "curated" },
-      { title: "A Florida local newspaper ran an oped. It was an Iranian AI fake.", url: "/curated/2026-10-09-waldvogel-iran-articoli-ai-giornali-usa-washingtonpost/", _source: "curated" }
+      { title: "A Florida local newspaper ran an oped. It was an Iranian AI fake.", url: "/curated/2026-10-09-waldvogel-iran-articoli-ai-giornali-usa-washingtonpost/", _source: "curated" },
+      { title: "The Believer", url: "/curated/2023-09-11-chotiner-douthat-persuasione-newyorker/", _source: "curated" }
     ]
   },
   {
@@ -2556,7 +2560,8 @@ module.exports = [
       { title: "China's AI stock-market struggles are a warning", url: "/curated/2026-11-03-economist-borsa-cina-ai/", _source: "curated" },
       { title: "Aaronson-Ambainis Conjecture proved! (By AI, of course)", url: "/curated/2026-11-08-aaronson-congettura-dimostrata-ai-shtetl/", _source: "curated" },
       { title: "Can the AI boom make enough money to sustain itself?", url: "/curated/2026-11-12-economist-ricavi-boom-ai/", _source: "curated" },
-      { title: "Anthropic and the Monetization of Paradise", url: "/curated/2026-11-18-lepore-anthropic-paradiso-newyorker/", _source: "curated" }
+      { title: "Anthropic and the Monetization of Paradise", url: "/curated/2026-11-18-lepore-anthropic-paradiso-newyorker/", _source: "curated" },
+      { title: "The Flaw at the Heart of Anthropic's I.P.O.", url: "/curated/2026-11-15-sarin-anthropic-ipo-nyt/", _source: "curated" }
     ]
   },
   {
@@ -3000,7 +3005,8 @@ module.exports = [
       { title: "Giordano: “L’Ucraina deve essere difesa, anche dalle false verità”", url: "/curated/2026-10-21-cuzzocrea-giordano-ucraina-repubblica/", _source: "curated" },
       { title: "When Will This War End? The Question Is Meaningless.", url: "/curated/2026-02-15-gumenyuk-quando-finira-guerra-nyt/", _source: "curated" },
       { title: "L'Ucraina chiusa in un guscio di noce: «Ora lo sappiamo, nessuno ci salverà»", url: "/curated/2026-02-22-giordano-guscio-di-noce-corriere/", _source: "curated" },
-      { title: "The World's Last Chance for Peace", url: "/curated/2026-11-13-sanchez-normalizzazione-guerra-foreignaffairs/", _source: "curated" }
+      { title: "The World's Last Chance for Peace", url: "/curated/2026-11-13-sanchez-normalizzazione-guerra-foreignaffairs/", _source: "curated" },
+      { title: "The Kyiv Independent confronts journalism in times of war", url: "/curated/2026-11-15-ourdan-kyiv-independent-lemonde/", _source: "curated" }
     ]
   },
   {
@@ -5031,7 +5037,8 @@ module.exports = [
       { title: "How Russian Propaganda Learned to Look Finnish", url: "/curated/2026-09-16-liemienov-maksymiv-propaganda-smette-di-sembrare-straniera-united24/", _source: "curated" },
       { title: "Anti-Waymo campaign relied on op-eds written with AI", url: "/curated/2026-11-08-tani-waymo-editoriali-ai-semafor/", _source: "curated" },
       { title: "Are AI bots running these Philadelphia and New Jersey news sites?", url: "/curated/2026-11-11-billypenn-siti-zombie-notizie-locali/", _source: "curated" },
-      { title: "Generative AI floods and dilutes the market for books", url: "/curated/2026-08-03-chakrabarty-ginsburg-diluizione-mercato-libri-arxiv/", _source: "curated" }
+      { title: "Generative AI floods and dilutes the market for books", url: "/curated/2026-08-03-chakrabarty-ginsburg-diluizione-mercato-libri-arxiv/", _source: "curated" },
+      { title: "The Part About the Machines", url: "/curated/2026-11-17-tipismana-urbano-romanzo-ai-pointmag/", _source: "curated" }
     ]
   },
   {
@@ -6240,7 +6247,8 @@ module.exports = [
     note: "Controllo preventivo o successivo di ciò che può essere detto, pubblicato o trasmesso, esercitato da un potere pubblico o delegato alle piattaforme. **Nel sito interessa per il rapporto con la forma: ciò che un regime riesce a sorvegliare dipende anche dalla durata e dal formato dei testi che circolano.**",
     articles: [
       { title: "Hit podcasts reveal the angst of China's youth", url: "/curated/2026-11-01-economist-podcast-giovani-cina/", _source: "curated" },
-      { title: "The Fall of Scientific American", url: "/curated/2026-10-22-fraizer-scientific-american-thenation/", _source: "curated" }
+      { title: "The Fall of Scientific American", url: "/curated/2026-10-22-fraizer-scientific-american-thenation/", _source: "curated" },
+      { title: "The Kyiv Independent confronts journalism in times of war", url: "/curated/2026-11-15-ourdan-kyiv-independent-lemonde/", _source: "curated" }
     ]
   },
   {
@@ -6349,7 +6357,8 @@ module.exports = [
     note: "Autonomia di una redazione nel decidere che cosa pubblicare, rispetto alla proprietà, agli inserzionisti e al potere politico. **Nel sito interessa il punto in cui si rompe: raramente per un ordine, più spesso quando chi possiede la testata ha da perdere altrove.**",
     articles: [
       { title: "The Fall of Scientific American", url: "/curated/2026-10-22-fraizer-scientific-american-thenation/", _source: "curated" },
-      { title: "Giornali, dopo i nuovi editori la sfida dei ricavi", url: "/curated/2026-10-24-gambaro-quotidiani-ricavi-mediatrends/", _source: "curated" }
+      { title: "Giornali, dopo i nuovi editori la sfida dei ricavi", url: "/curated/2026-10-24-gambaro-quotidiani-ricavi-mediatrends/", _source: "curated" },
+      { title: "The Kyiv Independent confronts journalism in times of war", url: "/curated/2026-11-15-ourdan-kyiv-independent-lemonde/", _source: "curated" }
     ]
   },
   {
@@ -6762,6 +6771,31 @@ module.exports = [
     note: "Tendenza di un modello linguistico ad assecondare l'utente, cambiando una risposta corretta per adeguarla a ciò che l'interlocutore mostra di credere. Il termine si afferma nella ricerca sull'allineamento dei primi anni Venti, che la riconduce in parte all'addestramento con il giudizio umano, perché quel giudizio premia le risposte gradite. L'archivio la segue dove smette di essere un difetto di tono e diventa un problema di informazione pubblica: nel 2026 un rapporto UNESCO mostra che sul clima tutti i modelli provati cedono all'utente che insiste. **Un sistema che cambia risposta quando l'interlocutore insiste rispecchia l'utente invece di informarlo.**",
     articles: [
       { title: "AI systems are easy to pressure into giving false climate information", url: "/curated/2026-11-16-ucl-unesco-ai-clima-sycophancy/", _source: "curated" }
+    ]
+  },
+
+  {
+    name: "epanortosi",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q1135275"],
+    related: [ { name: "rilevatori di testo generato", why: "La formula «non è X, è Y» è uno dei segni che lettori e rilevatori riconoscono nella prosa generata." } ],
+    note: "Figura della retorica classica, la *correctio* dei latini, con cui chi parla corregge un'espressione appena usata per sostituirla con una più forte. Nel 2026, nella polemica sul romanzo di David Silva Rojas premiato in Messico, la sua variante più semplice, «non è X, è Y», contata più di trenta volte, diventa un indizio del testo generato. L'archivio la tratta come una spia: la figura simula un pensiero che si corregge, ma corregge un'ipotesi che nessuno aveva avanzato. **Quando la correzione diventa formula, la figura perde il suo oggetto e le resta soltanto il ritmo.**",
+    articles: [
+      { title: "The Part About the Machines", url: "/curated/2026-11-17-tipismana-urbano-romanzo-ai-pointmag/", _source: "curated" }
+    ]
+  },
+
+  {
+    name: "società benefit",
+    type: "teoria",
+    geo: { modo: "diretta", paesi: ["Stati Uniti", "Italia"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q4887441"],
+    related: [ { name: "culto del fondatore", why: "Lo statuto e il trust limitano il potere dei fondatori, e il 50,1 per cento dei voti lo concentra di nuovo." } ],
+    note: "Forma giuridica d'impresa che affianca allo scopo di lucro un beneficio comune dichiarato nello statuto, e obbliga gli amministratori a bilanciare i due. Nasce nel Maryland nel 2010 come *benefit corporation* e si diffonde negli Stati Uniti, nel Delaware dal 2013. L'Italia la introduce nel 2016, primo paese fuori dagli Stati Uniti. L'archivio la incontra nel 2026 con la quotazione di Anthropic, dove la forma è rafforzata da un trust che elegge la maggioranza del consiglio. **La domanda che la voce tiene aperta è chi giudichi il beneficio comune quando chi lo definisce controlla anche la società.**",
+    articles: [
+      { title: "The Flaw at the Heart of Anthropic's I.P.O.", url: "/curated/2026-11-15-sarin-anthropic-ipo-nyt/", _source: "curated" },
+      { title: "Anthropic and the Monetization of Paradise", url: "/curated/2026-11-18-lepore-anthropic-paradiso-newyorker/", _source: "curated" }
     ]
   }
 

@@ -184,7 +184,9 @@
     "Wang Huning": "Q64543",
     "utopia tecnologica": "Q2892659",
     "verifica formale": "Q173326",
-    "sycophancy": "Q139915450"
+    "sycophancy": "Q139915450",
+    "epanortosi": "Q1135275",
+    "società benefit": "Q4887441"
   },
   "nessun_qid": {
     "cosmotecnica": "Solo il libro di Yuk Hui ha un elemento: il concetto eredita la geografia dal teorico.",
@@ -995,6 +997,17 @@
     "sycophancy": {
       "modo": "nessuna",
       "paesi": []
+    },
+    "epanortosi": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "società benefit": {
+      "modo": "diretta",
+      "paesi": [
+        "Stati Uniti",
+        "Italia"
+      ]
     }
   },
   "conio": [
