@@ -186,7 +186,9 @@
     "verifica formale": "Q173326",
     "sycophancy": "Q139915450",
     "epanortosi": "Q1135275",
-    "società benefit": "Q4887441"
+    "società benefit": "Q4887441",
+    "Nagel, Thomas": "Q350239",
+    "funzionalismo": "Q1377166"
   },
   "nessun_qid": {
     "cosmotecnica": "Solo il libro di Yuk Hui ha un elemento: il concetto eredita la geografia dal teorico.",
@@ -1008,6 +1010,16 @@
         "Stati Uniti",
         "Italia"
       ]
+    },
+    "Nagel, Thomas": {
+      "modo": "diretta",
+      "paesi": [
+        "Stati Uniti"
+      ]
+    },
+    "funzionalismo": {
+      "modo": "nessuna",
+      "paesi": []
     }
   },
   "conio": [

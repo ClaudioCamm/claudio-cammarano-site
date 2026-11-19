@@ -1034,7 +1034,8 @@ module.exports = [
       { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" },
       { title: "What if 'consciousness' isn't real?", url: "/curated/2026-09-15-bayne-coscienza-non-reale-sciam/", _source: "curated" },
       { title: "Deskilling the body", url: "/curated/2026-10-13-challenger-deskilling-the-body-aeon/", _source: "curated" },
-      { title: "Is ‘Attention’ the Essence of Intelligence?", url: "/curated/2026-10-12-wolchover-attention-intelligenza-quanta/", _source: "curated" }
+      { title: "Is ‘Attention’ the Essence of Intelligence?", url: "/curated/2026-10-12-wolchover-attention-intelligenza-quanta/", _source: "curated" },
+      { title: "‘Just Ridiculous’: A Famed Philosopher Takes on AI Consciousness", url: "/curated/2026-11-18-levy-nagel-coscienza-ai-wired/", _source: "curated" }
     ]
   },
   {
@@ -4550,7 +4551,8 @@ module.exports = [
       { title: "What if 'consciousness' isn't real?", url: "/curated/2026-09-15-bayne-coscienza-non-reale-sciam/", _source: "curated" },
       { title: "Could AIs become conscious?", url: "/curated/2026-08-20-economist-anche-se-non-lo-fossero/", _source: "curated" },
       { title: "The search for consciousness inside AI", url: "/curated/2026-08-20-economist-rilevatore-prima-delloggetto/", _source: "curated" },
-      { title: "Don’t mistake chatbot intelligence for consciousness", url: "/curated/2026-08-20-schneider-la-scala-che-non-regge-economist/", _source: "curated" }
+      { title: "Don’t mistake chatbot intelligence for consciousness", url: "/curated/2026-08-20-schneider-la-scala-che-non-regge-economist/", _source: "curated" },
+      { title: "‘Just Ridiculous’: A Famed Philosopher Takes on AI Consciousness", url: "/curated/2026-11-18-levy-nagel-coscienza-ai-wired/", _source: "curated" }
     ]
   },
   {
@@ -6796,6 +6798,30 @@ module.exports = [
     articles: [
       { title: "The Flaw at the Heart of Anthropic's I.P.O.", url: "/curated/2026-11-15-sarin-anthropic-ipo-nyt/", _source: "curated" },
       { title: "Anthropic and the Monetization of Paradise", url: "/curated/2026-11-18-lepore-anthropic-paradiso-newyorker/", _source: "curated" }
+    ]
+  },
+
+  {
+    name: "Nagel, Thomas",
+    type: "persona",
+    geo: { modo: "diretta", paesi: ["Stati Uniti"] },
+    sameAs: ["https://www.wikidata.org/wiki/Q350239"],
+    related: [ { name: "coscienza fenomenica", why: "Il saggio sul pipistrello del 1974 è uno dei testi da cui nasce l'idea del carattere soggettivo dell'esperienza." } ],
+    note: "Filosofo statunitense nato nel 1937 a Belgrado, professore emerito alla New York University, autore nel 1974 di «What Is It Like to Be a Bat?», il saggio che lega la coscienza al punto di vista soggettivo, e nel 2012 di *Mind and Cosmos*. L'archivio lo incontra nel 2026, quando riceve il Premio Berggruen e applica la sua domanda ai modelli linguistici per rispondere di no: la soggettività che non sappiamo immaginare nel pipistrello non si può attribuire a un sistema che produce soltanto linguaggio. **La sua posizione sposta la discussione dal comportamento al sostrato: conta meno che cosa viene detto, e più che cosa lo dice.**",
+    articles: [
+      { title: "‘Just Ridiculous’: A Famed Philosopher Takes on AI Consciousness", url: "/curated/2026-11-18-levy-nagel-coscienza-ai-wired/", _source: "curated" }
+    ]
+  },
+
+  {
+    name: "funzionalismo",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q1377166"],
+    related: [ { name: "embodied mind", why: "L'embodied mind lega la mente al corpo che la realizza, contro l'indipendenza dal sostrato che il funzionalismo presuppone." } ],
+    note: "Teoria della filosofia della mente, formulata da Hilary Putnam negli anni Sessanta, per cui gli stati mentali si definiscono per il ruolo che svolgono, cioè per le relazioni fra ingressi, uscite e altri stati, e non per la materia che li realizza. È l'assunto implicito di chi ritiene possibile una coscienza artificiale: se conta l'organizzazione, il sostrato può essere il silicio. L'archivio la incontra dove viene contestata, nel 2026, da Thomas Nagel, per cui un data center non ha nulla in comune con un sistema nervoso. **La domanda che la voce tiene aperta è se la coscienza dipenda dall'organizzazione o dalla materia.**",
+    articles: [
+      { title: "‘Just Ridiculous’: A Famed Philosopher Takes on AI Consciousness", url: "/curated/2026-11-18-levy-nagel-coscienza-ai-wired/", _source: "curated" }
     ]
   }
 
