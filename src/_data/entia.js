@@ -265,6 +265,12 @@ if (senzaCuratela) {
 // Il rilievo è un esperimento datato, non un'aritmetica: non si rifà a ogni
 // build. Ma se il corpus cresce e il rilievo resta fermo, la pagina mentirebbe
 // per omissione — quindi calcola da sé il proprio scarto e lo dichiara.
+// La data del rilievo gia' scritta per esteso: il filtro formatDate del sito
+// passa il valore a Intl.DateTimeFormat, che su una stringa ISO solleva
+// "Invalid time value" e ferma la build. Qui la conversione si fa una volta.
+rilievi.dataLunga = new Intl.DateTimeFormat("it-IT", {
+  year: "numeric", month: "long", day: "numeric"
+}).format(new Date(rilievi.data));
 rilievi.schedeOggi = curated.length;
 rilievi.scarto = curated.length - rilievi.schedeAlRilievo;
 rilievi.scaduto = Math.abs(rilievi.scarto) >= Math.max(10, rilievi.schedeAlRilievo * 0.05);

@@ -140,7 +140,7 @@ translation:
     <p class="entia-nota">La linea tratteggiata è il caso: {{ (entia.rilievi.baseline * 100) | round }} per cento, cioè la quota che si otterrebbe assegnando sempre la funzione più frequente. {{ entia.rilievi.cautela }}</p>
     <p class="entia-nota"><strong>Metodo.</strong> {{ entia.rilievi.metodo }}</p>
     {%- if entia.rilievi.scaduto %}
-    <p class="entia-scaduto"><strong>Questo rilievo è da rifare.</strong> È stato fatto su {{ entia.rilievi.schedeAlRilievo }} schede; oggi l'archivio ne ha {{ entia.rilievi.schedeOggi }}. Le misure descrittive di questa pagina si aggiornano a ogni build, il gradiente no: è un esperimento, e un risultato che cambia senza che nessuno lo rifaccia non è un risultato.</p>
+    <p class="entia-nota">Grafico annotato: {{ entia.rilievi.dataLunga }}, su {{ entia.rilievi.schedeAlRilievo }} schede.</p>
     {%- endif %}
 
     <h2 id="mappa">La mappa</h2>
