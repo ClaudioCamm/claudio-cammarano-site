@@ -282,12 +282,24 @@ const deposito = {
   citazione: "Cammarano, C. (2026). ENTIA " + SPEC + " \u2014 Epistemic Notation for Texts In Archives. Zenodo."
 };
 
+// I registri terzi in cui ENTIA e' censita. Non sono depositi: non conservano
+// il pacchetto, lo indicizzano. L'URI BARTOC e' in http:// perche' e' cosi'
+// che l'hanno coniato; il link si usa in https.
+const registri = {
+  bartoc: {
+    uri: "http://bartoc.org/en/node/21175",
+    url: "https://bartoc.org/en/node/21175",
+    dal: "2026-11-03"
+  }
+};
+
 module.exports = {
   spec: SPEC,
   nome: "ENTIA",
   sciolto: "Epistemic Notation for Texts In Archives",
   radice: "Se le idee sono cose, ENTIA è uno strumento che serve a metterle nel loro cassetto: a classificarle dentro questo ecosistema editoriale. Altre ENTIA sono possibili e pensabili, su altri argomenti, dentro altri mondi mentali. Il plurale rimanda naturalmente a <em>entia non sunt multiplicanda praeter necessitatem</em> — che per un protocollo di selezione è un criterio sano.",
   deposito,
+  registri,
   licenza: { nome: "CC BY 4.0", url: "https://creativecommons.org/licenses/by/4.0/deed.it" },
   licenzaNota: "Diversa da quella dei saggi, e deliberatamente: NC-ND su un protocollo impedirebbe l'adozione che lo rende utile, e ND vieterebbe le versioni derivate che sono il segno che un metodo è vivo.",
   strati,

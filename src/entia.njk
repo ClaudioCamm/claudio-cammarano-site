@@ -401,6 +401,8 @@ const EM_DATI = {{ entia.mappa | dump | safe }};
     <p class="entia-citazione">{{ entia.deposito.citazione }} <a href="{{ entia.deposito.url }}">{{ entia.deposito.doi }}</a></p>
     <p class="entia-nota">Quel DOI è quello <em>concettuale</em>: punta sempre all’ultima versione. La {{ entia.spec }} ha anche un DOI proprio, <a href="https://doi.org/{{ entia.deposito.versionDoi }}">{{ entia.deposito.versionDoi }}</a>, da usare quando serve citare esattamente questa e non una successiva. Il dataset dei concetti è depositato a parte: <a href="{{ dataset.doi }}">{{ dataset.doi | replace("https://doi.org/", "") }}</a>. Per le macchine, la stessa specifica sta in <a href="/entia.json">/entia.json</a>.</p>
 
+    <p>ENTIA è censita anche in <a href="{{ entia.registri.bartoc.url }}" rel="external">BARTOC</a>, il registro internazionale di tesauri, ontologie e sistemi di classificazione: una catalogazione fatta da chi non l’ha scritta, che è il solo modo in cui una notazione diventa trovabile da fuori.</p>
+
     <h2 id="licenza">Licenza</h2>
     <p><a href="{{ entia.licenza.url }}" rel="license">{{ entia.licenza.nome }}</a>. {{ entia.licenzaNota }}</p>
 
