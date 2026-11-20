@@ -188,7 +188,8 @@
     "epanortosi": "Q1135275",
     "società benefit": "Q4887441",
     "Nagel, Thomas": "Q350239",
-    "funzionalismo": "Q1377166"
+    "funzionalismo": "Q1377166",
+    "commercio agentico": "Q137604762"
   },
   "nessun_qid": {
     "cosmotecnica": "Solo il libro di Yuk Hui ha un elemento: il concetto eredita la geografia dal teorico.",
@@ -1018,6 +1019,10 @@
       ]
     },
     "funzionalismo": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "commercio agentico": {
       "modo": "nessuna",
       "paesi": []
     }

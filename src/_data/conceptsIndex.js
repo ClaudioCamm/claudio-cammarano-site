@@ -294,7 +294,9 @@ module.exports = [
       { title: "Intelligenza artificiale e rischio estinzione, che cosa pensano (davvero) gli scienziati?", url: "/curated/2026-09-26-signorelli-rischio-estinzione-scienziati-backdoor/", _source: "curated" },
       { title: "AI’s Real Gift to Science", url: "/curated/2026-10-04-kiros-ai-real-gift-science-atlantic/", _source: "curated" },
       { title: "Financial Predictionization", url: "/curated/2026-11-05-levine-pacing-frontier-cartello-bloomberg/", _source: "curated" },
-      { title: "The Flaw at the Heart of Anthropic's I.P.O.", url: "/curated/2026-11-15-sarin-anthropic-ipo-nyt/", _source: "curated" }
+      { title: "The Flaw at the Heart of Anthropic's I.P.O.", url: "/curated/2026-11-15-sarin-anthropic-ipo-nyt/", _source: "curated" },
+      { title: "I Spent a Year Talking to Anthropic Employees. Here’s What They Believe.", url: "/curated/2026-11-18-sun-dipendenti-anthropic-nyt/", _source: "curated" },
+      { title: "Don’t Play Anthropic’s Game", url: "/curated/2026-11-19-newport-gioco-anthropic-nyt/", _source: "curated" }
     ]
   },
   {
@@ -856,7 +858,8 @@ module.exports = [
       { title: "Zuckerberg says the science isn't settled. But the harms of short-form video on the brain are starting to show", url: "/curated/2026-09-18-enders-short-form-video-cognizione-guardian/", _source: "curated" },
       { title: "Reason is more than a tool", url: "/curated/2026-10-01-mudd-ragione-piu-di-uno-strumento-aeon/", _source: "curated" },
       { title: "Selon Mario Draghi l’Europe ne peut plus vivre sans croissance", url: "/curated/2026-10-01-draghi-tassi-li-decide-qualcun-altro-grandcontinent/", _source: "curated" },
-      { title: "Le piège italien de la politique française", url: "/curated/2026-10-20-castellani-piege-italien-grandcontinent/", _source: "curated" }
+      { title: "Le piège italien de la politique française", url: "/curated/2026-10-20-castellani-piege-italien-grandcontinent/", _source: "curated" },
+      { title: "On Waymos and their safety record", url: "/curated/2026-11-18-dias-waymo-sicurezza-azhdarchid/", _source: "curated" }
     ]
   },
   {
@@ -1581,7 +1584,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q484847", "https://it.wikipedia.org/wiki/Commercio_elettronico"],
     note: "Nel sito è il settore attraversato da due pezzi complementari: la domanda se i prodotti italiani siano leggibili dai motori di ricerca generativi (infrastruttura semantica), e la distinzione fra le tre «IA» del commercio digitale che il settore confonde sistematicamente — discovery, infrastruttura, agentica.",
     articles: [
-      { title: "Le tre IA del Netcomm Forum", url: "/curated/2026-05-21-diegoli-tre-ia-netcomm-forum/", _source: "curated" }
+      { title: "Le tre IA del Netcomm Forum", url: "/curated/2026-05-21-diegoli-tre-ia-netcomm-forum/", _source: "curated" },
+      { title: "An Interview With Eric Seufert About Agentic Commerce", url: "/curated/2026-11-19-thompson-seufert-commercio-agentico-stratechery/", _source: "curated" }
     ]
   },
   {
@@ -1594,7 +1598,8 @@ module.exports = [
     articles: [
       { title: "Le tre IA del Netcomm Forum", url: "/curated/2026-05-21-diegoli-tre-ia-netcomm-forum/", _source: "curated" },
       { title: "The Atlantic is getting more subscribers from Google traffic, even as referrals fall", url: "/curated/2026-09-16-scire-atlantic-google-abbonati-niemanlab/", _source: "curated" },
-      { title: "A Conversation With Ari Emanuel About Entertainment and AI", url: "/curated/2026-10-15-stratechery-ari-emanuel-entertainment-ai/", _source: "curated" }
+      { title: "A Conversation With Ari Emanuel About Entertainment and AI", url: "/curated/2026-10-15-stratechery-ari-emanuel-entertainment-ai/", _source: "curated" },
+      { title: "An Interview With Eric Seufert About Agentic Commerce", url: "/curated/2026-11-19-thompson-seufert-commercio-agentico-stratechery/", _source: "curated" }
     ]
   },
   {
@@ -1606,7 +1611,8 @@ module.exports = [
     articles: [
       { title: "David Droga on AI and the end of 'mediocre' human-made ads", url: "/curated/2026-06-21-droga-ai-mediocre-ads/", _source: "curated" },
       { title: "Quartz website mainly produced by one AI-assisted reporter writing 50+ stories per day", url: "/curated/2026-10-09-waugh-quartz-un-reporter-ai-pressgazette/", _source: "curated" },
-      { title: "A Conversation With Ari Emanuel About Entertainment and AI", url: "/curated/2026-10-15-stratechery-ari-emanuel-entertainment-ai/", _source: "curated" }
+      { title: "A Conversation With Ari Emanuel About Entertainment and AI", url: "/curated/2026-10-15-stratechery-ari-emanuel-entertainment-ai/", _source: "curated" },
+      { title: "An Interview With Eric Seufert About Agentic Commerce", url: "/curated/2026-11-19-thompson-seufert-commercio-agentico-stratechery/", _source: "curated" }
     ]
   },
   {
@@ -2562,7 +2568,9 @@ module.exports = [
       { title: "Aaronson-Ambainis Conjecture proved! (By AI, of course)", url: "/curated/2026-11-08-aaronson-congettura-dimostrata-ai-shtetl/", _source: "curated" },
       { title: "Can the AI boom make enough money to sustain itself?", url: "/curated/2026-11-12-economist-ricavi-boom-ai/", _source: "curated" },
       { title: "Anthropic and the Monetization of Paradise", url: "/curated/2026-11-18-lepore-anthropic-paradiso-newyorker/", _source: "curated" },
-      { title: "The Flaw at the Heart of Anthropic's I.P.O.", url: "/curated/2026-11-15-sarin-anthropic-ipo-nyt/", _source: "curated" }
+      { title: "The Flaw at the Heart of Anthropic's I.P.O.", url: "/curated/2026-11-15-sarin-anthropic-ipo-nyt/", _source: "curated" },
+      { title: "I Spent a Year Talking to Anthropic Employees. Here’s What They Believe.", url: "/curated/2026-11-18-sun-dipendenti-anthropic-nyt/", _source: "curated" },
+      { title: "Don’t Play Anthropic’s Game", url: "/curated/2026-11-19-newport-gioco-anthropic-nyt/", _source: "curated" }
     ]
   },
   {
@@ -4091,7 +4099,8 @@ module.exports = [
       { title: "Is the Nvidia Affair Securities Fraud?", url: "/curated/2026-11-09-levine-nvidia-flussi-di-cassa-ai-bloomberg/", _source: "curated" },
       { title: "Jensen Huang's Affair, The Culper Report, Huang's Righteousness", url: "/curated/2026-11-09-thompson-huang-culper-presunzione-stratechery/", _source: "curated" },
       { title: "The Jensen Huang Story Gets Worse, Washington vs. New York, Silicon Valley", url: "/curated/2026-11-10-thompson-huang-tre-citta-stratechery/", _source: "curated" },
-      { title: "Jensen Huang and the end of the 'lol nothing matters' era of American politics", url: "/curated/2026-11-12-newton-huang-culto-fondatore-platformer/", _source: "curated" }
+      { title: "Jensen Huang and the end of the 'lol nothing matters' era of American politics", url: "/curated/2026-11-12-newton-huang-culto-fondatore-platformer/", _source: "curated" },
+      { title: "Et si l’IA était déjà devenue trop grosse pour échouer ?", url: "/curated/2026-11-19-moec-ai-troppo-grande-per-fallire-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -4215,7 +4224,8 @@ module.exports = [
       { title: "He Wants AI Benchmarking To Be a Science, Not a Dark Art", url: "/curated/2026-10-16-pavlus-hardt-benchmark-quanta/", _source: "curated" },
       { title: "Could AI help scientists with their paperwork?", url: "/curated/2026-10-14-economist-ai-burocrazia-scienza/", _source: "curated" },
       { title: "The AI boom is threatened by an epidemic of unreliable numbers", url: "/curated/2026-10-14-economist-numeri-inaffidabili-ai/", _source: "curated" },
-      { title: "China’s universities are rich. But they're getting squeezed", url: "/curated/2026-10-20-economist-universita-cinesi/", _source: "curated" }
+      { title: "China’s universities are rich. But they're getting squeezed", url: "/curated/2026-10-20-economist-universita-cinesi/", _source: "curated" },
+      { title: "America does not produce world-beating statistics. Who does?", url: "/curated/2026-11-16-economist-statistiche-ufficiali/", _source: "curated" }
     ]
   },
   {
@@ -4660,7 +4670,8 @@ module.exports = [
       { title: "AI co-scientists are revolutionizing how research is done", url: "/curated/2026-09-21-dolgin-ai-co-scientists-nature/", _source: "curated" },
       { title: "A Short Note on P-Value Hacking", url: "/curated/2016-03-24-taleb-p-value-hacking-arxiv/", _source: "curated" },
       { title: "Election Predictions as Martingales: An Arbitrage Approach", url: "/curated/2017-03-18-taleb-election-predictions-martingales-arxiv/", _source: "curated" },
-      { title: "He Wants AI Benchmarking To Be a Science, Not a Dark Art", url: "/curated/2026-10-16-pavlus-hardt-benchmark-quanta/", _source: "curated" }
+      { title: "He Wants AI Benchmarking To Be a Science, Not a Dark Art", url: "/curated/2026-10-16-pavlus-hardt-benchmark-quanta/", _source: "curated" },
+      { title: "On Waymos and their safety record", url: "/curated/2026-11-18-dias-waymo-sicurezza-azhdarchid/", _source: "curated" }
     ]
   },
   {
@@ -4685,7 +4696,8 @@ module.exports = [
       { title: "Scientists rise up against statistical significance", url: "/curated/2019-03-20-amrhein-greenland-mcshane-significativita-nature/", _source: "curated" },
       { title: "The ASA President's Task Force Statement on Statistical Significance and Replicability", url: "/curated/2021-08-01-task-force-asa-significativita-replicabilita-aoas/", _source: "curated" },
       { title: "Philosophy of Statistics", url: "/curated/2025-10-01-romeijn-filosofia-della-statistica-sep/", _source: "curated" },
-      { title: "Karl Popper", url: "/curated/2026-07-31-thornton-karl-popper-sep/", _source: "curated" }
+      { title: "Karl Popper", url: "/curated/2026-07-31-thornton-karl-popper-sep/", _source: "curated" },
+      { title: "America does not produce world-beating statistics. Who does?", url: "/curated/2026-11-16-economist-statistiche-ufficiali/", _source: "curated" }
     ]
   },
   {
@@ -5285,7 +5297,8 @@ module.exports = [
     articles: [
       { title: "How effective altruism conquered the world", url: "/curated/2026-10-01-economist-movimento-che-ha-costruito-cio-che-temeva/", _source: "curated" },
       { title: "Effective altruism is this century’s biggest idea", url: "/curated/2026-10-01-economist-un-obiettivo-solo-e-sbagliato/", _source: "curated" },
-      { title: "An Interview with Palantir CTO Shyam Sankar About the AI Religious War", url: "/curated/2026-10-29-thompson-sankar-palantir-stratechery/", _source: "curated" }
+      { title: "An Interview with Palantir CTO Shyam Sankar About the AI Religious War", url: "/curated/2026-10-29-thompson-sankar-palantir-stratechery/", _source: "curated" },
+      { title: "I Spent a Year Talking to Anthropic Employees. Here’s What They Believe.", url: "/curated/2026-11-18-sun-dipendenti-anthropic-nyt/", _source: "curated" }
     ]
   },
   {
@@ -5767,7 +5780,8 @@ module.exports = [
     articles: [
       { title: "Someone Has to Take the AI Risk", url: "/curated/2026-10-20-levine-someone-has-to-take-ai-risk-bloomberg/", _source: "curated" },
       { title: "Nvidia Chief, Jensen Huang, Is Seen as Target of Chinese Spy Plot", url: "/curated/2026-10-29-swan-haberman-huang-spionaggio-nyt/", _source: "curated" },
-      { title: "Veteran investor Howard Marks on AI debt", url: "/curated/2026-10-29-economist-howard-marks-debito-ai/", _source: "curated" }
+      { title: "Veteran investor Howard Marks on AI debt", url: "/curated/2026-10-29-economist-howard-marks-debito-ai/", _source: "curated" },
+      { title: "Et si l’IA était déjà devenue trop grosse pour échouer ?", url: "/curated/2026-11-19-moec-ai-troppo-grande-per-fallire-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -6166,7 +6180,8 @@ module.exports = [
       { title: "La bulle et le contrôle", url: "/curated/2026-11-03-durand-valenti-bolla-controllo-grandcontinent/", _source: "curated" },
       { title: "Stocks Plunge as Midterm Results Renew A.I. Anxiety", url: "/curated/2026-11-05-rennison-borsa-midterm-ai-nyt/", _source: "curated" },
       { title: "Is the Nvidia Affair Securities Fraud?", url: "/curated/2026-11-09-levine-nvidia-flussi-di-cassa-ai-bloomberg/", _source: "curated" },
-      { title: "Can the AI boom make enough money to sustain itself?", url: "/curated/2026-11-12-economist-ricavi-boom-ai/", _source: "curated" }
+      { title: "Can the AI boom make enough money to sustain itself?", url: "/curated/2026-11-12-economist-ricavi-boom-ai/", _source: "curated" },
+      { title: "Et si l’IA était déjà devenue trop grosse pour échouer ?", url: "/curated/2026-11-19-moec-ai-troppo-grande-per-fallire-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -6799,7 +6814,8 @@ module.exports = [
     note: "Forma giuridica d'impresa che affianca allo scopo di lucro un beneficio comune dichiarato nello statuto, e obbliga gli amministratori a bilanciare i due. Nasce nel Maryland nel 2010 come *benefit corporation* e si diffonde negli Stati Uniti, nel Delaware dal 2013. L'Italia la introduce nel 2016, primo paese fuori dagli Stati Uniti. L'archivio la incontra nel 2026 con la quotazione di Anthropic, dove la forma è rafforzata da un trust che elegge la maggioranza del consiglio. **La domanda che la voce tiene aperta è chi giudichi il beneficio comune quando chi lo definisce controlla anche la società.**",
     articles: [
       { title: "The Flaw at the Heart of Anthropic's I.P.O.", url: "/curated/2026-11-15-sarin-anthropic-ipo-nyt/", _source: "curated" },
-      { title: "Anthropic and the Monetization of Paradise", url: "/curated/2026-11-18-lepore-anthropic-paradiso-newyorker/", _source: "curated" }
+      { title: "Anthropic and the Monetization of Paradise", url: "/curated/2026-11-18-lepore-anthropic-paradiso-newyorker/", _source: "curated" },
+      { title: "Don’t Play Anthropic’s Game", url: "/curated/2026-11-19-newport-gioco-anthropic-nyt/", _source: "curated" }
     ]
   },
 
@@ -6824,6 +6840,18 @@ module.exports = [
     note: "Teoria della filosofia della mente, formulata da Hilary Putnam negli anni Sessanta, per cui gli stati mentali si definiscono per il ruolo che svolgono, cioè per le relazioni fra ingressi, uscite e altri stati, e non per la materia che li realizza. È l'assunto implicito di chi ritiene possibile una coscienza artificiale: se conta l'organizzazione, il sostrato può essere il silicio. L'archivio la incontra dove viene contestata, nel 2026, da Thomas Nagel, per cui un data center non ha nulla in comune con un sistema nervoso. **La domanda che la voce tiene aperta è se la coscienza dipenda dall'organizzazione o dalla materia.**",
     articles: [
       { title: "‘Just Ridiculous’: A Famed Philosopher Takes on AI Consciousness", url: "/curated/2026-11-18-levy-nagel-coscienza-ai-wired/", _source: "curated" }
+    ]
+  },
+
+  {
+    name: "commercio agentico",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q137604762"],
+    related: [ { name: "GEO", why: "Il GEO ottimizza la presenza del marchio nelle risposte delle macchine, mentre il commercio agentico decide chi controlla quelle risposte." } ],
+    note: "Acquisto delegato a un agente AI, che cerca, confronta e talvolta paga al posto dell'utente. Nel 2026 l'analista Eric Seufert ne distingue tre gradi secondo quanto l'agente fa da solo: compra senza chiedere, compra dopo la scelta dell'utente, oppure consiglia e lascia l'acquisto all'utente. L'archivio lo segue dal lato di chi controlla l'agente. Quando i rivenditori aprono il catalogo, collegano l'agente esterno al proprio, e lo spazio della risposta torna a essere spazio pubblicitario. **Il marchio che vuole parlare alle macchine deve prima sapere di chi è la macchina che ascolta.**",
+    articles: [
+      { title: "An Interview With Eric Seufert About Agentic Commerce", url: "/curated/2026-11-19-thompson-seufert-commercio-agentico-stratechery/", _source: "curated" }
     ]
   }
 
