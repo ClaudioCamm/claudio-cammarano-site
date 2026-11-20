@@ -198,6 +198,24 @@
       "pezzi": 21,
       "writings": 0,
       "catene": 1
+    },
+    "Regimi politici": {
+      "data": "2026-11-20",
+      "pezzi": 1,
+      "writings": 1,
+      "catene": 0
+    },
+    "Scenario Planning": {
+      "data": "2026-11-20",
+      "pezzi": 2,
+      "writings": 1,
+      "catene": 1
+    },
+    "Dual Use": {
+      "data": "2026-11-20",
+      "pezzi": 1,
+      "writings": 1,
+      "catene": 0
     }
   },
   "temi": {

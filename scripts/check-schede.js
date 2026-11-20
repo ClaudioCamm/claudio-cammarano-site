@@ -44,7 +44,7 @@ function lista(fm, key) {
   const v = m[1].trim();
   if (!v.startsWith('[')) return v ? [v.replace(/^["']|["']$/g, '')] : [];
   const out = [];
-  const re = /"((?:[^"\\]|\\.)*)"|'([^']*)'|([^,\[\]]+)/g;
+  const re = /"((?:[^"\\]|\\.)*)"|'([^']*)'|([^,\[\]\s][^,\[\]]*)/g; // il terzo ramo salta lo spazio dopo la virgola
   let x;
   while ((x = re.exec(v.slice(1, v.lastIndexOf(']'))))) {
     const s = (x[1] ?? x[2] ?? x[3] ?? '').trim();
