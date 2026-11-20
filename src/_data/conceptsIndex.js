@@ -2570,7 +2570,8 @@ module.exports = [
       { title: "Anthropic and the Monetization of Paradise", url: "/curated/2026-11-18-lepore-anthropic-paradiso-newyorker/", _source: "curated" },
       { title: "The Flaw at the Heart of Anthropic's I.P.O.", url: "/curated/2026-11-15-sarin-anthropic-ipo-nyt/", _source: "curated" },
       { title: "I Spent a Year Talking to Anthropic Employees. Here’s What They Believe.", url: "/curated/2026-11-18-sun-dipendenti-anthropic-nyt/", _source: "curated" },
-      { title: "Don’t Play Anthropic’s Game", url: "/curated/2026-11-19-newport-gioco-anthropic-nyt/", _source: "curated" }
+      { title: "Don’t Play Anthropic’s Game", url: "/curated/2026-11-19-newport-gioco-anthropic-nyt/", _source: "curated" },
+      { title: "Anthropic, PBC: Form S-1, Amendment No. 1", url: "/curated/2026-11-02-anthropic-prospetto-s1-sec/", _source: "curated" }
     ]
   },
   {
@@ -6815,7 +6816,8 @@ module.exports = [
     articles: [
       { title: "The Flaw at the Heart of Anthropic's I.P.O.", url: "/curated/2026-11-15-sarin-anthropic-ipo-nyt/", _source: "curated" },
       { title: "Anthropic and the Monetization of Paradise", url: "/curated/2026-11-18-lepore-anthropic-paradiso-newyorker/", _source: "curated" },
-      { title: "Don’t Play Anthropic’s Game", url: "/curated/2026-11-19-newport-gioco-anthropic-nyt/", _source: "curated" }
+      { title: "Don’t Play Anthropic’s Game", url: "/curated/2026-11-19-newport-gioco-anthropic-nyt/", _source: "curated" },
+      { title: "Anthropic, PBC: Form S-1, Amendment No. 1", url: "/curated/2026-11-02-anthropic-prospetto-s1-sec/", _source: "curated" }
     ]
   },
 

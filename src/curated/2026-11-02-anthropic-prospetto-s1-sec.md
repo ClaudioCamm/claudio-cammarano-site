@@ -1,0 +1,14 @@
+---
+title: "Anthropic, PBC: Form S-1, Amendment No. 1"
+external_url: "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm"
+source: "Anthropic, PBC / U.S. Securities and Exchange Commission"
+date: 2026-11-02
+ai_prose: WR
+criterio: riferimento-tecnico
+perche: "È il documento con cui Anthropic chiede soldi al pubblico. Dice quanto incassa e quanto perde, come è governata e quali rischi dichiara agli investitori, e permette di controllare che cosa ne dicono i commenti."
+rinvio: /writings/2026-09-28-il-rischio-come-prodotto/
+description: |
+  L'emendamento n. 1 al Form S-1, depositato presso la Securities and Exchange Commission il 2 novembre 2026, è il prospetto con cui Anthropic si quota al Nasdaq Global Select Market con il simbolo ANT. In questa versione il numero di azioni e la forchetta di prezzo sono ancora in bianco. I ricavi passano da 41 milioni di dollari nel 2023 a 386 milioni nel 2024 e a 4,6 miliardi nel 2025. Nei primi nove mesi del 2026 sono 33,2 miliardi, di cui 17 nel solo terzo trimestre. Le perdite crescono insieme ai ricavi: 1,5 miliardi nel 2023, 8,3 nel 2024, 42 nel 2025 e 104 nei primi nove mesi del 2026. Al 30 settembre la società dichiara 131,8 miliardi fra liquidità e investimenti a breve, e destina i proventi soprattutto alla capacità di calcolo e all'infrastruttura. Anthropic è una public benefit corporation, con lo scopo di «the responsible development and maintenance of advanced AI for the long-term benefit of humanity». Le classi di azioni sono cinque. Un'unica azione di classe F, intestata alla società dei sette cofondatori, porta il 50,1 per cento dei voti. Un'unica azione di classe T permette al Long-Term Benefit Trust, cinque fiduciari senza interessi finanziari nella società, di eleggere la maggioranza del consiglio. Le azioni di classe N non votano, e fra queste c'è il 5 per cento del capitale destinato a un fondo per il beneficio pubblico. **Gli investitori esterni votano, ma la maggioranza dei voti è dei fondatori e la maggioranza del consiglio la elegge il trust: la presa del mercato sulla società è limitata per costruzione.** Il prospetto precisa che il trust non ha poteri sulla gestione né sulla strategia. I fattori di rischio occupano circa novanta pagine. Accanto a quelli comuni a ogni quotazione ne elencano due gruppi insoliti: la sicurezza dell'AI, con l'uso improprio e i comportamenti non allineati o autonomi dei modelli, e il governo societario stesso. Il prospetto ammette che le misure di precauzione, compreso il ritardo nel rilascio dei modelli, possono rallentare i progressi rispetto ai concorrenti. Il documento supera il milione e mezzo di battute, e la scheda ne riporta solo le parti strutturali.
+tags: [curated, ai, economia, istituzioni]
+concepts: ["Anthropic", "società benefit"]
+---
