@@ -2314,6 +2314,33 @@
      ]
     },
     {
+     "slug": "krippendorff-2004",
+     "key": "GMHWBCCA",
+     "title": "Content analysis: an introduction to its methodology",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Krippendorff",
+       "first": "Klaus"
+      }
+     ],
+     "year": "2004",
+     "publisher": "Sage",
+     "isbn": "9780761915447",
+     "doi": "",
+     "type": "book",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Bibliography for Checks",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "GMHWBCCA"
+     ]
+    },
+    {
      "slug": "lakatos-1987",
      "key": "5CUUG4N3",
      "title": "Falsification and the Methodology of Scientific Research Programmes",
@@ -2338,6 +2365,60 @@
      "also_in": [],
      "keys": [
       "5CUUG4N3"
+     ]
+    },
+    {
+     "slug": "lakens-2017",
+     "key": "ATXAHYUY",
+     "title": "Equivalence Tests: A Practical Primer for t Tests, Correlations, and Meta-Analyses",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Lakens",
+       "first": "Daniël"
+      }
+     ],
+     "year": "2017",
+     "publisher": "",
+     "isbn": "",
+     "doi": "10.1177/1948550617697177",
+     "type": "journalArticle",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Bibliography for Checks",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "ATXAHYUY"
+     ]
+    },
+    {
+     "slug": "lakens-2024",
+     "key": "4BCYMFM5",
+     "title": "When and How to Deviate From a Preregistration",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Lakens",
+       "first": "Daniël"
+      }
+     ],
+     "year": "2024",
+     "publisher": "",
+     "isbn": "",
+     "doi": "10.1525/collabra.117094",
+     "type": "journalArticle",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Bibliography for Checks",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "4BCYMFM5"
      ]
     },
     {
@@ -2369,6 +2450,76 @@
      "also_in": [],
      "keys": [
       "MY64WWR9"
+     ]
+    },
+    {
+     "slug": "shanahan-2023",
+     "key": "43GUIEAN",
+     "title": "Role play with large language models",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Shanahan",
+       "first": "Murray"
+      },
+      {
+       "last": "McDonell",
+       "first": "Kyle"
+      },
+      {
+       "last": "Reynolds",
+       "first": "Laria"
+      }
+     ],
+     "year": "2023",
+     "publisher": "",
+     "isbn": "",
+     "doi": "10.1038/s41586-023-06647-8",
+     "type": "journalArticle",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Bibliography for Checks",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "43GUIEAN"
+     ]
+    },
+    {
+     "slug": "song-2025",
+     "key": "6A9TRNER",
+     "title": "Language Models Fail to Introspect About Their Knowledge of Language",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Song",
+       "first": "Siyuan"
+      },
+      {
+       "last": "Hu",
+       "first": "Jennifer"
+      },
+      {
+       "last": "Mahowald",
+       "first": "Kyle"
+      }
+     ],
+     "year": "2025",
+     "publisher": "",
+     "isbn": "",
+     "doi": "10.48550/arxiv.2503.07513",
+     "type": "preprint",
+     "status": "on file",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Bibliography for Checks",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "6A9TRNER"
      ]
     }
    ]
