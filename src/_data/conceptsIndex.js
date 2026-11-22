@@ -1990,7 +1990,8 @@ module.exports = [
       { title: "Deskilling the body", url: "/curated/2026-10-13-challenger-deskilling-the-body-aeon/", _source: "curated" },
       { title: "An Interview with Palantir CTO Shyam Sankar About the AI Religious War", url: "/curated/2026-10-29-thompson-sankar-palantir-stratechery/", _source: "curated" },
       { title: "Hugo Duminil-Copin, de l'autre côté de la machine", url: "/curated/2026-11-14-duminil-copin-matematica-macchina-grandcontinent/", _source: "curated" },
-      { title: "What does it mean to understand what we built?", url: "/curated/2026-11-16-brooker-capire-cosa-abbiamo-costruito/", _source: "curated" }
+      { title: "What does it mean to understand what we built?", url: "/curated/2026-11-16-brooker-capire-cosa-abbiamo-costruito/", _source: "curated" },
+      { title: "AI may have solved math’s greatest mystery. Can humans understand the answer?", url: "/curated/2026-11-20-savitsky-riemann-claude-science/", _source: "curated" }
     ]
   },
   {
@@ -2571,7 +2572,8 @@ module.exports = [
       { title: "The Flaw at the Heart of Anthropic's I.P.O.", url: "/curated/2026-11-15-sarin-anthropic-ipo-nyt/", _source: "curated" },
       { title: "I Spent a Year Talking to Anthropic Employees. Here’s What They Believe.", url: "/curated/2026-11-18-sun-dipendenti-anthropic-nyt/", _source: "curated" },
       { title: "Don’t Play Anthropic’s Game", url: "/curated/2026-11-19-newport-gioco-anthropic-nyt/", _source: "curated" },
-      { title: "Anthropic, PBC: Form S-1, Amendment No. 1", url: "/curated/2026-11-02-anthropic-prospetto-s1-sec/", _source: "curated" }
+      { title: "Anthropic, PBC: Form S-1, Amendment No. 1", url: "/curated/2026-11-02-anthropic-prospetto-s1-sec/", _source: "curated" },
+      { title: "AI may have solved math’s greatest mystery. Can humans understand the answer?", url: "/curated/2026-11-20-savitsky-riemann-claude-science/", _source: "curated" }
     ]
   },
   {
@@ -2742,7 +2744,9 @@ module.exports = [
       { title: "The AI boom is threatened by an epidemic of unreliable numbers", url: "/curated/2026-10-14-economist-numeri-inaffidabili-ai/", _source: "curated" },
       { title: "From Kenya to Japan, Rush to Fix Security Flaw Takes Sites Briefly Offline", url: "/curated/2026-10-22-chutel-nierenberg-otieno-php-nyt/", _source: "curated" },
       { title: "What does ChatGPT say about the election? Depends on who's asking!", url: "/curated/2026-11-09-princeton-chatgpt-elezioni-memoria-citp/", _source: "curated" },
-      { title: "AI has proved that a theory underpinning fundamental physics is trustworthy", url: "/curated/2026-11-11-economist-yang-mills-dimostrazione-ai/", _source: "curated" }
+      { title: "AI has proved that a theory underpinning fundamental physics is trustworthy", url: "/curated/2026-11-11-economist-yang-mills-dimostrazione-ai/", _source: "curated" },
+      { title: "AI Proved the Quasi-Riemann Hypothesis. What Happens Now?", url: "/curated/2026-10-19-kakaes-quasi-riemann-quanta/", _source: "curated" },
+      { title: "Big tech may finally face legal consequences for AI’s actions", url: "/curated/2026-11-19-aron-responsabilita-agenti-ai-newscientist/", _source: "curated" }
     ]
   },
   {
@@ -5602,7 +5606,8 @@ module.exports = [
     ],
     note: "La regola per cui chi svolge un'attività pericolosa risponde del danno anche senza colpa e senza averlo previsto: la si applica alle sostanze tossiche, alle centrali nucleari e, alle origini, all'aviazione. **Se tieni una tigre e morde il vicino, non conta quanto fosse addestrata.** Nel sito entra con l'editoriale del New York Times che la propone per l'intelligenza artificiale, contro le aziende che descrivono i propri modelli come autonomi per declinarne la responsabilità.",
     articles: [
-      { title: "A.I. Companies Say They Aren’t Responsible for Their Unpredictable Products. Don’t Believe Them.", url: "/curated/2026-10-10-nyt-editorial-ai-responsabilita/", _source: "curated" }
+      { title: "A.I. Companies Say They Aren’t Responsible for Their Unpredictable Products. Don’t Believe Them.", url: "/curated/2026-10-10-nyt-editorial-ai-responsabilita/", _source: "curated" },
+      { title: "Big tech may finally face legal consequences for AI’s actions", url: "/curated/2026-11-19-aron-responsabilita-agenti-ai-newscientist/", _source: "curated" }
     ]
   },
   {
@@ -6485,7 +6490,9 @@ module.exports = [
       { title: "Aaronson-Ambainis Conjecture proved! (By AI, of course)", url: "/curated/2026-11-08-aaronson-congettura-dimostrata-ai-shtetl/", _source: "curated" },
       { title: "Hugo Duminil-Copin, de l'autre côté de la machine", url: "/curated/2026-11-14-duminil-copin-matematica-macchina-grandcontinent/", _source: "curated" },
       { title: "AI has proved that a theory underpinning fundamental physics is trustworthy", url: "/curated/2026-11-11-economist-yang-mills-dimostrazione-ai/", _source: "curated" },
-      { title: "Formal Verification is Not Verifiable", url: "/curated/2026-11-13-keles-verifica-formale-non-verificabile/", _source: "curated" }
+      { title: "Formal Verification is Not Verifiable", url: "/curated/2026-11-13-keles-verifica-formale-non-verificabile/", _source: "curated" },
+      { title: "AI Proved the Quasi-Riemann Hypothesis. What Happens Now?", url: "/curated/2026-10-19-kakaes-quasi-riemann-quanta/", _source: "curated" },
+      { title: "The AI Riemann hypothesis proof is true, independent mathematicians confirm", url: "/curated/2026-11-20-moskowitz-riemann-verificata-sciam/", _source: "curated" }
     ]
   },
   {
@@ -6778,7 +6785,10 @@ module.exports = [
     note: "Uso di metodi matematici per dimostrare che un programma o un sistema rispetta una specifica, con prove controllate da un assistente di dimostrazione come Lean o Rocq. Nel 2026 l'AI la porta dalla nicchia accademica alla pratica corrente, e la estende fuori dal software, alle dimostrazioni di matematica e di fisica. L'archivio la segue sul terreno della fiducia: la prova certifica un enunciato, ma restano da controllare le definizioni, i modelli e i verificatori su cui si regge, oltre alle persone che dovrebbero capirla. **Una verifica formale sposta la fiducia senza eliminarla: dalla dimostrazione a ciò che la dimostrazione dà per buono.**",
     articles: [
       { title: "Formal Verification is Not Verifiable", url: "/curated/2026-11-13-keles-verifica-formale-non-verificabile/", _source: "curated" },
-      { title: "What does it mean to understand what we built?", url: "/curated/2026-11-16-brooker-capire-cosa-abbiamo-costruito/", _source: "curated" }
+      { title: "What does it mean to understand what we built?", url: "/curated/2026-11-16-brooker-capire-cosa-abbiamo-costruito/", _source: "curated" },
+      { title: "AI Proved the Quasi-Riemann Hypothesis. What Happens Now?", url: "/curated/2026-10-19-kakaes-quasi-riemann-quanta/", _source: "curated" },
+      { title: "The AI Riemann hypothesis proof is true, independent mathematicians confirm", url: "/curated/2026-11-20-moskowitz-riemann-verificata-sciam/", _source: "curated" },
+      { title: "AI may have solved math’s greatest mystery. Can humans understand the answer?", url: "/curated/2026-11-20-savitsky-riemann-claude-science/", _source: "curated" }
     ]
   },
 
@@ -6854,6 +6864,31 @@ module.exports = [
     note: "Acquisto delegato a un agente AI, che cerca, confronta e talvolta paga al posto dell'utente. Nel 2026 l'analista Eric Seufert ne distingue tre gradi secondo quanto l'agente fa da solo: compra senza chiedere, compra dopo la scelta dell'utente, oppure consiglia e lascia l'acquisto all'utente. L'archivio lo segue dal lato di chi controlla l'agente. Quando i rivenditori aprono il catalogo, collegano l'agente esterno al proprio, e lo spazio della risposta torna a essere spazio pubblicitario. **Il marchio che vuole parlare alle macchine deve prima sapere di chi è la macchina che ascolta.**",
     articles: [
       { title: "An Interview With Eric Seufert About Agentic Commerce", url: "/curated/2026-11-19-thompson-seufert-commercio-agentico-stratechery/", _source: "curated" }
+    ]
+  },
+
+  {
+    name: "ipotesi di Riemann",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q205966"],
+    related: [ { name: "verifica formale", why: "Nel 2026 la prova dell'ipotesi viene certificata in Lean prima che qualcuno la capisca." } ],
+    note: "Congettura formulata da Bernhard Riemann nel 1859, secondo cui gli zeri non banali della funzione zeta stanno tutti sulla retta di parte reale 1/2. Ne dipende la regolarità con cui si distribuiscono i numeri primi, e dal 2000 è uno dei problemi del Millennio del Clay Mathematics Institute. Nell'autunno del 2026 diventa il banco di prova della matematica fatta con l'AI. Prima un modello di OpenAI ne dimostra una versione debole; poi un matematico di Anthropic annuncia con Claude una dimostrazione completa, verificata in Lean e illeggibile per le sue dimensioni. **La domanda che la voce tiene aperta è che cosa resti da fare ai matematici quando la risposta al loro problema più famoso arriva certificata e non capita.**",
+    articles: [
+      { title: "AI Proved the Quasi-Riemann Hypothesis. What Happens Now?", url: "/curated/2026-10-19-kakaes-quasi-riemann-quanta/", _source: "curated" },
+      { title: "The AI Riemann hypothesis proof is true, independent mathematicians confirm", url: "/curated/2026-11-20-moskowitz-riemann-verificata-sciam/", _source: "curated" },
+      { title: "AI may have solved math’s greatest mystery. Can humans understand the answer?", url: "/curated/2026-11-20-savitsky-riemann-claude-science/", _source: "curated" }
+    ]
+  },
+
+  {
+    name: "AI come tecnologia normale",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    related: [ { name: "responsabilità oggettiva", why: "Se l'AI è una tecnologia normale, dei danni dei suoi agenti risponde chi li mette in circolazione, come per ogni prodotto." } ],
+    note: "Tesi formulata nel 2025 da Arvind Narayanan e Sayash Kapoor, informatici di Princeton. L'AI vi è descritta come una tecnologia trasformativa al pari dell'elettricità o di internet, da governare con le istituzioni esistenti, e non come una specie nuova o una superintelligenza in arrivo. L'archivio la incontra sul terreno della responsabilità: se l'AI è una tecnologia normale valgono le leggi normali, e dei danni di un agente risponde l'azienda che lo gestisce. **La domanda che la voce tiene aperta è per quanto tempo una tecnologia possa restare normale mentre le sue capacità crescono.**",
+    articles: [
+      { title: "Big tech may finally face legal consequences for AI’s actions", url: "/curated/2026-11-19-aron-responsabilita-agenti-ai-newscientist/", _source: "curated" }
     ]
   }
 

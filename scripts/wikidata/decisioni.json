@@ -189,7 +189,8 @@
     "società benefit": "Q4887441",
     "Nagel, Thomas": "Q350239",
     "funzionalismo": "Q1377166",
-    "commercio agentico": "Q137604762"
+    "commercio agentico": "Q137604762",
+    "ipotesi di Riemann": "Q205966"
   },
   "nessun_qid": {
     "cosmotecnica": "Solo il libro di Yuk Hui ha un elemento: il concetto eredita la geografia dal teorico.",
@@ -245,7 +246,8 @@
     "siti zombie": "Nessun elemento del concetto; affine Q109561781 (pink-slime journalism), diverso perché riguarda siti di propaganda finanziati, non domini storici rivenduti (13/11/2026)",
     "teoria dell'aggregazione": "Nessun elemento del concetto; esiste solo un articolo omonimo (Q131147885) (13/11/2026)",
     "culto del fondatore": "Nessun elemento del concetto; affine Q131742854 (founder mode, Paul Graham), più stretto (13/11/2026)",
-    "diluizione del mercato": "Nessun elemento del concetto; affine Q131562 (fair use), più largo (16/11/2026)"
+    "diluizione del mercato": "Nessun elemento del concetto; affine Q131562 (fair use), più largo (16/11/2026)",
+    "AI come tecnologia normale": "Nessun elemento per «AI as Normal Technology» (cerca.sh, 22/11/2026); nessun affine annotato"
   },
   "da_verificare": {},
   "geo": {
@@ -1023,6 +1025,14 @@
       "paesi": []
     },
     "commercio agentico": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "ipotesi di Riemann": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "AI come tecnologia normale": {
       "modo": "nessuna",
       "paesi": []
     }
