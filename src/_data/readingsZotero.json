@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19",
+ "updated": "2026-11-22",
  "groups": [
   {
    "key": "reading-batch-1",
@@ -1211,11 +1211,11 @@
      "isbn": "",
      "doi": "10.1007/s11406-010-9254-9",
      "type": "journalArticle",
-     "status": "on file",
+     "status": "reading",
      "underlinings": 0,
      "last_read": "",
      "changed": false,
-     "group": "Readings Batch #1.2",
+     "group": "Reading Batch #1.2",
      "rulers": [],
      "also_in": [],
      "keys": [
@@ -1242,7 +1242,7 @@
      "underlinings": 0,
      "last_read": "",
      "changed": false,
-     "group": "Readings Batch #1.2",
+     "group": "Reading Batch #1.2",
      "rulers": [],
      "also_in": [],
      "keys": [
@@ -1273,7 +1273,7 @@
      "underlinings": 0,
      "last_read": "",
      "changed": false,
-     "group": "Readings Batch #1.2",
+     "group": "Reading Batch #1.2",
      "rulers": [],
      "also_in": [],
      "keys": [
@@ -1300,7 +1300,7 @@
      "underlinings": 0,
      "last_read": "",
      "changed": false,
-     "group": "Readings Batch #1.2",
+     "group": "Reading Batch #1.2",
      "rulers": [],
      "also_in": [],
      "keys": [
@@ -1331,7 +1331,7 @@
      "underlinings": 0,
      "last_read": "",
      "changed": false,
-     "group": "Readings Batch #1.2",
+     "group": "Reading Batch #1.2",
      "rulers": [],
      "also_in": [],
      "keys": [
@@ -1358,7 +1358,7 @@
      "underlinings": 0,
      "last_read": "",
      "changed": false,
-     "group": "Readings Batch #1.2",
+     "group": "Reading Batch #1.2",
      "rulers": [],
      "also_in": [],
      "keys": [
@@ -1385,7 +1385,7 @@
      "underlinings": 0,
      "last_read": "",
      "changed": false,
-     "group": "Readings Batch #1.2",
+     "group": "Reading Batch #1.2",
      "rulers": [],
      "also_in": [],
      "keys": [
@@ -1412,11 +1412,685 @@
      "underlinings": 0,
      "last_read": "",
      "changed": false,
-     "group": "Readings Batch #1.2",
+     "group": "Reading Batch #1.2",
      "rulers": [],
      "also_in": [],
      "keys": [
       "XD8GIRHU"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "answers-given-answers-taken",
+   "en": "Answers given, answers taken",
+   "blurb": "",
+   "works": [
+    {
+     "slug": "clark-1996",
+     "key": "UK46EVAD",
+     "title": "Using Language",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Clark",
+       "first": "Herbert H."
+      }
+     ],
+     "year": "1996",
+     "publisher": "Cambridge University Press",
+     "isbn": "9780521567459",
+     "doi": "",
+     "type": "book",
+     "status": "reading",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Reading Batch #2",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "UK46EVAD"
+     ]
+    },
+    {
+     "slug": "clayman-2001",
+     "key": "F4F63RH9",
+     "title": "Answers and Evasions",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Clayman",
+       "first": "Steven E."
+      }
+     ],
+     "year": "2001",
+     "publisher": "",
+     "isbn": "",
+     "doi": "10.1017/s0047404501003037",
+     "type": "journalArticle",
+     "status": "reading",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Reading Batch #2",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "F4F63RH9"
+     ]
+    },
+    {
+     "slug": "damon-1989",
+     "key": "7MFVA4F7",
+     "title": "Radiocarbon dating of the Shroud of Turin",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Damon",
+       "first": "P. E."
+      },
+      {
+       "last": "Donahue",
+       "first": "D. J."
+      },
+      {
+       "last": "Gore",
+       "first": "B. H."
+      },
+      {
+       "last": "Hatheway",
+       "first": "A. L."
+      },
+      {
+       "last": "Jull",
+       "first": "A. J. T."
+      },
+      {
+       "last": "Linick",
+       "first": "T. W."
+      },
+      {
+       "last": "Sercel",
+       "first": "P. J."
+      },
+      {
+       "last": "Toolin",
+       "first": "L. J."
+      },
+      {
+       "last": "Bronk",
+       "first": "C. R."
+      },
+      {
+       "last": "Hall",
+       "first": "E. T."
+      },
+      {
+       "last": "Hedges",
+       "first": "R. E. M."
+      },
+      {
+       "last": "Housley",
+       "first": "R."
+      },
+      {
+       "last": "Law",
+       "first": "I. A."
+      },
+      {
+       "last": "Perry",
+       "first": "C."
+      },
+      {
+       "last": "Bonani",
+       "first": "G."
+      },
+      {
+       "last": "Trumbore",
+       "first": "S."
+      },
+      {
+       "last": "Woelfli",
+       "first": "W."
+      },
+      {
+       "last": "Ambers",
+       "first": "J. C."
+      },
+      {
+       "last": "Bowman",
+       "first": "S. G. E."
+      },
+      {
+       "last": "Leese",
+       "first": "M. N."
+      },
+      {
+       "last": "Tite",
+       "first": "M. S."
+      }
+     ],
+     "year": "1989",
+     "publisher": "",
+     "isbn": "",
+     "doi": "10.1038/337611a0",
+     "type": "journalArticle",
+     "status": "reading",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Reading Batch #2",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "7MFVA4F7"
+     ]
+    },
+    {
+     "slug": "freiman-2024",
+     "key": "95UL3DVP",
+     "title": "AI-Testimony, Conversational AIs and Our Anthropocentric Theory of Testimony",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Freiman",
+       "first": "Ori"
+      }
+     ],
+     "year": "2024",
+     "publisher": "",
+     "isbn": "",
+     "doi": "10.1080/02691728.2024.2316622",
+     "type": "journalArticle",
+     "status": "reading",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Reading Batch #2",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "95UL3DVP"
+     ]
+    },
+    {
+     "slug": "greimas-1966",
+     "key": "QE4MR77U",
+     "title": "Sémantique structurale: recherche de méthode",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Greimas",
+       "first": "Algirdas Julien"
+      }
+     ],
+     "year": "1966",
+     "publisher": "Larousse",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "reading",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Reading Batch #2",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "QE4MR77U"
+     ]
+    },
+    {
+     "slug": "kadavath-2022",
+     "key": "M26U8R3Y",
+     "title": "Language Models (Mostly) Know What They Know",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Kadavath",
+       "first": "Saurav"
+      },
+      {
+       "last": "Conerly",
+       "first": "Tom"
+      },
+      {
+       "last": "Askell",
+       "first": "Amanda"
+      },
+      {
+       "last": "Henighan",
+       "first": "Tom"
+      },
+      {
+       "last": "Drain",
+       "first": "Dawn"
+      },
+      {
+       "last": "Perez",
+       "first": "Ethan"
+      },
+      {
+       "last": "Schiefer",
+       "first": "Nicholas"
+      },
+      {
+       "last": "Hatfield-Dodds",
+       "first": "Zac"
+      },
+      {
+       "last": "DasSarma",
+       "first": "Nova"
+      },
+      {
+       "last": "Tran-Johnson",
+       "first": "Eli"
+      },
+      {
+       "last": "Johnston",
+       "first": "Scott"
+      },
+      {
+       "last": "El-Showk",
+       "first": "Sheer"
+      },
+      {
+       "last": "Jones",
+       "first": "Andy"
+      },
+      {
+       "last": "Elhage",
+       "first": "Nelson"
+      },
+      {
+       "last": "Hume",
+       "first": "Tristan"
+      },
+      {
+       "last": "Chen",
+       "first": "Anna"
+      },
+      {
+       "last": "Bai",
+       "first": "Yuntao"
+      },
+      {
+       "last": "Bowman",
+       "first": "Sam"
+      },
+      {
+       "last": "Fort",
+       "first": "Stanislav"
+      },
+      {
+       "last": "Ganguli",
+       "first": "Deep"
+      },
+      {
+       "last": "Hernandez",
+       "first": "Danny"
+      },
+      {
+       "last": "Jacobson",
+       "first": "Josh"
+      },
+      {
+       "last": "Kernion",
+       "first": "Jackson"
+      },
+      {
+       "last": "Kravec",
+       "first": "Shauna"
+      },
+      {
+       "last": "Lovitt",
+       "first": "Liane"
+      },
+      {
+       "last": "Ndousse",
+       "first": "Kamal"
+      },
+      {
+       "last": "Olsson",
+       "first": "Catherine"
+      },
+      {
+       "last": "Ringer",
+       "first": "Sam"
+      },
+      {
+       "last": "Amodei",
+       "first": "Dario"
+      },
+      {
+       "last": "Brown",
+       "first": "Tom"
+      },
+      {
+       "last": "Clark",
+       "first": "Jack"
+      },
+      {
+       "last": "Joseph",
+       "first": "Nicholas"
+      },
+      {
+       "last": "Mann",
+       "first": "Ben"
+      },
+      {
+       "last": "McCandlish",
+       "first": "Sam"
+      },
+      {
+       "last": "Olah",
+       "first": "Chris"
+      },
+      {
+       "last": "Kaplan",
+       "first": "Jared"
+      }
+     ],
+     "year": "2022",
+     "publisher": "",
+     "isbn": "",
+     "doi": "10.48550/arxiv.2207.05221",
+     "type": "preprint",
+     "status": "reading",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Reading Batch #2",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "M26U8R3Y"
+     ]
+    },
+    {
+     "slug": "lackey-2006",
+     "key": "SP9II3FM",
+     "title": "Learning from Words",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Lackey",
+       "first": "Jennifer"
+      }
+     ],
+     "year": "2006",
+     "publisher": "",
+     "isbn": "",
+     "doi": "10.1111/j.1933-1592.2006.tb00605.x",
+     "type": "journalArticle",
+     "status": "reading",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Reading Batch #2",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "SP9II3FM"
+     ]
+    },
+    {
+     "slug": "moro-1997",
+     "key": "WV8GNZCQ",
+     "title": "The Raising of Predicates: Predicative Noun Phrases and the Theory of Clause Structure",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Moro",
+       "first": "Andrea"
+      }
+     ],
+     "year": "1997",
+     "publisher": "Cambridge University Press",
+     "isbn": "",
+     "doi": "",
+     "type": "book",
+     "status": "reading",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Reading Batch #2",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "WV8GNZCQ"
+     ]
+    },
+    {
+     "slug": "rapanta-2022",
+     "key": "VX99S3BK",
+     "title": "Walton's types of argumentation dialogues as classroom discourse sequences",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Rapanta",
+       "first": "Chrysi"
+      },
+      {
+       "last": "Christodoulou",
+       "first": "Andri"
+      }
+     ],
+     "year": "2022",
+     "publisher": "",
+     "isbn": "",
+     "doi": "10.1016/j.lcsi.2019.100352",
+     "type": "journalArticle",
+     "status": "reading",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Reading Batch #2",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "VX99S3BK"
+     ]
+    },
+    {
+     "slug": "schegloff-1977",
+     "key": "6N3VHS52",
+     "title": "The Preference for Self-Correction in the Organization of Repair in Conversation",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Schegloff",
+       "first": "Emanuel A."
+      },
+      {
+       "last": "Jefferson",
+       "first": "Gail"
+      },
+      {
+       "last": "Sacks",
+       "first": "Harvey"
+      }
+     ],
+     "year": "1977",
+     "publisher": "",
+     "isbn": "",
+     "doi": "10.2307/413107",
+     "type": "journalArticle",
+     "status": "reading",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Reading Batch #2",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "6N3VHS52"
+     ]
+    },
+    {
+     "slug": "sclar-2024",
+     "key": "UZBNZ4K9",
+     "title": "Quantifying Language Models' Sensitivity to Spurious Features in Prompt Design or: How I learned to start worrying about prompt formatting",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Sclar",
+       "first": "Melanie"
+      },
+      {
+       "last": "Choi",
+       "first": "Yejin"
+      },
+      {
+       "last": "Tsvetkov",
+       "first": "Yulia"
+      },
+      {
+       "last": "Suhr",
+       "first": "Alane"
+      }
+     ],
+     "year": "2024",
+     "publisher": "",
+     "isbn": "",
+     "doi": "10.48550/arxiv.2310.11324",
+     "type": "preprint",
+     "status": "reading",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Reading Batch #2",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "UZBNZ4K9"
+     ]
+    },
+    {
+     "slug": "sharma-2025",
+     "key": "C8LMY7NV",
+     "title": "Towards Understanding Sycophancy in Language Models",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Sharma",
+       "first": "Mrinank"
+      },
+      {
+       "last": "Tong",
+       "first": "Meg"
+      },
+      {
+       "last": "Korbak",
+       "first": "Tomasz"
+      },
+      {
+       "last": "Duvenaud",
+       "first": "David"
+      },
+      {
+       "last": "Askell",
+       "first": "Amanda"
+      },
+      {
+       "last": "Bowman",
+       "first": "Samuel R."
+      },
+      {
+       "last": "Cheng",
+       "first": "Newton"
+      },
+      {
+       "last": "Durmus",
+       "first": "Esin"
+      },
+      {
+       "last": "Hatfield-Dodds",
+       "first": "Zac"
+      },
+      {
+       "last": "Johnston",
+       "first": "Scott R."
+      },
+      {
+       "last": "Kravec",
+       "first": "Shauna"
+      },
+      {
+       "last": "Maxwell",
+       "first": "Timothy"
+      },
+      {
+       "last": "McCandlish",
+       "first": "Sam"
+      },
+      {
+       "last": "Ndousse",
+       "first": "Kamal"
+      },
+      {
+       "last": "Rausch",
+       "first": "Oliver"
+      },
+      {
+       "last": "Schiefer",
+       "first": "Nicholas"
+      },
+      {
+       "last": "Yan",
+       "first": "Da"
+      },
+      {
+       "last": "Zhang",
+       "first": "Miranda"
+      },
+      {
+       "last": "Perez",
+       "first": "Ethan"
+      }
+     ],
+     "year": "2025",
+     "publisher": "",
+     "isbn": "",
+     "doi": "10.48550/arxiv.2310.13548",
+     "type": "preprint",
+     "status": "reading",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Reading Batch #2",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "C8LMY7NV"
+     ]
+    },
+    {
+     "slug": "valmisa-2021",
+     "key": "YAQGS4YU",
+     "title": "Adapting: A Chinese Philosophy of Action",
+     "title_en": "",
+     "authors": [
+      {
+       "last": "Valmisa",
+       "first": "Mercedes"
+      }
+     ],
+     "year": "2021",
+     "publisher": "Oxford University Press",
+     "isbn": "9780197572962",
+     "doi": "10.1093/oso/9780197572962.001.0001",
+     "type": "book",
+     "status": "reading",
+     "underlinings": 0,
+     "last_read": "",
+     "changed": false,
+     "group": "Reading Batch #2",
+     "rulers": [],
+     "also_in": [],
+     "keys": [
+      "YAQGS4YU"
      ]
     }
    ]
@@ -1637,33 +2311,6 @@
      "also_in": [],
      "keys": [
       "57B4UWTK"
-     ]
-    },
-    {
-     "slug": "clayman-2001",
-     "key": "F4F63RH9",
-     "title": "Answers and Evasions",
-     "title_en": "",
-     "authors": [
-      {
-       "last": "Clayman",
-       "first": "Steven E."
-      }
-     ],
-     "year": "2001",
-     "publisher": "",
-     "isbn": "",
-     "doi": "10.1017/s0047404501003037",
-     "type": "journalArticle",
-     "status": "on file",
-     "underlinings": 0,
-     "last_read": "",
-     "changed": false,
-     "group": "Bibliography for Checks",
-     "rulers": [],
-     "also_in": [],
-     "keys": [
-      "F4F63RH9"
      ]
     },
     {
