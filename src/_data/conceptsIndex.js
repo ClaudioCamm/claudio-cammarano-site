@@ -50,7 +50,8 @@ module.exports = [
       { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-04-04-dieci-anni-senza-umberto-eco/" },
       { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" },
       { title: "The power thinker", url: "/curated/2017-03-15-koopman-power-thinker-foucault-aeon/", _source: "curated" },
-      { title: "Le tenebre non sono il nostro destino. Intervista ad Asma Mhalla", url: "/curated/2026-10-21-molteni-mhalla-pandora/", _source: "curated" }
+      { title: "Le tenebre non sono il nostro destino. Intervista ad Asma Mhalla", url: "/curated/2026-10-21-molteni-mhalla-pandora/", _source: "curated" },
+      { title: "We create our own reality", url: "/curated/2026-11-26-foster-eakin-teoria-francese-lrb/", _source: "curated" }
     ]
   },
   {
@@ -339,7 +340,8 @@ module.exports = [
     articles: [
       { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-04-04-dieci-anni-senza-umberto-eco/" },
       { title: "La macchina e la lotta", url: "/writings/2026-06-01-la-macchina-e-la-lotta/" },
-      { title: "I'm a College Professor. Writing Isn't as Important as We Think.", url: "/curated/2026-09-29-cruz-scrittura-pensiero-nyt/", _source: "curated" }
+      { title: "I'm a College Professor. Writing Isn't as Important as We Think.", url: "/curated/2026-09-29-cruz-scrittura-pensiero-nyt/", _source: "curated" },
+      { title: "AI x Bio is not just a data problem", url: "/curated/2026-11-22-patro-ai-biologia-misura-combinelab/", _source: "curated" }
     ]
   },
   {
@@ -1599,7 +1601,8 @@ module.exports = [
       { title: "Le tre IA del Netcomm Forum", url: "/curated/2026-05-21-diegoli-tre-ia-netcomm-forum/", _source: "curated" },
       { title: "The Atlantic is getting more subscribers from Google traffic, even as referrals fall", url: "/curated/2026-09-16-scire-atlantic-google-abbonati-niemanlab/", _source: "curated" },
       { title: "A Conversation With Ari Emanuel About Entertainment and AI", url: "/curated/2026-10-15-stratechery-ari-emanuel-entertainment-ai/", _source: "curated" },
-      { title: "An Interview With Eric Seufert About Agentic Commerce", url: "/curated/2026-11-19-thompson-seufert-commercio-agentico-stratechery/", _source: "curated" }
+      { title: "An Interview With Eric Seufert About Agentic Commerce", url: "/curated/2026-11-19-thompson-seufert-commercio-agentico-stratechery/", _source: "curated" },
+      { title: "Google's AI Mode model knows little on its own and answers from what organic search supplies", url: "/curated/2026-11-18-petrovic-ai-mode-memoria-dejan/", _source: "curated" }
     ]
   },
   {
@@ -3020,7 +3023,8 @@ module.exports = [
       { title: "When Will This War End? The Question Is Meaningless.", url: "/curated/2026-02-15-gumenyuk-quando-finira-guerra-nyt/", _source: "curated" },
       { title: "L'Ucraina chiusa in un guscio di noce: «Ora lo sappiamo, nessuno ci salverà»", url: "/curated/2026-02-22-giordano-guscio-di-noce-corriere/", _source: "curated" },
       { title: "The World's Last Chance for Peace", url: "/curated/2026-11-13-sanchez-normalizzazione-guerra-foreignaffairs/", _source: "curated" },
-      { title: "The Kyiv Independent confronts journalism in times of war", url: "/curated/2026-11-15-ourdan-kyiv-independent-lemonde/", _source: "curated" }
+      { title: "The Kyiv Independent confronts journalism in times of war", url: "/curated/2026-11-15-ourdan-kyiv-independent-lemonde/", _source: "curated" },
+      { title: "Ukraine designed its own national typeface so it doesn’t have to use Russian fonts", url: "/curated/2026-11-13-schwarz-zakon-carattere-ucraina-fastcompany/", _source: "curated" }
     ]
   },
   {
@@ -3198,7 +3202,8 @@ module.exports = [
       { title: "With an eye on America, China is beefing up its AI-controlled labs", url: "/curated/2026-11-04-economist-laboratori-autonomi-cina/", _source: "curated" },
       { title: "Jensen Huang's Affair, The Culper Report, Huang's Righteousness", url: "/curated/2026-11-09-thompson-huang-culper-presunzione-stratechery/", _source: "curated" },
       { title: "A New Kind of Foreign Agent", url: "/curated/2026-11-11-feldman-agenti-stranieri-ai-cinese-foreignaffairs/", _source: "curated" },
-      { title: "Xi Jinping's chief ideologue is worried", url: "/curated/2026-11-11-economist-wang-huning-ideologo/", _source: "curated" }
+      { title: "Xi Jinping's chief ideologue is worried", url: "/curated/2026-11-11-economist-wang-huning-ideologo/", _source: "curated" },
+      { title: "Latin America would like to be the next data-centre frontier", url: "/curated/2026-11-19-economist-america-latina-data-center/", _source: "curated" }
     ]
   },
   {
@@ -4009,7 +4014,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q179168", "https://it.wikipedia.org/wiki/Strutturalismo"],
     note: "Il metodo che legge un fenomeno come sistema di relazioni: un elemento vale per la posizione che occupa rispetto agli altri, non per ciò che è preso da solo. Nasce dalla linguistica di Saussure e passa, con Jakobson, Lévi-Strauss, Barthes e Greimas, all'antropologia e alla semiotica. In questo sito è l'organon implicito, lo strumento con cui ragiona: cercare la struttura sotto la superficie. Il sito ne ricava una posizione. Del poststrutturalismo resta almeno un'acquisizione buona: ogni pensiero è situato. Ma la struttura viene prima del gesto di collocarsi in un contesto. La lingua è la mappa del pensiero (non coincide, ma lo indica), e studiarla con rigore è un esercizio geografico. In questa famiglia entra anche il Tractatus di Wittgenstein: quello del primo Wittgenstein è un mondo di fatti, e di proposizioni che ne sono l'immagine. Wittgenstein non ne avrebbe forse approvato l'etichetta, ma è noto che l'uomo di suo approvava ben poco. In italiano il riferimento culturale più importante e più dimenticato è l'Enciclopedia Einaudi, un'opera grande in 16 volumi che rinunciò all'ordine alfabetico per un sistema di voci collegate. Il suo sforzo fu di gettare le basi per una nuova metodologia delle scienze umane e non, ma arrivò troppo tardi e fallì miseramente. Non è più disponibile, se non in forma di remainder, ma per poco tempo è stata possibile, e questo conta.",
     articles: [
-      { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-04-04-dieci-anni-senza-umberto-eco/" }
+      { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-04-04-dieci-anni-senza-umberto-eco/" },
+      { title: "We create our own reality", url: "/curated/2026-11-26-foster-eakin-teoria-francese-lrb/", _source: "curated" }
     ]
   },
   {
@@ -4026,7 +4032,8 @@ module.exports = [
     articles: [
       { title: "Dieci anni senza Umberto Eco", url: "/writings/2026-04-04-dieci-anni-senza-umberto-eco/" },
       { title: "La dialettica dell'antilluminismo", url: "/writings/2026-06-16-la-dialettica-dell-antilluminismo/" },
-      { title: "The power thinker", url: "/curated/2017-03-15-koopman-power-thinker-foucault-aeon/", _source: "curated" }
+      { title: "The power thinker", url: "/curated/2017-03-15-koopman-power-thinker-foucault-aeon/", _source: "curated" },
+      { title: "We create our own reality", url: "/curated/2026-11-26-foster-eakin-teoria-francese-lrb/", _source: "curated" }
     ]
   },
   {
@@ -4277,7 +4284,8 @@ module.exports = [
       { title: "The Curious Power of Punctuation", url: "/curated/2026-09-28-menand-punteggiatura-autore-newyorker/", _source: "curated" },
       { title: "We're living through an explainer epidemic", url: "/curated/2026-09-10-pitcher-epidemia-explainer-dazed/", _source: "curated" },
       { title: "Japanese author Rie Kudan wins prestigious Akutagawa Prize for novel partly written by ChatGPT", url: "/curated/2024-01-17-kudan-akutagawa-cinque-per-cento-cnn/", _source: "curated" },
-      { title: "Il triste dibattito sullo scrivere con l'IA", url: "/curated/2026-10-02-piacenza-triste-dibattito-scrivere-ia/", _source: "curated" }
+      { title: "Il triste dibattito sullo scrivere con l'IA", url: "/curated/2026-10-02-piacenza-triste-dibattito-scrivere-ia/", _source: "curated" },
+      { title: "We create our own reality", url: "/curated/2026-11-26-foster-eakin-teoria-francese-lrb/", _source: "curated" }
     ]
   },
   {
@@ -4676,7 +4684,8 @@ module.exports = [
       { title: "A Short Note on P-Value Hacking", url: "/curated/2016-03-24-taleb-p-value-hacking-arxiv/", _source: "curated" },
       { title: "Election Predictions as Martingales: An Arbitrage Approach", url: "/curated/2017-03-18-taleb-election-predictions-martingales-arxiv/", _source: "curated" },
       { title: "He Wants AI Benchmarking To Be a Science, Not a Dark Art", url: "/curated/2026-10-16-pavlus-hardt-benchmark-quanta/", _source: "curated" },
-      { title: "On Waymos and their safety record", url: "/curated/2026-11-18-dias-waymo-sicurezza-azhdarchid/", _source: "curated" }
+      { title: "On Waymos and their safety record", url: "/curated/2026-11-18-dias-waymo-sicurezza-azhdarchid/", _source: "curated" },
+      { title: "Informal Verification", url: "/curated/2026-11-22-gobel-verifica-informale/", _source: "curated" }
     ]
   },
   {
@@ -5378,7 +5387,8 @@ module.exports = [
     note: "Meccanismo per cui il gusto non esprime una preferenza privata ma colloca chi lo esercita rispetto agli altri: si sceglie anche per segnalare a quale gruppo si appartiene e da quale ci si separa. È il concetto centrale di Pierre Bourdieu, e la voce entra nell'archivio perché finora mancava proprio quella — il sito aveva preso in prestito da Bourdieu il capitale simbolico piegandolo a un uso che non è il suo, la composizione vettoriale di un riposizionamento politico, e aveva lasciato fuori la cosa per cui Bourdieu è noto.\n\nLa forma contemporanea del meccanismo è più nuda di quella che Bourdieu descriveva, e Debbie Millman nell'ottobre 2026 ne dà una formulazione esatta parlando di chirurgia estetica: si interviene su un naso o su un labbro «così che tu sappia che io so che tu sai che io so, e tutti e due abbiamo un bell'aspetto». La segnalazione non è nascosta, è reciproca e consapevole, e funziona insieme verso chi condivide il codice e verso chi lo rifiuta. L'esempio storicamente più pulito è l'iPod presentato sei settimane dopo l'11 settembre: l'oggetto stava in tasca e il segno di appartenenza erano gli auricolari bianchi, cioè la sola parte visibile.\n\nIl rovescio è più interessante del dritto, ed è la ragione per cui la voce serve a un archivio che si occupa anche di mercati. **La distinzione vuole particolarità, il mercato vuole liquidità**, e quando un oggetto viene posseduto come bene scambiabile invece che come cosa propria la particolarità diventa un costo. Il caso documentato è quello delle case americane dipinte di grigio — la cosiddetta *color recession* — e delle associazioni di quartiere che vietano i colori non per il bene di chi abita ma perché la casa resti facilmente rivendibile. Nel giudicare un'uniformità conviene quindi distinguere fra chi non ha gusto, chi non ha intenzione e chi ha un vincolo di liquidità: sono tre cose diverse e solo la terza si corregge cambiando il contratto.",
     articles: [
       { title: "Why Cybertrucks, McMansions and Greige Matter", url: "/curated/2026-10-02-klein-millman-il-grigio-non-e-un-gusto-nyt/", _source: "curated" },
-      { title: "Min Jin Lee's Underdog Morality", url: "/curated/2026-10-01-rosin-lee-il-token-della-scuola-atlantic/", _source: "curated" }
+      { title: "Min Jin Lee's Underdog Morality", url: "/curated/2026-10-01-rosin-lee-il-token-della-scuola-atlantic/", _source: "curated" },
+      { title: "What Machines Love", url: "/curated/2026-11-22-kushner-weiner-gusto-macchine-nyt/", _source: "curated" }
     ]
   },
   {
@@ -6169,7 +6179,9 @@ module.exports = [
     note: "Tendenza di un modello generativo a concentrare ciò che produce su un insieme ristretto di risposte, osservata nei modelli linguistici dopo l'introduzione dell'addestramento supervisionato e del rinforzo da preferenze umane. **Nel sito è il nome tecnico dell'omologazione della scrittura assistita: quando i modelli convergono sugli stessi nomi, luoghi e giri di frase, convergono anche i testi di chi li usa.**",
     articles: [
       { title: "Elias in the Lighthouse, Again? Diagnosing Low Diversity in LLM Stories", url: "/curated/2026-05-26-hamilton-mimno-elias-faro-storie-llm-arxiv/", _source: "curated" },
-      { title: "Hugo Duminil-Copin, de l'autre côté de la machine", url: "/curated/2026-11-14-duminil-copin-matematica-macchina-grandcontinent/", _source: "curated" }
+      { title: "Hugo Duminil-Copin, de l'autre côté de la machine", url: "/curated/2026-11-14-duminil-copin-matematica-macchina-grandcontinent/", _source: "curated" },
+      { title: "Did Substack Fix the Internet?", url: "/curated/2026-10-26-chayka-substack-mckenzie-newyorker/", _source: "curated" },
+      { title: "What Machines Love", url: "/curated/2026-11-22-kushner-weiner-gusto-macchine-nyt/", _source: "curated" }
     ]
   },
   {
@@ -6220,7 +6232,8 @@ module.exports = [
     ],
     note: "Consenso delle comunità locali di cui un'impresa ha bisogno per insediarsi e lavorare, distinto dai permessi formali e revocabile anche quando questi sono in regola. **Nel sito è la scarsità che Thompson indica come ultimo vincolo all'AI: il calcolo, la memoria e l'energia si producono, il consenso no.**",
     articles: [
-      { title: "AI on the Ballot", url: "/curated/2026-11-04-thompson-ai-on-the-ballot-stratechery/", _source: "curated" }
+      { title: "AI on the Ballot", url: "/curated/2026-11-04-thompson-ai-on-the-ballot-stratechery/", _source: "curated" },
+      { title: "Latin America would like to be the next data-centre frontier", url: "/curated/2026-11-19-economist-america-latina-data-center/", _source: "curated" }
     ]
   },
   {
@@ -6393,7 +6406,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q125724514"],
     note: "Laboratorio in cui un sistema di intelligenza artificiale formula ipotesi, fa eseguire gli esperimenti a robot e usa i risultati per scegliere i successivi, con un intervento umano minimo. **Nel sito interessa come punto in cui l'automazione arriva al lavoro scientifico: non solo a scrivere i risultati, ma a produrli.**",
     articles: [
-      { title: "With an eye on America, China is beefing up its AI-controlled labs", url: "/curated/2026-11-04-economist-laboratori-autonomi-cina/", _source: "curated" }
+      { title: "With an eye on America, China is beefing up its AI-controlled labs", url: "/curated/2026-11-04-economist-laboratori-autonomi-cina/", _source: "curated" },
+      { title: "AI x Bio is not just a data problem", url: "/curated/2026-11-22-patro-ai-biologia-misura-combinelab/", _source: "curated" }
     ]
   },
   {
@@ -6431,7 +6445,8 @@ module.exports = [
       { title: "The Death of Search", url: "/curated/2024-11-08-wong-morte-della-ricerca-atlantic/", _source: "curated" },
       { title: "Generative AI and News Report 2026: From Standalone Tools to Information Infrastructure", url: "/curated/2026-10-30-simon-nielsen-fletcher-ai-generativa-notizie-reuters/", _source: "curated" },
       { title: "Most major UK news publishers saw Google search visibility fall in 2026", url: "/curated/2026-11-10-tobitt-visibilita-google-editori-uk-pressgazette/", _source: "curated" },
-      { title: "As Grand Theft Auto VI breaks records, games journalism reinvents itself to survive", url: "/curated/2026-11-17-leake-giornalismo-videogiochi-gta-reuters/", _source: "curated" }
+      { title: "As Grand Theft Auto VI breaks records, games journalism reinvents itself to survive", url: "/curated/2026-11-17-leake-giornalismo-videogiochi-gta-reuters/", _source: "curated" },
+      { title: "Google's AI Mode model knows little on its own and answers from what organic search supplies", url: "/curated/2026-11-18-petrovic-ai-mode-memoria-dejan/", _source: "curated" }
     ]
   },
   {
@@ -6597,7 +6612,9 @@ module.exports = [
     ],
     note: "Uso dei nodi centrali delle reti economiche globali, come la finanza, i cavi, i componenti critici, per esercitare pressione su altri Stati; il concetto è di Henry Farrell e Abraham Newman (2019). **Nel sito interessa il suo rovescio difensivo: diventare indispensabili è una protezione più solida che diventare autosufficienti.**",
     articles: [
-      { title: "L'Europe détient la clef de la course à l'IA", url: "/curated/2026-11-11-leicht-europa-asml-eurofab-grandcontinent/", _source: "curated" }
+      { title: "L'Europe détient la clef de la course à l'IA", url: "/curated/2026-11-11-leicht-europa-asml-eurofab-grandcontinent/", _source: "curated" },
+      { title: "Ukraine designed its own national typeface so it doesn’t have to use Russian fonts", url: "/curated/2026-11-13-schwarz-zakon-carattere-ucraina-fastcompany/", _source: "curated" },
+      { title: "Latin America would like to be the next data-centre frontier", url: "/curated/2026-11-19-economist-america-latina-data-center/", _source: "curated" }
     ]
   },
   {
@@ -6712,7 +6729,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q1143951"],
     note: "Espressione coniata da Joseph Nye nel 1990 per la capacità di uno Stato di ottenere ciò che vuole attraendo invece di costringere, attraverso cultura, valori e istituzioni. La variante che interessa è quella industriale: film, serie e videogiochi come veicoli d'influenza, e il limite che incontrano quando un racconto costruito per il pubblico di casa deve piacere al mondo. **Il soft power non si esporta per decisione: un'opera che deve restare fedele per non offendere in patria rischia di restare muta fuori.**",
     articles: [
-      { title: "“Ramayana”, India's biggest film, turns a Hindu god into a star", url: "/curated/2026-11-12-economist-ramayana-film-india/", _source: "curated" }
+      { title: "“Ramayana”, India's biggest film, turns a Hindu god into a star", url: "/curated/2026-11-12-economist-ramayana-film-india/", _source: "curated" },
+      { title: "Ukraine designed its own national typeface so it doesn’t have to use Russian fonts", url: "/curated/2026-11-13-schwarz-zakon-carattere-ucraina-fastcompany/", _source: "curated" }
     ]
   },
   {
@@ -6788,7 +6806,8 @@ module.exports = [
       { title: "What does it mean to understand what we built?", url: "/curated/2026-11-16-brooker-capire-cosa-abbiamo-costruito/", _source: "curated" },
       { title: "AI Proved the Quasi-Riemann Hypothesis. What Happens Now?", url: "/curated/2026-10-19-kakaes-quasi-riemann-quanta/", _source: "curated" },
       { title: "The AI Riemann hypothesis proof is true, independent mathematicians confirm", url: "/curated/2026-11-20-moskowitz-riemann-verificata-sciam/", _source: "curated" },
-      { title: "AI may have solved math’s greatest mystery. Can humans understand the answer?", url: "/curated/2026-11-20-savitsky-riemann-claude-science/", _source: "curated" }
+      { title: "AI may have solved math’s greatest mystery. Can humans understand the answer?", url: "/curated/2026-11-20-savitsky-riemann-claude-science/", _source: "curated" },
+      { title: "Informal Verification", url: "/curated/2026-11-22-gobel-verifica-informale/", _source: "curated" }
     ]
   },
 
@@ -6889,6 +6908,18 @@ module.exports = [
     note: "Tesi formulata nel 2025 da Arvind Narayanan e Sayash Kapoor, informatici di Princeton. L'AI vi è descritta come una tecnologia trasformativa al pari dell'elettricità o di internet, da governare con le istituzioni esistenti, e non come una specie nuova o una superintelligenza in arrivo. L'archivio la incontra sul terreno della responsabilità: se l'AI è una tecnologia normale valgono le leggi normali, e dei danni di un agente risponde l'azienda che lo gestisce. **La domanda che la voce tiene aperta è per quanto tempo una tecnologia possa restare normale mentre le sue capacità crescono.**",
     articles: [
       { title: "Big tech may finally face legal consequences for AI’s actions", url: "/curated/2026-11-19-aron-responsabilita-agenti-ai-newscientist/", _source: "curated" }
+    ]
+  },
+
+  {
+    name: "economia dell'attenzione",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q295287"],
+    related: [ { name: "collasso modale", why: "Quando tutti competono per la stessa attenzione, le forme che funzionano finiscono per somigliarsi." } ],
+    note: "Idea secondo cui, in un mondo ricco di informazione, la risorsa scarsa è l'attenzione di chi la riceve. Risale a Herbert Simon, che nel 1971 scriveva che la ricchezza di informazione crea povertà di attenzione; nel 1997 Michael Goldhaber ne fa un'economia vera e propria. L'archivio la segue dove le piattaforme promettono di uscirne e finiscono per riprodurla. Nel 2026 gli abbonamenti di Substack, nati contro il modello pubblicitario dei social, premiano ancora le voci più forti. **La domanda che la voce tiene aperta è se si possa pagare la scrittura senza che chi scrive debba prima conquistarsi l'attenzione come si fa con un prodotto.**",
+    articles: [
+      { title: "Did Substack Fix the Internet?", url: "/curated/2026-10-26-chayka-substack-mckenzie-newyorker/", _source: "curated" }
     ]
   }
 
