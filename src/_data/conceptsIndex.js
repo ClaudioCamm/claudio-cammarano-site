@@ -882,7 +882,8 @@ module.exports = [
       { title: "How surge in defence and dual-use technology investment could reconfigure global AI race", url: "/curated/2026-04-01-chatham-house-defence-ai-race/", _source: "curated" },
       { title: "Making Claude a chemist", url: "/curated/2026-06-05-anthropic-claude-chemist/", _source: "curated" },
       { title: "The Future of Ukraine's Drone Democracy", url: "/curated/2026-08-26-gumenyuk-ukraine-drone-democracy-foreignaffairs/", _source: "curated" },
-      { title: "Internet Governance in 2026: Sovereignty, Security, and the Limits of Multistakeholderism", url: "/curated/2026-01-04-kulesza-internet-governance-2026-circleid/", _source: "curated" }
+      { title: "Internet Governance in 2026: Sovereignty, Security, and the Limits of Multistakeholderism", url: "/curated/2026-01-04-kulesza-internet-governance-2026-circleid/", _source: "curated" },
+      { title: "The Real Nvidia Scandal", url: "/curated/2026-11-24-kilcrease-chilukuri-scandalo-nvidia-foreignaffairs/", _source: "curated" }
     ]
   },
   {
@@ -1524,7 +1525,8 @@ module.exports = [
       { title: "The Disruption Machine", url: "/curated/2014-06-16-lepore-disruption-machine-newyorker/", _source: "curated" },
       { title: "AI on the Ballot", url: "/curated/2026-11-04-thompson-ai-on-the-ballot-stratechery/", _source: "curated" },
       { title: "China's AI stock-market struggles are a warning", url: "/curated/2026-11-03-economist-borsa-cina-ai/", _source: "curated" },
-      { title: "Can the AI boom make enough money to sustain itself?", url: "/curated/2026-11-12-economist-ricavi-boom-ai/", _source: "curated" }
+      { title: "Can the AI boom make enough money to sustain itself?", url: "/curated/2026-11-12-economist-ricavi-boom-ai/", _source: "curated" },
+      { title: "AI Questions", url: "/curated/2026-11-24-evans-ai-questions/", _source: "curated" }
     ]
   },
   {
@@ -2576,7 +2578,8 @@ module.exports = [
       { title: "I Spent a Year Talking to Anthropic Employees. Here’s What They Believe.", url: "/curated/2026-11-18-sun-dipendenti-anthropic-nyt/", _source: "curated" },
       { title: "Don’t Play Anthropic’s Game", url: "/curated/2026-11-19-newport-gioco-anthropic-nyt/", _source: "curated" },
       { title: "Anthropic, PBC: Form S-1, Amendment No. 1", url: "/curated/2026-11-02-anthropic-prospetto-s1-sec/", _source: "curated" },
-      { title: "AI may have solved math’s greatest mystery. Can humans understand the answer?", url: "/curated/2026-11-20-savitsky-riemann-claude-science/", _source: "curated" }
+      { title: "AI may have solved math’s greatest mystery. Can humans understand the answer?", url: "/curated/2026-11-20-savitsky-riemann-claude-science/", _source: "curated" },
+      { title: "AI Questions", url: "/curated/2026-11-24-evans-ai-questions/", _source: "curated" }
     ]
   },
   {
@@ -2749,7 +2752,8 @@ module.exports = [
       { title: "What does ChatGPT say about the election? Depends on who's asking!", url: "/curated/2026-11-09-princeton-chatgpt-elezioni-memoria-citp/", _source: "curated" },
       { title: "AI has proved that a theory underpinning fundamental physics is trustworthy", url: "/curated/2026-11-11-economist-yang-mills-dimostrazione-ai/", _source: "curated" },
       { title: "AI Proved the Quasi-Riemann Hypothesis. What Happens Now?", url: "/curated/2026-10-19-kakaes-quasi-riemann-quanta/", _source: "curated" },
-      { title: "Big tech may finally face legal consequences for AI’s actions", url: "/curated/2026-11-19-aron-responsabilita-agenti-ai-newscientist/", _source: "curated" }
+      { title: "Big tech may finally face legal consequences for AI’s actions", url: "/curated/2026-11-19-aron-responsabilita-agenti-ai-newscientist/", _source: "curated" },
+      { title: "The Wall Street Journal joins a growing list of publishers disallowing bots by default", url: "/curated/2026-11-24-deck-tameez-wsj-bot-niemanlab/", _source: "curated" }
     ]
   },
   {
@@ -3203,7 +3207,8 @@ module.exports = [
       { title: "Jensen Huang's Affair, The Culper Report, Huang's Righteousness", url: "/curated/2026-11-09-thompson-huang-culper-presunzione-stratechery/", _source: "curated" },
       { title: "A New Kind of Foreign Agent", url: "/curated/2026-11-11-feldman-agenti-stranieri-ai-cinese-foreignaffairs/", _source: "curated" },
       { title: "Xi Jinping's chief ideologue is worried", url: "/curated/2026-11-11-economist-wang-huning-ideologo/", _source: "curated" },
-      { title: "Latin America would like to be the next data-centre frontier", url: "/curated/2026-11-19-economist-america-latina-data-center/", _source: "curated" }
+      { title: "Latin America would like to be the next data-centre frontier", url: "/curated/2026-11-19-economist-america-latina-data-center/", _source: "curated" },
+      { title: "The Real Nvidia Scandal", url: "/curated/2026-11-24-kilcrease-chilukuri-scandalo-nvidia-foreignaffairs/", _source: "curated" }
     ]
   },
   {
@@ -3432,7 +3437,8 @@ module.exports = [
       { title: "A Conversation With Ari Emanuel About Entertainment and AI", url: "/curated/2026-10-15-stratechery-ari-emanuel-entertainment-ai/", _source: "curated" },
       { title: "An Interview with Palantir CTO Shyam Sankar About the AI Religious War", url: "/curated/2026-10-29-thompson-sankar-palantir-stratechery/", _source: "curated" },
       { title: "AI on the Ballot", url: "/curated/2026-11-04-thompson-ai-on-the-ballot-stratechery/", _source: "curated" },
-      { title: "An Interview With Roblox CEO David Baszucki About Aggregating Play", url: "/curated/2026-11-12-thompson-baszucki-roblox-stratechery/", _source: "curated" }
+      { title: "An Interview With Roblox CEO David Baszucki About Aggregating Play", url: "/curated/2026-11-12-thompson-baszucki-roblox-stratechery/", _source: "curated" },
+      { title: "The Individual Exception", url: "/curated/2026-11-24-thompson-eccezione-individuale-stratechery/", _source: "curated" }
     ]
   },
   {
@@ -3501,7 +3507,8 @@ module.exports = [
       { title: "La colonizzazione del giudizio", url: "/curated/2026-06-12-corriere-colonizzazione-giudizio/", _source: "curated" },
       { title: "The End of the Future", url: "/curated/2026-06-15-fp-end-of-the-future/", _source: "curated" },
       { title: "Naomi Klein: 'Extreme wealth has a deranging effect. It turns you into a supremacist'", url: "/curated/2026-09-18-klein-end-times-fascism-guardian/", _source: "curated" },
-      { title: "I profeti del codice", url: "/curated/2026-10-20-garcia-carbajo-profeti-del-codice-sole24ore/", _source: "curated" }
+      { title: "I profeti del codice", url: "/curated/2026-10-20-garcia-carbajo-profeti-del-codice-sole24ore/", _source: "curated" },
+      { title: "La vraie idéologie de la Silicon Valley est l’impunité de ses rois", url: "/curated/2026-11-24-farrell-impunita-silicon-valley-grandcontinent/", _source: "curated" }
     ]
   },
   {
@@ -4112,7 +4119,11 @@ module.exports = [
       { title: "Jensen Huang's Affair, The Culper Report, Huang's Righteousness", url: "/curated/2026-11-09-thompson-huang-culper-presunzione-stratechery/", _source: "curated" },
       { title: "The Jensen Huang Story Gets Worse, Washington vs. New York, Silicon Valley", url: "/curated/2026-11-10-thompson-huang-tre-citta-stratechery/", _source: "curated" },
       { title: "Jensen Huang and the end of the 'lol nothing matters' era of American politics", url: "/curated/2026-11-12-newton-huang-culto-fondatore-platformer/", _source: "curated" },
-      { title: "Et si l’IA était déjà devenue trop grosse pour échouer ?", url: "/curated/2026-11-19-moec-ai-troppo-grande-per-fallire-grandcontinent/", _source: "curated" }
+      { title: "Et si l’IA était déjà devenue trop grosse pour échouer ?", url: "/curated/2026-11-19-moec-ai-troppo-grande-per-fallire-grandcontinent/", _source: "curated" },
+      { title: "AI Questions", url: "/curated/2026-11-24-evans-ai-questions/", _source: "curated" },
+      { title: "La vraie idéologie de la Silicon Valley est l’impunité de ses rois", url: "/curated/2026-11-24-farrell-impunita-silicon-valley-grandcontinent/", _source: "curated" },
+      { title: "The Real Nvidia Scandal", url: "/curated/2026-11-24-kilcrease-chilukuri-scandalo-nvidia-foreignaffairs/", _source: "curated" },
+      { title: "The Individual Exception", url: "/curated/2026-11-24-thompson-eccezione-individuale-stratechery/", _source: "curated" }
     ]
   },
   {
@@ -4237,7 +4248,8 @@ module.exports = [
       { title: "Could AI help scientists with their paperwork?", url: "/curated/2026-10-14-economist-ai-burocrazia-scienza/", _source: "curated" },
       { title: "The AI boom is threatened by an epidemic of unreliable numbers", url: "/curated/2026-10-14-economist-numeri-inaffidabili-ai/", _source: "curated" },
       { title: "China’s universities are rich. But they're getting squeezed", url: "/curated/2026-10-20-economist-universita-cinesi/", _source: "curated" },
-      { title: "America does not produce world-beating statistics. Who does?", url: "/curated/2026-11-16-economist-statistiche-ufficiali/", _source: "curated" }
+      { title: "America does not produce world-beating statistics. Who does?", url: "/curated/2026-11-16-economist-statistiche-ufficiali/", _source: "curated" },
+      { title: "Data drunk", url: "/curated/2026-11-25-smith-ubriachi-di-dati-raremind/", _source: "curated" }
     ]
   },
   {
@@ -6153,7 +6165,8 @@ module.exports = [
     articles: [
       { title: "Meta delays rollout of terms that would allow broad scraping of news sites. Legal experts are still skeptical.", url: "/curated/2026-10-26-tameez-meta-scraping-robots-niemanlab/", _source: "curated" },
       { title: "Permission to Learn: An Economic Approach to AI Copyright", url: "/curated/2026-10-28-gans-permesso-di-imparare-networklawreview/", _source: "curated" },
-      { title: "Yahoo becomes first licensee of 'Spotify-like' collective AI content licensing model", url: "/curated/2026-11-12-guaglione-licenza-collettiva-yahoo-digiday/", _source: "curated" }
+      { title: "Yahoo becomes first licensee of 'Spotify-like' collective AI content licensing model", url: "/curated/2026-11-12-guaglione-licenza-collettiva-yahoo-digiday/", _source: "curated" },
+      { title: "The Wall Street Journal joins a growing list of publishers disallowing bots by default", url: "/curated/2026-11-24-deck-tameez-wsj-bot-niemanlab/", _source: "curated" }
     ]
   },
   {
@@ -6199,7 +6212,8 @@ module.exports = [
       { title: "Stocks Plunge as Midterm Results Renew A.I. Anxiety", url: "/curated/2026-11-05-rennison-borsa-midterm-ai-nyt/", _source: "curated" },
       { title: "Is the Nvidia Affair Securities Fraud?", url: "/curated/2026-11-09-levine-nvidia-flussi-di-cassa-ai-bloomberg/", _source: "curated" },
       { title: "Can the AI boom make enough money to sustain itself?", url: "/curated/2026-11-12-economist-ricavi-boom-ai/", _source: "curated" },
-      { title: "Et si l’IA était déjà devenue trop grosse pour échouer ?", url: "/curated/2026-11-19-moec-ai-troppo-grande-per-fallire-grandcontinent/", _source: "curated" }
+      { title: "Et si l’IA était déjà devenue trop grosse pour échouer ?", url: "/curated/2026-11-19-moec-ai-troppo-grande-per-fallire-grandcontinent/", _source: "curated" },
+      { title: "AI Questions", url: "/curated/2026-11-24-evans-ai-questions/", _source: "curated" }
     ]
   },
   {
@@ -6271,7 +6285,8 @@ module.exports = [
     note: "Espressione di Daron Acemoglu e Pascual Restrepo per l'automazione che sostituisce i lavoratori pur rendendo appena più di loro: il costo sociale della perdita di reddito è alto, il guadagno di produttività minimo. **Nel sito è il criterio per distinguere l'automazione che crea compiti nuovi da quella che si limita a tagliare il costo del lavoro.**",
     articles: [
       { title: "How Employment is Changing at Anthropic", url: "/curated/2026-10-16-wilmers-lavoro-anthropic-institute/", _source: "curated" },
-      { title: "Large Language Models and Creative Content Design: a case study of email marketing at Wine Access", url: "/curated/2026-01-01-dube-xu-email-marketing-llm-qme/", _source: "curated" }
+      { title: "Large Language Models and Creative Content Design: a case study of email marketing at Wine Access", url: "/curated/2026-01-01-dube-xu-email-marketing-llm-qme/", _source: "curated" },
+      { title: "Management consulting is not a thin wrapper on intelligence", url: "/curated/2026-11-23-kapoor-moshtagi-consulenza-normaltech/", _source: "curated" }
     ]
   },
   {
@@ -6519,7 +6534,9 @@ module.exports = [
     articles: [
       { title: "Is the Nvidia Affair Securities Fraud?", url: "/curated/2026-11-09-levine-nvidia-flussi-di-cassa-ai-bloomberg/", _source: "curated" },
       { title: "The Jensen Huang Story Gets Worse, Washington vs. New York, Silicon Valley", url: "/curated/2026-11-10-thompson-huang-tre-citta-stratechery/", _source: "curated" },
-      { title: "Jensen Huang and the end of the 'lol nothing matters' era of American politics", url: "/curated/2026-11-12-newton-huang-culto-fondatore-platformer/", _source: "curated" }
+      { title: "Jensen Huang and the end of the 'lol nothing matters' era of American politics", url: "/curated/2026-11-12-newton-huang-culto-fondatore-platformer/", _source: "curated" },
+      { title: "La vraie idéologie de la Silicon Valley est l’impunité de ses rois", url: "/curated/2026-11-24-farrell-impunita-silicon-valley-grandcontinent/", _source: "curated" },
+      { title: "The Individual Exception", url: "/curated/2026-11-24-thompson-eccezione-individuale-stratechery/", _source: "curated" }
     ]
   },
   {
@@ -6540,7 +6557,8 @@ module.exports = [
     sameAs: ["https://www.wikidata.org/wiki/Q3334446"],
     note: "Ambiente informativo in cui una persona incontra soprattutto opinioni simili alle proprie, rafforzate dalla ripetizione. **Nel sito interessa la sua forma più discreta: non l'esclusione delle voci contrarie, ma una scelta di accenti che si adatta a chi chiede.**",
     articles: [
-      { title: "What does ChatGPT say about the election? Depends on who's asking!", url: "/curated/2026-11-09-princeton-chatgpt-elezioni-memoria-citp/", _source: "curated" }
+      { title: "What does ChatGPT say about the election? Depends on who's asking!", url: "/curated/2026-11-09-princeton-chatgpt-elezioni-memoria-citp/", _source: "curated" },
+      { title: "Confident kids, cautious elders: What we get wrong (and right) about who really understands social media algorithms", url: "/curated/2026-11-24-chung-algoritmi-giovani-anziani-niemanlab/", _source: "curated" }
     ]
   },
   {
@@ -6614,7 +6632,8 @@ module.exports = [
     articles: [
       { title: "L'Europe détient la clef de la course à l'IA", url: "/curated/2026-11-11-leicht-europa-asml-eurofab-grandcontinent/", _source: "curated" },
       { title: "Ukraine designed its own national typeface so it doesn’t have to use Russian fonts", url: "/curated/2026-11-13-schwarz-zakon-carattere-ucraina-fastcompany/", _source: "curated" },
-      { title: "Latin America would like to be the next data-centre frontier", url: "/curated/2026-11-19-economist-america-latina-data-center/", _source: "curated" }
+      { title: "Latin America would like to be the next data-centre frontier", url: "/curated/2026-11-19-economist-america-latina-data-center/", _source: "curated" },
+      { title: "The Real Nvidia Scandal", url: "/curated/2026-11-24-kilcrease-chilukuri-scandalo-nvidia-foreignaffairs/", _source: "curated" }
     ]
   },
   {
@@ -6682,7 +6701,9 @@ module.exports = [
     articles: [
       { title: "I profeti del codice", url: "/curated/2026-10-20-garcia-carbajo-profeti-del-codice-sole24ore/", _source: "curated" },
       { title: "Jensen Huang and the end of the 'lol nothing matters' era of American politics", url: "/curated/2026-11-12-newton-huang-culto-fondatore-platformer/", _source: "curated" },
-      { title: "Anthropic and the Monetization of Paradise", url: "/curated/2026-11-18-lepore-anthropic-paradiso-newyorker/", _source: "curated" }
+      { title: "Anthropic and the Monetization of Paradise", url: "/curated/2026-11-18-lepore-anthropic-paradiso-newyorker/", _source: "curated" },
+      { title: "La vraie idéologie de la Silicon Valley est l’impunité de ses rois", url: "/curated/2026-11-24-farrell-impunita-silicon-valley-grandcontinent/", _source: "curated" },
+      { title: "The Individual Exception", url: "/curated/2026-11-24-thompson-eccezione-individuale-stratechery/", _source: "curated" }
     ]
   },
   {
@@ -6907,7 +6928,8 @@ module.exports = [
     related: [ { name: "responsabilità oggettiva", why: "Se l'AI è una tecnologia normale, dei danni dei suoi agenti risponde chi li mette in circolazione, come per ogni prodotto." } ],
     note: "Tesi formulata nel 2025 da Arvind Narayanan e Sayash Kapoor, informatici di Princeton. L'AI vi è descritta come una tecnologia trasformativa al pari dell'elettricità o di internet, da governare con le istituzioni esistenti, e non come una specie nuova o una superintelligenza in arrivo. L'archivio la incontra sul terreno della responsabilità: se l'AI è una tecnologia normale valgono le leggi normali, e dei danni di un agente risponde l'azienda che lo gestisce. **La domanda che la voce tiene aperta è per quanto tempo una tecnologia possa restare normale mentre le sue capacità crescono.**",
     articles: [
-      { title: "Big tech may finally face legal consequences for AI’s actions", url: "/curated/2026-11-19-aron-responsabilita-agenti-ai-newscientist/", _source: "curated" }
+      { title: "Big tech may finally face legal consequences for AI’s actions", url: "/curated/2026-11-19-aron-responsabilita-agenti-ai-newscientist/", _source: "curated" },
+      { title: "Management consulting is not a thin wrapper on intelligence", url: "/curated/2026-11-23-kapoor-moshtagi-consulenza-normaltech/", _source: "curated" }
     ]
   },
 
@@ -6920,6 +6942,18 @@ module.exports = [
     note: "Idea secondo cui, in un mondo ricco di informazione, la risorsa scarsa è l'attenzione di chi la riceve. Risale a Herbert Simon, che nel 1971 scriveva che la ricchezza di informazione crea povertà di attenzione; nel 1997 Michael Goldhaber ne fa un'economia vera e propria. L'archivio la segue dove le piattaforme promettono di uscirne e finiscono per riprodurla. Nel 2026 gli abbonamenti di Substack, nati contro il modello pubblicitario dei social, premiano ancora le voci più forti. **La domanda che la voce tiene aperta è se si possa pagare la scrittura senza che chi scrive debba prima conquistarsi l'attenzione come si fa con un prodotto.**",
     articles: [
       { title: "Did Substack Fix the Internet?", url: "/curated/2026-10-26-chayka-substack-mckenzie-newyorker/", _source: "curated" }
+    ]
+  },
+
+  {
+    name: "geopolitica",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q159385"],
+    related: [ { name: "egemonia", why: "La geopolitica descrive la competizione per lo spazio, l'egemonia il potere di chi quella competizione l'ha già vinta." } ],
+    note: "Studio dei rapporti fra potere politico e spazio geografico. Il termine lo conia lo svedese Rudolf Kjellén nel 1900. Halford Mackinder, a Londra nel 1904, ne fissa una delle immagini più durature, il «cuore» dell'Eurasia, e Karl Haushofer, nella Germania degli anni Venti, ne fa una dottrina della rivincita. L'archivio la usa come lente su un vocabolario: dal 2014 la parola torna dominante nel discorso pubblico, e con lei l'idea di un mondo a somma zero. **La domanda che la voce tiene aperta è quando la geopolitica descriva il mondo e quando lo produca, insegnando a chi la adotta a vederlo come un conflitto.**",
+    articles: [
+      { title: "Geopolitics is for losers", url: "/curated/2022-12-01-james-geopolitica-perdenti-aeon/", _source: "curated" }
     ]
   }
 

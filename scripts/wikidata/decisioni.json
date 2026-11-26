@@ -191,7 +191,8 @@
     "funzionalismo": "Q1377166",
     "commercio agentico": "Q137604762",
     "ipotesi di Riemann": "Q205966",
-    "economia dell'attenzione": "Q295287"
+    "economia dell'attenzione": "Q295287",
+    "geopolitica": "Q159385"
   },
   "nessun_qid": {
     "cosmotecnica": "Solo il libro di Yuk Hui ha un elemento: il concetto eredita la geografia dal teorico.",
@@ -1038,6 +1039,10 @@
       "paesi": []
     },
     "economia dell'attenzione": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "geopolitica": {
       "modo": "nessuna",
       "paesi": []
     }
