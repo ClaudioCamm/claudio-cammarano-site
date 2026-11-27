@@ -192,7 +192,12 @@
     "commercio agentico": "Q137604762",
     "ipotesi di Riemann": "Q205966",
     "economia dell'attenzione": "Q295287",
-    "geopolitica": "Q159385"
+    "geopolitica": "Q159385",
+    "disinformazione": "Q13579947",
+    "paradosso di Jevons": "Q1474401",
+    "economia dell'intenzione": "Q6044442",
+    "eterogenesi dei fini": "Q3733698",
+    "realizzabilità multipla": "Q1414884"
   },
   "nessun_qid": {
     "cosmotecnica": "Solo il libro di Yuk Hui ha un elemento: il concetto eredita la geografia dal teorico.",
@@ -1045,6 +1050,30 @@
     "geopolitica": {
       "modo": "nessuna",
       "paesi": []
+    },
+    "disinformazione": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "paradosso di Jevons": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "economia dell'intenzione": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "eterogenesi dei fini": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "realizzabilità multipla": {
+      "modo": "nessuna",
+      "paesi": []
+    },
+    "de-differenziazione del rischio": {
+      "modo": "nessuna",
+      "paesi": []
     }
   },
   "conio": [
@@ -1077,7 +1106,8 @@
     "licenza di prestito digitale",
     "dieta mediatica",
     "estrattivismo cognitivo",
-    "vincolo esterno"
+    "vincolo esterno",
+    "de-differenziazione del rischio"
   ],
   "cittadinanze_multiple": "si tengono tutte (approvato 25/9)"
 }

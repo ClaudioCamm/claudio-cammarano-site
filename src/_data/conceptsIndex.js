@@ -1526,7 +1526,8 @@ module.exports = [
       { title: "AI on the Ballot", url: "/curated/2026-11-04-thompson-ai-on-the-ballot-stratechery/", _source: "curated" },
       { title: "China's AI stock-market struggles are a warning", url: "/curated/2026-11-03-economist-borsa-cina-ai/", _source: "curated" },
       { title: "Can the AI boom make enough money to sustain itself?", url: "/curated/2026-11-12-economist-ricavi-boom-ai/", _source: "curated" },
-      { title: "AI Questions", url: "/curated/2026-11-24-evans-ai-questions/", _source: "curated" }
+      { title: "AI Questions", url: "/curated/2026-11-24-evans-ai-questions/", _source: "curated" },
+      { title: "Has Jevons paradox broken down?", url: "/curated/2026-11-25-alderson-paradosso-jevons/", _source: "curated" }
     ]
   },
   {
@@ -2999,7 +3000,8 @@ module.exports = [
       { title: "Attacchi ucraini ai data center Yandex: crolla l'attività dei bot russi?", url: "/curated/2026-10-12-vakulina-yandex-data-center-bot-euronews/", _source: "curated" },
       { title: "People are rejoicing about the removal of Russian bots from social media – but the truth is far more complicated", url: "/curated/2026-10-13-griffin-bot-russi-yandex-independent/", _source: "curated" },
       { title: "EU probes pro-Kremlin disinformation around French riots", url: "/curated/2026-10-21-dubois-jones-disinformazione-rivolte-francia-ft/", _source: "curated" },
-      { title: "The Kremlin is shutting down Russia’s last free newspaper", url: "/curated/2026-10-29-economist-novaya-gazeta-chiude/", _source: "curated" }
+      { title: "The Kremlin is shutting down Russia’s last free newspaper", url: "/curated/2026-10-29-economist-novaya-gazeta-chiude/", _source: "curated" },
+      { title: "Данные Росстата раскрыли гибель на войне 500 тысяч человек — и эти данные настоящие. С учетом пропавших цифра на сегодня — около 700 тысяч", url: "/curated/2026-11-23-mediazona-meduza-perdite-russe-rosstat/", _source: "curated" }
     ]
   },
   {
@@ -3028,7 +3030,9 @@ module.exports = [
       { title: "L'Ucraina chiusa in un guscio di noce: «Ora lo sappiamo, nessuno ci salverà»", url: "/curated/2026-02-22-giordano-guscio-di-noce-corriere/", _source: "curated" },
       { title: "The World's Last Chance for Peace", url: "/curated/2026-11-13-sanchez-normalizzazione-guerra-foreignaffairs/", _source: "curated" },
       { title: "The Kyiv Independent confronts journalism in times of war", url: "/curated/2026-11-15-ourdan-kyiv-independent-lemonde/", _source: "curated" },
-      { title: "Ukraine designed its own national typeface so it doesn’t have to use Russian fonts", url: "/curated/2026-11-13-schwarz-zakon-carattere-ucraina-fastcompany/", _source: "curated" }
+      { title: "Ukraine designed its own national typeface so it doesn’t have to use Russian fonts", url: "/curated/2026-11-13-schwarz-zakon-carattere-ucraina-fastcompany/", _source: "curated" },
+      { title: "It’s Time to Settle With Russia", url: "/curated/2026-11-23-desch-accordo-russia-foreignaffairs/", _source: "curated" },
+      { title: "Данные Росстата раскрыли гибель на войне 500 тысяч человек — и эти данные настоящие. С учетом пропавших цифра на сегодня — около 700 тысяч", url: "/curated/2026-11-23-mediazona-meduza-perdite-russe-rosstat/", _source: "curated" }
     ]
   },
   {
@@ -3106,7 +3110,8 @@ module.exports = [
       { title: "With an eye on America, China is beefing up its AI-controlled labs", url: "/curated/2026-11-04-economist-laboratori-autonomi-cina/", _source: "curated" },
       { title: "An Underrated Reason Boys Are Reading Less", url: "/curated/2026-11-05-nguyen-ragazzi-lettura-protagonisti-atlantic/", _source: "curated" },
       { title: "AI is turning protectionists into free traders", url: "/curated/2026-11-05-economist-ai-protezionisti-libero-scambio/", _source: "curated" },
-      { title: "Student journalists are reporting more local news for real audiences. Their professors are exhausted.", url: "/curated/2026-11-09-benton-studenti-giornalismo-locale-niemanlab/", _source: "curated" }
+      { title: "Student journalists are reporting more local news for real audiences. Their professors are exhausted.", url: "/curated/2026-11-09-benton-studenti-giornalismo-locale-niemanlab/", _source: "curated" },
+      { title: "Trump’s Plan for A.I. Supremacy Fuels Resistance in the Philippines", url: "/curated/2026-11-16-wee-balagtas-pax-silica-filippine-nyt/", _source: "curated" }
     ]
   },
   {
@@ -3208,7 +3213,8 @@ module.exports = [
       { title: "A New Kind of Foreign Agent", url: "/curated/2026-11-11-feldman-agenti-stranieri-ai-cinese-foreignaffairs/", _source: "curated" },
       { title: "Xi Jinping's chief ideologue is worried", url: "/curated/2026-11-11-economist-wang-huning-ideologo/", _source: "curated" },
       { title: "Latin America would like to be the next data-centre frontier", url: "/curated/2026-11-19-economist-america-latina-data-center/", _source: "curated" },
-      { title: "The Real Nvidia Scandal", url: "/curated/2026-11-24-kilcrease-chilukuri-scandalo-nvidia-foreignaffairs/", _source: "curated" }
+      { title: "The Real Nvidia Scandal", url: "/curated/2026-11-24-kilcrease-chilukuri-scandalo-nvidia-foreignaffairs/", _source: "curated" },
+      { title: "Trump’s Plan for A.I. Supremacy Fuels Resistance in the Philippines", url: "/curated/2026-11-16-wee-balagtas-pax-silica-filippine-nyt/", _source: "curated" }
     ]
   },
   {
@@ -3318,7 +3324,8 @@ module.exports = [
       { title: "The Coup We Are Not Talking About", url: "/curated/2021-01-29-zuboff-colpo-epistemico-nyt/", _source: "curated" },
       { title: "The Fall of Scientific American", url: "/curated/2026-10-22-fraizer-scientific-american-thenation/", _source: "curated" },
       { title: "No one has a plan for American decline", url: "/curated/2026-10-29-danforth-declino-americano-foreignpolicy/", _source: "curated" },
-      { title: "AI is turning protectionists into free traders", url: "/curated/2026-11-05-economist-ai-protezionisti-libero-scambio/", _source: "curated" }
+      { title: "AI is turning protectionists into free traders", url: "/curated/2026-11-05-economist-ai-protezionisti-libero-scambio/", _source: "curated" },
+      { title: "Trump’s Plan for A.I. Supremacy Fuels Resistance in the Philippines", url: "/curated/2026-11-16-wee-balagtas-pax-silica-filippine-nyt/", _source: "curated" }
     ]
   },
   {
@@ -6247,7 +6254,8 @@ module.exports = [
     note: "Consenso delle comunità locali di cui un'impresa ha bisogno per insediarsi e lavorare, distinto dai permessi formali e revocabile anche quando questi sono in regola. **Nel sito è la scarsità che Thompson indica come ultimo vincolo all'AI: il calcolo, la memoria e l'energia si producono, il consenso no.**",
     articles: [
       { title: "AI on the Ballot", url: "/curated/2026-11-04-thompson-ai-on-the-ballot-stratechery/", _source: "curated" },
-      { title: "Latin America would like to be the next data-centre frontier", url: "/curated/2026-11-19-economist-america-latina-data-center/", _source: "curated" }
+      { title: "Latin America would like to be the next data-centre frontier", url: "/curated/2026-11-19-economist-america-latina-data-center/", _source: "curated" },
+      { title: "Trump’s Plan for A.I. Supremacy Fuels Resistance in the Philippines", url: "/curated/2026-11-16-wee-balagtas-pax-silica-filippine-nyt/", _source: "curated" }
     ]
   },
   {
@@ -6891,7 +6899,8 @@ module.exports = [
     related: [ { name: "embodied mind", why: "L'embodied mind lega la mente al corpo che la realizza, contro l'indipendenza dal sostrato che il funzionalismo presuppone." } ],
     note: "Teoria della filosofia della mente, formulata da Hilary Putnam negli anni Sessanta, per cui gli stati mentali si definiscono per il ruolo che svolgono, cioè per le relazioni fra ingressi, uscite e altri stati, e non per la materia che li realizza. È l'assunto implicito di chi ritiene possibile una coscienza artificiale: se conta l'organizzazione, il sostrato può essere il silicio. L'archivio la incontra dove viene contestata, nel 2026, da Thomas Nagel, per cui un data center non ha nulla in comune con un sistema nervoso. **La domanda che la voce tiene aperta è se la coscienza dipenda dall'organizzazione o dalla materia.**",
     articles: [
-      { title: "‘Just Ridiculous’: A Famed Philosopher Takes on AI Consciousness", url: "/curated/2026-11-18-levy-nagel-coscienza-ai-wired/", _source: "curated" }
+      { title: "‘Just Ridiculous’: A Famed Philosopher Takes on AI Consciousness", url: "/curated/2026-11-18-levy-nagel-coscienza-ai-wired/", _source: "curated" },
+      { title: "The energy of thought", url: "/curated/2026-11-27-colaco-haueis-metabolismo-mente-aeon/", _source: "curated" }
     ]
   },
 
@@ -6929,7 +6938,8 @@ module.exports = [
     note: "Tesi formulata nel 2025 da Arvind Narayanan e Sayash Kapoor, informatici di Princeton. L'AI vi è descritta come una tecnologia trasformativa al pari dell'elettricità o di internet, da governare con le istituzioni esistenti, e non come una specie nuova o una superintelligenza in arrivo. L'archivio la incontra sul terreno della responsabilità: se l'AI è una tecnologia normale valgono le leggi normali, e dei danni di un agente risponde l'azienda che lo gestisce. **La domanda che la voce tiene aperta è per quanto tempo una tecnologia possa restare normale mentre le sue capacità crescono.**",
     articles: [
       { title: "Big tech may finally face legal consequences for AI’s actions", url: "/curated/2026-11-19-aron-responsabilita-agenti-ai-newscientist/", _source: "curated" },
-      { title: "Management consulting is not a thin wrapper on intelligence", url: "/curated/2026-11-23-kapoor-moshtagi-consulenza-normaltech/", _source: "curated" }
+      { title: "Management consulting is not a thin wrapper on intelligence", url: "/curated/2026-11-23-kapoor-moshtagi-consulenza-normaltech/", _source: "curated" },
+      { title: "Has Jevons paradox broken down?", url: "/curated/2026-11-25-alderson-paradosso-jevons/", _source: "curated" }
     ]
   },
 
@@ -6941,7 +6951,8 @@ module.exports = [
     related: [ { name: "collasso modale", why: "Quando tutti competono per la stessa attenzione, le forme che funzionano finiscono per somigliarsi." } ],
     note: "Idea secondo cui, in un mondo ricco di informazione, la risorsa scarsa è l'attenzione di chi la riceve. Risale a Herbert Simon, che nel 1971 scriveva che la ricchezza di informazione crea povertà di attenzione; nel 1997 Michael Goldhaber ne fa un'economia vera e propria. L'archivio la segue dove le piattaforme promettono di uscirne e finiscono per riprodurla. Nel 2026 gli abbonamenti di Substack, nati contro il modello pubblicitario dei social, premiano ancora le voci più forti. **La domanda che la voce tiene aperta è se si possa pagare la scrittura senza che chi scrive debba prima conquistarsi l'attenzione come si fa con un prodotto.**",
     articles: [
-      { title: "Did Substack Fix the Internet?", url: "/curated/2026-10-26-chayka-substack-mckenzie-newyorker/", _source: "curated" }
+      { title: "Did Substack Fix the Internet?", url: "/curated/2026-10-26-chayka-substack-mckenzie-newyorker/", _source: "curated" },
+      { title: "Are AI agents about to take over the internet? What newsrooms can do now", url: "/curated/2026-11-25-adami-agenti-ai-redazioni-reuters/", _source: "curated" }
     ]
   },
 
@@ -6954,6 +6965,78 @@ module.exports = [
     note: "Studio dei rapporti fra potere politico e spazio geografico. Il termine lo conia lo svedese Rudolf Kjellén nel 1900. Halford Mackinder, a Londra nel 1904, ne fissa una delle immagini più durature, il «cuore» dell'Eurasia, e Karl Haushofer, nella Germania degli anni Venti, ne fa una dottrina della rivincita. L'archivio la usa come lente su un vocabolario: dal 2014 la parola torna dominante nel discorso pubblico, e con lei l'idea di un mondo a somma zero. **La domanda che la voce tiene aperta è quando la geopolitica descriva il mondo e quando lo produca, insegnando a chi la adotta a vederlo come un conflitto.**",
     articles: [
       { title: "Geopolitics is for losers", url: "/curated/2022-12-01-james-geopolitica-perdenti-aeon/", _source: "curated" }
+    ]
+  },
+
+  {
+    name: "disinformazione",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q13579947"],
+    related: [ { name: "riciclaggio informativo", why: "Il riciclaggio descrive l'offerta che si traveste, la misura dell'esposizione dice quanta di quell'offerta arriva davvero." } ],
+    note: "Informazione falsa o fuorviante che circola come se fosse vera. Dal 2016, con le elezioni americane e il referendum sulla Brexit, è diventata uno dei temi centrali della ricerca sui media e una preoccupazione politica costante. L'archivio la segue da due lati: l'offerta, cioè chi la produce e come la traveste, e l'esposizione, cioè quanta ne arriva davvero alle persone. Nel 2026 una revisione di 512 studi mostra che la misura dell'esposizione dipende dal metodo: piccola nei comportamenti, grande nei ricordi. **La domanda che la voce tiene aperta è quanto del panico sulla disinformazione nasca dal modo in cui la si misura.**",
+    articles: [
+      { title: "How much misinformation do people actually see?", url: "/curated/2026-11-24-altay-hitz-prevalenza-disinformazione/", _source: "curated" }
+    ]
+  },
+
+  {
+    name: "paradosso di Jevons",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q1474401"],
+    related: [ { name: "commoditizzazione", why: "Quando un bene diventa merce il prezzo cala, e il paradosso di Jevons chiede se la quantità consumata compenserà la discesa." } ],
+    note: "Osservazione formulata nel 1865 da William Stanley Jevons in *The Coal Question*: le macchine a vapore più efficienti non riducevano il consumo di carbone in Gran Bretagna, lo aumentavano, perché rendevano conveniente usarlo per più cose. Nel 2026 il paradosso torna nel dibattito sull'AI, dove il prezzo dei token cala molto in fretta e ci si chiede se la spesa totale salirà comunque. L'archivio lo segue dove incontra un limite: l'efficienza moltiplica gli usi che un'organizzazione sa già fare, ma non le insegna a farne di nuovi. **La domanda che la voce tiene aperta è se il calo dei prezzi dell'AI produrrà più consumo o soltanto più risparmio, finché il lavoro attorno non cambia.**",
+    articles: [
+      { title: "Has Jevons paradox broken down?", url: "/curated/2026-11-25-alderson-paradosso-jevons/", _source: "curated" }
+    ]
+  },
+
+  {
+    name: "economia dell'intenzione",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q6044442"],
+    related: [ { name: "economia dell'attenzione", why: "L'intenzione prende il posto dell'attenzione come moneta del web quando un agente sceglie le fonti al posto della persona." } ],
+    note: "Espressione con cui Yaqub Chaudhary e Jonnie Penn, dell'Università di Cambridge, descrivono nel 2024 un mercato in cui gli assistenti di AI raccolgono e vendono le motivazioni degli utenti, cioè ciò che intendono fare, prima ancora della loro attenzione. La formula ha un precedente in Doc Searls, che nel 2012 la usava in senso opposto, per un mercato in cui sono i clienti a dichiarare le proprie intenzioni ai venditori. L'archivio la incontra dove l'agente si mette fra chi cerca e chi produce: chi capta l'intenzione decide anche a quale fonte rivolgersi. **La domanda che la voce tiene aperta è chi, fra l'utente e l'agente, sarà padrone delle intenzioni che l'agente esegue.**",
+    articles: [
+      { title: "Are AI agents about to take over the internet? What newsrooms can do now", url: "/curated/2026-11-25-adami-agenti-ai-redazioni-reuters/", _source: "curated" }
+    ]
+  },
+
+  {
+    name: "eterogenesi dei fini",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q3733698"],
+    related: [ { name: "licenza sociale a operare", why: "Quando un progetto parte senza il consenso di chi vive sul posto, gli effetti contrari ai fini cominciano dal cantiere." } ],
+    note: "Formula di Wilhelm Wundt, che nel 1886, nell'*Ethik*, chiama *Heterogonie der Zwecke* il fatto che le azioni producano effetti diversi da quelli voluti, e che questi effetti diventino a loro volta nuovi fini. In Italia la formula ha avuto larga fortuna, anche per il precedente di Giambattista Vico. L'archivio la usa per le politiche di potenza che ottengono il contrario di ciò che cercano: un'alleanza tecnologica che, imposta senza consenso locale, produce resistenza fra gli alleati. **La domanda che la voce tiene aperta è quanto degli effetti contrari fosse prevedibile per chi ha deciso.**",
+    articles: [
+      { title: "Trump’s Plan for A.I. Supremacy Fuels Resistance in the Philippines", url: "/curated/2026-11-16-wee-balagtas-pax-silica-filippine-nyt/", _source: "curated" }
+    ]
+  },
+
+  {
+    name: "realizzabilità multipla",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    sameAs: ["https://www.wikidata.org/wiki/Q1414884"],
+    related: [ { name: "funzionalismo", why: "La realizzabilità multipla è l'argomento che sostiene il funzionalismo. Se la mente non dipende dal materiale, conta soltanto ciò che uno stato fa." } ],
+    note: "Tesi formulata da Hilary Putnam nel 1967, in «Psychological Predicates»: uno stesso stato mentale, come il dolore, può essere realizzato da stati fisici diversi, in un cervello umano come in quello di un polpo. È l'argomento che ha reso il funzionalismo la posizione prevalente nella filosofia della mente. L'archivio la incontra dove si decide la questione delle macchine: se la mente non dipende dal materiale, un sistema artificiale può in linea di principio averne una. Nel 2026 Colaço e Haueis propongono di trattarla come ipotesi di lavoro, da mettere alla prova con i vincoli energetici. **La domanda che la voce tiene aperta è se il materiale conti soltanto come supporto o anche come limite di ciò che una mente può fare.**",
+    articles: [
+      { title: "The energy of thought", url: "/curated/2026-11-27-colaco-haueis-metabolismo-mente-aeon/", _source: "curated" }
+    ]
+  },
+
+  {
+    name: "de-differenziazione del rischio",
+    type: "teoria",
+    geo: { modo: "nessuna", paesi: [] },
+    related: [ { name: "rischio della persona chiave", why: "Il rischio della persona chiave è l'effetto; la de-differenziazione è il processo che lo produce." } ],
+    note: "Termine dell'archivio, introdotto nel novembre 2026 leggendo il reintegro di Jensen Huang alla guida di Nvidia. Indica il processo per cui un sistema smette di distribuire il rischio fra più nodi e lo raccoglie in un punto solo, di solito una persona sottratta alle regole che valgono per gli altri. L'impunità del fondatore lo produce: protegge chi sta al centro, e proprio così mostra dove il sistema è fragile. **Un sistema che concentra il rischio su una persona offre agli avversari un bersaglio unico, e la protezione di quella persona diventa la sua vulnerabilità.**",
+    articles: [
+      { title: "La vraie idéologie de la Silicon Valley est l’impunité de ses rois", url: "/curated/2026-11-24-farrell-impunita-silicon-valley-grandcontinent/", _source: "curated" },
+      { title: "The Individual Exception", url: "/curated/2026-11-24-thompson-eccezione-individuale-stratechery/", _source: "curated" }
     ]
   }
 
