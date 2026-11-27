@@ -2754,7 +2754,8 @@ module.exports = [
       { title: "AI has proved that a theory underpinning fundamental physics is trustworthy", url: "/curated/2026-11-11-economist-yang-mills-dimostrazione-ai/", _source: "curated" },
       { title: "AI Proved the Quasi-Riemann Hypothesis. What Happens Now?", url: "/curated/2026-10-19-kakaes-quasi-riemann-quanta/", _source: "curated" },
       { title: "Big tech may finally face legal consequences for AI’s actions", url: "/curated/2026-11-19-aron-responsabilita-agenti-ai-newscientist/", _source: "curated" },
-      { title: "The Wall Street Journal joins a growing list of publishers disallowing bots by default", url: "/curated/2026-11-24-deck-tameez-wsj-bot-niemanlab/", _source: "curated" }
+      { title: "The Wall Street Journal joins a growing list of publishers disallowing bots by default", url: "/curated/2026-11-24-deck-tameez-wsj-bot-niemanlab/", _source: "curated" },
+      { title: "What OpenAI Did When ChatGPT Users Lost Touch With Reality", url: "/curated/2025-11-23-hill-valentino-devries-openai-sycophancy-nyt/", _source: "curated" }
     ]
   },
   {
@@ -4256,7 +4257,8 @@ module.exports = [
       { title: "The AI boom is threatened by an epidemic of unreliable numbers", url: "/curated/2026-10-14-economist-numeri-inaffidabili-ai/", _source: "curated" },
       { title: "China’s universities are rich. But they're getting squeezed", url: "/curated/2026-10-20-economist-universita-cinesi/", _source: "curated" },
       { title: "America does not produce world-beating statistics. Who does?", url: "/curated/2026-11-16-economist-statistiche-ufficiali/", _source: "curated" },
-      { title: "Data drunk", url: "/curated/2026-11-25-smith-ubriachi-di-dati-raremind/", _source: "curated" }
+      { title: "Data drunk", url: "/curated/2026-11-25-smith-ubriachi-di-dati-raremind/", _source: "curated" },
+      { title: "What OpenAI Did When ChatGPT Users Lost Touch With Reality", url: "/curated/2025-11-23-hill-valentino-devries-openai-sycophancy-nyt/", _source: "curated" }
     ]
   },
   {
@@ -6848,7 +6850,8 @@ module.exports = [
     related: [ { name: "echo chamber", why: "L'echo chamber chiude il lettore fra fonti che gli danno ragione; la sycophancy porta la stessa dinamica dentro una sola conversazione." } ],
     note: "Tendenza di un modello linguistico ad assecondare l'utente, cambiando una risposta corretta per adeguarla a ciò che l'interlocutore mostra di credere. Il termine si afferma nella ricerca sull'allineamento dei primi anni Venti, che la riconduce in parte all'addestramento con il giudizio umano, perché quel giudizio premia le risposte gradite. L'archivio la segue dove smette di essere un difetto di tono e diventa un problema di informazione pubblica: nel 2026 un rapporto UNESCO mostra che sul clima tutti i modelli provati cedono all'utente che insiste. **Un sistema che cambia risposta quando l'interlocutore insiste rispecchia l'utente invece di informarlo.**",
     articles: [
-      { title: "AI systems are easy to pressure into giving false climate information", url: "/curated/2026-11-16-ucl-unesco-ai-clima-sycophancy/", _source: "curated" }
+      { title: "AI systems are easy to pressure into giving false climate information", url: "/curated/2026-11-16-ucl-unesco-ai-clima-sycophancy/", _source: "curated" },
+      { title: "What OpenAI Did When ChatGPT Users Lost Touch With Reality", url: "/curated/2025-11-23-hill-valentino-devries-openai-sycophancy-nyt/", _source: "curated" }
     ]
   },
 
