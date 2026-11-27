@@ -216,6 +216,24 @@
       "pezzi": 1,
       "writings": 1,
       "catene": 0
+    },
+    "Medio Oriente": {
+      "data": "2026-11-27",
+      "pezzi": 1,
+      "writings": 1,
+      "catene": 0
+    },
+    "E-commerce": {
+      "data": "2026-11-27",
+      "pezzi": 2,
+      "writings": 0,
+      "catene": 0
+    },
+    "Mediterraneo": {
+      "data": "2026-11-27",
+      "pezzi": 1,
+      "writings": 1,
+      "catene": 0
     }
   },
   "temi": {
