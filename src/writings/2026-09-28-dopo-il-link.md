@@ -3,6 +3,8 @@ layout: layouts/catena.njk
 title: "Dopo il link"
 date: 2026-09-28T20:50:00Z
 updated: 2026-11-03
+series: "Dopo il link, I"
+serie_totale_prevista: 2
 description: "Il collegamento ipertestuale ha una genealogia che parte da Locke, e forse sta per chiudersi con le risposte generate dai motori di ricerca. Dodici schede su che cosa succede all'informazione quando il lettore non ha più bisogno di cliccare."
 tesi: "Il link era la moneta dell'informazione in rete e la forma del suo dibattito; le risposte generate lo rendono superfluo, e per le testate la via d'uscita è istituzionale, fatta di fiducia e di regole, più che di traffico."
 category: ["Giornalismo", "Media", "AI"]

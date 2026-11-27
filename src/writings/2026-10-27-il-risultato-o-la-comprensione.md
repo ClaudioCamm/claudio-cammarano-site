@@ -2,6 +2,8 @@
 layout: layouts/catena.njk
 title: "Il risultato o la comprensione"
 date: 2026-10-27T13:40:00Z
+series: "Il risultato o la comprensione, I"
+serie_totale_prevista: 2
 description: "Navier-Stokes risolto da diecimila agenti, la scala di Gödel, la scienza a forma di Claude, i co-scienziati di Google, la bixonimania, la prima bozza e le mantidi inventate: undici schede su che cosa resta da fare quando la macchina consegna il risultato."
 tesi: "Quando una macchina produce il risultato, una dimostrazione, un'ipotesi, una bozza, il bene scarso diventa la comprensione di chi deve giudicarlo; chi fa ricerca o scrive deve dire se cercava il risultato o la comprensione, perché un risultato senza comprensione si verifica male, si confonde con il vero e alla fine torna nei dati da cui la macchina stessa impara."
 category: ["AI", "Epistemologia", "Scienza"]
